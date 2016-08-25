@@ -11,9 +11,12 @@ Later we might try to ingest and interconnect other catalogs.
 ## Notes
 
 * At the moment we're just using our own Python scripts,
-  and YAML files (because I find them easier to read and edit than JSON).
+  and YAML files (because I find them easier to read and edit than JSON),
+  as well as ECSV files.
   Maybe we'll switch to use the https://astrocats.space/ machinery later.
-
+* We use Python scripts. Only Python 3.5+ and the latest versions of
+  Astropy, Gammapy, ... are supported (very few people will run the scripts,
+  no point in supporting old versions here, even if it would be easy to do).
 
 ## References
 

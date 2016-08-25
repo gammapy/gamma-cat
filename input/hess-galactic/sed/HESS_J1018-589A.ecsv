@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: energy, datatype: float32}
+# - {name: flux, datatype: float32}
+# - {name: flux_hi, datatype: float32}
+# - {name: flux_lo, datatype: float32}
+# meta: !!omap
+# - name: HESS J1018-589A
+# - ads_id: 2015A%26A...577A.131H
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018
+# - comments:
+#   - Original data is in a different format (energy flux).
+#     This table was computed with the HESS_J1018m589A.py script.
+  0.402203   2.25569e-12   7.52432e-13   7.04284e-13
+  0.797953   3.47791e-13     1.441e-13    1.3394e-13  
+   1.23278   2.27031e-13   6.22181e-14   5.77752e-14  
+   1.90455    8.2036e-14   2.73225e-14   2.51559e-14  
+   2.94239    2.5168e-14   1.14098e-14   1.02637e-14  
+   4.54577   1.03637e-14   4.99803e-15   4.34613e-15  
+   7.02288   2.86301e-15   2.04645e-15   1.67135e-15  
+   10.8498   2.90457e-15   1.26667e-15   1.04046e-15  
+   16.7622   1.52439e-15   6.65697e-16   5.26755e-16  

@@ -1,0 +1,19 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: energy, datatype: float32}
+# - {name: flux, datatype: float32}
+# - {name: flux_hi, datatype: float32}
+# - {name: flux_lo, datatype: float32}
+# meta: !!omap
+# - name: HESS J1801-233
+# - ads_id: TODO
+0.41 7.423e-12  5.366e-12  9.480e-12
+0.55 5.740e-12  4.644e-12  6.836e-12
+0.73 1.181e-12  7.000e-13  1.662e-12
+0.97 6.510e-13  3.860e-13  9.160e-13
+1.30 3.110e-13  1.700e-13  4.520e-13
+1.73 2.130e-13  1.330e-13  2.930e-13
+2.31 nan        nan        3.100e-13
+3.08 nan        nan        1.880e-13
+4.11 2.700e-14  1.300e-14  4.100e-14

@@ -1,0 +1,14 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: energy, datatype: float32}
+# - {name: flux, datatype: float32}
+# - {name: flux_hi, datatype: float32}
+# - {name: flux_lo, datatype: float32}
+# meta: !!omap
+# - name: HESS J1714-385
+# - ads_id: TODO
+0.4645 4.136e-12  8.78e-13  8.89e-13
+1.388  5.404e-13  7.65e-14  7.75e-14
+4.298  1.892e-14 1.013e-14 1.036e-14
+13.65  1.666e-15 1.183e-15 1.455e-15

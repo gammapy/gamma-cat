@@ -16,6 +16,12 @@ obtained on June 11, 2016 via email from Scott Wakely.
 Having those integer source IDs is needed to cross-link this
 catalog and gamma-sky.net to TeVCat.
 
+Contributors:
+
+* Scott Wakely
+* Deirdre Horan
+* probably many others that sent into to TeVCat
+
 ## Data and scripts
 
 The `tevcat.py` script cleans up `tc_dump.txt` to obtain `tevcat.ecsv`.

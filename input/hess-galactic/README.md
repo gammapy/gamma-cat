@@ -17,7 +17,15 @@ The following people have contributed:
 
 Started in 2011, this is the final dump / migration from August 25, 2016 
 
-## Data
+## Data and scripts
 
 Detailed morphology and spectral data is available for all sources
 in the H.E.S.S. Galactic plane survey (HGPS) region (and a few outside).
+
+The data is in `hess-galactic.csv`, which the `hess_galactic.py` script
+processes into a more uniform format.
+
+TODO: this should be used to seed the `gamma-cat` YAML files
+(one per source)
+
+Spectral points are in separate files in ECSV format.

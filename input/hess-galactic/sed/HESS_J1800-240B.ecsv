@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: energy, datatype: float32}
+# - {name: flux, datatype: float32}
+# - {name: flux_hi, datatype: float32}
+# - {name: flux_lo, datatype: float32}
+# meta: !!omap
+# - name: HESS J1800-240B
+# - ads_id: TODO
+0.31 117.92e-13 7.783e-12 1.5801e-11
+0.41  87.83e-13 6.801e-12 1.0765e-11
+0.55  38.74e-13 2.850e-12 4.8980e-12
+0.73  17.34e-13 1.254e-12 2.2140e-12
+0.97   6.27e-13 3.780e-13 8.7600e-13
+1.30   2.91e-13 1.620e-13 4.2000e-13
+1.73   2.04e-13 1.320e-13 2.7600e-13
+2.31   1.10e-13 6.600e-14 1.5400e-13
+3.08        nan       nan 2.2500e-13
+4.11   0.27e-13 1.400e-14 4.0000e-14

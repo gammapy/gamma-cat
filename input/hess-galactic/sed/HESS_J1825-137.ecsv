@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: energy, datatype: float32}
+# - {name: flux, datatype: float32}
+# - {name: flux_hi, datatype: float32}
+# - {name: flux_lo, datatype: float32}
+# meta: !!omap
+# - name: HESS J1825-137
+# - ads_id: 2006A%26A...460..365A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA_5546.html
+# - comments:
+#   - These are the flux points shown in Figure 3.
+ 0.277619 3.43570e-10 2.25247e-11 2.25161e-11
+ 0.430245 1.29701e-10 5.36768e-12 5.36480e-12
+ 0.691719 4.96572e-11 1.68482e-12 1.68327e-12
+ 1.114240 1.60828e-11 6.03157e-13 6.02303e-13
+ 1.793120 5.03824e-12 2.37046e-13 2.36614e-13
+ 2.888400 1.82750e-12 9.85326e-14 9.82834e-14
+ 4.652700 5.03522e-13 4.20289e-14 4.19123e-14
+ 7.501950 1.46751e-13 1.76157e-14 1.75488e-14
+12.084300 5.04029e-14 7.19918e-15 7.15292e-15
+19.465700 1.33743e-14 3.08613e-15 3.05909e-15
+31.386100 2.32419e-15 1.10807e-15 1.09291e-15

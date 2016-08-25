@@ -3,7 +3,7 @@
 # datatype:
 # - {name: energy, datatype: float32}
 # - {name: excess, datatype: float32}
-# - {name: significance, datatype: float32}
+# - {name: sigma, datatype: float32}
 # - {name: flux, datatype: float32}
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
@@ -12,7 +12,6 @@
 # - ads_id: 2006A&A...457..899A
 # - comments:
 #   - Data taken from table 5 in the paper
-energy excess sigma      flux   flux_hi   flux_lo
  0.519    975  42.9  1.81e-10  0.06e-10  0.06e-10
  0.729   1580  56.0  7.27e-11  0.20e-11  0.19e-11
  1.06    1414  55.3  3.12e-11  0.09e-11  0.09e-11

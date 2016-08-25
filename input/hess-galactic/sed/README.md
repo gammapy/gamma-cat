@@ -5,6 +5,8 @@
 Each file has some of these columns:
 
 - `energy` - Energy in `TeV`
+- `energy_min` - Energy measurement bin left edge in `TeV`
+- `energy_max` - Energy measurement bin right edge in `TeV`
 - `flux` - Differential flux in `cm-2 s-1 TeV-1`
 - `flux_err` - Statistical error on `flux` (if symmetric error is given)
 - `flux_hi` - Statistical error on `flux`

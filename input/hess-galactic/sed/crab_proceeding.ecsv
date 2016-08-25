@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: energy, datatype: float32}
+# - {name: significance, datatype: float32}
+# - {name: flux, datatype: float32}
+# - {name: flux_err, datatype: float32}
+# meta: !!omap
+# - name: Crab
+# - ads_id: 2008ICRC....2..803K
+# - comments:
+#   - Data taken from table 4
+0.39 16.7 3.87e-10 0.38e-10
+0.62 73.4 1.14e-10 0.03e-10
+0.97 78.4 3.72e-11 0.08e-11
+1.54 67.7 1.21e-11 0.03e-11
+2.43 55.9 3.93e-12 0.12e-12
+3.84 41.3 1.13e-12 0.05e-12
+6.06 30.2 3.40e-13 0.19e-13
+9.54 22.4 1.01e-13 0.07e-13
+15.0 12.4 2.05e-14 0.27e-14
+23.5  7.9 4.91e-15 1.00e-15
+36.7  4.1 7.56e-16 2.84e-16
+57.0  3.8 7.22e-17 3.40e-17 

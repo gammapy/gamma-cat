@@ -8,7 +8,7 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1303-631
+# - name: Crab
 # - ads_id: 2006A&A...457..899A
 # - comments:
 #   - Data taken from table 5 in the paper

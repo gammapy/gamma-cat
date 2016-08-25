@@ -5,8 +5,25 @@ An open catalog of gamma-ray sources.
 * Repo: https://github.com/gammapy/gamma-cat
 * Webpage: https://gammapy.github.io/gamma-cat
 
+This is work in progress.
+Feedback and contributions welcome!
+
 For now, we just collect TeV gamma-ray source information.
 Later we might try to ingest and interconnect other catalogs.
+
+## Terms of use
+
+Collecting, cleaning and maintaining this dataset has taken a lot
+of time. We require that you give attribution if you're using it.
+
+For now, while we don't have a website / paper yet that can be
+cited, please use this attribution:
+
+> Data taken from https://github.com/gammapy/gamma-cat,
+> an open catalog of gamma-ray sources.
+
+Otherwise, you are free to use this data as you like.
+
 
 ## Notes
 

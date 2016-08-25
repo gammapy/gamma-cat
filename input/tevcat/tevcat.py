@@ -17,9 +17,9 @@ for line in open('tc_dump.txt').readlines():
 
 names = ['source_name', 'source_id', 'ra_str', 'dec_str']
 meta = dict(
-    name='TeVCat',
+    catalog_name='TeVCat',
     date='June 11, 2016',
-    author='Scott Wakely, Deirdre Horan',
+    authors='Scott Wakely, Deirdre Horan',
     url='http://tevcat.uchicago.edu/',
 )
 table = Table(rows=rows, names=names, meta=meta)

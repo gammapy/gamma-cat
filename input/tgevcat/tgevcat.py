@@ -22,12 +22,14 @@ Path(filename2).write_text(text)
 
 # Read CSV table
 print('Reading ', filename2)
-t1 = ascii.read(filename2, format='csv',
+t1 = ascii.read(
+    table=filename2,
+    format='csv',
     quotechar='"',
     fast_reader=False,
     fill_values=[('-', '')],
 )
-t1.info('stats')
+# t1.info('stats')
 # t1.show_in_browser(jsviewer=True)
 
 print('Removing ', filename2)
@@ -35,7 +37,16 @@ Path(filename2).unlink()
 
 # Make new table and fill with good column names,
 # units and values converted to numbers where appropriate
-t2 = Table()
+
+meta = dict(
+    catalog_name='TeGeV',
+    version='2',
+    date='July 2015',
+    authors='Alessandro Carosi, Fabrizio Lucarelli, Angelo Antonelli',
+    url='http://www.asdc.asi.it/tgevcat/',
+)
+t2 = Table(meta=meta)
+
 t2['Source_ID'] = t1['id']
 t2['Source_ID'].description = 'Source ID'
 
@@ -184,11 +195,11 @@ t2['Comments'].description = 'Comments'
 
 # import IPython; IPython.embed()
 
-t2.info()
-t2.info('stats')
+# t2.info()
+# t2.info('stats')
 # t2.show_in_browser(jsviewer=True)
 # import IPython; IPython.embed()
 
 filename = 'tgevcat.ecsv'
 print('Writing', filename)
-t2.write(filename, overwrite=True)
+t2.write(filename, format='ascii.ecsv')

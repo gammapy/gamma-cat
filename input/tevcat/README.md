@@ -11,7 +11,7 @@ It isn't fully openly available for download.
 
 However, the `tc_dump.txt` file with the columns `source_name`, `ra`, `dec`
 and `url` (which contains the TeVCat 1 integer source ID) was
-obtained on June 11, 2016 via email from Scott Wakely.
+obtained by Christoph Deil on June 11, 2016 via email from Scott Wakely.
 
 Having those integer source IDs is needed to cross-link this
 catalog and gamma-sky.net to TeVCat.

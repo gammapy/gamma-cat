@@ -2,7 +2,7 @@
 Clean up `tc_dump.txt` to obtain `tevcat.ecsv`
 """
 from astropy.coordinates import Angle
-from astropy.table import Table, Column
+from astropy.table import Table
 
 # Parse text file into a table
 rows = []

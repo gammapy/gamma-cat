@@ -12,7 +12,7 @@ from the TeVCat and TeGeV cat webpages.
 
 Schema (examples from `tev-000234.yaml`):
 
-* `source_id` - Source ID in this catalog (str, e.g. `tev-000234`). For now use tgevcat ID.
+* `source_id` - Source ID in this catalog (int, e.g. `34`). For now use tgevcat ID.
 * TBD: Maybe we'll add our own source names.
 
 * `tevcat_id` - Source ID in TeVCat (int, e.g. `234`)

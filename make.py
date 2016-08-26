@@ -23,9 +23,9 @@ def make_output():
     """Re-generate files in `output`.
     """
     log.info('Re-generate files in `output` ...')
-    print(gammacat.gammacat_info)
     input_data = gammacat.InputData().read_all()
-    print(input_data)
+    output_data = gammacat.make_output_data(input_data)
+    output_data.write_all()
 
 
 @cli.command(name='webpage')

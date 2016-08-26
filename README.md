@@ -12,6 +12,8 @@ For now, we just collect TeV gamma-ray source information.
 Later we might try to ingest and interconnect other catalogs
 (e.g. Fermi-LAT GeV catalogs).
 
+[![Build Status](https://travis-ci.org/gammapy/gamma-cat.svg?branch=master)](https://travis-ci.org/gammapy/gamma-cat)
+
 ## Why? There's already TeVCat!
 
 Yes, there is http://tevcat.uchicago.edu/ .

@@ -16,9 +16,10 @@ Later we might try to ingest and interconnect other catalogs
 
 Yes, there is http://tevcat.uchicago.edu/ .
 
-But TeVCat isn't open. You can view the info on their webpage,
-and copy & paste individual numbers, but you can't download a catalog
-and use it for your research.
+But TeVCat isn't really open.
+
+You can view the info on their webpage, and copy & paste individual
+numbers, but you can't download a catalog and use it for your research.
 
 To quote http://tevcat.uchicago.edu/terms.html (accessed August 26, 2016):
 
@@ -35,12 +36,13 @@ that happens and (presumably) what the older values were.
 The goal here is to have a fully open TeV catalog that you can download
 and use as you like (well, we still require attribution, see next section).
 
-Open and reproducible research for gamma-ray astronomy!
-
 The concrete motivation for Christoph Deil to start this catalog in
 August 2016 was to have a TeV catalog for http://gamma-sky.net ,
 as well as for checks of all sources in the H.E.S.S. Galactic plane
-survey catalog against previous publications.
+survey catalog against previous publications, and to have a TeV
+source catalog available for the upcoming CTA science challenge.
+
+Open and reproducible research for gamma-ray astronomy!
 
 ## Terms of use
 
@@ -59,6 +61,9 @@ cited, please use this attribution:
 > an open catalog of gamma-ray sources.
 
 Otherwise, you are free to use this data as you like.
+
+Of course, we appreciate feedback can contributions
+(additions and corrections)!
 
 ## Data
 
@@ -136,13 +141,13 @@ For paper identifiers, we use the ADS identifiers.
   ```python
   >>> papers = list(ads.SearchQuery(bibcode='2011A&A...531L..18H'))
   >>> print(papers[0].bibcode)
-  2011A&A...531L..18H
+  '2011A&A...531L..18H'
 
   >>> import urllib.parse
   >>> urllib.parse.quote('2011A&A...531L..18H')
-  2011A%26A...531L..18H
+  '2011A%26A...531L..18H'
   >>> urllib.parse.unquote('2011A%26A...531L..18H')
-  2011A&A...531L..18H
+  '2011A&A...531L..18H'
   ```
 
 #### Source identifiers

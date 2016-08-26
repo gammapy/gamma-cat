@@ -1,0 +1,30 @@
+# sudo: required
+# dist: trusty
+language: C
+
+# before_install:
+# - export CHROME_BIN=chromium-browser
+# - export DISPLAY=:99.0
+# - sh -e /etc/init.d/xvfb start
+
+install:
+# Set up miniconda
+- wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+- bash miniconda.sh -b -p $HOME/miniconda
+- export PATH="$HOME/miniconda/bin:$PATH"
+- hash -r
+- conda config --set always_yes yes --set changeps1 no
+- conda update -q conda
+- conda info -a
+- conda create -q -n test-environment python=3.5 pip
+- source activate test-environment
+
+# Now install our dependencies
+- conda config --add channels conda-forge
+- conda install click yaml cython numpy scipy uncertainties pandas astropy
+- pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
+
+script:
+- ./test.py
+- ./make.py --help
+# TODO: execute the build steps

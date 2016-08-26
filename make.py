@@ -50,7 +50,7 @@ def make_tests():
     """Run automated tests
     """
     log.info('Run automated tests ...')
-    gammacat.tests.check_input_files()
+    gammacat.checks.check_input_files()
 
 
 if __name__ == '__main__':

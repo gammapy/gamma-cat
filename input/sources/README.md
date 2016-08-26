@@ -7,6 +7,9 @@ One YAML file per source in the format `<source_id>.yaml`.
 No source parameters here, only cross-links to other TeV
 catalogs and papers.
 
+All these files were hand-written, with some info copied over
+from the TeVCat and TeGeV cat webpages.
+
 Schema (examples from `000234.yaml`):
 
 * `source_id` - Source ID in this catalog (str, e.g. `000234`)
@@ -24,5 +27,3 @@ Schema (examples from `000234.yaml`):
 The list of papers is supposed to be roughly the ones most relevant
 for gamma-ray astronomy. Not just the ones we take measurements from
 for this catalog.
-
-Of 

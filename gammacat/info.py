@@ -13,7 +13,7 @@ class GammaCatInfo:
         git_version = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'])
         self.git_version = git_version.decode('ascii').strip()
 
-        # Git
+        # Git repository base directory
         self.base_dir = Path(__file__).parent.parent
 
     def __str__(self):

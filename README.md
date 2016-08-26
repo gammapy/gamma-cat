@@ -38,6 +38,10 @@ that happens and (presumably) what the older values were.
 The goal here is to have a fully open TeV catalog that you can download
 and use as you like (well, we still require attribution, see next section).
 
+The data here is maintained as text (YAML and ECSV) files in a git repo on Github
+following the model of https://astrocats.space/, so it's fully transparent
+and we have version history.
+
 The concrete motivation for Christoph Deil to start this catalog in
 August 2016 was to have a TeV catalog for http://gamma-sky.net ,
 as well as for checks of all sources in the H.E.S.S. Galactic plane

@@ -18,6 +18,7 @@ install:
 - pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
 
 script:
-- ./test.py
 - ./make.py --help
-# TODO: execute the build steps
+- ./make.py output
+- ./make.py webpage
+- ./make.py tests

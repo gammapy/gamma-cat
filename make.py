@@ -33,6 +33,7 @@ def make_webpage():
     """Re-generate webpage in `docs`.
     """
     log.info('Re-generate webpage in `docs` ...')
+    gammacat.webpage.make()
 
 
 @cli.command(name='all')

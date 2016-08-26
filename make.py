@@ -4,6 +4,7 @@ Make catalog (multiple steps available)
 """
 import logging
 import click
+import gammacat
 
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger()
@@ -22,6 +23,9 @@ def make_output():
     """Re-generate files in `output`.
     """
     log.info('Re-generate files in `output` ...')
+    print(gammacat.info)
+    input_data = gammacat.InputData().read_all()
+    print(input_data)
 
 
 @cli.command(name='webpage')

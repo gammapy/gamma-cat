@@ -10,9 +10,9 @@ catalogs and papers.
 All these files were hand-written, with some info copied over
 from the TeVCat and TeGeV cat webpages.
 
-Schema (examples from `000234.yaml`):
+Schema (examples from `tev-000234.yaml`):
 
-* `source_id` - Source ID in this catalog (str, e.g. `000234`)
+* `source_id` - Source ID in this catalog (str, e.g. `tev-000234`)
 * TBD: Maybe we'll add our own source names.
 
 * `tevcat_id` - Source ID in TeVCat (int, e.g. `234`)

@@ -29,12 +29,30 @@ cited, please use this attribution:
 
 Otherwise, you are free to use this data as you like.
 
-## Data sources
+## Data
+
+### Overview
 
 This catalog contains data collected from the literature
 (usually one or several papers per source).
 
-Some data was collected directly here, in this repo.
+In this repository, there's four major folders:
+
+* `input` is where we collect data about sources given in papers.
+  This is very heterogeneous and is the place for data entry only.
+* `output` is produced with the `make_output.py` script in an
+  automatic way from `input`. It's as-homogeneous and complete data
+  as possible and what you should access for information lookup.
+* `docs` is a webpage that displays part of the information in the
+  repo (see link above). Specifially, there's a search field to find
+  a given source and then from the source detail view there's links
+  to the corresponding files in the `input` folder so that
+  submitting corrections and additions is easy.
+* `seed` contains seed catalogs of TeV source info other people have
+  collected previously. It was used to originally populate `input`
+  using the `import_seed.py` script (see details below).
+
+### Seed
 
 As a starting point, data was ingested from these sources
 (see the README files there for further information):
@@ -43,7 +61,31 @@ As a starting point, data was ingested from these sources
 * https://github.com/gammapy/gamma-cat/tree/master/input/tevcat
 * https://github.com/gammapy/gamma-cat/tree/master/input/tgevcat
 
-## Notes
+### Procedure
+
+Information given in papers is very heterogeneous. Sometimes position
+is given in Galactic coordinates, sometimes in RA/DEC coordinates.
+There's different morphology and spectral models, sometimes certain
+parameters haven't been measured or at least aren't given in the publication.
+
+The idea is that we only collect the information from the papers here
+(so that checking against the paper is easy and the manually
+edited files are as small as possible), and then the `make_output.py`
+script generates an as-homogeneous as possible version of the catalog.
+
+Important points to decide:
+
+* How do we structure the input and output information?
+* How do we assign source identifiers (integer, TEV J...)?
+* Do we store data per-paper or per-source?
+* How do we handle sources that split out into multiple sources
+  with deeper observations?
+* Define source classes and their semantics
+
+## How it works
+
+This is very much work in progress.
+Feedback and contributions welcome!
 
 * At the moment we're just using our own Python scripts,
   and YAML files (because I find them easier to read and edit than JSON),
@@ -61,8 +103,3 @@ As a starting point, data was ingested from these sources
 * https://github.com/gammapy/gamma-sky/issues/33
 * https://github.com/gammapy/gamma-sky/issues/22
 
-## Data inputs
-
-tbd
-
-## Data outputs

@@ -9,14 +9,16 @@ This is work in progress.
 Feedback and contributions welcome!
 
 For now, we just collect TeV gamma-ray source information.
-Later we might try to ingest and interconnect other catalogs.
+Later we might try to ingest and interconnect other catalogs
+(e.g. Fermi-LAT GeV catalogs).
 
 ## Why? There's already TeVCat!
 
 Yes, there is http://tevcat.uchicago.edu/ .
 
 But TeVCat isn't open. You can view the info on their webpage,
-but you can't download it and use it for your research.
+and copy & paste individual numbers, but you can't download a catalog
+and use it for your research.
 
 To quote http://tevcat.uchicago.edu/terms.html (accessed August 26, 2016):
 
@@ -26,9 +28,19 @@ TeVCat team.  This includes scripted parsing of the website data,
 webpage 'scraping', and the use of robots. If you need access to bulk 
 TeVCat data products, please contact the TeVCat team at tevcat@gmail.com
 
+A second major problem with TeVCat is that there's no version history.
+Updates and corrections happen, but only the maintainers know when
+that happens and (presumably) what the older values were.
+
 The goal here is to have a fully open TeV catalog that you can download
 and use as you like (well, we still require attribution, see next section).
 
+Open and reproducible research for gamma-ray astronomy!
+
+The concrete motivation for Christoph Deil to start this catalog in
+August 2016 was to have a TeV catalog for http://gamma-sky.net ,
+as well as for checks of all sources in the H.E.S.S. Galactic plane
+survey catalog against previous publications.
 
 ## Terms of use
 
@@ -121,6 +133,7 @@ For paper identifiers, we use the ADS identifiers.
   In `gamma-cat` we do the same, we URL quote the bibcode for filenames,
   folder names and URLs, and otherwise use the normal bibcode.
   
+  ```python
   >>> papers = list(ads.SearchQuery(bibcode='2011A&A...531L..18H'))
   >>> print(papers[0].bibcode)
   2011A&A...531L..18H
@@ -130,6 +143,7 @@ For paper identifiers, we use the ADS identifiers.
   2011A%26A...531L..18H
   >>> urllib.parse.unquote('2011A%26A...531L..18H')
   2011A&A...531L..18H
+  ```
 
 #### Source identifiers
 

@@ -1,0 +1,7 @@
+click
+pyyaml
+numpy
+scipy
+uncertainties
+astropy
+gammapy

@@ -15,6 +15,7 @@ install:
 # Now install our dependencies
 - conda config --add channels conda-forge
 - conda install click pytest pyyaml cython numpy scipy uncertainties pandas astropy
+- pip install pytest-cov
 - pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
 
 script:
@@ -22,3 +23,4 @@ script:
 - ./make.py output
 - ./make.py webpage
 - ./make.py tests
+- py.test -v --cov=gammacat

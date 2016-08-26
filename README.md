@@ -181,6 +181,12 @@ Feedback and contributions welcome!
   Astropy, Gammapy, ... are supported (very few people will run the scripts,
   no point in supporting old versions here, even if it would be easy to do).
 
+There is a nice Python package `gammacat` that's used to process and
+validate the catalog. But you can also use it for analysis if you know
+some Python. Start by looking at the examples in `gammacat/tests`,
+then look at the source code, then ask questions if you don't know
+how to do something.
+
 ## References
 
 * https://astrocats.space/

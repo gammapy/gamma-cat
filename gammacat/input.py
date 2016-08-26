@@ -20,15 +20,6 @@ log = logging.getLogger()
 
 class BasicSourceInfo:
     """All basic info for a source.
-
-    Examples
-    --------
-    >>> from gammacat import BasicSourceInfo
-    >>> info = BasicSourceInfo.read('input/sources/000074.yaml')
-    >>> info
-    BasicSourceInfo(id=60)
-    >>> info.pprint()
-    ...
     """
 
     def __init__(self, id, data):
@@ -58,13 +49,6 @@ class BasicSourceInfo:
 
 class PaperSourceInfo:
     """All info from one paper for one source.
-
-    Examples
-    --------
-    >>> from gammacat import PaperSourceInfo
-    >>> info = PaperSourceInfo.read('input/papers/2011A%26A...531L..18H/source_000234.yaml')
-    >>> info
-    TODO
     """
 
     def __init__(self, paper_id, source_id, data):

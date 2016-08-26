@@ -5,3 +5,4 @@ scipy
 uncertainties
 astropy
 gammapy
+ads

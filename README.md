@@ -44,10 +44,13 @@ In this repository, there's four major folders:
   automatic way from `input`. It's as-homogeneous and complete data
   as possible and what you should access for information lookup.
 * `docs` is a webpage that displays part of the information in the
-  repo (see link above). Specifially, there's a search field to find
+  repo (see link above). Specifically, there's a search field to find
   a given source and then from the source detail view there's links
   to the corresponding files in the `input` folder so that
   submitting corrections and additions is easy.
+  This is intentionally very minimal, for a better experience to
+  view the catalog online, go to http://gamma-sky.net/cat/tev 
+  (not yet, coming soon).
 * `seed` contains seed catalogs of TeV source info other people have
   collected previously. It was used to originally populate `input`
   using the `import_seed.py` script (see details below).
@@ -75,12 +78,24 @@ script generates an as-homogeneous as possible version of the catalog.
 
 Important points to decide:
 
-* How do we structure the input and output information?
+* How do we structure the `input` folder?
+  * Per-source: `source_id/papers.yaml`, `source_id/paper_id1.yaml`, `source_id/paper_id2.yaml`
+  * Per-paper: `paper_id/sources.yaml`, `paper_id/source_id1.yaml`, `paper_id/source_id2.yaml`
+* How do we structure the `output` folder?
+  * Definitely should have per-source data, with data from multiple
+    papers aggregated.
+  * Should we use the `astrocats` method of tracking origin of all parameters?
 * How do we assign source identifiers (integer, TEV J...)?
-* Do we store data per-paper or per-source?
 * How do we handle sources that split out into multiple sources
   with deeper observations?
 * Define source classes and their semantics
+
+Decisions made:
+
+* For paper identifiers, we use the ADS identifiers.
+  These are unique, well-known and stable.
+  This corresponds to the `bibcode` in https://github.com/andycasey/ads/,
+  i.e. can be used to obtain further info from ADS
 
 ## How it works
 

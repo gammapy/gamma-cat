@@ -1,7 +1,11 @@
 source_id: 000074
+
 tevcat_id: 74
-tevcat_name: TeV J0534+220
 tevcat2_id: BlJI6q
+tevcat_name: TeV J0534+220
+
 tgevcat_id: 25
+tgevcat_name: TeV J0534+2200
+
 papers:
   2006A&A...457..899A

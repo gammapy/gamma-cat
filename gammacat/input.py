@@ -71,14 +71,6 @@ class PaperSourceInfo:
 
 class PaperInfo:
     """All info for one paper.
-
-    Examples
-    --------
-    >>> from gammacat import PaperInfo
-    >>> info = PaperInfo.read('input/papers/2011A%26A...531L..18H')
-    >>> info
-    PaperInfo(id=60)
-    >>> info.pprint()
     """
 
     def __init__(self, id, sources):
@@ -106,13 +98,9 @@ class PaperInfo:
 
 class InputData:
     """
-    Read and expose data from the `input` folder.
+    Read all data from the `input` folder.
 
-    Examples
-    --------
-    >>> from gammacat import InputData
-    >>> input_data = InputData().read_all()
-    >>> print(input_data)
+    Expose it as Python objects that can be validated and used.
     """
 
     def __init__(self, path=None):

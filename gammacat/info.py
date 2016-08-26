@@ -1,7 +1,7 @@
 import subprocess
 from pathlib import Path
 
-__all__ = ['info']
+__all__ = ['gammacat_info']
 
 
 class GammaCatInfo:
@@ -14,7 +14,7 @@ class GammaCatInfo:
         self.git_version = git_version.decode('ascii').strip()
 
         # Git
-        self.base_dir = Path.cwd().parent
+        self.base_dir = Path(__file__).parent.parent
 
     def __str__(self):
         ss = 'GammaCatInfo:\n'
@@ -23,4 +23,4 @@ class GammaCatInfo:
         return ss
 
 
-info = GammaCatInfo()
+gammacat_info = GammaCatInfo()

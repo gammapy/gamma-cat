@@ -1,5 +1,7 @@
 import logging
 from pathlib import Path
+import yaml
+from .info import gammacat_info
 
 __all__ = ['InputData']
 
@@ -21,14 +23,20 @@ class InputData:
         if path:
             self.path = Path(path)
         else:
-            self.path = info.base_dir / 'input'
+            self.path = gammacat_info.base_dir / 'input'
 
-        self.sources = None
-        self.papers = None
+        self.sources = []
+        self.papers = []
 
     def read_sources(self):
-        filenames = list((self.path / 'sources').glob('[0-9]*.yaml'))
-        log.info(filenames)
+        paths = (self.path / 'sources').glob('*.yaml')
+
+        for path in paths:
+            if path.name in {'example.yaml'}:
+                continue
+            data = yaml.safe_load(path.open())
+            self.sources.append(data)
+
         return self
 
     def read_papers(self):
@@ -45,6 +53,6 @@ class InputData:
     def __str__(self):
         ss = 'Input data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
-        ss += 'Number of sources: {}\n'.format('TODO')
-        ss += 'Number of papers: {}\n'.format('TODO')
+        ss += 'Number of sources: {}\n'.format(len(self.sources))
+        ss += 'Number of papers: {}\n'.format(len(self.papers))
         return ss

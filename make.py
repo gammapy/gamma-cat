@@ -23,7 +23,7 @@ def make_output():
     """Re-generate files in `output`.
     """
     log.info('Re-generate files in `output` ...')
-    print(gammacat.info)
+    print(gammacat.gammacat_info)
     input_data = gammacat.InputData().read_all()
     print(input_data)
 

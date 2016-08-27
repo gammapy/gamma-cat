@@ -1,6 +1,7 @@
 """
 Classes to read, validate and work with the input data files.
 """
+import logging
 from pathlib import Path
 from .info import gammacat_info
 
@@ -9,7 +10,12 @@ __all__ = [
     'make_output_data',
 ]
 
+log = logging.getLogger()
 
+
+def make_output_data(input_data):
+    output_data = OutputData()
+    return output_data
 
 
 class OutputData:
@@ -30,9 +36,10 @@ class OutputData:
     def read_all(self):
         """Read all data from disk.
         """
-        self.read_sources()
-        self.read_papers()
         return self
+
+    def write_all(self):
+        pass
 
     def __str__(self):
         ss = 'output data summary:\n'

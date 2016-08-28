@@ -6,6 +6,7 @@ import logging
 from pathlib import Path
 import urllib.parse
 import yaml
+from astropy.table import Table
 from .info import gammacat_info
 
 __all__ = [
@@ -145,3 +146,28 @@ class InputData:
         ss += 'Number of sources: {}\n'.format(len(self.sources))
         ss += 'Number of papers: {}\n'.format(len(self.papers))
         return ss
+
+    def sources_table(self):
+        """Convert info of `sources` list into a Table.
+        """
+        rows = []
+        for source in self.sources:
+            data = source.data.copy()
+            if data['papers'] is None or data['papers'][0] is None:
+                data['papers'] = ''
+            else:
+                data['papers'] = ','.join(data['papers'])
+            rows.append(data)
+        # rows = [source.data for source in self.sources]
+        # rows['papers'] = ','.join(rows)
+        names = [
+            'source_id', 'tevcat_id', 'tevcat2_id',
+            'tevcat_name', 'tgevcat_id', 'tgevcat_name', 'papers',
+        ]
+        meta = dict(
+            name='todo',
+            version='todo',
+            url='todo',
+        )
+        table = Table(rows=rows, names=names, meta=meta)
+        return table

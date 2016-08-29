@@ -124,14 +124,7 @@ class BasicSourceList:
     def to_table(self):
         """Convert info of `sources` list into a Table.
         """
-        rows = []
-        for source in self.data:
-            data = source.data.copy()
-            if data['papers'] is None or data['papers'][0] is None:
-                data['papers'] = ''
-            else:
-                data['papers'] = ','.join(data['papers'])
-            rows.append(data)
+        rows = self.to_dict()['data']
         # rows = [source.data for source in self.sources]
         # rows['papers'] = ','.join(rows)
         names = [
@@ -147,9 +140,16 @@ class BasicSourceList:
         return table
 
     def to_dict(self):
-        data = dict(data=[])
-        # TODO: fill data
-        return data
+        """Format that jQuery DataTables can consume."""
+        rows = []
+        for source in self.data:
+            data = source.data.copy()
+            if data['papers'] is None or data['papers'][0] is None:
+                data['papers'] = ''
+            else:
+                data['papers'] = ','.join(data['papers'])
+            rows.append(data)
+        return dict(data=rows)
 
     def validate(self):
         [_.validate() for _ in self.data]

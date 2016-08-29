@@ -15,6 +15,9 @@ def test_paper_source_info():
 def test_basic_source_list():
     sources = gammacat.BasicSourceList.read()
     assert len(sources.data) > 0
+    str(sources)
+    sources.to_dict()
+    sources.to_table()
 
 
 def test_paper_info():

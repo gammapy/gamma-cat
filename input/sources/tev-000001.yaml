@@ -5,10 +5,9 @@ gamma_names:
 other_names:
 - SNR G119.5+10.2
 where: gal
-classes:
-- pwn
-- snr
+classes: [pwn, snr]
 discoverer: veritas
+discovery_date: todo
 tevcat_id: 227
 tevcat2_id: rC5JCj
 tevcat_name: TeV J0006+729

@@ -1,9 +1,12 @@
 source_id: 2
 common_name: SHBL J001355.9-185406
+gamma_names: []
+other_names: []
 where: egal
 classes:
 - hbl
 discoverer: hess
+discovery_date: todo
 tevcat_id: 213
 tevcat2_id: 70hRXZ
 tevcat_name: TeV J0013-188

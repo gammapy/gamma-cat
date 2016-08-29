@@ -1,5 +1,17 @@
 source_id: 3
 
+common_name: Tycho's SNR
+gamma_names: []
+other_names:
+- SNR G120.1+1.4
+- 3C10
+- SN1572
+
+where: gal
+classes: [snr]
+discoverer: VERITAS
+discovery_date: todo
+
 tevcat_id: 209
 tevcat2_id: xCyAjF
 tevcat_name: TeV J0025+641
@@ -8,4 +20,4 @@ tgevcat_id: 3
 tgevcat_name: TeV J0025+6410
 
 papers:
-- null
+- 2011ApJ...730L..20A

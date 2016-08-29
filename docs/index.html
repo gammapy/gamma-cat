@@ -1,25 +1,35 @@
 <html>
 
 <head>
-    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/css/bootstrap.css">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/css/bootstrap.css">
     <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap4.min.css">-->
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
 </head>
 
 <body>
-<h1>gamma-cat</h1>
-<!--<div id="gammacat"></div>-->
-<table id="gammacat">
-    <thead>
-    <th>source_id</th>
-    <th>tevcat_id</th>
-    <th>tevcat2_id</th>
-    <th>tevcat_name</th>
-    <th>tgevcat_id</th>
-    <th>tgevcat_name</th>
-    <th>papers</th>
-    </thead>
-</table>
+
+<div class="container text-md-center">
+    <h1>gamma-cat</h1>
+    <p>This is an astronomy TeV gamma-ray source catalog. Work in progress.</p>
+    <p>This table view is just for maintainers and data entry.</p>
+    <p>User view will be at <a href="http://gamma-sky.net">http://gamma-sky.net</a></p>
+    <p>For now, see <a href="https://github.com/gammapy/gamma-cat/">https://github.com/gammapy/gamma-cat/</a></p>
+</div>
+
+
+<div class="container">
+    <table id="gammacat" , width="1000px">
+        <thead>
+        <th>source_id</th>
+        <th>tevcat_id</th>
+        <th>tevcat2_id</th>
+        <th>tevcat_name</th>
+        <th>tgevcat_id</th>
+        <th>tgevcat_name</th>
+        <th>papers</th>
+        </thead>
+    </table>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"
         integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -29,22 +39,36 @@
     // TODO: use row detail for papers.
     // See https://datatables.net/examples/api/row_details.html
 
+    // http://stackoverflow.com/a/2998822/498873
+    function pad(num, size) {
+        var s = "000000000" + num;
+        return s.substr(s.length-size);
+    }
 
     $(document).ready(function () {
         $('#gammacat').DataTable({
             ajax: "gammacat.json",
             columns: [
-                {data: "source_id"},
                 {
-                    data: "tevcat_id",
-                    render: function(val) {
-                        console.log(val);
-                        var s = "<a href=\"http://tevcat.uchicago.edu/?mode=1&showsrc=" + val + "\">" + val + "</a>";
-                        console.log(s);
-                        return s;
+                    data: "source_id",
+                    render: function (val) {
+                        var filename = "tev-" + pad(val, 6) + ".yaml";
+                        console.log(filename);
+                        return "<a href=\"https://github.com/gammapy/gamma-cat/blob/master/input/sources/" + filename + "\">" + val + "</a>";
                     }
                 },
-                {data: "tevcat2_id"},
+                {
+                    data: "tevcat_id",
+                    render: function (val) {
+                        return "<a href=\"http://tevcat.uchicago.edu/?mode=1&showsrc=" + val + "\">" + val + "</a>";
+                    }
+                },
+                {
+                    data: "tevcat2_id",
+                    render: function (val) {
+                        return "<a href=\"http://tevcat2.uchicago.edu/sources/" + val + "\">" + val + "</a>";
+                    }
+                },
                 {data: "tevcat_name"},
                 {data: "tgevcat_id"},
                 {data: "tgevcat_name"},

@@ -6,6 +6,8 @@ import logging
 from pathlib import Path
 import urllib.parse
 import yaml
+import json
+from jsonschema import validate
 from astropy.table import Table
 from .info import gammacat_info
 
@@ -21,23 +23,37 @@ __all__ = [
 log = logging.getLogger()
 
 
+def load_json(path):
+    path = Path(path)
+    with path.open() as fh:
+        data = json.load(fh)
+    return data
+
+
+def load_yaml(path):
+    path = Path(path)
+    with path.open() as fh:
+        data = yaml.safe_load(fh)
+    return data
+
+
 class BasicSourceInfo:
     """All basic info for a source.
     """
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/basic_source_info.schema.yaml')
+    # import IPython; IPython.embed(); 1/0
 
-    def __init__(self, id, data):
-        self.id = id
+    def __init__(self, data):
         self.data = data
 
     @classmethod
     def read(cls, path):
         path = Path(path)
         data = yaml.safe_load(path.open())
-        id = data['source_id']
-        return cls(id=id, data=data)
+        return cls(data=data)
 
     def __repr__(self):
-        return 'BasicSourceInfo(id={})'.format(self.id)
+        return 'BasicSourceInfo(id={})'.format(self.data.id)
 
     def pprint(self):
         return pprint(self.data)
@@ -47,7 +63,7 @@ class BasicSourceInfo:
         return yaml.safe_dump(self.data, default_flow_style=False)
 
     def validate(self):
-        raise NotImplementedError
+        validate(self.data, self.schema)
 
 
 class PaperSourceInfo:
@@ -127,10 +143,7 @@ class BasicSourceList:
         rows = self.to_dict()['data']
         # rows = [source.data for source in self.sources]
         # rows['papers'] = ','.join(rows)
-        names = [
-            'source_id', 'tevcat_id', 'tevcat2_id',
-            'tevcat_name', 'tgevcat_id', 'tgevcat_name', 'papers',
-        ]
+        names = 'TODO'
         meta = dict(
             name='todo',
             version='todo',

@@ -1,0 +1,25 @@
+type: object
+
+properties:
+  source_id: {type: integer}
+
+  common_name: {type: string}
+  gamma_names: {type: string}
+  other_names: {type: string}
+
+  class: {type: string}
+  discoverer: {type: string}
+
+  tevcat_id: {type: integer}
+  tevcat2_id: {type: string}
+  tevcat_name: {type: string}
+
+  tgevcat_id: {type: integer}
+  tgevcat_name: {type: string}
+
+  papers: {type: array, items: {type: string}}
+
+required:
+  - source_id
+
+additionalProperties: false

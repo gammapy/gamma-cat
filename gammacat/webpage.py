@@ -19,9 +19,9 @@ def make():
     table = Table.read(str(path), format='ascii.ecsv')
 
     # Table in CSV format
-    path = gammacat_info.base_dir / 'docs/gammacat.csv'
-    log.info('Writing {}'.format(path))
-    table.write(str(path), format='ascii.csv')
+    # path = gammacat_info.base_dir / 'docs/gammacat.csv'
+    # log.info('Writing {}'.format(path))
+    # table.write(str(path), format='ascii.csv')
 
     data = input_data.sources.to_dict()
     path = gammacat_info.base_dir / 'docs/gammacat.json'

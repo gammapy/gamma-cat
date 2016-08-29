@@ -1,5 +1,14 @@
 source_id: 4
 
+common_name: KUV 00311-1938
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+discoverer: HESS
+discovery_date: todo
+
 tevcat_id: 239
 tevcat2_id: PKJZqs
 tevcat_name: TeV J0033-193
@@ -8,4 +17,4 @@ tgevcat_id: 4
 tgevcat_name: TeV J0033-1921
 
 papers:
-- null
+- 2012AIPC.1505..490B

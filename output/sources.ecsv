@@ -9,9 +9,9 @@
 # - {name: tgevcat_name, datatype: string}
 # - {name: papers, datatype: string}
 # meta: !!omap
-# - {url: todo}
 # - {name: todo}
 # - {version: todo}
+# - {url: todo}
 source_id tevcat_id tevcat2_id tevcat_name tgevcat_id tgevcat_name papers
 1 227 rC5JCj "TeV J0006+729" 1 "TeV J0006+7259" ""
 2 213 70hRXZ "TeV J0013-188" 2 "TeV J0013-1853" ""

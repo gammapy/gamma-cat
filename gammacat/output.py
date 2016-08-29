@@ -22,11 +22,14 @@ def make_output_data():
     - TODO: catalog with info from `input/papers`
     - TODO: combined and prioritized catalog with all data.
     """
-    input_data = InputData().read_all()
-    table = input_data.sources_table()
+    input_data = InputData.read()
+
+    table = input_data.sources.to_table()
     filename = gammacat_info.base_dir / 'output/sources.ecsv'
     log.info('Writing {}'.format(filename))
     table.write(str(filename), format='ascii.ecsv')
+
+
     # import IPython; IPython.embed()
 
 

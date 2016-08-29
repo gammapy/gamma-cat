@@ -1,1 +1,39 @@
-<h1>gamma-cat webpage</h1><p>Coming soon...</p>
+<html>
+
+<head>
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap4.min.css">-->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+</head>
+
+<body>
+<h1>gamma-cat</h1>
+<!--<div id="gammacat"></div>-->
+<table id="gammacat">
+    <thead>
+    <th>source_id</th>
+    <th>tevcat_id</th>
+    <th>tevcat_name</th>
+    </thead>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#gammacat').DataTable({
+            "ajax": "gammacat.json",
+            "columns": [
+                {"data": "source_id"},
+                {"data": "tevcat_id"},
+                {"data": "tevcat_name"},
+            ]
+        });
+    });
+</script>
+</body>
+
+</html>
+

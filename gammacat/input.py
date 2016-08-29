@@ -10,10 +10,12 @@ from astropy.table import Table
 from .info import gammacat_info
 
 __all__ = [
-    'InputData',
     'BasicSourceInfo',
+    'BasicSourceList',
     'PaperSourceInfo',
     'PaperInfo',
+    'PaperList',
+    'InputData',
 ]
 
 log = logging.getLogger()
@@ -97,61 +99,33 @@ class PaperInfo:
         raise NotImplementedError
 
 
-class InputData:
+class BasicSourceList:
     """
-    Read all data from the `input` folder.
-
-    Expose it as Python objects that can be validated and used.
+    List of `BasicSourceInfo` objects.
     """
 
-    def __init__(self, path=None):
-        if path:
-            self.path = Path(path)
-        else:
-            self.path = gammacat_info.base_dir / 'input'
+    def __init__(self, data):
+        self.data = data
 
-        self.sources = []
-        self.papers = []
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/sources'
+        paths = path.glob('*.yaml')
 
-    def read_sources(self):
-        paths = (self.path / 'sources').glob('*.yaml')
-
+        data = []
         for path in paths:
             if path.name in {'example.yaml'}:
                 continue
             info = BasicSourceInfo.read(path)
-            self.sources.append(info)
+            data.append(info)
 
-        return self
+        return cls(data=data)
 
-    def read_papers(self):
-        paths = (self.path / 'papers').glob('*')
-
-        for path in paths:
-            info = PaperInfo.read(path)
-            self.papers.append(info)
-
-        return self
-
-    def read_all(self):
-        """Read all data from disk.
-        """
-        self.read_sources()
-        self.read_papers()
-        return self
-
-    def __str__(self):
-        ss = 'Input data summary:\n'
-        ss += 'Path: {}\n'.format(self.path)
-        ss += 'Number of sources: {}\n'.format(len(self.sources))
-        ss += 'Number of papers: {}\n'.format(len(self.papers))
-        return ss
-
-    def sources_table(self):
+    def to_table(self):
         """Convert info of `sources` list into a Table.
         """
         rows = []
-        for source in self.sources:
+        for source in self.data:
             data = source.data.copy()
             if data['papers'] is None or data['papers'][0] is None:
                 data['papers'] = ''
@@ -171,3 +145,63 @@ class InputData:
         )
         table = Table(rows=rows, names=names, meta=meta)
         return table
+
+    def to_dict(self):
+        data = dict(data=[])
+        # TODO: fill data
+        return data
+
+    def validate(self):
+        [_.validate() for _ in self.data]
+
+
+class PaperList:
+    """
+    List of `PaperInfo` objects.
+    """
+
+    def __init__(self, data):
+        self.data = data
+
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/papers'
+        paths = path.glob('*')
+
+        data = []
+        for path in paths:
+            info = PaperInfo.read(path)
+            data.append(info)
+
+        return cls(data=data)
+
+    def validate(self):
+        [_.validate() for _ in self.data]
+
+
+class InputData:
+    """
+    Read all data from the `input` folder.
+
+    Expose it as Python objects that can be validated and used.
+    """
+
+    def __init__(self, sources=None, papers=None):
+        self.path = gammacat_info.base_dir / 'input'
+        self.sources = sources
+        self.papers = papers
+
+    @classmethod
+    def read(cls):
+        """Read all data from disk.
+        """
+        sources = BasicSourceList.read()
+        papers = PaperList.read()
+        return cls(sources=sources, papers=papers)
+
+    def __str__(self):
+        ss = 'Input data summary:\n'
+        ss += 'Path: {}\n'.format(self.path)
+        ss += 'Number of sources: {}\n'.format(len(self.sources.data))
+        ss += 'Number of papers: {}\n'.format(len(self.papers.data))
+        return ss

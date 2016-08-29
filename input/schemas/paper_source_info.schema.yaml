@@ -1,14 +1,27 @@
 type: object
 
 properties:
+
   source_id: {type: integer}
   paper_id: {type: string}
 
-  ra: {type: string}
-  dec: {type: string}
+  position:
+    type: object
+    ra: {type: string}
+    dec: {type: string}
 
-required:
-  - source_id
-  - paper_id
+  morphology:
+    type: object
+    class: {type: string}
+    size: {type: number}
+
+  spectrum:
+    type: object
+    class: {type: string}
+
+
+#required:
+#  - source_id
+#  - paper_id
 
 additionalProperties: false

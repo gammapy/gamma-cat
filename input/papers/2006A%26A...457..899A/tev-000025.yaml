@@ -1,4 +1,12 @@
 paper_id: 2006A&A...457..899A
 source_id: 25
-ra: todo
-dec: todo
+
+position:
+  ra: todo
+  dec: todo
+
+morphology:
+  type: point
+
+spectrum:
+  type: ecpl

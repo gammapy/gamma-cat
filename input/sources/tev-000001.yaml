@@ -1,18 +1,18 @@
 source_id: 1
-
 common_name: CTA 1
-gamma_names: VER J0006+729
-other_names: SNR G119.5+10.2
-
-class: PWN, SNR
-discoverer: VERITAS
-
+gamma_names:
+- VER J0006+729
+other_names:
+- SNR G119.5+10.2
+where: gal
+classes:
+- pwn
+- snr
+discoverer: veritas
 tevcat_id: 227
 tevcat2_id: rC5JCj
 tevcat_name: TeV J0006+729
-
 tgevcat_id: 1
 tgevcat_name: TeV J0006+7259
-
 papers:
 - 2013ApJ...764...38A

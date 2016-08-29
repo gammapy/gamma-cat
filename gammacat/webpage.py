@@ -20,7 +20,7 @@ def make():
     # log.info('Writing {}'.format(path))
     # table.write(str(path), format='ascii.csv')
 
-    data = dict(data=input_data.sources.data_per_row())
+    data = dict(data=input_data.sources.data_per_row(filled=True))
     path = gammacat_info.base_dir / 'docs/gammacat.json'
     log.info('Writing {}'.format(path))
     with path.open('w') as fh:

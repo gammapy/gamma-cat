@@ -8,6 +8,7 @@ properties:
   dec: {type: string}
 
 required:
-  - source_id, paper_id
+  - source_id
+  - paper_id
 
 additionalProperties: false

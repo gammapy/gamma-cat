@@ -21,6 +21,7 @@
     <table id="gammacat" , width="1000px">
         <thead>
         <th>source_id</th>
+        <th>common_name</th>
         <th>tevcat_id</th>
         <th>tevcat2_id</th>
         <th>tevcat_name</th>
@@ -42,7 +43,7 @@
     // http://stackoverflow.com/a/2998822/498873
     function pad(num, size) {
         var s = "000000000" + num;
-        return s.substr(s.length-size);
+        return s.substr(s.length - size);
     }
 
     $(document).ready(function () {
@@ -57,6 +58,7 @@
                         return "<a href=\"https://github.com/gammapy/gamma-cat/blob/master/input/sources/" + filename + "\">" + val + "</a>";
                     }
                 },
+                {data: "common_name"},
                 {
                     data: "tevcat_id",
                     render: function (val) {

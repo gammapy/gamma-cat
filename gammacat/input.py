@@ -7,7 +7,7 @@ from collections import OrderedDict
 from pathlib import Path
 import urllib.parse
 import yaml
-from jsonschema import validate
+import jsonschema
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, MISSING_VAL
@@ -50,7 +50,6 @@ class BasicSourceInfo:
                 datatype = spec['type']
                 data[name] = MISSING_VAL[datatype]
 
-
         data.update(self.data)
 
         if data['papers'] is None or data['papers'][0] is None:
@@ -68,7 +67,12 @@ class BasicSourceInfo:
         return yaml.safe_dump(self.data, default_flow_style=False)
 
     def validate(self):
-        validate(self.data, self.schema)
+        try:
+            jsonschema.validate(self.data, self.schema)
+        except jsonschema.exceptions.ValidationError as ex:
+            log.error('Invalid source_id: {}'.format(self.data['source_id']))
+            print(self.data)
+            raise ex
 
 
 class PaperSourceInfo:
@@ -92,7 +96,7 @@ class PaperSourceInfo:
         )
 
     def validate(self):
-        validate(self.data, self.schema)
+        jsonschema.validate(self.data, self.schema)
 
 
 class PaperInfo:
@@ -119,7 +123,7 @@ class PaperInfo:
         return 'PaperInfo(id={})'.format(repr(self.id))
 
     def validate(self):
-        raise NotImplementedError
+        [_.validate() for _ in self.sources]
 
 
 class BasicSourceList:
@@ -177,6 +181,7 @@ class BasicSourceList:
             ]
 
     def validate(self):
+        log.info('Validating YAML files in `input/sources`')
         [_.validate() for _ in self.data]
 
 
@@ -201,6 +206,7 @@ class PaperList:
         return cls(data=data)
 
     def validate(self):
+        log.info('Validating YAML files in `input/papers`')
         [_.validate() for _ in self.data]
 
 
@@ -230,3 +236,8 @@ class InputData:
         ss += 'Number of sources: {}\n'.format(len(self.sources.data))
         ss += 'Number of papers: {}\n'.format(len(self.papers.data))
         return ss
+
+    def validate(self):
+        log.info('Validating input data ...')
+        self.sources.validate()
+        self.papers.validate()

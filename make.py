@@ -44,11 +44,11 @@ def make_all(ctx):
     ctx.invoke(make_webpage)
 
 
-@cli.command(name='tests')
-def make_tests():
+@cli.command(name='check')
+def make_check():
     """Run automated tests
     """
-    log.info('Run automated tests ...')
+    log.info('Run automated checks ...')
     gammacat.checks.check_input_files()
 
 

@@ -4,11 +4,13 @@ properties:
   source_id: {type: integer}
 
   common_name: {type: string}
-  gamma_names: {type: string}
-  other_names: {type: string}
+  gamma_names: {type: array, items: {type: string}}
+  other_names: {type: array, items: {type: string}}
 
-  class: {type: string}
+  where: {type: string}
+  classes: {type: array, items: {type: string}}
   discoverer: {type: string}
+  discovery_date: {type: string}
 
   tevcat_id: {type: integer}
   tevcat2_id: {type: string}
@@ -17,9 +19,9 @@ properties:
   tgevcat_id: {type: integer}
   tgevcat_name: {type: string}
 
-  papers: {type: array, items: {type: string}}
+#  papers: {type: array, items: {anyOf: [{type: string}, {type: null}]}}
 
 required:
   - source_id
 
-additionalProperties: false
+additionalProperties: true

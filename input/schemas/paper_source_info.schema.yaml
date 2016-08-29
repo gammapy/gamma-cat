@@ -7,6 +7,7 @@ properties:
 
   position:
     type: object
+    measured: {type: bool}
     ra: {type: string}
     dec: {type: string}
 
@@ -19,9 +20,8 @@ properties:
     type: object
     class: {type: string}
 
-
-#required:
-#  - source_id
-#  - paper_id
+required:
+  - source_id
+  - paper_id
 
 additionalProperties: false

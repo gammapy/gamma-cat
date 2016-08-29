@@ -1,0 +1,5359 @@
+- Source_ID: 1
+  Source_Name: TeV J0006+7259
+  Other_Names: CTA 1/ G 119.5+10.2
+  CLASS: PWN/SNR
+  RA: 1.60833333333
+  DEC: 72.9836111111
+  GLON: 119.6
+  GLAT: 10.4
+  RA_Err_Stat: 0.0916666666667
+  RA_Err_Sys: 0.0125
+  DEC_Err_Stat: 0.04
+  DEC_Err_Sys: 0.0138888888889
+  Is_Extended: true
+  Semimajor: 0.3
+  Semimajor_Err: 0.03
+  Semiminor: 0.24
+  Semiminor_Err: 0.03
+  Rotation_Angle: 17.0
+  Flux_Diff: 9.1e-14
+  Flux_Diff_Err_Stat: 1.3e-14
+  Flux_Diff_Err_Sys: 1.7e-14
+  Spectral_Index: 2.2
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '1.4'
+  Distance2: --
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Aliu et al. (2013), ApJ 764, 38
+  Comments: Orientation angle of 17.4 +/- 15.8 deg, west of north. An integral energy
+    flux above 1 TeV of 4.0x10^-12 erg/cm^2/s is reported in the paper.
+- Source_ID: 2
+  Source_Name: TeV J0013-1853
+  Other_Names: SHBL J001355.9-185406
+  CLASS: HBL
+  RA: 3.46666666667
+  DEC: -18.8913888889
+  GLON: 74.61
+  GLAT: -78.07
+  RA_Err_Stat: 0.00625
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00611111111111
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.2e-12
+  Flux_Diff_Err_Stat: 2.3e-13
+  Flux_Diff_Err_Sys: 2.3e-13
+  Spectral_Index: 3.4
+  Spectral_Index_Err_Stat: 0.5
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 8.3e-13
+  Flux_Int_Err_Stat: 1.7e-13
+  Flux_Int_Err_Sys: 1.7e-13
+  Flux_Crab: 0.6
+  Distance: --
+  Distance2: '0.095'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2013), A&A 554, A72
+  Comments: --
+- Source_ID: 3
+  Source_Name: TeV J0025+6410
+  Other_Names: Tycho SNR
+  CLASS: SNR
+  RA: 6.3625
+  DEC: 64.1805555556
+  GLON: 120.1
+  GLAT: 1.45
+  RA_Err_Stat: 0.0229166666667
+  RA_Err_Sys: 0.0141666666667
+  DEC_Err_Stat: 0.0230555555556
+  DEC_Err_Sys: 0.0138888888889
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.6e-14
+  Flux_Diff_Err_Stat: 4.3e-15
+  Flux_Diff_Err_Sys: 4.7e-15
+  Spectral_Index: 1.95
+  Spectral_Index_Err_Stat: 0.51
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 1.87e-13
+  Flux_Int_Err_Stat: 5.1e-14
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 0.9
+  Distance: '3.5'
+  Distance2: --
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Acciari et al. (2011), ApJL 730, L20
+  Comments: --
+- Source_ID: 4
+  Source_Name: TeV J0033-1921
+  Other_Names: KUV 00311-1938/RBS 0076/1RXS J003334.6-192130
+  CLASS: HBL
+  RA: 8.3925
+  DEC: -19.35925
+  GLON: 94.17
+  GLAT: -81.22
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.0
+  Distance: --
+  Distance2: '0.61'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Becherini et al. (2012), AIP Conf. Proc. 1505, 490
+  Comments: Position taken from NED (2007A&A 470 787P). Source discovery announced
+    at Gamma 2012 (Becherini et al. (2012), AIP Conf. Proc. 1505, 490). Redshift from
+    Pita et al.(2012), not confirmed.
+- Source_ID: 5
+  Source_Name: TeV J0035+5947
+  Other_Names: 1ES 0033+595
+  CLASS: HBL
+  RA: 8.82
+  DEC: 59.79
+  GLON: 120.89
+  GLAT: -3.02
+  RA_Err_Stat: 0.03
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: 0.02
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.0e-11
+  Flux_Diff_Err_Stat: 5.0e-12
+  Flux_Diff_Err_Sys: 5.0e-12
+  Spectral_Index: 3.8
+  Spectral_Index_Err_Stat: 0.7
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 7.1e-12
+  Flux_Int_Err_Stat: 1.3e-12
+  Flux_Int_Err_Sys: 1.6e-12
+  Flux_Crab: 2.2
+  Distance: --
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2015), MNRAS 446, 217
+  Comments: --
+- Source_ID: 6
+  Source_Name: TeV J0047-2517
+  Other_Names: NGC 253
+  CLASS: Starburst
+  RA: 11.8929166667
+  DEC: -25.2896111111
+  GLON: 97.48
+  GLAT: -87.97
+  RA_Err_Stat: 0.00583333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.005
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 9.6e-14
+  Flux_Diff_Err_Stat: 1.5e-14
+  Flux_Diff_Err_Sys: 5.7e-14
+  Spectral_Index: 2.14
+  Spectral_Index_Err_Stat: 0.18
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 5.6e-13
+  Flux_Int_Err_Stat: 1.2e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 0.21
+  Distance: '3500'
+  Distance2: '0.000811'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), ApJ 757, 158
+  Comments: --
+- Source_ID: 7
+  Source_Name: TeV J0136+3905
+  Other_Names: RGB J0136+391/B3 0133+388/1RXS J013632.9+390556
+  CLASS: HBL
+  RA: 24.1354166667
+  DEC: 39.0998888889
+  GLON: 132.41
+  GLAT: -22.94
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Mazin et al., AIP Conf. Proc. 1505, 186
+  Comments: Source discovery announced at Gamma 2012. Position quoted from NED (2007A&A
+    470 787P). No information on the positional uncertainty available. A limit of
+    z> 0.4 is provided in Nilsson et al. (2012).
+- Source_ID: 8
+  Source_Name: TeV J0152+0146
+  Other_Names: RGB J0152+017/RXJ0152.6+0147
+  CLASS: HBL
+  RA: 28.1395833333
+  DEC: 1.77786111111
+  GLON: 152.34
+  GLAT: -57.56
+  RA_Err_Stat: 0.0220833333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0297222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 5.7e-13
+  Flux_Diff_Err_Stat: 1.6e-13
+  Flux_Diff_Err_Sys: 1.1e-13
+  Spectral_Index: 2.95
+  Spectral_Index_Err_Stat: 0.36
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.7e-12
+  Flux_Int_Err_Stat: 5.1e-13
+  Flux_Int_Err_Sys: 5.4e-13
+  Flux_Crab: 2.0
+  Distance: '330000'
+  Distance2: '0.08'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 481, L103
+  Comments: --
+- Source_ID: 9
+  Source_Name: TeV J0205+6451
+  Other_Names: 3C 58
+  CLASS: PWN
+  RA: 31.3791666667
+  DEC: 64.85
+  GLON: 130.7
+  GLAT: 3.1
+  RA_Err_Stat: 0.0375
+  RA_Err_Sys: 0.0458333333333
+  DEC_Err_Stat: 0.0166666666667
+  DEC_Err_Sys: 0.0166666666667
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.0e-13
+  Flux_Diff_Err_Stat: 4.0e-14
+  Flux_Diff_Err_Sys: 6.0e-14
+  Spectral_Index: 2.4
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.4e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 0.65
+  Distance: '2'
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2014), A&A 567, L8
+  Comments: Spectral properties valid between 400 GeV and 10 TeV.
+- Source_ID: 10
+  Source_Name: TeV J0221+3556
+  Other_Names: S3 0218+35/ B2 0218+35
+  CLASS: Blazar
+  RA: 35.2729166667
+  DEC: 35.9371388889
+  GLON: 142.6
+  GLAT: -23.49
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 15.0
+  Distance: --
+  Distance2: '0.944'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: 'Mirzoyan et al. (2014), ATel. #6349'
+  Comments: 'Source announced by Mirzoyan et al. (2014), ATel. #6349.'
+- Source_ID: 11
+  Source_Name: TeV J0222+4302
+  Other_Names: 3C 66A
+  CLASS: IBL
+  RA: 35.665
+  DEC: 43.0355
+  GLON: 140.14
+  GLAT: -16.77
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 9.6e-11
+  Flux_Diff_Err_Stat: 2.5e-11
+  Flux_Diff_Err_Sys: 3.4e-11
+  Spectral_Index: 3.64
+  Spectral_Index_Err_Stat: 0.39
+  Spectral_Index_Err_Sys: 0.25
+  Flux_Int: 4.5e-11
+  Flux_Int_Err_Stat: 1.1e-11
+  Flux_Int_Err_Sys: 1.6e-11
+  Flux_Crab: 8.3
+  Distance: '1685'
+  Distance2: '0.444'
+  Discoverer: Crimea
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2011), ApJ 726, 58
+  Comments: 'Coordinates from NED (1995AJ 110 880J). Distance of CoG from 3C 66A:
+    (0.010 +/- 0.023) deg.'
+- Source_ID: 12
+  Source_Name: TeV J0223+4259
+  Other_Names: MAGIC J0223+403/ 3C 66B
+  CLASS: UNID
+  RA: 35.7975
+  DEC: 42.9920555556
+  GLON: 140.25
+  GLAT: -16.78
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.7e-11
+  Flux_Diff_Err_Stat: 3.0e-12
+  Flux_Diff_Err_Sys: 6.0e-12
+  Spectral_Index: 3.1
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 7.3e-12
+  Flux_Int_Err_Stat: 1.5e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.2
+  Distance: --
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aliu et al. (2009), ApJ 692, L29
+  Comments: Position quoted from NED (2004AJ 127.3587F). 3C 66B is 1.1 arcmin from
+    the excess position.
+- Source_ID: 13
+  Source_Name: TeV J0232+2016
+  Other_Names: 1ES 0229+200
+  CLASS: HBL
+  RA: 38.2216666667
+  DEC: 20.2725
+  GLON: 152.96
+  GLAT: -36.62
+  RA_Err_Stat: 0.0129166666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0122222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 6.2e-13
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.5
+  Spectral_Index_Err_Stat: 0.19
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 9.4e-13
+  Flux_Int_Err_Stat: 1.5e-13
+  Flux_Int_Err_Sys: 1.9e-13
+  Flux_Crab: 1.8
+  Distance: '574230'
+  Distance2: '0.14'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2007), A&A 475, L9
+  Comments: Diff. flux normalization calculated from the integral flux and spectral
+    index, assuming 1 TeV as normalization energy.
+- Source_ID: 14
+  Source_Name: TeV J0240+6115
+  Other_Names: LSI +61_303
+  CLASS: XRB
+  RA: 40.1416666667
+  DEC: 61.2569444444
+  GLON: 135.66
+  GLAT: 1.11
+  RA_Err_Stat: 0.00833333333333
+  RA_Err_Sys: 0.0333333333333
+  DEC_Err_Stat: 0.00666666666667
+  DEC_Err_Sys: 0.0333333333333
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.7e-12
+  Flux_Diff_Err_Stat: 4.0e-13
+  Flux_Diff_Err_Sys: 8.0e-13
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.2e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 8.0
+  Distance: '2'
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Albert et al. (2006), Science Vol. 312, 1771
+  Comments: Spectrum from 200 GeV and 4 TeV, calculated at phase=0.4-0.7; maximum
+    flux (16% CU) at orbital phase around 0.6.
+- Source_ID: 15
+  Source_Name: TeV J0303-2407
+  Other_Names: PKS 0301-243/ RBS 0383
+  CLASS: HBL
+  RA: 45.847875
+  DEC: -24.1266277778
+  GLON: 214.62
+  GLAT: -60.2
+  RA_Err_Stat: 0.00495833333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00426388888889
+  DEC_Err_Sys: 0.00541666666667
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.1e-11
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 4.6
+  Spectral_Index_Err_Stat: 0.7
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.3e-12
+  Flux_Int_Err_Stat: 1.1e-12
+  Flux_Int_Err_Sys: 7.0e-13
+  Flux_Crab: 1.4
+  Distance: --
+  Distance2: '0.266'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2013), A&A 559A, 136.
+  Comments: --
+- Source_ID: 16
+  Source_Name: TeV J0316+4119
+  Other_Names: MAGIC J0317+413/ IC 310
+  CLASS: AGN
+  RA: 49.1791666667
+  DEC: 41.3247222222
+  GLON: 150.18
+  GLAT: -13.74
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.1e-12
+  Flux_Diff_Err_Stat: 2.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.0
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 3.1e-12
+  Flux_Int_Err_Stat: 5.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.5
+  Distance: --
+  Distance2: '0.0189'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2010), ApJ Lett. 723, L207
+  Comments: No position is quoted. Coordinates from NED.
+- Source_ID: 17
+  Source_Name: TeV J0319+1845
+  Other_Names: RBS 0413/ EXO 0317.0+1834/1E 0317.0+1835
+  CLASS: HBL
+  RA: 49.9458333333
+  DEC: 18.7616666667
+  GLON: 165.08
+  GLAT: -31.71
+  RA_Err_Stat: 0.0166666666667
+  RA_Err_Sys: 0.0291666666667
+  DEC_Err_Stat: 0.0166666666667
+  DEC_Err_Sys: 0.03
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.38e-11
+  Flux_Diff_Err_Stat: 5.2e-12
+  Flux_Diff_Err_Sys: 6.0e-12
+  Spectral_Index: 3.18
+  Spectral_Index_Err_Stat: 0.68
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 1.5e-12
+  Flux_Int_Err_Stat: 6.0e-13
+  Flux_Int_Err_Sys: 7.0e-13
+  Flux_Crab: 1.0
+  Distance: --
+  Distance2: '0.190'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Aliu et al. (2012), ApJ 750, 94
+  Comments: --
+- Source_ID: 18
+  Source_Name: TeV J0319+4130
+  Other_Names: NGC 1275
+  CLASS: FRI
+  RA: 49.9504166667
+  DEC: 41.5116944444
+  GLON: 150.57
+  GLAT: -13.26
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 3.1e-10
+  Flux_Diff_Err_Stat: 1.0e-10
+  Flux_Diff_Err_Sys: 7.0e-11
+  Spectral_Index: 4.1
+  Spectral_Index_Err_Stat: 0.7
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 1.3e-11
+  Flux_Int_Err_Stat: 2.0e-12
+  Flux_Int_Err_Sys: 3.0e-12
+  Flux_Crab: 2.5
+  Distance: --
+  Distance2: '0.0179'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2012), A&A 539, L2
+  Comments: Coordinates from NED (2002ApJS 141 13B). Spectrum between 70 GeV and 500
+    GeV.
+- Source_ID: 19
+  Source_Name: TeV J0349-1158
+  Other_Names: 1ES 0347-121
+  CLASS: HBL
+  RA: 57.3458333333
+  DEC: -11.9772222222
+  GLON: 201.9
+  GLAT: -45.71
+  RA_Err_Stat: 0.00583333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00916666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 4.52e-13
+  Flux_Diff_Err_Stat: 8.5e-14
+  Flux_Diff_Err_Sys: 9.0e-14
+  Spectral_Index: 3.1
+  Spectral_Index_Err_Stat: 0.23
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 3.9e-12
+  Flux_Int_Err_Stat: 1.1e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.0
+  Distance: '762490'
+  Distance2: '0.188'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2007), A&A 473, L25
+  Comments: --
+- Source_ID: 20
+  Source_Name: TeV J0416+0105
+  Other_Names: 1ES 0414+009
+  CLASS: HBL
+  RA: 64.2206666667
+  DEC: 1.089
+  GLON: 191.81
+  GLAT: -33.16
+  RA_Err_Stat: 0.000416666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00416666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 5.7e-12
+  Flux_Diff_Err_Stat: 6.2e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 3.45
+  Spectral_Index_Err_Stat: 0.25
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.88e-12
+  Flux_Int_Err_Stat: 2.0e-13
+  Flux_Int_Err_Sys: 3.8e-13
+  Flux_Crab: 0.6
+  Distance: --
+  Distance2: '0.287'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), A&A 538, 103
+  Comments: --
+- Source_ID: 21
+  Source_Name: TeV J0449-4350
+  Other_Names: PKS 0447-439
+  CLASS: HBL
+  RA: 72.3675
+  DEC: -43.8366666667
+  GLON: 248.8
+  GLAT: -39.91
+  RA_Err_Stat: 0.00583333333333
+  RA_Err_Sys: 0.00416666666667
+  DEC_Err_Stat: 0.00416666666667
+  DEC_Err_Sys: 0.005
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 3.5e-13
+  Flux_Diff_Err_Stat: 1.1e-13
+  Flux_Diff_Err_Sys: 9.0e-14
+  Spectral_Index: 3.89
+  Spectral_Index_Err_Stat: 0.37
+  Spectral_Index_Err_Sys: 0.22
+  Flux_Int: 3.3e-12
+  Flux_Int_Err_Stat: 8.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 3.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2013), A&A 552, A118
+  Comments: --
+- Source_ID: 22
+  Source_Name: TeV J0507+6737
+  Other_Names: 1ES 0502+675
+  CLASS: HBL
+  RA: 76.984375
+  DEC: 67.6234444444
+  GLON: 143.79
+  GLAT: 15.89
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 3.9
+  Spectral_Index_Err_Stat: 0.4
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 6.0
+  Distance: --
+  Distance2: '0.341'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Benbow (2011), 32nd ICRC
+  Comments: Data from Benbow (2011), 32nd ICRC.
+- Source_ID: 23
+  Source_Name: TeV J0521+2112
+  Other_Names: RGB J0521.8+211/ VER J0521+211
+  CLASS: IBL
+  RA: 80.4375
+  DEC: 21.2142777778
+  GLON: 183.6
+  GLAT: -8.72
+  RA_Err_Stat: 0.00416666666667
+  RA_Err_Sys: 0.00708333333333
+  DEC_Err_Stat: 0.00388888888889
+  DEC_Err_Sys: 0.00694444444444
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.99e-11
+  Flux_Diff_Err_Stat: 1.8e-12
+  Flux_Diff_Err_Sys: 8.0e-12
+  Spectral_Index: 3.44
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 1.93e-11
+  Flux_Int_Err_Stat: 1.3e-13
+  Flux_Int_Err_Sys: 7.8e-13
+  Flux_Crab: 9.2
+  Distance: --
+  Distance2: --
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Archambault et al. (2013), ApJ 776, 69
+  Comments: Data from Archambault et al. (2013), ApJ 776, 69.
+- Source_ID: 24
+  Source_Name: TeV J0525-6938
+  Other_Names: LMC N132D/ SNR J052501-693842
+  CLASS: SNR/MC
+  RA: 81.2591666667
+  DEC: -69.6441666667
+  GLON: 280.3
+  GLAT: -32.79
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.3e-13
+  Flux_Diff_Err_Stat: 5.0e-14
+  Flux_Diff_Err_Sys: 4.0e-14
+  Spectral_Index: 2.4
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2015), Science 347, 406
+  Comments: Data from Acero et al. (2015), Science 347, 406.
+- Source_ID: 25
+  Source_Name: TeV J0534+2200
+  Other_Names: Crab/ G 184.6-5.8/ 3C 144/ SN 1054
+  CLASS: PWN
+  RA: 83.6295833333
+  DEC: 22.0144444444
+  GLON: 184.55
+  GLAT: -5.79
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '2'
+  Distance2: --
+  Discoverer: WHIPPLE
+  Observatory: MAGIC
+  Reference: Aliu et al. (2008), Science 322, 1222
+  Comments: 'Pulsar emission. Spectrum with exp. cutoff: A*E^(-alpha)*exp[-(E/Ec)^beta].'
+- Source_ID: 26
+  Source_Name: TeV J0535-6911
+  Other_Names: 30 Dor C
+  CLASS: Superbubble
+  RA: 83.9791666667
+  DEC: -69.1861111111
+  GLON: 279.59
+  GLAT: -31.91
+  RA_Err_Stat: 0.0208333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00555555555556
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.6e-13
+  Flux_Diff_Err_Stat: 4.0e-14
+  Flux_Diff_Err_Sys: 5.0e-14
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2015), Science 347, 406
+  Comments: Data from Acero et al. (2015), Science 347, 406.
+- Source_ID: 27
+  Source_Name: TeV J0537-6909
+  Other_Names: N 157B/ PSR J0537-6910
+  CLASS: PWN
+  RA: 84.4333333333
+  DEC: -69.1658333333
+  GLON: 279.55
+  GLAT: -31.76
+  RA_Err_Stat: 0.00833333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00305555555556
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.3e-12
+  Flux_Diff_Err_Stat: 1.0e-13
+  Flux_Diff_Err_Sys: 4.0e-13
+  Spectral_Index: 2.8
+  Spectral_Index_Err_Stat: 0.1
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2015), Science 347, 406
+  Comments: Data from Acero et al. (2015), Science 347, 406.
+- Source_ID: 28
+  Source_Name: TeV J0550-3216
+  Other_Names: PKS 0548-322/ H 0548-322/ 1ES 0548-322
+  CLASS: HBL
+  RA: 87.66
+  DEC: -32.27025
+  GLON: 237.56
+  GLAT: -26.16
+  RA_Err_Stat: 0.0133333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0111666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 3.8e-13
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.86
+  Spectral_Index_Err_Stat: 0.34
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 2.7e-12
+  Flux_Int_Err_Stat: 6.0e-13
+  Flux_Int_Err_Sys: 5.0e-13
+  Flux_Crab: 1.3
+  Distance: '287400'
+  Distance2: '0.069'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2010), A&A 521, A69
+  Comments: Data from Aharonian et al. (2010), A&A 521, A69.
+- Source_ID: 29
+  Source_Name: TeV J0616+2230
+  Other_Names: IC 443/ SNR 189.1+03.0/ MAGIC 0616+223
+  CLASS: SNR
+  RA: 94.2125
+  DEC: 22.5030555556
+  GLON: 189.07
+  GLAT: 2.91
+  RA_Err_Stat: 0.0291666666667
+  RA_Err_Sys: 0.0791666666667
+  DEC_Err_Stat: 0.03
+  DEC_Err_Sys: 0.08
+  Is_Extended: true
+  Semimajor: 0.16
+  Semimajor_Err: 0.04
+  Semiminor: 0.16
+  Semiminor_Err: 0.04
+  Rotation_Angle: .nan
+  Flux_Diff: 8.38e-13
+  Flux_Diff_Err_Stat: 2.1e-13
+  Flux_Diff_Err_Sys: 2.5e-13
+  Spectral_Index: 2.99
+  Spectral_Index_Err_Stat: 0.38
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 4.63e-12
+  Flux_Int_Err_Stat: 9.0e-13
+  Flux_Int_Err_Sys: 9.3e-13
+  Flux_Crab: 3.2
+  Distance: '1.5'
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: VERITAS
+  Reference: Acciari et al. (2009), ApJL 698, L133
+  Comments: Spectral properties valid from 0.317 to 2.0 TeV.
+- Source_ID: 30
+  Source_Name: TeV J0632+0548
+  Other_Names: HESS J0632+057
+  CLASS: XRB
+  RA: 98.2429166667
+  DEC: 5.80555555556
+  GLON: 205.66
+  GLAT: -1.45
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.2e-12
+  Flux_Diff_Err_Stat: 3.0e-13
+  Flux_Diff_Err_Sys: 2.0e-13
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 8.8e-12
+  Flux_Int_Err_Stat: 1.7e-12
+  Flux_Int_Err_Sys: 2.1e-12
+  Flux_Crab: 4.0
+  Distance: '1.6'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2012), ApJ 754, L10
+  Comments: Source detected during the Feb. 2011 outburst.
+- Source_ID: 31
+  Source_Name: TeV J0632+1722
+  Other_Names: MGRO J0632+17/ Geminga PWN
+  CLASS: PWN
+  RA: 98.1166666667
+  DEC: 17.3666666667
+  GLON: 195.33
+  GLAT: 3.77
+  RA_Err_Stat: 0.4
+  RA_Err_Sys: 0.3
+  DEC_Err_Stat: 0.4
+  DEC_Err_Sys: 0.3
+  Is_Extended: true
+  Semimajor: 1.3
+  Semimajor_Err: 0.2
+  Semiminor: 1.3
+  Semiminor_Err: 0.2
+  Rotation_Angle: .nan
+  Flux_Diff: 3.77e-16
+  Flux_Diff_Err_Stat: 1.07e-16
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '0.169'
+  Distance2: --
+  Discoverer: MILAGRO
+  Observatory: MILAGRO
+  Reference: Abdo et al. (2009), ApJ 700, L127
+  Comments: --
+- Source_ID: 32
+  Source_Name: TeV J06481516
+  Other_Names: RX J0648.7+1516/ VER J0648+152
+  CLASS: HBL
+  RA: 102.19
+  DEC: 15.27
+  GLON: 198.98
+  GLAT: 6.31
+  RA_Err_Stat: 0.11
+  RA_Err_Sys: 0.00708333333333
+  DEC_Err_Stat: 0.12
+  DEC_Err_Sys: 0.00694444444444
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.3e-11
+  Flux_Diff_Err_Stat: 5.0e-12
+  Flux_Diff_Err_Sys: 1.2e-11
+  Spectral_Index: 4.4
+  Spectral_Index_Err_Stat: 0.8
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 3.3
+  Distance: --
+  Distance2: '0.179'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Aliu et al. (2011), ApJ 742, 127
+  Comments: --
+- Source_ID: 33
+  Source_Name: TeV J0650+2503
+  Other_Names: 1ES 0647+250/ 1RXS J065046.7+250257
+  CLASS: HBL
+  RA: 102.69375
+  DEC: 25.05
+  GLON: 190.28
+  GLAT: 10.99
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: '0.41'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: de Lotto et al. (2011), TAUP 2011
+  Comments: Position taken from NED (2007ApJS 171 61H). No information on the positional
+    uncertainty available. Tentative detection by MAGIC.
+- Source_ID: 34
+  Source_Name: TeV J0710+5909
+  Other_Names: RGB J0710+591/ RX J0710.5+5908
+  CLASS: HBL
+  RA: 107.61
+  DEC: 59.15
+  GLON: 157.39
+  GLAT: 25.42
+  RA_Err_Stat: 0.01
+  RA_Err_Sys: 0.025
+  DEC_Err_Stat: 0.01
+  DEC_Err_Sys: 0.025
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 7.3e-13
+  Flux_Diff_Err_Stat: 2.2e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.69
+  Spectral_Index_Err_Stat: 0.26
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.9e-12
+  Flux_Int_Err_Stat: 8.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 3.0
+  Distance: --
+  Distance2: '0.125'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Acciari et al. (2010), ApJ 715, L49
+  Comments: --
+- Source_ID: 35
+  Source_Name: TeV J0721+7120
+  Other_Names: S5 0716+714/ 1H 0717+714
+  CLASS: LBL
+  RA: 110.4725
+  DEC: 71.3434444444
+  GLON: 143.98
+  GLAT: 28.01
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.4e-11
+  Flux_Diff_Err_Stat: 8.0e-12
+  Flux_Diff_Err_Sys: 7.0e-12
+  Spectral_Index: 3.45
+  Spectral_Index_Err_Stat: 0.54
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 7.5e-12
+  Flux_Int_Err_Stat: 2.2e-12
+  Flux_Int_Err_Sys: 2.3e-12
+  Flux_Crab: 9.0
+  Distance: '1217000'
+  Distance2: '0.31'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Anderhub et al. (2009), ApJ, 704, L129
+  Comments: Position provided by NED (1995AJ 110 880J). Data from Anderhub et al.
+    (2009), ApJ, 704, L129 refer to only 2008 observations.
+- Source_ID: 36
+  Source_Name: TeV J0809+5219
+  Other_Names: 1ES 0806+524
+  CLASS: HBL
+  RA: 122.495833333
+  DEC: 52.3166666667
+  GLON: 166.24
+  GLAT: 32.93
+  RA_Err_Stat: 0.0375
+  RA_Err_Sys: 0.0291666666667
+  DEC_Err_Stat: 0.0333333333333
+  DEC_Err_Sys: 0.0277777777778
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 6.8e-12
+  Flux_Diff_Err_Stat: 1.7e-12
+  Flux_Diff_Err_Sys: 1.3e-12
+  Spectral_Index: 3.6
+  Spectral_Index_Err_Stat: 1.0
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 2.2e-12
+  Flux_Int_Err_Stat: 5.0e-13
+  Flux_Int_Err_Sys: 4.0e-13
+  Flux_Crab: 1.8
+  Distance: '566280'
+  Distance2: '0.138'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Acciari et al (2009), ApJ 690, L126
+  Comments: Spectral properties valid from 300 and 700 GeV.
+- Source_ID: 37
+  Source_Name: TeV J0835-4536
+  Other_Names: Vela X/ HESS J0835-455
+  CLASS: PWN
+  RA: 128.75
+  DEC: -45.6
+  GLON: 263.85
+  GLAT: -3.1
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.52
+  Semimajor_Err: 0.02
+  Semiminor: 0.12
+  Semiminor_Err: 0.02
+  Rotation_Angle: 30.0
+  Flux_Diff: 1.46e-11
+  Flux_Diff_Err_Stat: 8.0e-13
+  Flux_Diff_Err_Sys: 3.0e-12
+  Spectral_Index: 1.32
+  Spectral_Index_Err_Stat: 0.06
+  Spectral_Index_Err_Sys: 0.12
+  Flux_Int: 2.1e-11
+  Flux_Int_Err_Stat: 1.9e-12
+  Flux_Int_Err_Sys: 4.4e-12
+  Flux_Crab: .nan
+  Distance: '0.29'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), A&A 548, A38
+  Comments: 'Only events with E>0.75 TeV. Observation of emission up to 1.2deg from
+    the center. Best-fit spectrum: PL+exp. cutoff: N0(E/1 TeV)^(-Gamma)E^(-E/Ecutoff),
+    with Gamma=1.4+/-0.2+/-0.3; Ecutoff=(13+/-5+/-4)TeV.'
+- Source_ID: 38
+  Source_Name: TeV J0847+1133
+  Other_Names: RBS 0723/ 1RXS J084713.3+113349
+  CLASS: HBL
+  RA: 131.80375
+  DEC: 11.5639722222
+  GLON: 215.45
+  GLAT: 30.88
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.5
+  Distance: --
+  Distance2: '0.198'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: 'Mirzoyan et al. (2014) Atel. #5768'
+  Comments: Position taken from NED (2007SDSS6.C 0000:). No information on the positional
+    uncertainty available. Source detected during high emission state in January 2014.
+- Source_ID: 39
+  Source_Name: TeV J0852-4622
+  Other_Names: RX J0852.0-4622/ Vela Junior/ HESS J0852-463
+  CLASS: SNR
+  RA: 133.0
+  DEC: -46.3666666667
+  GLON: 266.28
+  GLAT: -1.25
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 1.0
+  Semimajor_Err: .nan
+  Semiminor: 1.0
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.24
+  Spectral_Index_Err_Stat: 0.04
+  Spectral_Index_Err_Sys: 0.15
+  Flux_Int: 1.52e-11
+  Flux_Int_Err_Stat: 7.0e-13
+  Flux_Int_Err_Sys: 3.2e-12
+  Flux_Crab: 70.0
+  Distance: '0.2'
+  Distance2: --
+  Discoverer: CANGAROO
+  Observatory: HESS
+  Reference: Aharonian et al. (2007), ApJ 661, 236
+  Comments: --
+- Source_ID: 40
+  Source_Name: TeV J0955+6940
+  Other_Names: NGC 3034/ M 82
+  CLASS: Starburst
+  RA: 148.969708333
+  DEC: 69.6802166667
+  GLON: 141.4
+  GLAT: 40.56
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 3.3e-13
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.5
+  Spectral_Index_Err_Stat: 0.6
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.7e-13
+  Flux_Int_Err_Stat: 8.0e-14
+  Flux_Int_Err_Sys: 7.0e-14
+  Flux_Crab: 0.9
+  Distance: '3900'
+  Distance2: '0.000677'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Karlsson et al. (2009), 2009 Fermi Symp.
+  Comments: Data from Karlsson et al. (2009), 2009 Fermi Symp. Position from NED.
+    Observed from January 2008 to April 2009.
+- Source_ID: 41
+  Source_Name: TeV J0958+6533
+  Other_Names: S4 0954+65
+  CLASS: FSRQ
+  RA: 149.695833333
+  DEC: 65.5652777778
+  GLON: 145.74
+  GLAT: 43.13
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 2.0e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: '0.368'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: 'Mirzonian et al. (2015), Atel. #7080'
+  Comments: 'Source announced by Mirzonian et al. (2015), Atel. #7080.'
+- Source_ID: 42
+  Source_Name: TeV J1010-3118
+  Other_Names: 1RXS J101015.9-311909
+  CLASS: HBL
+  RA: 152.562625
+  DEC: -31.3051111111
+  GLON: 266.89
+  GLAT: 20.06
+  RA_Err_Stat: 0.0157083333333
+  RA_Err_Sys: 0.0065
+  DEC_Err_Stat: 0.0115555555556
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.87e-13
+  Flux_Diff_Err_Stat: 6.6e-14
+  Flux_Diff_Err_Sys: 3.7e-14
+  Spectral_Index: 3.08
+  Spectral_Index_Err_Stat: 0.42
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.35e-12
+  Flux_Int_Err_Stat: 6.4e-13
+  Flux_Int_Err_Sys: 4.7e-13
+  Flux_Crab: 0.8
+  Distance: '573000'
+  Distance2: '0.14'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), A&A 542, A94
+  Comments: --
+- Source_ID: 43
+  Source_Name: TeV J1015+4926
+  Other_Names: 1ES 1011+496
+  CLASS: HBL
+  RA: 153.767083333
+  DEC: 49.4336111111
+  GLON: 165.53
+  GLAT: 52.71
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.0e-10
+  Flux_Diff_Err_Stat: 1.0e-11
+  Flux_Diff_Err_Sys: 1.5e-10
+  Spectral_Index: 4.0
+  Spectral_Index_Err_Stat: 0.5
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.58e-11
+  Flux_Int_Err_Stat: 3.2e-12
+  Flux_Int_Err_Sys: 1.19e-11
+  Flux_Crab: 7.0
+  Distance: --
+  Distance2: '0.212'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Albert et al. (2007), ApJ 667, L21
+  Comments: Position from NED (2011AJ 142 89P). De-absorbed data from Albert et al.
+    (2007), ApJ 667, L21.
+- Source_ID: 44
+  Source_Name: TeV J1016-5858
+  Other_Names: HESS J1018-589 B/ PSR J1016-5857
+  CLASS: PWN
+  RA: 154.129166667
+  DEC: -58.98
+  GLON: 284.11
+  GLAT: -1.9
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.15
+  Semimajor_Err: 0.03
+  Semiminor: 0.15
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 6.8e-13
+  Flux_Diff_Err_Stat: 1.6e-13
+  Flux_Diff_Err_Sys: 1.4e-13
+  Spectral_Index: 2.9
+  Spectral_Index_Err_Stat: 0.4
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.6e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.8
+  Distance: '8'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), A&A 541, A5
+  Comments: --
+- Source_ID: 45
+  Source_Name: TeV J1018-5856
+  Other_Names: HESS J1018-589 A/ SNR G284.3-1.8
+  CLASS: BIN
+  RA: 154.747083333
+  DEC: -58.9361111111
+  GLON: 284.35
+  GLAT: -1.68
+  RA_Err_Stat: 0.01
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.01
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 4.2e-13
+  Flux_Diff_Err_Stat: 1.1e-13
+  Flux_Diff_Err_Sys: 8.0e-14
+  Spectral_Index: 2.7
+  Spectral_Index_Err_Stat: 0.5
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.5e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.3
+  Distance: '2.9'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), A&A 541, A5
+  Comments: --
+- Source_ID: 46
+  Source_Name: TeV J1023-5747
+  Other_Names: Westerlund 2/ HESS J1023-575
+  CLASS: WR/MSC
+  RA: 155.85
+  DEC: -57.79
+  GLON: 284.21
+  GLAT: -0.41
+  RA_Err_Stat: 0.03
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.02
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.18
+  Semimajor_Err: 0.02
+  Semiminor: 0.18
+  Semiminor_Err: 0.02
+  Rotation_Angle: .nan
+  Flux_Diff: 3.3e-12
+  Flux_Diff_Err_Stat: 5.0e-13
+  Flux_Diff_Err_Sys: 6.5e-13
+  Spectral_Index: 2.58
+  Spectral_Index_Err_Stat: 0.19
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.9e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 10.0
+  Distance: '8'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 525, A46
+  Comments: --
+- Source_ID: 47
+  Source_Name: TeV J1026-5812
+  Other_Names: HESS J1026-582
+  CLASS: PWN
+  RA: 156.66
+  DEC: -58.2
+  GLON: 284.79
+  GLAT: -0.53
+  RA_Err_Stat: 0.09
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.03
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.14
+  Semimajor_Err: 0.03
+  Semiminor: 0.14
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 9.9e-13
+  Flux_Diff_Err_Stat: 3.4e-14
+  Flux_Diff_Err_Sys: 2.0e-14
+  Spectral_Index: 1.94
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.3e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 4.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 525, A46
+  Comments: --
+- Source_ID: 48
+  Source_Name: TeV J1103-2329
+  Other_Names: 1ES 1101-232/ 1H 1100-230
+  CLASS: HBL
+  RA: 165.902083333
+  DEC: -23.4958333333
+  GLON: 273.18
+  GLAT: 33.07
+  RA_Err_Stat: 0.0104166666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00722222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 5.6e-13
+  Flux_Diff_Err_Stat: 8.9e-14
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.94
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 4.5e-12
+  Flux_Int_Err_Stat: 1.2e-12
+  Flux_Int_Err_Sys: 9.0e-13
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: '0.186'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2007), A&A 470, 475
+  Comments: Data from Aharonian et al. (2007), A&A 470, 475. Flux normalization is
+    given at 1 TeV.
+- Source_ID: 49
+  Source_Name: TeV J1104+3811
+  Other_Names: Markarian 421
+  CLASS: HBL
+  RA: 166.079166667
+  DEC: 38.1947222222
+  GLON: 179.88
+  GLAT: 65.01
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.2
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '129740'
+  Distance2: '0.031'
+  Discoverer: WHIPPLE
+  Observatory: MAGIC
+  Reference: Albert et al. (2007) ApJ, 663, 125A
+  Comments: De-absorbed spectrum is well fitted by a power law with an exponential
+    cut-off at 1.4 TeV. Value shown in the table are for this fit.
+- Source_ID: 50
+  Source_Name: TeV J1119-6124
+  Other_Names: G 292.2-0.5/ HESS J1119-614/ PSR J1119-6127
+  CLASS: PWN
+  RA: 169.75
+  DEC: -61.4
+  GLON: 292.1
+  GLAT: -0.49
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.1
+  Semimajor_Err: .nan
+  Semiminor: 0.1
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 4.0
+  Distance: '5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Djannati-Atai et al. (2009)
+  Comments: Source detection presented at the Workshop Supernova Remnants and Pulsar
+    Wind Nebulae in the Chandra Era (2009).
+- Source_ID: 51
+  Source_Name: TeV J1136+6737
+  Other_Names: RX J1136.5+6737
+  CLASS: HBL
+  RA: 174.125416667
+  DEC: 67.6178888889
+  GLON: 133.45
+  GLAT: 47.95
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.5
+  Distance: --
+  Distance2: '0.1342'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: 'Mirzoyan et al. (2014) Atel. #6062'
+  Comments: 'Source announced by Mirzoyan et al. (2014), Atel. #6062.'
+- Source_ID: 52
+  Source_Name: TeV J1136+7009
+  Other_Names: Markarian 180/1ES 1133+704/1H 1137+699
+  CLASS: HBL
+  RA: 174.11
+  DEC: 70.1575833333
+  GLON: 131.91
+  GLAT: 45.64
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 4.5e-11
+  Flux_Diff_Err_Stat: 1.8e-11
+  Flux_Diff_Err_Sys: 2.2e-11
+  Spectral_Index: 3.3
+  Spectral_Index_Err_Stat: 0.7
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.3e-11
+  Flux_Int_Err_Stat: 7.0e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 11.0
+  Distance: '187970'
+  Distance2: '0.045'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Albert et al., ApJ Lett. (2006) 648, L105
+  Comments: Data from Albert et al., ApJ Lett. (2006) 648, L105. Position from NED
+    (2004AJ 127 3587F). Flux normalization is given at 300 GeV.
+- Source_ID: 53
+  Source_Name: TeV J1217+3006
+  Other_Names: 1ES 1215+303/ B2 1215+30
+  CLASS: LBL
+  RA: 184.452083333
+  DEC: 30.1016666667
+  GLON: 189.02
+  GLAT: 82.04
+  RA_Err_Stat: 0.00708333333333
+  RA_Err_Sys: 0.0125
+  DEC_Err_Stat: 0.00694444444444
+  DEC_Err_Sys: 0.0138888888889
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.3e-11
+  Flux_Diff_Err_Stat: 5.0e-12
+  Flux_Diff_Err_Sys: 9.0e-12
+  Spectral_Index: 3.6
+  Spectral_Index_Err_Stat: 0.4
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 8.0e-12
+  Flux_Int_Err_Stat: 9.0e-13
+  Flux_Int_Err_Sys: 3.2e-12
+  Flux_Crab: 3.4
+  Distance: --
+  Distance2: '0.130'
+  Discoverer: MAGIC
+  Observatory: VERITAS
+  Reference: Aliu et al. (2013), ApJ 779, 92
+  Comments: Data from Aliu et al. (2013), ApJ 779, 92. Flux data correspondent to
+    the 2011 data campaign.
+- Source_ID: 54
+  Source_Name: TeV J1221+2813
+  Other_Names: W Comae/ ON+231/ B2 1219+28
+  CLASS: IBL
+  RA: 185.382083333
+  DEC: 28.2329166667
+  GLON: 201.74
+  GLAT: 83.28
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 6.5e-11
+  Flux_Diff_Err_Stat: 9.0e-12
+  Flux_Diff_Err_Sys: 1.3e-11
+  Spectral_Index: 3.68
+  Spectral_Index_Err_Stat: 0.22
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 5.7e-11
+  Flux_Int_Err_Stat: 6.0e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 23.0
+  Distance: --
+  Distance2: '0.102'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Acciari et al. (2009), ApJ 707, 612
+  Comments: Data of the 7-9 June 2008 flare. Position from NED (1995AJ 110 880J).
+- Source_ID: 55
+  Source_Name: TeV J1221+3011
+  Other_Names: 1ES 1218+304/ 1H 1219+301/ H 1219+305
+  CLASS: HBL
+  RA: 185.359583333
+  DEC: 30.1913888889
+  GLON: 186.21
+  GLAT: 82.74
+  RA_Err_Stat: 0.0116666666667
+  RA_Err_Sys: 0.0291666666667
+  DEC_Err_Stat: 0.00916666666667
+  DEC_Err_Sys: 0.025
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 7.5e-12
+  Flux_Diff_Err_Stat: 1.1e-12
+  Flux_Diff_Err_Sys: 1.5e-12
+  Spectral_Index: 3.08
+  Spectral_Index_Err_Stat: 0.34
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.22e-11
+  Flux_Int_Err_Stat: 2.6e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 6.0
+  Distance: '739140'
+  Distance2: '0.182'
+  Discoverer: MAGIC
+  Observatory: VERITAS
+  Reference: Acciari et al. (2009), ApJ 695, 1370
+  Comments: --
+- Source_ID: 56
+  Source_Name: TeV J1224+2122
+  Other_Names: 4C +21.35/ PKS 1222+21
+  CLASS: FSRQ
+  RA: 186.227083333
+  DEC: 21.3795555556
+  GLON: 255.08
+  GLAT: 81.65
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 7.8e-10
+  Flux_Diff_Err_Stat: 1.2e-10
+  Flux_Diff_Err_Sys: 3.5e-10
+  Spectral_Index: 3.75
+  Spectral_Index_Err_Stat: 0.27
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 4.6e-10
+  Flux_Int_Err_Stat: 5.0e-11
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 100.0
+  Distance: --
+  Distance2: '0.432'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2011), ApJL 730, L8
+  Comments: 'The source has been detected only in one night (MJD 55364) with Texp:
+    1.8 ksec. Normalization factor is at 200 GeV. Position provided by NED (2002ApJS
+    141 13B).'
+- Source_ID: 57
+  Source_Name: TeV J1224+2436
+  Other_Names: MS 1221.8+2452/ 1RXS J122424.2+243618
+  CLASS: HBL
+  RA: 186.100833333
+  DEC: 24.6066666667
+  GLON: 233.96
+  GLAT: 83.41
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 4.0
+  Distance: --
+  Distance2: '0.218'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: 'Cortina et al. (2013), Atel #5038'
+  Comments: 'Source announced in Atel #5038. Position taken from NED. No information
+    on the positional uncertainty available.'
+- Source_ID: 58
+  Source_Name: TeV J1230+1223
+  Other_Names: M87/ 1ES 1228+126/ 1H 1226+128
+  CLASS: FRI
+  RA: 187.696666667
+  DEC: 12.3975
+  GLON: 283.74
+  GLAT: 74.49
+  RA_Err_Stat: 0.00583333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00527777777778
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.4e-13
+  Flux_Diff_Err_Stat: 7.5e-14
+  Flux_Diff_Err_Sys: 4.8e-14
+  Spectral_Index: 2.62
+  Spectral_Index_Err_Stat: 0.35
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: '0.0044'
+  Discoverer: HEGRA
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), Science 314, 1424
+  Comments: Data of the 2004 campaign from Aharonian et al. (2006), Science 314, 1424.
+    Year-by-year light curve (2003-2006).
+- Source_ID: 59
+  Source_Name: TeV J1256-0547
+  Other_Names: 3C 279
+  CLASS: FSRQ
+  RA: 194.04625
+  DEC: -5.78944444444
+  GLON: 305.1
+  GLAT: 57.06
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 5.15e-10
+  Flux_Int_Err_Stat: 8.2e-11
+  Flux_Int_Err_Sys: 1.5e-10
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: '0.536'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: --
+  Comments: Position from NED.
+- Source_ID: 60
+  Source_Name: TeV J1302-6349
+  Other_Names: PSR B1259-63
+  CLASS: XRB
+  RA: 195.705416667
+  DEC: -63.8313888889
+  GLON: 304.18
+  GLAT: -0.99
+  RA_Err_Stat: 0.00958333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00472222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.3e-12
+  Flux_Diff_Err_Stat: 1.0e-13
+  Flux_Diff_Err_Sys: 4.0e-13
+  Spectral_Index: 2.7
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 4.0e-12
+  Flux_Int_Err_Stat: 4.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 4.9
+  Distance: '1.5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2005), A&A 442, 1
+  Comments: --
+- Source_ID: 61
+  Source_Name: TeV J1302-6310
+  Other_Names: HESS J1303-631
+  CLASS: PWN
+  RA: 195.7
+  DEC: -63.1775
+  GLON: 304.21
+  GLAT: -0.34
+  RA_Err_Stat: 0.0125
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00666666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.194
+  Semimajor_Err: 0.008
+  Semiminor: 0.145
+  Semiminor_Err: 0.006
+  Rotation_Angle: 147.0
+  Flux_Diff: 5.9e-12
+  Flux_Diff_Err_Stat: 3.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.44
+  Spectral_Index_Err_Stat: 0.03
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '6.6'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), A&A 548, A46
+  Comments: 'Data from Abramowski et al. (2012), A&A 548, A46. Rotation angle 147+/-6
+    deg, counted clockwise from North. Spectrum best described by a power-law with
+    an exponential cut-off: N_0=(5.6 +/- 0.5)E-12 ph/TeV/cm2/s; Gamma=1.5 +/- 0.2;
+    Ec=(7.7 +/- 2.2) TeV.'
+- Source_ID: 62
+  Source_Name: TeV J1314-4235
+  Other_Names: 1ES 1312-423
+  CLASS: HBL
+  RA: 198.74375
+  DEC: -42.5969444444
+  GLON: 307.54
+  GLAT: 20.06
+  RA_Err_Stat: 0.0175
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0133333333333
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.9e-13
+  Flux_Diff_Err_Stat: 5.8e-14
+  Flux_Diff_Err_Sys: 2.4e-14
+  Spectral_Index: 2.85
+  Spectral_Index_Err_Stat: 0.47
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 0.5
+  Distance: --
+  Distance2: '0.105'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2013), MNRAS 434, 1889
+  Comments: --
+- Source_ID: 63
+  Source_Name: TeV J1325-4300
+  Other_Names: Centaurus A
+  CLASS: FRI
+  RA: 201.36
+  DEC: -43.0116666667
+  GLON: 309.51
+  GLAT: 19.42
+  RA_Err_Stat: 0.0191666666667
+  RA_Err_Sys: 0.00833333333333
+  DEC_Err_Stat: 0.0183333333333
+  DEC_Err_Sys: 0.00833333333333
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.5e-13
+  Flux_Diff_Err_Stat: 5.2e-14
+  Flux_Diff_Err_Sys: 4.9e-14
+  Spectral_Index: 2.73
+  Spectral_Index_Err_Stat: 0.45
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.56e-12
+  Flux_Int_Err_Stat: 6.7e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 0.8
+  Distance: --
+  Distance2: '0.00183'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2009), ApJ 695, L40
+  Comments: --
+- Source_ID: 64
+  Source_Name: TeV J1356-6430
+  Other_Names: HESS J1356-645/ PSR J1357-6429
+  CLASS: PWN
+  RA: 209.0
+  DEC: -64.5
+  GLON: 309.81
+  GLAT: -2.5
+  RA_Err_Stat: 0.0333333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0333333333333
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.2
+  Semimajor_Err: 0.02
+  Semiminor: 0.2
+  Semiminor_Err: 0.02
+  Rotation_Angle: .nan
+  Flux_Diff: 2.7e-12
+  Flux_Diff_Err_Stat: 9.0e-13
+  Flux_Diff_Err_Sys: 4.0e-13
+  Spectral_Index: 2.2
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.3e-12
+  Flux_Int_Err_Stat: 5.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 11.0
+  Distance: '2.4'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 533, A103
+  Comments: --
+- Source_ID: 65
+  Source_Name: TeV J1418-6058
+  Other_Names: G313.3+0.1/ HESS J1418-609/ Kookaburra (Rabbit)
+  CLASS: PWN
+  RA: 214.516666667
+  DEC: -60.9752777778
+  GLON: 313.24
+  GLAT: 0.14
+  RA_Err_Stat: 0.0291666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00972222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.082
+  Semimajor_Err: 0.025
+  Semiminor: 0.045
+  Semiminor_Err: 0.012
+  Rotation_Angle: 46.2
+  Flux_Diff: 2.6e-12
+  Flux_Diff_Err_Stat: 2.0e-13
+  Flux_Diff_Err_Sys: 5.3e-13
+  Spectral_Index: 2.22
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 2.17e-12
+  Flux_Int_Err_Stat: 1.7e-13
+  Flux_Int_Err_Sys: 4.3e-13
+  Flux_Crab: 9.6
+  Distance: '5.6'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), A&A 456, 245
+  Comments: 'Data from Aharonian et al. (2006), A&A 456, 245. Rotation angle: (46.2+/-20.4)deg
+    - major axis, North to East).'
+- Source_ID: 66
+  Source_Name: TeV J1420-6045
+  Other_Names: PSR J1420-6048/ HESS J1420-607/ Kookaburra (Pulsar)
+  CLASS: PWN
+  RA: 215.0375
+  DEC: -60.76
+  GLON: 313.55
+  GLAT: 0.26
+  RA_Err_Stat: 0.0166666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00888888888889
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.055
+  Semimajor_Err: 0.008
+  Semiminor: 0.055
+  Semiminor_Err: 0.088
+  Rotation_Angle: .nan
+  Flux_Diff: 3.5e-12
+  Flux_Diff_Err_Stat: 2.0e-13
+  Flux_Diff_Err_Sys: 7.0e-13
+  Spectral_Index: 2.17
+  Spectral_Index_Err_Stat: 0.06
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 2.97e-12
+  Flux_Int_Err_Stat: 1.8e-13
+  Flux_Int_Err_Sys: 6.0e-13
+  Flux_Crab: 0.07
+  Distance: '5.6'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), A&A 456, 245
+  Comments: --
+- Source_ID: 67
+  Source_Name: TeV J14272347
+  Other_Names: PKS 1424+240
+  CLASS: IBL
+  RA: 216.75
+  DEC: 23.7944444444
+  GLON: 29.46
+  GLAT: 68.2
+  RA_Err_Stat: 0.0291666666667
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: 0.0333333333333
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 5.1e-11
+  Flux_Diff_Err_Stat: 9.0e-12
+  Flux_Diff_Err_Sys: 5.0e-12
+  Spectral_Index: 3.8
+  Spectral_Index_Err_Stat: 0.5
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 5.0
+  Distance: --
+  Distance2: <0.66
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Acciari et al. (2010), ApJL 708, L100
+  Comments: --
+- Source_ID: 68
+  Source_Name: TeV J1427-6051
+  Other_Names: HESS J1427-608
+  CLASS: UNID
+  RA: 216.966666667
+  DEC: -60.85
+  GLON: 314.4
+  GLAT: -0.15
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.04
+  Semimajor_Err: 0.02
+  Semiminor: 0.08
+  Semiminor_Err: 0.03
+  Rotation_Angle: 80.0
+  Flux_Diff: 1.3e-12
+  Flux_Diff_Err_Stat: 4.0e-13
+  Flux_Diff_Err_Sys: 3.0e-13
+  Spectral_Index: 2.16
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.16e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 5.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 477, 353
+  Comments: 'Rotation angle: (80+/-17)deg (clockwise from RA axis).'
+- Source_ID: 69
+  Source_Name: TeV J1428+4240
+  Other_Names: H 1426+428/ 1ES 1426+428
+  CLASS: HBL
+  RA: 217.13625
+  DEC: 42.6724166667
+  GLON: 77.48
+  GLAT: 64.89
+  RA_Err_Stat: 0.01375
+  RA_Err_Sys: 0.00708333333333
+  DEC_Err_Stat: 0.0138888888889
+  DEC_Err_Sys: 0.00694444444444
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.0e-12
+  Flux_Diff_Err_Stat: 1.3e-12
+  Flux_Diff_Err_Sys: 1.0e-13
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: 0.6
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 1.7e-12
+  Flux_Int_Err_Stat: 5.0e-13
+  Flux_Int_Err_Sys: 1.0e-13
+  Flux_Crab: 10.0
+  Distance: --
+  Distance2: '0.129'
+  Discoverer: HEGRA
+  Observatory: WHIPPLE
+  Reference: Aharonian et al. (2002), A&A 384, L23
+  Comments: --
+- Source_ID: 70
+  Source_Name: TeV J1442-6226
+  Other_Names: RCW 86/ G315.4-2.3/ MSH 14-63
+  CLASS: SNR
+  RA: 220.679166667
+  DEC: -62.4448888889
+  GLON: 315.41
+  GLAT: -2.31
+  RA_Err_Stat: 0.05875
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0184722222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.41
+  Semimajor_Err: 0.03
+  Semiminor: 0.41
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 3.7e-12
+  Flux_Diff_Err_Stat: 5.0e-13
+  Flux_Diff_Err_Sys: 8.0e-13
+  Spectral_Index: 2.54
+  Spectral_Index_Err_Stat: 0.12
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.34e-12
+  Flux_Int_Err_Stat: 3.0e-13
+  Flux_Int_Err_Sys: 5.0e-13
+  Flux_Crab: 10.0
+  Distance: '2.5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), ApJ 692, 1500
+  Comments: 'Shell-like morphology: outer rad=(24.43+/-1.79)arcmin; width=(12.39+/-4.22)arcmin.'
+- Source_ID: 71
+  Source_Name: TeV J1442+1200
+  Other_Names: 1ES 1440+122
+  CLASS: HBL
+  RA: 220.70125
+  DEC: 12.0111944444
+  GLON: 8.32
+  GLAT: 59.83
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 3.4
+  Spectral_Index_Err_Stat: 0.7
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.0
+  Distance: --
+  Distance2: '0.162'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Benbow et al. (2011), 32nd ICRC
+  Comments: Data from Benbow (2011), 32nd ICRC. Position from NED (2006SDSS5.C 0000:).
+- Source_ID: 72
+  Source_Name: TeV J1457-5928
+  Other_Names: HESS J1457-593/ G318.2+0.1
+  CLASS: SNR/MC
+  RA: 224.441666667
+  DEC: -59.4666666667
+  GLON: 318.36
+  GLAT: -0.44
+  RA_Err_Stat: 0.1375
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0833333333333
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.31
+  Semimajor_Err: 0.07
+  Semiminor: 0.17
+  Semiminor_Err: 0.05
+  Rotation_Angle: 67.0
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '3.5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Hofverberg et al. (2011), 25th Texas Symp. Rel. A
+  Comments: 'Data from Hofverberg et al. (2011), 25th Texas Symposium on Relativistic
+    Astrophysics. Orientation angle: (67+/-15)deg.'
+- Source_ID: 73
+  Source_Name: TeV J1458-6052
+  Other_Names: HESS J1458-608/ PSR J1459-6053
+  CLASS: PWN
+  RA: 224.54
+  DEC: -60.8772222222
+  GLON: 317.74
+  GLAT: -1.71
+  RA_Err_Stat: 0.0291666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00111111111111
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.17
+  Semimajor_Err: 0.07
+  Semiminor: 0.17
+  Semiminor_Err: 0.07
+  Rotation_Angle: .nan
+  Flux_Diff: 2.1e-12
+  Flux_Diff_Err_Stat: 4.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.8
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 1.2e-12
+  Flux_Int_Err_Stat: 4.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 6.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Reyes et al. (2011), 32nd ICRC
+  Comments: Data from Reyes et al. (2011), 32nd ICRC.
+- Source_ID: 74
+  Source_Name: TeV J1502-4107
+  Other_Names: SN 1006-SW/ HESS J1502-421
+  CLASS: SNR
+  RA: 225.5125
+  DEC: -41.1180555556
+  GLON: 327.86
+  GLAT: 15.34
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.13
+  Semimajor_Err: .nan
+  Semiminor: 0.13
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.29
+  Spectral_Index_Err_Stat: 0.18
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.55e-13
+  Flux_Int_Err_Stat: 3.7e-14
+  Flux_Int_Err_Sys: 3.1e-14
+  Flux_Crab: 0.8
+  Distance: '2.2'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2010), A&A 516, A62
+  Comments: 'Center of the shell: RA=15h02m51.1s; DEC=-41d55m32.2s. Center of SW-excess
+    from HESS catalog.'
+- Source_ID: 75
+  Source_Name: TeV J1503-5813
+  Other_Names: HESS J1503-582
+  CLASS: UNID
+  RA: 225.908333333
+  DEC: -58.2291666667
+  GLON: 319.61
+  GLAT: 0.29
+  RA_Err_Stat: 0.1
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.1
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.26
+  Semimajor_Err: .nan
+  Semiminor: 0.26
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.6e-12
+  Flux_Diff_Err_Stat: 6.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.4
+  Spectral_Index_Err_Stat: 0.4
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 6.0e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 6.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Renaud et al. (2008), arXiv:0811.1552
+  Comments: Data from Renaud et al. (2008), arXiv:0811.1552.
+- Source_ID: 76
+  Source_Name: TeV J1504-4148
+  Other_Names: SN 1006-NE/ HESS J1504-418
+  CLASS: SNR
+  RA: 226.014166667
+  DEC: -41.8030555556
+  GLON: 327.84
+  GLAT: 14.56
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.12
+  Semimajor_Err: .nan
+  Semiminor: 0.12
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.35
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.33e-13
+  Flux_Int_Err_Stat: 4.3e-14
+  Flux_Int_Err_Sys: 4.7e-14
+  Flux_Crab: 0.9
+  Distance: '2.2'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2010), A&A 516, A62
+  Comments: 'Center of the shell: RA=15h02m51.1s; DEC=-41d55m32.2s. Center of NE-excess
+    from HESS catalog.'
+- Source_ID: 77
+  Source_Name: TeV J1506-6221
+  Other_Names: HESS J1507-622
+  CLASS: UNID
+  RA: 226.720833333
+  DEC: -62.35
+  GLON: 317.94
+  GLAT: -3.5
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.03
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.15
+  Semimajor_Err: 0.02
+  Semiminor: 0.15
+  Semiminor_Err: 0.02
+  Rotation_Angle: .nan
+  Flux_Diff: 3.1e-12
+  Flux_Diff_Err_Stat: 8.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.49
+  Spectral_Index_Err_Stat: 0.18
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.1e-12
+  Flux_Int_Err_Stat: 6.0e-13
+  Flux_Int_Err_Sys: 4.0e-13
+  Flux_Crab: 8.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2011), A&A 525, A45
+  Comments: --
+- Source_ID: 78
+  Source_Name: TeV J1512-0906
+  Other_Names: PKS 1510-089
+  CLASS: FSRQ
+  RA: 228.2175
+  DEC: -9.106
+  GLON: 351.28
+  GLAT: 40.12
+  RA_Err_Stat: 0.0075
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00736111111111
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.1e-10
+  Flux_Diff_Err_Stat: 2.0e-11
+  Flux_Diff_Err_Sys: 2.0e-11
+  Spectral_Index: 5.4
+  Spectral_Index_Err_Stat: 0.7
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 1.0e-11
+  Flux_Int_Err_Stat: 2.0e-12
+  Flux_Int_Err_Sys: 2.0e-12
+  Flux_Crab: 3.0
+  Distance: --
+  Distance2: '0.361'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2013), A&A 554, A107
+  Comments: Integral flux and spectrum between 0.15 and 1.0 TeV.
+- Source_ID: 79
+  Source_Name: TeV J1513-5914
+  Other_Names: MSH 15-52/ PSR B1509-58
+  CLASS: PWN
+  RA: 228.485833333
+  DEC: -59.235
+  GLON: 320.27
+  GLAT: -1.25
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.21
+  Semimajor_Err: 0.08
+  Semiminor: 0.07
+  Semiminor_Err: 0.07
+  Rotation_Angle: 61.3
+  Flux_Diff: 7.9e-13
+  Flux_Diff_Err_Stat: 1.5e-13
+  Flux_Diff_Err_Sys: 1.7e-13
+  Spectral_Index: 2.21
+  Spectral_Index_Err_Stat: 0.39
+  Spectral_Index_Err_Sys: 0.4
+  Flux_Int: 1.6e-12
+  Flux_Int_Err_Stat: 4.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 6.0
+  Distance: '5.2'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: CANGAROO
+  Reference: Nakamori et al. (2008), ApJ 677, 297
+  Comments: 'Inclination of major axis: (61.3+/-1.9)deg wrt RA axis.'
+- Source_ID: 80
+  Source_Name: TeV J1517-2422
+  Other_Names: AP Librae/ PKS B1514-241
+  CLASS: LBL
+  RA: 229.419166667
+  DEC: -24.3770833333
+  GLON: 340.67
+  GLAT: 27.57
+  RA_Err_Stat: 0.0125
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00511111111111
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 4.3e-12
+  Flux_Diff_Err_Stat: 5.7e-13
+  Flux_Diff_Err_Sys: 8.6e-13
+  Spectral_Index: 2.65
+  Spectral_Index_Err_Stat: 0.19
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: '0.049'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2015), A&A 573, A31
+  Comments: Spectrum fitted between 130 GeV and 6.3TeV.
+- Source_ID: 81
+  Source_Name: TeV J1554-5505
+  Other_Names: G 327.1-1.1
+  CLASS: PWN
+  RA: 238.65
+  DEC: -55.0847222222
+  GLON: 327.15
+  GLAT: -1.08
+  RA_Err_Stat: 0.0166666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0166666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.03
+  Semimajor_Err: 0.01
+  Semiminor: 0.03
+  Semiminor_Err: 0.01
+  Rotation_Angle: .nan
+  Flux_Diff: 1.7e-13
+  Flux_Diff_Err_Stat: 3.0e-14
+  Flux_Diff_Err_Sys: 4.0e-14
+  Spectral_Index: 2.1
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.5
+  Distance: '9'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2012), 32nd ICRC
+  Comments: Integral flux (1-10 TeV)= 1.12 x 10^-12 ergs/cm^2/s.
+- Source_ID: 82
+  Source_Name: TeV J1555+1111
+  Other_Names: PG 1553+113/ 1ES 1553+113
+  CLASS: HBL
+  RA: 238.929333333
+  DEC: 11.1901027778
+  GLON: 21.9
+  GLAT: 43.96
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.61e-10
+  Flux_Diff_Err_Stat: 1.4e-11
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 4.27
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 8.0
+  Distance: '508280'
+  Distance2: '0.129'
+  Discoverer: HESS
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2012), ApJ 748, 46
+  Comments: Data from Aleksic et al. 2012. 3 years of observation (2007-2009). Position
+    from NED (2002ApJS 141 13B). Energy threshold is different in every years. The
+    average value is shown.
+- Source_ID: 83
+  Source_Name: TeV J1614-5149
+  Other_Names: HESS J1614-518
+  CLASS: UNID
+  RA: 243.58
+  DEC: -51.82
+  GLON: 331.51
+  GLAT: -0.59
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.23
+  Semimajor_Err: 0.02
+  Semiminor: 0.15
+  Semiminor_Err: 0.02
+  Rotation_Angle: 49.0
+  Flux_Diff: 8.0e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.46
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 5.78e-11
+  Flux_Int_Err_Stat: 7.7e-12
+  Flux_Int_Err_Sys: 1.73e-11
+  Flux_Crab: 25.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al., ApJ 636 (2006) 777
+  Comments: 'Best-fit position: l=(331.52+/-0.03)deg; b=(-0.58+/-0.02)deg. Rotation
+    angle: (49+/-10)deg, counter-clockwise wrt the positive l-axis. Diff. flux normalization
+    calculated from the integral flux and spectral index, assuming 1 TeV as normalization
+    energy.'
+- Source_ID: 84
+  Source_Name: TeV J1616-5054
+  Other_Names: HESS J1616-508
+  CLASS: PWN
+  RA: 244.1
+  DEC: -50.9
+  GLON: 332.39
+  GLAT: -0.15
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.136
+  Semimajor_Err: 0.008
+  Semiminor: 0.136
+  Semiminor_Err: 0.008
+  Rotation_Angle: .nan
+  Flux_Diff: 6.7e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.35
+  Spectral_Index_Err_Stat: 0.06
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 4.33e-11
+  Flux_Int_Err_Stat: 2.0e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 19.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al., ApJ 636 (2006) 777
+  Comments: 'Best-fit position: l=(332.391+/-0.014)deg; b=(-0.138+/-0.013)deg. Diff.
+    flux normalization calculated from the integral flux and spectral index, assuming
+    1 TeV as normalization energy. Source association: PWN powered by PSR J1617-5055?'
+- Source_ID: 85
+  Source_Name: TeV J1626-4905
+  Other_Names: HESS J1626-490
+  CLASS: UNID
+  RA: 246.516666667
+  DEC: -49.0869444444
+  GLON: 334.77
+  GLAT: 0.04
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.07
+  Semimajor_Err: 0.02
+  Semiminor: 0.1
+  Semiminor_Err: 0.05
+  Rotation_Angle: 3.0
+  Flux_Diff: 4.9e-12
+  Flux_Diff_Err_Stat: 9.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.18
+  Spectral_Index_Err_Stat: 0.12
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 7.6e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 16.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al., A&A 477 (2008) 353-363
+  Comments: 'Orientation angle: (3+/-40)deg measured counter-clockwise wrt RA axis.'
+- Source_ID: 86
+  Source_Name: TeV J1632-4749
+  Other_Names: HESS J1632-478
+  CLASS: PWN
+  RA: 248.04
+  DEC: -47.82
+  GLON: 336.38
+  GLAT: 0.18
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.21
+  Semimajor_Err: 0.05
+  Semiminor: 0.06
+  Semiminor_Err: 0.04
+  Rotation_Angle: 21.0
+  Flux_Diff: 5.3e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.12
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.87e-11
+  Flux_Int_Err_Stat: 5.3e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 12.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al., ApJ 636 (2006) 777
+  Comments: 'Best-fit position: l=(336.38+/-0.04)deg; b=(0.19+/-0.03)deg. Orientation
+    angle: (21+/-13)deg counter-clockwise wrt the positive Gal. Lat. axis (deg). Diff.
+    flux normalization calculated from the integral flux and spectral index, assuming
+    1 TeV as normalization energy.'
+- Source_ID: 87
+  Source_Name: TeV J1634-4716
+  Other_Names: HESS J1634-472
+  CLASS: UNID
+  RA: 248.74
+  DEC: -47.27
+  GLON: 337.1
+  GLAT: 0.21
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.11
+  Semimajor_Err: 0.03
+  Semiminor: 0.11
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 2.0e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.38
+  Spectral_Index_Err_Stat: 0.27
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.34e-11
+  Flux_Int_Err_Stat: 2.6e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 6.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al., ApJ 636 (2006) 777
+  Comments: 'Best-fit position: l=(337.11+/-0.05)deg; b=(0.22+/-0.04)deg. Diff. flux
+    normalization calculated from the integral flux and spectral index, assuming 1
+    TeV as normalization energy. Possible source association: IGR J16358-4726, G337.2+0.1.'
+- Source_ID: 88
+  Source_Name: TeV J1640-4631
+  Other_Names: HESS J1640-465/ SNR G338.3-0.0
+  CLASS: PWN
+  RA: 250.18
+  DEC: -46.53
+  GLON: 338.31
+  GLAT: -0.03
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.045
+  Semimajor_Err: 0.009
+  Semiminor: 0.045
+  Semiminor_Err: 0.009
+  Rotation_Angle: .nan
+  Flux_Diff: 3.0e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.42
+  Spectral_Index_Err_Stat: 0.15
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.09e-11
+  Flux_Int_Err_Stat: 2.2e-12
+  Flux_Int_Err_Sys: 6.3e-12
+  Flux_Crab: 9.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al., ApJ 636 (2006) 777
+  Comments: 'Best-fit position: l=(338.316+/-0.007)deg; b=(-0.021+/-0.007)deg. Diff.
+    flux normalization calculated from the integral flux and spectral index, assuming
+    1 TeV as normalization energy. Possible source association: SNR G338.3-0.0.'
+- Source_ID: 89
+  Source_Name: TeV J1641-4618
+  Other_Names: HESS J1641-463
+  CLASS: UNID
+  RA: 250.25875
+  DEC: -46.3036111111
+  GLON: 338.52
+  GLAT: 0.08
+  RA_Err_Stat: 0.0125
+  RA_Err_Sys: 0.00791666666667
+  DEC_Err_Stat: 0.00972222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 3.91e-13
+  Flux_Diff_Err_Stat: 6.9e-14
+  Flux_Diff_Err_Sys: 7.8e-14
+  Spectral_Index: 2.07
+  Spectral_Index_Err_Stat: 0.11
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.64e-13
+  Flux_Int_Err_Stat: 4.4e-14
+  Flux_Int_Err_Sys: 7.3e-14
+  Flux_Crab: 1.8
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2014), ApJL 794, L1
+  Comments: Source detected using VHE events (E>4 TeV) from deep observation of the
+    nearby bright TeV source HESS J1640-465.
+- Source_ID: 90
+  Source_Name: TeV J1646-4549
+  Other_Names: Westerlund 1/ HESS J1646-458
+  CLASS: UNID
+  RA: 251.708333333
+  DEC: -45.82
+  GLON: 339.54
+  GLAT: -0.36
+  RA_Err_Stat: 0.1125
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.116666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 1.1
+  Semimajor_Err: .nan
+  Semiminor: 1.1
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 9.0e-12
+  Flux_Diff_Err_Stat: 1.4e-12
+  Flux_Diff_Err_Sys: 1.8e-12
+  Spectral_Index: 2.19
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 5.2e-11
+  Flux_Int_Err_Stat: 9.0e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 3.1
+  Distance: '4'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2012), A&A 537, A114
+  Comments: Best-fit position in agreement with the center of the Westerlund 1 open
+    cluster. Spectrum extracted from the 1.1 deg gamma-ray emission region. Possible
+    presence of multiple TeV sources within the emission region.
+- Source_ID: 91
+  Source_Name: TeV J1653+3945
+  Other_Names: Markarian 501
+  CLASS: HBL
+  RA: 253.4675
+  DEC: 39.76
+  GLON: 63.59
+  GLAT: 38.86
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.1e-10
+  Flux_Diff_Err_Stat: 1.0e-11
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.79
+  Spectral_Index_Err_Stat: 0.12
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 4.6e-11
+  Flux_Int_Err_Stat: 4.0e-12
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 20.0
+  Distance: --
+  Distance2: '0.034'
+  Discoverer: WHIPPLE
+  Observatory: MAGIC
+  Reference: Anderhub et al. (2009), ApJ 705, 1624
+  Comments: --
+- Source_ID: 92
+  Source_Name: TeV J1702-4200
+  Other_Names: HESS J1702-420
+  CLASS: UNID
+  RA: 255.683333333
+  DEC: -42.0158333333
+  GLON: 344.3
+  GLAT: -0.19
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.3
+  Semimajor_Err: 0.02
+  Semiminor: 0.15
+  Semiminor_Err: 0.01
+  Rotation_Angle: 68.0
+  Flux_Diff: 9.1e-12
+  Flux_Diff_Err_Stat: 1.1e-12
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.07
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.8e-11
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 27.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 477, 353
+  Comments: 'Orientation angle: (68+/-7)deg measured counter-clockwise wrt RA axis.'
+- Source_ID: 93
+  Source_Name: TeV J1708-4105
+  Other_Names: HESS J1708-410
+  CLASS: UNID
+  RA: 257.1
+  DEC: -41.09
+  GLON: 345.68
+  GLAT: -0.48
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.06
+  Semimajor_Err: 0.01
+  Semiminor: 0.08
+  Semiminor_Err: 0.01
+  Rotation_Angle: -20.0
+  Flux_Diff: 2.7e-12
+  Flux_Diff_Err_Stat: 3.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.46
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 5.2e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 8.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 477, 353
+  Comments: 'Orientation angle: (-20+/-23)deg measured counter-clockwise wrt RA axis.'
+- Source_ID: 94
+  Source_Name: TeV J1708-4420
+  Other_Names: HESS J1708-443/ PSR B1706-44/ G 343.1-2.3
+  CLASS: PWN/SNR
+  RA: 257.045833333
+  DEC: -44.3333333333
+  GLON: 343.05
+  GLAT: -2.38
+  RA_Err_Stat: 0.0708333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0666666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.29
+  Semimajor_Err: 0.04
+  Semiminor: 0.29
+  Semiminor_Err: 0.04
+  Rotation_Angle: .nan
+  Flux_Diff: 4.2e-12
+  Flux_Diff_Err_Stat: 8.0e-13
+  Flux_Diff_Err_Sys: 1.0e-12
+  Spectral_Index: 2.0
+  Spectral_Index_Err_Stat: 0.1
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.8e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 17.0
+  Distance: '3'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 528, A143
+  Comments: 'Possible associations: PSR B1706-44 and SNR G343.1-2.'
+- Source_ID: 95
+  Source_Name: TeV J1713-3811
+  Other_Names: CTB 37B/ HESS J1713-381/ G 348.7+0.3
+  CLASS: SNR
+  RA: 258.475
+  DEC: -38.1994444444
+  GLON: 348.63
+  GLAT: 0.38
+  RA_Err_Stat: 0.0166666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0125
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.06
+  Semimajor_Err: 0.04
+  Semiminor: 0.06
+  Semiminor_Err: 0.04
+  Rotation_Angle: .nan
+  Flux_Diff: 6.5e-13
+  Flux_Diff_Err_Stat: 1.1e-13
+  Flux_Diff_Err_Sys: 1.3e-13
+  Spectral_Index: 2.65
+  Spectral_Index_Err_Stat: 0.19
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 5.6e-12
+  Flux_Int_Err_Stat: 1.5e-12
+  Flux_Int_Err_Sys: 1.1e-12
+  Flux_Crab: 1.9
+  Distance: '10.2'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 486, 829
+  Comments: --
+- Source_ID: 96
+  Source_Name: TeV J1713-3945
+  Other_Names: RX J1713.7-3946/ G 347.3-0.5
+  CLASS: SNR
+  RA: 258.39
+  DEC: -39.76
+  GLON: 347.33
+  GLAT: -0.48
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.65
+  Semimajor_Err: .nan
+  Semiminor: 0.65
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.1e-11
+  Flux_Diff_Err_Stat: 4.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.32
+  Spectral_Index_Err_Stat: 0.01
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '6'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2007), A&A 464, 235
+  Comments: 'Combined 2003-2004-2005 data. Best-fit spectrum: N*E^(-Gamma)*exp(-(E/Ecut)^beta),
+    N=(34.1+/-2.5)E-12TeV/cm^2/s Gamma=1.79+/-0.06 Ec=(3.7+/-1.0)TeV Beta=0.5.'
+- Source_ID: 97
+  Source_Name: TeV J1714-3834
+  Other_Names: CTB 37A/ HESS J1714-385/ SNR G348.5+0.1
+  CLASS: SNR
+  RA: 258.579166667
+  DEC: -38.5666666667
+  GLON: 348.38
+  GLAT: 0.1
+  RA_Err_Stat: 0.0220833333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0222222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.072
+  Semimajor_Err: 0.016
+  Semiminor: 0.072
+  Semiminor_Err: 0.016
+  Rotation_Angle: .nan
+  Flux_Diff: 8.7e-13
+  Flux_Diff_Err_Stat: 1.0e-13
+  Flux_Diff_Err_Sys: 1.8e-13
+  Spectral_Index: 2.3
+  Spectral_Index_Err_Stat: 0.13
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 7.0e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 3.0
+  Distance: '10.3'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 490, 685
+  Comments: Data from Aharonian et al. (2008), A&A 490, 685. Counterpart candidate
+    for 3EG J1714-3857.
+- Source_ID: 98
+  Source_Name: TeV J1717-3726
+  Other_Names: SNR G349.7+0.2
+  CLASS: SNR/MC
+  RA: 259.490833333
+  DEC: -37.4443333333
+  GLON: 349.71
+  GLAT: 0.17
+  RA_Err_Stat: 0.00833333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00666666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.9e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.8
+  Spectral_Index_Err_Stat: 0.27
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 6.5e-13
+  Flux_Int_Err_Stat: 1.1e-13
+  Flux_Int_Err_Sys: 1.3e-13
+  Flux_Crab: 0.7
+  Distance: '11.5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2015), A&A 574, A100
+  Comments: Data from Abramowski et al. (2015), A&A 574, A100. Diff. flux normalization
+    calculated from the integral flux and spectral index, assuming 0.4 TeV as normalization
+    energy.
+- Source_ID: 99
+  Source_Name: TeV J1718-3833
+  Other_Names: HESS J1718-385/ PSR J1718-3825
+  CLASS: PWN
+  RA: 259.529166667
+  DEC: -38.55
+  GLON: 348.83
+  GLAT: -0.49
+  RA_Err_Stat: 0.0208333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0333333333333
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.15
+  Semimajor_Err: 0.03
+  Semiminor: 0.07
+  Semiminor_Err: 0.02
+  Rotation_Angle: 33.0
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.1
+  Spectral_Index_Err_Stat: 0.1
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.0
+  Distance: '4.2'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2007), A&A 472, 489
+  Comments: 'Data from Aharonian et al. (2007), A&A 472, 489. Orientation angle 33deg
+    counter-clockwise from North. Best-fit spectrum: N*(E_peak/1TeV)^(-2)*(E/E_peak)^(beta*ln(E/E_peak)-2.0)
+    with N=(1.3+/-0.3+/-0.5)E-12/TeV/cm^2/s, Epeak=(7+/-1+/-1)TeV and Beta=-0.7+/-0.3+/-0.4.
+    Source likely associated with PSR J1718-3825.'
+- Source_ID: 100
+  Source_Name: TeV J1725+1152
+  Other_Names: H 1722+119/ 1RXS J172504.4+115218
+  CLASS: HBL
+  RA: 261.267916667
+  DEC: 11.8709722222
+  GLON: 34.11
+  GLAT: 24.47
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.0
+  Distance: --
+  Distance2: '0.159'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: 'Cortina et al. (2013), Atel #5080'
+  Comments: 'Detection announced by Cortina et al. (2013), Atel #5080. Position taken
+    from NED (2011AJ 142 105P). No information on the positional uncertainty available.
+    Redshift from Wurtz et al. (1996), ApJS 103, 109.'
+- Source_ID: 101
+  Source_Name: TeV J1728+5013
+  Other_Names: 1ES 1727+502
+  CLASS: HBL
+  RA: 262.077583333
+  DEC: 50.219575
+  GLON: 77.06
+  GLAT: 33.53
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 9.6e-12
+  Flux_Diff_Err_Stat: 2.5e-12
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.7
+  Spectral_Index_Err_Stat: 0.5
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 2.6e-12
+  Flux_Int_Err_Stat: 8.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.1
+  Distance: --
+  Distance2: '0.055'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al. (2014), A&A 563, A90
+  Comments: Position quoted from the he VLBI radio catalog (Ma et al. 1998, AJ, 116,
+    516). Fitted position consistent with the VLBI radio position. Spectral properties
+    quoted for the de-absorbed VHE spectrum.
+- Source_ID: 102
+  Source_Name: TeV J1729-3432
+  Other_Names: HESS J1729-345
+  CLASS: UNID
+  RA: 262.395833333
+  DEC: -34.5394444444
+  GLON: 353.44
+  GLAT: -0.13
+  RA_Err_Stat: 0.0333333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.035
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.12
+  Semimajor_Err: 0.03
+  Semiminor: 0.12
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 4.4e-13
+  Flux_Diff_Err_Stat: 7.0e-14
+  Flux_Diff_Err_Sys: 9.0e-14
+  Spectral_Index: 2.24
+  Spectral_Index_Err_Stat: 0.15
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 531, A81
+  Comments: Integrated flux (1-10 TeV)=(0.88 +/- 0.29)x1E-12 erg/cm2/s.
+- Source_ID: 103
+  Source_Name: TeV J1732-3445
+  Other_Names: HESS J1731-347
+  CLASS: SNR/SHELL
+  RA: 263.0125
+  DEC: -34.755
+  GLON: 353.54
+  GLAT: -0.68
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.27
+  Semimajor_Err: 0.02
+  Semiminor: 0.27
+  Semiminor_Err: 0.02
+  Rotation_Angle: .nan
+  Flux_Diff: 4.67e-12
+  Flux_Diff_Err_Stat: 1.9e-13
+  Flux_Diff_Err_Sys: 9.3e-13
+  Spectral_Index: 2.32
+  Spectral_Index_Err_Stat: 0.06
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 531, A81
+  Comments: 'Position quoted correspondent to the geometrical center of the radio
+    SNR. Integrated flux between 1-10 TeV: (6.91 +/- 0.75)x1E-12 erg/cm2/s.'
+- Source_ID: 104
+  Source_Name: TeV J1741-3012
+  Other_Names: HESS J1741-302
+  CLASS: UNID
+  RA: 265.25
+  DEC: -30.2
+  GLON: 358.39
+  GLAT: 0.19
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.78
+  Spectral_Index_Err_Stat: 0.24
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 6.3e-13
+  Flux_Int_Err_Stat: 1.3e-13
+  Flux_Int_Err_Sys: 1.1e-13
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Tibolla et al. (2009), AIP Conf. Proc. 1112, 233
+  Comments: --
+- Source_ID: 105
+  Source_Name: TeV J1743+1935
+  Other_Names: 1ES 1741+196
+  CLASS: HBL
+  RA: 265.990958333
+  DEC: 19.5858388889
+  GLON: 43.83
+  GLAT: 23.33
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 0.8
+  Distance: --
+  Distance2: '0.083'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Berger et al. (2011), 32nd ICRC
+  Comments: No position is quoted. Coordinates from NED (2007AJ 133.1236K).
+- Source_ID: 106
+  Source_Name: TeV J1745-2900
+  Other_Names: Galactic Center/ HESS J1745-290
+  CLASS: UNID
+  RA: 266.415
+  DEC: -29.0061111111
+  GLON: 359.94
+  GLAT: -0.05
+  RA_Err_Stat: 0.00166666666667
+  RA_Err_Sys: 0.00166666666667
+  DEC_Err_Stat: 0.00166666666667
+  DEC_Err_Sys: 0.00166666666667
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '8.3'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al., (2010), MNRA 402, 1877
+  Comments: --
+- Source_ID: 107
+  Source_Name: TeV J1745-2900
+  Other_Names: Galictic Center Ridge
+  CLASS: UNID
+  RA: 266.421666667
+  DEC: -29.0058333333
+  GLON: 359.94
+  GLAT: -0.05
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.29
+  Spectral_Index_Err_Stat: 0.07
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '8.5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), Nature 439, 695
+  Comments: 'Spectrum extracted from |l|<0.8deg and |b|>0.3deg. Flux normalization:
+    (1.73 +/- 0.13 +/- 0.35)x1E-08/TeV/cm^2/s/sr.'
+- Source_ID: 108
+  Source_Name: TeV J1745-3022
+  Other_Names: HESS J1745-303/ 3EG J1744-3011
+  CLASS: SNR/MC
+  RA: 266.25875
+  DEC: -30.3705555556
+  GLON: 358.7
+  GLAT: -0.65
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.8e-12
+  Flux_Diff_Err_Stat: 2.3e-13
+  Flux_Diff_Err_Sys: 2.8e-13
+  Spectral_Index: 2.71
+  Spectral_Index_Err_Stat: 0.11
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.63e-12
+  Flux_Int_Err_Stat: 1.6e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 8.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 483, 509
+  Comments: Results based on the full dataset on HESS J1745-303. Integral flux between
+    1-10 TeV.
+- Source_ID: 109
+  Source_Name: TeV J1747-2448
+  Other_Names: Terzan 5
+  CLASS: GC
+  RA: 266.954166667
+  DEC: -24.8083333333
+  GLON: 3.78
+  GLAT: 1.72
+  RA_Err_Stat: 0.45
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.01
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.16
+  Semimajor_Err: 0.04
+  Semiminor: 0.03
+  Semiminor_Err: 0.02
+  Rotation_Angle: 92.0
+  Flux_Diff: 5.2e-13
+  Flux_Diff_Err_Stat: 1.1e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.5
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.2e-12
+  Flux_Int_Err_Stat: 3.0e-13
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.5
+  Distance: '5.9'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 531, L18
+  Comments: 'Integral flux between 0.44-24 TeV. Orientation angle: 92 +/- 6 deg, westwards
+    from North.'
+- Source_ID: 110
+  Source_Name: TeV J1747-2809
+  Other_Names: SNR G0.9+0.1
+  CLASS: PWN
+  RA: 266.846666667
+  DEC: -28.1516666667
+  GLON: 0.87
+  GLAT: 0.07
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 8.4e-13
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.4
+  Spectral_Index_Err_Stat: 0.11
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 5.7e-12
+  Flux_Int_Err_Stat: 7.0e-13
+  Flux_Int_Err_Sys: 1.2e-12
+  Flux_Crab: 2.0
+  Distance: '8.5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2005), A&A 432, L25
+  Comments: Diff. flux normalization calculated from the integral flux and spectral
+    index, assuming 1 TeV as normalization energy.
+- Source_ID: 111
+  Source_Name: TeV J1800-2359
+  Other_Names: HESS J1800-240 A+B+C (W28)
+  CLASS: UNID
+  RA: 270.155833333
+  DEC: -23.996
+  GLON: 5.96
+  GLAT: -0.39
+  RA_Err_Stat: 0.0441666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0219444444444
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.32
+  Semimajor_Err: 0.05
+  Semiminor: 0.17
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 1.863e-12
+  Flux_Diff_Err_Stat: 1.85e-13
+  Flux_Diff_Err_Sys: 1.2e-13
+  Spectral_Index: 2.49
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.3e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 6.0
+  Distance: '2'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 481, 401
+  Comments: 'Composite region of HESS J1800-240 (A+B+C). Extension: 0.32deg in RA,
+    0.17deg in Dec. Spectrum extracted from a 0.8x0.6deg elliptical region encompassing
+    all components A, B, C.'
+- Source_ID: 112
+  Source_Name: TeV J1801-2320
+  Other_Names: W28/ HESS J1801-233
+  CLASS: SNR/MC
+  RA: 270.425833333
+  DEC: -23.335
+  GLON: 6.65
+  GLAT: -0.27
+  RA_Err_Stat: 0.0308333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0319444444444
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.17
+  Semimajor_Err: 0.03
+  Semiminor: 0.17
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 7.5e-13
+  Flux_Diff_Err_Stat: 1.1e-13
+  Flux_Diff_Err_Sys: 3.0e-13
+  Spectral_Index: 2.66
+  Spectral_Index_Err_Stat: 0.27
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 4.5e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.0
+  Distance: '2'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 481, 401
+  Comments: --
+- Source_ID: 113
+  Source_Name: TeV J1804-2143
+  Other_Names: HESS J1804-216
+  CLASS: UNID
+  RA: 271.079166667
+  DEC: -21.7269444444
+  GLON: 8.35
+  GLAT: -0.01
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.16
+  Semimajor_Err: 0.005
+  Semiminor: 0.274
+  Semiminor_Err: 0.011
+  Rotation_Angle: .nan
+  Flux_Diff: 5.0e-12
+  Flux_Diff_Err_Stat: 1.5e-12
+  Flux_Diff_Err_Sys: 1.6e-12
+  Spectral_Index: 2.69
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.34
+  Flux_Int: 7.0e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 14.0
+  Distance: --
+  Distance2: --
+  Discoverer: CANGAROO
+  Observatory: HESS
+  Reference: Higashi et al. (2008), ApJ 683, 957
+  Comments: --
+- Source_ID: 114
+  Source_Name: TeV J1808-2026
+  Other_Names: HESS J1808-204
+  CLASS: UNID
+  RA: 272.151
+  DEC: -20.4458055556
+  GLON: 9.95
+  GLAT: -0.25
+  RA_Err_Stat: 0.008125
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0378888888889
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.138
+  Semimajor_Err: 0.023
+  Semiminor: 0.138
+  Semiminor_Err: 0.023
+  Rotation_Angle: .nan
+  Flux_Diff: 4.2e-13
+  Flux_Diff_Err_Stat: 5.0e-14
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.5
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 7.5e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.3
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Rowell (2012), Gamma 2012
+  Comments: Source detection presented at the Gamma 2012 workshop.
+- Source_ID: 115
+  Source_Name: TeV J1810-1918
+  Other_Names: HESS J1809-193
+  CLASS: PWN
+  RA: 272.629166667
+  DEC: -19.3
+  GLON: 11.18
+  GLAT: -0.09
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0333333333333
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.53
+  Semimajor_Err: 0.07
+  Semiminor: 0.25
+  Semiminor_Err: 0.03
+  Rotation_Angle: 50.0
+  Flux_Diff: 4.6e-12
+  Flux_Diff_Err_Stat: 6.0e-13
+  Flux_Diff_Err_Sys: 1.4e-12
+  Spectral_Index: 2.2
+  Spectral_Index_Err_Stat: 0.1
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.8e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 14.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2007), A&A 472, 489
+  Comments: Orientation angle measured counter-clockwise wrt RA axis positive direction.
+- Source_ID: 116
+  Source_Name: TeV J1813-1750
+  Other_Names: HESS J1813-178/ G 12.8-0.02/ PSR J1813-1749
+  CLASS: PWN
+  RA: 273.4
+  DEC: -17.84
+  GLON: 12.81
+  GLAT: -0.03
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.036
+  Semimajor_Err: 0.006
+  Semiminor: 0.036
+  Semiminor_Err: 0.006
+  Rotation_Angle: .nan
+  Flux_Diff: 7.7e-11
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.09
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.42e-11
+  Flux_Int_Err_Stat: 1.1e-12
+  Flux_Int_Err_Sys: 4.3e-12
+  Flux_Crab: 5.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), ApJ 636, 777
+  Comments: 'Best-fit position: l=(12.813+/-0.005)deg; b=(-0.0342+/-0.005)deg.'
+- Source_ID: 117
+  Source_Name: TeV J1818-1528
+  Other_Names: HESS J1818-154/ SNR G015.4+00.1
+  CLASS: SNR
+  RA: 274.52
+  DEC: -15.4669444444
+  GLON: 15.4
+  GLAT: 0.16
+  RA_Err_Stat: 0.0129166666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0119444444444
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 9.0e-14
+  Flux_Diff_Err_Stat: 2.0e-14
+  Flux_Diff_Err_Sys: 2.0e-14
+  Spectral_Index: 2.3
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 9.0e-13
+  Flux_Int_Err_Stat: 3.0e-13
+  Flux_Int_Err_Sys: 2.0e-13
+  Flux_Crab: 0.3
+  Distance: '4.8'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2014), A&A 562, A40
+  Comments: --
+- Source_ID: 118
+  Source_Name: TeV J1825-1350
+  Other_Names: HESS J1825-137/ PSR J1826-1334
+  CLASS: PWN
+  RA: 276.420833333
+  DEC: -13.8388888889
+  GLON: 17.71
+  GLAT: -0.7
+  RA_Err_Stat: 0.0166666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0111111111111
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.26
+  Semimajor_Err: 0.02
+  Semiminor: 0.23
+  Semiminor_Err: 0.02
+  Rotation_Angle: 17.0
+  Flux_Diff: 1.98e-11
+  Flux_Diff_Err_Stat: 4.0e-13
+  Flux_Diff_Err_Sys: 4.0e-12
+  Spectral_Index: 2.38
+  Spectral_Index_Err_Stat: 0.02
+  Spectral_Index_Err_Sys: 0.15
+  Flux_Int: 8.74e-10
+  Flux_Int_Err_Stat: 2.0e-11
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 68.0
+  Distance: '3.9'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), A&A 460, 365
+  Comments: 'Orientation measured counterclockwise from the North. Best-fit spectrum:
+    I0*E^(-Gamma+Beta*logE), with I0=(21.0+/-0.4)x1E-12/TeV/cm^2/s, Gamma=2.29+/-0.02
+    and Beta=-0.17+/-0.04.'
+- Source_ID: 119
+  Source_Name: TeV J1826-1449
+  Other_Names: LS 5039
+  CLASS: XRB
+  RA: 276.5625
+  DEC: -14.825
+  GLON: 16.9
+  GLAT: -1.28
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 9.1e-13
+  Flux_Diff_Err_Stat: 7.0e-15
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.53
+  Spectral_Index_Err_Stat: 0.07
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '2.5'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), A&A 463, 743
+  Comments: 'Superior conjuction: orbital phase <=0.45 and >0.9.'
+- Source_ID: 120
+  Source_Name: TeV J1831-0954
+  Other_Names: HESS J1831-098
+  CLASS: PWN
+  RA: 277.854166667
+  DEC: -9.9
+  GLON: 21.85
+  GLAT: -0.11
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.15
+  Semimajor_Err: .nan
+  Semiminor: 0.15
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.1e-12
+  Flux_Diff_Err_Stat: 1.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.1
+  Spectral_Index_Err_Stat: 0.1
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 1.0e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 4.0
+  Distance: '4.3'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Sheidaei et al. (2011), Fermi Symp. (arXiv:1110.6837)
+  Comments: --
+- Source_ID: 121
+  Source_Name: TeV J1832-0922
+  Other_Names: HESS J1832-093/ SNR G22.7-0.2
+  CLASS: UNID
+  RA: 278.208333333
+  DEC: -9.37666666667
+  GLON: 22.47
+  GLAT: -0.18
+  RA_Err_Stat: 0.0125
+  RA_Err_Sys: 0.00833333333333
+  DEC_Err_Stat: 0.00888888888889
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 4.8e-13
+  Flux_Diff_Err_Stat: 8.0e-14
+  Flux_Diff_Err_Sys: 1.0e-13
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 3.0e-13
+  Flux_Int_Err_Stat: 8.0e-14
+  Flux_Int_Err_Sys: 6.0e-14
+  Flux_Crab: 1.0
+  Distance: '3.7'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2014), MNRAS 446, 1163
+  Comments: --
+- Source_ID: 122
+  Source_Name: TeV J1833-1033
+  Other_Names: HESS J1833-105/ G 21.5-0.9/ PSR J1833-1034
+  CLASS: PWN/SNR
+  RA: 278.385416667
+  DEC: -10.5552777778
+  GLON: 21.51
+  GLAT: -0.88
+  RA_Err_Stat: 0.00375
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.0152777777778
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 4.6e-13
+  Flux_Diff_Err_Stat: 1.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.08
+  Spectral_Index_Err_Stat: 0.22
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 4.3e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.0
+  Distance: '4.7'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Djannati-Atai et al. (2008), 30th ICRC Vol. 2, 823
+  Comments: Source announced at the 30th ICRC (2008).
+- Source_ID: 123
+  Source_Name: TeV J1834-0845
+  Other_Names: HESS J1834-087
+  CLASS: UNID
+  RA: 278.69375
+  DEC: -8.76444444444
+  GLON: 23.24
+  GLAT: -0.33
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.09
+  Semimajor_Err: .nan
+  Semiminor: 0.09
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.6e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.45
+  Spectral_Index_Err_Stat: 0.16
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.87e-11
+  Flux_Int_Err_Stat: 2.0e-12
+  Flux_Int_Err_Sys: 5.6e-12
+  Flux_Crab: 8.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), ApJ 636, 777
+  Comments: 'Best-fit position: l=(23.24+/-0.02)deg; b=(-0.32+/-0.02)deg.'
+- Source_ID: 124
+  Source_Name: TeV J1837-0656
+  Other_Names: HESS J1837-069
+  CLASS: PWN
+  RA: 279.404583333
+  DEC: -6.93888888889
+  GLON: 25.18
+  GLAT: -0.11
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.12
+  Semimajor_Err: 0.02
+  Semiminor: 0.05
+  Semiminor_Err: 0.02
+  Rotation_Angle: 149.0
+  Flux_Diff: 5.0e-12
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.27
+  Spectral_Index_Err_Stat: 0.06
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 3.04e-11
+  Flux_Int_Err_Stat: 1.6e-12
+  Flux_Int_Err_Sys: 9.1e-12
+  Flux_Crab: 11.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2006), ApJ 636, 777
+  Comments: 'Best-fit position: l=(25.185+/-0.012)deg; b=(-0.106+/-0.016)deg. Orientation
+    angle: (149+/-10)deg, measured counter-clk wise wrt positive Gal. Lat. Axis.'
+- Source_ID: 125
+  Source_Name: TeV J1840-0533
+  Other_Names: HESS J1841-055
+  CLASS: UNID
+  RA: 280.229166667
+  DEC: -5.55
+  GLON: 26.79
+  GLAT: -0.2
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.41
+  Semimajor_Err: 0.04
+  Semiminor: 0.25
+  Semiminor_Err: 0.02
+  Rotation_Angle: 39.0
+  Flux_Diff: 1.28e-11
+  Flux_Diff_Err_Stat: 1.3e-12
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.41
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 9.1e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 37.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 477, 353
+  Comments: 'Orientation angle: (39+/-6)deg, measured counter-clockwise wrt RA axis
+    positive direction.'
+- Source_ID: 126
+  Source_Name: TeV J1843-0318
+  Other_Names: HESS J1843-033
+  CLASS: UNID
+  RA: 280.75
+  DEC: -3.3
+  GLON: 29.03
+  GLAT: 0.36
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Hoppe (2008), 30th ICRC
+  Comments: Source announced at the 30th ICRC (2008). Pos. updates according to Terrier
+    et al., TeV Particle Astrophysics Conference 2011, August 2011, Stockholm. Source
+    shows to be a complex TeV emission region.
+- Source_ID: 127
+  Source_Name: TeV J1846-0258
+  Other_Names: HESS J1846-029/ Kes 75/ G 29.70.3
+  CLASS: PWN/SNR
+  RA: 281.600416667
+  DEC: -2.98138888889
+  GLON: 29.7
+  GLAT: -0.25
+  RA_Err_Stat: 0.00208333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00944444444444
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 6.2e-13
+  Flux_Diff_Err_Stat: 9.0e-14
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.26
+  Spectral_Index_Err_Stat: 0.15
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 4.9e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.0
+  Distance: '19'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Djannati-Atai et al. (2008), 30th ICRC Vol. 2, 823
+  Comments: Source announced at the 30th ICRC (2008).
+- Source_ID: 128
+  Source_Name: TeV J1848-0147
+  Other_Names: HESS J1848-018/ W43/WR121
+  CLASS: WR/MSC
+  RA: 282.120833333
+  DEC: -1.79222222222
+  GLON: 31.0
+  GLAT: -0.17
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.32
+  Semimajor_Err: 0.02
+  Semiminor: 0.32
+  Semiminor_Err: 0.02
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.8
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.0
+  Distance: '5.3'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Chaves et al. (2008), AIP 1085, 372
+  Comments: --
+- Source_ID: 129
+  Source_Name: TeV J1849-0001
+  Other_Names: IGR J18490-0000/ HESS J1849-000
+  CLASS: PWN
+  RA: 282.256791667
+  DEC: -0.0214444444444
+  GLON: 32.63
+  GLAT: 0.52
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.5
+  Distance: '7'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Terrier et al. (2008), AIP 1085, 312
+  Comments: --
+- Source_ID: 130
+  Source_Name: TeV J1857+0242
+  Other_Names: HESS J1857+026
+  CLASS: UNID
+  RA: 284.315416667
+  DEC: 2.70472222222
+  GLON: 36.0
+  GLAT: -0.07
+  RA_Err_Stat: 0.0241666666667
+  RA_Err_Sys: 0.03
+  DEC_Err_Stat: 0.0238888888889
+  DEC_Err_Sys: 0.03
+  Is_Extended: true
+  Semimajor: 0.2
+  Semimajor_Err: 0.03
+  Semiminor: 0.2
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 5.37e-12
+  Flux_Diff_Err_Stat: 4.4e-13
+  Flux_Diff_Err_Sys: 1.5e-12
+  Spectral_Index: 2.16
+  Spectral_Index_Err_Stat: 0.07
+  Spectral_Index_Err_Sys: 0.15
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al (2014), A&A 571, A96
+  Comments: 'Energy spectrum between 100 GeV and 13 TeV. Morphology for the 0.3 -
+    1 TeV energy range. Above 1 TeV, the source shows two spatially distinct components:
+    MAGIC J1857.2+0263 and MAGIC J1857.6+0297.'
+- Source_ID: 131
+  Source_Name: TeV J1858+0205
+  Other_Names: HESS J1858+020
+  CLASS: UNID
+  RA: 284.583333333
+  DEC: 2.09
+  GLON: 35.57
+  GLAT: -0.59
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.08
+  Semimajor_Err: 0.02
+  Semiminor: 0.02
+  Semiminor_Err: 0.04
+  Rotation_Angle: 4.0
+  Flux_Diff: 6.0e-13
+  Flux_Diff_Err_Stat: 1.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.17
+  Spectral_Index_Err_Stat: 0.12
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.2e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.8
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 477, 353
+  Comments: 'Orientation angle: (4+/-17)deg measured counter-clock wise relative to
+    RA axis.'
+- Source_ID: 132
+  Source_Name: TeV J1907+0613
+  Other_Names: MGRO J1908+06/ HESS J1908+063
+  CLASS: UNID
+  RA: 286.84
+  DEC: 6.22
+  GLON: 40.28
+  GLAT: -0.69
+  RA_Err_Stat: 0.02
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: 0.02
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.44
+  Semimajor_Err: 0.02
+  Semiminor: 0.44
+  Semiminor_Err: 0.02
+  Rotation_Angle: .nan
+  Flux_Diff: 4.23e-12
+  Flux_Diff_Err_Stat: 4.1e-13
+  Flux_Diff_Err_Sys: 8.5e-13
+  Spectral_Index: 2.2
+  Spectral_Index_Err_Stat: 0.1
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: MILAGRO
+  Observatory: VERITAS
+  Reference: Aliu et al. (2014), ApJ 787, 166
+  Comments: --
+- Source_ID: 133
+  Source_Name: TeV J1911+0905
+  Other_Names: W 49B
+  CLASS: SNR/MC
+  RA: 287.779166667
+  DEC: 9.09277777778
+  GLON: 43.25
+  GLAT: -0.19
+  RA_Err_Stat: 0.0708333333333
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00666666666667
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 2.3e-13
+  Flux_Diff_Err_Stat: 4.0e-14
+  Flux_Diff_Err_Sys: 6.0e-14
+  Spectral_Index: 3.1
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.1e-13
+  Flux_Int_Err_Stat: 3.0e-14
+  Flux_Int_Err_Sys: 3.0e-14
+  Flux_Crab: 0.5
+  Distance: '8'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Brun et al. (2011), Texas Symp. 2010 (arXiv:1104.5003)
+  Comments: 'Best-fit pos.: l=43.258+/-0.008deg, b=-0.188+/-0.01deg.'
+- Source_ID: 134
+  Source_Name: TeV J1912+1009
+  Other_Names: HESS J1912+101/ PSR J1913+1011
+  CLASS: PWN
+  RA: 288.204166667
+  DEC: 10.1516666667
+  GLON: 44.39
+  GLAT: -0.08
+  RA_Err_Stat: 0.05
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.05
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: true
+  Semimajor: 0.27
+  Semimajor_Err: 0.03
+  Semiminor: 0.27
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 3.5e-12
+  Flux_Diff_Err_Stat: 6.0e-13
+  Flux_Diff_Err_Sys: 1.0e-12
+  Spectral_Index: 2.7
+  Spectral_Index_Err_Stat: 0.2
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 2.0e-12
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 9.0
+  Distance: '4.48'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Aharonian et al. (2008), A&A 477, 353
+  Comments: --
+- Source_ID: 135
+  Source_Name: TeV J1922+1411
+  Other_Names: HESS J1923+141/ W 51C/ G49.2-0.7
+  CLASS: SNR/MC
+  RA: 290.73
+  DEC: 14.1911111111
+  GLON: 49.11
+  GLAT: -0.37
+  RA_Err_Stat: 0.015
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: 0.015
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.12
+  Semimajor_Err: 0.02
+  Semiminor: 0.12
+  Semiminor_Err: 0.02
+  Rotation_Angle: .nan
+  Flux_Diff: 9.7e-13
+  Flux_Diff_Err_Stat: 1.0e-13
+  Flux_Diff_Err_Sys: 1.5e-13
+  Spectral_Index: 2.58
+  Spectral_Index_Err_Stat: 0.07
+  Spectral_Index_Err_Sys: 0.22
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 3.0
+  Distance: '6'
+  Distance2: --
+  Discoverer: HESS
+  Observatory: MAGIC
+  Reference: Aleksic et al (2012), A&A 541, A13
+  Comments: --
+- Source_ID: 136
+  Source_Name: TeV J1930+1852
+  Other_Names: VER J1930+188/ G 54.1+0.3/ PSR J1930+1852
+  CLASS: PWN/SNR
+  RA: 292.633333333
+  DEC: 18.87
+  GLON: 54.09
+  GLAT: 0.25
+  RA_Err_Stat: 0.104166666667
+  RA_Err_Sys: 0.0208333333333
+  DEC_Err_Stat: 0.00555555555556
+  DEC_Err_Sys: 0.02
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 7.5e-13
+  Flux_Diff_Err_Stat: 1.2e-13
+  Flux_Diff_Err_Sys: 1.5e-13
+  Spectral_Index: 2.39
+  Spectral_Index_Err_Stat: 0.23
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 5.4e-13
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 2.5
+  Distance: '6.2'
+  Distance2: --
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Acciari et al. (2010), ApJ 719, L69-L73
+  Comments: --
+- Source_ID: 137
+  Source_Name: TeV J1943+2118
+  Other_Names: HESS J1943+213
+  CLASS: HBL
+  RA: 295.979166667
+  DEC: 21.3022222222
+  GLON: 57.75
+  GLAT: -1.3
+  RA_Err_Stat: 0.00416666666667
+  RA_Err_Sys: 0.00416666666667
+  DEC_Err_Stat: 0.00472222222222
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 5.6e-13
+  Flux_Diff_Err_Stat: 8.0e-14
+  Flux_Diff_Err_Sys: 1.1e-13
+  Spectral_Index: 3.1
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 1.3e-12
+  Flux_Int_Err_Stat: 2.0e-13
+  Flux_Int_Err_Sys: 3.0e-13
+  Flux_Crab: 2.0
+  Distance: --
+  Distance2: --
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2011), A&A 529, A49
+  Comments: The source is tentatively classified as an extreme HBL.
+- Source_ID: 138
+  Source_Name: TeV J1959+6508
+  Other_Names: 1ES 1959+650
+  CLASS: HBL
+  RA: 299.999583333
+  DEC: 65.1485277778
+  GLON: 98.0
+  GLAT: 17.67
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 4.3e-12
+  Flux_Diff_Err_Stat: 5.0e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.72
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: 4.7e-11
+  Flux_Int_Err_Stat: 5.0e-12
+  Flux_Int_Err_Sys: 1.6e-11
+  Flux_Crab: 20.0
+  Distance: --
+  Distance2: '0.048'
+  Discoverer: TA
+  Observatory: MAGIC
+  Reference: Albert et al. (2005), ApJ 639, 761
+  Comments: No position is quoted. Coordinates from NED (2002ApJS 141 13B).
+- Source_ID: 139
+  Source_Name: TeV J2001+4353
+  Other_Names: MAGIC J2001+435
+  CLASS: IBL
+  RA: 300.30625
+  DEC: 43.8841111111
+  GLON: 79.07
+  GLAT: 7.11
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 20.0
+  Distance: --
+  Distance2: --
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: 'Mariotti et al. (2010), ATel #2753'
+  Comments: --
+- Source_ID: 140
+  Source_Name: TeV J2009-4849
+  Other_Names: PKS 2005-489
+  CLASS: HBL
+  RA: 302.3625
+  DEC: -48.8311111111
+  GLON: 350.37
+  GLAT: -32.61
+  RA_Err_Stat: 0.00625
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00444444444444
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.37e-11
+  Flux_Diff_Err_Stat: 1.7e-12
+  Flux_Diff_Err_Sys: 2.7e-12
+  Spectral_Index: 3.2
+  Spectral_Index_Err_Stat: 0.16
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 2.57e-12
+  Flux_Int_Err_Stat: 1.8e-13
+  Flux_Int_Err_Sys: 5.1e-13
+  Flux_Crab: 2.9
+  Distance: '295100'
+  Distance2: '0.071'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Acero et al. (2010), A&A 511, A52
+  Comments: Time-averaged spectrum for the 2004-2007 years, between 300 GeV and 5.3
+    TeV.
+- Source_ID: 141
+  Source_Name: TeV J2016+3711
+  Other_Names: VER J2016+371/ CTB 87
+  CLASS: PWN/SNR
+  RA: 304.008333333
+  DEC: 37.1977777778
+  GLON: 74.94
+  GLAT: 1.14
+  RA_Err_Stat: 0.0125
+  RA_Err_Sys: 0.0125
+  DEC_Err_Stat: 0.0111111111111
+  DEC_Err_Sys: 0.0138888888889
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 3.1e-13
+  Flux_Diff_Err_Stat: 9.0e-14
+  Flux_Diff_Err_Sys: 6.0e-14
+  Spectral_Index: 2.3
+  Spectral_Index_Err_Stat: 0.3
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 1.0
+  Distance: '6'
+  Distance2: --
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Aliu et al. (2014), ApJ 788, 78
+  Comments: Integrated energy flux between 650 GeV to 10 TeV equals to (8.2 +/- 3.4
+    +/- 2.9)x1E-13 erg/cm2/s.
+- Source_ID: 142
+  Source_Name: TeV J2018+3642
+  Other_Names: MGRO J2019+37
+  CLASS: PWN/UNID
+  RA: 304.679166667
+  DEC: 36.7
+  GLON: 74.82
+  GLAT: 0.41
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: MILAGRO
+  Observatory: VERITAS
+  Reference: Aliu et al. (2011), 32nd ICRC (arXiv:1110.4656)
+  Comments: Preliminary results from 32nd ICRC (2011). MGRO J2019+37 appears formed
+    by multiple TeV sources.
+- Source_ID: 143
+  Source_Name: TeV J2019+3648
+  Other_Names: VER J2019+368
+  CLASS: UNID
+  RA: 304.966666667
+  DEC: 36.8038888889
+  GLON: 75.04
+  GLAT: 0.28
+  RA_Err_Stat: 0.3
+  RA_Err_Sys: 0.0125
+  DEC_Err_Stat: 0.0161111111111
+  DEC_Err_Sys: 0.0138888888889
+  Is_Extended: true
+  Semimajor: 0.34
+  Semimajor_Err: 0.03
+  Semiminor: 0.13
+  Semiminor_Err: 0.02
+  Rotation_Angle: 71.0
+  Flux_Diff: 8.1e-14
+  Flux_Diff_Err_Stat: 7.0e-15
+  Flux_Diff_Err_Sys: 1.6e-14
+  Spectral_Index: 1.75
+  Spectral_Index_Err_Stat: 0.08
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: --
+  Discoverer: MILAGRO
+  Observatory: VERITAS
+  Reference: Aliu et al. (2014), ApJ 788, 78
+  Comments: Spectrum extends from 1 to 30 TeV. Orientation angle is 71 deg, east of
+    north.
+- Source_ID: 144
+  Source_Name: TeV J2020+4045
+  Other_Names: VER J2019+407/ SNR G78.2+2.1
+  CLASS: UNID
+  RA: 305.02
+  DEC: 40.76
+  GLON: 78.33
+  GLAT: 2.49
+  RA_Err_Stat: 0.03
+  RA_Err_Sys: 0.0166666666667
+  DEC_Err_Stat: 0.03
+  DEC_Err_Sys: 0.0180555555556
+  Is_Extended: true
+  Semimajor: 0.23
+  Semimajor_Err: 0.03
+  Semiminor: 0.23
+  Semiminor_Err: 0.03
+  Rotation_Angle: .nan
+  Flux_Diff: 1.5e-12
+  Flux_Diff_Err_Stat: 2.0e-13
+  Flux_Diff_Err_Sys: 4.0e-13
+  Spectral_Index: 2.37
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 5.2e-12
+  Flux_Int_Err_Stat: 8.0e-13
+  Flux_Int_Err_Sys: 1.4e-12
+  Flux_Crab: 3.7
+  Distance: --
+  Distance2: --
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Aliu et al. (2013), ApJ 770, 93
+  Comments: Spectral properties between 320 GeV and 10 TeV.
+- Source_ID: 145
+  Source_Name: TeV J2031+4040
+  Other_Names: MGRO J2031+41/ TeV J2032+4130
+  CLASS: UNID
+  RA: 307.929166667
+  DEC: 40.6666666667
+  GLON: 79.53
+  GLAT: 0.63
+  RA_Err_Stat: 0.3
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: 0.3
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 6.33e-16
+  Flux_Diff_Err_Stat: 8.3e-17
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 15.0
+  Distance: --
+  Distance2: --
+  Discoverer: MILAGRO
+  Observatory: MILAGRO
+  Reference: Abdo et al. (2009), ApJ 700, L127
+  Comments: --
+- Source_ID: 146
+  Source_Name: TeV J2031+4133
+  Other_Names: TeV J2032+4130
+  CLASS: UNID
+  RA: 307.916666667
+  DEC: 41.5647222222
+  GLON: 80.24
+  GLAT: 1.17
+  RA_Err_Stat: 0.270833333333
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: 0.0102777777778
+  DEC_Err_Sys: .nan
+  Is_Extended: true
+  Semimajor: 0.16
+  Semimajor_Err: 0.02
+  Semiminor: 0.07
+  Semiminor_Err: 0.01
+  Rotation_Angle: 63.0
+  Flux_Diff: 9.5e-13
+  Flux_Diff_Err_Stat: 1.6e-13
+  Flux_Diff_Err_Sys: 2.2e-13
+  Spectral_Index: 2.1
+  Spectral_Index_Err_Stat: 0.14
+  Spectral_Index_Err_Sys: 0.21
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 4.3
+  Distance: --
+  Distance2: --
+  Discoverer: HEGRA
+  Observatory: VERITAS
+  Reference: Aliu et al. (2014), ApJ 783, 16
+  Comments: 'Orientation angle: (63 +/- 6)deg, northwest. Integrated energy flux (E>1
+    TeV)=(2.35 +/- 0.55)x1E-12 erg/cm2/s.'
+- Source_ID: 147
+  Source_Name: TeV J2158-3013
+  Other_Names: PKS 2155-304
+  CLASS: HBL
+  RA: 329.719166667
+  DEC: -30.2216666667
+  GLON: 17.73
+  GLAT: -52.25
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 3.27
+  Spectral_Index_Err_Stat: 0.12
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: --
+  Distance2: '0.116'
+  Discoverer: Durham
+  Observatory: HESS
+  Reference: HESS collaboration (2010), A&A 520, A83
+  Comments: 'Data from HESS collaboration (2010) A&A 520, A83. No position is quoted.
+    Coordinates from NED. 4 nights of flaring state: flux values are different for
+    every nights but no spectral index variability.'
+- Source_ID: 148
+  Source_Name: TeV J2202+4216
+  Other_Names: 1ES 2200+420/ BL Lacertae
+  CLASS: LBL
+  RA: 330.680416667
+  DEC: 42.2777777778
+  GLON: 92.58
+  GLAT: -10.44
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.9e-11
+  Flux_Diff_Err_Stat: 5.0e-12
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 3.6
+  Spectral_Index_Err_Stat: 0.5
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 6.0e-12
+  Flux_Int_Err_Stat: 2.0e-12
+  Flux_Int_Err_Sys: 3.0e-12
+  Flux_Crab: 3.0
+  Distance: '287000'
+  Distance2: '0.069'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Albert et al. (2007), ApJ 666, L17
+  Comments: Observed between August and December 2005. No signal in 2006. Position
+    from NED.
+- Source_ID: 149
+  Source_Name: TeV J2227+6052
+  Other_Names: G 106.3+2.7/ VER J2227+608
+  CLASS: SNR
+  RA: 336.995833333
+  DEC: 60.8769444444
+  GLON: 106.34
+  GLAT: 2.71
+  RA_Err_Stat: 0.0708333333333
+  RA_Err_Sys: 0.0708333333333
+  DEC_Err_Stat: 0.04
+  DEC_Err_Sys: 0.07
+  Is_Extended: true
+  Semimajor: 0.27
+  Semimajor_Err: 0.05
+  Semiminor: 0.18
+  Semiminor_Err: 0.03
+  Rotation_Angle: 22.0
+  Flux_Diff: 1.15e-13
+  Flux_Diff_Err_Stat: 2.7e-14
+  Flux_Diff_Err_Sys: 3.5e-14
+  Spectral_Index: 2.29
+  Spectral_Index_Err_Stat: 0.33
+  Spectral_Index_Err_Sys: 0.3
+  Flux_Int: 1.11e-12
+  Flux_Int_Err_Stat: 2.5e-13
+  Flux_Int_Err_Sys: 2.8e-13
+  Flux_Crab: 5.0
+  Distance: '0.8'
+  Distance2: --
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: Acciari et al. (2009), ApJ 703, L6
+  Comments: --
+- Source_ID: 150
+  Source_Name: TeV J2228+6110
+  Other_Names: Boomerang/ G 106.6+2.9/ PSR J2229+6114
+  CLASS: PWN/SNR
+  RA: 337.183333333
+  DEC: 61.1666666667
+  GLON: 106.57
+  GLAT: 2.91
+  RA_Err_Stat: 0.166666666667
+  RA_Err_Sys: 0.3
+  DEC_Err_Stat: 0.163888888889
+  DEC_Err_Sys: 0.25
+  Is_Extended: true
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 7.09e-16
+  Flux_Diff_Err_Stat: 1.08e-16
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.6
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: .nan
+  Distance: '0.8'
+  Distance2: --
+  Discoverer: MILAGRO
+  Observatory: MILAGRO
+  Reference: Abdo et al. (2009), ApJ 700, L127
+  Comments: --
+- Source_ID: 151
+  Source_Name: TeV J2243+2021
+  Other_Names: RGB J2243+203
+  CLASS: IBL
+  RA: 340.977916667
+  DEC: 20.3510555556
+  GLON: 86.56
+  GLAT: -33.37
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: .nan
+  Flux_Diff_Err_Stat: .nan
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: .nan
+  Spectral_Index_Err_Stat: .nan
+  Spectral_Index_Err_Sys: .nan
+  Flux_Int: .nan
+  Flux_Int_Err_Stat: .nan
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 4.0
+  Distance: --
+  Distance2: '>0.39'
+  Discoverer: VERITAS
+  Observatory: VERITAS
+  Reference: 'Holder at al. (2014), ATel #6849'
+  Comments: 'Source detection announced in ATel #6849.'
+- Source_ID: 152
+  Source_Name: TeV J2250+3824
+  Other_Names: B3 2247+381
+  CLASS: HBL
+  RA: 342.523958333
+  DEC: 38.4103333333
+  GLON: 98.25
+  GLAT: -18.58
+  RA_Err_Stat: .nan
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.4e-11
+  Flux_Diff_Err_Stat: 3.0e-12
+  Flux_Diff_Err_Sys: 2.0e-12
+  Spectral_Index: 3.2
+  Spectral_Index_Err_Stat: 0.5
+  Spectral_Index_Err_Sys: 0.5
+  Flux_Int: 5.0e-12
+  Flux_Int_Err_Stat: 6.0e-13
+  Flux_Int_Err_Sys: 1.1e-12
+  Flux_Crab: .nan
+  Distance: '488750'
+  Distance2: '0.1187'
+  Discoverer: MAGIC
+  Observatory: MAGIC
+  Reference: Aleksic et al (2012), A&A 539, A118
+  Comments: 'Position from NED (2011AJ 142 105P). The source is consistent and associated
+    to 1FGL J2250.1+3825 (RA:22 50 06.6 DEC: +38 25 58 ).'
+- Source_ID: 153
+  Source_Name: TeV J2323+5848
+  Other_Names: Cassiopeia A
+  CLASS: SNR
+  RA: 350.85
+  DEC: 58.815
+  GLON: 111.73
+  GLAT: -2.13
+  RA_Err_Stat: .nan
+  RA_Err_Sys: 0.0208333333333
+  DEC_Err_Stat: .nan
+  DEC_Err_Sys: 0.02
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.26e-12
+  Flux_Diff_Err_Stat: 1.8e-13
+  Flux_Diff_Err_Sys: .nan
+  Spectral_Index: 2.61
+  Spectral_Index_Err_Stat: 0.24
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 7.76e-13
+  Flux_Int_Err_Stat: 1.1e-14
+  Flux_Int_Err_Sys: .nan
+  Flux_Crab: 3.0
+  Distance: '3.4'
+  Distance2: --
+  Discoverer: HEGRA
+  Observatory: VERITAS
+  Reference: Acciari et al. (2010), ApJ 714, 163
+  Comments: 'The derived position of the peak of gamma-ray position from Cassiopeia
+    A deviates from the nominal position of the SNR (RA=23h24m24s; DEC=+58d48.9''
+    (J2000)) by 14 arcsec in RA and 35 arcsec in DEC. Upper limit on source extent:
+    <0.058 deg.'
+- Source_ID: 154
+  Source_Name: TeV J2346+5142
+  Other_Names: 1ES 2344+514
+  CLASS: HBL
+  RA: 356.5
+  DEC: 51.71
+  GLON: 112.72
+  GLAT: -9.86
+  RA_Err_Stat: 0.1
+  RA_Err_Sys: .nan
+  DEC_Err_Stat: 0.02
+  DEC_Err_Sys: .nan
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 1.2e-11
+  Flux_Diff_Err_Stat: 1.0e-12
+  Flux_Diff_Err_Sys: 5.0e-12
+  Spectral_Index: 2.95
+  Spectral_Index_Err_Stat: 0.12
+  Spectral_Index_Err_Sys: 0.2
+  Flux_Int: 2.38e-11
+  Flux_Int_Err_Stat: 3.0e-12
+  Flux_Int_Err_Sys: 7.0e-12
+  Flux_Crab: 10.0
+  Distance: '183820'
+  Distance2: '0.044'
+  Discoverer: WHIPPLE
+  Observatory: MAGIC
+  Reference: Albert et al. (2007), ApJ 662, 892
+  Comments: --
+- Source_ID: 155
+  Source_Name: TeV J2359-3037
+  Other_Names: H 2356-309/ 1H 2354-315
+  CLASS: HBL
+  RA: 359.7825
+  DEC: -30.6216666667
+  GLON: 12.87
+  GLAT: -78.04
+  RA_Err_Stat: 0.00666666666667
+  RA_Err_Sys: 0.00541666666667
+  DEC_Err_Stat: 0.00555555555556
+  DEC_Err_Sys: 0.00555555555556
+  Is_Extended: false
+  Semimajor: .nan
+  Semimajor_Err: .nan
+  Semiminor: .nan
+  Semiminor_Err: .nan
+  Rotation_Angle: .nan
+  Flux_Diff: 3.3e-13
+  Flux_Diff_Err_Stat: 4.5e-14
+  Flux_Diff_Err_Sys: 6.6e-14
+  Spectral_Index: 3.06
+  Spectral_Index_Err_Stat: 0.15
+  Spectral_Index_Err_Sys: 0.1
+  Flux_Int: 3.06e-12
+  Flux_Int_Err_Stat: 2.6e-13
+  Flux_Int_Err_Sys: 6.1e-13
+  Flux_Crab: .nan
+  Distance: '672630'
+  Distance2: '0.165'
+  Discoverer: HESS
+  Observatory: HESS
+  Reference: Abramowski et al. (2010) A&A, 516, 56
+  Comments: --

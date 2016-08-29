@@ -3,13 +3,14 @@ Classes to read, validate and work with the input data files.
 """
 from pprint import pprint
 import logging
+from collections import OrderedDict
 from pathlib import Path
 import urllib.parse
 import yaml
-import json
 from jsonschema import validate
 from astropy.table import Table
 from .info import gammacat_info
+from .utils import load_yaml, MISSING_VAL
 
 __all__ = [
     'BasicSourceInfo',
@@ -23,25 +24,10 @@ __all__ = [
 log = logging.getLogger()
 
 
-def load_json(path):
-    path = Path(path)
-    with path.open() as fh:
-        data = json.load(fh)
-    return data
-
-
-def load_yaml(path):
-    path = Path(path)
-    with path.open() as fh:
-        data = yaml.safe_load(fh)
-    return data
-
-
 class BasicSourceInfo:
     """All basic info for a source.
     """
     schema = load_yaml(gammacat_info.base_dir / 'input/schemas/basic_source_info.schema.yaml')
-    # import IPython; IPython.embed(); 1/0
 
     def __init__(self, data):
         self.data = data
@@ -53,7 +39,26 @@ class BasicSourceInfo:
         return cls(data=data)
 
     def __repr__(self):
-        return 'BasicSourceInfo(id={})'.format(self.data.id)
+        return 'BasicSourceInfo(id={})'.format(repr(self.data['source_id']))
+
+    def to_dict(self, filled=False):
+        """Data as a flat OrderedDict that can be stored in a table row."""
+        data = OrderedDict()
+
+        if filled:
+            for name, spec in self.schema['properties'].items():
+                datatype = spec['type']
+                data[name] = MISSING_VAL[datatype]
+
+
+        data.update(self.data)
+
+        if data['papers'] is None or data['papers'][0] is None:
+            data['papers'] = ''
+        else:
+            data['papers'] = ','.join(data['papers'])
+
+        return data
 
     def pprint(self):
         return pprint(self.data)
@@ -69,23 +74,25 @@ class BasicSourceInfo:
 class PaperSourceInfo:
     """All info from one paper for one source.
     """
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/paper_source_info.schema.yaml')
 
-    def __init__(self, paper_id, source_id, data):
-        self.paper_id = paper_id
-        self.source_id = source_id
+    def __init__(self, data):
         self.data = data
 
     @classmethod
     def read(cls, path):
         path = Path(path)
         data = yaml.safe_load(path.open())
-        return cls(paper_id=data['paper_id'], source_id=data['source_id'], data=data)
+        return cls(data=data)
 
     def __repr__(self):
-        return 'PaperInfo(id={})'.format(self.id)
+        return 'PaperInfo(source_id={}, data_id={})'.format(
+            repr(self.data['source_id']),
+            repr(self.data['paper_id']),
+        )
 
     def validate(self):
-        raise NotImplementedError
+        validate(self.data, self.schema)
 
 
 class PaperInfo:
@@ -109,7 +116,7 @@ class PaperInfo:
         return cls(id=id, sources=sources)
 
     def __repr__(self):
-        return 'PaperInfo(id={})'.format(self.id)
+        return 'PaperInfo(id={})'.format(repr(self.id))
 
     def validate(self):
         raise NotImplementedError
@@ -119,6 +126,7 @@ class BasicSourceList:
     """
     List of `BasicSourceInfo` objects.
     """
+    column_spec = load_yaml(gammacat_info.base_dir / 'input/schemas/basic_source_list.schema.yaml')
 
     def __init__(self, data):
         self.data = data
@@ -140,29 +148,33 @@ class BasicSourceList:
     def to_table(self):
         """Convert info of `sources` list into a Table.
         """
-        rows = self.to_dict()['data']
-        # rows = [source.data for source in self.sources]
-        # rows['papers'] = ','.join(rows)
-        names = 'TODO'
         meta = dict(
             name='todo',
             version='todo',
             url='todo',
         )
-        table = Table(rows=rows, names=names, meta=meta)
-        return table
+        # import IPython; IPython.embed(); 1/0
 
-    def to_dict(self):
-        """Format that jQuery DataTables can consume."""
-        rows = []
-        for source in self.data:
-            data = source.data.copy()
-            if data['papers'] is None or data['papers'][0] is None:
-                data['papers'] = ''
-            else:
-                data['papers'] = ','.join(data['papers'])
-            rows.append(data)
-        return dict(data=rows)
+        rows = self.data_per_row(filled=True)
+        return Table(rows=rows, meta=meta, masked=True)
+
+    # def data_per_column(self):
+    #     """Data as dict of lists (per-column)"""
+    #     row_data = self.data_per_row()
+    #     col_data = OrderedDict()
+    #
+    #     col_names = [_['name'] for _ in self.columns]
+    #     for name in col_names:
+    #         col_data[name] = [row.get(name, None) for row in row_data]
+    #
+    #     return col_data
+
+    def data_per_row(self, filled=False):
+        """Data as list of dicts (per-row)"""
+        return [
+            source.to_dict(filled=filled)
+            for source in self.data
+            ]
 
     def validate(self):
         [_.validate() for _ in self.data]

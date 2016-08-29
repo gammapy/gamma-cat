@@ -1,0 +1,13 @@
+type: object
+
+properties:
+  source_id: {type: integer}
+  paper_id: {type: string}
+
+  ra: {type: string}
+  dec: {type: string}
+
+required:
+  - source_id, paper_id
+
+additionalProperties: false

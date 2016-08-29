@@ -1,0 +1,13 @@
+# List of columns
+- {name: source_id, type: integer}
+- {name: common_name, type: string}
+- {name: gamma_names, type: string}
+- {name: other_names, type: string}
+- {name: class, type: string}
+- {name: discoverer, type: string}
+- {name: tevcat_id, type: integer}
+- {name: tevcat2_id, type: string}
+- {name: tevcat_name, type: string}
+- {name: tgevcat_id, type: integer}
+- {name: tgevcat_name, type: string}
+- {name: papers, type: string}

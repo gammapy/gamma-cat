@@ -1,12 +1,18 @@
-source_id: null
+source_id: int
 
-tevcat_id: null
-tevcat2_id: null
-tevcat_name: null
+common_name: str
+gamma_names: str
+other_names: str
 
-tgevcat_id: null
-tgevcat_name: null
+class: comma-separated list of strings
+discoverer: {HESS, VERITAS, MAGIC}
+
+tevcat_id: int
+tevcat2_id: str
+tevcat_name: str
+
+tgevcat_id: int
+tgevcat_name: str
 
 papers:
-- null
-- null
+- str

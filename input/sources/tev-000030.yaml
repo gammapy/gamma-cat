@@ -1,8 +1,8 @@
 source_id: 30
 
 common_name: HESS J0632+057
-gamma_names: [HESS J0632+057]
-other_names: []
+gamma_names: [HESS J0632+057, VER J0633+057]
+other_names: [HD 259440]
 
 where: gal
 classes: [bin]
@@ -17,6 +17,11 @@ tevcat_name: TeV J0632+058
 
 tgevcat_id: 30
 tgevcat_name: TeV J0632+0548
+
+pos:
+  simbad_id: HD 259440
+  ra: 98.24689375
+  dec: 5.80032722
 
 papers:
 - 2007A&A...469L...1A

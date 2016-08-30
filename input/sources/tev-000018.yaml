@@ -18,6 +18,11 @@ tevcat_name: TeV J0319+415
 tgevcat_id: 18
 tgevcat_name: TeV J0319+4130
 
+pos:
+  simbad_id: NGC 1275
+  ra: 49.950667083
+  dec: 41.511695306
+
 papers:
 - 2012A&A...539L...2A
 - 2016A&A...589A..33A

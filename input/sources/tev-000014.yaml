@@ -18,6 +18,11 @@ tevcat_name: TeV J0240+612
 tgevcat_id: 14
 tgevcat_name: TeV J0240+6115
 
+pos:
+  simbad_id: LS I +61 303
+  ra: 40.131938163
+  dec: 61.229336515
+
 papers:
 - 2006Sci...312.1771A
 - 2008ApJ...679.1427A

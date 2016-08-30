@@ -18,5 +18,10 @@ tevcat_name: TeV J0525-696
 tgevcat_id: 24
 tgevcat_name: TeV J0525-6938
 
+pos:
+  simbad_id: LMC N132D
+  ra: 81.259167
+  dec: -69.644167
+
 papers:
 - 2015Sci...347..406H

@@ -18,6 +18,11 @@ tevcat_name: TeV J0616+225
 tgevcat_id: 29
 tgevcat_name: TeV J0616+2230
 
+pos:
+  simbad_id: IC 443
+  ra: 94.51125
+  dec: 22.66
+
 papers:
 - 2007ApJ...664L..87A
 - 2009ApJ...700L.127A

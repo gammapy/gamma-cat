@@ -18,5 +18,10 @@ tevcat_name: TeV J0303-241
 tgevcat_id: 15
 tgevcat_name: TeV J0303-2407
 
+pos:
+  simbad_id: PKS 0301-243
+  ra: 45.860417
+  dec: -24.119861
+
 papers:
 - 2013A&A...559A.136H

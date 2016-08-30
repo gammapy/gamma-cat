@@ -18,6 +18,11 @@ tevcat_name: TeV J0416+010
 tgevcat_id: 20
 tgevcat_name: TeV J0416+0105
 
+pos:
+  simbad_id: 1ES 0414+009
+  ra: 64.2187375
+  dec: 1.0899944
+
 papers:
 - 2013arXiv1307.7051M
 - 2012ApJ...755..118A

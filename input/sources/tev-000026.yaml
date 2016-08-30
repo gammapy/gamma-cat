@@ -18,5 +18,10 @@ tevcat_name: TeV J0535-692
 tgevcat_id: 26
 tgevcat_name: TeV J0535-6911
 
+pos:
+  simbad_id: 30 Dor C
+  ra: 83.9617
+  dec: -69.2061
+
 papers:
 - 2015Sci...347..406H

@@ -18,5 +18,10 @@ tevcat_name: TeV J0449-438
 tgevcat_id: 21
 tgevcat_name: TeV J0449-4350
 
+pos:
+  simbad_id: PKS 0447-439
+  ra: 72.3529167
+  dec: -43.8358139
+
 papers:
 - 2013A&A...552A.118H

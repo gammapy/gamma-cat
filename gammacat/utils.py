@@ -3,6 +3,7 @@ import json
 import yaml
 import numpy as np
 from astropy.table import Table
+from astropy.coordinates import SkyCoord
 
 MISSING_VAL = dict(
     integer=-999,
@@ -27,3 +28,17 @@ def make_table(row_data, column_def):
     a table with missing data.
     """
     pass
+
+
+def print_simbad_pos(name):
+    """Print YAML snipped for SIMBAD position.
+    """
+    pos = SkyCoord.from_name(name)
+    template = (
+        'pos:\n'
+        '  simbad_id: {name}\n'
+        '  ra: {pos.ra.deg}\n'
+        '  dec: {pos.dec.deg}\n'
+    )
+    s = template.format(name=name, pos=pos)
+    print(s)

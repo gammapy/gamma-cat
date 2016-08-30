@@ -18,5 +18,10 @@ tevcat_name: TeV J0319+187
 tgevcat_id: 17
 tgevcat_name: TeV J0319+1845
 
+pos:
+  simbad_id: RBS 0413
+  ra: 49.96585
+  dec: 18.7595556
+
 papers:
 - 2012ApJ...750...94A

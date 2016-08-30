@@ -18,5 +18,10 @@ tevcat_name: TeV J0550-322
 tgevcat_id: 28
 tgevcat_name: TeV J0550-3216
 
+pos:
+  simbad_id: PKS 0548-322
+  ra: 87.6689875
+  dec: -32.2712472
+
 papers:
 - 2010A&A...521A..69A

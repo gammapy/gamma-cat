@@ -18,6 +18,11 @@ tevcat_name: TeV J0507+676
 tgevcat_id: 22
 tgevcat_name: TeV J0507+6737
 
+pos:
+  simbad_id: 1ES 0502+675
+  ra: 76.9840583
+  dec: 67.6234056
+
 papers:
 - 2011arXiv1110.0040W
 - atel-2301

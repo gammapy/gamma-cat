@@ -18,5 +18,10 @@ tevcat_name: TeV J0316+413
 tgevcat_id: 16
 tgevcat_name: TeV J0316+4119
 
+pos:
+  simbad_id: IC 310
+  ra: 49.1792708
+  dec: 41.3247667
+
 papers:
 - 2014A&A...563A..91A

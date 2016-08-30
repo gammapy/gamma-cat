@@ -2,7 +2,7 @@ source_id: 27
 
 common_name: N 157B
 gamma_names: [HESS J0537-691]
-other_names: [PSR J0537-6910]
+other_names: [LHA 120-N 157B, PSR J0537-6910]
 
 where: egal
 classes: [pwn]
@@ -17,6 +17,11 @@ tevcat_name: TeV J0537-691
 
 tgevcat_id: 27
 tgevcat_name: TeV J0537-6909
+
+pos:
+  simbad_id: PSR J0537-6910
+  ra: 84.44443
+  dec: -69.17141
 
 papers:
 - 2012A&A...545L...2H

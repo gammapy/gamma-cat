@@ -5,10 +5,9 @@ gamma_names: []
 other_names: []
 
 where: egal
-classes:
-- hbl
+classes: [hbl]
 
-discoverer: hess
+discoverer: HESS
 discovery_date: todo
 
 tevcat_id: 213

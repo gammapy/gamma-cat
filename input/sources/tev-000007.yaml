@@ -1,5 +1,17 @@
 source_id: 7
 
+common_name: RGB J0136+391
+gamma_names: []
+other_names:
+- B3 0133+388
+- 1RXS J013632.9+390556
+
+where: egal
+classes: [hbl]
+
+discoverer: MAGIC
+discovery_date: todo
+
 tevcat_id: 244
 tevcat2_id: 7WhQrw
 tevcat_name: TeV J0136+391
@@ -8,4 +20,9 @@ tgevcat_id: 7
 tgevcat_name: TeV J0136+3905
 
 papers:
-- null
+- 2012AIPC.1505..186M
+
+notes: |
+  Source announced at Gamma 2012.
+  No proceeding or paper yet?
+  Check 2012AIPC.1505..186M

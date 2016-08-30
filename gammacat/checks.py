@@ -18,4 +18,5 @@ def check_input_files():
     """
     input_data = InputData.read()
     input_data.papers.validate()
+    input_data.sources.validate()
     # input_data.validate()

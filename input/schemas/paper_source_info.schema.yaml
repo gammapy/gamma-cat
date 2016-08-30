@@ -7,21 +7,27 @@ properties:
 
   position:
     type: object
-    measured: {type: bool}
-    ra: {type: string}
-    dec: {type: string}
+    properties:
+      measured: {type: boolean}
+      ra: {type: string}
+      dec: {type: string}
+    required: [measured, ra, dec]
 
   morphology:
     type: object
-    class: {type: string}
-    size: {type: number}
+    properties:
+      class: {type: string}
+      size: {type: number}
 
   spectrum:
     type: object
-    class: {type: string}
+    properties:
+      class: {type: string}
 
 required:
   - source_id
   - paper_id
+#  - morphology
+#  - spectrum
 
 additionalProperties: false

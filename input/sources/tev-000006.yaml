@@ -1,5 +1,15 @@
 source_id: 6
 
+common_name: NGC 253
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [galaxy]
+
+discoverer: HESS
+discovery_date: todo
+
 tevcat_id: 195
 tevcat2_id: sK2rQU
 tevcat_name: TeV J0047-253
@@ -8,4 +18,5 @@ tgevcat_id: 6
 tgevcat_name: TeV J0047-2517
 
 papers:
-- null
+- 2009Sci...326.1080A
+- 2012ApJ...757..158A

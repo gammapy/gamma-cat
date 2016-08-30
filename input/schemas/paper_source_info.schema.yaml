@@ -10,9 +10,9 @@ properties:
     properties:
       simbad_id: {type: string}
       ra: {type: [string, number]}
-      dec: {type: string}
-      glon: {type: string}
-      glat: {type: string}
+      dec: {type: [string, number]}
+      glon: {type: [string, number]}
+      glat: {type: [string, number]}
 
   morphology:
     type: object

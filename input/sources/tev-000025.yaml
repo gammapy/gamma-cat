@@ -21,3 +21,8 @@ tgevcat_name: TeV J0534+2200
 papers:
 - 2006A&A...457..899A
 - 2004ApJ...614..897A
+
+position:
+  simbad_id: Crab nebula
+  ra: 83.6330830
+  dec: 22.0145000

@@ -161,7 +161,13 @@ For paper identifiers, we use the ADS identifiers.
 
 #### Source identifiers
 
-* TBD: How do we assign source identifiers (integer, TEV J...)?
+* We use integer source identifiers.
+  In many cases they are the same as for the `TeGeV` catalog,
+  but generally that is not the case.
+* We do not introduce new sources "names" (for now).
+  TBD: how should people reference sources from our catalog?
+  Maybe we should do a position-based identifier like `TeVCat` or `TeGeV` cat?
+
 * TBD: How do we handle sources that split out into multiple sources
   with deeper observations?
 
@@ -170,6 +176,29 @@ For paper identifiers, we use the ADS identifiers.
 
 * TBD: Define source classes and their semantics
 
+
+#### Positions
+
+Sometimes source positions aren't measured or given in the paper.
+This is commonly the case for AGN.
+In those cases, we use the position from SIMBAD and look it up like this:
+
+```python
+>>> from astropy.coordinates import SkyCoord
+>>> SkyCoord.from_name('Crab nebula').to_string(precision=7)
+'83.6330830 22.0145000'
+```
+
+and store it like this:
+```python
+position:
+  simbad_id: Crab nebula
+  ra: 83.6330830
+  dec: 22.0145000
+```
+
+The presence of the `simbad_id` key means that it's a position from
+[SIMBAD](http://simbad.u-strasbg.fr/)
 
 ## How it works
 

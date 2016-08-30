@@ -33,6 +33,15 @@ properties:
 
   notes: {type: string}
 
+  position:
+    type: object
+    properties:
+      simbad_id: {type: string}
+      ra: {type: [string, number]}
+      dec: {type: string}
+      glon: {type: string}
+      glat: {type: string}
+
 required:
   - source_id
 #  - common_name

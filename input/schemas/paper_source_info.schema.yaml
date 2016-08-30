@@ -8,11 +8,11 @@ properties:
   position:
     type: object
     properties:
-      type: {enum: [simbad, measured]}
       simbad_id: {type: string}
-      ra: {type: string}
+      ra: {type: [string, number]}
       dec: {type: string}
-    required: [measured, ra, dec]
+      glon: {type: string}
+      glat: {type: string}
 
   morphology:
     type: object

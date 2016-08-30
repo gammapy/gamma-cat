@@ -51,6 +51,11 @@ class BasicSourceInfo:
                     datatype = spec['type']
                 except KeyError:
                     datatype = 'string'
+
+                # TODO: write code to handle position
+                if name == 'position':
+                    continue
+
                 data[name] = MISSING_VAL[datatype]
 
         data.update(self.data)
@@ -59,6 +64,9 @@ class BasicSourceInfo:
             data['papers'] = ''
         else:
             data['papers'] = ','.join(data['papers'])
+
+        # TODO: write code to handle position
+        data.pop('position', None)
 
         return data
 

@@ -7,8 +7,9 @@ other_names: []
 where: egal
 classes: [hbl]
 
-discoverer: MAGIC
+discoverer: magic
 discovery_date: todo
+seen_by: [magic]
 
 tevcat_id: 229
 tevcat2_id: eNYfrm

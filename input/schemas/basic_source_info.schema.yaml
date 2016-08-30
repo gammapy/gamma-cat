@@ -2,20 +2,35 @@ type: object
 
 properties:
   source_id: {type: integer}
+
   common_name: {type: string}
   gamma_names: {type: array, items: {type: string}}
   other_names: {type: array, items: {type: string}}
+
   where: {type: string, enum: [gal, egal]}
-  classes: {type: array, items: {type: string, enum: [pwn, snr, hbl, galaxy]}}
-  discoverer: {type: string, enum: [HESS, VERITAS, MAGIC]}
+  classes:
+    type: array
+    items:
+      enum: [pwn, snr, galaxy, hbl, blazar, ibl]
+
+  discoverer:
+    enum: [hess, veritas, magic, crimea]
+  seen_by:
+    type: array
+    items:
+      enum: [hess, veritas, magic, crimea]
   discovery_date: {type: string, format: date-time}
+
   tevcat_id: {type: integer}
   tevcat2_id: {type: string}
   tevcat_name: {type: string}
+
   tgevcat_id: {type: integer}
   tgevcat_name: {type: string}
+
   # TODO: we shouldn't allow "null" for papers ... temporary hack.
   papers: {type: array, items: {type: [string, "null"]}}
+
   notes: {type: string}
 
 required:

@@ -10,8 +10,9 @@ other_names:
 where: gal
 classes: [snr]
 
-discoverer: VERITAS
+discoverer: veritas
 discovery_date: todo
+seen_by: [veritas]
 
 tevcat_id: 209
 tevcat2_id: xCyAjF

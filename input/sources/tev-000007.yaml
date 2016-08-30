@@ -9,8 +9,9 @@ other_names:
 where: egal
 classes: [hbl]
 
-discoverer: MAGIC
+discoverer: magic
 discovery_date: todo
+seen_by: [magic]
 
 tevcat_id: 244
 tevcat2_id: 7WhQrw

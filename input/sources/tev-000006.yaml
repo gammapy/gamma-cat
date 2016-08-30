@@ -7,8 +7,9 @@ other_names: []
 where: egal
 classes: [galaxy]
 
-discoverer: HESS
+discoverer: hess
 discovery_date: todo
+seen_by: [hess]
 
 tevcat_id: 195
 tevcat2_id: sK2rQU

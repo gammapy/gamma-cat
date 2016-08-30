@@ -1,5 +1,16 @@
 source_id: 11
 
+common_name: 3C 66A
+gamma_names: []
+other_names: [B2 0218+35]
+
+where: egal
+classes: [ibl]
+
+discoverer: crimea
+discovery_date: todo
+seen_by: [magic, veritas, crimea]
+
 tevcat_id: 119
 tevcat2_id: J01xzR
 tevcat_name: TeV J0222+430
@@ -8,4 +19,5 @@ tgevcat_id: 11
 tgevcat_name: TeV J0222+4302
 
 papers:
-- null
+- 2011ApJ...726...58A
+- 2009ApJ...693L.104A

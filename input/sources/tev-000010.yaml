@@ -1,5 +1,16 @@
 source_id: 10
 
+common_name: S3 0218+35
+gamma_names: []
+other_names: [B2 0218+35]
+
+where: egal
+classes: [blazar]
+
+discoverer: magic
+discovery_date: todo
+seen_by: [magic]
+
 tevcat_id: 254
 tevcat2_id: hJnA37
 tevcat_name: TeV J0218+359
@@ -8,4 +19,4 @@ tgevcat_id: 10
 tgevcat_name: TeV J0221+3556
 
 papers:
-- null
+- 2016JPhCS.718e2022M

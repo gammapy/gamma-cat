@@ -9,8 +9,9 @@ other_names:
 where: gal
 classes: [pwn, snr]
 
-discoverer: VERITAS
+discoverer: veritas
 discovery_date: todo
+seen_by: [veritas]
 
 tevcat_id: 227
 tevcat2_id: rC5JCj

@@ -8,7 +8,10 @@ An open catalog of gamma-ray sources.
 This is work in progress.
 Feedback and contributions welcome!
 
-Contact: https://github.com/cdeil
+TODO: Make a gmail account and / or discourse forum for discussions
+and feedback in addition to Github issues?
+
+For now, contact: https://github.com/cdeil (see email there).
 
 For now, we just collect TeV gamma-ray source information.
 Later we might try to ingest and interconnect other catalogs

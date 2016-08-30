@@ -69,6 +69,15 @@ The following people have directly contributed to `gamma-cat`:
 * [Christoph Deil](https://github.com/cdeil)
 * [Arjun Voruganti](https://github.com/vorugantia)
 
-TODO: add other contributions and acknowledgements,
-like `TeGeV` or `TeVCat` or info obtained via private communication
-or feedback we received?
+Others have contributed indirectly, e.g. given information
+or feedback via private communication.
+
+Thank you!
+
+## Acknowledgements
+
+The following tools and services were used to produce this catalog:
+
+* [SIMBAD](http://simbad.u-strasbg.fr/simbad/)
+* [Astrophysics data system (ADS)](https://ui.adsabs.harvard.edu/)
+* [Astropy](http://www.astropy.org/) and [Gammapy](http://gammapy.org/)

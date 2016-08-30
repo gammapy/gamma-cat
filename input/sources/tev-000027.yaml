@@ -1,5 +1,16 @@
 source_id: 27
 
+common_name: N 157B
+gamma_names: [HESS J0537-691]
+other_names: [PSR J0537-6910]
+
+where: egal
+classes: [pwn]
+
+discoverer: hess
+discovery_date: todo
+seen_by: [hess]
+
 tevcat_id: 236
 tevcat2_id: 8hS5e7
 tevcat_name: TeV J0537-691
@@ -8,4 +19,5 @@ tgevcat_id: 27
 tgevcat_name: TeV J0537-6909
 
 papers:
-- null
+- 2012A&A...545L...2H
+- 2015Sci...347..406H

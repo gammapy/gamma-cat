@@ -14,11 +14,11 @@ properties:
       enum: [unid, other, pwn, snr, mc, bin, galaxy, hbl, blazar, ibl, fri]
 
   discoverer:
-    enum: [hess, veritas, magic, crimea, hawc, hegra]
+    enum: [hess, veritas, magic, hegra, hawc, milagro, crimea]
   seen_by:
     type: array
     items:
-      enum: [hess, veritas, magic, crimea, hawc, hegra]
+      enum: [hess, veritas, magic, hegra, hawc, milagro, crimea]
   discovery_date: {type: string}
 
   tevcat_id: {type: integer}

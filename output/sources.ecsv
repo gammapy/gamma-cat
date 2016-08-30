@@ -18,9 +18,9 @@
 # - {name: tgevcat_name, datatype: string}
 # - {name: where, datatype: string}
 # meta: !!omap
-# - {version: todo}
 # - {url: todo}
 # - {name: todo}
+# - {version: todo}
 classes common_name discoverer discovery_date gamma_names notes other_names papers seen_by source_id tevcat2_id tevcat_id tevcat_name tgevcat_id tgevcat_name where
 "['pwn', 'snr']" "CTA 1" veritas todo "['VER J0006+729']" "" "['SNR G119.5+10.2']" 2013ApJ...764...38A ['veritas'] 1 rC5JCj 227 "TeV J0006+729" 1 "TeV J0006+7259" gal
 ['hbl'] "SHBL J001355.9-185406" hess todo [] "" [] 2013A&A...554A..72H ['hess'] 2 70hRXZ 213 "TeV J0013-188" 2 "TeV J0013-1853" egal
@@ -50,10 +50,10 @@ Check 2012AIPC.1505..186M" "['B3 0133+388', '1RXS J013632.9+390556']" 2012AIPC.1
 "['snr', 'mc']" "LMC N132D" hess todo [] "" "['SNR J052501-693842']" 2015Sci...347..406H ['hess'] 24 z30txh 256 "TeV J0525-696" 24 "TeV J0525-6938" egal
 ['pwn'] Crab hess todo [] "" "['G184.6-5.8', '3C 144', 'SN 1054']" 2006A&A...457..899A,2004ApJ...614..897A "['hess', 'hegra', 'magic', 'veritas', 'hawc']" 25 BlJI6q 74 "TeV J0534+220" 25 "TeV J0534+2200" gal
 ['other'] "30 Dor C" hess todo [] "" [] 2015Sci...347..406H ['hess'] 26 C6fp9j 255 "TeV J0535-692" 26 "TeV J0535-6911" egal
-"" "" "" "" "" "" "" "" "" 27 8hS5e7 236 "TeV J0537-691" 27 "TeV J0537-6909" ""
-"" "" "" "" "" "" "" "" "" 28 U09cDa 133 "TeV J0550-322" 28 "TeV J0550-3216" ""
-"" "" "" "" "" "" "" "" "" 29 9xMcgD 120 "TeV J0616+225" 29 "TeV J0616+2230" ""
-"" "" "" "" "" "" "" "" "" 30 jPeNQq 134 "TeV J0632+058" 30 "TeV J0632+0548" ""
+['pwn'] "N 157B" hess todo "['HESS J0537-691']" "" "['PSR J0537-6910']" 2012A&A...545L...2H,2015Sci...347..406H ['hess'] 27 8hS5e7 236 "TeV J0537-691" 27 "TeV J0537-6909" egal
+['hbl'] "PKS 0548-322" hess todo [] "" "['H 0548-322', '1ES 0548-322']" 2010A&A...521A..69A ['hess'] 28 U09cDa 133 "TeV J0550-322" 28 "TeV J0550-3216" egal
+['snr'] "IC 443" magic todo "['MAGIC 0616+223']" "" "['3C 157', 'SNR 189.1+03.0']" 2007ApJ...664L..87A,2009ApJ...700L.127A,2009ApJ...698L.133A "['magic', 'veritas', 'milagro']" 29 9xMcgD 120 "TeV J0616+225" 29 "TeV J0616+2230" gal
+['bin'] "HESS J0632+057" hess todo "['HESS J0632+057']" "" [] 2007A&A...469L...1A,2009ApJ...690L.101H,2012ApJ...754L..10A "['hess', 'veritas', 'magic']" 30 jPeNQq 134 "TeV J0632+058" 30 "TeV J0632+0548" gal
 "" "" "" "" "" "" "" "" "" 31 66DvGb 177 "TeV J0632+173" 31 "TeV J0632+1722" ""
 "" "" "" "" "" "" "" "" "" 32 0WgN2s 207 "TeV J0648+152" 32 "TeV J0648+1516" ""
 "" "" "" "" "" "" "" "" "" 33 zp72d7 238 "TeV J0650+250" 33 "TeV J0650+2503" ""

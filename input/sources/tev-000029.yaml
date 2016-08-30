@@ -1,5 +1,16 @@
 source_id: 29
 
+common_name: IC 443
+gamma_names: [MAGIC 0616+223]
+other_names: [3C 157, SNR 189.1+03.0]
+
+where: gal
+classes: [snr]
+
+discoverer: magic
+discovery_date: todo
+seen_by: [magic, veritas, milagro]
+
 tevcat_id: 120
 tevcat2_id: 9xMcgD
 tevcat_name: TeV J0616+225
@@ -8,4 +19,6 @@ tgevcat_id: 29
 tgevcat_name: TeV J0616+2230
 
 papers:
-- null
+- 2007ApJ...664L..87A
+- 2009ApJ...700L.127A
+- 2009ApJ...698L.133A

@@ -1,4 +1,5 @@
 type: object
+additionalProperties: false
 
 properties:
   source_id: {type: integer}
@@ -35,12 +36,11 @@ properties:
 
   pos:
     type: object
+    additionalProperties: false
     properties:
       simbad_id: {type: string}
-      ra: {type: [string, number]}
-      dec: {type: [string, number]}
-      glon: {type: [string, number]}
-      glat: {type: [string, number]}
+      ra: {type: [string, number], unit=deg}
+      dec: {type: [string, number], unit=deg}
 
 required:
   - source_id
@@ -57,5 +57,3 @@ required:
   - tgevcat_id
   - tgevcat_name
   - papers
-
-additionalProperties: false

@@ -1,29 +1,73 @@
 type: object
-
+additionalProperties: false
 properties:
 
   source_id: {type: integer}
   paper_id: {type: string}
 
+  dataset:
+    type: object
+    additionalProperties: false
+    properties:
+      livetime: {type: number, unit: hour}
+      cuts: {type: string}
+
   pos:
     type: object
+    additionalProperties: false
     properties:
       simbad_id: {type: string}
-      ra: {type: [string, number]}
-      dec: {type: [string, number]}
-      glon: {type: [string, number]}
-      glat: {type: [string, number]}
+      ra: {type: [string, number], unit: deg}
+      dec: {type: [string, number], unit: deg}
+      glon: {type: [string, number], unit: deg}
+      glat: {type: [string, number], unit: deg}
 
   morphology:
     type: object
+    additionalProperties: false
     properties:
-      class: {type: string}
-      size: {type: number}
+      type: {type: string}
+      size: {type: number, unit: deg}
 
   spectrum:
     type: object
+    additionalProperties: false
     properties:
-      class: {type: string}
+      type: {type: string}
+      theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
+      energy_range:
+        type: object
+        additionalProperties: false
+        properties:
+          min: {type: [number, "null"], unit=deg}
+          max: {type: [number, "null"], unit=deg}
+      norm:
+        type: object
+        additionalProperties: false
+        unit: 1e-12 cm-2 s-1 TeV-1
+        description: Flux norm parameter
+        properties:
+          val: {type: [number, "null"]}
+          err: {type: [number, "null"], description: Statistical error}
+          err_sys: {type: [number, "null"], description: Systematic error}
+      index:
+        type: object
+        additionalProperties: false
+        unit: dimensionless
+        description: Spectral index parameter
+        properties:
+          val: {type: [number, "null"]}
+          err: {type: [number, "null"], description: Statistical error}
+          err_sys: {type: [number, "null"], description: Systematic error}
+      energy_cut:
+        type: object
+        additionalProperties: false
+        unit: TeV
+        description: Cutoff energy parameter
+        properties:
+          val: {type: [number, "null"]}
+          err: {type: [number, "null"], description: Statistical error}
+          err_sys: {type: [number, "null"], description: Systematic error}
 
 required:
   - source_id
@@ -31,4 +75,3 @@ required:
 #  - morphology
 #  - spectrum
 
-additionalProperties: false

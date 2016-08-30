@@ -8,8 +8,8 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: Crab
-# - ads_id: 2006A&A...457..899A
+# - source_id: 25
+# - paper_id: 2006A&A...457..899A
 # - comments:
 #   - Data taken from table 5 in the paper
  0.519    975  42.9  1.81e-10  0.06e-10  0.06e-10

@@ -6,8 +6,8 @@
 # - {name: flux, datatype: float32}
 # - {name: flux_err, datatype: float32}
 # meta: !!omap
-# - name: Crab
-# - ads_id: 2008ICRC....2..803K
+# - source_id: 25
+# - paper_id: 2008ICRC....2..803K
 # - comments:
 #   - Data taken from table 4
 0.39 16.7 3.87e-10 0.38e-10

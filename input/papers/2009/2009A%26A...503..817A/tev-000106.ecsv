@@ -6,8 +6,9 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1745-290
-# - ads_id: 2009A%26A...503..817A
+# - source_id: 106
+# - source_name: HESS J1745-290
+# - paper_id: 2009A&A...503..817A
 # - ul_confidence_level: 0.95
  0.2838   4.186e-11 3.734e-11   4.653e-11
  0.3491   2.439e-11 2.249e-11   2.633e-11

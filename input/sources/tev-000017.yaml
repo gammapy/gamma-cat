@@ -1,5 +1,16 @@
 source_id: 17
 
+common_name: RBS 0413
+gamma_names: []
+other_names: [RBS 0413, EXO 0317.0+1834, 1E 0317.0+1835]
+
+where: egal
+classes: [hbl]
+
+discoverer: veritas
+discovery_date: todo
+seen_by: [veritas]
+
 tevcat_id: 198
 tevcat2_id: p26X9Z
 tevcat_name: TeV J0319+187
@@ -8,4 +19,4 @@ tgevcat_id: 17
 tgevcat_name: TeV J0319+1845
 
 papers:
-- null
+- 2012ApJ...750...94A

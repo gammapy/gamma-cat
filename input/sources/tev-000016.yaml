@@ -1,5 +1,16 @@
 source_id: 16
 
+common_name: IC 310
+gamma_names: [MAGIC J0317+413]
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+discovery_date: todo
+seen_by: [magic]
+
 tevcat_id: 208
 tevcat2_id: hooot9
 tevcat_name: TeV J0316+413
@@ -8,4 +19,4 @@ tgevcat_id: 16
 tgevcat_name: TeV J0316+4119
 
 papers:
-- null
+- 2014A&A...563A..91A

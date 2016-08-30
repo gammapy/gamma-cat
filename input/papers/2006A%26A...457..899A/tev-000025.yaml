@@ -3,7 +3,6 @@ source_id: 25
 
 dataset:
   livetime: 22.9
-  cuts: std
 
 morphology:
   type: point

@@ -10,30 +10,53 @@ properties:
     additionalProperties: false
     properties:
       livetime: {type: number, unit: hour}
-      cuts: {type: string}
+      significance: {type: number, unit: none}
 
   pos:
     type: object
     additionalProperties: false
     properties:
-      simbad_id: {type: string}
-      ra: {type: [string, number], unit: deg}
-      dec: {type: [string, number], unit: deg}
-      glon: {type: [string, number], unit: deg}
-      glat: {type: [string, number], unit: deg}
+      ra:
+        type: object
+        additionalProperties: false
+        description: Right Ascension
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+      dec:
+        type: object
+        additionalProperties: false
+        description: Declination
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+      glon:
+        type: object
+        additionalProperties: false
+        description: Galactic longitude
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+      glat:
+        type: object
+        additionalProperties: false
+        description: Galactic latitude
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
 
   morphology:
     type: object
     additionalProperties: false
     properties:
-      type: {type: string}
+      type: {enum: [point]}
       size: {type: number, unit: deg}
 
   spectrum:
     type: object
     additionalProperties: false
     properties:
-      type: {type: string}
+      type: {enum: [pl, ecpl]}
       theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
       energy_range:
         type: object

@@ -5,7 +5,7 @@ properties:
   source_id: {type: integer}
   paper_id: {type: string}
 
-  dataset:
+  data:
     type: object
     additionalProperties: false
     properties:
@@ -45,20 +45,20 @@ properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
 
-  morphology:
+  morph:
     type: object
     additionalProperties: false
     properties:
       type: {enum: [point]}
       size: {type: number, unit: deg}
 
-  spectrum:
+  spec:
     type: object
     additionalProperties: false
     properties:
       type: {enum: [pl, ecpl]}
       theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
-      energy_range:
+      erange:
         type: object
         additionalProperties: false
         properties:
@@ -82,7 +82,7 @@ properties:
           val: {type: [number, "null"]}
           err: {type: [number, "null"], description: Statistical error}
           err_sys: {type: [number, "null"], description: Systematic error}
-      energy_cut:
+      ecut:
         type: object
         additionalProperties: false
         unit: TeV

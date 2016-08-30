@@ -19,50 +19,50 @@
 # - {name: where, datatype: string}
 # meta: !!omap
 # - {name: todo}
-# - {version: todo}
 # - {url: todo}
+# - {version: todo}
 classes common_name discoverer discovery_date gamma_names notes other_names papers seen_by source_id tevcat2_id tevcat_id tevcat_name tgevcat_id tgevcat_name where
-"['pwn', 'snr']" "CTA 1" veritas todo "['VER J0006+729']" "" "['SNR G119.5+10.2']" 2013ApJ...764...38A ['veritas'] 1 rC5JCj 227 "TeV J0006+729" 1 "TeV J0006+7259" gal
-['hbl'] "SHBL J001355.9-185406" hess todo [] "" [] 2013A&A...554A..72H ['hess'] 2 70hRXZ 213 "TeV J0013-188" 2 "TeV J0013-1853" egal
-['snr'] "Tycho SNR" veritas todo [] "" "['SNR G120.1+1.4', '3C10', 'SN1572']" 2011ApJ...730L..20A ['veritas'] 3 xCyAjF 209 "TeV J0025+641" 3 "TeV J0025+6410" gal
-['hbl'] "KUV 00311-1938" hess todo [] "" [] 2012AIPC.1505..490B ['hess'] 4 PKJZqs 239 "TeV J0033-193" 4 "TeV J0033-1921" egal
-['hbl'] "1ES 0033+595" magic todo [] "" [] 2015MNRAS.446..217A ['magic'] 5 eNYfrm 229 "TeV J0035+598" 5 "TeV J0035+5947" egal
-['galaxy'] "NGC 253" hess todo [] "" [] 2009Sci...326.1080A,2012ApJ...757..158A ['hess'] 6 sK2rQU 195 "TeV J0047-253" 6 "TeV J0047-2517" egal
-['hbl'] "RGB J0136+391" magic todo [] "Source announced at Gamma 2012.
+"['pwn', 'snr']" "CTA 1" veritas "" "['VER J0006+729']" "" "['SNR G119.5+10.2']" 2013ApJ...764...38A ['veritas'] 1 rC5JCj 227 "TeV J0006+729" 1 "TeV J0006+7259" gal
+['hbl'] "SHBL J001355.9-185406" hess "" [] "" [] 2013A&A...554A..72H ['hess'] 2 70hRXZ 213 "TeV J0013-188" 2 "TeV J0013-1853" egal
+['snr'] "Tycho SNR" veritas "" [] "" "['SNR G120.1+1.4', '3C10', 'SN1572']" 2011ApJ...730L..20A ['veritas'] 3 xCyAjF 209 "TeV J0025+641" 3 "TeV J0025+6410" gal
+['hbl'] "KUV 00311-1938" hess "" [] "" [] 2012AIPC.1505..490B ['hess'] 4 PKJZqs 239 "TeV J0033-193" 4 "TeV J0033-1921" egal
+['hbl'] "1ES 0033+595" magic "" [] "" [] 2015MNRAS.446..217A ['magic'] 5 eNYfrm 229 "TeV J0035+598" 5 "TeV J0035+5947" egal
+['galaxy'] "NGC 253" hess "" [] "" [] 2009Sci...326.1080A,2012ApJ...757..158A ['hess'] 6 sK2rQU 195 "TeV J0047-253" 6 "TeV J0047-2517" egal
+['hbl'] "RGB J0136+391" magic "" [] "Source announced at Gamma 2012.
 No proceeding or paper yet?
 Check 2012AIPC.1505..186M" "['B3 0133+388', '1RXS J013632.9+390556']" 2012AIPC.1505..186M ['magic'] 7 7WhQrw 244 "TeV J0136+391" 7 "TeV J0136+3905" egal
-['hbl'] "RGB J0152+017" hess todo [] "" ['RXJ0152.6+0147'] 2008A&A...481L.103A,2008bves.confE..46L ['hess'] 8 tKGVcC 156 "TeV J0152+017" 8 "TeV J0152+0146" egal
-['pwn'] "3C 58" hess todo [] "" [] 2014A&A...567L...8A ['hess'] 9 2I2TuY 252 "TeV J0209+648" 9 "TeV J0205+6451" gal
-['blazar'] "S3 0218+35" magic todo [] "" "['B2 0218+35']" 2016JPhCS.718e2022M ['magic'] 10 hJnA37 254 "TeV J0218+359" 10 "TeV J0221+3556" egal
-['ibl'] "3C 66A" crimea todo [] "" "['B2 0218+35']" 2011ApJ...726...58A,2009ApJ...693L.104A "['magic', 'veritas', 'crimea']" 11 J01xzR 119 "TeV J0222+430" 11 "TeV J0222+4302" egal
-['unid'] "MAGIC J0223+403" magic todo "['MAGIC J0223+403']" "" "['3C 66A/B Region']" 2009ApJ...692L..29A ['magic'] 12 y6gVxa 138 "TeV J0223+430" 12 "TeV J0223+4259" unid
-['hbl'] "1ES 0229+200" hess todo [] "" [] 2007A&A...475L...9A,2011arXiv1110.0038 "['hess', 'veritas']" 13 pVNsSZ 130 "TeV J0232+202" 13 "TeV J0232+2016" egal
-['bin'] "LS I +61 303" magic todo [] "" [] 2006Sci...312.1771A,2008ApJ...679.1427A "['veritas', 'magic']" 14 fW749W 89 "TeV J0240+612" 14 "TeV J0240+6115" gal
-['hbl'] "PKS 0301-243" hess todo [] "" [] 2013A&A...559A.136H ['hess'] 15 5puKGr 240 "TeV J0303-241" 15 "TeV J0303-2407" egal
-['hbl'] "IC 310" magic todo "['MAGIC J0317+413']" "" [] 2014A&A...563A..91A ['magic'] 16 hooot9 208 "TeV J0316+413" 16 "TeV J0316+4119" egal
-['hbl'] "RBS 0413" veritas todo [] "" "['RBS 0413', 'EXO 0317.0+1834', '1E 0317.0+1835']" 2012ApJ...750...94A ['veritas'] 17 p26X9Z 198 "TeV J0319+187" 17 "TeV J0319+1845" egal
-['fri'] "NGC 1275" magic todo [] "" [] 2012A&A...539L...2A,2016A&A...589A..33A ['magic'] 18 9dfnMH 212 "TeV J0319+415" 18 "TeV J0319+4130" egal
-['hbl'] "1ES 0347-121" hess todo [] "" [] 2007A&A...473L..25A ['hess'] 19 rWyLLM 147 "TeV J0349-119" 19 "TeV J0349-1158" egal
-['hbl'] "1ES 0414+009" hess todo [] "" [] 2013arXiv1307.7051M,2012ApJ...755..118A,2012A&A...538A.103H "['hess', 'veritas']" 20 hKCHxG 199 "TeV J0416+010" 20 "TeV J0416+0105" egal
-['hbl'] "PKS 0447-439" hess todo [] "" [] 2013A&A...552A.118H ['hess'] 21 ewJQZd 203 "TeV J0449-438" 21 "TeV J0449-4350" egal
-['hbl'] "1ES 0502+675" veritas todo [] "" [] 2011arXiv1110.0040W,atel-2301 ['veritas'] 22 1G0nr7 200 "TeV J0507+676" 22 "TeV J0507+6737" egal
-['ibl'] "RGB J0521+212" veritas todo "['VER J0521+211']" "" [] 2013ApJ...776...69A,atel-2309 ['veritas'] 23 ILT7om 196 "TeV J0521+211" 23 "TeV J0521+2112" egal
-"['snr', 'mc']" "LMC N132D" hess todo [] "" "['SNR J052501-693842']" 2015Sci...347..406H ['hess'] 24 z30txh 256 "TeV J0525-696" 24 "TeV J0525-6938" egal
-['pwn'] "Crab nebula" hess todo [] "" "['G184.6-5.8', '3C 144', 'SN 1054']" 2006A&A...457..899A,2004ApJ...614..897A "['hess', 'hegra', 'magic', 'veritas', 'hawc']" 25 BlJI6q 74 "TeV J0534+220" 25 "TeV J0534+2200" gal
-['other'] "30 Dor C" hess todo [] "" [] 2015Sci...347..406H ['hess'] 26 C6fp9j 255 "TeV J0535-692" 26 "TeV J0535-6911" egal
-['pwn'] "N 157B" hess todo "['HESS J0537-691']" "" "['LHA 120-N 157B', 'PSR J0537-6910']" 2012A&A...545L...2H,2015Sci...347..406H ['hess'] 27 8hS5e7 236 "TeV J0537-691" 27 "TeV J0537-6909" egal
-['hbl'] "PKS 0548-322" hess todo [] "" "['H 0548-322', '1ES 0548-322']" 2010A&A...521A..69A ['hess'] 28 U09cDa 133 "TeV J0550-322" 28 "TeV J0550-3216" egal
-['snr'] "IC 443" magic todo "['MAGIC 0616+223']" "" "['3C 157', 'SNR 189.1+03.0']" 2007ApJ...664L..87A,2009ApJ...700L.127A,2009ApJ...698L.133A "['magic', 'veritas', 'milagro']" 29 9xMcgD 120 "TeV J0616+225" 29 "TeV J0616+2230" gal
-['bin'] "HESS J0632+057" hess todo "['HESS J0632+057', 'VER J0633+057']" "" "['HD 259440']" 2007A&A...469L...1A,2009ApJ...690L.101H,2012ApJ...754L..10A "['hess', 'veritas', 'magic']" 30 jPeNQq 134 "TeV J0632+058" 30 "TeV J0632+0548" gal
-"" "" "" "" "" "" "" "" "" 31 66DvGb 177 "TeV J0632+173" 31 "TeV J0632+1722" ""
+['hbl'] "RGB J0152+017" hess "" [] "" ['RXJ0152.6+0147'] 2008A&A...481L.103A,2008bves.confE..46L ['hess'] 8 tKGVcC 156 "TeV J0152+017" 8 "TeV J0152+0146" egal
+['pwn'] "3C 58" hess "" [] "" [] 2014A&A...567L...8A ['hess'] 9 2I2TuY 252 "TeV J0209+648" 9 "TeV J0205+6451" gal
+['blazar'] "S3 0218+35" magic "" [] "" "['B2 0218+35']" 2016JPhCS.718e2022M ['magic'] 10 hJnA37 254 "TeV J0218+359" 10 "TeV J0221+3556" egal
+['ibl'] "3C 66A" crimea "" [] "" "['B2 0218+35']" 2011ApJ...726...58A,2009ApJ...693L.104A "['magic', 'veritas', 'crimea']" 11 J01xzR 119 "TeV J0222+430" 11 "TeV J0222+4302" egal
+['unid'] "MAGIC J0223+403" magic "" "['MAGIC J0223+403']" "" "['3C 66A/B Region']" 2009ApJ...692L..29A ['magic'] 12 y6gVxa 138 "TeV J0223+430" 12 "TeV J0223+4259" unid
+['hbl'] "1ES 0229+200" hess "" [] "" [] 2007A&A...475L...9A,2011arXiv1110.0038 "['hess', 'veritas']" 13 pVNsSZ 130 "TeV J0232+202" 13 "TeV J0232+2016" egal
+['bin'] "LS I +61 303" magic "" [] "" [] 2006Sci...312.1771A,2008ApJ...679.1427A "['veritas', 'magic']" 14 fW749W 89 "TeV J0240+612" 14 "TeV J0240+6115" gal
+['hbl'] "PKS 0301-243" hess "" [] "" [] 2013A&A...559A.136H ['hess'] 15 5puKGr 240 "TeV J0303-241" 15 "TeV J0303-2407" egal
+['hbl'] "IC 310" magic "" "['MAGIC J0317+413']" "" [] 2014A&A...563A..91A ['magic'] 16 hooot9 208 "TeV J0316+413" 16 "TeV J0316+4119" egal
+['hbl'] "RBS 0413" veritas "" [] "" "['RBS 0413', 'EXO 0317.0+1834', '1E 0317.0+1835']" 2012ApJ...750...94A ['veritas'] 17 p26X9Z 198 "TeV J0319+187" 17 "TeV J0319+1845" egal
+['fri'] "NGC 1275" magic "" [] "" [] 2012A&A...539L...2A,2016A&A...589A..33A ['magic'] 18 9dfnMH 212 "TeV J0319+415" 18 "TeV J0319+4130" egal
+['hbl'] "1ES 0347-121" hess "" [] "" [] 2007A&A...473L..25A ['hess'] 19 rWyLLM 147 "TeV J0349-119" 19 "TeV J0349-1158" egal
+['hbl'] "1ES 0414+009" hess "" [] "" [] 2013arXiv1307.7051M,2012ApJ...755..118A,2012A&A...538A.103H "['hess', 'veritas']" 20 hKCHxG 199 "TeV J0416+010" 20 "TeV J0416+0105" egal
+['hbl'] "PKS 0447-439" hess "" [] "" [] 2013A&A...552A.118H ['hess'] 21 ewJQZd 203 "TeV J0449-438" 21 "TeV J0449-4350" egal
+['hbl'] "1ES 0502+675" veritas "" [] "" [] 2011arXiv1110.0040W,atel-2301 ['veritas'] 22 1G0nr7 200 "TeV J0507+676" 22 "TeV J0507+6737" egal
+['ibl'] "RGB J0521+212" veritas "" "['VER J0521+211']" "" [] 2013ApJ...776...69A,atel-2309 ['veritas'] 23 ILT7om 196 "TeV J0521+211" 23 "TeV J0521+2112" egal
+"['snr', 'mc']" "LMC N132D" hess "" [] "" "['SNR J052501-693842']" 2015Sci...347..406H ['hess'] 24 z30txh 256 "TeV J0525-696" 24 "TeV J0525-6938" egal
+['pwn'] "Crab nebula" hess "" [] "" "['G184.6-5.8', '3C 144', 'SN 1054']" 2006A&A...457..899A,2004ApJ...614..897A "['hess', 'hegra', 'magic', 'veritas', 'hawc']" 25 BlJI6q 74 "TeV J0534+220" 25 "TeV J0534+2200" gal
+['other'] "30 Dor C" hess "" [] "" [] 2015Sci...347..406H ['hess'] 26 C6fp9j 255 "TeV J0535-692" 26 "TeV J0535-6911" egal
+['pwn'] "N 157B" hess "" "['HESS J0537-691']" "" "['LHA 120-N 157B', 'PSR J0537-6910']" 2012A&A...545L...2H,2015Sci...347..406H ['hess'] 27 8hS5e7 236 "TeV J0537-691" 27 "TeV J0537-6909" egal
+['hbl'] "PKS 0548-322" hess "" [] "" "['H 0548-322', '1ES 0548-322']" 2010A&A...521A..69A ['hess'] 28 U09cDa 133 "TeV J0550-322" 28 "TeV J0550-3216" egal
+['snr'] "IC 443" magic "" "['MAGIC 0616+223']" "" "['3C 157', 'SNR 189.1+03.0']" 2007ApJ...664L..87A,2009ApJ...700L.127A,2009ApJ...698L.133A "['magic', 'veritas', 'milagro']" 29 9xMcgD 120 "TeV J0616+225" 29 "TeV J0616+2230" gal
+['bin'] "HESS J0632+057" hess "" "['HESS J0632+057', 'VER J0633+057']" "" "['HD 259440']" 2007A&A...469L...1A,2009ApJ...690L.101H,2012ApJ...754L..10A "['hess', 'veritas', 'magic']" 30 jPeNQq 134 "TeV J0632+058" 30 "TeV J0632+0548" gal
+"" "" "" "" "" "" "" todo "" 31 66DvGb 177 "TeV J0632+173" 31 "TeV J0632+1722" ""
 "" "" "" "" "" "" "" "" "" 32 0WgN2s 207 "TeV J0648+152" 32 "TeV J0648+1516" ""
 "" "" "" "" "" "" "" "" "" 33 zp72d7 238 "TeV J0650+250" 33 "TeV J0650+2503" ""
 "" "" "" "" "" "" "" "" "" 34 vejQq8 173 "TeV J0710+591" 34 "TeV J0710+5909" ""
 "" "" "" "" "" "" "" "" "" 35 vDwoU3 172 "TeV J0721+713" 35 "TeV J0721+7120" ""
 "" "" "" "" "" "" "" "" "" 36 kIwUzI 160 "TeV J0809+523" 36 "TeV J0809+5219" ""
-"" "" "" "" "" "" "" "" "" 37 yVoFOS 86 "TeV J0835-456" 37 "TeV J0835-4536" ""
+['pwn'] "Vela X" hess todo "['HESS J0835-455']" "" [] 2012A&A...548A..38A,2006A&A...448L..43A ['hess'] 37 yVoFOS 86 "TeV J0835-456" 37 "TeV J0835-4536" gal
 "" "" "" "" "" "" "" "" "" 38 nhyiXQ 249 "TeV J0847+115" 38 "TeV J0847+1133" ""
-"" "" "" "" "" "" "" "" "" 39 FfpuKQ 98 "TeV J0852-463" 39 "TeV J0852-4622" ""
+['snr'] "Vela Junior" cangaroo todo "['HESS J0852-463']" "" "['RX J0852.0-4622']" 2005A&A...437L...7A,2007ApJ...661..236A "['cangaroo', 'hess']" 39 FfpuKQ 98 "TeV J0852-463" 39 "TeV J0852-4622" gal
 "" "" "" "" "" "" "" "" "" 40 wN7SNs 194 "TeV J0955+696" 40 "TeV J0955+6940" ""
 "" "" "" "" "" "" "" "" "" 41 "" 258 "TeV J0958+655" 41 "TeV J0958+6533" ""
 "" "" "" "" "" "" "" "" "" 42 7fxWYa 215 "TeV J1010-313" 42 "TeV J1010-3118" ""

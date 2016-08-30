@@ -29,7 +29,7 @@ properties:
   tgevcat_id: {type: integer}
   tgevcat_name: {type: string}
 
-  papers: {type: array, items: {type: string}}
+  papers: {type: array, items: {type: [string, "null"]}}
 
   notes: {type: string}
 

@@ -3,6 +3,13 @@
 For now I'm using this TODO list instead of Github issues for
 reminders, because it's just me working on the project.
 
+## General
+
+- Split up `README` into several files:
+  - `README.md` should be a short overview
+  - `README_USE.md` should be info for users
+  - `README_CONTRIB.md` 
+
 ## Coding
 
 - In `test.py` we should actually check if data files round-trip

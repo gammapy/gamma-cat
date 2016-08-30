@@ -5,8 +5,8 @@
 # - {name: flux, datatype: float32}
 # - {name: flux_err, datatype: float32}
 # meta: !!omap
-# - name: HESS J1503-582
-# - ads_id: TODO
+# - source_id: 75
+# - paper_id: 2008AIPC.1085..281R
 1.29 9.03e-13 3.07e-13
 2.28 1.73e-13 8.51e-14
 4.04 6.00e-14 2.68e-14

@@ -19,6 +19,11 @@ tevcat_name: TeV J0152+017
 tgevcat_id: 8
 tgevcat_name: TeV J0152+0146
 
+pos:
+  simbad_id: RGB J0152+017
+  ra: 28.1650455
+  dec: 1.7881618
+
 papers:
 - 2008A&A...481L.103A
 - 2008bves.confE..46L

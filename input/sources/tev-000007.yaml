@@ -23,6 +23,11 @@ tgevcat_name: TeV J0136+3905
 papers:
 - 2012AIPC.1505..186M
 
+pos:
+  simbad_id: RGB J0136+391
+  ra: 24.1358267
+  dec: 39.0997773
+
 notes: |
   Source announced at Gamma 2012.
   No proceeding or paper yet?

@@ -18,5 +18,10 @@ tevcat_name: TeV J0209+648
 tgevcat_id: 9
 tgevcat_name: TeV J0205+6451
 
+pos:
+  simbad_id: 3C 58
+  ra: 31.4043000
+  dec: 64.8283000
+
 papers:
 - 2014A&A...567L...8A

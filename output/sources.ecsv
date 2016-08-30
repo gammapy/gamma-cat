@@ -18,8 +18,8 @@
 # - {name: tgevcat_name, datatype: string}
 # - {name: where, datatype: string}
 # meta: !!omap
-# - {version: todo}
 # - {url: todo}
+# - {version: todo}
 # - {name: todo}
 classes common_name discoverer discovery_date gamma_names notes other_names papers seen_by source_id tevcat2_id tevcat_id tevcat_name tgevcat_id tgevcat_name where
 "['pwn', 'snr']" "CTA 1" veritas todo "['VER J0006+729']" "" "['SNR G119.5+10.2']" 2013ApJ...764...38A ['veritas'] 1 rC5JCj 227 "TeV J0006+729" 1 "TeV J0006+7259" gal

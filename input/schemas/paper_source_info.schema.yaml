@@ -49,23 +49,25 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      type: {enum: [point, gauss]}
+      type: {enum: [point, gauss, shell]}
       sigma:
         type: object
         additionalProperties: false
-        unit: deg
-        description: Width parameter (semantics type-dependent)
+        description: |
+          Width parameter (semantics type-dependent)
+          Must parse as angle quantity.
         properties:
-          val: {type: number}
-          err: {type: number, description: Statistical error}
+          val: {type: string}
+          err: {type: string, description: Statistical error}
       sigma2:
         type: object
         additionalProperties: false
-        unit: deg
-        description: Width parameter number 2 (semantics type-dependent)
+        description: |
+          Width parameter (semantics type-dependent)
+          Must parse as angle quantity.
         properties:
-          val: {type: number}
-          err: {type: number, description: Statistical error}
+          val: {type: string}
+          err: {type: string, description: Statistical error}
       pa:
         type: object
         additionalProperties: false

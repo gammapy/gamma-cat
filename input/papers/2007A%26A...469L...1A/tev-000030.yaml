@@ -5,8 +5,8 @@ data:
   livetime: 13.5
 
 pos:
-  ra: {val: 6h32m58s, err: 1.8}
-  dec: {val: 5d48m20s, err: 28}
+  ra: {val: 6h32m58s, err: 1.8 arcmin}
+  dec: {val: 5d48m20s, err: 28 arcmin}
 
 morph:
   type: point

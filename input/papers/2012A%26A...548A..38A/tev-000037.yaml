@@ -12,8 +12,8 @@ pos:
 morph:
   type: gauss
 
-  sigma: {val: 28.8, err: 1.8}
-  sigma2: {val: 21.6, err: 1.8}
+  sigma: {val: 28.8 arcmin, err: 1.8 arcmin}
+  sigma2: {val: 21.6 arcmin, err: 1.8 arcmin}
   pa: {frame: radec, val: 41.0, err: 7.0}
 
 spec:

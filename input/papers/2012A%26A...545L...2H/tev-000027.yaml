@@ -6,8 +6,8 @@ data:
   significance: 14
 
 pos:
-  ra: {val: 05h37m44.00s, err: 2}
-  dec: {val: -69d09m57s, err: 11}
+  ra: {val: 05h37m44.00s, err: 2 arcmin}
+  dec: {val: -69d09m57s, err: 11 arcmin}
 
 morph:
   type: point

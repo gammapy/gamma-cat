@@ -7,11 +7,11 @@ properties:
   gamma_names: {type: array, items: {type: string}}
   other_names: {type: array, items: {type: string}}
 
-  where: {type: string, enum: [gal, egal]}
+  where: {type: string, enum: [gal, egal, unid]}
   classes:
     type: array
     items:
-      enum: [pwn, snr, galaxy, hbl, blazar, ibl]
+      enum: [unid, pwn, snr, galaxy, hbl, blazar, ibl]
 
   discoverer:
     enum: [hess, veritas, magic, crimea]

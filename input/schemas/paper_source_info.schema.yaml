@@ -8,7 +8,8 @@ properties:
   position:
     type: object
     properties:
-      measured: {type: boolean}
+      type: {enum: [simbad, measured]}
+      simbad_id: {type: string}
       ra: {type: string}
       dec: {type: string}
     required: [measured, ra, dec]

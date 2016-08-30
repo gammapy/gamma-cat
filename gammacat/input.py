@@ -47,7 +47,10 @@ class BasicSourceInfo:
 
         if filled:
             for name, spec in self.schema['properties'].items():
-                datatype = spec['type']
+                try:
+                    datatype = spec['type']
+                except KeyError:
+                    datatype = 'string'
                 data[name] = MISSING_VAL[datatype]
 
         data.update(self.data)

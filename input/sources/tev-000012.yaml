@@ -1,5 +1,16 @@
 source_id: 12
 
+common_name: MAGIC J0223+403
+gamma_names: [MAGIC J0223+403]
+other_names: [3C 66A/B Region]
+
+where: unid
+classes: [unid]
+
+discoverer: magic
+discovery_date: todo
+seen_by: [magic]
+
 tevcat_id: 138
 tevcat2_id: y6gVxa
 tevcat_name: TeV J0223+430
@@ -8,4 +19,4 @@ tgevcat_id: 12
 tgevcat_name: TeV J0223+4259
 
 papers:
-- null
+- 2009ApJ...692L..29A

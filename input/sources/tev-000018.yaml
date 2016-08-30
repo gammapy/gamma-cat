@@ -1,5 +1,16 @@
 source_id: 18
 
+common_name: NGC 1275
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [fri]
+
+discoverer: magic
+discovery_date: todo
+seen_by: [magic]
+
 tevcat_id: 212
 tevcat2_id: 9dfnMH
 tevcat_name: TeV J0319+415
@@ -8,4 +19,5 @@ tgevcat_id: 18
 tgevcat_name: TeV J0319+4130
 
 papers:
-- null
+- 2012A&A...539L...2A
+- 2016A&A...589A..33A

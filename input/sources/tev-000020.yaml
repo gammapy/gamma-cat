@@ -1,5 +1,16 @@
 source_id: 20
 
+common_name: 1ES 0414+009
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+discovery_date: todo
+seen_by: [hess, veritas]
+
 tevcat_id: 199
 tevcat2_id: hKCHxG
 tevcat_name: TeV J0416+010
@@ -8,4 +19,6 @@ tgevcat_id: 20
 tgevcat_name: TeV J0416+0105
 
 papers:
-- null
+- 2013arXiv1307.7051M
+- 2012ApJ...755..118A
+- 2012A&A...538A.103H

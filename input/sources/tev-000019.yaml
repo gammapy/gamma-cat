@@ -1,5 +1,16 @@
 source_id: 19
 
+common_name: 1ES 0347-121
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+discovery_date: todo
+seen_by: [hess]
+
 tevcat_id: 147
 tevcat2_id: rWyLLM
 tevcat_name: TeV J0349-119
@@ -8,4 +19,4 @@ tgevcat_id: 19
 tgevcat_name: TeV J0349-1158
 
 papers:
-- null
+- 2007A&A...473L..25A

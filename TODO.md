@@ -23,6 +23,8 @@ reminders, because it's just me working on the project.
 
 * Add spectra from here:
   https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_LMC_Science_2015
-* Update HESS J1641-463 : http://adsabs.harvard.edu/abs/2014arXiv1408.5280H
-* Update J1507
-* Update J1702
+* Add spectra from HESS UNID paper:
+  http://www.aanda.org/articles/aa/full/2008/49/aa8516-07/aa8516-07.html
+* Update HESS J1641-463 : http://adsabs.harvard.edu/abs/2014ApJ...794L...1A
+* Update J1507 spectrum
+* Update J1702 spectrum

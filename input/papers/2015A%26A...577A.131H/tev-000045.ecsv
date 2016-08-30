@@ -6,8 +6,8 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1018-589A
-# - ads_id: 2015A%26A...577A.131H
+# - source_id: 45
+# - paper_id: 2015A&A...577A.131H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018
 # - comments:
 #   - Original data is in a different format (energy flux).

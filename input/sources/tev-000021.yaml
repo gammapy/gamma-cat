@@ -1,5 +1,16 @@
 source_id: 21
 
+common_name: PKS 0447-439
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+discovery_date: todo
+seen_by: [hess]
+
 tevcat_id: 203
 tevcat2_id: ewJQZd
 tevcat_name: TeV J0449-438
@@ -8,4 +19,4 @@ tgevcat_id: 21
 tgevcat_name: TeV J0449-4350
 
 papers:
-- null
+- 2013A&A...552A.118H

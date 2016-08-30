@@ -11,14 +11,14 @@ properties:
   classes:
     type: array
     items:
-      enum: [unid, pwn, snr, bin, galaxy, hbl, blazar, ibl, fri]
+      enum: [unid, other, pwn, snr, mc, bin, galaxy, hbl, blazar, ibl, fri]
 
   discoverer:
-    enum: [hess, veritas, magic, crimea]
+    enum: [hess, veritas, magic, crimea, hawc, hegra]
   seen_by:
     type: array
     items:
-      enum: [hess, veritas, magic, crimea]
+      enum: [hess, veritas, magic, crimea, hawc, hegra]
   discovery_date: {type: string}
 
   tevcat_id: {type: integer}

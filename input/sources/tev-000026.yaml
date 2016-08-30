@@ -1,5 +1,16 @@
 source_id: 26
 
+common_name: 30 Dor C
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [other]
+
+discoverer: hess
+discovery_date: todo
+seen_by: [hess]
+
 tevcat_id: 255
 tevcat2_id: C6fp9j
 tevcat_name: TeV J0535-692
@@ -8,4 +19,4 @@ tgevcat_id: 26
 tgevcat_name: TeV J0535-6911
 
 papers:
-- null
+- 2015Sci...347..406H

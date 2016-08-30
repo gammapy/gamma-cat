@@ -1,5 +1,16 @@
 source_id: 24
 
+common_name: LMC N132D
+gamma_names: []
+other_names: [SNR J052501-693842]
+
+where: egal
+classes: [snr, mc]
+
+discoverer: hess
+discovery_date: todo
+seen_by: [hess]
+
 tevcat_id: 256
 tevcat2_id: z30txh
 tevcat_name: TeV J0525-696
@@ -8,4 +19,4 @@ tgevcat_id: 24
 tgevcat_name: TeV J0525-6938
 
 papers:
-- null
+- 2015Sci...347..406H

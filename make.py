@@ -40,6 +40,7 @@ def make_all(ctx):
     """Run all steps.
     """
     log.info('Run all steps ...')
+    ctx.invoke(make_check)
     ctx.invoke(make_output)
     ctx.invoke(make_webpage)
 

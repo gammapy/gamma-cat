@@ -1,5 +1,16 @@
 source_id: 25
 
+common_name: Crab
+gamma_names: []
+other_names: [G184.6-5.8, 3C 144, SN 1054]
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+discovery_date: todo
+seen_by: [hess, hegra, magic, veritas, hawc]
+
 tevcat_id: 74
 tevcat2_id: BlJI6q
 tevcat_name: TeV J0534+220
@@ -9,3 +20,4 @@ tgevcat_name: TeV J0534+2200
 
 papers:
 - 2006A&A...457..899A
+- 2004ApJ...614..897A

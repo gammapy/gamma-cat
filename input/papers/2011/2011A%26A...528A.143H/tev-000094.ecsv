@@ -6,8 +6,9 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1708-443
-# - ads_id: TODO
+# - source_id: 94
+# - paper_id: 2011A%26A...528A.143H
+# - url: TODO: where are these points from?
  0.908 4.13e-12 1.58e-12 1.58e-12
  1.930 1.25e-12 2.35e-13 2.34e-13
  4.140 2.32e-13 5.73e-14 5.71e-14

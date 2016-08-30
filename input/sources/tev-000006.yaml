@@ -21,3 +21,8 @@ tgevcat_name: TeV J0047-2517
 papers:
 - 2009Sci...326.1080A
 - 2012ApJ...757..158A
+
+pos:
+  simbad_id: NGC 253
+  ra: 11.8880583
+  dec: -25.2888000

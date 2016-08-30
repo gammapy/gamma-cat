@@ -20,3 +20,8 @@ tgevcat_name: TeV J0035+5947
 
 papers:
 - 2015MNRAS.446..217A
+
+pos:
+  simbad_id: 1ES 0033+595
+  ra: 8.9689750
+  dec: 59.8344972

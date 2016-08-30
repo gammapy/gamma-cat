@@ -6,11 +6,11 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: Vela X
-# - ads_id: TODO
+# - source_id: 37
+# - paper_id: 2012A&A...548A..38A
 # - comments:
 #   - From https://github.com/zblz/gammafit/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_cocoon.spec
-#   - TODO: clarify which paper this comes from and for which region the measurement is.
+#   - TODO: clarify if this spectrum is really from 2012A&A...548A..38A and for which region the measurement is.
  0.7185 1.055e-11  7.266e-12 1.383e-11
  0.8684 1.304e-11  1.091e-11 1.517e-11
  1.0510 9.211e-12  7.810e-12 1.061e-11

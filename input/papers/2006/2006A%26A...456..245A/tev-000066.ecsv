@@ -6,8 +6,8 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1420-607
-# - ads_id: TODO
+# - source_id: 66
+# - paper_id: 2006A&A...456..245A
  0.39    2.63e-11    7.56e-12    7.64e-12
  0.61    9.13e-12    1.11e-12    1.04e-12 
  0.97    3.38e-12    4.03e-13    4.04e-13 

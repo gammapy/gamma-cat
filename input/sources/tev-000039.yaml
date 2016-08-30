@@ -23,3 +23,8 @@ tgevcat_name: TeV J0852-4622
 papers:
 - 2005A&A...437L...7A
 - 2007ApJ...661..236A
+
+pos:
+  simbad_id: Vela Junior
+  ra: 133.0
+  dec: -46.333

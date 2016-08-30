@@ -6,8 +6,9 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1708-410
-# - ads_id: TODO
+# - source_id: 93
+# - paper_id: 2006ApJ...636..777A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
 0.382021 1.05036e-11 2.07692e-12 2.12769e-12
 0.681801 4.04381e-12 6.50402e-13 6.71818e-13
 1.213250 1.24415e-12 2.16670e-13 2.25335e-13

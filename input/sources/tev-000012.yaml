@@ -8,7 +8,6 @@ where: unid
 classes: [unid]
 
 discoverer: magic
-discovery_date: todo
 seen_by: [magic]
 
 tevcat_id: 138

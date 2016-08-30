@@ -2,13 +2,14 @@ source_id: 10
 
 common_name: S3 0218+35
 gamma_names: []
-other_names: [B2 0218+35]
+other_names:
+- B2 0218+35
 
 where: egal
-classes: [blazar]
+classes:
+- blazar
 
 discoverer: magic
-discovery_date: todo
 seen_by: [magic]
 
 tevcat_id: 254

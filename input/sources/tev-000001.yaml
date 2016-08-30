@@ -10,7 +10,6 @@ where: gal
 classes: [pwn, snr]
 
 discoverer: veritas
-discovery_date: todo
 seen_by: [veritas]
 
 tevcat_id: 227

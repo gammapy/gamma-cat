@@ -29,8 +29,7 @@ properties:
   tgevcat_id: {type: integer}
   tgevcat_name: {type: string}
 
-  # TODO: we shouldn't allow "null" for papers ... temporary hack.
-  papers: {type: array, items: {type: [string, "null"]}}
+  papers: {type: array, items: {type: string}}
 
   notes: {type: string}
 

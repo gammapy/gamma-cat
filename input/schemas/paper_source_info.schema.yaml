@@ -88,35 +88,35 @@ properties:
         type: object
         additionalProperties: false
         properties:
-          min: {type: [number, "null"], unit=deg}
-          max: {type: [number, "null"], unit=deg}
+          min: {type: number, unit=deg}
+          max: {type: number, unit=deg}
       norm:
         type: object
         additionalProperties: false
         unit: 1e-12 cm-2 s-1 TeV-1
         description: Flux norm parameter
         properties:
-          val: {type: [number, "null"]}
-          err: {type: [number, "null"], description: Statistical error}
-          err_sys: {type: [number, "null"], description: Systematic error}
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+          err_sys: {type: number, description: Systematic error}
       index:
         type: object
         additionalProperties: false
         unit: dimensionless
         description: Spectral index parameter
         properties:
-          val: {type: [number, "null"]}
-          err: {type: [number, "null"], description: Statistical error}
-          err_sys: {type: [number, "null"], description: Systematic error}
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+          err_sys: {type: number, description: Systematic error}
       ecut:
         type: object
         additionalProperties: false
         unit: TeV
         description: Cutoff energy parameter
         properties:
-          val: {type: [number, "null"]}
-          err: {type: [number, "null"], description: Statistical error}
-          err_sys: {type: [number, "null"], description: Systematic error}
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+          err_sys: {type: number, description: Systematic error}
 
   notes: {type: string}
 

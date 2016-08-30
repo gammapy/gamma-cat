@@ -18,13 +18,13 @@
 # - {name: tgevcat_name, datatype: string}
 # - {name: where, datatype: string}
 # meta: !!omap
-# - {name: todo}
 # - {url: todo}
 # - {version: todo}
+# - {name: todo}
 classes common_name discoverer discovery_date gamma_names notes other_names papers seen_by source_id tevcat2_id tevcat_id tevcat_name tgevcat_id tgevcat_name where
 "['pwn', 'snr']" "CTA 1" veritas todo "['VER J0006+729']" "" "['SNR G119.5+10.2']" 2013ApJ...764...38A ['veritas'] 1 rC5JCj 227 "TeV J0006+729" 1 "TeV J0006+7259" gal
 ['hbl'] "SHBL J001355.9-185406" hess todo [] "" [] 2013A&A...554A..72H ['hess'] 2 70hRXZ 213 "TeV J0013-188" 2 "TeV J0013-1853" egal
-['snr'] "Tycho's SNR" veritas todo [] "" "['SNR G120.1+1.4', '3C10', 'SN1572']" 2011ApJ...730L..20A ['veritas'] 3 xCyAjF 209 "TeV J0025+641" 3 "TeV J0025+6410" gal
+['snr'] "Tycho SNR" veritas todo [] "" "['SNR G120.1+1.4', '3C10', 'SN1572']" 2011ApJ...730L..20A ['veritas'] 3 xCyAjF 209 "TeV J0025+641" 3 "TeV J0025+6410" gal
 ['hbl'] "KUV 00311-1938" hess todo [] "" [] 2012AIPC.1505..490B ['hess'] 4 PKJZqs 239 "TeV J0033-193" 4 "TeV J0033-1921" egal
 ['hbl'] "1ES 0033+595" magic todo [] "" [] 2015MNRAS.446..217A ['magic'] 5 eNYfrm 229 "TeV J0035+598" 5 "TeV J0035+5947" egal
 ['galaxy'] "NGC 253" hess todo [] "" [] 2009Sci...326.1080A,2012ApJ...757..158A ['hess'] 6 sK2rQU 195 "TeV J0047-253" 6 "TeV J0047-2517" egal

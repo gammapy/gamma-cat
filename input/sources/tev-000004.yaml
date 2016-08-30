@@ -20,3 +20,8 @@ tgevcat_name: TeV J0033-1921
 
 papers:
 - 2012AIPC.1505..490B
+
+pos:
+  simbad_id: SHBL J001355.9-185406
+  ra: 6.3397000
+  dec: 64.1408000

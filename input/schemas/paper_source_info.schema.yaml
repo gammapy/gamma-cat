@@ -5,7 +5,7 @@ properties:
   source_id: {type: integer}
   paper_id: {type: string}
 
-  position:
+  pos:
     type: object
     properties:
       simbad_id: {type: string}

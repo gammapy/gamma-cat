@@ -20,3 +20,8 @@ tgevcat_name: TeV J0013-1853
 
 papers:
 - 2013A&A...554A..72H
+
+pos:
+  simbad_id: SHBL J001355.9-185406
+  ra: 3.4835583
+  dec: -18.9018472

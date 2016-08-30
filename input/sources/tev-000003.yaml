@@ -1,6 +1,6 @@
 source_id: 3
 
-common_name: Tycho's SNR
+common_name: Tycho SNR
 gamma_names: []
 other_names:
 - SNR G120.1+1.4
@@ -23,3 +23,8 @@ tgevcat_name: TeV J0025+6410
 
 papers:
 - 2011ApJ...730L..20A
+
+pos:
+  simbad_id: SHBL J001355.9-185406
+  ra: 6.3397000
+  dec: 64.1408000

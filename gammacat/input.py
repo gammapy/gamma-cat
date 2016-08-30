@@ -53,7 +53,7 @@ class BasicSourceInfo:
                     datatype = 'string'
 
                 # TODO: write code to handle position
-                if name == 'position':
+                if name == 'pos':
                     continue
 
                 data[name] = MISSING_VAL[datatype]
@@ -66,7 +66,7 @@ class BasicSourceInfo:
             data['papers'] = ','.join(data['papers'])
 
         # TODO: write code to handle position
-        data.pop('position', None)
+        data.pop('pos', None)
 
         return data
 

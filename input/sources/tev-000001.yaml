@@ -23,7 +23,7 @@ tgevcat_name: TeV J0006+7259
 papers:
 - 2013ApJ...764...38A
 
-position:
+pos:
   simbad_id: CTA 1
   ra: 1.6500000
   dec: 72.7830000

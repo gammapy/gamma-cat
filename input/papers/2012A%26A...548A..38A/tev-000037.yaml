@@ -1,0 +1,32 @@
+paper_id: 2012A&A...548A..38A
+source_id: 37
+
+data:
+  livetime: 53.1
+  significance: 27.9
+
+pos:
+  ra: {val: 8h35m00s, err: 8}
+  dec: {val: -45d36m00s, err: 120}
+
+morph:
+  type: gauss
+
+  sigma: {val: 28.8, err: 1.8}
+  sigma2: {val: 21.6, err: 1.8}
+  pa: {frame: radec, val: 41.0, err: 7.0}
+
+spec:
+  type: ecpl
+
+  norm: {val: 14.6, err: 0.8, err_sys: 3.0}
+  index: {val: 1.32, err: 0.06, err_sys: 0.12}
+  ecut: {val: 14.0, err: 1.6, err_sys: 2.6}
+
+  theta: 1.2
+  erange: {min: 0.75}
+
+#  flux: {emin: 1.0, val: 21.0, err: 1.9, err_sys: 4.4}
+
+notes: |
+  TODO: Morphology parameters are from the 2006 paper, only the spectrum is from this from 2012 paper.

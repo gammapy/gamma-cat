@@ -49,8 +49,32 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      type: {enum: [point]}
-      size: {type: number, unit: deg}
+      type: {enum: [point, gauss]}
+      sigma:
+        type: object
+        additionalProperties: false
+        unit: deg
+        description: Width parameter (semantics type-dependent)
+        properties:
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+      sigma2:
+        type: object
+        additionalProperties: false
+        unit: deg
+        description: Width parameter number 2 (semantics type-dependent)
+        properties:
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+      pa:
+        type: object
+        additionalProperties: false
+        unit: deg
+        description: Position angle
+        properties:
+          frame: {enum: [radec, galactic]}
+          val: {type: number}
+          err: {type: number, description: Statistical error}
 
   spec:
     type: object
@@ -91,6 +115,8 @@ properties:
           val: {type: [number, "null"]}
           err: {type: [number, "null"], description: Statistical error}
           err_sys: {type: [number, "null"], description: Systematic error}
+
+  notes: {type: string}
 
 required:
   - source_id

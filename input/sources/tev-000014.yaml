@@ -1,5 +1,16 @@
 source_id: 14
 
+common_name: LS I +61 303
+gamma_names: []
+other_names: []
+
+where: gal
+classes: [bin]
+
+discoverer: magic
+discovery_date: todo
+seen_by: [veritas, magic]
+
 tevcat_id: 89
 tevcat2_id: fW749W
 tevcat_name: TeV J0240+612
@@ -8,4 +19,6 @@ tgevcat_id: 14
 tgevcat_name: TeV J0240+6115
 
 papers:
-- null
+- 2006Sci...312.1771A
+- 2008ApJ...679.1427A
+

@@ -6,8 +6,10 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1908+063
-# - ads_id: TODO
+# - source_id: 132
+# - source_name: HESS J1908+063
+# - paper_id: 2009A&A...499..723A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA499_723.html
 # - comments:
 #    - Data via email from Emma de Oña Wilhelmi on 2016-08-24
 #    - Flux errors are slightly different from https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA499_723.html

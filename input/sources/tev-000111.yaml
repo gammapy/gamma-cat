@@ -1,0 +1,30 @@
+source_id: 111
+
+common_name: HESS J1800-240A
+gamma_names:
+- HESS J1800-240A
+other_names:
+- W 28
+- SNR G6.4-0.1
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 163
+tevcat2_id: sPYizN
+tevcat_name: TeV J1801-239
+
+tgevcat_id: 111
+tgevcat_name: TeV J1800-2359
+
+papers:
+- 2008A&A...481..401A
+- 2010ApJ...718..348A
+
+pos:
+  simbad_id: HESS J1800-240A
+  ra: 270.4917
+  dec: -23.9617

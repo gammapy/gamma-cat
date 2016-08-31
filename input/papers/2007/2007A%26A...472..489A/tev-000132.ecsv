@@ -6,8 +6,13 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1809-193
-# - ads_id: TODO
+# - source_id: 132
+# - source_name: HESS J1809-193
+# - paper_id: 2007A&A...472..489A
+# - comments:
+#   - Points are from Figure 2
+#     See http://www.aanda.org/articles/aa/full/2007/35/aa7280-07/aa7280-07.html
+#     TODO: where are these values from? Is there a URL?
 0.354987 8.48195e-11 2.63877e-11 2.65445e-11
 0.736220 1.01737e-11 2.89366e-12 2.91417e-12
 1.564010 3.54103e-12 5.62967e-13 5.69983e-13

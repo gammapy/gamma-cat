@@ -6,8 +6,10 @@
 # - {name: flux_hi, datatype: float32}
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
-# - name: HESS J1848-018
-# - ads_id: TODO
+# - source_id: 128
+# - source_name: HESS J1848-018
+# - paper_id: 2008AIPC.1085..372C
+# - url: TODO (origin of points unknown)
  0.623875  9.94175e-12 3.26451e-12 3.30083e-12
  0.878458  6.81516e-12 1.02928e-12 1.04206e-12
  1.284380  1.70718e-12 3.82595e-13 3.88868e-13

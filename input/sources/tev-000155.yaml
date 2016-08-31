@@ -1,5 +1,15 @@
 source_id: 155
 
+common_name: H 2356-309 # "canonical name" row on tevcat website. Also listed in tevcat.ecsv, "source_name" column
+gamma_names: [] # ?
+other_names: [1H 2354-315, HESS J2359-306] # "Other names" row on tevcat's website. Also listed in "other_names" column in tgevcat.ecsv
+
+where: egal # "Source tags" row on tevcat2's website. egal for extragalactic, just like you did.
+classes: [hbl] # "CLASS" column in tgevcat.ecsv
+
+discoverer: hess # "Discovered by" row on tevcat's website
+seen_by: [hess] # "Seen by" row on tevcat's website
+
 tevcat_id: 101
 tevcat2_id: VIbvxm
 tevcat_name: TeV J2359-306
@@ -7,5 +17,9 @@ tevcat_name: TeV J2359-306
 tgevcat_id: 155
 tgevcat_name: TeV J2359-3037
 
-papers:
-- null
+papers: [] # ?
+
+pos: # ran the function utils.py, passing through the common_name above
+  simbad_id: H 2356-309
+  ra: 359.7829583
+  dec: -30.6279694

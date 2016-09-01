@@ -22,55 +22,49 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - url: [auxinfo_HESSJ1018](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%2526A...577A.131H)
   - status: done
-  - comments: none
 - [2015A%26A...574A.100H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...574A.100H)
   - url: [auxinfo_SNRG349](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%26A...574A.100H)
-  - status: **TODO: need to add script and data.**
-  - comments: 
+  - status: **TODO**
+  - comments: need to add script or expand allowed format for E^2*F and add data
 - [2015Sci...347..406H](http://adsabs.harvard.edu/abs/2015Sci...347..406H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_LMC_Science_2015)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015Sci...347..406H)
   - status: done
-  - comments: none
 - [2015A%26A...573A..31H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...573A..31H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2015ApJ...802...65A](http://adsabs.harvard.edu/abs/2015ApJ...802...65A)
   - url: [auxinfo_PG1553](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_PG1553)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2015MNRAS.446.1163H](http://adsabs.harvard.edu/abs/2015MNRAS.446.1163H)
   - url: [auxinfo_HESSJ1832](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015MNRAS.446.1163H)
   - status: done 
-  - comments: none
 
 ## 2014
 
 - [2014A%26A...571A..39C](https://ui.adsabs.harvard.edu/#abs/2014A%26A...571A..39C)
   - url: [auxinfo_PKS2155_monitoring](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_PKS2155_monitoring)
-  - status: 
-  - comments: 
+  - status: **TODO**
 - [2014ApJ...794L...1A](http://adsabs.harvard.edu/abs/2014ApJ...794L...1A)
   - url: [auxinfo_HESSJ1641](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014ApJ...794L...1A)
   - status: done
-  - comments: none
 - [2014MNRAS.439.2828A](http://adsabs.harvard.edu/abs/2014MNRAS.439.2828A)
   - url: [auxinfo_HESSJ1640](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1640)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014MNRAS.439.2828A)
   - status: done
-  - comments: none
 - [2013PhRvD..88j2003A](http://adsabs.harvard.edu/abs/2013PhRvD..88j2003A)
   - url: [auxinfo_ALP.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ALP.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2014A%26A...562A..40H](https://ui.adsabs.harvard.edu/#abs/2014A%26A...562A..40H)
   - url: [auxinfo_HESSJ1818.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014A%26A...562A..40H)
+  - status: done
 
 ## 2013
 

@@ -4,6 +4,11 @@ An open catalog of gamma-ray sources.
 
 * Repo: https://github.com/gammapy/gamma-cat
 * Webpage: https://gammapy.github.io/gamma-cat
+* Terms of use: see [About](https://github.com/gammapy/gamma-cat/blob/master/README_ABOUT.md) page.
+
+This repo contains a `gammacat` Python package to work with the data.
+It is BSD licensed (like Astropy, Gammapy).
+This license only applies to the code, it has nothing to do with the data.
 
 This is work in progress.
 Feedback and contributions welcome!

@@ -43,8 +43,9 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - comments: 
 - [2015MNRAS.446.1163H](http://adsabs.harvard.edu/abs/2015MNRAS.446.1163H)
   - url: [auxinfo_HESSJ1832](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015MNRAS.446.1163H)
+  - status: done 
+  - comments: none
 
 ## 2014
 

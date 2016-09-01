@@ -26,13 +26,13 @@ Complete list in the order listed on that page (roughly reverse chronological or
 - [2015A%26A...574A.100H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...574A.100H)
   - url: [auxinfo_SNRG349](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%26A...574A.100H)
-  - status: TODO: need to add script and data.
+  - status: **TODO: need to add script and data.**
   - comments: 
 - [2015Sci...347..406H](http://adsabs.harvard.edu/abs/2015Sci...347..406H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_LMC_Science_2015)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015Sci...347..406H)
-  - status: partly done
-  - comments: 
+  - status: done
+  - comments: none
 - [2015A%26A...573A..31H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...573A..31H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)
   - status: 

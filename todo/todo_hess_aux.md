@@ -18,10 +18,11 @@ Complete list in the order listed on that page (roughly reverse chronological or
 
 ## 2015
 
-- [2015A%26A...577A.131H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...577A.131H)
+- ads: [2015A%26A...577A.131H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...577A.131H)
   - url: [auxinfo_HESSJ1018](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%2526A...577A.131H)
+  - status: done
+  - comments: none
 - [2015A%26A...574A.100C](https://ui.adsabs.harvard.edu/#abs/2015A%26A...574A.100C)
   - url: [auxinfo_SNRG349](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349)
   - status: 

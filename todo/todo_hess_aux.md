@@ -30,7 +30,8 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - comments: 
 - [2015Sci...347..406H](http://adsabs.harvard.edu/abs/2015Sci...347..406H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_LMC_Science_2015)
-  - status: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015Sci...347..406H)
+  - status: partly done
   - comments: 
 - [2015A%26A...573A..31H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...573A..31H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)

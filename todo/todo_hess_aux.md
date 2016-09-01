@@ -105,12 +105,13 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - status: done
 - [2012A%26A...548A..38A](https://ui.adsabs.harvard.edu/#abs/2012A%26A...548A..38A)
   - url: [AA548_A38.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A38.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...548A..38A)
+  - status: done
 - [2012A%26A...545L...2H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...545L...2H)
   - url: [AA545_L2.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA545_L2.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...545L...2H)
+  - status: done
+  - comments: **CONTINUE HERE !!!**
 - [2012A%26A...542A..94H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...542A..94H)
   - url: [vizier](http://cdsarc.u-strasbg.fr/viz-bin/Cat?cat=J%2FA%2BA%2F542%2FA94&target=http&)
   - status: 

@@ -7,8 +7,11 @@
 # - {name: flux_lo, datatype: float32}
 # meta: !!omap
 # - source_id: 61
+# - source_name: J1303-631
 # - paper_id: 2012A&A...548A..46H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A46.html
+# - comments:
+#   - The page contains other data that's not copied here yet.
   0.88  4.25e-12  1.09e-12  1.09e-12
   1.29  3.03e-12  4.32e-13  4.31e-13
   1.89  2.22e-12  1.93e-13  1.92e-13

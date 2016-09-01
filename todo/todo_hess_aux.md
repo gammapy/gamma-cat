@@ -70,39 +70,39 @@ Complete list in the order listed on that page (roughly reverse chronological or
 
 - [2013A%26A...559A.136H](https://ui.adsabs.harvard.edu/#abs/2013A%26A...559A.136H)
   - url: [auxinfo_pks0301.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_pks0301.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2013MNRAS.434.1889H](http://adsabs.harvard.edu/abs/2013MNRAS.434.1889H)
   - url: [1ES1312_auxinfo.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/1ES1312_auxinfo.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2013A%26A...554A.107H](https://ui.adsabs.harvard.edu/#abs/2013A%26A...554A.107H)
   - url: [auxinfo_PKS1510](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_PKS1510)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2013A%26A...554A..72H](https://ui.adsabs.harvard.edu/#abs/2013A%26A...554A..72H)
   - url: [auxinfo_SHBL.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SHBL.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2013A%26A...552A.118H](https://ui.adsabs.harvard.edu/#abs/2013A%26A...552A.118H)
   - url: [auxinfo_PKS0447.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_PKS0447.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2013PhRvL.110d1301A](http://adsabs.harvard.edu/abs/2013PhRvL.110d1301A)
   - url: [PRL_110_041301.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/PRL_110_041301.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2013A%26A...550A...4H](https://ui.adsabs.harvard.edu/#abs/2013A%26A...550A...4H)
   - url: [EBLpaper2_auxinfo.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/EBLpaper2_auxinfo.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 
 ## 2012
 
 - [2012A%26A...548A..46H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...548A..46H)
   - url: [AA548_A46.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A46.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...548A..46H)
+  - status: done
 - [2012A%26A...548A..38A](https://ui.adsabs.harvard.edu/#abs/2012A%26A...548A..38A)
   - url: [AA548_A38.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A38.html)
   - status: 

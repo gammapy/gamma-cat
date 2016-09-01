@@ -23,9 +23,10 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%2526A...577A.131H)
   - status: done
   - comments: none
-- [2015A%26A...574A.100C](https://ui.adsabs.harvard.edu/#abs/2015A%26A...574A.100C)
+- [2015A%26A...574A.100H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...574A.100H)
   - url: [auxinfo_SNRG349](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349)
-  - status: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%26A...574A.100H)
+  - status: TODO: need to add script and data.
   - comments: 
 - [2015Sci...347..406H](http://adsabs.harvard.edu/abs/2015Sci...347..406H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_LMC_Science_2015)

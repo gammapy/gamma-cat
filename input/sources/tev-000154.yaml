@@ -17,11 +17,11 @@ tevcat_name: TeV J2347+517
 tgevcat_id: 154
 tgevcat_name: TeV J2346+5142
 
-papers:
-  - 1998ApJ...501..616C
-  - 2007ApJ...662..892A
-
 pos:
   simbad_id: 1ES 2344+514
   ra: 356.770153
   dec: 51.704967
+
+papers:
+  - 1998ApJ...501..616C
+  - 2007ApJ...662..892A

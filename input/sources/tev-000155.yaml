@@ -17,11 +17,11 @@ tevcat_name: TeV J2359-306
 tgevcat_id: 155
 tgevcat_name: TeV J2359-3037
 
-papers:
-  - 2010A&A...516A..56H
-  - 2006A&A...455..461A
-
 pos:
   simbad_id: H 2356-309
   ra: 359.7829583
   dec: -30.6279694
+
+papers:
+  - 2010A&A...516A..56H
+  - 2006A&A...455..461A

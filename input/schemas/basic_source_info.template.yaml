@@ -17,9 +17,10 @@ tevcat_name:
 tgevcat_id:
 tgevcat_name:
 
-papers: []
-
 pos:
   simbad_id:
   ra:
   dec:
+
+papers:
+  - 

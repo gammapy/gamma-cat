@@ -1,5 +1,15 @@
 source_id: 148
 
+common_name: BL Lacertae
+gamma_names: []
+other_names: [1ES 2200+420]
+
+where: egal
+classes: [lbl]
+
+discoverer: crimea
+seen_by: [crimea, veritas, magic]
+
 tevcat_id: 118
 tevcat2_id: iIWshp
 tevcat_name: TeV J2202+422
@@ -7,5 +17,10 @@ tevcat_name: TeV J2202+422
 tgevcat_id: 148
 tgevcat_name: TeV J2202+4216
 
+pos:
+  simbad_id: BL Lacertae
+  ra: 330.680380792
+  dec: 42.277772306
+
 papers:
-- null
+  - 2007ApJ...666L..17A

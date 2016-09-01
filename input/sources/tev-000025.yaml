@@ -17,11 +17,11 @@ tevcat_name: TeV J0534+220
 tgevcat_id: 25
 tgevcat_name: TeV J0534+2200
 
-papers:
-- 2006A&A...457..899A
-- 2004ApJ...614..897A
-
 pos:
   simbad_id: crab nebula
   ra: 83.633083
   dec: 22.0145
+
+papers:
+- 2006A&A...457..899A
+- 2004ApJ...614..897A

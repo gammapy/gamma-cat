@@ -81,3 +81,8 @@ The following tools and services were used to produce this catalog:
 * [SIMBAD](http://simbad.u-strasbg.fr/simbad/)
 * [Astrophysics data system (ADS)](https://ui.adsabs.harvard.edu/)
 * [Astropy](http://www.astropy.org/) and [Gammapy](http://gammapy.org/)
+
+* [TGeVCat](http://www.asdc.asi.it/tgevcat/) was used to look up info
+  and we had good discussions and collaboration with the `TGeVCat` team.
+* [TeVCat](http://tevcat.uchicago.edu/) was used to look up some info.
+  (We did comply with their terms and conditions and didn't scrape their website to collect data for this catalog!)

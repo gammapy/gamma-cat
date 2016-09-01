@@ -55,13 +55,14 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - comments: 
 - [2014ApJ...794L...1A](http://adsabs.harvard.edu/abs/2014ApJ...794L...1A)
   - url: [auxinfo_HESSJ1641](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2014ApJ...794L...1A)
-  - status: **HERE**
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014ApJ...794L...1A)
+  - status: done
+  - comments: none
 - [2014MNRAS.439.2828A](http://adsabs.harvard.edu/abs/2014MNRAS.439.2828A)
   - url: [auxinfo_HESSJ1640](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1640)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014MNRAS.439.2828A)
+  - status: done
+  - comments: none
 - [2013PhRvD..88j2003A](http://adsabs.harvard.edu/abs/2013PhRvD..88j2003A)
   - url: [auxinfo_ALP.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ALP.html)
   - status: 

@@ -1,5 +1,15 @@
 source_id: 154
 
+common_name: 1ES 2344+514
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: whipple
+seen_by: [whipple, hegra, magic, veritas]
+
 tevcat_id: 77
 tevcat2_id: FcTRDg
 tevcat_name: TeV J2347+517
@@ -7,5 +17,11 @@ tevcat_name: TeV J2347+517
 tgevcat_id: 154
 tgevcat_name: TeV J2346+5142
 
+pos:
+  simbad_id: 1ES 2344+514
+  ra: 356.770153
+  dec: 51.704967
+
 papers:
-- null
+  - 1998ApJ...501..616C
+  - 2007ApJ...662..892A

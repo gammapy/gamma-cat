@@ -1,5 +1,15 @@
 source_id: 147
 
+common_name: PKS 2155-304
+gamma_names: [HESS J2158-302]
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess, magic]
+
 tevcat_id: 90
 tevcat2_id: nm0IZL
 tevcat_name: TeV J2158-302
@@ -7,5 +17,11 @@ tevcat_name: TeV J2158-302
 tgevcat_id: 147
 tgevcat_name: TeV J2158-3013
 
+pos:
+  simbad_id: PKS 2155-304
+  ra: 329.716937958
+  dec: -30.225588389
+
 papers:
-- null
+  - 2005A&A...442..895A
+  - 2005A&A...430..865A

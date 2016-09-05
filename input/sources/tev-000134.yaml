@@ -1,5 +1,15 @@
 source_id: 134
 
+common_name: HESS J1912+101
+gamma_names: []
+other_names: [PSR J1913+1011]
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+
 tevcat_id: 157
 tevcat2_id: J26r5R
 tevcat_name: TeV J1912+101
@@ -7,5 +17,10 @@ tevcat_name: TeV J1912+101
 tgevcat_id: 134
 tgevcat_name: TeV J1912+1009
 
+pos:
+  simbad_id: PSR J1913+1011
+  ra: 288.3347542
+  dec: 10.1897139
+
 papers:
-- null
+  - 2008A&A...484..435A

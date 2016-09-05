@@ -1,5 +1,15 @@
 source_id: 141
 
+common_name: VER J2016+371
+gamma_names: [MGRO J2019+37]
+other_names: [CTB 87]
+
+where: gal
+classes: [pwn, snr]
+
+discoverer: veritas
+seen_by: [veritas, milagro]
+
 tevcat_id: 228
 tevcat2_id: wbkK3X
 tevcat_name: TeV J2016+372
@@ -7,5 +17,10 @@ tevcat_name: TeV J2016+372
 tgevcat_id: 141
 tgevcat_name: TeV J2016+3711
 
+pos:
+  simbad_id: VER J2016+371
+  ra: 304.0076
+  dec: 37.21476
+
 papers:
-- null
+  - 2014ApJ...788...78A

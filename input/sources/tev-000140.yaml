@@ -1,5 +1,15 @@
 source_id: 140
 
+common_name: PKS 2005-489
+gamma_names: [HESS J2009-488]
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+
 tevcat_id: 100
 tevcat2_id: ObIXbg
 tevcat_name: TeV J2009-488
@@ -7,5 +17,12 @@ tevcat_name: TeV J2009-488
 tgevcat_id: 140
 tgevcat_name: TeV J2009-4849
 
+pos:
+  simbad_id: PKS 2005-489
+  ra: 302.355794583
+  dec: -48.831589306
+
 papers:
-- null
+  - 2005A&A...436L..17A
+  - 2010A&A...511A..52H
+  - 2011A&A...533A.110H

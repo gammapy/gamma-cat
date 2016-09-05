@@ -1,5 +1,15 @@
 source_id: 135
 
+common_name: W 51C
+gamma_names: [HESS J1923+141]
+other_names: [SNR G49.2-0.7, 0FGL J1923.0+1411]
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess, magic, milagro]
+
 tevcat_id: 178
 tevcat2_id: ParXkE
 tevcat_name: TeV J1923+141
@@ -7,5 +17,10 @@ tevcat_name: TeV J1923+141
 tgevcat_id: 135
 tgevcat_name: TeV J1922+1411
 
+pos:
+  simbad_id: W 51C
+  ra: 290.818
+  dec: 14.145
+
 papers:
-- null
+  - 2012A&A...541A..13A

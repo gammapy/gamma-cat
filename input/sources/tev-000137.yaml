@@ -1,5 +1,15 @@
 source_id: 137
 
+common_name: HESS J1943+213
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess, veritas]
+
 tevcat_id: 214
 tevcat2_id: RdzX69
 tevcat_name: TeV J1943+213
@@ -7,5 +17,10 @@ tevcat_name: TeV J1943+213
 tgevcat_id: 137
 tgevcat_name: TeV J1943+2118
 
+pos:
+  simbad_id: HESS J1943+213
+  ra: 295.9792
+  dec: 21.30222
+
 papers:
-- null
+  - 2011A&A...529A..49H

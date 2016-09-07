@@ -3,6 +3,7 @@ pyyaml
 jsonschema
 pytest
 numpy
+pandas
 scipy
 uncertainties
 astropy

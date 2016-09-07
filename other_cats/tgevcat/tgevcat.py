@@ -1,6 +1,7 @@
 """
 Clean up `tc_dump.txt` to obtain `tevcat.ecsv`
 """
+from collections import OrderedDict
 from pprint import pprint
 from pathlib import Path
 import numpy as np
@@ -38,7 +39,7 @@ Path(filename2).unlink()
 # Make new table and fill with good column names,
 # units and values converted to numbers where appropriate
 
-meta = dict(
+meta = OrderedDict(
     catalog_name='TeGeV',
     version='2',
     date='July 2015',

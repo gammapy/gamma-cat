@@ -123,7 +123,7 @@ class PaperInfo:
     @classmethod
     def read(cls, path):
         path = Path(path)
-        id = urllib.parse.unquote(path.parts[-2])
+        id = urllib.parse.unquote(path.parts[-1])
 
         sources = []
         for source_path in path.glob('*.yaml'):

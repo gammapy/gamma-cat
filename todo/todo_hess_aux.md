@@ -111,19 +111,19 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - url: [AA545_L2.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA545_L2.html)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...545L...2H)
   - status: done
-  - comments: **CONTINUE HERE !!!**
 - [2012A%26A...542A..94H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...542A..94H)
   - url: [vizier](http://cdsarc.u-strasbg.fr/viz-bin/Cat?cat=J%2FA%2BA%2F542%2FA94&target=http&)
-  - status: 
-  - comments: 
+  - status: **TODO**
+  - comments:
 - [2012A%26A...538A.103H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...538A.103H)
   - url: [AA538_A103.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA538_A103.html)
-  - status: 
+  - status: **TODO**
   - comments: 
 - [2012A%26A...537A.114A](https://ui.adsabs.harvard.edu/#abs/2012A%26A...537A.114A)
   - url: [AA537_A114.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA537_A114.html)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...537A.114A)
   - status: 
-  - comments: 
+  - comments: **CONTINUE HERE !!!** 
 
 ## 2011
 

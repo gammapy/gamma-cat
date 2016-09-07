@@ -18,6 +18,4 @@ def check_input_files():
     formatting is incorrect.
     """
     input_data = InputData.read()
-    input_data.papers.validate()
-    input_data.sources.validate()
-    # input_data.validate()
+    input_data.validate()

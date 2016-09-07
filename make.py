@@ -12,10 +12,19 @@ log = logging.getLogger()
 
 
 @click.group()
-def cli():
+@click.option('-l', '--loglevel', default='info',
+              type=click.Choice(['debug', 'info', 'warning', 'error']))
+def cli(loglevel):
     """
     Make catalog (multiple steps available)
     """
+    levels = dict(
+        debug=logging.DEBUG,
+        info=logging.INFO,
+        warning=logging.WARNING,
+        error=logging.ERROR,
+    )
+    log.setLevel(level=levels[loglevel])
     pass
 
 
@@ -25,6 +34,14 @@ def make_output():
     """
     log.info('Re-generate files in `output` ...')
     gammacat.OutputDataMaker().make_all()
+
+
+@cli.command(name='hgps')
+def make_hgps():
+    """Make catalog in HGPS format
+    """
+    log.info('Making catalog in HGPS format ...')
+    gammacat.HGPSCatMaker().run()
 
 
 # @cli.command(name='webpage')

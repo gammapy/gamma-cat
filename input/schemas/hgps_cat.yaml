@@ -1,0 +1,261 @@
+# ********** Position **********
+
+- name: RAJ2000
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Right Ascension (ICRS)
+  latex:
+- name: DEJ2000
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Declination (ICRS)
+  latex:
+- name: GLON
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic longitude
+  latex:
+- name: GLON_Err
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Statistical error (1 sigma) on GLON
+  latex:
+- name: GLAT
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic latitude
+  latex:
+- name: GLAT_Err
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Statistical error (1 sigma) on GLAT
+  latex:
+- name: Pos_Err_68
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Position error (68% CL, including systematics)
+  latex: Position error ($68\%$ CL, including systematics, see Equation~\ref{eq:position_error})
+- name: Pos_Err_95
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Position error (95% CL, including systematics)
+  latex: Position error ($95\%$ CL, including systematics, see Equation~\ref{eq:position_error})
+
+# ********** Morphology and map-based measurements **********
+
+- name: ROI_Number
+  dtype: int
+  fmt:
+  unit:
+  description:  ROI number
+  latex: ROI number, see Figure~\ref{fig:catalog:rois} for details.
+- name: Spatial_Model
+  dtype: str
+  fmt:
+  unit:
+  description: Spatial model (one of "Gaussian", "X-Gaussian" or "Shell")
+  latex: Spatial model (one of "Gaussian", "X-Gaussian" or "Shell")
+- name: Components
+  dtype: str
+  fmt:
+  unit:
+  description: List of Gaussian components the source is composed of
+  latex: List of Gaussian components the source is composed of
+- name: Sqrt_TS
+  dtype: float32
+  fmt:
+  unit:
+  description: Square root of the sum of the test statistics of the individual components
+  latex: Square root of the sum of the test statistics of the individual components (see Equation~\ref{eq:detection:alternative_threshold})
+- name: Size
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Source size (1 sigma for single-Gaussian sources, RMS equivalent for multi-Gaussian sources and SNRs)
+  latex: Source size (1 sigma for single-Gaussian sources, RMS equivalent for multi-Gaussian sources and SNRs)
+- name: Size_Err
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Statistical error (1 sigma) on Size
+  latex: Statistical error (1 sigma) on Size
+- name: Size_UL
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Upper limit (95\% CL) on Size (NULL if source is extended)
+  latex: Upper limit (95\% CL) on Size (NULL if source is extended, see Equation~\ref{eq:extension_ul})
+- name: R70
+  dtype: float32
+  fmt:
+  unit: deg
+  description: 70% containment radius, computed on the PSF-convolved model image
+  latex: $70\%$ containment radius, computed on the PSF-convolved model image
+- name: RSpec
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Radius of the spectral analysis circular region
+  latex: Radius of the spectral analysis circular region
+- name: Excess_Model_Total
+  dtype: float32
+  fmt:
+  unit:
+  description: Total excess from spatial model (this source only)
+  latex: Total excess from spatial model (this source only)
+- name: Excess_RSpec
+  dtype: float32
+  fmt:
+  unit:
+  description: Data excess in R_Spec (measured on maps)
+  latex: Data excess in R\_Spec (measured on maps)
+- name: Background_RSpec
+  dtype: float32
+  fmt:
+  unit:
+  description: Background in R_Spec
+  latex: Background in R\_Spec
+- name: Livetime
+  dtype: float32
+  fmt:
+  unit: hours
+  description: Livetime for map
+  latex: Livetime for map
+- name: Energy_Threshold
+  dtype: float32
+  fmt:
+  unit: TeV
+  description: Energy threshold for map (minimum)
+  latex: Energy threshold for map (minimum)
+
+- name: Flux_Map
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Integral flux above 1 TeV from the morphology fit on the map (total)
+  latex: Integral flux above 1 TeV from the morphology fit on the map (total)
+- name: Flux_Map_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Statistical error (1 sigma) on Flux_Model_Total
+  latex: Statistical error (1 sigma) on Flux\_Model\_Total
+- name: Flux_Map_RSpec_Data
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Data flux in R_Spec (measured on maps)
+  latex: Data flux in R\_Spec (measured on maps)
+- name: Flux_Map_RSpec_Source
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Model flux in R_Spec (this source only)
+  latex: Model flux in R\_Spec (this source only)
+- name: Flux_Map_RSpec_Other
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Model flux in R_Spec (other sources only)
+  latex: Model flux in R\_Spec (other sources only)
+- name: Flux_Map_RSpec_Diffuse
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Model flux in R_Spec (diffuse band only)
+  latex: Model flux in R\_Spec (diffuse band only)
+- name: Flux_Map_RSpec_Total
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Model flux in R_Spec (this source, other sources, diffuse band)
+  latex: Model flux in R\_Spec (this source, other sources, diffuse band)
+
+- name: Containment_RSpec
+  dtype: float32
+  fmt:
+  unit:
+  description: Containment fraction.
+  latex: Containment fraction. See Equation~\ref{eq:containment} for definition
+- name: Contamination_RSpec
+  dtype: float32
+  fmt:
+  unit:
+  description: Contamination fraction.
+  latex: Contamination fraction. See Equation~\ref{eq:contamination} for definition
+- name: Flux_Correction_RSpec_To_Total
+  dtype: float32
+  fmt:
+  unit:
+  description: Total flux correction factor
+  latex: Total flux correction factor. See Equation~\ref{eq:correction_factor_1} for definition.
+
+# ********** Spectrum **********
+
+- name: Livetime_Spec
+  dtype: float32
+  fmt:
+  unit: hours
+  description: Livetime for spectrum
+  latex: Livetime for spectrum
+- name: Energy_Range_Spec_Lo
+  dtype: float32
+  fmt:
+  unit: TeV
+  description: Lower range bound for spectrum
+  latex: Lower range bound for spectrum.
+- name: Energy_Range_Spec_Hi
+  dtype: float32
+  fmt:
+  unit: TeV
+  description: Upper range bound for spectrum
+  latex: Upper range bound for spectrum.
+
+
+#Background\_Spec & & Background from spectral analysis \\
+#Excess\_Spec & & Excess from spectral analysis \\
+#
+#Spectral\_Model & & Spectral model, either "PL" or "ECPL" as defined by Equation~\ref{eqn:pl} and Equation~\ref{eqn:ecpl}. \\
+#TS\_ECPL\_over\_PL & & Test statistic difference of ECPL and PL model \\
+#Flux\_Spec\_Int\_1TeV & cm$^{-2}$~s$^{-1}$ & PL or ECPL integral flux above 1~TeV, depending on Spectral\_Model \\
+#Flux\_Spec\_Int\_1TeV\_Err & cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_Int\_1TeV \\
+#Flux\_Spec\_Energy\_1\_10\_TeV & erg cm$^{-2}$~s$^{-1}$ & PL or ECPL energy flux in the 1 to 10 TeV range, depending on Spectral\_Model \\
+#Flux\_Spec\_Energy\_1\_10\_TeV\_Err & erg cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_Energy\_1\_10\_TeV \\
+#
+#Energy\_Spec\_PL\_Pivot & TeV & Reference energy $E_0$, see Equation~\ref{eqn:pl} \\
+#Flux\_Spec\_PL\_Diff\_Pivot & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at pivot energy. Correction factor applied. \\
+#Flux\_Spec\_PL\_Diff\_Pivot\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_PL\_Diff\_Pivot \\
+#Flux\_Spec\_PL\_Diff\_1TeV & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at 1 TeV. Correction factor applied. \\
+#Flux\_Spec\_PL\_Diff\_1TeV\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_PL\_Diff\_1TeV \\
+#Flux\_Spec\_PL\_Int\_1TeV & cm$^{-2}$~s$^{-1}$ & Integral flux above 1 TeV. Correction factor applied.\\
+#Flux\_Spec\_PL\_Int\_1TeV\_Err & cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_PL\_Int\_1TeV \\
+#Index\_Spec\_PL & & Spectral index \\
+#Index\_Spec\_PL\_Err & & Statistical error (1 sigma) on Index\_Spec\_PL \\
+#
+#Energy\_Spec\_ECPL\_Pivot & TeV & Reference energy $E_0$, see Equation~\ref{eqn:ecpl} \\
+#Flux\_Spec\_ECPL\_Diff\_Pivot & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at pivot energy. Correction factor applied. \\
+#Flux\_Spec\_ECPL\_Diff\_Pivot\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Diff\_Pivot \\
+#Flux\_Spec\_ECPL\_Diff\_1TeV & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at 1 TeV. Correction factor applied. \\
+#Flux\_Spec\_ECPL\_Diff\_1TeV\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Diff\_1TeV \\
+#Flux\_Spec\_ECPL\_Int\_1TeV & cm$^{-2}$~s$^{-1}$ & Integral flux above 1 TeV. Correction factor applied. \\
+#Flux\_Spec\_ECPL\_Int\_1TeV\_Err & cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Int\_1TeV \\
+#Index\_Spec\_ECPL & & Spectral index \\
+#Index\_Spec\_ECPL\_Err & & Statistical error (1 sigma) on Index\_Spec\_ECPL \\
+#Lambda\_Spec\_ECPL & TeV$^{-1}$ & Spectral cutoff fit parameter (inverse cutoff energy) \\
+#Lambda\_Spec\_ECPL\_Err & TeV$^{-1}$ & Statistical error (1 sigma) on Lambda\_Spec\_ECPL \\
+#
+#N\_Flux\_Points & & Number of flux points \\
+#Flux\_Points\_Energy & TeV &  Energy value.\\
+#Flux\_Points\_Energy\_Err\_Hi & TeV & Upper bound of energy bin.\\
+#Flux\_Points\_Energy\_Err\_Lo & TeV & Lower bound of energy bin. \\
+#Flux\_Points\_Flux & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at given energy.\\
+#Flux\_Points\_Flux\_Err\_Hi & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Upper error on differential flux at given energy. \\
+#Flux\_Points\_Flux\_Err\_Lo & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Lower error on differential flux at given energy. \\

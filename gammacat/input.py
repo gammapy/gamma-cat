@@ -278,6 +278,31 @@ class PaperList:
             paper.validate()
 
 
+class Schemas:
+    def __init__(self, data):
+        self.data = data
+
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/schemas'
+        paths = path.glob('*.yaml')
+
+        data = []
+        for path in paths:
+            log.debug('Reading {}'.format(path))
+            info = load_yaml(path)
+            data.append(info)
+
+        return cls(data=data)
+
+    def validate(self):
+        log.info('Validating YAML files in `input/schemas')
+        # For now (and maybe always) we don't have any checks here.
+        # This just shows that the schema files can be parsed OK.
+        # for schema in self.data:
+        #     log.debug(schema)
+
+
 class InputData:
     """
     Read all data from the `input` folder.
@@ -285,10 +310,11 @@ class InputData:
     Expose it as Python objects that can be validated and used.
     """
 
-    def __init__(self, sources=None, papers=None):
+    def __init__(self, sources=None, papers=None, schemas=None):
         self.path = gammacat_info.base_dir / 'input'
         self.sources = sources
         self.papers = papers
+        self.schemas = schemas
 
     @classmethod
     def read(cls):
@@ -296,16 +322,19 @@ class InputData:
         """
         sources = BasicSourceList.read()
         papers = PaperList.read()
-        return cls(sources=sources, papers=papers)
+        schemas = Schemas.read()
+        return cls(sources=sources, papers=papers, schemas=schemas)
 
     def __str__(self):
         ss = 'Input data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of sources: {}\n'.format(len(self.sources.data))
         ss += 'Number of papers: {}\n'.format(len(self.papers.data))
+        ss += 'Number of schemas: {}\n'.format(len(self.schemas.data))
         return ss
 
     def validate(self):
         log.info('Validating input data ...')
         self.sources.validate()
         self.papers.validate()
+        self.schemas.validate()

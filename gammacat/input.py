@@ -131,6 +131,7 @@ class PaperInfo:
             sources.append(source_info)
 
         path = '/'.join(path.parts[-2:])
+        # path = '/'.join([path.parts[-2], id])
         return cls(id=id, path=path, sources=sources)
 
     def to_json(self):
@@ -144,9 +145,13 @@ class PaperInfo:
         # TODO: This would give the full information from the input files.
         # sources = [dict(_.data for _ in self.sources]
 
+        # This is what it takes to build the URL on Github
+        url = self.path.replace('%26', '%2526')
+
         return dict(
             id=self.id,
             path=self.path,
+            url=url,
             sources=sources,
         )
 

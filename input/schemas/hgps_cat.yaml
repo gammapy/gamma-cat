@@ -232,6 +232,8 @@
   description: Excess from spectral analysis
   latex: Excess from spectral analysis
 
+# ********** Spectral model **********
+
 - name: Spectral_Model
   dtype: str
   fmt:
@@ -269,33 +271,175 @@
   description: Statistical error (1 sigma) on Flux_Spec_Energy_1_10_TeV
   latex: Statistical error (1 sigma) on Flux\_Spec\_Energy\_1\_10\_TeV
 
+- name: Energy_Spec_PL_Pivot
+  dtype: float32
+  fmt:
+  unit: TeV
+  description: Reference energy
+  latex: Reference energy $E_0$, see Equation~\ref{eqn:pl}
+- name: Flux_Spec_PL_Diff_Pivot
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Differential flux at pivot energy. Correction factor applied.
+  latex: Differential flux at pivot energy. Correction factor applied.
+- name: Flux_Spec_PL_Diff_Pivot_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Statistical error (1 sigma) on Flux_Spec_PL_Diff_Pivot
+  latex: Statistical error (1 sigma) on Flux\_Spec\_PL\_Diff\_Pivot
+- name: Flux_Spec_PL_Diff_1TeV
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Differential flux at 1 TeV. Correction factor applied.
+  latex: Differential flux at 1 TeV. Correction factor applied.
+- name: Flux_Spec_PL_Diff_1TeV_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Statistical error (1 sigma) on Flux_Spec_PL_Diff_1TeV_Err
+  latex: Statistical error (1 sigma) on Flux\_Spec\_PL\_Diff\_1TeV
+- name: Flux_Spec_PL_Int_1TeV
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Integral flux above 1 TeV. Correction factor applied.
+  latex: Integral flux above 1 TeV. Correction factor applied.
+- name: Flux_Spec_PL_Int_1TeV_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Statistical error (1 sigma) on Flux_Spec_PL_Int_1TeV
+  latex: Statistical error (1 sigma) on Flux\_Spec\_PL\_Int\_1TeV
+- name: Index_Spec_PL
+  dtype: float32
+  fmt:
+  unit:
+  description: Spectral index
+  latex: Spectral index
+- name: Index_Spec_PL_Err
+  dtype: float32
+  fmt:
+  unit:
+  description: Statistical error (1 sigma) on Index_Spec_PL
+  latex: Statistical error (1 sigma) on Index\_Spec\_PL
 
-#Energy\_Spec\_PL\_Pivot & TeV & Reference energy $E_0$, see Equation~\ref{eqn:pl} \\
-#Flux\_Spec\_PL\_Diff\_Pivot & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at pivot energy. Correction factor applied. \\
-#Flux\_Spec\_PL\_Diff\_Pivot\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_PL\_Diff\_Pivot \\
-#Flux\_Spec\_PL\_Diff\_1TeV & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at 1 TeV. Correction factor applied. \\
-#Flux\_Spec\_PL\_Diff\_1TeV\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_PL\_Diff\_1TeV \\
-#Flux\_Spec\_PL\_Int\_1TeV & cm$^{-2}$~s$^{-1}$ & Integral flux above 1 TeV. Correction factor applied.\\
-#Flux\_Spec\_PL\_Int\_1TeV\_Err & cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_PL\_Int\_1TeV \\
-#Index\_Spec\_PL & & Spectral index \\
-#Index\_Spec\_PL\_Err & & Statistical error (1 sigma) on Index\_Spec\_PL \\
-#
-#Energy\_Spec\_ECPL\_Pivot & TeV & Reference energy $E_0$, see Equation~\ref{eqn:ecpl} \\
-#Flux\_Spec\_ECPL\_Diff\_Pivot & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at pivot energy. Correction factor applied. \\
-#Flux\_Spec\_ECPL\_Diff\_Pivot\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Diff\_Pivot \\
-#Flux\_Spec\_ECPL\_Diff\_1TeV & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at 1 TeV. Correction factor applied. \\
-#Flux\_Spec\_ECPL\_Diff\_1TeV\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Diff\_1TeV \\
-#Flux\_Spec\_ECPL\_Int\_1TeV & cm$^{-2}$~s$^{-1}$ & Integral flux above 1 TeV. Correction factor applied. \\
-#Flux\_Spec\_ECPL\_Int\_1TeV\_Err & cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Int\_1TeV \\
-#Index\_Spec\_ECPL & & Spectral index \\
-#Index\_Spec\_ECPL\_Err & & Statistical error (1 sigma) on Index\_Spec\_ECPL \\
-#Lambda\_Spec\_ECPL & TeV$^{-1}$ & Spectral cutoff fit parameter (inverse cutoff energy) \\
-#Lambda\_Spec\_ECPL\_Err & TeV$^{-1}$ & Statistical error (1 sigma) on Lambda\_Spec\_ECPL \\
-#
-#N\_Flux\_Points & & Number of flux points \\
-#Flux\_Points\_Energy & TeV &  Energy value.\\
-#Flux\_Points\_Energy\_Err\_Hi & TeV & Upper bound of energy bin.\\
-#Flux\_Points\_Energy\_Err\_Lo & TeV & Lower bound of energy bin. \\
-#Flux\_Points\_Flux & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at given energy.\\
-#Flux\_Points\_Flux\_Err\_Hi & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Upper error on differential flux at given energy. \\
-#Flux\_Points\_Flux\_Err\_Lo & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Lower error on differential flux at given energy. \\
+- name: Energy_Spec_ECPL_Pivot
+  dtype: float32
+  fmt:
+  unit: TeV
+  description: Reference energy
+  latex: Reference energy $E_0$, see Equation~\ref{eqn:ecpl}
+- name: Flux_Spec_ECPL_Diff_Pivot
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Differential flux at pivot energy. Correction factor applied.
+  latex: Differential flux at pivot energy. Correction factor applied.
+- name: Flux_Spec_ECPL_Diff_Pivot_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Statistical error (1 sigma) on Flux_Spec_ECPL_Diff_Pivot
+  latex: Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Diff\_Pivot
+- name: Flux_Spec_ECPL_Diff_1TeV
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Differential flux at 1 TeV. Correction factor applied.
+  latex: Differential flux at 1 TeV. Correction factor applied.
+- name: Flux_Spec_ECPL_Diff_1TeV_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Statistical error (1 sigma) on Flux_Spec_ECPL_Diff_1TeV
+  latex: Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Diff\_1TeV
+- name: Flux_Spec_ECPL_Int_1TeV
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Integral flux above 1 TeV. Correction factor applied.
+  latex: Integral flux above 1 TeV. Correction factor applied.
+- name: Flux_Spec_ECPL_Int_1TeV_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Statistical error (1 sigma) on Flux_Spec_ECPL_Int_1TeV
+  latex: Statistical error (1 sigma) on Flux\_Spec\_ECPL\_Int\_1TeV
+- name: Index_Spec_ECPL
+  dtype: float32
+  fmt:
+  unit:
+  description: Spectral index
+  latex: Spectral index
+- name: Index_Spec_ECPL_Err
+  dtype: float32
+  fmt:
+  unit:
+  description: Statistical error (1 sigma) on Index_Spec_ECPL
+  latex: Statistical error (1 sigma) on Index\_Spec\_ECPL
+- name: Lambda_Spec_ECPL
+  dtype: float32
+  fmt:
+  unit: TeV-1
+  description: Spectral cutoff fit parameter (inverse cutoff energy)
+  latex: Spectral cutoff fit parameter (inverse cutoff energy)
+- name: Lambda_Spec_ECPL_Err
+  dtype: float32
+  fmt:
+  unit: TeV-1
+  description: Statistical error (1 sigma) on Lambda_Spec_ECPL
+  latex: Statistical error (1 sigma) on Lambda\_Spec\_ECPL
+
+# ********** Flux points **********
+
+- name: N_Flux_Points
+  dtype: int
+  fmt:
+  unit:
+  description: Number of flux points
+  latex: Number of flux points
+- name: Flux_Points_Energy
+  dtype: float32
+  dim: 1
+  fmt:
+  unit: TeV
+  description: Energy value
+  latex: Energy value
+- name: Flux_Points_Energy_Err_Hi
+  dtype: float32
+  dim: 1
+  fmt:
+  unit: TeV
+  description: Upper bound of energy bin
+  latex: Upper bound of energy bin
+- name: Flux_Points_Energy_Err_Lo
+  dtype: float32
+  dim: 1
+  fmt:
+  unit: TeV
+  description: Lower bound of energy bin
+  latex: Lower bound of energy bin
+- name: Flux_Points_Flux
+  dtype: float32
+  dim: 1
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Differential flux at given energy
+  latex: Differential flux at given energy
+- name: Flux_Points_Flux_Err_Hi
+  dtype: float32
+  dim: 1
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Upper error on Flux_Points_Flux
+  latex: Upper error on Flux\_Points\_Flux
+- name: Flux_Points_Flux_Err_Lo
+  dtype: float32
+  dim: 1
+  fmt:
+  unit: cm-2 s-1 TeV-1
+  description: Lower error on Flux_Points_Flux
+  latex: Lower error on Flux\_Points\_Flux

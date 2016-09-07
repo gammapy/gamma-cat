@@ -13,8 +13,8 @@ $(document).ready(function () {
 
 function main() {
 
-    $('#sources').DataTable({
-        ajax: "data/gammacat-sources.json",
+    $('#papers').DataTable({
+        ajax: "data/gammacat-papers.json",
         columns: [
             {
                 data: "source_id",

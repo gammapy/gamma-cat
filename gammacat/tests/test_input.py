@@ -9,7 +9,7 @@ def test_basic_source_info():
 
 
 def test_paper_source_info():
-    info = gammacat.PaperSourceInfo.read('input/papers/2011A%26A...531L..18H/tev-000083.yaml')
+    info = gammacat.PaperSourceInfo.read('input/papers/2011/2011A%26A...531L..18H/tev-000083.yaml')
     assert info.data['paper_id'] == '2011A&A...531L..18H'
     assert info.data['source_id'] == 83
     assert repr(info) == "PaperInfo(source_id=83, data_id='2011A&A...531L..18H')"
@@ -24,7 +24,7 @@ def test_basic_source_list():
 
 
 def test_paper_info():
-    info = gammacat.PaperInfo.read('input/papers/2011A%26A...531L..18H')
+    info = gammacat.PaperInfo.read('input/papers/2011/2011A%26A...531L..18H')
     assert info.id == '2011A&A...531L..18H'
     assert len(info.sources) == 1
     assert repr(info) == "PaperInfo(id='2011A&A...531L..18H')"

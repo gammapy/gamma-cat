@@ -115,21 +115,40 @@ class PaperInfo:
     """All info for one paper.
     """
 
-    def __init__(self, id, sources):
+    def __init__(self, id, path, sources):
         self.id = id
+        self.path = path
         self.sources = sources
 
     @classmethod
     def read(cls, path):
         path = Path(path)
-        id = urllib.parse.unquote(path.name)
+        id = urllib.parse.unquote(path.parts[-2])
 
         sources = []
         for source_path in path.glob('*.yaml'):
             source_info = PaperSourceInfo.read(source_path)
             sources.append(source_info)
 
-        return cls(id=id, sources=sources)
+        path = '/'.join(path.parts[-2:])
+        return cls(id=id, path=path, sources=sources)
+
+    def to_json(self):
+        sources = []
+        for source in self.sources:
+            sources.append(dict(
+                source_id=source.data['source_id'],
+                paper_id=source.data['paper_id'],
+            ))
+
+        # TODO: This would give the full information from the input files.
+        # sources = [dict(_.data for _ in self.sources]
+
+        return dict(
+            id=self.id,
+            path=self.path,
+            sources=sources,
+        )
 
     def __repr__(self):
         return 'PaperInfo(id={})'.format(repr(self.id))
@@ -243,8 +262,10 @@ class PaperList:
 
         A dict with `data` key.
         """
-        # return dict(data=self.data_per_row(filled=True))
-        return dict(data={})
+        data = []
+        for paper in self.data:
+            data.append(paper.to_json())
+        return dict(data=data)
 
     def validate(self):
         log.info('Validating YAML files in `input/papers`')

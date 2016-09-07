@@ -1,6 +1,8 @@
 """
 Clean up `tc_dump.txt` to obtain `tevcat.ecsv`
 """
+from collections import OrderedDict
+
 from astropy.coordinates import Angle
 from astropy.table import Table
 
@@ -16,12 +18,12 @@ for line in open('tc_dump.txt').readlines():
     rows.append([source_name, source_id, ra_str, dec_str])
 
 names = ['source_name', 'source_id', 'ra_str', 'dec_str']
-meta = dict(
-    catalog_name='TeVCat',
-    date='June 11, 2016',
-    authors='Scott Wakely, Deirdre Horan',
-    url='http://tevcat.uchicago.edu/',
-)
+meta = OrderedDict()
+meta['catalog_name'] = 'TeVCat'
+meta['date'] = 'June 11, 2016'
+meta['authors'] = 'Scott Wakely, Deirdre Horan'
+meta['url'] = 'http://tevcat.uchicago.edu/'
+
 table = Table(rows=rows, names=names, meta=meta)
 
 table['source_name'].description = 'Source canonical name'

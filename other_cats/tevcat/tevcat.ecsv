@@ -8,10 +8,10 @@
 # - {name: dec, unit: deg, datatype: float64, format: '%.5f', description: Declination
 #     (J2000)}
 # meta: !!omap
-# - {url: 'http://tevcat.uchicago.edu/'}
-# - {authors: 'Scott Wakely, Deirdre Horan'}
 # - {catalog_name: TeVCat}
 # - {date: 'June 11, 2016'}
+# - {authors: 'Scott Wakely, Deirdre Horan'}
+# - {url: 'http://tevcat.uchicago.edu/'}
 source_name source_id ra dec
 Crab 74 83.62958 22.01444
 "Markarian 421" 75 166.07917 38.19472

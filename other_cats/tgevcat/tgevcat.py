@@ -39,13 +39,13 @@ Path(filename2).unlink()
 # Make new table and fill with good column names,
 # units and values converted to numbers where appropriate
 
-meta = OrderedDict(
-    catalog_name='TeGeV',
-    version='2',
-    date='July 2015',
-    authors='Alessandro Carosi, Fabrizio Lucarelli, Angelo Antonelli',
-    url='http://www.asdc.asi.it/tgevcat/',
-)
+meta = OrderedDict()
+meta['catalog_name'] = 'TeGeV'
+meta['version'] = '2'
+meta['date'] = 'July 2015'
+meta['authors'] = 'Alessandro Carosi, Fabrizio Lucarelli, Angelo Antonelli'
+meta['url'] = 'http://www.asdc.asi.it/tgevcat/'
+
 t2 = Table(meta=meta)
 
 t2['Source_ID'] = t1['id']

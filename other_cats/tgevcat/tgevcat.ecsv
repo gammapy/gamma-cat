@@ -54,11 +54,11 @@
 # - {name: Reference, datatype: string, description: Reference}
 # - {name: Comments, datatype: string, description: Comments}
 # meta: !!omap
-# - {date: July 2015}
-# - {url: 'http://www.asdc.asi.it/tgevcat/'}
 # - {catalog_name: TeGeV}
 # - {version: '2'}
+# - {date: July 2015}
 # - {authors: 'Alessandro Carosi, Fabrizio Lucarelli, Angelo Antonelli'}
+# - {url: 'http://www.asdc.asi.it/tgevcat/'}
 Source_ID Source_Name Other_Names CLASS RA DEC GLON GLAT RA_Err_Stat RA_Err_Sys DEC_Err_Stat DEC_Err_Sys Is_Extended Semimajor Semimajor_Err Semiminor Semiminor_Err Rotation_Angle Flux_Diff Flux_Diff_Err_Stat Flux_Diff_Err_Sys Spectral_Index Spectral_Index_Err_Stat Spectral_Index_Err_Sys Flux_Int Flux_Int_Err_Stat Flux_Int_Err_Sys Flux_Crab Distance Distance2 Discoverer Observatory Reference Comments
 1 "TeV J0006+7259" "CTA 1/ G 119.5+10.2" PWN/SNR 1.60833333333 72.9836111111 119.6 10.4 0.0916666666667 0.0125 0.04 0.0138888888889 True 0.3 0.03 0.24 0.03 17.0 9.1e-14 1.3e-14 1.7e-14 2.2 0.2 0.3 nan nan nan nan 1.4 -- VERITAS VERITAS "Aliu et al. (2013), ApJ 764, 38" "Orientation angle of 17.4 +/- 15.8 deg, west of north. An integral energy flux above 1 TeV of 4.0x10^-12 erg/cm^2/s is reported in the paper."
 2 "TeV J0013-1853" "SHBL J001355.9-185406" HBL 3.46666666667 -18.8913888889 74.61 -78.07 0.00625 0.00541666666667 0.00611111111111 0.00555555555556 False nan nan nan nan nan 1.2e-12 2.3e-13 2.3e-13 3.4 0.5 0.2 8.3e-13 1.7e-13 1.7e-13 0.6 -- 0.095 HESS HESS "Abramowski et al. (2013), A&A 554, A72" --

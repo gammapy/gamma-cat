@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     main();
 });
@@ -10,24 +9,16 @@ function main() {
         columns: [
             {
                 data: "source_id",
-                render: function (val) {
-                    var source_id = pad(val, 6)
-                    var filename = "tev-" + source_id + ".yaml";
-                    return "<a href=\"https://github.com/gammapy/gamma-cat/blob/master/input/sources/" + filename + "\">" + source_id + "</a>";
-                }
+                render: render_source_github_url
             },
             {data: "common_name"},
             {
                 data: "tevcat_id",
-                render: function (val) {
-                    return "<a href=\"http://tevcat.uchicago.edu/?mode=1&showsrc=" + val + "\">" + val + "</a>";
-                }
+                render: render_tevcat_url
             },
             {
                 data: "tevcat2_id",
-                render: function (val) {
-                    return "<a href=\"http://tevcat2.uchicago.edu/sources/" + val + "\">" + val + "</a>";
-                }
+                render: render_tevcat2_url
             },
             {data: "tevcat_name"},
             {data: "tgevcat_id"},

@@ -19,8 +19,9 @@ function main() {
             {
                 data: "source_id",
                 render: function (val) {
-                    var filename = "tev-" + pad(val, 6) + ".yaml";
-                    return "<a href=\"https://github.com/gammapy/gamma-cat/blob/master/input/sources/" + filename + "\">" + val + "</a>";
+                    var source_id = pad(val, 6)
+                    var filename = "tev-" + source_id + ".yaml";
+                    return "<a href=\"https://github.com/gammapy/gamma-cat/blob/master/input/sources/" + filename + "\">" + source_id + "</a>";
                 }
             },
             {data: "common_name"},

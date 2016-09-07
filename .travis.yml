@@ -22,6 +22,6 @@ script:
 - ./make.py --help
 - ./make.py check
 - ./make.py output
-- ./make.py webpage
+#- ./make.py webpage
 - export PYTHONPATH=.:$PYTHONPATH
 - py.test -v --cov=gammacat

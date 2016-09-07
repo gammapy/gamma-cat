@@ -32,3 +32,40 @@ def print_simbad_pos(name):
     )
     s = template.format(name=name, pos=pos)
     print(s)
+
+
+def rawgit_url(filename, location='master', mode='production'):
+    """
+    Construct the rawgit URL to download directly files from the repo.
+
+    More info:
+    * https://rawgit.com/
+    * https://github.com/rgrove/rawgit/wiki/Frequently-Asked-Questions
+
+    URL is
+
+    Parameters
+    ----------
+    filename : str
+        Filename in the repo.
+    location : str
+        Name of a branch, tag or commit.
+    mode : {'development', 'production'}
+        Where to fetch the files from
+
+    Examples
+    --------
+    >>> filename = 'papers/2006/2006A%2526A...456..245A/tev-000065.ecsv'
+    >>> rawgit_url(filename, mode='production')
+    TODO
+    >>> rawgit_url(filename, mode='development')
+    TODO
+    """
+    if mode == 'development':
+        base_url = 'https://rawgit.com/gammapy/gamma-cat'
+    elif mode == 'production':
+        base_url = 'https://cdn.rawgit.com/gammapy/gamma-cat'
+
+    url = '/'.join([base_url, location, filename])
+
+    return url

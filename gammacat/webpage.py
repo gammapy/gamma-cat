@@ -22,7 +22,7 @@ def make():
     # table.write(str(path), format='ascii.csv')
 
     data = dict(data=input_data.sources.data_per_row(filled=True))
-    path = gammacat_info.base_dir / 'docs/gammacat.json'
+    path = gammacat_info.base_dir / 'docs/data/gammacat-sources.json'
     log.info('Writing {}'.format(path))
     with path.open('w') as fh:
         json.dump(data, fh, indent=4)

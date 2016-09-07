@@ -137,10 +137,10 @@ class PaperInfo:
     def to_json(self):
         sources = []
         for source in self.sources:
-            sources.append(dict(
-                source_id=source.data['source_id'],
-                paper_id=source.data['paper_id'],
-            ))
+            data = OrderedDict()
+            data['source_id'] = source.data['source_id']
+            data['paper_id'] = source.data['paper_id']
+            sources.append(data)
 
         # TODO: This would give the full information from the input files.
         # sources = [dict(_.data for _ in self.sources]
@@ -148,12 +148,13 @@ class PaperInfo:
         # This is what it takes to build the URL on Github
         url = self.path.replace('%26', '%2526')
 
-        return dict(
-            id=self.id,
-            path=self.path,
-            url=url,
-            sources=sources,
-        )
+        data = OrderedDict()
+        data['id'] = self.id
+        data['path'] = self.path
+        data['url'] = url
+        data['sources'] = sources
+
+        return data
 
     def __repr__(self):
         return 'PaperInfo(id={})'.format(repr(self.id))
@@ -188,12 +189,10 @@ class BasicSourceList:
     def to_table(self):
         """Convert info of `sources` list into a Table.
         """
-        meta = dict(
-            name='todo',
-            version='todo',
-            url='todo',
-        )
-        # import IPython; IPython.embed(); 1/0
+        meta = OrderedDict()
+        meta['name'] = 'todo'
+        meta['version'] = 'todo'
+        meta['url'] = 'todo'
 
         rows = self.data_per_row(filled=True)
         return Table(rows=rows, meta=meta, masked=True)
@@ -203,7 +202,7 @@ class BasicSourceList:
 
         A dict with `data` key.
         """
-        return dict(data=self.data_per_row(filled=True))
+        return OrderedDict(data=self.data_per_row(filled=True))
 
     # def data_per_column(self):
     #     """Data as dict of lists (per-column)"""
@@ -251,15 +250,13 @@ class PaperList:
     def to_table(self):
         """Convert info of `sources` list into a Table.
         """
-        meta = dict(
-            name='todo',
-            version='todo',
-            url='todo',
-        )
-        # import IPython; IPython.embed(); 1/0
+        meta = OrderedDict()
+        meta['name'] = 'todo'
+        meta['version'] = 'todo'
+        meta['url'] = 'todo'
 
         # rows = self.data_per_row(filled=True)
-        rows = [dict(spam=99)]
+        rows = [OrderedDict(spam=99)]
         return Table(rows=rows, meta=meta, masked=True)
 
     def to_json(self):
@@ -270,7 +267,7 @@ class PaperList:
         data = []
         for paper in self.data:
             data.append(paper.to_json())
-        return dict(data=data)
+        return OrderedDict(data=data)
 
     def validate(self):
         log.info('Validating YAML files in `input/papers`')

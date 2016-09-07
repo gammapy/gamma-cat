@@ -194,12 +194,9 @@ t2['Reference'].description = 'Reference'
 t2['Comments'] = t1['COMMENTS']
 t2['Comments'].description = 'Comments'
 
-# import IPython; IPython.embed()
-
 # t2.info()
 # t2.info('stats')
 # t2.show_in_browser(jsviewer=True)
-# import IPython; IPython.embed()
 
 filename = 'tgevcat.ecsv'
 print('Writing', filename)

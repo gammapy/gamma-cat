@@ -17,13 +17,13 @@ for line in open('tc_dump.txt').readlines():
     source_id = int(url.split('=')[-1])
     rows.append([source_name, source_id, ra_str, dec_str])
 
-names = ['source_name', 'source_id', 'ra_str', 'dec_str']
 meta = OrderedDict()
 meta['catalog_name'] = 'TeVCat'
 meta['date'] = 'June 11, 2016'
 meta['authors'] = 'Scott Wakely, Deirdre Horan'
 meta['url'] = 'http://tevcat.uchicago.edu/'
 
+names = ['source_name', 'source_id', 'ra_str', 'dec_str']
 table = Table(rows=rows, names=names, meta=meta)
 
 table['source_name'].description = 'Source canonical name'
@@ -41,9 +41,6 @@ table['dec'].unit = 'deg'
 table['dec'].format = '%.5f'
 table['dec'].description = 'Declination (J2000)'
 del table['dec_str']
-
-# import IPython; IPython.embed()
-
 
 filename = 'tevcat.ecsv'
 print('Writing', filename)

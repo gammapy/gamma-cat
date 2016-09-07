@@ -24,10 +24,11 @@ class OutputDataConfig:
     """
     path = gammacat_info.base_dir / 'docs/data'
 
-    sources_ecsv = path / 'gammacat-sources.ecsv'
     sources_json = path / 'gammacat-sources.json'
+    sources_ecsv = path / 'gammacat-sources.ecsv'
 
     papers_json = path / 'gammacat-papers.json'
+    papers_ecsv = path / 'gammacat-papers.ecsv'
 
 
 class OutputDataReader:
@@ -74,20 +75,34 @@ class OutputDataMaker:
         self.input_data = InputData.read()
 
     def make_all(self):
-        self.make_sources_table()
-        # self.make_paper_table()
+        self.make_source_table_json()
+        self.make_source_table_ecsv()
 
-    def make_sources_table(self):
-        table = self.input_data.sources.to_table()
-        path = OutputDataConfig.sources_ecsv
-        log.info('Writing {}'.format(path))
-        table.write(str(path), format='ascii.ecsv')
+        self.make_paper_table_json()
+        self.make_paper_table_ecsv()
 
+    def make_source_table_json(self):
         data = self.input_data.sources.to_json()
         path = OutputDataConfig.sources_json
         log.info('Writing {}'.format(path))
         with path.open('w') as fh:
             json.dump(data, fh, indent=4)
 
-    def make_paper_table(self):
-        raise NotImplementedError
+    def make_source_table_ecsv(self):
+        table = self.input_data.sources.to_table()
+        path = OutputDataConfig.sources_ecsv
+        log.info('Writing {}'.format(path))
+        table.write(str(path), format='ascii.ecsv')
+
+    def make_paper_table_json(self):
+        data = self.input_data.papers.to_json()
+        path = OutputDataConfig.papers_json
+        log.info('Writing {}'.format(path))
+        with path.open('w') as fh:
+            json.dump(data, fh, indent=4)
+
+    def make_paper_table_ecsv(self):
+        table = self.input_data.papers.to_table()
+        path = OutputDataConfig.papers_ecsv
+        log.info('Writing {}'.format(path))
+        table.write(str(path), format='ascii.ecsv')

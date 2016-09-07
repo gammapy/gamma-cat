@@ -224,6 +224,28 @@ class PaperList:
 
         return cls(data=data)
 
+    def to_table(self):
+        """Convert info of `sources` list into a Table.
+        """
+        meta = dict(
+            name='todo',
+            version='todo',
+            url='todo',
+        )
+        # import IPython; IPython.embed(); 1/0
+
+        # rows = self.data_per_row(filled=True)
+        rows = [dict(spam=99)]
+        return Table(rows=rows, meta=meta, masked=True)
+
+    def to_json(self):
+        """Return data in format that can be written to JSON.
+
+        A dict with `data` key.
+        """
+        # return dict(data=self.data_per_row(filled=True))
+        return dict(data={})
+
     def validate(self):
         log.info('Validating YAML files in `input/papers`')
         for paper in self.data:

@@ -1,0 +1,10 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: spam, datatype: int64}
+# meta: !!omap
+# - {version: todo}
+# - {url: todo}
+# - {name: todo}
+spam
+99

@@ -86,3 +86,24 @@ The following tools and services were used to produce this catalog:
   and we had good discussions and collaboration with the `TGeVCat` team.
 * [TeVCat](http://tevcat.uchicago.edu/) was used to look up some info.
   (We did comply with their terms and conditions and didn't scrape their website to collect data for this catalog!)
+
+## Related resources
+
+Here are some related resources:
+
+* Some of the data formats we use are defined or being defined at the
+ [gamma-astro-data-formats](http://gamma-astro-data-formats.readthedocs.io/) project.
+* [gamma-sky.net](http://gamma-sky.net/) is a portal to the gamma-ray sky
+* High-level data products (e.g. catalogs) from the Fermi space telescope
+  are [here](http://fermi.gsfc.nasa.gov/ssc/data/access/lat/).
+* A HESS source catalog is posted [here](https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/sources/)
+  and a copy is on HEASARC [here](https://heasarc.gsfc.nasa.gov/W3Browse/all/hesscat.html)
+* HESS data can be found by following the links [here]().
+  The status and remaining tasks of ingesting that data into this project is [here](https://github.com/gammapy/gamma-cat/blob/master/todo/todo_hess_aux.md).
+  Help welcome!
+* A collection of MAGIC data is [here](http://vobs.magic.pic.es/fits/).
+* VERITAS data can be found by following the links [here](http://veritas.sao.arizona.edu/veritas-science/veritas-results-mainmenu-72).
+* Another TeV source catalog is at [TeVCat](http://tevcat.uchicago.edu/) and with a new web interface
+  at [TeVCat2](http://tevcat2.uchicago.edu/).
+* Another TeV source catalog is the [TeGeV Catalogue @ ASDC](http://www.asdc.asi.it/tgevcat/)
+* At DESY there's a [light curve archive](https://astro.desy.de/gamma_astronomy/magic/projects/light_curve_archive/index_eng.html)

@@ -22,6 +22,9 @@ For now, we just collect TeV gamma-ray source information.
 Later we might try to ingest and interconnect other catalogs
 (e.g. Fermi-LAT GeV catalogs).
 
+This project will be presented and announced via a poster at [ADASS 2016](http://www.adass2016.inaf.it/),
+see abstract [here](https://github.com/gammapy/adass2016-gamma-cat-poster/blob/master/abstract.txt).
+
 [![Build Status](https://travis-ci.org/gammapy/gamma-cat.svg?branch=master)](https://travis-ci.org/gammapy/gamma-cat)
 
 Other documentation pages:

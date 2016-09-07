@@ -96,8 +96,10 @@ Here are some related resources:
 * [gamma-sky.net](http://gamma-sky.net/) is a portal to the gamma-ray sky
 * High-level data products (e.g. catalogs) from the Fermi space telescope
   are [here](http://fermi.gsfc.nasa.gov/ssc/data/access/lat/).
-* A HESS source catalog is posted [here](https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/sources/)
-  and a copy is on HEASARC [here](https://heasarc.gsfc.nasa.gov/W3Browse/all/hesscat.html)
+* A HESS source catalog is available in [HTML](https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/sources/)
+  and [TSV](https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/sources/HESS_catalog.tsv) (tab-separated format)
+  and a copy is on HEASARC [here](https://heasarc.gsfc.nasa.gov/W3Browse/all/hesscat.html) which
+  allows download in FITS or VOTable format.
 * HESS data can be found by following the links [here]().
   The status and remaining tasks of ingesting that data into this project is [here](https://github.com/gammapy/gamma-cat/blob/master/todo/todo_hess_aux.md).
   Help welcome!

@@ -1,11 +1,15 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 from collections import OrderedDict
+import logging
+import json
 from pathlib import Path
 import yaml
 import numpy as np
 from astropy.coordinates import SkyCoord
 
-MISSING_VAL = dict(
+log = logging.getLogger()
+
+MISSING_VAL = OrderedDict(
     integer=-999,
     number=np.nan,
     string='',
@@ -19,6 +23,21 @@ def load_yaml(path):
     with path.open() as fh:
         data = yaml.safe_load(fh)
     return data
+
+
+def load_json(path):
+    """Helper function to load data from a JSON file."""
+    path = Path(path)
+    with path.open() as fh:
+        data = json.load(fh, object_pairs_hook=OrderedDict)
+    return data
+
+
+def write_json(data, path):
+    path = Path(path)
+    log.info('Writing {}'.format(path))
+    with path.open('w') as fh:
+        json.dump(data, fh, indent=4)
 
 
 def print_simbad_pos(name):

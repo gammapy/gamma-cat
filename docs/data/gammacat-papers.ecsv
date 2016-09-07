@@ -3,8 +3,8 @@
 # datatype:
 # - {name: spam, datatype: int64}
 # meta: !!omap
-# - {url: todo}
 # - {name: todo}
 # - {version: todo}
+# - {url: todo}
 spam
 99

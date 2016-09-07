@@ -2,12 +2,12 @@
 """
 Classes to read, validate and work with the input data files.
 """
-import json
 import logging
 from pathlib import Path
 from astropy.table import Table
 from .info import gammacat_info
 from .input import InputData
+from .utils import write_json
 
 __all__ = [
     'OutputDataConfig',
@@ -84,9 +84,7 @@ class OutputDataMaker:
     def make_source_table_json(self):
         data = self.input_data.sources.to_json()
         path = OutputDataConfig.sources_json
-        log.info('Writing {}'.format(path))
-        with path.open('w') as fh:
-            json.dump(data, fh, indent=4)
+        write_json(data, path)
 
     def make_source_table_ecsv(self):
         table = self.input_data.sources.to_table()
@@ -97,9 +95,7 @@ class OutputDataMaker:
     def make_paper_table_json(self):
         data = self.input_data.papers.to_json()
         path = OutputDataConfig.papers_json
-        log.info('Writing {}'.format(path))
-        with path.open('w') as fh:
-            json.dump(data, fh, indent=4)
+        write_json(data, path)
 
     def make_paper_table_ecsv(self):
         table = self.input_data.papers.to_table()

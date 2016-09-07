@@ -219,17 +219,57 @@
   description: Upper range bound for spectrum
   latex: Upper range bound for spectrum.
 
+- name: Background_Spec
+  dtype: float32
+  fmt:
+  unit:
+  description: Background from spectral analysis
+  latex: Background from spectral analysis
+- name: Excess_Spec
+  dtype: float32
+  fmt:
+  unit:
+  description: Excess from spectral analysis
+  latex: Excess from spectral analysis
 
-#Background\_Spec & & Background from spectral analysis \\
-#Excess\_Spec & & Excess from spectral analysis \\
-#
-#Spectral\_Model & & Spectral model, either "PL" or "ECPL" as defined by Equation~\ref{eqn:pl} and Equation~\ref{eqn:ecpl}. \\
-#TS\_ECPL\_over\_PL & & Test statistic difference of ECPL and PL model \\
-#Flux\_Spec\_Int\_1TeV & cm$^{-2}$~s$^{-1}$ & PL or ECPL integral flux above 1~TeV, depending on Spectral\_Model \\
-#Flux\_Spec\_Int\_1TeV\_Err & cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_Int\_1TeV \\
-#Flux\_Spec\_Energy\_1\_10\_TeV & erg cm$^{-2}$~s$^{-1}$ & PL or ECPL energy flux in the 1 to 10 TeV range, depending on Spectral\_Model \\
-#Flux\_Spec\_Energy\_1\_10\_TeV\_Err & erg cm$^{-2}$~s$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_Energy\_1\_10\_TeV \\
-#
+- name: Spectral_Model
+  dtype: str
+  fmt:
+  unit:
+  description: Spectral model, either "PL" or "ECPL".
+  latex: Spectral model, either "PL" or "ECPL" as defined by Equation~\ref{eqn:pl} and Equation~\ref{eqn:ecpl}.
+- name: TS_ECPL_over_PL
+  dtype: float32
+  fmt:
+  unit:
+  description: Test statistic difference of ECPL and PL model
+  latex: Test statistic difference of ECPL and PL model
+- name: Flux_Spec_Int_1TeV
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: PL or ECPL integral flux above 1 TeV, depending on Spectral_Model
+  latex: PL or ECPL integral flux above 1~TeV, depending on Spectral\_Model
+- name: Flux_Spec_Int_1TeV_Err
+  dtype: float32
+  fmt:
+  unit: cm-2 s-1
+  description: Statistical error (1 sigma) on Flux_Spec_Int_1TeV
+  latex: Statistical error (1 sigma) on Flux\_Spec\_Int\_1TeV
+- name: Flux_Spec_Energy_1_10_TeV
+  dtype: float32
+  fmt:
+  unit: erg cm-2 s-1
+  description: PL or ECPL energy flux in the 1 to 10 TeV range, depending on Spectral_Model
+  latex: PL or ECPL energy flux in the 1 to 10 TeV range, depending on Spectral\_Model
+- name: Flux_Spec_Energy_1_10_TeV_Err
+  dtype: float32
+  fmt:
+  unit: erg cm-2 s-1
+  description: Statistical error (1 sigma) on Flux_Spec_Energy_1_10_TeV
+  latex: Statistical error (1 sigma) on Flux\_Spec\_Energy\_1\_10\_TeV
+
+
 #Energy\_Spec\_PL\_Pivot & TeV & Reference energy $E_0$, see Equation~\ref{eqn:pl} \\
 #Flux\_Spec\_PL\_Diff\_Pivot & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Differential flux at pivot energy. Correction factor applied. \\
 #Flux\_Spec\_PL\_Diff\_Pivot\_Err & cm$^{-2}$~s$^{-1}$~TeV$^{-1}$ & Statistical error (1 sigma) on Flux\_Spec\_PL\_Diff\_Pivot \\

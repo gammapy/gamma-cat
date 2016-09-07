@@ -12,8 +12,8 @@ log = logging.getLogger()
 
 
 @click.group()
-@click.option('-l', '--loglevel', default='info',
-              type=click.Choice(['debug', 'info', 'warning', 'error']))
+@click.option('--loglevel', default='info',
+              type=click.Choice(['debug', 'info', 'warning', 'error', 'critical']))
 def cli(loglevel):
     """
     Make catalog (multiple steps available)
@@ -23,6 +23,7 @@ def cli(loglevel):
         info=logging.INFO,
         warning=logging.WARNING,
         error=logging.ERROR,
+        critical=logging.CRITICAL,
     )
     log.setLevel(level=levels[loglevel])
     pass

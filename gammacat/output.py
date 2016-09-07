@@ -25,7 +25,9 @@ class OutputDataConfig:
     path = gammacat_info.base_dir / 'docs/data'
 
     sources_ecsv = path / 'gammacat-sources.ecsv'
-    sources_json = gammacat_info.base_dir / 'docs/data/gammacat-sources.json'
+    sources_json = path / 'gammacat-sources.json'
+
+    papers_json = path / 'gammacat-papers.json'
 
 
 class OutputDataReader:
@@ -33,23 +35,25 @@ class OutputDataReader:
     Read all data from the `output` folder.
 
     Expose it as Python objects that can be validated and used.
+
+    TODO: rename this class to `GammaCat` ?
     """
 
     def __init__(self, path=None):
         if path:
             self.path = Path(path)
         else:
-            self.path = gammacat_info.base_dir / 'output'
+            self.path = OutputDataConfig.path
 
         self.sources_catalog = None
-        # self.papers_catalog = None
+        self.papers_catalog = None
         # self.catalog = None
 
     def read_all(self):
         """Read all data from disk.
         """
-        filename = str(self.path / 'sources.ecsv')
-        self.sources_catalog = Table.read(filename, format='ascii.ecsv')
+        path = OutputDataConfig.sources_ecsv
+        self.sources_catalog = Table.read(str(path), format='ascii.ecsv')
 
         return self
 
@@ -57,7 +61,7 @@ class OutputDataReader:
         ss = 'output data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of sources: {}\n'.format(len(self.sources_catalog))
-        # ss += 'Number of papers: {}\n'.format(len(self.papers_catalog))
+        ss += 'Number of papers: {}\n'.format(len(self.papers_catalog))
         return ss
 
 

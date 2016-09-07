@@ -1,11 +1,3 @@
-// TODO: use row detail for papers.
-// See https://datatables.net/examples/api/row_details.html
-
-// http://stackoverflow.com/a/2998822/498873
-function pad(num, size) {
-    var s = "000000000" + num;
-    return s.substr(s.length - size);
-}
 
 $(document).ready(function () {
     main();
@@ -40,6 +32,9 @@ function main() {
             {data: "tevcat_name"},
             {data: "tgevcat_id"},
             {data: "tgevcat_name"},
+
+            // TODO: use row detail for papers.
+            // See https://datatables.net/examples/api/row_details.html
             {
                 data: "papers",
                 render: function (val) {

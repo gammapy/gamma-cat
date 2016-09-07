@@ -28,13 +28,14 @@ spec:
 
 #  flux: {emin: 1.0, val: 21.0, err: 1.9, err_sys: 4.4}
 
-data:
-  - type: image
-    url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/HESSVelaX_fluxmap.fits
-    filename: HESSVelaX_fluxmap.fits
-    filesize: 1895040
-    comments: |
-      Smoothed flux map.
+# TODO: add this info back!
+#data:
+#  - type: image
+#    url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/HESSVelaX_fluxmap.fits
+#    filename: HESSVelaX_fluxmap.fits
+#    filesize: 1895040
+#    comments: |
+#      Smoothed flux map.
 
 notes: |
   TODO: Morphology parameters are from the 2006 paper, only the spectrum is from this from 2012 paper.

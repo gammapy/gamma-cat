@@ -174,6 +174,13 @@ class BasicSourceList:
         rows = self.data_per_row(filled=True)
         return Table(rows=rows, meta=meta, masked=True)
 
+    def to_json(self):
+        """Return data in format that can be written to JSON.
+
+        A dict with `data` key.
+        """
+        return dict(data=self.data_per_row(filled=True))
+
     # def data_per_column(self):
     #     """Data as dict of lists (per-column)"""
     #     row_data = self.data_per_row()
@@ -208,7 +215,7 @@ class PaperList:
     @classmethod
     def read(cls):
         path = gammacat_info.base_dir / 'input/papers'
-        paths = path.glob('*')
+        paths = path.glob('*/*')
 
         data = []
         for path in paths:
@@ -219,7 +226,8 @@ class PaperList:
 
     def validate(self):
         log.info('Validating YAML files in `input/papers`')
-        [_.validate() for _ in self.data]
+        for paper in self.data:
+            paper.validate()
 
 
 class InputData:

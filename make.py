@@ -24,15 +24,15 @@ def make_output():
     """Re-generate files in `output`.
     """
     log.info('Re-generate files in `output` ...')
-    gammacat.make_output_data()
+    gammacat.OutputDataMaker().make_all()
 
 
-@cli.command(name='webpage')
-def make_webpage():
-    """Re-generate webpage in `docs`.
-    """
-    log.info('Re-generate webpage in `docs` ...')
-    gammacat.webpage.make()
+# @cli.command(name='webpage')
+# def make_webpage():
+#     """Re-generate webpage in `docs`.
+#     """
+#     log.info('Re-generate webpage in `docs` ...')
+#     gammacat.webpage.make()
 
 
 @cli.command(name='all')
@@ -43,7 +43,7 @@ def make_all(ctx):
     log.info('Run all steps ...')
     ctx.invoke(make_check)
     ctx.invoke(make_output)
-    ctx.invoke(make_webpage)
+    # ctx.invoke(make_webpage)
 
 
 @cli.command(name='check')

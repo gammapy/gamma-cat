@@ -1,3 +1,13 @@
+# ********** Basic info **********
+
+#Source\_Name &  &  Source name (HESS~JHHmm$\pm$DDd identifier) \\
+#Analysis\_Reference & & Source analysis reference ("HGPS" for most sources, "EXTERN" if source in Table~\ref{tab:hgps_external_sources}) \\
+#
+#Source\_Class & & Source class (only filled for identified sources, see Table~\ref{tab:hgps_identified_sources}) \\
+#Associated\_Object & & Associated object (only filled for identified sources, see Table~\ref{tab:hgps_identified_sources})\\
+#OTC\_Source\_ID & & Source ID in the Open TeV catalog \\
+
+
 # ********** Position **********
 
 - name: RAJ2000

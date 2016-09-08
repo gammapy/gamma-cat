@@ -1,0 +1,27 @@
+source_id: 161
+
+common_name: HESS J1826-130
+gamma_names: [HESS J1826-130]
+other_names: [PSR J1826-1256, PWN G018.5-00.4]
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 271
+tevcat2_id: BpWYND
+tevcat_name: TeV J1826-130
+
+#tgevcat_id: null
+#tgevcat_name: null
+
+pos:
+  simbad_id: PSR J1826-1256
+  ra: 276.50417
+  dec: -13.09111
+
+papers:
+  - https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf
+  - 2016MNRAS.458.2813V

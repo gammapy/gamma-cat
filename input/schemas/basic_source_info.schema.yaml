@@ -22,9 +22,9 @@ properties:
       enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo]
   discovery_date: {type: string}
 
-  tevcat_id: {type: [integer, "null"]}
-  tevcat2_id: {type: [string, "null"]}
-  tevcat_name: {type: [string, "null"]}
+  tevcat_id: {type: integer}
+  tevcat2_id: {type: string}
+  tevcat_name: {type: string}
 
   tgevcat_id: {type: [integer, "null"]}
   tgevcat_name: {type: [string, "null"]}

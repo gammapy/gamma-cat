@@ -180,3 +180,4 @@ Check 2012AIPC.1505..186M" "['B3 0133+388', '1RXS J013632.9+390556']" 2012AIPC.1
 ['hbl'] "H 2356-309" hess "" "['HESS J2359-306']" "" "['1H 2354-315']" 2010A&A...516A..56H,2006A&A...455..461A ['hess'] 155 VIbvxm 101 "TeV J2359-306" 155 "TeV J2359-3037" egal
 "['snr', 'mc']" "HESS J1800-240B" hess "" "['HESS J1800-240B']" "tgevcat_name: TeV J1800-2359 represents both HESS J1800-240A and HESS J1800-240B." [] 2008A&A...481..401A,2016JHEAp..11....1H ['hess'] 156 mxBSx6 164 "TeV J1800-240" 111 "TeV J1800-2359" gal
 ['unid'] "HESS J1852-000" hess "" "['HESS J1852-000']" "" "['Kes 78']" 2011ICRC....7...76K,2016ApJ...818...63B ['hess'] 157 xI7npJ 280 "TeV J1852-000" -999 "" gal
+['snr'] "SNR G323.7-01.0" hess "" "['HESS J1534-571']" "" [] 2015arXiv150903872P ['hess'] 158 dwdrDT 268 "TeV J1534-571" -999 "" gal

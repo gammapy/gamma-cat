@@ -1,0 +1,26 @@
+source_id: 158
+
+common_name: SNR G323.7-01.0
+gamma_names: [HESS J1534-571]
+other_names: []
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 268
+tevcat2_id: dwdrDT
+tevcat_name: TeV J1534-571
+
+#tgevcat_id: null
+#tgevcat_name: null
+
+#pos:
+#  simbad_id: null
+#  ra: null
+#  dec: null
+
+papers:
+  - 2015arXiv150903872P

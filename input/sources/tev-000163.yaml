@@ -1,0 +1,18 @@
+source_id: 163
+
+common_name: HESS J1832-085
+gamma_names: [HESS J1832-085]
+other_names: [PSR J1832-0836]
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 273
+tevcat2_id: trW4uy
+tevcat_name: TeV J1832-085
+
+papers:
+  - https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf

@@ -1,12 +1,35 @@
 # ********** Basic info **********
 
-#Source\_Name &  &  Source name (HESS~JHHmm$\pm$DDd identifier) \\
-#Analysis\_Reference & & Source analysis reference ("HGPS" for most sources, "EXTERN" if source in Table~\ref{tab:hgps_external_sources}) \\
-#
-#Source\_Class & & Source class (only filled for identified sources, see Table~\ref{tab:hgps_identified_sources}) \\
-#Associated\_Object & & Associated object (only filled for identified sources, see Table~\ref{tab:hgps_identified_sources})\\
-#OTC\_Source\_ID & & Source ID in the Open TeV catalog \\
-
+- name: Source_Name
+  dtype: string
+  fmt:
+  unit:
+  description: Source name (HESS JHHmm+DDd identifier)
+  latex: Source name (HESS~JHHmm$\pm$DDd identifier)
+- name: Analysis_Reference
+  dtype: string
+  fmt:
+  unit:
+  description: Source analysis reference ("HGPS" for re-analysed sources, "EXTERN" otherwise)
+  latex: Source analysis reference ("HGPS" for most sources, "EXTERN" if source in Table~\ref{tab:hgps_external_sources})
+- name: Source_Class
+  dtype: string
+  fmt:
+  unit:
+  description: Source class (only filled for identified sources)
+  latex: Source class (only filled for identified sources, see Table~\ref{tab:hgps_identified_sources})
+- name: Associated_Object
+  dtype: string
+  fmt:
+  unit:
+  description: Associated object (only filled for identified sources)
+  latex: Associated object (only filled for identified sources, see Table~\ref{tab:hgps_identified_sources})
+- name: OTC_Source_ID
+  dtype: int
+  fmt:
+  unit:
+  description: Source ID in the Open TeV catalog
+  latex: Source ID in the Open TeV catalog
 
 # ********** Position **********
 

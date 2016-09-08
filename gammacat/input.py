@@ -7,7 +7,6 @@ import logging
 from collections import OrderedDict
 from pathlib import Path
 import urllib.parse
-import yaml
 import jsonschema
 from astropy.table import Table
 from .info import gammacat_info
@@ -36,7 +35,7 @@ class BasicSourceInfo:
     @classmethod
     def read(cls, path):
         path = Path(path)
-        data = yaml.safe_load(path.open())
+        data = load_yaml(path)
         return cls(data=data)
 
     def __repr__(self):
@@ -57,7 +56,11 @@ class BasicSourceInfo:
                 if name == 'pos':
                     continue
 
-                data[name] = MISSING_VAL[datatype]
+                try:
+                    data[name] = MISSING_VAL[datatype]
+                except TypeError:
+                    data[name] = MISSING_VAL[datatype[0]]
+                    # import IPython; IPython.embed()
 
         data.update(self.data)
 
@@ -74,9 +77,9 @@ class BasicSourceInfo:
     def pprint(self):
         return pprint(self.data)
 
-    @property
-    def yaml(self):
-        return yaml.safe_dump(self.data, default_flow_style=False)
+    # @property
+    # def yaml(self):
+    #     return yaml.safe_dump(self.data, default_flow_style=False)
 
     def validate(self):
         try:
@@ -98,7 +101,7 @@ class PaperSourceInfo:
     @classmethod
     def read(cls, path):
         path = Path(path)
-        data = yaml.safe_load(path.open())
+        data = load_yaml(path)
         return cls(data=data)
 
     def __repr__(self):

@@ -22,12 +22,12 @@ properties:
       enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo]
   discovery_date: {type: string}
 
-  tevcat_id: {type: integer}
-  tevcat2_id: {type: string}
-  tevcat_name: {type: string}
+  tevcat_id: {type: [integer, "null"]}
+  tevcat2_id: {type: [string, "null"]}
+  tevcat_name: {type: [string, "null"]}
 
-  tgevcat_id: {type: integer}
-  tgevcat_name: {type: string}
+  tgevcat_id: {type: [integer, "null"]}
+  tgevcat_name: {type: [string, "null"]}
 
   papers: {type: array, items: {type: [string, "null"]}}
 
@@ -50,9 +50,9 @@ required:
 #  - classes
 #  - discoverer
 #  - discovery_date
-  - tevcat_id
+#  - tevcat_id
 #  - tevcat2_id
-  - tevcat_name
-  - tgevcat_id
-  - tgevcat_name
+#  - tevcat_name
+#  - tgevcat_id
+#  - tgevcat_name
   - papers

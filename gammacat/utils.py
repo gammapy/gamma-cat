@@ -14,6 +14,7 @@ MISSING_VAL = OrderedDict(
     number=np.nan,
     string='',
     array='',
+    # list=[],
 )
 
 

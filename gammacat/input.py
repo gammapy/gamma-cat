@@ -289,7 +289,6 @@ class Schemas:
 
         data = []
         for path in paths:
-            log.debug('Reading {}'.format(path))
             info = load_yaml(path)
             data.append(info)
 

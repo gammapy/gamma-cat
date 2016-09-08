@@ -21,6 +21,7 @@ MISSING_VAL = OrderedDict(
 def load_yaml(path):
     """Helper function to load data from a YAML file."""
     path = Path(path)
+    log.debug('Reading {}'.format(path))
     with path.open() as fh:
         data = yaml.safe_load(fh)
     return data
@@ -29,6 +30,7 @@ def load_yaml(path):
 def load_json(path):
     """Helper function to load data from a JSON file."""
     path = Path(path)
+    log.debug('Reading {}'.format(path))
     with path.open() as fh:
         data = json.load(fh, object_pairs_hook=OrderedDict)
     return data

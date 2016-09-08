@@ -1,0 +1,27 @@
+source_id: 159
+
+common_name: Arc source
+gamma_names: [HESS J1534-571, VER J1746-289]
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 277 # , 269
+tevcat2_id: LsZtAg # , 8YV5U0
+tevcat_name: TeV J1746-289 #, TeV J1746-285
+
+#tgevcat_id: null
+#tgevcat_name: null
+
+#pos:
+#  simbad_id: null
+#  ra: null
+#  dec: null
+
+papers:
+  - 2015arXiv151004518L
+  - 2015arXiv150806311S

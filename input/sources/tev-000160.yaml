@@ -1,0 +1,27 @@
+source_id: 160
+
+common_name: HESS J1813-126
+gamma_names: [HESS J1813-126]
+other_names: [PSR J1813-1246]
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 270
+tevcat2_id: 6hCJvz
+tevcat_name: TeV J1813-126
+
+#tgevcat_id: null
+#tgevcat_name: null
+
+pos:
+  simbad_id: PSR J1813-1246
+  ra: 273.35
+  dec: -12.77
+
+papers:
+  - 2015arXiv151004518L
+  - 2015arXiv150806311S

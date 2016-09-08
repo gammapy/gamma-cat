@@ -108,6 +108,12 @@ def yaml_make_ordereddict_work():
     yaml.add_representer(OrderedDict, dict_representer)
     yaml.add_constructor(_mapping_tag, dict_constructor)
 
+# Execute `yaml_make_ordereddict_work` at the top level.
+# So if someone imports the YAML utility functions from this
+# module, objects should be read as OrderedDict always,
+# and order preserved.
+yaml_make_ordereddict_work()
+
 
 def table_to_list_of_dict(table):
     """Convert table to list of dict."""

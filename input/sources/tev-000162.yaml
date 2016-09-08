@@ -1,0 +1,18 @@
+source_id: 162
+
+common_name: HESS J1828-099
+gamma_names: [HESS J1828-099]
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 272
+tevcat2_id: 2Jribp
+tevcat_name: TeV J1828-099
+
+papers:
+  - https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf

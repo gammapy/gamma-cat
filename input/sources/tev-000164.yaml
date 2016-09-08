@@ -1,0 +1,18 @@
+source_id: 164
+
+common_name: HESS J1844-030
+gamma_names: [HESS J1844-030]
+other_names: [PSR J1832-0836, AX J1844.6-0305, PMN J1844-0306, SNR G29.4+0.1]
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 274
+tevcat2_id: OEZygN
+tevcat_name: TeV J1844-030
+
+papers:
+  - https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf

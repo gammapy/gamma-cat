@@ -1,5 +1,17 @@
 source_id: 95
 
+common_name: CTB 37B
+gamma_names:
+- G 348.7+0.3
+other_names:
+- HESS J1713-381
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+
 tevcat_id: 110
 tevcat2_id: QYavG5
 tevcat_name: TeV J1713-382
@@ -8,4 +20,9 @@ tgevcat_id: 95
 tgevcat_name: TeV J1713-3811
 
 papers:
-- null
+- 2016arXiv160908671H
+
+pos:
+  simbad_id: CTB 37B
+  ra: 258.49
+  dec: -38.20 

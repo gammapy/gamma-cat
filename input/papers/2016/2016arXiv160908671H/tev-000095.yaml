@@ -1,0 +1,18 @@
+paper_id: 2016arXiv160908671H
+source_id: 95
+
+data:
+  livetime: 22.9
+
+morph:
+  type: point
+
+spec:
+  type: ecpl
+
+  norm: {val: 37.6, err: 0.7}
+  index: {val: 2.39, err: 0.03, err_sys: 0.09}
+  ecut: {val: 14.3, err: 2.1}
+
+  theta: 0.11
+  erange: {min: 0.44, max: 40.0}

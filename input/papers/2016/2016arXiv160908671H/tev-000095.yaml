@@ -2,17 +2,25 @@ paper_id: 2016arXiv160908671H
 source_id: 95
 
 data:
-  livetime: 22.9
+  livetime: 13.4 # year 2012
+#  livetime: 65.3 year 2011, earlier observations have already been published
+#  significane: 3, 5, 7, 9 mentioned in paper fig 4
+
+pos:
+  ra: {val: 17.226} # nominal centre of the SNR, see tab 1, what about centred 17h13m25.2s see fig 2?
+  dec: {val: -39.76} # nominal centre of the SNR, see tab 1, wht about centred -39d46m15.6s see fig 2?
 
 morph:
-  type: point
+  type: point # because of PSF? or Gaussian see p.3 or Shell see p.3
+#  sigma: {val: 0.036 same as superior angular resolution p.3?}
+#  pa: same as resulting centre point, see p.3?
 
 spec:
-  type: ecpl
+  type: ecpl # what does this mean?
 
-  norm: {val: 37.6, err: 0.7}
-  index: {val: 2.39, err: 0.03, err_sys: 0.09}
-  ecut: {val: 14.3, err: 2.1}
+  norm: {val: 20.2, err: 0.8} # see tab 3, F_0
+  index: {val: 2.32, err: 0.02, err_sys: 0.1} # see tab 3, first model and fig 4 for err_sys
+  ecut: {val: 12.9, err: 1.1} # see tab 3, second model
 
-  theta: 0.11
-  erange: {min: 0.44, max: 40.0}
+  theta: 0.6 # see p.6 and fig 3, but 0.7 or 0.8 possible as well, see fig 2
+  erange: {min: 0.2, max: 40.0} # see p.8

@@ -9,7 +9,7 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      livetime: {type: number, unit: hour}
+      livetime: {type: number, unit: hour} # ToDo: create list of livetimes for several observations
       significance: {type: number, unit: none}
 
   pos:
@@ -19,28 +19,28 @@ properties:
       ra:
         type: object
         additionalProperties: false
-        description: Right Ascension
+        description: Right Ascension in deg
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
       dec:
         type: object
         additionalProperties: false
-        description: Declination
+        description: Declination in deg
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
       glon:
         type: object
         additionalProperties: false
-        description: Galactic longitude
+        description: Galactic longitude # in deg?
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
       glat:
         type: object
         additionalProperties: false
-        description: Galactic latitude
+        description: Galactic latitude # in deg?
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
@@ -68,7 +68,7 @@ properties:
         properties:
           val: {type: string}
           err: {type: string, description: Statistical error}
-      pa:
+      pa: # redundant to pos, see line 15?
         type: object
         additionalProperties: false
         unit: deg
@@ -78,11 +78,11 @@ properties:
           val: {type: number}
           err: {type: number, description: Statistical error}
 
-  spec:
+  spec: # in general: what to do with several values?
     type: object
     additionalProperties: false
     properties:
-      type: {enum: [pl, ecpl]}
+      type: {enum: [pl, ecpl]} # ToDo: add description
       theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
       erange:
         type: object

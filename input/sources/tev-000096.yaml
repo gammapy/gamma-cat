@@ -1,5 +1,17 @@
 source_id: 96
 
+common_name: RX J1713.7-3946
+gamma_names:
+- HESS J1713-3946
+other_names:
+- G 347.3-00.5
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+
 tevcat_id: 84
 tevcat2_id: Q6SXwo
 tevcat_name: TeV J1713-397
@@ -8,4 +20,37 @@ tgevcat_id: 96
 tgevcat_name: TeV J1713-3945
 
 papers:
-- null
+- 2016arXiv160908671H
+
+pos:
+  simbad_id: CTB 37B
+  ra: 17.2327
+  dec: -38.20
+
+source_id: 95
+
+common_name: CTB 37B
+gamma_names:
+- HESS J1713-381
+other_names:
+- G 348.7+0.3
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+
+tevcat_id: 110
+tevcat2_id: QYavG5
+tevcat_name: TeV J1713-382
+
+tgevcat_id: 95
+tgevcat_name: TeV J1713-3811
+
+papers:
+- 2016arXiv160908671H
+
+pos:
+  ra: 17.226
+  dec: -39.76

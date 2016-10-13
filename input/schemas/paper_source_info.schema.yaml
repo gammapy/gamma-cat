@@ -82,7 +82,8 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      type: {enum: [pl, ecpl]} # ToDo: add description
+      type: {enum: [pl, ecpl]}
+        description: pl = power law, ecpl = exponential power law
       theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
       erange:
         type: object

@@ -9,7 +9,7 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      livetime: {type: number, unit: hour} # ToDo: create list of livetimes for several observations
+      livetime: {type: number, unit: hour} # ToDo: create list of livetimes for several observations later 
       significance: {type: number, unit: none}
 
   pos:
@@ -78,7 +78,7 @@ properties:
           val: {type: number}
           err: {type: number, description: Statistical error}
 
-  spec: # in general: what to do with several values?
+  spec: # in general: what to do with several values? A: use total dataset and best-fit, might be expanded later
     type: object
     additionalProperties: false
     properties:

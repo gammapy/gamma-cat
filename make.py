@@ -72,5 +72,28 @@ def make_check():
     gammacat.checks.check_input_files()
 
 
+@cli.command(name='web')
+def serve_webpage():
+    """Serve gamma-cat webpage locally.
+
+    This is equivalent to:
+
+        cd docs && python -m http.server
+    """
+    # import subprocess
+    # import webbrowser
+    # from http.server import HTTPServer, SimpleHTTPRequestHandler
+    # server_address = ('localhost', 8000)
+    # httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
+    # httpd.serve_forever()
+    # subprocess.Popen('cd docs && python -m http.server', shell=True)
+    # webbrowser.open('http://localhost:8000/docs')
+    # click.pause('asdf')
+
+    print('\nTo serve the gamma-cat webpage locally use these commands:\n')
+    print('  cd docs && python -m http.server && cd ..')
+    print('  open http://localhost:8000/docs\n')
+
+
 if __name__ == '__main__':
     cli()

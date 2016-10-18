@@ -1,0 +1,178 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: source_id, datatype: int64}
+# - {name: common_name, datatype: string}
+# - {name: discoverer, datatype: string}
+# - {name: gamma_names, datatype: string}
+# - {name: ra, datatype: float64}
+# - {name: dec, datatype: float64}
+# meta: !!omap
+# - {name: gamma-cat}
+# - {description: A catalog of TeV gamma-ray sources}
+# - {version: 082ff40}
+# - {url: 'https://github.com/gammapy/gamma-cat/'}
+source_id common_name discoverer gamma_names ra dec
+1 "CTA 1" veritas "VER J0006+729" 1.65 72.783
+2 "SHBL J001355.9-185406" hess "" 3.4835583 -18.9018472
+3 "Tycho SNR" veritas "" 6.3397 64.1408
+4 "KUV 00311-1938" hess "" 8.3932875 -19.3592056
+5 "1ES 0033+595" magic "" 8.968975 59.8344972
+6 "NGC 253" hess "" 11.8880583 -25.2888
+7 "RGB J0136+391" magic "" 24.1358267 39.0997773
+8 "RGB J0152+017" hess "" 28.1650455 1.7881618
+9 "3C 58" hess "" 31.4043 64.8283
+10 "S3 0218+35" magic "" 35.2728 35.9371
+11 "3C 66A" crimea "" 35.66505 43.0355222
+12 "MAGIC J0223+403" magic "MAGIC J0223+403" 35.66505 43.0355222
+13 "1ES 0229+200" hess "" 38.202564 20.2881899
+14 "LS I +61 303" magic "" 40.131938163 61.229336515
+15 "PKS 0301-243" hess "" 45.860417 -24.119861
+16 "IC 310" magic "MAGIC J0317+413" 49.1792708 41.3247667
+17 "RBS 0413" veritas "" 49.96585 18.7595556
+18 "NGC 1275" magic "" 49.950667083 41.511695306
+19 "1ES 0347-121" hess "" 57.3466083 -11.9908583
+20 "1ES 0414+009" hess "" 64.2187375 1.0899944
+21 "PKS 0447-439" hess "" 72.3529167 -43.8358139
+22 "1ES 0502+675" veritas "" 76.9840583 67.6234056
+23 "RGB J0521+212" veritas "VER J0521+211" 80.4415375 21.2142722
+24 "LMC N132D" hess "" 81.259167 -69.644167
+25 "Crab nebula" hess "" 83.633083 22.0145
+26 "30 Dor C" hess "" 83.9617 -69.2061
+27 "N 157B" hess "HESS J0537-691" 84.44443 -69.17141
+28 "PKS 0548-322" hess "" 87.6689875 -32.2712472
+29 "IC 443" magic "MAGIC 0616+223" 94.51125 22.66
+30 "HESS J0632+057" hess "HESS J0632+057,VER J0633+057" 98.24689375 5.80032722
+31 Geminga "" "" nan nan
+32 "RX J0648.7+1516" "" "" nan nan
+33 "1ES 0647+250" "" "" nan nan
+34 "RGB J0710+591" "" "" nan nan
+35 "S5 0716+714" "" "" nan nan
+36 "1ES 0806+524" "" "" nan nan
+37 "Vela X" hess "HESS J0835-455" nan nan
+38 "RBS 0723" "" "" nan nan
+39 "Vela Junior" cangaroo "HESS J0852-463" 133.0 -46.333
+40 "M 82" "" "" nan nan
+41 "S4 0954+65" "" "" nan nan
+42 "1RXS J101015.9-311909" "" "" nan nan
+43 "" "" "" nan nan
+44 "" "" "" nan nan
+45 "" "" "" nan nan
+46 "" "" "" nan nan
+47 "" "" "" nan nan
+48 "" "" "" nan nan
+49 "" "" "" nan nan
+50 "" "" "" nan nan
+51 "" "" "" nan nan
+52 "" "" "" nan nan
+53 "" "" "" nan nan
+54 "" "" "" nan nan
+55 "" "" "" nan nan
+56 "" "" "" nan nan
+57 "" "" "" nan nan
+58 "" "" "" nan nan
+59 "" "" "" nan nan
+60 "" "" "" nan nan
+61 "" "" "" nan nan
+62 "" "" "" nan nan
+63 "" "" "" nan nan
+64 "" "" "" nan nan
+65 "" "" "" nan nan
+66 "" "" "" nan nan
+67 "" "" "" nan nan
+68 "" "" "" nan nan
+69 "" "" "" nan nan
+70 "" "" "" nan nan
+71 "" "" "" nan nan
+72 "" "" "" nan nan
+73 "" "" "" nan nan
+74 "" "" "" nan nan
+75 "" "" "" nan nan
+76 "" "" "" nan nan
+77 "" "" "" nan nan
+78 "" "" "" nan nan
+79 "MSH 15-5-02" cangaroo "HESS J1514-591" 228.3208 -59.0817
+80 "" "" "" nan nan
+81 "" "" "" nan nan
+82 "" "" "" nan nan
+83 "" "" "" nan nan
+84 "" "" "" nan nan
+85 "" "" "" nan nan
+86 "" "" "" nan nan
+87 "" "" "" nan nan
+88 "" "" "" nan nan
+89 "" "" "" nan nan
+90 "" "" "" nan nan
+91 "" "" "" nan nan
+92 "" "" "" nan nan
+93 "" "" "" nan nan
+94 "" "" "" nan nan
+95 "" "" "" nan nan
+96 "" "" "" nan nan
+97 "" "" "" nan nan
+98 "" "" "" nan nan
+99 "" "" "" nan nan
+100 "" "" "" nan nan
+101 "" "" "" nan nan
+102 "" "" "" nan nan
+103 "" "" "" nan nan
+104 "" "" "" nan nan
+105 "" "" "" nan nan
+106 "" "" "" nan nan
+107 "" "" "" nan nan
+108 "" "" "" nan nan
+109 "" "" "" nan nan
+110 "" "" "" nan nan
+111 "HESS J1800-240A" hess "HESS J1800-240A" 270.4917 -23.9617
+112 "" "" "" nan nan
+113 "" "" "" nan nan
+114 "" "" "" nan nan
+115 "" "" "" nan nan
+116 "" "" "" nan nan
+117 "" "" "" nan nan
+118 "" "" "" nan nan
+119 "" "" "" nan nan
+120 "" "" "" nan nan
+121 "" "" "" nan nan
+122 "" "" "" nan nan
+123 "" "" "" nan nan
+124 "" "" "" nan nan
+125 "" "" "" nan nan
+126 "" "" "" nan nan
+127 "" "" "" nan nan
+128 "" "" "" nan nan
+129 "" "" "" nan nan
+130 "HESS J1857+026" hess "MAGIC J1857.2+0263,MAGIC J1857.6+0297,1HWC J1857+023" 284.29583 2.66667
+131 "HESS J1858+020" hess "1HWC J1857+023" 284.58333 2.09
+132 "MGRO J1908+06" milagro "HESS J1908+063,VER J1907+062,1HWC J1907+062c,ARGO J1907+0627,ARGO J1910+0720" 287.175 6.183
+133 "W 49B" hess "HESS J1911+090" 287.7458 9.1017
+134 "HESS J1912+101" hess "" 288.3347542 10.1897139
+135 "W 51C" hess "HESS J1923+141" 290.818 14.145
+136 "SNR G054.1+00.3" veritas "VER J1930+188" 292.6292 18.867
+137 "HESS J1943+213" hess "" 295.9792 21.30222
+138 "1ES 1959+650" magic "" 299.99938375 65.14851472
+139 "MAGIC J2001+435" magic "" 300.30625 43.884111
+140 "PKS 2005-489" hess "HESS J2009-488" 302.355794583 -48.831589306
+141 "VER J2016+371" veritas "MGRO J2019+37" 304.0076 37.21476
+142 Dragonfly milagro "MGRO J2019+37,VER J2019+368,VER J2016+371" 305.27252 36.85126
+143 "VER J2019+368" veritas "MGRO J2019+37" 304.0083 37.19778
+144 "Gamma Cygni" veritas "VER J2019+407" 305.557090982 40.256679158
+145 "MGRO J2031+41" milagro "" 308.025 41.567
+146 "TeV J2032+4130" hegra "MGRO J2031+41" 308.025 41.567
+147 "PKS 2155-304" hess "HESS J2158-302" 329.716937958 -30.225588389
+148 "BL Lacertae" crimea "" 330.680380792 42.277772306
+150 Boomerang milagro "MGRO C4,MGRO J2228+61" 191.189375 -54.519833
+151 "RGB J2243+203" veritas "" 340.978097917 20.351049306
+152 "B3 2247+381" magic "" 342.52395075 38.410332111
+153 "Cassiopeia A" hegra "" 350.85 58.815
+154 "1ES 2344+514" whipple "" 356.770153 51.704967
+155 "H 2356-309" hess "HESS J2359-306" 359.7829583 -30.6279694
+156 "HESS J1800-240B" hess "HESS J1800-240B" 270.1083 -24.0383
+157 "HESS J1852-000" hess "HESS J1852-000" 283.0 0.0
+158 "SNR G323.7-01.0" hess "HESS J1534-571" nan nan
+159 "Arc source" hess "HESS J1746-285,VER J1746-289" nan nan
+160 "HESS J1813-126" hess "HESS J1813-126" 273.35 -12.77
+161 "HESS J1826-130" hess "HESS J1826-130" 276.50417 -13.09111
+162 "HESS J1828-099" hess "HESS J1828-099" nan nan
+163 "HESS J1832-085" hess "HESS J1832-085" nan nan
+164 "HESS J1844-030" hess "HESS J1844-030" nan nan

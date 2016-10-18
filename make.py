@@ -42,8 +42,8 @@ def make_output():
     gammacat.OutputDataMaker().make_all()
 
 
-@cli.command(name='hgps')
-def make_hgps():
+@cli.command(name='cat')
+def make_cat():
     """Make catalog in HGPS format
     """
     log.info('Making catalog ...')
@@ -66,6 +66,7 @@ def make_all(ctx):
     log.info('Run all steps ...')
     ctx.invoke(make_check)
     ctx.invoke(make_output)
+    ctx.invoke(make_cat)
     # ctx.invoke(make_webpage)
 
 
@@ -97,7 +98,7 @@ def serve_webpage():
 
     print('\nTo serve the gamma-cat webpage locally use these commands:\n')
     print('  cd docs && python -m http.server && cd ..')
-    print('  open http://localhost:8000/docs\n')
+    print('  open http://localhost:8000\n')
 
 
 if __name__ == '__main__':

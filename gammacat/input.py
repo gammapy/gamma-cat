@@ -175,6 +175,12 @@ class BasicSourceList:
     def __init__(self, data):
         self.data = data
 
+    def get_source_by_id(self, source_id):
+        for source in self.data:
+            if source.data['source_id'] == source_id:
+                return source
+        raise IndexError('Not found: source_id = {}'.format(source_id))
+
     @classmethod
     def read(cls):
         path = gammacat_info.base_dir / 'input/sources'

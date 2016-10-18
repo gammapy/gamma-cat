@@ -10,7 +10,7 @@
 # meta: !!omap
 # - {name: gamma-cat}
 # - {description: A catalog of TeV gamma-ray sources}
-# - {version: 082ff40}
+# - {version: e762267}
 # - {url: 'https://github.com/gammapy/gamma-cat/'}
 source_id common_name discoverer gamma_names ra dec
 1 "CTA 1" veritas "VER J0006+729" 1.65 72.783

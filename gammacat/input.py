@@ -10,7 +10,7 @@ import urllib.parse
 import jsonschema
 from astropy.table import Table
 from .info import gammacat_info
-from .utils import load_yaml, MISSING_VAL
+from .utils import load_yaml, MissingValues
 
 __all__ = [
     'BasicSourceInfo',
@@ -57,10 +57,9 @@ class BasicSourceInfo:
                     continue
 
                 try:
-                    data[name] = MISSING_VAL[datatype]
+                    data[name] = getattr(MissingValues, datatype)
                 except TypeError:
-                    data[name] = MISSING_VAL[datatype[0]]
-                    # import IPython; IPython.embed()
+                    data[name] = getattr(MissingValues, datatype[0])
 
         data.update(self.data)
 

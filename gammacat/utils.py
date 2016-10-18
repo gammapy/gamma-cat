@@ -9,13 +9,13 @@ from astropy.coordinates import SkyCoord
 
 log = logging.getLogger(__name__)
 
-MISSING_VAL = OrderedDict(
-    integer=-999,
-    number=np.nan,
-    string='',
-    array='',
-    # list=[],
-)
+
+class MissingValues:
+    """Constants used as missing values."""
+    integer = -999
+    number = np.nan
+    string = ''
+    array = ''
 
 
 def load_yaml(path):
@@ -110,6 +110,7 @@ def yaml_make_ordereddict_work():
 
     yaml.add_representer(OrderedDict, dict_representer)
     yaml.add_constructor(_mapping_tag, dict_constructor)
+
 
 # Execute `yaml_make_ordereddict_work` at the top level.
 # So if someone imports the YAML utility functions from this

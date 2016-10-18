@@ -4,7 +4,7 @@ from collections import OrderedDict
 from astropy.table import Table
 from .info import gammacat_info
 from .input import InputData
-from .utils import MISSING_VAL
+from .utils import MissingValues
 
 __all__ = ['GammaCatMaker']
 
@@ -27,20 +27,20 @@ class GammaCatSource:
         try:
             data['common_name'] = bsi['common_name']
         except KeyError:
-            data['common_name'] = MISSING_VAL['string']
+            data['common_name'] = MissingValues.string
         data['discoverer'] = bsi.get('discoverer', '')
         try:
             data['gamma_names'] = ','.join(bsi['gamma_names'])
         except KeyError:
-            data['gamma_names'] = MISSING_VAL['string']
+            data['gamma_names'] = MissingValues.string
         try:
             data['ra'] = bsi['pos']['ra']
         except KeyError:
-            data['ra'] = MISSING_VAL['number']
+            data['ra'] = MissingValues.number
         try:
             data['dec'] = bsi['pos']['dec']
         except KeyError:
-            data['dec'] = MISSING_VAL['number']
+            data['dec'] = MissingValues.number
 
         return cls(data=data)
 
@@ -103,8 +103,8 @@ class GammaCatMaker:
     def write_table(self):
         table = self.table
 
-        table.info('stats')
-        table.pprint()
+        # table.info('stats')
+        # table.pprint()
 
         path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
         log.info('Writing {}'.format(path))

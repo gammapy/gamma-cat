@@ -7,8 +7,7 @@ import logging
 import click
 import gammacat
 
-logging.basicConfig(level=logging.DEBUG)
-log = logging.getLogger()
+log = logging.getLogger(__name__)
 
 
 @click.group()
@@ -25,8 +24,8 @@ def cli(loglevel):
         error=logging.ERROR,
         critical=logging.CRITICAL,
     )
+    logging.basicConfig(level=levels[loglevel])
     log.setLevel(level=levels[loglevel])
-    pass
 
 
 @cli.command(name='output')
@@ -41,8 +40,8 @@ def make_output():
 def make_hgps():
     """Make catalog in HGPS format
     """
-    log.info('Making catalog in HGPS format ...')
-    gammacat.HGPSCatMaker().run()
+    log.info('Making catalog ...')
+    gammacat.GammaCatMaker().run()
 
 
 # @cli.command(name='webpage')

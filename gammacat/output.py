@@ -15,7 +15,7 @@ __all__ = [
     'OutputDataMaker',
 ]
 
-log = logging.getLogger()
+log = logging.getLogger(__name__)
 
 
 class OutputDataConfig:
@@ -26,9 +26,11 @@ class OutputDataConfig:
 
     sources_json = path / 'gammacat-sources.json'
     sources_ecsv = path / 'gammacat-sources.ecsv'
+    sources_fits = path / 'gammacat-sources.fits'
 
     papers_json = path / 'gammacat-papers.json'
     papers_ecsv = path / 'gammacat-papers.ecsv'
+    papers_fits = path / 'gammacat-papers.fits'
 
 
 class OutputDataReader:
@@ -77,9 +79,11 @@ class OutputDataMaker:
     def make_all(self):
         self.make_source_table_json()
         self.make_source_table_ecsv()
+        self.make_source_table_fits()
 
         self.make_paper_table_json()
         self.make_paper_table_ecsv()
+        self.make_source_table_fits()
 
     def make_source_table_json(self):
         data = self.input_data.sources.to_json()
@@ -90,7 +94,13 @@ class OutputDataMaker:
         table = self.input_data.sources.to_table()
         path = OutputDataConfig.sources_ecsv
         log.info('Writing {}'.format(path))
-        table.write(str(path), format='ascii.ecsv')
+        table.write(str(path), format='ascii.ecsv', overwrite=True)
+
+    def make_source_table_fits(self):
+        table = self.input_data.sources.to_table()
+        path = OutputDataConfig.sources_fits
+        log.info('Writing {}'.format(path))
+        table.write(str(path), format='fits', overwrite=True)
 
     def make_paper_table_json(self):
         data = self.input_data.papers.to_json()
@@ -101,4 +111,10 @@ class OutputDataMaker:
         table = self.input_data.papers.to_table()
         path = OutputDataConfig.papers_ecsv
         log.info('Writing {}'.format(path))
-        table.write(str(path), format='ascii.ecsv')
+        table.write(str(path), format='ascii.ecsv', overwrite=True)
+
+    def make_paper_table_fits(self):
+        table = self.input_data.papers.to_table()
+        path = OutputDataConfig.papers_fits
+        log.info('Writing {}'.format(path))
+        table.write(str(path), format='fits', overwrite=True)

@@ -7,7 +7,7 @@ import yaml
 import numpy as np
 from astropy.coordinates import SkyCoord
 
-log = logging.getLogger()
+log = logging.getLogger(__name__)
 
 MISSING_VAL = OrderedDict(
     integer=-999,

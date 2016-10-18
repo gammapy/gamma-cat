@@ -7,8 +7,7 @@ from .input import InputData
 
 __all__ = ['check_input_files']
 
-logging.basicConfig(level=logging.DEBUG)
-log = logging.getLogger()
+log = logging.getLogger(__name__)
 
 
 def check_input_files():

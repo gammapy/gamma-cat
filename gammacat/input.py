@@ -21,7 +21,7 @@ __all__ = [
     'InputData',
 ]
 
-log = logging.getLogger()
+log = logging.getLogger(__name__)
 
 
 class BasicSourceInfo:
@@ -198,7 +198,8 @@ class BasicSourceList:
         meta['url'] = 'todo'
 
         rows = self.data_per_row(filled=True)
-        return Table(rows=rows, meta=meta, masked=True)
+        table = Table(rows=rows, meta=meta, masked=True)
+        return table
 
     def to_json(self):
         """Return data in format that can be written to JSON.

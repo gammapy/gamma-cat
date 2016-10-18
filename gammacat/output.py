@@ -71,6 +71,9 @@ class OutputDataReader:
 class OutputDataMaker:
     """
     Generate output data from input data.
+
+    TODO: some of the columns are lists and can't be written to FITS.
+    Remove those or replace with comma-separated strings.
     """
 
     def __init__(self):
@@ -79,11 +82,11 @@ class OutputDataMaker:
     def make_all(self):
         self.make_source_table_json()
         self.make_source_table_ecsv()
-        self.make_source_table_fits()
+        # self.make_source_table_fits()
 
         self.make_paper_table_json()
         self.make_paper_table_ecsv()
-        self.make_source_table_fits()
+        # self.make_source_table_fits()
 
     def make_source_table_json(self):
         data = self.input_data.sources.to_json()
@@ -94,7 +97,7 @@ class OutputDataMaker:
         table = self.input_data.sources.to_table()
         path = OutputDataConfig.sources_ecsv
         log.info('Writing {}'.format(path))
-        table.write(str(path), format='ascii.ecsv', overwrite=True)
+        table.write(str(path), format='ascii.ecsv')
 
     def make_source_table_fits(self):
         table = self.input_data.sources.to_table()
@@ -111,7 +114,7 @@ class OutputDataMaker:
         table = self.input_data.papers.to_table()
         path = OutputDataConfig.papers_ecsv
         log.info('Writing {}'.format(path))
-        table.write(str(path), format='ascii.ecsv', overwrite=True)
+        table.write(str(path), format='ascii.ecsv')
 
     def make_paper_table_fits(self):
         table = self.input_data.papers.to_table()

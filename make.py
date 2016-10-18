@@ -4,6 +4,7 @@
 Make catalog (multiple steps available)
 """
 import logging
+import warnings
 import click
 import gammacat
 
@@ -13,7 +14,9 @@ log = logging.getLogger(__name__)
 @click.group()
 @click.option('--loglevel', default='info',
               type=click.Choice(['debug', 'info', 'warning', 'error', 'critical']))
-def cli(loglevel):
+@click.option('--show-warnings', is_flag=True,
+              help='Show warnings?')
+def cli(loglevel, show_warnings):
     """
     Make catalog (multiple steps available)
     """
@@ -26,6 +29,9 @@ def cli(loglevel):
     )
     logging.basicConfig(level=levels[loglevel])
     log.setLevel(level=levels[loglevel])
+
+    if not show_warnings:
+        warnings.simplefilter('ignore')
 
 
 @cli.command(name='output')

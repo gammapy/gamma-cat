@@ -1,10 +1,10 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
-from astropy.table import Table
+from astropy.table import Table, Column
 from .info import gammacat_info
 from .input import InputData
-from .utils import MissingValues
+from .utils import MissingValues, load_yaml
 
 __all__ = ['GammaCatMaker']
 
@@ -14,6 +14,7 @@ log = logging.getLogger(__name__)
 class GammaCatSource:
     """Gather data for one source in gamma-cat.
     """
+
     def __init__(self, data):
         self.data = data
 
@@ -48,6 +49,49 @@ class GammaCatSource:
         """Data in a row dict format.
         """
         return self.data
+
+
+class GammaCatSchema:
+    """Helper class to apply the schema."""
+
+    def __init__(self):
+        self.colspecs = load_yaml(gammacat_info.base_dir / 'input/schemas/gamma_cat.yaml')
+
+    def format_table(self, in_table):
+        """Make a new table, formatting things according to this schema.
+
+        * Drop columns that are not in schema or table (but emit warning)
+        * Order columns by schema.
+        * Make dtype, fmt, description as given in the schema
+        """
+        table = Table(meta=in_table.meta)
+        for colspec in self.colspecs:
+            name = colspec['name']
+            col = Column(
+                data=in_table[name],
+                name=colspec['name'],
+                dtype=colspec['dtype'],
+                fmt=colspec['fmt'],
+                unit=colspec['unit'],
+                description=colspec['description'],
+            )
+            table.add_column(col)
+
+        return table
+
+        # @property
+        # def names(self):
+        #     return [_['name'] for _ in self.colspecs]
+        #
+        # @property
+        # def dtype(self):
+        #     return [_['dtype'] for _ in self.colspecs]
+
+        # def filter_row_keys(self, rows):
+        #     for row in rows:
+        #         for key in list(row.keys()):
+        #             if key not in names:
+        #                 del row[key]
 
 
 class GammaCatMaker:
@@ -94,10 +138,11 @@ class GammaCatMaker:
         meta['version'] = gammacat_info.version
         meta['url'] = 'https://github.com/gammapy/gamma-cat/'
 
-        # TODO: read catalog YAML file with names in
-        # good order, format and description set.
-        names = list(rows[0].keys())
-        table = Table(rows=rows, meta=meta, names=names)
+        schema = GammaCatSchema()
+        # schema.filter_row_keys(rows)
+        # table = Table(rows=rows, meta=meta, names=schema.names, dtype=schema.dtype)
+        table = Table(rows=rows)
+        table = schema.format_table(table)
         self.table = table
 
     def write_table(self):

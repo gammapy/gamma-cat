@@ -1,0 +1,23 @@
+paper_id: 2016arXiv160908671H
+source_id: 96
+
+data:
+  livetime: 164
+
+pos:
+  ra: {val: 17.2237}
+  dec: {val: -39.771}
+
+morph:
+  type: shell
+  sigma: {val: 0.5 deg}
+
+spec:
+  type: ecpl # more like 'ecpl', 'pl' because both were used in the paper and were transcripted here
+  # following data from tab 3 and fig 4
+  norm: {val: 20.2, err: 0.8}
+  index: {val: 2.32, err: 0.02, err_sys: 0.1}
+  ecut: {val: 12.9, err: 1.1}
+
+  theta: 0.6 # see p.6 and fig 3, but 0.7 or 0.8 possible as well, see fig 2
+  erange: {min: 0.2, max: 40.0} # see p.8

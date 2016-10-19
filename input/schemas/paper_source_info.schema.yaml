@@ -82,8 +82,13 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      type: {enum: [pl, ecpl]}
-        description: pl = power law, ecpl = exponential power law
+      type:
+        enum: [pl, ecpl]
+        description: |
+          The following spec types are defined.
+          - pl = power law
+          - ecpl = exponential cutoff power law
+          - other = some other shape
       theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
       erange:
         type: object

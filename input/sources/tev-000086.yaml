@@ -1,5 +1,11 @@
 source_id: 86
 
+gamma_names:
+- HESS J1632-478
+
+where: gal
+classes: [pwn]
+
 tevcat_id: 105
 tevcat2_id: p9DNQ0
 tevcat_name: TeV J1632-478
@@ -8,4 +14,4 @@ tgevcat_id: 86
 tgevcat_name: TeV J1632-4749
 
 papers:
-- null
+- 2006ApJ...636..777A

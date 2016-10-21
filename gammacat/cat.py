@@ -71,7 +71,7 @@ class GammaCatSchema:
                 data=in_table[name],
                 name=colspec['name'],
                 dtype=colspec['dtype'],
-                fmt=colspec['fmt'],
+                #fmt=colspec['fmt'],
                 unit=colspec['unit'],
                 description=colspec['description'],
             )

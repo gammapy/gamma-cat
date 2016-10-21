@@ -1,5 +1,11 @@
 source_id: 83
 
+gamma_names:
+- HESS J1614-518
+
+where: gal
+classes: [unid]
+
 tevcat_id: 234
 tevcat2_id: ChXqoJ
 tevcat_name: TeV J1614-518
@@ -15,3 +21,4 @@ papers:
 - 2013MNRAS.432.3462Z
 - 2011ICRC....7..119D
 - 2011A&A...533L...5D
+- 2006ApJ...636..777A

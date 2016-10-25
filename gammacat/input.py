@@ -24,19 +24,31 @@ __all__ = [
 log = logging.getLogger(__name__)
 
 
-class BasicSourceInfo:
+class ValidateMixin:
+    def validate(self):
+        log.debug('Validating', self.path)
+        try:
+            jsonschema.validate(self.data, self.schema)
+        except jsonschema.exceptions.ValidationError as ex:
+            log.error('Invalid input file: {}'.format(self.path))
+            pprint(self.data)
+            raise ex
+
+
+class BasicSourceInfo(ValidateMixin):
     """All basic info for a source.
     """
     schema = load_yaml(gammacat_info.base_dir / 'input/schemas/basic_source_info.schema.yaml')
 
-    def __init__(self, data):
+    def __init__(self, data, path):
         self.data = data
+        self.path = path
 
     @classmethod
     def read(cls, path):
         path = Path(path)
         data = load_yaml(path)
-        return cls(data=data)
+        return cls(data=data, path=path)
 
     def __repr__(self):
         return 'BasicSourceInfo(id={})'.format(repr(self.data['source_id']))
@@ -76,41 +88,31 @@ class BasicSourceInfo:
     def pprint(self):
         return pprint(self.data)
 
-    # @property
-    # def yaml(self):
-    #     return yaml.safe_dump(self.data, default_flow_style=False)
-
-    def validate(self):
-        try:
-            jsonschema.validate(self.data, self.schema)
-        except jsonschema.exceptions.ValidationError as ex:
-            log.error('Invalid source_id: {}'.format(self.data['source_id']))
-            print(self.data)
-            raise ex
+        # @property
+        # def yaml(self):
+        #     return yaml.safe_dump(self.data, default_flow_style=False)
 
 
-class PaperSourceInfo:
+class PaperSourceInfo(ValidateMixin):
     """All info from one paper for one source.
     """
     schema = load_yaml(gammacat_info.base_dir / 'input/schemas/paper_source_info.schema.yaml')
 
-    def __init__(self, data):
+    def __init__(self, data, path):
         self.data = data
+        self.path = path
 
     @classmethod
     def read(cls, path):
         path = Path(path)
         data = load_yaml(path)
-        return cls(data=data)
+        return cls(data=data, path=path)
 
     def __repr__(self):
         return 'PaperInfo(source_id={}, data_id={})'.format(
             repr(self.data['source_id']),
             repr(self.data['paper_id']),
         )
-
-    def validate(self):
-        jsonschema.validate(self.data, self.schema)
 
 
 class PaperInfo:

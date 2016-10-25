@@ -57,8 +57,8 @@ properties:
           Width parameter (semantics type-dependent)
           Must parse as angle quantity.
         properties:
-          val: {type: string}
-          err: {type: string, description: Statistical error}
+          val: {type: [string, number]}
+          err: {type: [string, number], description: Statistical error}
       sigma2:
         type: object
         additionalProperties: false
@@ -66,8 +66,8 @@ properties:
           Width parameter (semantics type-dependent)
           Must parse as angle quantity.
         properties:
-          val: {type: string}
-          err: {type: string, description: Statistical error}
+          val: {type: [string, number]}
+          err: {type: [string, number], description: Statistical error}
       pa: # redundant to pos, see line 15?
         type: object
         additionalProperties: false
@@ -83,19 +83,20 @@ properties:
     additionalProperties: false
     properties:
       type:
-        enum: [pl, ecpl]
+        enum: [pl, pl2, ecpl]
         description: |
           The following spec types are defined.
-          - pl = power law
-          - ecpl = exponential cutoff power law
+          - pl = `PowerLaw` in Gammapy
+          - pl2 = `PowerLaw2` in Gammapy
+          - ecpl = `ExponentialCutoffPowerLaw` in Gammapy
           - other = some other shape
       theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
       erange:
         type: object
         additionalProperties: false
         properties:
-          min: {type: number, unit=deg}
-          max: {type: number, unit=deg}
+          min: {type: [number,  "null"], unit=TeV}
+          max: {type: [number,  "null"], unit=TeV}
       norm:
         type: object
         additionalProperties: false

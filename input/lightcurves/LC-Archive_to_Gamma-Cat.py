@@ -1,3 +1,7 @@
+# this script dumps the data from DESY LC-Archive to SED-consistent format
+# first argument is the fits-file from DESY, second argument defines the output-file
+# output-file should be named conform with the gamma-cat source-id
+
 import sys
 import pyfits
 import numpy as np

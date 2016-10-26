@@ -168,6 +168,6 @@ class GammaCatMaker:
         log.info('Writing {}'.format(path))
         table.write(str(path), format='ascii.ecsv')
 
-        path = gammacat_info.base_dir / 'docs/data/gammacat.fits'
+        path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)

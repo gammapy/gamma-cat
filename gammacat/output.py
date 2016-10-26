@@ -26,11 +26,11 @@ class OutputDataConfig:
 
     sources_json = path / 'gammacat-sources.json'
     sources_ecsv = path / 'gammacat-sources.ecsv'
-    sources_fits = path / 'gammacat-sources.fits'
+    sources_fits = path / 'gammacat-sources.fits.gz'
 
     papers_json = path / 'gammacat-papers.json'
     papers_ecsv = path / 'gammacat-papers.ecsv'
-    papers_fits = path / 'gammacat-papers.fits'
+    papers_fits = path / 'gammacat-papers.fits.gz'
 
 
 class OutputDataReader:

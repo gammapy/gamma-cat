@@ -1,5 +1,17 @@
 source_id: 59
 
+common_name: 3C 279
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: egal
+classes: [fsrq]
+
+discoverer: magic
+seen_by: [magic, hess]
+discovery_date: 2008-06
+
 tevcat_id: 166
 tevcat2_id: YmUotO
 tevcat_name: TeV J1256-057
@@ -7,5 +19,12 @@ tevcat_name: TeV J1256-057
 tgevcat_id: 59
 tgevcat_name: TeV J1256-0547
 
+pos:
+  simbad_id: 3C 279
+  ra: 194.046527375
+  dec: -5.789312417
+
 papers:
-- null
+- 2008AIPC.1085..423E
+- 2011A&A...530A...4A
+- 2016arXiv161005523C

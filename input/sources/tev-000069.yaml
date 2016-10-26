@@ -1,5 +1,19 @@
 source_id: 69
 
+common_name: H 1426+428
+gamma_names: []
+fermi_names: []
+other_names:
+- 1ES 1426+428
+- 1H 1430+423
+
+where: egal
+classes: [hbl]
+
+discoverer: whipple
+seen_by: [whipple, hegra, magic, veritas]
+discovery_date: 2002-02
+
 tevcat_id: 78
 tevcat2_id: F5cSH7
 tevcat_name: TeV J1428+426
@@ -7,5 +21,11 @@ tevcat_name: TeV J1428+426
 tgevcat_id: 69
 tgevcat_name: TeV J1428+4240
 
+pos:
+  simbad_id: H 1426+428
+  ra: 217.1358706208
+  dec: 42.6725130889
+
 papers:
-- null
+- 2002ApJ...571..753H
+- 2002A&A...384L..23A

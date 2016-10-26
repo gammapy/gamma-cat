@@ -1,5 +1,18 @@
 source_id: 98
 
+common_name: SNR G349.7+0.2
+gamma_names: [HESS J1718−374]
+fermi_names: []
+other_names:
+- SNR G349.7+00.2
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2013-07
+
 tevcat_id: 250
 tevcat2_id: D5Wki5
 tevcat_name: TeV J1718-374
@@ -7,5 +20,12 @@ tevcat_name: TeV J1718-374
 tgevcat_id: 98
 tgevcat_name: TeV J1717-3726
 
+pos:
+  simbad_id: SNR G349.7+0.2
+  ra: 259.496
+  dec: -37.427
+
 papers:
-- null
+- 2014ApJ...783L...2T
+- 2015A&A...574A.100H
+- 2015ApJ...804..124E

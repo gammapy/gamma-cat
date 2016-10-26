@@ -1,5 +1,17 @@
 source_id: 77
 
+common_name: HESS J1507-622
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2009-12
+
 tevcat_id: 204
 tevcat2_id: jNYEaw
 tevcat_name: TeV J1506-623
@@ -7,5 +19,20 @@ tevcat_name: TeV J1506-623
 tgevcat_id: 77
 tgevcat_name: TeV J1506-6221
 
+pos:
+  simbad_id: HESS J1507-622
+  ra: 226.875
+  dec: -62.417
+
 papers:
-- null
+- 2009arXiv0912.4229T
+- 2011AdSpR..47..640D
+- 2011arXiv1111.1634T
+- 2011ICRC....6..202T
+- 2011A&A...525A..45H
+- 2012A&A...545A..94D
+- 2013ApJ...773..139V
+- 2013arXiv1308.1626V
+- 2013ApJ...773...77A
+- 2015MNRAS.447.3564E
+

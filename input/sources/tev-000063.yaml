@@ -1,5 +1,18 @@
 source_id: 63
 
+common_name: Centaurus A
+gamma_names: []
+fermi_names: []
+other_names:
+- Cen A
+
+where: egal
+classes: [fri]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2009-03
+
 tevcat_id: 122
 tevcat2_id: ubPSXn
 tevcat_name: TeV J1325-430
@@ -7,5 +20,10 @@ tevcat_name: TeV J1325-430
 tgevcat_id: 63
 tgevcat_name: TeV J1325-4300
 
+pos:
+  simbad_id: Centaurus A
+  ra: 201.365062792
+  dec: -43.019112583
+
 papers:
-- null
+- 2009ApJ...695L..40A

@@ -2,13 +2,16 @@ source_id: 79
 
 common_name: MSH 15-5-02
 gamma_names: [HESS J1514-591]
-other_names: [SNR G320.3-01.1]
+other_names:
+- G320.3-01.1
+- MSH 15-52
 
 where: gal
 classes: [pwn]
 
 discoverer: cangaroo
 seen_by: [cangaroo, hess]
+discovery_date: 2005-05
 
 tevcat_id: 95
 tevcat2_id: OhJ7Hr

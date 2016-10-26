@@ -1,5 +1,18 @@
 source_id: 60
 
+common_name: PSR B1259-63
+gamma_names: [HESS J1302-638]
+fermi_names: []
+other_names:
+- SS 2883
+
+where: gal
+classes: [bin]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2005-10
+
 tevcat_id: 93
 tevcat2_id: HJQC5t
 tevcat_name: TeV J1302-638
@@ -7,5 +20,12 @@ tevcat_name: TeV J1302-638
 tgevcat_id: 60
 tgevcat_name: TeV J1302-6349
 
+pos:
+  simbad_id: PSR B1259-63
+  ra: 195.6985625
+  dec: -63.8357417
+
 papers:
-- null
+- 2005A&A...442....1A
+- 2009A&A...507..389A
+- 2013A&A...551A..94H

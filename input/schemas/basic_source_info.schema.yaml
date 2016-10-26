@@ -30,10 +30,6 @@ properties:
   tgevcat_id: {type: [integer, "null"]}
   tgevcat_name: {type: [string, "null"]}
 
-  papers: {type: array, items: {type: [string, "null"]}}
-
-  notes: {type: string}
-
   pos: # Todo: add unit to documentation
     type: object
     additionalProperties: false
@@ -41,6 +37,10 @@ properties:
       simbad_id: {type: string}
       ra: {type: [string, number], unit=deg}
       dec: {type: [string, number], unit=deg}
+
+  papers: {type: array, items: {type: [string, "null"]}}
+
+  notes: {type: string}
 
 required:
   - source_id

@@ -1,11 +1,31 @@
 source_id: 46
 
+common_name: Westerlund 2
+gamma_names: [HESS J1023-575]
+fermi_names: []
+other_names:
+- RCW 49
+- WR20a
+- PSR J1022-5746
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-06
+
 tevcat_id: 132
 tevcat2_id: nvPEhx
 tevcat_name: TeV J1023-577
 
 tgevcat_id: 46
 tgevcat_name: TeV J1023-5747
+
+pos:
+  simbad_id: HESS J1023-575
+  ra: 155.75
+  dec: -57.5
 
 papers:
 - 2007A&A...467.1075A

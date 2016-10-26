@@ -1,6 +1,17 @@
 source_id: 42
 
 common_name: 1RXS J101015.9-311909
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2010-12
+
 
 tevcat_id: 215
 tevcat2_id: 7fxWYa
@@ -9,5 +20,11 @@ tevcat_name: TeV J1010-313
 tgevcat_id: 42
 tgevcat_name: TeV J1010-3118
 
+pos:
+  simbad_id: 1RXS J101015.9-311909
+  ra: 152.5665542
+  dec: -31.3189917
+
 papers:
-- null
+- 2011ICRC....8..109C
+- 2012A&A...542A..94H

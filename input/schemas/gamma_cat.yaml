@@ -1,11 +1,34 @@
 - name: source_id
-  dtype: float32
+  dtype: int32
   fmt:
   unit:
   description: Source ID (integer)
-
 - name: common_name
   dtype: str
   fmt:
   unit:
   description: Common source name (unique in gamma-cat, like source_id)
+- name: ra
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Right Ascension (ICRS)
+  latex:
+- name: dec
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Declination (ICRS)
+  latex:
+- name: glon
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic longitude
+  latex:
+- name: glat
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic latitude
+  latex:

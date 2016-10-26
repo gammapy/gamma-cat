@@ -2,6 +2,7 @@
 import logging
 from collections import OrderedDict
 from astropy.table import Table, Column
+from astropy.coordinates import SkyCoord
 from .info import gammacat_info
 from .input import InputData
 from .utils import MissingValues, load_yaml
@@ -22,8 +23,14 @@ class GammaCatSource:
     def from_inputs(cls, basic_source_info):
         data = OrderedDict()
 
-        # import IPython; IPython.embed(); 1/0
         bsi = basic_source_info.data
+        cls.fill_basic_info(data, bsi)
+        cls.fill_position_info(data, bsi)
+
+        return cls(data=data)
+
+    @staticmethod
+    def fill_basic_info(data, bsi):
         data['source_id'] = bsi['source_id']
         try:
             data['common_name'] = bsi['common_name']
@@ -34,6 +41,9 @@ class GammaCatSource:
             data['gamma_names'] = ','.join(bsi['gamma_names'])
         except KeyError:
             data['gamma_names'] = MissingValues.string
+
+    @staticmethod
+    def fill_position_info(data, bsi):
         try:
             data['ra'] = bsi['pos']['ra']
         except KeyError:
@@ -43,7 +53,10 @@ class GammaCatSource:
         except KeyError:
             data['dec'] = MissingValues.number
 
-        return cls(data=data)
+        icrs = SkyCoord(data['ra'], data['dec'], unit='deg')
+        galactic = icrs.galactic
+        data['glon'] = galactic.l.deg
+        data['glat'] = galactic.b.deg
 
     def row_dict(self):
         """Data in a row dict format.
@@ -71,7 +84,7 @@ class GammaCatSchema:
                 data=in_table[name],
                 name=colspec['name'],
                 dtype=colspec['dtype'],
-                #fmt=colspec['fmt'],
+                # fmt=colspec['fmt'],
                 unit=colspec['unit'],
                 description=colspec['description'],
             )

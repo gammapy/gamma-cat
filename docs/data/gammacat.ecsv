@@ -1,178 +1,174 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: source_id, datatype: int64}
-# - {name: common_name, datatype: string}
-# - {name: discoverer, datatype: string}
-# - {name: gamma_names, datatype: string}
-# - {name: ra, datatype: float64}
-# - {name: dec, datatype: float64}
-# meta: !!omap
-# - {name: gamma-cat}
-# - {description: A catalog of TeV gamma-ray sources}
-# - {version: e762267}
-# - {url: 'https://github.com/gammapy/gamma-cat/'}
-source_id common_name discoverer gamma_names ra dec
-1 "CTA 1" veritas "VER J0006+729" 1.65 72.783
-2 "SHBL J001355.9-185406" hess "" 3.4835583 -18.9018472
-3 "Tycho SNR" veritas "" 6.3397 64.1408
-4 "KUV 00311-1938" hess "" 8.3932875 -19.3592056
-5 "1ES 0033+595" magic "" 8.968975 59.8344972
-6 "NGC 253" hess "" 11.8880583 -25.2888
-7 "RGB J0136+391" magic "" 24.1358267 39.0997773
-8 "RGB J0152+017" hess "" 28.1650455 1.7881618
-9 "3C 58" hess "" 31.4043 64.8283
-10 "S3 0218+35" magic "" 35.2728 35.9371
-11 "3C 66A" crimea "" 35.66505 43.0355222
-12 "MAGIC J0223+403" magic "MAGIC J0223+403" 35.66505 43.0355222
-13 "1ES 0229+200" hess "" 38.202564 20.2881899
-14 "LS I +61 303" magic "" 40.131938163 61.229336515
-15 "PKS 0301-243" hess "" 45.860417 -24.119861
-16 "IC 310" magic "MAGIC J0317+413" 49.1792708 41.3247667
-17 "RBS 0413" veritas "" 49.96585 18.7595556
-18 "NGC 1275" magic "" 49.950667083 41.511695306
-19 "1ES 0347-121" hess "" 57.3466083 -11.9908583
-20 "1ES 0414+009" hess "" 64.2187375 1.0899944
-21 "PKS 0447-439" hess "" 72.3529167 -43.8358139
-22 "1ES 0502+675" veritas "" 76.9840583 67.6234056
-23 "RGB J0521+212" veritas "VER J0521+211" 80.4415375 21.2142722
-24 "LMC N132D" hess "" 81.259167 -69.644167
-25 "Crab nebula" hess "" 83.633083 22.0145
-26 "30 Dor C" hess "" 83.9617 -69.2061
-27 "N 157B" hess "HESS J0537-691" 84.44443 -69.17141
-28 "PKS 0548-322" hess "" 87.6689875 -32.2712472
-29 "IC 443" magic "MAGIC 0616+223" 94.51125 22.66
-30 "HESS J0632+057" hess "HESS J0632+057,VER J0633+057" 98.24689375 5.80032722
-31 Geminga "" "" nan nan
-32 "RX J0648.7+1516" "" "" nan nan
-33 "1ES 0647+250" "" "" nan nan
-34 "RGB J0710+591" "" "" nan nan
-35 "S5 0716+714" "" "" nan nan
-36 "1ES 0806+524" "" "" nan nan
-37 "Vela X" hess "HESS J0835-455" nan nan
-38 "RBS 0723" "" "" nan nan
-39 "Vela Junior" cangaroo "HESS J0852-463" 133.0 -46.333
-40 "M 82" "" "" nan nan
-41 "S4 0954+65" "" "" nan nan
-42 "1RXS J101015.9-311909" "" "" nan nan
-43 "" "" "" nan nan
-44 "" "" "" nan nan
-45 "" "" "" nan nan
-46 "" "" "" nan nan
-47 "" "" "" nan nan
-48 "" "" "" nan nan
-49 "" "" "" nan nan
-50 "" "" "" nan nan
-51 "" "" "" nan nan
-52 "" "" "" nan nan
-53 "" "" "" nan nan
-54 "" "" "" nan nan
-55 "" "" "" nan nan
-56 "" "" "" nan nan
-57 "" "" "" nan nan
-58 "" "" "" nan nan
-59 "" "" "" nan nan
-60 "" "" "" nan nan
-61 "" "" "" nan nan
-62 "" "" "" nan nan
-63 "" "" "" nan nan
-64 "" "" "" nan nan
-65 "" "" "" nan nan
-66 "" "" "" nan nan
-67 "" "" "" nan nan
-68 "" "" "" nan nan
-69 "" "" "" nan nan
-70 "" "" "" nan nan
-71 "" "" "" nan nan
-72 "" "" "" nan nan
-73 "" "" "" nan nan
-74 "" "" "" nan nan
-75 "" "" "" nan nan
-76 "" "" "" nan nan
-77 "" "" "" nan nan
-78 "" "" "" nan nan
-79 "MSH 15-5-02" cangaroo "HESS J1514-591" 228.3208 -59.0817
-80 "" "" "" nan nan
-81 "" "" "" nan nan
-82 "" "" "" nan nan
-83 "" "" "" nan nan
-84 "" "" "" nan nan
-85 "" "" "" nan nan
-86 "" "" "" nan nan
-87 "" "" "" nan nan
-88 "" "" "" nan nan
-89 "" "" "" nan nan
-90 "" "" "" nan nan
-91 "" "" "" nan nan
-92 "" "" "" nan nan
-93 "" "" "" nan nan
-94 "" "" "" nan nan
-95 "" "" "" nan nan
-96 "" "" "" nan nan
-97 "" "" "" nan nan
-98 "" "" "" nan nan
-99 "" "" "" nan nan
-100 "" "" "" nan nan
-101 "" "" "" nan nan
-102 "" "" "" nan nan
-103 "" "" "" nan nan
-104 "" "" "" nan nan
-105 "" "" "" nan nan
-106 "" "" "" nan nan
-107 "" "" "" nan nan
-108 "" "" "" nan nan
-109 "" "" "" nan nan
-110 "" "" "" nan nan
-111 "HESS J1800-240A" hess "HESS J1800-240A" 270.4917 -23.9617
-112 "" "" "" nan nan
-113 "" "" "" nan nan
-114 "" "" "" nan nan
-115 "" "" "" nan nan
-116 "" "" "" nan nan
-117 "" "" "" nan nan
-118 "" "" "" nan nan
-119 "" "" "" nan nan
-120 "" "" "" nan nan
-121 "" "" "" nan nan
-122 "" "" "" nan nan
-123 "" "" "" nan nan
-124 "" "" "" nan nan
-125 "" "" "" nan nan
-126 "" "" "" nan nan
-127 "" "" "" nan nan
-128 "" "" "" nan nan
-129 "" "" "" nan nan
-130 "HESS J1857+026" hess "MAGIC J1857.2+0263,MAGIC J1857.6+0297,1HWC J1857+023" 284.29583 2.66667
-131 "HESS J1858+020" hess "1HWC J1857+023" 284.58333 2.09
-132 "MGRO J1908+06" milagro "HESS J1908+063,VER J1907+062,1HWC J1907+062c,ARGO J1907+0627,ARGO J1910+0720" 287.175 6.183
-133 "W 49B" hess "HESS J1911+090" 287.7458 9.1017
-134 "HESS J1912+101" hess "" 288.3347542 10.1897139
-135 "W 51C" hess "HESS J1923+141" 290.818 14.145
-136 "SNR G054.1+00.3" veritas "VER J1930+188" 292.6292 18.867
-137 "HESS J1943+213" hess "" 295.9792 21.30222
-138 "1ES 1959+650" magic "" 299.99938375 65.14851472
-139 "MAGIC J2001+435" magic "" 300.30625 43.884111
-140 "PKS 2005-489" hess "HESS J2009-488" 302.355794583 -48.831589306
-141 "VER J2016+371" veritas "MGRO J2019+37" 304.0076 37.21476
-142 Dragonfly milagro "MGRO J2019+37,VER J2019+368,VER J2016+371" 305.27252 36.85126
-143 "VER J2019+368" veritas "MGRO J2019+37" 304.0083 37.19778
-144 "Gamma Cygni" veritas "VER J2019+407" 305.557090982 40.256679158
-145 "MGRO J2031+41" milagro "" 308.025 41.567
-146 "TeV J2032+4130" hegra "MGRO J2031+41" 308.025 41.567
-147 "PKS 2155-304" hess "HESS J2158-302" 329.716937958 -30.225588389
-148 "BL Lacertae" crimea "" 330.680380792 42.277772306
-150 Boomerang milagro "MGRO C4,MGRO J2228+61" 191.189375 -54.519833
-151 "RGB J2243+203" veritas "" 340.978097917 20.351049306
-152 "B3 2247+381" magic "" 342.52395075 38.410332111
-153 "Cassiopeia A" hegra "" 350.85 58.815
-154 "1ES 2344+514" whipple "" 356.770153 51.704967
-155 "H 2356-309" hess "HESS J2359-306" 359.7829583 -30.6279694
-156 "HESS J1800-240B" hess "HESS J1800-240B" 270.1083 -24.0383
-157 "HESS J1852-000" hess "HESS J1852-000" 283.0 0.0
-158 "SNR G323.7-01.0" hess "HESS J1534-571" nan nan
-159 "Arc source" hess "HESS J1746-285,VER J1746-289" nan nan
-160 "HESS J1813-126" hess "HESS J1813-126" 273.35 -12.77
-161 "HESS J1826-130" hess "HESS J1826-130" 276.50417 -13.09111
-162 "HESS J1828-099" hess "HESS J1828-099" nan nan
-163 "HESS J1832-085" hess "HESS J1832-085" nan nan
-164 "HESS J1844-030" hess "HESS J1844-030" nan nan
+# - {name: source_id, datatype: int32, description: Source ID (integer)}
+# - {name: common_name, datatype: string, description: 'Common source name (unique in
+#     gamma-cat, like source_id)'}
+# - {name: ra, unit: deg, datatype: float32, description: Right Ascension (ICRS)}
+# - {name: dec, unit: deg, datatype: float32, description: Declination (ICRS)}
+# - {name: glon, unit: deg, datatype: float32, description: Galactic longitude}
+# - {name: glat, unit: deg, datatype: float32, description: Galactic latitude}
+source_id common_name ra dec glon glat
+1 "CTA 1" 1.65 72.783 119.58 10.2037
+2 "SHBL J001355.9-185406" 3.48356 -18.9018 74.632 -78.0869
+3 "Tycho SNR" 6.3397 64.1408 120.092 1.41293
+4 "KUV 00311-1938" 8.39329 -19.3592 94.1746 -81.2161
+5 "1ES 0033+595" 8.96898 59.8345 120.975 -2.97812
+6 "NGC 253" 11.8881 -25.2888 97.3639 -87.9645
+7 "RGB J0136+391" 24.1358 39.0998 132.416 -22.9398
+8 "RGB J0152+017" 28.165 1.78816 152.377 -57.5409
+9 "3C 58" 31.4043 64.8283 130.718 3.08385
+10 "S3 0218+35" 35.2728 35.9371 142.602 -23.4869
+11 "3C 66A" 35.6651 43.0355 140.143 -16.7669
+12 "MAGIC J0223+403" 35.6651 43.0355 140.143 -16.7669
+13 "1ES 0229+200" 38.2026 20.2882 152.941 -36.6073
+14 "LS I +61 303" 40.1319 61.2293 135.675 1.08613
+15 "PKS 0301-243" 45.8604 -24.1199 214.621 -60.1774
+16 "IC 310" 49.1793 41.3248 150.183 -13.7341
+17 "RBS 0413" 49.9659 18.7596 165.107 -31.6973
+18 "NGC 1275" 49.9507 41.5117 150.576 -13.2612
+19 "1ES 0347-121" 57.3466 -11.9909 201.927 -45.7091
+20 "1ES 0414+009" 64.2187 1.08999 191.814 -33.1591
+21 "PKS 0447-439" 72.3529 -43.8358 248.805 -39.9188
+22 "1ES 0502+675" 76.9841 67.6234 143.795 15.8897
+23 "RGB J0521+212" 80.4415 21.2143 183.604 -8.70833
+24 "LMC N132D" 81.2592 -69.6442 280.307 -32.784
+25 "Crab nebula" 83.6331 22.0145 184.557 -5.78436
+26 "30 Dor C" 83.9617 -69.2061 279.624 -31.9118
+27 "N 157B" 84.4444 -69.1714 279.559 -31.7459
+28 "PKS 0548-322" 87.669 -32.2712 237.565 -26.1449
+29 "IC 443" 94.5113 22.66 189.065 3.23499
+30 "HESS J0632+057" 98.2469 5.80033 205.667 -1.43953
+31 Geminga nan nan nan nan
+32 "RX J0648.7+1516" nan nan nan nan
+33 "1ES 0647+250" nan nan nan nan
+34 "RGB J0710+591" nan nan nan nan
+35 "S5 0716+714" nan nan nan nan
+36 "1ES 0806+524" nan nan nan nan
+37 "Vela X" nan nan nan nan
+38 "RBS 0723" nan nan nan nan
+39 "Vela Junior" 133.0 -46.333 266.259 -1.21965
+40 "M 82" nan nan nan nan
+41 "S4 0954+65" nan nan nan nan
+42 "1RXS J101015.9-311909" nan nan nan nan
+43 "" nan nan nan nan
+44 "" nan nan nan nan
+45 "" nan nan nan nan
+46 "" nan nan nan nan
+47 "" nan nan nan nan
+48 "" nan nan nan nan
+49 "" nan nan nan nan
+50 "" nan nan nan nan
+51 "" nan nan nan nan
+52 "" nan nan nan nan
+53 "" nan nan nan nan
+54 "" nan nan nan nan
+55 "" nan nan nan nan
+56 "" nan nan nan nan
+57 "" nan nan nan nan
+58 "" nan nan nan nan
+59 "" nan nan nan nan
+60 "" nan nan nan nan
+61 "" nan nan nan nan
+62 "" nan nan nan nan
+63 "" nan nan nan nan
+64 "" nan nan nan nan
+65 "" nan nan nan nan
+66 "" nan nan nan nan
+67 "" nan nan nan nan
+68 "" nan nan nan nan
+69 "" nan nan nan nan
+70 "RCW 86" 220.121 -62.645 315.093 -2.37652
+71 "" nan nan nan nan
+72 "" nan nan nan nan
+73 "" nan nan nan nan
+74 "" nan nan nan nan
+75 "" nan nan nan nan
+76 "" nan nan nan nan
+77 "" nan nan nan nan
+78 "" nan nan nan nan
+79 "MSH 15-5-02" 228.321 -59.0817 320.278 -1.07283
+80 "" nan nan nan nan
+81 "" nan nan nan nan
+82 "" nan nan nan nan
+83 "" nan nan nan nan
+84 "" nan nan nan nan
+85 "" nan nan nan nan
+86 "" nan nan nan nan
+87 "" nan nan nan nan
+88 "" nan nan nan nan
+89 "" nan nan nan nan
+90 "" nan nan nan nan
+91 "" nan nan nan nan
+92 "" nan nan nan nan
+93 "" nan nan nan nan
+94 "" nan nan nan nan
+95 "CTB 37B" 17.2327 -38.2 285.69 -78.3363
+96 "RX J1713.7-3946" nan nan nan nan
+97 "" nan nan nan nan
+98 "" nan nan nan nan
+99 "" nan nan nan nan
+100 "" nan nan nan nan
+101 "" nan nan nan nan
+102 "" nan nan nan nan
+103 "" nan nan nan nan
+104 "" nan nan nan nan
+105 "" nan nan nan nan
+106 "" nan nan nan nan
+107 "" nan nan nan nan
+108 "" nan nan nan nan
+109 "" nan nan nan nan
+110 "" nan nan nan nan
+111 "HESS J1800-240A" 270.492 -23.9617 6.14186 -0.629822
+112 "" nan nan nan nan
+113 "" nan nan nan nan
+114 "" nan nan nan nan
+115 "" nan nan nan nan
+116 "" nan nan nan nan
+117 "" nan nan nan nan
+118 "" nan nan nan nan
+119 "" nan nan nan nan
+120 "" nan nan nan nan
+121 "" nan nan nan nan
+122 "" nan nan nan nan
+123 "" nan nan nan nan
+124 "" nan nan nan nan
+125 "" nan nan nan nan
+126 "" nan nan nan nan
+127 "" nan nan nan nan
+128 "" nan nan nan nan
+129 "" nan nan nan nan
+130 "HESS J1857+026" 284.296 2.66667 35.96 -0.0612988
+131 "HESS J1858+020" 284.583 2.09 35.5781 -0.580171
+132 "MGRO J1908+06" 287.175 6.183 40.4008 -1.00098
+133 "W 49B" 287.746 9.1017 43.2514 -0.156016
+134 "HESS J1912+101" 288.335 10.1897 44.4846 -0.166885
+135 "W 51C" 290.818 14.145 49.1158 -0.461604
+136 "SNR G054.1+00.3" 292.629 18.867 54.0947 0.260453
+137 "HESS J1943+213" 295.979 21.3022 57.7576 -1.2927
+138 "1ES 1959+650" 299.999 65.1485 98.0034 17.6697
+139 "MAGIC J2001+435" 300.306 43.8841 79.0707 7.10965
+140 "PKS 2005-489" 302.356 -48.8316 350.373 -32.6008
+141 "VER J2016+371" 304.008 37.2148 74.9538 1.15018
+142 Dragonfly 305.273 36.8513 75.2219 0.110987
+143 "VER J2019+368" 304.008 37.1978 74.9401 1.14025
+144 "Gamma Cygni" 305.557 40.2567 78.1486 1.86709
+145 "MGRO J2031+41" 308.025 41.567 80.2995 1.11112
+146 "TeV J2032+4130" 308.025 41.567 80.2995 1.11112
+147 "PKS 2155-304" 329.717 -30.2256 17.7305 -52.2459
+148 "BL Lacertae" 330.68 42.2778 92.5896 -10.4412
+150 Boomerang 191.189 -54.5198 301.952 8.33921
+151 "RGB J2243+203" 340.978 20.351 86.5675 -33.3654
+152 "B3 2247+381" 342.524 38.4103 98.2542 -18.5781
+153 "Cassiopeia A" 350.85 58.815 111.735 -2.12957
+154 "1ES 2344+514" 356.77 51.705 112.891 -9.90775
+155 "H 2356-309" 359.783 -30.628 12.8391 -78.0355
+156 "HESS J1800-240B" 270.108 -24.0383 5.90183 -0.363489
+157 "HESS J1852-000" 283.0 0.0 32.996 -0.125063
+158 "SNR G323.7-01.0" nan nan nan nan
+159 "Arc source" nan nan nan nan
+160 "HESS J1813-126" 273.35 -12.77 17.2417 2.44206
+161 "HESS J1826-130" 276.504 -13.0911 18.4099 -0.419675
+162 "HESS J1828-099" nan nan nan nan
+163 "HESS J1832-085" nan nan nan nan
+164 "HESS J1844-030" nan nan nan nan

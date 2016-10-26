@@ -1,5 +1,18 @@
 source_id: 57
 
+common_name: MS1221.8+2452
+gamma_names: []
+fermi_names: []
+other_names:
+- RGB J1224+246
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2013-05
+
 tevcat_id: 245
 tevcat2_id: LpjBMP
 tevcat_name: TeV J1224+246
@@ -7,5 +20,10 @@ tevcat_name: TeV J1224+246
 tgevcat_id: 57
 tgevcat_name: TeV J1224+2436
 
+pos:
+  simbad_id: MS1221.8+2452
+  ra: 186.100775925
+  dec: 24.6065282556
+
 papers:
-- null
+- http://www.astronomerstelegram.org/?read=5038

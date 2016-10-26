@@ -1,5 +1,18 @@
 source_id: 68
 
+common_name: HESS J1427-608
+gamma_names: []
+fermi_names: []
+other_names:
+- Suzaku J1427-6051
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-07
+
 tevcat_id: 139
 tevcat2_id: eee9un
 tevcat_name: TeV J1427-608
@@ -7,5 +20,16 @@ tevcat_name: TeV J1427-608
 tgevcat_id: 68
 tgevcat_name: TeV J1427-6051
 
+pos:
+  simbad_id: HESS J1427-608
+  ra: 216.96667
+  dec: -60.85
+
 papers:
-- null
+- 2008A&A...477..353A
+- 2011arXiv1111.1634T
+- 2011ICRC....6..202T
+- 2013ApJ...773..139V
+- 2013arXiv1308.1626V
+- 2013PASJ...65...61F
+- 2016arXiv160901125G

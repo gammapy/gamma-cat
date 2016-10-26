@@ -1,6 +1,15 @@
 source_id: 34
 
 common_name: RGB J0710+591
+gamma_names: [VER J0710+591]
+fermi_names: [1FGL J0710.6+5911]
+other_names: [RX J0710.5+5908, 1H 0658+595]
+
+where: egal
+classes: [hbl]
+
+discoverer: veritas
+seen_by: [veritas]
 
 tevcat_id: 173
 tevcat2_id: vejQq8
@@ -9,5 +18,10 @@ tevcat_name: TeV J0710+591
 tgevcat_id: 34
 tgevcat_name: TeV J0710+5909
 
+pos:
+  simbad_id: RGB J0710+591
+  ra: 107.625325
+  dec: 59.1390278
+
 papers:
-- null
+- 2010ApJ...715L..49A

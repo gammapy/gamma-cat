@@ -1,5 +1,23 @@
 source_id: 49
 
+common_name: Markarian 421
+gamma_names:
+- HESS J1104+382
+fermi_names: []
+other_names:
+- Markarian 421
+- Mrk 421
+- 1ES 1101+384
+- 1H 1104+382
+- H 1105+38
+
+where: egal
+classes: [hbl]
+
+discoverer: whipple
+seen_by: [whipple, veritas, hess, magic, hawc]
+discovery_date:
+
 tevcat_id: 75
 tevcat2_id: cIB7Uf
 tevcat_name: TeV J1104+382
@@ -7,5 +25,10 @@ tevcat_name: TeV J1104+382
 tgevcat_id: 49
 tgevcat_name: TeV J1104+3811
 
+pos:
+  simbad_id: Markarian 421
+  ra: 166.113808083
+  dec: 38.208833083
+
 papers:
-- null
+- 2007ApJ...663..125A

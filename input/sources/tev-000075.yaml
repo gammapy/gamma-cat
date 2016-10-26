@@ -1,5 +1,17 @@
 source_id: 75
 
+common_name: HESS J1503-582
+gamma_names: [HESS J1503-582]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-12
+
 tevcat_id: 169
 tevcat2_id: LuGtCl
 tevcat_name: TeV J1503-582
@@ -7,5 +19,10 @@ tevcat_name: TeV J1503-582
 tgevcat_id: 75
 tgevcat_name: TeV J1503-5813
 
+pos:
+  simbad_id: HESS J1503-582
+  ra: 225.75
+  dec: -58.2
+
 papers:
-- null
+- 2008AIPC.1085..281R

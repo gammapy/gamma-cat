@@ -39,10 +39,10 @@ source_id common_name ra dec glon glat
 28 "PKS 0548-322" 87.669 -32.2712 237.565 -26.1449
 29 "IC 443" 94.5113 22.66 189.065 3.23499
 30 "HESS J0632+057" 98.2469 5.80033 205.667 -1.43953
-31 Geminga nan nan nan nan
-32 "RX J0648.7+1516" nan nan nan nan
-33 "1ES 0647+250" nan nan nan nan
-34 "RGB J0710+591" nan nan nan nan
+31 Geminga 98.4756 17.7703 195.134 4.26581
+32 "RX J0648.7+1516" 102.198 15.2736 198.987 6.32768
+33 "1ES 0647+250" 102.694 25.0499 190.282 10.9956
+34 "RGB J0710+591" 107.625 59.139 157.404 25.4265
 35 "S5 0716+714" nan nan nan nan
 36 "1ES 0806+524" nan nan nan nan
 37 "Vela X" nan nan nan nan

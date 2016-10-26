@@ -1,10 +1,16 @@
 source_id: 93
 
-gamma_names:
-- HESS J1708-410
+common_name: HESS J1708-410
+gamma_names: [HESS J1708-410]
+fermi_names: []
+other_names: []
 
 where: gal
 classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-01
 
 tevcat_id: 109
 tevcat2_id: xGSgEi
@@ -13,5 +19,14 @@ tevcat_name: TeV J1708-410
 tgevcat_id: 93
 tgevcat_name: TeV J1708-4105
 
+pos:
+  simbad_id: HESS J1708-410
+  ra: 257.1
+  dec: -41.09
+
 papers:
 - 2006ApJ...636..777A
+- 2008A&A...477..353A
+- 2009ApJ...707.1717V
+- 2011ICRC....6..202T
+- 2011arXiv1111.1634T

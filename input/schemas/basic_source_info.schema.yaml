@@ -13,7 +13,7 @@ properties:
   classes:
     type: array
     items:
-      enum: [unid, other, psr, pwn, snr, mc, bin, galaxy, hbl, ibl, lbl, blazar, fri]
+      enum: [unid, other, psr, pwn, snr, mc, bin, galaxy, hbl, ibl, lbl, blazar, fri, fsrq]
 
   discoverer:
     enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo]

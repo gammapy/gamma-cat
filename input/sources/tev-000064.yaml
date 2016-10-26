@@ -1,5 +1,18 @@
 source_id: 64
 
+common_name: HESS J1356-645
+gamma_names: [HESS J1356-645]
+fermi_names: []
+other_names:
+- PSR J1357-6429
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-12
+
 tevcat_id: 170
 tevcat2_id: ms0x8h
 tevcat_name: TeV J1356-645
@@ -7,5 +20,11 @@ tevcat_name: TeV J1356-645
 tgevcat_id: 64
 tgevcat_name: TeV J1356-6430
 
+pos:
+  simbad_id: HESS J1356-645
+  ra: 209.0
+  dec: -64.5
+
 papers:
-- null
+- 2008AIPC.1085..285R
+- 2013ApJ...773...77A

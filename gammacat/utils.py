@@ -10,12 +10,32 @@ from astropy.coordinates import SkyCoord
 log = logging.getLogger(__name__)
 
 
-class MissingValues:
-    """Constants used as missing values."""
-    integer = -999
-    number = np.nan
-    string = ''
-    array = ''
+class NA:
+    """
+    Handling of missing values
+
+    NA = "not available"
+    """
+    fill_value = OrderedDict(
+        integer=-999,
+        number=np.nan,
+        string='',
+        array='',
+    )
+
+    # @classmethod
+    # def fill_str(cls, data, key):
+    #     try:
+    #         data[key] = cls.fill_value['string']
+    #     else:
+    #         return data
+
+    @classmethod
+    def fill_list(cls, data, key):
+        try:
+            return ','.join(data[key])
+        except KeyError:
+            return cls.fill_value['string']
 
 
 def load_yaml(path):

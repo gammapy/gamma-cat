@@ -5,7 +5,7 @@ from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord
 from .info import gammacat_info
 from .input import InputData
-from .utils import MissingValues, load_yaml
+from .utils import NA, load_yaml
 
 __all__ = ['GammaCatMaker']
 
@@ -32,26 +32,21 @@ class GammaCatSource:
     @staticmethod
     def fill_basic_info(data, bsi):
         data['source_id'] = bsi['source_id']
-        try:
-            data['common_name'] = bsi['common_name']
-        except KeyError:
-            data['common_name'] = MissingValues.string
-        data['discoverer'] = bsi.get('discoverer', '')
-        try:
-            data['gamma_names'] = ','.join(bsi['gamma_names'])
-        except KeyError:
-            data['gamma_names'] = MissingValues.string
+        data['common_name'] = bsi.get('common_name', NA.fill_value['string'])
+        data['gamma_names'] = NA.fill_list(bsi, 'gamma_names')
+
+        data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
 
     @staticmethod
     def fill_position_info(data, bsi):
         try:
             data['ra'] = bsi['pos']['ra']
         except KeyError:
-            data['ra'] = MissingValues.number
+            data['ra'] = NA.fill_value['number']
         try:
             data['dec'] = bsi['pos']['dec']
         except KeyError:
-            data['dec'] = MissingValues.number
+            data['dec'] = NA.fill_value['number']
 
         icrs = SkyCoord(data['ra'], data['dec'], unit='deg')
         galactic = icrs.galactic

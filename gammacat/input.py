@@ -10,7 +10,7 @@ import urllib.parse
 import jsonschema
 from astropy.table import Table
 from .info import gammacat_info
-from .utils import load_yaml, MissingValues
+from .utils import load_yaml, NA
 
 __all__ = [
     'BasicSourceInfo',
@@ -69,9 +69,9 @@ class BasicSourceInfo(ValidateMixin):
                     continue
 
                 try:
-                    data[name] = getattr(MissingValues, datatype)
+                    data[name] = NA.fill_value(datatype)
                 except TypeError:
-                    data[name] = getattr(MissingValues, datatype[0])
+                    data[name] = NA.fill_value(datatype[0])
 
         data.update(self.data)
 

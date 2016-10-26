@@ -1,5 +1,18 @@
 source_id: 51
 
+common_name: RX J1136.5+6737
+gamma_names: []
+fermi_names: []
+other_names:
+- RBS 1004
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2014-04
+
 tevcat_id: 251
 tevcat2_id: 6T4fxx
 tevcat_name: TeV J1136+676
@@ -7,5 +20,10 @@ tevcat_name: TeV J1136+676
 tgevcat_id: 51
 tgevcat_name: TeV J1136+6737
 
+pos:
+  simbad_id: RX J1136.5+6737
+  ra: 174.1253628917
+  dec: 67.6178736833
+
 papers:
-- null
+- http://www.astronomerstelegram.org/?read=6062

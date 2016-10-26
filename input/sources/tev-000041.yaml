@@ -1,6 +1,16 @@
 source_id: 41
 
 common_name: S4 0954+65
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: egal
+classes: [blazar]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2015-02
 
 tevcat_id: 258
 tevcat_name: TeV J0958+655
@@ -8,5 +18,10 @@ tevcat_name: TeV J0958+655
 tgevcat_id: 41
 tgevcat_name: TeV J0958+6533
 
+pos:
+  simbad_id: S4 0954+65
+  ra: 149.696854583
+  dec: 65.56522725
+
 papers:
-- null
+- http://www.astronomerstelegram.org/?read=7080

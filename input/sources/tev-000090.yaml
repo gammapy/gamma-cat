@@ -12,9 +12,9 @@ other_names:
 where: gal
 classes: [unid]
 
-discoverer:
-seen_by: []
-discovery_date:
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2009-06
 
 tevcat_id: 186
 tevcat2_id: Lv6nKy

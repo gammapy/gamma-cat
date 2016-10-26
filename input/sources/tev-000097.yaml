@@ -1,5 +1,19 @@
 source_id: 97
 
+common_name: CTB 37A
+gamma_names: [HESS J1714-385]
+fermi_names: []
+other_names:
+- SNR G348.5+0.1
+- CXOU J171419.8-383023
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-11
+
 tevcat_id: 158
 tevcat2_id: Mk4fht
 tevcat_name: TeV J1714-385
@@ -7,5 +21,18 @@ tevcat_name: TeV J1714-385
 tgevcat_id: 97
 tgevcat_name: TeV J1714-3834
 
+pos:
+  simbad_id: CTB 37A
+  ra: 258.643
+  dec: -38.549
+
 papers:
-- null
+- 2008A&A...490..685A
+- 2010ApJ...717..372C
+- 2012MNRAS.421..935L
+- 2012ApJ...761..133Y
+- 2012MNRAS.421.2593T
+- 2013A&A...553A..34D
+- 2013MNRAS.434.2188M
+- 2013AdSpR..51..247B
+

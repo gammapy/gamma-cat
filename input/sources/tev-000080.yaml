@@ -1,5 +1,18 @@
 source_id: 80
 
+common_name: AP Librae
+gamma_names: []
+fermi_names: []
+other_names:
+- PKS B1514-241
+
+where: egal
+classes: [lbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2010-07
+
 tevcat_id: 202
 tevcat2_id: qpaBdR
 tevcat_name: TeV J1517-243
@@ -7,5 +20,10 @@ tevcat_name: TeV J1517-243
 tgevcat_id: 80
 tgevcat_name: TeV J1517-2422
 
+pos:
+  simbad_id: AP Librae
+  ra: 229.424221375
+  dec: -24.372076472
+
 papers:
-- null
+- 2015A&A...573A..31H

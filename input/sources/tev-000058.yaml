@@ -21,6 +21,11 @@ tevcat_name: TeV J1230+123
 tgevcat_id: 58
 tgevcat_name: TeV J1230+1223
 
+pos:
+  simbad_id: M 87
+  ra: 187.70593075
+  dec: 12.391123306
+
 papers:
 - 2003A&A...403L...1A
 - 2006Sci...314.1424A

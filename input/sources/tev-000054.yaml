@@ -1,5 +1,18 @@
 source_id: 54
 
+common_name: W Comae
+gamma_names: []
+fermi_names: []
+other_names:
+- B2 1219+28
+
+where: egal
+classes: [ibl]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2008-08
+
 tevcat_id: 159
 tevcat2_id: XQhcCi
 tevcat_name: TeV J1221+282
@@ -7,5 +20,12 @@ tevcat_name: TeV J1221+282
 tgevcat_id: 54
 tgevcat_name: TeV J1221+2813
 
+pos:
+  simbad_id: W Comae
+  ra: 185.382043833
+  dec: 28.232916722
+
 papers:
-- null
+- 2008ApJ...684L..73A
+- 2009ApJ...707..612A
+- 2015arXiv150807347J

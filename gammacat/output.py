@@ -24,11 +24,13 @@ class OutputDataConfig:
     """
     path = gammacat_info.base_dir / 'docs/data'
 
+    gammacat_ecsv = path / 'gammacat.ecsv'
+    gammacat_fits = path / 'gammacat.fits.gz'
+
     sources_json = path / 'gammacat-sources.json'
-    sources_ecsv = path / 'gammacat-sources.ecsv'
-    sources_fits = path / 'gammacat-sources.fits.gz'
 
     papers_json = path / 'gammacat-papers.json'
+
     papers_ecsv = path / 'gammacat-papers.ecsv'
     papers_fits = path / 'gammacat-papers.fits.gz'
 
@@ -48,23 +50,25 @@ class OutputDataReader:
         else:
             self.path = OutputDataConfig.path
 
-        self.sources_catalog = None
-        self.papers_catalog = None
-        # self.catalog = None
+        self.gammacat = None
+        self.papers = None
 
     def read_all(self):
         """Read all data from disk.
         """
-        path = OutputDataConfig.sources_ecsv
-        self.sources_catalog = Table.read(str(path), format='ascii.ecsv')
+        path = OutputDataConfig.gammacat_ecsv
+        self.gammacat = Table.read(str(path), format='ascii.ecsv')
+
+        path = OutputDataConfig.papers_ecsv
+        self.papers = Table.read(str(path), format='ascii.ecsv')
 
         return self
 
     def __str__(self):
         ss = 'output data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
-        ss += 'Number of sources: {}\n'.format(len(self.sources_catalog))
-        ss += 'Number of papers: {}\n'.format(len(self.papers_catalog))
+        ss += 'Number of sources: {}\n'.format(len(self.gammacat))
+        ss += 'Number of papers: {}\n'.format(len(self.papers))
         return ss
 
 

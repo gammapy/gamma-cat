@@ -20,7 +20,6 @@ def test_basic_source_list():
     assert len(sources.data) > 0
     str(sources)
     sources.data_per_row()
-    sources.to_table()
 
 
 def test_paper_info():

@@ -4,6 +4,5 @@ import gammacat
 
 def test_output_data():
     output_data = gammacat.OutputDataReader().read_all()
-    assert len(output_data.sources_catalog) > 0
-    # assert len(output_data.papers_catalog) > 0
-    # assert len(output_data.catalog) > 0
+    assert len(output_data.gammacat) > 0
+    assert len(output_data.papers) > 0

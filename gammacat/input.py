@@ -196,17 +196,17 @@ class BasicSourceList:
 
         return cls(data=data)
 
-    def to_table(self):
-        """Convert info of `sources` list into a Table.
-        """
-        meta = OrderedDict()
-        meta['name'] = 'todo'
-        meta['version'] = 'todo'
-        meta['url'] = 'todo'
-
-        rows = self.data_per_row(filled=True)
-        table = Table(rows=rows, meta=meta, masked=True)
-        return table
+    # def to_table(self):
+    #     """Convert info of `sources` list into a Table.
+    #     """
+    #     meta = OrderedDict()
+    #     meta['name'] = 'todo'
+    #     meta['version'] = 'todo'
+    #     meta['url'] = 'todo'
+    #
+    #     rows = self.data_per_row(filled=True)
+    #     table = Table(rows=rows, meta=meta, masked=True)
+    #     return table
 
     def to_json(self):
         """Return data in format that can be written to JSON.

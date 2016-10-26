@@ -21,7 +21,7 @@ properties:
     type: array
     items:
       enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo]
-  discovery_date: {type: string}
+  discovery_date: {type: [string, "null"]}
 
   tevcat_id: {type: integer}
   tevcat2_id: {type: string}

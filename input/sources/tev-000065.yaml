@@ -1,5 +1,18 @@
 source_id: 65
 
+common_name: HESS J1418-609
+gamma_names: [HESS J1418-609]
+fermi_names: []
+other_names:
+- Kookaburra
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-09
+
 tevcat_id: 125
 tevcat2_id: r1X1KA
 tevcat_name: TeV J1418-609
@@ -7,5 +20,11 @@ tevcat_name: TeV J1418-609
 tgevcat_id: 65
 tgevcat_name: TeV J1418-6058
 
+pos:
+  simbad_id: HESS J1418-609
+  ra: 214.51667
+  dec: -60.97528
+
 papers:
-- null
+- 2006A&A...456..245A
+- 2013ApJ...773...77A

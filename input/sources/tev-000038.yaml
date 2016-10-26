@@ -1,6 +1,20 @@
 source_id: 38
 
 common_name: RBS 0723
+gamma_names: []
+fermi_names:
+- 1FGL J0847.2+113
+- 2FGL J0847.2+1134
+- 3FGL J0847.1+1134
+- 1FHL J0847.0+1132
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2014-01
 
 tevcat_id: 249
 tevcat2_id: nhyiXQ
@@ -9,5 +23,10 @@ tevcat_name: TeV J0847+115
 tgevcat_id: 38
 tgevcat_name: TeV J0847+1133
 
+pos:
+  simbad_id: RBS 0723
+  ra: 131.8038875
+  dec: 11.5639194
+
 papers:
-- null
+- http://www.astronomerstelegram.org/?read=5768

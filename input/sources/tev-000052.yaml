@@ -1,5 +1,20 @@
 source_id: 52
 
+common_name: Markarian 180
+gamma_names: []
+fermi_names: []
+other_names:
+- Mrk 180
+- 1ES 1133+704
+- 1H 1137+699
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2006-09
+
 tevcat_id: 123
 tevcat2_id: mijtir
 tevcat_name: TeV J1136+701
@@ -7,5 +22,13 @@ tevcat_name: TeV J1136+701
 tgevcat_id: 52
 tgevcat_name: TeV J1136+7009
 
+pos:
+  simbad_id: Markarian 180
+  ra: 174.110035042
+  dec: 70.157585278
+
 papers:
-- null
+- 2016PhRvD..93d3011H
+- 2011arXiv1109.6808R
+- 2011arXiv1110.6341R
+- 2006ApJ...648L.105A

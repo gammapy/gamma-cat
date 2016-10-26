@@ -1,5 +1,18 @@
 source_id: 73
 
+common_name: HESS J1458-608
+gamma_names: [HESS J1458-608]
+fermi_names: []
+other_names:
+- PSR J1459-6053
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2012-04
+
 tevcat_id: 241
 tevcat2_id: hksZjo
 tevcat_name: TeV J1459-608
@@ -7,5 +20,12 @@ tevcat_name: TeV J1459-608
 tgevcat_id: 73
 tgevcat_name: TeV J1458-6052
 
+pos:
+  simbad_id: HESS J1458-608
+  ra: 224.87417
+  dec: -60.87806
+
 papers:
-- null
+- 2011ICRC....7..158G
+- 2012arXiv1205.0719D
+- 2013ApJ...773...77A

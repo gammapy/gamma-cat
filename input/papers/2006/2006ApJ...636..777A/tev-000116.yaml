@@ -1,0 +1,23 @@
+paper_id: 2006ApJ...636..777A
+source_id: 93
+
+data:
+  livetime: 9.7
+  significance: 13.5
+
+pos:
+  glon: {val: 12.813, err: 0.005}
+  glat: {val: -0.0342, err: 0.005}
+
+morph:
+  type: gauss
+  sigma: {val: 0.036, err: 0.006}
+
+spec:
+  type: pl2
+
+  norm: {val: 14.2, err: 1.1, err_sys: 0.3}
+  index: {val: 2.09, err: 0.08, err_sys: 0.2}
+
+  theta: 0.15
+  erange: {min: 0.2 , max: }

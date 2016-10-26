@@ -1,5 +1,20 @@
 source_id: 50
 
+common_name: HESS J1119-614
+gamma_names:
+- HESS J1119-614
+fermi_names: []
+other_names:
+- SNR G292.2-00.5
+- PSR J1119-6127
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2009-07
+
 tevcat_id: 205
 tevcat2_id: 1wyMpL
 tevcat_name: TeV J1119-614
@@ -7,5 +22,12 @@ tevcat_name: TeV J1119-614
 tgevcat_id: 50
 tgevcat_name: TeV J1119-6124
 
+pos:
+  simbad_id: HESS J1119-614
+  ra: 169.809583
+  dec: -61.46375
+
 papers:
-- null
+- https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/som/2009/11/
+- http://cxc.harvard.edu/cdo/snr09/pres/DjannatiAtai_Arache_v2.pdf
+- 2013ApJ...773...77A

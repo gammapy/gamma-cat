@@ -19,6 +19,11 @@ tevcat_name: TeV J0835-456
 tgevcat_id: 37
 tgevcat_name: TeV J0835-4536
 
+pos:
+  simbad_id: Vela X
+  ra: 128.287
+  dec: -45.19
+
 papers:
 - 2012A&A...548A..38A
 - 2006A&A...448L..43A

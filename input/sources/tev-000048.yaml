@@ -1,5 +1,18 @@
 source_id: 48
 
+common_name: 1ES 1101-232
+gamma_names: [HESS J1103-234]
+fermi_names: []
+other_names:
+- 1H 1100-230
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-04
+
 tevcat_id: 97
 tevcat2_id: 2Z3QTH
 tevcat_name: TeV J1103-234
@@ -7,5 +20,10 @@ tevcat_name: TeV J1103-234
 tgevcat_id: 48
 tgevcat_name: TeV J1103-2329
 
+pos:
+  simbad_id: 1ES 1101-232
+  ra: 165.9066917
+  dec: -23.491975
+
 papers:
-- null
+- 2007A&A...470..475A

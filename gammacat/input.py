@@ -69,9 +69,9 @@ class BasicSourceInfo(ValidateMixin):
                     continue
 
                 try:
-                    data[name] = NA.fill_value(datatype)
+                    data[name] = NA.fill_value[datatype]
                 except TypeError:
-                    data[name] = NA.fill_value(datatype[0])
+                    data[name] = NA.fill_value[datatype[0]]
 
         data.update(self.data)
 

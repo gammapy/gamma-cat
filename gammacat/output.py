@@ -81,7 +81,7 @@ class OutputDataMaker:
 
     def make_all(self):
         self.make_source_table_json()
-        self.make_source_table_ecsv()
+        # self.make_source_table_ecsv()
         # self.make_source_table_fits()
 
         self.make_paper_table_json()

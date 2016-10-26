@@ -6,6 +6,7 @@ properties:
   # ToDo: add short explanation to difference between common, gamma and other names
   common_name: {type: string}
   gamma_names: {type: array, items: {type: string}}
+  fermi_names: {type: array, items: {type: string}}
   other_names: {type: array, items: {type: string}}
 
   where: {type: string, enum: [gal, egal, unid]}

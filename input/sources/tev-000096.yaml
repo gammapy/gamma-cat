@@ -3,14 +3,16 @@ source_id: 96
 common_name: RX J1713.7-3946
 gamma_names:
 - HESS J1713-3946
+fermi_names: []
 other_names:
-- G 347.3-00.5
+- SNR G347.3-00.5
 
 where: gal
 classes: [snr]
 
-discoverer: hess
-seen_by: [hess]
+discoverer: cangaroo
+seen_by: [cangaroo, hess]
+discovery_date: 2000-02
 
 tevcat_id: 84
 tevcat2_id: Q6SXwo
@@ -19,5 +21,12 @@ tevcat_name: TeV J1713-397
 tgevcat_id: 96
 tgevcat_name: TeV J1713-3945
 
+pos:
+  simbad_id: RX J1713.7-3946
+  ra: 258.1125
+  dec: -39.6867
+
 papers:
+- 2006A&A...449..223A
+- 2007A&A...464..235A
 - 2016arXiv160908671H

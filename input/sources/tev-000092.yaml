@@ -1,10 +1,16 @@
 source_id: 92
 
-gamma_names:
-- HESS J1702-420
+common_name: HESS J1702-420
+gamma_names: [HESS J1702-420]
+fermi_names: []
+other_names: []
 
 where: gal
 classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-01
 
 tevcat_id: 108
 tevcat2_id: B41Y7y
@@ -13,5 +19,11 @@ tevcat_name: TeV J1702-420
 tgevcat_id: 92
 tgevcat_name: TeV J1702-4200
 
+pos:
+  simbad_id: HESS J1702-420
+  ra: 255.68333
+  dec: -42.01583
+
 papers:
 - 2006ApJ...636..777A
+- 2008A&A...477..353A

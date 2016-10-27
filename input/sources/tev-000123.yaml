@@ -1,5 +1,20 @@
 source_id: 123
 
+common_name: HESS J1834-087
+gamma_names:
+- HESS J1834-087
+- 1HWC J1836-090c
+fermi_names: []
+other_names:
+- W41
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess, magic, hawc]
+discovery_date: 2005-03
+
 tevcat_id: 116
 tevcat2_id: 4xiQfb
 tevcat_name: TeV J1834-087
@@ -7,5 +22,22 @@ tevcat_name: TeV J1834-087
 tgevcat_id: 123
 tgevcat_name: TeV J1834-0845
 
+pos:
+  simbad_id: HESS J1834-087
+  ra: 278.715833
+  dec: -8.743944
+
 papers:
-- null
+- 2005Sci...307.1938A
+- 2006ApJ...643L..53A
+- 2006ApJ...636..777A
+- 2007ApJ...657L..25T
+- 2009ApJ...691.1707M
+- 2010cosp...38.2801M
+- 2011ApJ...735...33M
+- 2012MNRAS.421..935L
+- 2012ApJ...761..133Y
+- 2013ApJ...773L..19F
+- 2013ApJ...773...77A
+- 2015APh....65...80M
+- 2016ApJ...817....3A

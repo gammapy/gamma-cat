@@ -1,5 +1,17 @@
 source_id: 104
 
+common_name: HESS J1741-302
+gamma_names: [HESS J1741-302]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-07
+
 tevcat_id: 189
 tevcat2_id: JPcqWZ
 tevcat_name: TeV J1741-301
@@ -7,5 +19,12 @@ tevcat_name: TeV J1741-301
 tgevcat_id: 104
 tgevcat_name: TeV J1741-3012
 
+pos:
+  simbad_id: HESS J1741-302
+  ra: 265.25
+  dec: -30.2
+
 papers:
-- null
+- 2008AIPC.1085..249T
+- 2016ApJ...816...52H
+- 2016MNRAS.tmp....7H

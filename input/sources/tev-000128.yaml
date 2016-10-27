@@ -1,5 +1,19 @@
 source_id: 128
 
+common_name: HESS J1848-018
+gamma_names: [HESS J1848-018, 1HWC J1849-017c]
+fermi_names: []
+other_names:
+- WR121a
+- W43
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-07
+
 tevcat_id: 187
 tevcat2_id: hcE3Ou
 tevcat_name: TeV J1848-017
@@ -7,5 +21,13 @@ tevcat_name: TeV J1848-017
 tgevcat_id: 128
 tgevcat_name: TeV J1848-0147
 
+pos:
+  simbad_id: HESS J1848-018
+  ra: 282.12
+  dec: -1.792
+
 papers:
-- null
+- 2008AIPC.1085..372C
+- 2011MmSAI..82..739L
+- 2013ApJ...773...77A
+- 2016ApJ...817....3A

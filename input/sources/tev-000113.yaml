@@ -1,5 +1,19 @@
 source_id: 113
 
+common_name: HESS J1804-216
+gamma_names: [HESS J1804-216]
+fermi_names: []
+other_names:
+- G8.7-0.1
+- W30
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2005-03
+
 tevcat_id: 113
 tevcat2_id: y1kNQO
 tevcat_name: TeV J1804-217
@@ -7,5 +21,18 @@ tevcat_name: TeV J1804-217
 tgevcat_id: 113
 tgevcat_name: TeV J1804-2143
 
+pos:
+  simbad_id: HESS J1804-216
+  ra: 271.12375
+  dec: -21.732556
+
 papers:
-- null
+- 2005Sci...307.1938A
+- 2006ApJ...636..777A
+- 2008ApJ...683..957H
+- 2010ApJ...717..372C
+- 2012ApJ...744...80A
+- 2012ApJ...761..133Y
+- 2013ApJ...773...77A
+- 2013ApJ...766...29L
+- 2015APh....65...80M

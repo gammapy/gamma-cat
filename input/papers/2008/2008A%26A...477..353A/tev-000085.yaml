@@ -1,0 +1,25 @@
+paper_id: 2008A&A...477..353A
+source_id: 85
+
+data:
+  livetime: 12
+  significance: 7.5
+
+pos:
+  glon: {val: 334.772, err: 0.05}
+  glat: {val: 0.045, err: 0.05}
+
+morph:
+  type: gauss
+  sigma: {val: 0.07, err: 0.02}
+  sigma2: {val: 0.10, err: 0.05}
+  pa: {val: 3, err: 40, frame: radec}
+
+spec:
+  type: pl
+  norm: {val: 4.9, err: 0.9, err_sys: 0.2}
+  index: {val: 2.18, err: 0.12, err_sys: 0.2}
+  ref: {val: 1}
+
+  theta: 0.5
+  erange: {min: 0.6 , max: 50}

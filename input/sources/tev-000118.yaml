@@ -1,5 +1,19 @@
 source_id: 118
 
+common_name: HESS J1825-137
+gamma_names: [HESS J1825-137, 1HWC J1825-133]
+fermi_names: []
+other_names:
+- PSR J1826-1334
+- PSR B1823-13
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess, hawc]
+discovery_date: 2005-03
+
 tevcat_id: 115
 tevcat2_id: xnwQAv
 tevcat_name: TeV J1826-137
@@ -7,5 +21,21 @@ tevcat_name: TeV J1826-137
 tgevcat_id: 118
 tgevcat_name: TeV J1825-1350
 
+pos:
+  simbad_id: HESS J1825-137
+  ra: 276.55441
+  dec: -13.58004
+
 papers:
-- null
+- 2005Sci...307.1938A
+- 2005A&A...442L..25A
+- 2006ApJ...636..777A
+- 2006A&A...460..365A
+- 2008ApJ...675..683P
+- 2009PASJ...61S.189U
+- 2011ApJ...738...42G
+- 2011ApJ...742...62V
+- 2012arXiv1202.1455M
+- 2013ApJ...773...77A
+- 2016ApJ...817....3A
+- 2016MNRAS.458.2813V

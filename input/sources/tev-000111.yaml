@@ -12,6 +12,7 @@ classes: [snr, mc]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2008-04
 
 tevcat_id: 163
 tevcat2_id: sPYizN
@@ -20,14 +21,14 @@ tevcat_name: TeV J1801-239
 tgevcat_id: 111
 tgevcat_name: TeV J1800-2359
 
-papers:
-- 2008A&A...481..401A
-- 2010ApJ...718..348A
-
 pos:
   simbad_id: HESS J1800-240A
   ra: 270.4917
   dec: -23.9617
+
+papers:
+- 2008A&A...481..401A
+- 2010ApJ...718..348A
 
 notes: |
   tgevcat_name: TeV J1800-2359 represents both HESS J1800-240A and HESS J1800-240B.

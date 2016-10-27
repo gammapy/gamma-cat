@@ -1,0 +1,23 @@
+paper_id: 2008A%26A...481..401A
+source_id: 112
+
+data:
+  livetime: 42
+  significance: 7.9
+
+pos:
+  ra: {val: 270.426, err: 0.031}
+  dec: {val: -23.335, err: 0.032}
+
+morph:
+  type: gauss
+  sigma: {val: 0.17, err: 0.03}
+
+spec:
+  type: pl
+  norm: {val: 7.5, err: 1.11, err_sys: 0.3}
+  index: {val: 2.66, err: 0.27, err_sys: 0.2}
+  ref: {val: 1}
+
+  theta: 0.2
+  erange: {min: 0.3 , max: 5}

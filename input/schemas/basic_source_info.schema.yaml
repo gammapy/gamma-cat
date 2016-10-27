@@ -13,7 +13,23 @@ properties:
   classes:
     type: array
     items:
-      enum: [unid, other, psr, pwn, snr, mc, bin, galaxy, hbl, ibl, lbl, blazar, fri, fsrq]
+      enum: [unid, other, psr, pwn, snr, mc, gc, bin, galaxy, fri, blazar, hbl, ibl, lbl, fsrq]
+      # Source classes (TODO: refine and document system we use -> adopt HGPS)
+      # unid - Unidentified
+      # other - Something not specifically listed here (remove class?)
+      # psr -  Pulsar
+      # pwn - Pulsar wind nebula
+      # snr - Supernova remnant
+      # mc - Molecular cloud
+      # gc - Globular cluster
+      # bin - Binary
+      # galaxy - Galaxy (TODO: introduce "starburst"?)
+      # fri - Far-infrared radio galaxy ???
+      # blazar - Blazar
+      # hbl - High-frequency peaked BL Lac
+      # ibl - Intermediate-frequency peaked BL Lac
+      # lbl - Low-frequency peaked BL Lac
+      # fsrq - Flat spectrum radio quasar
 
   discoverer:
     enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo]

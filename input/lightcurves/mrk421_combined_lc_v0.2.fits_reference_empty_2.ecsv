@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: Crab, datatype: float32}
+# - {name: flux_err, unit: Crab, datatype: float32}
+# - {name: telescope, unit: none, datatype: string}
+# - {name: paper, unit: none, datatype: string}
+# meta: !!omap
+# - COMMENT: [Mrk 421]
+time time_min time_max flux flux_err telescope paper
+53324.2656 53324.2617 53324.2695 0.7 0.13 MAGIC reference_empty
+53329.25 53329.2422 53329.2578 1.92 0.12 MAGIC reference_empty
+53356.2578 53356.2461 53356.2695 1.33 0.08 MAGIC reference_empty
+53357.22265 53357.207 53357.2383 0.73 0.06 MAGIC reference_empty
+53358.2754 53358.2656 53358.2852 1.13 0.08 MAGIC reference_empty
+53359.28125 53359.2773 53359.2852 1.1 0.14 MAGIC reference_empty
+53376.25 53376.2383 53376.2617 0.73 0.07 MAGIC reference_empty
+53464.0371 53464.0 53464.0742 1.32 0.1 MAGIC reference_empty
+53465.01955 53464.9844 53465.0547 0.95 0.11 MAGIC reference_empty
+53466.02345 53465.9883 53466.0586 0.83 0.09 MAGIC reference_empty
+53467.0215 53466.9805 53467.0625 0.98 0.08 MAGIC reference_empty
+53468.01955 53467.9883 53468.0508 0.65 0.1 MAGIC reference_empty
+53469.00585 53468.9609 53469.0508 0.46 0.07 MAGIC reference_empty

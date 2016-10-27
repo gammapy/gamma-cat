@@ -1,5 +1,22 @@
 source_id: 116
 
+common_name: HESS J1813-178
+gamma_names: [HESS J1813-178]
+fermi_names: []
+other_names:
+- G12.82-0.02
+- PSR J1813-1749
+- CXOU J181335.1-174957
+- IGR J18135-1751
+- W33
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess, magic]
+discovery_date: 2005-03
+
 tevcat_id: 114
 tevcat2_id: Unhlxa
 tevcat_name: TeV J1813-178
@@ -7,5 +24,19 @@ tevcat_name: TeV J1813-178
 tgevcat_id: 116
 tgevcat_name: TeV J1813-1750
 
+pos:
+  simbad_id: HESS J1813-178
+  ra: 273.36292
+  dec: -17.84889
+
 papers:
-- null
+- 2005Sci...307.1938A
+- 2006ApJ...637L..41A
+- 2007A&A...470..249F
+- 2008ApJ...683L.155M
+- 2008A&A...485..195D
+- 2009ApJ...700L.158G
+- 2010ApJ...718..467F
+- 2012ApJ...753L..14H
+- 2013ApJ...773...77A
+- 2015APh....65...80M

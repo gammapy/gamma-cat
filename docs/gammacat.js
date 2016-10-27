@@ -7,6 +7,14 @@ function zero_pad_string(num, size) {
     return s.substr(s.length - size);
 }
 
+function render_tgevcat(data, type, row, meta) {
+    return row.tgevcat_name + ' ' + row.tgevcat_id;
+}
+
+function render_tevcat(data, type, row, meta) {
+    return row.tevcat_name + ' ' + render_tevcat_url(row.tevcat_id) + ' ' + render_tevcat2_url(row.tevcat2_id);
+}
+
 function render_tevcat_url(val) {
     return "<a href=\"http://tevcat.uchicago.edu/?mode=1&showsrc=" + val + "\">" + val + "</a>";
 }

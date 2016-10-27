@@ -11,19 +11,18 @@ function main() {
                 data: "source_id",
                 render: render_source_github_url
             },
-            {data: "common_name"},
             {
-                data: "tevcat_id",
-                render: render_tevcat_url
+                name: 'Common name',
+                data: "common_name"
             },
             {
-                data: "tevcat2_id",
-                render: render_tevcat2_url
+                name: "TGeVCat",
+                render: render_tgevcat
             },
-            {data: "tevcat_name"},
-            {data: "tgevcat_id"},
-            {data: "tgevcat_name"},
-
+            {
+                name: "TeVCat",
+                render: render_tevcat
+            },
             // TODO: use row detail for papers.
             // See https://datatables.net/examples/api/row_details.html
             {

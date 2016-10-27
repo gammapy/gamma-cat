@@ -1,11 +1,8 @@
 source_id: 111
 
 common_name: HESS J1800-240A
-gamma_names:
-- HESS J1800-240A
-other_names:
-- W 28
-- SNR G6.4-0.1
+gamma_names: [HESS J1800-240A]
+other_names: []
 
 where: gal
 classes: [snr, mc]

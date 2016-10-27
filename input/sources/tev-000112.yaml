@@ -1,5 +1,21 @@
 source_id: 112
 
+common_name: W28
+gamma_names: [HESS J1801-233]
+fermi_names: []
+other_names:
+- W 28
+- SNR G6.4-0.1
+- SNR G006.4-00.1
+- GRO J1801−2320
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-04
+
 tevcat_id: 162
 tevcat2_id: jcVLu0
 tevcat_name: TeV J1801-233
@@ -7,5 +23,26 @@ tevcat_name: TeV J1801-233
 tgevcat_id: 112
 tgevcat_name: TeV J1801-2320
 
+pos:
+  simbad_id: HESS J1801-233
+  ra: 270.34458
+  dec: -23.28889
+
 papers:
-- null
+- 1997ApJ...489..143C
+- 2004ASPC..317...59M
+- 2008AIPC.1085..104F
+- 2008A&A...481..401A
+- 2009ApJ...707L.179F
+- 2010MNRAS.407...94M
+- 2010ApJ...718..348A
+- 2010A&A...516L..11G
+- 2012MNRAS.421..935L
+- 2012A&A...543L...9N
+- 2012ApJ...761..133Y
+- 2013MNRAS.429.1643N
+- 2013A&A...553A..34D
+- 2015APh....65...80M
+- 2015arXiv150306580G
+- 2016arXiv161000865M
+- 2016MNRAS.462..532M

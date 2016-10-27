@@ -1,5 +1,18 @@
 source_id: 108
 
+common_name: HESS J1745-303
+gamma_names: []
+fermi_names: []
+other_names:
+- G359.1-0.5
+
+where: gal
+classes: [unid, snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-01
+
 tevcat_id: 111
 tevcat2_id: Gmuzgm
 tevcat_name: TeV J1745-303
@@ -7,5 +20,20 @@ tevcat_name: TeV J1745-303
 tgevcat_id: 108
 tgevcat_name: TeV J1745-3022
 
+pos:
+  simbad_id: HESS J1745-303
+  ra: 266.297
+  dec: -30.199
+
 papers:
-- null
+- 2006ApJ...636..777A
+- 2008A&A...483..509A
+- 2009ApJ...691.1854B
+- 2011arXiv1111.1634T
+- 2011ICRC....6..202T
+- 2011ApJ...735..115H
+- 2012AIPC.1505..265E
+- 2012ApJ...761..133Y
+- 2015APh....65...80M
+- 2016MNRAS.457.4262H
+

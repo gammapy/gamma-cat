@@ -1,5 +1,17 @@
 source_id: 115
 
+common_name: HESS J1809-193
+gamma_names: [HESS J1809-193]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-09
+
 tevcat_id: 155
 tevcat2_id: OWsjG1
 tevcat_name: TeV J1810-193
@@ -7,5 +19,14 @@ tevcat_name: TeV J1810-193
 tgevcat_id: 115
 tgevcat_name: TeV J1810-1918
 
+pos:
+  simbad_id: HESS J1809-193
+  ra: 272.6292
+  dec: -19.3
+
 papers:
-- null
+- 2007A&A...472..489A
+- 2008AIPC.1085..285R
+- 2010PASJ...62..179A
+- 2014ApJ...796...34R
+- 2016A&A...587A..71C

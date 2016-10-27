@@ -1,5 +1,17 @@
 source_id: 105
 
+common_name: 1ES 1741+196
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic, veritas]
+discovery_date: 2011-08
+
 tevcat_id: 225
 tevcat2_id: Y4DogE
 tevcat_name: TeV J1743+196
@@ -7,5 +19,12 @@ tevcat_name: TeV J1743+196
 tgevcat_id: 105
 tgevcat_name: TeV J1743+1935
 
+pos:
+  simbad_id: 1ES 1741+196
+  ra: 265.99096917
+  dec: 19.58583806
+
 papers:
-- null
+- 2011ICRC....8..169B
+- 2013arXiv1308.0287D
+- 2016MNRAS.459.2550A

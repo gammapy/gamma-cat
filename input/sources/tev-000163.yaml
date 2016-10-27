@@ -9,10 +9,18 @@ classes: [unid]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2015-07
 
 tevcat_id: 273
 tevcat2_id: trW4uy
 tevcat_name: TeV J1832-085
+
+# TeV source position taken from HESS_HGPS_ICRC2015_Deil.pdf (slide 25)
+# TODO: this should not be `simbad_id` ... move to `inputs/papers`
+pos:
+  simbad_id: HESS J1832-085
+  ra: 278.13
+  dec: -8.51
 
 papers:
   - https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf

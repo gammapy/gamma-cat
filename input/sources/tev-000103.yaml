@@ -1,5 +1,18 @@
 source_id: 103
 
+common_name: HESS J1731-347
+gamma_names: [HESS J1731-347]
+fermi_names: []
+other_names:
+- SNR G353.6-0.7
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-07
+
 tevcat_id: 141
 tevcat2_id: mrGXwA
 tevcat_name: TeV J1732-347
@@ -7,5 +20,21 @@ tevcat_name: TeV J1732-347
 tgevcat_id: 103
 tgevcat_name: TeV J1732-3445
 
+pos:
+  simbad_id: HESS J1731-347
+  ra: 262.97917
+  dec: -34.71
+
 papers:
-- null
+- 2008ApJ...679L..85T
+- 2008A&A...477..353A
+- 2010ApJ...710..941H
+- 2010ApJ...712..790T
+- 2011A&A...531A..81H
+- 2012ApJ...756..149B
+- 2013A&A...556A..41K
+- 2013MNRAS.434.2748C
+- 2015A&A...573A..53K
+- 2015MNRAS.454.2668O
+- 2015A&A...580A..74A
+- 2015arXiv150306717M

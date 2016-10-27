@@ -1,5 +1,19 @@
 source_id: 106
 
+common_name: Galactic Centre
+gamma_names: [HESS J1745-290, VER J1745-290]
+fermi_names: []
+other_names:
+- Sgr A*
+- Sagittarius A*
+
+where: gal
+classes: [unid]
+
+discoverer: cangaroo
+seen_by: [cangaroo, whipple, hess, veritas, magic]
+discovery_date: 2004-05
+
 tevcat_id: 81
 tevcat2_id: UvKbRe
 tevcat_name: TeV J1745-290
@@ -7,5 +21,13 @@ tevcat_name: TeV J1745-290
 tgevcat_id: 106
 tgevcat_name: TeV J1745-2900
 
+pos:
+  simbad_id: Galactic Centre
+  ra: 266.416833
+  dec: -29.007806
+
 papers:
-- null
+- 2010MNRAS.402.1877A
+- 2015arXiv150903425P
+- 2015arXiv150806311S
+- 2016Natur.531..476H

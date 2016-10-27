@@ -1,5 +1,19 @@
 source_id: 127
 
+common_name: HESS J1846-029
+gamma_names: [HESS J1846-029]
+fermi_names: []
+other_names:
+- Kes 75
+- SNR G29.7-0.3
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess, hawc]
+discovery_date: 2007-10
+
 tevcat_id: 167
 tevcat2_id: Ipmg1A
 tevcat_name: TeV J1846-029
@@ -7,5 +21,12 @@ tevcat_name: TeV J1846-029
 tgevcat_id: 127
 tgevcat_name: TeV J1846-0258
 
+pos:
+  simbad_id: HESS J1846-029
+  ra: 281.5
+  dec: -2.9
+
 papers:
-- null
+- 2008ICRC....2..823D
+- 2008A&A...480L..25L
+- 2016ApJ...817....3A

@@ -2,17 +2,29 @@ source_id: 164
 
 common_name: HESS J1844-030
 gamma_names: [HESS J1844-030]
-other_names: [PSR J1832-0836, AX J1844.6-0305, PMN J1844-0306, SNR G29.4+0.1]
+other_names:
+- PSR J1832-0836
+- AX J1844.6-0305
+- PMN J1844-0306
+- SNR G29.4+0.1
 
 where: gal
 classes: [unid]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2015-07
 
 tevcat_id: 274
 tevcat2_id: OEZygN
 tevcat_name: TeV J1844-030
+
+# TeV source position taken from HESS_HGPS_ICRC2015_Deil.pdf (slide 25)
+# TODO: this should not be `simbad_id` ... move to `inputs/papers`
+pos:
+  simbad_id: HESS J1844-030
+  ra: 281.17
+  dec: -3.10
 
 papers:
   - https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf

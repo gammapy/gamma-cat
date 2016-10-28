@@ -150,6 +150,14 @@ some Python. Start by looking at the examples in `gammacat/tests`,
 then look at the source code, then ask questions if you don't know
 how to do something.
 
+## Tools
+
+The following tools are helpful to work with YAML files:
+
+- https://github.com/0k/shyaml
+- https://github.com/adrienverge/yamllint
+
+
 ## References
 
 * https://astrocats.space/

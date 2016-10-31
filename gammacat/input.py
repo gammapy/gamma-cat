@@ -11,6 +11,7 @@ import jsonschema
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA
+from .sed import SEDList
 
 __all__ = [
     'BasicSourceInfo',
@@ -26,7 +27,7 @@ log = logging.getLogger(__name__)
 
 class ValidateMixin:
     def validate(self):
-        log.debug('Validating', self.path)
+        log.debug('Validating {}'.format(self.path))
         try:
             jsonschema.validate(self.data, self.schema)
         except jsonschema.exceptions.ValidationError as ex:
@@ -317,31 +318,41 @@ class InputData:
     Expose it as Python objects that can be validated and used.
     """
 
-    def __init__(self, sources=None, papers=None, schemas=None):
+    def __init__(self, schemas=None, sources=None, papers=None,
+                 seds=None):
         self.path = gammacat_info.base_dir / 'input'
+        self.schemas = schemas
         self.sources = sources
         self.papers = papers
-        self.schemas = schemas
+        self.seds = seds
 
     @classmethod
     def read(cls):
         """Read all data from disk.
         """
+        schemas = Schemas.read()
         sources = BasicSourceList.read()
         papers = PaperList.read()
-        schemas = Schemas.read()
-        return cls(sources=sources, papers=papers, schemas=schemas)
+        seds = SEDList.read()
+        return cls(
+            schemas=schemas,
+            sources=sources,
+            papers=papers,
+            seds=seds,
+        )
 
     def __str__(self):
         ss = 'Input data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
+        ss += 'Number of schemas: {}\n'.format(len(self.schemas.data))
         ss += 'Number of sources: {}\n'.format(len(self.sources.data))
         ss += 'Number of papers: {}\n'.format(len(self.papers.data))
-        ss += 'Number of schemas: {}\n'.format(len(self.schemas.data))
+        ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
         return ss
 
     def validate(self):
         log.info('Validating input data ...')
+        self.schemas.validate()
         self.sources.validate()
         self.papers.validate()
-        self.schemas.validate()
+        # self.seds.validate()

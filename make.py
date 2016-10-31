@@ -58,18 +58,6 @@ def make_cat():
 #     gammacat.webpage.make()
 
 
-@cli.command(name='all')
-@click.pass_context
-def make_all(ctx):
-    """Run all steps.
-    """
-    log.info('Run all steps ...')
-    ctx.invoke(make_check)
-    ctx.invoke(make_output)
-    ctx.invoke(make_cat)
-    # ctx.invoke(make_webpage)
-
-
 @cli.command(name='check')
 def make_check():
     """Run automated tests
@@ -99,6 +87,18 @@ def serve_webpage():
     print('\nTo serve the gamma-cat webpage locally use these commands:\n')
     print('  cd docs && python -m http.server && cd ..')
     print('  open http://localhost:8000\n')
+
+
+@cli.command(name='all')
+@click.pass_context
+def make_all(ctx):
+    """Run all steps.
+    """
+    log.info('Run all steps ...')
+    ctx.invoke(make_check)
+    ctx.invoke(make_output)
+    ctx.invoke(make_cat)
+    # ctx.invoke(make_webpage)
 
 
 if __name__ == '__main__':

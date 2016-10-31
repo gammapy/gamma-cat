@@ -10,6 +10,6 @@
 # - source_name: TeV J1718-374
 # - paper_id: 2015A&A...574A.100H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349
-# - comments:
-#   - That page also contains a Fermi-LAT spectrum.
+# - comments: |
+#     That page also contains a Fermi-LAT spectrum.
 #     TODO: add script

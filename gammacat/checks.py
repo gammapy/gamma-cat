@@ -18,3 +18,5 @@ def check_input_files():
     """
     input_data = InputData.read()
     input_data.validate()
+    print()
+    print(input_data)

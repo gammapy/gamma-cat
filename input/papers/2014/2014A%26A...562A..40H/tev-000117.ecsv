@@ -13,10 +13,7 @@
 # - paper_id: 2014A&A...562A..40H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html
 # - comments:
-#   - page also contains VLA radio flux points. TODO: add here?
-
-
-# Energy [Tev] EnergyErrHigh [TeV] EnergyErrLow [TeV] dFlux [TeV^-1 cm^-2 s^-1] dFluxErrHigh [TeV^-1 cm^-2 s^-1] dFluxErrLow [TeV^-1 cm^-2 s^-1]
+#   - Page also contains VLA radio flux points, not added here.
 6.190e-01 2.896e-01 1.973e-01 7.006e-13 3.136e-13 2.964e-13
 1.334e+00 6.238e-01 4.250e-01 2.126e-13 6.327e-14 6.000e-14
 2.873e+00 1.344e+00 9.156e-01 3.400e-14 1.259e-14 1.169e-14

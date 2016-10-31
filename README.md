@@ -2,6 +2,10 @@
 
 An open catalog of gamma-ray sources.
 
+This project was started in August 2015 and first presented as a poster
+(see [pdf](https://github.com/gammapy/adass2016-gamma-cat-poster/blob/master/adass2016-gamma-cat-poster.pdf))
+at the [ADASS 2016](http://www.adass2016.inaf.it/) conference.
+
 * Repo: https://github.com/gammapy/gamma-cat
 * Webpage: https://gammapy.github.io/gamma-cat
 * Terms of use: see [About](https://github.com/gammapy/gamma-cat/blob/master/README_ABOUT.md) page.
@@ -22,8 +26,6 @@ For now, we just collect TeV gamma-ray source information.
 Later we might try to ingest and interconnect other catalogs
 (e.g. Fermi-LAT GeV catalogs).
 
-This project will be presented and announced via a poster at [ADASS 2016](http://www.adass2016.inaf.it/),
-see abstract [here](https://github.com/gammapy/adass2016-gamma-cat-poster/blob/master/abstract.txt).
 
 [![Build Status](https://travis-ci.org/gammapy/gamma-cat.svg?branch=master)](https://travis-ci.org/gammapy/gamma-cat)
 

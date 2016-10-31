@@ -26,7 +26,7 @@ log = logging.getLogger(__name__)
 
 class ValidateMixin:
     def validate(self):
-        log.debug('Validating', self.path)
+        log.debug('Validating {}'.format(self.path))
         try:
             jsonschema.validate(self.data, self.schema)
         except jsonschema.exceptions.ValidationError as ex:

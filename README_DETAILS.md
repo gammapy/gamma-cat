@@ -152,11 +152,12 @@ how to do something.
 
 ## Tools
 
-The following tools are helpful to work with YAML files:
+The following tool is helpful to lint YAML files:
 
-- https://github.com/0k/shyaml
 - https://github.com/adrienverge/yamllint
 
+TODO: it's too picky, showing errors for things that are OK.
+Figure out how to make it less picky and document that here.
 
 ## References
 

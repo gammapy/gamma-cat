@@ -109,4 +109,6 @@ Here are some related resources:
   at [TeVCat2](http://tevcat2.uchicago.edu/).
 * Another TeV source catalog is the [TeGeV Catalogue @ ASDC](http://www.asdc.asi.it/tgevcat/)
 * At DESY there's a [light curve archive](https://astro.desy.de/gamma_astronomy/magic/projects/light_curve_archive/index_eng.html)
-* A collection and search interface for HESS spectra and lightcurves of blazars is [here](http://hess.obspm.fr/).
+* A collection and search interface for HESS spectra and lightcurves of blazars: [http://hess.obspm.fr/
+* A collection of Galactic TeV source info in FITS format by Andrea Giuliani and others from ASTRI is here:
+  http://www.iasf-milano.inaf.it/~giuliani/astrisim/gsed/

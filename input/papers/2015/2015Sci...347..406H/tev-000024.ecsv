@@ -10,7 +10,7 @@
 # - source_name: LMC N132D
 # - paper_id: 2015Sci...347..406H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_N132D.txt
-1.559	3.167e-14	2.095e-14	4.332e-14
-4.033	5.483e-15	4.186e-15	6.962e-15
-12.71	2.309e-16	1.219e-16	3.828e-16
-27.13	      nan         nan   2.736e-16
+1.559    3.167e-14   2.095e-14   4.332e-14
+4.033    5.483e-15   4.186e-15   6.962e-15
+12.71    2.309e-16   1.219e-16   3.828e-16
+27.13          nan         nan   2.736e-16

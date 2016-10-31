@@ -9,8 +9,8 @@
 # - source_id: 132
 # - source_name: HESS J1809-193
 # - paper_id: 2007A&A...472..489A
-# - comments:
-#   - Points are from Figure 2
+# - comments: |
+#     Points are from Figure 2
 #     See http://www.aanda.org/articles/aa/full/2007/35/aa7280-07/aa7280-07.html
 #     TODO: where are these values from? Is there a URL?
 0.354987 8.48195e-11 2.63877e-11 2.65445e-11

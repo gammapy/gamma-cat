@@ -1,29 +1,48 @@
-# sed
+# SED format
 
-## Format
+For spectral energy distributions (SEDs), aka "spectral points"
+or "flux points", we use the format described here:
 
-Each file has some of these columns:
+http://gamma-astro-data-formats.readthedocs.io/en/latest/results/flux_points/index.html
 
-- `energy` - Energy in `TeV`
-- `energy_min` - Energy measurement bin left edge in `TeV`
-- `energy_max` - Energy measurement bin right edge in `TeV`
-- `energy_lo` - Sometimes given instead of `energy_min`, where `energy_min = energy - energy_lo`
-- `energy_hi` - Sometimes given instead of `energy_max`, where `energy_max = energy + energy_hi`
+## Header
 
-- `flux` - Differential flux in `cm-2 s-1 TeV-1`
-- `flux_err` - Statistical error on `flux` (if symmetric error is given)
-- `flux_hi` - Statistical error on `flux`
-- `flux_lo` - Statistical error on `flux`
 
-- `excess` - Excess count
-- `sigma` - Statistical significance (sigma)
+See http://gamma-astro-data-formats.readthedocs.io/en/latest/results/flux_points/index.html#header-keywords
 
-The `unit` and `description` of these columns is always the same,
-so we omit it from these manually created files and add them with a script.
+- `sed_type` -- `diff_flux_points`
+- `ul_conf`
 
-### Flux upper limits
+## Fields
 
-If the `flux` column contains the value `nan` (Not a number),
+The point energy info is given in the following fields:
+ 
+- `e_ref`
+- `e_min`
+- `e_max`
+
+The default energy unit assumed is `TeV`. 
+Using a different unit is possible, if that is declared in the header.
+
+The point flux info fields are:
+
+- `dnde`
+- `dnde_err`
+- `dnde_errn`
+- `dnde_errp`
+
+The default `dnde` unit is `cm-2 s-1 TeV-1`.
+Using a different unit is possible, if that is declared in the header.
+
+Additional fields we use for some SEDs:
+
+- `excess`
+- `significance`
+
+## Flux upper limits
+
+If the `dnde` column contains the value `nan` (Not a number),
 then the `flux_hi` column contains the flux upper limit.
-The confidence level is given in the `ul_confidence_level` key in `meta`.
+
+The confidence level is given in the `UL_CONF` key in `meta`.
 See `HESS_J1745-290.ecsv` as an example.

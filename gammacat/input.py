@@ -12,6 +12,7 @@ from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA
 from .sed import SEDList
+from .lightcurve import LightcurveList
 
 __all__ = [
     'BasicSourceInfo',
@@ -319,12 +320,13 @@ class InputData:
     """
 
     def __init__(self, schemas=None, sources=None, papers=None,
-                 seds=None):
+                 seds=None, lightcurves=None):
         self.path = gammacat_info.base_dir / 'input'
         self.schemas = schemas
         self.sources = sources
         self.papers = papers
         self.seds = seds
+        self.lightcurves = lightcurves
 
     @classmethod
     def read(cls):
@@ -334,11 +336,13 @@ class InputData:
         sources = BasicSourceList.read()
         papers = PaperList.read()
         seds = SEDList.read()
+        lightcurves = LightcurveList.read()
         return cls(
             schemas=schemas,
             sources=sources,
             papers=papers,
             seds=seds,
+            lightcurves=lightcurves,
         )
 
     def __str__(self):
@@ -348,6 +352,7 @@ class InputData:
         ss += 'Number of sources: {}\n'.format(len(self.sources.data))
         ss += 'Number of papers: {}\n'.format(len(self.papers.data))
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
+        ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))
         return ss
 
     def validate(self):
@@ -355,4 +360,5 @@ class InputData:
         self.schemas.validate()
         self.sources.validate()
         self.papers.validate()
+        # self.seds.validate()
         # self.seds.validate()

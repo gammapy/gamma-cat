@@ -1,20 +1,19 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
+# - {name: e_ref, datatype: float32}
 # - {name: energy_hi, datatype: float32}
 # - {name: energy_lo, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
-# - source_id: 117
-# - source_name: TeV J1818-154
-# - paper_id: 2014A&A...562A..40H
-# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html
-# - comments:
-#   - Page also contains VLA radio flux points, not added here.
-6.190e-01 2.896e-01 1.973e-01 7.006e-13 3.136e-13 2.964e-13
-1.334e+00 6.238e-01 4.250e-01 2.126e-13 6.327e-14 6.000e-14
-2.873e+00 1.344e+00 9.156e-01 3.400e-14 1.259e-14 1.169e-14
-7.148e+00 4.968e+00 2.931e+00 3.500e-15 2.069e-15 1.899e-15
+# - {source_id: 117}
+# - {source_name: TeV J1818-154}
+# - {paper_id: 2014A&A...562A..40H}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html'}
+# - comments: ['Page also contains VLA radio flux points, not added here.']
+e_ref energy_hi energy_lo dnde dnde_errp dnde_errn
+1.334 0.6238 0.425 2.126e-13 6.327e-14 6e-14
+2.873 1.344 0.9156 3.4e-14 1.259e-14 1.169e-14
+7.148 4.968 2.931 3.5e-15 2.069e-15 1.899e-15

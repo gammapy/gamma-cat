@@ -1,22 +1,22 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
-# - source_id: 26
-# - source_name: 30 Dor C
-# - paper_id: 2015Sci...347..406H
-# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_30DorC.txt
-1.014   2.268e-13   1.358e-13   3.314e-13
-1.382   1.053e-13   8.084e-14   1.321e-13
-2.006   4.028e-14   3.081e-14   5.086e-14
-2.933   5.399e-15   2.492e-15   8.943e-15
-4.299   6.195e-15   4.259e-15   8.517e-15
-6.296   1.778e-15   1.002e-15   2.791e-15
-9.207   3.367e-16   1.105e-16   7.393e-16
-13.54   2.704e-16   1.171e-16   5.200e-16
-19.47   1.932e-16   7.767e-17   3.842e-16
-28.69         nan         nan   4.498e-16
+# - {source_id: 26}
+# - {source_name: 30 Dor C}
+# - {paper_id: 2015Sci...347..406H}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_30DorC.txt'}
+e_ref dnde dnde_errp dnde_errn
+1.382 1.053e-13 8.084e-14 1.321e-13
+2.006 4.028e-14 3.081e-14 5.086e-14
+2.933 5.399e-15 2.492e-15 8.943e-15
+4.299 6.195e-15 4.259e-15 8.517e-15
+6.296 1.778e-15 1.002e-15 2.791e-15
+9.207 3.367e-16 1.105e-16 7.393e-16
+13.54 2.704e-16 1.171e-16 5.2e-16
+19.47 1.932e-16 7.767e-17 3.842e-16
+28.69 nan nan 4.498e-16

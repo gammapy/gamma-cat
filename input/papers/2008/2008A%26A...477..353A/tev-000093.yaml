@@ -22,4 +22,4 @@ spec:
   ref: {val: 1}
 
   theta: 0.3
-  erange: {min: 0.50 , max: 50}
+  erange: {min: 0.50 , max: 60}

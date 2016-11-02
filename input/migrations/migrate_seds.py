@@ -15,6 +15,17 @@ def migrate_sed(path):
     print('Migrating SED for', path)
     table = Table.read(str(path), format='ascii.ecsv')
 
+    migrate_sed_data(table)
+    migrate_sed_header(table)
+
+    if WRITE_OUTPUT:
+        # See https://github.com/astropy/astropy/issues/5438
+        with warnings.catch_warnings():
+            warnings.simplefilter('ignore')
+            table.write(str(path), format='ascii.ecsv')
+
+
+def migrate_sed_data(table):
     col_renames = OrderedDict(
         energy='e_ref',
         energy_min='e_min',
@@ -39,19 +50,24 @@ def migrate_sed(path):
         'e_ref', 'e_min', 'e_max',
         'energy_lo', 'energy_hi',
         'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp',
-        'sigma', 'excess', 'significance',
+        'excess', 'significance',
     }
     unexpected_colnames = set(table.colnames) - expected_names
     if unexpected_colnames:
         print('ERROR: you need to handle columns: ', unexpected_colnames)
         exit()
 
-    if WRITE_OUTPUT:
-        # See https://github.com/astropy/astropy/issues/5438
-        with warnings.catch_warnings():
-            warnings.simplefilter('ignore')
-            table.write(str(path), format='ascii.ecsv')
+    return table
 
 
-for path in Path('input/papers').glob('*/*/*.ecsv'):
-    migrate_sed(path)
+def migrate_sed_header(table):
+    table.meta['sed_type'] = 'diff_flux_points'
+
+
+def migrate_all_seds():
+    for path in Path('input/papers').glob('*/*/*.ecsv'):
+        migrate_sed(path)
+
+
+if __name__ == '__main__':
+    migrate_all_seds()

@@ -3,7 +3,7 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: excess, datatype: float32}
-# - {name: sigma, datatype: float32}
+# - {name: significance, datatype: float32}
 # - {name: dnde, datatype: float32}
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
@@ -11,7 +11,7 @@
 # - {source_id: 25}
 # - {paper_id: 2006A&A...457..899A}
 # - comments: [Data taken from table 5 in the paper]
-e_ref excess sigma dnde dnde_errp dnde_errn
+e_ref excess significance dnde dnde_errp dnde_errn
 0.729 1580.0 56.0 7.27e-11 2e-12 1.9e-12
 1.06 1414.0 55.3 3.12e-11 9e-13 9e-13
 1.55 1082.0 47.3 1.22e-11 4e-13 4e-13

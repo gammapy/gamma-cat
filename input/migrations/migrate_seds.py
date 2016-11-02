@@ -37,9 +37,9 @@ def migrate_sed(path):
 
     expected_names = {
         'e_ref', 'e_min', 'e_max',
-        'energy_lo', 'energy_hi',
+        # 'energy_lo', 'energy_hi',
         'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp',
-        'sigma', 'excess', 'significance',
+        'excess', 'significance',
     }
     unexpected_colnames = set(table.colnames) - expected_names
     if unexpected_colnames:

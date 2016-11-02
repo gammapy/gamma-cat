@@ -1,15 +1,15 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_err, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
 # meta: !!omap
-# - source_id: 75
-# - paper_id: 2008AIPC.1085..281R
-1.29 9.03e-13 3.07e-13
+# - {source_id: 75}
+# - {paper_id: 2008AIPC.1085..281R}
+e_ref dnde dnde_err
 2.28 1.73e-13 8.51e-14
-4.04 6.00e-14 2.68e-14
+4.04 6e-14 2.68e-14
 7.16 1.81e-14 9.81e-15
 12.7 1.24e-15 3.75e-15
 22.5 1.52e-15 1.17e-15

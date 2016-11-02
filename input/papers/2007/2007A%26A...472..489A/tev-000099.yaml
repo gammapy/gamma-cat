@@ -13,7 +13,7 @@ morph:
   type: gauss
   sigma: {val: '9m', err: '2m'}
   sigma2: {val: '4m', err: '1m'}
-  pa: {val: 33, err: 0, frame: galactic}
+  pa: {val: 33, err: 0, frame: radec}
 
 spec:
   type: ecpl

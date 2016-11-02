@@ -37,7 +37,6 @@ def migrate_sed(path):
 
     expected_names = {
         'e_ref', 'e_min', 'e_max',
-        # 'energy_lo', 'energy_hi',
         'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp',
         'excess', 'significance',
     }

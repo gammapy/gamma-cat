@@ -1,6 +1,4 @@
-# lightcurve
-
-## Format
+# Lightcurve format
 
 Each file has some of these columns:
 

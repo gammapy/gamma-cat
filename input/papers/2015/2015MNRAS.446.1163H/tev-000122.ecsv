@@ -5,8 +5,8 @@
 # - {name: flux, datatype: float32}
 # - {name: energy_lo, datatype: float32}
 # - {name: energy_hi, datatype: float32}
-# - {name: flux_err_lo, datatype: float32}
-# - {name: flux_err_hi, datatype: float32}
+# - {name: flux_lo, datatype: float32}
+# - {name: flux_hi, datatype: float32}
 # meta: !!omap
 # - source_id: 122
 # - source_name: TeV J1832-093

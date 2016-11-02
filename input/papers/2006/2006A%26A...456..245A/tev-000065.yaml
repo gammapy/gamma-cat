@@ -1,0 +1,25 @@
+paper_id: 2006A%26A...456..245A
+source_id: 65
+
+data:
+  livetime: 18.1
+  significance: 13.2
+
+pos:
+  ra: {val: '14h18m4s', err: '7s'}
+  dec: {val: '-60d58m31s', err: '35s'}
+
+morph:
+  type: gauss
+  sigma: {val: '4.9m', err: '1.5m'}
+  sigma2: {val: '2.7m', err: '0.7m'}
+  pa: {val: 46.2, err: 20.4, frame: radec}
+
+spec:
+  type: pl2
+
+  norm: {val: 2.17, err: 0.17, err_sys: 0.43}
+  index: {val: 2.22, err: 0.08, err_sys: 0.1}
+
+  theta: 0.16
+  erange: {min: 0.3 , max: }

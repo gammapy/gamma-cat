@@ -35,11 +35,17 @@ def cli(loglevel, show_warnings):
 
 
 @cli.command(name='output')
-def make_output():
+@click.option('--step', default='all',
+              type=click.Choice(['all', 'sed']))
+def make_output(step):
     """Re-generate files in `output`.
     """
     log.info('Re-generate data files in output folder ...')
-    gammacat.OutputDataMaker().make_all()
+    maker = gammacat.OutputDataMaker()
+    if step == 'all':
+        maker.make_all()
+    elif step == 'sed':
+        maker.make_sed_files()
 
 
 @cli.command(name='cat')

@@ -32,6 +32,18 @@ class OutputDataConfig:
     papers_json = path / 'gammacat-papers.json'
     papers_ecsv = path / 'gammacat-papers.ecsv'
 
+    @staticmethod
+    def make_filename(meta, datatype):
+        tag = gammacat_tag.source_paper_filename(meta)
+        source_path = OutputDataConfig.path / 'sources' / gammacat_tag.source_str(meta)
+
+        if datatype == 'sed':
+            path = source_path / '{}_sed.ecsv'.format(tag)
+        else:
+            raise ValueError('Invalid datatype: {}'.format(datatype))
+
+        return path
+
 
 class OutputDataReader:
     """
@@ -106,6 +118,7 @@ class OutputDataMaker:
     def make_sed_files(self):
         for sed in self.input_data.seds.data:
             log.debug('Processing SED: {}'.format(sed.path))
-            tag = gammacat_tag.source_paper_filename(sed.table.meta)
-            path = '{}_sed.ecsv'.format(tag)
+            path = OutputDataConfig.make_filename(meta=sed.table.meta, datatype='sed')
+            path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))
+            sed.table.write(str(path), format='ascii.ecsv')

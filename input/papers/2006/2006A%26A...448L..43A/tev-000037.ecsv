@@ -1,13 +1,14 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_err, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
 # meta: !!omap
 # - source_id: 37
 # - paper_id: 2006A&A...448L..43A
 # - url: http://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/VelaX_auxinfo.html
+e_ref dnde dnde_err
 0.727   1.86e-11  3.93e-12
 1.06    8.09e-12  1.44e-12
 1.56    4.50e-12  5.74e-13

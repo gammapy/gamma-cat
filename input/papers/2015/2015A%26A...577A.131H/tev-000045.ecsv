@@ -1,10 +1,10 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - source_id: 45
 # - source_name: HESS J1018-589 A
@@ -13,6 +13,7 @@
 # - comments:
 #   - Original data is in a different format (energy flux).
 #     This table was computed with the `tev-000045.py` script.
+e_ref dnde dnde_errp dnde_errn
   0.402203   2.25569e-12   7.52432e-13   7.04284e-13
   0.797953   3.47791e-13   1.44100e-13   1.33940e-13
    1.23278   2.27031e-13   6.22181e-14   5.77752e-14  

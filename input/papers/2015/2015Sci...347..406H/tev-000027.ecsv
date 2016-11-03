@@ -1,15 +1,16 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - source_id: 27
 # - source_name: N 157B
 # - paper_id: 2015Sci...347..406H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_N157B.txt
+e_ref dnde dnde_errp dnde_errn
 0.873  8.268e-13  4.432e-13  1.302e-12
 1.041  1.075e-12  9.114e-13  1.251e-12
 1.252  8.868e-13  7.961e-13  9.825e-13

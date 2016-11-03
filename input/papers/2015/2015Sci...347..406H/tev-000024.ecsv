@@ -1,15 +1,16 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - source_id: 24
 # - source_name: LMC N132D
 # - paper_id: 2015Sci...347..406H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_N132D.txt
+e_ref dnde dnde_errp dnde_errn
 1.559    3.167e-14   2.095e-14   4.332e-14
 4.033    5.483e-15   4.186e-15   6.962e-15
 12.71    2.309e-16   1.219e-16   3.828e-16

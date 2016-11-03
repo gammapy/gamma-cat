@@ -1,15 +1,16 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
+# - {name: e_ref, datatype: float32}
 # - {name: significance, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_err, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
 # meta: !!omap
 # - source_id: 25
 # - paper_id: 2008ICRC....2..803K
 # - comments:
 #   - Data taken from table 4
+e_ref significance dnde dnde_err
 0.39 16.7 3.87e-10 0.38e-10
 0.62 73.4 1.14e-10 0.03e-10
 0.97 78.4 3.72e-11 0.08e-11

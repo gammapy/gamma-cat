@@ -1,8 +1,8 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
 # - {name: flux_min, datatype: float32} # 68% confidence interval min
 # - {name: flux_max, datatype: float32} # 68% confidence interval max
 # meta: !!omap
@@ -11,7 +11,8 @@
 # - comments:
 #   - Data obtained by Ira Jung Oct 18, 2016 via private communication
 #   # TODO `flux_min` / `flux_max` are limits, compute `dnde_errn` and `dnde_errp`
-0.4818 8.908e-12 4.104e-12 1.386e-11 
+e_ref dnde flux_min flux_max
+0.4818 8.908e-12 4.104e-12 1.386e-11
 0.5662  6.78e-12 4.797e-12 8.797e-12 
 0.6923 5.669e-12  4.51e-12 6.851e-12 
  0.842 5.694e-12 4.923e-12 6.481e-12 

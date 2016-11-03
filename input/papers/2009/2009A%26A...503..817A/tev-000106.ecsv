@@ -1,15 +1,16 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - source_id: 106
 # - source_name: HESS J1745-290
 # - paper_id: 2009A&A...503..817A
 # - ul_confidence_level: 0.95
+e_ref dnde dnde_errp dnde_errn
  0.2838   4.186e-11 3.734e-11   4.653e-11
  0.3491   2.439e-11 2.249e-11   2.633e-11
  0.4273   1.565e-11 1.452e-11   1.681e-11

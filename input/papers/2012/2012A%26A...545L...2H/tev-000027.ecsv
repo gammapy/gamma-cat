@@ -1,15 +1,16 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_lo, datatype: float32}
-# - {name: flux_hi, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - source_id: 27
 # - source_name: N157B
 # - paper_id: 2012A&A...545L...2H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA545_L2.html
+e_ref dnde dnde_errn dnde_errp
 0.6952   1.39e-08   4.56e-09   5.04e-09
 0.8411   1.26e-08   2.64e-09   2.89e-09
 1.017    9.83e-09   1.82e-09   1.98e-09

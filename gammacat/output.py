@@ -30,14 +30,12 @@ class OutputDataConfig:
     sources_json = path / 'gammacat-sources.json'
 
     papers_json = path / 'gammacat-papers.json'
-
     papers_ecsv = path / 'gammacat-papers.ecsv'
-    papers_fits = path / 'gammacat-papers.fits.gz'
 
 
 class OutputDataReader:
     """
-    Read all data from the `output` folder.
+    Read all data from the output folder.
 
     Expose it as Python objects that can be validated and used.
 
@@ -119,9 +117,3 @@ class OutputDataMaker:
         path = OutputDataConfig.papers_ecsv
         log.info('Writing {}'.format(path))
         table.write(str(path), format='ascii.ecsv')
-
-    def make_paper_table_fits(self):
-        table = self.input_data.papers.to_table()
-        path = OutputDataConfig.papers_fits
-        log.info('Writing {}'.format(path))
-        table.write(str(path), format='fits', overwrite=True)

@@ -38,7 +38,7 @@ def cli(loglevel, show_warnings):
 def make_output():
     """Re-generate files in `output`.
     """
-    log.info('Re-generate files in `output` ...')
+    log.info('Re-generate data files in output folder ...')
     gammacat.OutputDataMaker().make_all()
 
 

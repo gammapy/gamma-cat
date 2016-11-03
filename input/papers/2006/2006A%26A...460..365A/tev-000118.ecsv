@@ -1,10 +1,10 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - source_id: 118
 # - source_name: HESS J1825-137
@@ -12,6 +12,7 @@
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA_5546.html
 # - comments:
 #   - Flux points from Figure 3.
+e_ref dnde dnde_errp dnde_errn
  0.277619 3.43570e-10 2.25247e-11 2.25161e-11
  0.430245 1.29701e-10 5.36768e-12 5.36480e-12
  0.691719 4.96572e-11 1.68482e-12 1.68327e-12

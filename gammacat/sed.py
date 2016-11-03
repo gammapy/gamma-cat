@@ -9,7 +9,6 @@ __all__ = ['SED', 'SEDList']
 log = logging.getLogger(__name__)
 
 
-
 class SED:
     """
     Spectral energy distribution (SED)

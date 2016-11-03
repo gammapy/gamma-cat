@@ -2,6 +2,10 @@
 Migrate SED column names to new format.
 
 http://gamma-astro-data-formats.readthedocs.io/en/latest/results/flux_points/index.html
+
+In the end, we didn't use this script:
+https://github.com/gammapy/gamma-cat/pull/31
+But I'm keeping it here as an example for potential future migrations.
 """
 import warnings
 from collections import OrderedDict

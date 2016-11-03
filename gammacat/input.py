@@ -360,5 +360,5 @@ class InputData:
         self.schemas.validate()
         self.sources.validate()
         self.papers.validate()
-        # self.seds.validate()
-        # self.seds.validate()
+        self.seds.validate()
+        # self.lightcurves.validate()

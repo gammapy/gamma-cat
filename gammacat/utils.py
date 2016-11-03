@@ -6,8 +6,13 @@ from pathlib import Path
 import yaml
 import numpy as np
 from astropy.coordinates import SkyCoord
+from astropy.table import Table
 
 log = logging.getLogger(__name__)
+
+
+class ECSVFormatError(Exception):
+    """ECSV format error"""
 
 
 class NA:
@@ -161,3 +166,25 @@ def table_to_list_of_dict(table):
         rows.append(data)
 
     return rows
+
+
+def check_ecsv_column_header(path):
+    """
+    Check ECSV file for column header formatting.
+
+    See https://github.com/astropy/astropy/issues/5451
+    """
+    table = Table.read(str(path), format='ascii.ecsv')
+    table2 = Table.read(str(path), format='ascii.basic')
+
+    if table.colnames != table2.colnames:
+        log.error('Problem in ECSV file: {}'.format(path))
+        log.error('ECSV colnames: {}'.format(table.colnames))
+        log.error(' CSV colnames: {}'.format(table2.colnames))
+        raise ECSVFormatError
+
+    if len(table) != len(table2):
+        log.error('Problem in ECSV file: {}'.format(path))
+        log.error('ECSV rows: {}'.format(len(table)))
+        log.error(' CSV rows: {}'.format(len(table2)))
+        raise ECSVFormatError

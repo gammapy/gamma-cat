@@ -5,7 +5,7 @@ Classes to read, validate and work with the input data files.
 import logging
 from pathlib import Path
 from astropy.table import Table
-from .info import gammacat_info
+from .info import gammacat_info, gammacat_tag
 from .input import InputData
 from .utils import write_json
 
@@ -83,29 +83,14 @@ class OutputDataMaker:
 
     def make_all(self):
         self.make_source_table_json()
-        # self.make_source_table_ecsv()
-        # self.make_source_table_fits()
-
         self.make_paper_table_json()
         self.make_paper_table_ecsv()
-        # self.make_source_table_fits()
+        self.make_sed_files()
 
     def make_source_table_json(self):
         data = self.input_data.sources.to_json()
         path = OutputDataConfig.sources_json
         write_json(data, path)
-
-    def make_source_table_ecsv(self):
-        table = self.input_data.sources.to_table()
-        path = OutputDataConfig.sources_ecsv
-        log.info('Writing {}'.format(path))
-        table.write(str(path), format='ascii.ecsv')
-
-    def make_source_table_fits(self):
-        table = self.input_data.sources.to_table()
-        path = OutputDataConfig.sources_fits
-        log.info('Writing {}'.format(path))
-        table.write(str(path), format='fits', overwrite=True)
 
     def make_paper_table_json(self):
         data = self.input_data.papers.to_json()
@@ -117,3 +102,10 @@ class OutputDataMaker:
         path = OutputDataConfig.papers_ecsv
         log.info('Writing {}'.format(path))
         table.write(str(path), format='ascii.ecsv')
+
+    def make_sed_files(self):
+        for sed in self.input_data.seds.data:
+            log.debug('Processing SED: {}'.format(sed.path))
+            tag = gammacat_tag.source_paper_filename(sed.table.meta)
+            path = '{}_sed.ecsv'.format(tag)
+            log.info('Writing {}'.format(path))

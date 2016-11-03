@@ -1,10 +1,10 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - source_id: 99
 # - source_name: HESS J1718-385
@@ -12,6 +12,7 @@
 # - comments:
 #   - Flux points shown in Figure 1 (one upper limit not included here)
 #   - TODO: Origin of data points unknown
+e_ref dnde dnde_errp dnde_errn
  1.40045 6.23048e-13 2.93545e-13 2.94463e-13
  2.47561 1.28768e-13 7.13985e-14 7.15713e-14
  4.81300 7.67650e-14 1.94541e-14 1.97337e-14

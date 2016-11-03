@@ -1,10 +1,10 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
-# - {name: flux_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - source_id: 98
 # - source_name: TeV J1718-374
@@ -13,3 +13,4 @@
 # - comments: |
 #     That page also contains a Fermi-LAT spectrum.
 #     TODO: add script
+e_ref dnde dnde_errp dnde_errn

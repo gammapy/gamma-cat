@@ -1,19 +1,18 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: energy, datatype: float32}
-# - {name: flux, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
 # - {name: energy_lo, datatype: float32}
 # - {name: energy_hi, datatype: float32}
-# - {name: flux_lo, datatype: float32}
-# - {name: flux_hi, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - source_id: 122
 # - source_name: TeV J1832-093
 # - paper_id: 2015MNRAS.446.1163H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832
-
-# # Emid(TeV) Flux(cm-2 s-1 TeV-1) deltaEmin deltaEmax Errfluxmin Errfluxmax
+e_ref dnde energy_lo energy_hi flux_lo flux_hi
 0.475800 2.84e-12 0.075800 0.133600 1.08e-12 1.08e-12
 0.724600 1.36e-12 0.115200 0.203700 3.84e-13 3.84e-13
 1.103400 3.48e-13 0.175100 0.310800 1.51e-13 1.51e-13

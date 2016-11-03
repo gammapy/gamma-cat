@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - {source_id: 65}
+# - {paper_id: 2006A&A...456..245A}
+# - {path: /Users/deil/code/gamma-cat/input/papers/2006/2006A%26A...456..245A/tev-000065.ecsv}
+e_ref dnde dnde_errp dnde_errn
+0.39 3.14e-11 9e-12 9.16e-12
+0.61 7.62e-12 1.12e-12 1.08e-12
+0.97 2.43e-12 3.97e-13 3.86e-13
+1.54 9.85e-13 1.67e-13 1.69e-13
+2.45 4.75e-13 8.03e-14 8.25e-14
+3.88 1.26e-13 3.34e-14 3.34e-14
+6.14 4.95e-14 1.45e-14 1.51e-14
+9.73 2.51e-14 7.53e-15 7.65e-15
+15.43 6.37e-15 3e-15 2.97e-15

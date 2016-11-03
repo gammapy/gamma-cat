@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - {source_id: 134}
+# - {source_name: HESS J1912+101}
+# - {paper_id: 2008A&A...484..435A}
+# - comments:
+#   - Flux points from Figure 2 (an upper limit is missing) http://www.aanda.org/articles/aa/full/2008/23/aa8715-07/aa8715-07.html
+#   - {TODO: 'where are the values from?'}
+# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008A%26A...484..435A/tev-000134.ecsv}
+e_ref dnde dnde_errp dnde_errn
+0.872 3.82e-12 1.21e-12 1.18e-12
+1.76 1.02e-12 1.73e-13 1.69e-13
+3.75 8.12e-14 3.32e-14 3.21e-14
+8.03 1.85e-14 8.27e-15 7.89e-15

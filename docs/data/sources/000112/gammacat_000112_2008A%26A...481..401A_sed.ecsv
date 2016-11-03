@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - {source_id: 112}
+# - {source_name: HESS J1801-233}
+# - {paper_id: 2008A&A...481..401A}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_w28_paper.html'}
+# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008A%26A...481..401A/tev-000112.ecsv}
+e_ref dnde dnde_errp dnde_errn
+0.41 7.423e-12 5.366e-12 9.48e-12
+0.55 5.74e-12 4.644e-12 6.836e-12
+0.73 1.181e-12 7e-13 1.662e-12
+0.97 6.51e-13 3.86e-13 9.16e-13
+1.3 3.11e-13 1.7e-13 4.52e-13
+1.73 2.13e-13 1.33e-13 2.93e-13
+2.31 nan nan 3.1e-13
+3.08 nan nan 1.88e-13
+4.11 2.7e-14 1.3e-14 4.1e-14

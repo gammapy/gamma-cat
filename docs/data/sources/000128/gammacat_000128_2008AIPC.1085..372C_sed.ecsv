@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - {source_id: 128}
+# - {source_name: HESS J1848-018}
+# - {paper_id: 2008AIPC.1085..372C}
+# - {url: TODO (origin of points unknown)}
+# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008AIPC.1085..372C/tev-000128.ecsv}
+e_ref dnde dnde_errp dnde_errn
+0.623875 9.94175e-12 3.26451e-12 3.30083e-12
+0.878458 6.81516e-12 1.02928e-12 1.04206e-12
+1.28438 1.70718e-12 3.82595e-13 3.88868e-13
+1.88076 5.02674e-13 1.53321e-13 1.56604e-13
+2.75406 3.26588e-13 7.32347e-14 7.52648e-14
+4.03285 8.18333e-14 3.50318e-14 3.60923e-14
+5.90544 2.9794e-14 1.92094e-14 1.9812e-14
+8.64751 4.0217e-15 8.72854e-15 9.06779e-15
+12.6628 -6.64708e-15 3.67482e-15 3.78572e-15
+18.5425 3.73541e-15 1.78617e-15 2.00875e-15
+27.173 -5.31736e-16 8.56839e-16 9.2363e-16

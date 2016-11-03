@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: significance, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
+# meta: !!omap
+# - {source_id: 25}
+# - {paper_id: 2008ICRC....2..803K}
+# - comments: [Data taken from table 4]
+# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008ICRC....2..803K/tev-000025.ecsv}
+e_ref significance dnde dnde_err
+0.39 16.7 3.87e-10 3.8e-11
+0.62 73.4 1.14e-10 3e-12
+0.97 78.4 3.72e-11 8e-13
+1.54 67.7 1.21e-11 3e-13
+2.43 55.9 3.93e-12 1.2e-13
+3.84 41.3 1.13e-12 5e-14
+6.06 30.2 3.4e-13 1.9e-14
+9.54 22.4 1.01e-13 7e-15
+15.0 12.4 2.05e-14 2.7e-15
+23.5 7.9 4.91e-15 1e-15
+36.7 4.1 7.56e-16 2.84e-16
+57.0 3.8 7.22e-17 3.4e-17

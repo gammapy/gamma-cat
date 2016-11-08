@@ -9,12 +9,15 @@ Dump the FITS Lightcurves from the DESY LC Archive to ECSV files
 from astropy.table import Table
 from astropy.units import cds
 import string
+import os
 
 
 def process_one_file(source_id, filename):
     """This function dumps the FITS files defined in Get_FITS_from_DESY-LC-Archive.py in ECSV follwoing 'source-id_paper-id.ecsv'
     """
     tab = Table.read(filename, format='fits')
+
+    # print('Currently operating source ' + str(source_id))
 
     # rename column-names to lightcurve-format
     tab.rename_column('mjd_mid_exp', 'time')
@@ -63,6 +66,7 @@ def process_one_file(source_id, filename):
             papers.append(tab['paper'][i])
             index.append(i + 1)
     papers.append(tab['paper'][-1])
+    # print(papers)
 
     # find multiple telescopes used in a single paper
     telescopes_list = []
@@ -75,14 +79,12 @@ def process_one_file(source_id, filename):
     telescope = set([t for t in telescope_paper if telescope_paper.count(t) > 1])
     telescopes_list.append(telescope)
 
-    # get only proper names for that telescopes
+    # get only proper names for these telescopes
     telescopes = []
     for s in telescopes_list:
-        # print(", ".join(str(e) for e in s))
         telescope = ", ".join(str(e) for e in s)
         telescopes.append(telescope)
     # print(telescopes)
-    # print(len(telescopes))
 
     # convert paper names to safe filename
     filenames = []
@@ -91,6 +93,20 @@ def process_one_file(source_id, filename):
         filename = ''.join(c for c in papers[p] if c in valid_chars)
         filename = ''.join(filename.split())
         filenames.append(filename)
+    # print(filenames)
+
+    # convert non-ADS reference names to format 'none'
+    temp_filenames = []
+    file_index = 1
+    valid_chars = "%s" % (string.digits)
+    for p in range(0, len(filenames)):
+        temp_filename = ''.join(c for c in papers[p][0:4] if c in valid_chars)
+        # print(temp_filename)
+        if len(temp_filename) != 4:
+            filename = str('none' + str(filenames[p]))
+            file_index = file_index + 1
+            filenames[p]=''.join(c for c in filename)
+    # print(filenames)
 
     # add an index if paper names double, i.e. "reference empty"
     first_index = 1
@@ -105,49 +121,69 @@ def process_one_file(source_id, filename):
                     second_index = second_index + 2
                 else:
                     break
-    # print('Filenames: ')
-    # print(len(filenames))
-
+    # print(filenames)
 
     # seperate by paper, set metadata
     tables = []
     for x in range(0, len(index) - 1):
         table = tab[index[x]:index[x + 1]]
-        table.meta['source_id'] = str(source_id)
+        table.meta['source_id'] = int(source_id)
         table.meta['telescope'] = ''.join(str(telescopes[x]).split())
         table.meta['paper_id'] = str(papers[x])
         del table['telescope']
         del table['paper']
         tables.append(table)
     table = tab[index[-1] + 1:]
-    table.meta['source_id'] = str(source_id)
+    table.meta['source_id'] = int(source_id)
     table.meta['telescope'] = ''.join(str(telescopes[-1]).split())
     table.meta['paper_id'] = str(papers[x])
     del table['telescope']
     del table['paper']
     tables.append(table)
-    # print(tab)
     # print(tables)
-    # print('Tabellen: ')
-    # print(len(tables))
-    # print('Papers: ')
-    # print(len(papers))
 
-    # write files
-    for x in range(0, len(tables)):
-        tables[x].write(source_id + '_' + filenames[x] + '.ecsv', format='ascii.ecsv')
+    # ceate folder structure and write files
+    count_files = 0
+    directory = '/afs/ifh.de/group/amanda/scratch/wegenmat/gamma-cat/input/papers/'
+    none_paper_id = 'none'
+    for x in range(0, len(filenames)):
+        if os.path.lexists(directory + filenames[x][:4]) is False:
+            os.mkdir(directory + filenames[x][:4])
+        os.chdir(directory + filenames[x][:4] + '/')
+        if filenames[x][:4] == none_paper_id:
+            if os.path.lexists(directory + filenames[x][:4] + '/' + 'source_id_' + source_id) is False:
+                os.mkdir(directory + filenames[x][:4] + '/' + 'source_id_' + source_id)
+            os.chdir(directory + filenames[x][:4] + '/' + 'source_id_' + source_id)
+        else:
+            if os.path.lexists(directory + filenames[x][:4] + '/' + filenames[x]) is False:
+                os.mkdir(directory + filenames[x][:4] + '/' + filenames[x])
+            os.chdir(directory + filenames[x][:4] + '/' + filenames[x])
+        # print('wrote "lightcurve_source_id_' + source_id + '.ecsv' + '" in' + directory + filenames[x][:4] + '/' + filenames[x])
+        count_files += 1
+    # print(count_files)
+    # print(len(filenames))
+    return count_files, len(filenames)
 
 
 def process_all_files():
     files = {
-        "tev-000138": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/1es1959+650_combined_lc_v0.2.fits",
-        "tev-000049": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk421_combined_lc_v0.2.fits",
-        "tev-000091": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk501_combined_lc_v0.2.fits"
+        "138": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/1es1959+650_combined_lc_v0.2.fits",
+        "49": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk421_combined_lc_v0.2.fits",
+        "91": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk501_combined_lc_v0.2.fits"
     }
-
+    total_files = []
+    pub_sources = []
+    count_sources = 0
     for source_id, filename in files.items():
         process_one_file(source_id, filename)
+        count_sources += 1
+        source_files, filenames = process_one_file(source_id, filename)
+        total_files.append(source_files)
+        pub_sources.append(filenames)
 
+    print('number of sources in the DESY LC Archive: ' + str(count_sources))
+    print('number of publsihed lightcurves found: ' + str(sum(pub_sources)))
+    print('files totally written: ' + str(sum(total_files)))
 
 if __name__ == '__main__':
     process_all_files()

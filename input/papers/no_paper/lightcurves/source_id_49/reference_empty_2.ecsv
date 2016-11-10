@@ -11,6 +11,7 @@
 # - {source_id: 49}
 # - {telescope: MAGIC}
 # - {paper_id: reference_empty}
+# - {data_id: no_paper}
 time time_min time_max flux flux_err
 53324.2656 53324.2617 53324.2695 0.7 0.13
 53329.25 53329.2422 53329.2578 1.92 0.12

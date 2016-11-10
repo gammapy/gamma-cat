@@ -9,7 +9,8 @@ Dump the FITS Lightcurves from the DESY LC Archive to ECSV files
 from astropy.table import Table
 from astropy.units import cds
 import string
-import os
+# import os
+from pathlib import Path
 
 
 def process_one_file(source_id, filename):
@@ -35,8 +36,6 @@ def process_one_file(source_id, filename):
     # column 13: tab.rename_column('duration', '')
     tab.rename_column('reference', 'paper')
     # column 15: tab.rename_column('fflag', '')
-    # print(tab['telescope'][-12:-1])
-    # print(tab['paper'][-12:-1])
 
     # delete unused columns
     del tab['sigma_int_flux_sys']
@@ -59,7 +58,6 @@ def process_one_file(source_id, filename):
 
     # find different papers
     papers = []
-    # index = []
     index = [0]
     for i in range(0, len(tab) - 1):
         if tab['paper'][i] != tab['paper'][i + 1]:
@@ -90,21 +88,21 @@ def process_one_file(source_id, filename):
     filenames = []
     valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
     for p in range(0, len(papers)):
-        filename = ''.join(c for c in papers[p] if c in valid_chars)
+        filename = ''.join(c for c in str(papers[p]) if c in valid_chars)
         filename = ''.join(filename.split())
         filenames.append(filename)
     # print(filenames)
 
-    # convert non-ADS reference names to format 'none'
+    # convert non-ADS reference names to format none_paper_id
     temp_filenames = []
-    file_index = 1
+    # file_index = 1
     valid_chars = "%s" % (string.digits)
+    none_paper_id = 'no_paper'
     for p in range(0, len(filenames)):
-        temp_filename = ''.join(c for c in papers[p][0:4] if c in valid_chars)
+        temp_filename = ''.join(c for c in str(papers[p][0:4]) if c in valid_chars)
         # print(temp_filename)
         if len(temp_filename) != 4:
-            filename = str('none' + str(filenames[p]))
-            file_index = file_index + 1
+            filename = str(none_paper_id + str(filenames[p]))
             filenames[p]=''.join(c for c in filename)
     # print(filenames)
 
@@ -129,14 +127,22 @@ def process_one_file(source_id, filename):
         table = tab[index[x]:index[x + 1]]
         table.meta['source_id'] = int(source_id)
         table.meta['telescope'] = ''.join(str(telescopes[x]).split())
-        table.meta['paper_id'] = str(papers[x])
+        table.meta['paper_id'] = ''.join(str(papers[x]).split())
+        if filenames[x][:len(none_paper_id)] == none_paper_id:
+            table.meta['data_id'] = str(none_paper_id)
+        else:
+            table.meta['data_id'] = str('ADS_Bibcode')
         del table['telescope']
         del table['paper']
         tables.append(table)
     table = tab[index[-1] + 1:]
     table.meta['source_id'] = int(source_id)
     table.meta['telescope'] = ''.join(str(telescopes[-1]).split())
-    table.meta['paper_id'] = str(papers[x])
+    table.meta['paper_id'] = ''.join(str(papers[-1]).split())
+    if filenames[-1][:len(none_paper_id)] == (none_paper_id):
+        table.meta['data_id'] = none_paper_id
+    else:
+        table.meta['data_id'] = str('ADS_Bibcode')
     del table['telescope']
     del table['paper']
     tables.append(table)
@@ -144,21 +150,20 @@ def process_one_file(source_id, filename):
 
     # ceate folder structure and write files
     count_files = 0
-    directory = '/afs/ifh.de/group/amanda/scratch/wegenmat/gamma-cat/input/papers/'
-    none_paper_id = 'none'
-    for x in range(0, len(filenames)):
-        if os.path.lexists(directory + filenames[x][:4]) is False:
-            os.mkdir(directory + filenames[x][:4])
-        os.chdir(directory + filenames[x][:4] + '/')
-        if filenames[x][:4] == none_paper_id:
-            if os.path.lexists(directory + filenames[x][:4] + '/' + 'source_id_' + source_id) is False:
-                os.mkdir(directory + filenames[x][:4] + '/' + 'source_id_' + source_id)
-            os.chdir(directory + filenames[x][:4] + '/' + 'source_id_' + source_id)
+    paper_repo = Path('/afs/ifh.de/group/amanda/scratch/wegenmat/gamma-cat/input/papers') # will be changed to 'input/papers' if the script is called from top-level repo
+    for x in range(0, len(filenames)):        
+        # create folder structure for none_paper_id
+        if tables[x].meta['data_id'] == none_paper_id:
+            if Path(str(paper_repo / none_paper_id / 'lightcurves' / 'source_id_') + source_id).exists() is False:
+                Path(str(paper_repo / none_paper_id / 'lightcurves' / 'source_id_') + source_id).mkdir(parents=True)
+            directory = Path(str(paper_repo / none_paper_id / 'lightcurves' / 'source_id_') + source_id) / Path(filenames[x][len(none_paper_id):] + '.ecsv')
+            tables[x].write(str(directory), format='ascii.ecsv')            
+        # create folder structure for paper_id
         else:
-            if os.path.lexists(directory + filenames[x][:4] + '/' + filenames[x]) is False:
-                os.mkdir(directory + filenames[x][:4] + '/' + filenames[x])
-            os.chdir(directory + filenames[x][:4] + '/' + filenames[x])
-        # print('wrote "lightcurve_source_id_' + source_id + '.ecsv' + '" in' + directory + filenames[x][:4] + '/' + filenames[x])
+            if (paper_repo / filenames[x][:4] / filenames[x]).exists() is False:
+                (paper_repo / filenames[x][:4] / filenames[x]).mkdir(parents=True)
+            directory = Path(str(paper_repo / filenames[x][:4] / filenames[x] / 'lightcurve_source_id_') + source_id + '.ecsv')      
+            tables[x].write(str(directory), format='ascii.ecsv')
         count_files += 1
     # print(count_files)
     # print(len(filenames))

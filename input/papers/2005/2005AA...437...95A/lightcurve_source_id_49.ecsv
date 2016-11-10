@@ -11,6 +11,7 @@
 # - {source_id: 49}
 # - {telescope: H.E.S.S.}
 # - {paper_id: 2005A&A...437...95A}
+# - {data_id: ADS_Bibcode}
 time time_min time_max flux flux_err
 53108.0 53108.0 -1.0 3.38 0.2
 53109.0 53109.0 -1.0 1.13 0.13

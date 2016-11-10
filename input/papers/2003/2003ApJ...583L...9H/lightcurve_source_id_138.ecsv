@@ -10,7 +10,8 @@
 # - COMMENT: [Mrk 421]
 # - {source_id: 138}
 # - {telescope: Whipple}
-# - {paper_id: '2003ApJ...583L...9H                                                             '}
+# - {paper_id: 2003ApJ...583L...9H}
+# - {data_id: ADS_Bibcode}
 time time_min time_max flux flux_err
 52410.45 52410.4531 52410.4531 1.18 0.37
 52411.3 52411.3008 52411.3008 3.25 0.87

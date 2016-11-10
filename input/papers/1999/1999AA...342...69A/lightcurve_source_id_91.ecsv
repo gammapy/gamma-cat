@@ -10,7 +10,8 @@
 # - COMMENT: [Mrk 421]
 # - {source_id: 91}
 # - {telescope: HEGRA_CT_System}
-# - {paper_id: '1999A&A...342...69A                                                             '}
+# - {paper_id: 1999A&A...342...69A}
+# - {data_id: ADS_Bibcode}
 time time_min time_max flux flux_err
 50523.177 50523.1266 50523.2274 2.03 0.21
 50526.2072 50526.1791 50526.2354 2.1 0.24

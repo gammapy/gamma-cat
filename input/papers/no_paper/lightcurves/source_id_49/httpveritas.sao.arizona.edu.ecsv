@@ -11,6 +11,7 @@
 # - {source_id: 49}
 # - {telescope: VERITAS}
 # - {paper_id: 'http://veritas.sao.arizona.edu'}
+# - {data_id: no_paper}
 time time_min time_max flux flux_err
 53676.45705 53676.418 53676.4961 0.28 0.1
 53677.4512 53677.4219 53677.4805 0.56 -1.0

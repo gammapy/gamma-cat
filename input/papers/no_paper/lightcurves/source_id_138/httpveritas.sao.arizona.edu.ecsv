@@ -10,7 +10,8 @@
 # - COMMENT: [Mrk 421]
 # - {source_id: 138}
 # - {telescope: Whipple}
-# - {paper_id: '2003ApJ...583L...9H                                                             '}
+# - {paper_id: 'http://veritas.sao.arizona.edu/'}
+# - {data_id: no_paper}
 time time_min time_max flux flux_err
 53639.16 53639.1187 53639.2067 0.38 -1.0
 53642.2 53642.2007 53642.2078 0.84 0.38

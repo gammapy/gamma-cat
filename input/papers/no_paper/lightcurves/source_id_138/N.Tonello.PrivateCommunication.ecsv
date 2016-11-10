@@ -10,7 +10,8 @@
 # - COMMENT: [Mrk 421]
 # - {source_id: 138}
 # - {telescope: HEGRA_CT1}
-# - {paper_id: 'N.Tonello.PrivateCommunication                                                  '}
+# - {paper_id: N.Tonello.PrivateCommunication}
+# - {data_id: no_paper}
 time time_min time_max flux flux_err
 51723.13 51723.1094 51723.1641 0.09 0.13
 51724.15 51724.1172 51724.1992 0.43 0.12

@@ -11,6 +11,7 @@
 # - {source_id: 49}
 # - {telescope: HEGRA_CT_System}
 # - {paper_id: 2002A&A...393...89A}
+# - {data_id: ADS_Bibcode}
 time time_min time_max flux flux_err
 51523.74024 51523.74024 -1.0 0.56 -1.0
 51527.74167 51527.74167 -1.0 0.24 0.14

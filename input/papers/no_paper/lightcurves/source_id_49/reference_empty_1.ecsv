@@ -11,6 +11,7 @@
 # - {source_id: 49}
 # - {telescope: HEGRA_CT1}
 # - {paper_id: reference_empty}
+# - {data_id: no_paper}
 time time_min time_max flux flux_err
 51577.084 51577.0625 51577.1055 0.11 0.09
 51577.2285 51577.207 51577.25 0.11 0.09

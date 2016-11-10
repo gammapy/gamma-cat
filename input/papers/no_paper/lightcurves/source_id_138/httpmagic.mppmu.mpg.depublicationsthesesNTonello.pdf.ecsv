@@ -10,7 +10,8 @@
 # - COMMENT: [Mrk 421]
 # - {source_id: 138}
 # - {telescope: MAGIC}
-# - {paper_id: 'http://magic.mppmu.mpg.de/publications/theses/NTonello.pdf                      '}
+# - {paper_id: 'http://magic.mppmu.mpg.de/publications/theses/NTonello.pdf'}
+# - {data_id: no_paper}
 time time_min time_max flux flux_err
 53254.0 53254.0 -1.0 0.15 0.04
 53254.9 53254.9 -1.0 0.064 0.041

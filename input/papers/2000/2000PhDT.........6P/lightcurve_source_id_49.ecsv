@@ -11,6 +11,7 @@
 # - {source_id: 49}
 # - {telescope: CAT}
 # - {paper_id: 2000PhDT.........6P}
+# - {data_id: ADS_Bibcode}
 time time_min time_max flux flux_err
 50432.0 50432.0 -1.0 0.662426 -1.0
 50461.0 50461.0 -1.0 0.671964 -1.0

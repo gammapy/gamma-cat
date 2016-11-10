@@ -10,8 +10,10 @@
 # - COMMENT: [Mrk 421]
 # - {source_id: 91}
 # - {telescope: VERITAS}
-# - {paper_id: '2001ApJ...546..898A                                                             '}
+# - {paper_id: 'http://veritas.sao.arizona.edu/Summaries/summarymrk501.table'}
+# - {data_id: no_paper}
 time time_min time_max flux flux_err
+53795.0 53795.0 -1.0 1.04 0.16
 53798.0 53798.0 -1.0 0.69 0.16
 53799.0 53799.0 -1.0 0.68 -1.0
 53824.0 53824.0 -1.0 0.32 0.14

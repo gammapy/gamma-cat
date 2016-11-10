@@ -11,6 +11,7 @@
 # - {source_id: 49}
 # - {telescope: Whipple}
 # - {paper_id: 2006ApJ...641..740R}
+# - {data_id: ADS_Bibcode}
 time time_min time_max flux flux_err
 52612.0 52612.0 52612.0 0.65 -1.0
 52613.0 52613.0 52613.0 1.55 0.17

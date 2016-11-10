@@ -34,5 +34,4 @@ Other documentation pages:
 * [About](https://github.com/gammapy/gamma-cat/blob/master/README_ABOUT.md)
 * [Use](https://github.com/gammapy/gamma-cat/blob/master/README_USE.md)
 * [Details](https://github.com/gammapy/gamma-cat/blob/master/README_DETAILS.md)
-* [TODO list](https://github.com/gammapy/gamma-cat/blob/master/TODO.md)
 

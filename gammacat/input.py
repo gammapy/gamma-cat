@@ -125,14 +125,17 @@ class PaperInfo:
         self.id = id
         self.path = path
         self.sources = sources
+        _source_ids = [source.data['source_id'] for source in sources]
+        self._sources_by_id = dict(zip(_source_ids, sources))
 
     @classmethod
     def read(cls, path):
         path = Path(path)
         id = urllib.parse.unquote(path.parts[-1])
 
+        # TODO: maybe just use an OrderedDict
         sources = []
-        for source_path in path.glob('*.yaml'):
+        for source_path in sorted(path.glob('*.yaml')):
             source_info = PaperSourceInfo.read(source_path)
             sources.append(source_info)
 
@@ -168,6 +171,12 @@ class PaperInfo:
     def validate(self):
         [_.validate() for _ in self.sources]
 
+    def get_source_by_id(self, source_id):
+        # returning empty PaperSourceInfo makes sense, because it lead to a key
+        # error later and will be treated as missing info
+        missing = PaperSourceInfo(data={}, path='')
+        return self._sources_by_id.get(source_id, missing)
+
 
 class BasicSourceList:
     """
@@ -177,12 +186,14 @@ class BasicSourceList:
 
     def __init__(self, data):
         self.data = data
+        _source_ids = [source.data['source_id'] for source in data]
+        self._source_by_id = dict(zip(_source_ids, data))
 
     def get_source_by_id(self, source_id):
-        for source in self.data:
-            if source.data['source_id'] == source_id:
-                return source
-        raise IndexError('Not found: source_id = {}'.format(source_id))
+        try:
+            return self._source_by_id[source_id]
+        except KeyError:
+            raise IndexError('Not found: source_id = {}'.format(source_id))
 
     @classmethod
     def read(cls):
@@ -247,6 +258,8 @@ class PaperList:
 
     def __init__(self, data):
         self.data = data
+        _paper_ids = [paper.id for paper in data]
+        self._paper_by_id = dict(zip(_paper_ids, data))
 
     @classmethod
     def read(cls):
@@ -286,6 +299,12 @@ class PaperList:
         log.info('Validating YAML files in `input/papers`')
         for paper in self.data:
             paper.validate()
+
+    def get_paper_by_id(self, paper_id):
+        """Get PaperInfo by paper id
+        """
+        missing = PaperInfo(id=paper_id, path=None, sources=[])
+        return self._paper_by_id.get(paper_id, missing)
 
 
 class Schemas:

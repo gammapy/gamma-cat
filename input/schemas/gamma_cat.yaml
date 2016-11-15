@@ -1,3 +1,4 @@
+# Basic info
 - name: source_id
   dtype: int32
   fmt:
@@ -8,6 +9,8 @@
   fmt:
   unit:
   description: Common source name (unique in gamma-cat, like source_id)
+
+# Position info
 - name: ra
   dtype: float32
   fmt:
@@ -31,4 +34,62 @@
   dtype: float32
   unit: deg
   description: Galactic latitude
+  latex:
+
+# Morphology info
+- name: morph_type
+  fmt:
+  dtype: str
+  unit:
+  description: Morphology model type
+  latex:
+
+# Spectrum info
+- name: spec_type
+  fmt:
+  dtype: str
+  unit:
+  description: Spectral model type
+  latex:
+- name: spec_theta
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Spectral extraction region radius
+  latex:
+- name: spec_norm
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Spectral model norm
+  latex:
+- name: spec_norm_err
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Spectral model norm error
+  latex:
+- name: spec_norm_err_sys
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Spectral model norm systematic error
+  latex:
+- name: spec_index
+  fmt:
+  dtype: float32
+  unit:
+  description: Spectral model index
+  latex:
+- name: spec_index_err
+  fmt:
+  dtype: float32
+  unit:
+  description: Spectral model index error
+  latex:
+- name: spec_index_err_sys
+  fmt:
+  dtype: float32
+  unit:
+  description: Spectral model index systematic error
   latex:

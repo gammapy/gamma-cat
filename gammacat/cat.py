@@ -20,12 +20,16 @@ class GammaCatSource:
         self.data = data
 
     @classmethod
-    def from_inputs(cls, basic_source_info):
+    def from_inputs(cls, basic_source_info, paper_source_info):
         data = OrderedDict()
 
         bsi = basic_source_info.data
         cls.fill_basic_info(data, bsi)
         cls.fill_position_info(data, bsi)
+
+        psi = paper_source_info.data
+        cls.fill_spectral_info(data, psi)
+        cls.fill_morphology_info(data, psi)
 
         return cls(data=data)
 
@@ -52,6 +56,53 @@ class GammaCatSource:
         galactic = icrs.galactic
         data['glon'] = galactic.l.deg
         data['glat'] = galactic.b.deg
+
+    @staticmethod
+    def fill_spectral_info(data, psi):
+        try:
+            data['spec_type'] = psi['spec']['type']
+        except KeyError:
+            data['spec_type'] = NA.fill_value['string']
+        try:
+            data['spec_theta'] = psi['spec']['theta']
+        except KeyError:
+            data['spec_theta'] = NA.fill_value['number']
+
+        try:
+            data['spec_norm'] = psi['spec']['norm']['val']
+        except KeyError:
+            data['spec_norm'] = NA.fill_value['number']
+        try:
+            data['spec_norm_err'] = psi['spec']['norm']['err']
+        except KeyError:
+            data['spec_norm_err'] = NA.fill_value['number']
+        try:
+            data['spec_norm_err_sys'] = psi['spec']['norm']['err_sys']
+        except KeyError:
+            data['spec_norm_err_sys'] = NA.fill_value['number']
+
+        try:
+            data['spec_index'] = psi['spec']['index']['val']
+        except KeyError:
+            data['spec_index'] = NA.fill_value['number']
+        try:
+            data['spec_index_err'] = psi['spec']['index']['err']
+        except KeyError:
+            data['spec_index_err'] = NA.fill_value['number']
+        try:
+            data['spec_index_err_sys'] = psi['spec']['index']['err_sys']
+        except KeyError:
+            data['spec_index_err_sys'] = NA.fill_value['number']
+
+
+
+    @staticmethod
+    def fill_morphology_info(data, psi):
+        try:
+            data['morph_type'] = psi['morph']['type']
+        except KeyError:
+            data['morph_type'] = NA.fill_value['string']
+
 
     def row_dict(self):
         """Data in a row dict format.
@@ -131,8 +182,14 @@ class GammaCatMaker:
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
 
+            # for now choose the first valid paper in the list
+            paper_id = basic_source_info.data['papers'][0]
+            paper_info = input_data.papers.get_paper_by_id(paper_id)
+            paper_source_info = paper_info.get_source_by_id(source_id)
+
             source = GammaCatSource.from_inputs(
                 basic_source_info=basic_source_info,
+                paper_source_info=paper_source_info,
             )
             self.sources.append(source)
 

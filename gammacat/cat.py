@@ -2,7 +2,7 @@
 import logging
 from collections import OrderedDict
 from astropy.table import Table, Column
-from astropy.coordinates import SkyCoord
+from astropy.coordinates import SkyCoord, Angle
 from .info import gammacat_info
 from .input import InputData
 from .utils import NA, load_yaml
@@ -94,14 +94,53 @@ class GammaCatSource:
         except KeyError:
             data['spec_index_err_sys'] = NA.fill_value['number']
 
-
-
     @staticmethod
     def fill_morphology_info(data, psi):
         try:
             data['morph_type'] = psi['morph']['type']
         except KeyError:
             data['morph_type'] = NA.fill_value['string']
+        try:
+            val = psi['morph']['sigma']['val']
+        except KeyError:
+            val = NA.fill_value['number']
+        # TODO: the explicit conversion to degree shpuld be avoided and
+        # rather made globally
+        data['morph_sigma'] = Angle(val, 'deg').degree
+
+        try:
+            err = psi['morph']['sigma']['err']
+        except KeyError:
+            err = NA.fill_value['number']
+        data['morph_sigma_err'] = Angle(err, 'deg').degree
+
+        try:
+            val = psi['morph']['sigma2']['val']
+        except KeyError:
+            val = NA.fill_value['number']
+        data['morph_sigma2'] = Angle(val, 'deg').degree
+
+        try:
+            err = psi['morph']['sigma2']['err']
+        except KeyError:
+            err = NA.fill_value['number']
+        data['morph_sigma2_err'] = Angle(err, 'deg').degree
+
+        try:
+            val = psi['morph']['pa']['val']
+        except KeyError:
+            val = NA.fill_value['number']
+        data['morph_pa'] = Angle(val, 'deg').degree
+        try:
+            err = psi['morph']['pa']['err']
+        except KeyError:
+            err = NA.fill_value['number']
+        data['morph_pa_err'] = Angle(err, 'deg').degree
+        try:
+            data['morph_pa_frame'] = psi['morph']['pa']['frame']
+        except KeyError:
+            data['morph_pa_frame'] = NA.fill_value['string']
+
 
 
     def row_dict(self):

@@ -43,6 +43,48 @@
   unit:
   description: Morphology model type
   latex:
+- name: morph_sigma
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Morphology model extension major axis (gauss)
+  latex:
+- name: morph_sigma_err
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Morphology model extension major axis (gauss) error.
+  latex:
+- name: morph_sigma2
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Morphology model extension minor axis (gauss)
+  latex:
+- name: morph_sigma2_err
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Morphology model extension minor axis (gauss) error.
+  latex:
+- name: morph_pa
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Morphology model position angle
+  latex:
+- name: morph_pa_err
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Morphology model position angle error.
+  latex:
+- name: morph_pa_frame
+  fmt:
+  dtype: str
+  unit:
+  description: Morphology model position angle frame.
+  latex:
 
 # Spectrum info
 - name: spec_type

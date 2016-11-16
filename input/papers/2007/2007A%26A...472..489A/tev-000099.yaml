@@ -20,7 +20,7 @@ spec:
 
   norm: {val: 0.3, err: 0.19, err_sys: 0.09}
   index: {val: 0.7, err: 0.6, err_sys: 0.2}
-  ref: {val: 1}
+  ref: 1
   ecut: {val: 6, err: 3, err_sys: 1}
 
   theta: 0.2

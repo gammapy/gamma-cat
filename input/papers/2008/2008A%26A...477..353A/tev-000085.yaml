@@ -19,7 +19,7 @@ spec:
   type: pl
   norm: {val: 4.9, err: 0.9, err_sys: 0.2}
   index: {val: 2.18, err: 0.12, err_sys: 0.2}
-  ref: {val: 1}
+  ref: 1
 
   theta: 0.5
   erange: {min: 0.6 , max: 50}

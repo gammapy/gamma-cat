@@ -20,6 +20,7 @@ spec:
 
   norm: {val: 11.2, err: 4.0, err_sys: 0.3}
   index: {val: 1.82, err: 0.29, err_sys: 0.2}
+  ref: 0.2
 
   theta: 0.36
   erange: {min: 0.2 , max: }

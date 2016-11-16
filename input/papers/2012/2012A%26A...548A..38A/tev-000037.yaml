@@ -22,6 +22,7 @@ spec:
   norm: {val: 14.6, err: 0.8, err_sys: 3.0}
   index: {val: 1.32, err: 0.06, err_sys: 0.12}
   ecut: {val: 14.0, err: 1.6, err_sys: 2.6}
+  ref: 1
 
   theta: 1.2
   erange: {min: 0.75}

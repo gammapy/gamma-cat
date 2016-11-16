@@ -106,13 +106,7 @@ properties:
           val: {type: number}
           err: {type: number, description: Statistical error}
           err_sys: {type: number, description: Systematic error}
-      ref:
-        type: object
-        additionalProperties: false
-        unit: TeV
-        description: Reference energy for norm parameter
-        properties:
-          val: {type: number}
+      ref: {type: number, unit=TeV, description="Reference energy for norm"}
       index:
         type: object
         additionalProperties: false

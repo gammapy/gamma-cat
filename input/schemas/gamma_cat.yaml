@@ -102,20 +102,26 @@
 - name: spec_norm
   fmt:
   dtype: float32
-  unit: deg
+  unit:
   description: Spectral model norm
   latex:
 - name: spec_norm_err
   fmt:
   dtype: float32
-  unit: deg
-  description: Spectral model norm error
+  unit:
+  description: Spectral model norm statistical error
   latex:
 - name: spec_norm_err_sys
   fmt:
   dtype: float32
-  unit: deg
+  unit:
   description: Spectral model norm systematic error
+  latex:
+- name: spec_norm_err_tot
+  fmt:
+  dtype: float32
+  unit:
+  description: Spectral model norm total error
   latex:
 - name: spec_index
   fmt:
@@ -127,11 +133,41 @@
   fmt:
   dtype: float32
   unit:
-  description: Spectral model index error
+  description: Spectral model index statistical error
   latex:
 - name: spec_index_err_sys
   fmt:
   dtype: float32
   unit:
   description: Spectral model index systematic error
+  latex:
+- name: spec_index_err_tot
+  fmt:
+  dtype: float32
+  unit:
+  description: Spectral model index total error
+  latex:
+- name: spec_flux_above_1TeV
+  fmt:
+  dtype: float32
+  unit: cm-2 s-1
+  description: Integrated flux above 1 TeV
+  latex:
+- name: spec_flux_above_1TeV_err
+  fmt:
+  dtype: float32
+  unit: cm-2 s-1
+  description: Integrated flux above 1 TeV error
+  latex:
+- name: spec_energy_flux_1TeV_10TeV
+  fmt:
+  dtype: float32
+  unit: TeV cm-2 s-1
+  description: Integrated energy flux between 1 TeV and 10 TeV
+  latex:
+- name: spec_energy_flux_1TeV_10TeV_err
+  fmt:
+  dtype: float32
+  unit: TeV cm-2 s-1
+  description: Integrated energy flux between 1 TeV and 10 TeV error
   latex:

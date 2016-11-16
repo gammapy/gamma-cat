@@ -1,8 +1,10 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
+import numpy as np
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
+from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
 from .info import gammacat_info
 from .input import InputData
 from .utils import NA, load_yaml
@@ -18,6 +20,7 @@ class GammaCatSource:
 
     def __init__(self, data):
         self.data = data
+        self.fill_derived_spectral_info()
 
     @classmethod
     def from_inputs(cls, basic_source_info, paper_source_info):
@@ -30,7 +33,6 @@ class GammaCatSource:
         psi = paper_source_info.data
         cls.fill_spectral_info(data, psi)
         cls.fill_morphology_info(data, psi)
-
         return cls(data=data)
 
     @staticmethod
@@ -38,7 +40,6 @@ class GammaCatSource:
         data['source_id'] = bsi['source_id']
         data['common_name'] = bsi.get('common_name', NA.fill_value['string'])
         data['gamma_names'] = NA.fill_list(bsi, 'gamma_names')
-
         data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
 
     @staticmethod
@@ -80,6 +81,10 @@ class GammaCatSource:
             data['spec_norm_err_sys'] = psi['spec']['norm']['err_sys']
         except KeyError:
             data['spec_norm_err_sys'] = NA.fill_value['number']
+        try:
+            data['spec_ref'] = psi['spec']['ref']
+        except KeyError:
+            data['spec_ref'] = NA.fill_value['number']
 
         try:
             data['spec_index'] = psi['spec']['index']['val']
@@ -94,6 +99,66 @@ class GammaCatSource:
         except KeyError:
             data['spec_index_err_sys'] = NA.fill_value['number']
 
+        try:
+            data['spec_ecut'] = psi['spec']['ecut']['val']
+        except KeyError:
+            data['spec_ecut'] = NA.fill_value['number']
+        try:
+            data['spec_ecut_err'] = psi['spec']['ecut']['err']
+        except KeyError:
+            data['spec_ecut_err'] = NA.fill_value['number']
+
+    def fill_derived_spectral_info(self):
+        """
+        Fill derived spectral info computed from basic parameters
+        """
+        data = self.data
+        # total errors
+        data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
+        data['spec_index_err_tot'] = np.hypot(data['spec_index_err'], data['spec_index_err_sys'])
+
+        spec_model = self._get_spec_model(data)
+
+        # Integral flux above 1 TeV
+        emin, emax = 1, 1E6 # TeV
+        flux_above_1TeV = spec_model.integral(emin, emax)
+        try:
+            data['spec_flux_above_1TeV'] = flux_above_1TeV.n
+        except:
+            from IPython import embed; embed()
+
+        data['spec_flux_above_1TeV_err'] = flux_above_1TeV.s
+
+        # Energy flux between 1 TeV and 10 TeV
+        emin, emax = 1, 10 # TeV
+        energy_flux = spec_model.energy_flux(emin, emax)
+        data['spec_energy_flux_1TeV_10TeV'] = energy_flux.n
+        data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux.s
+
+
+    def _get_spec_model(self, data):
+        from uncertainties import ufloat
+        spec_type = data['spec_type']
+
+        # TODO: what about systematic errors?
+        index = ufloat(data['spec_index'], data['spec_index_err'])
+        amplitude = ufloat(data['spec_norm'], data['spec_norm_err']) * 1E-12
+        reference = data['spec_ref']
+
+        if spec_type == 'pl':
+            model = PowerLaw(index, amplitude, reference)
+        elif spec_type == 'pl2':
+            model = PowerLaw2(amplitude, index, reference, 1E10)
+        elif spec_type == 'ecpl':
+            lambda_ = 1. / ufloat(data['spec_ecut'], data['spec_ecut_err'])
+            model = ExponentialCutoffPowerLaw(index, amplitude, reference, lambda_)
+        else:
+            #return generic model, as all parameters are NaN it will
+            # evaluate to NaN
+            model = PowerLaw(index, amplitude, reference)
+        return model
+
+
     @staticmethod
     def fill_morphology_info(data, psi):
         try:
@@ -104,8 +169,8 @@ class GammaCatSource:
             val = psi['morph']['sigma']['val']
         except KeyError:
             val = NA.fill_value['number']
-        # TODO: the explicit conversion to degree shpuld be avoided and
-        # rather made globally
+        # TODO: the explicit conversion to degree should be avoided and
+        # rather made on the whole column
         data['morph_sigma'] = Angle(val, 'deg').degree
 
         try:

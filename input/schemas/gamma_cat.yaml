@@ -9,6 +9,11 @@
   fmt:
   unit:
   description: Common source name (unique in gamma-cat, like source_id)
+- name: paper_id
+  dtype: str
+  fmt:
+  unit:
+  description: Paper ID where source parameters are taken from.
 
 # Position info
 - name: ra

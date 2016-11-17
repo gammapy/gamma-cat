@@ -60,6 +60,7 @@ class GammaCatSource:
 
     @staticmethod
     def fill_spectral_info(data, psi):
+        data['paper_id'] = psi.get('paper_id', NA.fill_value['string'])
         try:
             data['spec_type'] = psi['spec']['type']
         except KeyError:

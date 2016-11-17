@@ -129,7 +129,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 52 "Markarian 180" "" 174.11 70.1576 131.91 45.641 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 46 "Westerlund 2" "" 155.75 -57.5 284.016 -0.184706 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 10 "S3 0218+35" "" 35.2728 35.9371 142.602 -23.4869 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-44 "HESS J1018-589 B" "" 154.088 -58.9534 284.079 -1.87988 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+44 "HESS J1018-589 B" 2012A&A...541A...5H 154.088 -58.9534 284.079 -1.87988 gauss 0.15 0.03 nan nan nan nan "" pl 0.3 0.42 0.11 0.08 0.136015 2.9 0.4 0.2 0.447214 2.21053e-13 7.42801e-14 4.07917e-13 1.66102e-13
 57 MS1221.8+2452 "" 186.101 24.6065 233.952 83.4178 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 17 "RBS 0413" "" 49.9659 18.7596 165.107 -31.6973 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 23 "RGB J0521+212" "" 80.4415 21.2143 183.604 -8.70833 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
@@ -191,7 +191,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 21 "PKS 0447-439" "" 72.3529 -43.8358 248.805 -39.9188 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 47 "HESS J1026-582" "" 157.166 -58.2919 285.073 -0.459735 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 31 Geminga "" 98.4756 17.7703 195.134 4.26581 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-45 "HESS J1018-589 A" "" 154.575 -59.0 284.314 -1.77952 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+45 "HESS J1018-589 A" 2012A&A...541A...5H 154.575 -59.0 284.314 -1.77952 point nan nan nan nan nan nan "" pl 0.1 0.68 0.16 0.13 0.206155 2.7 0.5 0.2 0.538516 4e-13 1.50662e-13 7.77603e-13 3.79324e-13
 24 "LMC N132D" "" 81.2592 -69.6442 280.307 -32.784 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 131 "HESS J1858+020" 2008A&A...477..353A 284.583 2.09 35.5781 -0.580171 gauss 0.08 0.02 0.02 0.04 4.0 17.0 radec pl 0.15 0.6 0.1 0.2 0.223607 2.17 0.12 0.2 0.233238 5.1282e-13 1.00357e-13 1.14324e-12 2.41061e-13
 122 "HESS J1833-105" "" 278.25 -10.5 21.4982 -0.73176 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan

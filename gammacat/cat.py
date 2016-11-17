@@ -286,20 +286,38 @@ class GammaCatMaker:
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
-
-            # for now choose the first valid paper in the list
-            for paper_id in basic_source_info.data['papers']:
-                paper_info = input_data.papers.get_paper_by_id(paper_id)
-                if len(paper_info.sources) > 0:
-                    break
-
+            paper_info = self.choose_paper(input_data, basic_source_info.data['papers'])
             paper_source_info = paper_info.get_source_by_id(source_id)
 
+            # TODO: right now this implies, that a GammaCatSource object can only
+            # handle the information from one paper, maybe this should be changed
             source = GammaCatSource.from_inputs(
                 basic_source_info=basic_source_info,
                 paper_source_info=paper_source_info,
             )
             self.sources.append(source)
+
+    def choose_paper(self, input_data, paper_ids, method='first-available'):
+        """Choose paper refrence for singel source according to different criteria"""
+
+        if method == 'first-available':
+            # choose the first paper in the list, where info on the source
+            # is actually available
+            for paper_id in paper_ids:
+                paper_info = input_data.papers.get_paper_by_id(paper_id)
+                if len(paper_info.sources) > 0:
+                    break
+            return paper_info
+
+        elif method == 'first':
+            # choose first entry of the list
+            return input_data.papers.get_paper_by_id(paper_ids[0])
+
+        elif method == 'latest':
+            # choose latest paper
+            raise NotImplementedError
+        else:
+            raise ValueError('Not a valid method.')
 
     def make_table(self):
         """Convert Python data structures to a flat table."""

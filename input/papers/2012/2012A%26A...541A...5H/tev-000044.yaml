@@ -1,0 +1,23 @@
+paper_id: 2012A&A...541A...5H
+source_id: 44
+
+data:
+  significance: 8.5
+
+pos:
+  glon: {val: 10h16m31s, err: 12s}
+  glat: {val: -58d58m48s, err: 3s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.15, err: 0.03}
+
+spec:
+  type: pl
+
+  norm: {val: 0.42, err: 0.11, err_sys: 0.08}
+  index: {val: 2.9, err: 0.4, err_sys: 0.2}
+  ref: 1
+
+  theta: 0.3
+  erange: {min: 0.6 , max: }

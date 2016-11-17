@@ -172,7 +172,7 @@ class PaperInfo:
         [_.validate() for _ in self.sources]
 
     def get_source_by_id(self, source_id):
-        # returning empty PaperSourceInfo makes sense, because it lead to a key
+        # returning empty PaperSourceInfo makes sense, because it leads to a key
         # error later and will be treated as missing info
         missing = PaperSourceInfo(data={}, path='')
         return self._sources_by_id.get(source_id, missing)

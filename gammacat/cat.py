@@ -287,8 +287,11 @@ class GammaCatMaker:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
 
             # for now choose the first valid paper in the list
-            paper_id = basic_source_info.data['papers'][0]
-            paper_info = input_data.papers.get_paper_by_id(paper_id)
+            for paper_id in basic_source_info.data['papers']:
+                paper_info = input_data.papers.get_paper_by_id(paper_id)
+                if len(paper_info.sources) > 0:
+                    break
+
             paper_source_info = paper_info.get_source_by_id(source_id)
 
             source = GammaCatSource.from_inputs(

@@ -23,7 +23,7 @@ class GammaCatSource:
         self.fill_derived_spectral_info()
 
     @classmethod
-    def from_inputs(cls, basic_source_info, paper_source_info):
+    def from_inputs(cls, basic_source_info, paper_source_info, sed_info):
         data = OrderedDict()
 
         bsi = basic_source_info.data
@@ -33,6 +33,8 @@ class GammaCatSource:
         psi = paper_source_info.data
         cls.fill_spectral_info(data, psi)
         cls.fill_morphology_info(data, psi)
+
+        cls.fill_sed_info(data, sed_info)
         return cls(data=data)
 
     @staticmethod
@@ -109,6 +111,10 @@ class GammaCatSource:
         except KeyError:
             data['spec_ecut_err'] = NA.fill_value['number']
 
+    @staticmethod
+    def fill_sed_info(data, sed_info):
+        pass
+
     def fill_derived_spectral_info(self):
         """
         Fill derived spectral info computed from basic parameters
@@ -136,7 +142,6 @@ class GammaCatSource:
         data['spec_energy_flux_1TeV_10TeV'] = energy_flux.n
         data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux.s
 
-
     def _get_spec_model(self, data):
         from uncertainties import ufloat
         spec_type = data['spec_type']
@@ -158,7 +163,6 @@ class GammaCatSource:
             # evaluate to NaN
             model = PowerLaw(index, amplitude, reference)
         return model
-
 
     @staticmethod
     def fill_morphology_info(data, psi):
@@ -206,7 +210,6 @@ class GammaCatSource:
             data['morph_pa_frame'] = psi['morph']['pa']['frame']
         except KeyError:
             data['morph_pa_frame'] = NA.fill_value['string']
-
 
 
     def row_dict(self):
@@ -288,12 +291,14 @@ class GammaCatMaker:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             paper_info = self.choose_paper(input_data, basic_source_info.data['papers'])
             paper_source_info = paper_info.get_source_by_id(source_id)
+            sed_info = input_data.seds.get_sed_by_source_id(source_id)
 
             # TODO: right now this implies, that a GammaCatSource object can only
             # handle the information from one paper, maybe this should be changed
             source = GammaCatSource.from_inputs(
                 basic_source_info=basic_source_info,
                 paper_source_info=paper_source_info,
+                sed_info=sed_info
             )
             self.sources.append(source)
 

@@ -40,11 +40,14 @@ class SEDList:
 
     def __init__(self, data):
         self.data = data
+        _source_ids = [sed.table.meta['source_id'] for sed in data]
+        self._sed_by_source_id = dict(zip(_source_ids, data))
+
 
     @classmethod
     def read(cls):
         path = gammacat_info.base_dir / 'input/papers'
-        paths = path.glob('*/*/*.ecsv')
+        paths = sorted(path.glob('*/*/*.ecsv'))
 
         data = []
         for path in paths:
@@ -57,3 +60,7 @@ class SEDList:
     def validate(self):
         for sed in self.data:
             sed.validate()
+
+    def get_sed_by_source_id(self, source_id):
+        missing = SED(table={}, path='')
+        return self._sed_by_source_id.get(source_id, missing)

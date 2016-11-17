@@ -5,8 +5,8 @@ data:
   significance: 8.5
 
 pos:
-  glon: {val: 10h16m31s, err: 12s}
-  glat: {val: -58d58m48s, err: 3s}
+  ra: {val: 10h16m31s, err: 12s}
+  dec: {val: -58d58m48s, err: 3s}
 
 morph:
   type: gauss

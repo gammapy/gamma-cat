@@ -55,7 +55,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 55 "1ES 1218+304" "" 185.341 30.177 186.359 82.7346 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 42 "1RXS J101015.9-311909" "" 152.567 -31.319 266.908 20.0536 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 117 "SNR G15.4+0.1" "" 274.5 -15.45 15.4149 0.185687 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-128 "HESS J1848-018" "" 282.12 -1.792 30.9999 -0.159204 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+128 "HESS J1848-018" 2008AIPC.1085..372C 282.12 -1.792 30.9999 -0.159204 gauss 0.32 0.02 nan nan nan nan "" pl 0.2 3.7 0.4 0.7 0.806226 2.8 0.2 0.2 0.282843 2.05556e-12 3.18664e-13 3.89199e-12 7.62108e-13
 134 "HESS J1912+101" "" 288.335 10.1897 44.4846 -0.166885 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 14 "LS I +61 303" "" 40.1319 61.2293 135.675 1.08613 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 116 "HESS J1813-178" "" 273.363 -17.8489 12.7868 0.000434483 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
@@ -143,7 +143,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 154 "1ES 2344+514" "" 356.77 51.705 112.891 -9.90775 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 97 "CTB 37A" "" 258.643 -38.549 348.432 0.076939 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 50 "HESS J1119-614" "" 169.81 -61.4637 292.151 -0.536943 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-61 "HESS J1303-631" "" 195.752 -63.1986 304.236 -0.35615 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+61 "HESS J1303-631" 2012A&A...548A..46H 195.752 -63.1986 304.236 -0.35615 gauss 0.194 0.008 0.145 0.006 147.0 6.0 radec ecpl 0.6 5.6 0.5 1.1 1.2083 1.5 0.2 0.2 0.282843 5.46979e-12 1.22128e-12 1.38609e-11 3.99815e-12
 58 "M 87" "" 187.706 12.3911 283.778 74.4912 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 111 "HESS J1800-240A" "" 270.492 -23.9617 6.14186 -0.629822 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 129 "HESS J1849-000" "" 282.258 -0.021972 32.6379 0.525621 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan

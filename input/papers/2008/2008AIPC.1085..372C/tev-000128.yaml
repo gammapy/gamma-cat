@@ -6,8 +6,8 @@ data:
   significance: 9
 
 pos:
-  lon: {val: 31}
-  lat: {val: -0.16}
+  glon: {val: 31}
+  glat: {val: -0.16}
 
 morph:
   type: gauss

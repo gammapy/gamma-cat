@@ -70,7 +70,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 157 "HESS J1852-000" "" 283.0 0.0 32.996 -0.125063 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 30 "HESS J0632+057" 2007A&A...469L...1A 98.2469 5.80033 205.667 -1.43953 point nan nan nan nan nan nan "" pl 0.11 0.91 0.17 0.3 0.344819 2.53 0.26 0.2 0.328024 5.94771e-13 1.50204e-13 1.21026e-12 3.68002e-13
 106 "Galactic Centre" "" 266.417 -29.0078 359.944 -0.0461624 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-64 "HESS J1356-645" "" 209.0 -64.5 309.812 -2.49414 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+64 "HESS J1356-645" 2008AIPC.1085..285R 209.0 -64.5 309.812 -2.49414 gauss 0.2 0.02 nan nan nan nan "" pl 0.22 3.5 0.6 nan nan 2.2 0.2 0.2 0.282843 2.91667e-12 6.97355e-13 6.45825e-12 1.76402e-12
 127 "HESS J1846-029" "" 281.5 -2.9 29.7313 -0.113532 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 86 "HESS J1632-478" 2006ApJ...636..777A 248.008 -47.8745 336.33 0.168757 gauss 0.21 0.05 0.06 0.04 21.0 13.0 galactic pl2 0.36 28.7 5.3 0.3 5.30848 2.12 0.2 0.2 0.282843 4.7319e-12 1.756e-12 1.06623e-11 4.34231e-12
 68 "HESS J1427-608" 2008A&A...477..353A 216.967 -60.85 314.408 -0.145001 gauss 0.04 0.02 0.08 0.02 80.0 17.0 radec pl 0.2 1.3 0.4 0.2 0.447214 2.16 0.14 0.2 0.244131 1.12069e-12 3.70405e-13 2.50387e-12 8.58534e-13
@@ -138,7 +138,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 90 "Westerlund 1" 2012A&A...537A.114A 251.5 -45.8 339.468 -0.229421 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 75 "HESS J1503-582" "" 225.75 -58.2 319.56 0.359443 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 160 "HESS J1813-126" "" 273.35 -12.77 17.2417 2.44206 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-137 "HESS J1943+213" "" 295.979 21.3022 57.7576 -1.2927 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+137 "HESS J1943+213" 2011A&A...529A..49H 295.979 21.3022 57.7576 -1.2927 point nan nan nan nan nan nan "" pl 0.41 0.56 0.08 0.11 0.136015 3.1 0.3 0.2 0.360555 2.66667e-13 5.38748e-14 4.68652e-13 1.20243e-13
 87 "HESS J1634-472" 2006ApJ...636..777A 248.5 -47.2 337.05 0.384493 gauss 0.11 0.03 nan nan nan nan "" pl2 0.23 13.4 2.6 0.3 2.61725 2.38 0.27 0.2 0.336006 1.45387e-12 6.91896e-13 3.07884e-12 1.66558e-12
 154 "1ES 2344+514" "" 356.77 51.705 112.891 -9.90775 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 97 "CTB 37A" "" 258.643 -38.549 348.432 0.076939 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan

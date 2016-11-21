@@ -1,0 +1,22 @@
+paper_id: 2011A&A...529A..49H
+source_id: 137
+
+data:
+  livetime: 24.8
+  significance: 7.9
+
+pos:
+  ra: {val: 19h43m55s, err: 1s}
+  dec: {val: +21d18m8s, err: 17s}
+
+morph:
+  type: point
+
+spec:
+  type: pl # more like 'ecpl', 'pl' because both were used in the paper and were transcripted here
+  norm: {val: 0.56, err: 0.08, err_sys: 0.11}
+  index: {val: 3.1, err: 0.3, err_sys: 0.2}
+  ref: 1
+
+  theta: 0.41 # see p.6 and fig 3, but 0.7 or 0.8 possible as well, see fig 2
+  erange: {min: 0.47, max: 6} # see p.8

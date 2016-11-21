@@ -58,7 +58,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 128 "HESS J1848-018" 2008AIPC.1085..372C 282.12 -1.792 30.9999 -0.159204 gauss 0.32 0.02 nan nan nan nan "" pl 0.2 3.7 0.4 0.7 0.806226 2.8 0.2 0.2 0.282843 2.05556e-12 3.18664e-13 3.89199e-12 7.62108e-13
 134 "HESS J1912+101" "" 288.335 10.1897 44.4846 -0.166885 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 14 "LS I +61 303" "" 40.1319 61.2293 135.675 1.08613 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-116 "HESS J1813-178" "" 273.363 -17.8489 12.7868 0.000434483 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+116 "HESS J1813-178" 2006ApJ...636..777A 273.363 -17.8489 12.7868 0.000434483 gauss 0.036 0.006 nan nan nan nan "" pl2 0.15 14.2 1.1 0.3 1.14018 2.09 0.08 0.2 0.215407 2.45703e-12 3.69198e-13 5.56968e-12 9.12118e-13
 94 "HESS J1708-443" 2011A&A...528A.143H 257.0 -44.3 343.065 -2.32954 gauss 0.29 0.04 nan nan nan nan "" pl 0.71 4.2 0.8 1.0 1.28062 2.0 0.1 0.2 0.223607 4.2e-12 9.03545e-13 9.67086e-12 1.84207e-12
 3 "Tycho SNR" "" 6.3397 64.1408 120.092 1.41293 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 81 "SNR G327.1-1.1" "" 238.635 -55.0623 327.166 -1.04925 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
@@ -77,7 +77,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 35 "S5 0716+714" "" 110.473 71.3434 143.981 28.0176 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 110 "SNR G0.9+0.1" "" 266.825 -28.15 0.863437 0.093178 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 69 "H 1426+428" "" 217.136 42.6725 77.4872 64.8989 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-104 "HESS J1741-302" "" 265.25 -30.2 358.397 0.190997 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+104 "HESS J1741-302" 2008AIPC.1085..249T 265.25 -30.2 358.397 0.190997 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 113 "HESS J1804-216" 2006ApJ...636..777A 271.124 -21.7326 8.36889 -0.0391998 gauss 0.2 0.01 nan nan nan nan "" pl2 0.36 53.2 2.0 0.3 2.02237 2.72 0.06 0.2 0.208806 3.33951e-12 3.46061e-13 6.4576e-12 7.65933e-13
 155 "H 2356-309" "" 359.783 -30.628 12.8391 -78.0355 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 66 "HESS J1420-607" 2006A%26A...456..245A 214.692 -60.9783 313.326 0.118774 gauss 0.055 0.00833333 nan nan nan nan "" pl2 0.16 2.97 0.18 0.6 0.626418 2.17 0.06 0.1 0.116619 2.97e-12 1.8e-13 6.62105e-12 4.10825e-13
@@ -134,7 +134,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 17 "RBS 0413" "" 49.9659 18.7596 165.107 -31.6973 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 23 "RGB J0521+212" "" 80.4415 21.2143 183.604 -8.70833 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 120 "HESS J1831-098" "" 277.85 -9.9 21.8484 -0.105417 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-93 "HESS J1708-410" 2006ApJ...636..777A 257.1 -41.09 345.682 -0.468805 gauss 0.036 0.006 nan nan nan nan "" pl2 0.15 14.2 1.1 0.3 1.14018 2.09 0.08 0.2 0.215407 2.45703e-12 3.69198e-13 5.56968e-12 9.12118e-13
+93 "HESS J1708-410" 2006ApJ...636..777A 257.1 -41.09 345.682 -0.468805 gauss 0.054 0.012 nan nan nan nan "" pl2 0.17 8.8 0.7 0.3 0.761577 2.34 0.11 0.2 0.228254 1.01827e-12 1.97634e-13 2.1788e-12 4.79574e-13
 90 "Westerlund 1" 2012A&A...537A.114A 251.5 -45.8 339.468 -0.229421 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 75 "HESS J1503-582" "" 225.75 -58.2 319.56 0.359443 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 160 "HESS J1813-126" "" 273.35 -12.77 17.2417 2.44206 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan

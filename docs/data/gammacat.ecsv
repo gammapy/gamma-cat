@@ -59,7 +59,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 134 "HESS J1912+101" "" 288.335 10.1897 44.4846 -0.166885 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 14 "LS I +61 303" "" 40.1319 61.2293 135.675 1.08613 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 116 "HESS J1813-178" "" 273.363 -17.8489 12.7868 0.000434483 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-94 "HESS J1708-443" "" 257.0 -44.3 343.065 -2.32954 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+94 "HESS J1708-443" 2011A&A...528A.143H 257.0 -44.3 343.065 -2.32954 gauss 0.29 0.04 nan nan nan nan "" pl 0.71 4.2 0.8 1.0 1.28062 2.0 0.1 0.2 0.223607 4.2e-12 9.03545e-13 9.67086e-12 1.84207e-12
 3 "Tycho SNR" "" 6.3397 64.1408 120.092 1.41293 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 81 "SNR G327.1-1.1" "" 238.635 -55.0623 327.166 -1.04925 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 73 "HESS J1458-608" "" 224.874 -60.8781 317.891 -1.7813 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
@@ -93,7 +93,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 74 "SN 1006" "" 225.592 -42.0969 327.411 14.4674 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 121 "HESS J1832-093" "" 278.188 -9.36515 22.4768 -0.15392 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 22 "1ES 0502+675" "" 76.9841 67.6234 143.795 15.8897 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-77 "HESS J1507-622" "" 226.875 -62.417 317.975 -3.58781 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+77 "HESS J1507-622" 2011A&A...525A..45H 226.875 -62.417 317.975 -3.58781 gauss 0.15 0.02 nan nan nan nan "" pl 0.22 3.1 0.8 nan nan 2.49 0.18 0.2 0.269072 2.08054e-12 5.9283e-13 4.27931e-12 1.32022e-12
 140 "PKS 2005-489" "" 302.356 -48.8316 350.373 -32.6008 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 13 "1ES 0229+200" "" 38.2026 20.2882 152.941 -36.6073 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 8 "RGB J0152+017" "" 28.165 1.78816 152.377 -57.5409 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
@@ -127,7 +127,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 80 "AP Librae" "" 229.424 -24.3721 340.681 27.578 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 79 "MSH 15-5-02" "" 228.321 -59.0817 320.278 -1.07283 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 52 "Markarian 180" "" 174.11 70.1576 131.91 45.641 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-46 "Westerlund 2" "" 155.75 -57.5 284.016 -0.184706 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+46 "Westerlund 2" 2011A&A...525A..46H 155.75 -57.5 284.016 -0.184706 gauss 0.18 0.02 nan nan nan nan "" pl 0.33 3.25 0.5 0.65 0.820061 2.58 0.19 0.2 0.275862 2.05696e-12 4.01658e-13 4.12959e-12 9.51259e-13
 10 "S3 0218+35" "" 35.2728 35.9371 142.602 -23.4869 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 44 "HESS J1018-589 B" 2012A&A...541A...5H 154.088 -58.9534 284.079 -1.87988 gauss 0.15 0.03 nan nan nan nan "" pl 0.3 0.42 0.11 0.08 0.136015 2.9 0.4 0.2 0.447214 2.21053e-13 7.42801e-14 4.07917e-13 1.66102e-13
 57 MS1221.8+2452 "" 186.101 24.6065 233.952 83.4178 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
@@ -189,7 +189,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 163 "HESS J1832-085" "" 278.13 -8.51 23.2088 0.291941 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 156 "HESS J1800-240B" 2008A%26A...481..401A 270.108 -24.0383 5.90183 -0.363489 gauss 0.15 nan nan nan nan nan "" pl 0.2 7.58 0.9 0.15 0.912414 2.5 0.17 0.2 0.262488 5.05333e-12 8.29456e-13 1.0366e-11 2.05677e-12
 21 "PKS 0447-439" "" 72.3529 -43.8358 248.805 -39.9188 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-47 "HESS J1026-582" "" 157.166 -58.2919 285.073 -0.459735 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+47 "HESS J1026-582" 2011A&A...525A..46H 157.166 -58.2919 285.073 -0.459735 gauss 0.14 0.03 nan nan nan nan "" pl 0.33 0.99 0.34 0.2 0.394462 1.94 0.2 0.2 0.282843 1.05319e-12 4.25486e-13 2.44453e-12 1.01804e-12
 31 Geminga "" 98.4756 17.7703 195.134 4.26581 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 45 "HESS J1018-589 A" 2012A&A...541A...5H 154.575 -59.0 284.314 -1.77952 point nan nan nan nan nan nan "" pl 0.1 0.68 0.16 0.13 0.206155 2.7 0.5 0.2 0.538516 4e-13 1.50662e-13 7.77603e-13 3.79324e-13
 24 "LMC N132D" "" 81.2592 -69.6442 280.307 -32.784 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
@@ -203,7 +203,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 37 "Vela X" 2012A&A...548A..38A 128.287 -45.19 263.332 -3.1061 gauss 0.48 0.03 0.36 0.03 41.0 7.0 radec ecpl 1.2 14.6 0.8 3.0 3.10484 1.32 0.06 0.12 0.134164 2.104e-11 1.97295e-12 5.78324e-11 5.98622e-12
 130 "HESS J1857+026" 2008A&A...477..353A 284.296 2.66667 35.96 -0.0612988 gauss 0.11 0.08 0.08 0.03 -3.0 49.0 radec pl 0.46 6.1 0.7 0.2 0.728011 2.39 0.08 0.2 0.215407 4.38849e-12 5.63386e-13 9.26918e-12 1.28874e-12
 91 "Markarian 501" "" 253.468 39.7602 63.6 38.8592 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-89 "HESS J1641-463" "" 250.257 -46.3031 338.522 0.0918361 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+89 "HESS J1641-463" 2013arXiv1303.0979O 250.257 -46.3031 338.522 0.0918361 gauss nan nan nan nan nan nan "" pl nan nan nan nan nan nan nan nan nan nan nan nan nan
 103 "HESS J1731-347" 2008A&A...477..353A 262.979 -34.71 353.565 -0.62219 gauss 0.18 0.07 0.11 0.03 -89.0 21.0 radec pl 0.6 6.1 0.8 0.2 0.824621 2.26 0.1 0.2 0.223607 4.84127e-12 7.42129e-13 1.05685e-11 1.76703e-12
 102 "HESS J1729-345" "" 262.25 -34.5 353.41 -0.00549247 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 124 "HESS J1837-069" "" 279.428 -6.9275 25.2057 -0.1212 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan

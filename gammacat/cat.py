@@ -129,16 +129,14 @@ class GammaCatSource:
         # Integral flux above 1 TeV
         emin, emax = 1, 1E6 # TeV
         flux_above_1TeV = spec_model.integral(emin, emax)
-        try:
-            data['spec_flux_above_1TeV'] = flux_above_1TeV.n
-        except:
-            from IPython import embed; embed()
+        data['spec_flux_above_1TeV'] = flux_above_1TeV.n
 
         data['spec_flux_above_1TeV_err'] = flux_above_1TeV.s
 
         # Energy flux between 1 TeV and 10 TeV
         emin, emax = 1, 10 # TeV
         energy_flux = spec_model.energy_flux(emin, emax)
+
         data['spec_energy_flux_1TeV_10TeV'] = energy_flux.n
         data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux.s
 

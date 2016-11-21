@@ -170,7 +170,7 @@ source_id common_name paper_id ra dec glon glat morph_type morph_sigma morph_sig
 26 "30 Dor C" "" 83.9617 -69.2061 279.624 -31.9118 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 96 "RX J1713.7-3946" 2016arXiv160908671H 258.112 -39.6867 347.269 -0.256913 shell 0.5 nan nan nan nan nan "" ecpl 0.6 20.2 0.8 nan nan 2.32 0.02 0.1 0.10198 1.24978e-11 5.50972e-13 2.56409e-11 1.22956e-12
 56 "PKS 1222+216" "" 186.227 21.3796 255.073 81.6598 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
-70 "RCW 86" 2016arXiv160104461H 220.121 -62.645 315.093 -2.37652 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
+70 "RCW 86" 2016arXiv160104461H 220.121 -62.645 315.093 -2.37652 shell 0.19 0.03 0.3 0.02 nan nan "" ecpl 0.41 3.0 0.2 0.6 0.632456 1.59 0.22 0.2 0.297321 1.83137e-12 5.02265e-13 3.92511e-12 1.47788e-12
 34 "RGB J0710+591" "" 107.625 59.139 157.404 25.4265 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 18 "NGC 1275" "" 49.9507 41.5117 150.576 -13.2612 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan
 67 "PKS 1424+240" "" 216.752 23.8 29.4874 68.2076 "" nan nan nan nan nan nan "" "" nan nan nan nan nan nan nan nan nan nan nan nan nan

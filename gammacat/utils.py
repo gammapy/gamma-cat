@@ -25,7 +25,6 @@ class NA:
         integer=-999,
         number=np.nan,
         string='',
-        array='',
     )
 
     # @classmethod
@@ -34,6 +33,17 @@ class NA:
     #         data[key] = cls.fill_value['string']
     #     else:
     #         return data
+
+    @staticmethod
+    def fill_value_array(shape):
+        return np.ones(shape) * np.nan
+
+    @staticmethod
+    def resize_sed_array(array, shape):
+        array = array.copy()
+        array.resize(shape)
+        array[array == 0] = np.nan
+        return array
 
     @classmethod
     def fill_list(cls, data, key):

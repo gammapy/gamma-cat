@@ -176,3 +176,29 @@
   unit: TeV cm-2 s-1
   description: Integrated energy flux between 1 TeV and 10 TeV error
   latex:
+
+# SED info
+- name: sed_e_ref
+  fmt:
+  dtype: float32
+  unit: TeV
+  description: Reference energy
+  latex:
+- name: sed_dnde
+  fmt:
+  dtype: float32
+  unit: TeV-1 cm-2 s-1
+  description: Flux at reference energy
+  latex:
+- name: sed_dnde_errp
+  fmt:
+  dtype: float32
+  unit: TeV-1 cm-2 s-1
+  description: Upper error on flux at reference energy
+  latex:
+- name: sed_dnde_errn
+  fmt:
+  dtype: float32
+  unit: TeV-1 cm-2 s-1
+  description: Lower error on flux at reference energy
+  latex:

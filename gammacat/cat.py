@@ -112,8 +112,32 @@ class GammaCatSource:
             data['spec_ecut_err'] = NA.fill_value['number']
 
     @staticmethod
-    def fill_sed_info(data, sed_info):
-        pass
+    def fill_sed_info(data, sed_info, shape=(30,)):
+        """
+        Fill flux point info data.
+        """
+        #if len(sed_info.table) > 0:
+        #    from IPython import embed; embed(); 1/0
+        try:
+            e_ref = sed_info.table['e_ref'].data
+            data['sed_e_ref'] = NA.resize_sed_array(e_ref, shape)
+        except KeyError:
+            data['sed_e_ref'] = NA.fill_value_array(shape)
+        try:
+            dnde = sed_info.table['sed_dnde'].data
+            data['sed_dnde'] = NA.resize_sed_array(dnde, shape)
+        except KeyError:
+            data['sed_dnde'] = NA.fill_value_array(shape)
+        try:
+            dnde_errp = sed_info.table['dnde_errp'].data
+            data['sed_dnde_errp'] = NA.resize_sed_array(dnde_errp, shape)
+        except KeyError:
+            data['sed_dnde_errp'] = NA.fill_value_array(shape)
+        try:
+            dnde_errn = sed_info.table['dnde_errn'].data
+            data['sed_dnde_errn'] = NA.resize_sed_array(dnde_errn, shape)
+        except KeyError:
+            data['sed_dnde_errn'] = NA.fill_value_array(shape)
 
     def fill_derived_spectral_info(self):
         """
@@ -345,10 +369,11 @@ class GammaCatMaker:
         # table.info('stats')
         # table.pprint()
 
-        path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
-        log.info('Writing {}'.format(path))
-        table.write(str(path), format='ascii.ecsv')
-
         path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
+
+        #path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
+        #log.info('Writing {}'.format(path))
+        #table.write(str(path), format='ascii.ecsv')
+

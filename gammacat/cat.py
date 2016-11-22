@@ -14,6 +14,9 @@ __all__ = ['GammaCatMaker']
 log = logging.getLogger(__name__)
 
 
+#TODO: replace flux factor by reading the correct units from the schema
+FLUX_FACTOR = 1E-12
+
 class GammaCatSource:
     """Gather data for one source in gamma-cat.
     """
@@ -81,15 +84,15 @@ class GammaCatSource:
             data['spec_theta'] = NA.fill_value['number']
 
         try:
-            data['spec_norm'] = psi['spec']['norm']['val']
+            data['spec_norm'] = psi['spec']['norm']['val'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm'] = NA.fill_value['number']
         try:
-            data['spec_norm_err'] = psi['spec']['norm']['err']
+            data['spec_norm_err'] = psi['spec']['norm']['err'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm_err'] = NA.fill_value['number']
         try:
-            data['spec_norm_err_sys'] = psi['spec']['norm']['err_sys']
+            data['spec_norm_err_sys'] = psi['spec']['norm']['err_sys'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm_err_sys'] = NA.fill_value['number']
         try:
@@ -132,7 +135,7 @@ class GammaCatSource:
         except KeyError:
             data['sed_e_ref'] = NA.fill_value_array(shape)
         try:
-            dnde = sed_info.table['sed_dnde'].data
+            dnde = sed_info.table['dnde'].data
             data['sed_dnde'] = NA.resize_sed_array(dnde, shape)
         except KeyError:
             data['sed_dnde'] = NA.fill_value_array(shape)
@@ -178,7 +181,7 @@ class GammaCatSource:
 
         # TODO: what about systematic errors?
         index = ufloat(data['spec_index'], data['spec_index_err'])
-        amplitude = ufloat(data['spec_norm'], data['spec_norm_err']) * 1E-12
+        amplitude = ufloat(data['spec_norm'], data['spec_norm_err'])
         reference = data['spec_ref']
 
         if spec_type == 'pl':

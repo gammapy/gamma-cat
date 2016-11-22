@@ -116,6 +116,12 @@
   unit: deg
   description: Spectral extraction region radius
   latex:
+- name: spec_ref
+  fmt:
+  dtype: float32
+  unit: TeV
+  description: Spectral model reference energy
+  latex:
 - name: spec_norm
   fmt:
   dtype: float32
@@ -143,7 +149,7 @@
 - name: spec_index
   fmt:
   dtype: float32
-  unit:
+  unit: ''
   description: Spectral model index
   latex:
 - name: spec_index_err
@@ -163,6 +169,18 @@
   dtype: float32
   unit:
   description: Spectral model index total error
+  latex:
+- name: spec_ecut
+  fmt:
+  dtype: float32
+  unit: TeV
+  description: Spectral model cut off (ecpl)
+  latex:
+- name: spec_ecut_err
+  fmt:
+  dtype: float32
+  unit:
+  description: Spectral model cut off (ecpl) error
   latex:
 - name: spec_flux_above_1TeV
   fmt:

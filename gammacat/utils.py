@@ -25,6 +25,7 @@ class NA:
         integer=-999,
         number=np.nan,
         string='',
+        array='',
     )
 
     # @classmethod

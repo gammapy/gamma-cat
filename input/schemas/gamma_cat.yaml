@@ -98,6 +98,18 @@
   unit:
   description: Spectral model type
   latex:
+- name: spec_erange_min
+  fmt:
+  dtype: float32
+  unit: TeV
+  description: Spectrum energy range minimum
+  latex:
+- name: spec_erange_max
+  fmt:
+  dtype: float32
+  unit: TeV
+  description: Spectrum energy range maximum
+  latex:
 - name: spec_theta
   fmt:
   dtype: float32

@@ -68,6 +68,14 @@ class GammaCatSource:
         except KeyError:
             data['spec_type'] = NA.fill_value['string']
         try:
+            data['spec_erange_min'] = psi['spec']['erange']['min']
+        except KeyError:
+            data['spec_erange_min'] = NA.fill_value['number']
+        try:
+            data['spec_erange_max'] = psi['spec']['erange']['max']
+        except KeyError:
+            data['spec_erange_max'] = NA.fill_value['number']
+        try:
             data['spec_theta'] = psi['spec']['theta']
         except KeyError:
             data['spec_theta'] = NA.fill_value['number']

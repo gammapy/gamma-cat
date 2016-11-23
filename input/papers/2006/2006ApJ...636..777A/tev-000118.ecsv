@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - source_id: 118
+# - source_name: HESS J1825-137
+# - paper_id: 2006ApJ...636..777A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
+e_ref dnde dnde_errn dnde_errp
+0.202779 9.58368e-10 3.73563e-10 4.07321e-10
+0.280318 1.31719e-10 2.34146e-11 2.39867e-11
+0.432877 4.03691e-11 5.57691e-12 5.70673e-12
+0.717293 1.25945e-11 1.76314e-12 1.81551e-12
+1.1247 4.39627e-12 6.88136e-13 7.14541e-13
+1.85857 9.57823e-13 2.65663e-13 2.7876e-13
+2.93508 4.87462e-13 1.31805e-13 1.39742e-13
+5.85294 6.34468e-14 2.01853e-14 2.257e-14
+14.709 8.48271e-15 3.36731e-15 4.16625e-15
+42.9174 1.91008e-15 8.5373e-16 1.51091e-15

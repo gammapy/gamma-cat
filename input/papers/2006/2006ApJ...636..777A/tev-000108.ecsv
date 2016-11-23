@@ -6,13 +6,13 @@
 # - {name: dnde_errn, datatype: float32}
 # - {name: dnde_errp, datatype: float32}
 # meta: !!omap
-# - source_id: 93
-# - source_name: HESS J1708-410
+# - source_id: 108
+# - source_name: HESS J1745-303
 # - paper_id: 2006ApJ...636..777A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
 e_ref dnde dnde_errn dnde_errp
-0.382021 1.05036e-11 2.07692e-12 2.12769e-12
-0.681801 4.04381e-12 6.50402e-13 6.71818e-13
-1.213250 1.24415e-12 2.16670e-13 2.25335e-13
-2.127170 1.98351e-13 6.83135e-14 7.18823e-14
-4.726130 2.66535e-14 1.02830e-14 1.11616e-14
+0.328741 2.44241e-11 4.32338e-12 4.40347e-12
+0.434689 8.38276e-12 2.06948e-12 2.11464e-12
+0.575448 6.03114e-12 1.39495e-12 1.43223e-12
+0.771375 4.75366e-12 1.03003e-12 1.0628e-12
+1.01625 2.49372e-12 6.04964e-13 6.26574e-13

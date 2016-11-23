@@ -3,15 +3,15 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {source_id: 124}
 # - {source_name: HESS J1837-069}
 # - {paper_id: 2006ApJ...636..777A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html'}
 # - {path: /Users/deil/code/gamma-cat/input/papers/2006/2006ApJ...636..777A/tev-000124.ecsv}
-e_ref dnde dnde_errp dnde_errn
+e_ref dnde dnde_errn dnde_errp
 0.222308 2.82024e-10 1.44221e-10 1.54296e-10
 0.288461 3.93396e-11 2.05788e-11 2.13974e-11
 0.422034 3.21142e-11 6.44578e-12 6.67094e-12

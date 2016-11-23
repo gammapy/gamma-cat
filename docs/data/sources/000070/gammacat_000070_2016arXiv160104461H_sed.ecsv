@@ -8,7 +8,7 @@
 # meta: !!omap
 # - {source_id: 70}
 # - {paper_id: 2016arXiv160104461H}
-# - comments: ['Data obtained by Ira Jung Oct 18, 2016 via private communication']
+# - comments: ['Data obtained from Ira Jung on Oct 18, 2016 via private communication']
 # - {path: /Users/deil/code/gamma-cat/input/papers/2016/2016arXiv160104461H/tev-000070.ecsv}
 e_ref dnde flux_min flux_max
 0.4818 8.908e-12 4.104e-12 1.386e-11

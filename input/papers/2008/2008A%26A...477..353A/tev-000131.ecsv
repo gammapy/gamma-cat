@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - source_id: 131
+# - source_name: HESS J1858+020
+# - paper_id: 2008A&A...477..353A
+# - comments: |
+#     Data obtained from Karl Kosack on November 23, 2016
+#     See https://github.com/gammapy/gamma-cat/issues/30
+e_ref dnde dnde_errn dnde_errp
+0.817632 1.27006e-12 4.28811e-13 4.58488e-13
+1.42581 2.18991e-13 8.68049e-14 9.45621e-14
+2.52068 6.06834e-14 2.48145e-14 2.77192e-14
+4.45624 3.43868e-14 8.6324e-15 9.85432e-15
+7.88714 1.01307e-14 3.57134e-15 4.15328e-15
+13.9758 2.48266e-15 1.22116e-15 1.51151e-15
+24.7357 1.0012e-15 4.66018e-16 6.24378e-16
+43.882 1.17554e-16 6.73699e-17 6.73699e-17

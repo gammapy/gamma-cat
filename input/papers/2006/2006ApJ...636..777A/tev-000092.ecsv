@@ -7,6 +7,7 @@
 # - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - source_id: 92
+# - source_name: HESS J1702-420
 # - paper_id: 2006ApJ...636..777A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
 e_ref dnde dnde_errn dnde_errp

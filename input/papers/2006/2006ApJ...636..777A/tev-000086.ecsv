@@ -3,13 +3,13 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - source_id: 86
 # - paper_id: 2006ApJ...636..777A
 # - url: http://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
-e_ref dnde dnde_errp dnde_errn
+e_ref dnde dnde_errn dnde_errp
 0.242495 3.74768e-10 1.56769e-10 1.65940e-10
 0.463377 1.96054e-11 7.34993e-12 7.77326e-12
 1.545140 3.77289e-12 8.44489e-13 9.37389e-13

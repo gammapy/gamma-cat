@@ -29,3 +29,4 @@ e_ref dnde dnde_errn dnde_errp
 28.5939 1.52065e-15 9.13287e-16 1.11485e-15
 38.0851 -6.95707e-17 3.2336e-16 4.2649e-16
 50.7267 -6.82928e-17 1.03229e-16 1.03229e-16
+# TODO: these spectral points are incorrect. See https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262516064

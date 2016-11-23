@@ -14,7 +14,6 @@ class GammaCatGSEDCheck:
     def __init__(self):
         self.gammacat_sources = gammacat.utils.load_json('docs/data/gammacat-sources.json')['data']
         self.gammacat_papers = gammacat.utils.load_json('docs/data/gammacat-papers.json')['data']
-        # self.gammacat_data = gammacat.InputData.read()
         self.gsed_table = Table.read('other_cats/astrisim_gsed/index2.fits')
 
     def list_missing_info(self):
@@ -24,8 +23,9 @@ class GammaCatGSEDCheck:
         for source in self.gsed_table:
             info.append(self.check_source(source))
         table = Table(rows=info, names=list(info[0]))
-        table.write('other_cats/astrisim_gsed/missing_info.csv', format='ascii.fixed_width')
-        table[:5].pprint(max_lines=-1)
+        filename = 'other_cats/astrisim_gsed/missing_info.csv'
+        print('Writing {}'.format(filename))
+        table.write(filename, format='ascii.fixed_width')
 
     def check_source(self, source):
         info = OrderedDict()
@@ -48,10 +48,6 @@ class GammaCatGSEDCheck:
             for source in paper['sources']:
                 if source['source_id'] == gammacat_id:
                     paper_ids.append(source['paper_id'])
-        # print('tevcat_name: {}'.format(tevcat_name))
-        # print(locals())
-        # gammacat = Table.read('docs/data/gammacat.fits.gz')
-        # import IPython; IPython.embed(); 1 / 0
         return ','.join(paper_ids)
 
     def add_missing_info(self):

@@ -11,7 +11,8 @@
 # - paper_id: 2008A&A...477..353A
 # - comments: |
 #     Data obtained from Karl Kosack on November 23, 2016
-#     See https://github.com/gammapy/gamma-cat/issues/30
+#     See https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262522318
+#     and https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262539054
 e_ref dnde dnde_errn dnde_errp
 0.878584 8.11092e-12 1.27366e-12 1.30268e-12
 1.56 1.61977e-12 2.69112e-13 2.76791e-13
@@ -20,8 +21,3 @@ e_ref dnde dnde_errn dnde_errp
 8.7023 2.02678e-14 7.85292e-15 8.18445e-15
 15.4517 8.66661e-15 2.57528e-15 2.72803e-15
 27.3879 1.95119e-15 8.51482e-16 9.25784e-16
-# TODO: These spectral points are incorrect. See https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262489782
-# 48.5872 -1.83443e-16 2.19499e-16 2.51804e-16
-# 86.2707 3.45864e-16 1.35691e-16 1.70504e-16
-# 152.914 6.70363e-16 1.92103e-16 3.16288e-16
-# 271.275 3.62589e-16 2.71942e-16 2.71942e-16

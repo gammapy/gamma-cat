@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {source_id: 93}
+# - {source_name: HESS J1708-410}
+# - {paper_id: 2008A&A...477..353A}
+# - {comments: 'Data obtained from Karl Kosack on November 23, 2016
+# 
+#     See https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262522318
+# 
+#     and https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262539054'}
+# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008A%26A...477..353A/tev-000093.ecsv}
+e_ref dnde dnde_errn dnde_errp
+0.878584 8.11092e-12 1.27366e-12 1.30268e-12
+1.56 1.61977e-12 2.69112e-13 2.76791e-13
+2.7675 4.62848e-13 7.40237e-14 7.63878e-14
+4.90964 7.2757e-14 2.238e-14 2.3199e-14
+8.7023 2.02678e-14 7.85292e-15 8.18445e-15
+15.4517 8.66661e-15 2.57528e-15 2.72803e-15
+27.3879 1.95119e-15 8.51482e-16 9.25784e-16

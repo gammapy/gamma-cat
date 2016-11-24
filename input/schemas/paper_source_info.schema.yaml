@@ -9,7 +9,13 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      livetime: {type: number, unit: hour} # ToDo: create list of livetimes for several observations later
+      livetime: {type: number, unit: hour}
+      zenith: {type: number, unit: deg, description: Mean zenith angle}
+      offset: {type: number, unit: deg, description: Mean offset angle}
+      n_on: {type: number, unit: counts}
+      n_off: {type: number, unit: counts}
+      alpha: {type: number, unit: none}
+      excess: {type: number, unit: counts}
       significance: {type: number, unit: none}
 
   pos:
@@ -19,31 +25,43 @@ properties:
       ra:
         type: object
         additionalProperties: false
-        description: Right Ascension in deg
+        description: |
+          Right Ascension (ICRC or FK5 J2000, it's almost the same)
+          Number in deg or string that can be parsed by Angle
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
       dec:
         type: object
         additionalProperties: false
-        description: Declination in deg
+        description: |
+          Declination (ICRC or FK5 J2000, it's almost the same)
+          Number in deg or string that can be parsed by Angle
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
       glon:
         type: object
         additionalProperties: false
-        description: Galactic longitude # in deg?
+        description: |
+          Galactic longitude
+          Number in deg or string that can be parsed by Angle
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
       glat:
         type: object
         additionalProperties: false
-        description: Galactic latitude # in deg?
+        description: |
+          Galactic latitude
+          Number in deg or string that can be parsed by Angle
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
 
   morph:
     type: object
@@ -55,7 +73,7 @@ properties:
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          Must parse as angle quantity.
+          Number in deg or string that can be parsed by Angle
         properties:
           val: {type: [string, number]}
           err: {type: [string, number], description: Statistical error}
@@ -64,15 +82,17 @@ properties:
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          Must parse as angle quantity.
+          Number in deg or string that can be parsed by Angle
         properties:
           val: {type: [string, number]}
           err: {type: [string, number], description: Statistical error}
-      pa: # redundant to pos, see line 15?
+      pa:
         type: object
         additionalProperties: false
         unit: deg
-        description: Position angle
+        description: |
+          Position angle
+          Number in deg or string that can be parsed by Angle
         properties:
           frame: {enum: [radec, galactic]}
           val: {type: number}

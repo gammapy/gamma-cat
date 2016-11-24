@@ -145,6 +145,12 @@ properties:
           val: {type: number}
           err: {type: number, description: Statistical error}
           err_sys: {type: number, description: Systematic error}
+      covar:
+        type: array
+        description: |
+          Covariance matrix
+          TODO: decide on format.
+          An example of a published covariance matrix is here: 2016arXiv161101863H
 
   notes: {type: string}
 

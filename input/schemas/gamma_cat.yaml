@@ -9,6 +9,11 @@
   fmt:
   unit:
   description: Common source name (unique in gamma-cat, like source_id)
+- name: gamma_names
+  dtype: str
+  fmt:
+  unit:
+  description: Alternative gamma-ray source names
 - name: paper_id
   dtype: str
   fmt:

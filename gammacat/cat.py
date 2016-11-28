@@ -123,7 +123,7 @@ class GammaCatSource:
             data['spec_ecut_err'] = NA.fill_value['number']
 
     @staticmethod
-    def fill_sed_info(data, sed_info, shape=(30,)):
+    def fill_sed_info(data, sed_info, shape=(40,)):
         """
         Fill flux point info data.
         """
@@ -379,7 +379,7 @@ class GammaCatMaker:
 
         # table.info('stats')
         # table.pprint()
-
+        from IPython import embed; embed()
         path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)

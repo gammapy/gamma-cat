@@ -91,4 +91,7 @@ ENV/
 # editor stuff
 *~
 
+# desy_lc.py in top repo
+desy_lc.py
+
 .idea

@@ -9,8 +9,8 @@ Dump the FITS Lightcurves from the DESY LC Archive to ECSV files
 from astropy.table import Table
 from astropy.units import cds
 import string
-# import os
 from pathlib import Path
+
 
 
 def process_one_file(source_id, filename):
@@ -150,20 +150,23 @@ def process_one_file(source_id, filename):
 
     # ceate folder structure and write files
     count_files = 0
-    paper_repo = Path('/afs/ifh.de/group/amanda/scratch/wegenmat/gamma-cat/input/papers') # will be changed to 'input/papers' if the script is called from top-level repo
+    paper_repo = Path('input/papers')
     for x in range(0, len(filenames)):        
         # create folder structure for none_paper_id
+        # path = paper_repo / none_paper_id / 'lightcurves/source_id_{}'.format(source_id)
+        path = paper_repo / none_paper_id / 'lightcurves/tev-{}'.format((6-len(str(source_id)))*(str(0)) + source_id)
         if tables[x].meta['data_id'] == none_paper_id:
-            if Path(str(paper_repo / none_paper_id / 'lightcurves' / 'source_id_') + source_id).exists() is False:
-                Path(str(paper_repo / none_paper_id / 'lightcurves' / 'source_id_') + source_id).mkdir(parents=True)
-            directory = Path(str(paper_repo / none_paper_id / 'lightcurves' / 'source_id_') + source_id) / Path(filenames[x][len(none_paper_id):] + '.ecsv')
-            tables[x].write(str(directory), format='ascii.ecsv')            
+            if path.exists() is False:
+                path.mkdir(parents=True)
+            ecsv_name = path / Path(filenames[x][len(none_paper_id):] + '.ecsv')            
+            tables[x].write(str(ecsv_name), format='ascii.ecsv')            
         # create folder structure for paper_id
         else:
-            if (paper_repo / filenames[x][:4] / filenames[x]).exists() is False:
-                (paper_repo / filenames[x][:4] / filenames[x]).mkdir(parents=True)
-            directory = Path(str(paper_repo / filenames[x][:4] / filenames[x] / 'lightcurve_source_id_') + source_id + '.ecsv')      
-            tables[x].write(str(directory), format='ascii.ecsv')
+            path = paper_repo / filenames[x][:4] / filenames[x]
+            if path.exists() is False:
+                path.mkdir(parents=True)
+            ecsv_name = str(path) + '/tev-' + (6-len(str(source_id)))*(str(0)) + source_id + '-lc.ecsv'
+            tables[x].write(str(ecsv_name), format='ascii.ecsv')
         count_files += 1
     # print(count_files)
     # print(len(filenames))
@@ -180,14 +183,14 @@ def process_all_files():
     pub_sources = []
     count_sources = 0
     for source_id, filename in files.items():
-        process_one_file(source_id, filename)
-        count_sources += 1
+        # process_one_file(source_id, filename)        
         source_files, filenames = process_one_file(source_id, filename)
         total_files.append(source_files)
         pub_sources.append(filenames)
+        count_sources += 1
 
     print('number of sources in the DESY LC Archive: ' + str(count_sources))
-    print('number of publsihed lightcurves found: ' + str(sum(pub_sources)))
+    print('number of published lightcurves found: ' + str(sum(pub_sources)))
     print('files totally written: ' + str(sum(total_files)))
 
 if __name__ == '__main__':

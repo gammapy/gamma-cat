@@ -2,7 +2,7 @@
 # ---
 # datatype:
 # - {name: hgps_name, datatype: string, description: Source name in the HGPS catalog}
-# - {name: source_id, datatype: int64, description: Source ID in the Open TeV catalog}
+# - {name: source_id, datatype: string, description: Source ID in the Open TeV catalog}
 # meta: !!omap
 # - {date: 'September 7, 2016'}
 # - {author: 'Christoph Deil'}

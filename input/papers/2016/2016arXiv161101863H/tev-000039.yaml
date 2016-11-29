@@ -9,7 +9,7 @@ data:
 # The shell outer radius of 1.0 is mentioned in the text.
 morph:
   type: shell
-  sigma2: {val: 1.0}
+  sigma: {val: 1.0}
 
 spec:
   # This is the total spectrum.

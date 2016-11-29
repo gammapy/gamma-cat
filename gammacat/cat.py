@@ -34,6 +34,7 @@ class GammaCatSource:
         cls.fill_position_info(data, bsi)
 
         psi = paper_source_info.data
+        cls.fill_data_info(data, psi)
         cls.fill_spectral_info(data, psi)
         cls.fill_morphology_info(data, psi)
 
@@ -63,6 +64,19 @@ class GammaCatSource:
         galactic = icrs.galactic
         data['glon'] = galactic.l.deg
         data['glat'] = galactic.b.deg
+
+    @staticmethod
+    def fill_data_info(data, psi):
+        try:
+            data['significance'] = psi['data']['significance']
+        except KeyError:
+            data['significance'] = NA.fill_value['number']
+
+        try:
+            data['livetime'] = psi['data']['livetime']
+        except KeyError:
+            data['livetime'] = NA.fill_value['number']
+
 
     @staticmethod
     def fill_spectral_info(data, psi):
@@ -175,6 +189,11 @@ class GammaCatSource:
 
         data['spec_energy_flux_1TeV_10TeV'] = energy_flux.n
         data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux.s
+
+        norm_1TeV = spec_model(1) # TeV
+        data['spec_norm_1TeV'] = norm_1TeV.n
+        data['spec_norm_1TeV_err'] = norm_1TeV.s
+
 
     def _get_spec_model(self, data):
         from uncertainties import ufloat
@@ -380,7 +399,6 @@ class GammaCatMaker:
 
         # table.info('stats')
         # table.pprint()
-        from IPython import embed; embed()
         path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)

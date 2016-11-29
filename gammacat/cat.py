@@ -45,6 +45,7 @@ class GammaCatSource:
         data['source_id'] = bsi['source_id']
         data['common_name'] = bsi.get('common_name', NA.fill_value['string'])
         data['gamma_names'] = NA.fill_list(bsi, 'gamma_names')
+        data['other_names'] = NA.fill_list(bsi, 'other_names')
         data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
 
     @staticmethod

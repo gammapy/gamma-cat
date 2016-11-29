@@ -14,6 +14,11 @@
   fmt:
   unit:
   description: Alternative gamma-ray source names
+- name: other_names
+  dtype: str
+  fmt:
+  unit:
+  description: Other source names
 - name: paper_id
   dtype: str
   fmt:

@@ -13,7 +13,6 @@
 # - comments: ["Data via email from Emma de O\xF1a Wilhelmi on 2016-08-24", 'Flux errors
 #       are slightly different from https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA499_723.html
 #       probably that page needs an update.']
-# - {path: /Users/deil/code/gamma-cat/input/papers/2009/2009A%26A...499..723A/tev-000132.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.3784 3.22286e-11 1.23579e-11 1.23571e-11
 0.5981 1.18448e-11 2.83486e-12 2.83488e-12

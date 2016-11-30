@@ -8,7 +8,6 @@
 # meta: !!omap
 # - {source_id: 46}
 # - {paper_id: 2011A&A...525A..46H}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2011/2011A%26A...525A..46H/tev-000046.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.7948 9.21925e-12 1.6681e-12 5.59013e-12
 1.2253 2.63478e-12 3.61071e-13 1.63616e-12

@@ -11,7 +11,6 @@
 # - {paper_id: 2006A%26A...460..365A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA_5546.html'}
 # - comments: [Flux points from Figure 3.]
-# - {path: /Users/deil/code/gamma-cat/input/papers/2006/2006A%26A...460..365A/tev-000118.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.277619 3.4357e-10 2.25161e-11 2.25247e-11
 0.430245 1.29701e-10 5.3648e-12 5.36768e-12

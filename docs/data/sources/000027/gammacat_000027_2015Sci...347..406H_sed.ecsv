@@ -10,7 +10,6 @@
 # - {source_name: N 157B}
 # - {paper_id: 2015Sci...347..406H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_N157B.txt'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2015/2015Sci...347..406H/tev-000027.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.873 8.268e-13 1.302e-12 4.432e-13
 1.041 1.075e-12 1.251e-12 9.114e-13

@@ -12,7 +12,6 @@
 # - {source_name: TeV J1818-154}
 # - {paper_id: 2014A&A...562A..40H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2014/2014A%26A...562A..40H/tev-000117.ecsv}
 e_ref energy_lo energy_hi dnde dnde_errn dnde_errp
 0.619 0.1973 0.2896 7.006e-13 2.964e-13 3.136e-13
 1.334 0.425 0.6238 2.126e-13 6e-14 6.327e-14

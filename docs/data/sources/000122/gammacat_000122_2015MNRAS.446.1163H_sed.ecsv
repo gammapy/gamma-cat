@@ -12,7 +12,6 @@
 # - {source_name: TeV J1832-093}
 # - {paper_id: 2015MNRAS.446.1163H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2015/2015MNRAS.446.1163H/tev-000122.ecsv}
 e_ref energy_lo energy_hi dnde dnde_errn dnde_errp
 0.4758 0.0758 0.1336 2.84e-12 1.08e-12 1.08e-12
 0.7246 0.1152 0.2037 1.36e-12 3.84e-13 3.84e-13

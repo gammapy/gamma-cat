@@ -12,7 +12,6 @@
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018'}
 # - comments: [Original data is in a different format (energy flux). This table was
 #       computed with the `tev-000045.py` script.]
-# - {path: /Users/deil/code/gamma-cat/input/papers/2015/2015A%26A...577A.131H/tev-000045.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.402203 2.25569e-12 7.04284e-13 7.52432e-13
 0.797953 3.47791e-13 1.3394e-13 1.441e-13

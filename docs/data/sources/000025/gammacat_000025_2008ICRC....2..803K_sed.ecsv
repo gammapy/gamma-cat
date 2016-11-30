@@ -9,7 +9,6 @@
 # - {source_id: 25}
 # - {paper_id: 2008ICRC....2..803K}
 # - comments: [Data taken from table 4]
-# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008ICRC....2..803K/tev-000025.ecsv}
 e_ref dnde dnde_err significance
 0.39 3.87e-10 3.8e-11 16.7
 0.62 1.14e-10 3e-12 73.4

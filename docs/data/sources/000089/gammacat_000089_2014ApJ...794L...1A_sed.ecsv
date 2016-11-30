@@ -12,7 +12,6 @@
 # - {source_name: TeV J1641-463}
 # - {paper_id: 2014ApJ...794L...1A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2014/2014ApJ...794L...1A/tev-000089.ecsv}
 e_ref energy_lo energy_hi dnde dnde_errn dnde_errp
 0.815 0.2527 0.185 4.332e-13 2.09e-13 2.253e-13
 1.347 0.3466 0.4317 3.037e-13 5.68e-14 6.099e-14

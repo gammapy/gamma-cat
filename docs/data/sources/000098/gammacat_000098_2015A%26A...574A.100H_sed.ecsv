@@ -13,5 +13,4 @@
 # - {comments: 'That page also contains a Fermi-LAT spectrum.
 # 
 #     TODO: add script'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2015/2015A%26A...574A.100H/tev-000098.ecsv}
 e_ref dnde dnde_errn dnde_errp

@@ -12,7 +12,6 @@
 #   - From https://github.com/zblz/gammafit/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_cocoon.spec
 #   - {TODO: clarify if this spectrum is really from 2012A&A...548A..38A and for which
 #       region the measurement is.}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2012/2012A%26A...548A..38A/tev-000037.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.7185 1.055e-11 1.383e-11 7.266e-12
 0.8684 1.304e-11 1.517e-11 1.091e-11

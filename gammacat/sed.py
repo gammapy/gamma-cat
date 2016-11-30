@@ -113,7 +113,6 @@ class SEDList:
         data = []
         for path in paths:
             sed = SED.read(path)
-            sed.table.meta['path'] = str(path)
             data.append(sed)
 
         return cls(data=data)

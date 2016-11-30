@@ -9,7 +9,6 @@
 # meta: !!omap
 # - {source_id: 79}
 # - {paper_id: 2005A&A...435L..17A}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2005/2005A%26A...435L..17A/tev-000079.ecsv}
 e_ref e_min e_max dnde dnde_err
 0.31 0.28 0.34 1.3e-10 3.2e-11
 0.41 0.34 0.49 3.6e-11 3.8e-12

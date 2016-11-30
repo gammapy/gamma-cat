@@ -10,7 +10,6 @@
 # - {source_name: HESS J1801-233}
 # - {paper_id: 2008A&A...481..401A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_w28_paper.html'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008A%26A...481..401A/tev-000112.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.41 7.423e-12 9.48e-12 5.366e-12
 0.55 5.74e-12 6.836e-12 4.644e-12

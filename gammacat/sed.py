@@ -15,6 +15,12 @@ class SED:
 
     Represents on SED.
     """
+    expected_colnames = [
+        'e_ref', 'e_min', 'e_max',
+        'energy_lo', 'energy_hi',  # TODO: remove
+        'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul',
+        'excess', 'significance',
+    ]
 
     def __init__(self, table, path):
         self.table = table
@@ -31,6 +37,7 @@ class SED:
         table = self.table
         self._process_energy_ranges(table)
         self._process_flux_errrors(table)
+        self._process_column_order(table)
 
     @staticmethod
     def _process_energy_ranges(table):
@@ -61,6 +68,15 @@ class SED:
             table['dnde_errp'] = table['dnde_max'] - table['dnde']
             del table['dnde_max']
 
+    def _process_column_order(self, table):
+        """
+        Establish a standard column order.
+        """
+        # See "Select or reorder columns" section at
+        # http://astropy.readthedocs.io/en/latest/table/modify_table.html
+        colnames = [_ for _ in self.expected_colnames if _ in table.colnames]
+        self.table = table[colnames]
+
     def validate(self):
         log.debug('Validating {}'.format(self.path))
         check_ecsv_column_header(self.path)
@@ -68,14 +84,8 @@ class SED:
         self._validate_colnames()
 
     def _validate_colnames(self):
-        expected_names = {
-            'e_ref', 'e_min', 'e_max',
-            'energy_lo', 'energy_hi',
-            'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul',
-            'excess', 'significance',
-        }
         table = self.table
-        unexpected_colnames = set(table.colnames) - expected_names
+        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames))
         if unexpected_colnames:
             log.error(
                 'SED file {} contains invalid columns: {}'

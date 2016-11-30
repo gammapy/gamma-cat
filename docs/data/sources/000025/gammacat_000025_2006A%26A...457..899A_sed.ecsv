@@ -2,26 +2,25 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # - {name: excess, datatype: float32}
 # - {name: significance, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
 # meta: !!omap
 # - {source_id: 25}
 # - {paper_id: 2006A&A...457..899A}
 # - comments: [Data taken from table 5 in the paper]
-# - {path: /Users/deil/code/gamma-cat/input/papers/2006/2006A%26A...457..899A/tev-000025.ecsv}
-e_ref excess significance dnde dnde_errp dnde_errn
-0.519 975.0 42.9 1.81e-10 6e-12 6e-12
-0.729 1580.0 56.0 7.27e-11 2e-12 1.9e-12
-1.06 1414.0 55.3 3.12e-11 9e-13 9e-13
-1.55 1082.0 47.3 1.22e-11 4e-13 4e-13
-2.26 762.0 39.5 4.6e-12 1.8e-13 1.8e-13
-3.3 443.0 29.5 1.53e-12 8e-14 8e-14
-4.89 311.0 24.9 6.35e-13 3.9e-14 3.8e-14
-7.18 186.0 19.6 2.27e-13 1.8e-14 1.7e-14
-10.4 86.0 13.1 6.49e-14 7.7e-15 7.2e-15
-14.8 36.0 8.1 1.75e-14 3.3e-15 3e-15
-20.9 23.0 7.5 7.26e-15 1.7e-15 1.5e-15
-30.5 4.0 2.9 9.58e-16 5.6e-16 4.25e-16
+e_ref dnde dnde_errn dnde_errp excess significance
+0.519 1.81e-10 6e-12 6e-12 975.0 42.9
+0.729 7.27e-11 1.9e-12 2e-12 1580.0 56.0
+1.06 3.12e-11 9e-13 9e-13 1414.0 55.3
+1.55 1.22e-11 4e-13 4e-13 1082.0 47.3
+2.26 4.6e-12 1.8e-13 1.8e-13 762.0 39.5
+3.3 1.53e-12 8e-14 8e-14 443.0 29.5
+4.89 6.35e-13 3.8e-14 3.9e-14 311.0 24.9
+7.18 2.27e-13 1.7e-14 1.8e-14 186.0 19.6
+10.4 6.49e-14 7.2e-15 7.7e-15 86.0 13.1
+14.8 1.75e-14 3e-15 3.3e-15 36.0 8.1
+20.9 7.26e-15 1.5e-15 1.7e-15 23.0 7.5
+30.5 9.58e-16 4.25e-16 5.6e-16 4.0 2.9

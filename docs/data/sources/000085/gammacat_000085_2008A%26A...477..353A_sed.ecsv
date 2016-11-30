@@ -12,7 +12,6 @@
 # - {comments: 'Data obtained from Karl Kosack on November 23, 2016
 # 
 #     See https://github.com/gammapy/gamma-cat/issues/30'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008A%26A...477..353A/tev-000085.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.777957 1.1804e-11 3.32293e-12 3.36865e-12
 1.23069 3.31229e-12 8.71766e-13 8.84619e-13

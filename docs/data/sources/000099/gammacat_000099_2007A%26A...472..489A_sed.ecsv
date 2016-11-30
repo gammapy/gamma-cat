@@ -3,8 +3,8 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {source_id: 99}
 # - {source_name: HESS J1718-385}
@@ -12,11 +12,10 @@
 # - comments:
 #   - Flux points shown in Figure 1 (one upper limit not included here)
 #   - {TODO: Origin of data points unknown}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2007/2007A%26A...472..489A/tev-000099.ecsv}
-e_ref dnde dnde_errp dnde_errn
-1.40045 6.23048e-13 2.93545e-13 2.94463e-13
-2.47561 1.28768e-13 7.13985e-14 7.15713e-14
-4.813 7.6765e-14 1.94541e-14 1.97337e-14
-9.19546 2.50265e-14 6.4625e-15 6.58096e-15
-17.5844 4.30848e-15 1.86017e-15 1.90491e-15
-33.6594 6.3461e-17 6.34451e-17 5.14709e-16
+e_ref dnde dnde_errn dnde_errp
+1.40045 6.23048e-13 2.94463e-13 2.93545e-13
+2.47561 1.28768e-13 7.15713e-14 7.13985e-14
+4.813 7.6765e-14 1.97337e-14 1.94541e-14
+9.19546 2.50265e-14 6.58096e-15 6.4625e-15
+17.5844 4.30848e-15 1.90491e-15 1.86017e-15
+33.6594 6.3461e-17 5.14709e-16 6.34451e-17

@@ -10,7 +10,6 @@
 # - {source_name: HESS J1632-478}
 # - {paper_id: 2006ApJ...636..777A}
 # - {url: 'http://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2006/2006ApJ...636..777A/tev-000086.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.242495 3.74768e-10 1.56769e-10 1.6594e-10
 0.463377 1.96054e-11 7.34993e-12 7.77326e-12

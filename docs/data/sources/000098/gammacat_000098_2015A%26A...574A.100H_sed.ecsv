@@ -3,8 +3,8 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {source_id: 98}
 # - {source_name: TeV J1718-374}
@@ -13,5 +13,4 @@
 # - {comments: 'That page also contains a Fermi-LAT spectrum.
 # 
 #     TODO: add script'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2015/2015A%26A...574A.100H/tev-000098.ecsv}
-e_ref dnde dnde_errp dnde_errn
+e_ref dnde dnde_errn dnde_errp

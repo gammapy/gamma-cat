@@ -118,6 +118,9 @@ class OutputDataMaker:
     def make_sed_files(self):
         for sed in self.input_data.seds.data:
             log.debug('Processing SED: {}'.format(sed.path))
+
+            sed.process()
+
             path = OutputDataConfig.make_filename(meta=sed.table.meta, datatype='sed')
             path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))

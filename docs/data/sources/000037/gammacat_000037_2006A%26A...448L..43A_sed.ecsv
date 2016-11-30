@@ -8,7 +8,6 @@
 # - {source_id: 37}
 # - {paper_id: 2006A&A...448L..43A}
 # - {url: 'http://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/VelaX_auxinfo.html'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2006/2006A%26A...448L..43A/tev-000037.ecsv}
 e_ref dnde dnde_err
 0.727 1.86e-11 3.93e-12
 1.06 8.09e-12 1.44e-12

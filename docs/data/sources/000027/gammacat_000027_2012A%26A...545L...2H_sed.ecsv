@@ -10,7 +10,6 @@
 # - {source_name: N157B}
 # - {paper_id: 2012A&A...545L...2H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA545_L2.html'}
-# - {path: /Users/deil/code/gamma-cat/input/papers/2012/2012A%26A...545L...2H/tev-000027.ecsv}
 e_ref dnde dnde_errn dnde_errp
 0.6952 1.39e-08 4.56e-09 5.04e-09
 0.8411 1.26e-08 2.64e-09 2.89e-09

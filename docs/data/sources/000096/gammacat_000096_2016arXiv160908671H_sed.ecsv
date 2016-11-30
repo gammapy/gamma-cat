@@ -3,14 +3,14 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {source_id: 96}
 # - {paper_id: 2016arXiv160908671H}
 # - comments: [Data taken from appendix F in the paper p.31]
 # - {path: /Users/deil/code/gamma-cat/input/papers/2016/2016arXiv160908671H/tev-000096.ecsv}
-e_ref dnde dnde_errp dnde_errn
+e_ref dnde dnde_errn dnde_errp
 0.23 4.44e-11 8.35e-12 8.35e-12
 0.27 3.99e-11 5.17e-12 5.17e-12
 0.32 4.28e-11 3.52e-12 3.52e-12

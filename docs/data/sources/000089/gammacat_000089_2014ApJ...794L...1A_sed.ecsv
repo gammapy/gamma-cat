@@ -2,24 +2,24 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32}
-# - {name: energy_hi, datatype: float32}
 # - {name: energy_lo, datatype: float32}
+# - {name: energy_hi, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {source_id: 89}
 # - {source_name: TeV J1641-463}
 # - {paper_id: 2014ApJ...794L...1A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641'}
 # - {path: /Users/deil/code/gamma-cat/input/papers/2014/2014ApJ...794L...1A/tev-000089.ecsv}
-e_ref energy_hi energy_lo dnde dnde_errp dnde_errn
-0.815 0.185 0.2527 4.332e-13 2.253e-13 2.09e-13
-1.347 0.4317 0.3466 3.037e-13 6.099e-14 5.68e-14
-2.384 0.7786 0.6054 3.797e-14 1.4e-14 1.259e-14
-4.207 1.417 1.044 1.522e-14 5.605e-15 5.048e-15
-7.439 2.561 1.816 1.12e-14 2.642e-15 2.39e-15
-13.19 4.591 3.192 2.076e-15 8.833e-16 7.588e-16
-23.4 8.223 5.617 6.192e-16 3.551e-16 2.896e-16
-41.55 nan nan nan 4.101e-16 nan
-68.72 nan nan nan 2.884e-16 nan
+e_ref energy_lo energy_hi dnde dnde_errn dnde_errp
+0.815 0.2527 0.185 4.332e-13 2.09e-13 2.253e-13
+1.347 0.3466 0.4317 3.037e-13 5.68e-14 6.099e-14
+2.384 0.6054 0.7786 3.797e-14 1.259e-14 1.4e-14
+4.207 1.044 1.417 1.522e-14 5.048e-15 5.605e-15
+7.439 1.816 2.561 1.12e-14 2.39e-15 2.642e-15
+13.19 3.192 4.591 2.076e-15 7.588e-16 8.833e-16
+23.4 5.617 8.223 6.192e-16 2.896e-16 3.551e-16
+41.55 nan nan nan nan 4.101e-16
+68.72 nan nan nan nan 2.884e-16

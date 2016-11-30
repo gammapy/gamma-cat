@@ -3,8 +3,8 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {source_id: 97}
 # - {source_name: HESS J1714-385}
@@ -12,8 +12,8 @@
 # - comments:
 #   - {TODO: 'origin of flux points?'}
 # - {path: /Users/deil/code/gamma-cat/input/papers/2008/2008A%26A...490..685A/tev-000097.ecsv}
-e_ref dnde dnde_errp dnde_errn
-0.4645 4.136e-12 8.78e-13 8.89e-13
-1.388 5.404e-13 7.65e-14 7.75e-14
-4.298 1.892e-14 1.013e-14 1.036e-14
-13.65 1.666e-15 1.183e-15 1.455e-15
+e_ref dnde dnde_errn dnde_errp
+0.4645 4.136e-12 8.89e-13 8.78e-13
+1.388 5.404e-13 7.75e-14 7.65e-14
+4.298 1.892e-14 1.036e-14 1.013e-14
+13.65 1.666e-15 1.455e-15 1.183e-15

@@ -3,8 +3,8 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {source_id: 132}
 # - {source_name: HESS J1809-193}
@@ -15,11 +15,11 @@
 # 
 #     TODO: where are these values from? Is there a URL?'}
 # - {path: /Users/deil/code/gamma-cat/input/papers/2007/2007A%26A...472..489A/tev-000115.ecsv}
-e_ref dnde dnde_errp dnde_errn
-0.354987 8.48195e-11 2.63877e-11 2.65445e-11
-0.73622 1.01737e-11 2.89366e-12 2.91417e-12
-1.56401 3.54103e-12 5.62967e-13 5.69983e-13
-3.34311 5.06506e-13 1.39524e-13 1.41949e-13
-7.15709 1.25451e-13 3.53979e-14 3.64408e-14
-15.2979 7.85999e-15 7.38577e-15 7.81593e-15
-32.9055 2.70465e-15 1.44023e-15 1.72634e-15
+e_ref dnde dnde_errn dnde_errp
+0.354987 8.48195e-11 2.65445e-11 2.63877e-11
+0.73622 1.01737e-11 2.91417e-12 2.89366e-12
+1.56401 3.54103e-12 5.69983e-13 5.62967e-13
+3.34311 5.06506e-13 1.41949e-13 1.39524e-13
+7.15709 1.25451e-13 3.64408e-14 3.53979e-14
+15.2979 7.85999e-15 7.81593e-15 7.38577e-15
+32.9055 2.70465e-15 1.72634e-15 1.44023e-15

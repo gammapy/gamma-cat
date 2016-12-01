@@ -10,6 +10,7 @@ from astropy.table import Table
 from astropy.units import cds
 import string
 from pathlib import Path
+import numpy as np
 
 
 
@@ -55,6 +56,11 @@ def process_one_file(source_id, filename):
     # set units
     tab['time'].unit = tab['time_max'].unit = tab['time_min'].unit = cds.MJD
     tab['flux'].unit = tab['flux_err'].unit = cds.Crab
+
+    # set flag for empty entries from '-1' to 'np.nan'
+    for column in ['time', 'time_min', 'time_max', 'flux', 'flux_err']:
+        flag = tab[column] == -1
+        tab[column][flag] = np.nan
 
     # find different papers
     papers = []
@@ -121,28 +127,56 @@ def process_one_file(source_id, filename):
                     break
     # print(filenames)
 
-    # seperate by paper, set metadata
+    # seperate by paper, set metadata, delete nan-only columns and repetitiv time stamps
     tables = []
     for x in range(0, len(index) - 1):
         table = tab[index[x]:index[x + 1]]
+        # set metadata
+        table.meta['data_type'] = 'lc'
         table.meta['source_id'] = int(source_id)
         table.meta['telescope'] = ''.join(str(telescopes[x]).split())
-        table.meta['paper_id'] = ''.join(str(papers[x]).split())
+        table.meta['reference_id'] = ''.join(str(papers[x]).split())
+        # set temporary flag for none-paper
         if filenames[x][:len(none_paper_id)] == none_paper_id:
             table.meta['data_id'] = str(none_paper_id)
         else:
             table.meta['data_id'] = str('ADS_Bibcode')
+        # delete repetitive time stamps
+        if np.all(table['time'] == table['time_min']):
+            del table['time_min']
+        if np.all(table['time'] == table['time_max']):
+            del table['time_max']
+        # delete nan-only columns
+        for column in table.colnames:
+            values = [table[column][h] for h in range(len(table)) if str(table[column][h]) == str(np.nan)]
+            if len(values) == len(table):            
+                del table[column]
+        # delete columns whose data was moved to the metadata
         del table['telescope']
         del table['paper']
         tables.append(table)
     table = tab[index[-1] + 1:]
+    # set metadata
+    table.meta['data_type'] = 'lc'
     table.meta['source_id'] = int(source_id)
     table.meta['telescope'] = ''.join(str(telescopes[-1]).split())
-    table.meta['paper_id'] = ''.join(str(papers[-1]).split())
+    table.meta['reference_id'] = ''.join(str(papers[-1]).split())
+   # set temporary flag for none-paper
     if filenames[-1][:len(none_paper_id)] == (none_paper_id):
         table.meta['data_id'] = none_paper_id
     else:
         table.meta['data_id'] = str('ADS_Bibcode')
+    # delete repetitive time stamps
+    if np.all(table['time'] == table['time_min']):
+        del table['time_min']
+    if np.all(table['time'] == table['time_max']):
+        del table['time_max']
+    # delete nan-only columns
+    for column in table.colnames:
+        values = [table[column][h] for h in range(len(table)) if str(table[column][h]) == str(np.nan)]
+        if len(values) == len(table):        
+            del table[column]
+    # delete columns whose data was moved to the metadata
     del table['telescope']
     del table['paper']
     tables.append(table)
@@ -153,11 +187,11 @@ def process_one_file(source_id, filename):
     paper_repo = Path('input/papers')
     for x in range(0, len(filenames)):        
         # create folder structure for none_paper_id
-        # path = paper_repo / none_paper_id / 'lightcurves/source_id_{}'.format(source_id)
         path = paper_repo / none_paper_id / 'lightcurves/tev-{}'.format((6-len(str(source_id)))*(str(0)) + source_id)
         if tables[x].meta['data_id'] == none_paper_id:
             if path.exists() is False:
                 path.mkdir(parents=True)
+            del tables[x].meta['data_id']
             ecsv_name = path / Path(filenames[x][len(none_paper_id):] + '.ecsv')            
             tables[x].write(str(ecsv_name), format='ascii.ecsv')            
         # create folder structure for paper_id
@@ -165,6 +199,7 @@ def process_one_file(source_id, filename):
             path = paper_repo / filenames[x][:4] / filenames[x]
             if path.exists() is False:
                 path.mkdir(parents=True)
+            del tables[x].meta['data_id']
             ecsv_name = str(path) + '/tev-' + (6-len(str(source_id)))*(str(0)) + source_id + '-lc.ecsv'
             tables[x].write(str(ecsv_name), format='ascii.ecsv')
         count_files += 1
@@ -182,8 +217,7 @@ def process_all_files():
     total_files = []
     pub_sources = []
     count_sources = 0
-    for source_id, filename in files.items():
-        # process_one_file(source_id, filename)        
+    for source_id, filename in files.items():        
         source_files, filenames = process_one_file(source_id, filename)
         total_files.append(source_files)
         pub_sources.append(filenames)

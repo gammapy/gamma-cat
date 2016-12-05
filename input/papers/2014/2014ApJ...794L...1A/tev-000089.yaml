@@ -15,8 +15,8 @@ morph:
 spec:
   # only energy flux is given in the paper.
   type: pl
-  norm: {val: 0.391, err: 0.069, sys: 0.078}
-  index: {val: 2.07, err: 0.11, sys: 0.2}
+  norm: {val: 0.391, err: 0.069, err_sys: 0.078}
+  index: {val: 2.07, err: 0.11, err_sys: 0.2}
   ref: 1
 
   erange: {min: 0.64, max: 100}

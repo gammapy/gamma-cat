@@ -5,6 +5,7 @@
 # - {name: dnde, datatype: float32}
 # - {name: dnde_err, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 37
 # - paper_id: 2006A&A...448L..43A
 # - url: http://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/VelaX_auxinfo.html

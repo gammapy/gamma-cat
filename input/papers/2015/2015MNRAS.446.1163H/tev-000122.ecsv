@@ -8,6 +8,7 @@
 # - {name: dnde_errn, datatype: float32}
 # - {name: dnde_errp, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 122
 # - source_name: TeV J1832-093
 # - paper_id: 2015MNRAS.446.1163H

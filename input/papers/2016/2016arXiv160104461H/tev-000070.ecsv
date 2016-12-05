@@ -6,6 +6,7 @@
 # - {name: dnde_min, datatype: float32}
 # - {name: dnde_max, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 70
 # - paper_id: 2016arXiv160104461H
 # - comments: |

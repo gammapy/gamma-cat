@@ -6,6 +6,7 @@
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 98
 # - source_name: TeV J1718-374
 # - paper_id: 2015A&A...574A.100H

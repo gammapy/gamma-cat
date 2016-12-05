@@ -6,6 +6,7 @@
 # - {name: dnde_errn, datatype: float32}
 # - {name: dnde_errp, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 95
 # - source_name: CTB 37B / HESS J1713-381
 # - paper_id: 2006ApJ...636..777A
@@ -15,6 +16,3 @@ e_ref dnde dnde_errn dnde_errp
 0.597421 1.98139e-12 3.64813e-13 3.92691e-13
 0.880134 8.90026e-13 2.45640e-13 2.71686e-13
 1.270840 5.01412e-13 1.48601e-13 1.66528e-13
-# TODO: There's also this paper where HESS put a new spectrum that goes to a bit higher energies:
-# http://adsabs.harvard.edu/abs/2008A%26A...486..829A
-# But I couldn't find the flux point info anywhere, so for now I'm sticking to the 2006 paper

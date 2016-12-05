@@ -6,12 +6,13 @@
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 45
 # - source_name: HESS J1018-589 A
 # - paper_id: 2015A&A...577A.131H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018
-# - comments:
-#   - Original data is in a different format (energy flux).
+# - comments: |
+#     Original data is in a different format (energy flux).
 #     This table was computed with the `tev-000045.py` script.
 e_ref dnde dnde_errp dnde_errn
   0.402203   2.25569e-12   7.52432e-13   7.04284e-13

@@ -9,6 +9,7 @@
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_ul, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 133
 # - paper_id: 2016arXiv160900600H
 # - UL_CONF: 0.95

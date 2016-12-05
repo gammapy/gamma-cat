@@ -7,6 +7,7 @@
 # - {name: dnde, datatype: float32}
 # - {name: dnde_err, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 79
 # - paper_id: 2005A&A...435L..17A
 e_min e_max e_ref dnde dnde_err

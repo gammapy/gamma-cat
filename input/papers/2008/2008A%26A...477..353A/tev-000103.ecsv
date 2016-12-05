@@ -6,6 +6,7 @@
 # - {name: dnde_errn, datatype: float32}
 # - {name: dnde_errp, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 103
 # - source_name: HESS J1731-347
 # - paper_id: 2008A&A...477..353A

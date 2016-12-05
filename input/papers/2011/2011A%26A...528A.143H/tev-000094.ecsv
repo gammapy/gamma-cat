@@ -6,6 +6,7 @@
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 94
 # - paper_id: 2011A%26A...528A.143H
 # # TODO: where are these points from?

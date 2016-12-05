@@ -6,12 +6,13 @@
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 118
 # - source_name: HESS J1825-137
 # - paper_id: 2006A%26A...460..365A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA_5546.html
-# - comments:
-#   - Flux points from Figure 3.
+# - comments: |
+#     Flux points from Figure 3.
 e_ref dnde dnde_errp dnde_errn
  0.277619 3.43570e-10 2.25247e-11 2.25161e-11
  0.430245 1.29701e-10 5.36768e-12 5.36480e-12

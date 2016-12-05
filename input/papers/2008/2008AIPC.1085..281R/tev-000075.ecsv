@@ -5,6 +5,7 @@
 # - {name: dnde, datatype: float32}
 # - {name: dnde_err, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 75
 # - paper_id: 2008AIPC.1085..281R
 e_ref dnde dnde_err

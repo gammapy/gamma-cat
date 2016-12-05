@@ -8,10 +8,11 @@
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 25
 # - paper_id: 2006A&A...457..899A
-# - comments:
-#   - Data taken from table 5 in the paper
+# - comments: |
+#     Data taken from table 5 in the paper.
 e_ref excess significance dnde dnde_errp dnde_errn
  0.519    975  42.9  1.81e-10  0.06e-10  0.06e-10
  0.729   1580  56.0  7.27e-11  0.20e-11  0.19e-11

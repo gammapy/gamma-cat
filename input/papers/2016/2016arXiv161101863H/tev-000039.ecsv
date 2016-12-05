@@ -6,6 +6,7 @@
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
 # meta: !!omap
+# - data_type: sed
 # - source_id: 39
 # - paper_id: 2016arXiv161101863H
 # - comments: |

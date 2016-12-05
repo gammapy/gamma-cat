@@ -36,7 +36,7 @@ def process_one_file(source_id, filename):
     tab.rename_column('experiment', 'telescope')
     # column 13: tab.rename_column('duration', '')
     tab.rename_column('reference', 'paper')
-    # column 15: tab.rename_column('fflag', '')
+    tab.rename_column('fflag', 'is_ul')
 
     # delete unused columns
     del tab['sigma_int_flux_sys']
@@ -46,21 +46,33 @@ def process_one_file(source_id, filename):
     del tab['e_thr']
     del tab['e_cut']
     del tab['duration']
-    del tab['fflag']
 
     # set formats
     tab.replace_column('time', tab['time'].astype(float))
     tab.replace_column('time_min', tab['time_min'].astype(float))
     tab.replace_column('time_max', tab['time_max'].astype(float))
+    # tab.replace_column('is_ul', tab['is_ul'].astype(bool))
+    # tab['is_ul'].dtype = 'L'
 
     # set units
     tab['time'].unit = tab['time_max'].unit = tab['time_min'].unit = cds.MJD
-    tab['flux'].unit = tab['flux_err'].unit = cds.Crab
+    tab['flux'].unit = tab['flux_err'].unit = cds.Crab   
 
     # set flag for empty entries from '-1' to 'np.nan'
     for column in ['time', 'time_min', 'time_max', 'flux', 'flux_err']:
         flag = tab[column] == -1
         tab[column][flag] = np.nan
+
+    # set flag for upper limit errors from '<' to 'True' in Column 'is_ul', otherwise set 'False'
+    valid_chars = '<='
+    for x in range(len(tab)):
+        tab['is_ul'][x] = ''.join(c for c in tab['is_ul'][x] if c in valid_chars)
+    flag = tab['is_ul'] == '<'
+    len_old = len(tab['is_ul'])
+    tab['is_ul'].dtype = np.bool
+    tab['is_ul'][0:len_old] = flag
+    tab.replace_column('is_ul', tab['is_ul'][0:len_old])
+    # print(tab['is_ul'])
 
     # find different papers
     papers = []

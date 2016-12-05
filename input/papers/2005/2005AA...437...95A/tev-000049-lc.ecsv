@@ -4,19 +4,20 @@
 # - {name: time, unit: MJD, datatype: float64}
 # - {name: flux, unit: Crab, datatype: float32}
 # - {name: flux_err, unit: Crab, datatype: float32}
+# - {name: is_ul, unit: none, datatype: bool}
 # meta: !!omap
 # - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 49}
 # - {telescope: H.E.S.S.}
 # - {reference_id: 2005A&A...437...95A}
-time flux flux_err
-53108.0 3.38 0.2
-53109.0 1.13 0.13
-53110.0 2.5 0.18
-53111.0 2.12 0.11
-53112.0 1.15 0.09
-53113.0 2.83 0.13
-53114.0 4.85 0.16
-53115.0 3.95 0.15
-53135.0 0.33 0.06
+time flux flux_err is_ul
+53108.0 3.38 0.2 False
+53109.0 1.13 0.13 False
+53110.0 2.5 0.18 False
+53111.0 2.12 0.11 False
+53112.0 1.15 0.09 False
+53113.0 2.83 0.13 False
+53114.0 4.85 0.16 False
+53115.0 3.95 0.15 False
+53135.0 0.33 0.06 False

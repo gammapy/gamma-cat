@@ -4,17 +4,18 @@
 # - {name: time, unit: MJD, datatype: float64}
 # - {name: flux, unit: Crab, datatype: float32}
 # - {name: flux_err, unit: Crab, datatype: float32}
+# - {name: is_ul, unit: none, datatype: bool}
 # meta: !!omap
 # - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 138}
 # - {telescope: MAGIC}
 # - {reference_id: 'http://magic.mppmu.mpg.de/publications/theses/NTonello.pdf'}
-time flux flux_err
-53254.0 0.15 0.04
-53254.9 0.064 0.041
-53285.0 0.15 0.057
-53287.9 0.116 0.058
-53292.9 0.119 0.065
-53293.9 0.232 0.057
-53294.9 0.106 0.034
+time flux flux_err is_ul
+53254.0 0.15 0.04 False
+53254.9 0.064 0.041 False
+53285.0 0.15 0.057 False
+53287.9 0.116 0.058 False
+53292.9 0.119 0.065 False
+53293.9 0.232 0.057 False
+53294.9 0.106 0.034 False

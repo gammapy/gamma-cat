@@ -17,9 +17,13 @@ class SED:
     """
     expected_colnames = [
         'e_ref', 'e_min', 'e_max',
-        'energy_lo', 'energy_hi',  # TODO: remove
         'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul',
         'excess', 'significance',
+    ]
+
+    expected_colnames_input = expected_colnames + [
+        'e_lo', 'e_hi',
+        'dnde_min', 'dnde_max',
     ]
 
     def __init__(self, table, path):
@@ -35,9 +39,11 @@ class SED:
     def process(self):
         """Apply fixes."""
         table = self.table
+        self.validate_input()
         self._process_energy_ranges(table)
         self._process_flux_errrors(table)
         self._process_column_order(table)
+        # TODO: add validate_output?
 
     @staticmethod
     def _process_energy_ranges(table):
@@ -77,15 +83,14 @@ class SED:
         colnames = [_ for _ in self.expected_colnames if _ in table.colnames]
         self.table = table[colnames]
 
-    def validate(self):
+    def validate_input(self):
         log.debug('Validating {}'.format(self.path))
         check_ecsv_column_header(self.path)
-        self.process()
-        self._validate_colnames()
+        self._validate_colnames_input()
 
-    def _validate_colnames(self):
+    def _validate_colnames_input(self):
         table = self.table
-        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames))
+        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames_input))
         if unexpected_colnames:
             log.error(
                 'SED file {} contains invalid columns: {}'
@@ -119,7 +124,7 @@ class SEDList:
 
     def validate(self):
         for sed in self.data:
-            sed.validate()
+            sed.process()
 
     def get_sed_by_source_id(self, source_id):
         missing = SED(table={}, path='')

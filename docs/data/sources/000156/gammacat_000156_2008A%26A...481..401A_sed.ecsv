@@ -1,25 +1,28 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32}
 # meta: !!omap
+# - {data_type: sed}
 # - {source_id: 156}
 # - {source_name: HESS J1800-240B}
 # - {paper_id: 2008A&A...481..401A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_w28_paper.html'}
-# - comments: [Flux points for region B There are flux points for other regions on that
-#       page.]
-e_ref dnde dnde_errn dnde_errp
-0.31 1.1792e-11 1.5801e-11 7.783e-12
-0.41 8.783e-12 1.0765e-11 6.801e-12
-0.55 3.874e-12 4.898e-12 2.85e-12
-0.73 1.734e-12 2.214e-12 1.254e-12
-0.97 6.27e-13 8.76e-13 3.78e-13
-1.3 2.91e-13 4.2e-13 1.62e-13
-1.73 2.04e-13 2.76e-13 1.32e-13
-2.31 1.1e-13 1.54e-13 6.6e-14
-3.08 nan 2.25e-13 nan
-4.11 2.7e-14 4e-14 1.4e-14
+# - {comments: 'Flux points for region B.
+# 
+#     There are flux points for other regions on that page.'}
+e_ref dnde dnde_errn dnde_errp dnde_ul
+0.31 1.1792e-11 1.5801e-11 7.783e-12 nan
+0.41 8.783e-12 1.0765e-11 6.801e-12 nan
+0.55 3.874e-12 4.898e-12 2.85e-12 nan
+0.73 1.734e-12 2.214e-12 1.254e-12 nan
+0.97 6.27e-13 8.76e-13 3.78e-13 nan
+1.3 2.91e-13 4.2e-13 1.62e-13 nan
+1.73 2.04e-13 2.76e-13 1.32e-13 nan
+2.31 1.1e-13 1.54e-13 6.6e-14 nan
+3.08 nan nan nan 2.25e-13
+4.11 2.7e-14 4e-14 1.4e-14 nan

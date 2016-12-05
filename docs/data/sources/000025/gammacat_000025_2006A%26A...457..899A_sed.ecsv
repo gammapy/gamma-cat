@@ -1,16 +1,17 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32}
 # - {name: excess, datatype: float32}
 # - {name: significance, datatype: float32}
 # meta: !!omap
+# - {data_type: sed}
 # - {source_id: 25}
 # - {paper_id: 2006A&A...457..899A}
-# - comments: [Data taken from table 5 in the paper]
+# - {comments: Data taken from table 5 in the paper.}
 e_ref dnde dnde_errn dnde_errp excess significance
 0.519 1.81e-10 6e-12 6e-12 975.0 42.9
 0.729 7.27e-11 1.9e-12 2e-12 1580.0 56.0

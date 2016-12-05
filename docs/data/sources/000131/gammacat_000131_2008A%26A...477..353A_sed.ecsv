@@ -1,11 +1,12 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32}
 # meta: !!omap
+# - {data_type: sed}
 # - {source_id: 131}
 # - {source_name: HESS J1858+020}
 # - {paper_id: 2008A&A...477..353A}

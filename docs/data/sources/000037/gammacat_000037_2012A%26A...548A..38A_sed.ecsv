@@ -1,17 +1,18 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32}
 # meta: !!omap
+# - {data_type: sed}
 # - {source_id: 37}
 # - {paper_id: 2012A&A...548A..38A}
-# - comments:
-#   - From https://github.com/zblz/gammafit/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_cocoon.spec
-#   - {TODO: clarify if this spectrum is really from 2012A&A...548A..38A and for which
-#       region the measurement is.}
+# - {comments: 'From https://github.com/zblz/gammafit/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_cocoon.spec
+# 
+#     TODO: clarify if this spectrum is really from 2012A&A...548A..38A and for which
+#     region the measurement is.'}
 e_ref dnde dnde_errn dnde_errp
 0.7185 1.055e-11 1.383e-11 7.266e-12
 0.8684 1.304e-11 1.517e-11 1.091e-11

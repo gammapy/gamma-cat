@@ -1,16 +1,16 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32}
 # meta: !!omap
+# - {data_type: sed}
 # - {source_id: 97}
 # - {source_name: HESS J1714-385}
 # - {paper_id: 2008A&A...490..685A}
-# - comments:
-#   - {TODO: 'origin of flux points?'}
+# - {comments: 'TODO: origin of flux points?'}
 e_ref dnde dnde_errn dnde_errp
 0.4645 4.136e-12 8.89e-13 8.78e-13
 1.388 5.404e-13 7.75e-14 7.65e-14

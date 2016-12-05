@@ -1,12 +1,13 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32}
-# - {name: e_min, datatype: float32}
-# - {name: e_max, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_err, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: e_min, unit: TeV, datatype: float32}
+# - {name: e_max, unit: TeV, datatype: float32}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32}
 # meta: !!omap
+# - {data_type: sed}
 # - {source_id: 79}
 # - {paper_id: 2005A&A...435L..17A}
 e_ref e_min e_max dnde dnde_err

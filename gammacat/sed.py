@@ -24,6 +24,15 @@ class SED:
     expected_colnames_input = expected_colnames + [
         'e_lo', 'e_hi',
         'dnde_min', 'dnde_max',
+        'eflux', 'eflux_err',
+    ]
+
+    required_meta_keys = [
+        'data_type', 'paper_id', 'source_id',
+    ]
+
+    allowed_meta_keys = required_meta_keys + [
+        'source_name', 'comments', 'url', 'UL_CONF',
     ]
 
     def __init__(self, table, path):
@@ -42,6 +51,9 @@ class SED:
         self.validate_input()
         self._process_energy_ranges(table)
         self._process_flux_errrors(table)
+
+        self._add_defaults(table)
+        self._process_eflux_inputs(table)
         self._process_column_order(table)
         # TODO: add validate_output?
 
@@ -74,6 +86,29 @@ class SED:
             table['dnde_errp'] = table['dnde_max'] - table['dnde']
             del table['dnde_max']
 
+    @staticmethod
+    def _add_defaults(table):
+        """
+        Add default units and description.
+        """
+        for colname in table.colnames:
+            if colname.startswith('e_') and not table[colname].unit:
+                table[colname].unit = 'TeV'
+
+            if 'dnde' in colname and not table[colname].unit:
+                table[colname].unit = 'cm^-2 s^-1 TeV^-1'
+
+    @staticmethod
+    def _process_eflux_inputs(table):
+        """
+        If `eflux` is given instead of `dnde`
+        -> convert to `dnde` to have uniform standard.
+        """
+        if 'eflux' in table.colnames and 'dnde' not in table.colnames:
+            dnde = table['eflux'].quantity / table['e_ref'].quantity ** 2
+            table['dnde'] = dnde.to('cm^-2 s^-1 TeV^-1')
+            del table['eflux']
+
     def _process_column_order(self, table):
         """
         Establish a standard column order.
@@ -86,9 +121,10 @@ class SED:
     def validate_input(self):
         log.debug('Validating {}'.format(self.path))
         check_ecsv_column_header(self.path)
-        self._validate_colnames_input()
+        self._validate_input_colnames()
+        self._validate_input_meta()
 
-    def _validate_colnames_input(self):
+    def _validate_input_colnames(self):
         table = self.table
         unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames_input))
         if unexpected_colnames:
@@ -96,6 +132,24 @@ class SED:
                 'SED file {} contains invalid columns: {}'
                 ''.format(self.path, unexpected_colnames)
             )
+
+    def _validate_input_meta(self):
+        meta = self.table.meta
+
+        missing = sorted(set(self.required_meta_keys) - set(meta.keys()))
+        if missing:
+            log.error('SED file {} contains missing meta keys: {}'.format(self.path, missing))
+
+        extra = sorted(set(meta.keys()) - set(self.allowed_meta_keys))
+        if extra:
+            log.error('SED file {} contains extra meta keys: {}'.format(self.path, extra))
+
+        if ('comments' in meta) and not isinstance(meta['comments'], str):
+            log.error('SED file {} contains invalid meta key comments (should be str): {}'
+                      ''.format(self.path, meta['comments']))
+
+        if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
+            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
 
 
 class SEDList:

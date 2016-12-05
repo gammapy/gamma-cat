@@ -2,8 +2,8 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32}
-# - {name: energy_hi, datatype: float32}
-# - {name: energy_lo, datatype: float32}
+# - {name: e_hi, datatype: float32}
+# - {name: e_lo, datatype: float32}
 # - {name: dnde, datatype: float32}
 # - {name: dnde_errp, datatype: float32}
 # - {name: dnde_errn, datatype: float32}
@@ -14,7 +14,7 @@
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1640
 # - comments:
 #   - Flux points from Figure 2.
-e_ref energy_hi energy_lo dnde dnde_errp dnde_errn
+e_ref e_hi e_lo dnde dnde_errp dnde_errn
 2.903e-01 2.592e-02 2.930e-02 3.956e-11 1.790e-11 1.678e-11
 3.510e-01 3.207e-02 3.482e-02 2.997e-11 5.278e-12 5.104e-12
 4.237e-01 4.044e-02 4.060e-02 2.430e-11 2.785e-12 2.709e-12

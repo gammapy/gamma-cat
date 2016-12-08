@@ -123,6 +123,7 @@ class SED:
         check_ecsv_column_header(self.path)
         self._validate_input_colnames()
         self._validate_input_meta()
+        self._validate_input_consistency()
 
     def _validate_input_colnames(self):
         table = self.table
@@ -150,6 +151,19 @@ class SED:
 
         if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
             log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
+
+    def _validate_input_consistency(self):
+        table = self.table
+        meta = table.meta
+        colnames = table.colnames
+
+        if 'UL_CONF' in meta and 'dnde_ul' not in colnames:
+            log.error('SED file {} contains "UL_CONF" in meta, but no column "dnde_ul".'.format(self.path))
+
+        if 'dnde_ul' in colnames and 'UL_CONF' not in meta:
+            log.error('SED file {} contains column "dnde_ul", but not "UL_CONF" in meta.'.format(self.path))
+
+
 
 
 class SEDList:

@@ -101,6 +101,9 @@ class SED:
             if 'dnde' in colname and not table[colname].unit:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
 
+            if colname == 'excess':
+                table[colname].unit = 'count'
+
     @staticmethod
     def _make_it_uniform(table):
         """
@@ -115,14 +118,14 @@ class SED:
             dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
             dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
             dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
+            dict(name='excess', unit='count', description='Excess counts'),
+            dict(name='significance', unit='', description='Excess significance'),
         ]
         for col in cols:
             name = col['name']
             if name in table.colnames:
                 table[name] = table[name].quantity.to(col['unit'])
                 table[name].description = col['description']
-
-
 
     @staticmethod
     def _process_e2dnde_inputs(table):

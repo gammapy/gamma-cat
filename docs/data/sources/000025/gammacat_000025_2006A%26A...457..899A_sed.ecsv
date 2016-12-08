@@ -8,8 +8,8 @@
 #     negative error (1 sigma) on `dnde`}
 # - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
 #     positive error (1 sigma) on `dnde`}
-# - {name: excess, datatype: float32}
-# - {name: significance, datatype: float32}
+# - {name: excess, unit: ct, datatype: float32, description: Excess counts}
+# - {name: significance, unit: '', datatype: float32, description: Excess significance}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 25}

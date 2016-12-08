@@ -342,7 +342,7 @@ class GammaCatMaker:
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
-            paper_info = self.choose_paper(input_data, basic_source_info.data['papers'])
+            paper_info = self.choose_paper(input_data, basic_source_info)
             paper_source_info = paper_info.get_source_by_id(source_id)
             sed_info = input_data.seds.get_sed_by_source_id(source_id)
 
@@ -355,10 +355,19 @@ class GammaCatMaker:
             )
             self.sources.append(source)
 
-    def choose_paper(self, input_data, paper_ids, method='first-available'):
+    def choose_paper(self, input_data, bsi, method='first-available'):
         """Choose paper refrence for singel source according to different criteria"""
+        paper_ids = bsi.data['papers']
 
-        if method == 'first-available':
+        if method == 'manual':
+            source_id = bsi.data['source_id']
+            path = gammacat_info.base_dir / 'input/schemas/gamma_cat_paper_selection.yaml'
+            selection = load_yaml(path)
+            paper_id = selection[source_id - 1]['paper_id']
+            paper_info = input_data.papers.get_paper_by_id(paper_id)
+            return paper_info
+
+        elif method == 'first-available':
             # choose the first paper in the list, where info on the source
             # is actually available
             for paper_id in paper_ids:

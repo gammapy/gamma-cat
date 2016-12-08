@@ -2,9 +2,9 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errn, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errp, datatype: float32, unit: erg cm-2 s-1}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 45
@@ -12,15 +12,15 @@
 # - paper_id: 2015A&A...577A.131H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018
 # - comments: |
-#     Original data is in a different format (energy flux).
-#     This table was computed with the `tev-000045.py` script.
-e_ref dnde dnde_errp dnde_errn
-  0.402203   2.25569e-12   7.52432e-13   7.04284e-13
-  0.797953   3.47791e-13   1.44100e-13   1.33940e-13
-   1.23278   2.27031e-13   6.22181e-14   5.77752e-14  
-   1.90455    8.2036e-14   2.73225e-14   2.51559e-14  
-   2.94239    2.5168e-14   1.14098e-14   1.02637e-14  
-   4.54577   1.03637e-14   4.99803e-15   4.34613e-15  
-   7.02288   2.86301e-15   2.04645e-15   1.67135e-15  
-   10.8498   2.90457e-15   1.26667e-15   1.04046e-15  
-   16.7622   1.52439e-15   6.65697e-16   5.26755e-16  
+#     These are the points labeled "HESS J1018-589 A"
+#     shown in Figure 1 (and again in Figure 4)
+e_ref e2dnde e2dnde_errn e2dnde_errp
+0.402203  5.84628e-13  1.82536e-13  1.95015e-13
+0.797953  3.548e-13    1.36639e-13  1.47004e-13
+1.23278   5.52798e-13  1.40677e-13  1.51495e-13
+1.90455   4.7676e-13   1.46196e-13  1.58787e-13
+2.94239   3.49108e-13  1.42369e-13  1.58266e-13
+4.54577   3.43117e-13  1.43889e-13  1.65472e-13
+7.02288   2.26237e-13  1.32071e-13  1.61712e-13
+10.8498   5.47817e-13  1.96236e-13  2.38901e-13
+16.7622   6.8623e-13   2.37127e-13  2.99674e-13

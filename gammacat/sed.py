@@ -24,7 +24,7 @@ class SED:
     expected_colnames_input = expected_colnames + [
         'e_lo', 'e_hi',
         'dnde_min', 'dnde_max',
-        'eflux', 'eflux_err',
+        'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp',
     ]
 
     required_meta_keys = [
@@ -49,13 +49,15 @@ class SED:
         """Apply fixes."""
         table = self.table
         self.validate_input()
+
         self._process_energy_ranges(table)
         self._process_flux_errrors(table)
 
         self._add_defaults(table)
-        self._process_eflux_inputs(table)
+        self._process_e2dnde_inputs(table)
         self._process_column_order(table)
-        # TODO: add validate_output?
+
+        self.validate_output()
 
     @staticmethod
     def _process_energy_ranges(table):
@@ -99,15 +101,18 @@ class SED:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
 
     @staticmethod
-    def _process_eflux_inputs(table):
+    def _process_e2dnde_inputs(table):
         """
-        If `eflux` is given instead of `dnde`
+        If `e2dnde` is given instead of `dnde`
         -> convert to `dnde` to have uniform standard.
         """
-        if 'eflux' in table.colnames and 'dnde' not in table.colnames:
-            dnde = table['eflux'].quantity / table['e_ref'].quantity ** 2
-            table['dnde'] = dnde.to('cm^-2 s^-1 TeV^-1')
-            del table['eflux']
+        colnames = [_ for _ in table.colnames if _.startswith('e2')]
+
+        for colname in colnames:
+            dnde_colname = colname[2:]
+            dnde = table[colname].quantity / table['e_ref'].quantity ** 2
+            table[dnde_colname] = dnde.to('cm^-2 s^-1 TeV^-1')
+            del table[colname]
 
     def _process_column_order(self, table):
         """
@@ -116,6 +121,15 @@ class SED:
         # See "Select or reorder columns" section at
         # http://astropy.readthedocs.io/en/latest/table/modify_table.html
         colnames = [_ for _ in self.expected_colnames if _ in table.colnames]
+
+        # Don't silently drop columns!
+        dropped_colnames = sorted(set(table.colnames) - set(colnames))
+        if dropped_colnames:
+            log.error(
+                'SED file {} - dropping columns: {}'
+                ''.format(self.path, dropped_colnames)
+            )
+
         self.table = table[colnames]
 
     def validate_input(self):
@@ -163,7 +177,14 @@ class SED:
         if 'dnde_ul' in colnames and 'UL_CONF' not in meta:
             log.error('SED file {} contains column "dnde_ul", but not "UL_CONF" in meta.'.format(self.path))
 
-
+    def validate_output(self):
+        table = self.table
+        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames))
+        if unexpected_colnames:
+            log.error(
+                'SED file {} contains invalid columns: {}'
+                ''.format(self.path, unexpected_colnames)
+            )
 
 
 class SEDList:

@@ -14,6 +14,7 @@
 # - {source_name: TeV J1641-463}
 # - {paper_id: 2014ApJ...794L...1A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641'}
+# - {UL_CONF: 0.95}
 e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul
 0.815 0.5623 1.0 4.332e-13 2.09e-13 2.253e-13 nan
 1.347 1.0004 1.7787 3.037e-13 5.68e-14 6.099e-14 nan

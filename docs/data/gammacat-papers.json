@@ -417,7 +417,12 @@
             "id": "2014ApJ...794L...1A",
             "path": "2014/2014ApJ...794L...1A",
             "url": "2014/2014ApJ...794L...1A",
-            "sources": []
+            "sources": [
+                {
+                    "source_id": 89,
+                    "paper_id": "2014ApJ...794L..1A"
+                }
+            ]
         },
         {
             "id": "2014MNRAS.439.2828A",
@@ -461,6 +466,17 @@
             ]
         },
         {
+            "id": "2016arXiv160900600H",
+            "path": "2016/2016arXiv160900600H",
+            "url": "2016/2016arXiv160900600H",
+            "sources": [
+                {
+                    "source_id": 133,
+                    "paper_id": "2016arXiv160900600H"
+                }
+            ]
+        },
+        {
             "id": "2016arXiv160908671H",
             "path": "2016/2016arXiv160908671H",
             "url": "2016/2016arXiv160908671H",
@@ -468,6 +484,17 @@
                 {
                     "source_id": 96,
                     "paper_id": "2016arXiv160908671H"
+                }
+            ]
+        },
+        {
+            "id": "2016arXiv161101863H",
+            "path": "2016/2016arXiv161101863H",
+            "url": "2016/2016arXiv161101863H",
+            "sources": [
+                {
+                    "source_id": 39,
+                    "paper_id": "2016arXiv161101863H"
                 }
             ]
         },

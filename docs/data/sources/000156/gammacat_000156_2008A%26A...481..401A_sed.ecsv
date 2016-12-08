@@ -14,7 +14,12 @@
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_w28_paper.html'}
 # - {comments: 'Flux points for region B.
 # 
-#     There are flux points for other regions on that page.'}
+#     There are flux points for other regions on that page.
+# 
+#     Upper limit (99% c.l.) given in case excess significance < 2 sigma
+# 
+#     '}
+# - {UL_CONF: 0.99}
 e_ref dnde dnde_errn dnde_errp dnde_ul
 0.31 1.1792e-11 1.5801e-11 7.783e-12 nan
 0.41 8.783e-12 1.0765e-11 6.801e-12 nan

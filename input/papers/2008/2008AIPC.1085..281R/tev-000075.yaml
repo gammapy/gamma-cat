@@ -1,0 +1,25 @@
+paper_id: 2008AIPC.1085..281R
+source_id: 75
+# common_name: HESS J1503-582
+
+data:
+  livetime: 24
+  significance: 6
+
+pos:
+  ra: {val: 15h03m38s}
+  dec: {val: -58d13m45s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.26}
+
+spec:
+  type: pl
+  norm: {val: 1.6, err: 0.6}
+  index: {val: 2.4, err: 0.4, err_sys: 0.2}
+  ref: 1
+
+  erange: {min: 0.8}
+
+  theta: 0.4

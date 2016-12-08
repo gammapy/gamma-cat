@@ -53,8 +53,9 @@ class SED:
         self._process_energy_ranges(table)
         self._process_flux_errrors(table)
 
-        self._add_defaults(table)
+        self._add_missing_defaults(table)
         self._process_e2dnde_inputs(table)
+        self._make_it_uniform(table)
         self._process_column_order(table)
 
         self.validate_output()
@@ -89,7 +90,7 @@ class SED:
             del table['dnde_max']
 
     @staticmethod
-    def _add_defaults(table):
+    def _add_missing_defaults(table):
         """
         Add default units and description.
         """
@@ -99,6 +100,24 @@ class SED:
 
             if 'dnde' in colname and not table[colname].unit:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
+
+    @staticmethod
+    def _make_it_uniform(table):
+        """
+        Make column units and description uniform
+        """
+        cols = [
+            dict(name='e_ref', unit='TeV', description='Energy'),
+            dict(name='e_min', unit='TeV', description='Energy bin minimum'),
+            dict(name='e_max', unit='TeV', description='Energy bin maximum'),
+        ]
+        for col in cols:
+            name = col['name']
+            if name in table.colnames:
+                table[name] = table[name].quantity.to(col['unit'])
+                table[name].description = col['description']
+
+
 
     @staticmethod
     def _process_e2dnde_inputs(table):

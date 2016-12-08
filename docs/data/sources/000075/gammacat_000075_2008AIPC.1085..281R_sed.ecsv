@@ -1,7 +1,7 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
 # - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
 # - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32}
 # meta: !!omap

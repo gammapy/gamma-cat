@@ -1,9 +1,9 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, unit: TeV, datatype: float32}
-# - {name: e_min, unit: TeV, datatype: float32}
-# - {name: e_max, unit: TeV, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
 # - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32}
 # - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32}
 # - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32}

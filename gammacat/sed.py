@@ -110,6 +110,11 @@ class SED:
             dict(name='e_ref', unit='TeV', description='Energy'),
             dict(name='e_min', unit='TeV', description='Energy bin minimum'),
             dict(name='e_max', unit='TeV', description='Energy bin maximum'),
+            dict(name='dnde', unit='cm-2 s-1 TeV-1', description='Differential photon flux at `e_ref`'),
+            dict(name='dnde_err', unit='cm-2 s-1 TeV-1', description='Statistical error (1 sigma) on `dnde`'),
+            dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
+            dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
+            dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
         ]
         for col in cols:
             name = col['name']

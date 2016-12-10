@@ -4278,11 +4278,11 @@
   spec_flux_above_1TeV_err: 1.7586798987598296e-12
   spec_energy_flux_1TeV_10TeV: 7.00158247352034e-12
   spec_energy_flux_1TeV_10TeV_err: 4.132741891760272e-12
-- source_id: 107
-  common_name: Galactic Centre ridge
-  gamma_names: ''
-  other_names: ''
-  paper_id: ''
+- source_id: 106
+  common_name: Galactic Centre
+  gamma_names: HESS J1745-290,VER J1745-290
+  other_names: Sgr A*,Sagittarius A*
+  paper_id: 2009A&A...503..817A
   significance: .nan
   livetime: .nan
   ra: 266.4168395996094
@@ -4318,11 +4318,11 @@
   spec_flux_above_1TeV_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
-- source_id: 106
-  common_name: Galactic Centre
-  gamma_names: HESS J1745-290,VER J1745-290
-  other_names: Sgr A*,Sagittarius A*
-  paper_id: 2009A&A...503..817A
+- source_id: 107
+  common_name: Galactic Centre ridge
+  gamma_names: ''
+  other_names: ''
+  paper_id: ''
   significance: .nan
   livetime: .nan
   ra: 266.4168395996094

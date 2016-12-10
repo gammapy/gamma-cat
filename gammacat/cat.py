@@ -142,8 +142,10 @@ class GammaCatSource:
         """
         Fill flux point info data.
         """
-        # if len(sed_info.table) > 0:
-        #    from IPython import embed; embed(); 1/0
+        try:
+            data['sed_paper_id'] = sed_info.table.meta['paper_id']
+        except KeyError:
+            data['sed_paper_id'] = NA.fill_value['string']
         try:
             e_ref = sed_info.table['e_ref'].data
             data['sed_e_ref'] = NA.resize_sed_array(e_ref, shape)
@@ -155,6 +157,11 @@ class GammaCatSource:
         except KeyError:
             data['sed_dnde'] = NA.fill_value_array(shape)
         try:
+            dnde_err = sed_info.table['dnde_err'].data
+            data['sed_dnde_err'] = NA.resize_sed_array(dnde_err, shape)
+        except KeyError:
+            data['sed_dnde_err'] = NA.fill_value_array(shape)
+        try:
             dnde_errp = sed_info.table['dnde_errp'].data
             data['sed_dnde_errp'] = NA.resize_sed_array(dnde_errp, shape)
         except KeyError:
@@ -164,6 +171,8 @@ class GammaCatSource:
             data['sed_dnde_errn'] = NA.resize_sed_array(dnde_errn, shape)
         except KeyError:
             data['sed_dnde_errn'] = NA.fill_value_array(shape)
+
+
 
     def fill_derived_spectral_info(self):
         """
@@ -343,8 +352,7 @@ class GammaCatMaker:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             paper_info = self.choose_paper(input_data, basic_source_info)
             paper_source_info = paper_info.get_source_by_id(source_id)
-            sed_info = input_data.seds.get_sed_by_source_id(source_id)
-
+            sed_info = input_data.seds.get_sed_by_source_and_paper_id(source_id, paper_info.id)
             # TODO: right now this implies, that a GammaCatSource object can only
             # handle the information from one paper, maybe this should be changed
             source = GammaCatSource.from_inputs(

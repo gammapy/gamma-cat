@@ -240,6 +240,11 @@
   latex:
 
 # SED info
+- name: sed_paper_id
+  dtype: str
+  fmt:
+  unit:
+  description: Paper ID where sed is taken from.
 - name: sed_e_ref
   fmt:
   dtype: float32
@@ -251,6 +256,12 @@
   dtype: float32
   unit: TeV-1 cm-2 s-1
   description: Flux at reference energy
+  latex:
+- name: sed_dnde_err
+  fmt:
+  dtype: float32
+  unit: TeV-1 cm-2 s-1
+  description: Flux error at reference energy
   latex:
 - name: sed_dnde_errp
   fmt:

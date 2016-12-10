@@ -223,8 +223,17 @@ class SEDList:
 
     def __init__(self, data):
         self.data = data
-        _source_ids = [sed.table.meta['source_id'] for sed in data]
-        self._sed_by_source_id = dict(zip(_source_ids, data))
+
+        sed_lookup = {}
+        for sed in data:
+            source_id = sed.table.meta['source_id']
+            paper_id = sed.table.meta['paper_id']
+            try:
+                sed_lookup[paper_id][source_id] = sed
+            except KeyError:
+                sed_lookup[paper_id] = {}
+                sed_lookup[paper_id][source_id] = sed
+        self._sed_lookup = sed_lookup
 
     @classmethod
     def read(cls):
@@ -242,6 +251,9 @@ class SEDList:
         for sed in self.data:
             sed.process()
 
-    def get_sed_by_source_id(self, source_id):
-        missing = SED(table={}, path='')
-        return self._sed_by_source_id.get(source_id, missing)
+    def get_sed_by_source_and_paper_id(self, source_id, paper_id):
+        try:
+            return self._sed_lookup[paper_id][source_id]
+        except KeyError:
+            missing = SED(table=Table(), path='')
+            return missing

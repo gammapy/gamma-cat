@@ -275,7 +275,7 @@ class GammaCatSchema:
     """Helper class to apply the schema."""
 
     def __init__(self):
-        self.colspecs = load_yaml(gammacat_info.base_dir / 'input/schemas/gamma_cat.yaml')
+        self.colspecs = load_yaml(gammacat_info.base_dir / 'input/gammacat/gamma_cat_columns.yaml')
 
     def format_table(self, in_table):
         """Make a new table, formatting things according to this schema.
@@ -355,15 +355,24 @@ class GammaCatMaker:
             )
             self.sources.append(source)
 
-    def choose_paper(self, input_data, bsi, method='first-available'):
+    def choose_paper(self, input_data, bsi, method='manual'):
         """Choose paper refrence for singel source according to different criteria"""
         paper_ids = bsi.data['papers']
 
         if method == 'manual':
             source_id = bsi.data['source_id']
-            path = gammacat_info.base_dir / 'input/schemas/gamma_cat_paper_selection.yaml'
+            path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_paper_selection.yaml'
             selection = load_yaml(path)
-            paper_id = selection[source_id - 1]['paper_id']
+            paper_ids = selection[source_id - 1]['paper_id']
+
+            if paper_ids:
+                # split paper ids
+                paper_ids = paper_ids.split(', ')
+                # choose first paper id
+                paper_id = paper_ids[0]
+            else:
+                paper_id = None
+
             paper_info = input_data.papers.get_paper_by_id(paper_id)
             return paper_info
 

@@ -48,13 +48,13 @@
 - source_id: 23
   paper_id:
 - source_id: 24
-  paper_id:
+  paper_id: 2015Sci...347..406H
 - source_id: 25
-  paper_id: 2006A&A...457..899A
+  paper_id: 2006A&A...457..899A, 2008ICRC....2..803K
 - source_id: 26
-  paper_id:
+  paper_id: 2015Sci...347..406H
 - source_id: 27
-  paper_id:
+  paper_id: 2012A&A...545L...2H, 2015Sci...347..406H
 - source_id: 28
   paper_id:
 - source_id: 29
@@ -78,7 +78,7 @@
 - source_id: 38
   paper_id:
 - source_id: 39
-  paper_id: 2007ApJ...661..236A
+  paper_id: 2007ApJ...661..236A, 2016arXiv161101863H
 - source_id: 40
   paper_id:
 - source_id: 41
@@ -88,13 +88,13 @@
 - source_id: 43
   paper_id:
 - source_id: 44
-  paper_id:
+  paper_id: 2012A&A...541A...5H
 - source_id: 45
-  paper_id:
+  paper_id: 2015A&A...577A.131H
 - source_id: 46
-  paper_id:
+  paper_id: 2011A&A...525A..46H
 - source_id: 47
-  paper_id:
+  paper_id: 2011A&A...525A..46H
 - source_id: 48
   paper_id:
 - source_id: 49
@@ -122,13 +122,13 @@
 - source_id: 60
   paper_id:
 - source_id: 61
-  paper_id:
+  paper_id: 2012A&A...548A..46H
 - source_id: 62
   paper_id:
 - source_id: 63
   paper_id:
 - source_id: 64
-  paper_id:
+  paper_id: 2008AIPC.1085..285R
 - source_id: 65
   paper_id: 2006A&A...456..245A
 - source_id: 66
@@ -140,7 +140,7 @@
 - source_id: 69
   paper_id:
 - source_id: 70
-  paper_id:
+  paper_id: 2016arXiv160104461H
 - source_id: 71
   paper_id:
 - source_id: 72
@@ -150,11 +150,11 @@
 - source_id: 74
   paper_id:
 - source_id: 75
-  paper_id:
+  paper_id: 2008AIPC.1085..281R
 - source_id: 76
   paper_id:
 - source_id: 77
-  paper_id:
+  paper_id: 2011A&A...525A..45H
 - source_id: 78
   paper_id:
 - source_id: 79
@@ -166,7 +166,7 @@
 - source_id: 82
   paper_id:
 - source_id: 83
-  paper_id: 2006ApJ...636..777A
+  paper_id: 2006ApJ...636..777A, 2011A&A...531L..18H
 - source_id: 84
   paper_id: 2006ApJ...636..777A
 - source_id: 85
@@ -176,11 +176,11 @@
 - source_id: 87
   paper_id: 2006ApJ...636..777A
 - source_id: 88
-  paper_id: 2006ApJ...636..777A
+  paper_id: 2006ApJ...636..777A, 2014MNRAS.439.2828A
 - source_id: 89
-  paper_id:
+  paper_id: 2013arXiv1303.0979O, 2014ApJ...794L..1A
 - source_id: 90
-  paper_id:
+  paper_id: 2012A&A...537A.114A
 - source_id: 91
   paper_id:
 - source_id: 92
@@ -188,15 +188,15 @@
 - source_id: 93
   paper_id: 2006ApJ...636..777A, 2008A&A...477..353A
 - source_id: 94
-  paper_id:
+  paper_id: 2011A&A...528A.143H
 - source_id: 95
   paper_id: 2006ApJ...636..777A
 - source_id: 96
-  paper_id:
+  paper_id: 2016arXiv160908671H
 - source_id: 97
-  paper_id:
+  paper_id: 2008A&A...490..685A
 - source_id: 98
-  paper_id:
+  paper_id: 2015A&A...574A.100H
 - source_id: 99
   paper_id: 2007A&A...472..489A
 - source_id: 100
@@ -208,11 +208,11 @@
 - source_id: 103
   paper_id: 2008A&A...477..353A
 - source_id: 104
-  paper_id:
+  paper_id: 2008AIPC.1085..249T
 - source_id: 105
   paper_id:
 - source_id: 106
-  paper_id:
+  paper_id: 2009A&A...503..817A, 2016Natur.531..476H
 - source_id: 107
   paper_id:
 - source_id: 108
@@ -224,7 +224,7 @@
 - source_id: 111
   paper_id:
 - source_id: 112
-  paper_id:
+  paper_id: 2008A&A...481..401A
 - source_id: 113
   paper_id: 2006ApJ...636..777A
 - source_id: 114
@@ -234,7 +234,7 @@
 - source_id: 116
   paper_id: 2006ApJ...636..777A
 - source_id: 117
-  paper_id:
+  paper_id: 2014A&A...562A..40H
 - source_id: 118
   paper_id: 2006A&A...460..365A, 2006ApJ...636..777A
 - source_id: 119
@@ -244,7 +244,7 @@
 - source_id: 121
   paper_id:
 - source_id: 122
-  paper_id:
+  paper_id: 2015MNRAS.446.1163H
 - source_id: 123
   paper_id: 2006ApJ...636..777A
 - source_id: 124
@@ -256,7 +256,7 @@
 - source_id: 127
   paper_id:
 - source_id: 128
-  paper_id:
+  paper_id: 2008AIPC.1085..372C
 - source_id: 129
   paper_id:
 - source_id: 130
@@ -264,17 +264,17 @@
 - source_id: 131
   paper_id: 2008A&A...477..353A
 - source_id: 132
-  paper_id:
+  paper_id: 2009A&A...499..723A
 - source_id: 133
-  paper_id:
+  paper_id: 2016arXiv160900600H
 - source_id: 134
-  paper_id:
+  paper_id: 2008A&A...484..435A
 - source_id: 135
   paper_id:
 - source_id: 136
   paper_id:
 - source_id: 137
-  paper_id:
+  paper_id: 2011A&A...529A..49H
 - source_id: 138
   paper_id:
 - source_id: 139
@@ -312,7 +312,7 @@
 - source_id: 155
   paper_id:
 - source_id: 156
-  paper_id:
+  paper_id: 2008A&A...481..401A
 - source_id: 157
   paper_id:
 - source_id: 158

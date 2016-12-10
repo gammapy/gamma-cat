@@ -1,13 +1,14 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
+import yaml
 import numpy as np
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
 from .info import gammacat_info
 from .input import InputData
-from .utils import NA, load_yaml
+from .utils import NA, load_yaml, table_to_list_of_dict
 
 __all__ = ['GammaCatMaker']
 
@@ -334,6 +335,7 @@ class GammaCatMaker:
         self.gather_data()
         self.make_table()
         self.write_table()
+        self.write_yaml_text_dump()
 
     def gather_data(self):
         """Gather data into Python data structures."""
@@ -424,4 +426,15 @@ class GammaCatMaker:
         #path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
         #log.info('Writing {}'.format(path))
         #table.write(str(path), format='ascii.ecsv')
+
+    def write_yaml_text_dump(self):
+        column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
+        table = self.table[column_selection]
+        list_of_dict = table_to_list_of_dict(table)
+
+        path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
+        with path.open('w') as f:
+            log.info('Writing {}'.format(path))
+            f.write(yaml.dump(list_of_dict, default_flow_style=False))
+
 

@@ -1,3 +1,6 @@
+# This file defines which information to use when generating gamma-cat.
+#
+# At the moment it's just a simple one paper per source mapping.
 - source_id: 1
   paper_id:
 - source_id: 2

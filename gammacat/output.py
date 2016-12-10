@@ -66,8 +66,8 @@ class OutputDataReader:
     def read_all(self):
         """Read all data from disk.
         """
-        path = OutputDataConfig.gammacat_ecsv
-        self.gammacat = Table.read(str(path), format='ascii.ecsv')
+        path = OutputDataConfig.gammacat_fits
+        self.gammacat = Table.read(str(path), format='fits')
 
         path = OutputDataConfig.papers_ecsv
         self.papers = Table.read(str(path), format='ascii.ecsv')

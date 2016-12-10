@@ -14,9 +14,9 @@ __all__ = ['GammaCatMaker']
 
 log = logging.getLogger(__name__)
 
-
-#TODO: replace flux factor by reading the correct units from the schema
+# TODO: replace flux factor by reading the correct units from the schema
 FLUX_FACTOR = 1E-12
+
 
 class GammaCatSource:
     """Gather data for one source in gamma-cat.
@@ -77,7 +77,6 @@ class GammaCatSource:
             data['livetime'] = psi['data']['livetime']
         except KeyError:
             data['livetime'] = NA.fill_value['number']
-
 
     @staticmethod
     def fill_spectral_info(data, psi):
@@ -143,7 +142,7 @@ class GammaCatSource:
         """
         Fill flux point info data.
         """
-        #if len(sed_info.table) > 0:
+        # if len(sed_info.table) > 0:
         #    from IPython import embed; embed(); 1/0
         try:
             e_ref = sed_info.table['e_ref'].data
@@ -178,23 +177,22 @@ class GammaCatSource:
         spec_model = self._get_spec_model(data)
 
         # Integral flux above 1 TeV
-        emin, emax = 1, 1E6 # TeV
+        emin, emax = 1, 1E6  # TeV
         flux_above_1TeV = spec_model.integral(emin, emax)
         data['spec_flux_above_1TeV'] = flux_above_1TeV.n
 
         data['spec_flux_above_1TeV_err'] = flux_above_1TeV.s
 
         # Energy flux between 1 TeV and 10 TeV
-        emin, emax = 1, 10 # TeV
+        emin, emax = 1, 10  # TeV
         energy_flux = spec_model.energy_flux(emin, emax)
 
         data['spec_energy_flux_1TeV_10TeV'] = energy_flux.n
         data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux.s
 
-        norm_1TeV = spec_model(1) # TeV
+        norm_1TeV = spec_model(1)  # TeV
         data['spec_norm_1TeV'] = norm_1TeV.n
         data['spec_norm_1TeV_err'] = norm_1TeV.s
-
 
     def _get_spec_model(self, data):
         from uncertainties import ufloat
@@ -213,7 +211,7 @@ class GammaCatSource:
             lambda_ = 1. / ufloat(data['spec_ecut'], data['spec_ecut_err'])
             model = ExponentialCutoffPowerLaw(index, amplitude, reference, lambda_)
         else:
-            #return generic model, as all parameters are NaN it will
+            # return generic model, as all parameters are NaN it will
             # evaluate to NaN
             model = PowerLaw(index, amplitude, reference)
         return model
@@ -264,7 +262,6 @@ class GammaCatSource:
             data['morph_pa_frame'] = psi['morph']['pa']['frame']
         except KeyError:
             data['morph_pa_frame'] = NA.fill_value['string']
-
 
     def row_dict(self):
         """Data in a row dict format.
@@ -412,6 +409,10 @@ class GammaCatMaker:
         # table = Table(rows=rows, meta=meta, names=schema.names, dtype=schema.dtype)
         table = Table(rows=rows)
         table = schema.format_table(table)
+
+        # Sort sources by right ascension
+        table.sort('ra')
+
         self.table = table
 
     def write_table(self):
@@ -423,9 +424,9 @@ class GammaCatMaker:
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
-        #path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
-        #log.info('Writing {}'.format(path))
-        #table.write(str(path), format='ascii.ecsv')
+        # path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
+        # log.info('Writing {}'.format(path))
+        # table.write(str(path), format='ascii.ecsv')
 
     def write_yaml_text_dump(self):
         column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
@@ -436,5 +437,3 @@ class GammaCatMaker:
         with path.open('w') as f:
             log.info('Writing {}'.format(path))
             f.write(yaml.dump(list_of_dict, default_flow_style=False))
-
-

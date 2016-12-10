@@ -78,7 +78,7 @@
 - source_id: 38
   paper_id:
 - source_id: 39
-  paper_id:
+  paper_id: 2007ApJ...661..236A
 - source_id: 40
   paper_id:
 - source_id: 41
@@ -136,7 +136,7 @@
 - source_id: 67
   paper_id:
 - source_id: 68
-  paper_id:
+  paper_id: 2008A&A...477..353A
 - source_id: 69
   paper_id:
 - source_id: 70
@@ -170,7 +170,7 @@
 - source_id: 84
   paper_id: 2006ApJ...636..777A
 - source_id: 85
-  paper_id:
+  paper_id: 2008A&A...477..353A
 - source_id: 86
   paper_id: 2006ApJ...636..777A
 - source_id: 87
@@ -184,9 +184,9 @@
 - source_id: 91
   paper_id:
 - source_id: 92
-  paper_id: 2006ApJ...636..777A
+  paper_id: 2006ApJ...636..777A, 2008A&A...477..353A
 - source_id: 93
-  paper_id: 2006ApJ...636..777A
+  paper_id: 2006ApJ...636..777A, 2008A&A...477..353A
 - source_id: 94
   paper_id:
 - source_id: 95
@@ -206,7 +206,7 @@
 - source_id: 102
   paper_id:
 - source_id: 103
-  paper_id:
+  paper_id: 2008A&A...477..353A
 - source_id: 104
   paper_id:
 - source_id: 105
@@ -236,7 +236,7 @@
 - source_id: 117
   paper_id:
 - source_id: 118
-  paper_id: 2006A&A...460..365A # 2006ApJ...636..777A
+  paper_id: 2006A&A...460..365A, 2006ApJ...636..777A
 - source_id: 119
   paper_id:
 - source_id: 120
@@ -250,7 +250,7 @@
 - source_id: 124
   paper_id: 2006ApJ...636..777A
 - source_id: 125
-  paper_id:
+  paper_id: 2008A&A...477..353A
 - source_id: 126
   paper_id:
 - source_id: 127
@@ -260,9 +260,9 @@
 - source_id: 129
   paper_id:
 - source_id: 130
-  paper_id:
+  paper_id: 2008A&A...477..353A
 - source_id: 131
-  paper_id:
+  paper_id: 2008A&A...477..353A
 - source_id: 132
   paper_id:
 - source_id: 133

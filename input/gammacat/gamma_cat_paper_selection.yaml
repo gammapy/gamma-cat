@@ -2,7 +2,7 @@
 #
 # At the moment it's just a simple one paper per source mapping.
 - source_id: 1
-  paper_id:
+  paper_id: 2013ApJ...764...38A
 - source_id: 2
   paper_id:
 - source_id: 3
@@ -50,7 +50,7 @@
 - source_id: 24
   paper_id:
 - source_id: 25
-  paper_id:
+  paper_id: 2006A&A...457..899A
 - source_id: 26
   paper_id:
 - source_id: 27
@@ -60,7 +60,7 @@
 - source_id: 29
   paper_id:
 - source_id: 30
-  paper_id:
+  paper_id: 2007A&A...469L...1A
 - source_id: 31
   paper_id:
 - source_id: 32
@@ -74,7 +74,7 @@
 - source_id: 36
   paper_id:
 - source_id: 37
-  paper_id:
+  paper_id: 2006A&A...448L..43A
 - source_id: 38
   paper_id:
 - source_id: 39
@@ -130,9 +130,9 @@
 - source_id: 64
   paper_id:
 - source_id: 65
-  paper_id:
+  paper_id: 2006A&A...456..245A
 - source_id: 66
-  paper_id:
+  paper_id: 2006A&A...456..245A
 - source_id: 67
   paper_id:
 - source_id: 68
@@ -158,7 +158,7 @@
 - source_id: 78
   paper_id:
 - source_id: 79
-  paper_id:
+  paper_id: 2005A&A...435L..17A
 - source_id: 80
   paper_id:
 - source_id: 81
@@ -166,17 +166,17 @@
 - source_id: 82
   paper_id:
 - source_id: 83
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 84
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 85
   paper_id:
 - source_id: 86
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 87
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 88
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 89
   paper_id:
 - source_id: 90
@@ -184,13 +184,13 @@
 - source_id: 91
   paper_id:
 - source_id: 92
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 93
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 94
   paper_id:
 - source_id: 95
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 96
   paper_id:
 - source_id: 97
@@ -198,7 +198,7 @@
 - source_id: 98
   paper_id:
 - source_id: 99
-  paper_id:
+  paper_id: 2007A&A...472..489A
 - source_id: 100
   paper_id:
 - source_id: 101
@@ -216,7 +216,7 @@
 - source_id: 107
   paper_id:
 - source_id: 108
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 109
   paper_id:
 - source_id: 110
@@ -226,17 +226,17 @@
 - source_id: 112
   paper_id:
 - source_id: 113
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 114
   paper_id:
 - source_id: 115
-  paper_id:
+  paper_id: 2007A&A...472..489A
 - source_id: 116
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 117
   paper_id:
 - source_id: 118
-  paper_id:
+  paper_id: 2006A&A...460..365A # 2006ApJ...636..777A
 - source_id: 119
   paper_id:
 - source_id: 120
@@ -246,9 +246,9 @@
 - source_id: 122
   paper_id:
 - source_id: 123
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 124
-  paper_id:
+  paper_id: 2006ApJ...636..777A
 - source_id: 125
   paper_id:
 - source_id: 126

@@ -2,7 +2,7 @@
 
 Each file has some of these columns:
 
-- `time` - center of obeservation exposure in MJD
+- `time` - center of observation exposure in MJD
 - `time_min` - start of observation in MJD
 - `time_min` - end of observation in MJD
 - `flux` - observed integral flux in Crab
@@ -16,5 +16,5 @@ The table metadata should contain these two information:
 
 If any column contains the value `-1`, then it is not specified.
 
-Several lightcurves for a single source should be separeted by its reference following 'source_paper.ECSV.'
+Several lightcurves for a single source should be separated by its reference following 'source_paper.ECSV.'
 The paper should be given in ADS format, the source name may vary as the dicussion continues.

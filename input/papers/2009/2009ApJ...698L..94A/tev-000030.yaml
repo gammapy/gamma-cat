@@ -1,0 +1,12 @@
+source_id: 30
+paper_id: 2009ApJ...698L..94A
+
+data:
+  livetime: 31.0
+  n_on: 335
+  n_off: 1976
+  alpha: 0.16
+  excess: 19.4
+  significance: 1.0
+
+# (no further data as the binary has not been detected)

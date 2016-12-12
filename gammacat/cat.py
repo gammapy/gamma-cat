@@ -171,6 +171,11 @@ class GammaCatSource:
             data['sed_dnde_errn'] = NA.resize_sed_array(dnde_errn, shape)
         except KeyError:
             data['sed_dnde_errn'] = NA.fill_value_array(shape)
+        try:
+            dnde_ul = sed_info.table['dnde_ul'].data
+            data['sed_dnde_ul'] = NA.resize_sed_array(dnde_ul, shape)
+        except KeyError:
+            data['sed_dnde_ul'] = NA.fill_value_array(shape)
 
 
 
@@ -376,7 +381,7 @@ class GammaCatMaker:
                 # split paper ids
                 paper_ids = paper_ids.split(', ')
                 # choose first paper id
-                paper_id = paper_ids[0]
+                paper_id = paper_ids[-1]
             else:
                 paper_id = None
 

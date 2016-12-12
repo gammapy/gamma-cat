@@ -275,3 +275,9 @@
   unit: TeV-1 cm-2 s-1
   description: Lower error on flux at reference energy
   latex:
+- name: sed_dnde_ul
+  fmt:
+  dtype: float32
+  unit: TeV-1 cm-2 s-1
+  description: Upper limit on flux at reference energy
+  latex:

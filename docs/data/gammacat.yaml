@@ -4122,42 +4122,42 @@
   common_name: HESS J1731-347
   gamma_names: HESS J1731-347
   other_names: SNR G353.6-0.7
-  paper_id: 2008A&A...477..353A
-  significance: 8.100000381469727
-  livetime: 14.0
+  paper_id: 2011A&A...531A..81H
+  significance: .nan
+  livetime: 59.0
   ra: 262.9791564941406
   dec: -34.709999084472656
   glon: 353.5650634765625
   glat: -0.6221904158592224
-  morph_type: gauss
-  morph_sigma: 0.18000000715255737
-  morph_sigma_err: 0.07000000029802322
-  morph_sigma2: 0.10999999940395355
-  morph_sigma2_err: 0.029999999329447746
-  morph_pa: -89.0
-  morph_pa_err: 21.0
-  morph_pa_frame: radec
+  morph_type: shell
+  morph_sigma: 0.27000001072883606
+  morph_sigma_err: 0.019999999552965164
+  morph_sigma2: .nan
+  morph_sigma2_err: .nan
+  morph_pa: .nan
+  morph_pa_err: .nan
+  morph_pa_frame: ''
   spec_type: pl
-  spec_erange_min: 0.5
-  spec_erange_max: 80.0
-  spec_theta: 0.6000000238418579
-  spec_ref: 1.0
-  spec_norm: 6.099999845521342e-12
-  spec_norm_err: 7.99999985961336e-13
-  spec_norm_err_sys: 1.99999996490334e-13
-  spec_norm_err_tot: 8.246211330963094e-13
-  spec_norm_1TeV: 6.099999845521342e-12
-  spec_norm_1TeV_err: 7.99999985961336e-13
-  spec_index: 2.259999990463257
-  spec_index_err: 0.10000000149011612
+  spec_erange_min: 0.23999999463558197
+  spec_erange_max: .nan
+  spec_theta: 0.30000001192092896
+  spec_ref: 0.7829999923706055
+  spec_norm: 4.670000063738966e-12
+  spec_norm_err: 1.8999999327768552e-13
+  spec_norm_err_sys: .nan
+  spec_norm_err_tot: .nan
+  spec_norm_1TeV: 2.6475499310257833e-12
+  spec_norm_1TeV_err: 1.145111159757753e-13
+  spec_index: 2.319999933242798
+  spec_index_err: 0.05999999865889549
   spec_index_err_sys: 0.20000000298023224
-  spec_index_err_tot: 0.22360679507255554
+  spec_index_err_tot: 0.2088061273097992
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: 4.841269746203025e-12
-  spec_flux_above_1TeV_err: 7.421286892309031e-13
-  spec_energy_flux_1TeV_10TeV: 1.0568464506310882e-11
-  spec_energy_flux_1TeV_10TeV_err: 1.7670335680786131e-12
+  spec_flux_above_1TeV: 2.0057195921491244e-12
+  spec_flux_above_1TeV_err: 1.4562038640891783e-13
+  spec_energy_flux_1TeV_10TeV: 4.313602860323007e-12
+  spec_energy_flux_1TeV_10TeV_err: 3.693752931559907e-13
 - source_id: 104
   common_name: HESS J1741-302
   gamma_names: HESS J1741-302

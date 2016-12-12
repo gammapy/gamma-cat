@@ -3,6 +3,7 @@ import logging
 from collections import OrderedDict
 import yaml
 import numpy as np
+from astropy import units as u
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
@@ -195,6 +196,7 @@ class GammaCatSource:
         """
         Fill derived spectral info computed from basic parameters
         """
+        from gammapy.spectrum import CrabSpectrum
         data = self.data
         # total errors
         data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
@@ -206,8 +208,26 @@ class GammaCatSource:
         emin, emax = 1, 1E6  # TeV
         flux_above_1TeV = spec_model.integral(emin, emax)
         data['spec_flux_above_1TeV'] = flux_above_1TeV.n
-
         data['spec_flux_above_1TeV_err'] = flux_above_1TeV.s
+
+        # Integral flux above 1 TeV in crab units
+        crab = CrabSpectrum('meyer').model
+        emin, emax = 1, 1E6  # TeV
+        flux_above_1TeV = spec_model.integral(emin, emax)
+        flux_above_1TeV_crab = crab.integral(emin * u.TeV, emax * u.TeV)
+        flux_cu = (flux_above_1TeV / flux_above_1TeV_crab.value) * 100
+        data['spec_flux_above_1TeV_crab'] = flux_cu.n
+        data['spec_flux_above_1TeV_crab_err'] = flux_cu.s
+
+        # Integral flux above erange_min
+        emin, emax = data['spec_erange_min'], 1E6  # TeV
+        try:
+            flux_above_erange_min = spec_model.integral(emin, emax)
+            data['spec_flux_above_erange_min'] = flux_above_erange_min.n
+            data['spec_flux_above_erange_min_err'] = flux_above_erange_min.s
+        except ValueError:
+            data['spec_flux_above_erange_min'] = NA.fill_value['number']
+            data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
 
         # Energy flux between 1 TeV and 10 TeV
         emin, emax = 1, 10  # TeV

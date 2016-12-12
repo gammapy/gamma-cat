@@ -36,6 +36,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 2
@@ -76,6 +80,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 3
@@ -116,6 +124,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 4
@@ -156,6 +168,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 5
@@ -196,6 +212,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 6
@@ -236,6 +256,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 95
@@ -276,6 +300,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 5.439479704334726e-13
   spec_flux_above_1TeV_err: 4.629485271696876e-13
+  spec_flux_above_1TeV_crab: 1.636610746383667
+  spec_flux_above_1TeV_crab_err: 1.3929024934768677
+  spec_flux_above_erange_min: 4.200000156689976e-12
+  spec_flux_above_erange_min_err: 1.4999999940062958e-12
   spec_energy_flux_1TeV_10TeV: 1.1845366267720925e-12
   spec_energy_flux_1TeV_10TeV_err: 1.136285076447363e-12
 - source_id: 7
@@ -316,6 +344,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 8
@@ -356,6 +388,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 9
@@ -396,6 +432,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 10
@@ -436,6 +476,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 11
@@ -476,6 +520,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 12
@@ -516,6 +564,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 13
@@ -556,6 +608,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 14
@@ -596,6 +652,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 15
@@ -636,6 +696,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 16
@@ -676,6 +740,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 18
@@ -716,6 +784,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 17
@@ -756,6 +828,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 19
@@ -796,6 +872,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 20
@@ -836,6 +916,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 21
@@ -876,6 +960,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 22
@@ -916,6 +1004,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 23
@@ -956,6 +1048,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 24
@@ -996,6 +1092,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 25
@@ -1036,6 +1136,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 26
@@ -1076,6 +1180,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 27
@@ -1116,6 +1224,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 28
@@ -1156,6 +1268,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 29
@@ -1196,6 +1312,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 30
@@ -1236,6 +1356,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 5.947712483113377e-13
   spec_flux_above_1TeV_err: 1.5020410859111627e-13
+  spec_flux_above_1TeV_crab: 1.7895258665084839
+  spec_flux_above_1TeV_crab_err: 0.45192861557006836
+  spec_flux_above_erange_min: 2.4165632602629605e-12
+  spec_flux_above_erange_min_err: 4.806725221843944e-13
   spec_energy_flux_1TeV_10TeV: 1.21026409380387e-12
   spec_energy_flux_1TeV_10TeV_err: 3.68001907159049e-13
 - source_id: 31
@@ -1276,6 +1400,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 32
@@ -1316,6 +1444,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 33
@@ -1356,6 +1488,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 34
@@ -1396,6 +1532,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 35
@@ -1436,6 +1576,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 36
@@ -1476,6 +1620,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 37
@@ -1516,6 +1664,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 38
@@ -1556,6 +1708,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 39
@@ -1596,6 +1752,10 @@
   spec_ecut_err: 1.236050009727478
   spec_flux_above_1TeV: 2.3394971723766922e-11
   spec_flux_above_1TeV_err: 2.346073639178381e-12
+  spec_flux_above_1TeV_crab: 70.38993072509766
+  spec_flux_above_1TeV_crab_err: 7.058780193328857
+  spec_flux_above_erange_min: 7.994716000325752e-11
+  spec_flux_above_erange_min_err: 4.7338391886975195e-12
   spec_energy_flux_1TeV_10TeV: 5.277524250946186e-11
   spec_energy_flux_1TeV_10TeV_err: 6.989347035163407e-12
 - source_id: 40
@@ -1636,6 +1796,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 41
@@ -1676,6 +1840,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 42
@@ -1716,6 +1884,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 43
@@ -1756,6 +1928,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 44
@@ -1796,6 +1972,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.2105262769984285e-13
   spec_flux_above_1TeV_err: 7.42800799710154e-14
+  spec_flux_above_1TeV_crab: 0.6650950312614441
+  spec_flux_above_1TeV_crab_err: 0.22349116206169128
+  spec_flux_above_erange_min: 5.834562975988444e-13
+  spec_flux_above_erange_min_err: 1.5285273318333542e-13
   spec_energy_flux_1TeV_10TeV: 4.0791681013910286e-13
   spec_energy_flux_1TeV_10TeV_err: 1.6610240201504756e-13
 - source_id: 45
@@ -1836,6 +2016,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 46
@@ -1876,6 +2060,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.0569620225868723e-12
   spec_flux_above_1TeV_err: 4.0165817178326735e-13
+  spec_flux_above_1TeV_crab: 6.1889119148254395
+  spec_flux_above_1TeV_crab_err: 1.2084943056106567
+  spec_flux_above_erange_min: 2.926470047195928e-12
+  spec_flux_above_erange_min_err: 5.045949010192008e-13
   spec_energy_flux_1TeV_10TeV: 4.129591200247029e-12
   spec_energy_flux_1TeV_10TeV_err: 9.512593620794596e-13
 - source_id: 47
@@ -1916,6 +2104,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.0531891114426428e-12
   spec_flux_above_1TeV_err: 4.254855202976554e-13
+  spec_flux_above_1TeV_crab: 3.1687965393066406
+  spec_flux_above_1TeV_crab_err: 1.2801852226257324
+  spec_flux_above_erange_min: 1.2989785028866274e-12
+  spec_flux_above_erange_min_err: 4.967051618100238e-13
   spec_energy_flux_1TeV_10TeV: 2.4445348089513486e-12
   spec_energy_flux_1TeV_10TeV_err: 1.0180396022713145e-12
 - source_id: 48
@@ -1956,6 +2148,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 49
@@ -1996,6 +2192,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 50
@@ -2036,6 +2236,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 52
@@ -2076,6 +2280,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 51
@@ -2116,6 +2324,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 53
@@ -2156,6 +2368,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 55
@@ -2196,6 +2412,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 54
@@ -2236,6 +2456,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 57
@@ -2276,6 +2500,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 56
@@ -2316,6 +2544,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 58
@@ -2356,6 +2588,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 150
@@ -2396,6 +2632,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 59
@@ -2436,6 +2676,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 60
@@ -2476,6 +2720,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 61
@@ -2516,6 +2764,10 @@
   spec_ecut_err: 2.200000047683716
   spec_flux_above_1TeV: 5.469786082401562e-12
   spec_flux_above_1TeV_err: 1.2212833825839264e-12
+  spec_flux_above_1TeV_crab: 16.457292556762695
+  spec_flux_above_1TeV_crab_err: 3.6745526790618896
+  spec_flux_above_erange_min: 6.375515566869883e-12
+  spec_flux_above_erange_min_err: 1.2596813783044558e-12
   spec_energy_flux_1TeV_10TeV: 1.3860870784476731e-11
   spec_energy_flux_1TeV_10TeV_err: 3.9981494677487905e-12
 - source_id: 62
@@ -2556,6 +2808,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 63
@@ -2596,6 +2852,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 64
@@ -2636,6 +2896,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.9166664743118798e-12
   spec_flux_above_1TeV_err: 6.973546089542038e-13
+  spec_flux_above_1TeV_crab: 8.775558471679688
+  spec_flux_above_1TeV_crab_err: 2.098174810409546
+  spec_flux_above_erange_min: 1.2369190741101654e-11
+  spec_flux_above_erange_min_err: 2.3101828609817243e-12
   spec_energy_flux_1TeV_10TeV: 6.4582462641626925e-12
   spec_energy_flux_1TeV_10TeV_err: 1.7640211123423621e-12
 - source_id: 65
@@ -2676,6 +2940,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.1699998568880385e-12
   spec_flux_above_1TeV_err: 1.6999998685238854e-13
+  spec_flux_above_1TeV_crab: 6.529016017913818
+  spec_flux_above_1TeV_crab_err: 0.511489748954773
+  spec_flux_above_erange_min: 9.426962682690387e-12
+  spec_flux_above_erange_min_err: 1.1704037261930922e-12
   spec_energy_flux_1TeV_10TeV: 4.782653439949769e-12
   spec_energy_flux_1TeV_10TeV_err: 3.853005425564354e-13
 - source_id: 66
@@ -2716,6 +2984,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.9699996802190487e-12
   spec_flux_above_1TeV_err: 1.7999997651250987e-13
+  spec_flux_above_1TeV_crab: 8.936025619506836
+  spec_flux_above_1TeV_crab_err: 0.5415773391723633
+  spec_flux_above_erange_min: 1.2148553864277378e-11
+  spec_flux_above_erange_min_err: 1.1455435124790858e-12
   spec_energy_flux_1TeV_10TeV: 6.621054399191806e-12
   spec_energy_flux_1TeV_10TeV_err: 4.108253179920668e-13
 - source_id: 67
@@ -2756,6 +3028,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 68
@@ -2796,6 +3072,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.1206894787174626e-12
   spec_flux_above_1TeV_err: 3.7040525811479763e-13
+  spec_flux_above_1TeV_crab: 3.371889352798462
+  spec_flux_above_1TeV_crab_err: 1.1144617795944214
+  spec_flux_above_erange_min: 1.1609943692189595e-12
+  spec_flux_above_erange_min_err: 3.8194661734596014e-13
   spec_energy_flux_1TeV_10TeV: 2.5038734106919147e-12
   spec_energy_flux_1TeV_10TeV_err: 8.585335133787231e-13
 - source_id: 69
@@ -2836,6 +3116,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 70
@@ -2876,6 +3160,10 @@
   spec_ecut_err: 1.2300000190734863
   spec_flux_above_1TeV: 1.831368390270427e-12
   spec_flux_above_1TeV_err: 5.022650589707467e-13
+  spec_flux_above_1TeV_crab: 5.510153770446777
+  spec_flux_above_1TeV_crab_err: 1.5111967325210571
+  spec_flux_above_erange_min: 4.876897496952637e-12
+  spec_flux_above_erange_min_err: 6.941235780599797e-13
   spec_energy_flux_1TeV_10TeV: 3.925113706282346e-12
   spec_energy_flux_1TeV_10TeV_err: 1.4778786918204223e-12
 - source_id: 71
@@ -2916,6 +3204,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 72
@@ -2956,6 +3248,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 73
@@ -2996,6 +3292,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 74
@@ -3036,6 +3336,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 75
@@ -3076,6 +3380,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.1428571847563185e-12
   spec_flux_above_1TeV_err: 5.387909628000453e-13
+  spec_flux_above_1TeV_crab: 3.438586473464966
+  spec_flux_above_1TeV_crab_err: 1.6210944652557373
+  spec_flux_above_erange_min: 1.5619457767110378e-12
+  spec_flux_above_erange_min_err: 6.61240647740341e-13
   spec_energy_flux_1TeV_10TeV: 2.4075713211252348e-12
   spec_energy_flux_1TeV_10TeV_err: 1.3039913116311141e-12
 - source_id: 77
@@ -3116,6 +3424,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.080536914625397e-12
   spec_flux_above_1TeV_err: 5.928297674810679e-13
+  spec_flux_above_1TeV_crab: 6.259842872619629
+  spec_flux_above_1TeV_crab_err: 1.7836843729019165
+  spec_flux_above_erange_min: 5.843998895915803e-12
+  spec_flux_above_erange_min_err: 1.508306392110359e-12
   spec_energy_flux_1TeV_10TeV: 4.2793056424794695e-12
   spec_energy_flux_1TeV_10TeV_err: 1.3202242033980016e-12
 - source_id: 78
@@ -3156,6 +3468,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 79
@@ -3196,6 +3512,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 80
@@ -3236,6 +3556,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 158
@@ -3276,6 +3600,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 81
@@ -3316,6 +3644,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 82
@@ -3356,6 +3688,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 83
@@ -3396,6 +3732,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 84
@@ -3436,6 +3776,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 4.930357337673552e-12
   spec_flux_above_1TeV_err: 5.277671203708645e-13
+  spec_flux_above_1TeV_crab: 14.834277153015137
+  spec_flux_above_1TeV_crab_err: 1.5879262685775757
+  spec_flux_above_erange_min: 4.329999900298809e-11
+  spec_flux_above_erange_min_err: 1.9999999920083944e-12
   spec_energy_flux_1TeV_10TeV: 1.0522469180707095e-11
   spec_energy_flux_1TeV_10TeV_err: 1.274997251873855e-12
 - source_id: 85
@@ -3476,6 +3820,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 4.152542025515071e-12
   spec_flux_above_1TeV_err: 8.718140142097153e-13
+  spec_flux_above_1TeV_crab: 12.49401569366455
+  spec_flux_above_1TeV_crab_err: 2.623081922531128
+  spec_flux_above_erange_min: 7.58744542889156e-12
+  spec_flux_above_erange_min_err: 1.4269191297294759e-12
   spec_energy_flux_1TeV_10TeV: 9.236678262525277e-12
   spec_energy_flux_1TeV_10TeV_err: 2.0712396641558994e-12
 - source_id: 86
@@ -3516,6 +3864,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 4.7318984668087705e-12
   spec_flux_above_1TeV_err: 1.7559992088883591e-12
+  spec_flux_above_1TeV_crab: 14.237161636352539
+  spec_flux_above_1TeV_crab_err: 5.283385753631592
+  spec_flux_above_erange_min: 2.8699998974590635e-11
+  spec_flux_above_erange_min_err: 5.300000022190332e-12
   spec_energy_flux_1TeV_10TeV: 1.0662274882444756e-11
   spec_energy_flux_1TeV_10TeV_err: 4.342312100169554e-12
 - source_id: 87
@@ -3556,6 +3908,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.4538720704768138e-12
   spec_flux_above_1TeV_err: 6.918960846966082e-13
+  spec_flux_above_1TeV_crab: 4.374356746673584
+  spec_flux_above_1TeV_crab_err: 2.081751585006714
+  spec_flux_above_erange_min: 1.3399999859720069e-11
+  spec_flux_above_erange_min_err: 2.6000000763470865e-12
   spec_energy_flux_1TeV_10TeV: 3.078842953155303e-12
   spec_energy_flux_1TeV_10TeV_err: 1.665578048745675e-12
 - source_id: 88
@@ -3596,6 +3952,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 89
@@ -3636,6 +3996,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 90
@@ -3676,6 +4040,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 91
@@ -3716,6 +4084,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 92
@@ -3756,6 +4128,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 8.50467005847344e-12
   spec_flux_above_1TeV_err: 1.2087917472536347e-12
+  spec_flux_above_1TeV_crab: 25.588537216186523
+  spec_flux_above_1TeV_crab_err: 3.6369681358337402
+  spec_flux_above_erange_min: 1.7854990055909958e-11
+  spec_flux_above_erange_min_err: 2.185673083493489e-12
   spec_energy_flux_1TeV_10TeV: 1.9352054680954467e-11
   spec_energy_flux_1TeV_10TeV_err: 2.9121689868599754e-12
 - source_id: 94
@@ -3796,6 +4172,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 4.199995819881286e-12
   spec_flux_above_1TeV_err: 9.035449797210882e-13
+  spec_flux_above_1TeV_crab: 12.63679313659668
+  spec_flux_above_1TeV_crab_err: 2.718552827835083
+  spec_flux_above_erange_min: 7.499995416382355e-12
+  spec_flux_above_erange_min_err: 1.4629151839570809e-12
   spec_energy_flux_1TeV_10TeV: 9.670856997157085e-12
   spec_energy_flux_1TeV_10TeV_err: 1.842068164670252e-12
 - source_id: 93
@@ -3836,6 +4216,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.849314971991145e-12
   spec_flux_above_1TeV_err: 2.2910707077154757e-13
+  spec_flux_above_1TeV_crab: 5.564151287078857
+  spec_flux_above_1TeV_crab_err: 0.6893289089202881
+  spec_flux_above_erange_min: 5.0876204291117055e-12
+  spec_flux_above_erange_min_err: 5.653010611700315e-13
   spec_energy_flux_1TeV_10TeV: 3.834370754934868e-12
   spec_energy_flux_1TeV_10TeV_err: 5.16474721063559e-13
 - source_id: 96
@@ -3876,6 +4260,10 @@
   spec_ecut_err: 1.100000023841858
   spec_flux_above_1TeV: 1.2497842170888784e-11
   spec_flux_above_1TeV_err: 5.50972407888789e-13
+  spec_flux_above_1TeV_crab: 37.603050231933594
+  spec_flux_above_1TeV_crab_err: 1.657745599746704
+  spec_flux_above_erange_min: 1.2201790966503978e-10
+  spec_flux_above_erange_min_err: 5.330823456273226e-12
   spec_energy_flux_1TeV_10TeV: 2.5640869635856767e-11
   spec_energy_flux_1TeV_10TeV_err: 1.229555519899339e-12
 - source_id: 97
@@ -3916,6 +4304,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 98
@@ -3956,6 +4348,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.249169360615851e-13
   spec_flux_above_1TeV_err: 3.744281360656965e-14
+  spec_flux_above_1TeV_crab: 0.3758454918861389
+  spec_flux_above_1TeV_crab_err: 0.11265655606985092
+  spec_flux_above_erange_min: 1.9066039979448446e-12
+  spec_flux_above_erange_min_err: 4.4589340358024143e-13
   spec_energy_flux_1TeV_10TeV: 2.365176197255403e-13
   spec_energy_flux_1TeV_10TeV_err: 8.51599064703723e-14
 - source_id: 99
@@ -3996,6 +4392,10 @@
   spec_ecut_err: 3.0
   spec_flux_above_1TeV: 5.729623047713572e-13
   spec_flux_above_1TeV_err: 5.845229899062443e-13
+  spec_flux_above_1TeV_crab: 1.7239079475402832
+  spec_flux_above_1TeV_crab_err: 1.7586913108825684
+  spec_flux_above_erange_min: 7.626003778113399e-13
+  spec_flux_above_erange_min_err: 6.434801151124214e-13
   spec_energy_flux_1TeV_10TeV: 1.7831726763575806e-12
   spec_energy_flux_1TeV_10TeV_err: 2.0263252881180804e-12
 - source_id: 100
@@ -4036,6 +4436,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 101
@@ -4076,6 +4480,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 102
@@ -4116,6 +4524,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.537686857526089e-13
   spec_flux_above_1TeV_err: 5.4355269742643875e-14
+  spec_flux_above_1TeV_crab: 0.763529896736145
+  spec_flux_above_1TeV_crab_err: 0.16354213654994965
+  spec_flux_above_erange_min: 1.4892791860843246e-12
+  spec_flux_above_erange_min_err: 2.5924336462257447e-13
   spec_energy_flux_1TeV_10TeV: 5.566569340892391e-13
   spec_energy_flux_1TeV_10TeV_err: 1.3344071670123164e-13
 - source_id: 103
@@ -4156,6 +4568,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.0057195921491244e-12
   spec_flux_above_1TeV_err: 1.4562038640891783e-13
+  spec_flux_above_1TeV_crab: 6.034735679626465
+  spec_flux_above_1TeV_crab_err: 0.4381372630596161
+  spec_flux_above_erange_min: 1.3194453342413315e-11
+  spec_flux_above_erange_min_err: 6.335106050858741e-13
   spec_energy_flux_1TeV_10TeV: 4.313602860323007e-12
   spec_energy_flux_1TeV_10TeV_err: 3.693752931559907e-13
 - source_id: 104
@@ -4196,6 +4612,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 105
@@ -4236,6 +4656,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 108
@@ -4276,6 +4700,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.9926601561452992e-12
   spec_flux_above_1TeV_err: 1.7586798987598296e-12
+  spec_flux_above_1TeV_crab: 9.004205703735352
+  spec_flux_above_1TeV_crab_err: 5.291451454162598
+  spec_flux_above_erange_min: 1.119996369952636e-11
+  spec_flux_above_erange_min_err: 3.999986973590719e-12
   spec_energy_flux_1TeV_10TeV: 7.00158247352034e-12
   spec_energy_flux_1TeV_10TeV_err: 4.132741891760272e-12
 - source_id: 106
@@ -4316,6 +4744,10 @@
   spec_ecut_err: 2.0
   spec_flux_above_1TeV: 1.703835857125302e-12
   spec_flux_above_1TeV_err: 7.910593160338417e-14
+  spec_flux_above_1TeV_crab: 5.126438617706299
+  spec_flux_above_1TeV_crab_err: 0.23801101744174957
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: 3.641967370043853e-12
   spec_energy_flux_1TeV_10TeV_err: 2.2226575506316404e-13
 - source_id: 107
@@ -4356,6 +4788,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 159
@@ -4396,6 +4832,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 110
@@ -4436,6 +4876,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 109
@@ -4476,6 +4920,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 156
@@ -4516,6 +4964,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 5.053333185928155e-12
   spec_flux_above_1TeV_err: 8.294564579451602e-13
+  spec_flux_above_1TeV_crab: 15.204283714294434
+  spec_flux_above_1TeV_crab_err: 2.495638132095337
+  spec_flux_above_erange_min: 3.075360799353888e-11
+  spec_flux_above_erange_min_err: 4.6069905702827985e-12
   spec_energy_flux_1TeV_10TeV: 1.0365986714833131e-11
   spec_energy_flux_1TeV_10TeV_err: 2.056773805089729e-12
 - source_id: 112
@@ -4556,6 +5008,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 4.518072114351179e-12
   spec_flux_above_1TeV_err: 9.935570161739848e-13
+  spec_flux_above_1TeV_crab: 13.593810081481934
+  spec_flux_above_1TeV_crab_err: 2.989377975463867
+  spec_flux_above_erange_min: 3.3337412691514245e-11
+  spec_flux_above_erange_min_err: 7.325506520827751e-12
   spec_energy_flux_1TeV_10TeV: 8.877543665464227e-12
   spec_energy_flux_1TeV_10TeV_err: 2.4653970271543146e-12
 - source_id: 111
@@ -4596,6 +5052,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 113
@@ -4636,6 +5096,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 3.3395135615177374e-12
   spec_flux_above_1TeV_err: 3.460605283236995e-13
+  spec_flux_above_1TeV_crab: 10.047805786132812
+  spec_flux_above_1TeV_crab_err: 1.0412142276763916
+  spec_flux_above_erange_min: 5.319999996089564e-11
+  spec_flux_above_erange_min_err: 1.9999999920083944e-12
   spec_energy_flux_1TeV_10TeV: 6.457602681753105e-12
   spec_energy_flux_1TeV_10TeV_err: 7.65933269499669e-13
 - source_id: 114
@@ -4676,6 +5140,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 115
@@ -4716,6 +5184,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 3.833332956615365e-12
   spec_flux_above_1TeV_err: 5.933333793901874e-13
+  spec_flux_above_1TeV_crab: 11.533591270446777
+  spec_flux_above_1TeV_crab_err: 1.7851996421813965
+  spec_flux_above_erange_min: 2.0232454600588312e-11
+  spec_flux_above_erange_min_err: 2.8663679502854977e-12
   spec_energy_flux_1TeV_10TeV: 8.487981151272805e-12
   spec_energy_flux_1TeV_10TeV_err: 1.4283532039430225e-12
 - source_id: 160
@@ -4756,6 +5228,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 116
@@ -4796,6 +5272,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.4570326242340235e-12
   spec_flux_above_1TeV_err: 3.6919780926035484e-13
+  spec_flux_above_1TeV_crab: 7.392629146575928
+  spec_flux_above_1TeV_crab_err: 1.1108288764953613
+  spec_flux_above_erange_min: 1.4199999683051079e-11
+  spec_flux_above_erange_min_err: 1.0999999739205735e-12
   spec_energy_flux_1TeV_10TeV: 5.5696779653613415e-12
   spec_energy_flux_1TeV_10TeV_err: 9.12118362610126e-13
 - source_id: 117
@@ -4836,6 +5316,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 161
@@ -4876,6 +5360,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 118
@@ -4916,6 +5404,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 3.7583742541758e-12
   spec_flux_above_1TeV_err: 5.27455249615949e-13
+  spec_flux_above_1TeV_crab: 11.30805778503418
+  spec_flux_above_1TeV_crab_err: 1.5869879722595215
+  spec_flux_above_erange_min: 3.9400000623190934e-11
+  spec_flux_above_erange_min_err: 2.199999947841147e-12
   spec_energy_flux_1TeV_10TeV: 7.792614643842288e-12
   spec_energy_flux_1TeV_10TeV_err: 1.2479892336561549e-12
 - source_id: 119
@@ -4956,6 +5448,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 162
@@ -4996,6 +5492,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 120
@@ -5036,6 +5536,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 163
@@ -5076,6 +5580,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 121
@@ -5116,6 +5624,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 122
@@ -5156,6 +5668,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 123
@@ -5196,6 +5712,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.8127382190799568e-12
   spec_flux_above_1TeV_err: 4.767574139294406e-13
+  spec_flux_above_1TeV_crab: 5.454100131988525
+  spec_flux_above_1TeV_crab_err: 1.4344502687454224
+  spec_flux_above_erange_min: 1.86999998819104e-11
+  spec_flux_above_erange_min_err: 9.999999960041972e-13
   spec_energy_flux_1TeV_10TeV: 3.768564453554557e-12
   spec_energy_flux_1TeV_10TeV_err: 1.1488196461836853e-12
 - source_id: 124
@@ -5236,6 +5756,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 3.937147483035197e-12
   spec_flux_above_1TeV_err: 4.32998960037817e-13
+  spec_flux_above_1TeV_crab: 11.84594440460205
+  spec_flux_above_1TeV_crab_err: 1.3027913570404053
+  spec_flux_above_erange_min: 3.0399998490748814e-11
+  spec_flux_above_erange_min_err: 1.599999971922672e-12
   spec_energy_flux_1TeV_10TeV: 8.573789248011998e-12
   spec_energy_flux_1TeV_10TeV_err: 1.0554842590215774e-12
 - source_id: 125
@@ -5276,6 +5800,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 9.078014381880273e-12
   spec_flux_above_1TeV_err: 1.0561010616375044e-12
+  spec_flux_above_1TeV_crab: 27.313594818115234
+  spec_flux_above_1TeV_crab_err: 3.177557945251465
+  spec_flux_above_erange_min: 2.1642909686647727e-11
+  spec_flux_above_erange_min_err: 2.2040023885810944e-12
   spec_energy_flux_1TeV_10TeV: 1.907371309506356e-11
   spec_energy_flux_1TeV_10TeV_err: 2.440485747517984e-12
 - source_id: 126
@@ -5316,6 +5844,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 164
@@ -5356,6 +5888,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 127
@@ -5396,6 +5932,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 128
@@ -5436,6 +5976,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.055555595528724e-12
   spec_flux_above_1TeV_err: 3.1866441993835815e-13
+  spec_flux_above_1TeV_crab: 6.184679985046387
+  spec_flux_above_1TeV_crab_err: 0.9587858319282532
+  spec_flux_above_erange_min: 2.484807281807888e-12
+  spec_flux_above_erange_min_err: 3.495938076785582e-13
   spec_energy_flux_1TeV_10TeV: 3.891986993104224e-12
   spec_energy_flux_1TeV_10TeV_err: 7.62107933184597e-13
 - source_id: 129
@@ -5476,6 +6020,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 157
@@ -5516,6 +6064,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 130
@@ -5556,6 +6108,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 4.38848913805745e-12
   spec_flux_above_1TeV_err: 5.633863059233135e-13
+  spec_flux_above_1TeV_crab: 13.203925132751465
+  spec_flux_above_1TeV_crab_err: 1.6950960159301758
+  spec_flux_above_erange_min: 8.926573889789235e-12
+  spec_flux_above_erange_min_err: 1.035135735807935e-12
   spec_energy_flux_1TeV_10TeV: 9.269180041571179e-12
   spec_energy_flux_1TeV_10TeV_err: 1.2887425501761918e-12
 - source_id: 131
@@ -5596,6 +6152,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 5.128204718513052e-13
   spec_flux_above_1TeV_err: 1.0035719542715593e-13
+  spec_flux_above_1TeV_crab: 1.5429553985595703
+  spec_flux_above_1TeV_crab_err: 0.3019510507583618
+  spec_flux_above_erange_min: 1.1539060722556838e-12
+  spec_flux_above_erange_min_err: 1.9361433029746467e-13
   spec_energy_flux_1TeV_10TeV: 1.1432365470964712e-12
   spec_energy_flux_1TeV_10TeV_err: 2.410611857697753e-13
 - source_id: 132
@@ -5636,6 +6196,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 133
@@ -5676,6 +6240,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 1.4719626071409836e-13
   spec_flux_above_1TeV_err: 2.7102819839222754e-14
+  spec_flux_above_1TeV_crab: 0.44287869334220886
+  spec_flux_above_1TeV_crab_err: 0.08154597133398056
+  spec_flux_above_erange_min: 2.0814456928863745e-12
+  spec_flux_above_erange_min_err: 4.904805945074586e-13
   spec_energy_flux_1TeV_10TeV: 2.5629848178672365e-13
   spec_energy_flux_1TeV_10TeV_err: 5.692861004651106e-14
 - source_id: 134
@@ -5716,6 +6284,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 135
@@ -5756,6 +6328,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 136
@@ -5796,6 +6372,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 137
@@ -5836,6 +6416,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: 2.666666800571482e-13
   spec_flux_above_1TeV_err: 5.3874802161775134e-14
+  spec_flux_above_1TeV_crab: 0.8023368716239929
+  spec_flux_above_1TeV_crab_err: 0.1620965301990509
+  spec_flux_above_erange_min: 1.301856842814142e-12
+  spec_flux_above_erange_min_err: 2.1551697601020214e-13
   spec_energy_flux_1TeV_10TeV: 4.686524063789166e-13
   spec_energy_flux_1TeV_10TeV_err: 1.2024321154654322e-13
 - source_id: 138
@@ -5876,6 +6460,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 139
@@ -5916,6 +6504,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 140
@@ -5956,6 +6548,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 141
@@ -5996,6 +6592,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 143
@@ -6036,6 +6636,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 142
@@ -6076,6 +6680,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 144
@@ -6116,6 +6724,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 145
@@ -6156,6 +6768,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 146
@@ -6196,6 +6812,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 147
@@ -6236,6 +6856,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 148
@@ -6276,6 +6900,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 151
@@ -6316,6 +6944,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 152
@@ -6356,6 +6988,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 153
@@ -6396,6 +7032,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 154
@@ -6436,6 +7076,10 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 155
@@ -6476,5 +7120,9 @@
   spec_ecut_err: .nan
   spec_flux_above_1TeV: .nan
   spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
   spec_energy_flux_1TeV_10TeV: .nan
   spec_energy_flux_1TeV_10TeV_err: .nan

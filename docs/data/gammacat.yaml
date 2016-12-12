@@ -4082,42 +4082,42 @@
   common_name: HESS J1729-345
   gamma_names: HESS J1729-345
   other_names: ''
-  paper_id: ''
+  paper_id: 2011A&A...531A..81H
   significance: .nan
   livetime: .nan
   ra: 262.25
   dec: -34.5
   glon: 353.4101867675781
   glat: -0.005492465104907751
-  morph_type: ''
-  morph_sigma: .nan
-  morph_sigma_err: .nan
+  morph_type: gauss
+  morph_sigma: 0.11999999731779099
+  morph_sigma_err: 0.029999999329447746
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: ''
-  spec_erange_min: .nan
+  spec_type: pl
+  spec_erange_min: 0.23999999463558197
   spec_erange_max: .nan
-  spec_theta: .nan
-  spec_ref: .nan
-  spec_norm: .nan
-  spec_norm_err: .nan
+  spec_theta: 0.14000000059604645
+  spec_ref: 0.8610000014305115
+  spec_norm: 4.40000005831262e-13
+  spec_norm_err: 7.000000215974869e-14
   spec_norm_err_sys: .nan
   spec_norm_err_tot: .nan
-  spec_norm_1TeV: .nan
-  spec_norm_1TeV_err: .nan
-  spec_index: .nan
-  spec_index_err: .nan
-  spec_index_err_sys: .nan
-  spec_index_err_tot: .nan
+  spec_norm_1TeV: 3.1467317358584157e-13
+  spec_norm_1TeV_err: 5.055759074736564e-14
+  spec_index: 2.240000009536743
+  spec_index_err: 0.15000000596046448
+  spec_index_err_sys: 0.20000000298023224
+  spec_index_err_tot: 0.25
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_flux_above_1TeV: 2.537686857526089e-13
+  spec_flux_above_1TeV_err: 5.4355269742643875e-14
+  spec_energy_flux_1TeV_10TeV: 5.566569340892391e-13
+  spec_energy_flux_1TeV_10TeV_err: 1.3344071670123164e-13
 - source_id: 103
   common_name: HESS J1731-347
   gamma_names: HESS J1731-347

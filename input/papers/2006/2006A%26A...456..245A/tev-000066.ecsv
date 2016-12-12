@@ -9,6 +9,9 @@
 # - data_type: sed
 # - source_id: 66
 # - paper_id: 2006A&A...456..245A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/kookaburra_auxinfo.html
+# - comments: |
+#     H.E.S.S. data points for Figure 2 (solid points - HESS J1420-607)
 e_ref dnde dnde_errp dnde_errn
  0.39    2.63e-11    7.56e-12    7.64e-12
  0.61    9.13e-12    1.11e-12    1.04e-12 

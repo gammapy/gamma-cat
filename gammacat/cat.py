@@ -152,6 +152,18 @@ class GammaCatSource:
         except KeyError:
             data['sed_e_ref'] = NA.fill_value_array(shape)
         try:
+            e_min = sed_info.table['e_min'].data
+            data['sed_e_min'] = NA.resize_sed_array(e_min, shape)
+        except KeyError:
+            data['sed_e_min'] = NA.fill_value_array(shape)
+
+        try:
+            e_max = sed_info.table['e_max'].data
+            data['sed_e_max'] = NA.resize_sed_array(e_max, shape)
+        except KeyError:
+            data['sed_e_max'] = NA.fill_value_array(shape)
+
+        try:
             dnde = sed_info.table['dnde'].data
             data['sed_dnde'] = NA.resize_sed_array(dnde, shape)
         except KeyError:

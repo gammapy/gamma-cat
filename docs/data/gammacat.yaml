@@ -4874,14 +4874,14 @@
   spec_index_err_tot: 0.22825424373149872
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_flux_above_1TeV_crab: .nan
-  spec_flux_above_1TeV_crab_err: .nan
-  spec_flux_above_erange_min: .nan
-  spec_flux_above_erange_min_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_flux_above_1TeV: 5.988483363708608e-13
+  spec_flux_above_1TeV_err: 1.2902934200687693e-13
+  spec_flux_above_1TeV_crab: 1.801792860031128
+  spec_flux_above_1TeV_crab_err: 0.3882187306880951
+  spec_flux_above_erange_min: 7.156297256172284e-12
+  spec_flux_above_erange_min_err: 8.881063744657636e-13
+  spec_energy_flux_1TeV_10TeV: 1.2615488081263448e-12
+  spec_energy_flux_1TeV_10TeV_err: 3.024878524743313e-13
 - source_id: 109
   common_name: Terzan 5
   gamma_names: HESS J1747-248

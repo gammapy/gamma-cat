@@ -418,8 +418,9 @@ class GammaCatMaker:
         table = Table(rows=rows)
         table = schema.format_table(table)
 
-        # Sort sources by right ascension
-        table.sort('ra')
+        # Sort sources by right ascension `ra`
+        # And where `ra` is identical, use `dec` and `source_id` to order.
+        table.sort(['ra', 'dec', 'source_id'])
 
         self.table = table
 

@@ -14,8 +14,8 @@ See https://github.com/gammapy/gamma-cat/issues/32
 This is the list of SEDs.
 I'll go through them and add them systematically.
 
-- `1418-609_FERMI.ecsv`
-- `1418-609_HESS_2006.ecsv`
+- `1418-609_FERMI.ecsv` - skip
+- `1418-609_HESS_2006.ecsv` - 
 - `1418-609_MODEL_HESS2006.ecsv`
 - `1420-607_DATI_FERMI-HESS.ecsv`
 - `1420-607_DATI_HESS2006.ecsv`

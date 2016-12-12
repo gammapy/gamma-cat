@@ -9,6 +9,7 @@ from pathlib import Path
 from collections import OrderedDict
 from astropy.io import fits
 from astropy.table import Table
+import astropy.units as u
 import gammacat
 
 
@@ -68,10 +69,21 @@ class AstriSimGSED:
             for hdu_name in hdu_names:
                 # print(path, source_name, hdu_name)
                 table = Table.read(str(path), format='fits')
-                table.rename_column('ENERGY', 'e_ref')
-                table.rename_column('FLUX', 'dnde')
-                table.rename_column('FLUX_ERROR_MIN', 'dnde_errn')
-                table.rename_column('FLUX_ERROR_MAX', 'dnde_errp')
+
+                table['e_ref'] = (table['ENERGY'] * u.eV).to('TeV')
+                del table['ENERGY']
+
+                flux_colnames = [
+                    ('FLUX', 'dnde'),
+                    ('FLUX_ERROR_MIN', 'dnde_errn'),
+                    ('FLUX_ERROR_MAX', 'dnde_errp'),
+                ]
+
+                for name_old, name_new in flux_colnames:
+                    e2dnde = u.Quantity(table[name_old], 'erg cm^-2 s^-1')
+                    dnde = e2dnde / table['e_ref'].quantity ** 2
+                    table[name_new] = dnde.to('cm^-2 s^-1 TeV^-1')
+                    del table[name_old]
 
                 table.meta['SOURCE_NAME'] = source_name
                 try:

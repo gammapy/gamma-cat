@@ -1,0 +1,13 @@
+source_id: 30
+paper_id: 2014ApJ...780..168A
+# Note that this is a joing HESS/VERITAS paper
+
+pos:
+    # from fit to VERITAS data
+    ra: {val: 06h33m0.8s, err: 0.5s, err_sys: 50s }
+    dec: {val: +5d47m39s, err: 10s, err_sys: 50s }
+
+morph:
+    type: point
+
+# spectral results are given for different orbital phases

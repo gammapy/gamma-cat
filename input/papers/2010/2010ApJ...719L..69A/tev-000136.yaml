@@ -1,0 +1,25 @@
+source_id: 136
+paper_id: 2010ApJ...719L..69A
+
+data:
+  livetime: 36.6
+  excess: 101
+  significance: 7.0
+
+pos:
+  ra: {val: 19h30m32s, err: 25s, err_sys: 0.02 deg}
+  dec: {val: +18d52m12s, err: 20s, err_sys: 0.02 deg}
+
+morph:
+  type: gauss
+  sigma: {val: '3.3m', err: '0.5m'}
+
+spec:
+  type: pl
+
+  norm: {val: 0.75, err: 0.12, err_sys: 0.15}
+  index: {val: 2.39, err: 0.23, err_sys: 0.30}
+  ref: 1
+
+  theta: 0.15
+  erange: {min: 0.25, max: 4}

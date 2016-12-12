@@ -6338,46 +6338,46 @@
   common_name: SNR G054.1+00.3
   gamma_names: VER J1930+188
   other_names: PSR J1930+1852
-  paper_id: ''
-  significance: .nan
-  livetime: .nan
+  paper_id: 2010ApJ...719L..69A
+  significance: 7.0
+  livetime: 36.599998474121094
   ra: 292.62921142578125
   dec: 18.867000579833984
   glon: 54.09474182128906
   glat: 0.26045286655426025
-  morph_type: ''
-  morph_sigma: .nan
-  morph_sigma_err: .nan
+  morph_type: gauss
+  morph_sigma: 0.054999999701976776
+  morph_sigma_err: 0.008333333767950535
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: ''
-  spec_erange_min: .nan
-  spec_erange_max: .nan
-  spec_theta: .nan
-  spec_ref: .nan
-  spec_norm: .nan
-  spec_norm_err: .nan
-  spec_norm_err_sys: .nan
-  spec_norm_err_tot: .nan
-  spec_norm_1TeV: .nan
-  spec_norm_1TeV_err: .nan
-  spec_index: .nan
-  spec_index_err: .nan
-  spec_index_err_sys: .nan
-  spec_index_err_tot: .nan
+  spec_type: pl
+  spec_erange_min: 0.25
+  spec_erange_max: 4.0
+  spec_theta: 0.15000000596046448
+  spec_ref: 1.0
+  spec_norm: 7.499999970031479e-13
+  spec_norm_err: 1.199999978942004e-13
+  spec_norm_err_sys: 1.4999999397961872e-13
+  spec_norm_err_tot: 1.920937231980266e-13
+  spec_norm_1TeV: 7.499999970031479e-13
+  spec_norm_1TeV_err: 1.199999978942004e-13
+  spec_index: 2.390000104904175
+  spec_index_err: 0.23000000417232513
+  spec_index_err_sys: 0.30000001192092896
+  spec_index_err_tot: 0.37802115082740784
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_flux_above_1TeV_crab: .nan
-  spec_flux_above_1TeV_crab_err: .nan
-  spec_flux_above_erange_min: .nan
-  spec_flux_above_erange_min_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_flux_above_1TeV: 5.395683357577175e-13
+  spec_flux_above_1TeV_err: 1.2419397650044461e-13
+  spec_flux_above_1TeV_crab: 1.6234333515167236
+  spec_flux_above_1TeV_crab_err: 0.3736702501773834
+  spec_flux_above_erange_min: 3.70603764690558e-12
+  spec_flux_above_erange_min_err: 8.214159062137905e-13
+  spec_energy_flux_1TeV_10TeV: 1.1396532589164066e-12
+  spec_energy_flux_1TeV_10TeV_err: 3.1528498887177514e-13
 - source_id: 137
   common_name: HESS J1943+213
   gamma_names: ''

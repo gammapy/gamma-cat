@@ -3610,46 +3610,46 @@
   common_name: SNR G327.1-1.1
   gamma_names: ''
   other_names: SNR G327.1-01.1
-  paper_id: ''
-  significance: .nan
-  livetime: .nan
+  paper_id: 2011ICRC....7..185A
+  significance: 8.0
+  livetime: 45.0
   ra: 238.63461303710938
   dec: -55.062259674072266
   glon: 327.1656799316406
   glat: -1.0492522716522217
-  morph_type: ''
-  morph_sigma: .nan
-  morph_sigma_err: .nan
+  morph_type: gauss
+  morph_sigma: 0.029999999329447746
+  morph_sigma_err: 0.009999999776482582
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: ''
+  spec_type: pl
   spec_erange_min: .nan
   spec_erange_max: .nan
-  spec_theta: .nan
-  spec_ref: .nan
-  spec_norm: .nan
-  spec_norm_err: .nan
-  spec_norm_err_sys: .nan
-  spec_norm_err_tot: .nan
-  spec_norm_1TeV: .nan
-  spec_norm_1TeV_err: .nan
-  spec_index: .nan
-  spec_index_err: .nan
-  spec_index_err_sys: .nan
-  spec_index_err_tot: .nan
+  spec_theta: 0.10000000149011612
+  spec_ref: 1.3899999856948853
+  spec_norm: 1.700000004049157e-13
+  spec_norm_err: 2.99999994735501e-14
+  spec_norm_err_sys: 3.99999992980668e-14
+  spec_norm_err_tot: 4.99999991225835e-14
+  spec_norm_1TeV: 3.3945326475930127e-13
+  spec_norm_1TeV_err: 6.393943398829913e-14
+  spec_index: 2.0999999046325684
+  spec_index_err: 0.20000000298023224
+  spec_index_err_sys: 0.20000000298023224
+  spec_index_err_tot: 0.2828427255153656
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_flux_above_1TeV_crab: .nan
-  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_1TeV: 3.0859380805922654e-13
+  spec_flux_above_1TeV_err: 6.516214976458323e-14
+  spec_flux_above_1TeV_crab: 0.9284856915473938
+  spec_flux_above_1TeV_crab_err: 0.1960574835538864
   spec_flux_above_erange_min: .nan
   spec_flux_above_erange_min_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_energy_flux_1TeV_10TeV: 6.98159520647057e-13
+  spec_energy_flux_1TeV_10TeV_err: 1.6424357804790263e-13
 - source_id: 82
   common_name: PG 1553+113
   gamma_names: HESS J1555+111

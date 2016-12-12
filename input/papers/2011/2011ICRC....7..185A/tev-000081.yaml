@@ -1,0 +1,24 @@
+source_id: 81
+paper_id: 2011ICRC....7..185A
+
+data:
+  livetime: 45
+  excess: 109
+  significance: 8
+
+pos:
+  ra: {val: 15h54m36s}
+  dec: {val: -55d05m05s}
+
+morph:
+  type: gauss
+  sigma: {val: 1.8m, err: 0.6m}
+
+spec:
+  type: pl
+
+  norm: {val: 0.17, err: 0.03, err_sys: 0.04}
+  index: {val: 2.1, err: 0.2, err_sys: 0.2}
+  ref: 1.39
+
+  theta: 0.1

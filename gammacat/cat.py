@@ -11,7 +11,12 @@ from .info import gammacat_info
 from .input import InputData
 from .utils import NA, load_yaml, table_to_list_of_dict
 
-__all__ = ['GammaCatMaker']
+__all__ = [
+    'GammaCatMaker',
+    'GammaCatSchema',
+    'GammaCatSource',
+    'GammaCatDataSet',
+]
 
 log = logging.getLogger(__name__)
 
@@ -189,8 +194,6 @@ class GammaCatSource:
             data['sed_dnde_ul'] = NA.resize_sed_array(dnde_ul, shape)
         except KeyError:
             data['sed_dnde_ul'] = NA.fill_value_array(shape)
-
-
 
     def fill_derived_spectral_info(self):
         """
@@ -405,7 +408,7 @@ class GammaCatMaker:
 
         if method == 'manual':
             source_id = bsi.data['source_id']
-            path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_paper_selection.yaml'
+            path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
             selection = load_yaml(path)
             paper_ids = selection[source_id - 1]['paper_id']
 
@@ -483,3 +486,38 @@ class GammaCatMaker:
         with path.open('w') as f:
             log.info('Writing {}'.format(path))
             f.write(yaml.dump(list_of_dict, default_flow_style=False))
+
+
+class GammaCatDataSet:
+    """
+    Check basic stuff about gamma-cat to help with data entry.
+    """
+    def __init__(self, data):
+        self.data = data
+
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
+        data = load_yaml(path)
+
+        return cls(data=data)
+
+    def validate(self, input_data):
+        log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
+        self.validate_source_ids(input_data)
+
+    def validate_source_ids(self, input_data):
+        """Check that lists of sources are complete.
+        """
+        source_id_basic = [_.data['source_id'] for _ in input_data.sources.data]
+        source_id_gammacat = [_['source_id'] for _ in self.data]
+
+        gammacat_missing = sorted(set(source_id_basic) - set(source_id_gammacat))
+        if gammacat_missing:
+            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'.format(gammacat_missing))
+
+        basic_missing = sorted(set(source_id_gammacat) - set(source_id_basic))
+        if basic_missing:
+            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'.format(basic_missing))
+
+        # import IPython; IPython.embed()

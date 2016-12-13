@@ -339,36 +339,42 @@ class InputData:
     """
 
     def __init__(self, schemas=None, sources=None, papers=None,
-                 seds=None, lightcurves=None):
+                 seds=None, lightcurves=None, gammacat=None):
         self.path = gammacat_info.base_dir / 'input'
         self.schemas = schemas
         self.sources = sources
         self.papers = papers
         self.seds = seds
         self.lightcurves = lightcurves
+        self.gammacat = gammacat
 
     @classmethod
     def read(cls):
         """Read all data from disk.
         """
+        # Delayed import to avoid circular dependency
+        from .cat import GammaCatDataSet
         schemas = Schemas.read()
         sources = BasicSourceList.read()
         papers = PaperList.read()
         seds = SEDList.read()
         lightcurves = LightcurveList.read()
+        gammacat = GammaCatDataSet.read()
         return cls(
             schemas=schemas,
             sources=sources,
             papers=papers,
             seds=seds,
             lightcurves=lightcurves,
+            gammacat=gammacat,
         )
 
     def __str__(self):
         ss = 'Input data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of schemas: {}\n'.format(len(self.schemas.data))
-        ss += 'Number of sources: {}\n'.format(len(self.sources.data))
+        ss += 'Number of YAML files in `input/sources`: {}\n'.format(len(self.sources.data))
+        ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(len(self.gammacat.data))
         ss += 'Number of papers: {}\n'.format(len(self.papers.data))
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
         ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))
@@ -381,3 +387,4 @@ class InputData:
         self.papers.validate()
         self.seds.validate()
         # self.lightcurves.validate()
+        self.gammacat.validate(self)

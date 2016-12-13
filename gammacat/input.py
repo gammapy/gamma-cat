@@ -243,6 +243,10 @@ class PaperList:
 
         return cls(data=data)
 
+    @property
+    def paper_ids(self):
+        return [paper.id for paper in self.data]
+
     def to_table(self):
         """Convert info of `sources` list into a Table.
         """
@@ -343,10 +347,15 @@ class InputData:
         ss = 'Input data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of schemas: {}\n'.format(len(self.schemas.data))
+        ss += '\n'
         ss += 'Number of YAML files in `input/sources`: {}\n'.format(len(self.sources.data))
         ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
             len(self.gammacat_dataset_config.data))
-        ss += 'Number of papers: {}\n'.format(len(self.papers.data))
+        ss += '\n'
+        ss += 'Number of folders in `input/papers`: {}\n'.format(len(self.papers.data))
+        ss += 'Number of total papers in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
+            len(self.gammacat_dataset_config.paper_ids))
+        ss += '\n'
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
         ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))
         return ss

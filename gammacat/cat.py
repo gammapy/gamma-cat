@@ -443,20 +443,23 @@ class GammaCatDatasetConfigSource:
     def __init__(self, data):
         self.data = data
 
+    @property
+    def paper_ids(self):
+        pid = self.data['paper_id']
+
+        if isinstance(pid, str):
+            return [_.strip() for _ in pid.split(',')]
+        elif pid is None:
+            return []
+        else:
+            raise ValueError('Invalid paper_id list: {}'.format(pid))
+
     def get_paper_id(self):
         """Choose paper to use for given source.
+
+        For now, we always use the last one listed.
         """
-        paper_ids = self.data['paper_id']
-
-        if paper_ids:
-            # split paper ids
-            paper_ids = paper_ids.split(', ')
-            # choose first paper id
-            paper_id = paper_ids[-1]
-        else:
-            paper_id = None
-
-        return paper_id
+        return self.paper_ids[-1]
 
 
 class GammaCatDataSetConfig:
@@ -479,6 +482,20 @@ class GammaCatDataSetConfig:
     def source_ids(self):
         return [_['source_id'] for _ in self.data]
 
+    @property
+    def source_configs(self):
+        for source_id in self.source_ids:
+            yield self.get_source_by_id(source_id)
+
+    @property
+    def paper_ids(self):
+        """All paper IDs, sorted alphabetically."""
+        pids = set()
+        for source_config in self.source_configs:
+            pids.update(source_config.paper_ids)
+
+        return sorted(pids)
+
     def get_source_by_id(self, source_id):
         idx = self.source_ids.index(source_id)
         return GammaCatDatasetConfigSource(data=self.data[idx])
@@ -487,23 +504,38 @@ class GammaCatDataSetConfig:
         log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
         validate_schema(path=self.path, data=self.data, schema=self.schema)
         self.validate_source_ids(input_data)
-
+        self.validate_paper_ids(input_data)
 
     def validate_source_ids(self, input_data):
-        """Check that lists of sources are complete.
+        """Check that all sources are listed.
         """
-        # source_id_basic = [_.data['source_id'] for _ in input_data.sources.data]
         source_id_basic = input_data.sources.source_ids
         source_id_gammacat = self.source_ids
 
         gammacat_missing = sorted(set(source_id_basic) - set(source_id_gammacat))
         if gammacat_missing:
-            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'.format(
-                gammacat_missing))
+            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
+                      ''.format(gammacat_missing))
 
         basic_missing = sorted(set(source_id_gammacat) - set(source_id_basic))
         if basic_missing:
-            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'.format(
-                basic_missing))
+            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'
+                      ''.format(basic_missing))
 
-            # import IPython; IPython.embed()
+    def validate_paper_ids(self, input_data):
+        """Check that all papers are listed.
+
+        TODO: this is not a good check. One paper could have multiple sources, i.e. should be listed multiple times.
+        """
+        paper_ids_folders = input_data.papers.paper_ids
+        paper_ids_gammacat = self.paper_ids
+
+        gammacat_missing = sorted(set(paper_ids_gammacat) - set(paper_ids_folders))
+        if gammacat_missing:
+            log.error('Papers in `input/papers`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
+                      ''.format(gammacat_missing))
+
+        folders_missing = sorted(set(paper_ids_folders) - set(paper_ids_gammacat))
+        if folders_missing:
+            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/papers`: {}'
+                      ''.format(folders_missing))

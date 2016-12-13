@@ -1,9 +1,11 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 from collections import OrderedDict
+from pprint import pprint
 import logging
 import json
 from pathlib import Path
 import yaml
+import jsonschema
 import numpy as np
 from astropy.coordinates import SkyCoord
 from astropy.table import Table
@@ -206,3 +208,15 @@ def check_ecsv_column_header(path):
         log.error('ECSV rows: {}'.format(len(table)))
         log.error(' CSV rows: {}'.format(len(table2)))
         raise ECSVFormatError
+
+
+def validate_schema(path, data, schema):
+    """Validate data against schema and log errors.
+    """
+    log.debug('Validating {}'.format(path))
+    try:
+        jsonschema.validate(data, schema)
+    except jsonschema.exceptions.ValidationError as ex:
+        log.error('Invalid input file: {}'.format(path))
+        pprint(data)
+        raise ex

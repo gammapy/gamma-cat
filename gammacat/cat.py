@@ -9,7 +9,7 @@ from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
 from .info import gammacat_info
 from .input import InputData
-from .utils import NA, load_yaml, table_to_list_of_dict
+from .utils import NA, load_yaml, table_to_list_of_dict, validate_schema
 
 __all__ = [
     'GammaCatMaker',
@@ -463,15 +463,17 @@ class GammaCatDataSetConfig:
     """
     Configuration how to assemble `gamma-cat` for all sources.
     """
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/gamma_cat_dataset.schema.yaml')
 
-    def __init__(self, data):
+    def __init__(self, data, path):
         self.data = data
+        self.path = path
 
     @classmethod
     def read(cls):
         path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
         data = load_yaml(path)
-        return cls(data=data)
+        return cls(data=data, path=path)
 
     @property
     def source_ids(self):
@@ -483,7 +485,9 @@ class GammaCatDataSetConfig:
 
     def validate(self, input_data):
         log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
+        validate_schema(path=self.path, data=self.data, schema=self.schema)
         self.validate_source_ids(input_data)
+
 
     def validate_source_ids(self, input_data):
         """Check that lists of sources are complete.

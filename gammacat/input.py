@@ -2,15 +2,13 @@
 """
 Classes to read, validate and work with the input data files.
 """
-from pprint import pprint
 import logging
 from collections import OrderedDict
 from pathlib import Path
 import urllib.parse
-import jsonschema
 from astropy.table import Table
 from .info import gammacat_info
-from .utils import load_yaml, NA
+from .utils import load_yaml, NA, validate_schema
 from .sed import SEDList
 from .lightcurve import LightcurveList
 
@@ -26,18 +24,7 @@ __all__ = [
 log = logging.getLogger(__name__)
 
 
-class ValidateMixin:
-    def validate(self):
-        log.debug('Validating {}'.format(self.path))
-        try:
-            jsonschema.validate(self.data, self.schema)
-        except jsonschema.exceptions.ValidationError as ex:
-            log.error('Invalid input file: {}'.format(self.path))
-            pprint(self.data)
-            raise ex
-
-
-class BasicSourceInfo(ValidateMixin):
+class BasicSourceInfo:
     """All basic info for a source.
     """
     schema = load_yaml(gammacat_info.base_dir / 'input/schemas/basic_source_info.schema.yaml')
@@ -87,15 +74,11 @@ class BasicSourceInfo(ValidateMixin):
 
         return data
 
-    def pprint(self):
-        return pprint(self.data)
-
-        # @property
-        # def yaml(self):
-        #     return yaml.safe_dump(self.data, default_flow_style=False)
+    def validate(self):
+        validate_schema(path=self.path, data=self.data, schema=self.schema)
 
 
-class PaperSourceInfo(ValidateMixin):
+class PaperSourceInfo:
     """All info from one paper for one source.
     """
     schema = load_yaml(gammacat_info.base_dir / 'input/schemas/paper_source_info.schema.yaml')
@@ -115,6 +98,9 @@ class PaperSourceInfo(ValidateMixin):
             repr(self.data['source_id']),
             repr(self.data['paper_id']),
         )
+
+    def validate(self):
+        validate_schema(path=self.path, data=self.data, schema=self.schema)
 
 
 class PaperInfo:
@@ -229,6 +215,8 @@ class BasicSourceList:
             ]
 
     def validate(self):
+        # TODO: validate `column_spec` schema?
+
         log.info('Validating YAML files in `input/sources`')
         [_.validate() for _ in self.data]
 
@@ -356,7 +344,8 @@ class InputData:
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of schemas: {}\n'.format(len(self.schemas.data))
         ss += 'Number of YAML files in `input/sources`: {}\n'.format(len(self.sources.data))
-        ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(len(self.gammacat_dataset_config.data))
+        ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
+            len(self.gammacat_dataset_config.data))
         ss += 'Number of papers: {}\n'.format(len(self.papers.data))
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
         ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))

@@ -8,11 +8,11 @@
 # - {name: flux_err, unit: Crab, datatype: float32}
 # - {name: flux_ul, datatype: float32}
 # meta: !!omap
-# - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 138}
 # - {telescope: HEGRA_CT_System}
 # - {reference_id: 2003astro.ph..5275H}
+# - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 52412.15 52412.1161 52412.2028 0.59 0.21 nan
 52413.15 52413.1161 52413.2029 2.02 0.3 nan

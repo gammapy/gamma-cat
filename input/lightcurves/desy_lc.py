@@ -37,6 +37,7 @@ def process_one_file(source_id, filename):
     # column 13: tab.rename_column('duration', '')
     tab.rename_column('reference', 'paper')
     # tab.rename_column('fflag', 'is_ul')
+    # tab.meta['comment'] = '\n'.join(tab.meta['COMMENT'])
 
     # delete unused columns
     del tab['sigma_int_flux_sys']
@@ -46,6 +47,7 @@ def process_one_file(source_id, filename):
     del tab['e_thr']
     del tab['e_cut']
     del tab['duration']
+    del tab.meta['COMMENT']
 
     # set formats
     tab.replace_column('time', tab['time'].astype(float))
@@ -156,6 +158,7 @@ def process_one_file(source_id, filename):
             del table['time_min']
         if np.all(table['time'] == table['time_max']):
             del table['time_max']
+        table.meta['timesys'] = 'UTC'
         # delete nan-only columns
         for column in table.colnames:
             values = [table[column][h] for h in range(len(table)) if str(table[column][h]) == str(np.nan)]
@@ -181,6 +184,7 @@ def process_one_file(source_id, filename):
         del table['time_min']
     if np.all(table['time'] == table['time_max']):
         del table['time_max']
+    table.meta['timesys'] = 'UTC'
     # delete nan-only columns
     for column in table.colnames:
         values = [table[column][h] for h in range(len(table)) if str(table[column][h]) == str(np.nan)]
@@ -195,7 +199,7 @@ def process_one_file(source_id, filename):
     # ceate folder structure and write files
     count_files = 0
     paper_repo = Path('input/papers')
-    for x in range(0, len(filenames)):        
+    for x in range(0, len(filenames)):   
         # create folder structure for none_paper_id
         path = paper_repo / none_paper_id / 'lightcurves/tev-{}'.format((6-len(str(source_id)))*(str(0)) + source_id)
         if tables[x].meta['data_id'] == none_paper_id:

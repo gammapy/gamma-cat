@@ -7,11 +7,11 @@
 # - {name: flux, unit: Crab, datatype: float32}
 # - {name: flux_err, unit: Crab, datatype: float32}
 # meta: !!omap
-# - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 49}
 # - {telescope: 'MAGIC,VERITAS'}
 # - {reference_id: 2009ApJ...691L..13D}
+# - {timesys: UTC}
 time time_min time_max flux flux_err
 54618.2029 54618.1989 54618.2069 0.903634 0.24
 54622.1923 54622.1888 54622.1958 3.26156 0.46

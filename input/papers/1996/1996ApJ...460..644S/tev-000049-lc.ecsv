@@ -8,11 +8,11 @@
 # - {name: flux_err, unit: Crab, datatype: float32}
 # - {name: flux_ul, datatype: float32}
 # meta: !!omap
-# - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 49}
 # - {telescope: Whipple}
 # - {reference_id: 1996ApJ...460..644S}
+# - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 48705.1757 48705.134 48705.2174 0.57 0.29 nan
 48732.89195 48732.8503 48732.9336 0.39 0.29 nan

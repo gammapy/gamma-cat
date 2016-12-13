@@ -5,11 +5,11 @@
 # - {name: flux, unit: Crab, datatype: float32}
 # - {name: flux_err, unit: Crab, datatype: float32}
 # meta: !!omap
-# - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 49}
 # - {telescope: H.E.S.S.}
 # - {reference_id: 2005A&A...437...95A}
+# - {timesys: UTC}
 time flux flux_err
 53108.0 3.38 0.2
 53109.0 1.13 0.13

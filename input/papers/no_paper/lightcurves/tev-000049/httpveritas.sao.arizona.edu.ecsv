@@ -8,11 +8,11 @@
 # - {name: flux_err, unit: Crab, datatype: float32}
 # - {name: flux_ul, datatype: float32}
 # meta: !!omap
-# - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 49}
 # - {telescope: VERITAS}
 # - {reference_id: 'http://veritas.sao.arizona.edu'}
+# - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 53676.45705 53676.418 53676.4961 0.28 0.1 nan
 53677.4512 53677.4219 53677.4805 nan nan 0.56

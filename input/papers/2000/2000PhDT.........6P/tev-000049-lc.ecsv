@@ -6,11 +6,11 @@
 # - {name: flux_err, unit: Crab, datatype: float32}
 # - {name: flux_ul, datatype: float32}
 # meta: !!omap
-# - COMMENT: [Mrk 421]
 # - {data_type: lc}
 # - {source_id: 49}
 # - {telescope: CAT}
 # - {reference_id: 2000PhDT.........6P}
+# - {timesys: UTC}
 time flux flux_err flux_ul
 50432.0 nan nan 0.662426
 50461.0 nan nan 0.671964

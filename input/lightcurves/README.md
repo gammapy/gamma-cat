@@ -1,6 +1,3 @@
-This folder contains lightcurves from the DESY Lightcurve Archive, see https://astro.desy.de/gamma_astronomy/magic/projects/light_curve_archive/index_eng.html.
-The Python-script 'Get_FITS_from_DESY-LC-Archive.py' dumps the FITS files from the DESY-Website directly to ECSV files.
-Thereby, the lightcurve format provided in this catalogue is used.
-It needs 'DESYLCArchiveToECSV.py' to run.
-To dump files local, use DESY-LC-Archive_to_ECSV_local.py
-A documentation of the lightcurve format can be found under 'schemas'
+This folder provides the script `desy_lc.py` to dump the FITS from the DESY LC Archive into ECSV for Gamma-Cat.
+The script must be runned from the top-repository.
+A documentation of the lightcurve format can be found under `schemas/lightcurve-format.md`

@@ -186,8 +186,13 @@ class BasicSourceList:
 
     def __init__(self, data):
         self.data = data
-        _source_ids = [source.data['source_id'] for source in data]
+        # TODO: remove that cache to get simpler code?
+        _source_ids = self.source_ids
         self._source_by_id = dict(zip(_source_ids, data))
+
+    @property
+    def source_ids(self):
+        return [source.data['source_id'] for source in self.data]
 
     def get_source_by_id(self, source_id):
         try:
@@ -209,35 +214,12 @@ class BasicSourceList:
 
         return cls(data=data)
 
-    # def to_table(self):
-    #     """Convert info of `sources` list into a Table.
-    #     """
-    #     meta = OrderedDict()
-    #     meta['name'] = 'todo'
-    #     meta['version'] = 'todo'
-    #     meta['url'] = 'todo'
-    #
-    #     rows = self.data_per_row(filled=True)
-    #     table = Table(rows=rows, meta=meta, masked=True)
-    #     return table
-
     def to_json(self):
         """Return data in format that can be written to JSON.
 
         A dict with `data` key.
         """
         return OrderedDict(data=self.data_per_row(filled=True))
-
-    # def data_per_column(self):
-    #     """Data as dict of lists (per-column)"""
-    #     row_data = self.data_per_row()
-    #     col_data = OrderedDict()
-    #
-    #     col_names = [_['name'] for _ in self.columns]
-    #     for name in col_names:
-    #         col_data[name] = [row.get(name, None) for row in row_data]
-    #
-    #     return col_data
 
     def data_per_row(self, filled=False):
         """Data as list of dicts (per-row)"""
@@ -339,34 +321,34 @@ class InputData:
     """
 
     def __init__(self, schemas=None, sources=None, papers=None,
-                 seds=None, lightcurves=None, gammacat=None):
+                 seds=None, lightcurves=None, gammacat_dataset_config=None):
         self.path = gammacat_info.base_dir / 'input'
         self.schemas = schemas
         self.sources = sources
         self.papers = papers
         self.seds = seds
         self.lightcurves = lightcurves
-        self.gammacat = gammacat
+        self.gammacat_dataset_config = gammacat_dataset_config
 
     @classmethod
     def read(cls):
         """Read all data from disk.
         """
         # Delayed import to avoid circular dependency
-        from .cat import GammaCatDataSet
+        from .cat import GammaCatDataSetConfig
         schemas = Schemas.read()
         sources = BasicSourceList.read()
         papers = PaperList.read()
         seds = SEDList.read()
         lightcurves = LightcurveList.read()
-        gammacat = GammaCatDataSet.read()
+        gammacat_dataset_config = GammaCatDataSetConfig.read()
         return cls(
             schemas=schemas,
             sources=sources,
             papers=papers,
             seds=seds,
             lightcurves=lightcurves,
-            gammacat=gammacat,
+            gammacat_dataset_config=gammacat_dataset_config,
         )
 
     def __str__(self):
@@ -374,7 +356,7 @@ class InputData:
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of schemas: {}\n'.format(len(self.schemas.data))
         ss += 'Number of YAML files in `input/sources`: {}\n'.format(len(self.sources.data))
-        ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(len(self.gammacat.data))
+        ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(len(self.gammacat_dataset_config.data))
         ss += 'Number of papers: {}\n'.format(len(self.papers.data))
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
         ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))
@@ -387,4 +369,4 @@ class InputData:
         self.papers.validate()
         self.seds.validate()
         # self.lightcurves.validate()
-        self.gammacat.validate(self)
+        self.gammacat_dataset_config.validate(self)

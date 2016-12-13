@@ -15,7 +15,8 @@ __all__ = [
     'GammaCatMaker',
     'GammaCatSchema',
     'GammaCatSource',
-    'GammaCatDataSet',
+    'GammaCatDataSetConfig',
+    'GammaCatDatasetConfigSource',
 ]
 
 log = logging.getLogger(__name__)
@@ -346,26 +347,10 @@ class GammaCatSchema:
 
         return table
 
-        # @property
-        # def names(self):
-        #     return [_['name'] for _ in self.colspecs]
-        #
-        # @property
-        # def dtype(self):
-        #     return [_['dtype'] for _ in self.colspecs]
-
-        # def filter_row_keys(self, rows):
-        #     for row in rows:
-        #         for key in list(row.keys()):
-        #             if key not in names:
-        #                 del row[key]
-
 
 class GammaCatMaker:
     """
     Make gamma-cat, combining all available data.
-
-    The strategy is to
 
     TODO: for now, we gather info from `InputData`.
     This should be changed to gather info from `OutputData` when available.
@@ -390,7 +375,9 @@ class GammaCatMaker:
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
-            paper_info = self.choose_paper(input_data, basic_source_info)
+            # paper_info = input_data.gammacat_dataset_config.choose_paper(input_data, basic_source_info)
+            paper_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_paper_id()
+            paper_info = input_data.papers.get_paper_by_id(paper_id)
             paper_source_info = paper_info.get_source_by_id(source_id)
             sed_info = input_data.seds.get_sed_by_source_and_paper_id(source_id, paper_info.id)
             # TODO: right now this implies, that a GammaCatSource object can only
@@ -401,46 +388,6 @@ class GammaCatMaker:
                 sed_info=sed_info
             )
             self.sources.append(source)
-
-    def choose_paper(self, input_data, bsi, method='manual'):
-        """Choose paper refrence for singel source according to different criteria"""
-        paper_ids = bsi.data['papers']
-
-        if method == 'manual':
-            source_id = bsi.data['source_id']
-            path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
-            selection = load_yaml(path)
-            paper_ids = selection[source_id - 1]['paper_id']
-
-            if paper_ids:
-                # split paper ids
-                paper_ids = paper_ids.split(', ')
-                # choose first paper id
-                paper_id = paper_ids[-1]
-            else:
-                paper_id = None
-
-            paper_info = input_data.papers.get_paper_by_id(paper_id)
-            return paper_info
-
-        elif method == 'first-available':
-            # choose the first paper in the list, where info on the source
-            # is actually available
-            for paper_id in paper_ids:
-                paper_info = input_data.papers.get_paper_by_id(paper_id)
-                if len(paper_info.sources) > 0:
-                    break
-            return paper_info
-
-        elif method == 'first':
-            # choose first entry of the list
-            return input_data.papers.get_paper_by_id(paper_ids[0])
-
-        elif method == 'latest':
-            # choose latest paper
-            raise NotImplementedError
-        else:
-            raise ValueError('Not a valid method.')
 
     def make_table(self):
         """Convert Python data structures to a flat table."""
@@ -488,10 +435,35 @@ class GammaCatMaker:
             f.write(yaml.dump(list_of_dict, default_flow_style=False))
 
 
-class GammaCatDataSet:
+class GammaCatDatasetConfigSource:
     """
-    Check basic stuff about gamma-cat to help with data entry.
+    Configuration how to assemble `gamma-cat` for one source.
     """
+
+    def __init__(self, data):
+        self.data = data
+
+    def get_paper_id(self):
+        """Choose paper to use for given source.
+        """
+        paper_ids = self.data['paper_id']
+
+        if paper_ids:
+            # split paper ids
+            paper_ids = paper_ids.split(', ')
+            # choose first paper id
+            paper_id = paper_ids[-1]
+        else:
+            paper_id = None
+
+        return paper_id
+
+
+class GammaCatDataSetConfig:
+    """
+    Configuration how to assemble `gamma-cat` for all sources.
+    """
+
     def __init__(self, data):
         self.data = data
 
@@ -499,8 +471,15 @@ class GammaCatDataSet:
     def read(cls):
         path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
         data = load_yaml(path)
-
         return cls(data=data)
+
+    @property
+    def source_ids(self):
+        return [_['source_id'] for _ in self.data]
+
+    def get_source_by_id(self, source_id):
+        idx = self.source_ids.index(source_id)
+        return GammaCatDatasetConfigSource(data=self.data[idx])
 
     def validate(self, input_data):
         log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
@@ -509,15 +488,18 @@ class GammaCatDataSet:
     def validate_source_ids(self, input_data):
         """Check that lists of sources are complete.
         """
-        source_id_basic = [_.data['source_id'] for _ in input_data.sources.data]
-        source_id_gammacat = [_['source_id'] for _ in self.data]
+        # source_id_basic = [_.data['source_id'] for _ in input_data.sources.data]
+        source_id_basic = input_data.sources.source_ids
+        source_id_gammacat = self.source_ids
 
         gammacat_missing = sorted(set(source_id_basic) - set(source_id_gammacat))
         if gammacat_missing:
-            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'.format(gammacat_missing))
+            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'.format(
+                gammacat_missing))
 
         basic_missing = sorted(set(source_id_gammacat) - set(source_id_basic))
         if basic_missing:
-            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'.format(basic_missing))
+            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'.format(
+                basic_missing))
 
-        # import IPython; IPython.embed()
+            # import IPython; IPython.embed()

@@ -172,19 +172,14 @@ class BasicSourceList:
 
     def __init__(self, data):
         self.data = data
-        # TODO: remove that cache to get simpler code?
-        _source_ids = self.source_ids
-        self._source_by_id = dict(zip(_source_ids, data))
 
     @property
     def source_ids(self):
         return [source.data['source_id'] for source in self.data]
 
     def get_source_by_id(self, source_id):
-        try:
-            return self._source_by_id[source_id]
-        except KeyError:
-            raise IndexError('Not found: source_id = {}'.format(source_id))
+        idx = self.source_ids.index(source_id)
+        return self.data[idx]
 
     @classmethod
     def read(cls):

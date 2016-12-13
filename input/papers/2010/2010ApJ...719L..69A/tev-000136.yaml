@@ -12,7 +12,7 @@ pos:
 
 morph:
   type: gauss
-  sigma: {val: '3.3m', err: '0.5m'}
+  sigma: {val: 3.3m, err: 0.5m}
 
 spec:
   type: pl

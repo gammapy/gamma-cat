@@ -6,8 +6,8 @@ data:
   significance: 8.6
 
 pos:
-  ra: {val: '16h41m1.7s', err: '3.1s'}
-  dec: {val: '-46d18m11s', err: '35s'}
+  ra: {val: 16h41m1.7s, err: 3.1s}
+  dec: {val: -46d18m11s, err: 35s}
 
 morph:
   # parameters missing in the paper

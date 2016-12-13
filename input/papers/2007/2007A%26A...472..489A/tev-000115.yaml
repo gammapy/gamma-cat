@@ -6,13 +6,13 @@ data:
   significance: 4.7
 
 pos:
-  ra: {val: '18h10m31s', err: '12s'}
-  dec: {val: '-19d18m', err: '2m'}
+  ra: {val: 18h10m31s, err: 12s}
+  dec: {val: -19d18m, err: 2m}
 
 morph:
   type: gauss
-  sigma: {val: '32m', err: '4m'}
-  sigma2: {val: '15m', err: '2m'}
+  sigma: {val: 32m, err: 4m}
+  sigma2: {val: 15m, err: 2m}
   pa: {val: 50, err: 0, frame: radec}
 
 spec:

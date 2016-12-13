@@ -6,12 +6,12 @@ data:
   significance: 15.2
 
 pos:
-  ra: {val: '14h20m4s', err: '7s'}
-  dec: {val: '-60d45m36s', err: '32s'}
+  ra: {val: 14h20m4s, err: 7s}
+  dec: {val: -60d45m36s, err: 32s}
 
 morph:
   type: gauss
-  sigma: {val: '3.3m', err: '0.5m'}
+  sigma: {val: 3.3m, err: 0.5m}
 
 spec:
   type: pl2

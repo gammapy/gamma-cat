@@ -228,8 +228,6 @@ class PaperList:
 
     def __init__(self, data):
         self.data = data
-        _paper_ids = [paper.id for paper in data]
-        self._paper_by_id = dict(zip(_paper_ids, data))
 
     @classmethod
     def read(cls):
@@ -277,8 +275,13 @@ class PaperList:
     def get_paper_by_id(self, paper_id):
         """Get PaperInfo by paper id
         """
-        missing = PaperInfo(id=paper_id, path=None, sources=[])
-        return self._paper_by_id.get(paper_id, missing)
+        # TODO: this is not a good way to handle things.
+        # Remove once gamma-cat script is set up in a better way.
+        if paper_id is None:
+            return PaperInfo(id=None, path=None, sources=[])
+
+        idx = self.paper_ids.index(paper_id)
+        return self.data[idx]
 
 
 class Schemas:

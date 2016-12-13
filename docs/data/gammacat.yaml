@@ -1630,46 +1630,46 @@
   common_name: Vela X
   gamma_names: HESS J0835-455
   other_names: ''
-  paper_id: 2006A&A...448L..43A
-  significance: .nan
-  livetime: .nan
+  paper_id: 2012A&A...548A..38A
+  significance: 27.899999618530273
+  livetime: 53.099998474121094
   ra: 128.28700256347656
   dec: -45.189998626708984
   glon: 263.3319396972656
   glat: -3.1061031818389893
-  morph_type: ''
-  morph_sigma: .nan
-  morph_sigma_err: .nan
-  morph_sigma2: .nan
-  morph_sigma2_err: .nan
-  morph_pa: .nan
-  morph_pa_err: .nan
-  morph_pa_frame: ''
-  spec_type: ''
-  spec_erange_min: .nan
+  morph_type: gauss
+  morph_sigma: 0.47999998927116394
+  morph_sigma_err: 0.029999999329447746
+  morph_sigma2: 0.36000001430511475
+  morph_sigma2_err: 0.029999999329447746
+  morph_pa: 41.0
+  morph_pa_err: 7.0
+  morph_pa_frame: radec
+  spec_type: ecpl
+  spec_erange_min: 0.75
   spec_erange_max: .nan
-  spec_theta: .nan
-  spec_ref: .nan
-  spec_norm: .nan
-  spec_norm_err: .nan
-  spec_norm_err_sys: .nan
-  spec_norm_err_tot: .nan
-  spec_norm_1TeV: .nan
-  spec_norm_1TeV_err: .nan
-  spec_index: .nan
-  spec_index_err: .nan
-  spec_index_err_sys: .nan
-  spec_index_err_tot: .nan
-  spec_ecut: .nan
-  spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_flux_above_1TeV_crab: .nan
-  spec_flux_above_1TeV_crab_err: .nan
-  spec_flux_above_erange_min: .nan
-  spec_flux_above_erange_min_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_theta: 1.2000000476837158
+  spec_ref: 1.0
+  spec_norm: 1.4600000028397453e-11
+  spec_norm_err: 7.99999985961336e-13
+  spec_norm_err_sys: 2.9999999880125916e-12
+  spec_norm_err_tot: 3.104834965517167e-12
+  spec_norm_1TeV: 1.3593516937082661e-11
+  spec_norm_1TeV_err: 7.530707828162786e-13
+  spec_index: 1.3200000524520874
+  spec_index_err: 0.05999999865889549
+  spec_index_err_sys: 0.11999999731779099
+  spec_index_err_tot: 0.13416408002376556
+  spec_ecut: 14.0
+  spec_ecut_err: 1.600000023841858
+  spec_flux_above_1TeV: 2.1039978786996372e-11
+  spec_flux_above_1TeV_err: 1.9729532677731365e-12
+  spec_flux_above_1TeV_crab: 63.30431365966797
+  spec_flux_above_1TeV_crab_err: 5.936149597167969
+  spec_flux_above_erange_min: 2.517535659107839e-11
+  spec_flux_above_erange_min_err: 2.100704592916669e-12
+  spec_energy_flux_1TeV_10TeV: 5.783244716450753e-11
+  spec_energy_flux_1TeV_10TeV_err: 5.9862184653702855e-12
 - source_id: 38
   common_name: RBS 0723
   gamma_names: ''

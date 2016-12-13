@@ -14,146 +14,467 @@ See https://github.com/gammapy/gamma-cat/issues/32
 This is the list of SEDs.
 I'll go through them and add them systematically.
 
-- `1418-609_FERMI.ecsv` - skip
-- `1418-609_HESS_2006.ecsv` - 
+### 1418-609
+
+- source_id: 65
+- SED: input/papers/2006/2006A%2526A...456..245A/tev-000065.ecsv
+
+- `1418-609_FERMI.ecsv`
+  - Skip
+  - Not TeV spectral points
+- `1418-609_HESS_2006.ecsv`
+  - Skip
+  - Was already in gamma-cat
+  - **TODO: why are values slightly different?**
 - `1418-609_MODEL_HESS2006.ecsv`
+  - Skip
+  - Looks like a duplicate of `1418-609_HESS_2006.ecsv`!?
+
+### 1420-607
+
+- source_id: 66
+- status:
+
 - `1420-607_DATI_FERMI-HESS.ecsv`
+  - **TODO: this looks like useful TeV spectral points. But where do they come from?**
 - `1420-607_DATI_HESS2006.ecsv`
+  - Skip
+  - Looks like a duplicate of `1420-607_DATI_FERMI-HESS.ecsv`!?
 - `1420-607_MODEL_HESS2006.ecsv`
+  - Skip
+  - Looks like a duplicate of `1420-607_DATI_FERMI-HESS.ecsv`!?
+
+### 1626-490
+
+- source_id: 85
+- status:
+
 - `1626-490_DATI_HESS.ecsv`
+  - Skip
+  - Not TeV spectral points
 - `1626-490_MODEL_HESS.ecsv`
+  - Skip
+  - Not TeV spectral points
 - `1626-490_UL_FERMI.ecsv`
+  - Skip
+  - Not TeV spectral points
+
+### 1804-217
+
+- source_id: 113
+- SED: input/papers/2006/2006ApJ...636..777A/tev-000113.ecsv
+
 - `1804-217_DATI_CANGAROO.ecsv`
+  - **TODO: this looks like useful TeV spectral points. But where do they come from? Some Cangaroo paper?**
 - `1804-217_DATI_FERMI-HESS.ecsv`
+  - Skip
+  - Was already in gamma-cat
+  - **TODO: why are values slightly different?**
 - `1804-217_DATI_HESS.ecsv`
 - `1804-217_MODEL_CANGAROO.ecsv`
 - `1804-217_MODEL_HESS.ecsv`
+
+### 1813-178
+
+- source_id: 116
+- status:
+
 - `1813-178_DATI_FERMI-HESS.ecsv`
 - `1813-178_DATI_HESS2006.ecsv`
 - `1813-178_DATI_MAGIC.ecsv`
 - `1813-178_MODEL_MAGIC.ecsv`
+
+### 1840-055
+
+- source_id: 125
+- status:
+
 - `1840-055_DATI_FERMI-HESS.ecsv`
 - `1840-055_DATI_HESS.ecsv`
 - `1840-055_MODEL_ARGO.ecsv`
 - `1840-055_MODEL_HESS.ecsv`
+
+### CTB37A
+
+- source_id: 97
+- status:
+
 - `CTB37A_fermi1.ecsv`
 - `CTB37A_hess.ecsv`
+
+### CTB37B
+
+- source_id: 95
+- status:
+
 - `CTB37B_fermi.ecsv`
 - `CTB37B_hess.ecsv`
+
+### G359.1-0.5
+
+- source_id: 108
+- status:
+
 - `G359.1-0.5_HESS_2008.ecsv`
 - `G359.1-0.5_MODEL_HESS.ecsv`
+
+### HESSJ1640-465
+
+- source_id: 88
+- status:
+
 - `HESSJ1640-465_Fermi.ecsv`
 - `HESSJ1640-465_HESS.ecsv`
+
+### RXJ1713
+
+- source_id: 96
+- status:
+
 - `RXJ1713_fermi2011.ecsv`
 - `RXJ1713_hess2007.ecsv`
+
+### TeVJ0835-456
+
+- source_id: 37
+- status:
+
 - `TeVJ0835-456_FERMI_2FHL.ecsv`
 - `TeVJ0835-456_HESS_2006.ecsv`
 - `TeVJ0835-456_MODEL_HESS_2006.ecsv`
+
+### TeVJ0852-463
+
+- source_id: 39
+- status:
+
 - `TeVJ0852-463_FERMI_.ecsv`
 - `TeVJ0852-463_HESS_.ecsv`
 - `TeVJ0852-463_MODEL_HADRONIC.ecsv`
+
+### TeVJ1023-575
+
+- source_id: 46
+- status:
+
 - `TeVJ1023-575_FERMI.ecsv`
 - `TeVJ1023-575_HESS.ecsv`
+
+### TeVJ1026-582
+
+- source_id: 47
+- status:
+
 - `TeVJ1026-582_FERMI_2013.ecsv`
 - `TeVJ1026-582_HESS_2011.ecsv`
 - `TeVJ1026-582_MODEL_HESS.ecsv`
+
+### TeVJ1119-614
+
+- source_id: 50
+- status:
+
 - `TeVJ1119-614_FERMI_DATA.ecsv`
 - `TeVJ1119-614_HESS_DATA.ecsv`
+
+### TeVJ1302-638
+
+- source_id: 60
+- status:
+
 - `TeVJ1302-638_HESS.ecsv`
 - `TeVJ1302-638_MODEL_HESS.ecsv`
+
+### TeVJ1303-631
+
+- source_id: 61
+- status:
+
 - `TeVJ1303-631_HESS.ecsv`
 - `TeVJ1303-631_MODEL_HESS.ecsv`
+
+### TeVJ1356-645
+
+- source_id: 64
+- status:
+
 - `TeVJ1356-645_FERMI_2FHL.ecsv`
 - `TeVJ1356-645_HESS_2011.ecsv`
 - `TeVJ1356-645_MODEL_HESS_POW.ecsv`
+
+### TeVJ1418-609
+
+- source_id: 65
+- status:
+
 - `TeVJ1418-609_FERMI.ecsv`
 - `TeVJ1418-609_HESS_2006.ecsv`
 - `TeVJ1418-609_MODEL_HESS2006.ecsv`
+
+### TeVJ1420-607
+
+- source_id: 66
+- status:
+
 - `TeVJ1420-607_FERMI.ecsv`
 - `TeVJ1420-607_HESS2006.ecsv`
 - `TeVJ1420-607_MODEL_HESS2006.ecsv`
+
+### TeVJ1427-608
+
+- source_id: 68
+- status:
+
 - `TeVJ1427-608_FERMI_2016.ecsv`
 - `TeVJ1427-608_HESS_DATA.ecsv`
 - `TeVJ1427-608_MODEL_FERMI_HESS.ecsv`
 - `TeVJ1427-608_MODEL_HESS_PL.ecsv`
+
+### TeVJ1442-624
+
+- source_id: 70
+- status:
+
 - `TeVJ1442-624_FERMI_2014.ecsv`
 - `TeVJ1442-624_HESS_2009.ecsv`
 - `TeVJ1442-624_HESS_2016.ecsv`
 - `TeVJ1442-624_MODEL_HADRONIC.ecsv`
 - `TeVJ1442-624_MODEL_IC.ecsv`
+
+### TeVJ1459-608
+
+- source_id: 73
+- status:
+
 - `TeVJ1459-608_HESS_DATA.ecsv`
 - `TeVJ1459-608_MODEL_HESS_PL.ecsv`
+
+### TeVJ1503-582
+
+- source_id: 75
+- status:
+
 - `TeVJ1503-582_HESS.ecsv`
 - `TeVJ1503-582_MODEL_HESS.ecsv`
+
+### TeVJ1506-623
+
+- source_id: 77
+- status:
+
 - `TeVJ1506-623_HESS.ecsv`
 - `TeVJ1506-623_MODEL_HESS.ecsv`
+
+### TeVJ1514-591
+
+- source_id: 79
+- status:
+
 - `TeVJ1514-591_HESS.ecsv`
 - `TeVJ1514-591_MODEL_HESS.ecsv`
+
+### TeVJ1614-518
+
+- source_id: 83
+- status:
+
 - `TeVJ1614-518_FERMI_2FHL.ecsv`
 - `TeVJ1614-518_FERMI_3FGL.ecsv`
 - `TeVJ1614-518_HESS_2006.ecsv`
 - `TeVJ1614-518_MODEL_HESS_2006.ecsv`
+
+### TeVJ1616-508
+
+- source_id: 84
+- status:
+
 - `TeVJ1616-508_HESS_2006.ecsv`
 - `TeVJ1616-508_MODEL_HESS.ecsv`
+
+### TeVJ1626-490
+
+- source_id: 85
+- status:
+
 - `TeVJ1626-490_FERMI2013_UL.ecsv`
 - `TeVJ1626-490_HESS2008.ecsv`
 - `TeVJ1626-490_MODEL_HESS2008.ecsv`
+
+### TeVJ1632-478
+
+- source_id: 86
+- status:
+
 - `TeVJ1632-478_FERMI_DATA.ecsv`
 - `TeVJ1632-478_HESS_DATA.ecsv`
 - `TeVJ1632-478_MODEL_HESS_PL.ecsv`
+
+### TeVJ1634-472
+
+- source_id: 87
+- status:
+
 - `TeVJ1634-472_FERMI.ecsv`
 - `TeVJ1634-472_HESS.ecsv`
 - `TeVJ1634-472_MODEL_HESS.ecsv`
+
+### TeVJ1640-465
+
+- source_id: 88
+- status:
+
 - `TeVJ1640-465_FERMI.ecsv`
 - `TeVJ1640-465_HESS.ecsv`
 - `TeVJ1640-465_MODEL_FERMI.ecsv`
 - `TeVJ1640-465_MODEL_HESS.ecsv`
+
+### TeVJ1641-463
+
+- source_id: 89
+- status:
+
 - `TeVJ1641-463_FERMI.ecsv`
 - `TeVJ1641-463_HESS.ecsv`
 - `TeVJ1641-463_MODEL_HESS.ecsv`
+
+### TeVJ1647-458
+
+- source_id: 90
+- status:
+
 - `TeVJ1647-458_HESS.ecsv`
 - `TeVJ1647-458_MODEL_HESS.ecsv`
+
+### TeVJ1702-420
+
+- source_id: 92
+- status:
+
 - `TeVJ1702-420_HESS_2008.ecsv`
 - `TeVJ1702-420_MODEL_HESS_POW.ecsv`
+
+### TeVJ1708-410
+
+- source_id: 93
+- status:
+
 - `TeVJ1708-410_HESS2006.ecsv`
 - `TeVJ1708-410_HESS2008.ecsv`
 - `TeVJ1708-410_MODEL_HESS2006.ecsv`
 - `TeVJ1708-410_MODEL_HESS2008.ecsv`
 - `TeVJ1708-410_MODEL_HESS2008_MAN.ecsv`
+
+### TeVJ1708-443
+
+- source_id: 94
+- status:
+
 - `TeVJ1708-443_CANGAROO-III_2009.ecsv`
 - `TeVJ1708-443_CANGAROO-I_2009.ecsv`
 - `TeVJ1708-443_FERMI_2013.ecsv`
 - `TeVJ1708-443_HESS_2011.ecsv`
 - `TeVJ1708-443_MODEL_CANGAROO-III_2009.ecsv`
 - `TeVJ1708-443_MODEL_HESS.ecsv`
+
+### TeVJ1718-385
+
+- source_id: 99
+- status:
+
 - `TeVJ1718-385_HESS_DATA.ecsv`
 - `TeVJ1718-385_MODEL_HESS_CUTOFFPL.ecsv`
+
+### TeVJ1729-345
+
+- source_id: 102
+- status:
+
 - `TeVJ1729-345_HESS.ecsv`
 - `TeVJ1729-345_MODEL_HESS.ecsv`
+
+### TeVJ1732-347
+
+- source_id: 103
+- status:
+
 - `TeVJ1732-347_HESS_.ecsv`
 - `TeVJ1732-347_MODEL_HADRONIC.ecsv`
+
+### TeVJ1741-301
+
+- source_id: 104
+- status:
+
 - `TeVJ1741-301_MODEL_HESS.ecsv`
+
+### TeVJ1745-290
+
+- source_id: 106
+- status:
+
 - `TeVJ1745-290_FERMI.ecsv`
 - `TeVJ1745-290_HESS.ecsv`
 - `TeVJ1745-290_MODEL_HESS_VERITAS.ecsv`
+
+### TeVJ1747-281
+
+- source_id: 110
+- status:
+
 - `TeVJ1747-281_HESS.ecsv`
 - `TeVJ1747-281_MODEL_HESS_VERITAS.ecsv`
 - `TeVJ1747-281_VERITAS.ecsv`
+
+### TeVJ1804-217
+
+- source_id: 113
+- status:
+
 - `TeVJ1804-217_CANGAROO2008.ecsv`
 - `TeVJ1804-217_FERMI_HESS_2013.ecsv`
 - `TeVJ1804-217_HESS2006.ecsv`
 - `TeVJ1804-217_MODEL_CANGAROO2008.ecsv`
 - `TeVJ1804-217_MODEL_HESS.ecsv`
+
+### TeVJ1808-204
+
+- source_id: 114
+- status:
+
 - `TeVJ1808-204_MODEL_HESS_PL.ecsv`
+
+### TeVJ1810-193
+
+- source_id: 115
+- status:
+
 - `TeVJ1810-193_HESS.ecsv`
 - `TeVJ1810-193_MODEL_HESS.ecsv`
+
+### TeVJ1813-178
+
+- source_id: 116
+- status:
+
 - `TeVJ1813-178_FERMI_HESS_2013.ecsv`
 - `TeVJ1813-178_HESS2006.ecsv`
 - `TeVJ1813-178_MAGIC2006.ecsv`
 - `TeVJ1813-178_MODEL_MAGIC2006.ecsv`
+
+### TeVJ1826-137
+
+- source_id: 118
+- status:
+
 - `TeVJ1826-137_CGRO_EGRET_DATA.ecsv`
 - `TeVJ1826-137_HESS_DATA.ecsv`
 - `TeVJ1826-137_MODEL_HESS.ecsv`
+
+### TeVJ1826-148
+
+- source_id: 119
+- status:
+
 - `TeVJ1826-148_FERMI_INFC.ecsv`
 - `TeVJ1826-148_FERMI_SUPC.ecsv`
 - `TeVJ1826-148_HESS_INFC.ecsv`
@@ -161,27 +482,81 @@ I'll go through them and add them systematically.
 - `TeVJ1826-148_MODEL_HESS_INFC.ecsv`
 - `TeVJ1826-148_MODEL_HESS_INFC_MAN.ecsv`
 - `TeVJ1826-148_MODEL_HESS_SUPC.ecsv`
+
+### TeVJ1831-098
+
+- source_id: 120
+- status:
+
 - `TeVJ1831-098_HESS_2011.ecsv`
 - `TeVJ1831-098_MODEL_HESS.ecsv`
+
+### TeVJ1833-105
+
+- source_id: 122
+- status:
+
 - `TeVJ1833-105_HESS.ecsv`
 - `TeVJ1833-105_MODEL_HESS.ecsv`
+
+### TeVJ1834-087
+
+- source_id: 123
+- status:
+
 - `TeVJ1834-087_FERMI_2013.ecsv`
 - `TeVJ1834-087_HESS_2011.ecsv`
 - `TeVJ1834-087_MODEL_HADRONIC.ecsv`
+
+### TeVJ1837-069
+
+- source_id: 124
+- status:
+
 - `TeVJ1837-069_FERMI_2FHL.ecsv`
 - `TeVJ1837-069_FERMI_3FGL.ecsv`
 - `TeVJ1837-069_HESS_2006.ecsv`
 - `TeVJ1837-069_MODEL_2006.ecsv`
+
+### TeVJ1840-055
+
+- source_id: 125
+- status:
+
 - `TeVJ1840-055_FERMI_HESS_2013.ecsv`
 - `TeVJ1840-055_HESS_2008.ecsv`
 - `TeVJ1840-055_MODEL_ARGO_2013.ecsv`
 - `TeVJ1840-055_MODEL_HESS_2008.ecsv`
+
+### TeVJ1846-029
+
+- source_id: 127
+- status:
+
 - `TeVJ1846-029_HESS_2008.ecsv`
 - `TeVJ1846-029_MODEL_HESS.ecsv`
+
+### TeVJ1848-017
+
+- source_id: 128
+- status:
+
 - `TeVJ1848-017_FERMI.ecsv`
 - `TeVJ1848-017_HESS.ecsv`
+
+### TeVJ1849-000
+
+- source_id: 129
+- status:
+
 - `TeVJ1849-000_FERMI_UPPER_LIMITS.ecsv`
 - `TeVJ1849-000_MODEL_CRAB_RESCALED.ecsv`
+
+### W28
+
+- source_id: 112
+- status:
+
 - `W28_MODEL_HADRONIC.ecsv`
 - `W28_agile.ecsv`
 - `W28_nord-fermi.ecsv`
@@ -189,5 +564,11 @@ I'll go through them and add them systematically.
 - `W28_sud_Fermi_3.ecsv`
 - `W28_sud_MODEL_HADRONIC.ecsv`
 - `W28_sud_sud_hess.ecsv`
+
+### w1457
+
+- source_id: 72
+- status:
+
 - `w1457_fermi.ecsv`
 - `w1457_magic.ecsv`

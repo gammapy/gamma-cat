@@ -376,7 +376,10 @@ class GammaCatMaker:
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             # paper_info = input_data.gammacat_dataset_config.choose_paper(input_data, basic_source_info)
-            paper_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_paper_id()
+            try:
+                paper_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_paper_id()
+            except IndexError:
+                paper_id = None
             paper_info = input_data.papers.get_paper_by_id(paper_id)
             paper_source_info = paper_info.get_source_by_id(source_id)
             sed_info = input_data.seds.get_sed_by_source_and_paper_id(source_id, paper_info.id)

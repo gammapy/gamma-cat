@@ -3962,14 +3962,14 @@
   common_name: HESS J1641-463
   gamma_names: HESS J1641-463
   other_names: SNR G338.5+0.1
-  paper_id: ''
-  significance: .nan
-  livetime: .nan
+  paper_id: 2014ApJ...794L...1A
+  significance: 8.5
+  livetime: 72.0
   ra: 250.257080078125
   dec: -46.30305862426758
   glon: 338.5224304199219
   glat: 0.09183607995510101
-  morph_type: ''
+  morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
   morph_sigma2: .nan
@@ -3977,31 +3977,31 @@
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: ''
-  spec_erange_min: .nan
-  spec_erange_max: .nan
+  spec_type: pl
+  spec_erange_min: 0.6399999856948853
+  spec_erange_max: 100.0
   spec_theta: .nan
-  spec_ref: .nan
-  spec_norm: .nan
-  spec_norm_err: .nan
-  spec_norm_err_sys: .nan
-  spec_norm_err_tot: .nan
-  spec_norm_1TeV: .nan
-  spec_norm_1TeV_err: .nan
-  spec_index: .nan
-  spec_index_err: .nan
-  spec_index_err_sys: .nan
-  spec_index_err_tot: .nan
+  spec_ref: 1.0
+  spec_norm: 3.9100000364181153e-13
+  spec_norm_err: 6.900000183848384e-14
+  spec_norm_err_sys: 7.79999979536039e-14
+  spec_norm_err_tot: 1.0413933306191794e-13
+  spec_norm_1TeV: 3.9100000364181153e-13
+  spec_norm_1TeV_err: 6.900000183848384e-14
+  spec_index: 2.069999933242798
+  spec_index_err: 0.10999999940395355
+  spec_index_err_sys: 0.20000000298023224
+  spec_index_err_tot: 0.22825424373149872
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_flux_above_1TeV_crab: .nan
-  spec_flux_above_1TeV_crab_err: .nan
-  spec_flux_above_erange_min: .nan
-  spec_flux_above_erange_min_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_flux_above_1TeV: 3.6542042178636103e-13
+  spec_flux_above_1TeV_err: 7.463022983888318e-14
+  spec_flux_above_1TeV_crab: 1.0994635820388794
+  spec_flux_above_1TeV_crab_err: 0.2245446890592575
+  spec_flux_above_erange_min: 5.890881857838204e-13
+  spec_flux_above_erange_min_err: 1.0866533503095868e-13
+  spec_energy_flux_1TeV_10TeV: 8.315003958807299e-13
+  spec_energy_flux_1TeV_10TeV_err: 1.7897620505861328e-13
 - source_id: 90
   common_name: Westerlund 1
   gamma_names: HESS J1646-458

@@ -1,327 +1,491 @@
 # This file defines which information to use when generating gamma-cat.
 #
 # At the moment it's just a simple one paper per source mapping.
+#
+#
 - source_id: 1
+  status: source
   paper_id: 2013ApJ...764...38A
 - source_id: 2
+  status: source
   paper_id:
 - source_id: 3
+  status: source
   paper_id:
 - source_id: 4
+  status: source
   paper_id:
 - source_id: 5
+  status: source
   paper_id:
 - source_id: 6
+  status: source
   paper_id:
 - source_id: 7
+  status: source
   paper_id:
 - source_id: 8
+  status: source
   paper_id:
 - source_id: 9
+  status: source
   paper_id:
 - source_id: 10
+  status: source
   paper_id:
 - source_id: 11
+  status: source
   paper_id:
 - source_id: 12
+  status: source
   paper_id:
 - source_id: 13
+  status: source
   paper_id:
 - source_id: 14
+  status: source
   paper_id:
 - source_id: 15
+  status: source
   paper_id:
 - source_id: 16
+  status: source
   paper_id:
 - source_id: 17
+  status: source
   paper_id:
 - source_id: 18
+  status: source
   paper_id:
 - source_id: 19
+  status: source
   paper_id:
 - source_id: 20
+  status: source
   paper_id:
 - source_id: 21
+  status: source
   paper_id:
 - source_id: 22
+  status: source
   paper_id:
 - source_id: 23
+  status: source
   paper_id:
 - source_id: 24
+  status: source
   paper_id: 2015Sci...347..406H
 - source_id: 25
+  status: source
   paper_id: 2006A&A...457..899A, 2008ICRC....2..803K
 - source_id: 26
+  status: source
   paper_id: 2015Sci...347..406H
 - source_id: 27
+  status: source
   paper_id: 2012A&A...545L...2H, 2015Sci...347..406H
 - source_id: 28
+  status: source
   paper_id:
 - source_id: 29
+  status: source
   paper_id:
 - source_id: 30
+  status: source
   paper_id: 2007A&A...469L...1A
 - source_id: 31
+  status: source
   paper_id:
 - source_id: 32
+  status: source
   paper_id:
 - source_id: 33
+  status: source
   paper_id:
 - source_id: 34
+  status: source
   paper_id:
 - source_id: 35
+  status: source
   paper_id:
 - source_id: 36
+  status: source
   paper_id:
 - source_id: 37
+  status: source
   paper_id: 2006A&A...448L..43A
 - source_id: 38
+  status: source
   paper_id:
 - source_id: 39
+  status: source
   paper_id: 2007ApJ...661..236A, 2016arXiv161101863H
 - source_id: 40
+  status: source
   paper_id:
 - source_id: 41
+  status: source
   paper_id:
 - source_id: 42
+  status: source
   paper_id:
 - source_id: 43
+  status: source
   paper_id:
 - source_id: 44
+  status: source
   paper_id: 2012A&A...541A...5H
 - source_id: 45
+  status: source
   paper_id: 2015A&A...577A.131H
 - source_id: 46
+  status: source
   paper_id: 2011A&A...525A..46H
 - source_id: 47
+  status: source
   paper_id: 2011A&A...525A..46H
 - source_id: 48
+  status: source
   paper_id:
 - source_id: 49
+  status: source
   paper_id:
 - source_id: 50
+  status: source
   paper_id:
 - source_id: 51
+  status: source
   paper_id:
 - source_id: 52
+  status: source
   paper_id:
 - source_id: 53
+  status: source
   paper_id:
 - source_id: 54
+  status: source
   paper_id:
 - source_id: 55
+  status: source
   paper_id:
 - source_id: 56
+  status: source
   paper_id:
 - source_id: 57
+  status: source
   paper_id:
 - source_id: 58
+  status: source
   paper_id:
 - source_id: 59
+  status: source
   paper_id:
 - source_id: 60
+  status: source
   paper_id:
 - source_id: 61
+  status: source
   paper_id: 2012A&A...548A..46H
 - source_id: 62
+  status: source
   paper_id:
 - source_id: 63
+  status: source
   paper_id:
 - source_id: 64
+  status: source
   paper_id: 2008AIPC.1085..285R
 - source_id: 65
+  status: source
   paper_id: 2006A&A...456..245A
 - source_id: 66
+  status: source
   paper_id: 2006A&A...456..245A
 - source_id: 67
+  status: source
   paper_id:
 - source_id: 68
+  status: source
   paper_id: 2008A&A...477..353A
 - source_id: 69
+  status: source
   paper_id:
 - source_id: 70
+  status: source
   paper_id: 2016arXiv160104461H
 - source_id: 71
+  status: source
   paper_id:
 - source_id: 72
+  status: source
   paper_id:
 - source_id: 73
+  status: source
   paper_id:
 - source_id: 74
+  status: source
   paper_id:
 - source_id: 75
+  status: source
   paper_id: 2008AIPC.1085..281R
 - source_id: 77
+  status: source
   paper_id: 2011A&A...525A..45H
 - source_id: 78
+  status: source
   paper_id:
 - source_id: 79
+  status: source
   paper_id: 2005A&A...435L..17A
 - source_id: 80
+  status: source
   paper_id:
 - source_id: 81
+  status: source
   paper_id: 2011ICRC....7..185A
 - source_id: 82
+  status: source
   paper_id:
 - source_id: 83
+  status: source
   paper_id: 2006ApJ...636..777A, 2011A&A...531L..18H
 - source_id: 84
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 85
+  status: source
   paper_id: 2008A&A...477..353A
 - source_id: 86
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 87
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 88
+  status: source
   paper_id: 2006ApJ...636..777A, 2014MNRAS.439.2828A
 - source_id: 89
+  status: source
   paper_id: 2013arXiv1303.0979O, 2014ApJ...794L..1A
 - source_id: 90
+  status: source
   paper_id: 2012A&A...537A.114A
 - source_id: 91
+  status: source
   paper_id:
 - source_id: 92
+  status: source
   paper_id: 2006ApJ...636..777A, 2008A&A...477..353A
 - source_id: 93
+  status: source
   paper_id: 2006ApJ...636..777A, 2008A&A...477..353A
 - source_id: 94
+  status: source
   paper_id: 2011A&A...528A.143H
 - source_id: 95
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 96
+  status: source
   paper_id: 2016arXiv160908671H
 - source_id: 97
+  status: source
   paper_id: 2008A&A...490..685A
 - source_id: 98
+  status: source
   paper_id: 2015A&A...574A.100H
 - source_id: 99
+  status: source
   paper_id: 2007A&A...472..489A
 - source_id: 100
+  status: source
   paper_id:
 - source_id: 101
+  status: source
   paper_id:
 - source_id: 102
+  status: source
   paper_id: 2011A&A...531A..81H
 - source_id: 103
+  status: source
   paper_id: 2008A&A...477..353A, 2011A&A...531A..81H
 - source_id: 104
+  status: source
   paper_id: 2008AIPC.1085..249T
 - source_id: 105
+  status: source
   paper_id:
 - source_id: 106
+  status: source
   paper_id: 2009A&A...503..817A, 2016Natur.531..476H
 - source_id: 107
+  status: source
   paper_id:
 - source_id: 108
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 109
+  status: source
   paper_id:
 - source_id: 110
+  status: source
   paper_id: 2005A&A...432L..25A
 - source_id: 111
+  status: source
   paper_id:
 - source_id: 112
+  status: source
   paper_id: 2008A&A...481..401A
 - source_id: 113
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 114
+  status: source
   paper_id:
 - source_id: 115
+  status: source
   paper_id: 2007A&A...472..489A
 - source_id: 116
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 117
+  status: source
   paper_id: 2014A&A...562A..40H
 - source_id: 118
+  status: source
   paper_id: 2006A&A...460..365A, 2006ApJ...636..777A
 - source_id: 119
+  status: source
   paper_id:
 - source_id: 120
+  status: source
   paper_id:
 - source_id: 121
+  status: source
   paper_id:
 - source_id: 122
+  status: source
   paper_id: 2015MNRAS.446.1163H
 - source_id: 123
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 124
+  status: source
   paper_id: 2006ApJ...636..777A
 - source_id: 125
+  status: source
   paper_id: 2008A&A...477..353A
 - source_id: 126
+  status: source
   paper_id:
 - source_id: 127
+  status: source
   paper_id:
 - source_id: 128
+  status: source
   paper_id: 2008AIPC.1085..372C
 - source_id: 129
+  status: source
   paper_id:
 - source_id: 130
+  status: source
   paper_id: 2008A&A...477..353A
 - source_id: 131
+  status: source
   paper_id: 2008A&A...477..353A
 - source_id: 132
+  status: source
   paper_id: 2009A&A...499..723A
 - source_id: 133
+  status: source
   paper_id: 2016arXiv160900600H
 - source_id: 134
+  status: source
   paper_id: 2008A&A...484..435A
 - source_id: 135
+  status: source
   paper_id:
 - source_id: 136
+  status: source
   paper_id: 2010ApJ...719L..69A
 - source_id: 137
+  status: source
   paper_id: 2011A&A...529A..49H
 - source_id: 138
+  status: source
   paper_id:
 - source_id: 139
+  status: source
   paper_id:
 - source_id: 140
+  status: source
   paper_id:
 - source_id: 141
+  status: source
   paper_id:
 - source_id: 142
+  status: source
   paper_id:
 - source_id: 143
+  status: source
   paper_id:
 - source_id: 144
+  status: source
   paper_id:
 - source_id: 145
+  status: source
   paper_id:
 - source_id: 146
+  status: source
   paper_id:
 - source_id: 147
+  status: source
   paper_id:
 - source_id: 148
+  status: source
   paper_id:
 - source_id: 150
+  status: source
   paper_id:
 - source_id: 151
+  status: source
   paper_id:
 - source_id: 152
+  status: source
   paper_id:
 - source_id: 153
+  status: source
   paper_id:
 - source_id: 154
+  status: source
   paper_id:
 - source_id: 155
+  status: source
   paper_id:
 - source_id: 156
+  status: source
   paper_id: 2008A&A...481..401A
 - source_id: 157
+  status: source
   paper_id:
 - source_id: 158
+  status: source
   paper_id:
 - source_id: 159
+  status: source
   paper_id:
 - source_id: 160
+  status: source
   paper_id:
 - source_id: 161
+  status: source
   paper_id:
 - source_id: 162
+  status: source
   paper_id:
 - source_id: 163
+  status: source
   paper_id:
 - source_id: 164
+  status: source
   paper_id:

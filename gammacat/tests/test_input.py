@@ -32,6 +32,7 @@ def test_paper_info():
 def test_paper_list():
     papers = gammacat.PaperList.read()
     assert len(papers.data) > 0
+    assert len(papers.paper_ids) > 0
 
 
 def test_input_data():

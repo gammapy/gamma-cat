@@ -36,17 +36,16 @@ class GammaCatTag:
     """Make and parse string tags.
     """
 
-    def source_paper_filename(self, meta):
-        return 'gammacat_' + self.source_paper_str(meta)
+    def source_dataset_filename(self, meta):
+        return 'gammacat_' + self.source_dataset_str(meta)
 
-    def source_paper_str(self, meta):
-        return self.source_str(meta) + '_' + self.paper_str(meta)
+    def source_dataset_str(self, meta):
+        return self.source_str(meta) + '_' + self.dataset_str(meta)
 
     def source_str(self, meta):
-        # import IPython; IPython.embed(); 1/0
         return '{source_id:06d}'.format_map(meta)
 
-    def paper_str(self, meta):
+    def dataset_str(self, meta):
         return urllib.parse.quote(meta['reference_id'])
         # return '{reference_id}'.format_map(meta)
 

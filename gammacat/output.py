@@ -29,16 +29,18 @@ class OutputDataConfig:
 
     sources_json = path / 'gammacat-sources.json'
 
-    papers_json = path / 'gammacat-papers.json'
-    papers_ecsv = path / 'gammacat-papers.ecsv'
+    datasets_json = path / 'gammacat-datasets.json'
+    datasets_ecsv = path / 'gammacat-datasets.ecsv'
 
     @staticmethod
     def make_filename(meta, datatype):
-        tag = gammacat_tag.source_paper_filename(meta)
+        tag = gammacat_tag.source_dataset_filename(meta)
         source_path = OutputDataConfig.path / 'sources' / gammacat_tag.source_str(meta)
 
         if datatype == 'sed':
             path = source_path / '{}_sed.ecsv'.format(tag)
+        elif datatype == 'lc':
+            path = source_path / '{}_lc.ecsv'.format(tag)
         else:
             raise ValueError('Invalid datatype: {}'.format(datatype))
 
@@ -61,7 +63,7 @@ class OutputDataReader:
             self.path = OutputDataConfig.path
 
         self.gammacat = None
-        self.papers = None
+        self.datasets = None
 
     def read_all(self):
         """Read all data from disk.
@@ -69,8 +71,8 @@ class OutputDataReader:
         path = OutputDataConfig.gammacat_fits
         self.gammacat = Table.read(str(path), format='fits')
 
-        path = OutputDataConfig.papers_ecsv
-        self.papers = Table.read(str(path), format='ascii.ecsv')
+        path = OutputDataConfig.datasets_ecsv
+        self.datasets = Table.read(str(path), format='ascii.ecsv')
 
         return self
 
@@ -78,7 +80,7 @@ class OutputDataReader:
         ss = 'output data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of sources: {}\n'.format(len(self.gammacat))
-        ss += 'Number of papers: {}\n'.format(len(self.papers))
+        ss += 'Number of datasets: {}\n'.format(len(self.datasets))
         return ss
 
 
@@ -95,8 +97,8 @@ class OutputDataMaker:
 
     def make_all(self):
         self.make_source_table_json()
-        self.make_paper_table_json()
-        self.make_paper_table_ecsv()
+        self.make_dataset_table_json()
+        self.make_dataset_table_ecsv()
         self.make_sed_files()
 
     def make_source_table_json(self):
@@ -104,14 +106,14 @@ class OutputDataMaker:
         path = OutputDataConfig.sources_json
         write_json(data, path)
 
-    def make_paper_table_json(self):
-        data = self.input_data.papers.to_json()
-        path = OutputDataConfig.papers_json
+    def make_dataset_table_json(self):
+        data = self.input_data.datasets.to_json()
+        path = OutputDataConfig.datasets_json
         write_json(data, path)
 
-    def make_paper_table_ecsv(self):
-        table = self.input_data.papers.to_table()
-        path = OutputDataConfig.papers_ecsv
+    def make_dataset_table_ecsv(self):
+        table = self.input_data.datasets.to_table()
+        path = OutputDataConfig.datasets_ecsv
         log.info('Writing {}'.format(path))
         table.write(str(path), format='ascii.ecsv')
 

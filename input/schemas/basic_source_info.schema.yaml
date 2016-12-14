@@ -72,4 +72,4 @@ required:
 #  - tevcat_name
 #  - tgevcat_id
 #  - tgevcat_name
-  - papers
+  - reference_ids

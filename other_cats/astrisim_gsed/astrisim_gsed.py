@@ -34,7 +34,7 @@ class AstriSimGSED:
         info = OrderedDict()
         info['tevcat_name'] = str(source['TeVCat']).strip()
         info['gammacat_id'] = self._get_gammacat_id(info['tevcat_name'])
-        info['paper_ids'] = self._get_paper_ids(info['gammacat_id'])
+        info['reference_ids'] = self._get_reference_ids(info['gammacat_id'])
         return info
 
     def _get_gammacat_id(self, tevcat_name):
@@ -44,14 +44,14 @@ class AstriSimGSED:
         gammacat_id = self.gammacat_sources[idx]['source_id']
         return gammacat_id
 
-    def _get_paper_ids(self, gammacat_id):
+    def _get_reference_ids(self, gammacat_id):
         """Get the list of papers we have with info on that source"""
-        paper_ids = []
+        reference_ids = []
         for paper in self.gammacat_papers:
             for source in paper['sources']:
                 if source['source_id'] == gammacat_id:
-                    paper_ids.append(source['paper_id'])
-        return ','.join(paper_ids)
+                    reference_ids.append(source['reference_id'])
+        return ','.join(reference_ids)
 
     def dump_sed_to_ecsv(self):
         """Dump SED info to ECSV files.

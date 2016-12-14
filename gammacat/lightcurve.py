@@ -35,12 +35,8 @@ class LightcurveList:
 
     @classmethod
     def read(cls):
-        # TODO: Change this to gather all files from `input/data` in a robust way.
-        # path = gammacat_info.base_dir / 'input/data'
-        # paths = path.glob('*/*/*.ecsv')
-
-        path = gammacat_info.base_dir / 'input/lightcurves'
-        paths = path.glob('*.ecsv')
+        path = gammacat_info.base_dir / 'input/data'
+        paths = sorted(path.glob('*/*/tev*lc.ecsv'))
 
         data = []
         for path in paths:

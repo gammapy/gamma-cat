@@ -24,7 +24,7 @@ pos:
   ra: 280.22917
   dec: -5.55
 
-papers:
+reference_ids:
 - 2008A&A...477..353A
 - 2009ApJ...697.1194S
 - 2011arXiv1111.1634T

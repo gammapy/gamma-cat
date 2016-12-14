@@ -26,7 +26,7 @@ pos:
   ra: 220.1208
   dec: -62.645
 
-papers:
+reference_ids:
 - 2009Sci...325..719H
 - 2009ApJ...692.1500A
 - 2011ApJ...741...96W

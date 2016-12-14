@@ -24,7 +24,7 @@ pos:
   ra: 243.5625
   dec: -51.819083
 
-papers:
+reference_ids:
 - 2005Sci...307.1938A
 - 2006ApJ...636..777A
 - 2008PASJ...60S.163M

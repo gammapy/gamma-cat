@@ -25,7 +25,7 @@ pos:
   ra: 278.188175
   dec: -9.3651528
 
-papers:
+reference_ids:
 - 2011arXiv1110.6890L
 - 2013arXiv1308.0475L
 - 2015MNRAS.446.1163H

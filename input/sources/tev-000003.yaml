@@ -20,7 +20,7 @@ tevcat_name: TeV J0025+641
 tgevcat_id: 3
 tgevcat_name: TeV J0025+6410
 
-papers:
+reference_ids:
 - 2011ApJ...730L..20A
 
 pos:

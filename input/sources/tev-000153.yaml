@@ -22,6 +22,6 @@ pos:
   ra: 350.85
   dec: 58.815
 
-papers:
+reference_ids:
   - 2010ApJ...714..163A
   - 2001A&A...370..112A

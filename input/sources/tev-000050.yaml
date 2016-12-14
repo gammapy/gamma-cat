@@ -27,7 +27,7 @@ pos:
   ra: 169.809583
   dec: -61.46375
 
-papers:
+reference_ids:
 - https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/som/2009/11/
 - http://cxc.harvard.edu/cdo/snr09/pres/DjannatiAtai_Arache_v2.pdf
 - 2013ApJ...773...77A

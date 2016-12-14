@@ -27,6 +27,6 @@ pos:
   ra: 272.0
   dec: -20.4
 
-papers:
+reference_ids:
 - https://www.mpi-hd.mpg.de/hd2012/pages/presentations/Rowell.pdf
 - 2016arXiv160605404A

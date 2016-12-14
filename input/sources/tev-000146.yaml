@@ -22,7 +22,7 @@ pos:
   ra: 308.025
   dec: 41.567
 
-papers:
+reference_ids:
   - 2014ApJ...783...16A
   - 2008ApJ...675L..25A
   - 2003ICRC....4.2345R

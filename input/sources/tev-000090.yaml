@@ -28,7 +28,7 @@ pos:
   ra: 251.5
   dec: -45.8
 
-papers:
+reference_ids:
 - 2010ASPC..422..265O
 - 2010ApJ...713L..45L
 - 2012A&A...537A.114A

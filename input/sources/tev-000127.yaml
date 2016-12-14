@@ -26,7 +26,7 @@ pos:
   ra: 281.5
   dec: -2.9
 
-papers:
+reference_ids:
 - 2008ICRC....2..823D
 - 2008A&A...480L..25L
 - 2016ApJ...817....3A

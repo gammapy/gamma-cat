@@ -24,7 +24,7 @@ pos:
   ra: 265.25
   dec: -30.2
 
-papers:
+reference_ids:
 - 2008AIPC.1085..249T
 - 2016ApJ...816...52H
 - 2016MNRAS.tmp....7H

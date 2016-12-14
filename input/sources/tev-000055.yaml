@@ -28,7 +28,7 @@ pos:
   ra: 185.3414278125
   dec: 30.1769891083
 
-papers:
+reference_ids:
 - 2009ApJ...695.1370A
 - 2010ApJ...709L.163A
 - 2011arXiv1110.6786L

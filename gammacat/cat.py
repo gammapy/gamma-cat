@@ -535,10 +535,10 @@ class GammaCatDataSetConfig:
 
         gammacat_missing = sorted(set(reference_ids_gammacat) - set(reference_ids_folders))
         if gammacat_missing:
-            log.error('Papers in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/papers`: {}'
+            log.error('Papers in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/data`: {}'
                       ''.format(gammacat_missing))
 
         folders_missing = sorted(set(reference_ids_folders) - set(reference_ids_gammacat))
         if folders_missing:
-            log.error('Sources in `input/papers`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
+            log.error('Sources in `input/data`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
                       ''.format(folders_missing))

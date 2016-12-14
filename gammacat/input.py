@@ -226,7 +226,7 @@ class PaperList:
 
     @classmethod
     def read(cls):
-        path = gammacat_info.base_dir / 'input/papers'
+        path = gammacat_info.base_dir / 'input/data'
         paths = path.glob('*/*')
 
         data = []
@@ -263,7 +263,7 @@ class PaperList:
         return OrderedDict(data=data)
 
     def validate(self):
-        log.info('Validating YAML files in `input/papers`')
+        log.info('Validating YAML files in `input/data`')
         for paper in self.data:
             paper.validate()
 
@@ -350,7 +350,7 @@ class InputData:
         ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
             len(self.gammacat_dataset_config.data))
         ss += '\n'
-        ss += 'Number of folders in `input/papers`: {}\n'.format(len(self.papers.data))
+        ss += 'Number of folders in `input/data`: {}\n'.format(len(self.papers.data))
         ss += 'Number of total papers in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
             len(self.gammacat_dataset_config.reference_ids))
         ss += '\n'

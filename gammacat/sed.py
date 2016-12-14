@@ -237,7 +237,7 @@ class SEDList:
 
     @classmethod
     def read(cls):
-        path = gammacat_info.base_dir / 'input/papers'
+        path = gammacat_info.base_dir / 'input/data'
         paths = sorted(path.glob('*/*/*.ecsv'))
 
         data = []

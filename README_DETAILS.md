@@ -52,7 +52,7 @@ The idea is that we only collect the information from the papers here
 edited files are as small as possible), and then the `make_output.py`
 script generates an as-homogeneous as possible version of the catalog.
 
-* In the input folder ``input/papers``, data is organised by ``reference_id`` first, then ``source_id``.
+* In the input folder ``input/data``, data is organised by ``reference_id`` first, then ``source_id``.
 * In the output folder ``docs/data``, data is organised by ``source_id`` first, then ``reference_id``.
 
 #### Paper identifiers

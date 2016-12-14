@@ -29,7 +29,7 @@ function render_ads_url(reference_id) {
 }
 
 function render_paper_github_url(val) {
-    return "<a href=\"https://github.com/gammapy/gamma-cat/tree/master/input/papers/" + val + "\">" + val + "</a>";
+    return "<a href=\"https://github.com/gammapy/gamma-cat/tree/master/input/data/" + val + "\">" + val + "</a>";
 }
 
 function render_source_github_url(source_id) {

@@ -12,7 +12,7 @@ https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA533_A103.html
 is from this paper:
 http://adsabs.harvard.edu/abs/2011A%26A...533A.103H
 and should go in an ECSV file like this (that's another source)
-https://github.com/gammapy/gamma-cat/blob/master/input/papers/2006/2006A%2526A...448L..43A/tev-000037.ecsv
+https://github.com/gammapy/gamma-cat/blob/master/input/data/2006/2006A%2526A...448L..43A/tev-000037.ecsv
 
 Complete list in the order listed on that page (roughly reverse chronological order):
 
@@ -20,16 +20,16 @@ Complete list in the order listed on that page (roughly reverse chronological or
 
 - ads: [2015A%26A...577A.131H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...577A.131H)
   - url: [auxinfo_HESSJ1018](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%2526A...577A.131H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015A%2526A...577A.131H)
   - status: done
 - [2015A%26A...574A.100H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...574A.100H)
   - url: [auxinfo_SNRG349](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015A%26A...574A.100H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015A%26A...574A.100H)
   - status: **TODO**
   - comments: need to add script or expand allowed format for E^2*F and add data
 - [2015Sci...347..406H](http://adsabs.harvard.edu/abs/2015Sci...347..406H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_LMC_Science_2015)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015Sci...347..406H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015Sci...347..406H)
   - status: done
 - [2015A%26A...573A..31H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...573A..31H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)
@@ -41,7 +41,7 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - comments: 
 - [2015MNRAS.446.1163H](http://adsabs.harvard.edu/abs/2015MNRAS.446.1163H)
   - url: [auxinfo_HESSJ1832](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2015/2015MNRAS.446.1163H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015MNRAS.446.1163H)
   - status: done 
 
 ## 2014
@@ -51,11 +51,11 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - status: **TODO**
 - [2014ApJ...794L...1A](http://adsabs.harvard.edu/abs/2014ApJ...794L...1A)
   - url: [auxinfo_HESSJ1641](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014ApJ...794L...1A)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2014/2014ApJ...794L...1A)
   - status: done
 - [2014MNRAS.439.2828A](http://adsabs.harvard.edu/abs/2014MNRAS.439.2828A)
   - url: [auxinfo_HESSJ1640](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1640)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014MNRAS.439.2828A)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2014/2014MNRAS.439.2828A)
   - status: done
 - [2013PhRvD..88j2003A](http://adsabs.harvard.edu/abs/2013PhRvD..88j2003A)
   - url: [auxinfo_ALP.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ALP.html)
@@ -63,7 +63,7 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - comments: 
 - [2014A%26A...562A..40H](https://ui.adsabs.harvard.edu/#abs/2014A%26A...562A..40H)
   - url: [auxinfo_HESSJ1818.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2014/2014A%26A...562A..40H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2014/2014A%26A...562A..40H)
   - status: done
 
 ## 2013
@@ -101,15 +101,15 @@ Complete list in the order listed on that page (roughly reverse chronological or
 
 - [2012A%26A...548A..46H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...548A..46H)
   - url: [AA548_A46.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A46.html)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...548A..46H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2012/2012A%26A...548A..46H)
   - status: done
 - [2012A%26A...548A..38A](https://ui.adsabs.harvard.edu/#abs/2012A%26A...548A..38A)
   - url: [AA548_A38.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A38.html)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...548A..38A)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2012/2012A%26A...548A..38A)
   - status: done
 - [2012A%26A...545L...2H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...545L...2H)
   - url: [AA545_L2.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA545_L2.html)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...545L...2H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2012/2012A%26A...545L...2H)
   - status: done
 - [2012A%26A...542A..94H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...542A..94H)
   - url: [vizier](http://cdsarc.u-strasbg.fr/viz-bin/Cat?cat=J%2FA%2BA%2F542%2FA94&target=http&)
@@ -121,7 +121,7 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - comments: 
 - [2012A%26A...537A.114A](https://ui.adsabs.harvard.edu/#abs/2012A%26A...537A.114A)
   - url: [AA537_A114.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA537_A114.html)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/papers/2012/2012A%26A...537A.114A)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2012/2012A%26A...537A.114A)
   - status: 
   - comments: **CONTINUE HERE !!!** 
 

@@ -198,7 +198,7 @@ def process_one_file(source_id, filename):
 
     # ceate folder structure and write files
     count_files = 0
-    paper_repo = Path('input/papers')
+    paper_repo = Path('input/data')
     for x in range(0, len(filenames)):   
         # create folder structure for none_reference_id
         path = paper_repo / none_reference_id / 'lightcurves/tev-{}'.format((6-len(str(source_id)))*(str(0)) + source_id)

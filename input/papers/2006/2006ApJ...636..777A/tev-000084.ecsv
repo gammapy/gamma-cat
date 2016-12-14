@@ -9,7 +9,7 @@
 # - data_type: sed
 # - source_id: 84
 # - source_name: HESS J1616-508
-# - paper_id: 2006ApJ...636..777A
+# - reference_id: 2006ApJ...636..777A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
 e_ref dnde dnde_errn dnde_errp
 0.378819 6.08884e-11 6.10845e-12 6.20722e-12

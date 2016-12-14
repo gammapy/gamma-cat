@@ -10,7 +10,7 @@
 # - data_type: sed
 # - source_id: 106
 # - source_name: HESS J1745-290
-# - paper_id: 2009A&A...503..817A
+# - reference_id: 2009A&A...503..817A
 # - UL_CONF: 0.95
 e_ref dnde dnde_errp dnde_errn dnde_ul
  0.2838   4.186e-11 3.734e-11   4.653e-11 nan

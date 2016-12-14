@@ -12,7 +12,7 @@
 # - data_type: sed
 # - source_id: 89
 # - source_name: TeV J1641-463
-# - paper_id: 2014ApJ...794L...1A
+# - reference_id: 2014ApJ...794L...1A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641
 # - UL_CONF: 0.95
 e_ref e_hi e_lo dnde dnde_errp dnde_errn dnde_ul

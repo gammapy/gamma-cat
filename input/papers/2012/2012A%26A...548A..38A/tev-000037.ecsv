@@ -8,7 +8,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 37
-# - paper_id: 2012A&A...548A..38A
+# - reference_id: 2012A&A...548A..38A
 # - comments: |
 #     From https://github.com/zblz/gammafit/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_cocoon.spec
 #     See here for meaning of columns:

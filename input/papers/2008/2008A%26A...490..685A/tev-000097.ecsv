@@ -9,7 +9,7 @@
 # - data_type: sed
 # - source_id: 97
 # - source_name: HESS J1714-385
-# - paper_id: 2008A&A...490..685A
+# - reference_id: 2008A&A...490..685A
 # - comments: |
 #     TODO: origin of flux points?
 e_ref dnde dnde_errp dnde_errn

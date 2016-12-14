@@ -8,7 +8,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 25
-# - paper_id: 2008ICRC....2..803K
+# - reference_id: 2008ICRC....2..803K
 # - comments: |
 #     Data taken from table 4
 e_ref significance dnde dnde_err

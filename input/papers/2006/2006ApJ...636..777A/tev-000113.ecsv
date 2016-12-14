@@ -9,7 +9,7 @@
 # - data_type: sed
 # - source_id: 113
 # - source_name: HESS J1804-216
-# - paper_id: 2006ApJ...636..777A
+# - reference_id: 2006ApJ...636..777A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
 e_ref dnde dnde_errn dnde_errp
  0.190210 3.16659e-10 1.66872e-10 1.68438e-10

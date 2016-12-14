@@ -9,7 +9,7 @@
 # - data_type: sed
 # - source_id: 128
 # - source_name: HESS J1848-018
-# - paper_id: 2008AIPC.1085..372C
+# - reference_id: 2008AIPC.1085..372C
 # - url: TODO (origin of points unknown)
 e_ref dnde dnde_errp dnde_errn
  0.623875  9.94175e-12 3.26451e-12 3.30083e-12

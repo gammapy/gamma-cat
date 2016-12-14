@@ -8,7 +8,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 103
-# - paper_id: 2011A&A...531A..81H
+# - reference_id: 2011A&A...531A..81H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA531_A81.html
 e_ref dnde dnde_errn dnde_errp
 2.81317e+11 3.53954   0.545995 0.553633

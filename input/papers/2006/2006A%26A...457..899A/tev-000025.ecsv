@@ -10,7 +10,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 25
-# - paper_id: 2006A&A...457..899A
+# - reference_id: 2006A&A...457..899A
 # - comments: |
 #     Data taken from table 5 in the paper.
 e_ref excess significance dnde dnde_errp dnde_errn

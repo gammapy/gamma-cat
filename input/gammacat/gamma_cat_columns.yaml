@@ -19,7 +19,7 @@
   fmt:
   unit:
   description: Other source names
-- name: paper_id
+- name: reference_id
   dtype: str
   fmt:
   unit:
@@ -264,7 +264,7 @@
   latex:
 
 # SED info
-- name: sed_paper_id
+- name: sed_reference_id
   dtype: str
   fmt:
   unit:

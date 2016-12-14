@@ -4,8 +4,8 @@ $(document).ready(function () {
 
 function main() {
 
-    $('#papers').DataTable({
-        ajax: "data/gammacat-papers.json",
+    $('#datasets').DataTable({
+        ajax: "data/gammacat-datasets.json",
         columns: [
             {
                 data: "id",
@@ -13,7 +13,7 @@ function main() {
             },
             {
                 data: "url",
-                render: render_paper_github_url
+                render: render_dataset_github_url
             },
         ]
     });

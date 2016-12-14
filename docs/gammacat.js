@@ -24,11 +24,11 @@ function render_tevcat2_url(val) {
 }
 
 function render_ads_url(reference_id) {
-    var paper_url = reference_id;
-    return "<a href=\"https://ui.adsabs.harvard.edu/#abs/" + paper_url + "\">" + reference_id + "</a>";
+    var dataset_url = reference_id;
+    return "<a href=\"https://ui.adsabs.harvard.edu/#abs/" + dataset_url + "\">" + reference_id + "</a>";
 }
 
-function render_paper_github_url(val) {
+function render_dataset_github_url(val) {
     return "<a href=\"https://github.com/gammapy/gamma-cat/tree/master/input/data/" + val + "\">" + val + "</a>";
 }
 

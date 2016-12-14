@@ -30,9 +30,9 @@ def test_input_dataset():
 
 
 def test_input_dataset_collection():
-    papers = gammacat.InputDatasetCollection.read()
-    assert len(papers.data) > 0
-    assert len(papers.reference_ids) > 0
+    datasets = gammacat.InputDatasetCollection.read()
+    assert len(datasets.data) > 0
+    assert len(datasets.reference_ids) > 0
 
 
 def test_input_data():

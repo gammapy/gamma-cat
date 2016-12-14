@@ -23,10 +23,10 @@ function main() {
                 name: "TeVCat",
                 render: render_tevcat
             },
-            // TODO: use row detail for papers.
+            // TODO: use row detail for datasets
             // See https://datatables.net/examples/api/row_details.html
             {
-                data: "papers",
+                data: "datasets",
                 render: function (val) {
                     return val.substr(0, 20);
                 }

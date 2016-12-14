@@ -274,7 +274,10 @@ I'll go through them and add them systematically.
 ### TeVJ1506-623
 
 - source_id: 77
-- status:
+- status: no sed
+- `input/papers/2011/2011A%26A...525A..45H/tev-000077.yaml`
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1506-623_HESS.ecsv`
 - `TeVJ1506-623_MODEL_HESS.ecsv`
@@ -282,7 +285,7 @@ I'll go through them and add them systematically.
 ### TeVJ1514-591
 
 - source_id: 79
-- status:
+- sed: `input/papers/2005/2005A%26A...435L..17A/tev-000079.ecsv`
 
 - `TeVJ1514-591_HESS.ecsv`
 - `TeVJ1514-591_MODEL_HESS.ecsv`
@@ -290,7 +293,8 @@ I'll go through them and add them systematically.
 ### TeVJ1614-518
 
 - source_id: 83
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000083.ecsv`
+- no sed: `input/papers/2011/2011A%26A...531L..18H/tev-000083.yaml`
 
 - `TeVJ1614-518_FERMI_2FHL.ecsv`
 - `TeVJ1614-518_FERMI_3FGL.ecsv`
@@ -300,7 +304,7 @@ I'll go through them and add them systematically.
 ### TeVJ1616-508
 
 - source_id: 84
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000084.ecsv`
 
 - `TeVJ1616-508_HESS_2006.ecsv`
 - `TeVJ1616-508_MODEL_HESS.ecsv`
@@ -308,7 +312,7 @@ I'll go through them and add them systematically.
 ### TeVJ1626-490
 
 - source_id: 85
-- status:
+- sed: `input/papers/2008/2008A%26A...477..353A/tev-000085.ecsv`
 
 - `TeVJ1626-490_FERMI2013_UL.ecsv`
 - `TeVJ1626-490_HESS2008.ecsv`
@@ -317,7 +321,7 @@ I'll go through them and add them systematically.
 ### TeVJ1632-478
 
 - source_id: 86
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000086.ecsv`
 
 - `TeVJ1632-478_FERMI_DATA.ecsv`
 - `TeVJ1632-478_HESS_DATA.ecsv`
@@ -326,7 +330,7 @@ I'll go through them and add them systematically.
 ### TeVJ1634-472
 
 - source_id: 87
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000087.ecsv`
 
 - `TeVJ1634-472_FERMI.ecsv`
 - `TeVJ1634-472_HESS.ecsv`
@@ -335,7 +339,8 @@ I'll go through them and add them systematically.
 ### TeVJ1640-465
 
 - source_id: 88
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000088.ecsv`
+- sed: `input/papers/2014/2014MNRAS.439.2828A/tev-000088.ecsv`
 
 - `TeVJ1640-465_FERMI.ecsv`
 - `TeVJ1640-465_HESS.ecsv`
@@ -345,7 +350,8 @@ I'll go through them and add them systematically.
 ### TeVJ1641-463
 
 - source_id: 89
-- status:
+- no sed: `input/papers/2013/2013arXiv1303.0979O/tev-000089.yaml`
+- sed: `input/papers/2014/2014ApJ...794L...1A/tev-000089.ecsv`
 
 - `TeVJ1641-463_FERMI.ecsv`
 - `TeVJ1641-463_HESS.ecsv`
@@ -354,7 +360,9 @@ I'll go through them and add them systematically.
 ### TeVJ1647-458
 
 - source_id: 90
-- status:
+- no sed: `input/papers/2012/2012A%26A...537A.114A/tev-000090.yaml`
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1647-458_HESS.ecsv`
 - `TeVJ1647-458_MODEL_HESS.ecsv`
@@ -362,7 +370,8 @@ I'll go through them and add them systematically.
 ### TeVJ1702-420
 
 - source_id: 92
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000092.ecsv`
+- sed: `input/papers/2008/2008A%26A...477..353A/tev-000092.ecsv`
 
 - `TeVJ1702-420_HESS_2008.ecsv`
 - `TeVJ1702-420_MODEL_HESS_POW.ecsv`
@@ -370,7 +379,8 @@ I'll go through them and add them systematically.
 ### TeVJ1708-410
 
 - source_id: 93
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000093.ecsv`
+- sed: `input/papers/2008/2008A%26A...477..353A/tev-000093.ecsv`
 
 - `TeVJ1708-410_HESS2006.ecsv`
 - `TeVJ1708-410_HESS2008.ecsv`
@@ -381,7 +391,7 @@ I'll go through them and add them systematically.
 ### TeVJ1708-443
 
 - source_id: 94
-- status:
+- sed: `input/papers/2011/2011A%26A...528A.143H/tev-000094.ecsv`
 
 - `TeVJ1708-443_CANGAROO-III_2009.ecsv`
 - `TeVJ1708-443_CANGAROO-I_2009.ecsv`
@@ -393,7 +403,7 @@ I'll go through them and add them systematically.
 ### TeVJ1718-385
 
 - source_id: 99
-- status:
+- sed: `input/papers/2007/2007A%26A...472..489A/tev-000099.ecsv`
 
 - `TeVJ1718-385_HESS_DATA.ecsv`
 - `TeVJ1718-385_MODEL_HESS_CUTOFFPL.ecsv`
@@ -401,7 +411,9 @@ I'll go through them and add them systematically.
 ### TeVJ1729-345
 
 - source_id: 102
-- status:
+- no sed: `input/papers/2011/2011A%26A...531A..81H/tev-000102.yaml`
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1729-345_HESS.ecsv`
 - `TeVJ1729-345_MODEL_HESS.ecsv`
@@ -409,7 +421,8 @@ I'll go through them and add them systematically.
 ### TeVJ1732-347
 
 - source_id: 103
-- status:
+- sed: `input/papers/2008/2008A%26A...477..353A/tev-000103.ecsv`
+- sed: `input/papers/2011/2011A%26A...531A..81H/tev-000103.ecsv`
 
 - `TeVJ1732-347_HESS_.ecsv`
 - `TeVJ1732-347_MODEL_HADRONIC.ecsv`
@@ -417,14 +430,17 @@ I'll go through them and add them systematically.
 ### TeVJ1741-301
 
 - source_id: 104
-- status:
+- no sed: `input/papers/2008/2008AIPC.1085..249T/tev-000104.yaml`
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1741-301_MODEL_HESS.ecsv`
 
 ### TeVJ1745-290
 
 - source_id: 106
-- status:
+- sed: `input/papers/2009/2009A%26A...503..817A/tev-000106.ecsv`
+- sed: `input/papers/2016/2016Natur.531..476H/tev-000106.ecsv`
 
 - `TeVJ1745-290_FERMI.ecsv`
 - `TeVJ1745-290_HESS.ecsv`
@@ -433,7 +449,7 @@ I'll go through them and add them systematically.
 ### TeVJ1747-281
 
 - source_id: 110
-- status:
+- sed: `input/papers/2005/2005A%26A...432L..25A/tev-000110.ecsv`
 
 - `TeVJ1747-281_HESS.ecsv`
 - `TeVJ1747-281_MODEL_HESS_VERITAS.ecsv`
@@ -442,7 +458,7 @@ I'll go through them and add them systematically.
 ### TeVJ1804-217
 
 - source_id: 113
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000113.ecsv`
 
 - `TeVJ1804-217_CANGAROO2008.ecsv`
 - `TeVJ1804-217_FERMI_HESS_2013.ecsv`
@@ -453,14 +469,16 @@ I'll go through them and add them systematically.
 ### TeVJ1808-204
 
 - source_id: 114
-- status:
+- status: no data
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1808-204_MODEL_HESS_PL.ecsv`
 
 ### TeVJ1810-193
 
 - source_id: 115
-- status:
+- sed: `input/papers/2007/2007A%26A...472..489A/tev-000115.ecsv`
 
 - `TeVJ1810-193_HESS.ecsv`
 - `TeVJ1810-193_MODEL_HESS.ecsv`
@@ -468,7 +486,7 @@ I'll go through them and add them systematically.
 ### TeVJ1813-178
 
 - source_id: 116
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000116.ecsv`
 
 - `TeVJ1813-178_FERMI_HESS_2013.ecsv`
 - `TeVJ1813-178_HESS2006.ecsv`
@@ -478,7 +496,8 @@ I'll go through them and add them systematically.
 ### TeVJ1826-137
 
 - source_id: 118
-- status:
+- sed: `input/papers/2006/2006A%26A...460..365A/tev-000118.ecsv`
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000118.ecsv`
 
 - `TeVJ1826-137_CGRO_EGRET_DATA.ecsv`
 - `TeVJ1826-137_HESS_DATA.ecsv`
@@ -487,7 +506,9 @@ I'll go through them and add them systematically.
 ### TeVJ1826-148
 
 - source_id: 119
-- status:
+- status: no data
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1826-148_FERMI_INFC.ecsv`
 - `TeVJ1826-148_FERMI_SUPC.ecsv`
@@ -500,7 +521,9 @@ I'll go through them and add them systematically.
 ### TeVJ1831-098
 
 - source_id: 120
-- status:
+- status: no data
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1831-098_HESS_2011.ecsv`
 - `TeVJ1831-098_MODEL_HESS.ecsv`
@@ -508,7 +531,7 @@ I'll go through them and add them systematically.
 ### TeVJ1833-105
 
 - source_id: 122
-- status:
+- sed: `input/papers/2015/2015MNRAS.446.1163H/tev-000122.ecsv`
 
 - `TeVJ1833-105_HESS.ecsv`
 - `TeVJ1833-105_MODEL_HESS.ecsv`
@@ -516,7 +539,7 @@ I'll go through them and add them systematically.
 ### TeVJ1834-087
 
 - source_id: 123
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000123.ecsv`
 
 - `TeVJ1834-087_FERMI_2013.ecsv`
 - `TeVJ1834-087_HESS_2011.ecsv`
@@ -525,7 +548,7 @@ I'll go through them and add them systematically.
 ### TeVJ1837-069
 
 - source_id: 124
-- status:
+- sed: `input/papers/2006/2006ApJ...636..777A/tev-000124.ecsv`
 
 - `TeVJ1837-069_FERMI_2FHL.ecsv`
 - `TeVJ1837-069_FERMI_3FGL.ecsv`
@@ -535,7 +558,7 @@ I'll go through them and add them systematically.
 ### TeVJ1840-055
 
 - source_id: 125
-- status:
+- sed: `input/papers/2008/2008A%26A...477..353A/tev-000125.ecsv`
 
 - `TeVJ1840-055_FERMI_HESS_2013.ecsv`
 - `TeVJ1840-055_HESS_2008.ecsv`
@@ -545,7 +568,9 @@ I'll go through them and add them systematically.
 ### TeVJ1846-029
 
 - source_id: 127
-- status:
+- status: no data
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1846-029_HESS_2008.ecsv`
 - `TeVJ1846-029_MODEL_HESS.ecsv`
@@ -553,7 +578,7 @@ I'll go through them and add them systematically.
 ### TeVJ1848-017
 
 - source_id: 128
-- status:
+- sed: `input/papers/2008/2008AIPC.1085..372C/tev-000128.ecsv`
 
 - `TeVJ1848-017_FERMI.ecsv`
 - `TeVJ1848-017_HESS.ecsv`
@@ -561,7 +586,9 @@ I'll go through them and add them systematically.
 ### TeVJ1849-000
 
 - source_id: 129
-- status:
+- status: no data
+
+**TODO: add SED to gamma-cat**
 
 - `TeVJ1849-000_FERMI_UPPER_LIMITS.ecsv`
 - `TeVJ1849-000_MODEL_CRAB_RESCALED.ecsv`
@@ -569,7 +596,7 @@ I'll go through them and add them systematically.
 ### W28
 
 - source_id: 112
-- status:
+- sed: `input/papers/2008/2008A%26A...481..401A/tev-000112.ecsv`
 
 - `W28_MODEL_HADRONIC.ecsv`
 - `W28_agile.ecsv`
@@ -582,7 +609,9 @@ I'll go through them and add them systematically.
 ### w1457
 
 - source_id: 72
-- status:
+- status: no data
+
+**TODO: add SED to gamma-cat**
 
 - `w1457_fermi.ecsv`
 - `w1457_magic.ecsv`

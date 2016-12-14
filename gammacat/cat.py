@@ -34,17 +34,17 @@ class GammaCatSource:
         self.fill_derived_spectral_info()
 
     @classmethod
-    def from_inputs(cls, basic_source_info, paper_source_info, sed_info):
+    def from_inputs(cls, basic_source_info, dataset_source_info, sed_info):
         data = OrderedDict()
 
         bsi = basic_source_info.data
         cls.fill_basic_info(data, bsi)
         cls.fill_position_info(data, bsi)
 
-        psi = paper_source_info.data
-        cls.fill_data_info(data, psi)
-        cls.fill_spectral_info(data, psi)
-        cls.fill_morphology_info(data, psi)
+        dsi = dataset_source_info.data
+        cls.fill_data_info(data, dsi)
+        cls.fill_spectral_info(data, dsi)
+        cls.fill_morphology_info(data, dsi)
 
         cls.fill_sed_info(data, sed_info)
         return cls(data=data)
@@ -74,73 +74,73 @@ class GammaCatSource:
         data['glat'] = galactic.b.deg
 
     @staticmethod
-    def fill_data_info(data, psi):
+    def fill_data_info(data, dsi):
         try:
-            data['significance'] = psi['data']['significance']
+            data['significance'] = dsi['data']['significance']
         except KeyError:
             data['significance'] = NA.fill_value['number']
 
         try:
-            data['livetime'] = psi['data']['livetime']
+            data['livetime'] = dsi['data']['livetime']
         except KeyError:
             data['livetime'] = NA.fill_value['number']
 
     @staticmethod
-    def fill_spectral_info(data, psi):
-        data['reference_id'] = psi.get('reference_id', NA.fill_value['string'])
+    def fill_spectral_info(data, dsi):
+        data['reference_id'] = dsi.get('reference_id', NA.fill_value['string'])
         try:
-            data['spec_type'] = psi['spec']['type']
+            data['spec_type'] = dsi['spec']['type']
         except KeyError:
             data['spec_type'] = NA.fill_value['string']
         try:
-            data['spec_erange_min'] = psi['spec']['erange']['min']
+            data['spec_erange_min'] = dsi['spec']['erange']['min']
         except KeyError:
             data['spec_erange_min'] = NA.fill_value['number']
         try:
-            data['spec_erange_max'] = psi['spec']['erange']['max']
+            data['spec_erange_max'] = dsi['spec']['erange']['max']
         except KeyError:
             data['spec_erange_max'] = NA.fill_value['number']
         try:
-            data['spec_theta'] = psi['spec']['theta']
+            data['spec_theta'] = dsi['spec']['theta']
         except KeyError:
             data['spec_theta'] = NA.fill_value['number']
 
         try:
-            data['spec_norm'] = psi['spec']['norm']['val'] * FLUX_FACTOR
+            data['spec_norm'] = dsi['spec']['norm']['val'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm'] = NA.fill_value['number']
         try:
-            data['spec_norm_err'] = psi['spec']['norm']['err'] * FLUX_FACTOR
+            data['spec_norm_err'] = dsi['spec']['norm']['err'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm_err'] = NA.fill_value['number']
         try:
-            data['spec_norm_err_sys'] = psi['spec']['norm']['err_sys'] * FLUX_FACTOR
+            data['spec_norm_err_sys'] = dsi['spec']['norm']['err_sys'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm_err_sys'] = NA.fill_value['number']
         try:
-            data['spec_ref'] = psi['spec']['ref']
+            data['spec_ref'] = dsi['spec']['ref']
         except KeyError:
             data['spec_ref'] = NA.fill_value['number']
 
         try:
-            data['spec_index'] = psi['spec']['index']['val']
+            data['spec_index'] = dsi['spec']['index']['val']
         except KeyError:
             data['spec_index'] = NA.fill_value['number']
         try:
-            data['spec_index_err'] = psi['spec']['index']['err']
+            data['spec_index_err'] = dsi['spec']['index']['err']
         except KeyError:
             data['spec_index_err'] = NA.fill_value['number']
         try:
-            data['spec_index_err_sys'] = psi['spec']['index']['err_sys']
+            data['spec_index_err_sys'] = dsi['spec']['index']['err_sys']
         except KeyError:
             data['spec_index_err_sys'] = NA.fill_value['number']
 
         try:
-            data['spec_ecut'] = psi['spec']['ecut']['val']
+            data['spec_ecut'] = dsi['spec']['ecut']['val']
         except KeyError:
             data['spec_ecut'] = NA.fill_value['number']
         try:
-            data['spec_ecut_err'] = psi['spec']['ecut']['err']
+            data['spec_ecut_err'] = dsi['spec']['ecut']['err']
         except KeyError:
             data['spec_ecut_err'] = NA.fill_value['number']
 
@@ -267,13 +267,13 @@ class GammaCatSource:
         return model
 
     @staticmethod
-    def fill_morphology_info(data, psi):
+    def fill_morphology_info(data, dsi):
         try:
-            data['morph_type'] = psi['morph']['type']
+            data['morph_type'] = dsi['morph']['type']
         except KeyError:
             data['morph_type'] = NA.fill_value['string']
         try:
-            val = psi['morph']['sigma']['val']
+            val = dsi['morph']['sigma']['val']
         except KeyError:
             val = NA.fill_value['number']
         # TODO: the explicit conversion to degree should be avoided and
@@ -281,35 +281,35 @@ class GammaCatSource:
         data['morph_sigma'] = Angle(val, 'deg').degree
 
         try:
-            err = psi['morph']['sigma']['err']
+            err = dsi['morph']['sigma']['err']
         except KeyError:
             err = NA.fill_value['number']
         data['morph_sigma_err'] = Angle(err, 'deg').degree
 
         try:
-            val = psi['morph']['sigma2']['val']
+            val = dsi['morph']['sigma2']['val']
         except KeyError:
             val = NA.fill_value['number']
         data['morph_sigma2'] = Angle(val, 'deg').degree
 
         try:
-            err = psi['morph']['sigma2']['err']
+            err = dsi['morph']['sigma2']['err']
         except KeyError:
             err = NA.fill_value['number']
         data['morph_sigma2_err'] = Angle(err, 'deg').degree
 
         try:
-            val = psi['morph']['pa']['val']
+            val = dsi['morph']['pa']['val']
         except KeyError:
             val = NA.fill_value['number']
         data['morph_pa'] = Angle(val, 'deg').degree
         try:
-            err = psi['morph']['pa']['err']
+            err = dsi['morph']['pa']['err']
         except KeyError:
             err = NA.fill_value['number']
         data['morph_pa_err'] = Angle(err, 'deg').degree
         try:
-            data['morph_pa_frame'] = psi['morph']['pa']['frame']
+            data['morph_pa_frame'] = dsi['morph']['pa']['frame']
         except KeyError:
             data['morph_pa_frame'] = NA.fill_value['string']
 
@@ -375,19 +375,18 @@ class GammaCatMaker:
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
-            # paper_info = input_data.gammacat_dataset_config.choose_paper(input_data, basic_source_info)
             try:
                 reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id()
             except IndexError:
                 reference_id = None
-            paper_info = input_data.papers.get_paper_by_id(reference_id)
-            paper_source_info = paper_info.get_source_by_id(source_id)
-            sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, paper_info.id)
+            dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
+            dataset_source_info = dataset.get_source_by_id(source_id)
+            sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
             # TODO: right now this implies, that a GammaCatSource object can only
-            # handle the information from one paper, maybe this should be changed
+            # handle the information from one dataset, maybe this should be changed
             source = GammaCatSource.from_inputs(
                 basic_source_info=basic_source_info,
-                paper_source_info=paper_source_info,
+                dataset_source_info=dataset_source_info,
                 sed_info=sed_info
             )
             self.sources.append(source)
@@ -458,7 +457,7 @@ class GammaCatDatasetConfigSource:
             raise ValueError('Invalid reference_id list: {}'.format(pid))
 
     def get_reference_id(self):
-        """Choose paper to use for given source.
+        """Choose reference_id to use for given source.
 
         For now, we always use the last one listed.
         """
@@ -492,7 +491,6 @@ class GammaCatDataSetConfig:
 
     @property
     def reference_ids(self):
-        """All paper IDs, sorted alphabetically."""
         pids = set()
         for source_config in self.source_configs:
             pids.update(source_config.reference_ids)
@@ -526,16 +524,16 @@ class GammaCatDataSetConfig:
                       ''.format(basic_missing))
 
     def validate_reference_ids(self, input_data):
-        """Check that all papers are listed.
+        """Check that all reference_ids are listed.
 
-        TODO: this is not a good check. One paper could have multiple sources, i.e. should be listed multiple times.
+        TODO: this is not a good check. One dataset could have multiple sources, i.e. should be listed multiple times.
         """
-        reference_ids_folders = input_data.papers.reference_ids
+        reference_ids_folders = input_data.datasets.reference_ids
         reference_ids_gammacat = self.reference_ids
 
         gammacat_missing = sorted(set(reference_ids_gammacat) - set(reference_ids_folders))
         if gammacat_missing:
-            log.error('Papers in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/data`: {}'
+            log.error('Datasets in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/data`: {}'
                       ''.format(gammacat_missing))
 
         folders_missing = sorted(set(reference_ids_folders) - set(reference_ids_gammacat))

@@ -116,7 +116,7 @@ def rawgit_url(filename, location='master', mode='production'):
 
     Examples
     --------
-    >>> filename = 'papers/2006/2006A%2526A...456..245A/tev-000065.ecsv'
+    >>> filename = 'input/data/2006/2006A%2526A...456..245A/tev-000065.ecsv'
     >>> rawgit_url(filename, mode='production')
     TODO
     >>> rawgit_url(filename, mode='development')

@@ -15,10 +15,10 @@ from .lightcurve import LightcurveList
 __all__ = [
     'BasicSourceInfo',
     'BasicSourceList',
-    'PaperSourceInfo',
-    'PaperInfo',
-    'PaperList',
+    'DatasetSourceInfo',
     'InputData',
+    'InputDataset',
+    'InputDatasetCollection',
 ]
 
 log = logging.getLogger(__name__)
@@ -40,7 +40,7 @@ class BasicSourceInfo:
         return cls(data=data, path=path)
 
     def __repr__(self):
-        return 'BasicSourceInfo(id={})'.format(repr(self.data['source_id']))
+        return 'BasicSourceInfo(source_id={})'.format(repr(self.data['source_id']))
 
     def to_dict(self, filled=False):
         """Data as a flat OrderedDict that can be stored in a table row."""
@@ -64,10 +64,10 @@ class BasicSourceInfo:
 
         data.update(self.data)
 
-        if data['papers'] is None or data['papers'][0] is None:
-            data['papers'] = ''
+        if data['reference_ids'] is None or data['reference_ids'][0] is None:
+            data['reference_ids'] = ''
         else:
-            data['papers'] = ','.join(data['papers'])
+            data['reference_ids'] = ','.join(data['reference_ids'])
 
         # TODO: write code to handle position
         data.pop('pos', None)
@@ -78,10 +78,10 @@ class BasicSourceInfo:
         validate_schema(path=self.path, data=self.data, schema=self.schema)
 
 
-class PaperSourceInfo:
-    """All info from one paper for one source.
+class DatasetSourceInfo:
+    """All info from one dataset for one source.
     """
-    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/paper_source_info.schema.yaml')
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/dataset_source_info.schema.yaml')
 
     def __init__(self, data, path):
         self.data = data
@@ -94,7 +94,7 @@ class PaperSourceInfo:
         return cls(data=data, path=path)
 
     def __repr__(self):
-        return 'PaperInfo(source_id={}, data_id={})'.format(
+        return 'DatasetSourceInfo(source_id={}, reference_id={})'.format(
             repr(self.data['source_id']),
             repr(self.data['reference_id']),
         )
@@ -103,31 +103,31 @@ class PaperSourceInfo:
         validate_schema(path=self.path, data=self.data, schema=self.schema)
 
 
-class PaperInfo:
-    """All info for one paper.
+class InputDataset:
+    """All info for one dataset.
     """
 
-    def __init__(self, id, path, sources):
-        self.id = id
+    def __init__(self, reference_id, path, sources):
+        self.reference_id = reference_id
         self.path = path
         self.sources = sources
+        # TODO: remove this cache
         _source_ids = [source.data['source_id'] for source in sources]
         self._sources_by_id = dict(zip(_source_ids, sources))
 
     @classmethod
     def read(cls, path):
         path = Path(path)
-        id = urllib.parse.unquote(path.parts[-1])
+        reference_id = urllib.parse.unquote(path.parts[-1])
 
         # TODO: maybe just use an OrderedDict
         sources = []
         for source_path in sorted(path.glob('*.yaml')):
-            source_info = PaperSourceInfo.read(source_path)
+            source_info = DatasetSourceInfo.read(source_path)
             sources.append(source_info)
 
         path = '/'.join(path.parts[-2:])
-        # path = '/'.join([path.parts[-2], id])
-        return cls(id=id, path=path, sources=sources)
+        return cls(reference_id=reference_id, path=path, sources=sources)
 
     def to_json(self):
         sources = []
@@ -144,7 +144,7 @@ class PaperInfo:
         url = self.path.replace('%26', '%2526')
 
         data = OrderedDict()
-        data['id'] = self.id
+        data['reference_id'] = self.reference_id
         data['path'] = self.path
         data['url'] = url
         data['sources'] = sources
@@ -152,15 +152,15 @@ class PaperInfo:
         return data
 
     def __repr__(self):
-        return 'PaperInfo(id={})'.format(repr(self.id))
+        return 'InputDataset(reference_id={})'.format(repr(self.reference_id))
 
     def validate(self):
         [_.validate() for _ in self.sources]
 
     def get_source_by_id(self, source_id):
-        # returning empty PaperSourceInfo makes sense, because it leads to a key
+        # returning empty DatasetSourceInfo makes sense, because it leads to a key
         # error later and will be treated as missing info
-        missing = PaperSourceInfo(data={}, path='')
+        missing = DatasetSourceInfo(data={}, path='')
         return self._sources_by_id.get(source_id, missing)
 
 
@@ -216,9 +216,9 @@ class BasicSourceList:
         [_.validate() for _ in self.data]
 
 
-class PaperList:
+class InputDatasetCollection:
     """
-    List of `PaperInfo` objects.
+    Represents all data in ``input/data``.
     """
 
     def __init__(self, data):
@@ -231,14 +231,14 @@ class PaperList:
 
         data = []
         for path in paths:
-            info = PaperInfo.read(path)
+            info = InputDataset.read(path)
             data.append(info)
 
         return cls(data=data)
 
     @property
     def reference_ids(self):
-        return [paper.id for paper in self.data]
+        return [dataset.reference_id for dataset in self.data]
 
     def to_table(self):
         """Convert info of `sources` list into a Table.
@@ -258,22 +258,22 @@ class PaperList:
         A dict with `data` key.
         """
         data = []
-        for paper in self.data:
-            data.append(paper.to_json())
+        for dataset in self.data:
+            data.append(dataset.to_json())
         return OrderedDict(data=data)
 
     def validate(self):
         log.info('Validating YAML files in `input/data`')
-        for paper in self.data:
-            paper.validate()
+        for dataset in self.data:
+            dataset.validate()
 
-    def get_paper_by_id(self, reference_id):
-        """Get PaperInfo by paper id
+    def get_dataset_by_reference_id(self, reference_id):
+        """Get dataset for a given reference_id
         """
         # TODO: this is not a good way to handle things.
         # Remove once gamma-cat script is set up in a better way.
         if reference_id is None:
-            return PaperInfo(id=None, path=None, sources=[])
+            return InputDataset(reference_id=None, path=None, sources=[])
 
         idx = self.reference_ids.index(reference_id)
         return self.data[idx]
@@ -310,12 +310,12 @@ class InputData:
     Expose it as Python objects that can be validated and used.
     """
 
-    def __init__(self, schemas=None, sources=None, papers=None,
+    def __init__(self, schemas=None, sources=None, datasets=None,
                  seds=None, lightcurves=None, gammacat_dataset_config=None):
         self.path = gammacat_info.base_dir / 'input'
         self.schemas = schemas
         self.sources = sources
-        self.papers = papers
+        self.datasets = datasets
         self.seds = seds
         self.lightcurves = lightcurves
         self.gammacat_dataset_config = gammacat_dataset_config
@@ -328,14 +328,14 @@ class InputData:
         from .cat import GammaCatDataSetConfig
         schemas = Schemas.read()
         sources = BasicSourceList.read()
-        papers = PaperList.read()
+        datasets = InputDatasetCollection.read()
         seds = SEDList.read()
         lightcurves = LightcurveList.read()
         gammacat_dataset_config = GammaCatDataSetConfig.read()
         return cls(
             schemas=schemas,
             sources=sources,
-            papers=papers,
+            datasets=datasets,
             seds=seds,
             lightcurves=lightcurves,
             gammacat_dataset_config=gammacat_dataset_config,
@@ -350,8 +350,8 @@ class InputData:
         ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
             len(self.gammacat_dataset_config.data))
         ss += '\n'
-        ss += 'Number of folders in `input/data`: {}\n'.format(len(self.papers.data))
-        ss += 'Number of total papers in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
+        ss += 'Number of folders in `input/data`: {}\n'.format(len(self.datasets.data))
+        ss += 'Number of total datasets in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
             len(self.gammacat_dataset_config.reference_ids))
         ss += '\n'
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
@@ -362,7 +362,7 @@ class InputData:
         log.info('Validating input data ...')
         self.schemas.validate()
         self.sources.validate()
-        self.papers.validate()
+        self.datasets.validate()
         self.seds.validate()
         # self.lightcurves.validate()
         self.gammacat_dataset_config.validate(self)

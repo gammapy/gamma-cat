@@ -96,7 +96,7 @@ class PaperSourceInfo:
     def __repr__(self):
         return 'PaperInfo(source_id={}, data_id={})'.format(
             repr(self.data['source_id']),
-            repr(self.data['paper_id']),
+            repr(self.data['reference_id']),
         )
 
     def validate(self):
@@ -134,7 +134,7 @@ class PaperInfo:
         for source in self.sources:
             data = OrderedDict()
             data['source_id'] = source.data['source_id']
-            data['paper_id'] = source.data['paper_id']
+            data['reference_id'] = source.data['reference_id']
             sources.append(data)
 
         # TODO: This would give the full information from the input files.
@@ -237,7 +237,7 @@ class PaperList:
         return cls(data=data)
 
     @property
-    def paper_ids(self):
+    def reference_ids(self):
         return [paper.id for paper in self.data]
 
     def to_table(self):
@@ -267,15 +267,15 @@ class PaperList:
         for paper in self.data:
             paper.validate()
 
-    def get_paper_by_id(self, paper_id):
+    def get_paper_by_id(self, reference_id):
         """Get PaperInfo by paper id
         """
         # TODO: this is not a good way to handle things.
         # Remove once gamma-cat script is set up in a better way.
-        if paper_id is None:
+        if reference_id is None:
             return PaperInfo(id=None, path=None, sources=[])
 
-        idx = self.paper_ids.index(paper_id)
+        idx = self.reference_ids.index(reference_id)
         return self.data[idx]
 
 
@@ -352,7 +352,7 @@ class InputData:
         ss += '\n'
         ss += 'Number of folders in `input/papers`: {}\n'.format(len(self.papers.data))
         ss += 'Number of total papers in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
-            len(self.gammacat_dataset_config.paper_ids))
+            len(self.gammacat_dataset_config.reference_ids))
         ss += '\n'
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
         ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))

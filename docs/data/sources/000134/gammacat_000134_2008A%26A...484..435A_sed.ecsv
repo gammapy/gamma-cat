@@ -12,7 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 134}
 # - {source_name: HESS J1912+101}
-# - {paper_id: 2008A&A...484..435A}
+# - {reference_id: 2008A&A...484..435A}
 # - {comments: 'Flux points from Figure 2 (an upper limit is missing)
 # 
 #     http://www.aanda.org/articles/aa/full/2008/23/aa8715-07/aa8715-07.html

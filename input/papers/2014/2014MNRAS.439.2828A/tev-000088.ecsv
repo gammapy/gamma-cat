@@ -12,7 +12,7 @@
 # - data_type: sed
 # - source_id: 88
 # - source_name: HESS J1640-465
-# - paper_id: 2014MNRAS.439.2828A
+# - reference_id: 2014MNRAS.439.2828A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1640
 # - comments:
 #     Flux points from Figure 2.

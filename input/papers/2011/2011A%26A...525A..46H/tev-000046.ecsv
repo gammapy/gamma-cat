@@ -8,7 +8,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 46
-# - paper_id: 2011A&A...525A..46H
+# - reference_id: 2011A&A...525A..46H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA525_A46.html
 # - comments: |
 #     There's also a spectrum for HESS J1026-582 on that page.

@@ -3,7 +3,7 @@ additionalProperties: false
 properties:
 
   source_id: {type: integer}
-  paper_id: {type: string}
+  reference_id: {type: string}
 
   data:
     type: object
@@ -156,7 +156,7 @@ properties:
 
 required:
   - source_id
-  - paper_id
+  - reference_id
 #  - morphology
 #  - spectrum
 

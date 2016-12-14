@@ -10,7 +10,7 @@
 # - COMMENT: [Mrk 421]
 # - {source_id: 49}
 # - {telescope: 'MAGIC,VERITAS'}
-# - {paper_id: 1999ApJ...526L..81M}
+# - {reference_id: 1999ApJ...526L..81M}
 time time_min time_max flux flux_err
 54618.2029 54618.1989 54618.2069 0.903634 0.24
 54622.1923 54622.1888 54622.1958 3.26156 0.46

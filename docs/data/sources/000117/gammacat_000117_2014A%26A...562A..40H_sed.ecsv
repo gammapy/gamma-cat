@@ -14,7 +14,7 @@
 # - {data_type: sed}
 # - {source_id: 117}
 # - {source_name: TeV J1818-154}
-# - {paper_id: 2014A&A...562A..40H}
+# - {reference_id: 2014A&A...562A..40H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html'}
 e_ref e_min e_max dnde dnde_errn dnde_errp
 0.619 0.4217 0.9086 7.006e-13 2.964e-13 3.136e-13

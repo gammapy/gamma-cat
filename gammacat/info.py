@@ -47,8 +47,8 @@ class GammaCatTag:
         return '{source_id:06d}'.format_map(meta)
 
     def paper_str(self, meta):
-        return urllib.parse.quote(meta['paper_id'])
-        # return '{paper_id}'.format_map(meta)
+        return urllib.parse.quote(meta['reference_id'])
+        # return '{reference_id}'.format_map(meta)
 
 
 gammacat_info = GammaCatInfo()

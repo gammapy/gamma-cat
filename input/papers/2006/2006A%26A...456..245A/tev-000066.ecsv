@@ -8,7 +8,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 66
-# - paper_id: 2006A&A...456..245A
+# - reference_id: 2006A&A...456..245A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/kookaburra_auxinfo.html
 # - comments: |
 #     H.E.S.S. data points for Figure 2 (solid points - HESS J1420-607)

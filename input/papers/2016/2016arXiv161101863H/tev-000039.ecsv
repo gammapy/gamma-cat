@@ -8,7 +8,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 39
-# - paper_id: 2016arXiv161101863H
+# - reference_id: 2016arXiv161101863H
 # - comments: |
 #     Data from Manuel Paz Arribas via email on Oct 21, 2016
 e_ref dnde dnde_errp dnde_errn

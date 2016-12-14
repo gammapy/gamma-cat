@@ -10,7 +10,7 @@
 # - data_type: sed
 # - source_id: 26
 # - source_name: 30 Dor C
-# - paper_id: 2015Sci...347..406H
+# - reference_id: 2015Sci...347..406H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_30DorC.txt
 # - UL_CONF: 0.99
 e_ref dnde dnde_errp dnde_errn dnde_ul

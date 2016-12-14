@@ -111,16 +111,16 @@ def process_one_file(source_id, filename):
         filenames.append(filename)
     # print(filenames)
 
-    # convert non-ADS reference names to format none_paper_id
+    # convert non-ADS reference names to format none_reference_id
     temp_filenames = []
     # file_index = 1
     valid_chars = "%s" % (string.digits)
-    none_paper_id = 'no_paper'
+    none_reference_id = 'no_paper'
     for p in range(0, len(filenames)):
         temp_filename = ''.join(c for c in str(papers[p][0:4]) if c in valid_chars)
         # print(temp_filename)
         if len(temp_filename) != 4:
-            filename = str(none_paper_id + str(filenames[p]))
+            filename = str(none_reference_id + str(filenames[p]))
             filenames[p]=''.join(c for c in filename)
     # print(filenames)
 
@@ -149,8 +149,8 @@ def process_one_file(source_id, filename):
         table.meta['telescope'] = ''.join(str(telescopes[x]).split())
         table.meta['reference_id'] = ''.join(str(papers[x]).split())
         # set temporary flag for none-paper
-        if filenames[x][:len(none_paper_id)] == none_paper_id:
-            table.meta['data_id'] = str(none_paper_id)
+        if filenames[x][:len(none_reference_id)] == none_reference_id:
+            table.meta['data_id'] = str(none_reference_id)
         else:
             table.meta['data_id'] = str('ADS_Bibcode')
         # delete repetitive time stamps
@@ -175,8 +175,8 @@ def process_one_file(source_id, filename):
     table.meta['telescope'] = ''.join(str(telescopes[-1]).split())
     table.meta['reference_id'] = ''.join(str(papers[-1]).split())
    # set temporary flag for none-paper
-    if filenames[-1][:len(none_paper_id)] == (none_paper_id):
-        table.meta['data_id'] = none_paper_id
+    if filenames[-1][:len(none_reference_id)] == (none_reference_id):
+        table.meta['data_id'] = none_reference_id
     else:
         table.meta['data_id'] = str('ADS_Bibcode')
     # delete repetitive time stamps
@@ -200,15 +200,15 @@ def process_one_file(source_id, filename):
     count_files = 0
     paper_repo = Path('input/papers')
     for x in range(0, len(filenames)):   
-        # create folder structure for none_paper_id
-        path = paper_repo / none_paper_id / 'lightcurves/tev-{}'.format((6-len(str(source_id)))*(str(0)) + source_id)
-        if tables[x].meta['data_id'] == none_paper_id:
+        # create folder structure for none_reference_id
+        path = paper_repo / none_reference_id / 'lightcurves/tev-{}'.format((6-len(str(source_id)))*(str(0)) + source_id)
+        if tables[x].meta['data_id'] == none_reference_id:
             if path.exists() is False:
                 path.mkdir(parents=True)
             del tables[x].meta['data_id']
-            ecsv_name = path / Path(filenames[x][len(none_paper_id):] + '.ecsv')            
+            ecsv_name = path / Path(filenames[x][len(none_reference_id):] + '.ecsv')
             tables[x].write(str(ecsv_name), format='ascii.ecsv')            
-        # create folder structure for paper_id
+        # create folder structure for reference_id
         else:
             path = paper_repo / filenames[x][:4] / filenames[x]
             if path.exists() is False:

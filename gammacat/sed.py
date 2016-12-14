@@ -28,7 +28,7 @@ class SED:
     ]
 
     required_meta_keys = [
-        'data_type', 'paper_id', 'source_id',
+        'data_type', 'reference_id', 'source_id',
     ]
 
     allowed_meta_keys = required_meta_keys + [
@@ -227,12 +227,12 @@ class SEDList:
         sed_lookup = {}
         for sed in data:
             source_id = sed.table.meta['source_id']
-            paper_id = sed.table.meta['paper_id']
+            reference_id = sed.table.meta['reference_id']
             try:
-                sed_lookup[paper_id][source_id] = sed
+                sed_lookup[reference_id][source_id] = sed
             except KeyError:
-                sed_lookup[paper_id] = {}
-                sed_lookup[paper_id][source_id] = sed
+                sed_lookup[reference_id] = {}
+                sed_lookup[reference_id][source_id] = sed
         self._sed_lookup = sed_lookup
 
     @classmethod
@@ -251,9 +251,9 @@ class SEDList:
         for sed in self.data:
             sed.process()
 
-    def get_sed_by_source_and_paper_id(self, source_id, paper_id):
+    def get_sed_by_source_and_reference_id(self, source_id, reference_id):
         try:
-            return self._sed_lookup[paper_id][source_id]
+            return self._sed_lookup[reference_id][source_id]
         except KeyError:
             missing = SED(table=Table(), path='')
             return missing

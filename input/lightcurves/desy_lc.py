@@ -9,12 +9,17 @@ Dump the FITS Lightcurves from the DESY LC Archive to ECSV files
 from astropy.table import Table
 from astropy.units import cds
 import string
+from pathlib import Path
+import numpy as np
+
 
 
 def process_one_file(source_id, filename):
     """This function dumps the FITS files defined in Get_FITS_from_DESY-LC-Archive.py in ECSV follwoing 'source-id_paper-id.ecsv'
     """
     tab = Table.read(filename, format='fits')
+
+    # print('Currently operating source ' + str(source_id))
 
     # rename column-names to lightcurve-format
     tab.rename_column('mjd_mid_exp', 'time')
@@ -31,9 +36,8 @@ def process_one_file(source_id, filename):
     tab.rename_column('experiment', 'telescope')
     # column 13: tab.rename_column('duration', '')
     tab.rename_column('reference', 'paper')
-    # column 15: tab.rename_column('fflag', '')
-    # print(tab['telescope'][-12:-1])
-    # print(tab['paper'][-12:-1])
+    # tab.rename_column('fflag', 'is_ul')
+    # tab.meta['comment'] = '\n'.join(tab.meta['COMMENT'])
 
     # delete unused columns
     del tab['sigma_int_flux_sys']
@@ -43,7 +47,7 @@ def process_one_file(source_id, filename):
     del tab['e_thr']
     del tab['e_cut']
     del tab['duration']
-    del tab['fflag']
+    del tab.meta['COMMENT']
 
     # set formats
     tab.replace_column('time', tab['time'].astype(float))
@@ -52,17 +56,33 @@ def process_one_file(source_id, filename):
 
     # set units
     tab['time'].unit = tab['time_max'].unit = tab['time_min'].unit = cds.MJD
-    tab['flux'].unit = tab['flux_err'].unit = cds.Crab
+    tab['flux'].unit = tab['flux_err'].unit = cds.Crab   
+
+    # set flag for empty entries from '-1' to 'np.nan'
+    for column in ['time', 'time_min', 'time_max', 'flux', 'flux_err']:
+        flag = tab[column] == -1
+        tab[column][flag] = np.nan
+
+    # set flag for upper limit errors from '<' to 'True' in Column 'is_ul', otherwise set 'False'
+    valid_chars = '<='
+    for x in range(len(tab)):
+        tab['fflag'][x] = ''.join(c for c in tab['fflag'][x] if c in valid_chars)
+    flag = tab['fflag'] == '='
+    tab['flux_ul'] = [flux for flux in tab['flux']]
+    tab['flux_ul'][flag] = np.nan
+    tab['flux'][np.logical_not(flag)] = np.nan
+    del tab['fflag']  
+    # print(tab['flux_ul'])
 
     # find different papers
     papers = []
-    # index = []
     index = [0]
     for i in range(0, len(tab) - 1):
         if tab['paper'][i] != tab['paper'][i + 1]:
             papers.append(tab['paper'][i])
             index.append(i + 1)
     papers.append(tab['paper'][-1])
+    # print(papers)
 
     # find multiple telescopes used in a single paper
     telescopes_list = []
@@ -75,22 +95,34 @@ def process_one_file(source_id, filename):
     telescope = set([t for t in telescope_paper if telescope_paper.count(t) > 1])
     telescopes_list.append(telescope)
 
-    # get only proper names for that telescopes
+    # get only proper names for these telescopes
     telescopes = []
     for s in telescopes_list:
-        # print(", ".join(str(e) for e in s))
         telescope = ", ".join(str(e) for e in s)
         telescopes.append(telescope)
     # print(telescopes)
-    # print(len(telescopes))
 
     # convert paper names to safe filename
     filenames = []
     valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
     for p in range(0, len(papers)):
-        filename = ''.join(c for c in papers[p] if c in valid_chars)
+        filename = ''.join(c for c in str(papers[p]) if c in valid_chars)
         filename = ''.join(filename.split())
         filenames.append(filename)
+    # print(filenames)
+
+    # convert non-ADS reference names to format none_paper_id
+    temp_filenames = []
+    # file_index = 1
+    valid_chars = "%s" % (string.digits)
+    none_paper_id = 'no_paper'
+    for p in range(0, len(filenames)):
+        temp_filename = ''.join(c for c in str(papers[p][0:4]) if c in valid_chars)
+        # print(temp_filename)
+        if len(temp_filename) != 4:
+            filename = str(none_paper_id + str(filenames[p]))
+            filenames[p]=''.join(c for c in filename)
+    # print(filenames)
 
     # add an index if paper names double, i.e. "reference empty"
     first_index = 1
@@ -105,49 +137,109 @@ def process_one_file(source_id, filename):
                     second_index = second_index + 2
                 else:
                     break
-    # print('Filenames: ')
-    # print(len(filenames))
+    # print(filenames)
 
-
-    # seperate by paper, set metadata
+    # seperate by paper, set metadata, delete nan-only columns and repetitiv time stamps
     tables = []
     for x in range(0, len(index) - 1):
         table = tab[index[x]:index[x + 1]]
-        table.meta['source_id'] = str(source_id)
+        # set metadata
+        table.meta['data_type'] = 'lc'
+        table.meta['source_id'] = int(source_id)
         table.meta['telescope'] = ''.join(str(telescopes[x]).split())
-        table.meta['paper_id'] = str(papers[x])
+        table.meta['reference_id'] = ''.join(str(papers[x]).split())
+        # set temporary flag for none-paper
+        if filenames[x][:len(none_paper_id)] == none_paper_id:
+            table.meta['data_id'] = str(none_paper_id)
+        else:
+            table.meta['data_id'] = str('ADS_Bibcode')
+        # delete repetitive time stamps
+        if np.all(table['time'] == table['time_min']):
+            del table['time_min']
+        if np.all(table['time'] == table['time_max']):
+            del table['time_max']
+        table.meta['timesys'] = 'UTC'
+        # delete nan-only columns
+        for column in table.colnames:
+            values = [table[column][h] for h in range(len(table)) if str(table[column][h]) == str(np.nan)]
+            if len(values) == len(table):            
+                del table[column]
+        # delete columns whose data was moved to the metadata
         del table['telescope']
         del table['paper']
         tables.append(table)
     table = tab[index[-1] + 1:]
-    table.meta['source_id'] = str(source_id)
+    # set metadata
+    table.meta['data_type'] = 'lc'
+    table.meta['source_id'] = int(source_id)
     table.meta['telescope'] = ''.join(str(telescopes[-1]).split())
-    table.meta['paper_id'] = str(papers[x])
+    table.meta['reference_id'] = ''.join(str(papers[-1]).split())
+   # set temporary flag for none-paper
+    if filenames[-1][:len(none_paper_id)] == (none_paper_id):
+        table.meta['data_id'] = none_paper_id
+    else:
+        table.meta['data_id'] = str('ADS_Bibcode')
+    # delete repetitive time stamps
+    if np.all(table['time'] == table['time_min']):
+        del table['time_min']
+    if np.all(table['time'] == table['time_max']):
+        del table['time_max']
+    table.meta['timesys'] = 'UTC'
+    # delete nan-only columns
+    for column in table.colnames:
+        values = [table[column][h] for h in range(len(table)) if str(table[column][h]) == str(np.nan)]
+        if len(values) == len(table):        
+            del table[column]
+    # delete columns whose data was moved to the metadata
     del table['telescope']
     del table['paper']
     tables.append(table)
-    # print(tab)
     # print(tables)
-    # print('Tabellen: ')
-    # print(len(tables))
-    # print('Papers: ')
-    # print(len(papers))
 
-    # write files
-    for x in range(0, len(tables)):
-        tables[x].write(source_id + '_' + filenames[x] + '.ecsv', format='ascii.ecsv')
+    # ceate folder structure and write files
+    count_files = 0
+    paper_repo = Path('input/papers')
+    for x in range(0, len(filenames)):   
+        # create folder structure for none_paper_id
+        path = paper_repo / none_paper_id / 'lightcurves/tev-{}'.format((6-len(str(source_id)))*(str(0)) + source_id)
+        if tables[x].meta['data_id'] == none_paper_id:
+            if path.exists() is False:
+                path.mkdir(parents=True)
+            del tables[x].meta['data_id']
+            ecsv_name = path / Path(filenames[x][len(none_paper_id):] + '.ecsv')            
+            tables[x].write(str(ecsv_name), format='ascii.ecsv')            
+        # create folder structure for paper_id
+        else:
+            path = paper_repo / filenames[x][:4] / filenames[x]
+            if path.exists() is False:
+                path.mkdir(parents=True)
+            del tables[x].meta['data_id']
+            ecsv_name = str(path) + '/tev-' + (6-len(str(source_id)))*(str(0)) + source_id + '-lc.ecsv'
+            tables[x].write(str(ecsv_name), format='ascii.ecsv')
+        count_files += 1
+    # print(count_files)
+    # print(len(filenames))
+    return count_files, len(filenames)
 
 
 def process_all_files():
     files = {
-        "tev-000138": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/1es1959+650_combined_lc_v0.2.fits",
-        "tev-000049": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk421_combined_lc_v0.2.fits",
-        "tev-000091": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk501_combined_lc_v0.2.fits"
+        "138": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/1es1959+650_combined_lc_v0.2.fits",
+        "49": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk421_combined_lc_v0.2.fits",
+        "91": "http://www-zeuthen.desy.de/multi-messenger/GammaRayData/mrk501_combined_lc_v0.2.fits"
     }
+    total_files = []
+    pub_sources = []
+    count_sources = 0
+    for source_id, filename in files.items():        
+        source_files, filenames = process_one_file(source_id, filename)
+        total_files.append(source_files)
+        pub_sources.append(filenames)
+        count_sources += 1
 
-    for source_id, filename in files.items():
-        process_one_file(source_id, filename)
-
+    print('number of sources in the DESY LC Archive: ' + str(count_sources))
+    print('number of published lightcurves found: ' + str(sum(pub_sources)))
+    print('files totally written: ' + str(sum(total_files)))
 
 if __name__ == '__main__':
     process_all_files()

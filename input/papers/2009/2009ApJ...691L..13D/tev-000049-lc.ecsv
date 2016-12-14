@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: Crab, datatype: float32}
+# - {name: flux_err, unit: Crab, datatype: float32}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 49}
+# - {telescope: 'MAGIC,VERITAS'}
+# - {reference_id: 2009ApJ...691L..13D}
+# - {timesys: UTC}
+time time_min time_max flux flux_err
+54618.2029 54618.1989 54618.2069 0.903634 0.24
+54622.1923 54622.1888 54622.1958 3.26156 0.46
+54623.1833 54623.168 54623.1986 2.49911 0.16
+54619.893 54619.888 54619.898 1.86465 0.3
+54621.927 54621.91 54621.944 3.26741 0.18
+54622.917 54622.905 54622.929 3.39571 0.23
+54623.8955 54623.891 54623.9 2.61735 0.48
+54624.9275 54624.91 54624.945 1.99295 0.14

@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: Crab, datatype: float32}
+# - {name: flux_err, unit: Crab, datatype: float32}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 138}
+# - {telescope: MAGIC}
+# - {reference_id: 'http://magic.mppmu.mpg.de/publications/theses/NTonello.pdf'}
+# - {timesys: UTC}
+time flux flux_err
+53254.0 0.15 0.04
+53254.9 0.064 0.041
+53285.0 0.15 0.057
+53287.9 0.116 0.058
+53292.9 0.119 0.065
+53293.9 0.232 0.057
+53294.9 0.106 0.034

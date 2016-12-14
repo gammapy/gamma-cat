@@ -87,7 +87,7 @@ class GammaCatSource:
 
     @staticmethod
     def fill_spectral_info(data, psi):
-        data['paper_id'] = psi.get('paper_id', NA.fill_value['string'])
+        data['reference_id'] = psi.get('reference_id', NA.fill_value['string'])
         try:
             data['spec_type'] = psi['spec']['type']
         except KeyError:
@@ -150,9 +150,9 @@ class GammaCatSource:
         Fill flux point info data.
         """
         try:
-            data['sed_paper_id'] = sed_info.table.meta['paper_id']
+            data['sed_reference_id'] = sed_info.table.meta['reference_id']
         except KeyError:
-            data['sed_paper_id'] = NA.fill_value['string']
+            data['sed_reference_id'] = NA.fill_value['string']
         try:
             e_ref = sed_info.table['e_ref'].data
             data['sed_e_ref'] = NA.resize_sed_array(e_ref, shape)
@@ -377,12 +377,12 @@ class GammaCatMaker:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             # paper_info = input_data.gammacat_dataset_config.choose_paper(input_data, basic_source_info)
             try:
-                paper_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_paper_id()
+                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id()
             except IndexError:
-                paper_id = None
-            paper_info = input_data.papers.get_paper_by_id(paper_id)
+                reference_id = None
+            paper_info = input_data.papers.get_paper_by_id(reference_id)
             paper_source_info = paper_info.get_source_by_id(source_id)
-            sed_info = input_data.seds.get_sed_by_source_and_paper_id(source_id, paper_info.id)
+            sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, paper_info.id)
             # TODO: right now this implies, that a GammaCatSource object can only
             # handle the information from one paper, maybe this should be changed
             source = GammaCatSource.from_inputs(
@@ -447,22 +447,22 @@ class GammaCatDatasetConfigSource:
         self.data = data
 
     @property
-    def paper_ids(self):
-        pid = self.data['paper_id']
+    def reference_ids(self):
+        pid = self.data['reference_id']
 
         if isinstance(pid, str):
             return [_.strip() for _ in pid.split(',')]
         elif pid is None:
             return []
         else:
-            raise ValueError('Invalid paper_id list: {}'.format(pid))
+            raise ValueError('Invalid reference_id list: {}'.format(pid))
 
-    def get_paper_id(self):
+    def get_reference_id(self):
         """Choose paper to use for given source.
 
         For now, we always use the last one listed.
         """
-        return self.paper_ids[-1]
+        return self.reference_ids[-1]
 
 
 class GammaCatDataSetConfig:
@@ -491,11 +491,11 @@ class GammaCatDataSetConfig:
             yield self.get_source_by_id(source_id)
 
     @property
-    def paper_ids(self):
+    def reference_ids(self):
         """All paper IDs, sorted alphabetically."""
         pids = set()
         for source_config in self.source_configs:
-            pids.update(source_config.paper_ids)
+            pids.update(source_config.reference_ids)
 
         return sorted(pids)
 
@@ -507,7 +507,7 @@ class GammaCatDataSetConfig:
         log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
         validate_schema(path=self.path, data=self.data, schema=self.schema)
         self.validate_source_ids(input_data)
-        self.validate_paper_ids(input_data)
+        self.validate_reference_ids(input_data)
 
     def validate_source_ids(self, input_data):
         """Check that all sources are listed.
@@ -525,20 +525,20 @@ class GammaCatDataSetConfig:
             log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'
                       ''.format(basic_missing))
 
-    def validate_paper_ids(self, input_data):
+    def validate_reference_ids(self, input_data):
         """Check that all papers are listed.
 
         TODO: this is not a good check. One paper could have multiple sources, i.e. should be listed multiple times.
         """
-        paper_ids_folders = input_data.papers.paper_ids
-        paper_ids_gammacat = self.paper_ids
+        reference_ids_folders = input_data.papers.reference_ids
+        reference_ids_gammacat = self.reference_ids
 
-        gammacat_missing = sorted(set(paper_ids_gammacat) - set(paper_ids_folders))
+        gammacat_missing = sorted(set(reference_ids_gammacat) - set(reference_ids_folders))
         if gammacat_missing:
             log.error('Papers in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/papers`: {}'
                       ''.format(gammacat_missing))
 
-        folders_missing = sorted(set(paper_ids_folders) - set(paper_ids_gammacat))
+        folders_missing = sorted(set(reference_ids_folders) - set(reference_ids_gammacat))
         if folders_missing:
             log.error('Sources in `input/papers`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
                       ''.format(folders_missing))

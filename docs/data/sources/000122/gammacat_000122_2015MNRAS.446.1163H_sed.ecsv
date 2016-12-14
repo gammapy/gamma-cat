@@ -14,7 +14,7 @@
 # - {data_type: sed}
 # - {source_id: 122}
 # - {source_name: TeV J1832-093}
-# - {paper_id: 2015MNRAS.446.1163H}
+# - {reference_id: 2015MNRAS.446.1163H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832'}
 e_ref e_min e_max dnde dnde_errn dnde_errp
 0.4758 0.4 0.6094 2.84e-12 1.08e-12 1.08e-12

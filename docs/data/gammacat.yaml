@@ -2,7 +2,7 @@
   common_name: CTA 1
   gamma_names: VER J0006+729
   other_names: SNR G119.5+10.2
-  paper_id: 2013ApJ...764...38A
+  reference_id: 2013ApJ...764...38A
   significance: .nan
   livetime: .nan
   ra: 1.649999976158142
@@ -46,7 +46,7 @@
   common_name: SHBL J001355.9-185406
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 3.483558416366577
@@ -90,7 +90,7 @@
   common_name: Tycho SNR
   gamma_names: ''
   other_names: SNR G120.1+1.4,3C10,SN1572
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 6.339700222015381
@@ -134,7 +134,7 @@
   common_name: KUV 00311-1938
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 8.393287658691406
@@ -178,7 +178,7 @@
   common_name: 1ES 0033+595
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 8.968975067138672
@@ -222,7 +222,7 @@
   common_name: NGC 253
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 11.88805866241455
@@ -266,7 +266,7 @@
   common_name: CTB 37B
   gamma_names: HESS J1713-381
   other_names: SNR G348.7+0.3,CXOU J171405.7-381031
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 4.0
   livetime: 37.29999923706055
   ra: 17.23270034790039
@@ -310,7 +310,7 @@
   common_name: RGB J0136+391
   gamma_names: ''
   other_names: B3 0133+388,1RXS J013632.9+390556
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 24.135826110839844
@@ -354,7 +354,7 @@
   common_name: RGB J0152+017
   gamma_names: ''
   other_names: RXJ0152.6+0147
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 28.1650447845459
@@ -398,7 +398,7 @@
   common_name: 3C 58
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 31.404300689697266
@@ -442,7 +442,7 @@
   common_name: S3 0218+35
   gamma_names: ''
   other_names: B2 0218+35
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 35.27280044555664
@@ -486,7 +486,7 @@
   common_name: 3C 66A
   gamma_names: ''
   other_names: B2 0218+35
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 35.6650505065918
@@ -530,7 +530,7 @@
   common_name: MAGIC J0223+403
   gamma_names: MAGIC J0223+403
   other_names: 3C 66A/B Region
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 35.6650505065918
@@ -574,7 +574,7 @@
   common_name: 1ES 0229+200
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 38.20256423950195
@@ -618,7 +618,7 @@
   common_name: LS I +61 303
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 40.13193893432617
@@ -662,7 +662,7 @@
   common_name: PKS 0301-243
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 45.860416412353516
@@ -706,7 +706,7 @@
   common_name: IC 310
   gamma_names: MAGIC J0317+413
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 49.17927169799805
@@ -750,7 +750,7 @@
   common_name: NGC 1275
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 49.95066833496094
@@ -794,7 +794,7 @@
   common_name: RBS 0413
   gamma_names: ''
   other_names: RBS 0413,EXO 0317.0+1834,1E 0317.0+1835
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 49.965850830078125
@@ -838,7 +838,7 @@
   common_name: 1ES 0347-121
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 57.34660720825195
@@ -882,7 +882,7 @@
   common_name: 1ES 0414+009
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 64.21873474121094
@@ -926,7 +926,7 @@
   common_name: PKS 0447-439
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 72.35291290283203
@@ -970,7 +970,7 @@
   common_name: 1ES 0502+675
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 76.98405456542969
@@ -1014,7 +1014,7 @@
   common_name: RGB J0521+212
   gamma_names: VER J0521+211
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 80.44153594970703
@@ -1058,7 +1058,7 @@
   common_name: LMC N132D
   gamma_names: ''
   other_names: SNR J052501-693842
-  paper_id: 2015Sci...347..406H
+  reference_id: 2015Sci...347..406H
   significance: .nan
   livetime: .nan
   ra: 81.25917053222656
@@ -1102,7 +1102,7 @@
   common_name: Crab nebula
   gamma_names: ''
   other_names: G184.6-5.8,3C 144,SN 1054
-  paper_id: 2008ICRC....2..803K
+  reference_id: 2008ICRC....2..803K
   significance: .nan
   livetime: .nan
   ra: 83.6330795288086
@@ -1146,7 +1146,7 @@
   common_name: 30 Dor C
   gamma_names: ''
   other_names: ''
-  paper_id: 2015Sci...347..406H
+  reference_id: 2015Sci...347..406H
   significance: .nan
   livetime: .nan
   ra: 83.96170043945312
@@ -1190,7 +1190,7 @@
   common_name: N 157B
   gamma_names: HESS J0537-691
   other_names: LHA 120-N 157B,PSR J0537-6910
-  paper_id: 2015Sci...347..406H
+  reference_id: 2015Sci...347..406H
   significance: .nan
   livetime: .nan
   ra: 84.44442749023438
@@ -1234,7 +1234,7 @@
   common_name: PKS 0548-322
   gamma_names: ''
   other_names: H 0548-322,1ES 0548-322
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 87.66899108886719
@@ -1278,7 +1278,7 @@
   common_name: IC 443
   gamma_names: MAGIC 0616+223
   other_names: 3C 157,SNR 189.1+03.0
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 94.5112533569336
@@ -1322,7 +1322,7 @@
   common_name: HESS J0632+057
   gamma_names: HESS J0632+057,VER J0633+057
   other_names: HD 259440
-  paper_id: 2007A&A...469L...1A
+  reference_id: 2007A&A...469L...1A
   significance: .nan
   livetime: 13.5
   ra: 98.24689483642578
@@ -1366,7 +1366,7 @@
   common_name: Geminga
   gamma_names: MGRO J0632+17
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 98.47563934326172
@@ -1410,7 +1410,7 @@
   common_name: RX J0648.7+1516
   gamma_names: VER J0648+152
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 102.198486328125
@@ -1454,7 +1454,7 @@
   common_name: 1ES 0647+250
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 102.69371032714844
@@ -1498,7 +1498,7 @@
   common_name: RGB J0710+591
   gamma_names: VER J0710+591
   other_names: RX J0710.5+5908,1H 0658+595
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 107.62532806396484
@@ -1542,7 +1542,7 @@
   common_name: S5 0716+714
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 110.47270202636719
@@ -1586,7 +1586,7 @@
   common_name: 1ES 0806+524
   gamma_names: ''
   other_names: VTS J0809+522
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 122.45494842529297
@@ -1630,7 +1630,7 @@
   common_name: Vela X
   gamma_names: HESS J0835-455
   other_names: ''
-  paper_id: 2012A&A...548A..38A
+  reference_id: 2012A&A...548A..38A
   significance: 27.899999618530273
   livetime: 53.099998474121094
   ra: 128.28700256347656
@@ -1674,7 +1674,7 @@
   common_name: RBS 0723
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 131.80389404296875
@@ -1718,7 +1718,7 @@
   common_name: Vela Junior
   gamma_names: HESS J0852-463
   other_names: RX J0852.0-4622,SNR G266.2-01.2
-  paper_id: 2016arXiv161101863H
+  reference_id: 2016arXiv161101863H
   significance: 39.099998474121094
   livetime: 93.5999984741211
   ra: 133.0
@@ -1762,7 +1762,7 @@
   common_name: M 82
   gamma_names: ''
   other_names: NGC 3034
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 148.9684600830078
@@ -1806,7 +1806,7 @@
   common_name: S4 0954+65
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 149.6968536376953
@@ -1850,7 +1850,7 @@
   common_name: 1RXS J101015.9-311909
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 152.56655883789062
@@ -1894,7 +1894,7 @@
   common_name: 1ES 1011+496
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 153.76724243164062
@@ -1938,7 +1938,7 @@
   common_name: HESS J1018-589 B
   gamma_names: HESS J1018-589 B
   other_names: PSR J1016-5857
-  paper_id: 2012A&A...541A...5H
+  reference_id: 2012A&A...541A...5H
   significance: 8.5
   livetime: .nan
   ra: 154.08816528320312
@@ -1982,7 +1982,7 @@
   common_name: HESS J1018-589 A
   gamma_names: HESS J1018-589 A
   other_names: SNR G284.3-01.8,MSH 10-53
-  paper_id: 2015A&A...577A.131H
+  reference_id: 2015A&A...577A.131H
   significance: .nan
   livetime: .nan
   ra: 154.5749969482422
@@ -2026,7 +2026,7 @@
   common_name: Westerlund 2
   gamma_names: HESS J1023-575
   other_names: RCW 49,WR20a,PSR J1022-5746
-  paper_id: 2011A&A...525A..46H
+  reference_id: 2011A&A...525A..46H
   significance: 16.0
   livetime: 45.900001525878906
   ra: 155.75
@@ -2070,7 +2070,7 @@
   common_name: HESS J1026-582
   gamma_names: HESS J1026-582
   other_names: PSR J1028-5819
-  paper_id: 2011A&A...525A..46H
+  reference_id: 2011A&A...525A..46H
   significance: 7.0
   livetime: 45.900001525878906
   ra: 157.16583251953125
@@ -2114,7 +2114,7 @@
   common_name: 1ES 1101-232
   gamma_names: HESS J1103-234
   other_names: 1H 1100-230
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 165.9066925048828
@@ -2158,7 +2158,7 @@
   common_name: Markarian 421
   gamma_names: HESS J1104+382
   other_names: Markarian 421,Mrk 421,1ES 1101+384,1H 1104+382,H 1105+38
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 166.1138153076172
@@ -2202,7 +2202,7 @@
   common_name: HESS J1119-614
   gamma_names: HESS J1119-614
   other_names: SNR G292.2-00.5,PSR J1119-6127
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 169.80958557128906
@@ -2246,7 +2246,7 @@
   common_name: Markarian 180
   gamma_names: ''
   other_names: Mrk 180,1ES 1133+704,1H 1137+699
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 174.1100311279297
@@ -2290,7 +2290,7 @@
   common_name: RX J1136.5+6737
   gamma_names: ''
   other_names: RBS 1004
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 174.1253662109375
@@ -2334,7 +2334,7 @@
   common_name: 1ES 1215+303
   gamma_names: VER J1217+301
   other_names: B2 1215+30
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 184.46701049804688
@@ -2378,7 +2378,7 @@
   common_name: 1ES 1218+304
   gamma_names: VER J1221+301
   other_names: 1H 1219+301,H 1219+305,QSO B1218+304
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 185.3414306640625
@@ -2422,7 +2422,7 @@
   common_name: W Comae
   gamma_names: ''
   other_names: B2 1219+28
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 185.38204956054688
@@ -2466,7 +2466,7 @@
   common_name: MS1221.8+2452
   gamma_names: ''
   other_names: RGB J1224+246
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 186.10076904296875
@@ -2510,7 +2510,7 @@
   common_name: PKS 1222+216
   gamma_names: ''
   other_names: 4C +21.35
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 186.22691345214844
@@ -2554,7 +2554,7 @@
   common_name: M 87
   gamma_names: ''
   other_names: 1ES 1228+126,1H 1226+128
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 187.7059326171875
@@ -2598,7 +2598,7 @@
   common_name: Boomerang
   gamma_names: MGRO C4,MGRO J2228+61
   other_names: G 106.6+2.9,PSR J2229+6114,0FGL J2229.0+6114
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 191.1893768310547
@@ -2642,7 +2642,7 @@
   common_name: 3C 279
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 194.04652404785156
@@ -2686,7 +2686,7 @@
   common_name: PSR B1259-63
   gamma_names: HESS J1302-638
   other_names: SS 2883
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 195.6985626220703
@@ -2730,7 +2730,7 @@
   common_name: HESS J1303-631
   gamma_names: ''
   other_names: ''
-  paper_id: 2012A&A...548A..46H
+  reference_id: 2012A&A...548A..46H
   significance: 33.0
   livetime: .nan
   ra: 195.7516632080078
@@ -2774,7 +2774,7 @@
   common_name: 1ES 1312-423
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 198.76414489746094
@@ -2818,7 +2818,7 @@
   common_name: Centaurus A
   gamma_names: ''
   other_names: Cen A
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 201.3650665283203
@@ -2862,7 +2862,7 @@
   common_name: HESS J1356-645
   gamma_names: HESS J1356-645
   other_names: PSR J1357-6429
-  paper_id: 2008AIPC.1085..285R
+  reference_id: 2008AIPC.1085..285R
   significance: 8.5
   livetime: 10.0
   ra: 209.0
@@ -2906,7 +2906,7 @@
   common_name: HESS J1418-609
   gamma_names: HESS J1418-609
   other_names: Kookaburra
-  paper_id: 2006A&A...456..245A
+  reference_id: 2006A&A...456..245A
   significance: 13.199999809265137
   livetime: 18.100000381469727
   ra: 214.51666259765625
@@ -2950,7 +2950,7 @@
   common_name: HESS J1420-607
   gamma_names: HESS J1420-607
   other_names: PSR J1420-6048
-  paper_id: 2006A&A...456..245A
+  reference_id: 2006A&A...456..245A
   significance: 15.199999809265137
   livetime: 18.100000381469727
   ra: 214.6916961669922
@@ -2994,7 +2994,7 @@
   common_name: PKS 1424+240
   gamma_names: ''
   other_names: 7C 1424+2401
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 216.7516326904297
@@ -3038,7 +3038,7 @@
   common_name: HESS J1427-608
   gamma_names: ''
   other_names: Suzaku J1427-6051
-  paper_id: 2008A&A...477..353A
+  reference_id: 2008A&A...477..353A
   significance: 7.300000190734863
   livetime: 21.0
   ra: 216.9666748046875
@@ -3082,7 +3082,7 @@
   common_name: H 1426+428
   gamma_names: ''
   other_names: 1ES 1426+428,1H 1430+423
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 217.1358642578125
@@ -3126,7 +3126,7 @@
   common_name: RCW 86
   gamma_names: HESS J1442-624
   other_names: G315.4-2.3,MSH 14-63
-  paper_id: 2016arXiv160104461H
+  reference_id: 2016arXiv160104461H
   significance: .nan
   livetime: 57.0
   ra: 220.1208038330078
@@ -3170,7 +3170,7 @@
   common_name: 1ES 1440+122
   gamma_names: VER J1443+120
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 220.70115661621094
@@ -3214,7 +3214,7 @@
   common_name: HESS J1457-593
   gamma_names: HESS J1457-593
   other_names: G318.2+00.1,G318.2+0.1
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 223.6999969482422
@@ -3258,7 +3258,7 @@
   common_name: HESS J1458-608
   gamma_names: HESS J1458-608
   other_names: PSR J1459-6053
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 224.87417602539062
@@ -3302,7 +3302,7 @@
   common_name: SN 1006
   gamma_names: HESS J1502-421,HESS J1504-418
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 225.5920867919922
@@ -3346,7 +3346,7 @@
   common_name: HESS J1503-582
   gamma_names: HESS J1503-582
   other_names: ''
-  paper_id: 2008AIPC.1085..281R
+  reference_id: 2008AIPC.1085..281R
   significance: 6.0
   livetime: 24.0
   ra: 225.75
@@ -3390,7 +3390,7 @@
   common_name: HESS J1507-622
   gamma_names: ''
   other_names: ''
-  paper_id: 2011A&A...525A..45H
+  reference_id: 2011A&A...525A..45H
   significance: 9.300000190734863
   livetime: 9.699999809265137
   ra: 226.875
@@ -3434,7 +3434,7 @@
   common_name: PKS 1510-089
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 228.21055603027344
@@ -3478,7 +3478,7 @@
   common_name: MSH 15-5-02
   gamma_names: HESS J1514-591
   other_names: G320.3-01.1,MSH 15-52
-  paper_id: 2005A&A...435L..17A
+  reference_id: 2005A&A...435L..17A
   significance: .nan
   livetime: .nan
   ra: 228.32080078125
@@ -3522,7 +3522,7 @@
   common_name: AP Librae
   gamma_names: ''
   other_names: PKS B1514-241
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 229.42422485351562
@@ -3566,7 +3566,7 @@
   common_name: SNR G323.7-01.0
   gamma_names: HESS J1534-571
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 233.62498474121094
@@ -3610,7 +3610,7 @@
   common_name: SNR G327.1-1.1
   gamma_names: ''
   other_names: SNR G327.1-01.1
-  paper_id: 2011ICRC....7..185A
+  reference_id: 2011ICRC....7..185A
   significance: 8.0
   livetime: 45.0
   ra: 238.63461303710938
@@ -3654,7 +3654,7 @@
   common_name: PG 1553+113
   gamma_names: HESS J1555+111
   other_names: 1ES 1553+113
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 238.92935180664062
@@ -3698,7 +3698,7 @@
   common_name: HESS J1614-518
   gamma_names: HESS J1614-518
   other_names: ''
-  paper_id: 2011A&A...531L..18H
+  reference_id: 2011A&A...531L..18H
   significance: .nan
   livetime: .nan
   ra: 243.5625
@@ -3742,7 +3742,7 @@
   common_name: HESS J1616-508
   gamma_names: HESS J1616-508
   other_names: PSR J1617-5055
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 16.299999237060547
   livetime: 10.199999809265137
   ra: 244.05999755859375
@@ -3786,7 +3786,7 @@
   common_name: HESS J1626-490
   gamma_names: HESS J1626-490
   other_names: SNR G335.2+00.1
-  paper_id: 2008A&A...477..353A
+  reference_id: 2008A&A...477..353A
   significance: 7.5
   livetime: 12.0
   ra: 246.51666259765625
@@ -3830,7 +3830,7 @@
   common_name: HESS J1632-478
   gamma_names: HESS J1632-478
   other_names: ''
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 4.5
   livetime: 4.5
   ra: 248.00778198242188
@@ -3874,7 +3874,7 @@
   common_name: HESS J1634-472
   gamma_names: HESS J1634-472
   other_names: ''
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 4.199999809265137
   livetime: 6.599999904632568
   ra: 248.5
@@ -3918,7 +3918,7 @@
   common_name: HESS J1640-465
   gamma_names: HESS J1640-465
   other_names: SNR G338.3-0.0
-  paper_id: 2014MNRAS.439.2828A
+  reference_id: 2014MNRAS.439.2828A
   significance: .nan
   livetime: .nan
   ra: 250.125
@@ -3962,7 +3962,7 @@
   common_name: HESS J1641-463
   gamma_names: HESS J1641-463
   other_names: SNR G338.5+0.1
-  paper_id: 2014ApJ...794L...1A
+  reference_id: 2014ApJ...794L...1A
   significance: 8.5
   livetime: 72.0
   ra: 250.257080078125
@@ -4006,7 +4006,7 @@
   common_name: Westerlund 1
   gamma_names: HESS J1646-458
   other_names: Wd 1,CXOU J164710.2 - 455216,4U 1642-45,PSR J1648-4611
-  paper_id: 2012A&A...537A.114A
+  reference_id: 2012A&A...537A.114A
   significance: .nan
   livetime: .nan
   ra: 251.5
@@ -4050,7 +4050,7 @@
   common_name: Markarian 501
   gamma_names: ''
   other_names: Mrk 501
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 253.4675750732422
@@ -4094,7 +4094,7 @@
   common_name: HESS J1702-420
   gamma_names: HESS J1702-420
   other_names: ''
-  paper_id: 2008A&A...477..353A
+  reference_id: 2008A&A...477..353A
   significance: 12.800000190734863
   livetime: 9.0
   ra: 255.68333435058594
@@ -4138,7 +4138,7 @@
   common_name: HESS J1708-443
   gamma_names: HESS J1708-443
   other_names: PSR B1706-44,G343.1-2.3
-  paper_id: 2011A&A...528A.143H
+  reference_id: 2011A&A...528A.143H
   significance: 7.0
   livetime: 15.0
   ra: 257.0
@@ -4182,7 +4182,7 @@
   common_name: HESS J1708-410
   gamma_names: HESS J1708-410
   other_names: ''
-  paper_id: 2008A&A...477..353A
+  reference_id: 2008A&A...477..353A
   significance: 10.699999809265137
   livetime: 39.0
   ra: 257.1000061035156
@@ -4226,7 +4226,7 @@
   common_name: RX J1713.7-3946
   gamma_names: HESS J1713-397
   other_names: SNR G347.3-00.5
-  paper_id: 2016arXiv160908671H
+  reference_id: 2016arXiv160908671H
   significance: .nan
   livetime: 164.0
   ra: 258.11248779296875
@@ -4270,7 +4270,7 @@
   common_name: CTB 37A
   gamma_names: HESS J1714-385
   other_names: SNR G348.5+0.1,CXOU J171419.8-383023
-  paper_id: 2008A&A...490..685A
+  reference_id: 2008A&A...490..685A
   significance: .nan
   livetime: .nan
   ra: 258.64300537109375
@@ -4314,7 +4314,7 @@
   common_name: SNR G349.7+0.2
   gamma_names: HESS J1718-374
   other_names: SNR G349.7+00.2
-  paper_id: 2015A&A...574A.100H
+  reference_id: 2015A&A...574A.100H
   significance: 6.599999904632568
   livetime: 113.0
   ra: 259.4960021972656
@@ -4358,7 +4358,7 @@
   common_name: HESS J1718-385
   gamma_names: HESS J1718-385
   other_names: ''
-  paper_id: 2007A&A...472..489A
+  reference_id: 2007A&A...472..489A
   significance: 6.199999809265137
   livetime: 82.0
   ra: 259.5292053222656
@@ -4402,7 +4402,7 @@
   common_name: H 1722+119
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 261.2680969238281
@@ -4446,7 +4446,7 @@
   common_name: 1ES 1727+502
   gamma_names: ''
   other_names: OT546
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 262.0776062011719
@@ -4490,7 +4490,7 @@
   common_name: HESS J1729-345
   gamma_names: HESS J1729-345
   other_names: ''
-  paper_id: 2011A&A...531A..81H
+  reference_id: 2011A&A...531A..81H
   significance: .nan
   livetime: .nan
   ra: 262.25
@@ -4534,7 +4534,7 @@
   common_name: HESS J1731-347
   gamma_names: HESS J1731-347
   other_names: SNR G353.6-0.7
-  paper_id: 2011A&A...531A..81H
+  reference_id: 2011A&A...531A..81H
   significance: .nan
   livetime: 59.0
   ra: 262.9791564941406
@@ -4578,7 +4578,7 @@
   common_name: HESS J1741-302
   gamma_names: HESS J1741-302
   other_names: ''
-  paper_id: 2008AIPC.1085..249T
+  reference_id: 2008AIPC.1085..249T
   significance: 8.100000381469727
   livetime: 143.5
   ra: 265.25
@@ -4622,7 +4622,7 @@
   common_name: 1ES 1741+196
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 265.990966796875
@@ -4666,7 +4666,7 @@
   common_name: HESS J1745-303
   gamma_names: ''
   other_names: G359.1-0.5
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 4.0
   livetime: 35.29999923706055
   ra: 266.2969970703125
@@ -4710,7 +4710,7 @@
   common_name: Galactic Centre
   gamma_names: HESS J1745-290,VER J1745-290
   other_names: Sgr A*,Sagittarius A*
-  paper_id: 2016Natur.531..476H
+  reference_id: 2016Natur.531..476H
   significance: .nan
   livetime: 226.0
   ra: 266.4168395996094
@@ -4754,7 +4754,7 @@
   common_name: Galactic Centre ridge
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 266.4168395996094
@@ -4798,7 +4798,7 @@
   common_name: Arc source
   gamma_names: HESS J1746-285,VER J1746-289
   other_names: SNR G0.13-0.13,G0.13-0.11
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 266.5989990234375
@@ -4842,7 +4842,7 @@
   common_name: SNR G0.9+0.1
   gamma_names: HESS J1747-281
   other_names: SNR G000.9+00.1
-  paper_id: 2005A&A...432L..25A
+  reference_id: 2005A&A...432L..25A
   significance: 13.0
   livetime: 50.0
   ra: 266.82501220703125
@@ -4886,7 +4886,7 @@
   common_name: Terzan 5
   gamma_names: HESS J1747-248
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 267.0208435058594
@@ -4930,7 +4930,7 @@
   common_name: HESS J1800-240B
   gamma_names: HESS J1800-240B
   other_names: ''
-  paper_id: 2008A&A...481..401A
+  reference_id: 2008A&A...481..401A
   significance: 7.800000190734863
   livetime: 42.0
   ra: 270.1083068847656
@@ -4974,7 +4974,7 @@
   common_name: W28
   gamma_names: HESS J1801-233
   other_names: W 28,SNR G6.4-0.1,SNR G006.4-00.1,GRO J1801-2320
-  paper_id: 2008A&A...481..401A
+  reference_id: 2008A&A...481..401A
   significance: 7.900000095367432
   livetime: 42.0
   ra: 270.3445739746094
@@ -5018,7 +5018,7 @@
   common_name: HESS J1800-240A
   gamma_names: HESS J1800-240A
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 270.49169921875
@@ -5062,7 +5062,7 @@
   common_name: HESS J1804-216
   gamma_names: HESS J1804-216
   other_names: G8.7-0.1,W30
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 13.0
   livetime: 15.699999809265137
   ra: 271.1237487792969
@@ -5106,7 +5106,7 @@
   common_name: HESS J1808-204
   gamma_names: HESS J1808-204
   other_names: SGR 1806-20,LBV 1806-20,C1 1806-20
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 272.0
@@ -5150,7 +5150,7 @@
   common_name: HESS J1809-193
   gamma_names: HESS J1809-193
   other_names: ''
-  paper_id: 2007A&A...472..489A
+  reference_id: 2007A&A...472..489A
   significance: 4.699999809265137
   livetime: 25.0
   ra: 272.62921142578125
@@ -5194,7 +5194,7 @@
   common_name: HESS J1813-126
   gamma_names: HESS J1813-126
   other_names: PSR J1813-1246
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 273.3500061035156
@@ -5238,7 +5238,7 @@
   common_name: HESS J1813-178
   gamma_names: HESS J1813-178
   other_names: G12.82-0.02,PSR J1813-1749,CXOU J181335.1-174957,IGR J18135-1751,W33
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 13.5
   livetime: 9.699999809265137
   ra: 273.3629150390625
@@ -5282,7 +5282,7 @@
   common_name: SNR G15.4+0.1
   gamma_names: HESS J1818-154
   other_names: ''
-  paper_id: 2014A&A...562A..40H
+  reference_id: 2014A&A...562A..40H
   significance: .nan
   livetime: .nan
   ra: 274.5
@@ -5326,7 +5326,7 @@
   common_name: HESS J1826-130
   gamma_names: HESS J1826-130
   other_names: PSR J1826-1256,PWN G018.5-00.4
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 276.5041809082031
@@ -5370,7 +5370,7 @@
   common_name: HESS J1825-137
   gamma_names: HESS J1825-137,1HWC J1825-133
   other_names: PSR J1826-1334,PSR B1823-13
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 8.399999618530273
   livetime: 7.300000190734863
   ra: 276.5544128417969
@@ -5414,7 +5414,7 @@
   common_name: LS 5039
   gamma_names: HESS J1826-148
   other_names: RX J1826.2-1450
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 276.562744140625
@@ -5458,7 +5458,7 @@
   common_name: HESS J1828-099
   gamma_names: HESS J1828-099
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 277.25
@@ -5502,7 +5502,7 @@
   common_name: HESS J1831-098
   gamma_names: HESS J1831-098
   other_names: PSR J1831-952
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 277.8500061035156
@@ -5546,7 +5546,7 @@
   common_name: HESS J1832-085
   gamma_names: HESS J1832-085
   other_names: PSR J1832-0836
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 278.1300048828125
@@ -5590,7 +5590,7 @@
   common_name: HESS J1832-093
   gamma_names: HESS J1832-093
   other_names: SNR G22.7-0.2
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 278.18817138671875
@@ -5634,7 +5634,7 @@
   common_name: HESS J1833-105
   gamma_names: HESS J1833-105
   other_names: G21.5-0.9,PSR J1833-1034
-  paper_id: 2015MNRAS.446.1163H
+  reference_id: 2015MNRAS.446.1163H
   significance: .nan
   livetime: .nan
   ra: 278.25
@@ -5678,7 +5678,7 @@
   common_name: HESS J1834-087
   gamma_names: HESS J1834-087,1HWC J1836-090c
   other_names: W41
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 8.100000381469727
   livetime: 7.300000190734863
   ra: 278.7158203125
@@ -5722,7 +5722,7 @@
   common_name: HESS J1837-069
   gamma_names: HESS J1837-069,1HWC J1838-060,1HWC J1836-074c
   other_names: ''
-  paper_id: 2006ApJ...636..777A
+  reference_id: 2006ApJ...636..777A
   significance: 12.199999809265137
   livetime: 7.599999904632568
   ra: 279.42791748046875
@@ -5766,7 +5766,7 @@
   common_name: HESS J1841-055
   gamma_names: HESS J1841-055,ARGO J1839-0627,1HWC J1838-060
   other_names: ''
-  paper_id: 2008A&A...477..353A
+  reference_id: 2008A&A...477..353A
   significance: 10.600000381469727
   livetime: 26.0
   ra: 280.2291564941406
@@ -5810,7 +5810,7 @@
   common_name: HESS J1843-033
   gamma_names: HESS J1843-033,ARGO J1841-0332 1HWC J1844-031c
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 280.75
@@ -5854,7 +5854,7 @@
   common_name: HESS J1844-030
   gamma_names: HESS J1844-030
   other_names: PSR J1832-0836,AX J1844.6-0305,PMN J1844-0306,SNR G29.4+0.1
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 281.1700134277344
@@ -5898,7 +5898,7 @@
   common_name: HESS J1846-029
   gamma_names: HESS J1846-029
   other_names: Kes 75,SNR G29.7-0.3
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 281.5
@@ -5942,7 +5942,7 @@
   common_name: HESS J1848-018
   gamma_names: HESS J1848-018,1HWC J1849-017c
   other_names: WR121a,W43
-  paper_id: 2008AIPC.1085..372C
+  reference_id: 2008AIPC.1085..372C
   significance: 9.0
   livetime: 50.0
   ra: 282.1199951171875
@@ -5986,7 +5986,7 @@
   common_name: HESS J1849-000
   gamma_names: HESS J1849-000
   other_names: IGR J18490-0000,3C 391,PSR J1849-0001
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 282.25762939453125
@@ -6030,7 +6030,7 @@
   common_name: HESS J1852-000
   gamma_names: HESS J1852-000
   other_names: Kes 78
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 283.0
@@ -6074,7 +6074,7 @@
   common_name: HESS J1857+026
   gamma_names: MAGIC J1857.2+0263,MAGIC J1857.6+0297,1HWC J1857+023
   other_names: ''
-  paper_id: 2008A&A...477..353A
+  reference_id: 2008A&A...477..353A
   significance: 8.699999809265137
   livetime: 21.0
   ra: 284.29583740234375
@@ -6118,7 +6118,7 @@
   common_name: HESS J1858+020
   gamma_names: 1HWC J1857+023
   other_names: G35.6-0.4
-  paper_id: 2008A&A...477..353A
+  reference_id: 2008A&A...477..353A
   significance: 7.0
   livetime: 25.0
   ra: 284.5833435058594
@@ -6162,7 +6162,7 @@
   common_name: MGRO J1908+06
   gamma_names: HESS J1908+063,VER J1907+062,1HWC J1907+062c,ARGO J1907+0627,ARGO J1910+0720
   other_names: GeV J1907+0557,GRO J1908+0556,G40.5-0.5,0FGL J1907.5+0602,1AGL J1908+0613
-  paper_id: 2009A&A...499..723A
+  reference_id: 2009A&A...499..723A
   significance: .nan
   livetime: .nan
   ra: 287.17498779296875
@@ -6206,7 +6206,7 @@
   common_name: W 49B
   gamma_names: HESS J1911+090
   other_names: SNR G043.3-00.2,0FGL J1911.0+0905,1FGL J1910.9+0906c
-  paper_id: 2016arXiv160900600H
+  reference_id: 2016arXiv160900600H
   significance: 12.899999618530273
   livetime: 75.0
   ra: 287.74578857421875
@@ -6250,7 +6250,7 @@
   common_name: HESS J1912+101
   gamma_names: ''
   other_names: PSR J1913+1011
-  paper_id: 2008A&A...484..435A
+  reference_id: 2008A&A...484..435A
   significance: .nan
   livetime: .nan
   ra: 288.3347473144531
@@ -6294,7 +6294,7 @@
   common_name: W 51C
   gamma_names: HESS J1923+141
   other_names: SNR G49.2-0.7,0FGL J1923.0+1411
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 290.8179931640625
@@ -6338,7 +6338,7 @@
   common_name: SNR G054.1+00.3
   gamma_names: VER J1930+188
   other_names: PSR J1930+1852
-  paper_id: 2010ApJ...719L..69A
+  reference_id: 2010ApJ...719L..69A
   significance: 7.0
   livetime: 36.599998474121094
   ra: 292.62921142578125
@@ -6382,7 +6382,7 @@
   common_name: HESS J1943+213
   gamma_names: ''
   other_names: ''
-  paper_id: 2011A&A...529A..49H
+  reference_id: 2011A&A...529A..49H
   significance: 7.900000095367432
   livetime: 24.799999237060547
   ra: 295.97918701171875
@@ -6426,7 +6426,7 @@
   common_name: 1ES 1959+650
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 299.9993896484375
@@ -6470,7 +6470,7 @@
   common_name: MAGIC J2001+435
   gamma_names: ''
   other_names: 1FGL J2001.1+4351,MG4 J200112+4352
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 300.3062438964844
@@ -6514,7 +6514,7 @@
   common_name: PKS 2005-489
   gamma_names: HESS J2009-488
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 302.3558044433594
@@ -6558,7 +6558,7 @@
   common_name: VER J2016+371
   gamma_names: MGRO J2019+37
   other_names: CTB 87
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 304.0075988769531
@@ -6602,7 +6602,7 @@
   common_name: VER J2019+368
   gamma_names: MGRO J2019+37
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 304.00830078125
@@ -6646,7 +6646,7 @@
   common_name: Dragonfly
   gamma_names: MGRO J2019+37,VER J2019+368,VER J2016+371
   other_names: 0FGL J2020.8+3649
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 305.27252197265625
@@ -6690,7 +6690,7 @@
   common_name: Gamma Cygni
   gamma_names: VER J2019+407
   other_names: 1FGL J2020.0+4049,SNR G78.2+2.1
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 305.5570983886719
@@ -6734,7 +6734,7 @@
   common_name: MGRO J2031+41
   gamma_names: ''
   other_names: TeV J2032+4130,TeV 2032+413,0FGL J2032.2+4122
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 308.0249938964844
@@ -6778,7 +6778,7 @@
   common_name: TeV J2032+4130
   gamma_names: MGRO J2031+41
   other_names: 0FGL J2032.2+4122
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 308.0249938964844
@@ -6822,7 +6822,7 @@
   common_name: PKS 2155-304
   gamma_names: HESS J2158-302
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 329.7169494628906
@@ -6866,7 +6866,7 @@
   common_name: BL Lacertae
   gamma_names: ''
   other_names: 1ES 2200+420
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 330.6803894042969
@@ -6910,7 +6910,7 @@
   common_name: RGB J2243+203
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 340.97808837890625
@@ -6954,7 +6954,7 @@
   common_name: B3 2247+381
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 342.5239562988281
@@ -6998,7 +6998,7 @@
   common_name: Cassiopeia A
   gamma_names: ''
   other_names: Cas A,3C461,G111.7-2.1
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 350.8500061035156
@@ -7042,7 +7042,7 @@
   common_name: 1ES 2344+514
   gamma_names: ''
   other_names: ''
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 356.7701416015625
@@ -7086,7 +7086,7 @@
   common_name: H 2356-309
   gamma_names: HESS J2359-306
   other_names: 1H 2354-315
-  paper_id: ''
+  reference_id: ''
   significance: .nan
   livetime: .nan
   ra: 359.782958984375

@@ -11,7 +11,7 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 94}
-# - {paper_id: 2011A%26A...528A.143H}
+# - {reference_id: 2011A%26A...528A.143H}
 # - {url: TODO}
 e_ref dnde dnde_errn dnde_errp
 0.908 4.13e-12 1.58e-12 1.58e-12

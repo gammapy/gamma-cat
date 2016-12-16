@@ -26,7 +26,7 @@ function main() {
             // TODO: use row detail for datasets
             // See https://datatables.net/examples/api/row_details.html
             {
-                data: "datasets",
+                data: "reference_ids",
                 render: function (val) {
                     return val.substr(0, 20);
                 }

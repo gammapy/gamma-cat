@@ -236,9 +236,15 @@ class SEDList:
         self._sed_lookup = sed_lookup
 
     @classmethod
-    def read(cls):
-        path = gammacat_info.base_dir / 'input/data'
-        paths = sorted(path.glob('*/*/tev*sed.ecsv'))
+    def read(cls, folder='input'):
+        if folder == 'input':
+            path = gammacat_info.base_dir / 'input/data'
+            paths = sorted(path.glob('*/*/tev*sed.ecsv'))
+        elif folder == 'output':
+            path = gammacat_info.base_dir / 'docs/data/sources'
+            paths = sorted(path.glob('*/gammacat*sed.ecsv'))
+        else:
+            raise ValueError("Folder must be either 'input' or 'output'.")
 
         data = []
         for path in paths:

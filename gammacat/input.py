@@ -329,7 +329,7 @@ class InputData:
         schemas = Schemas.read()
         sources = BasicSourceList.read()
         datasets = InputDatasetCollection.read()
-        seds = SEDList.read()
+        seds = SEDList.read(folder='output')
         lightcurves = LightcurveList.read()
         gammacat_dataset_config = GammaCatDataSetConfig.read()
         return cls(

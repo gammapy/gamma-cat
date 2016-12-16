@@ -248,7 +248,7 @@
   reference_id:
 - source_id: 83
   status: source
-  reference_id: 2006ApJ...636..777A, 2011A&A...531L..18H, hess-internal
+  reference_id: 2006ApJ...636..777A, 2011A&A...531L..18H, gammacat-hess-internal
 - source_id: 84
   status: source
   reference_id: 2006ApJ...636..777A
@@ -404,7 +404,7 @@
   reference_id: 2008A&A...484..435A
 - source_id: 135
   status: source
-  reference_id: hess-internal
+  reference_id: gammacat-hess-internal
 - source_id: 136
   status: source
   reference_id: 2010ApJ...719L..69A
@@ -470,7 +470,7 @@
   reference_id:
 - source_id: 158
   status: source
-  reference_id: hess-internal
+  reference_id: gammacat-hess-internal
 - source_id: 159
   status: source
   reference_id:

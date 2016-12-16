@@ -360,23 +360,24 @@ class GammaCatMaker:
         self.sources = []
         self.table = None
 
-    def run(self):
+    def run(self, internal):
         log.info('Making gamma-cat ....')
 
-        self.gather_data()
+        self.gather_data(internal=internal)
         self.make_table()
-        self.write_table()
-        self.write_yaml_text_dump()
+        self.write_table(internal=internal)
+        if not internal:
+            self.write_yaml_text_dump()
 
-    def gather_data(self):
+    def gather_data(self, internal=False):
         """Gather data into Python data structures."""
-        input_data = InputData.read()
+        input_data = InputData.read(internal=internal)
         source_ids = [_.data['source_id'] for _ in input_data.sources.data]
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             try:
-                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id()
+                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id(internal=internal)
             except IndexError:
                 reference_id = None
             dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
@@ -413,12 +414,15 @@ class GammaCatMaker:
 
         self.table = table
 
-    def write_table(self):
+    def write_table(self, internal=False):
         table = self.table
 
         # table.info('stats')
         # table.pprint()
-        path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
+        if internal:
+            path = gammacat_info.base_dir / 'docs/data/gammacat-hess-internal.fits.gz'
+        else:
+            path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
@@ -456,12 +460,15 @@ class GammaCatDatasetConfigSource:
         else:
             raise ValueError('Invalid reference_id list: {}'.format(pid))
 
-    def get_reference_id(self):
+    def get_reference_id(self, internal=False):
         """Choose reference_id to use for given source.
 
         For now, we always use the last one listed.
         """
-        return self.reference_ids[-1]
+        reference_id = self.reference_ids[-1]
+        if not internal and reference_id == 'gammacat-hess-internal':
+            reference_id = self.reference_ids[-2]
+        return reference_id
 
 
 class GammaCatDataSetConfig:

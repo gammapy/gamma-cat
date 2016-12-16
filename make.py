@@ -7,6 +7,7 @@ import logging
 import warnings
 import click
 import gammacat
+import os
 
 log = logging.getLogger(__name__)
 
@@ -49,11 +50,16 @@ def make_output(step):
 
 
 @cli.command(name='cat')
-def make_cat():
+@click.option('--internal', default=False, is_flag=True)
+def make_cat(internal):
     """Make catalog in HGPS format
     """
+    if internal:
+        if not 'GAMMACAT_HESS_INTERNAL' in os.environ:
+            raise ValueError("Environment variable 'GAMMACAT_HESS_INTERNAL' "
+                             " must be set.")
     log.info('Making catalog ...')
-    gammacat.GammaCatMaker().run()
+    gammacat.GammaCatMaker().run(internal=internal)
 
 
 # @cli.command(name='webpage')

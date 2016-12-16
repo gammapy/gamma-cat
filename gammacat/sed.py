@@ -1,5 +1,8 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
+import os
+from pathlib import Path
+from itertools import chain
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import check_ecsv_column_header
@@ -238,21 +241,23 @@ class SEDList:
         self._sed_lookup = sed_lookup
 
     @classmethod
-    def read(cls, folder='input'):
-        if folder == 'input':
-            path = gammacat_info.base_dir / 'input/data'
-            paths = sorted(path.glob('*/*/tev*sed.ecsv'))
-        elif folder == 'output':
+    def read(cls, internal=False):
+        path = gammacat_info.base_dir / 'input/data'
+        paths = sorted(path.glob('*/*/tev*sed.ecsv'))
+
+        if internal:
             path = gammacat_info.base_dir / 'docs/data/sources'
-            paths = sorted(path.glob('*/gammacat*sed.ecsv'))
-        else:
-            raise ValueError("Folder must be either 'input' or 'output'.")
+            paths = path.glob('*/gammacat*sed.ecsv')
+
+            path_internal = Path(os.environ.get('GAMMACAT_HESS_INTERNAL'))
+            paths_internal = path_internal.glob('tev*.ecsv')
+            paths = chain(paths, paths_internal)
 
         data = []
         for path in paths:
             sed = SED.read(path)
             data.append(sed)
-
+        #from IPython import embed; embed(); 1/0
         return cls(data=data)
 
     def validate(self):

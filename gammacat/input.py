@@ -3,7 +3,9 @@
 Classes to read, validate and work with the input data files.
 """
 import logging
+import os
 from collections import OrderedDict
+from itertools import chain
 from pathlib import Path
 import urllib.parse
 from astropy.table import Table
@@ -225,15 +227,18 @@ class InputDatasetCollection:
         self.data = data
 
     @classmethod
-    def read(cls):
+    def read(cls, internal=False):
         path = gammacat_info.base_dir / 'input/data'
-        paths = path.glob('*/*')
+        paths = list(path.glob('*/*'))
+
+        if internal:
+            path_internal = Path(os.environ.get('GAMMACAT_HESS_INTERNAL'))
+            paths = chain(paths, [path_internal])
 
         data = []
         for path in paths:
             info = InputDataset.read(path)
             data.append(info)
-
         return cls(data=data)
 
     @property
@@ -321,15 +326,15 @@ class InputData:
         self.gammacat_dataset_config = gammacat_dataset_config
 
     @classmethod
-    def read(cls):
+    def read(cls, internal=False):
         """Read all data from disk.
         """
         # Delayed import to avoid circular dependency
         from .cat import GammaCatDataSetConfig
         schemas = Schemas.read()
         sources = BasicSourceList.read()
-        datasets = InputDatasetCollection.read()
-        seds = SEDList.read(folder='input')
+        datasets = InputDatasetCollection.read(internal=internal)
+        seds = SEDList.read(internal=internal)
         lightcurves = LightcurveList.read()
         gammacat_dataset_config = GammaCatDataSetConfig.read()
         return cls(

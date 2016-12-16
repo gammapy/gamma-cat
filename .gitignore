@@ -95,3 +95,6 @@ ENV/
 desy_lc.py
 
 .idea
+
+# internal gammacat version
+docs/data/gammacat-hess-internal.fits.gz

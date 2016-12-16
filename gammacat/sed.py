@@ -17,7 +17,7 @@ class SED:
     """
     expected_colnames = [
         'e_ref', 'e_min', 'e_max',
-        'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul',
+        'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul', 'is_ul',
         'excess', 'significance',
     ]
 
@@ -118,13 +118,15 @@ class SED:
             dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
             dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
             dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
+            dict(name='is_ul', description='Is this a flux upper limit?'),
             dict(name='excess', unit='count', description='Excess counts'),
-            dict(name='significance', unit='', description='Excess significance'),
+            dict(name='significance', description='Excess significance'),
         ]
         for col in cols:
             name = col['name']
             if name in table.colnames:
-                table[name] = table[name].quantity.to(col['unit'])
+                if name not in ['is_ul', 'significance']:
+                    table[name] = table[name].quantity.to(col['unit'])
                 table[name].description = col['description']
 
     @staticmethod

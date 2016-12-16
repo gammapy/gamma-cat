@@ -16,7 +16,7 @@ import gammacat
 class AstriSimGSED:
     def __init__(self):
         self.gammacat_sources = gammacat.utils.load_json('docs/data/gammacat-sources.json')['data']
-        self.gammacat_papers = gammacat.utils.load_json('docs/data/gammacat-papers.json')['data']
+        self.gammacat_papers = gammacat.utils.load_json('docs/data/gammacat-datasets.json')['data']
         self.gsed_table = Table.read('other_cats/astrisim_gsed/index2.fits')
 
     def list_missing_info(self):
@@ -63,7 +63,14 @@ class AstriSimGSED:
         base_path = Path('other_cats/astrisim_gsed/data/')
         for path in base_path.glob('*.fits'):
             source_name = path.parts[-1].replace('.fits', '')
-            hdu_list = fits.open(str(path))
+
+            try:
+                hdu_list = fits.open(str(path))
+                print('Reading {}'.format(path))
+            except OSError:
+                print('Skipping corrupt FITS file: {}'.format(path))
+                continue
+
             hdu_names = [_.name for _ in hdu_list][1:]
             hdu_names = [name for name in hdu_names if 'MAP' not in name]
             for hdu_name in hdu_names:

@@ -25,20 +25,18 @@ Complete list in the order listed on that page (roughly reverse chronological or
 - [2015A%26A...574A.100H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...574A.100H)
   - url: [auxinfo_SNRG349](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015A%26A...574A.100H)
-  - status: **TODO**
-  - comments: need to add script or expand allowed format for E^2*F and add data
+  - status: done
 - [2015Sci...347..406H](http://adsabs.harvard.edu/abs/2015Sci...347..406H)
   - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_LMC_Science_2015)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015Sci...347..406H)
   - status: done
 - [2015A%26A...573A..31H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...573A..31H)
-  - url: [auxinfo_LMC_Science_2015](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)
+  - url: [auxinfo_ApLib](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015Sci...347..406H)
   - status: **TODO**
-  - comments: 
 - [2015ApJ...802...65A](http://adsabs.harvard.edu/abs/2015ApJ...802...65A)
   - url: [auxinfo_PG1553](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_PG1553)
   - status: **TODO**
-  - comments: 
 - [2015MNRAS.446.1163H](http://adsabs.harvard.edu/abs/2015MNRAS.446.1163H)
   - url: [auxinfo_HESSJ1832](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015MNRAS.446.1163H)
@@ -114,23 +112,22 @@ Complete list in the order listed on that page (roughly reverse chronological or
 - [2012A%26A...542A..94H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...542A..94H)
   - url: [vizier](http://cdsarc.u-strasbg.fr/viz-bin/Cat?cat=J%2FA%2BA%2F542%2FA94&target=http&)
   - status: **TODO**
-  - comments:
+  - comments: is an EGAL source
 - [2012A%26A...538A.103H](https://ui.adsabs.harvard.edu/#abs/2012A%26A...538A.103H)
   - url: [AA538_A103.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA538_A103.html)
   - status: **TODO**
-  - comments: 
+  - comments: is an EGAL source
 - [2012A%26A...537A.114A](https://ui.adsabs.harvard.edu/#abs/2012A%26A...537A.114A)
   - url: [AA537_A114.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA537_A114.html)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2012/2012A%26A...537A.114A)
-  - status: 
-  - comments: **CONTINUE HERE !!!** 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2012/2012A%2526A...537A.114A)
+  - status: **SED entered, YAML file still empty**
 
 ## 2011
 
 - [2011A%26A...533A.103H](http://adsabs.harvard.edu/abs/2011A%26A...533A.103H)
   - url: [AA533_A103.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA533_A103.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2011/2011A%2526A...533A.103H/)
+  - status: **SED done, YAML empty** 
 - [2011A%26A...531A..81H](https://ui.adsabs.harvard.edu/#abs/2011A%26A...531A..81H)
   - url: [AA531_A81.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA531_A81.html)
   - status: 

@@ -1,0 +1,18 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 64
+# - reference_id: 2011A&A...533A.103H
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA533_A103.html
+e_ref       dnde        dnde_err
+1.50 		1.30E-12 	4.23E-13
+2.41 		2.51E-13 	1.36E-13
+3.86 		1.66E-13 	5.10E-14
+6.22 		5.49E-14 	1.90E-14
+10.0 		1.81E-14 	7.33E-15
+16.1 		4.57E-15 	3.66E-15

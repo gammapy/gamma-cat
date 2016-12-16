@@ -2862,46 +2862,46 @@
   common_name: HESS J1356-645
   gamma_names: HESS J1356-645
   other_names: PSR J1357-6429
-  reference_id: 2008AIPC.1085..285R
-  significance: 8.5
-  livetime: 10.0
+  reference_id: 2011A&A...533A.103H
+  significance: .nan
+  livetime: .nan
   ra: 209.0
   dec: -64.5
   glon: 309.81207275390625
   glat: -2.4941415786743164
-  morph_type: gauss
-  morph_sigma: 0.20000000298023224
-  morph_sigma_err: 0.019999999552965164
+  morph_type: ''
+  morph_sigma: .nan
+  morph_sigma_err: .nan
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: pl
-  spec_erange_min: 0.30000001192092896
-  spec_erange_max: 30.0
-  spec_theta: 0.2199999988079071
-  spec_ref: 1.0
-  spec_norm: 3.49999998601469e-12
-  spec_norm_err: 5.999999759184749e-13
+  spec_type: ''
+  spec_erange_min: .nan
+  spec_erange_max: .nan
+  spec_theta: .nan
+  spec_ref: .nan
+  spec_norm: .nan
+  spec_norm_err: .nan
   spec_norm_err_sys: .nan
   spec_norm_err_tot: .nan
-  spec_norm_1TeV: 3.49999998601469e-12
-  spec_norm_1TeV_err: 5.999999759184749e-13
-  spec_index: 2.200000047683716
-  spec_index_err: 0.20000000298023224
-  spec_index_err_sys: 0.20000000298023224
-  spec_index_err_tot: 0.2828427255153656
+  spec_norm_1TeV: .nan
+  spec_norm_1TeV_err: .nan
+  spec_index: .nan
+  spec_index_err: .nan
+  spec_index_err_sys: .nan
+  spec_index_err_tot: .nan
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: 2.9166664743118798e-12
-  spec_flux_above_1TeV_err: 6.973546089542038e-13
-  spec_flux_above_1TeV_crab: 8.775558471679688
-  spec_flux_above_1TeV_crab_err: 2.098174810409546
-  spec_flux_above_erange_min: 1.2369190741101654e-11
-  spec_flux_above_erange_min_err: 2.3101828609817243e-12
-  spec_energy_flux_1TeV_10TeV: 6.4582462641626925e-12
-  spec_energy_flux_1TeV_10TeV_err: 1.7640211123423621e-12
+  spec_flux_above_1TeV: .nan
+  spec_flux_above_1TeV_err: .nan
+  spec_flux_above_1TeV_crab: .nan
+  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_erange_min: .nan
+  spec_flux_above_erange_min_err: .nan
+  spec_energy_flux_1TeV_10TeV: .nan
+  spec_energy_flux_1TeV_10TeV_err: .nan
 - source_id: 65
   common_name: HESS J1418-609
   gamma_names: HESS J1418-609

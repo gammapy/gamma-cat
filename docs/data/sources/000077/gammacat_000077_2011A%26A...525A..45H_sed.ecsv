@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 77}
+# - {reference_id: 2011A&A...525A..45H}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA525_A45.html'}
+# - {comments: 'These are the spectral points for standard cuts (80 p.e.) from Figure
+#     2.
+# 
+#     The webpage also contains spectral points for hard cuts, not added to gamma-cat
+#     now.'}
+e_ref dnde dnde_errn dnde_errp
+0.8609 2.29119e-12 8.70543e-13 8.95502e-13
+1.56151 6.98172e-13 2.20354e-13 2.30407e-13
+2.76375 1.69062e-13 6.7587e-14 7.18838e-14
+4.8916 7.72925e-14 2.40132e-14 2.60749e-14
+9.98858 1.03253e-14 5.06315e-15 5.64195e-15
+27.0403 7.44987e-16 5.72089e-16 7.25999e-16

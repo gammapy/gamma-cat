@@ -1,0 +1,44 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 74}
+# - {reference_id: 2010A&A...516A..62A}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA516_A62.html'}
+# - {UL_CONF: 0.6827}
+# - {comments: 'These are the spectral points for the NE region
+# 
+#     TODO: also add spectral points for SW region
+# 
+#     The paper doesn''t state UL_CONF.
+# 
+#     The webpage states that unusually low value UL_CONF: 0.6827'}
+e_ref dnde dnde_errn dnde_errp dnde_ul
+0.2314 3.377e-12 5.44e-13 8.123e-12 nan
+0.3152 4.502e-12 3.202e-12 5.829e-12 nan
+0.4632 2.498e-12 1.994e-12 3.015e-12 nan
+0.6787 6.243e-13 4.19e-13 8.36e-13 nan
+0.9924 2.762e-13 1.803e-13 3.756e-13 nan
+1.452 1.945e-13 1.45e-13 2.461e-13 nan
+2.136 6.642e-14 4.141e-14 9.265e-14 nan
+3.153 1.477e-14 4.119e-15 2.856e-14 nan
+4.687 6.992e-15 1.828e-15 1.407e-14 nan
+6.972 6.383e-15 3e-15 1.021e-14 nan
+10.39 2.343e-15 8.199e-16 4.318e-15 nan
+15.7 8.015e-16 2.641e-16 1.618e-15 nan
+22.69 nan nan nan 1.766e-17
+30.77 nan nan nan 5.403e-17
+41.82 nan nan nan 4.873e-17
+62.4 nan nan nan 5.373e-17
+96.92 nan nan nan 4.134e-17
+122.2 nan nan nan 5.078e-17

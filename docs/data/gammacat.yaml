@@ -6251,45 +6251,45 @@
   gamma_names: ''
   other_names: PSR J1913+1011
   reference_id: 2008A&A...484..435A
-  significance: .nan
-  livetime: .nan
+  significance: 7.5
+  livetime: 20.799999237060547
   ra: 288.3347473144531
   dec: 10.189713478088379
   glon: 44.48461151123047
   glat: -0.1668851673603058
-  morph_type: ''
-  morph_sigma: .nan
-  morph_sigma_err: .nan
+  morph_type: gauss
+  morph_sigma: 0.25999999046325684
+  morph_sigma_err: 0.029999999329447746
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: ''
-  spec_erange_min: .nan
+  spec_type: pl
+  spec_erange_min: 0.800000011920929
   spec_erange_max: .nan
-  spec_theta: .nan
-  spec_ref: .nan
-  spec_norm: .nan
-  spec_norm_err: .nan
-  spec_norm_err_sys: .nan
-  spec_norm_err_tot: .nan
-  spec_norm_1TeV: .nan
-  spec_norm_1TeV_err: .nan
-  spec_index: .nan
-  spec_index_err: .nan
-  spec_index_err_sys: .nan
-  spec_index_err_tot: .nan
+  spec_theta: 0.5
+  spec_ref: 1.0
+  spec_norm: 3.49999998601469e-12
+  spec_norm_err: 5.999999759184749e-13
+  spec_norm_err_sys: 9.999999960041972e-13
+  spec_norm_err_tot: 1.1661904081305963e-12
+  spec_norm_1TeV: 3.49999998601469e-12
+  spec_norm_1TeV_err: 5.999999759184749e-13
+  spec_index: 2.700000047683716
+  spec_index_err: 0.20000000298023224
+  spec_index_err_sys: 0.30000001192092896
+  spec_index_err_tot: 0.36055514216423035
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_flux_above_1TeV_crab: .nan
-  spec_flux_above_1TeV_crab_err: .nan
-  spec_flux_above_erange_min: .nan
-  spec_flux_above_erange_min_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_flux_above_1TeV: 2.05882359771703e-12
+  spec_flux_above_1TeV_err: 4.2805998546127655e-13
+  spec_flux_above_1TeV_crab: 6.194512367248535
+  spec_flux_above_1TeV_crab_err: 1.287931203842163
+  spec_flux_above_erange_min: 3.008611805868644e-12
+  spec_flux_above_erange_min_err: 5.605992016086137e-13
+  spec_energy_flux_1TeV_10TeV: 4.002368748923235e-12
+  spec_energy_flux_1TeV_10TeV_err: 9.688986809044953e-13
 - source_id: 135
   common_name: W 51C
   gamma_names: HESS J1923+141

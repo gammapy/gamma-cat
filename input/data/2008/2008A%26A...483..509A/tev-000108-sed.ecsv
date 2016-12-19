@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errn, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errp, datatype: float32, unit: erg cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 108
+# - reference_id: 2008A&A...483..509A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/hessj1745-303-aux.html
+# - comments: |
+#     This is the full spectrum from Figure 2.
+#     TODO: also add spectrum for region A from that webpage.
+e_ref e2dnde e2dnde_errn e2dnde_errp
+0.34603  1.01211e-11 1.35747e-12 1.36563e-12
+0.604812 6.35885e-12 8.4088e-13 8.4719e-13
+1.06183  4.30832e-12 6.8007e-13 6.86648e-13
+1.87934  2.66866e-12 6.48719e-13 6.57234e-13
+3.32625  2.07955e-12 7.14742e-13 7.26675e-13
+7.69408  7.57597e-13 5.73542e-13 5.84117e-13
+23.9738  5.68098e-13 6.42779e-13 6.724e-13

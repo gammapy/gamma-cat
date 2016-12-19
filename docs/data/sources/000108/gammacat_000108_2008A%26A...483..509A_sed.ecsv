@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 108}
+# - {reference_id: 2008A&A...483..509A}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/hessj1745-303-aux.html'}
+# - {comments: 'This is the full spectrum from Figure 2.
+# 
+#     TODO: also add spectrum for region A from that webpage.'}
+e_ref dnde dnde_errn dnde_errp
+0.34603 5.27582e-11 7.07607e-12 7.11861e-12
+0.604812 1.08499e-11 1.43477e-12 1.44554e-12
+1.06183 2.385e-12 3.76472e-13 3.80114e-13
+1.87934 4.71598e-13 1.1464e-13 1.16145e-13
+3.32625 1.17314e-13 4.03208e-14 4.0994e-14
+7.69408 7.98757e-15 6.04702e-15 6.15852e-15
+23.9738 6.16935e-16 6.98036e-16 7.30203e-16

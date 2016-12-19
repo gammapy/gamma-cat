@@ -4666,46 +4666,46 @@
   common_name: HESS J1745-303
   gamma_names: ''
   other_names: G359.1-0.5
-  reference_id: 2006ApJ...636..777A
-  significance: 4.0
-  livetime: 35.29999923706055
+  reference_id: 2008A&A...483..509A
+  significance: 10.199999809265137
+  livetime: 79.0
   ra: 266.2969970703125
   dec: -30.198999404907227
   glon: 358.8734130859375
   glat: -0.5782836079597473
   morph_type: gauss
-  morph_sigma: 0.20999999344348907
-  morph_sigma_err: 0.05999999865889549
-  morph_sigma2: 0.09000000357627869
-  morph_sigma2_err: 0.03999999910593033
-  morph_pa: 54.0
-  morph_pa_err: 7.0
-  morph_pa_frame: galactic
-  spec_type: pl2
-  spec_erange_min: 0.20000000298023224
+  morph_sigma: .nan
+  morph_sigma_err: .nan
+  morph_sigma2: .nan
+  morph_sigma2_err: .nan
+  morph_pa: .nan
+  morph_pa_err: .nan
+  morph_pa_frame: ''
+  spec_type: pl
+  spec_erange_min: 0.15000000596046448
   spec_erange_max: .nan
-  spec_theta: 0.36000001430511475
-  spec_ref: 0.20000000298023224
-  spec_norm: 1.1200000128719356e-11
-  spec_norm_err: 3.999999984016789e-12
-  spec_norm_err_sys: 2.9999998795923744e-13
-  spec_norm_err_tot: 4.011234053247215e-12
-  spec_norm_1TeV: 2.454010735938872e-12
-  spec_norm_1TeV_err: 9.19313670327826e-13
-  spec_index: 1.8200000524520874
-  spec_index_err: 0.28999999165534973
+  spec_theta: 0.4000000059604645
+  spec_ref: 1.0
+  spec_norm: 2.8399999366102158e-12
+  spec_norm_err: 2.299999925757523e-13
+  spec_norm_err_sys: 2.8000000863899477e-13
+  spec_norm_err_tot: 3.6235343068083403e-13
+  spec_norm_1TeV: 2.8399999366102158e-12
+  spec_norm_1TeV_err: 2.299999925757523e-13
+  spec_index: 2.7100000381469727
+  spec_index_err: 0.10999999940395355
   spec_index_err_sys: 0.20000000298023224
-  spec_index_err_tot: 0.35227829217910767
+  spec_index_err_tot: 0.22825424373149872
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: 2.9926601561452992e-12
-  spec_flux_above_1TeV_err: 1.7586798987598296e-12
-  spec_flux_above_1TeV_crab: 9.004205703735352
-  spec_flux_above_1TeV_crab_err: 5.291451454162598
-  spec_flux_above_erange_min: 1.119996369952636e-11
-  spec_flux_above_erange_min_err: 3.999986973590719e-12
-  spec_energy_flux_1TeV_10TeV: 7.00158247352034e-12
-  spec_energy_flux_1TeV_10TeV_err: 4.132741891760272e-12
+  spec_flux_above_1TeV: 1.6608187264691154e-12
+  spec_flux_above_1TeV_err: 1.7177028571215003e-13
+  spec_flux_above_1TeV_crab: 4.997010231018066
+  spec_flux_above_1TeV_crab_err: 0.5168161392211914
+  spec_flux_above_erange_min: 4.258005059654124e-11
+  spec_flux_above_erange_min_err: 7.047903927137611e-12
+  spec_energy_flux_1TeV_10TeV: 3.2200622376854504e-12
+  spec_energy_flux_1TeV_10TeV_err: 3.9850962156931513e-13
 - source_id: 106
   common_name: Galactic Centre
   gamma_names: HESS J1745-290,VER J1745-290

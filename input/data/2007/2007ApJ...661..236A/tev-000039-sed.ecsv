@@ -1,0 +1,29 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 39
+# - reference_id: 2007ApJ...661..236A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/VelaJr2auxinfo.htm
+# - comments: |
+#     Flux points shown in Figure 6.
+e_ref dnde dnde_errn dnde_errp
+0.3676           1.673e-10                              1.408e-10                1.938e-10
+0.4971           9.566e-11                              8.498e-11                1.063e-10
+0.6778           3.785e-11                              3.304e-11                4.265e-11
+0.8942           2.546e-11                              2.27e-11                 2.821e-11
+1.184            1.561e-11                              1.403e-11                1.719e-11
+1.583            7.379e-12                              6.471e-12                8.285e-12
+2.127            3.488e-12                              2.973e-12                4.001e-12
+2.844            2.058e-12                              1.763e-12                2.353e-12
+3.787            1.165e-12                              9.955e-13                1.334e-12
+5.028            4.828e-13                              3.861e-13                5.795e-13
+6.664            1.408e-13                              8.445e-14                1.972e-13
+8.839            9.717e-14                              6.377e-14                1.306e-13
+11.8             5.014e-14                              3.012e-14                7.016e-14
+15.83            2.552e-14                              1.273e-14                3.834e-14

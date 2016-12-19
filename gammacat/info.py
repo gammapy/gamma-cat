@@ -26,7 +26,9 @@ class GammaCatInfo:
         self.base_dir = Path(__file__).parent.parent
 
         # Internal gammcat vesion path
-        self.internal_dir = Path(os.environ.get('HGPS_ANALYSIS')) / 'data/catalogs/gammacat-hess-internal/'
+        hgps_analysis_dir = os.environ.get('HGPS_ANALYSIS')
+        if hgps_analysis_dir:
+            self.internal_dir = Path(hgps_analysis_dir) / 'data/catalogs/gammacat-hess-internal/'
 
     def __str__(self):
         ss = 'GammaCatInfo:\n'

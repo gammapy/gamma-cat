@@ -123,7 +123,7 @@ class InputDataset:
 
         # TODO: maybe just use an OrderedDict
         sources = []
-        for source_path in sorted(path.glob('*.yaml')):
+        for source_path in sorted(path.glob('tev-*.yaml')):
             source_info = DatasetSourceInfo.read(source_path)
             sources.append(source_info)
 

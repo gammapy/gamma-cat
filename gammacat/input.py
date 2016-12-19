@@ -3,7 +3,6 @@
 Classes to read, validate and work with the input data files.
 """
 import logging
-import os
 from collections import OrderedDict
 from itertools import chain
 from pathlib import Path
@@ -232,7 +231,7 @@ class InputDatasetCollection:
         paths = list(path.glob('*/*'))
 
         if internal:
-            path_internal = Path(os.environ.get('GAMMACAT_HESS_INTERNAL'))
+            path_internal = gammacat_info.internal_dir
             paths = chain(paths, [path_internal])
 
         data = []

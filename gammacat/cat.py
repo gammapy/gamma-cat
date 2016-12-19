@@ -420,7 +420,7 @@ class GammaCatMaker:
         # table.info('stats')
         # table.pprint()
         if internal:
-            path = gammacat_info.base_dir / 'docs/data/gammacat-hess-internal.fits.gz'
+            path = gammacat_info.internal_dir / 'gammacat-hess-internal.fits.gz'
         else:
             path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))

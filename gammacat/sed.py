@@ -1,6 +1,5 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
-import os
 from pathlib import Path
 from itertools import chain
 from astropy.table import Table
@@ -248,8 +247,8 @@ class SEDList:
         if internal:
             path = gammacat_info.base_dir / 'docs/data/sources'
             paths = path.glob('*/gammacat*sed.ecsv')
+            path_internal = gammacat_info.internal_dir
 
-            path_internal = Path(os.environ.get('GAMMACAT_HESS_INTERNAL'))
             paths_internal = path_internal.glob('tev*.ecsv')
             paths = chain(paths, paths_internal)
 

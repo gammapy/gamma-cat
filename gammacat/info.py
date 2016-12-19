@@ -1,5 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import subprocess
+import os
 from pathlib import Path
 import urllib.parse
 
@@ -23,6 +24,9 @@ class GammaCatInfo:
 
         # Git repository base directory
         self.base_dir = Path(__file__).parent.parent
+
+        # Internal gammcat vesion path
+        self.internal_dir = Path(os.environ.get('HGPS_ANALYSIS')) / 'data/catalogs/gammacat-hess-internal/'
 
     def __str__(self):
         ss = 'GammaCatInfo:\n'

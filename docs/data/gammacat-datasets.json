@@ -13,16 +13,26 @@
             "sources": []
         },
         {
-            "reference_id": "1999AA...342...69A",
-            "path": "1999/1999AA...342...69A",
-            "url": "1999/1999AA...342...69A",
-            "sources": []
+            "reference_id": "1999A&A...342...69A",
+            "path": "1999/1999A%26A...342...69A",
+            "url": "1999/1999A%2526A...342...69A",
+            "sources": [
+                {
+                    "source_id": 91,
+                    "reference_id": "1999A&A...342...69A"
+                }
+            ]
         },
         {
-            "reference_id": "1999AA...350..757A",
-            "path": "1999/1999AA...350..757A",
-            "url": "1999/1999AA...350..757A",
-            "sources": []
+            "reference_id": "1999A&A...350..757A",
+            "path": "1999/1999A%26A...350..757A",
+            "url": "1999/1999A%2526A...350..757A",
+            "sources": [
+                {
+                    "source_id": 49,
+                    "reference_id": "1999A&A...350..757A"
+                }
+            ]
         },
         {
             "reference_id": "1999ApJ...526L..81M",
@@ -43,10 +53,15 @@
             "sources": []
         },
         {
-            "reference_id": "2002AA...393...89A",
-            "path": "2002/2002AA...393...89A",
-            "url": "2002/2002AA...393...89A",
-            "sources": []
+            "reference_id": "2002A&A...393...89A",
+            "path": "2002/2002A%26A...393...89A",
+            "url": "2002/2002A%2526A...393...89A",
+            "sources": [
+                {
+                    "source_id": 49,
+                    "reference_id": "2002A&A...393...89A"
+                }
+            ]
         },
         {
             "reference_id": "2003ApJ...583L...9H",
@@ -89,10 +104,26 @@
             ]
         },
         {
-            "reference_id": "2005AA...437...95A",
-            "path": "2005/2005AA...437...95A",
-            "url": "2005/2005AA...437...95A",
-            "sources": []
+            "reference_id": "2005A&A...437...95A",
+            "path": "2005/2005A%26A...437...95A",
+            "url": "2005/2005A%2526A...437...95A",
+            "sources": [
+                {
+                    "source_id": 49,
+                    "reference_id": "2005A&A...437...95A"
+                }
+            ]
+        },
+        {
+            "reference_id": "2005Sci...309..746A",
+            "path": "2005/2005Sci...309..746A",
+            "url": "2005/2005Sci...309..746A",
+            "sources": [
+                {
+                    "source_id": 119,
+                    "reference_id": "2005Sci...309..746A"
+                }
+            ]
         },
         {
             "reference_id": "2006A&A...448L..43A",

@@ -1,0 +1,44 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_ul, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 119
+# - reference_id: 2006A&A...460..743A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LS5039_II_auxinfo.html
+# - UL_CONF: 0.84  # CL stated as "1 sigma". Assuming here that's the two-sided central interval
+# - comments: |
+#     H.E.S.S. data points for high (INFC) State (Figure 6)
+#     TODO: add SED for low (SUPC) State
+e_ref dnde dnde_errn dnde_errp dnde_ul
+  0.1997      6.023e-11       4.72e-11    7.395e-11 nan
+  0.2435      4.168e-11      3.512e-11    4.856e-11 nan
+  0.2982      2.764e-11        2.4e-11    3.144e-11 nan
+  0.3658      1.888e-11      1.661e-11    2.125e-11 nan
+  0.4503      1.049e-11      9.125e-12    1.192e-11 nan
+  0.5529      8.967e-12      8.018e-12    9.963e-12 nan
+  0.6792      7.313e-12      6.618e-12    8.041e-12 nan
+  0.8348      3.249e-12      2.852e-12    3.671e-12 nan
+  1.026       2.046e-12      1.773e-12    2.338e-12 nan
+  1.26         1.85e-12      1.635e-12    2.078e-12 nan
+  1.548       1.127e-12       9.83e-13    1.282e-12 nan
+  1.901       5.174e-13      4.275e-13    6.154e-13 nan
+  2.332       5.216e-13      4.461e-13    6.033e-13 nan
+  2.856       3.849e-13      3.284e-13    4.464e-13 nan
+  3.494        2.01e-13      1.647e-13    2.412e-13 nan
+  4.273       1.526e-13      1.249e-13    1.833e-13 nan
+  5.221       7.398e-14      5.612e-14    9.421e-14 nan
+  6.372       5.519e-14      4.207e-14    7.021e-14 nan
+  7.793       2.154e-14      1.389e-14    3.063e-14 nan
+  9.552       1.585e-14      1.028e-14    2.252e-14 nan
+  11.75       7.568e-15      4.124e-15    1.183e-14 nan
+  14.47       1.306e-15      2.707e-16    3.413e-15 nan
+  17.88       1.764e-15      6.659e-16    3.456e-15 nan
+  21.94       4.501e-16      8.334e-17    1.465e-15 nan
+  26.67       1.438e-15       5.92e-16    2.827e-15 nan
+  32.09       nan                  nan          nan 1.596e-16

@@ -54,6 +54,7 @@ class SED:
 
         self._process_energy_ranges(table)
         self._process_flux_errrors(table)
+        self._process_ul_conf(table)
 
         self._add_missing_defaults(table)
         self._process_e2dnde_inputs(table)
@@ -90,6 +91,14 @@ class SED:
         if 'dnde_max' in table.colnames:
             table['dnde_errp'] = table['dnde_max'] - table['dnde']
             del table['dnde_max']
+
+    @staticmethod
+    def _process_ul_conf(table):
+        m = table.meta
+        if 'UL_CONF' in m:
+            if m['UL_CONF'] == '1 sigma':
+                # Assuming here that's the two-sided central interval
+                m['UL_CONF'] = 0.84
 
     @staticmethod
     def _add_missing_defaults(table):
@@ -194,9 +203,6 @@ class SED:
             log.error('SED file {} contains invalid meta key comments (should be str): {}'
                       ''.format(self.path, meta['comments']))
 
-        if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
-            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
-
     def _validate_input_consistency(self):
         table = self.table
         meta = table.meta
@@ -218,6 +224,10 @@ class SED:
                 'SED file {} contains invalid columns: {}'
                 ''.format(self.path, unexpected_colnames)
             )
+
+        meta = table.meta
+        if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
+            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
 
 
 class SEDList:
@@ -258,7 +268,7 @@ class SEDList:
         for path in paths:
             sed = SED.read(path)
             data.append(sed)
-        #from IPython import embed; embed(); 1/0
+        # from IPython import embed; embed(); 1/0
         return cls(data=data)
 
     def validate(self):

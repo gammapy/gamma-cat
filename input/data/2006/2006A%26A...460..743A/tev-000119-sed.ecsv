@@ -11,7 +11,7 @@
 # - source_id: 119
 # - reference_id: 2006A&A...460..743A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LS5039_II_auxinfo.html
-# - UL_CONF: 0.84  # CL stated as "1 sigma". Assuming here that's the two-sided central interval
+# - UL_CONF: 1 sigma
 # - comments: |
 #     H.E.S.S. data points for high (INFC) State (Figure 6)
 #     TODO: add SED for low (SUPC) State

@@ -1,0 +1,32 @@
+source_id: 95
+reference_id: 2008A&A...486..829A
+
+# Note: this paper is mostly about CTB 37B. To avoid confusion:
+# CTB 37B = HESS J1713-381
+# CTB 37A = HESS J1714-385
+
+
+data:
+  livetime: 55.4
+  excess: 292
+  significance: 8.6
+
+pos:
+  ra: {val: 17h13m54s, err: 4s, err_sys: 20 arcsec}
+  dec: {val: -38d11m58s, err: 45 arcsec, err_sys: 20 arcsec}
+
+morph:
+  # Note: results obtained from double-Gauss source fit,
+  # to take nearby source CTB 37A into account
+  type: gauss
+  sigma: {val: 2.6 arcmin, err: 0.8 arcmin}
+
+spec:
+  type: pl
+
+  norm: {val: 0.65, err: 0.11, err_sys: 0.13}
+  index: {val: 2.65, err: 0.19, err_sys: 0.20}
+  ref: 1
+
+  theta: 0.187
+  erange: {min: 0.25}

@@ -266,46 +266,46 @@
   common_name: CTB 37B
   gamma_names: HESS J1713-381
   other_names: SNR G348.7+0.3,CXOU J171405.7-381031
-  reference_id: 2006ApJ...636..777A
-  significance: 4.0
-  livetime: 37.29999923706055
+  reference_id: 2008A&A...486..829A
+  significance: 8.600000381469727
+  livetime: 55.400001525878906
   ra: 17.23270034790039
   dec: -38.20000076293945
   glon: 285.68988037109375
   glat: -78.33631896972656
   morph_type: gauss
-  morph_sigma: 0.05999999865889549
-  morph_sigma_err: 0.03999999910593033
+  morph_sigma: 0.04333333298563957
+  morph_sigma_err: 0.013333333656191826
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: pl2
-  spec_erange_min: 0.20000000298023224
+  spec_type: pl
+  spec_erange_min: 0.25
   spec_erange_max: .nan
-  spec_theta: 0.17000000178813934
-  spec_ref: 0.20000000298023224
-  spec_norm: 4.200000156689976e-12
-  spec_norm_err: 1.4999999940062958e-12
-  spec_norm_err_sys: 2.9999998795923744e-13
-  spec_norm_err_tot: 1.5297058324897916e-12
-  spec_norm_1TeV: 6.908139425082505e-13
-  spec_norm_1TeV_err: 3.6765477272847347e-13
-  spec_index: 2.2699999809265137
-  spec_index_err: 0.47999998927116394
+  spec_theta: 0.18700000643730164
+  spec_ref: 1.0
+  spec_norm: 6.500000190867716e-13
+  spec_norm_err: 1.100000014578155e-13
+  spec_norm_err_sys: 1.300000011068489e-13
+  spec_norm_err_tot: 1.7029385985124074e-13
+  spec_norm_1TeV: 6.500000190867716e-13
+  spec_norm_1TeV_err: 1.100000014578155e-13
+  spec_index: 2.6500000953674316
+  spec_index_err: 0.1899999976158142
   spec_index_err_sys: 0.20000000298023224
-  spec_index_err_tot: 0.5199999809265137
+  spec_index_err_tot: 0.27586227655410767
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: 5.439479704334726e-13
-  spec_flux_above_1TeV_err: 4.629485271696876e-13
-  spec_flux_above_1TeV_crab: 1.636610746383667
-  spec_flux_above_1TeV_crab_err: 1.3929024934768677
-  spec_flux_above_erange_min: 4.200000156689976e-12
-  spec_flux_above_erange_min_err: 1.4999999940062958e-12
-  spec_energy_flux_1TeV_10TeV: 1.1845366267720925e-12
-  spec_energy_flux_1TeV_10TeV_err: 1.136285076447363e-12
+  spec_flux_above_1TeV: 3.93939384151637e-13
+  spec_flux_above_1TeV_err: 8.063635073248324e-14
+  spec_flux_above_1TeV_crab: 1.1852703094482422
+  spec_flux_above_1TeV_crab_err: 0.2426156848669052
+  spec_flux_above_erange_min: 3.8799701299052636e-12
+  spec_flux_above_erange_min_err: 8.729110641779447e-13
+  spec_energy_flux_1TeV_10TeV: 7.761278598972243e-13
+  spec_energy_flux_1TeV_10TeV_err: 1.8404719480218101e-13
 - source_id: 7
   common_name: RGB J0136+391
   gamma_names: ''

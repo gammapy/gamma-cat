@@ -6383,8 +6383,8 @@
   gamma_names: ''
   other_names: ''
   reference_id: 2011A&A...529A..49H
-  significance: 7.900000095367432
-  livetime: 24.799999237060547
+  significance: 8.899999618530273
+  livetime: 38.400001525878906
   ra: 295.97918701171875
   dec: 21.30221939086914
   glon: 57.75760269165039
@@ -6399,8 +6399,8 @@
   morph_pa_frame: ''
   spec_type: pl
   spec_erange_min: 0.4699999988079071
-  spec_erange_max: 6.0
-  spec_theta: 0.4099999964237213
+  spec_erange_max: .nan
+  spec_theta: 0.10000000149011612
   spec_ref: 1.0
   spec_norm: 5.600000172779895e-13
   spec_norm_err: 7.99999985961336e-14

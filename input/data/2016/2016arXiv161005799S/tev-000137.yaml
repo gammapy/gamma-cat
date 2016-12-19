@@ -1,0 +1,22 @@
+source_id: 137
+reference_id: 2016arXiv161005799S
+
+data:
+  livetime: 30.9
+  significance: 19.3
+
+pos:
+  ra: {val: 19h43m59s}
+  dec: {val: 21d19m05s}
+
+morph:
+  type: point
+
+spec:
+  type: pl2
+  norm: {val: 5.35, err: 0.44}
+  index: {val: 2.8, err: 0.1}
+  ref: 0.2
+
+#  theta: not given in the paper
+  erange: {min: 0.2, max: 2.0}

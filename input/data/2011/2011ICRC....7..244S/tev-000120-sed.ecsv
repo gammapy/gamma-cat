@@ -6,7 +6,6 @@
 # - {name: e_min, datatype: float32}
 # - {name: e_max, datatype: float32}
 # - {name: dnde_err, datatype: float32}
-
 # meta: !!omap
 # - data_type: sed
 # - source_id: 120
@@ -14,7 +13,6 @@
 # - comments: |
 #     Spectral points for HESS J1831-098 from Figure 2.
 #     Data obtained via email by Arache Djannati-Atai on Nov 25, 2016.
-
 e_ref dnde e_min e_max dnde_err
  0.3025 6.9421176e-12  0.2397  0.4217 3.8934139e-12
  0.5322 5.2222529e-12  0.4217  0.7421  9.627803e-13
@@ -25,6 +23,3 @@ e_ref dnde e_min e_max dnde_err
  8.9769   1.06612e-14  7.1138 12.5175    3.5570e-15
 15.7959    1.6602e-15 12.5175 22.0259    1.3130e-15
 27.7945     5.087e-16 22.0259 38.7569     5.329e-16
-
-# TODO: add data for Residual and errResidual?
-# https://gist.github.com/cdeil/4f38143712a452aeef859afe859d85e2

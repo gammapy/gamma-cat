@@ -5502,46 +5502,46 @@
   common_name: HESS J1831-098
   gamma_names: HESS J1831-098
   other_names: PSR J1831-952
-  reference_id: ''
-  significance: .nan
-  livetime: .nan
+  reference_id: 2011ICRC....7..244S
+  significance: 7.900000095367432
+  livetime: 40.0
   ra: 277.8500061035156
   dec: -9.899999618530273
   glon: 21.848445892333984
   glat: -0.10541696101427078
-  morph_type: ''
-  morph_sigma: .nan
+  morph_type: gauss
+  morph_sigma: 0.15000000596046448
   morph_sigma_err: .nan
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: ''
+  spec_type: pl
   spec_erange_min: .nan
   spec_erange_max: .nan
-  spec_theta: .nan
-  spec_ref: .nan
-  spec_norm: .nan
-  spec_norm_err: .nan
+  spec_theta: 0.30000001192092896
+  spec_ref: 1.0
+  spec_norm: 1.0999999739205735e-12
+  spec_norm_err: 9.9999998245167e-14
   spec_norm_err_sys: .nan
   spec_norm_err_tot: .nan
-  spec_norm_1TeV: .nan
-  spec_norm_1TeV_err: .nan
-  spec_index: .nan
-  spec_index_err: .nan
+  spec_norm_1TeV: 1.0999999739205735e-12
+  spec_norm_1TeV_err: 9.9999998245167e-14
+  spec_index: 2.0999999046325684
+  spec_index_err: 0.10000000149011612
   spec_index_err_sys: .nan
   spec_index_err_tot: .nan
   spec_ecut: .nan
   spec_ecut_err: .nan
-  spec_flux_above_1TeV: .nan
-  spec_flux_above_1TeV_err: .nan
-  spec_flux_above_1TeV_crab: .nan
-  spec_flux_above_1TeV_crab_err: .nan
+  spec_flux_above_1TeV: 9.999997791637627e-13
+  spec_flux_above_1TeV_err: 1.2856458519311387e-13
+  spec_flux_above_1TeV_crab: 3.0087625980377197
+  spec_flux_above_1TeV_crab_err: 0.38682040572166443
   spec_flux_above_erange_min: .nan
   spec_flux_above_erange_min_err: .nan
-  spec_energy_flux_1TeV_10TeV: .nan
-  spec_energy_flux_1TeV_10TeV_err: .nan
+  spec_energy_flux_1TeV_10TeV: 2.2623894944950873e-12
+  spec_energy_flux_1TeV_10TeV_err: 3.241006367362548e-13
 - source_id: 163
   common_name: HESS J1832-085
   gamma_names: HESS J1832-085

@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 120}
+# - {reference_id: 2011ICRC....7..244S}
+# - {comments: 'Spectral points for HESS J1831-098 from Figure 2.
+# 
+#     Data obtained via email by Arache Djannati-Atai on Nov 25, 2016.'}
+e_ref e_min e_max dnde dnde_err
+0.3025 0.2397 0.4217 6.94212e-12 3.89341e-12
+0.5322 0.4217 0.7421 5.22225e-12 9.6278e-13
+0.9364 0.7421 1.3057 1.13368e-12 2.81279e-13
+1.6477 1.3057 2.2976 5.01676e-13 9.18719e-14
+2.8993 2.2976 4.0428 1.06342e-13 2.98748e-14
+5.1016 4.0428 7.1138 5.65447e-14 9.7324e-15
+8.9769 7.1138 12.5175 1.06612e-14 3.557e-15
+15.7959 12.5175 22.0259 1.6602e-15 1.313e-15
+27.7945 22.0259 38.7569 5.087e-16 5.329e-16

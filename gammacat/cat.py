@@ -366,8 +366,7 @@ class GammaCatMaker:
         self.gather_data(internal=internal)
         self.make_table()
         self.write_table(internal=internal)
-        if not internal:
-            self.write_yaml_text_dump()
+        self.write_yaml_text_dump(internal=internal)
 
     def gather_data(self, internal=False):
         """Gather data into Python data structures."""
@@ -420,7 +419,7 @@ class GammaCatMaker:
         # table.info('stats')
         # table.pprint()
         if internal:
-            path = gammacat_info.base_dir / 'docs/data/gammacat-hess-internal.fits.gz'
+            path = gammacat_info.internal_dir / 'gammacat-hess-internal.fits.gz'
         else:
             path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
@@ -430,12 +429,16 @@ class GammaCatMaker:
         # log.info('Writing {}'.format(path))
         # table.write(str(path), format='ascii.ecsv')
 
-    def write_yaml_text_dump(self):
+    def write_yaml_text_dump(self, internal=False):
         column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
         table = self.table[column_selection]
         list_of_dict = table_to_list_of_dict(table)
 
-        path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
+        if internal:
+            path = gammacat_info.internal_dir / 'gammacat-hess-internal.yaml'
+        else:
+            path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
+
         with path.open('w') as f:
             log.info('Writing {}'.format(path))
             f.write(yaml.dump(list_of_dict, default_flow_style=False))

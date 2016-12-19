@@ -149,7 +149,7 @@
   reference_id:
 - source_id: 49
   status: source
-  reference_id:
+  reference_id: 2005A&A...437...95A
 - source_id: 50
   status: source
   reference_id:
@@ -356,7 +356,7 @@
   reference_id: 2006ApJ...636..777A, 2006A&A...460..365A
 - source_id: 119
   status: source
-  reference_id: 2006A&A...460..743A
+  reference_id: 2005Sci...309..746A, 2006A&A...460..743A
 - source_id: 120
   status: source
   reference_id: 2011ICRC....7..244S

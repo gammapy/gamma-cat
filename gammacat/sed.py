@@ -26,7 +26,7 @@ class SED:
     expected_colnames_input = expected_colnames + [
         'e_lo', 'e_hi',
         'dnde_min', 'dnde_max',
-        'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp',
+        'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp', 'e2dnde_ul',
     ]
 
     required_meta_keys = [
@@ -202,11 +202,13 @@ class SED:
         meta = table.meta
         colnames = table.colnames
 
-        if 'UL_CONF' in meta and 'dnde_ul' not in colnames:
-            log.error('SED file {} contains "UL_CONF" in meta, but no column "dnde_ul".'.format(self.path))
+        has_ul_col = len({'dnde_ul', 'e2dnde_ul'} & set(colnames)) > 0
 
-        if 'dnde_ul' in colnames and 'UL_CONF' not in meta:
-            log.error('SED file {} contains column "dnde_ul", but not "UL_CONF" in meta.'.format(self.path))
+        if ('UL_CONF' in meta) and not has_ul_col:
+            log.error('SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.path))
+
+        if has_ul_col and ('UL_CONF' not in meta):
+            log.error('SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.path))
 
     def validate_output(self):
         table = self.table

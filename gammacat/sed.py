@@ -101,7 +101,7 @@ class SED:
             if colname.startswith('e_') and not table[colname].unit:
                 table[colname].unit = 'TeV'
 
-            if 'dnde' in colname and not table[colname].unit:
+            if colname.startswith('dnde') and not table[colname].unit:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
 
             if colname == 'excess':

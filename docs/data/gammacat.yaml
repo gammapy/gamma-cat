@@ -5370,46 +5370,46 @@
   common_name: HESS J1825-137
   gamma_names: HESS J1825-137,1HWC J1825-133
   other_names: PSR J1826-1334,PSR B1823-13
-  reference_id: 2006ApJ...636..777A
-  significance: 8.399999618530273
-  livetime: 7.300000190734863
+  reference_id: 2006A&A...460..365A
+  significance: 33.79999923706055
+  livetime: 52.099998474121094
   ra: 276.5544128417969
   dec: -13.580039978027344
   glon: 18.000179290771484
   glat: -0.6909274458885193
   morph_type: gauss
-  morph_sigma: 0.1599999964237213
+  morph_sigma: 0.23999999463558197
   morph_sigma_err: 0.019999999552965164
   morph_sigma2: .nan
   morph_sigma2_err: .nan
   morph_pa: .nan
   morph_pa_err: .nan
   morph_pa_frame: ''
-  spec_type: pl2
-  spec_erange_min: 0.20000000298023224
+  spec_type: ecpl
+  spec_erange_min: 0.27000001072883606
   spec_erange_max: .nan
-  spec_theta: 0.30000001192092896
-  spec_ref: 0.20000000298023224
-  spec_norm: 3.9400000623190934e-11
-  spec_norm_err: 2.199999947841147e-12
-  spec_norm_err_sys: 2.9999998795923744e-13
-  spec_norm_err_tot: 2.2203603972786867e-12
-  spec_norm_1TeV: 5.487226124867295e-12
-  spec_norm_1TeV_err: 5.085090334921993e-13
-  spec_index: 2.4600000381469727
-  spec_index_err: 0.07999999821186066
-  spec_index_err_sys: 0.20000000298023224
-  spec_index_err_tot: 0.215406596660614
-  spec_ecut: .nan
-  spec_ecut_err: .nan
-  spec_flux_above_1TeV: 3.7583742541758e-12
-  spec_flux_above_1TeV_err: 5.27455249615949e-13
-  spec_flux_above_1TeV_crab: 11.30805778503418
-  spec_flux_above_1TeV_crab_err: 1.5869879722595215
-  spec_flux_above_erange_min: 3.9400000623190934e-11
-  spec_flux_above_erange_min_err: 2.199999947841147e-12
-  spec_energy_flux_1TeV_10TeV: 7.792614643842288e-12
-  spec_energy_flux_1TeV_10TeV_err: 1.2479892336561549e-12
+  spec_theta: 0.800000011920929
+  spec_ref: 1.0
+  spec_norm: 2.100000034976901e-11
+  spec_norm_err: 4.999999980020986e-13
+  spec_norm_err_sys: .nan
+  spec_norm_err_tot: .nan
+  spec_norm_1TeV: 2.0170070474945234e-11
+  spec_norm_1TeV_err: 5.35148477181363e-13
+  spec_index: 2.259999990463257
+  spec_index_err: 0.029999999329447746
+  spec_index_err_sys: .nan
+  spec_index_err_tot: .nan
+  spec_ecut: 24.799999237060547
+  spec_ecut_err: 7.199999809265137
+  spec_flux_above_1TeV: 1.477653589765371e-11
+  spec_flux_above_1TeV_err: 6.468868409686968e-13
+  spec_flux_above_1TeV_crab: 44.45909881591797
+  spec_flux_above_1TeV_crab_err: 1.9463293552398682
+  spec_flux_above_erange_min: 8.356538377940481e-11
+  spec_flux_above_erange_min_err: 2.574052733114729e-12
+  spec_energy_flux_1TeV_10TeV: 3.172562559883296e-11
+  spec_energy_flux_1TeV_10TeV_err: 1.7126598533465098e-12
 - source_id: 119
   common_name: LS 5039
   gamma_names: HESS J1826-148

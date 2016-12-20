@@ -298,12 +298,13 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - status: **SED done, YAML empty**
 - [2005A%26A...442..895A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...442..895A)
   - url: [AA442_895.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA442_895.html)
-  - status: 
-  - comments: 
+  - source: PKS 2155-304
+  - status: **TODO**
 - [2005A%26A...442L..25A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...442L..25A)
   - url: [AA442_HESSJ1825.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA442_HESSJ1825.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2005/2005A%2526A...442L..25A)
+  - source: HESS J1825-137
+  - status: **SED done, YAML empty**
 - [2005A%26A...442....1A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...442....1A)
   - url: [AA442_1.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA442_1.html)
   - status: 

@@ -5,8 +5,9 @@ data:
   livetime: 164
 
 pos:
-  ra: {val: 17.2237}
-  dec: {val: -39.771}
+
+  ra: {val: '17h13m25.2s'}
+  dec: {val: '-39d46m15.6s'}
 
 morph:
   type: shell

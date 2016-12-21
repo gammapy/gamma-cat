@@ -7,7 +7,7 @@ data:
 
 pos:
   ra: {val: 10h26m38.4s, err: 21.6s}
-  dec: {val: -58d12m00s, err: 1m48s}
+  dec: {val: -58d12m00s, err: 0h1m48s}
 
 morph:
   type: gauss

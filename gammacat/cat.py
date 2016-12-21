@@ -39,9 +39,9 @@ class GammaCatSource:
 
         bsi = basic_source_info.data
         cls.fill_basic_info(data, bsi)
-        cls.fill_position_info(data, bsi)
 
         dsi = dataset_source_info.data
+        cls.fill_position_info(data, dsi)
         cls.fill_data_info(data, dsi)
         cls.fill_spectral_info(data, dsi)
         cls.fill_morphology_info(data, dsi)
@@ -57,8 +57,6 @@ class GammaCatSource:
         data['other_names'] = NA.fill_list(bsi, 'other_names')
         data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
 
-    @staticmethod
-    def fill_position_info(data, bsi):
         try:
             data['ra'] = bsi['pos']['ra']
         except KeyError:
@@ -72,6 +70,45 @@ class GammaCatSource:
         galactic = icrs.galactic
         data['glon'] = galactic.l.deg
         data['glat'] = galactic.b.deg
+
+
+    @staticmethod
+    def fill_position_info(data, dsi):
+        try:
+            data['pos_glon'] = Angle(dsi['pos']['glon']['val'], unit='deg').degree
+            data['pos_glat'] = Angle(dsi['pos']['glat']['val'], unit='deg').degree
+
+            galactic = SkyCoord(data['pos_glon'], data['pos_glat'], frame='galactic', unit='deg')
+            data['pos_ra'] = galactic.icrs.ra.deg
+            data['pos_dec'] = galactic.icrs.dec.deg
+
+        except KeyError:
+            try:
+                data['pos_ra'] = Angle(dsi['pos']['ra']['val'], unit='deg').degree
+                data['pos_dec'] = Angle(dsi['pos']['dec']['val'], unit='deg').degree
+
+                icrs = SkyCoord(data['pos_ra'], data['pos_dec'], unit='deg')
+                data['pos_glon'] = icrs.galactic.l.deg
+                data['pos_glat'] = icrs.galactic.b.deg
+            except KeyError:
+                data['pos_ra'] = NA.fill_value['number']
+                data['pos_dec'] = NA.fill_value['number']
+                data['pos_glon'] = NA.fill_value['number']
+                data['pos_glat'] = NA.fill_value['number']
+
+        try:
+            x_err = Angle(dsi['pos']['glon']['err'], unit='deg').degree
+            y_err = Angle(dsi['pos']['glat']['err'], unit='deg').degree
+        except KeyError:
+            try:
+                x_err = Angle(dsi['pos']['ra']['err'], unit='deg').degree
+                y_err = Angle(dsi['pos']['dec']['err'], unit='deg').degree
+            except KeyError:
+                x_err = NA.fill_value['number']
+                y_err = NA.fill_value['number']
+
+        data['pos_err'] = np.sqrt(x_err * y_err)
+
 
     @staticmethod
     def fill_data_info(data, dsi):

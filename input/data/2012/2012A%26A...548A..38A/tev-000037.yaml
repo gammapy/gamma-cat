@@ -6,8 +6,8 @@ data:
   significance: 27.9
 
 pos:
-  ra: {val: 8h35m00s, err: 8}
-  dec: {val: -45d36m00s, err: 120}
+  ra: {val: 8h35m00s, err: 8s}
+  dec: {val: -45d36m00s, err: 120s}
 
 morph:
   type: gauss

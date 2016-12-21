@@ -7,7 +7,7 @@ data:
 pos:
   # from shell fit
   ra: {val: 14h42m53s, err: 9s}
-  dec: {val: -62d25m48s, err: 1m48s}
+  dec: {val: -62d25m48s, err: 0h1m48s}
 
 morph:
   type: shell

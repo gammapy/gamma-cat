@@ -35,30 +35,62 @@
   unit: hour
   description: Source livetime
 
-# Position info
+# Position info simbad
 - name: ra
   dtype: float32
   fmt:
   unit: deg
-  description: Right Ascension (ICRS)
+  description: Right Ascension (ICRS) from simbad
   latex:
 - name: dec
   dtype: float32
   fmt:
   unit: deg
-  description: Declination (ICRS)
+  description: Declination (ICRS) from simbad
   latex:
 - name: glon
   fmt:
   dtype: float32
   unit: deg
-  description: Galactic longitude
+  description: Galactic longitude from simbad
   latex:
 - name: glat
   fmt:
   dtype: float32
   unit: deg
-  description: Galactic latitude
+  description: Galactic latitude from simbad
+  latex:
+
+# Position info
+- name: pos_ra
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Right Ascension (ICRS) from reference
+  latex:
+- name: pos_dec
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Declination (ICRS) from reference
+  latex:
+- name: pos_glon
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic longitude from reference
+  latex:
+- name: pos_glat
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic latitude from reference
+  latex:
+- name: pos_err
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Symmetric error on the position from reference
   latex:
 
 # Morphology info

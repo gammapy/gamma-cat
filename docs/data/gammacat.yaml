@@ -9,6 +9,11 @@
   dec: 72.78299713134766
   glon: 119.58025360107422
   glat: 10.203681945800781
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -53,6 +58,11 @@
   dec: -18.90184783935547
   glon: 74.63201141357422
   glat: -78.0869369506836
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -97,6 +107,11 @@
   dec: 64.14080047607422
   glon: 120.09236145019531
   glat: 1.4129304885864258
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -141,6 +156,11 @@
   dec: -19.35920524597168
   glon: 94.17464447021484
   glat: -81.21610260009766
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -185,6 +205,11 @@
   dec: 59.834495544433594
   glon: 120.97542572021484
   glat: -2.9781200885772705
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -229,6 +254,11 @@
   dec: -25.288799285888672
   glon: 97.36385345458984
   glat: -87.96454620361328
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -273,6 +303,11 @@
   dec: -38.20000076293945
   glon: 285.68988037109375
   glat: -78.33631896972656
+  pos_ra: 258.4750061035156
+  pos_dec: -38.19944381713867
+  pos_glon: 348.6388244628906
+  pos_glat: 0.38820934295654297
+  pos_err: 0.0037267799489200115
   morph_type: gauss
   morph_sigma: 0.04333333298563957
   morph_sigma_err: 0.013333333656191826
@@ -317,6 +352,11 @@
   dec: 39.09977722167969
   glon: 132.4164581298828
   glat: -22.93984603881836
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -361,6 +401,11 @@
   dec: 1.7881617546081543
   glon: 152.3774871826172
   glat: -57.54093551635742
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -405,6 +450,11 @@
   dec: 64.82830047607422
   glon: 130.7178192138672
   glat: 3.083847999572754
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -449,6 +499,11 @@
   dec: 35.93709945678711
   glon: 142.60171508789062
   glat: -23.486858367919922
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -493,6 +548,11 @@
   dec: 43.0355224609375
   glon: 140.14295959472656
   glat: -16.766897201538086
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -537,6 +597,11 @@
   dec: 43.0355224609375
   glon: 140.14295959472656
   glat: -16.766897201538086
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -581,6 +646,11 @@
   dec: 20.288190841674805
   glon: 152.9411163330078
   glat: -36.60728073120117
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -625,6 +695,11 @@
   dec: 61.22933578491211
   glon: 135.67527770996094
   glat: 1.0861347913742065
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -669,6 +744,11 @@
   dec: -24.119861602783203
   glon: 214.62142944335938
   glat: -60.177364349365234
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -713,6 +793,11 @@
   dec: 41.32476806640625
   glon: 150.18299865722656
   glat: -13.734146118164062
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -757,6 +842,11 @@
   dec: 41.511695861816406
   glon: 150.57582092285156
   glat: -13.261216163635254
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -801,6 +891,11 @@
   dec: 18.75955581665039
   glon: 165.10678100585938
   glat: -31.69727897644043
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -845,6 +940,11 @@
   dec: -11.99085807800293
   glon: 201.9267120361328
   glat: -45.709136962890625
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -889,6 +989,11 @@
   dec: 1.0899944305419922
   glon: 191.8144989013672
   glat: -33.1590576171875
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -933,6 +1038,11 @@
   dec: -43.8358154296875
   glon: 248.80523681640625
   glat: -39.91876983642578
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -977,6 +1087,11 @@
   dec: 67.62340545654297
   glon: 143.79489135742188
   glat: 15.88968563079834
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1021,6 +1136,11 @@
   dec: 21.214271545410156
   glon: 183.60418701171875
   glat: -8.708333969116211
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1065,6 +1185,11 @@
   dec: -69.6441650390625
   glon: 280.3069763183594
   glat: -32.78403854370117
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1109,6 +1234,11 @@
   dec: 22.01449966430664
   glon: 184.55746459960938
   glat: -5.784357070922852
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1153,6 +1283,11 @@
   dec: -69.20610046386719
   glon: 279.6239929199219
   glat: -31.911823272705078
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1197,6 +1332,11 @@
   dec: -69.1714096069336
   glon: 279.5587158203125
   glat: -31.74585723876953
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1241,6 +1381,11 @@
   dec: -32.27124786376953
   glon: 237.56539916992188
   glat: -26.14487648010254
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1285,6 +1430,11 @@
   dec: 22.65999984741211
   glon: 189.0648193359375
   glat: 3.234989643096924
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1329,6 +1479,11 @@
   dec: 5.800327301025391
   glon: 205.66653442382812
   glat: -1.4395283460617065
+  pos_ra: 98.24166870117188
+  pos_dec: 5.80555534362793
+  pos_glon: 205.6595001220703
+  pos_glat: -1.4417325258255005
+  pos_err: 0.11832159757614136
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1373,6 +1528,11 @@
   dec: 17.770252227783203
   glon: 195.13385009765625
   glat: 4.26581335067749
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1417,6 +1577,11 @@
   dec: 15.273571968078613
   glon: 198.98690795898438
   glat: 6.327681541442871
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1461,6 +1626,11 @@
   dec: 25.049896240234375
   glon: 190.28245544433594
   glat: 10.995633125305176
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1505,6 +1675,11 @@
   dec: 59.1390266418457
   glon: 157.40428161621094
   glat: 25.42650604248047
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1549,6 +1724,11 @@
   dec: 71.34343719482422
   glon: 143.98104858398438
   glat: 28.017559051513672
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1593,6 +1773,11 @@
   dec: 52.31618118286133
   glon: 166.2450714111328
   glat: 32.9103889465332
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1637,6 +1822,11 @@
   dec: -45.189998626708984
   glon: 263.3319396972656
   glat: -3.1061031818389893
+  pos_ra: 128.75
+  pos_dec: -45.599998474121094
+  pos_glon: 263.8556823730469
+  pos_glat: -3.089031219482422
+  pos_err: 0.008606629446148872
   morph_type: gauss
   morph_sigma: 0.47999998927116394
   morph_sigma_err: 0.029999999329447746
@@ -1681,6 +1871,11 @@
   dec: 11.563919067382812
   glon: 215.4558868408203
   glat: 30.889463424682617
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1725,6 +1920,11 @@
   dec: -46.33300018310547
   glon: 266.2588806152344
   glat: -1.219645380973816
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: shell
   morph_sigma: 1.0
   morph_sigma_err: .nan
@@ -1769,6 +1969,11 @@
   dec: 69.67970275878906
   glon: 141.4094696044922
   glat: 40.56696319580078
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1813,6 +2018,11 @@
   dec: 65.56522369384766
   glon: 145.7462158203125
   glat: 43.131622314453125
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1857,6 +2067,11 @@
   dec: -31.318992614746094
   glon: 266.9082336425781
   glat: 20.053640365600586
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1901,6 +2116,11 @@
   dec: 49.433528900146484
   glon: 165.5338592529297
   glat: 52.71226119995117
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -1945,6 +2165,11 @@
   dec: -58.95336151123047
   glon: 284.079345703125
   glat: -1.8798760175704956
+  pos_ra: 154.12916564941406
+  pos_dec: -58.97999954223633
+  pos_glon: 284.11175537109375
+  pos_glat: -1.8902121782302856
+  pos_err: 0.0016666667070239782
   morph_type: gauss
   morph_sigma: 0.15000000596046448
   morph_sigma_err: 0.029999999329447746
@@ -1989,6 +2214,11 @@
   dec: -59.0
   glon: 284.3140869140625
   glat: -1.7795172929763794
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2033,6 +2263,11 @@
   dec: -57.5
   glon: 284.0162658691406
   glat: -0.1847057342529297
+  pos_ra: 155.85000610351562
+  pos_dec: -57.790000915527344
+  pos_glon: 284.21697998046875
+  pos_glat: -0.4007602334022522
+  pos_err: 0.024494897574186325
   morph_type: gauss
   morph_sigma: 0.18000000715255737
   morph_sigma_err: 0.019999999552965164
@@ -2077,6 +2312,11 @@
   dec: -58.29193878173828
   glon: 285.0734558105469
   glat: -0.45973488688468933
+  pos_ra: 156.66000366210938
+  pos_dec: -58.20000076293945
+  pos_glon: 284.7984313964844
+  pos_glat: -0.5204254984855652
+  pos_err: 0.05196152254939079
   morph_type: gauss
   morph_sigma: 0.14000000059604645
   morph_sigma_err: 0.029999999329447746
@@ -2121,6 +2361,11 @@
   dec: -23.491975784301758
   glon: 273.1897277832031
   glat: 33.079341888427734
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2165,6 +2410,11 @@
   dec: 38.208831787109375
   glon: 179.83168029785156
   glat: 65.03147888183594
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2209,6 +2459,11 @@
   dec: -61.463748931884766
   glon: 292.15130615234375
   glat: -0.5369425415992737
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2253,6 +2508,11 @@
   dec: 70.15758514404297
   glon: 131.90977478027344
   glat: 45.64101791381836
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2297,6 +2557,11 @@
   dec: 67.61787414550781
   glon: 133.45303344726562
   glat: 47.950706481933594
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2341,6 +2606,11 @@
   dec: 30.116844177246094
   glon: 188.87486267089844
   glat: 82.0528793334961
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2385,6 +2655,11 @@
   dec: 30.17698860168457
   glon: 186.3585662841797
   glat: 82.73455047607422
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2429,6 +2704,11 @@
   dec: 28.2329158782959
   glon: 201.73526000976562
   glat: 83.28802490234375
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2473,6 +2753,11 @@
   dec: 24.60652732849121
   glon: 233.95216369628906
   glat: 83.41777801513672
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2517,6 +2802,11 @@
   dec: 21.379562377929688
   glon: 255.0734100341797
   glat: 81.65980529785156
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2561,6 +2851,11 @@
   dec: 12.39112377166748
   glon: 283.7777404785156
   glat: 74.49115753173828
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2605,6 +2900,11 @@
   dec: -54.519832611083984
   glon: 301.9523010253906
   glat: 8.339207649230957
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2649,6 +2949,11 @@
   dec: -5.789312362670898
   glon: 305.1043395996094
   glat: 57.06240463256836
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2693,6 +2998,11 @@
   dec: -63.83574295043945
   glon: 304.18359375
   glat: -0.9915965795516968
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2737,6 +3047,11 @@
   dec: -63.1986083984375
   glon: 304.235595703125
   glat: -0.356149822473526
+  pos_ra: 39.605472564697266
+  pos_dec: -16.735713958740234
+  pos_glon: 195.6999969482422
+  pos_glat: -63.1775016784668
+  pos_err: 0.0023570226039737463
   morph_type: gauss
   morph_sigma: 0.1940000057220459
   morph_sigma_err: 0.00800000037997961
@@ -2781,6 +3096,11 @@
   dec: -42.61380386352539
   glon: 307.554443359375
   glat: 20.04585838317871
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2825,6 +3145,11 @@
   dec: -43.01911163330078
   glon: 309.5158996582031
   glat: 19.41727066040039
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2869,6 +3194,11 @@
   dec: -64.5
   glon: 309.81207275390625
   glat: -2.4941415786743164
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -2913,6 +3243,11 @@
   dec: -60.97528076171875
   glon: 313.2469482421875
   glat: 0.14962416887283325
+  pos_ra: 214.51666259765625
+  pos_dec: -60.975276947021484
+  pos_glon: 313.2469482421875
+  pos_glat: 0.14962680637836456
+  pos_err: 0.004347910173237324
   morph_type: gauss
   morph_sigma: 0.08166666328907013
   morph_sigma_err: 0.02500000037252903
@@ -2957,6 +3292,11 @@
   dec: -60.97829818725586
   glon: 313.32611083984375
   glat: 0.11877414584159851
+  pos_ra: 215.01666259765625
+  pos_dec: -60.7599983215332
+  pos_glon: 313.54803466796875
+  pos_glat: 0.2718598246574402
+  pos_err: 0.004157396964728832
   morph_type: gauss
   morph_sigma: 0.054999999701976776
   morph_sigma_err: 0.008333333767950535
@@ -3001,6 +3341,11 @@
   dec: 23.800010681152344
   glon: 29.487354278564453
   glat: 68.2076187133789
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3045,6 +3390,11 @@
   dec: -60.849998474121094
   glon: 314.4076843261719
   glat: -0.1450013965368271
+  pos_ra: 216.9691925048828
+  pos_dec: -60.849517822265625
+  pos_glon: 314.40899658203125
+  pos_glat: -0.14499999582767487
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.03999999910593033
   morph_sigma_err: 0.019999999552965164
@@ -3089,6 +3439,11 @@
   dec: 42.67251205444336
   glon: 77.4871597290039
   glat: 64.89894104003906
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3133,6 +3488,11 @@
   dec: -62.64500045776367
   glon: 315.09271240234375
   glat: -2.376516580581665
+  pos_ra: 220.72084045410156
+  pos_dec: -62.43000030517578
+  pos_glon: 315.4337463378906
+  pos_glat: -2.2946720123291016
+  pos_err: 0.03354102000594139
   morph_type: shell
   morph_sigma: 0.1899999976158142
   morph_sigma_err: 0.029999999329447746
@@ -3177,6 +3537,11 @@
   dec: 12.011215209960938
   glon: 8.329700469970703
   glat: 59.84013748168945
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3221,6 +3586,11 @@
   dec: -59.06700134277344
   glon: 318.21099853515625
   glat: 0.09551360458135605
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3265,6 +3635,11 @@
   dec: -60.87805938720703
   glon: 317.8908386230469
   glat: -1.781295895576477
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3309,6 +3684,11 @@
   dec: -42.09693908691406
   glon: 327.410888671875
   glat: 14.46742057800293
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3353,6 +3733,11 @@
   dec: -58.20000076293945
   glon: 319.5602111816406
   glat: 0.3594426214694977
+  pos_ra: 225.90834045410156
+  pos_dec: -58.22916793823242
+  pos_glon: 319.6190490722656
+  pos_glat: 0.29353150725364685
+  pos_err: .nan
   morph_type: gauss
   morph_sigma: 0.25999999046325684
   morph_sigma_err: .nan
@@ -3397,6 +3782,11 @@
   dec: -62.41699981689453
   glon: 317.97454833984375
   glat: -3.5878143310546875
+  pos_ra: 226.72000122070312
+  pos_dec: -62.349998474121094
+  pos_glon: 317.9455261230469
+  pos_glat: -3.4939377307891846
+  pos_err: 0.03872983530163765
   morph_type: gauss
   morph_sigma: 0.15000000596046448
   morph_sigma_err: 0.019999999552965164
@@ -3441,6 +3831,11 @@
   dec: -9.099952697753906
   glon: 351.28924560546875
   glat: 40.13874053955078
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3485,6 +3880,11 @@
   dec: -59.08169937133789
   glon: 320.278076171875
   glat: -1.072826623916626
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3529,6 +3929,11 @@
   dec: -24.3720760345459
   glon: 340.6806335449219
   glat: 27.57802963256836
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3573,6 +3978,11 @@
   dec: -57.200828552246094
   glon: 323.6498107910156
   glat: -1.039929747581482
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3617,6 +4027,11 @@
   dec: -55.062259674072266
   glon: 327.1656799316406
   glat: -1.0492522716522217
+  pos_ra: 238.64999389648438
+  pos_dec: -55.084720611572266
+  pos_glon: 327.1581115722656
+  pos_glat: -1.072167158126831
+  pos_err: .nan
   morph_type: gauss
   morph_sigma: 0.029999999329447746
   morph_sigma_err: 0.009999999776482582
@@ -3661,6 +4076,11 @@
   dec: 11.190101623535156
   glon: 21.908924102783203
   glat: 43.96416091918945
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3705,6 +4125,11 @@
   dec: -51.81908416748047
   glon: 331.5122985839844
   glat: -0.5732107758522034
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3749,6 +4174,11 @@
   dec: -50.90999984741211
   glon: 332.3651428222656
   glat: -0.1309431493282318
+  pos_ra: 243.79489135742188
+  pos_dec: -50.698036193847656
+  pos_glon: 332.3909912109375
+  pos_glat: 0.1379999965429306
+  pos_err: 0.013490737415850163
   morph_type: gauss
   morph_sigma: 0.13600000739097595
   morph_sigma_err: 0.00800000037997961
@@ -3793,6 +4223,11 @@
   dec: -49.08694076538086
   glon: 334.77020263671875
   glat: 0.04730600491166115
+  pos_ra: 246.5211181640625
+  pos_dec: -49.08725357055664
+  pos_glon: 334.7720031738281
+  pos_glat: 0.04500000178813934
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.07000000029802322
   morph_sigma_err: 0.019999999552965164
@@ -3837,6 +4272,11 @@
   dec: -47.87451934814453
   glon: 336.3296813964844
   glat: 0.16875746846199036
+  pos_ra: 248.03587341308594
+  pos_dec: -47.82324981689453
+  pos_glon: 336.3800048828125
+  pos_glat: 0.1899999976158142
+  pos_err: 0.03464101627469063
   morph_type: gauss
   morph_sigma: 0.20999999344348907
   morph_sigma_err: 0.05000000074505806
@@ -3881,6 +4321,11 @@
   dec: -47.20000076293945
   glon: 337.04998779296875
   glat: 0.3844934105873108
+  pos_ra: 248.7380828857422
+  pos_dec: -47.26725769042969
+  pos_glon: 337.1099853515625
+  pos_glat: 0.2199999988079071
+  pos_err: 0.04472136124968529
   morph_type: gauss
   morph_sigma: 0.10999999940395355
   morph_sigma_err: 0.029999999329447746
@@ -3925,6 +4370,11 @@
   dec: -46.54999923706055
   glon: 338.2771301269531
   glat: -0.0035156295634806156
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -3969,6 +4419,11 @@
   dec: -46.30305862426758
   glon: 338.5224304199219
   glat: 0.09183607995510101
+  pos_ra: 250.2587432861328
+  pos_dec: -46.303611755371094
+  pos_glon: 338.52276611328125
+  pos_glat: 0.09060640633106232
+  pos_err: 0.0028463751077651978
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4013,6 +4468,11 @@
   dec: -45.79999923706055
   glon: 339.4678955078125
   glat: -0.22942107915878296
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4057,6 +4517,11 @@
   dec: 39.760169982910156
   glon: 63.600040435791016
   glat: 38.85915756225586
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4101,6 +4566,11 @@
   dec: -42.015830993652344
   glon: 344.303955078125
   glat: -0.1837134063243866
+  pos_ra: 255.68368530273438
+  pos_dec: -42.015960693359375
+  pos_glon: 344.3039855957031
+  pos_glat: -0.18400000035762787
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.30000001192092896
   morph_sigma_err: 0.019999999552965164
@@ -4145,6 +4615,11 @@
   dec: -44.29999923706055
   glon: 343.0646667480469
   glat: -2.3295421600341797
+  pos_ra: 257.04583740234375
+  pos_dec: -44.00555419921875
+  pos_glon: 343.320556640625
+  pos_glat: -2.1798856258392334
+  pos_err: 0.0022906141821295023
   morph_type: gauss
   morph_sigma: 0.28999999165534973
   morph_sigma_err: 0.03999999910593033
@@ -4189,6 +4664,11 @@
   dec: -41.09000015258789
   glon: 345.6822509765625
   glat: -0.4688045084476471
+  pos_ra: 257.1007995605469
+  pos_dec: -41.08952713012695
+  pos_glon: 345.6830139160156
+  pos_glat: -0.4690000116825104
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.05999999865889549
   morph_sigma_err: 0.019999999552965164
@@ -4233,6 +4713,11 @@
   dec: -39.68669891357422
   glon: 347.2694396972656
   glat: -0.25691288709640503
+  pos_ra: 17.22369956970215
+  pos_dec: -39.770999908447266
+  pos_glon: 288.03662109375
+  pos_glat: -76.84811401367188
+  pos_err: .nan
   morph_type: shell
   morph_sigma: 0.5
   morph_sigma_err: .nan
@@ -4277,6 +4762,11 @@
   dec: -38.54899978637695
   glon: 348.43231201171875
   glat: 0.07693904638290405
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4321,6 +4811,11 @@
   dec: -37.426998138427734
   glon: 349.7361755371094
   glat: 0.1806182712316513
+  pos_ra: 259.4908447265625
+  pos_dec: 37.444332122802734
+  pos_glon: 61.54061508178711
+  pos_glat: 33.88335418701172
+  pos_err: 0.001924500917084515
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4365,6 +4860,11 @@
   dec: -38.54999923706055
   glon: 348.8336181640625
   glat: -0.4881265461444855
+  pos_ra: 259.5291748046875
+  pos_dec: -38.54999923706055
+  pos_glon: 348.8336181640625
+  pos_glat: -0.48810523748397827
+  pos_err: 0.006804137956351042
   morph_type: gauss
   morph_sigma: 0.15000000596046448
   morph_sigma_err: 0.03333333507180214
@@ -4409,6 +4909,11 @@
   dec: 11.870963096618652
   glon: 34.12001037597656
   glat: 24.47509002685547
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4453,6 +4958,11 @@
   dec: 50.219573974609375
   glon: 77.06771850585938
   glat: 33.53691101074219
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4497,6 +5007,11 @@
   dec: -34.5
   glon: 353.4101867675781
   glat: -0.005492465104907751
+  pos_ra: 262.3958435058594
+  pos_dec: -34.53944396972656
+  pos_glon: 353.4437255859375
+  pos_glat: -0.12743249535560608
+  pos_err: 0.03500000014901161
   morph_type: gauss
   morph_sigma: 0.11999999731779099
   morph_sigma_err: 0.029999999329447746
@@ -4541,6 +5056,11 @@
   dec: -34.709999084472656
   glon: 353.5650634765625
   glat: -0.6221904158592224
+  pos_ra: 263.01251220703125
+  pos_dec: -34.755001068115234
+  pos_glon: 353.5423889160156
+  pos_glat: -0.6697372794151306
+  pos_err: .nan
   morph_type: shell
   morph_sigma: 0.27000001072883606
   morph_sigma_err: 0.019999999552965164
@@ -4585,6 +5105,11 @@
   dec: -30.200000762939453
   glon: 358.39691162109375
   glat: 0.19099654257297516
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4629,6 +5154,11 @@
   dec: 19.585838317871094
   glon: 43.8355598449707
   glat: 23.338668823242188
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4673,6 +5203,11 @@
   dec: -30.198999404907227
   glon: 358.8734130859375
   glat: -0.5782836079597473
+  pos_ra: 266.2587585449219
+  pos_dec: -30.370555877685547
+  pos_glon: 358.7098388671875
+  pos_glat: -0.6396377682685852
+  pos_err: .nan
   morph_type: gauss
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4717,6 +5252,11 @@
   dec: -29.0078067779541
   glon: 359.9442443847656
   glat: -0.04616236314177513
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4761,6 +5301,11 @@
   dec: -29.0078067779541
   glon: 359.9442443847656
   glat: -0.04616236314177513
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4805,6 +5350,11 @@
   dec: -28.875
   glon: 0.14061740040779114
   glat: -0.11320564895868301
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4849,6 +5399,11 @@
   dec: -28.149999618530273
   glon: 0.8634368777275085
   glat: 0.09317801892757416
+  pos_ra: 266.8467102050781
+  pos_dec: -28.151573181152344
+  pos_glon: 0.871999979019165
+  pos_glat: 0.07599999755620956
+  pos_err: 0.004999999888241291
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4893,6 +5448,11 @@
   dec: -24.780000686645508
   glon: 3.8389620780944824
   glat: 1.685840129852295
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -4937,6 +5497,11 @@
   dec: -24.038299560546875
   glon: 5.901831150054932
   glat: -0.3634890019893646
+  pos_ra: 270.1099853515625
+  pos_dec: -24.038999557495117
+  pos_glon: 5.901994228363037
+  pos_glat: -0.3651842474937439
+  pos_err: 0.0042426404543221
   morph_type: gauss
   morph_sigma: 0.15000000596046448
   morph_sigma_err: .nan
@@ -4981,6 +5546,11 @@
   dec: -23.288890838623047
   glon: 6.659957408905029
   glat: -0.1798943430185318
+  pos_ra: 270.4259948730469
+  pos_dec: -23.334999084472656
+  pos_glon: 6.656888961791992
+  pos_glat: -0.267688125371933
+  pos_err: 0.03149603307247162
   morph_type: gauss
   morph_sigma: 0.17000000178813934
   morph_sigma_err: 0.029999999329447746
@@ -5025,6 +5595,11 @@
   dec: -23.961700439453125
   glon: 6.141863822937012
   glat: -0.6298224329948425
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5069,6 +5644,11 @@
   dec: -21.732555389404297
   glon: 8.368892669677734
   glat: -0.03919975832104683
+  pos_ra: 271.1348876953125
+  pos_dec: -21.701536178588867
+  pos_glon: 8.401000022888184
+  pos_glat: -0.032999999821186066
+  pos_err: 0.0169705618172884
   morph_type: gauss
   morph_sigma: 0.20000000298023224
   morph_sigma_err: 0.009999999776482582
@@ -5113,6 +5693,11 @@
   dec: -20.399999618530273
   glon: 9.931037902832031
   glat: -0.10226520150899887
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5157,6 +5742,11 @@
   dec: -19.299999237060547
   glon: 11.18004322052002
   glat: -0.08744583278894424
+  pos_ra: 272.6291809082031
+  pos_dec: -19.299999237060547
+  pos_glon: 11.180027961730957
+  pos_glat: -0.08741828054189682
+  pos_err: 0.010540925897657871
   morph_type: gauss
   morph_sigma: 0.5333333611488342
   morph_sigma_err: 0.06666667014360428
@@ -5201,6 +5791,11 @@
   dec: -12.770000457763672
   glon: 17.241666793823242
   glat: 2.4420559406280518
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5245,6 +5840,11 @@
   dec: -17.84889030456543
   glon: 12.786806106567383
   glat: 0.0004344825283624232
+  pos_ra: 273.4080505371094
+  pos_dec: -17.842483520507812
+  pos_glon: 12.812999725341797
+  pos_glat: -0.03420000150799751
+  pos_err: 0.004999999888241291
   morph_type: gauss
   morph_sigma: 0.035999998450279236
   morph_sigma_err: 0.006000000052154064
@@ -5289,6 +5889,11 @@
   dec: -15.449999809265137
   glon: 15.4149169921875
   glat: 0.18568718433380127
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5333,6 +5938,11 @@
   dec: -13.091110229492188
   glon: 18.409912109375
   glat: -0.41967451572418213
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5377,6 +5987,11 @@
   dec: -13.580039978027344
   glon: 18.000179290771484
   glat: -0.6909274458885193
+  pos_ra: 276.42083740234375
+  pos_dec: -13.839166641235352
+  pos_glon: 17.710416793823242
+  pos_glat: -0.6970040202140808
+  pos_err: 0.0028463751077651978
   morph_type: gauss
   morph_sigma: 0.23999999463558197
   morph_sigma_err: 0.019999999552965164
@@ -5421,6 +6036,11 @@
   dec: -14.848405838012695
   glon: 16.8815860748291
   glat: -1.2892162799835205
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5465,6 +6085,11 @@
   dec: -9.989999771118164
   glon: 21.494850158691406
   glat: 0.3765936493873596
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5509,6 +6134,11 @@
   dec: -9.899999618530273
   glon: 21.848445892333984
   glat: -0.10541696101427078
+  pos_ra: 277.8541564941406
+  pos_dec: -9.899999618530273
+  pos_glon: 21.850343704223633
+  pos_glat: -0.10905609279870987
+  pos_err: .nan
   morph_type: gauss
   morph_sigma: 0.15000000596046448
   morph_sigma_err: .nan
@@ -5553,6 +6183,11 @@
   dec: -8.510000228881836
   glon: 23.208816528320312
   glat: 0.2919408679008484
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5597,6 +6232,11 @@
   dec: -9.365152359008789
   glon: 22.476831436157227
   glat: -0.15392036736011505
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5641,6 +6281,11 @@
   dec: -10.5
   glon: 21.498184204101562
   glat: -0.7317599654197693
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5685,6 +6330,11 @@
   dec: -8.74394416809082
   glon: 23.268333435058594
   glat: -0.3298832178115845
+  pos_ra: 278.6937561035156
+  pos_dec: -8.764542579650879
+  pos_glon: 23.239999771118164
+  pos_glat: -0.3199999928474426
+  pos_err: 0.019999999552965164
   morph_type: gauss
   morph_sigma: 0.09000000357627869
   morph_sigma_err: 0.019999999552965164
@@ -5729,6 +6379,11 @@
   dec: -6.927499771118164
   glon: 25.20574951171875
   glat: -0.12119973450899124
+  pos_ra: 279.40472412109375
+  pos_dec: -6.938954830169678
+  pos_glon: 25.184999465942383
+  pos_glat: -0.10599999874830246
+  pos_err: 0.013856406323611736
   morph_type: gauss
   morph_sigma: 0.11999999731779099
   morph_sigma_err: 0.019999999552965164
@@ -5773,6 +6428,11 @@
   dec: -5.550000190734863
   glon: 26.79511260986328
   glat: -0.19760440289974213
+  pos_ra: 280.22857666015625
+  pos_dec: -5.549823760986328
+  pos_glon: 26.795000076293945
+  pos_glat: -0.19699999690055847
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.4099999964237213
   morph_sigma_err: 0.03999999910593033
@@ -5817,6 +6477,11 @@
   dec: -3.299999952316284
   glon: 29.033424377441406
   glat: 0.3699614405632019
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5861,6 +6526,11 @@
   dec: -3.0999999046325684
   glon: 29.402936935424805
   glat: 0.08833709359169006
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5905,6 +6575,11 @@
   dec: -2.9000000953674316
   glon: 29.731342315673828
   glat: -0.11353234946727753
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -5949,6 +6624,11 @@
   dec: -1.7920000553131104
   glon: 30.999937057495117
   glat: -0.15920360386371613
+  pos_ra: 282.1207275390625
+  pos_dec: -1.7923074960708618
+  pos_glon: 31.0
+  pos_glat: -0.1599999964237213
+  pos_err: .nan
   morph_type: gauss
   morph_sigma: 0.3199999928474426
   morph_sigma_err: 0.019999999552965164
@@ -5993,6 +6673,11 @@
   dec: -0.02197200059890747
   glon: 32.6379280090332
   glat: 0.5256205201148987
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6037,6 +6722,11 @@
   dec: 0.0
   glon: 32.996002197265625
   glat: -0.1250629723072052
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6081,6 +6771,11 @@
   dec: 2.666670083999634
   glon: 35.9599609375
   glat: -0.06129879131913185
+  pos_ra: 284.2966003417969
+  pos_dec: 2.6798014640808105
+  pos_glon: 35.97200012207031
+  pos_glat: -0.0560000017285347
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.10999999940395355
   morph_sigma_err: 0.07999999821186066
@@ -6125,6 +6820,11 @@
   dec: 2.0899999141693115
   glon: 35.57807159423828
   glat: -0.5801709890365601
+  pos_ra: 284.58404541015625
+  pos_dec: 2.0895578861236572
+  pos_glon: 35.577999114990234
+  pos_glat: -0.5809999704360962
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.07999999821186066
   morph_sigma_err: 0.019999999552965164
@@ -6169,6 +6869,11 @@
   dec: 6.183000087738037
   glon: 40.40083312988281
   glat: -1.0009838342666626
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6213,6 +6918,11 @@
   dec: 9.101699829101562
   glon: 43.251407623291016
   glat: -0.15601561963558197
+  pos_ra: 287.78033447265625
+  pos_dec: 9.093607902526855
+  pos_glon: 43.2599983215332
+  pos_glat: -0.1899999976158142
+  pos_err: 0.004999999888241291
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6257,6 +6967,11 @@
   dec: 10.189713478088379
   glon: 44.48461151123047
   glat: -0.1668851673603058
+  pos_ra: 288.20416259765625
+  pos_dec: 10.151666641235352
+  pos_glon: 44.39130401611328
+  pos_glat: -0.07063953578472137
+  pos_err: 0.05000000074505806
   morph_type: gauss
   morph_sigma: 0.25999999046325684
   morph_sigma_err: 0.029999999329447746
@@ -6301,6 +7016,11 @@
   dec: 14.145000457763672
   glon: 49.115806579589844
   glat: -0.46160438656806946
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6345,6 +7065,11 @@
   dec: 18.867000579833984
   glon: 54.09474182128906
   glat: 0.26045286655426025
+  pos_ra: 292.6333312988281
+  pos_dec: 18.8700008392334
+  pos_glon: 54.09925079345703
+  pos_glat: 0.25846338272094727
+  pos_err: 0.006211299914866686
   morph_type: gauss
   morph_sigma: 0.054999999701976776
   morph_sigma_err: 0.008333333767950535
@@ -6389,6 +7114,11 @@
   dec: 21.30221939086914
   glon: 57.75760269165039
   glat: -1.292697787284851
+  pos_ra: 295.9791564941406
+  pos_dec: 21.302221298217773
+  pos_glon: 57.757591247558594
+  pos_glat: -1.2926697731018066
+  pos_err: 0.0044357553124427795
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6433,6 +7163,11 @@
   dec: 65.14851379394531
   glon: 98.00337982177734
   glat: 17.66974639892578
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6477,6 +7212,11 @@
   dec: 43.88410949707031
   glon: 79.07070922851562
   glat: 7.109652996063232
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6521,6 +7261,11 @@
   dec: -48.83158874511719
   glon: 350.3730773925781
   glat: -32.60076141357422
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6565,6 +7310,11 @@
   dec: 37.214759826660156
   glon: 74.95384979248047
   glat: 1.1501808166503906
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6609,6 +7359,11 @@
   dec: 37.19778060913086
   glon: 74.9400634765625
   glat: 1.1402524709701538
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6653,6 +7408,11 @@
   dec: 36.851261138916016
   glon: 75.22187042236328
   glat: 0.11098740994930267
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6697,6 +7457,11 @@
   dec: 40.25667953491211
   glon: 78.14859008789062
   glat: 1.8670884370803833
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6741,6 +7506,11 @@
   dec: 41.56700134277344
   glon: 80.29947662353516
   glat: 1.1111170053482056
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6785,6 +7555,11 @@
   dec: 41.56700134277344
   glon: 80.29947662353516
   glat: 1.1111170053482056
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6829,6 +7604,11 @@
   dec: -30.225587844848633
   glon: 17.730497360229492
   glat: -52.245853424072266
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6873,6 +7653,11 @@
   dec: 42.27777099609375
   glon: 92.58958435058594
   glat: -10.441157341003418
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6917,6 +7702,11 @@
   dec: 20.351049423217773
   glon: 86.56749725341797
   glat: -33.36540222167969
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -6961,6 +7751,11 @@
   dec: 38.41033172607422
   glon: 98.25415802001953
   glat: -18.578105926513672
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -7005,6 +7800,11 @@
   dec: 58.814998626708984
   glon: 111.73474884033203
   glat: -2.1295676231384277
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -7049,6 +7849,11 @@
   dec: 51.7049674987793
   glon: 112.89143371582031
   glat: -9.90775203704834
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan
@@ -7093,6 +7898,11 @@
   dec: -30.62796974182129
   glon: 12.83908748626709
   glat: -78.03549194335938
+  pos_ra: .nan
+  pos_dec: .nan
+  pos_glon: .nan
+  pos_glat: .nan
+  pos_err: .nan
   morph_type: ''
   morph_sigma: .nan
   morph_sigma_err: .nan

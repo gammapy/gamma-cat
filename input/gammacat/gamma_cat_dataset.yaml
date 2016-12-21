@@ -311,7 +311,7 @@
   reference_id: 2008A&A...477..353A, 2011A&A...531A..81H
 - source_id: 104
   status: source
-  reference_id: 2008AIPC.1085..249T
+  reference_id: 2008AIPC.1085..249T, gammacat-hess-internal
 - source_id: 105
   status: source
   reference_id:
@@ -473,7 +473,7 @@
   reference_id: gammacat-hess-internal
 - source_id: 159
   status: source
-  reference_id:
+  reference_id: gammacat-hess-internal
 - source_id: 160
   status: source
   reference_id:

@@ -401,7 +401,7 @@
   reference_id: 2016arXiv160900600H
 - source_id: 134
   status: source
-  reference_id: 2008A&A...484..435A
+  reference_id: 2008A&A...484..435A, gammacat-hess-internal
 - source_id: 135
   status: source
   reference_id: gammacat-hess-internal

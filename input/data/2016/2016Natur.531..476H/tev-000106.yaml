@@ -4,6 +4,11 @@ reference_id: 2016Natur.531..476H
 data:
   livetime: 226
 
+# TODO: position taken from 2010MNRAS.402.1877A
+pos:
+  ra: {val: 17h45m39.6s , err: 0.4s}
+  dec: {val: -29d0m22s, err: 6 arcsec}
+
 # Note: No position or morphology fit is performed in this paper
 morph:
   type: point

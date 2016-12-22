@@ -5360,11 +5360,11 @@
   dec: -29.0078067779541
   glon: 359.9442443847656
   glat: -0.04616236314177513
-  pos_ra: .nan
-  pos_dec: .nan
-  pos_glon: .nan
-  pos_glat: .nan
-  pos_err: .nan
+  pos_ra: 266.4150085449219
+  pos_dec: -29.00611114501953
+  pos_glon: 359.94488525390625
+  pos_glat: -0.043911051005125046
+  pos_err: 0.0004303314781282097
   morph_type: point
   morph_sigma: .nan
   morph_sigma_err: .nan

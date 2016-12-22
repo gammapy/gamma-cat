@@ -5,7 +5,7 @@ data:
   livetime: 93.6
   significance: 39.1
 
-# No position measurement is publsihed in this paper
+# TODO: No position measurement is publsihed in this paper
 # using center of spectral measurement region
 pos:
   ra: {val: 8h52m}

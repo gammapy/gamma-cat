@@ -24,6 +24,11 @@
   fmt:
   unit:
   description: Paper ID where source parameters are taken from.
+- name: classes
+  dtype: str
+  fmt:
+  unit:
+  description: Source classes
 - name: significance
   dtype: float32
   fmt:

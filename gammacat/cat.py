@@ -56,6 +56,8 @@ class GammaCatSource:
         data['gamma_names'] = NA.fill_list(bsi, 'gamma_names')
         data['other_names'] = NA.fill_list(bsi, 'other_names')
         data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
+        classes = bsi.get('classes', NA.fill_value['list'])
+        data['classes'] = ','.join(classes)
 
         try:
             data['ra'] = bsi['pos']['ra']

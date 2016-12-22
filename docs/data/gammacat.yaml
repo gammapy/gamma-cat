@@ -3,6 +3,7 @@
   gamma_names: VER J0006+729
   other_names: SNR G119.5+10.2
   reference_id: 2013ApJ...764...38A
+  classes: pwn,snr
   significance: .nan
   livetime: .nan
   ra: 1.649999976158142
@@ -52,6 +53,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 3.483558416366577
@@ -101,6 +103,7 @@
   gamma_names: ''
   other_names: SNR G120.1+1.4,3C10,SN1572
   reference_id: ''
+  classes: snr
   significance: .nan
   livetime: .nan
   ra: 6.339700222015381
@@ -150,6 +153,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 8.393287658691406
@@ -199,6 +203,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 8.968975067138672
@@ -248,6 +253,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: galaxy
   significance: .nan
   livetime: .nan
   ra: 11.88805866241455
@@ -297,6 +303,7 @@
   gamma_names: HESS J1713-381
   other_names: SNR G348.7+0.3,CXOU J171405.7-381031
   reference_id: 2008A&A...486..829A
+  classes: snr
   significance: 8.600000381469727
   livetime: 55.400001525878906
   ra: 17.23270034790039
@@ -346,6 +353,7 @@
   gamma_names: ''
   other_names: B3 0133+388,1RXS J013632.9+390556
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 24.135826110839844
@@ -395,6 +403,7 @@
   gamma_names: ''
   other_names: RXJ0152.6+0147
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 28.1650447845459
@@ -444,6 +453,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 31.404300689697266
@@ -493,6 +503,7 @@
   gamma_names: ''
   other_names: B2 0218+35
   reference_id: ''
+  classes: blazar
   significance: .nan
   livetime: .nan
   ra: 35.27280044555664
@@ -542,6 +553,7 @@
   gamma_names: ''
   other_names: B2 0218+35
   reference_id: ''
+  classes: ibl
   significance: .nan
   livetime: .nan
   ra: 35.6650505065918
@@ -591,6 +603,7 @@
   gamma_names: MAGIC J0223+403
   other_names: 3C 66A/B Region
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 35.6650505065918
@@ -640,6 +653,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 38.20256423950195
@@ -689,6 +703,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: bin
   significance: .nan
   livetime: .nan
   ra: 40.13193893432617
@@ -738,6 +753,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 45.860416412353516
@@ -787,6 +803,7 @@
   gamma_names: MAGIC J0317+413
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 49.17927169799805
@@ -836,6 +853,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: fri
   significance: .nan
   livetime: .nan
   ra: 49.95066833496094
@@ -885,6 +903,7 @@
   gamma_names: ''
   other_names: RBS 0413,EXO 0317.0+1834,1E 0317.0+1835
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 49.965850830078125
@@ -934,6 +953,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 57.34660720825195
@@ -983,6 +1003,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 64.21873474121094
@@ -1032,6 +1053,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 72.35291290283203
@@ -1081,6 +1103,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 76.98405456542969
@@ -1130,6 +1153,7 @@
   gamma_names: VER J0521+211
   other_names: ''
   reference_id: ''
+  classes: ibl
   significance: .nan
   livetime: .nan
   ra: 80.44153594970703
@@ -1179,6 +1203,7 @@
   gamma_names: ''
   other_names: SNR J052501-693842
   reference_id: 2015Sci...347..406H
+  classes: snr,mc
   significance: .nan
   livetime: .nan
   ra: 81.25917053222656
@@ -1228,6 +1253,7 @@
   gamma_names: ''
   other_names: G184.6-5.8,3C 144,SN 1054
   reference_id: 2008ICRC....2..803K
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 83.6330795288086
@@ -1277,6 +1303,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: 2015Sci...347..406H
+  classes: other
   significance: .nan
   livetime: .nan
   ra: 83.96170043945312
@@ -1326,6 +1353,7 @@
   gamma_names: HESS J0537-691
   other_names: LHA 120-N 157B,PSR J0537-6910
   reference_id: 2015Sci...347..406H
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 84.44442749023438
@@ -1375,6 +1403,7 @@
   gamma_names: ''
   other_names: H 0548-322,1ES 0548-322
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 87.66899108886719
@@ -1424,6 +1453,7 @@
   gamma_names: MAGIC 0616+223
   other_names: 3C 157,SNR 189.1+03.0
   reference_id: ''
+  classes: snr
   significance: .nan
   livetime: .nan
   ra: 94.5112533569336
@@ -1473,6 +1503,7 @@
   gamma_names: HESS J0632+057,VER J0633+057
   other_names: HD 259440
   reference_id: 2007A&A...469L...1A
+  classes: bin
   significance: .nan
   livetime: 13.5
   ra: 98.24689483642578
@@ -1522,6 +1553,7 @@
   gamma_names: MGRO J0632+17
   other_names: ''
   reference_id: ''
+  classes: psr,pwn
   significance: .nan
   livetime: .nan
   ra: 98.47563934326172
@@ -1571,6 +1603,7 @@
   gamma_names: VER J0648+152
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 102.198486328125
@@ -1620,6 +1653,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 102.69371032714844
@@ -1669,6 +1703,7 @@
   gamma_names: VER J0710+591
   other_names: RX J0710.5+5908,1H 0658+595
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 107.62532806396484
@@ -1718,6 +1753,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: ibl
   significance: .nan
   livetime: .nan
   ra: 110.47270202636719
@@ -1767,6 +1803,7 @@
   gamma_names: ''
   other_names: VTS J0809+522
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 122.45494842529297
@@ -1816,6 +1853,7 @@
   gamma_names: HESS J0835-455
   other_names: ''
   reference_id: 2012A&A...548A..38A
+  classes: pwn
   significance: 27.899999618530273
   livetime: 53.099998474121094
   ra: 128.28700256347656
@@ -1865,6 +1903,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 131.80389404296875
@@ -1914,16 +1953,17 @@
   gamma_names: HESS J0852-463
   other_names: RX J0852.0-4622,SNR G266.2-01.2
   reference_id: 2016arXiv161101863H
+  classes: snr
   significance: 39.099998474121094
   livetime: 93.5999984741211
   ra: 133.0
   dec: -46.33300018310547
   glon: 266.2588806152344
   glat: -1.219645380973816
-  pos_ra: .nan
-  pos_dec: .nan
-  pos_glon: .nan
-  pos_glat: .nan
+  pos_ra: 133.0
+  pos_dec: -46.369998931884766
+  pos_glon: 266.2873840332031
+  pos_glat: -1.243260383605957
   pos_err: .nan
   morph_type: shell
   morph_sigma: 1.0
@@ -1963,6 +2003,7 @@
   gamma_names: ''
   other_names: NGC 3034
   reference_id: ''
+  classes: galaxy
   significance: .nan
   livetime: .nan
   ra: 148.9684600830078
@@ -2012,6 +2053,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: blazar
   significance: .nan
   livetime: .nan
   ra: 149.6968536376953
@@ -2061,6 +2103,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 152.56655883789062
@@ -2110,6 +2153,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 153.76724243164062
@@ -2159,6 +2203,7 @@
   gamma_names: HESS J1018-589 B
   other_names: PSR J1016-5857
   reference_id: 2012A&A...541A...5H
+  classes: pwn
   significance: 8.5
   livetime: .nan
   ra: 154.08816528320312
@@ -2208,6 +2253,7 @@
   gamma_names: HESS J1018-589 A
   other_names: SNR G284.3-01.8,MSH 10-53
   reference_id: 2015A&A...577A.131H
+  classes: bin
   significance: .nan
   livetime: .nan
   ra: 154.5749969482422
@@ -2257,6 +2303,7 @@
   gamma_names: HESS J1023-575
   other_names: RCW 49,WR20a,PSR J1022-5746
   reference_id: 2011A&A...525A..46H
+  classes: unid
   significance: 16.0
   livetime: 45.900001525878906
   ra: 155.75
@@ -2306,6 +2353,7 @@
   gamma_names: HESS J1026-582
   other_names: PSR J1028-5819
   reference_id: 2011A&A...525A..46H
+  classes: pwn
   significance: 7.0
   livetime: 45.900001525878906
   ra: 157.16583251953125
@@ -2355,6 +2403,7 @@
   gamma_names: HESS J1103-234
   other_names: 1H 1100-230
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 165.9066925048828
@@ -2404,6 +2453,7 @@
   gamma_names: HESS J1104+382
   other_names: Markarian 421,Mrk 421,1ES 1101+384,1H 1104+382,H 1105+38
   reference_id: 2005A&A...437...95A
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 166.1138153076172
@@ -2453,6 +2503,7 @@
   gamma_names: HESS J1119-614
   other_names: SNR G292.2-00.5,PSR J1119-6127
   reference_id: ''
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 169.80958557128906
@@ -2502,6 +2553,7 @@
   gamma_names: ''
   other_names: Mrk 180,1ES 1133+704,1H 1137+699
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 174.1100311279297
@@ -2551,6 +2603,7 @@
   gamma_names: ''
   other_names: RBS 1004
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 174.1253662109375
@@ -2600,6 +2653,7 @@
   gamma_names: VER J1217+301
   other_names: B2 1215+30
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 184.46701049804688
@@ -2649,6 +2703,7 @@
   gamma_names: VER J1221+301
   other_names: 1H 1219+301,H 1219+305,QSO B1218+304
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 185.3414306640625
@@ -2698,6 +2753,7 @@
   gamma_names: ''
   other_names: B2 1219+28
   reference_id: ''
+  classes: ibl
   significance: .nan
   livetime: .nan
   ra: 185.38204956054688
@@ -2747,6 +2803,7 @@
   gamma_names: ''
   other_names: RGB J1224+246
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 186.10076904296875
@@ -2796,6 +2853,7 @@
   gamma_names: ''
   other_names: 4C +21.35
   reference_id: ''
+  classes: fsrq
   significance: .nan
   livetime: .nan
   ra: 186.22691345214844
@@ -2845,6 +2903,7 @@
   gamma_names: ''
   other_names: 1ES 1228+126,1H 1226+128
   reference_id: ''
+  classes: fri
   significance: .nan
   livetime: .nan
   ra: 187.7059326171875
@@ -2894,6 +2953,7 @@
   gamma_names: MGRO C4,MGRO J2228+61
   other_names: G 106.6+2.9,PSR J2229+6114,0FGL J2229.0+6114
   reference_id: ''
+  classes: pwn,snr
   significance: .nan
   livetime: .nan
   ra: 191.1893768310547
@@ -2943,6 +3003,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: fsrq
   significance: .nan
   livetime: .nan
   ra: 194.04652404785156
@@ -2992,6 +3053,7 @@
   gamma_names: HESS J1302-638
   other_names: SS 2883
   reference_id: ''
+  classes: bin
   significance: .nan
   livetime: .nan
   ra: 195.6985626220703
@@ -3041,6 +3103,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: 2012A&A...548A..46H
+  classes: pwn
   significance: 33.0
   livetime: .nan
   ra: 195.7516632080078
@@ -3090,6 +3153,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 198.76414489746094
@@ -3139,6 +3203,7 @@
   gamma_names: ''
   other_names: Cen A
   reference_id: ''
+  classes: fri
   significance: .nan
   livetime: .nan
   ra: 201.3650665283203
@@ -3188,6 +3253,7 @@
   gamma_names: HESS J1356-645
   other_names: PSR J1357-6429
   reference_id: 2011A&A...533A.103H
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 209.0
@@ -3237,6 +3303,7 @@
   gamma_names: HESS J1418-609
   other_names: Kookaburra
   reference_id: 2006A&A...456..245A
+  classes: pwn
   significance: 13.199999809265137
   livetime: 18.100000381469727
   ra: 214.51666259765625
@@ -3286,6 +3353,7 @@
   gamma_names: HESS J1420-607
   other_names: PSR J1420-6048
   reference_id: 2006A&A...456..245A
+  classes: pwn
   significance: 15.199999809265137
   livetime: 18.100000381469727
   ra: 214.6916961669922
@@ -3335,6 +3403,7 @@
   gamma_names: ''
   other_names: 7C 1424+2401
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 216.7516326904297
@@ -3384,6 +3453,7 @@
   gamma_names: ''
   other_names: Suzaku J1427-6051
   reference_id: 2008A&A...477..353A
+  classes: unid
   significance: 7.300000190734863
   livetime: 21.0
   ra: 216.9666748046875
@@ -3433,6 +3503,7 @@
   gamma_names: ''
   other_names: 1ES 1426+428,1H 1430+423
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 217.1358642578125
@@ -3482,6 +3553,7 @@
   gamma_names: HESS J1442-624
   other_names: G315.4-2.3,MSH 14-63
   reference_id: 2016arXiv160104461H
+  classes: snr
   significance: .nan
   livetime: 57.0
   ra: 220.1208038330078
@@ -3531,6 +3603,7 @@
   gamma_names: VER J1443+120
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 220.70115661621094
@@ -3580,6 +3653,7 @@
   gamma_names: HESS J1457-593
   other_names: G318.2+00.1,G318.2+0.1
   reference_id: ''
+  classes: snr,mc
   significance: .nan
   livetime: .nan
   ra: 223.6999969482422
@@ -3629,6 +3703,7 @@
   gamma_names: HESS J1458-608
   other_names: PSR J1459-6053
   reference_id: ''
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 224.87417602539062
@@ -3678,6 +3753,7 @@
   gamma_names: HESS J1502-421,HESS J1504-418
   other_names: ''
   reference_id: 2010A&A...516A..62A
+  classes: snr
   significance: .nan
   livetime: .nan
   ra: 225.5920867919922
@@ -3727,6 +3803,7 @@
   gamma_names: HESS J1503-582
   other_names: ''
   reference_id: 2008AIPC.1085..281R
+  classes: unid
   significance: 6.0
   livetime: 24.0
   ra: 225.75
@@ -3776,6 +3853,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: 2011A&A...525A..45H
+  classes: unid
   significance: 9.300000190734863
   livetime: 9.699999809265137
   ra: 226.875
@@ -3825,6 +3903,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: fsrq
   significance: .nan
   livetime: .nan
   ra: 228.21055603027344
@@ -3874,6 +3953,7 @@
   gamma_names: HESS J1514-591
   other_names: G320.3-01.1,MSH 15-52
   reference_id: 2005A&A...435L..17A
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 228.32080078125
@@ -3923,6 +4003,7 @@
   gamma_names: ''
   other_names: PKS B1514-241
   reference_id: ''
+  classes: lbl
   significance: .nan
   livetime: .nan
   ra: 229.42422485351562
@@ -3972,6 +4053,7 @@
   gamma_names: HESS J1534-571
   other_names: ''
   reference_id: ''
+  classes: snr
   significance: .nan
   livetime: .nan
   ra: 233.62498474121094
@@ -4021,6 +4103,7 @@
   gamma_names: ''
   other_names: SNR G327.1-01.1
   reference_id: 2011ICRC....7..185A
+  classes: pwn
   significance: 8.0
   livetime: 45.0
   ra: 238.63461303710938
@@ -4070,6 +4153,7 @@
   gamma_names: HESS J1555+111
   other_names: 1ES 1553+113
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 238.92935180664062
@@ -4119,6 +4203,7 @@
   gamma_names: HESS J1614-518
   other_names: ''
   reference_id: 2011A&A...531L..18H
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 243.5625
@@ -4168,6 +4253,7 @@
   gamma_names: HESS J1616-508
   other_names: PSR J1617-5055
   reference_id: 2006ApJ...636..777A
+  classes: pwn
   significance: 16.299999237060547
   livetime: 10.199999809265137
   ra: 244.05999755859375
@@ -4217,6 +4303,7 @@
   gamma_names: HESS J1626-490
   other_names: SNR G335.2+00.1
   reference_id: 2008A&A...477..353A
+  classes: unid
   significance: 7.5
   livetime: 12.0
   ra: 246.51666259765625
@@ -4266,6 +4353,7 @@
   gamma_names: HESS J1632-478
   other_names: ''
   reference_id: 2006ApJ...636..777A
+  classes: pwn
   significance: 4.5
   livetime: 4.5
   ra: 248.00778198242188
@@ -4315,6 +4403,7 @@
   gamma_names: HESS J1634-472
   other_names: ''
   reference_id: 2006ApJ...636..777A
+  classes: unid
   significance: 4.199999809265137
   livetime: 6.599999904632568
   ra: 248.5
@@ -4364,6 +4453,7 @@
   gamma_names: HESS J1640-465
   other_names: SNR G338.3-0.0
   reference_id: 2014MNRAS.439.2828A
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 250.125
@@ -4413,6 +4503,7 @@
   gamma_names: HESS J1641-463
   other_names: SNR G338.5+0.1
   reference_id: 2014ApJ...794L...1A
+  classes: unid
   significance: 8.5
   livetime: 72.0
   ra: 250.257080078125
@@ -4462,6 +4553,7 @@
   gamma_names: HESS J1646-458
   other_names: Wd 1,CXOU J164710.2 - 455216,4U 1642-45,PSR J1648-4611
   reference_id: 2012A&A...537A.114A
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 251.5
@@ -4511,6 +4603,7 @@
   gamma_names: ''
   other_names: Mrk 501
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 253.4675750732422
@@ -4560,6 +4653,7 @@
   gamma_names: HESS J1702-420
   other_names: ''
   reference_id: 2008A&A...477..353A
+  classes: unid
   significance: 12.800000190734863
   livetime: 9.0
   ra: 255.68333435058594
@@ -4609,6 +4703,7 @@
   gamma_names: HESS J1708-443
   other_names: PSR B1706-44,G343.1-2.3
   reference_id: 2011A&A...528A.143H
+  classes: pwn
   significance: 7.0
   livetime: 15.0
   ra: 257.0
@@ -4658,6 +4753,7 @@
   gamma_names: HESS J1708-410
   other_names: ''
   reference_id: 2008A&A...477..353A
+  classes: unid
   significance: 10.699999809265137
   livetime: 39.0
   ra: 257.1000061035156
@@ -4707,6 +4803,7 @@
   gamma_names: HESS J1713-397
   other_names: SNR G347.3-00.5
   reference_id: 2016arXiv160908671H
+  classes: snr
   significance: .nan
   livetime: 164.0
   ra: 258.11248779296875
@@ -4756,6 +4853,7 @@
   gamma_names: HESS J1714-385
   other_names: SNR G348.5+0.1,CXOU J171419.8-383023
   reference_id: 2008A&A...490..685A
+  classes: snr,mc
   significance: .nan
   livetime: .nan
   ra: 258.64300537109375
@@ -4805,6 +4903,7 @@
   gamma_names: HESS J1718-374
   other_names: SNR G349.7+00.2
   reference_id: 2015A&A...574A.100H
+  classes: snr,mc
   significance: 6.599999904632568
   livetime: 113.0
   ra: 259.4960021972656
@@ -4854,6 +4953,7 @@
   gamma_names: HESS J1718-385
   other_names: ''
   reference_id: 2007A&A...472..489A
+  classes: pwn
   significance: 6.199999809265137
   livetime: 82.0
   ra: 259.5292053222656
@@ -4903,6 +5003,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 261.2680969238281
@@ -4952,6 +5053,7 @@
   gamma_names: ''
   other_names: OT546
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 262.0776062011719
@@ -5001,6 +5103,7 @@
   gamma_names: HESS J1729-345
   other_names: ''
   reference_id: 2011A&A...531A..81H
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 262.25
@@ -5050,6 +5153,7 @@
   gamma_names: HESS J1731-347
   other_names: SNR G353.6-0.7
   reference_id: 2011A&A...531A..81H
+  classes: snr
   significance: .nan
   livetime: 59.0
   ra: 262.9791564941406
@@ -5099,6 +5203,7 @@
   gamma_names: HESS J1741-302
   other_names: ''
   reference_id: 2008AIPC.1085..249T
+  classes: unid
   significance: 8.100000381469727
   livetime: 143.5
   ra: 265.25
@@ -5148,6 +5253,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 265.990966796875
@@ -5197,6 +5303,7 @@
   gamma_names: ''
   other_names: G359.1-0.5
   reference_id: 2008A&A...483..509A
+  classes: unid,snr,mc
   significance: 10.199999809265137
   livetime: 79.0
   ra: 266.2969970703125
@@ -5246,6 +5353,7 @@
   gamma_names: HESS J1745-290,VER J1745-290
   other_names: Sgr A*,Sagittarius A*
   reference_id: 2016Natur.531..476H
+  classes: unid
   significance: .nan
   livetime: 226.0
   ra: 266.4168395996094
@@ -5295,6 +5403,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 266.4168395996094
@@ -5344,6 +5453,7 @@
   gamma_names: HESS J1746-285,VER J1746-289
   other_names: SNR G0.13-0.13,G0.13-0.11
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 266.5989990234375
@@ -5393,6 +5503,7 @@
   gamma_names: HESS J1747-281
   other_names: SNR G000.9+00.1
   reference_id: 2005A&A...432L..25A
+  classes: pwn
   significance: 13.0
   livetime: 50.0
   ra: 266.82501220703125
@@ -5442,6 +5553,7 @@
   gamma_names: HESS J1747-248
   other_names: ''
   reference_id: ''
+  classes: unid,gc
   significance: .nan
   livetime: .nan
   ra: 267.0208435058594
@@ -5491,6 +5603,7 @@
   gamma_names: HESS J1800-240B
   other_names: ''
   reference_id: 2008A&A...481..401A
+  classes: snr,mc
   significance: 7.800000190734863
   livetime: 42.0
   ra: 270.1083068847656
@@ -5540,6 +5653,7 @@
   gamma_names: HESS J1801-233
   other_names: W 28,SNR G6.4-0.1,SNR G006.4-00.1,GRO J1801-2320
   reference_id: 2008A&A...481..401A
+  classes: snr,mc
   significance: 7.900000095367432
   livetime: 42.0
   ra: 270.3445739746094
@@ -5589,6 +5703,7 @@
   gamma_names: HESS J1800-240A
   other_names: ''
   reference_id: ''
+  classes: snr,mc
   significance: .nan
   livetime: .nan
   ra: 270.49169921875
@@ -5638,6 +5753,7 @@
   gamma_names: HESS J1804-216
   other_names: G8.7-0.1,W30
   reference_id: 2006ApJ...636..777A
+  classes: unid
   significance: 13.0
   livetime: 15.699999809265137
   ra: 271.1237487792969
@@ -5687,6 +5803,7 @@
   gamma_names: HESS J1808-204
   other_names: SGR 1806-20,LBV 1806-20,C1 1806-20
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 272.0
@@ -5736,6 +5853,7 @@
   gamma_names: HESS J1809-193
   other_names: ''
   reference_id: 2007A&A...472..489A
+  classes: unid
   significance: 4.699999809265137
   livetime: 25.0
   ra: 272.62921142578125
@@ -5785,6 +5903,7 @@
   gamma_names: HESS J1813-126
   other_names: PSR J1813-1246
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 273.3500061035156
@@ -5834,6 +5953,7 @@
   gamma_names: HESS J1813-178
   other_names: G12.82-0.02,PSR J1813-1749,CXOU J181335.1-174957,IGR J18135-1751,W33
   reference_id: 2006ApJ...636..777A
+  classes: pwn
   significance: 13.5
   livetime: 9.699999809265137
   ra: 273.3629150390625
@@ -5883,6 +6003,7 @@
   gamma_names: HESS J1818-154
   other_names: ''
   reference_id: 2014A&A...562A..40H
+  classes: pwn,snr
   significance: .nan
   livetime: .nan
   ra: 274.5
@@ -5932,6 +6053,7 @@
   gamma_names: HESS J1826-130
   other_names: PSR J1826-1256,PWN G018.5-00.4
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 276.5041809082031
@@ -5981,6 +6103,7 @@
   gamma_names: HESS J1825-137,1HWC J1825-133
   other_names: PSR J1826-1334,PSR B1823-13
   reference_id: 2006A&A...460..365A
+  classes: pwn
   significance: 33.79999923706055
   livetime: 52.099998474121094
   ra: 276.5544128417969
@@ -6030,6 +6153,7 @@
   gamma_names: HESS J1826-148
   other_names: RX J1826.2-1450
   reference_id: 2006A&A...460..743A
+  classes: bin
   significance: .nan
   livetime: .nan
   ra: 276.562744140625
@@ -6079,6 +6203,7 @@
   gamma_names: HESS J1828-099
   other_names: ''
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 277.25
@@ -6128,6 +6253,7 @@
   gamma_names: HESS J1831-098
   other_names: PSR J1831-952
   reference_id: 2011ICRC....7..244S
+  classes: unid,pwn
   significance: 7.900000095367432
   livetime: 40.0
   ra: 277.8500061035156
@@ -6177,6 +6303,7 @@
   gamma_names: HESS J1832-085
   other_names: PSR J1832-0836
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 278.1300048828125
@@ -6226,6 +6353,7 @@
   gamma_names: HESS J1832-093
   other_names: SNR G22.7-0.2
   reference_id: ''
+  classes: bin,unid
   significance: .nan
   livetime: .nan
   ra: 278.18817138671875
@@ -6275,6 +6403,7 @@
   gamma_names: HESS J1833-105
   other_names: G21.5-0.9,PSR J1833-1034
   reference_id: 2015MNRAS.446.1163H
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 278.25
@@ -6324,6 +6453,7 @@
   gamma_names: HESS J1834-087,1HWC J1836-090c
   other_names: W41
   reference_id: 2006ApJ...636..777A
+  classes: unid
   significance: 8.100000381469727
   livetime: 7.300000190734863
   ra: 278.7158203125
@@ -6373,6 +6503,7 @@
   gamma_names: HESS J1837-069,1HWC J1838-060,1HWC J1836-074c
   other_names: ''
   reference_id: 2006ApJ...636..777A
+  classes: pwn
   significance: 12.199999809265137
   livetime: 7.599999904632568
   ra: 279.42791748046875
@@ -6422,6 +6553,7 @@
   gamma_names: HESS J1841-055,ARGO J1839-0627,1HWC J1838-060
   other_names: ''
   reference_id: 2008A&A...477..353A
+  classes: unid
   significance: 10.600000381469727
   livetime: 26.0
   ra: 280.2291564941406
@@ -6471,6 +6603,7 @@
   gamma_names: HESS J1843-033,ARGO J1841-0332 1HWC J1844-031c
   other_names: ''
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 280.75
@@ -6520,6 +6653,7 @@
   gamma_names: HESS J1844-030
   other_names: PSR J1832-0836,AX J1844.6-0305,PMN J1844-0306,SNR G29.4+0.1
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 281.1700134277344
@@ -6569,6 +6703,7 @@
   gamma_names: HESS J1846-029
   other_names: Kes 75,SNR G29.7-0.3
   reference_id: ''
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 281.5
@@ -6618,6 +6753,7 @@
   gamma_names: HESS J1848-018,1HWC J1849-017c
   other_names: WR121a,W43
   reference_id: 2008AIPC.1085..372C
+  classes: unid
   significance: 9.0
   livetime: 50.0
   ra: 282.1199951171875
@@ -6667,6 +6803,7 @@
   gamma_names: HESS J1849-000
   other_names: IGR J18490-0000,3C 391,PSR J1849-0001
   reference_id: ''
+  classes: pwn
   significance: .nan
   livetime: .nan
   ra: 282.25762939453125
@@ -6716,6 +6853,7 @@
   gamma_names: HESS J1852-000
   other_names: Kes 78
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 283.0
@@ -6765,6 +6903,7 @@
   gamma_names: MAGIC J1857.2+0263,MAGIC J1857.6+0297,1HWC J1857+023
   other_names: ''
   reference_id: 2008A&A...477..353A
+  classes: unid
   significance: 8.699999809265137
   livetime: 21.0
   ra: 284.29583740234375
@@ -6814,6 +6953,7 @@
   gamma_names: 1HWC J1857+023
   other_names: G35.6-0.4
   reference_id: 2008A&A...477..353A
+  classes: unid
   significance: 7.0
   livetime: 25.0
   ra: 284.5833435058594
@@ -6863,6 +7003,7 @@
   gamma_names: HESS J1908+063,VER J1907+062,1HWC J1907+062c,ARGO J1907+0627,ARGO J1910+0720
   other_names: GeV J1907+0557,GRO J1908+0556,G40.5-0.5,0FGL J1907.5+0602,1AGL J1908+0613
   reference_id: 2009A&A...499..723A
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 287.17498779296875
@@ -6912,6 +7053,7 @@
   gamma_names: HESS J1911+090
   other_names: SNR G043.3-00.2,0FGL J1911.0+0905,1FGL J1910.9+0906c
   reference_id: 2016arXiv160900600H
+  classes: snr,mc
   significance: 12.899999618530273
   livetime: 75.0
   ra: 287.74578857421875
@@ -6961,6 +7103,7 @@
   gamma_names: ''
   other_names: PSR J1913+1011
   reference_id: 2008A&A...484..435A
+  classes: snr
   significance: 7.5
   livetime: 20.799999237060547
   ra: 288.3347473144531
@@ -7010,6 +7153,7 @@
   gamma_names: HESS J1923+141
   other_names: SNR G49.2-0.7,0FGL J1923.0+1411
   reference_id: ''
+  classes: snr,mc
   significance: .nan
   livetime: .nan
   ra: 290.8179931640625
@@ -7059,6 +7203,7 @@
   gamma_names: VER J1930+188
   other_names: PSR J1930+1852
   reference_id: 2010ApJ...719L..69A
+  classes: pwn,snr
   significance: 7.0
   livetime: 36.599998474121094
   ra: 292.62921142578125
@@ -7108,6 +7253,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: 2011A&A...529A..49H
+  classes: hbl
   significance: 8.899999618530273
   livetime: 38.400001525878906
   ra: 295.97918701171875
@@ -7157,6 +7303,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 299.9993896484375
@@ -7206,6 +7353,7 @@
   gamma_names: ''
   other_names: 1FGL J2001.1+4351,MG4 J200112+4352
   reference_id: ''
+  classes: ibl
   significance: .nan
   livetime: .nan
   ra: 300.3062438964844
@@ -7255,6 +7403,7 @@
   gamma_names: HESS J2009-488
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 302.3558044433594
@@ -7304,6 +7453,7 @@
   gamma_names: MGRO J2019+37
   other_names: CTB 87
   reference_id: ''
+  classes: pwn,snr
   significance: .nan
   livetime: .nan
   ra: 304.0075988769531
@@ -7353,6 +7503,7 @@
   gamma_names: MGRO J2019+37
   other_names: ''
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 304.00830078125
@@ -7402,6 +7553,7 @@
   gamma_names: MGRO J2019+37,VER J2019+368,VER J2016+371
   other_names: 0FGL J2020.8+3649
   reference_id: ''
+  classes: pwn,unid
   significance: .nan
   livetime: .nan
   ra: 305.27252197265625
@@ -7451,6 +7603,7 @@
   gamma_names: VER J2019+407
   other_names: 1FGL J2020.0+4049,SNR G78.2+2.1
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 305.5570983886719
@@ -7500,6 +7653,7 @@
   gamma_names: ''
   other_names: TeV J2032+4130,TeV 2032+413,0FGL J2032.2+4122
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 308.0249938964844
@@ -7549,6 +7703,7 @@
   gamma_names: MGRO J2031+41
   other_names: 0FGL J2032.2+4122
   reference_id: ''
+  classes: unid
   significance: .nan
   livetime: .nan
   ra: 308.0249938964844
@@ -7598,6 +7753,7 @@
   gamma_names: HESS J2158-302
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 329.7169494628906
@@ -7647,6 +7803,7 @@
   gamma_names: ''
   other_names: 1ES 2200+420
   reference_id: ''
+  classes: lbl
   significance: .nan
   livetime: .nan
   ra: 330.6803894042969
@@ -7696,6 +7853,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: ibl
   significance: .nan
   livetime: .nan
   ra: 340.97808837890625
@@ -7745,6 +7903,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 342.5239562988281
@@ -7794,6 +7953,7 @@
   gamma_names: ''
   other_names: Cas A,3C461,G111.7-2.1
   reference_id: ''
+  classes: snr
   significance: .nan
   livetime: .nan
   ra: 350.8500061035156
@@ -7843,6 +8003,7 @@
   gamma_names: ''
   other_names: ''
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 356.7701416015625
@@ -7892,6 +8053,7 @@
   gamma_names: HESS J2359-306
   other_names: 1H 2354-315
   reference_id: ''
+  classes: hbl
   significance: .nan
   livetime: .nan
   ra: 359.782958984375

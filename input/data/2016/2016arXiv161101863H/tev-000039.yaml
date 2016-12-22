@@ -5,6 +5,12 @@ data:
   livetime: 93.6
   significance: 39.1
 
+# No position measurement is publsihed in this paper
+# using center of spectral measurement region
+pos:
+  ra: {val: 8h52m}
+  dec: {val: -46d22m12s}
+
 # No source morphology fit published in this paper.
 # The shell outer radius of 1.0 is mentioned in the text.
 morph:

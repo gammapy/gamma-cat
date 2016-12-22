@@ -5,7 +5,7 @@ gamma_names: []
 other_names: [PSR J1913+1011]
 
 where: gal
-classes: [pwn]
+classes: [snr]
 
 discoverer: hess
 seen_by: [hess]
@@ -24,3 +24,4 @@ pos:
 
 reference_ids:
   - 2008A&A...484..435A
+  - 2016arXiv161200261G

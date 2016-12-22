@@ -28,6 +28,7 @@ class NA:
         number=np.nan,
         string='',
         array='',
+        list=[],
     )
 
     # @classmethod

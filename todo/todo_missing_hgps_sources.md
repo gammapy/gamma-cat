@@ -41,7 +41,7 @@ known H.E.S.S. sources (SED as well as spectral model parameters).
 
 * HESS J1923+141 ([gamma-cat id = 135](../input/sources/tev-000157.yaml))
 
-## Missing SED (an ECPL file)
+## Missing SED (an ECSV file)
 
 * HESS J1119-614 ([gamma-cat id =  50](../input/sources/tev-000050.yaml))
 
@@ -82,4 +82,4 @@ known H.E.S.S. sources (SED as well as spectral model parameters).
 * HESS J1923+141 ([gamma-cat id = 135](../input/sources/tev-000135.yaml))
 
 * HESS J1943+213 ([gamma-cat id = 137](../input/sources/tev-000137.yaml))
-
+  * See https://github.com/gammapy/gamma-cat/issues/62

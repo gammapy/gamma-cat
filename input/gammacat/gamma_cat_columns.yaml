@@ -19,11 +19,16 @@
   fmt:
   unit:
   description: Other source names
-- name: paper_id
+- name: reference_id
   dtype: str
   fmt:
   unit:
   description: Paper ID where source parameters are taken from.
+- name: classes
+  dtype: str
+  fmt:
+  unit:
+  description: Source classes
 - name: significance
   dtype: float32
   fmt:
@@ -35,30 +40,62 @@
   unit: hour
   description: Source livetime
 
-# Position info
+# Position info simbad
 - name: ra
   dtype: float32
   fmt:
   unit: deg
-  description: Right Ascension (ICRS)
+  description: Right Ascension (ICRS) from simbad
   latex:
 - name: dec
   dtype: float32
   fmt:
   unit: deg
-  description: Declination (ICRS)
+  description: Declination (ICRS) from simbad
   latex:
 - name: glon
   fmt:
   dtype: float32
   unit: deg
-  description: Galactic longitude
+  description: Galactic longitude from simbad
   latex:
 - name: glat
   fmt:
   dtype: float32
   unit: deg
-  description: Galactic latitude
+  description: Galactic latitude from simbad
+  latex:
+
+# Position info
+- name: pos_ra
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Right Ascension (ICRS) from reference
+  latex:
+- name: pos_dec
+  dtype: float32
+  fmt:
+  unit: deg
+  description: Declination (ICRS) from reference
+  latex:
+- name: pos_glon
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic longitude from reference
+  latex:
+- name: pos_glat
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Galactic latitude from reference
+  latex:
+- name: pos_err
+  fmt:
+  dtype: float32
+  unit: deg
+  description: Symmetric error on the position from reference
   latex:
 
 # Morphology info
@@ -226,6 +263,30 @@
   unit: cm-2 s-1
   description: Integrated flux above 1 TeV error
   latex:
+- name: spec_flux_above_1TeV_crab
+  fmt:
+  dtype: float32
+  unit:
+  description: Integrated flux above 1 TeV, measured in crab units (Meyer 2012)
+  latex:
+- name: spec_flux_above_1TeV_crab_err
+  fmt:
+  dtype: float32
+  unit:
+  description: Integrated flux above 1 TeV error, measured in crab units (Meyer 2012)
+  latex:
+- name: spec_flux_above_erange_min
+  fmt:
+  dtype: float32
+  unit: cm-2 s-1
+  description: Integrated flux above spec_erange_min
+  latex:
+- name: spec_flux_above_erange_min_err
+  fmt:
+  dtype: float32
+  unit: cm-2 s-1
+  description: Error on integrated flux above spec_erange_min
+  latex:
 - name: spec_energy_flux_1TeV_10TeV
   fmt:
   dtype: float32
@@ -240,7 +301,7 @@
   latex:
 
 # SED info
-- name: sed_paper_id
+- name: sed_reference_id
   dtype: str
   fmt:
   unit:
@@ -250,6 +311,18 @@
   dtype: float32
   unit: TeV
   description: Reference energy
+  latex:
+- name: sed_e_min
+  fmt:
+  dtype: float32
+  unit: TeV
+  description: Lower edge of energy bin.
+  latex:
+- name: sed_e_max
+  fmt:
+  dtype: float32
+  unit: TeV
+  description: Upper edge of energy bin.
   latex:
 - name: sed_dnde
   fmt:

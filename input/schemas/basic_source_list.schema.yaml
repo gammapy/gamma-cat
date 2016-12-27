@@ -10,4 +10,4 @@
 - {name: tevcat_name, type: string}
 - {name: tgevcat_id, type: integer}
 - {name: tgevcat_name, type: string}
-- {name: papers, type: string}
+- {name: datasets, type: string}

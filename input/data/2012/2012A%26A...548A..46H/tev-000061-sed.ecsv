@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 61
+# - source_name: J1303-631
+# - reference_id: 2012A&A...548A..46H
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A46.html
+# - comments:
+#     The page contains other data that's not copied here yet.
+e_ref dnde dnde_errp dnde_errn
+  0.88  4.25e-12  1.09e-12  1.09e-12
+  1.29  3.03e-12  4.32e-13  4.31e-13
+  1.89  2.22e-12  1.93e-13  1.92e-13
+  2.76  7.73e-13   8.9e-14  8.87e-14
+  4.04  3.39e-13  4.25e-14  4.23e-14
+  5.92  1.52e-13  2.15e-14  2.14e-14
+  8.67  7.40e-14  1.07e-14  1.06e-14
+ 12.70  2.00e-14  5.28e-15  5.24e-15
+ 18.60  4.40e-15  2.49e-15  2.47e-15
+ 27.26  1.03e-15  1.11e-15  1.09e-15
+ 39.95  1.24e-15  5.11e-16  4.94e-16

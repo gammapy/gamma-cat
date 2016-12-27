@@ -28,7 +28,7 @@ pos:
   ra: 270.34458
   dec: -23.28889
 
-papers:
+reference_ids:
 - 1997ApJ...489..143C
 - 2004ASPC..317...59M
 - 2008AIPC.1085..104F

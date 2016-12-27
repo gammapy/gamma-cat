@@ -25,7 +25,7 @@ pos:
   ra: 250.25708
   dec: -46.30306
 
-papers:
+reference_ids:
 - 2013arXiv1303.0979O
 - 2014ApJ...794L..16L
 - 2015ApJ...812...32T

@@ -1,0 +1,40 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_min, datatype: float32}
+# - {name: dnde_max, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 37
+# - reference_id: 2012A&A...548A..38A
+# - comments: |
+#     From https://github.com/zblz/gammafit/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_cocoon.spec
+#     See here for meaning of columns:
+#     https://github.com/zblz/naima/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_function_demo.py#L15
+e_ref dnde dnde_min dnde_max
+ 0.7185 1.055e-11  7.266e-12 1.383e-11
+ 0.8684 1.304e-11  1.091e-11 1.517e-11
+ 1.0510 9.211e-12  7.810e-12 1.061e-11
+ 1.2740 8.515e-12  7.557e-12 9.476e-12
+ 1.5460 5.378e-12  4.671e-12 6.087e-12
+ 1.8770 4.455e-12  3.950e-12 4.962e-12
+ 2.2750 3.754e-12  3.424e-12 4.088e-12
+ 2.7590 2.418e-12  2.150e-12 2.688e-12
+ 3.3520 1.605e-12  1.425e-12 1.788e-12
+ 4.0780 1.445e-12  1.319e-12 1.574e-12
+ 4.9560 9.240e-13  8.291e-13 1.021e-12
+ 6.0080 7.348e-13  6.701e-13 8.019e-13
+ 7.2710 3.863e-13  3.409e-13 4.333e-13
+ 8.7950 3.579e-13  3.222e-13 3.954e-13
+10.6500 1.696e-13  1.447e-13 1.955e-13
+12.9100 1.549e-13  1.343e-13 1.765e-13
+15.6500 6.695e-14  5.561e-14 7.925e-14
+18.8800 2.105e-14  7.146e-15 3.425e-14
+22.6200 3.279e-14  2.596e-14 4.030e-14
+26.8700 3.026e-14  2.435e-14 3.692e-14
+31.6100 1.861e-14  1.423e-14 2.373e-14
+36.9700 5.653e-15  3.484e-15 8.570e-15
+43.0800 3.479e-15  1.838e-15 5.889e-15
+52.3700 1.002e-15  1.693e-16 2.617e-15

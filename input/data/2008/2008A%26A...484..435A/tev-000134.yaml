@@ -1,0 +1,25 @@
+source_id: 134
+reference_id: 2008A&A...484..435A
+
+data:
+  livetime: 20.8
+  excess: 276
+  significance: 7.5
+
+pos:
+  ra: {val: 19h12m49s, err: 3 arcmin}
+  dec: {val: +10d09m6s, err: 3 arcmin}
+
+morph:
+  type: gauss
+  sigma: {val: 0.26 deg, err: 0.03 deg}
+
+spec:
+  type: pl
+
+  norm: {val: 3.5, err: 0.6, err_sys: 1.0}
+  index: {val: 2.7, err: 0.2, err_sys: 0.3}
+  ref: 1
+
+  theta: 0.5
+  erange: {min: 0.8}

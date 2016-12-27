@@ -22,7 +22,7 @@ pos:
   ra: 287.7458
   dec: 9.1017
 
-papers:
+reference_ids:
   - 2011arXiv1104.5003B
   - 2011ICRC....7..111B
   - 2016arXiv160900600H

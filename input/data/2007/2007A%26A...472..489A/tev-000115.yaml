@@ -1,0 +1,26 @@
+source_id: 115
+reference_id: 2007A&A...472..489A
+
+data:
+  livetime: 25
+  significance: 4.7
+
+pos:
+  ra: {val: 18h10m31s, err: 12s}
+  dec: {val: -19d18m, err: 2m}
+
+morph:
+  type: gauss
+  sigma: {val: 32m, err: 4m}
+  sigma2: {val: 15m, err: 2m}
+  pa: {val: 50, err: 0, frame: radec}
+
+spec:
+  type: pl
+
+  norm: {val: 4.6, err: 0.6, err_sys: 1.4}
+  index: {val: 2.2, err: 0.1, err_sys: 0.2}
+  ref: 1
+
+  theta: 0.5
+  erange: {min: 0.25 , max: }

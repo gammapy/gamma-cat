@@ -19,9 +19,10 @@ install:
 - pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
 
 script:
-- ./make.py --help
-- ./make.py check
-- ./make.py output
-#- ./make.py webpage
 - export PYTHONPATH=.:$PYTHONPATH
 - py.test -v --cov=gammacat
+- ./make.py --help
+#- ./make.py check
+#- ./make.py output
+#- ./make.py webpage
+- ./make.py all

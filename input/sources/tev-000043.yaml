@@ -24,7 +24,7 @@ pos:
   ra: 153.767249167
   dec: 49.433529083
 
-papers:
+reference_ids:
 - 2007ApJ...667L..21A
 - 2016MNRAS.459.2286A
 - 2016A&A...591A..10A

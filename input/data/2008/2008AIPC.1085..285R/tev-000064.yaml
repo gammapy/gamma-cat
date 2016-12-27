@@ -1,0 +1,23 @@
+source_id: 64
+reference_id: 2008AIPC.1085..285R
+
+data:
+  livetime: 10
+  significance: 8.5
+
+pos:
+  ra: {val: 13h56m00s, err: 2s}
+  dec: {val: -64d30m00s, err: 2s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.2, err: 0.02}
+
+spec:
+  type: pl
+  norm: {val: 3.5, err: 0.6}
+  index: {val: 2.2, err: 0.2, err_sys: 0.2}
+  ref: 1
+
+  theta: 0.22
+  erange: {min: 0.3, max: 30}

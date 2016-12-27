@@ -1,0 +1,28 @@
+source_id: 102
+# common_name: HESS J1729-345
+reference_id: 2011A&A...531A..81H
+
+#data:
+#  livetime: not given for this source
+
+pos:
+  # Note: in the paper it's not clear if the position error value
+  # is per axis or in total. We put it as per-axis here.
+  ra: {val: 17h29m35s, err: 0.035 deg}
+  dec: {val: -34d32m22s, err: 0.035 deg}
+
+morph:
+  type: gauss
+
+  sigma: {val: 0.12, err: 0.03}
+
+# Values taken from Table 1
+spec:
+  type: pl
+
+  norm: {val: 0.44, err: 0.07} # TODO: add `err_sys_frac=0.2` once that's implemented
+  index: {val: 2.24, err: 0.15, err_sys: 0.2}
+  ref: 0.861
+
+  theta: 0.14
+  erange: {min: 0.24}

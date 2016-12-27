@@ -1,0 +1,35 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e2dnde, datatype: float32, unit: TeV cm-2 s-1}
+# - {name: e2dnde_errn, datatype: float32, unit: TeV cm-2 s-1}
+# - {name: e2dnde_errp, datatype: float32, unit: TeV cm-2 s-1}
+# - {name: e2dnde_ul, datatype: float32, unit: TeV cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 106
+# - reference_id: 2006PhRvL..97v1102A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/GC2004_AuxInfo.txt
+# - UL_CONF: 0.95
+# - comments: |
+#     I think this is the spectrum 2004 data spectrum (solid points) in Figure 2.
+e_ref e2dnde e2dnde_errn e2dnde_errp e2dnde_ul
+0.19     3.68942e-12       4.42947e-13    4.54860e-13  nan
+0.2523   3.95745e-12       3.55197e-13    3.64745e-13  nan
+0.3387   3.32681e-12       3.14326e-13    3.23504e-13  nan
+0.4584   2.75061e-12       2.92081e-13    3.00487e-13  nan
+0.6233   2.33451e-12       2.76226e-13    2.86715e-13  nan
+0.8488   2.45677e-12       2.84582e-13    2.98271e-13  nan
+1.156    1.68779e-12       2.71276e-13    2.88649e-13  nan
+1.575    1.25619e-12       2.78574e-13    3.00652e-13  nan
+2.147    2.42143e-12       3.66003e-13    3.95504e-13  nan
+2.922    1.51636e-12       3.4067e-13     3.78237e-13  nan
+3.984    1.65865e-12       3.87442e-13    4.41249e-13  nan
+5.431    1.5674e-12        4.29753e-13    4.94939e-13  nan
+7.381    7.36013e-13       3.62014e-13    4.48908e-13  nan
+10.02    1.05621e-12       4.8885e-13     6.12442e-13  nan
+13.57    nan               nan            nan          1.19031e-12
+18.76    5.55358e-13       4.09057e-13    7.38013e-13  nan
+26.4     2.18427e-13       1.95232e-13    7.00863e-13  nan
+38.23    nan               nan            nan          8.27958e-13

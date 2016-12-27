@@ -1,0 +1,23 @@
+source_id: 94
+reference_id: 2011A&A...528A.143H
+
+data:
+  livetime: 15
+  significance: 7
+
+pos:
+  ra: {val: 17h08m11s, err: 17s}
+  dec: {val: -44d0m20s, err: 4s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.29, err: 0.04}
+
+spec:
+  type: pl
+  norm: {val: 4.2, err: 0.8, err_sys: 1.0}
+  index: {val: 2.0, err: 0.1, err_sys: 0.2}
+  ref: 1
+
+  theta: 0.71
+  erange: {min: 0.56 , max: }

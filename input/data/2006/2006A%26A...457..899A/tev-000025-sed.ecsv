@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: excess, datatype: float32}
+# - {name: significance, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 25
+# - reference_id: 2006A&A...457..899A
+# - comments: |
+#     Data taken from table 5 in the paper.
+e_ref excess significance dnde dnde_errp dnde_errn
+ 0.519    975  42.9  1.81e-10  0.06e-10  0.06e-10
+ 0.729   1580  56.0  7.27e-11  0.20e-11  0.19e-11
+ 1.060   1414  55.3  3.12e-11  0.09e-11  0.09e-11
+ 1.550   1082  47.3  1.22e-11  0.04e-11  0.04e-11
+ 2.260    762  39.5  4.60e-12  0.18e-12  0.18e-12
+ 3.300    443  29.5  1.53e-12  0.08e-12  0.08e-12
+ 4.890    311  24.9  6.35e-13  0.39e-13  0.38e-13
+ 7.180    186  19.6  2.27e-13  0.18e-13  0.17e-13
+10.400     86  13.1  6.49e-14  0.77e-14  0.72e-14
+14.800     36   8.1  1.75e-14  0.33e-14  0.30e-14
+20.900     23   7.5  7.26e-15  1.70e-15  1.50e-15
+30.500      4   2.9  9.58e-16  5.60e-16  4.25e-16

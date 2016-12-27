@@ -26,7 +26,7 @@ pos:
   ra: 278.25
   dec: -10.5
 
-papers:
+reference_ids:
 - 2008ICRC....2..823D
 - 2008MNRAS.391L..54T
 - 2009MNRAS.393..527D

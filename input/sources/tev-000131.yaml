@@ -22,7 +22,7 @@ pos:
   ra: 284.58333
   dec: 2.09
 
-papers:
+reference_ids:
   - 2008A&A...477..353A
   - 2016ApJ...817....3A
   - 2014ApJ...787..166A

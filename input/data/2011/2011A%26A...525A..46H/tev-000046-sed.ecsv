@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 46
+# - reference_id: 2011A&A...525A..46H
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA525_A46.html
+# - comments: |
+#     This is the data for HESS J1023-575 (Westerlund 2)
+e_ref dnde dnde_errn dnde_errp
+0.7948 5.59013e-12 1.5848e-12 1.58482e-12
+1.2253 1.63616e-12 3.20717e-13 3.20712e-13
+1.8889 7.77564e-13 1.39972e-13 1.39965e-13
+2.9118 2.25425e-13 5.41466e-14 5.41196e-14
+4.4889 6.69578e-14 1.99555e-14 1.99468e-14
+6.9199 1.91247e-14 9.33163e-15 9.34477e-15
+10.6676 4.5572e-15 3.30372e-15 4.04674e-15

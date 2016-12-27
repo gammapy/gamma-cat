@@ -52,15 +52,8 @@ The idea is that we only collect the information from the papers here
 edited files are as small as possible), and then the `make_output.py`
 script generates an as-homogeneous as possible version of the catalog.
 
-Important points to decide:
-
-* How do we structure the `input` folder?
-  * Per-source: `source_id/papers.yaml`, `source_id/paper_id1.yaml`, `source_id/paper_id2.yaml`
-  * Per-paper: `paper_id/sources.yaml`, `paper_id/source_id1.yaml`, `paper_id/source_id2.yaml`
-* How do we structure the `output` folder?
-  * Definitely should have per-source data, with data from multiple
-    papers aggregated.
-  * Should we use the `astrocats` method of tracking origin of all parameters?
+* In the input folder ``input/data``, data is organised by ``reference_id`` first, then ``source_id``.
+* In the output folder ``docs/data``, data is organised by ``source_id`` first, then ``reference_id``.
 
 #### Paper identifiers
 

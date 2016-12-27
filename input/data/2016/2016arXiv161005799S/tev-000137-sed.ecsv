@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 137
+# - reference_id: 2016arXiv161005799S
+# - url: https://github.com/gammapy/gamma-cat/issues/58#issuecomment-268059071
+# - comments: |
+#     Data from Karlen Shahinyan via Github Dec 19, 2016
+#     This data is for the combined spectrum in Figure 2.
+e_ref dnde dnde_err
+0.2105 5.65e-11 9.32e-12
+0.2973 2.48e-11 3.15e-12
+0.42 7.15e-12 1.21e-12
+0.5933 3.2e-12 5.47e-13
+0.838 1.46e-12 2.64e-13
+1.184 3.52e-13 1.13e-13
+1.672 2.04e-13 6.33e-14

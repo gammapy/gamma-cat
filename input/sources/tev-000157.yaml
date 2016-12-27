@@ -22,6 +22,6 @@ pos:
   ra: 283.0
   dec: 0.0
 
-papers:
+reference_ids:
   - 2011ICRC....7...76K
   - 2016ApJ...818...63B

@@ -1,0 +1,31 @@
+source_id: 118
+reference_id: 2006A&A...460..365A
+
+# Note: spectral results for the spectrum in Figure 3.
+
+data:
+  livetime: 52.1
+  excess: 19510
+  significance: 33.8
+
+pos:
+  ra: {val: 18h25m41s, err: 3s}
+  dec: {val: -13d50m21s, err: 35 arcsec}
+
+morph:
+  type: gauss
+  sigma: {val: 0.24 deg, err: 0.02 deg}
+
+spec:
+  type: ecpl
+
+  # Results taken from Table 1 ecpl model
+  # TODO: I'm not sure the norm is entered correctly!?
+  #       Have to check ECPL parametrization exactly.
+  norm: {val: 21.0, err: 0.5}
+  index: {val: 2.26, err: 0.03}
+  ecut: {val: 24.8, err: 7.2}
+  ref: 1
+
+  theta: 0.8
+  erange: {min: 0.27}

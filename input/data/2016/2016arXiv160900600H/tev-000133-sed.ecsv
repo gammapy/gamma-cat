@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: e_lo, datatype: float32}
+# - {name: e_hi, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_ul, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 133
+# - reference_id: 2016arXiv160900600H
+# - UL_CONF: 0.95
+# - comments: |
+#     Data from Francois Brun via email Nov 4, 2016
+#     In the figures of the paper, systematic error of 20% of the
+#     flux value has been added in quadrature to the statistical error of each point.
+e_ref e_lo e_hi dnde dnde_errn dnde_errp dnde_ul
+0.406 0.1138 0.0741 4.791e-12 1.303e-12 1.377e-12 nan
+0.5982 0.1181 0.1907 1.675e-12 2.57e-13 2.66e-13 nan
+0.9658 0.1769 0.3302 3.208e-13 8.07e-14 8.52e-14 nan
+1.579 0.283 0.551 8.466e-14 3.018e-14 3.234e-14 nan
+3.918 1.788 109.282 nan nan nan 9.539e-15

@@ -1,0 +1,23 @@
+source_id: 128
+reference_id: 2008AIPC.1085..372C
+
+data:
+  livetime: 50
+  significance: 9
+
+pos:
+  glon: {val: 31}
+  glat: {val: -0.16}
+
+morph:
+  type: gauss
+  sigma: {val: 0.32, err: 0.02}
+
+spec:
+  type: pl
+  norm: {val: 3.7, err: 0.4, err_sys: 0.7}
+  index: {val: 2.8, err: 0.2, err_sys: 0.2}
+  ref: 1
+
+  theta: 0.2
+  erange: {min: 0.9, max: 12}

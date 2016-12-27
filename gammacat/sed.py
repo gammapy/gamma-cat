@@ -1,5 +1,7 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
+from pathlib import Path
+from itertools import chain
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import check_ecsv_column_header
@@ -17,18 +19,18 @@ class SED:
     """
     expected_colnames = [
         'e_ref', 'e_min', 'e_max',
-        'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul',
+        'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul', 'is_ul',
         'excess', 'significance',
     ]
 
     expected_colnames_input = expected_colnames + [
         'e_lo', 'e_hi',
         'dnde_min', 'dnde_max',
-        'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp',
+        'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp', 'e2dnde_ul',
     ]
 
     required_meta_keys = [
-        'data_type', 'paper_id', 'source_id',
+        'data_type', 'reference_id', 'source_id',
     ]
 
     allowed_meta_keys = required_meta_keys + [
@@ -52,6 +54,7 @@ class SED:
 
         self._process_energy_ranges(table)
         self._process_flux_errrors(table)
+        self._process_ul_conf(table)
 
         self._add_missing_defaults(table)
         self._process_e2dnde_inputs(table)
@@ -90,6 +93,14 @@ class SED:
             del table['dnde_max']
 
     @staticmethod
+    def _process_ul_conf(table):
+        m = table.meta
+        if 'UL_CONF' in m:
+            if m['UL_CONF'] == '1 sigma':
+                # Assuming here that's the two-sided central interval
+                m['UL_CONF'] = 0.84
+
+    @staticmethod
     def _add_missing_defaults(table):
         """
         Add default units and description.
@@ -98,7 +109,7 @@ class SED:
             if colname.startswith('e_') and not table[colname].unit:
                 table[colname].unit = 'TeV'
 
-            if 'dnde' in colname and not table[colname].unit:
+            if colname.startswith('dnde') and not table[colname].unit:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
 
             if colname == 'excess':
@@ -118,13 +129,15 @@ class SED:
             dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
             dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
             dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
+            dict(name='is_ul', description='Is this a flux upper limit?'),
             dict(name='excess', unit='count', description='Excess counts'),
-            dict(name='significance', unit='', description='Excess significance'),
+            dict(name='significance', description='Excess significance'),
         ]
         for col in cols:
             name = col['name']
             if name in table.colnames:
-                table[name] = table[name].quantity.to(col['unit'])
+                if name not in ['is_ul', 'significance']:
+                    table[name] = table[name].quantity.to(col['unit'])
                 table[name].description = col['description']
 
     @staticmethod
@@ -190,19 +203,18 @@ class SED:
             log.error('SED file {} contains invalid meta key comments (should be str): {}'
                       ''.format(self.path, meta['comments']))
 
-        if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
-            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
-
     def _validate_input_consistency(self):
         table = self.table
         meta = table.meta
         colnames = table.colnames
 
-        if 'UL_CONF' in meta and 'dnde_ul' not in colnames:
-            log.error('SED file {} contains "UL_CONF" in meta, but no column "dnde_ul".'.format(self.path))
+        has_ul_col = len({'dnde_ul', 'e2dnde_ul'} & set(colnames)) > 0
 
-        if 'dnde_ul' in colnames and 'UL_CONF' not in meta:
-            log.error('SED file {} contains column "dnde_ul", but not "UL_CONF" in meta.'.format(self.path))
+        if ('UL_CONF' in meta) and not has_ul_col:
+            log.error('SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.path))
+
+        if has_ul_col and ('UL_CONF' not in meta):
+            log.error('SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.path))
 
     def validate_output(self):
         table = self.table
@@ -212,6 +224,10 @@ class SED:
                 'SED file {} contains invalid columns: {}'
                 ''.format(self.path, unexpected_colnames)
             )
+
+        meta = table.meta
+        if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
+            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
 
 
 class SEDList:
@@ -227,33 +243,41 @@ class SEDList:
         sed_lookup = {}
         for sed in data:
             source_id = sed.table.meta['source_id']
-            paper_id = sed.table.meta['paper_id']
+            reference_id = sed.table.meta['reference_id']
             try:
-                sed_lookup[paper_id][source_id] = sed
+                sed_lookup[reference_id][source_id] = sed
             except KeyError:
-                sed_lookup[paper_id] = {}
-                sed_lookup[paper_id][source_id] = sed
+                sed_lookup[reference_id] = {}
+                sed_lookup[reference_id][source_id] = sed
         self._sed_lookup = sed_lookup
 
     @classmethod
-    def read(cls):
-        path = gammacat_info.base_dir / 'input/papers'
-        paths = sorted(path.glob('*/*/*.ecsv'))
+    def read(cls, internal=False):
+        path = gammacat_info.base_dir / 'input/data'
+        paths = sorted(path.glob('*/*/tev*sed.ecsv'))
+
+        if internal:
+            path = gammacat_info.base_dir / 'docs/data/sources'
+            paths = path.glob('*/gammacat*sed.ecsv')
+            path_internal = gammacat_info.internal_dir
+
+            paths_internal = path_internal.glob('tev*.ecsv')
+            paths = chain(paths, paths_internal)
 
         data = []
         for path in paths:
             sed = SED.read(path)
             data.append(sed)
-
+        # from IPython import embed; embed(); 1/0
         return cls(data=data)
 
     def validate(self):
         for sed in self.data:
             sed.process()
 
-    def get_sed_by_source_and_paper_id(self, source_id, paper_id):
+    def get_sed_by_source_and_reference_id(self, source_id, reference_id):
         try:
-            return self._sed_lookup[paper_id][source_id]
+            return self._sed_lookup[reference_id][source_id]
         except KeyError:
             missing = SED(table=Table(), path='')
             return missing

@@ -22,7 +22,7 @@ pos:
   ra: 94.51125
   dec: 22.66
 
-papers:
+reference_ids:
 - 2007ApJ...664L..87A
 - 2009ApJ...700L.127A
 - 2009ApJ...698L.133A

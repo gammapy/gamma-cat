@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, datatype: float32}
+# - {name: e_max, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 79
+# - reference_id: 2005A&A...435L..17A
+e_min e_max e_ref dnde dnde_err
+0.28 0.34 0.31 1.3e-10 3.2e-11
+0.34 0.49 0.41 3.6e-11 3.8e-12
+0.49 0.73 0.60 1.9e-11 1.6e-12
+0.73 1.10 0.89 7.2e-12 6.5e-12
+1.10 1.60 1.31 3.2e-12 6.5e-13
+1.60 2.30 1.90 1.6e-12 1.5e-13
+2.30 3.60 2.87 5.5e-13 7.0e-14
+3.60 4.80 4.15 2.2e-13 3.4e-14
+4.80 7.60 6.09 9.5e-14 1.7e-14
+7.60 10.4 8.90 4.7e-14 9.5e-15
+10.4 15.7 12.8 1.2e-14 4.1e-15
+15.7 23.2 19.1 6.2e-15 2.0e-15
+23.2 34.8 28.4 2.4e-15 1.2e-15
+34.8 46.2 40.1 7.8e-16 5.5e-16

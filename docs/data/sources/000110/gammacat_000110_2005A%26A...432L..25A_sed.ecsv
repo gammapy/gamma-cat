@@ -9,7 +9,7 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 110}
-# - {paper_id: 2005A&A...432L..25A}
+# - {reference_id: 2005A&A...432L..25A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA432_L25.html'}
 # - {comments: 'The SED here is for 80 photoelectron cut (filled circles) in Figure
 #     3.

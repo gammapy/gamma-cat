@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 119}
+# - {reference_id: 2005Sci...309..746A}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/science309.html'}
+# - {UL_CONF: 0.84}
+e_ref dnde dnde_errn dnde_errp dnde_ul
+0.256 1.835e-11 6.71e-12 3.084e-11 nan
+0.4037 1.188e-11 9.384e-12 1.438e-11 nan
+0.7293 1.2e-12 6.436e-13 1.755e-12 nan
+1.317 6.905e-13 4.807e-13 9.003e-13 nan
+2.415 2.667e-13 1.785e-13 3.548e-13 nan
+4.441 2.843e-14 6.536e-15 5.794e-14 nan
+7.996 nan nan nan 9.144e-15
+14.36 nan nan nan 4.236e-15
+26.96 nan nan nan 1.963e-16

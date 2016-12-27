@@ -12,7 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 99}
 # - {source_name: HESS J1718-385}
-# - {paper_id: 2007A&A...472..489A}
+# - {reference_id: 2007A&A...472..489A}
 # - {comments: 'Flux points shown in Figure 1 (one upper limit not included here).
 # 
 #     TODO: Origin of data points unknown'}

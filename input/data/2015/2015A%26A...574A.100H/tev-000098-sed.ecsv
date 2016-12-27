@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: eV}
+# - {name: e_min, datatype: float32, unit: eV}
+# - {name: e_max, datatype: float32, unit: eV}
+# - {name: e2dnde, datatype: float32, unit: eV cm-2 s-1}
+# - {name: e2dnde_errn, datatype: float32, unit: eV cm-2 s-1}
+# - {name: e2dnde_errp, datatype: float32, unit: eV cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 98
+# - source_name: TeV J1718-374
+# - reference_id: 2015A&A...574A.100H
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349
+# - comments: |
+#     That page also contains a Fermi-LAT spectrum.
+e_ref e_min e_max e2dnde e2dnde_errn e2dnde_errp
+0.29337e12 0.22e12 0.3912e12 0.513939 0.203023 0.203023
+0.5217e12 0.391e12 0.6957e12 0.44736 0.112269 0.112269
+0.9277e12 0.6957e12 1.2371e12 0.198094 0.0895433 0.0895433
+1.6497e12 1.2371e12 2.20e12 0.148243 0.0468195 0.0468195

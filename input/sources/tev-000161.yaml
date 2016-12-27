@@ -22,6 +22,6 @@ pos:
   ra: 276.50417
   dec: -13.09111
 
-papers:
+reference_ids:
   - https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf
   - 2016MNRAS.458.2813V

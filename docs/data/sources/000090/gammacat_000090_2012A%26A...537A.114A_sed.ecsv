@@ -1,0 +1,38 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# - {name: is_ul, datatype: bool, description: 'Is this a flux upper limit?'}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 90}
+# - {reference_id: 2012A&A...537A.114A}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA537_A114.html'}
+# - {UL_CONF: 0.99}
+# - {comments: 'There''s SEDs for three regions given at that URL.
+# 
+#     This is the one for the 1.1 degree region.
+# 
+#     TODO: add SEDs for region A and B also.
+# 
+#     It''s unclear from that file what the upper limit values are.
+# 
+#     I asked Stefan Ohm and he said that "flux + 2 x up error"'}
+e_ref dnde dnde_errn dnde_errp dnde_ul is_ul
+0.562341 1.63165e-11 1.06665e-11 1.06677e-11 nan False
+1.0 8.65394e-12 2.69447e-12 2.694e-12 nan False
+1.77828 3.15643e-12 7.61697e-13 7.6117e-13 nan False
+3.16228 8.58517e-13 2.41205e-13 2.40848e-13 nan False
+5.62341 2.46071e-13 7.44988e-14 7.41038e-14 nan False
+10.0 7.08399e-14 2.46605e-14 2.43956e-14 nan False
+17.7828 2.71905e-14 7.69554e-15 7.42286e-15 nan False
+31.2254 1.11978e-15 2.00187e-15 1.96139e-15 5.04254e-15 True
+54.7536 5.10438e-16 7.43142e-16 6.96294e-16 1.90303e-15 True

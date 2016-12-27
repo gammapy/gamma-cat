@@ -23,13 +23,13 @@ function render_tevcat2_url(val) {
     return "<a href=\"http://tevcat2.uchicago.edu/sources/" + val + "\">" + val + "</a>";
 }
 
-function render_ads_url(paper_id) {
-    var paper_url = paper_id;
-    return "<a href=\"https://ui.adsabs.harvard.edu/#abs/" + paper_url + "\">" + paper_id + "</a>";
+function render_ads_url(reference_id) {
+    var dataset_url = reference_id;
+    return "<a href=\"https://ui.adsabs.harvard.edu/#abs/" + dataset_url + "\">" + reference_id + "</a>";
 }
 
-function render_paper_github_url(val) {
-    return "<a href=\"https://github.com/gammapy/gamma-cat/tree/master/input/papers/" + val + "\">" + val + "</a>";
+function render_dataset_github_url(val) {
+    return "<a href=\"https://github.com/gammapy/gamma-cat/tree/master/input/data/" + val + "\">" + val + "</a>";
 }
 
 function render_source_github_url(source_id) {

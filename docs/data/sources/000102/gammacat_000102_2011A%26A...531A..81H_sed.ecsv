@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 102}
+# - {reference_id: 2011A&A...531A..81H}
+# - {comments: 'Spectral points for HESS J1729-345 from Figure 4.
+# 
+#     Data obtained via email by Fabio Acero on Dec 15, 2016.'}
+e_ref dnde dnde_errn dnde_errp
+0.344872 2.5207e-12 9.30246e-13 9.53875e-13
+0.792055 5.79489e-13 1.31196e-13 1.35993e-13
+2.07944 7.97074e-14 2.17623e-14 2.31202e-14
+5.43807 5.29676e-15 3.59592e-15 4.53987e-15
+13.8391 8.22754e-16 6.48342e-16 1.11074e-15
+35.5611 7.81627e-17 6.79946e-17 1.75865e-16

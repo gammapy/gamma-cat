@@ -1,0 +1,162 @@
+type: object
+additionalProperties: false
+properties:
+
+  source_id: {type: integer}
+  reference_id: {type: string}
+
+  data:
+    type: object
+    additionalProperties: false
+    properties:
+      livetime: {type: number, unit: hour}
+      zenith: {type: number, unit: deg, description: Mean zenith angle}
+      offset: {type: number, unit: deg, description: Mean offset angle}
+      n_on: {type: number, unit: counts}
+      n_off: {type: number, unit: counts}
+      alpha: {type: number, unit: none}
+      excess: {type: number, unit: counts}
+      significance: {type: number, unit: none}
+
+  pos:
+    type: object
+    additionalProperties: false
+    properties:
+      ra:
+        type: object
+        additionalProperties: false
+        description: |
+          Right Ascension (ICRC or FK5 J2000, it's almost the same)
+          Number in deg or string that can be parsed by Angle
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
+      dec:
+        type: object
+        additionalProperties: false
+        description: |
+          Declination (ICRC or FK5 J2000, it's almost the same)
+          Number in deg or string that can be parsed by Angle
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
+      glon:
+        type: object
+        additionalProperties: false
+        description: |
+          Galactic longitude
+          Number in deg or string that can be parsed by Angle
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
+      glat:
+        type: object
+        additionalProperties: false
+        description: |
+          Galactic latitude
+          Number in deg or string that can be parsed by Angle
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
+
+  morph:
+    type: object
+    additionalProperties: false
+    properties:
+      type: {enum: [point, gauss, shell]}
+      sigma:
+        type: object
+        additionalProperties: false
+        description: |
+          Width parameter (semantics type-dependent)
+          Number in deg or string that can be parsed by Angle
+        properties:
+          val: {type: [string, number]}
+          err: {type: [string, number], description: Statistical error}
+      sigma2:
+        type: object
+        additionalProperties: false
+        description: |
+          Width parameter (semantics type-dependent)
+          Number in deg or string that can be parsed by Angle
+        properties:
+          val: {type: [string, number]}
+          err: {type: [string, number], description: Statistical error}
+      pa:
+        type: object
+        additionalProperties: false
+        unit: deg
+        description: |
+          Position angle
+          Number in deg or string that can be parsed by Angle
+        properties:
+          frame: {enum: [radec, galactic]}
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+
+  spec: # in general: what to do with several values? A: use total dataset and best-fit, might be expanded later
+    type: object
+    additionalProperties: false
+    properties:
+      type:
+        enum: [pl, pl2, ecpl]
+        description: |
+          The following spec types are defined.
+          - pl = `PowerLaw` in Gammapy
+          - pl2 = `PowerLaw2` in Gammapy
+          - ecpl = `ExponentialCutoffPowerLaw` in Gammapy
+          - other = some other shape
+      theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
+      erange:
+        type: object
+        additionalProperties: false
+        properties:
+          min: {type: [number,  "null"], unit=TeV}
+          max: {type: [number,  "null"], unit=TeV}
+      norm:
+        type: object
+        additionalProperties: false
+        unit: 1e-12 cm-2 s-1 TeV-1
+        description: Flux norm parameter
+        properties:
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+          err_sys: {type: number, description: Systematic error}
+      ref: {type: number, unit=TeV, description="Reference energy for norm"}
+      index:
+        type: object
+        additionalProperties: false
+        unit: dimensionless
+        description: Spectral index parameter
+        properties:
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+          err_sys: {type: number, description: Systematic error}
+      ecut:
+        type: object
+        additionalProperties: false
+        unit: TeV
+        description: Cutoff energy parameter
+        properties:
+          val: {type: number}
+          err: {type: number, description: Statistical error}
+          err_sys: {type: number, description: Systematic error}
+      covar:
+        type: array
+        description: |
+          Covariance matrix
+          TODO: decide on format.
+          An example of a published covariance matrix is here: 2016arXiv161101863H
+
+  notes: {type: string}
+
+required:
+  - source_id
+  - reference_id
+#  - morphology
+#  - spectrum
+

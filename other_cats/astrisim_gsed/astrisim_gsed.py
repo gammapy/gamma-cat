@@ -9,13 +9,14 @@ from pathlib import Path
 from collections import OrderedDict
 from astropy.io import fits
 from astropy.table import Table
+import astropy.units as u
 import gammacat
 
 
 class AstriSimGSED:
     def __init__(self):
         self.gammacat_sources = gammacat.utils.load_json('docs/data/gammacat-sources.json')['data']
-        self.gammacat_papers = gammacat.utils.load_json('docs/data/gammacat-papers.json')['data']
+        self.gammacat_papers = gammacat.utils.load_json('docs/data/gammacat-datasets.json')['data']
         self.gsed_table = Table.read('other_cats/astrisim_gsed/index2.fits')
 
     def list_missing_info(self):
@@ -33,7 +34,7 @@ class AstriSimGSED:
         info = OrderedDict()
         info['tevcat_name'] = str(source['TeVCat']).strip()
         info['gammacat_id'] = self._get_gammacat_id(info['tevcat_name'])
-        info['paper_ids'] = self._get_paper_ids(info['gammacat_id'])
+        info['reference_ids'] = self._get_reference_ids(info['gammacat_id'])
         return info
 
     def _get_gammacat_id(self, tevcat_name):
@@ -43,14 +44,14 @@ class AstriSimGSED:
         gammacat_id = self.gammacat_sources[idx]['source_id']
         return gammacat_id
 
-    def _get_paper_ids(self, gammacat_id):
+    def _get_reference_ids(self, gammacat_id):
         """Get the list of papers we have with info on that source"""
-        paper_ids = []
+        reference_ids = []
         for paper in self.gammacat_papers:
             for source in paper['sources']:
                 if source['source_id'] == gammacat_id:
-                    paper_ids.append(source['paper_id'])
-        return ','.join(paper_ids)
+                    reference_ids.append(source['reference_id'])
+        return ','.join(reference_ids)
 
     def dump_sed_to_ecsv(self):
         """Dump SED info to ECSV files.
@@ -62,16 +63,34 @@ class AstriSimGSED:
         base_path = Path('other_cats/astrisim_gsed/data/')
         for path in base_path.glob('*.fits'):
             source_name = path.parts[-1].replace('.fits', '')
-            hdu_list = fits.open(str(path))
+
+            try:
+                hdu_list = fits.open(str(path))
+                print('Reading {}'.format(path))
+            except OSError:
+                print('Skipping corrupt FITS file: {}'.format(path))
+                continue
+
             hdu_names = [_.name for _ in hdu_list][1:]
             hdu_names = [name for name in hdu_names if 'MAP' not in name]
             for hdu_name in hdu_names:
                 # print(path, source_name, hdu_name)
                 table = Table.read(str(path), format='fits')
-                table.rename_column('ENERGY', 'e_ref')
-                table.rename_column('FLUX', 'dnde')
-                table.rename_column('FLUX_ERROR_MIN', 'dnde_errn')
-                table.rename_column('FLUX_ERROR_MAX', 'dnde_errp')
+
+                table['e_ref'] = (table['ENERGY'] * u.eV).to('TeV')
+                del table['ENERGY']
+
+                flux_colnames = [
+                    ('FLUX', 'dnde'),
+                    ('FLUX_ERROR_MIN', 'dnde_errn'),
+                    ('FLUX_ERROR_MAX', 'dnde_errp'),
+                ]
+
+                for name_old, name_new in flux_colnames:
+                    e2dnde = u.Quantity(table[name_old], 'erg cm^-2 s^-1')
+                    dnde = e2dnde / table['e_ref'].quantity ** 2
+                    table[name_new] = dnde.to('cm^-2 s^-1 TeV^-1')
+                    del table[name_old]
 
                 table.meta['SOURCE_NAME'] = source_name
                 try:

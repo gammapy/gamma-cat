@@ -22,7 +22,7 @@ pos:
   ra: 64.2187375
   dec: 1.0899944
 
-papers:
+reference_ids:
 - 2013arXiv1307.7051M
 - 2012ApJ...755..118A
 - 2012A&A...538A.103H

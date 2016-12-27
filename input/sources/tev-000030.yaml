@@ -22,7 +22,7 @@ pos:
   ra: 98.24689375
   dec: 5.80032722
 
-papers:
+reference_ids:
 - 2007A&A...469L...1A
 - 2009ApJ...690L.101H
 - 2009ApJ...698L..94A

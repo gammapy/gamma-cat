@@ -1,0 +1,42 @@
+source_id: 37
+reference_id: 2012A&A...548A..38A
+
+data:
+  livetime: 53.1
+  significance: 27.9
+
+pos:
+  ra: {val: 8h35m00s, err: 8s}
+  dec: {val: -45d36m00s, err: 120s}
+
+morph:
+  type: gauss
+
+  sigma: {val: 28.8 arcmin, err: 1.8 arcmin}
+  sigma2: {val: 21.6 arcmin, err: 1.8 arcmin}
+  pa: {frame: radec, val: 41.0, err: 7.0}
+
+spec:
+  type: ecpl
+
+  norm: {val: 14.6, err: 0.8, err_sys: 3.0}
+  index: {val: 1.32, err: 0.06, err_sys: 0.12}
+  ecut: {val: 14.0, err: 1.6, err_sys: 2.6}
+  ref: 1
+
+  theta: 1.2
+  erange: {min: 0.75}
+
+#  flux: {emin: 1.0, val: 21.0, err: 1.9, err_sys: 4.4}
+
+# TODO: add this info back!
+#data:
+#  - type: image
+#    url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/HESSVelaX_fluxmap.fits
+#    filename: HESSVelaX_fluxmap.fits
+#    filesize: 1895040
+#    comments: |
+#      Smoothed flux map.
+
+notes: |
+  TODO: Morphology parameters are from the 2006 paper, only the spectrum is from this from 2012 paper.

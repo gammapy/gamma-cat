@@ -1,15 +1,19 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# # - {name: time, unit: MJD, datatype: float64}
-# # - {name: time_min, unit: MJD, datatype: float64}
-# # - {name: time_max, unit: MJD, datatype: float64}
-# # - {name: flux_ul, unit: 1 / (cm2 s), datatype: float32}
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux_ul, unit: ph / (cm2 s), datatype: float64}
+# - {name: is_ul, datatype: bool}
 # meta: !!omap
 # - data_type: lc
 # - source_id: 30
+# - source_name: HESS J0632+057
 # - paper_id: 2009ApJ...698L..94A
+# - UL_CONF: 0.99
 # - comments: |
-54105. 54085. 54125. 4.2e-13
-54832. 54830. 54834. 4.2e-13
-54859  54857. 54861. 3.6e-13
+1.0 54105. 54085. 54125. 4.2e-13 True
+1.0 54832. 54830. 54834. 4.2e-13 True
+1.0 54859  54857. 54861. 3.6e-13 True

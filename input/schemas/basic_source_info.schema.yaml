@@ -54,7 +54,7 @@ properties:
       ra: {type: [string, number], unit=deg}
       dec: {type: [string, number], unit=deg}
 
-  papers: {type: array, items: {type: [string, "null"]}}
+  reference_ids: {type: array, items: {type: [string, "null"]}}
 
   notes: {type: string}
 
@@ -72,4 +72,4 @@ required:
 #  - tevcat_name
 #  - tgevcat_id
 #  - tgevcat_name
-  - papers
+  - reference_ids

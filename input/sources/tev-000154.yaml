@@ -22,6 +22,6 @@ pos:
   ra: 356.770153
   dec: 51.704967
 
-papers:
+reference_ids:
   - 1998ApJ...501..616C
   - 2007ApJ...662..892A

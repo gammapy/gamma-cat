@@ -3,14 +3,21 @@ import logging
 from collections import OrderedDict
 import yaml
 import numpy as np
+from astropy import units as u
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
 from .info import gammacat_info
 from .input import InputData
-from .utils import NA, load_yaml, table_to_list_of_dict
+from .utils import NA, load_yaml, table_to_list_of_dict, validate_schema
 
-__all__ = ['GammaCatMaker']
+__all__ = [
+    'GammaCatMaker',
+    'GammaCatSchema',
+    'GammaCatSource',
+    'GammaCatDataSetConfig',
+    'GammaCatDatasetConfigSource',
+]
 
 log = logging.getLogger(__name__)
 
@@ -27,17 +34,17 @@ class GammaCatSource:
         self.fill_derived_spectral_info()
 
     @classmethod
-    def from_inputs(cls, basic_source_info, paper_source_info, sed_info):
+    def from_inputs(cls, basic_source_info, dataset_source_info, sed_info):
         data = OrderedDict()
 
         bsi = basic_source_info.data
         cls.fill_basic_info(data, bsi)
-        cls.fill_position_info(data, bsi)
 
-        psi = paper_source_info.data
-        cls.fill_data_info(data, psi)
-        cls.fill_spectral_info(data, psi)
-        cls.fill_morphology_info(data, psi)
+        dsi = dataset_source_info.data
+        cls.fill_position_info(data, dsi)
+        cls.fill_data_info(data, dsi)
+        cls.fill_spectral_info(data, dsi)
+        cls.fill_morphology_info(data, dsi)
 
         cls.fill_sed_info(data, sed_info)
         return cls(data=data)
@@ -49,9 +56,9 @@ class GammaCatSource:
         data['gamma_names'] = NA.fill_list(bsi, 'gamma_names')
         data['other_names'] = NA.fill_list(bsi, 'other_names')
         data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
+        classes = bsi.get('classes', NA.fill_value['list'])
+        data['classes'] = ','.join(classes)
 
-    @staticmethod
-    def fill_position_info(data, bsi):
         try:
             data['ra'] = bsi['pos']['ra']
         except KeyError:
@@ -66,74 +73,113 @@ class GammaCatSource:
         data['glon'] = galactic.l.deg
         data['glat'] = galactic.b.deg
 
+
     @staticmethod
-    def fill_data_info(data, psi):
+    def fill_position_info(data, dsi):
         try:
-            data['significance'] = psi['data']['significance']
+            data['pos_glon'] = Angle(dsi['pos']['glon']['val'], unit='deg').degree
+            data['pos_glat'] = Angle(dsi['pos']['glat']['val'], unit='deg').degree
+
+            galactic = SkyCoord(data['pos_glon'], data['pos_glat'], frame='galactic', unit='deg')
+            data['pos_ra'] = galactic.icrs.ra.deg
+            data['pos_dec'] = galactic.icrs.dec.deg
+
+        except KeyError:
+            try:
+                data['pos_ra'] = Angle(dsi['pos']['ra']['val'], unit='deg').degree
+                data['pos_dec'] = Angle(dsi['pos']['dec']['val'], unit='deg').degree
+
+                icrs = SkyCoord(data['pos_ra'], data['pos_dec'], unit='deg')
+                data['pos_glon'] = icrs.galactic.l.deg
+                data['pos_glat'] = icrs.galactic.b.deg
+            except KeyError:
+                data['pos_ra'] = NA.fill_value['number']
+                data['pos_dec'] = NA.fill_value['number']
+                data['pos_glon'] = NA.fill_value['number']
+                data['pos_glat'] = NA.fill_value['number']
+
+        try:
+            x_err = Angle(dsi['pos']['glon']['err'], unit='deg').degree
+            y_err = Angle(dsi['pos']['glat']['err'], unit='deg').degree
+        except KeyError:
+            try:
+                x_err = Angle(dsi['pos']['ra']['err'], unit='deg').degree
+                y_err = Angle(dsi['pos']['dec']['err'], unit='deg').degree
+            except KeyError:
+                x_err = NA.fill_value['number']
+                y_err = NA.fill_value['number']
+
+        data['pos_err'] = np.sqrt(x_err * y_err)
+
+
+    @staticmethod
+    def fill_data_info(data, dsi):
+        try:
+            data['significance'] = dsi['data']['significance']
         except KeyError:
             data['significance'] = NA.fill_value['number']
 
         try:
-            data['livetime'] = psi['data']['livetime']
+            data['livetime'] = dsi['data']['livetime']
         except KeyError:
             data['livetime'] = NA.fill_value['number']
 
     @staticmethod
-    def fill_spectral_info(data, psi):
-        data['paper_id'] = psi.get('paper_id', NA.fill_value['string'])
+    def fill_spectral_info(data, dsi):
+        data['reference_id'] = dsi.get('reference_id', NA.fill_value['string'])
         try:
-            data['spec_type'] = psi['spec']['type']
+            data['spec_type'] = dsi['spec']['type']
         except KeyError:
             data['spec_type'] = NA.fill_value['string']
         try:
-            data['spec_erange_min'] = psi['spec']['erange']['min']
+            data['spec_erange_min'] = dsi['spec']['erange']['min']
         except KeyError:
             data['spec_erange_min'] = NA.fill_value['number']
         try:
-            data['spec_erange_max'] = psi['spec']['erange']['max']
+            data['spec_erange_max'] = dsi['spec']['erange']['max']
         except KeyError:
             data['spec_erange_max'] = NA.fill_value['number']
         try:
-            data['spec_theta'] = psi['spec']['theta']
+            data['spec_theta'] = dsi['spec']['theta']
         except KeyError:
             data['spec_theta'] = NA.fill_value['number']
 
         try:
-            data['spec_norm'] = psi['spec']['norm']['val'] * FLUX_FACTOR
+            data['spec_norm'] = dsi['spec']['norm']['val'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm'] = NA.fill_value['number']
         try:
-            data['spec_norm_err'] = psi['spec']['norm']['err'] * FLUX_FACTOR
+            data['spec_norm_err'] = dsi['spec']['norm']['err'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm_err'] = NA.fill_value['number']
         try:
-            data['spec_norm_err_sys'] = psi['spec']['norm']['err_sys'] * FLUX_FACTOR
+            data['spec_norm_err_sys'] = dsi['spec']['norm']['err_sys'] * FLUX_FACTOR
         except KeyError:
             data['spec_norm_err_sys'] = NA.fill_value['number']
         try:
-            data['spec_ref'] = psi['spec']['ref']
+            data['spec_ref'] = dsi['spec']['ref']
         except KeyError:
             data['spec_ref'] = NA.fill_value['number']
 
         try:
-            data['spec_index'] = psi['spec']['index']['val']
+            data['spec_index'] = dsi['spec']['index']['val']
         except KeyError:
             data['spec_index'] = NA.fill_value['number']
         try:
-            data['spec_index_err'] = psi['spec']['index']['err']
+            data['spec_index_err'] = dsi['spec']['index']['err']
         except KeyError:
             data['spec_index_err'] = NA.fill_value['number']
         try:
-            data['spec_index_err_sys'] = psi['spec']['index']['err_sys']
+            data['spec_index_err_sys'] = dsi['spec']['index']['err_sys']
         except KeyError:
             data['spec_index_err_sys'] = NA.fill_value['number']
 
         try:
-            data['spec_ecut'] = psi['spec']['ecut']['val']
+            data['spec_ecut'] = dsi['spec']['ecut']['val']
         except KeyError:
             data['spec_ecut'] = NA.fill_value['number']
         try:
-            data['spec_ecut_err'] = psi['spec']['ecut']['err']
+            data['spec_ecut_err'] = dsi['spec']['ecut']['err']
         except KeyError:
             data['spec_ecut_err'] = NA.fill_value['number']
 
@@ -143,14 +189,26 @@ class GammaCatSource:
         Fill flux point info data.
         """
         try:
-            data['sed_paper_id'] = sed_info.table.meta['paper_id']
+            data['sed_reference_id'] = sed_info.table.meta['reference_id']
         except KeyError:
-            data['sed_paper_id'] = NA.fill_value['string']
+            data['sed_reference_id'] = NA.fill_value['string']
         try:
             e_ref = sed_info.table['e_ref'].data
             data['sed_e_ref'] = NA.resize_sed_array(e_ref, shape)
         except KeyError:
             data['sed_e_ref'] = NA.fill_value_array(shape)
+        try:
+            e_min = sed_info.table['e_min'].data
+            data['sed_e_min'] = NA.resize_sed_array(e_min, shape)
+        except KeyError:
+            data['sed_e_min'] = NA.fill_value_array(shape)
+
+        try:
+            e_max = sed_info.table['e_max'].data
+            data['sed_e_max'] = NA.resize_sed_array(e_max, shape)
+        except KeyError:
+            data['sed_e_max'] = NA.fill_value_array(shape)
+
         try:
             dnde = sed_info.table['dnde'].data
             data['sed_dnde'] = NA.resize_sed_array(dnde, shape)
@@ -177,12 +235,11 @@ class GammaCatSource:
         except KeyError:
             data['sed_dnde_ul'] = NA.fill_value_array(shape)
 
-
-
     def fill_derived_spectral_info(self):
         """
         Fill derived spectral info computed from basic parameters
         """
+        from gammapy.spectrum import CrabSpectrum
         data = self.data
         # total errors
         data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
@@ -194,8 +251,26 @@ class GammaCatSource:
         emin, emax = 1, 1E6  # TeV
         flux_above_1TeV = spec_model.integral(emin, emax)
         data['spec_flux_above_1TeV'] = flux_above_1TeV.n
-
         data['spec_flux_above_1TeV_err'] = flux_above_1TeV.s
+
+        # Integral flux above 1 TeV in crab units
+        crab = CrabSpectrum('meyer').model
+        emin, emax = 1, 1E6  # TeV
+        flux_above_1TeV = spec_model.integral(emin, emax)
+        flux_above_1TeV_crab = crab.integral(emin * u.TeV, emax * u.TeV)
+        flux_cu = (flux_above_1TeV / flux_above_1TeV_crab.value) * 100
+        data['spec_flux_above_1TeV_crab'] = flux_cu.n
+        data['spec_flux_above_1TeV_crab_err'] = flux_cu.s
+
+        # Integral flux above erange_min
+        emin, emax = data['spec_erange_min'], 1E6  # TeV
+        try:
+            flux_above_erange_min = spec_model.integral(emin, emax)
+            data['spec_flux_above_erange_min'] = flux_above_erange_min.n
+            data['spec_flux_above_erange_min_err'] = flux_above_erange_min.s
+        except ValueError:
+            data['spec_flux_above_erange_min'] = NA.fill_value['number']
+            data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
 
         # Energy flux between 1 TeV and 10 TeV
         emin, emax = 1, 10  # TeV
@@ -231,13 +306,13 @@ class GammaCatSource:
         return model
 
     @staticmethod
-    def fill_morphology_info(data, psi):
+    def fill_morphology_info(data, dsi):
         try:
-            data['morph_type'] = psi['morph']['type']
+            data['morph_type'] = dsi['morph']['type']
         except KeyError:
             data['morph_type'] = NA.fill_value['string']
         try:
-            val = psi['morph']['sigma']['val']
+            val = dsi['morph']['sigma']['val']
         except KeyError:
             val = NA.fill_value['number']
         # TODO: the explicit conversion to degree should be avoided and
@@ -245,35 +320,35 @@ class GammaCatSource:
         data['morph_sigma'] = Angle(val, 'deg').degree
 
         try:
-            err = psi['morph']['sigma']['err']
+            err = dsi['morph']['sigma']['err']
         except KeyError:
             err = NA.fill_value['number']
         data['morph_sigma_err'] = Angle(err, 'deg').degree
 
         try:
-            val = psi['morph']['sigma2']['val']
+            val = dsi['morph']['sigma2']['val']
         except KeyError:
             val = NA.fill_value['number']
         data['morph_sigma2'] = Angle(val, 'deg').degree
 
         try:
-            err = psi['morph']['sigma2']['err']
+            err = dsi['morph']['sigma2']['err']
         except KeyError:
             err = NA.fill_value['number']
         data['morph_sigma2_err'] = Angle(err, 'deg').degree
 
         try:
-            val = psi['morph']['pa']['val']
+            val = dsi['morph']['pa']['val']
         except KeyError:
             val = NA.fill_value['number']
         data['morph_pa'] = Angle(val, 'deg').degree
         try:
-            err = psi['morph']['pa']['err']
+            err = dsi['morph']['pa']['err']
         except KeyError:
             err = NA.fill_value['number']
         data['morph_pa_err'] = Angle(err, 'deg').degree
         try:
-            data['morph_pa_frame'] = psi['morph']['pa']['frame']
+            data['morph_pa_frame'] = dsi['morph']['pa']['frame']
         except KeyError:
             data['morph_pa_frame'] = NA.fill_value['string']
 
@@ -311,26 +386,10 @@ class GammaCatSchema:
 
         return table
 
-        # @property
-        # def names(self):
-        #     return [_['name'] for _ in self.colspecs]
-        #
-        # @property
-        # def dtype(self):
-        #     return [_['dtype'] for _ in self.colspecs]
-
-        # def filter_row_keys(self, rows):
-        #     for row in rows:
-        #         for key in list(row.keys()):
-        #             if key not in names:
-        #                 del row[key]
-
 
 class GammaCatMaker:
     """
     Make gamma-cat, combining all available data.
-
-    The strategy is to
 
     TODO: for now, we gather info from `InputData`.
     This should be changed to gather info from `OutputData` when available.
@@ -340,72 +399,36 @@ class GammaCatMaker:
         self.sources = []
         self.table = None
 
-    def run(self):
+    def run(self, internal):
         log.info('Making gamma-cat ....')
 
-        self.gather_data()
+        self.gather_data(internal=internal)
         self.make_table()
-        self.write_table()
-        self.write_yaml_text_dump()
+        self.write_table(internal=internal)
+        self.write_yaml_text_dump(internal=internal)
 
-    def gather_data(self):
+    def gather_data(self, internal=False):
         """Gather data into Python data structures."""
-        input_data = InputData.read()
+        input_data = InputData.read(internal=internal)
         source_ids = [_.data['source_id'] for _ in input_data.sources.data]
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
-            paper_info = self.choose_paper(input_data, basic_source_info)
-            paper_source_info = paper_info.get_source_by_id(source_id)
-            sed_info = input_data.seds.get_sed_by_source_and_paper_id(source_id, paper_info.id)
+            try:
+                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id(internal=internal)
+            except IndexError:
+                reference_id = None
+            dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
+            dataset_source_info = dataset.get_source_by_id(source_id)
+            sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
             # TODO: right now this implies, that a GammaCatSource object can only
-            # handle the information from one paper, maybe this should be changed
+            # handle the information from one dataset, maybe this should be changed
             source = GammaCatSource.from_inputs(
                 basic_source_info=basic_source_info,
-                paper_source_info=paper_source_info,
+                dataset_source_info=dataset_source_info,
                 sed_info=sed_info
             )
             self.sources.append(source)
-
-    def choose_paper(self, input_data, bsi, method='manual'):
-        """Choose paper refrence for singel source according to different criteria"""
-        paper_ids = bsi.data['papers']
-
-        if method == 'manual':
-            source_id = bsi.data['source_id']
-            path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_paper_selection.yaml'
-            selection = load_yaml(path)
-            paper_ids = selection[source_id - 1]['paper_id']
-
-            if paper_ids:
-                # split paper ids
-                paper_ids = paper_ids.split(', ')
-                # choose first paper id
-                paper_id = paper_ids[-1]
-            else:
-                paper_id = None
-
-            paper_info = input_data.papers.get_paper_by_id(paper_id)
-            return paper_info
-
-        elif method == 'first-available':
-            # choose the first paper in the list, where info on the source
-            # is actually available
-            for paper_id in paper_ids:
-                paper_info = input_data.papers.get_paper_by_id(paper_id)
-                if len(paper_info.sources) > 0:
-                    break
-            return paper_info
-
-        elif method == 'first':
-            # choose first entry of the list
-            return input_data.papers.get_paper_by_id(paper_ids[0])
-
-        elif method == 'latest':
-            # choose latest paper
-            raise NotImplementedError
-        else:
-            raise ValueError('Not a valid method.')
 
     def make_table(self):
         """Convert Python data structures to a flat table."""
@@ -429,12 +452,15 @@ class GammaCatMaker:
 
         self.table = table
 
-    def write_table(self):
+    def write_table(self, internal=False):
         table = self.table
 
         # table.info('stats')
         # table.pprint()
-        path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
+        if internal:
+            path = gammacat_info.internal_dir / 'gammacat-hess-internal.fits.gz'
+        else:
+            path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
@@ -442,12 +468,124 @@ class GammaCatMaker:
         # log.info('Writing {}'.format(path))
         # table.write(str(path), format='ascii.ecsv')
 
-    def write_yaml_text_dump(self):
+    def write_yaml_text_dump(self, internal=False):
         column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
         table = self.table[column_selection]
         list_of_dict = table_to_list_of_dict(table)
 
-        path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
+        if internal:
+            path = gammacat_info.internal_dir / 'gammacat-hess-internal.yaml'
+        else:
+            path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
+
         with path.open('w') as f:
             log.info('Writing {}'.format(path))
             f.write(yaml.dump(list_of_dict, default_flow_style=False))
+
+
+class GammaCatDatasetConfigSource:
+    """
+    Configuration how to assemble `gamma-cat` for one source.
+    """
+
+    def __init__(self, data):
+        self.data = data
+
+    @property
+    def reference_ids(self):
+        pid = self.data['reference_id']
+
+        if isinstance(pid, str):
+            return [_.strip() for _ in pid.split(',')]
+        elif pid is None:
+            return []
+        else:
+            raise ValueError('Invalid reference_id list: {}'.format(pid))
+
+    def get_reference_id(self, internal=False):
+        """Choose reference_id to use for given source.
+
+        For now, we always use the last one listed.
+        """
+        reference_id = self.reference_ids[-1]
+        if not internal and reference_id == 'gammacat-hess-internal':
+            reference_id = self.reference_ids[-2]
+        return reference_id
+
+
+class GammaCatDataSetConfig:
+    """
+    Configuration how to assemble `gamma-cat` for all sources.
+    """
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/gamma_cat_dataset.schema.yaml')
+
+    def __init__(self, data, path):
+        self.data = data
+        self.path = path
+
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
+        data = load_yaml(path)
+        return cls(data=data, path=path)
+
+    @property
+    def source_ids(self):
+        return [_['source_id'] for _ in self.data]
+
+    @property
+    def source_configs(self):
+        for source_id in self.source_ids:
+            yield self.get_source_by_id(source_id)
+
+    @property
+    def reference_ids(self):
+        pids = set()
+        for source_config in self.source_configs:
+            pids.update(source_config.reference_ids)
+
+        return sorted(pids)
+
+    def get_source_by_id(self, source_id):
+        idx = self.source_ids.index(source_id)
+        return GammaCatDatasetConfigSource(data=self.data[idx])
+
+    def validate(self, input_data):
+        log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
+        validate_schema(path=self.path, data=self.data, schema=self.schema)
+        self.validate_source_ids(input_data)
+        self.validate_reference_ids(input_data)
+
+    def validate_source_ids(self, input_data):
+        """Check that all sources are listed.
+        """
+        source_id_basic = input_data.sources.source_ids
+        source_id_gammacat = self.source_ids
+
+        gammacat_missing = sorted(set(source_id_basic) - set(source_id_gammacat))
+        if gammacat_missing:
+            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
+                      ''.format(gammacat_missing))
+
+        basic_missing = sorted(set(source_id_gammacat) - set(source_id_basic))
+        if basic_missing:
+            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'
+                      ''.format(basic_missing))
+
+    def validate_reference_ids(self, input_data):
+        """Check that all reference_ids are listed.
+
+        TODO: this is not a good check. One dataset could have multiple sources, i.e. should be listed multiple times.
+        """
+        reference_ids_folders = input_data.datasets.reference_ids
+        reference_ids_gammacat = self.reference_ids
+
+        gammacat_missing = sorted(set(reference_ids_gammacat) - set(reference_ids_folders))
+        if gammacat_missing:
+            log.error('Datasets in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/data`: {}'
+                      ''.format(gammacat_missing))
+
+        folders_missing = sorted(set(reference_ids_folders) - set(reference_ids_gammacat))
+        if folders_missing:
+            log.error('Sources in `input/data`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
+                      ''.format(folders_missing))

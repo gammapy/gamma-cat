@@ -1,0 +1,29 @@
+source_id: 133
+reference_id: 2016arXiv160900600H
+
+data:
+  livetime: 75
+  zenith: 37
+  offset: 1.1
+  n_on: 1141
+  n_off: 16017
+  alpha: 0.047
+  excess: 392
+  significance: 12.9
+
+pos:
+  # from two-source fit (point for W49B)
+  glon: {val: 43.260, err: 0.005, err_sys: 0.006}
+  glat: {val: -0.190, err: 0.005, err_sys: 0.006}
+
+morph:
+  type: point
+
+spec:
+  type: pl
+  norm: {val: 0.315, err: 0.046, err_sys: 0.063}
+  index: {val: 3.14, err: 0.24, err_sys: 0.29}
+  ref: 1
+
+  theta: 0.1
+  erange: {min: 0.29}

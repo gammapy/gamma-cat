@@ -69,7 +69,7 @@ def migrate_sed_header(table):
 
 
 def migrate_all_seds():
-    for path in Path('input/papers').glob('*/*/*.ecsv'):
+    for path in Path('input/data').glob('*/*/*.ecsv'):
         migrate_sed(path)
 
 

@@ -1,0 +1,23 @@
+reference_id:
+source_id:
+
+data:
+  livetime:
+  significance:
+
+pos:
+  ra: {val: , err: }
+  dec: {val: , err: }
+
+morph:
+  type:
+
+spec:
+  type:
+
+  norm: {val: , err: }
+  index: {val: , err: , err_sys: }
+  ecut: {val: , err: }
+
+  theta:
+  erange: {min: , max: }

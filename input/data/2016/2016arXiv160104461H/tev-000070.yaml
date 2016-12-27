@@ -1,0 +1,26 @@
+source_id: 70
+reference_id: 2016arXiv160104461H
+
+data:
+  livetime: 57
+
+pos:
+  # from shell fit
+  ra: {val: 14h42m53s, err: 9s}
+  dec: {val: -62d25m48s, err: 0h1m48s}
+
+morph:
+  type: shell
+  sigma: {val: 0.19, err: 0.03} # inner radius
+  sigma2: {val: 0.30, err: 0.02} # outer radius
+
+spec:
+  type: ecpl # more like 'ecpl', 'pl' because both were used in the paper and were transcripted here
+  # following data from tab 3 and fig 4
+  norm: {val: 3.0, err: 0.2, err_sys: 0.6}
+  index: {val: 1.59, err: 0.22, err_sys: 0.2}
+  ecut: {val: 3.47, err: 1.23}
+  ref: 1
+
+  theta: 0.41 # see p.6 and fig 3, but 0.7 or 0.8 possible as well, see fig 2
+  erange: {min: 0.4, max: 50} # see p.8

@@ -25,7 +25,7 @@ pos:
   ra: 216.751632458
   dec: 23.800010444
 
-papers:
+reference_ids:
 - 2010ApJ...708L.100A
 - 2014ApJ...785L..16A
 - 2015arXiv150807251B

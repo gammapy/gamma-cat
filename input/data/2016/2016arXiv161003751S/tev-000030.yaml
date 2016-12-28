@@ -17,6 +17,7 @@ orbit:
 
 # TODO: exact MJD dates
 # TODO: exact energy ranges
+# TODO: add light curve (wait for points from Stefan)
 
 # VERITAS 2010-2015, phases 0.2-0.4
 spec:

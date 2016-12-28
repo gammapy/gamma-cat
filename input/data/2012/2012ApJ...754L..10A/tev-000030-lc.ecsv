@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: ph / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: ph / (cm2 s), datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 30
+# - source_name: HESS J0632+057
+# - paper_id: 2012ApJ...754L..10A
+# - {SED_TYPE: flux}
+# - UL_CONF: 0.99
+# - comments: |
+# MAGIC light curve
+0.2 55500.141 4.2e-12 0.5e-12
+0.2 55557.102 4.2e-12 0.4e-12
+0.2 55558.134 3.8e-12 3.3e-12
+0.2 55598.880 9.4e-12 3.5e-12
+0.2 55599.903 6.6e-12 2.6e-12
+0.2 55600.873 9.3e-12 3.6e-12
+0.2 55612.920 9.8e-12 7.5e-12
+0.2 55613.982 13.9e-12 5.0e-12
+0.2 55647.899 2.7e-12 3.6e-12
+0.2 55648.900 -1.5e-12 4.3e-12

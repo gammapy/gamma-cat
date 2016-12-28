@@ -22,13 +22,19 @@ The table metadata should contain the following information:
 - `comment` - list of strings for comments, linebreaks allowed
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Several lightcurves for a single source should be separated by its reference following 'source_paper.ECSV.'
 The paper should be given in ADS format, the source name may vary as the dicussion continues.
 =======
+=======
+>>>>>>> upstream/master
 If any entries are missing or not specified, use `np.nan`.
 If a column consits exclusively of `np.nan`, this column may be deleted.
 
 Multiple lightcurves for a single source should be separeted by its reference as metioned in `source_paper.ECSV.`
 A paper reference should be given in ADS format.
 Other references such as private communication, talks or unpublished thesis should be specified in the comment header.
+<<<<<<< HEAD
 >>>>>>> gammapy/master
+=======
+>>>>>>> upstream/master

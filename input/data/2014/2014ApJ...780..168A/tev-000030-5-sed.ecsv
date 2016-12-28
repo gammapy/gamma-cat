@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: e_hi, datatype: float32}
+# - {name: e_lo, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 30
+# - source_name: HESS J0632+057
+# - reference_id: 2014ApJ...780..168A
+# - UL_CONF: 0.95
+# Spectral points measured by HESS for orbital phases 0.2-0.4
+# 2004-2012: mjd: 53087.0, 55951.
+e_ref dnde dnde_errp dnde_errn
+0.341 6.496e-12 1.374e-12 1.449e-12
+0.725 1.428e-12 2.180e-13 2.300e-13
+1.728 1.306e-13 3.849e-14 4.260e-14
+4.126 1.208e-14 7.259e-15 9.080e-15
+9.865 3.597e-15 1.972e-15 2.591e-15

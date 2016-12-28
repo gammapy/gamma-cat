@@ -311,6 +311,29 @@
   unit:
   description: phase range maximum (e.g. orbital or pulsar phase)
   latex:
+- name: spec_mjd_min
+  fmt:
+  dtype: float32
+  unit: days
+  description: MJD range minimum
+  latex:
+- name: spec_mjd_max
+  fmt:
+  dtype: float32
+  unit:
+  description: MJD range maximum
+  latex:
+- name: observatory
+  dtype: str
+  fmt:
+  unit:
+  description: Observatory name
+ name: fileindex
+  dtype: integer
+  fmt:
+  unit:
+  description: File index for corresponding SED info
+
 
 # SED info
 - name: sed_reference_id
@@ -365,4 +388,37 @@
   dtype: float32
   unit: TeV-1 cm-2 s-1
   description: Upper limit on flux at reference energy
+  latex:
+
+# orbital parameters (binaries)
+
+- name:  mjd0
+  fmt:
+  dtype: float32
+  unit: days
+  description: Zero phase for orbital period determination
+  latex:
+- name: period
+  fmt:
+  dtype: float32
+  unit: days
+  description: orbital period
+  latex:
+- name: period_err
+  fmt:
+  dtype: float32
+  unit: days
+  description: Orbital period error
+  latex:
+- name: period_errp
+  fmt:
+  dtype: float32
+  unit: days
+  description: Upper orbital period error
+  latex:
+- name: period_errn
+  fmt:
+  dtype: float32
+  unit: days
+  description: Lower orbital period error
   latex:

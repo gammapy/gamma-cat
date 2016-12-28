@@ -1,0 +1,55 @@
+source_id: 30
+paper_id: 2016arXiv161003751S
+# Contribution to the 6th International Symposium on High-Energy Gamma-Ray
+# Astronomy (Gamma2016), Heidelberg, Germany
+
+morph:
+    type: point
+
+orbit:
+    # zero phase for orbital period
+    mjd0: 54857     # arbitarily set to the date of the first Swift observations
+    period: {val: 315, errp: 4, errn: 6 }
+
+#############################################################
+# spectral results are given for different orbital phases
+# (values from Table 1 in proceedings)
+
+# TODO: exact MJD dates
+# TODO: exact energy ranges
+
+# VERITAS 2010-2015, phases 0.2-0.4
+spec:
+  type: pl
+  mjd: {min: 55235.0, max: 57500.}
+  phase: {min: 0.2, max: 0.4 }
+  observatory: veritas
+  norm: {val: 6.8e-13, err: 4.0e-14}
+  index: {val: 2.55, err: 0.05}
+  ref: 1
+  erange: {min: 0.35, max: 2.07}
+  fileindex: 1
+
+# VERITAS 2010-2015, phases 0.6-0.8
+spec:
+  type: pl
+  mjd: {min: 55544.0, max: 57500.}
+  phase: {min: 0.6, max: 0.8 }
+  observatory: veritas
+  norm: {val: 6.12e-13, err: 6.78e-14}
+  index: {val: 2.57, err: 0.12}
+  ref: 1
+  erange: {min: 0.35, max: 3.55}
+  fileindex: 2
+
+# VERITAS 2010-2015, phases 0.8-0.2
+spec:
+  type: pl
+  mjd: {min: 55890.0, max: 57500.}
+  phase: {min: 0.8, max: 0.2 }
+  observatory: veritas
+  norm: {val: 2.34e-13, err: 0.4e-13}
+  index: {val: 2.72, err: 0.2}
+  ref: 1
+  erange: {min: 0.35, max: 7.08}
+  fileindex: 3

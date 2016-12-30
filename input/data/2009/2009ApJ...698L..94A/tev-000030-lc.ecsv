@@ -11,7 +11,7 @@
 # - data_type: lc
 # - source_id: 30
 # - source_name: HESS J0632+057
-# - paper_id: 2009ApJ...698L..94A
+# - reference_id: 2009ApJ...698L..94A
 # - UL_CONF: 0.99
 # - comments: |
 1.0 54105. 54085. 54125. 4.2e-13 True

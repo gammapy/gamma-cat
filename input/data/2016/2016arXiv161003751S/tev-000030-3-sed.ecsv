@@ -10,7 +10,6 @@
 # - source_id: 30
 # - source_name: HESS J0632+057
 # - reference_id: 2016arXiv161003751S
-# - UL_CONF: 0.95
 # - comments: [Spectral points measured by VERITAS for orbital phases 0.8-0.2]
 e_ref dnde dnde_errp dnde_errn
 0.279085 4.98141e-12  3.0564e-12  3.22738e-12

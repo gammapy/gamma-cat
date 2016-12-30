@@ -15,6 +15,7 @@
 # - {SED_TYPE: flux}
 # - UL_CONF: 0.99
 # - comments: [VERITAS light curve]
+e_min time_min time_max flux flux_err flux_ul
 1. 54089. 54126. 1.4321e-13  1.4620e-13 6.1e-13
 1. 54830. 54835. -8.7761e-14 9.3718e-14 2.3e-13
 1. 54856. 54862. 4.2283e-14  9.8290e-14 3.6e-13

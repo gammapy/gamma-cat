@@ -12,6 +12,7 @@
 # - source_name: HESS J0632+057
 # - reference_id: 2009ApJ...698L..94A
 # - UL_CONF: 0.99
+e_min time time_min time_max flux_ul
 1.0 54105. 54085. 54125. 4.2e-13
 1.0 54832. 54830. 54834. 4.2e-13
 1.0 54859  54857. 54861. 3.6e-13

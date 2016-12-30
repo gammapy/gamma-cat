@@ -16,7 +16,6 @@ orbit:
 # (values from Table 1 in proceedings)
 
 # TODO: exact MJD dates
-# TODO: exact energy ranges
 # TODO: add light curve (wait for points from Stefan)
 
 # VERITAS 2010-2015, phases 0.2-0.4
@@ -28,7 +27,7 @@ spec:
   norm: {val: 6.8e-13, err: 4.0e-14}
   index: {val: 2.55, err: 0.05}
   ref: 1
-  erange: {min: 0.35, max: 2.07}
+  erange: {min: 0.33, max: 6.31}
   filecounter: 1
 
 # # VERITAS 2010-2015, phases 0.6-0.8
@@ -40,7 +39,7 @@ spec:
 #   norm: {val: 6.12e-13, err: 6.78e-14}
 #   index: {val: 2.57, err: 0.12}
 #   ref: 1
-#   erange: {min: 0.35, max: 3.55}
+#   erange: {min: 0.24, max: 4.47}
 #   filecounter: 2
 #
 # # VERITAS 2010-2015, phases 0.8-0.2
@@ -52,6 +51,6 @@ spec:
 #   norm: {val: 2.34e-13, err: 0.4e-13}
 #   index: {val: 2.72, err: 0.2}
 #   ref: 1
-#   erange: {min: 0.35, max: 7.08}
+#   erange: {min: 0.28, max: 6.31}
 #   filecounter: 3
 #

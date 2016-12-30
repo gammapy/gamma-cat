@@ -13,8 +13,7 @@
 # - source_name: HESS J0632+057
 # - reference_id: 2014ApJ...780..168A
 # - UL_CONF: 0.95
-# Spectral points measured by VERITAS for orbital phases 0.2-0.4
-# 2010-2012 (3 orbits): mjd: 55235.0, 55928.
+# - comments: [Spectral points measured by VERITAS for orbital phases 0.2-0.4, 2010-2012 (3 orbits), mjd 55235.0, 55928.]
 e_ref e_hi e_lo dnde dnde_errp dnde_errn
 0.531 0.447 0.631 4.556e-12 7.183e-13 7.559e-13
 0.750 0.631 0.891 1.697e-12 2.684e-13 2.851e-13

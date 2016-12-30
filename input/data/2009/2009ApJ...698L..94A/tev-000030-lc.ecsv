@@ -6,14 +6,12 @@
 # - {name: time_min, unit: MJD, datatype: float64}
 # - {name: time_max, unit: MJD, datatype: float64}
 # - {name: flux_ul, unit: ph / (cm2 s), datatype: float64}
-# - {name: is_ul, datatype: bool}
 # meta: !!omap
 # - data_type: lc
 # - source_id: 30
 # - source_name: HESS J0632+057
 # - reference_id: 2009ApJ...698L..94A
 # - UL_CONF: 0.99
-# - comments: |
-1.0 54105. 54085. 54125. 4.2e-13 True
-1.0 54832. 54830. 54834. 4.2e-13 True
-1.0 54859  54857. 54861. 3.6e-13 True
+1.0 54105. 54085. 54125. 4.2e-13
+1.0 54832. 54830. 54834. 4.2e-13
+1.0 54859  54857. 54861. 3.6e-13

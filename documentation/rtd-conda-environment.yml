@@ -1,0 +1,9 @@
+name: gamma-cat
+
+channels:
+  - astropy
+
+dependencies:
+  - python=3
+  - matplotlib
+  - astropy

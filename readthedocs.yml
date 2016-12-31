@@ -1,0 +1,2 @@
+conda:
+  file: documentation/rtd-conda-environment.yml

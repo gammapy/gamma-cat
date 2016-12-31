@@ -29,28 +29,3 @@ spec:
   ref: 1
   erange: {min: 0.33, max: 6.31}
   filecounter: 1
-
-# # VERITAS 2010-2015, phases 0.6-0.8
-# spec:
-#   type: pl
-#   mjd: {min: 55544.0, max: 57500.}
-#   phase: {min: 0.6, max: 0.8 }
-#   observatory: veritas
-#   norm: {val: 6.12e-13, err: 6.78e-14}
-#   index: {val: 2.57, err: 0.12}
-#   ref: 1
-#   erange: {min: 0.24, max: 4.47}
-#   filecounter: 2
-#
-# # VERITAS 2010-2015, phases 0.8-0.2
-# spec:
-#   type: pl
-#   mjd: {min: 55890.0, max: 57500.}
-#   phase: {min: 0.8, max: 0.2 }
-#   observatory: veritas
-#   norm: {val: 2.34e-13, err: 0.4e-13}
-#   index: {val: 2.72, err: 0.2}
-#   ref: 1
-#   erange: {min: 0.28, max: 6.31}
-#   filecounter: 3
-#

@@ -328,7 +328,7 @@
   fmt:
   unit:
   description: Observatory name
- name: fileindex
+- name: filecounter
   dtype: integer
   fmt:
   unit:

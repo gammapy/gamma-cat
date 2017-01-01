@@ -1,20 +1,28 @@
-.. gamma-cat documentation master file, created by
-   sphinx-quickstart on Sat Dec 31 14:48:06 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. include:: references.rst
 
-Welcome to gamma-cat's documentation!
-=====================================
+gamma-cat
+=========
+
+An open data collection and source catalog for gamma-ray astronomy.
+
+* Docs: |gamma-cat-docs|
+* Data: |gamma-cat-data|
+* Repo: |gamma-cat-repo|
+
+See also:
+
+* Interactive sky map: `gamma-sky.net`_
+* Browse catalog info: `gamma-sky.net/cat/tev`_
+* Access and analyse data from Python: `gammapy.catalog`_
+
+Documentation
+-------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   about
+   use
+   details
+   stats/index
+   changes

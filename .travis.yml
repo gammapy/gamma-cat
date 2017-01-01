@@ -26,3 +26,4 @@ script:
 #- ./make.py output
 #- ./make.py webpage
 - ./make.py all
+- cd documentation && make html

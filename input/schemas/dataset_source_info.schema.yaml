@@ -98,6 +98,23 @@ properties:
           val: {type: number}
           err: {type: number, description: Statistical error}
 
+  orbit:
+    type: object
+    additionalProperties: false
+    properties:
+      mjd0: {type: number, unit=days, description="Zero phase for orbital period in MJD"}
+      period:
+        type: object
+        additionalProperties: false
+        description: |
+          Orbital period in days
+        properties:
+          val: {type: [number, string]}
+          err: {type: [number, string], description: Statistical error}
+          errp: {type: [number, string], description: Lower statistical error}
+          errn: {type: [number, string], description: Upper statistical error}
+          err_sys: {type: [number, string], description: Systematic error}
+
   spec: # in general: what to do with several values? A: use total dataset and best-fit, might be expanded later
     type: object
     additionalProperties: false
@@ -151,6 +168,20 @@ properties:
           Covariance matrix
           TODO: decide on format.
           An example of a published covariance matrix is here: 2016arXiv161101863H
+      observatory: {type: string, description="Observatory name"}
+      mjd:
+        type: object
+        additionalProperties: false
+        properties:
+          min: {type: [number,  "null"], unit=days}
+          max: {type: [number,  "null"], unit=days}
+      phase:
+        type: object
+        additionalProperties: false
+        properties:
+          min: {type: [number,  "null"]}
+          max: {type: [number,  "null"]}
+      filecounter: {type: number, description="Counter to connect spectral fit with SED file"}
 
   notes: {type: string}
 

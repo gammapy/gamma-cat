@@ -1,0 +1,23 @@
+source_id: 30
+reference_id: 2012ApJ...754L..10A
+
+morph:
+    type: point
+
+orbit:
+    # zero phase for orbital period
+    mjd0: 54857     # arbitarily set to the date of the first Swift observations
+    period: {val: 321}
+
+#############################################################
+# spectral results are given for February 2011
+
+spec:
+  type: pl
+  mjd: {min: 55598., max: 55559.}
+  phase: {min: 0.31, max: 0.36 }
+  observatory: magic
+  norm: {val: 1.2e-12, err: 0.3e-12, err_sys: 0.2e-12}
+  index: {val: 2.6, err: 0.3, err_sys: 0.2}
+  ref: 1
+  erange: {min: 0.136, max: 4.}

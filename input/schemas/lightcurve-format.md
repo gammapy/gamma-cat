@@ -2,7 +2,7 @@
 
 Each file has some of these columns:
 
-- `time` - center of obeservation exposure in MJD
+- `time` - center of observation exposure in MJD
 - `time_min` - start of observation in MJD
 - `time_min` - end of observation in MJD
 - `flux` - observed integral flux in Crab
@@ -21,9 +21,10 @@ The table metadata should contain the following information:
 - `timesys` - to indicate if MJD is given in UTC or TT
 - `comment` - list of strings for comments, linebreaks allowed
 
+
 If any entries are missing or not specified, use `np.nan`.
 If a column consits exclusively of `np.nan`, this column may be deleted.
 
-Multiple lightcurves for a single source should be separeted by its reference as metioned in `source_paper.ECSV.`
+Multiple lightcurves for a single source should be separated by its reference as mentioned in `source_paper.ECSV.`
 A paper reference should be given in ADS format.
 Other references such as private communication, talks or unpublished thesis should be specified in the comment header.

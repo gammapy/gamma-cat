@@ -1,0 +1,36 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: ph / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: ph / (cm2 s), datatype: float64}
+# - {name: flux_ul, unit: ph / (cm2 s), datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 30
+# - source_name: HESS J0632+057
+# - reference_id: 2014ApJ...780..168A
+# - {SED_TYPE: flux}
+# - UL_CONF: 0.99
+# - comments: [VERITAS light curve]
+e_min time_min time_max flux flux_err flux_ul
+1. 54089. 54126. 1.4321e-13  1.4620e-13 6.1e-13
+1. 54830. 54835. -8.7761e-14 9.3718e-14 2.3e-13
+1. 54856. 54862. 4.2283e-14  9.8290e-14 3.6e-13
+1. 55122. 55134. 1.8025e-13  1.1378e-13 4.5e-13
+1. 55235. 55248. 3.4582e-13  9.8330e-14 nan
+1. 55259. 55277. 8.2427e-13  2.3321e-13 nan
+1. 55544. 55565. 1.1914e-13  1.5720e-13 7.1e-13
+1. 55571. 55573. 3.4168e-13  2.4870e-13 12.8e-13
+1. 55585. 55600. 5.2563e-13  1.3699e-13 nan
+1. 55600. 55603. 6.8799e-13  1.6781e-13 nan
+1. 55614. 55623. 2.2374e-13  1.0098e-13 5.5e-13
+1. 55624. 55631. 4.3366e-14  1.1628e-13 4.6e-13
+1. 55643. 55657. 2.0438e-13  1.4045e-13 6.5e-13
+1. 55891. 55902. 6.1797e-13  1.7600e-13 nan
+1. 55916. 55921. 6.9383e-13  1.5074e-13 nan
+1. 55921. 55928. 1.8745e-13  1.2189e-13 6.0e-13
+1. 55940. 55950. 7.1767e-15  8.8318e-14 3.8e-13
+1. 55951. 55956. 1.7710e-13 1.3411e-13 6.8e-13

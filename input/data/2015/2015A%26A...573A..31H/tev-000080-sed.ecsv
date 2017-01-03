@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: eV}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_err, datatype: float32, unit: erg cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 80
+# - reference_id: 2015A&A...573A..31H
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib
+# - comments: |
+#     Spectral points from Fermi-LAT are also given on that page.
+#     This is only the H.E.S.S. points!
+e_ref e2dnde e2dnde_err
+1.60e+11 1.63e-12 1.27e-12
+2.12e+11 2.57e-12 7.71e-13
+2.84e+11 2.22e-12 6.00e-13
+3.83e+11 1.43e-12 4.78e-13
+5.14e+11 1.31e-12 4.54e-13
+6.89e+11 1.03e-12 4.47e-13
+9.62e+11 3.03e-13 2.68e-13
+1.41e+12 1.10e-12 3.93e-13
+2.08e+12 3.68e-13 3.07e-13
+3.05e+12 6.45e-13 4.08e-13

@@ -165,8 +165,8 @@ texinfo_documents = [
 ### gamma-cat additions below
 #############################################################################
 
-import gammacat
+from gammacat.info import gammacat_info
 
 html_context = dict(
-    version=gammacat.gammacat_info.version,
+    version=gammacat_info.version,
 )

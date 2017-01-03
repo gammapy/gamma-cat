@@ -1,5 +1,5 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
-import gammacat
+import gammacat.utils
 
 
 def test_rawgit_url():

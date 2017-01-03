@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, datatype: float32}
+# - {name: e_max, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 61
+# - reference_id: 2005A&A...439.1013A
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA439_1013.html
+# - comments: |
+#     Spectral points from Figure 4.
+e_min e_max e_ref dnde dnde_err
+0.373   0.518       0.430986        2.46436e-11  3.9872e-12
+0.518   0.720       0.598853        1.2562e-11   1.44968e-12
+0.720   1.0         0.832103        7.26468e-12  6.74924e-13
+1.0     1.390       1.1562          2.96451e-12  3.28039e-13
+1.390   1.931       1.60654         1.76452e-12  1.81729e-13
+1.931   2.683       2.23228         6.54495e-13  9.81589e-14
+2.683   3.728       3.10174         3.34518e-13  4.93971e-14
+3.728   5.179       4.30986         1.32126e-13  2.55008e-14
+5.179   7.197       5.98853         2.64358e-14  1.17119e-14
+7.197   10.0        8.32103         1.09547e-14  6.0119e-15
+10.0    13.895      11.562          6.85537e-15  3.14979e-15

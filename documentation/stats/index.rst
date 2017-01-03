@@ -19,7 +19,9 @@ TODO:
 Kifune plot
 -----------
 
-Plot number of sources versus time
+The so-called Kifune plot shows the cumulative number of detected TeV sources versus time.
+
+.. plot:: stats/plot_kifune.py
 
 Source classes
 --------------

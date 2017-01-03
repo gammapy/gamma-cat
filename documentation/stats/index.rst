@@ -3,6 +3,11 @@
 Stats
 =====
 
+Basics
+------
+
+* Version: {{ version }}
+
 Source locations
 ----------------
 

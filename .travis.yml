@@ -14,7 +14,7 @@ install:
 
 # Now install our dependencies
 - conda config --add channels conda-forge
-- conda install click pytest sphinx pyyaml cython numpy scipy uncertainties pandas astropy
+- conda install click pytest sphinx pyyaml cython numpy scipy matplotlib uncertainties pandas astropy
 - pip install pytest-cov jsonschema sphinx-rtd-theme
 - pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
 

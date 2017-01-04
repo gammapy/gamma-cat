@@ -1,4 +1,4 @@
-# other_cats
+# other_data_collections
 
-This folder contains other catalogs and data that we can use to
-cross-check our catalog a bit
+This folder contains other data collection that we can use to
+ingest or check against gamma-cat.

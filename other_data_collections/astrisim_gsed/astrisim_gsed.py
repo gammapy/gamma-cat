@@ -17,7 +17,7 @@ class AstriSimGSED:
     def __init__(self):
         self.gammacat_sources = gammacat.utils.load_json('docs/data/gammacat-sources.json')['data']
         self.gammacat_papers = gammacat.utils.load_json('docs/data/gammacat-datasets.json')['data']
-        self.gsed_table = Table.read('other_cats/astrisim_gsed/index2.fits')
+        self.gsed_table = Table.read('other_data_collections/astrisim_gsed/index2.fits')
 
     def list_missing_info(self):
         """Make list of info that's in astrisim/gsed, but not in gamma-cat yet.
@@ -26,7 +26,7 @@ class AstriSimGSED:
         for source in self.gsed_table:
             info.append(self.check_source(source))
         table = Table(rows=info, names=list(info[0]))
-        filename = 'other_cats/astrisim_gsed/missing_info.csv'
+        filename = 'other_data_collections/astrisim_gsed/missing_info.csv'
         print('Writing {}'.format(filename))
         table.write(filename, format='ascii.fixed_width')
 
@@ -60,7 +60,7 @@ class AstriSimGSED:
         i.e. find the right paper / folder / file to put the info and add info
         to the header.
         """
-        base_path = Path('other_cats/astrisim_gsed/data/')
+        base_path = Path('other_data_collections/astrisim_gsed/data/')
         for path in base_path.glob('*.fits'):
             source_name = path.parts[-1].replace('.fits', '')
 

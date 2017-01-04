@@ -103,8 +103,7 @@ The following people have directly contributed to `gamma-cat`:
 * Arjun Voruganti (`@vorugantia <https://github.com/vorugantia>`__)
 * Gernot Maier (`@GernotMaier <https://github.com/GernotMaier>`__)
 
-Others have contributed indirectly, e.g. given information
-or feedback via private communication.
+Many others have contributed indirectly, e.g. given data or feedback via private communication.
 
 Thank you!
 

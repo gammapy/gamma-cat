@@ -16,8 +16,12 @@ This license only applies to the code, it has nothing to do with the data.
 This is work in progress.
 Feedback and contributions welcome!
 
-Contact: use Github issue tracker or email Christoph Deil
-(see email at https://github.com/cdeil ).
+Contact: use whatever you prefer:
+
+* Email: gammapy@gmail.com
+* Github issue tracker: https://github.com/gammapy/gamma-cat/issues
+  (requires you to make a Github account, which is free and takes a minute)
+* TODO: should we make a twitter or facebook account?
 
 For now, we just collect TeV gamma-ray source information.
 Later we might try to ingest and interconnect other catalogs

@@ -32,6 +32,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # ones.
 extensions = [
     'matplotlib.sphinxext.plot_directive',
+    'bokeh.sphinxext.bokeh_plot',
     'gammacat.sphinx.exts.rstjinja',
 ]
 
@@ -166,8 +167,8 @@ texinfo_documents = [
 ### gamma-cat additions below
 #############################################################################
 
-from gammacat.info import gammacat_info
-
-html_context = dict(
-    version=gammacat_info.version,
-)
+# from gammacat.info import gammacat_info
+#
+# gammacat_context = dict(
+#     version=gammacat_info.version,
+# )

@@ -1,5 +1,25 @@
-//RA[deg] | Dec[deg] | Freq[Hz] | e(Freq)[Hz] | Flux[erg/cm2/s] | e_lower(Flux)[erg/cm2/s] | e_upper(Flux)[erg/cm2/s] | MJD_start | MJD_stop | UpperLimitFlag | Note | Source | Experiment | ReferenceADS
-//Author: J. Biteau - Creation Date: 2016-12-20 - Dataset Reference: 2015ApJ...812...60B (arXiv:1502.04166) 
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: ra, datatype: float32, unit: deg}
+# - {name: dec, datatype: float32, unit: deg}
+# - {name: freq, datatype: float32, unit: Hz}
+# - {name: freq_err, datatype: float32, unit: Hz}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errn, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errp, datatype: float32, unit: erg cm-2 s-1}
+# - {name: mjd_start, datatype: float32, unit: MJD}
+# - {name: mjd_stop, datatype: float32, unit: MJD}
+# - {name: UpperLimitFlag, datatype: str}
+# - {name: Note, datatype: str}
+# - {name: Source, datatype: str}
+# - {name: Experiment, datatype: str}
+# - {name: reference_id, datatype: str}
+# meta: !!omap
+# - author: J. Biteau
+# - creation_date: 2016-12-20
+# - dataset_reference: 2015ApJ...812...60B
+ra | dec | freq | freq_err | e2dnde | e2dnde_errn | e2dnde_errp | mjd_start | mjd_stop | UpperLimitFlag | Note | Source | Experiment | reference_id
 49.1793 | 41.3248 | 4.8118e+25 | 0 | 5.88161e-12 | 1.63695e-12 | 1.63695e-12 | 55120 | 55242 |  | High | IC310 | MAGIC | 2014A&A...563A..91A
 49.1793 | 41.3248 | 1.10986e+26 | 0 | 6.61594e-12 | 1.17467e-12 | 1.17467e-12 | 55120 | 55242 |  | High | IC310 | MAGIC | 2014A&A...563A..91A
 49.1793 | 41.3248 | 2.56307e+26 | 0 | 6.21071e-12 | 1.26734e-12 | 1.26734e-12 | 55120 | 55242 |  | High | IC310 | MAGIC | 2014A&A...563A..91A

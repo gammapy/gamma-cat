@@ -7,6 +7,7 @@ dependencies:
   - python=3
   - sphinx
   - matplotlib
+  - bokeh
   - astropy
   - pyyaml
   - jsonschema

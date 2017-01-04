@@ -15,17 +15,14 @@ orbit:
 # spectral results are given for different orbital phases
 # (values from Table 1 in proceedings)
 
-# TODO: exact MJD dates
-# TODO: add light curve (wait for points from Stefan)
-
 # VERITAS 2010-2015, phases 0.2-0.4
 spec:
-  type: pl
-  mjd: {min: 55235.0, max: 57500.}
-  phase: {min: 0.2, max: 0.4 }
-  observatory: veritas
-  norm: {val: 6.8e-13, err: 4.0e-14}
-  index: {val: 2.55, err: 0.05}
-  ref: 1
-  erange: {min: 0.33, max: 6.31}
-  filecounter: 1
+    type: pl
+    mjd: {min: 55236.0, max: 57456.}
+    phase: {min: 0.2, max: 0.4 }
+    observatory: veritas
+    norm: {val: 6.8e-13, err: 4.0e-14}
+    index: {val: 2.55, err: 0.05}
+    ref: 1
+    erange: {min: 0.33, max: 6.31}
+    filecounter: 1

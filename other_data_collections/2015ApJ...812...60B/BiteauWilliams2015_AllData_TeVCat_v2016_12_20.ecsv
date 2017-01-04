@@ -1,5 +1,21 @@
-//Source | E[TeV] | Flux[erg/cm2/s] | e_lower(Flux)[erg/cm2/s] | e_upper(Flux)[erg/cm2/s] | MJD_start | MJD_stop | Note |  Experiment | ReferenceADS
-//Author: J. Biteau - Creation Date: 2016-12-20 - Dataset Reference: 2015ApJ...812...60B (arXiv:1502.04166) 
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: source, datatype: str}
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errn, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_errp, datatype: float32, unit: erg cm-2 s-1}
+# - {name: mjd_start, datatype: float32, unit: MJD}
+# - {name: mjd_stop, datatype: float32, unit: MJD}
+# - {name: note, datatype: str}
+# - {name: experiment, datatype: str}
+# - {name: reference_id, datatype: str}
+# meta: !!omap
+# - author: J. Biteau
+# - creation_date: 2016-12-20
+# - dataset_reference: 2015ApJ...812...60B
+source | e_ref | e2dnde | e2dnde_errn | e2dnde_errp | mjd_start | mjd_stop | note | experiment | reference_id
 IC310 | 0.199 | 5.88161e-12 | 1.63695e-12 | 1.63695e-12 | 55120 | 55242 | High | MAGIC | 2014A&A...563A..91A
 IC310 | 0.459 | 6.61594e-12 | 1.17467e-12 | 1.17467e-12 | 55120 | 55242 | High | MAGIC | 2014A&A...563A..91A
 IC310 | 1.06 | 6.21071e-12 | 1.26734e-12 | 1.26734e-12 | 55120 | 55242 | High | MAGIC | 2014A&A...563A..91A

@@ -1,0 +1,18 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: ph / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: ph / (cm2 s), datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 30
+# - source_name: HESS J0632+057
+# - reference_id: 2007A&A...469L...1A
+# - {SED_TYPE: flux}
+# - comments: [HESS light curve; time periods approximate (Dec 2004 and Nov/Dec 2005)]
+e_min time_min time_max flux flux_err
+1. 53340.0  53370. 6.3e-13  1.8e-13
+1. 53675.0  53735. 6.4e-13  1.5e-13

@@ -6,6 +6,13 @@ channels:
 
 dependencies:
   - python=3
+  - pytest
+  - pytest-cov
+  - cython
+  - scipy
+  - pandas
+  - uncertainties
+  - click
   - sphinx
   - matplotlib
   - bokeh
@@ -15,4 +22,5 @@ dependencies:
   - astropy
 
   - pip:
+    - sphinx-rtd-theme
     - git+https://github.com/gammapy/gammapy.git#egg=gammapy

@@ -1,0 +1,9 @@
+{
+  "name" : "gamma-cat",
+  "description" : "An open data collection and source catalog for gamma-ray astronomy",
+  "version": "42",
+  "resources": [
+    {
+    }
+  ]
+}

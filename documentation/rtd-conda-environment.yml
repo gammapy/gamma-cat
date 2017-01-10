@@ -1,6 +1,7 @@
 name: gamma-cat
 
 channels:
+  - conda-forge
   - astropy
 
 dependencies:
@@ -10,4 +11,5 @@ dependencies:
   - bokeh
   - astropy
   - pyyaml
+  - ruamel.yaml
   - jsonschema

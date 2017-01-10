@@ -1,5 +1,6 @@
 click
 pyyaml
+ruamel.yaml
 jsonschema
 pytest
 numpy

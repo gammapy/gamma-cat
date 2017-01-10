@@ -1,7 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
-import yaml
 import numpy as np
 from astropy import units as u
 from astropy.table import Table, Column
@@ -9,7 +8,7 @@ from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
 from .info import gammacat_info
 from .input import InputData
-from .utils import NA, load_yaml, table_to_list_of_dict, validate_schema
+from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
 
 __all__ = [
     'GammaCatMaker',
@@ -471,16 +470,15 @@ class GammaCatMaker:
     def write_yaml_text_dump(self, internal=False):
         column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
         table = self.table[column_selection]
-        list_of_dict = table_to_list_of_dict(table)
+        data = table_to_list_of_dict(table)
 
         if internal:
             path = gammacat_info.internal_dir / 'gammacat-hess-internal.yaml'
         else:
             path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
 
-        with path.open('w') as f:
-            log.info('Writing {}'.format(path))
-            f.write(yaml.dump(list_of_dict, default_flow_style=False))
+        log.info('Writing {}'.format(path))
+        write_yaml(data, path)
 
 
 class GammaCatDatasetConfigSource:

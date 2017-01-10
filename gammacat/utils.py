@@ -4,7 +4,7 @@ from pprint import pprint
 import logging
 import json
 from pathlib import Path
-import yaml
+import ruamel.yaml
 import jsonschema
 import numpy as np
 from astropy.coordinates import SkyCoord
@@ -62,8 +62,16 @@ def load_yaml(path):
     path = Path(path)
     log.debug('Reading {}'.format(path))
     with path.open() as fh:
-        data = yaml.safe_load(fh)
+        data = ruamel.yaml.round_trip_load(fh)
     return data
+
+
+def write_yaml(data, path):
+    """Helper function to write data to a YAML file."""
+    path = Path(path)
+    log.info('Writing {}'.format(path))
+    with path.open('w') as fh:
+        ruamel.yaml.round_trip_dump(data, fh)
 
 
 def load_json(path):
@@ -76,6 +84,7 @@ def load_json(path):
 
 
 def write_json(data, path):
+    """Helper function to write data to a JSON file."""
     path = Path(path)
     log.info('Writing {}'.format(path))
     with path.open('w') as fh:
@@ -133,29 +142,29 @@ def rawgit_url(filename, location='master', mode='production'):
     return url
 
 
-def yaml_make_ordereddict_work():
-    """
-    Teach YAML how to work with OrderedDict.
-
-    http://stackoverflow.com/a/21048064/498873
-    """
-    _mapping_tag = yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG
-
-    def dict_representer(dumper, data):
-        return dumper.represent_dict(data.items())
-
-    def dict_constructor(loader, node):
-        return OrderedDict(loader.construct_pairs(node))
-
-    yaml.add_representer(OrderedDict, dict_representer)
-    yaml.add_constructor(_mapping_tag, dict_constructor)
-
-
-# Execute `yaml_make_ordereddict_work` at the top level.
-# So if someone imports the YAML utility functions from this
-# module, objects should be read as OrderedDict always,
-# and order preserved.
-yaml_make_ordereddict_work()
+# def yaml_make_ordereddict_work():
+#     """
+#     Teach YAML how to work with OrderedDict.
+#
+#     http://stackoverflow.com/a/21048064/498873
+#     """
+#     _mapping_tag = yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG
+#
+#     def dict_representer(dumper, data):
+#         return dumper.represent_dict(data.items())
+#
+#     def dict_constructor(loader, node):
+#         return OrderedDict(loader.construct_pairs(node))
+#
+#     yaml.add_representer(OrderedDict, dict_representer)
+#     yaml.add_constructor(_mapping_tag, dict_constructor)
+#
+#
+# # Execute `yaml_make_ordereddict_work` at the top level.
+# # So if someone imports the YAML utility functions from this
+# # module, objects should be read as OrderedDict always,
+# # and order preserved.
+# yaml_make_ordereddict_work()
 
 
 def table_to_list_of_dict(table):

@@ -13,17 +13,19 @@ install:
 - source activate test-environment
 
 # Now install our dependencies
+# TODO: just install `documentation/rtd-conda-environment.yml` instead of duplicating here?
 - conda config --add channels conda-forge
-- conda install click pytest sphinx pyyaml cython numpy scipy matplotlib bokeh uncertainties pandas astropy
-- pip install pytest-cov jsonschema sphinx-rtd-theme
-- pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
+- conda config --add channels astropy
+- conda install click pytest sphinx pyyaml ruamel.yaml cython numpy scipy matplotlib bokeh uncertainties pandas astropy
+- python -m pip install pytest-cov jsonschema sphinx-rtd-theme
+- python -m pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
 
 script:
 - export PYTHONPATH=.:$PYTHONPATH
-- py.test -v --cov=gammacat
-- ./make.py --help
+- python -m pytest -v --cov=gammacat
+- python make.py --help
 #- ./make.py check
 #- ./make.py output
 #- ./make.py webpage
-- ./make.py all
+- python make.py all
 - cd documentation && make html

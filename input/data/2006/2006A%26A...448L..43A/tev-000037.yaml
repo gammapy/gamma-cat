@@ -11,7 +11,9 @@ pos:
 
 morph: 
   type: gauss
-
+  sigma: {val: 0.48d, err: 0.03d}
+  sigma2: {val: 0.36d, err: 0.03d}
+  pa: {val: 41d, err: 7d}
 spec:
   type: ecpl
 

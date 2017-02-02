@@ -9,8 +9,6 @@ This page contains some info how to use `gamma-cat`.
 Browse
 ------
 
-TODO: Explain which data can be browsed in the webpage
-at |gamma-cat-data| (and possibly other pages).
 
 Download
 --------

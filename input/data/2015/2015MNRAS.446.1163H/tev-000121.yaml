@@ -1,0 +1,6 @@
+source_id: 121
+reference_id: 2015MNRAS.446.1163H
+
+pos:
+  ra: {val: 18h32m50s, err: 2s, err_sys: 2s}
+  dec: {val: -9d22m36s, err: 32s, err_sys: 20s}

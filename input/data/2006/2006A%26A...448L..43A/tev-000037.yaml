@@ -1,4 +1,22 @@
 source_id: 37
 reference_id: 2006A&A...448L..43A
 
-# TODO: add data
+data:
+  excess: 2152
+  significance: 16.7
+
+pos:
+  ra: {val: 8h35m1s, err: 2m}
+  dec: {val: -45d34m40s, err: 2m}
+
+morph: 
+  type: gauss
+
+spec:
+  type: ecpl
+
+  index: {val: 1.45, err: 0.09, err_sys: 0.2}
+  ecut: {val: 13.8, err: 2.3, err_sys: 4.1}
+  
+  theta: 0.8
+  erange: {min: 0.550, max: 65}

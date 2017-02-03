@@ -10,6 +10,8 @@ pos:
 
 morph:
   type: gauss
+  # TODO: add upper limit 'sigma < 0.074 deg' at CL=0.99
+  sigma: 0
 
 spec:
   type: pl

@@ -1,4 +1,20 @@
 source_id: 119
 reference_id: 2006A&A...460..743A
 
-# TODO: add data
+data:
+  livetime: 69.2
+  significance: 40
+  excess: 1960
+
+pos:
+  ra: {val: 16.879d, err: 12s, err_sys: 20s}
+  dec: {val: -1.285d, err: 12s, err_sys: 20s}
+
+morph:
+  #TODO: don't find any information in the paper
+  type:
+
+spec:
+  type: 
+  #TODO: there are two broad phase intervals defined in the paper
+  norm:

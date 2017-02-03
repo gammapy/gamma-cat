@@ -21,5 +21,6 @@ spec:
 
   norm: {val: 5.7, err: 0.2, err_sys: 1.4}
   index: {val: 2.27, err: 0.03, err_sys: 0.20}
+  erange: {min: 0.280, max: 40}
   ref: 1
 

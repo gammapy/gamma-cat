@@ -6,14 +6,15 @@ data:
   significance: 25
 
 pos:
-  ra: {val: 15h14m7s, err: 21s, err_sys: 20s}
-  dec: {val: -59d9m27s, err: 11s, err_sys: 20s}
+  ra: {val: 15h14m7s, err: 0h0m21s, err_sys: 0d0m20s}
+  dec: {val: -59d9m27s, err: 0d0m11s, err_sys: 0d0m20s}
 
 morph:
   type: gauss
 
   sigma: {val: 6.4, err: 0.7}
   sigma2: {val: 2.3, err: 0.5}
+  # TODO: check `pa` orientation. Paper just says "wrt RA axis"
   pa: {val: 41, err: 13}
 
 spec:

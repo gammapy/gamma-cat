@@ -6,15 +6,16 @@ data:
   significance: 7.5
 
 pos:
-  ra: {val: 17h47m49s, err: 1.8m, err_sys: 1.3s}
-  dec: {val: -24d48m30s, err: 36s, err_sys: 20s}
+  ra: {val: 17h47m49s, err: 0h0m1.8m, err_sys: 0h0m1.3s}
+  dec: {val: -24d48m30s, err: 0d0m36s, err_sys: 0d0m20s}
 
 morph:
   type: gauss
 
-  sigma: {val: 9.6, err: 2.4}
-  sigma2: {val: 1.8, err: 1.2}
-  # TODO: frame type {galactic, radec} not found in the paper
+  frame: galactic
+  sigma: {val: 0d9.6m0s, err: 0d2.4m0s}
+  sigma2: {val: 0d1.8m0s, err: 0d1.2m0s}
+  # TODO: in the paper it is mentioned "westwards from north", we need to decide which entry to use in gamma-cat
   pa: {val: 92, err: 6}
 
 spec:

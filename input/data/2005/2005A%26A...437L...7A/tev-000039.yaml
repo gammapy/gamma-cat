@@ -7,8 +7,6 @@ data:
   excess: 700
 
 pos:
-  ra: {val: 8h52m, err: , err_sys: }
-  dec: {val: -46d22m, err: , err_sys: }
 
 morph:
   type: shell

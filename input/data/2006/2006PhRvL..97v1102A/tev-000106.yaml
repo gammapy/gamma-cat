@@ -7,19 +7,17 @@ data:
   excess: 1863
 
 pos:
-  ra: {val: 17h45m39.44s, err: 0.6s, err_sys: }
-  dec: {val: -29d0m30.3s, err: 9.7s, err_sys: }
+  ra: {val: 17h45m39.44s, err: 0h0m0.6s, err_sys: }
+  dec: {val: -29d0m30.3s, err: 0d0m9.7s, err_sys: }
 
 morph:
   type: point
 
 spec:
-  type: pl
+  type: pl2
 
-  #Spectrum not given in the paper
-  #Calculated with gammapy out of a integral flux above 1TeV of 'val: 1.87, err: 0.10, err_sys: 0.30' s-1 cm-2
-  #errors are estimated with 'norm_err/norm = int_flux_err/int_flux'
-  norm: {val: 2.37, err: 0.12, err_sys: 0.38}
+  norm: {val: 1.87, err: 0.10, err_sys: 0.30}
   index: {val: 2.25, err: 0.04, err_sys: 0.10}
+  ref: 1
   erange: {min: 0.160,  max: 30}
 

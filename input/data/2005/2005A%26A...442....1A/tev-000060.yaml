@@ -6,11 +6,11 @@ data:
   significance: 13.8
 
 pos:
-  ra: {val: 13h2m49.3s, err: 2.3s, err_sys: }
-  dec: {val: -63d49m53s, err: 17s, err_sys: }
+  ra: {val: 13h2m49.3s, err: 0h0m2.3s, err_sys: }
+  dec: {val: -63d49m53s, err: 0d0m21.1s, err_sys: }
 
 morph:
-  type: gauss
+  type: point
 
 spec:
   type: pl

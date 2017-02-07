@@ -1,0 +1,26 @@
+source_id: 83
+reference_id: 2011A&A...531L..18H
+
+data:
+  livetime: 62
+  significance: 7.5
+
+pos:
+  ra: {val: 17h47m49s, err: 0h0m1.8m, err_sys: 0h0m1.3s}
+  dec: {val: -24d48m30s, err: 0d0m36s, err_sys: 0d0m20s}
+
+morph:
+  type: gauss
+
+  frame: galactic
+  sigma: {val: 0d9.6m0s, err: 0d2.4m0s}
+  sigma2: {val: 0d1.8m0s, err: 0d1.2m0s}
+  # TODO: in the paper it is mentioned "westwards from north", we need to decide which entry to use in gamma-cat
+  pa: {val: 92, err: 6}
+
+spec:
+  type: pl
+
+  norm: {val: 0.52, err: 0.11, err_sys: }
+  index: {val: 2.5, err: 0.3, err_sys: 0.2}
+  ref: 1

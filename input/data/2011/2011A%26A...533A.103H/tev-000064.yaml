@@ -1,4 +1,26 @@
 source_id: 64
 reference_id: 2011A&A...533A.103H
 
-# TODO: add data
+data:
+  livetime: 10
+  significance: 10
+
+pos:
+  ra: {val: 13h56m0s, err: 2m, err_sys: }
+  dec: {val: -64d30m0s, err: 2m, err_sys: }
+
+morph:
+  type: gauss
+
+  sigma: {val: 0.08d, err: }
+
+spec:
+  type: pl
+  
+  #There is inconsistency in the paper: figure 2 says err_sys for norm: 1, text says 0.4
+  norm: {val: 2.7, err: 0.9, err_sys: 0.4}
+  index: {val: 2.2, err: 0.2, err_sys: 0.2}
+  ref: 1
+
+  erange: {min: 1, max: 20}
+  

@@ -1,4 +1,26 @@
 source_id: 1
 reference_id: 2013ApJ...764...38A
 
-# TODO: add data
+data:
+  livetime: 41.25
+  significance: 7.5
+
+pos:
+  ra: {val: 0h6m26s, err: 0.09d, err_sys: 0d0m50s}
+  dec: {val: 72d59m01.0s, err: 0.04d, err_sys: 0d0m50s}
+
+morph:
+  type: gauss
+
+  frame: radec
+  sigma: {val: 0.30, err: 0.03}
+  sigma2: {val: 0.24, err: 0.03}
+  # TODO: in the paper it is written 'west of north', hence, we think it is radec
+  pa: {val: 17.4, err: 15.8}
+
+spec:
+  type: pl
+
+  norm: {val: 0.091, err: 0.013, err_sys: 0.017}
+  index: {val: 2.2, err: 0.2, err_sys: 0.3}
+  ref: 3

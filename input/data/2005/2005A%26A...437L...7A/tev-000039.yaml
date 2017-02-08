@@ -6,8 +6,6 @@ data:
   significance: 12
   excess: 700
 
-pos:
-
 morph:
   type: shell
 

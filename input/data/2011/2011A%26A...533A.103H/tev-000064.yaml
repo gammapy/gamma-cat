@@ -6,13 +6,13 @@ data:
   significance: 10
 
 pos:
-  ra: {val: 13h56m0s, err: 2m, err_sys: }
-  dec: {val: -64d30m0s, err: 2m, err_sys: }
+  ra: {val: 13h56m0s, err: 2m}
+  dec: {val: -64d30m0s, err: 2m}
 
 morph:
   type: gauss
 
-  sigma: {val: 0.08d, err: }
+  sigma: {val: 0.20d, err: 0.02d}
 
 spec:
   type: pl

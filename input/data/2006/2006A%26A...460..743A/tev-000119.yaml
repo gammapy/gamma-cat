@@ -18,7 +18,7 @@ spec:
   # The following spectrum is for <which one you like better>
   type: ecpl
   
-  norm: {val: 2.28, err: 0.10, err_sys: }
-  index: {val: 1.85, err: 0.06, err_sys: }
-  ecut: {val: 8.7, err: 2.0, err_sys: }
+  norm: {val: 2.28, err: 0.10}
+  index: {val: 1.85, err: 0.06}
+  ecut: {val: 8.7, err: 2.0}
   erange: {min: 0.2, max: 10}

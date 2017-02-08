@@ -12,10 +12,10 @@ pos:
 morph:
   type: gauss
 
-  frame: radec
   sigma: {val: 0.30, err: 0.03}
   sigma2: {val: 0.24, err: 0.03}
   # TODO: in the paper it is written 'west of north', hence, we think it is radec
+  # frame: radec
   pa: {val: 17.4, err: 15.8}
 
 spec:

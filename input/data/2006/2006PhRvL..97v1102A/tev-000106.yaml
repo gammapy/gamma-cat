@@ -7,8 +7,8 @@ data:
   excess: 1863
 
 pos:
-  ra: {val: 17h45m39.44s, err: 0h0m0.6s, err_sys: }
-  dec: {val: -29d0m30.3s, err: 0d0m9.7s, err_sys: }
+  ra: {val: 17h45m39.44s, err: 0h0m0.6s}
+  dec: {val: -29d0m30.3s, err: 0d0m9.7s}
 
 morph:
   type: point

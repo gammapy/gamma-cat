@@ -12,9 +12,18 @@ pos:
 morph: 
   type: gauss
 
+  sigma: {val: 0.48, err: 0.03}
+  sigma2: {val: 0.36, err: 0.03}
+  #TODO: check position angle (RADEC or GALACTIC orientation?)
+  
+  pa: {val: 41, err: 7}
 spec:
   type: ecpl
 
+  #Spectrum not given in the paper
+  #Computed from the given integral flux above 1Tev of int_flux: {val: 1.28, err: 0.17, err_sys: 0.38} e-11 cm-2s-1
+  #The errors are approximated with 'norm_err/norm = int_flux_err / int_flux'
+  norm: {val: 10.2, err: 1.35, err_sys: 3.03}
   index: {val: 1.45, err: 0.09, err_sys: 0.2}
   ecut: {val: 13.8, err: 2.3, err_sys: 4.1}
   

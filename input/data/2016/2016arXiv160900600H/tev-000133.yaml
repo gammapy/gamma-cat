@@ -13,8 +13,8 @@ data:
 
 pos:
   # from two-source fit (point for W49B)
-  glon: {val: 43.260, err: 0.005, err_sys: 0.006}
-  glat: {val: -0.190, err: 0.005, err_sys: 0.006}
+  glon: {val: 43.260d, err: 0.005d, err_sys: 0.006d}
+  glat: {val: -0.190d, err: 0.005d, err_sys: 0.006d}
 
 morph:
   type: point
@@ -24,6 +24,5 @@ spec:
   norm: {val: 0.315, err: 0.046, err_sys: 0.063}
   index: {val: 3.14, err: 0.24, err_sys: 0.29}
   ref: 1
-
-  theta: 0.1
+  theta: 0.1d
   erange: {min: 0.29}

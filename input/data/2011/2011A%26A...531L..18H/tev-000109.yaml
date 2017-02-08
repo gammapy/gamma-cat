@@ -7,20 +7,17 @@ data:
 
 pos:
   ra: {val: 17h47m49s, err: 0h1.8m, err_sys: 0h0m1.3s}
-  dec: {val: -24d48m30s, err: 0d0m36s, err_sys: 0d0m20s}
+  dec: {val: -24d48m30s, err: 36s, err_sys: 20s}
 
 morph:
   type: gauss
-
   sigma: {val: 9.6m, err: 2.4m}
   sigma2: {val: 1.8m, err: 1.2m}
   # TODO: in the paper it is mentioned "westwards from north", we need to decide which entry to use in gamma-cat
-  # frame: galactic
-  pa: {val: 92, err: 6}
+  pa: {frame: radec, val: 92d, err: 6d}
 
 spec:
   type: pl
-
   norm: {val: 0.52, err: 0.11}
   index: {val: 2.5, err: 0.3, err_sys: 0.2}
   ref: 1

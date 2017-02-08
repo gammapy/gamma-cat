@@ -6,15 +6,14 @@ data:
   significance: 9.3
 
 pos:
-  ra: {val: 10h18m58s, err: 0h0m5s, }
-  dec: {val: -58d56m43s, err: 0d0m30s, }
+  ra: {val: 10h18m58s, err: 0h0m5s}
+  dec: {val: -58d56m43s, err: 30s}
 
 morph:
   type: point
 
 spec:
   type: pl
-
   norm: {val: 0.29, err: 0.04, err_sys: 0.058}
   index: {val: 2.20, err: 0.14, err_sys: 0.2}
   ref: 1

@@ -6,8 +6,8 @@ data:
   significance: 13
 
 pos:
-  glon: {val: 0.872 deg, err: 0.005 deg}
-  glat: {val: 0.076 deg, err: 0.005 deg}
+  glon: {val: 0.872d, err: 0.005d}
+  glat: {val: 0.076d, err: 0.005d}
 
 morph:
   type: point
@@ -15,10 +15,8 @@ morph:
 
 spec:
   type: pl2
-
   norm: {val: 5.7, err: 0.7, err_sys: 1.2}
   index: {val: 2.40, err: 0.11, err_sys: 0.20}
   ref: 0.2
-
-  theta: 0.1
+  theta: 0.1d
   erange: {min: 0.17}

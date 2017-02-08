@@ -6,7 +6,7 @@ data:
 
 pos:
   ra: {val: 18h32m50s, err: 0h0m3s, err_sys: 0h0m2s}
-  dec: {val: -9d22m36s, err: 0d0m32s, err_sys: 0d0m20s}
+  dec: {val: -9d22m36s, err: 32s, err_sys: 20s}
 
 morph:
   type: gauss
@@ -15,9 +15,7 @@ morph:
 
 spec:
   type: pl
-
   norm: {val: 0.48, err: 0.08, err_sys: 0.1}
   index: {val: 2.6, err: 0.3, err_sys: 0.1}
   ref: 1
-
   erange: {min: 0.4, max: 5}

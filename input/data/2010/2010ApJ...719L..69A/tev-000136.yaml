@@ -7,8 +7,8 @@ data:
   significance: 7.0
 
 pos:
-  ra: {val: 19h30m32s, err: 25s, err_sys: 0.02 deg}
-  dec: {val: +18d52m12s, err: 20s, err_sys: 0.02 deg}
+  ra: {val: 19h30m32s, err: 0h0m25s, err_sys: 0.02d}
+  dec: {val: +18d52m12s, err: 20s, err_sys: 0.02d}
 
 morph:
   type: gauss
@@ -16,10 +16,8 @@ morph:
 
 spec:
   type: pl
-
   norm: {val: 0.75, err: 0.12, err_sys: 0.15}
   index: {val: 2.39, err: 0.23, err_sys: 0.30}
   ref: 1
-
-  theta: 0.15
+  theta: 0.15d
   erange: {min: 0.25, max: 4}

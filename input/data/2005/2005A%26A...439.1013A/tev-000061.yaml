@@ -7,18 +7,16 @@ data:
   significance: 21
 
 pos:
-  ra: {val: 13h3m0.4s, err: 0h0m4.4s, err_sys: 0d0m20s}
-  dec: {val: -63d11m55s, err: 0d0m31s, err_sys: 0d0m20s}
+  ra: {val: 13h3m0.4s, err: 0h0m4.4s, err_sys: 20s}
+  dec: {val: -63d11m55s, err: 31s, err_sys: 20s}
 
 morph:
   type: gauss
-
   sigma: {val: 0.16d, err: 0.02d}
-  #TODO: no pa given in the paper
+  # TODO: no pa given in the paper
 
 spec:
   type: pl
-
   norm: {val: 4.3, err: 0.3}
   index: {val: 2.44, err: 0.05, err_sys: 0.2}
   ref: 1

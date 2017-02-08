@@ -6,17 +6,17 @@ data:
   significance: 7
 
 pos:
-  ra: {val: 10h26m38.4s, err: 21.6s}
-  dec: {val: -58d12m00s, err: 0h1m48s}
+  ra: {val: 10h26m38.4s, err: 0h0m21.6s, err_sys: 20s}
+  dec: {val: -58d12m00s, err: 1m48s, err_sys: 20s}
 
 morph:
   type: gauss
-  sigma: {val: 0.14, err: 0.03}
+  sigma: {val: 0.14d, err: 0.03d}
 
 spec:
   type: pl
   norm: {val: 0.99, err: 0.34, err_sys: 0.2}
   index: {val: 1.94, err: 0.2, err_sys: 0.2}
   ref: 1
-  theta: 0.33
-  erange: {min: 0.8 , max: }
+  theta: 0.33d
+  erange: {min: 0.8}

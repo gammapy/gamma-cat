@@ -12,10 +12,10 @@ pos:
 morph:
   type: gauss
 
-  sigma: {val: 6.4, err: 0.7}
-  sigma2: {val: 2.3, err: 0.5}
+  sigma: {val: 6.4m, err: 0.7m}
+  sigma2: {val: 2.3m, err: 0.5m}
   # TODO: check `pa` orientation. Paper just says "wrt RA axis"
-  pa: {val: 41, err: 13}
+  pa: {val: 41d, err: 13d}
 
 spec:
   type: pl
@@ -25,4 +25,3 @@ spec:
   erange: {min: 0.280, max: 40}
   theta: 0.3
   ref: 1
-

@@ -8,8 +8,8 @@ data:
   excess: 689
 
 pos:
-  glon: {val: 40d23m9.2s, err: 2.4m, err_sys: 20s}
-  glat: {val: -0d47m10.1s, err: 2.4m, err_sys: 20s}
+  glon: {val: 40d23m9.2s, err: 0d2.4m, err_sys: 0d20s}
+  glat: {val: -0d47m10.1s, err: 0d2.4m, err_sys: 0d20s}
 
 morph:
   type: gauss

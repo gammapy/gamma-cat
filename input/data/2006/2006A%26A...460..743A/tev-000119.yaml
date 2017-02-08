@@ -7,8 +7,8 @@ data:
   excess: 1960
 
 pos:
-  glon: {val: 16.879d, err: 0d0m12s, err_sys: 0d0m20s}
-  glat: {val: -1.285d, err: 0d0m12s, err_sys: 0d0m20s}
+  glon: {val: 16.879d, err: 12s, err_sys: 20s}
+  glat: {val: -1.285d, err: 12s, err_sys: 20s}
 
 morph:
   type: point
@@ -17,7 +17,6 @@ spec:
   # TODO: multiple spectra given for this binary, need to add the others.
   # The following spectrum is for <which one you like better>
   type: ecpl
-  
   norm: {val: 2.28, err: 0.10}
   index: {val: 1.85, err: 0.06}
   ecut: {val: 8.7, err: 2.0}

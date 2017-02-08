@@ -11,7 +11,6 @@ morph:
 
 spec:
   type: pl
-
   norm: {val: 21, err: 2, err_sys: 6}
   index: {val: 2.1, err: 0.1, err_sys: 0.2}
   erange: {min: 0.5, max: 15}

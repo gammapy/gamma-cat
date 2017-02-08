@@ -11,16 +11,13 @@ pos:
 
 morph:
   type: shell
-
-  sigma: {val: 0.27, err: 0.02}
+  sigma: {val: 0.27d, err: 0.02d}
 
 # Values taken from Table 1
 spec:
   type: pl
-
   norm: {val: 4.67, err: 0.19} # TODO: add `err_sys_frac=0.2` once that's implemented
   index: {val: 2.32, err: 0.06, err_sys: 0.2}
   ref: 0.783
-
-  theta: 0.3
+  theta: 0.3d
   erange: {min: 0.24}

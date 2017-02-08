@@ -16,9 +16,7 @@ morph:
 
 spec:
   type: pl
-
   norm: {val: 0.17, err: 0.03, err_sys: 0.04}
   index: {val: 2.1, err: 0.2, err_sys: 0.2}
   ref: 1.39
-
-  theta: 0.1
+  theta: 0.1d

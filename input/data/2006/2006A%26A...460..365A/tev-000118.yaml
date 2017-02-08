@@ -9,16 +9,15 @@ data:
   significance: 33.8
 
 pos:
-  ra: {val: 18h25m41s, err: 3s}
-  dec: {val: -13d50m21s, err: 35 arcsec}
+  ra: {val: 18h25m41s, err: 0h0m3s}
+  dec: {val: -13d50m21s, err: 35s}
 
 morph:
   type: gauss
-  sigma: {val: 0.24 deg, err: 0.02 deg}
+  sigma: {val: 0.24d, err: 0.02d}
 
 spec:
   type: ecpl
-
   # Results taken from Table 1 ecpl model
   # TODO: I'm not sure the norm is entered correctly!?
   #       Have to check ECPL parametrization exactly.
@@ -26,6 +25,5 @@ spec:
   index: {val: 2.26, err: 0.03}
   ecut: {val: 24.8, err: 7.2}
   ref: 1
-
-  theta: 0.8
+  theta: 0.8d
   erange: {min: 0.27}

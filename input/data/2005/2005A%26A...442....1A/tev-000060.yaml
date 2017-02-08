@@ -7,7 +7,7 @@ data:
 
 pos:
   ra: {val: 13h2m49.3s, err: 0h0m2.3s}
-  dec: {val: -63d49m53s, err: 0d0m21.1s}
+  dec: {val: -63d49m53s, err: 21.1s}
 
 morph:
   type: point

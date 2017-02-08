@@ -7,8 +7,8 @@ data:
   excess: 2771
 
 pos:
-  ra: {val: 16h46m50s, err: 27s, }
-  dec: {val: -45d49m12s, err: 7m, }
+  ra: {val: 16h46m50s, err: 0h0m27s}
+  dec: {val: -45d49m12s, err: 7m}
 
 morph:
   type: gauss
@@ -19,11 +19,9 @@ morph:
 
 spec:
   type: pl
-
   norm: {val: 9.0, err: 1.4, err_sys: 1.8}
   index: {val: 2.19, err: 0.08, err_sys: 0.20}
   ref: 1
-
-  theta: 1.1
+  theta: 1.1d
   erange: {min: 0.45, max: 75}
 

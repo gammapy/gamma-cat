@@ -11,16 +11,12 @@ pos:
 
 morph:
   type: gauss
-
   sigma: {val: 0.20d, err: 0.02d}
 
 spec:
   type: pl
-  
-  #There is inconsistency in the paper: figure 2 says err_sys for norm: 1, text says 0.4
+  # There is inconsistency in the paper: figure 2 says err_sys for norm: 1, text says 0.4
   norm: {val: 2.7, err: 0.9, err_sys: 0.4}
   index: {val: 2.2, err: 0.2, err_sys: 0.2}
   ref: 1
-
   erange: {min: 1, max: 20}
-  

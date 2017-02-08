@@ -1,4 +1,25 @@
 source_id: 132
 reference_id: 2009A&A...499..723A
 
-# TODO: add data
+data:
+
+  livetime: 27
+  significance: 12.1
+  excess: 689
+
+pos:
+  glon: {val: 40d23m9.2s, err: 0d2.4m, err_sys: 0d20s}
+  glat: {val: -0d47m10.1s, err: 0d2.4m, err_sys: 0d20s}
+
+morph:
+  type: gauss
+
+  # TODO: sigma and sigma2 have assymmetric errors: -0.03, +0.04, no 'pa' value found
+  sigma: {val: 0.34d, err: 0.04d}
+
+spec:
+  type: pl
+
+  norm: {val: 4.14, err: 0.32, err_sys: 0.83}
+  index: {val: 2.1, err: 0.07, err_sys: 0.2}
+  ref: 1

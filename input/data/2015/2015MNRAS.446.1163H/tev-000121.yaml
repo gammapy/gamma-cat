@@ -5,8 +5,8 @@ data:
   significance: 5.6
 
 pos:
-  ra: {val: 18h32m50s, err: 2s, err_sys: 2s}
-  dec: {val: -9d22m36s, err: 32s, err_sys: 20s}
+  ra: {val: 18h32m50s, err: 0h0m3s, err_sys: 0h0m2s}
+  dec: {val: -9d22m36s, err: 0d0m32s, err_sys: 0d0m20s}
 
 morph:
   type: gauss

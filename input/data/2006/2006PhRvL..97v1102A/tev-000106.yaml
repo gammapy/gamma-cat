@@ -1,4 +1,23 @@
 source_id: 106
 reference_id: 2006PhRvL..97v1102A
 
-# TODO: add data
+data:
+  livetime: 48.7
+  significance: 37.9
+  excess: 1863
+
+pos:
+  ra: {val: 17h45m39.44s, err: 0h0m0.6s, err_sys: }
+  dec: {val: -29d0m30.3s, err: 0d0m9.7s, err_sys: }
+
+morph:
+  type: point
+
+spec:
+  type: pl2
+
+  norm: {val: 1.87, err: 0.10, err_sys: 0.30}
+  index: {val: 2.25, err: 0.04, err_sys: 0.10}
+  ref: 1
+  erange: {min: 0.160,  max: 30}
+

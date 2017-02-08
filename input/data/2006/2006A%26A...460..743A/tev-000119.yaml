@@ -1,4 +1,24 @@
 source_id: 119
 reference_id: 2006A&A...460..743A
 
-# TODO: add data
+data:
+  livetime: 69.2
+  significance: 40
+  excess: 1960
+
+pos:
+  glon: {val: 16.879d, err: 0d0m12s, err_sys: 0d0m20s}
+  glat: {val: -1.285d, err: 0d0m12s, err_sys: 0d0m20s}
+
+morph:
+  type: point
+
+spec:
+  # TODO: multiple spectra given for this binary, need to add the others.
+  # The following spectrum is for <which one you like better>
+  type: ecpl
+  
+  norm: {val: 2.28, err: 0.10, err_sys: }
+  index: {val: 1.85, err: 0.06, err_sys: }
+  ecut: {val: 8.7, err: 2.0, err_sys: }
+  erange: {min: 0.2, max: 10}

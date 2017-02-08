@@ -23,4 +23,5 @@ dependencies:
 
   - pip:
     - sphinx-rtd-theme
+    - sphinxcontrib.datatemplates
     - git+https://github.com/gammapy/gammapy.git#egg=gammapy

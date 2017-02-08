@@ -10,3 +10,4 @@ uncertainties
 ads
 astropy
 gammapy
+sphinxcontrib.datatemplates

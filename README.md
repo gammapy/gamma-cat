@@ -2,9 +2,8 @@
 
 An open data collection and source catalog for gamma-ray astronomy.
 
-* Docs: https://gamma-cat.readthedocs.io
-* Data: https://gammapy.github.io/gamma-cat
-* Repo: https://github.com/gammapy/gamma-cat
+* Data & Docs: https://gamma-cat.readthedocs.io
+* Repository: https://github.com/gammapy/gamma-cat
 
 ## See also
 

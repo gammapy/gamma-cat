@@ -5,50 +5,50 @@
   - other_names: SNR G119.5+10.2
   - reference_id: 2013ApJ...764...38A
   - classes: pwn,snr
-  - significance: .nan
-  - livetime: .nan
+  - significance: 7.5
+  - livetime: 41.25
   - ra: 1.649999976158142
   - dec: 72.78299713134766
   - glon: 119.58025360107422
   - glat: 10.203681945800781
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
-  - morph_sigma2: .nan
-  - morph_sigma2_err: .nan
-  - morph_pa: .nan
-  - morph_pa_err: .nan
-  - morph_pa_frame: ''
-  - spec_type: ''
+  - pos_ra: 1.6083333492279053
+  - pos_dec: 72.98361206054688
+  - pos_glon: 119.6039047241211
+  - pos_glat: 10.403316497802734
+  - pos_err: 0.05999999865889549
+  - morph_type: gauss
+  - morph_sigma: 0.30000001192092896
+  - morph_sigma_err: 0.029999999329447746
+  - morph_sigma2: 0.23999999463558197
+  - morph_sigma2_err: 0.029999999329447746
+  - morph_pa: 17.399999618530273
+  - morph_pa_err: 15.800000190734863
+  - morph_pa_frame: radec
+  - spec_type: pl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 3.0
+  - spec_norm: 9.100000213004694e-14
+  - spec_norm_err: 1.29999999412783e-14
+  - spec_norm_err_sys: 1.700000037930475e-14
+  - spec_norm_err_tot: 2.14009345455516e-14
+  - spec_norm_1TeV: 1.0202536515277472e-12
+  - spec_norm_1TeV_err: 2.6738846054842613e-13
+  - spec_index: 2.200000047683716
+  - spec_index_err: 0.20000000298023224
+  - spec_index_err_sys: 0.30000001192092896
+  - spec_index_err_tot: 0.36055514216423035
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
+  - spec_flux_above_1TeV: 8.502112859229416e-13
+  - spec_flux_above_1TeV_err: 1.295647752497589e-13
+  - spec_flux_above_1TeV_crab: 2.558084487915039
+  - spec_flux_above_1TeV_crab_err: 0.38982975482940674
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_energy_flux_1TeV_10TeV: 1.8825856672177732e-12
+  - spec_energy_flux_1TeV_10TeV_err: 2.6927039157437216e-13
 - !!omap
   - source_id: 2
   - common_name: SHBL J001355.9-185406
@@ -321,7 +321,7 @@
   - pos_dec: -38.19944381713867
   - pos_glon: 348.6388244628906
   - pos_glat: 0.38820934295654297
-  - pos_err: 0.0037267799489200115
+  - pos_err: 0.014433756470680237
   - morph_type: gauss
   - morph_sigma: 0.04333333298563957
   - morph_sigma_err: 0.013333333656191826
@@ -1902,7 +1902,7 @@
   - pos_dec: -45.599998474121094
   - pos_glon: 263.8556823730469
   - pos_glat: -3.089031219482422
-  - pos_err: 0.008606629446148872
+  - pos_err: .nan
   - morph_type: gauss
   - morph_sigma: 0.47999998927116394
   - morph_sigma_err: 0.029999999329447746
@@ -2259,7 +2259,7 @@
   - pos_dec: -58.97999954223633
   - pos_glon: 284.11175537109375
   - pos_glat: -1.8902121782302856
-  - pos_err: 0.0016666667070239782
+  - pos_err: 0.05000000074505806
   - morph_type: gauss
   - morph_sigma: 0.15000000596046448
   - morph_sigma_err: 0.029999999329447746
@@ -2300,18 +2300,18 @@
   - other_names: SNR G284.3-01.8,MSH 10-53
   - reference_id: 2015A&A...577A.131H
   - classes: bin
-  - significance: .nan
-  - livetime: .nan
+  - significance: 9.300000190734863
+  - livetime: 63.29999923706055
   - ra: 154.5749969482422
   - dec: -59.0
   - glon: 284.3140869140625
   - glat: -1.7795172929763794
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
+  - pos_ra: 154.74166870117188
+  - pos_dec: -58.94527816772461
+  - pos_glon: 284.3556823730469
+  - pos_glat: -1.6865339279174805
+  - pos_err: 0.013176157139241695
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -2319,31 +2319,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
+  - spec_type: pl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 1.0
+  - spec_norm: 2.9000001185164326e-13
+  - spec_norm_err: 3.99999992980668e-14
+  - spec_norm_err_sys: 5.79999983045705e-14
+  - spec_norm_err_tot: 7.045565845152646e-14
+  - spec_norm_1TeV: 2.9000001185164326e-13
+  - spec_norm_1TeV_err: 3.99999992980668e-14
+  - spec_index: 2.200000047683716
+  - spec_index_err: 0.14000000059604645
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.24413111805915833
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
+  - spec_flux_above_1TeV: 2.4166665847299984e-13
+  - spec_flux_above_1TeV_err: 4.365817196693225e-14
+  - spec_flux_above_1TeV_crab: 0.7271177172660828
+  - spec_flux_above_1TeV_crab_err: 0.1313571035861969
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_energy_flux_1TeV_10TeV: 5.35111831147933e-13
+  - spec_energy_flux_1TeV_10TeV_err: 1.0859250375002197e-13
 - !!omap
   - source_id: 46
   - common_name: Westerlund 2
@@ -3126,7 +3126,7 @@
   - pos_dec: -63.1775016784668
   - pos_glon: 304.2132568359375
   - pos_glat: -0.33402344584465027
-  - pos_err: 0.0023570226039737463
+  - pos_err: 0.009128709323704243
   - morph_type: gauss
   - morph_sigma: 0.1940000057220459
   - morph_sigma_err: 0.00800000037997961
@@ -3269,50 +3269,50 @@
   - other_names: PSR J1357-6429
   - reference_id: 2011A&A...533A.103H
   - classes: pwn
-  - significance: .nan
-  - livetime: .nan
+  - significance: 10.0
+  - livetime: 10.0
   - ra: 209.0
   - dec: -64.5
   - glon: 309.81207275390625
   - glat: -2.4941415786743164
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
+  - pos_ra: 209.0
+  - pos_dec: -64.5
+  - pos_glon: 309.81207275390625
+  - pos_glat: -2.4941415786743164
+  - pos_err: 0.03333333507180214
+  - morph_type: gauss
+  - morph_sigma: 0.20000000298023224
+  - morph_sigma_err: 0.019999999552965164
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_type: pl
+  - spec_erange_min: 1.0
+  - spec_erange_max: 20.0
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 1.0
+  - spec_norm: 2.6999999458432455e-12
+  - spec_norm_err: 9.000000180878209e-13
+  - spec_norm_err_sys: 3.99999992980668e-13
+  - spec_norm_err_tot: 9.848857840388803e-13
+  - spec_norm_1TeV: 2.6999999458432455e-12
+  - spec_norm_1TeV_err: 9.000000180878209e-13
+  - spec_index: 2.200000047683716
+  - spec_index_err: 0.20000000298023224
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.2828427255153656
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_flux_above_1TeV: 2.2499998825892265e-12
+  - spec_flux_above_1TeV_err: 8.385252670169152e-13
+  - spec_flux_above_1TeV_crab: 6.769716739654541
+  - spec_flux_above_1TeV_crab_err: 2.5229239463806152
+  - spec_flux_above_erange_min: 2.2499998825892265e-12
+  - spec_flux_above_erange_min_err: 8.385252670169152e-13
+  - spec_energy_flux_1TeV_10TeV: 4.982075949705456e-12
+  - spec_energy_flux_1TeV_10TeV_err: 1.969843342261579e-12
 - !!omap
   - source_id: 65
   - common_name: HESS J1418-609
@@ -3330,7 +3330,7 @@
   - pos_dec: -60.975276947021484
   - pos_glon: 313.2469482421875
   - pos_glat: 0.14962680637836456
-  - pos_err: 0.004347910173237324
+  - pos_err: 0.01683938317000866
   - morph_type: gauss
   - morph_sigma: 0.08166666328907013
   - morph_sigma_err: 0.02500000037252903
@@ -3377,11 +3377,11 @@
   - dec: -60.97829818725586
   - glon: 313.32611083984375
   - glat: 0.11877414584159851
-  - pos_ra: 215.01666259765625
+  - pos_ra: 215.03750610351562
   - pos_dec: -60.7599983215332
-  - pos_glon: 313.54803466796875
-  - pos_glat: 0.2718598246574402
-  - pos_err: 0.004157396964728832
+  - pos_glon: 313.5576171875
+  - pos_glat: 0.26844245195388794
+  - pos_err: 0.012171612121164799
   - morph_type: gauss
   - morph_sigma: 0.054999999701976776
   - morph_sigma_err: 0.008333333767950535
@@ -3585,7 +3585,7 @@
   - pos_dec: -62.43000030517578
   - pos_glon: 315.4337463378906
   - pos_glat: -2.2946720123291016
-  - pos_err: 0.03354102000594139
+  - pos_err: 0.02958039939403534
   - morph_type: shell
   - morph_sigma: 0.1899999976158142
   - morph_sigma_err: 0.029999999329447746
@@ -3983,50 +3983,50 @@
   - other_names: G320.3-01.1,MSH 15-52
   - reference_id: 2005A&A...435L..17A
   - classes: pwn
-  - significance: .nan
-  - livetime: .nan
+  - significance: 25.0
+  - livetime: 22.100000381469727
   - ra: 228.32080078125
   - dec: -59.08169937133789
   - glon: 320.278076171875
   - glat: -1.072826623916626
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
-  - morph_sigma2: .nan
-  - morph_sigma2_err: .nan
-  - morph_pa: .nan
-  - morph_pa_err: .nan
-  - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
-  - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - pos_ra: 228.52915954589844
+  - pos_dec: -59.157501220703125
+  - pos_glon: 320.3303527832031
+  - pos_glat: -1.193045735359192
+  - pos_err: 0.016351180151104927
+  - morph_type: gauss
+  - morph_sigma: 0.1066666692495346
+  - morph_sigma_err: 0.011666666716337204
+  - morph_sigma2: 0.038333334028720856
+  - morph_sigma2_err: 0.008333333767950535
+  - morph_pa: 41.0
+  - morph_pa_err: 13.0
+  - morph_pa_frame: radec
+  - spec_type: pl
+  - spec_erange_min: 0.2800000011920929
+  - spec_erange_max: 40.0
+  - spec_theta: 0.30000001192092896
+  - spec_ref: 1.0
+  - spec_norm: 5.699999933855837e-12
+  - spec_norm_err: 1.99999996490334e-13
+  - spec_norm_err_sys: 1.4000000160899195e-12
+  - spec_norm_err_tot: 1.4142135813105527e-12
+  - spec_norm_1TeV: 5.699999933855837e-12
+  - spec_norm_1TeV_err: 1.99999996490334e-13
+  - spec_index: 2.2699999809265137
+  - spec_index_err: 0.029999999329447746
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.20223748683929443
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_flux_above_1TeV: 4.488188900392265e-12
+  - spec_flux_above_1TeV_err: 1.8984289238289237e-13
+  - spec_flux_above_1TeV_crab: 13.503897666931152
+  - spec_flux_above_1TeV_crab_err: 0.5711923241615295
+  - spec_flux_above_erange_min: 2.260374699913914e-11
+  - spec_flux_above_erange_min_err: 8.587470469965941e-13
+  - spec_energy_flux_1TeV_10TeV: 9.77377293681636e-12
+  - spec_energy_flux_1TeV_10TeV_err: 4.575007365135997e-13
 - !!omap
   - source_id: 80
   - common_name: AP Librae
@@ -4238,50 +4238,50 @@
   - other_names: ''
   - reference_id: 2011A&A...531L..18H
   - classes: unid
-  - significance: .nan
-  - livetime: .nan
+  - significance: 7.5
+  - livetime: 62.0
   - ra: 243.5625
   - dec: -51.81908416748047
   - glon: 331.5122985839844
   - glat: -0.5732107758522034
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
-  - morph_sigma2: .nan
-  - morph_sigma2_err: .nan
-  - morph_pa: .nan
-  - morph_pa_err: .nan
-  - morph_pa_frame: ''
-  - spec_type: ''
+  - pos_ra: 266.95416259765625
+  - pos_dec: -24.808332443237305
+  - pos_glon: 3.7834277153015137
+  - pos_glat: 1.7230453491210938
+  - pos_err: 0.06708204001188278
+  - morph_type: gauss
+  - morph_sigma: 0.1599999964237213
+  - morph_sigma_err: 0.03999999910593033
+  - morph_sigma2: 0.029999999329447746
+  - morph_sigma2_err: 0.019999999552965164
+  - morph_pa: 92.0
+  - morph_pa_err: 6.0
+  - morph_pa_frame: radec
+  - spec_type: pl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
+  - spec_ref: 1.0
+  - spec_norm: 5.200000044273956e-13
+  - spec_norm_err: 1.100000014578155e-13
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_norm_1TeV: 5.200000044273956e-13
+  - spec_norm_1TeV_err: 1.100000014578155e-13
+  - spec_index: 2.5
+  - spec_index_err: 0.30000001192092896
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.36055514216423035
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
+  - spec_flux_above_1TeV: 3.466666786532818e-13
+  - spec_flux_above_1TeV_err: 1.009202080628005e-13
+  - spec_flux_above_1TeV_crab: 1.0430378913879395
+  - spec_flux_above_1TeV_crab_err: 0.3036450147628784
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_energy_flux_1TeV_10TeV: 7.111231091830317e-13
+  - spec_energy_flux_1TeV_10TeV_err: 2.4985379433808963e-13
 - !!omap
   - source_id: 84
   - common_name: HESS J1616-508
@@ -4494,49 +4494,49 @@
   - reference_id: 2014MNRAS.439.2828A
   - classes: pwn
   - significance: .nan
-  - livetime: .nan
+  - livetime: 63.400001525878906
   - ra: 250.125
   - dec: -46.54999923706055
   - glon: 338.2771301269531
   - glat: -0.0035156295634806156
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
+  - pos_ra: 250.17083740234375
+  - pos_dec: -46.54194259643555
+  - pos_glon: 338.3040466308594
+  - pos_glat: -0.02178231067955494
+  - pos_err: 0.0040253824554383755
+  - morph_type: gauss
+  - morph_sigma: 0.0716666653752327
+  - morph_sigma_err: 0.0033333334140479565
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
+  - spec_type: ecpl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
-  - spec_ecut: .nan
-  - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
+  - spec_ref: 1.0
+  - spec_norm: 3.3000000301819377e-12
+  - spec_norm_err: 9.9999998245167e-14
+  - spec_norm_err_sys: 5.999999759184749e-13
+  - spec_norm_err_tot: 6.08276233202143e-13
+  - spec_norm_1TeV: 2.793389651534195e-12
+  - spec_norm_1TeV_err: 1.7677309269159558e-13
+  - spec_index: 2.109999895095825
+  - spec_index_err: 0.09000000357627869
+  - spec_index_err_sys: 0.10000000149011612
+  - spec_index_err_tot: 0.1345362365245819
+  - spec_ecut: 6.0
+  - spec_ecut_err: 2.0
+  - spec_flux_above_1TeV: 1.9056416600965465e-12
+  - spec_flux_above_1TeV_err: 2.5448249735791906e-13
+  - spec_flux_above_1TeV_crab: 5.733624458312988
+  - spec_flux_above_1TeV_crab_err: 0.7656776309013367
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_energy_flux_1TeV_10TeV: 3.874851394608525e-12
+  - spec_energy_flux_1TeV_10TeV_err: 7.083103634869525e-13
 - !!omap
   - source_id: 89
   - common_name: HESS J1641-463
@@ -4554,7 +4554,7 @@
   - pos_dec: -46.303611755371094
   - pos_glon: 338.52276611328125
   - pos_glat: 0.09060640633106232
-  - pos_err: 0.0028463751077651978
+  - pos_err: 0.011023963801562786
   - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
@@ -4595,18 +4595,18 @@
   - other_names: Wd 1,CXOU J164710.2 - 455216,4U 1642-45,PSR J1648-4611
   - reference_id: 2012A&A...537A.114A
   - classes: unid
-  - significance: .nan
-  - livetime: .nan
+  - significance: 20.0
+  - livetime: 33.79999923706055
   - ra: 251.5
   - dec: -45.79999923706055
   - glon: 339.4678955078125
   - glat: -0.22942107915878296
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
+  - pos_ra: 251.7083282470703
+  - pos_dec: -45.81999969482422
+  - pos_glon: 339.5469055175781
+  - pos_glat: -0.35288503766059875
+  - pos_err: 0.11456438899040222
+  - morph_type: gauss
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -4614,31 +4614,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
-  - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_type: pl
+  - spec_erange_min: 0.44999998807907104
+  - spec_erange_max: 75.0
+  - spec_theta: 1.100000023841858
+  - spec_ref: 1.0
+  - spec_norm: 9.000000397718644e-12
+  - spec_norm_err: 1.4000000160899195e-12
+  - spec_norm_err_sys: 1.8000000361756419e-12
+  - spec_norm_err_tot: 2.280350821365351e-12
+  - spec_norm_1TeV: 9.000000397718644e-12
+  - spec_norm_1TeV_err: 1.4000000160899195e-12
+  - spec_index: 2.190000057220459
+  - spec_index_err: 0.07999999821186066
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.215406596660614
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_flux_above_1TeV: 7.563024859158496e-12
+  - spec_flux_above_1TeV_err: 1.2816364722972873e-12
+  - spec_flux_above_1TeV_crab: 22.75535011291504
+  - spec_flux_above_1TeV_crab_err: 3.8561408519744873
+  - spec_flux_above_erange_min: 1.956017119109088e-11
+  - spec_flux_above_erange_min_err: 3.0433971315302344e-12
+  - spec_energy_flux_1TeV_10TeV: 1.678479924493992e-11
+  - spec_energy_flux_1TeV_10TeV_err: 2.9786388199698477e-12
 - !!omap
   - source_id: 91
   - common_name: Markarian 501
@@ -4755,10 +4755,10 @@
   - glon: 343.0646667480469
   - glat: -2.3295421600341797
   - pos_ra: 257.04583740234375
-  - pos_dec: -44.00555419921875
-  - pos_glon: 343.320556640625
-  - pos_glat: -2.1798856258392334
-  - pos_err: 0.0022906141821295023
+  - pos_dec: -44.33333206176758
+  - pos_glon: 343.0575256347656
+  - pos_glat: -2.3757567405700684
+  - pos_err: 0.06871842592954636
   - morph_type: gauss
   - morph_sigma: 0.28999999165534973
   - morph_sigma_err: 0.03999999910593033
@@ -4962,7 +4962,7 @@
   - pos_dec: -37.444332122802734
   - pos_glon: 349.71966552734375
   - pos_glat: 0.17397509515285492
-  - pos_err: 0.001924500917084515
+  - pos_err: 0.007453559897840023
   - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
@@ -5013,14 +5013,14 @@
   - pos_dec: -38.54999923706055
   - pos_glon: 348.8336181640625
   - pos_glat: -0.48810523748397827
-  - pos_err: 0.006804137956351042
+  - pos_err: 0.02635231427848339
   - morph_type: gauss
   - morph_sigma: 0.15000000596046448
   - morph_sigma_err: 0.03333333507180214
   - morph_sigma2: 0.06666667014360428
   - morph_sigma2_err: 0.01666666753590107
   - morph_pa: 33.0
-  - morph_pa_err: 0.0
+  - morph_pa_err: .nan
   - morph_pa_frame: radec
   - spec_type: ecpl
   - spec_erange_min: 0.44999998807907104
@@ -5421,7 +5421,7 @@
   - pos_dec: -29.00611114501953
   - pos_glon: 359.94488525390625
   - pos_glat: -0.043911051005125046
-  - pos_err: 0.0004303314781282097
+  - pos_err: 0.0016666667070239782
   - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
@@ -5931,14 +5931,14 @@
   - pos_dec: -19.299999237060547
   - pos_glon: 11.180027961730957
   - pos_glat: -0.08741828054189682
-  - pos_err: 0.010540925897657871
+  - pos_err: 0.040824830532073975
   - morph_type: gauss
   - morph_sigma: 0.5333333611488342
   - morph_sigma_err: 0.06666667014360428
   - morph_sigma2: 0.25
   - morph_sigma2_err: 0.03333333507180214
   - morph_pa: 50.0
-  - morph_pa_err: 0.0
+  - morph_pa_err: .nan
   - morph_pa_frame: radec
   - spec_type: pl
   - spec_erange_min: 0.25
@@ -6074,18 +6074,18 @@
   - other_names: ''
   - reference_id: 2014A&A...562A..40H
   - classes: pwn,snr
-  - significance: .nan
-  - livetime: .nan
+  - significance: 8.199999809265137
+  - livetime: 120.0
   - ra: 274.5
   - dec: -15.449999809265137
   - glon: 15.4149169921875
   - glat: 0.18568718433380127
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
+  - pos_ra: 274.5199890136719
+  - pos_dec: -15.466944694519043
+  - pos_glon: 15.40913200378418
+  - pos_glat: 0.16068251430988312
+  - pos_err: 0.012421047315001488
+  - morph_type: gauss
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -6093,31 +6093,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_type: pl
+  - spec_erange_min: 0.41999998688697815
+  - spec_erange_max: 12.0
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 1.899999976158142
+  - spec_norm: 9.000000180878209e-14
+  - spec_norm_err: 1.99999996490334e-14
+  - spec_norm_err_sys: 1.99999996490334e-14
+  - spec_norm_err_tot: 2.828427155844842e-14
+  - spec_norm_1TeV: 3.93890757684201e-13
+  - spec_norm_1TeV_err: 1.1582035786168732e-13
+  - spec_index: 2.299999952316284
+  - spec_index_err: 0.30000001192092896
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.36055514216423035
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_flux_above_1TeV: 3.0299287384627505e-13
+  - spec_flux_above_1TeV_err: 6.831999023590093e-14
+  - spec_flux_above_1TeV_crab: 0.9116338491439819
+  - spec_flux_above_1TeV_crab_err: 0.2055586725473404
+  - spec_flux_above_erange_min: 9.358545839319166e-13
+  - spec_flux_above_erange_min_err: 2.939882495431312e-13
+  - spec_energy_flux_1TeV_10TeV: 6.549258206069164e-13
+  - spec_energy_flux_1TeV_10TeV_err: 1.6338758688019817e-13
 - !!omap
   - source_id: 161
   - common_name: HESS J1826-130
@@ -6186,7 +6186,7 @@
   - pos_dec: -13.839166641235352
   - pos_glon: 17.710416793823242
   - pos_glat: -0.6970040202140808
-  - pos_err: 0.0028463751077651978
+  - pos_err: 0.011023963801562786
   - morph_type: gauss
   - morph_sigma: 0.23999999463558197
   - morph_sigma_err: 0.019999999552965164
@@ -6227,18 +6227,18 @@
   - other_names: RX J1826.2-1450
   - reference_id: 2006A&A...460..743A
   - classes: bin
-  - significance: .nan
-  - livetime: .nan
+  - significance: 40.0
+  - livetime: 69.19999694824219
   - ra: 276.562744140625
   - dec: -14.848405838012695
   - glon: 16.8815860748291
   - glat: -1.2892162799835205
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
+  - pos_ra: 276.5576171875
+  - pos_dec: -14.848729133605957
+  - pos_glon: 16.878999710083008
+  - pos_glat: -1.284999966621399
+  - pos_err: 0.0033333334140479565
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -6246,31 +6246,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_type: ecpl
+  - spec_erange_min: 0.20000000298023224
+  - spec_erange_max: 10.0
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
+  - spec_ref: 1.0
+  - spec_norm: 2.279999973542335e-12
+  - spec_norm_err: 9.9999998245167e-14
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
-  - spec_ecut: .nan
-  - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_norm_1TeV: 2.0324315147535188e-12
+  - spec_norm_1TeV_err: 1.0406911064245877e-13
+  - spec_index: 1.850000023841858
+  - spec_index_err: 0.05999999865889549
+  - spec_index_err_sys: 0.10000000149011612
+  - spec_index_err_tot: 0.1166190356016159
+  - spec_ecut: 8.699999809265137
+  - spec_ecut_err: 2.0
+  - spec_flux_above_1TeV: 1.763641966842644e-12
+  - spec_flux_above_1TeV_err: 1.6420994067550126e-13
+  - spec_flux_above_1TeV_crab: 5.3063812255859375
+  - spec_flux_above_1TeV_crab_err: 0.49406886100769043
+  - spec_flux_above_erange_min: 9.252468582965356e-12
+  - spec_flux_above_erange_min_err: 5.850811371846398e-13
+  - spec_energy_flux_1TeV_10TeV: 4.050791386350783e-12
+  - spec_energy_flux_1TeV_10TeV_err: 4.843247114125204e-13
 - !!omap
   - source_id: 162
   - common_name: HESS J1828-099
@@ -6480,7 +6480,7 @@
   - common_name: HESS J1833-105
   - gamma_names: HESS J1833-105
   - other_names: G21.5-0.9,PSR J1833-1034
-  - reference_id: 2015MNRAS.446.1163H
+  - reference_id: ''
   - classes: pwn
   - significance: .nan
   - livetime: .nan
@@ -7095,50 +7095,50 @@
   - other_names: GeV J1907+0557,GRO J1908+0556,G40.5-0.5,0FGL J1907.5+0602,1AGL J1908+0613
   - reference_id: 2009A&A...499..723A
   - classes: unid
-  - significance: .nan
-  - livetime: .nan
+  - significance: 12.100000381469727
+  - livetime: 27.0
   - ra: 287.17498779296875
   - dec: 6.183000087738037
   - glon: 40.40083312988281
   - glat: -1.0009838342666626
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
+  - pos_ra: 286.9762268066406
+  - pos_dec: 6.268661975860596
+  - pos_glon: 40.385887145996094
+  - pos_glat: -0.7861388921737671
+  - pos_err: 0.03999999910593033
+  - morph_type: gauss
+  - morph_sigma: 0.3400000035762787
+  - morph_sigma_err: 0.03999999910593033
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
+  - spec_type: pl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 1.0
+  - spec_norm: 4.139999974783759e-12
+  - spec_norm_err: 3.199999943845344e-13
+  - spec_norm_err_sys: 8.300000227043358e-13
+  - spec_norm_err_tot: 8.89550423339297e-13
+  - spec_norm_1TeV: 4.139999974783759e-12
+  - spec_norm_1TeV_err: 3.199999943845344e-13
+  - spec_index: 2.0999999046325684
+  - spec_index_err: 0.07000000029802322
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.21189619600772858
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
+  - spec_flux_above_1TeV: 3.763635236797569e-12
+  - spec_flux_above_1TeV_err: 3.7681535951412937e-13
+  - spec_flux_above_1TeV_crab: 11.323887825012207
+  - spec_flux_above_1TeV_crab_err: 1.133748173713684
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_energy_flux_1TeV_10TeV: 8.514811251914e-12
+  - spec_energy_flux_1TeV_10TeV_err: 9.320037146556825e-13
 - !!omap
   - source_id: 133
   - common_name: W 49B
@@ -7309,7 +7309,7 @@
   - pos_dec: 18.8700008392334
   - pos_glon: 54.09925079345703
   - pos_glat: 0.25846338272094727
-  - pos_err: 0.006211299914866686
+  - pos_err: 0.024056261405348778
   - morph_type: gauss
   - morph_sigma: 0.054999999701976776
   - morph_sigma_err: 0.008333333767950535

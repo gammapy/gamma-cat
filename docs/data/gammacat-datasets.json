@@ -328,7 +328,12 @@
             "reference_id": "2006ApJ...641..740R",
             "path": "2006/2006ApJ...641..740R",
             "url": "2006/2006ApJ...641..740R",
-            "sources": []
+            "sources": [
+                {
+                    "source_id": 49,
+                    "reference_id": "2006ApJ...641..740R"
+                }
+            ]
         },
         {
             "reference_id": "2006PhRvL..97v1102A",
@@ -905,7 +910,7 @@
             "url": "2015/2015MNRAS.446.1163H",
             "sources": [
                 {
-                    "source_id": 122,
+                    "source_id": 121,
                     "reference_id": "2015MNRAS.446.1163H"
                 }
             ]

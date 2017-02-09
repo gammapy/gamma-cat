@@ -72,7 +72,6 @@ class GammaCatSource:
         data['glon'] = galactic.l.deg
         data['glat'] = galactic.b.deg
 
-
     @staticmethod
     def fill_position_info(data, dsi):
         try:
@@ -110,7 +109,6 @@ class GammaCatSource:
 
         data['pos_err'] = np.sqrt(x_err * y_err)
 
-
     @staticmethod
     def fill_data_info(data, dsi):
         try:
@@ -139,7 +137,7 @@ class GammaCatSource:
         except KeyError:
             data['spec_erange_max'] = NA.fill_value['number']
         try:
-            data['spec_theta'] = dsi['spec']['theta']
+            data['spec_theta'] = Angle(dsi['spec']['theta']).degree
         except KeyError:
             data['spec_theta'] = NA.fill_value['number']
 
@@ -413,8 +411,10 @@ class GammaCatMaker:
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
+            log.info('Processing source_id: {}'.format(source_id))
             try:
-                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id(internal=internal)
+                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id(
+                    internal=internal)
             except IndexError:
                 reference_id = None
             dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)

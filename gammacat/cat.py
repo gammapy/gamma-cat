@@ -28,6 +28,8 @@ class GammaCatSource:
     """Gather data for one source in gamma-cat.
     """
 
+    SED_ARRAY_LEN = 40
+
     def __init__(self, data):
         self.data = data
         self.fill_derived_spectral_info()
@@ -75,8 +77,8 @@ class GammaCatSource:
     @staticmethod
     def fill_position_info(data, dsi):
         try:
-            data['pos_glon'] = Angle(dsi['pos']['glon']['val'], unit='deg').degree
-            data['pos_glat'] = Angle(dsi['pos']['glat']['val'], unit='deg').degree
+            data['pos_glon'] = Angle(dsi['pos']['glon']['val']).degree
+            data['pos_glat'] = Angle(dsi['pos']['glat']['val']).degree
 
             galactic = SkyCoord(data['pos_glon'], data['pos_glat'], frame='galactic', unit='deg')
             data['pos_ra'] = galactic.icrs.ra.deg
@@ -84,8 +86,8 @@ class GammaCatSource:
 
         except KeyError:
             try:
-                data['pos_ra'] = Angle(dsi['pos']['ra']['val'], unit='deg').degree
-                data['pos_dec'] = Angle(dsi['pos']['dec']['val'], unit='deg').degree
+                data['pos_ra'] = Angle(dsi['pos']['ra']['val']).degree
+                data['pos_dec'] = Angle(dsi['pos']['dec']['val']).degree
 
                 icrs = SkyCoord(data['pos_ra'], data['pos_dec'], unit='deg')
                 data['pos_glon'] = icrs.galactic.l.deg
@@ -97,12 +99,12 @@ class GammaCatSource:
                 data['pos_glat'] = NA.fill_value['number']
 
         try:
-            x_err = Angle(dsi['pos']['glon']['err'], unit='deg').degree
-            y_err = Angle(dsi['pos']['glat']['err'], unit='deg').degree
+            x_err = Angle(dsi['pos']['glon']['err']).degree
+            y_err = Angle(dsi['pos']['glat']['err']).degree
         except KeyError:
             try:
-                x_err = Angle(dsi['pos']['ra']['err'], unit='deg').degree
-                y_err = Angle(dsi['pos']['dec']['err'], unit='deg').degree
+                x_err = Angle(dsi['pos']['ra']['err']).degree
+                y_err = Angle(dsi['pos']['dec']['err']).degree
             except KeyError:
                 x_err = NA.fill_value['number']
                 y_err = NA.fill_value['number']
@@ -181,7 +183,7 @@ class GammaCatSource:
             data['spec_ecut_err'] = NA.fill_value['number']
 
     @staticmethod
-    def fill_sed_info(data, sed_info, shape=(40,)):
+    def fill_sed_info(data, sed_info, shape=(SED_ARRAY_LEN,)):
         """
         Fill flux point info data.
         """
@@ -308,13 +310,12 @@ class GammaCatSource:
             data['morph_type'] = dsi['morph']['type']
         except KeyError:
             data['morph_type'] = NA.fill_value['string']
+
         try:
-            val = dsi['morph']['sigma']['val']
+            val = Angle(dsi['morph']['sigma']['val']).degree
         except KeyError:
             val = NA.fill_value['number']
-        # TODO: the explicit conversion to degree should be avoided and
-        # rather made on the whole column
-        data['morph_sigma'] = Angle(val, 'deg').degree
+        data['morph_sigma'] = val
 
         try:
             err = dsi['morph']['sigma']['err']
@@ -411,17 +412,19 @@ class GammaCatMaker:
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
-            log.info('Processing source_id: {}'.format(source_id))
+            log.info('Processing : {}'.format(basic_source_info))
             try:
-                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id(
-                    internal=internal)
+                config = input_data.gammacat_dataset_config.get_source_by_id(source_id)
+                reference_id = config.get_reference_id(internal=internal)
             except IndexError:
                 reference_id = None
+
+            # TODO: right now this implies, that a GammaCatSource object can only
+            # handle the information from one dataset, maybe this should be changed
             dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
             dataset_source_info = dataset.get_source_by_id(source_id)
             sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
-            # TODO: right now this implies, that a GammaCatSource object can only
-            # handle the information from one dataset, maybe this should be changed
+
             source = GammaCatSource.from_inputs(
                 basic_source_info=basic_source_info,
                 dataset_source_info=dataset_source_info,

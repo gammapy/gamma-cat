@@ -281,6 +281,7 @@ class SEDList:
             sed.process()
 
     def get_sed_by_source_and_reference_id(self, source_id, reference_id):
+        # return self._sed_lookup[reference_id][source_id]
         try:
             return self._sed_lookup[reference_id][source_id]
         except KeyError:

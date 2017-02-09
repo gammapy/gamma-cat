@@ -4236,52 +4236,52 @@
   - common_name: HESS J1614-518
   - gamma_names: HESS J1614-518
   - other_names: ''
-  - reference_id: 2011A&A...531L..18H
+  - reference_id: 2006ApJ...636..777A
   - classes: unid
-  - significance: 7.5
-  - livetime: 62.0
+  - significance: 10.100000381469727
+  - livetime: 9.800000190734863
   - ra: 243.5625
   - dec: -51.81908416748047
   - glon: 331.5122985839844
   - glat: -0.5732107758522034
-  - pos_ra: 266.95416259765625
-  - pos_dec: -24.808332443237305
-  - pos_glon: 3.7834277153015137
-  - pos_glat: 1.7230453491210938
-  - pos_err: 0.06708204001188278
+  - pos_ra: 243.57908630371094
+  - pos_dec: -51.81871032714844
+  - pos_glon: 331.5199890136719
+  - pos_glat: -0.5799999833106995
+  - pos_err: 0.024494897574186325
   - morph_type: gauss
-  - morph_sigma: 0.1599999964237213
-  - morph_sigma_err: 0.03999999910593033
-  - morph_sigma2: 0.029999999329447746
+  - morph_sigma: 0.23000000417232513
+  - morph_sigma_err: 0.019999999552965164
+  - morph_sigma2: 0.15000000596046448
   - morph_sigma2_err: 0.019999999552965164
-  - morph_pa: 92.0
-  - morph_pa_err: 6.0
-  - morph_pa_frame: radec
-  - spec_type: pl
-  - spec_erange_min: .nan
+  - morph_pa: 49.0
+  - morph_pa_err: 10.0
+  - morph_pa_frame: galactic
+  - spec_type: pl2
+  - spec_erange_min: 0.20000000298023224
   - spec_erange_max: .nan
-  - spec_theta: .nan
-  - spec_ref: 1.0
-  - spec_norm: 5.200000044273956e-13
-  - spec_norm_err: 1.100000014578155e-13
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: 5.200000044273956e-13
-  - spec_norm_1TeV_err: 1.100000014578155e-13
-  - spec_index: 2.5
-  - spec_index_err: 0.30000001192092896
+  - spec_theta: 0.4000000059604645
+  - spec_ref: 0.20000000298023224
+  - spec_norm: 5.780000089661286e-11
+  - spec_norm_err: 7.7000003595451e-12
+  - spec_norm_err_sys: 2.9999998795923744e-13
+  - spec_norm_err_tot: 7.705842040850452e-12
+  - spec_norm_1TeV: 8.049789133879326e-12
+  - spec_norm_1TeV_err: 1.8344958798571787e-12
+  - spec_index: 2.4600000381469727
+  - spec_index_err: 0.20000000298023224
   - spec_index_err_sys: 0.20000000298023224
-  - spec_index_err_tot: 0.36055514216423035
+  - spec_index_err_tot: 0.2828427255153656
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 3.466666786532818e-13
-  - spec_flux_above_1TeV_err: 1.009202080628005e-13
-  - spec_flux_above_1TeV_crab: 1.0430378913879395
-  - spec_flux_above_1TeV_crab_err: 0.3036450147628784
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 7.111231091830317e-13
-  - spec_energy_flux_1TeV_10TeV_err: 2.4985379433808963e-13
+  - spec_flux_above_1TeV: 5.513554023062195e-12
+  - spec_flux_above_1TeV_err: 1.9207328869758067e-12
+  - spec_flux_above_1TeV_crab: 16.588977813720703
+  - spec_flux_above_1TeV_crab_err: 5.779030799865723
+  - spec_flux_above_erange_min: 5.780000089661286e-11
+  - spec_flux_above_erange_min_err: 7.7000003595451e-12
+  - spec_energy_flux_1TeV_10TeV: 1.1431805155281971e-11
+  - spec_energy_flux_1TeV_10TeV_err: 4.552116062567224e-12
 - !!omap
   - source_id: 84
   - common_name: HESS J1616-508
@@ -5613,52 +5613,52 @@
   - common_name: Terzan 5
   - gamma_names: HESS J1747-248
   - other_names: ''
-  - reference_id: ''
+  - reference_id: 2011A&A...531L..18H
   - classes: unid,gc
-  - significance: .nan
-  - livetime: .nan
+  - significance: 7.5
+  - livetime: 62.0
   - ra: 267.0208435058594
   - dec: -24.780000686645508
   - glon: 3.8389620780944824
   - glat: 1.685840129852295
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
-  - morph_sigma2: .nan
-  - morph_sigma2_err: .nan
-  - morph_pa: .nan
-  - morph_pa_err: .nan
-  - morph_pa_frame: ''
-  - spec_type: ''
+  - pos_ra: 266.95416259765625
+  - pos_dec: -24.808332443237305
+  - pos_glon: 3.7834277153015137
+  - pos_glat: 1.7230453491210938
+  - pos_err: 0.06708204001188278
+  - morph_type: gauss
+  - morph_sigma: 0.1599999964237213
+  - morph_sigma_err: 0.03999999910593033
+  - morph_sigma2: 0.029999999329447746
+  - morph_sigma2_err: 0.019999999552965164
+  - morph_pa: 92.0
+  - morph_pa_err: 6.0
+  - morph_pa_frame: radec
+  - spec_type: pl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
+  - spec_ref: 1.0
+  - spec_norm: 5.200000044273956e-13
+  - spec_norm_err: 1.100000014578155e-13
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_norm_1TeV: 5.200000044273956e-13
+  - spec_norm_1TeV_err: 1.100000014578155e-13
+  - spec_index: 2.5
+  - spec_index_err: 0.30000001192092896
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.36055514216423035
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
+  - spec_flux_above_1TeV: 3.466666786532818e-13
+  - spec_flux_above_1TeV_err: 1.009202080628005e-13
+  - spec_flux_above_1TeV_crab: 1.0430378913879395
+  - spec_flux_above_1TeV_crab_err: 0.3036450147628784
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_energy_flux_1TeV_10TeV: 7.111231091830317e-13
+  - spec_energy_flux_1TeV_10TeV_err: 2.4985379433808963e-13
 - !!omap
   - source_id: 156
   - common_name: HESS J1800-240B
@@ -6429,52 +6429,52 @@
   - common_name: HESS J1832-093
   - gamma_names: HESS J1832-093
   - other_names: SNR G22.7-0.2
-  - reference_id: ''
+  - reference_id: 2015MNRAS.446.1163H
   - classes: bin,unid
-  - significance: .nan
+  - significance: 5.599999904632568
   - livetime: .nan
   - ra: 278.18817138671875
   - dec: -9.365152359008789
   - glon: 22.476831436157227
   - glat: -0.15392036736011505
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
+  - pos_ra: 278.2083435058594
+  - pos_dec: -9.376667022705078
+  - pos_glon: 22.475801467895508
+  - pos_glat: -0.17687883973121643
+  - pos_err: 0.010540925897657871
+  - morph_type: gauss
+  - morph_sigma: 0.0
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_type: pl
+  - spec_erange_min: 0.4000000059604645
+  - spec_erange_max: 5.0
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 1.0
+  - spec_norm: 4.799999915768016e-13
+  - spec_norm_err: 7.99999985961336e-14
+  - spec_norm_err_sys: 9.9999998245167e-14
+  - spec_norm_err_tot: 1.2806249116703583e-13
+  - spec_norm_1TeV: 4.799999915768016e-13
+  - spec_norm_1TeV_err: 7.99999985961336e-14
+  - spec_index: 2.5999999046325684
+  - spec_index_err: 0.30000001192092896
+  - spec_index_err_sys: 0.10000000149011612
+  - spec_index_err_tot: 0.3162277638912201
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: .nan
-  - spec_flux_above_1TeV_err: .nan
-  - spec_flux_above_1TeV_crab: .nan
-  - spec_flux_above_1TeV_crab_err: .nan
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: .nan
-  - spec_energy_flux_1TeV_10TeV_err: .nan
+  - spec_flux_above_1TeV: 2.9999998795923744e-13
+  - spec_flux_above_1TeV_err: 7.525996834198065e-14
+  - spec_flux_above_1TeV_crab: 0.9026289582252502
+  - spec_flux_above_1TeV_crab_err: 0.22643941640853882
+  - spec_flux_above_erange_min: 1.299646588265313e-12
+  - spec_flux_above_erange_min_err: 2.4457644026351644e-13
+  - spec_energy_flux_1TeV_10TeV: 5.990490764030965e-13
+  - spec_energy_flux_1TeV_10TeV_err: 1.892005703583305e-13
 - !!omap
   - source_id: 122
   - common_name: HESS J1833-105

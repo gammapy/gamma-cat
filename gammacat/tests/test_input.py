@@ -16,10 +16,10 @@ def test_basic_source_list():
 
 
 def test_dataset_source_info():
-    info = gammacat.input.DatasetSourceInfo.read('input/data/2011/2011A%26A...531L..18H/tev-000083.yaml')
+    info = gammacat.input.DatasetSourceInfo.read('input/data/2011/2011A%26A...531L..18H/tev-000109.yaml')
     assert info.data['reference_id'] == '2011A&A...531L..18H'
-    assert info.data['source_id'] == 83
-    assert repr(info) == "DatasetSourceInfo(source_id=83, reference_id='2011A&A...531L..18H')"
+    assert info.data['source_id'] == 109
+    assert repr(info) == "DatasetSourceInfo(source_id=109, reference_id='2011A&A...531L..18H')"
 
 
 def test_input_dataset():

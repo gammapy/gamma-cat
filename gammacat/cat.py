@@ -6,6 +6,7 @@ from astropy import units as u
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
+from gammapy.spectrum import CrabSpectrum
 from .info import gammacat_info
 from .input import InputData
 from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
@@ -32,7 +33,12 @@ class GammaCatSource:
 
     def __init__(self, data):
         self.data = data
-        self.fill_derived_spectral_info()
+        # temp hack
+        try:
+            self.fill_derived_spectral_info()
+        except (TypeError, AttributeError) as exc:
+            log.error('ERROR: {}'.format(exc))
+            self.fill_derived_spectral_info_hack()
 
     @classmethod
     def from_inputs(cls, basic_source_info, dataset_source_info, sed_info):
@@ -54,11 +60,25 @@ class GammaCatSource:
     def fill_basic_info(data, bsi):
         data['source_id'] = bsi['source_id']
         data['common_name'] = bsi.get('common_name', NA.fill_value['string'])
+
         data['gamma_names'] = NA.fill_list(bsi, 'gamma_names')
+        data['fermi_names'] = NA.fill_list(bsi, 'fermi_names')
         data['other_names'] = NA.fill_list(bsi, 'other_names')
-        data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
+
+        data['where'] = bsi.get('where', NA.fill_value['string'])
         classes = bsi.get('classes', NA.fill_value['list'])
         data['classes'] = ','.join(classes)
+
+        data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
+        data['seen_by'] = NA.fill_list(bsi, 'seen_by')
+        data['discovery_date'] = bsi.get('discovery_date', NA.fill_value['string'])
+
+        data['tevcat_id'] = bsi.get('tevcat_id', NA.fill_value['number'])
+        data['tevcat2_id'] = bsi.get('tevcat2_id', NA.fill_value['string'])
+        data['tevcat_name'] = bsi.get('tevcat_name', NA.fill_value['string'])
+
+        data['tgevcat_id'] = bsi.get('tgevcat_id', NA.fill_value['number'])
+        data['tgevcat_name'] = bsi.get('tgevcat_name', NA.fill_value['string'])
 
         try:
             data['ra'] = bsi['pos']['ra']
@@ -73,6 +93,8 @@ class GammaCatSource:
         galactic = icrs.galactic
         data['glon'] = galactic.l.deg
         data['glat'] = galactic.b.deg
+
+        data['reference_ids'] = NA.fill_list(bsi, 'reference_ids')
 
     @staticmethod
     def fill_position_info(data, dsi):
@@ -238,7 +260,6 @@ class GammaCatSource:
         """
         Fill derived spectral info computed from basic parameters
         """
-        from gammapy.spectrum import CrabSpectrum
         data = self.data
         # total errors
         data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
@@ -281,6 +302,22 @@ class GammaCatSource:
         norm_1TeV = spec_model(1)  # TeV
         data['spec_norm_1TeV'] = norm_1TeV.n
         data['spec_norm_1TeV_err'] = norm_1TeV.s
+
+    # TODO: remove this hack soon!
+    def fill_derived_spectral_info_hack(self):
+        data = self.data
+        data['spec_norm_err_tot'] = NA.fill_value['number']
+        data['spec_index_err_tot'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV_err'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV_crab'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV_crab_err'] = NA.fill_value['number']
+        data['spec_flux_above_erange_min'] = NA.fill_value['number']
+        data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
+        data['spec_energy_flux_1TeV_10TeV'] = NA.fill_value['number']
+        data['spec_energy_flux_1TeV_10TeV_err'] = NA.fill_value['number']
+        data['spec_norm_1TeV'] = NA.fill_value['number']
+        data['spec_norm_1TeV_err'] = NA.fill_value['number']
 
     def _get_spec_model(self, data):
         from uncertainties import ufloat

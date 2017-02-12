@@ -14,8 +14,9 @@ tevcat_id: 280
 tevcat2_id: xI7npJ
 tevcat_name: TeV J1852-000
 
-#tgevcat_id: null
-#tgevcat_name: null
+# Source not listed in tgevcat yet
+# tgevcat_id:
+# tgevcat_name:
 
 pos:
   simbad_id: HESS J1852-000

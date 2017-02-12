@@ -18,8 +18,8 @@ tevcat2_id: LsZtAg
 tevcat_name: TeV J1746-289
 
 # Source not listed in tgevcat yet
-tgevcat_id: null
-tgevcat_name: null
+# tgevcat_id:
+# tgevcat_name:
 
 # TeV source position taken from 2015arXiv151004518L
 # SkyCoord(0.14, -0.114, unit='deg', frame='galactic').icrs

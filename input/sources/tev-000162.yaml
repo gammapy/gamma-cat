@@ -15,6 +15,10 @@ tevcat_id: 272
 tevcat2_id: 2Jribp
 tevcat_name: TeV J1828-099
 
+# Source not listed in tgevcat yet
+# tgevcat_id:
+# tgevcat_name:
+
 # TeV source position taken from HESS_HGPS_ICRC2015_Deil.pdf (slide 24)
 # TODO: this should not be `simbad_id` ... move to `inputs/papers`
 pos:

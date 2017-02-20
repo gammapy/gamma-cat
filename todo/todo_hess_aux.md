@@ -32,11 +32,12 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - status: done
 - [2015A%26A...573A..31H](https://ui.adsabs.harvard.edu/#abs/2015A%26A...573A..31H)
   - url: [auxinfo_ApLib](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)
-  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015Sci...347..406H)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015A%2526A...573A..31H)
   - source: AP Librae
-  - status: **TODO**
+  - status: **SED done, YAML empty** 
 - [2015ApJ...802...65A](http://adsabs.harvard.edu/abs/2015ApJ...802...65A)
   - url: [auxinfo_PG1553](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_PG1553)
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015ApJ...802...65A)
   - source: PG 1553+113
   - status: **TODO**
 - [2015MNRAS.446.1163H](http://adsabs.harvard.edu/abs/2015MNRAS.446.1163H)
@@ -307,44 +308,47 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - status: **SED done, YAML empty**
 - [2005A%26A...442....1A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...442....1A)
   - url: [AA442_1.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA442_1.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2005/2005A%2526A...442....1A)
+  - source: PSR B1259-63, HESS J1302-638
+  - status: **SED done, YAML empty**
 - [2005A%26A...439.1013A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...439.1013A)
   - url: [AA439_1013.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA439_1013.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2005/2005A%2526A...439.1013A)
+  - source: HESS J1303-631
+  - status: **SED done, YAML empty**
 - [2005A%26A...437L...7A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...437L...7A)
   - url: [RXJ0852.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/RXJ0852.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2005/2005A%2526A...437L...7A)
+  - source: Vela Junior
+  - status: **SED done, YAML empty**
 - [2005A%26A...436L..17A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...436L..17A)
   - url: [AA436_L17.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA436_L17.html)
-  - status: 
-  - comments: 
+  - source: PKS 2005-489
+  - status: **TODO**
 - [2005A%26A...435L..17A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...435L..17A)
   - url: [AA435_L17.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA435_L17.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2005/2005A%2526A...435L..17A)
+  - source: MSH 15-5-02
+  - status: **SED done, YAML empty**
 - [2005A%26A...432L..25A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...432L..25A)
   - url: [AA432_L25.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA432_L25.html)
-  - status: 
-  - comments: 
-- [2005A%26A...432L..25A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...432L..25A)
-  - url: [AA432_L25.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA432_L25.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2005/2005A%2526A...432L..25A)
+  - source: SNR G0.9+0.1
+  - status: done
 - [2005A%26A...430..865A](https://ui.adsabs.harvard.edu/#abs/2005A%26A...430..865A)
   - url: [AA430_865.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA430_865.html)
-  - status: 
-  - comments: 
+  - source: PKS 2155-304
+  - status: **TODO**
 
 ## 2004
 
 - [2004Natur.432...75A](http://adsabs.harvard.edu/abs/2004Natur.432...75A)
   - url: [Nature432.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/Nature432.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2004/2004Natur.432...75A)
+  - source: RX J1713.7-3946
+  - status: **SED done, YAML empty**
 - [2004A%26A...425L..13A](https://ui.adsabs.harvard.edu/#abs/2004A%26A...425L..13A)
   - url: [AA425_L13.html](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA425_L13.html)
-  - status: 
-  - comments: 
+  - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2004/2004A%2526A...425L..13A)
+  - source: Galactic Centre
+  - status: **SED done, YAML empty**

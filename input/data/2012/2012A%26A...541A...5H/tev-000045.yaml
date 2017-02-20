@@ -5,18 +5,16 @@ data:
   significance: 8.5
 
 pos:
-  ra: {val: 10h18m59.3s, err: 2.4s, }
-  dec: {val: -58d56m10s, err: 36s, }
+  ra: {val: 10h18m59.3s, err: 0h0m2.4s}
+  dec: {val: -58d56m10s, err: 36s}
 
 morph:
   type: point
 
 spec:
   type: pl
-
   norm: {val: 0.68, err: 0.16, err_sys: 0.13}
   index: {val: 2.7, err: 0.5, err_sys: 0.2}
   ref: 1
-
-  theta: 0.1
-  erange: {min: 0.6 , max: }
+  theta: 0.1d
+  erange: {min: 0.6}

@@ -1,4 +1,22 @@
 source_id: 88
 reference_id: 2014MNRAS.439.2828A
 
-# TODO: add data
+data:
+  livetime: 63.4
+
+pos:
+  ra: {val: 16h40m41.0s, err: 0h0m1.0s, err_sys: 0h0m1.3s}
+  dec: {val: -46d32m31s, err: 14s, err_sys: 20s}
+
+morph:
+  type: gauss
+  sigma: {val: 4.3m, err: 0.2m}
+
+spec: 
+  type: ecpl
+  norm: {val: 3.3, err: 0.1, err_sys: 0.6}
+  index: {val: 2.11, err: 0.09, err_sys: 0.10}
+  # TODO: Error on the cut-off energy is assymmetric: -1.2, +2.0
+  ecut: {val: 6.0, err: 2.0}
+  ref: 1
+  

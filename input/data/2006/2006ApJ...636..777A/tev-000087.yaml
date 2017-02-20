@@ -6,19 +6,17 @@ data:
   significance: 4.2
 
 pos:
-  glon: {val: 337.11, err: 0.05}
-  glat: {val: 0.22, err: 0.04}
+  glon: {val: 337.11d, err: 0.05d}
+  glat: {val: 0.22d, err: 0.04d}
 
 morph:
   type: gauss
-  sigma: {val: 0.11, err: 0.03}
+  sigma: {val: 0.11d, err: 0.03d}
 
 spec:
   type: pl2
-
   norm: {val: 13.4, err: 2.6, err_sys: 0.3}
   index: {val: 2.38, err: 0.27, err_sys: 0.2}
   ref: 0.2
-
-  theta: 0.23
-  erange: {min: 0.2 , max: }
+  theta: 0.23d
+  erange: {min: 0.2}

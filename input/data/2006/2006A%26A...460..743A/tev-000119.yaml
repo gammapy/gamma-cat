@@ -1,4 +1,24 @@
 source_id: 119
 reference_id: 2006A&A...460..743A
 
-# TODO: add data
+data:
+  livetime: 69.2
+  significance: 40
+  excess: 1960
+
+pos:
+  glon: {val: 16.879d, err: 12s, err_sys: 20s}
+  glat: {val: -1.285d, err: 12s, err_sys: 20s}
+
+morph:
+  type: point
+
+spec:
+  # TODO: multiple spectra given for this binary, need to add the others.
+  # The following spectrum is for the "INFC" state in section 3.2
+  type: ecpl
+  norm: {val: 2.28, err: 0.10}
+  index: {val: 1.85, err: 0.06, err_sys: 0.1}
+  ecut: {val: 8.7, err: 2.0}
+  ref: 1
+  erange: {min: 0.2, max: 10}

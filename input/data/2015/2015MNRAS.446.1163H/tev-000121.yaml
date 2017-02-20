@@ -1,0 +1,21 @@
+source_id: 121
+reference_id: 2015MNRAS.446.1163H
+
+data:
+  significance: 5.6
+
+pos:
+  ra: {val: 18h32m50s, err: 0h0m3s, err_sys: 0h0m2s}
+  dec: {val: -9d22m36s, err: 32s, err_sys: 20s}
+
+morph:
+  type: gauss
+  # TODO: add upper limit 'sigma < 0.074 deg' at CL=0.99
+  sigma: {val: 0d}
+
+spec:
+  type: pl
+  norm: {val: 0.48, err: 0.08, err_sys: 0.1}
+  index: {val: 2.6, err: 0.3, err_sys: 0.1}
+  ref: 1
+  erange: {min: 0.4, max: 5}

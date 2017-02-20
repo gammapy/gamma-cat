@@ -1,4 +1,19 @@
 source_id: 26
 reference_id: 2015Sci...347..406H
 
-# TODO: add data
+data:
+  livetime: 183
+  significance: 8.8
+  excess: 74
+
+pos:
+  ra: {val: 5h25m55s, err: 0h0m5s}
+  dec: {val: -69d11m10s, err: 20s}
+
+spec:
+  type: pl
+
+  norm: {val: 0.16, err: 0.04, err_sys: 0.048}
+  index: {val: 2.6, err: 0.2, err_sys: 0.3}
+  ref: 1
+  

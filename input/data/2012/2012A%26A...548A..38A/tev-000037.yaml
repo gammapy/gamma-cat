@@ -6,25 +6,22 @@ data:
   significance: 27.9
 
 pos:
-  ra: {val: 8h35m00s, err: 8s}
-  dec: {val: -45d36m00s, err: 120s}
+  ra: {val: 8h35m00s}
+  dec: {val: -45d36m00s}
 
 morph:
   type: gauss
-
-  sigma: {val: 28.8 arcmin, err: 1.8 arcmin}
-  sigma2: {val: 21.6 arcmin, err: 1.8 arcmin}
-  pa: {frame: radec, val: 41.0, err: 7.0}
+  sigma: {val: 28.8m, err: 1.8m}
+  sigma2: {val: 21.6m, err: 1.8m}
+  pa: {frame: radec, val: 41d, err: 7d}
 
 spec:
   type: ecpl
-
   norm: {val: 14.6, err: 0.8, err_sys: 3.0}
   index: {val: 1.32, err: 0.06, err_sys: 0.12}
   ecut: {val: 14.0, err: 1.6, err_sys: 2.6}
   ref: 1
-
-  theta: 1.2
+  theta: 1.2d
   erange: {min: 0.75}
 
 #  flux: {emin: 1.0, val: 21.0, err: 1.9, err_sys: 4.4}

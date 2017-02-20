@@ -1,0 +1,17 @@
+source_id: 39
+reference_id: 2005A&A...437L...7A
+
+data:
+  livetime: 3.16
+  significance: 12
+  excess: 700
+
+morph:
+  type: shell
+
+spec:
+  type: pl
+  norm: {val: 21, err: 2, err_sys: 6}
+  index: {val: 2.1, err: 0.1, err_sys: 0.2}
+  erange: {min: 0.5, max: 15}
+  ref: 1

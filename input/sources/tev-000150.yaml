@@ -1,8 +1,13 @@
 source_id: 150
 
-common_name: Boomerang
-gamma_names: [MGRO C4, MGRO J2228+61]
-other_names: [G 106.6+2.9, PSR J2229+6114, 0FGL J2229.0+6114]
+common_name: Boomerang PWN
+gamma_names:
+  - MGRO C4
+  - MGRO J2228+61
+  - 0FGL J2229.0+6114
+other_names:
+  - SNR G106.6+2.9
+  - PSR J2229+6114
 
 where: gal
 classes: [pwn, snr]
@@ -18,9 +23,9 @@ tgevcat_id: 150
 tgevcat_name: TeV J2228+6110
 
 pos:
-  simbad_id: boomerang
-  ra: 191.189375
-  dec: -54.519833
+  simbad_id: SNR G106.6+2.9
+  ra: 337.25
+  dec: 61.2
 
 reference_ids:
   - 2009ApJ...700L.127A

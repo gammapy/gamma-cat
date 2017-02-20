@@ -9,20 +9,17 @@ install:
 - conda config --set always_yes yes --set changeps1 no
 - conda update -q conda
 - conda info -a
-- conda create -q -n test-environment python=3.5 pip
-- source activate test-environment
 
 # Now install our dependencies
-- conda config --add channels conda-forge
-- conda install click pytest pyyaml cython numpy scipy uncertainties pandas astropy
-- pip install pytest-cov jsonschema
-- pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
+- conda env create -f environment.yml
+- source activate gamma-cat
 
 script:
 - export PYTHONPATH=.:$PYTHONPATH
-- py.test -v --cov=gammacat
-- ./make.py --help
+- python -m pytest -v --cov=gammacat
+- python make.py --help
 #- ./make.py check
 #- ./make.py output
 #- ./make.py webpage
-- ./make.py all
+- python make.py all
+- cd documentation && make html

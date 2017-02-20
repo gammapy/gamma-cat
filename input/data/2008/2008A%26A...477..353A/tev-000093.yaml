@@ -6,20 +6,19 @@ data:
   significance: 10.7
 
 pos:
-  glon: {val: 345.683, err: 0.05}
-  glat: {val: -0.469, err: 0.05}
+  glon: {val: 345.683d, err: 0.05d}
+  glat: {val: -0.469d, err: 0.05d}
 
 morph:
   type: gauss
-  sigma: {val: 0.06, err: 0.02}
-  sigma2: {val: 0.08, err: 0.02}
-  pa: {val: -20, err: 23, frame: radec}
+  sigma: {val: 0.06d, err: 0.02d}
+  sigma2: {val: 0.08d, err: 0.02d}
+  pa: {frame: radec, val: -20d, err: 23d}
 
 spec:
   type: pl
   norm: {val: 2.7, err: 0.3, err_sys: 0.2}
   index: {val: 2.46, err: 0.08, err_sys: 0.2}
   ref: 1
-
-  theta: 0.3
+  theta: 0.3d
   erange: {min: 0.50 , max: 60}

@@ -15,7 +15,7 @@ pos:
 # The shell outer radius of 1.0 is mentioned in the text.
 morph:
   type: shell
-  sigma: {val: 1.0}
+  sigma: {val: 1.0d}
 
 spec:
   # This is the total spectrum.
@@ -26,7 +26,5 @@ spec:
   ecut: {val: 6.68003, err: 1.23605}
   ref: 1
   covar: [[2.1443e-24, -3.7242e-14, 2.4071e-14], [-3.7242e-14, 0.0066546, -0.0019996], [2.4071e-14, -0.0019996, 0.00076532]]
-
-  theta: 1.0
+  theta: 1.0d
   erange: {min: 0.316, max: 30}
-

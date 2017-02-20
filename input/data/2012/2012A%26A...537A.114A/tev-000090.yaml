@@ -1,4 +1,27 @@
 source_id: 90
 reference_id: 2012A&A...537A.114A
 
-# TODO: add data
+data:
+  livetime: 33.8
+  significance: 20
+  excess: 2771
+
+pos:
+  ra: {val: 16h46m50s, err: 0h0m27s}
+  dec: {val: -45d49m12s, err: 7m}
+
+morph:
+  type: gauss
+# This paper only gives the position, but not the extension or flux of the morphology fit.
+# Corresponding author Stefan Ohm confirmed this and pointed out the full results
+# in HESS-internal pages.
+# We're not adding this information here, because it's not public information.
+
+spec:
+  type: pl
+  norm: {val: 9.0, err: 1.4, err_sys: 1.8}
+  index: {val: 2.19, err: 0.08, err_sys: 0.20}
+  ref: 1
+  theta: 1.1d
+  erange: {min: 0.45, max: 75}
+

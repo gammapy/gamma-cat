@@ -6,7 +6,6 @@ Make catalog (multiple steps available)
 import logging
 import warnings
 import click
-import gammacat
 import os
 
 log = logging.getLogger(__name__)
@@ -42,7 +41,8 @@ def make_output(step):
     """Re-generate files in `output`.
     """
     log.info('Re-generate data files in output folder ...')
-    maker = gammacat.OutputDataMaker()
+    from gammacat.output import OutputDataMaker
+    maker = OutputDataMaker()
     if step == 'all':
         maker.make_all()
     elif step == 'sed':
@@ -54,12 +54,13 @@ def make_output(step):
 def make_cat(internal):
     """Make catalog in HGPS format
     """
+    from gammacat.cat import GammaCatMaker
     if internal:
         if not 'HGPS_ANALYSIS' in os.environ:
             raise ValueError("Environment variable 'HGPS_ANALYSIS' "
                              " must be set.")
     log.info('Making catalog ...')
-    gammacat.GammaCatMaker().run(internal=internal)
+    GammaCatMaker().run(internal=internal)
 
 
 # @cli.command(name='webpage')
@@ -74,8 +75,9 @@ def make_cat(internal):
 def make_check():
     """Run automated tests
     """
+    from gammacat.checks import check_input_files
     log.info('Run automated checks ...')
-    gammacat.checks.check_input_files()
+    check_input_files()
 
 
 @cli.command(name='web')

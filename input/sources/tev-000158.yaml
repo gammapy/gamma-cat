@@ -16,6 +16,10 @@ tevcat_id: 268
 tevcat2_id: dwdrDT
 tevcat_name: TeV J1534-571
 
+# Source not listed in tgevcat yet
+# tgevcat_id:
+# tgevcat_name:
+
 # The SNR or HESS source is not listed in SIMBAD yet.
 # But the SNR is listed in SNRCat here:
 # http://www.physics.umanitoba.ca/snr/SNRcat/SNRrecord.php?id=G323.7m01.0

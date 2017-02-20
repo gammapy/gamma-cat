@@ -73,30 +73,30 @@ properties:
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          Number in deg or string that can be parsed by Angle
+          String that can be parsed by Angle
         properties:
-          val: {type: [string, number]}
-          err: {type: [string, number], description: Statistical error}
+          val: {type: string}
+          err: {type: string, description: Statistical error}
       sigma2:
         type: object
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          Number in deg or string that can be parsed by Angle
+          String that can be parsed by Angle
         properties:
-          val: {type: [string, number]}
-          err: {type: [string, number], description: Statistical error}
+          val: {type: string}
+          err: {type: string, description: Statistical error}
       pa:
         type: object
         additionalProperties: false
         unit: deg
         description: |
           Position angle
-          Number in deg or string that can be parsed by Angle
+          String that can be parsed by Angle
         properties:
           frame: {enum: [radec, galactic]}
-          val: {type: number}
-          err: {type: number, description: Statistical error}
+          val: {type: string}
+          err: {type: string, description: Statistical error}
 
   orbit:
     type: object
@@ -127,7 +127,7 @@ properties:
           - pl2 = `PowerLaw2` in Gammapy
           - ecpl = `ExponentialCutoffPowerLaw` in Gammapy
           - other = some other shape
-      theta: {type: number, unit=deg, description="Circular aperture photometry radius"}
+      theta: {type: string, description="Circular aperture photometry radius (parsed by Angle)"}
       erange:
         type: object
         additionalProperties: false

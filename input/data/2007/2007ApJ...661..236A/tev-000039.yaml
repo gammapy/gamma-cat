@@ -6,13 +6,11 @@ data:
 
 morph:
   type: shell
-  sigma: {val: 60 arcmin}
+  sigma: {val: 60m}
 
 spec:
   type: pl
-
   norm: {val: 19.0, err: 0.8, err_sys: 4.0}
   index: {val: 2.24, err: 0.04, err_sys: 0.15}
-
-  theta: 1.0
+  theta: 1.0d
   erange: {min: 0.3, max: 20.0}

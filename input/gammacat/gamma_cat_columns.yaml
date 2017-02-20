@@ -1,4 +1,4 @@
-# Basic info
+# Basic source info
 - name: source_id
   dtype: int32
   fmt:
@@ -13,22 +13,80 @@
   dtype: str
   fmt:
   unit:
-  description: Alternative gamma-ray source names
+  description: Alternative gamma-ray source names (comma-separated list)
+- name: fermi_names
+  dtype: str
+  fmt:
+  unit:
+  description: Names of nearby sources in Fermi-LAT catalogs (comma-separated list)
 - name: other_names
   dtype: str
   fmt:
   unit:
-  description: Other source names
+  description: Other source names (comma-separated list)
+
+- name: where
+  dtype: str
+  fmt:
+  unit:
+  description: Source location (one of "gal", "egal" or "unid")
+- name: classes
+  dtype: str
+  fmt:
+  unit:
+  description: Source classes (comma-separated list)
+
+- name: discoverer
+  dtype: str
+  fmt:
+  unit:
+  description: Discoverer of the source
+- name: seen_by
+  dtype: str
+  fmt:
+  unit:
+  description: Seen by which instruments? (comma-separated list)
+- name: discovery_date
+  dtype: str
+  fmt:
+  unit:
+  description: Discovery date
+
+- name: tevcat_id
+  dtype: int
+  fmt:
+  unit:
+  description: TeVCat ID (integer number)
+- name: tevcat2_id
+  dtype: str
+  fmt:
+  unit:
+  description: TeVCat 2 ID (a random string)
+- name: tevcat_name
+  dtype: str
+  fmt:
+  unit:
+  description: TeVCat name (source identifier string)
+
+- name: tgevcat_id
+  dtype: int
+  fmt:
+  unit:
+  description: TGeVCat ID (integer number)
+- name: tgevcat_name
+  dtype: str
+  fmt:
+  unit:
+  description: TGeVCat name (source identifier string)
+
+
 - name: reference_id
   dtype: str
   fmt:
   unit:
   description: Paper ID where source parameters are taken from.
-- name: classes
-  dtype: str
-  fmt:
-  unit:
-  description: Source classes
+
+# Dataset info
 - name: significance
   dtype: float32
   fmt:
@@ -40,7 +98,7 @@
   unit: hour
   description: Source livetime
 
-# Position info simbad
+# Position info SIMBAD
 - name: ra
   dtype: float32
   fmt:
@@ -66,7 +124,7 @@
   description: Galactic latitude from simbad
   latex:
 
-# Position info
+# Position info measurement
 - name: pos_ra
   dtype: float32
   fmt:

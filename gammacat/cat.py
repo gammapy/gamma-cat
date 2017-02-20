@@ -1,15 +1,15 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
-import yaml
 import numpy as np
 from astropy import units as u
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
+from gammapy.spectrum import CrabSpectrum
 from .info import gammacat_info
 from .input import InputData
-from .utils import NA, load_yaml, table_to_list_of_dict, validate_schema
+from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
 
 __all__ = [
     'GammaCatMaker',
@@ -29,9 +29,16 @@ class GammaCatSource:
     """Gather data for one source in gamma-cat.
     """
 
+    SED_ARRAY_LEN = 40
+
     def __init__(self, data):
         self.data = data
-        self.fill_derived_spectral_info()
+        # temp hack
+        try:
+            self.fill_derived_spectral_info()
+        except (TypeError, AttributeError) as exc:
+            log.error('ERROR: {}'.format(exc))
+            self.fill_derived_spectral_info_hack()
 
     @classmethod
     def from_inputs(cls, basic_source_info, dataset_source_info, sed_info):
@@ -53,11 +60,25 @@ class GammaCatSource:
     def fill_basic_info(data, bsi):
         data['source_id'] = bsi['source_id']
         data['common_name'] = bsi.get('common_name', NA.fill_value['string'])
+
         data['gamma_names'] = NA.fill_list(bsi, 'gamma_names')
+        data['fermi_names'] = NA.fill_list(bsi, 'fermi_names')
         data['other_names'] = NA.fill_list(bsi, 'other_names')
-        data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
+
+        data['where'] = bsi.get('where', NA.fill_value['string'])
         classes = bsi.get('classes', NA.fill_value['list'])
         data['classes'] = ','.join(classes)
+
+        data['discoverer'] = bsi.get('discoverer', NA.fill_value['string'])
+        data['seen_by'] = NA.fill_list(bsi, 'seen_by')
+        data['discovery_date'] = bsi.get('discovery_date', NA.fill_value['string'])
+
+        data['tevcat_id'] = bsi.get('tevcat_id', NA.fill_value['number'])
+        data['tevcat2_id'] = bsi.get('tevcat2_id', NA.fill_value['string'])
+        data['tevcat_name'] = bsi.get('tevcat_name', NA.fill_value['string'])
+
+        data['tgevcat_id'] = bsi.get('tgevcat_id', NA.fill_value['number'])
+        data['tgevcat_name'] = bsi.get('tgevcat_name', NA.fill_value['string'])
 
         try:
             data['ra'] = bsi['pos']['ra']
@@ -73,12 +94,13 @@ class GammaCatSource:
         data['glon'] = galactic.l.deg
         data['glat'] = galactic.b.deg
 
+        data['reference_ids'] = NA.fill_list(bsi, 'reference_ids')
 
     @staticmethod
     def fill_position_info(data, dsi):
         try:
-            data['pos_glon'] = Angle(dsi['pos']['glon']['val'], unit='deg').degree
-            data['pos_glat'] = Angle(dsi['pos']['glat']['val'], unit='deg').degree
+            data['pos_glon'] = Angle(dsi['pos']['glon']['val']).degree
+            data['pos_glat'] = Angle(dsi['pos']['glat']['val']).degree
 
             galactic = SkyCoord(data['pos_glon'], data['pos_glat'], frame='galactic', unit='deg')
             data['pos_ra'] = galactic.icrs.ra.deg
@@ -86,8 +108,8 @@ class GammaCatSource:
 
         except KeyError:
             try:
-                data['pos_ra'] = Angle(dsi['pos']['ra']['val'], unit='deg').degree
-                data['pos_dec'] = Angle(dsi['pos']['dec']['val'], unit='deg').degree
+                data['pos_ra'] = Angle(dsi['pos']['ra']['val']).degree
+                data['pos_dec'] = Angle(dsi['pos']['dec']['val']).degree
 
                 icrs = SkyCoord(data['pos_ra'], data['pos_dec'], unit='deg')
                 data['pos_glon'] = icrs.galactic.l.deg
@@ -99,18 +121,17 @@ class GammaCatSource:
                 data['pos_glat'] = NA.fill_value['number']
 
         try:
-            x_err = Angle(dsi['pos']['glon']['err'], unit='deg').degree
-            y_err = Angle(dsi['pos']['glat']['err'], unit='deg').degree
+            x_err = Angle(dsi['pos']['glon']['err']).degree
+            y_err = Angle(dsi['pos']['glat']['err']).degree
         except KeyError:
             try:
-                x_err = Angle(dsi['pos']['ra']['err'], unit='deg').degree
-                y_err = Angle(dsi['pos']['dec']['err'], unit='deg').degree
+                x_err = Angle(dsi['pos']['ra']['err']).degree
+                y_err = Angle(dsi['pos']['dec']['err']).degree
             except KeyError:
                 x_err = NA.fill_value['number']
                 y_err = NA.fill_value['number']
 
         data['pos_err'] = np.sqrt(x_err * y_err)
-
 
     @staticmethod
     def fill_data_info(data, dsi):
@@ -140,7 +161,7 @@ class GammaCatSource:
         except KeyError:
             data['spec_erange_max'] = NA.fill_value['number']
         try:
-            data['spec_theta'] = dsi['spec']['theta']
+            data['spec_theta'] = Angle(dsi['spec']['theta']).degree
         except KeyError:
             data['spec_theta'] = NA.fill_value['number']
 
@@ -184,7 +205,7 @@ class GammaCatSource:
             data['spec_ecut_err'] = NA.fill_value['number']
 
     @staticmethod
-    def fill_sed_info(data, sed_info, shape=(40,)):
+    def fill_sed_info(data, sed_info, shape=(SED_ARRAY_LEN,)):
         """
         Fill flux point info data.
         """
@@ -239,7 +260,6 @@ class GammaCatSource:
         """
         Fill derived spectral info computed from basic parameters
         """
-        from gammapy.spectrum import CrabSpectrum
         data = self.data
         # total errors
         data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
@@ -283,6 +303,22 @@ class GammaCatSource:
         data['spec_norm_1TeV'] = norm_1TeV.n
         data['spec_norm_1TeV_err'] = norm_1TeV.s
 
+    # TODO: remove this hack soon!
+    def fill_derived_spectral_info_hack(self):
+        data = self.data
+        data['spec_norm_err_tot'] = NA.fill_value['number']
+        data['spec_index_err_tot'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV_err'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV_crab'] = NA.fill_value['number']
+        data['spec_flux_above_1TeV_crab_err'] = NA.fill_value['number']
+        data['spec_flux_above_erange_min'] = NA.fill_value['number']
+        data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
+        data['spec_energy_flux_1TeV_10TeV'] = NA.fill_value['number']
+        data['spec_energy_flux_1TeV_10TeV_err'] = NA.fill_value['number']
+        data['spec_norm_1TeV'] = NA.fill_value['number']
+        data['spec_norm_1TeV_err'] = NA.fill_value['number']
+
     def _get_spec_model(self, data):
         from uncertainties import ufloat
         spec_type = data['spec_type']
@@ -311,13 +347,12 @@ class GammaCatSource:
             data['morph_type'] = dsi['morph']['type']
         except KeyError:
             data['morph_type'] = NA.fill_value['string']
+
         try:
-            val = dsi['morph']['sigma']['val']
+            val = Angle(dsi['morph']['sigma']['val']).degree
         except KeyError:
             val = NA.fill_value['number']
-        # TODO: the explicit conversion to degree should be avoided and
-        # rather made on the whole column
-        data['morph_sigma'] = Angle(val, 'deg').degree
+        data['morph_sigma'] = val
 
         try:
             err = dsi['morph']['sigma']['err']
@@ -414,15 +449,19 @@ class GammaCatMaker:
 
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
+            log.info('Processing : {}'.format(basic_source_info))
             try:
-                reference_id = input_data.gammacat_dataset_config.get_source_by_id(source_id).get_reference_id(internal=internal)
+                config = input_data.gammacat_dataset_config.get_source_by_id(source_id)
+                reference_id = config.get_reference_id(internal=internal)
             except IndexError:
                 reference_id = None
+
+            # TODO: right now this implies, that a GammaCatSource object can only
+            # handle the information from one dataset, maybe this should be changed
             dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
             dataset_source_info = dataset.get_source_by_id(source_id)
             sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
-            # TODO: right now this implies, that a GammaCatSource object can only
-            # handle the information from one dataset, maybe this should be changed
+
             source = GammaCatSource.from_inputs(
                 basic_source_info=basic_source_info,
                 dataset_source_info=dataset_source_info,
@@ -471,16 +510,15 @@ class GammaCatMaker:
     def write_yaml_text_dump(self, internal=False):
         column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
         table = self.table[column_selection]
-        list_of_dict = table_to_list_of_dict(table)
+        data = table_to_list_of_dict(table)
 
         if internal:
             path = gammacat_info.internal_dir / 'gammacat-hess-internal.yaml'
         else:
             path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
 
-        with path.open('w') as f:
-            log.info('Writing {}'.format(path))
-            f.write(yaml.dump(list_of_dict, default_flow_style=False))
+        log.info('Writing {}'.format(path))
+        write_yaml(data, path)
 
 
 class GammaCatDatasetConfigSource:

@@ -14,8 +14,9 @@ tevcat_id: 270
 tevcat2_id: 6hCJvz
 tevcat_name: TeV J1813-126
 
-#tgevcat_id: null
-#tgevcat_name: null
+# Source not listed in tgevcat yet
+# tgevcat_id:
+# tgevcat_name:
 
 pos:
   simbad_id: PSR J1813-1246

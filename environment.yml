@@ -1,0 +1,27 @@
+name: gamma-cat
+
+channels:
+  - conda-forge
+  - astropy
+
+dependencies:
+  - python=3
+  - pytest
+  - pytest-cov
+  - cython
+  - scipy
+  - pandas
+  - uncertainties
+  - click
+  - sphinx
+  - matplotlib
+  - bokeh
+  - pyyaml
+  - ruamel.yaml
+  - jsonschema
+  - astropy
+
+  - pip:
+    - sphinx-rtd-theme
+    - sphinxcontrib.datatemplates
+    - git+https://github.com/gammapy/gammapy.git#egg=gammapy

@@ -119,7 +119,7 @@
   reference_id:
 - source_id: 39
   status: source
-  reference_id: 2007ApJ...661..236A, 2016arXiv161101863H
+  reference_id: 2005A&A...437L...7A, 2007ApJ...661..236A, 2016arXiv161101863H
 - source_id: 40
   status: source
   reference_id:
@@ -185,7 +185,7 @@
   reference_id:
 - source_id: 61
   status: source
-  reference_id: 2012A&A...548A..46H
+  reference_id: 2005A&A...439.1013A, 2012A&A...548A..46H
 - source_id: 62
   status: source
   reference_id:
@@ -239,16 +239,16 @@
   reference_id: 2005A&A...435L..17A
 - source_id: 80
   status: source
-  reference_id:
+  reference_id: 2015A&A...573A..31H
 - source_id: 81
   status: source
   reference_id: 2011ICRC....7..185A
 - source_id: 82
   status: source
-  reference_id:
+  reference_id: 2015ApJ...802...65A
 - source_id: 83
   status: source
-  reference_id: 2006ApJ...636..777A, 2011A&A...531L..18H, gammacat-hess-internal
+  reference_id: 2006ApJ...636..777A, gammacat-hess-internal
 - source_id: 84
   status: source
   reference_id: 2006ApJ...636..777A
@@ -287,7 +287,7 @@
   reference_id: 2006ApJ...636..777A, 2008A&A...486..829A
 - source_id: 96
   status: source
-  reference_id: 2016arXiv160908671H
+  reference_id: 2004Natur.432...75A, 2016arXiv160908671H
 - source_id: 97
   status: source
   reference_id: 2008A&A...490..685A
@@ -317,7 +317,7 @@
   reference_id:
 - source_id: 106
   status: source
-  reference_id: 2006PhRvL..97v1102A, 2009A&A...503..817A, 2016Natur.531..476H
+  reference_id: 2004A&A...425L..13A, 2006PhRvL..97v1102A, 2009A&A...503..817A, 2016Natur.531..476H
 - source_id: 107
   status: source
   reference_id:
@@ -326,7 +326,7 @@
   reference_id: 2006ApJ...636..777A, 2008A&A...483..509A
 - source_id: 109
   status: source
-  reference_id:
+  reference_id: 2011A&A...531L..18H
 - source_id: 110
   status: source
   reference_id: 2005A&A...432L..25A
@@ -362,10 +362,10 @@
   reference_id: 2011ICRC....7..244S
 - source_id: 121
   status: source
-  reference_id:
+  reference_id: 2015MNRAS.446.1163H
 - source_id: 122
   status: source
-  reference_id: 2015MNRAS.446.1163H
+  reference_id:
 - source_id: 123
   status: source
   reference_id: 2006ApJ...636..777A

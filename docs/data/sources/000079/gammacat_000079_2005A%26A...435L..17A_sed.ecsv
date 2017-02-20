@@ -12,6 +12,8 @@
 # - {data_type: sed}
 # - {source_id: 79}
 # - {reference_id: 2005A&A...435L..17A}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA435_L17.html'}
+# - {comments: Spectral points from Figure 3.}
 e_ref e_min e_max dnde dnde_err
 0.31 0.28 0.34 1.3e-10 3.2e-11
 0.41 0.34 0.49 3.6e-11 3.8e-12

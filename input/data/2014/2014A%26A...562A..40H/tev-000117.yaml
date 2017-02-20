@@ -1,4 +1,23 @@
 source_id: 117
 reference_id: 2014A&A...562A..40H
 
-# TODO: add data
+data:
+  livetime: 120
+  significance: 8.2
+  excess: 117
+
+pos:
+  ra: {val: 18h18m4.8s, err: 0h0m3.1s, err_sys: 20s}
+  dec: {val: -15d28m1s, err: 43s, err_sys: 20s}
+
+morph:
+  type: gauss
+  # TODO : add upper limit 'sigma = 0.072d' at CL=0.99
+
+spec:
+  type: pl
+  norm: {val: 0.09, err: 0.02, err_sys: 0.02}
+  index: {val: 2.3, err: 0.3, err_sys: 0.2}
+  ref: 1.9
+  erange: {min: 0.42, max: 12.0}
+

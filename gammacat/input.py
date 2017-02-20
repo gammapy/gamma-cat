@@ -159,10 +159,12 @@ class InputDataset:
         [_.validate() for _ in self.sources]
 
     def get_source_by_id(self, source_id):
-        # returning empty DatasetSourceInfo makes sense, because it leads to a key
-        # error later and will be treated as missing info
-        missing = DatasetSourceInfo(data={}, path='')
-        return self._sources_by_id.get(source_id, missing)
+        # return self._sources_by_id.get(source_id)
+        try:
+            return self._sources_by_id[source_id]
+        except KeyError:
+            data = dict(source_id=source_id, reference_id='')
+            return DatasetSourceInfo(data=data, path=None)
 
 
 class BasicSourceList:

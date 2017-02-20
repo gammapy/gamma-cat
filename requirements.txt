@@ -1,11 +1,13 @@
 click
 pyyaml
+ruamel.yaml
 jsonschema
 pytest
 numpy
 pandas
 scipy
 uncertainties
+ads
 astropy
 gammapy
-ads
+sphinxcontrib.datatemplates

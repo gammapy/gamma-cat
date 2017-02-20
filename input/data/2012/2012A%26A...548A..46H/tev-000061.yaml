@@ -5,14 +5,14 @@ data:
   significance: 33
 
 pos:
-  ra: {val: 13h02m48s, err: 3s}
+  ra: {val: 13h02m48s, err: 0h0m3s}
   dec: {val: -63d10m39s, err: 24s}
 
 morph:
   type: gauss
-  sigma: {val: 0.194, err: 0.008}
-  sigma2: {val: 0.145, err: 0.006}
-  pa: {val: 147, err: 6, frame: radec}
+  sigma: {val: 0.194d, err: 0.008d}
+  sigma2: {val: 0.145d, err: 0.006d}
+  pa: {frame: radec, val: 147d, err: 6d}
 
 spec:
   type: ecpl
@@ -20,6 +20,5 @@ spec:
   index: {val: 1.5, err: 0.2, err_sys: 0.2}
   ecut: {val: 7.7, err: 2.2}
   ref: 1
-
-  theta: 0.6
-  erange: {min: 0.84 , max: }
+  theta: 0.6d
+  erange: {min: 0.84}

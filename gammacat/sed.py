@@ -24,7 +24,7 @@ class SED:
     ]
 
     expected_colnames_input = expected_colnames + [
-        'e_lo', 'e_hi',
+        'e_lo', 'e_hi', 'e_ref_err',
         'dnde_min', 'dnde_max',
         'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp', 'e2dnde_ul',
     ]
@@ -73,9 +73,14 @@ class SED:
         if 'e_lo' in table.colnames:
             table['e_min'] = table['e_ref'] - table['e_lo']
             del table['e_lo']
+
         if 'e_hi' in table.colnames:
             table['e_max'] = table['e_ref'] + table['e_hi']
             del table['e_hi']
+
+        if 'e_ref_err' in table.colnames:
+            del table['e_ref_err']
+
 
     @staticmethod
     def _process_flux_errrors(table):
@@ -276,6 +281,7 @@ class SEDList:
             sed.process()
 
     def get_sed_by_source_and_reference_id(self, source_id, reference_id):
+        # return self._sed_lookup[reference_id][source_id]
         try:
             return self._sed_lookup[reference_id][source_id]
         except KeyError:

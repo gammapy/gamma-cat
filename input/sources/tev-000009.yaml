@@ -7,8 +7,8 @@ other_names: []
 where: gal
 classes: [pwn]
 
-discoverer: hess
-seen_by: [hess]
+discoverer: magic
+seen_by: [magic]
 
 tevcat_id: 252
 tevcat2_id: 2I2TuY

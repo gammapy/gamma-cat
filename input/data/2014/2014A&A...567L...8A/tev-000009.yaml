@@ -1,0 +1,20 @@
+source_id: 9
+reference_id: 2014A&A...567L...8A
+
+data:
+  livetime: 99.0
+
+pos:
+  ra: {val: 2h05m31.0s, err: 0h0m9.0s, err_sys: 0h0m11.0s}
+  dec: {val: +64d51m00s, err: 1s, err_sys: 1s}
+
+morph:
+  type: gauss
+  # sigma: {val: 4.3m, err: 0.2m}
+
+spec:
+  type: pl
+  norm: {val: 2.0, err: 0.4, err_sys: 0.6}
+  #this is in 1e-13. Is that correct?
+  index: {val: 2.40, err: 0.2, err_sys: 0.20}
+  ref: 1

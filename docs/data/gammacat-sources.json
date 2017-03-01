@@ -208,9 +208,9 @@
             "classes": [
                 "pwn"
             ],
-            "discoverer": "hess",
+            "discoverer": "magic",
             "seen_by": [
-                "hess"
+                "magic"
             ],
             "discovery_date": "",
             "tevcat_id": 252,

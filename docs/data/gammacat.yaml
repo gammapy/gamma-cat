@@ -555,27 +555,27 @@
   - other_names: ''
   - where: gal
   - classes: pwn
-  - discoverer: hess
-  - seen_by: hess
+  - discoverer: magic
+  - seen_by: magic
   - discovery_date: ''
   - tevcat_id: 252
   - tevcat2_id: 2I2TuY
   - tevcat_name: TeV J0209+648
   - tgevcat_id: 9
   - tgevcat_name: TeV J0205+6451
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2014A&A...567L...8A
+  - significance: 5.699999809265137
+  - livetime: 99.0
   - ra: 31.404300689697266
   - dec: 64.82830047607422
   - glon: 130.7178192138672
   - glat: 3.083847999572754
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
+  - pos_ra: 31.379167556762695
+  - pos_dec: 64.8499984741211
+  - pos_glon: 130.70140075683594
+  - pos_glat: 3.1016318798065186
+  - pos_err: 0.02500000037252903
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -583,31 +583,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
+  - spec_type: pl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 1.0
+  - spec_norm: 1.99999996490334e-13
+  - spec_norm_err: 3.99999992980668e-14
+  - spec_norm_err_sys: 5.99999989471002e-14
+  - spec_norm_err_tot: 7.21110251047409e-14
+  - spec_norm_1TeV: 1.99999996490334e-13
+  - spec_norm_1TeV_err: 3.99999992980668e-14
+  - spec_index: 2.4000000953674316
+  - spec_index_err: 0.20000000298023224
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.2828427255153656
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: 1.428571480945398e-13
+  - spec_flux_above_1TeV_err: 3.5111531602105214e-14
+  - spec_flux_above_1TeV_crab: 0.6886528730392456
+  - spec_flux_above_1TeV_crab_err: 0.16925759613513947
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: 4.980094570235238e-13
+  - spec_energy_flux_1TeV_10TeV_err: 2.630875660554477e-13
 - !!omap
   - source_id: 10
   - common_name: S3 0218+35

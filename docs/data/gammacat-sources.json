@@ -4194,8 +4194,8 @@
             "tevcat_id": 277,
             "tevcat2_id": "LsZtAg",
             "tevcat_name": "TeV J1746-289",
-            "tgevcat_id": null,
-            "tgevcat_name": null,
+            "tgevcat_id": -999,
+            "tgevcat_name": "",
             "reference_ids": "2015arXiv151004518L,2015arXiv150806311S",
             "notes": ""
         },

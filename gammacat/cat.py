@@ -1,8 +1,10 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
+from pprint import pprint
 import numpy as np
 from astropy import units as u
+from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
@@ -25,6 +27,15 @@ log = logging.getLogger(__name__)
 FLUX_FACTOR = 1E-12
 
 
+def _to_crab_flux():
+    # Integral flux above 1 TeV in crab units
+    crab = CrabSpectrum('meyer').model
+    flux_crab = crab.integral(1 * u.TeV, 1e6 * u.TeV)
+    return 100 / flux_crab.to('cm-2 s-1').value
+
+FLUX_TO_CRAB = _to_crab_flux()
+
+
 class GammaCatSource:
     """Gather data for one source in gamma-cat.
     """
@@ -33,12 +44,7 @@ class GammaCatSource:
 
     def __init__(self, data):
         self.data = data
-        # temp hack
-        try:
-            self.fill_derived_spectral_info()
-        except (TypeError, AttributeError) as exc:
-            log.error('ERROR: {}'.format(exc))
-            self.fill_derived_spectral_info_hack()
+        self.fill_derived_spectral_info()
 
     @classmethod
     def from_inputs(cls, basic_source_info, dataset_source_info, sed_info):
@@ -268,77 +274,82 @@ class GammaCatSource:
         spec_model = self._get_spec_model(data)
 
         # Integral flux above 1 TeV
-        emin, emax = 1, 1E6  # TeV
-        flux_above_1TeV = spec_model.integral(emin, emax)
-        data['spec_flux_above_1TeV'] = flux_above_1TeV.n
-        data['spec_flux_above_1TeV_err'] = flux_above_1TeV.s
+        emin, emax = 1 * u.TeV, 1E6 * u.TeV
+        flux_above_1TeV = spec_model.integral_error(emin, emax)
+        data['spec_flux_above_1TeV'] = flux_above_1TeV[0].value
+        data['spec_flux_above_1TeV_err'] = flux_above_1TeV[1].value
 
-        # Integral flux above 1 TeV in crab units
-        crab = CrabSpectrum('meyer').model
-        emin, emax = 1, 1E6  # TeV
-        flux_above_1TeV = spec_model.integral(emin, emax)
-        flux_above_1TeV_crab = crab.integral(emin * u.TeV, emax * u.TeV)
-        flux_cu = (flux_above_1TeV / flux_above_1TeV_crab.value) * 100
-        data['spec_flux_above_1TeV_crab'] = flux_cu.n
-        data['spec_flux_above_1TeV_crab_err'] = flux_cu.s
+        data['spec_flux_above_1TeV_crab'] = data['spec_flux_above_1TeV'] * FLUX_TO_CRAB
+        data['spec_flux_above_1TeV_crab_err'] = data['spec_flux_above_1TeV_err'] * FLUX_TO_CRAB
 
         # Integral flux above erange_min
-        emin, emax = data['spec_erange_min'], 1E6  # TeV
+        emin, emax = data['spec_erange_min'] * u.TeV, 1e6 * u.TeV
         try:
-            flux_above_erange_min = spec_model.integral(emin, emax)
-            data['spec_flux_above_erange_min'] = flux_above_erange_min.n
-            data['spec_flux_above_erange_min_err'] = flux_above_erange_min.s
+            flux_above_erange_min = spec_model.integral_error(emin, emax)
+            data['spec_flux_above_erange_min'] = flux_above_erange_min[0].value
+            data['spec_flux_above_erange_min_err'] = flux_above_erange_min[1].value
         except ValueError:
             data['spec_flux_above_erange_min'] = NA.fill_value['number']
             data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
 
         # Energy flux between 1 TeV and 10 TeV
-        emin, emax = 1, 10  # TeV
-        energy_flux = spec_model.energy_flux(emin, emax)
+        emin, emax = 1 * u.TeV, 1E6 * u.TeV
+        energy_flux = spec_model.energy_flux_error(emin, emax)
+        data['spec_energy_flux_1TeV_10TeV'] = energy_flux[0].value
+        data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux[1].value
 
-        data['spec_energy_flux_1TeV_10TeV'] = energy_flux.n
-        data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux.s
-
-        norm_1TeV = spec_model(1)  # TeV
-        data['spec_norm_1TeV'] = norm_1TeV.n
-        data['spec_norm_1TeV_err'] = norm_1TeV.s
-
-    # TODO: remove this hack soon!
-    def fill_derived_spectral_info_hack(self):
-        data = self.data
-        data['spec_norm_err_tot'] = NA.fill_value['number']
-        data['spec_index_err_tot'] = NA.fill_value['number']
-        data['spec_flux_above_1TeV'] = NA.fill_value['number']
-        data['spec_flux_above_1TeV_err'] = NA.fill_value['number']
-        data['spec_flux_above_1TeV_crab'] = NA.fill_value['number']
-        data['spec_flux_above_1TeV_crab_err'] = NA.fill_value['number']
-        data['spec_flux_above_erange_min'] = NA.fill_value['number']
-        data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
-        data['spec_energy_flux_1TeV_10TeV'] = NA.fill_value['number']
-        data['spec_energy_flux_1TeV_10TeV_err'] = NA.fill_value['number']
-        data['spec_norm_1TeV'] = NA.fill_value['number']
-        data['spec_norm_1TeV_err'] = NA.fill_value['number']
+        # Differential flux at 1 TeV
+        dnde = spec_model.evaluate_error(1 * u.TeV)
+        data['spec_norm_1TeV'] = dnde[0].value
+        data['spec_norm_1TeV_err'] = dnde[1].value
 
     def _get_spec_model(self, data):
-        from uncertainties import ufloat
-        spec_type = data['spec_type']
-
         # TODO: what about systematic errors?
-        index = ufloat(data['spec_index'], data['spec_index_err'])
-        amplitude = ufloat(data['spec_norm'], data['spec_norm_err'])
-        reference = data['spec_ref']
+
+        spec_type = data['spec_type']
+        pars, errs = {}, {}
 
         if spec_type == 'pl':
-            model = PowerLaw(index, amplitude, reference)
+            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
+            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
+            pars['index'] = Quantity(data['spec_index'], '')
+            errs['index'] = Quantity(data['spec_index_err'], '')
+            pars['reference'] = Quantity(data['spec_ref'], 'TeV')
+            model = PowerLaw(**pars)
         elif spec_type == 'pl2':
-            model = PowerLaw2(amplitude, index, reference, 1E10)
+            # TODO: what parameter to use to pass emin here correctly??
+            # TODO: put default max of 1e10 TeV
+            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1')
+            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1')
+            pars['index'] = Quantity(data['spec_index'], '')
+            errs['index'] = Quantity(data['spec_index_err'], '')
+            pars['emin'] = Quantity(data['spec_erange_min'], 'TeV')
+            emax = data['spec_erange_max']
+            if np.isnan(emax):
+                emax = 1e5
+            pars['emax'] = Quantity(emax, 'TeV')
+            model = PowerLaw2(**pars)
         elif spec_type == 'ecpl':
+            from uncertainties import ufloat
+            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
+            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
+            pars['index'] = Quantity(data['spec_index'], '')
+            errs['index'] = Quantity(data['spec_index_err'], '')
+            pars['reference'] = Quantity(data['spec_ref'], 'TeV')
             lambda_ = 1. / ufloat(data['spec_ecut'], data['spec_ecut_err'])
-            model = ExponentialCutoffPowerLaw(index, amplitude, reference, lambda_)
+            pars['lambda_'] = Quantity(lambda_.n, 'TeV-1')
+            errs['lambda_'] = Quantity(lambda_.s, 'TeV-1')
+            model = ExponentialCutoffPowerLaw(**pars)
         else:
-            # return generic model, as all parameters are NaN it will
-            # evaluate to NaN
-            model = PowerLaw(index, amplitude, reference)
+            # return generic model, as all parameters are NaN it will evaluate to NaN
+            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
+            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
+            pars['index'] = Quantity(data['spec_index'], '')
+            errs['index'] = Quantity(data['spec_index_err'], '')
+            pars['reference'] = Quantity(data['spec_ref'], 'TeV')
+            model = PowerLaw(**pars)
+
+        model.parameters.set_parameter_errors(errs)
         return model
 
     @staticmethod
@@ -473,6 +484,24 @@ class GammaCatMaker:
         """Convert Python data structures to a flat table."""
         rows = [source.row_dict() for source in self.sources]
 
+        # Passing Quantity objects to `Table(rows=rows)` doesn't work.
+        # So for now, we drop units here
+        # (we could also make Table column by column ourselves
+        for colname in rows[0].keys():
+            if isinstance(rows[0][colname], Quantity):
+                print('Found Quantity:', colname)
+                unit = rows[0][colname].unit
+                for idx, row in enumerate(rows):
+                    d = row[colname]
+                    if d.unit != unit:
+                        # This should never happen.
+                        # But it did due to a coding error in the past.
+                        print('colname:', colname)
+                        print('row:', row)
+                        raise RuntimeError('Inconsistent units!')
+                    else:
+                        rows[idx][colname] = d.value
+
         meta = OrderedDict()
         meta['name'] = 'gamma-cat'
         meta['description'] = 'A catalog of TeV gamma-ray sources'
@@ -482,6 +511,16 @@ class GammaCatMaker:
         schema = GammaCatSchema()
         # schema.filter_row_keys(rows)
         # table = Table(rows=rows, meta=meta, names=schema.names, dtype=schema.dtype)
+        # import IPython; IPython.embed(); 1/0
+
+        # This is just for debugging ...
+        # for colname in rows[0].keys():
+        #     print(colname)
+        #     d = [row[colname] for row in rows]
+        #     print(colname)
+        #     print(d)
+        #     Table(data={colname: d})
+
         table = Table(rows=rows)
         table = schema.format_table(table)
 

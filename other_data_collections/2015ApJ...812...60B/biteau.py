@@ -1,46 +1,847 @@
-"""
-Script to check and ingest Biteau & Williams (2015) data for gamma-cat.
-"""
-from astropy.table import Table
-import ads
+# author: peter.deiml@fau.de
 
+import sys
+sys.path.insert(0,'/Users/pdeiml/github/gamma-cat/')
+from astropy.table import Table, Row, Column
+import gammacat.input
+import numpy as np
+import os
+from astropy.io import ascii
+from gammacat.utils import write_yaml, load_yaml
 
 class BiteauMaker:
-    def __init__(self):
-        path = 'other_data_collections/2015ApJ...812...60B/'
-        filename = path + 'BiteauWilliams2015_AllData_ASDC_v2016_12_20.ecsv'
-        filename2 = path + 'BiteauWilliams2015_AllData_TeVCat_v2016_12_20.ecsv'
+	def __init__(self):
+		filename = './BiteauWilliams2015_AllData_ASDC_v2016_12_20.ecsv'
+		self.sources_def_dir = './../../input/sources/'
 
-        print('Reading {}'.format(filename))
-        self.table = Table.read(filename, format='ascii.ecsv', delimiter='|')
+		print('Reading: {}'.format(filename))
+		self.table = Table.read(filename, format='ascii.ecsv', delimiter='|')
+		self.source_ids = Table()
 
-        print('Reading {}'.format(filename2))
-        self.table2 = Table.read(filename2, format='ascii.ecsv', delimiter='|')
+	def basic_infos(self):
+		self.table.info('attributes')
+		print(self.table)
 
-    def run_basic_checks(self):
-        self.table.info('stats')
-        self.table2.info('stats')
+	def get_source_ids(self):
+		print(self.source_ids)
+		rows = []
+		for x in os.listdir(self.sources_def_dir):
+			if(x == 'README.md'):
+				continue
+			else:
+				info = gammacat.input.BasicSourceInfo.read(self.sources_def_dir + str(x))
+				row_to_add = dict(source_id = info.data['source_id'], common_name = info.data['common_name'])
+				rows.append(row_to_add)
+		self.source_ids = Table(rows=rows)
+		print(self.source_ids)
 
-        self.table.show_in_browser(jsviewer=True)
-        self.table2.show_in_browser(jsviewer=True)
+	def get_row(self, x):
+		row = self.table[x]
+		return row
 
-    def run_checks(self):
-        # self.table.info('stats')
-        # self.table.pprint()
-        # ref_id = self.table['reference_id']
-        table = self.table.group_by('reference_id')
-        table.groups.keys.pprint(max_lines=-1)
+	def get_source_info(self, type):
+		if(type == 'source'):
+			array_of_source_names = []
+			for x in range (0, 736):
+				row = self.get_row(x)
+				name = row['source']
+				if(x != 0):
+					if(array_of_source_names[len(array_of_source_names) - 1] == name):
+						continue
+					else:
+						array_of_source_names.append(name)
+				else:
+					array_of_source_names.append(name)
+			return array_of_source_names
+		elif(type=='reference_id'):
+			array_of_reference_ids = []
+			for x in range(0,736):
+				row = self.get_row(x)
+				reference_id = row['reference_id']
+				if(x != 0):
+					if(array_of_reference_ids[len(array_of_reference_ids)-1] == reference_id):
+						continue
+					else:
+						array_of_reference_ids.append(reference_id)
+				else:
+					array_of_reference_ids.append(reference_id)
+			return array_of_reference_ids
 
-        # Note: all references are valid ADS bibcodes now!
-        # reference_ids = list(table.groups.keys['reference_id'])
-        # for reference_id in reference_ids:
-        #     article = list(ads.SearchQuery(q='bibcode:{}'.format(reference_id)))[0]
-        #     print(reference_id, article)
+	def make_ecsv_files(self, source_names):
+		print(source_names)
+		for x in source_names:
+			reference_ids = ["placeholder"]
+			for y in range(0, 736):
+				if(self.table[y]['source'] == x):
+					if(reference_ids[len(reference_ids)-1] == self.table[y]['reference_id']):
+						continue
+					else:
+						reference_ids.append(self.table[y]['reference_id'])
+			reference_ids.pop(0)
+			for y in reference_ids:
+				energy = []
+				energy_err = []
+				dnde_e2= []
+				dnde = []
+				dnde_errp = []
+				dnde_errn = []
+				#TODO: Optional write function that fills the sed_lists
+				for z in range(0, 736):
+					if(self.table[z]['source'] == x and self.table[z]['reference_id'] == y):
+						energy.append((self.table[z]['freq']*4.135667662E-27))		#energy [TeV]
+						dnde_e2.append((self.table[z]['e2dnde']/1.602176565))	#energy^2*dnde [TeV cm-2 s-1]
+						dnde_errp.append((self.table[z]['e2dnde_errp']/1.602176565))	#dnde_errp [TeV cm-2 s-1]
+						dnde_errn.append((self.table[z]['e2dnde_errn']/1.602176565))	#dnde_errn [TeV cm-2 s-1]
+						energy_err.append((self.table[z]['freq_err']*4.135667662E-27)) 	#energy_err [TeV]
+					else:
+						continue
+						
+				#print('Current source is {}'.format(x))
+				#print('Size of dnde_e2 for source {}: {}'.format(x, len(dnde_e2)))
+				#print('Size of dnde_errp for source {}: {}'.format(x, len(dnde_errp)))
+				#print('Size of dnde_errn for source {}: {}'.format(x, len(dnde_errn)))
+				#print('Size of energy for source {}: {}'.format(x, len(energy)))
+				
+				for z in range(0, len(dnde_e2)):
+					dnde.append((dnde_e2[z])/(energy[z] * energy[z]))	#dnde [TeV-1 s-1 cm-2]
+				
+				#print('Energy for source {}:'.format(x))
+				#print(energy)
+				#print('Spectrum times e2 for source {}:'.format(x))
+				#print(dnde_e2)
+				#print('dnde_errp:')
+				#print(dnde_errp)
+				#print('dnde_errn:')
+				#print(dnde_errn)
+				#print('Spectrum for source {}:'.format(x))
+				#print(dnde)
+				
+				year = y[:4]
+				dir_path = '../../input/data/' + str(year) + '/' + str(y) + '/'
+				dir_path = dir_path.replace('&','%26')
+				print(dir_path)
+				#file_name_with_rel_path = dir_path + str(y) + 
+				#print(dir_path)
+				try:
+					os.stat(dir_path)
+				except:
+					os.mkdir(dir_path)
+				#Creating the table for the ecsv-file
+				t = Table()
+				#print('Size of dnde_e2 for source {}: {}'.format(x, len(dnde_e2)))
+				#print('Size of dnde_errp for source {}: {}'.format(x, len(dnde_errp)))
+				#print('Size of dnde_errn for source {}: {}'.format(x, len(dnde_errn)))
+				#print('Size of energy for source {}: {}'.format(x, len(energy)))
+				#print('Size of energy_err for source{}: {}'.format(x, len(energy_err)))
+				#print('Size of dnde for source{}: {}'.format(x, len(dnde)))
+				t = Table([energy, energy_err, dnde, dnde_errn, dnde_errp], names=['e_ref', 'e_ref_err', 'dnde', 'dnde_errn', 'dnde_errp'])
+				#print('Steap2')
+					#specification of units
+				t['e_ref'].unit = 'TeV'
+				t['e_ref_err'].unit = 'TeV'
+				t['dnde'].unit = 'TeV-1 s-1 cm-2'
+				t['dnde_errn'].unit = 'TeV-1 s-1 cm-2'
+				t['dnde_errp'].unit = 'TeV-1 s-1 cm-2'
+					#specification of datatype
+				t['e_ref'].datatype = 'float32'
+				t['e_ref_err'].datatype = 'float32'
+				t['dnde'].datatype = 'float32'
+				t['dnde_errn'].datatype = 'float32'
+				t['dnde_errp'].datatype = 'float32'
+					#Adding meta data to the tabel
+				t.meta['data_type'] = 'sed'
+				print('Making ecsv_file and source_def file for source {}'.format(x))
+				self.make_ecsv_yaml_files(x, t, y, dir_path)
 
-        # import IPython; IPython.embed()
+	def make_ecsv_yaml_files(self, biteau_name, sed_table, biteau_reference_id, ecsv_path):
+		#In case of source IC 310
+		if(biteau_name == 'IC310'):
+			def_file_name = 'IC 310'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['IC 310']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['IC 310']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['IC 310']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['IC 310']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['IC 310']) + '-sed.ecsv', format = 'ascii.ecsv')
 
+		#In case of source Mrk 421
+		elif(biteau_name == 'Mkn421'):
+			def_file_name = 'Markarian 421'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 421']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 421']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 421']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['Markarian 421']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['Markarian 421']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of source Mrk 501
+		elif(biteau_name == 'Mkn501'):
+			def_file_name = 'Markarian 501'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 501']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 501']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 501']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['Markarian 501']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['Markarian 501']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of source 1ES 2344+514
+		elif(biteau_name == '1ES2344+514'):
+			def_file_name = '1ES 2344+514'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-000') + str(table_lookup_dict['1ES 2344+514']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-000') + str(table_lookup_dict['1ES 2344+514']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-000') + str(table_lookup_dict['1ES 2344+514']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-000' + str(table_lookup_dict['1ES 2344+514']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-000' + str(table_lookup_dict['1ES 2344+514']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of source Mrk 180
+		elif(biteau_name == 'Mkn180'):
+			def_file_name = 'Markarian 180'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 180']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 180']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['Markarian 180']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['Markarian 180']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['Markarian 180']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of source 1ES 1959+650
+		elif(biteau_name == '1ES1959+650'):
+			def_file_name = '1ES 1959+650'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-000') + str(table_lookup_dict['1ES 1959+650']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-000') + str(table_lookup_dict['1ES 1959+650']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-000') + str(table_lookup_dict['1ES 1959+650']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-000' + str(table_lookup_dict['1ES 1959+650']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-000' + str(table_lookup_dict['1ES 1959+650']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of BL Lacertae
+		elif(biteau_name == 'BLLac'):
+			def_file_name = 'BL Lacertae'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-000') + str(table_lookup_dict['BL Lacertae']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-000') + str(table_lookup_dict['BL Lacertae']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-000') + str(table_lookup_dict['BL Lacertae']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-000' + str(table_lookup_dict['BL Lacertae']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-000' + str(table_lookup_dict['BL Lacertae']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PKS 2005-489
+		elif(biteau_name == 'PKS2005-489'):
+			def_file_name = 'PKS 2005-489'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-000') + str(table_lookup_dict['PKS 2005-489']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-000') + str(table_lookup_dict['PKS 2005-489']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-000') + str(table_lookup_dict['PKS 2005-489']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-000' + str(table_lookup_dict['PKS 2005-489']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-000' + str(table_lookup_dict['PKS 2005-489']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of RGB J0152+017
+		elif(biteau_name == 'RGBJ0152+017'):
+			def_file_name = 'RGB J0152+017'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-00000') + str(table_lookup_dict['RGB J0152+017']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-00000') + str(table_lookup_dict['RGB J0152+017']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-00000') + str(table_lookup_dict['RGB J0152+017']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-00000' + str(table_lookup_dict['RGB J0152+017']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-00000' + str(table_lookup_dict['RGB J0152+017']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of SHBL J001355.9-185406
+		elif(biteau_name == 'SHBLJ001355.9-185406'):
+			def_file_name = 'SHBL J001355.9-185406'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-00000') + str(table_lookup_dict['SHBL J001355.9-185406']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-00000') + str(table_lookup_dict['SHBL J001355.9-185406']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-00000') + str(table_lookup_dict['SHBL J001355.9-185406']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-00000' + str(table_lookup_dict['SHBL J001355.9-185406']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-00000' + str(table_lookup_dict['SHBL J001355.9-185406']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of W Comae
+		elif(biteau_name == 'WComae'):
+			def_file_name = 'W Comae'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['W Comae']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['W Comae']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['W Comae']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['W Comae']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['W Comae']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 1312-423
+		elif(biteau_name == '1ES1312-423'):
+			def_file_name = '1ES 1312-423'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['1ES 1312-423']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['1ES 1312-423']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['1ES 1312-423']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['1ES 1312-423']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['1ES 1312-423']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of RGB J0521+212
+		elif(biteau_name == 'VERJ0521+211'):
+			def_file_name = 'RGB J0521+212'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['RGB J0521+212']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['RGB J0521+212']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['RGB J0521+212']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['RGB J0521+212']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['RGB J0521+212']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of RGB J0710+591
+		elif(biteau_name == 'RGBJ0710+591'):
+			def_file_name = 'RGB J0710+591'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['RGB J0710+591']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['RGB J0710+591']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict['RGB J0710+591']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict['RGB J0710+591']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict['RGB J0710+591']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PKS 2155-304
+		elif(biteau_name == 'PKS2155-304'):
+			def_file_name = 'PKS 2155-304'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-000') + str(table_lookup_dict['PKS 2155-304']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-000') + str(table_lookup_dict['PKS 2155-304']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-000') + str(table_lookup_dict['PKS 2155-304']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-000' + str(table_lookup_dict['PKS 2155-304']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-000' + str(table_lookup_dict['PKS 2155-304']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of B3 2247+381
+		elif(biteau_name == 'B32247+381'):
+			def_file_name = 'B3 2247+381'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-000') + str(table_lookup_dict['B3 2247+381']) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-000') + str(table_lookup_dict['B3 2247+381']) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-000') + str(table_lookup_dict['B3 2247+381']) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-000' + str(table_lookup_dict['B3 2247+381']) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-000' + str(table_lookup_dict['B3 2247+381']) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of H 1426+428
+		elif(biteau_name == 'H1426+428'):
+			def_file_name = 'H 1426+428'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 0806+524
+		elif(biteau_name == '1ES0806+524'):
+			def_file_name = '1ES 0806+524'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 0229+200
+		elif(biteau_name == '1ES0229+200'):
+			def_file_name = '1ES 0229+200'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1RXS J101015.9-311909
+		elif(biteau_name == '1RXSJ101015.9-311909'):
+			def_file_name = '1RXS J101015.9-311909'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of H 2356-309
+		elif(biteau_name == 'H2356-309'):
+			def_file_name = 'H 2356-309'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of RX J0648.7+1516
+		elif(biteau_name == 'RX J0648.7+1516'):
+			def_file_name = 'RXJ0648.7+1516'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 1218+304
+		elif(biteau_name == '1ES1218+304'):
+			def_file_name = '1ES 1218+304'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 1101-232
+		elif(biteau_name == '1ES1101-232'):
+			def_file_name = '1ES 1101-232'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 0347-121
+		elif(biteau_name == '1ES0347-121'):
+			def_file_name = '1ES 0347-121'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of RBS 0413
+		elif(biteau_name == 'RBS0413'):
+			def_file_name = 'RBS 0413'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 1011+496
+		elif(biteau_name == '1ES1011+496'):
+			def_file_name = '1ES 1011+496'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 1215+303
+		elif(biteau_name == '1ES1215+303'):
+			def_file_name = '1ES 1215+303'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of S5 0716+714
+		elif(biteau_name == 'S50716+714'):
+			def_file_name = 'S5 0716+714'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PKS 0301-243
+		elif(biteau_name == 'PKS0301-243'):
+			def_file_name = 'PKS 0301-243'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 1ES 0414+009
+		elif(biteau_name == '1ES0414+009'):
+			def_file_name = '1ES 0414+009'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 3C 66A
+		elif(biteau_name == '3C66A'):
+			def_file_name = '3C 66A'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PKS 0447-439
+		elif(biteau_name == 'PKS0447-439'):
+			def_file_name = 'PKS 0447-439'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PKS 1510-089
+		elif(biteau_name == 'PKS1510-089'):
+			def_file_name = 'PKS 1510-089'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PKS 1222+216
+		elif(biteau_name == 'PKS1222+216'):
+			def_file_name = 'PKS 1222+216'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PG 1553+113
+		elif(biteau_name == 'PG1553+113'):
+			def_file_name = 'PG 1553+113'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of 3C 279
+		elif(biteau_name == '3C279'):
+			def_file_name = '3C 279'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
+
+		#In case of PKS 1424+240
+		elif(biteau_name == 'PKS1424+240'):
+			def_file_name = 'PKS 1424+240'
+			table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+			sed_table.meta['source_id'] = str(table_lookup_dict[def_file_name])
+			source_def_file_data = load_yaml(self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			for a in source_def_file_data['reference_ids']:
+				if(a==biteau_reference_id):
+					continue
+				else:
+					reference_to_add = [biteau_reference_id]
+					source_def_file_data['reference_ids'] == source_def_file_data['reference_ids'] + reference_to_add
+				print('Write source_definition file: ' + self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+				write_yaml(source_def_file_data, self.sources_def_dir + str('tev-0000') + str(table_lookup_dict[def_file_name]) +'.yaml')
+			sed_table.meta['reference_id'] = str(biteau_reference_id)
+			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
+			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
 
 if __name__ == '__main__':
-    maker = BiteauMaker()
-    # biteau.run_basic_checks()
-    maker.run_checks()
+	maker = BiteauMaker()
+	maker.get_source_ids()
+	#maker.basic_infos()
+	test = maker.get_source_info('source')
+	#test2 = maker.get_source_info('reference_id')
+	maker.make_ecsv_files(test)

@@ -1,0 +1,18 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float64}
+# - {name: e_ref_err, unit: TeV, datatype: float64}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float64}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float64}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float64}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: '148'}
+# - {reference_id: 2007ApJ...666L..17A}
+e_ref e_ref_err dnde dnde_errn dnde_errp
+0.156190107211 0.0 2.03999650054e-10 2.58590101251e-12 2.58590101251e-12
+0.227156088146 0.0 5.65999685691e-11 1.09907984384e-12 1.09907984384e-12
+0.330364992431 0.0 1.20000087205e-11 7.55253815534e-13 7.55253815534e-13
+0.480469478016 0.0 2.83999028433e-12 5.03254158826e-13 5.03254158826e-13
+0.69877484695 0.0 1.12999419057e-12 3.50099361748e-13 3.50099361748e-13

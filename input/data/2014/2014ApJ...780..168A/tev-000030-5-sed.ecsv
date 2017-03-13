@@ -8,7 +8,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 30
-# - source_name: HESS J0632+057
 # - reference_id: 2014ApJ...780..168A
 # - comments: |
 #     Spectral points measured by HESS for orbital phases 0.2-0.4

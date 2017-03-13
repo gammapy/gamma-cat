@@ -8,7 +8,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 130
-# - source_name: HESS J1857+026
 # - reference_id: 2008A&A...477..353A
 # - comments: |
 #     Data obtained from Karl Kosack on November 23, 2016

@@ -8,7 +8,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 27
-# - source_name: N157B
 # - reference_id: 2012A&A...545L...2H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA545_L2.html
 e_ref dnde dnde_errn dnde_errp

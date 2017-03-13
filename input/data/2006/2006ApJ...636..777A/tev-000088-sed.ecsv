@@ -8,7 +8,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 88
-# - source_name: HESS J1640-465
 # - reference_id: 2006ApJ...636..777A
 # - url: http://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html
 e_ref dnde dnde_errn dnde_errp

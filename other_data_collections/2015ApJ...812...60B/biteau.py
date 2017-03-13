@@ -30,10 +30,10 @@ class BiteauMaker:
 				continue
 			else:
 				info = gammacat.input.BasicSourceInfo.read(self.sources_def_dir + str(x))
-				row_to_add = dict(source_id = info.data['source_id'], common_name = info.data['common_name'])
+				row_to_add = dict(common_name = info.data['common_name'], source_id = info.data['source_id'])
 				rows.append(row_to_add)
 		self.source_ids = Table(rows=rows)
-		print(self.source_ids)
+		#print(self.source_ids)
 
 	def get_row(self, x):
 		row = self.table[x]
@@ -79,81 +79,111 @@ class BiteauMaker:
 						reference_ids.append(self.table[y]['reference_id'])
 			reference_ids.pop(0)
 			for y in reference_ids:
-				energy = []
-				energy_err = []
-				dnde_e2= []
-				dnde = []
-				dnde_errp = []
-				dnde_errn = []
-				#TODO: Optional write function that fills the sed_lists
-				for z in range(0, 736):
-					if(self.table[z]['source'] == x and self.table[z]['reference_id'] == y):
-						energy.append((self.table[z]['freq']*4.135667662E-27))		#energy [TeV]
-						dnde_e2.append((self.table[z]['e2dnde']/1.602176565))	#energy^2*dnde [TeV cm-2 s-1]
-						dnde_errp.append((self.table[z]['e2dnde_errp']/1.602176565))	#dnde_errp [TeV cm-2 s-1]
-						dnde_errn.append((self.table[z]['e2dnde_errn']/1.602176565))	#dnde_errn [TeV cm-2 s-1]
-						energy_err.append((self.table[z]['freq_err']*4.135667662E-27)) 	#energy_err [TeV]
-					else:
-						continue
-						
-				#print('Current source is {}'.format(x))
-				#print('Size of dnde_e2 for source {}: {}'.format(x, len(dnde_e2)))
-				#print('Size of dnde_errp for source {}: {}'.format(x, len(dnde_errp)))
-				#print('Size of dnde_errn for source {}: {}'.format(x, len(dnde_errn)))
-				#print('Size of energy for source {}: {}'.format(x, len(energy)))
-				
-				for z in range(0, len(dnde_e2)):
-					dnde.append((dnde_e2[z])/(energy[z] * energy[z]))	#dnde [TeV-1 s-1 cm-2]
-				
-				#print('Energy for source {}:'.format(x))
-				#print(energy)
-				#print('Spectrum times e2 for source {}:'.format(x))
-				#print(dnde_e2)
-				#print('dnde_errp:')
-				#print(dnde_errp)
-				#print('dnde_errn:')
-				#print(dnde_errn)
-				#print('Spectrum for source {}:'.format(x))
-				#print(dnde)
-				
-				year = y[:4]
-				dir_path = '../../input/data/' + str(year) + '/' + str(y) + '/'
-				dir_path = dir_path.replace('&','%26')
-				print(dir_path)
-				#file_name_with_rel_path = dir_path + str(y) + 
-				#print(dir_path)
-				try:
-					os.stat(dir_path)
-				except:
-					os.mkdir(dir_path)
-				#Creating the table for the ecsv-file
-				t = Table()
-				#print('Size of dnde_e2 for source {}: {}'.format(x, len(dnde_e2)))
-				#print('Size of dnde_errp for source {}: {}'.format(x, len(dnde_errp)))
-				#print('Size of dnde_errn for source {}: {}'.format(x, len(dnde_errn)))
-				#print('Size of energy for source {}: {}'.format(x, len(energy)))
-				#print('Size of energy_err for source{}: {}'.format(x, len(energy_err)))
-				#print('Size of dnde for source{}: {}'.format(x, len(dnde)))
-				t = Table([energy, energy_err, dnde, dnde_errn, dnde_errp], names=['e_ref', 'e_ref_err', 'dnde', 'dnde_errn', 'dnde_errp'])
-				#print('Steap2')
-					#specification of units
-				t['e_ref'].unit = 'TeV'
-				t['e_ref_err'].unit = 'TeV'
-				t['dnde'].unit = 'TeV-1 s-1 cm-2'
-				t['dnde_errn'].unit = 'TeV-1 s-1 cm-2'
-				t['dnde_errp'].unit = 'TeV-1 s-1 cm-2'
-					#specification of datatype
-				t['e_ref'].datatype = 'float32'
-				t['e_ref_err'].datatype = 'float32'
-				t['dnde'].datatype = 'float32'
-				t['dnde_errn'].datatype = 'float32'
-				t['dnde_errp'].datatype = 'float32'
-					#Adding meta data to the tabel
-				t.meta['data_type'] = 'sed'
-				print('Making ecsv_file and source_def file for source {}'.format(x))
-				self.make_ecsv_yaml_files(x, t, y, dir_path)
+				observer = ["placeholder"]
 
-	def make_ecsv_yaml_files(self, biteau_name, sed_table, biteau_reference_id, ecsv_path):
+			#for y in reference_ids:
+		#		note = ["placeholder"]
+		#		for z in range(0,736):
+		#			if(self.table[z]['reference_id'] == y):
+		#				if(note[len(note)-1] == self.table[z]['note']):
+		#					continue
+		#				elif(self.table[z]['note'] = ""):
+		#					continue
+		#				else:
+		#					note.append(self.table[z]['note'])
+		#		note.pop(0)
+				print('Step1')
+		#		print(note)
+				filecounter = 0
+				for a in note:
+					energy = []
+					dnde_e2= []
+					dnde = []
+					dnde_errp = []
+					dnde_errn = []
+					#TODO: Optional write function that fills the sed_lists
+					for z in range(0, 736):
+						if(self.table[z]['source'] == x and self.table[z]['reference_id'] == y):
+							energy.append((self.table[z]['freq']*4.135667662E-27))		#energy [TeV]
+							dnde_e2.append((self.table[z]['e2dnde']/1.602176565))	#energy^2*dnde [TeV cm-2 s-1]
+							dnde_errp.append((self.table[z]['e2dnde_errp']/1.602176565))	#dnde_errp [TeV cm-2 s-1]
+							dnde_errn.append((self.table[z]['e2dnde_errn']/1.602176565))	#dnde_errn [TeV cm-2 s-1]
+						else:
+							continue
+							
+					#print('Current source is {}'.format(x))
+					#print('Size of dnde_e2 for source {}: {}'.format(x, len(dnde_e2)))
+					#print('Size of dnde_errp for source {}: {}'.format(x, len(dnde_errp)))
+					#print('Size of dnde_errn for source {}: {}'.format(x, len(dnde_errn)))
+					#print('Size of energy for source {}: {}'.format(x, len(energy)))
+					
+					for z in range(0, len(dnde_e2)):
+						dnde.append((dnde_e2[z])/(energy[z] * energy[z]))	#dnde [TeV-1 s-1 cm-2]
+					
+					#print('Energy for source {}:'.format(x))
+					#print(energy)
+					#print('Spectrum times e2 for source {}:'.format(x))
+					#print(dnde_e2)
+					#print('dnde_errp:')
+					#print(dnde_errp)
+					#print('dnde_errn:')
+					#print(dnde_errn)
+					#print('Spectrum for source {}:'.format(x))
+					#print(dnde)
+					
+					year = y[:4]
+					dir_path = '../../input/data/' + str(year) + '/' + str(y) + '/'
+					dir_path = dir_path.replace('&','%26')
+					print(dir_path)
+					#file_name_with_rel_path = dir_path + str(y) + 
+					#print(dir_path)
+					try:
+						os.stat(dir_path)
+					except:
+						os.mkdir(dir_path)
+					#Creating the table for the ecsv-file
+					t = Table()
+					#print('Size of dnde_e2 for source {}: {}'.format(x, len(dnde_e2)))
+					#print('Size of dnde_errp for source {}: {}'.format(x, len(dnde_errp)))
+					#print('Size of dnde_errn for source {}: {}'.format(x, len(dnde_errn)))
+					#print('Size of energy for source {}: {}'.format(x, len(energy)))
+					#print('Size of energy_err for source{}: {}'.format(x, len(energy_err)))
+					#print('Size of dnde for source{}: {}'.format(x, len(dnde)))
+					t = Table([energy, dnde, dnde_errn, dnde_errp], names=['e_ref', 'dnde', 'dnde_errn', 'dnde_errp'])
+					#specification of units
+					t['e_ref'].unit = 'TeV'
+					t['dnde'].unit = 'TeV-1 s-1 cm-2'
+					t['dnde_errn'].unit = 'TeV-1 s-1 cm-2'
+					t['dnde_errp'].unit = 'TeV-1 s-1 cm-2'
+						#specification of datatype
+					t['e_ref'].datatype = 'float32'
+					t['dnde'].datatype = 'float32'
+					t['dnde_errn'].datatype = 'float32'
+					t['dnde_errp'].datatype = 'float32'
+					#Adding meta data to the tabel
+					t.meta['data_type'] = 'sed'
+					t.meta['filecounter'] = filecounter
+					t.meta['state'] = note
+					t.meta['reference_id'] = y
+					print('Making ecsv_file and source_def file for source {}'.format(x))
+					self.make_ecsv_yaml_files(x, t, y, dir_path, filecounter)
+					filecounter = filecounter + 1
+
+	def make_ecsv_yaml_files(self, biteau_name, sed_table, biteau_reference_id, ecsv_path, filecounter):
+		table_lookup_dict = dict(zip(self.source_ids['common_name'], self.source_ids['source_id']))
+		print('Step1')
+		if biteau_name in table_lookup_dict: 
+			pass
+		else:
+			print('ERROR: Source name of Biteau {} is not defined in the definition files!', format(biteau_name))
+		#for x in range(1,164):		#to make sure that names in Biteau catalog are equal to common_names in source_def_yaml_files
+
+		sed_table.meta['source_id'] = str(table_lookup_dict[biteau_name])
+		#if (int(sed_table.meta['source_id']) < 10):
+		#	source_def_file_data = load_yaml(self.sources_def_dir + str('tev-00000') + str(table_lookup_dict[def_file_name]))
+
+	"""
+	def make_ecsv_yaml_files(self, biteau_name, sed_table, biteau_reference_id, ecsv_path, filecounter):
 		#In case of source IC 310
 		if(biteau_name == 'IC310'):
 			def_file_name = 'IC 310'
@@ -837,7 +867,7 @@ class BiteauMaker:
 			sed_table.meta['reference_id'] = str(biteau_reference_id)
 			print('Write sed.ecsv file: ' + ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv')
 			sed_table.write(ecsv_path + 'tev-0000' + str(table_lookup_dict[def_file_name]) + '-sed.ecsv', format = 'ascii.ecsv')
-
+	"""
 if __name__ == '__main__':
 	maker = BiteauMaker()
 	maker.get_source_ids()

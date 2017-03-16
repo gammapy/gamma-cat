@@ -8,7 +8,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 61
-# - source_name: J1303-631
 # - reference_id: 2012A&A...548A..46H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A46.html
 # - comments:

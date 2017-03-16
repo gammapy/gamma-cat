@@ -9,7 +9,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 27
-# - source_name: N 157B
 # - reference_id: 2015Sci...347..406H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_N157B.txt
 # - UL_CONF: 0.99

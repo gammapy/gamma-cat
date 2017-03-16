@@ -10,7 +10,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 121
-# - source_name: TeV J1832-093
 # - reference_id: 2015MNRAS.446.1163H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1832
 e_ref dnde e_lo e_hi dnde_errn dnde_errp

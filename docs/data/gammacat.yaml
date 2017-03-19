@@ -1490,7 +1490,7 @@
   - pos_glon: .nan
   - pos_glat: .nan
   - pos_err: .nan
-  - morph_type: ''
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan

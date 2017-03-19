@@ -13,7 +13,6 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 24}
-# - {source_name: LMC N132D}
 # - {reference_id: 2015Sci...347..406H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_N132D.txt'}
 # - {UL_CONF: 0.99}

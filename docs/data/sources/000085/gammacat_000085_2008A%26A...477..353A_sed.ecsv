@@ -11,7 +11,6 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 85}
-# - {source_name: HESS J1626-490}
 # - {reference_id: 2008A&A...477..353A}
 # - {comments: 'Data obtained from Karl Kosack on November 23, 2016
 # 

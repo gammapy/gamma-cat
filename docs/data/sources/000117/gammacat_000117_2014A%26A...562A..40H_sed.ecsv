@@ -13,7 +13,6 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 117}
-# - {source_name: TeV J1818-154}
 # - {reference_id: 2014A&A...562A..40H}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1818.html'}
 e_ref e_min e_max dnde dnde_errn dnde_errp

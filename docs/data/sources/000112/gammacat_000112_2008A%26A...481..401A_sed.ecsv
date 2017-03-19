@@ -13,7 +13,6 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 112}
-# - {source_name: HESS J1801-233}
 # - {reference_id: 2008A&A...481..401A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_w28_paper.html'}
 # - {UL_CONF: 0.99}

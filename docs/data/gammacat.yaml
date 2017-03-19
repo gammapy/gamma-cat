@@ -1612,7 +1612,7 @@
   - pos_glon: 279.7544250488281
   - pos_glat: -32.78679656982422
   - pos_err: 0.010758287273347378
-  - morph_type: ''
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -1673,7 +1673,7 @@
   - pos_glon: .nan
   - pos_glat: .nan
   - pos_err: .nan
-  - morph_type: ''
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan

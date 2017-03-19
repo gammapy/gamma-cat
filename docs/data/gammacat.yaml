@@ -365,67 +365,6 @@
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
 - !!omap
-  - source_id: 95
-  - common_name: CTB 37B
-  - gamma_names: HESS J1713-381
-  - fermi_names: ''
-  - other_names: SNR G348.7+0.3,CXOU J171405.7-381031
-  - where: gal
-  - classes: snr
-  - discoverer: hess
-  - seen_by: hess
-  - discovery_date: 2006-01
-  - tevcat_id: 110
-  - tevcat2_id: QYavG5
-  - tevcat_name: TeV J1713-382
-  - tgevcat_id: 95
-  - tgevcat_name: TeV J1713-3811
-  - reference_id: 2008A&A...486..829A
-  - significance: 8.600000381469727
-  - livetime: 55.400001525878906
-  - ra: 17.23270034790039
-  - dec: -38.20000076293945
-  - glon: 285.68988037109375
-  - glat: -78.33631896972656
-  - pos_ra: 258.4750061035156
-  - pos_dec: -38.19944381713867
-  - pos_glon: 348.6388244628906
-  - pos_glat: 0.38820934295654297
-  - pos_err: 0.014433756470680237
-  - morph_type: gauss
-  - morph_sigma: 0.04333333298563957
-  - morph_sigma_err: 0.013333333656191826
-  - morph_sigma2: .nan
-  - morph_sigma2_err: .nan
-  - morph_pa: .nan
-  - morph_pa_err: .nan
-  - morph_pa_frame: ''
-  - spec_type: pl
-  - spec_erange_min: 0.25
-  - spec_erange_max: .nan
-  - spec_theta: 0.18700000643730164
-  - spec_ref: 1.0
-  - spec_norm: 6.500000190867716e-13
-  - spec_norm_err: 1.100000014578155e-13
-  - spec_norm_err_sys: 1.300000011068489e-13
-  - spec_norm_err_tot: 1.7029385985124074e-13
-  - spec_norm_1TeV: 6.500000190867716e-13
-  - spec_norm_1TeV_err: 1.100000014578155e-13
-  - spec_index: 2.6500000953674316
-  - spec_index_err: 0.1899999976158142
-  - spec_index_err_sys: 0.20000000298023224
-  - spec_index_err_tot: 0.27586227655410767
-  - spec_ecut: .nan
-  - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 3.93939384151637e-13
-  - spec_flux_above_1TeV_err: 8.063635073248324e-14
-  - spec_flux_above_1TeV_crab: 1.8990124464035034
-  - spec_flux_above_1TeV_crab_err: 0.38871315121650696
-  - spec_flux_above_erange_min: 3.8799701299052636e-12
-  - spec_flux_above_erange_min_err: 8.729110641779447e-13
-  - spec_energy_flux_1TeV_10TeV: 9.998741201319716e-13
-  - spec_energy_flux_1TeV_10TeV_err: 3.374330437462547e-13
-- !!omap
   - source_id: 7
   - common_name: RGB J0136+391
   - gamma_names: ''
@@ -5854,6 +5793,67 @@
   - spec_flux_above_erange_min_err: 5.330823456273226e-12
   - spec_energy_flux_1TeV_10TeV: 2.8327756806945104e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.5194670608537075e-12
+- !!omap
+  - source_id: 95
+  - common_name: CTB 37B
+  - gamma_names: HESS J1713-381
+  - fermi_names: ''
+  - other_names: SNR G348.7+0.3,CXOU J171405.7-381031
+  - where: gal
+  - classes: snr
+  - discoverer: hess
+  - seen_by: hess
+  - discovery_date: 2006-01
+  - tevcat_id: 110
+  - tevcat2_id: QYavG5
+  - tevcat_name: TeV J1713-382
+  - tgevcat_id: 95
+  - tgevcat_name: TeV J1713-3811
+  - reference_id: 2008A&A...486..829A
+  - significance: 8.600000381469727
+  - livetime: 55.400001525878906
+  - ra: 258.42919921875
+  - dec: -38.170108795166016
+  - glon: 348.6415100097656
+  - glat: 0.4345632493495941
+  - pos_ra: 258.4750061035156
+  - pos_dec: -38.19944381713867
+  - pos_glon: 348.6388244628906
+  - pos_glat: 0.38820934295654297
+  - pos_err: 0.014433756470680237
+  - morph_type: gauss
+  - morph_sigma: 0.04333333298563957
+  - morph_sigma_err: 0.013333333656191826
+  - morph_sigma2: .nan
+  - morph_sigma2_err: .nan
+  - morph_pa: .nan
+  - morph_pa_err: .nan
+  - morph_pa_frame: ''
+  - spec_type: pl
+  - spec_erange_min: 0.25
+  - spec_erange_max: .nan
+  - spec_theta: 0.18700000643730164
+  - spec_ref: 1.0
+  - spec_norm: 6.500000190867716e-13
+  - spec_norm_err: 1.100000014578155e-13
+  - spec_norm_err_sys: 1.300000011068489e-13
+  - spec_norm_err_tot: 1.7029385985124074e-13
+  - spec_norm_1TeV: 6.500000190867716e-13
+  - spec_norm_1TeV_err: 1.100000014578155e-13
+  - spec_index: 2.6500000953674316
+  - spec_index_err: 0.1899999976158142
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.27586227655410767
+  - spec_ecut: .nan
+  - spec_ecut_err: .nan
+  - spec_flux_above_1TeV: 3.93939384151637e-13
+  - spec_flux_above_1TeV_err: 8.063635073248324e-14
+  - spec_flux_above_1TeV_crab: 1.8990124464035034
+  - spec_flux_above_1TeV_crab_err: 0.38871315121650696
+  - spec_flux_above_erange_min: 3.8799701299052636e-12
+  - spec_flux_above_erange_min_err: 8.729110641779447e-13
+  - spec_energy_flux_1TeV_10TeV: 9.998741201319716e-13
+  - spec_energy_flux_1TeV_10TeV_err: 3.374330437462547e-13
 - !!omap
   - source_id: 97
   - common_name: CTB 37A

@@ -136,19 +136,19 @@
   - tevcat_name: TeV J0025+641
   - tgevcat_id: 3
   - tgevcat_name: TeV J0025+6410
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2017arXiv170106740V
+  - significance: 6.900000095367432
+  - livetime: 147.0
   - ra: 6.339700222015381
   - dec: 64.14080047607422
   - glon: 120.09236145019531
   - glat: 1.4129304885864258
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
+  - pos_ra: 6.340000152587891
+  - pos_dec: 64.12999725341797
+  - pos_glon: 120.09140014648438
+  - pos_glat: 1.402172565460205
+  - pos_err: 0.024494897574186325
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -156,31 +156,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
+  - spec_type: pl
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
-  - spec_norm_err_sys: .nan
-  - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_ref: 1.0
+  - spec_norm: 2.20000002915631e-13
+  - spec_norm_err: 4.99999991225835e-14
+  - spec_norm_err_sys: 5.99999989471002e-14
+  - spec_norm_err_tot: 7.810249571648525e-14
+  - spec_norm_1TeV: 2.20000002915631e-13
+  - spec_norm_1TeV_err: 4.99999991225835e-14
+  - spec_index: 2.9200000762939453
+  - spec_index_err: 0.41999998688697815
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.4651881456375122
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: 1.1458333739298998e-13
+  - spec_flux_above_1TeV_err: 3.614454249139046e-14
+  - spec_flux_above_1TeV_crab: 0.5523569583892822
+  - spec_flux_above_1TeV_crab_err: 0.17423729598522186
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: 2.391297067045467e-13
+  - spec_energy_flux_1TeV_10TeV_err: 1.219441892299014e-13
 - !!omap
   - source_id: 4
   - common_name: KUV 00311-1938

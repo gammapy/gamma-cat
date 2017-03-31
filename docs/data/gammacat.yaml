@@ -8677,49 +8677,49 @@
   - tevcat_name: TeV J1923+141
   - tgevcat_id: 135
   - tgevcat_name: TeV J1922+1411
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2012A&A...541A..13A
+  - significance: 11.399999618530273
+  - livetime: 50.0
   - ra: 290.8179931640625
   - dec: 14.145000457763672
   - glon: 49.115806579589844
   - glat: -0.46160438656806946
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
+  - pos_ra: 290.7300109863281
+  - pos_dec: 14.190999984741211
+  - pos_glon: 49.11607360839844
+  - pos_glat: -0.364671528339386
+  - pos_err: 0.014999999664723873
+  - morph_type: gauss
+  - morph_sigma: 0.11999999731779099
+  - morph_sigma_err: 0.019999999552965164
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
+  - spec_type: ecpl
+  - spec_erange_min: 0.07500000298023224
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
+  - spec_ref: 1.0
+  - spec_norm: 9.70000013471306e-13
+  - spec_norm_err: 9.9999998245167e-14
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
   - spec_norm_1TeV: .nan
   - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_index: 2.5799999237060547
+  - spec_index_err: 0.07000000029802322
+  - spec_index_err_sys: 0.2199999988079071
+  - spec_index_err_tot: 0.2308679223060608
   - spec_ecut: .nan
   - spec_ecut_err: .nan
   - spec_flux_above_1TeV: 0.0
   - spec_flux_above_1TeV_err: 0.0
   - spec_flux_above_1TeV_crab: 0.0
   - spec_flux_above_1TeV_crab_err: 0.0
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
+  - spec_flux_above_erange_min: 0.0
+  - spec_flux_above_erange_min_err: 0.0
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
 - !!omap

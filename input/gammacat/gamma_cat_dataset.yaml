@@ -404,7 +404,7 @@
   reference_id: 2008A&A...484..435A, gammacat-hess-internal
 - source_id: 135
   status: source
-  reference_id: gammacat-hess-internal
+  reference_id: gammacat-hess-internal, 2012A&A...541A..13A
 - source_id: 136
   status: source
   reference_id: 2010ApJ...719L..69A

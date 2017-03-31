@@ -1,0 +1,24 @@
+source_id: 135
+reference_id: 2012A&A...541A..13A
+
+data:
+  livetime: 50
+  significance: 11.4
+  excess: 1371.7
+
+pos:
+  ra: {val: 19.382h, err: 0.001h}
+  dec: {val: 14.191d, err: 0.015d}
+
+morph:
+  type: gauss
+  sigma: {val: 0.12d, err: 0.02d, err_sys: 0.02d}
+
+spec:
+  type: ecpl
+  norm: {val: 0.97, err: 0.10} # TODO: add `err_sys_frac=0.15` once that's implemented
+  index: {val: 2.58, err: 0.07, err_sys: 0.22}
+  ref: 1
+  # I think MAGIC has an energy-dependent ON-region size,
+  # that's why I can't find an on region radius in the paper.
+  erange: {min: 0.075}

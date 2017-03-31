@@ -19,8 +19,8 @@ morph:
 spec:
   type: ecpl
   # Results taken from Table 1 ecpl model
-  # TODO: I'm not sure the norm is entered correctly!?
-  #       Have to check ECPL parametrization exactly.
+  # The norm has been checked and should be correct.
+  # See https://github.com/gammapy/gamma-cat/issues/97
   norm: {val: 21.0, err: 0.5}
   index: {val: 2.26, err: 0.03}
   ecut: {val: 24.8, err: 7.2}

@@ -8,7 +8,6 @@
 # meta: !!omap
 # - data_type: lc
 # - source_id: 30
-# - source_name: HESS J0632+057
 # - reference_id: 2012ApJ...754L..10A
 # - {SED_TYPE: flux}
 # - UL_CONF: 0.99

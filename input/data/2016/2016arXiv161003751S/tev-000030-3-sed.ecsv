@@ -10,7 +10,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 30
-# - source_name: HESS J0632+057
 # - reference_id: 2016arXiv161003751S
 # - comments: |
 #     Spectral points measured by VERITAS for orbital phases 0.8-0.2

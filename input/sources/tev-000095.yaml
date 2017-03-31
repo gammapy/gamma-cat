@@ -23,8 +23,8 @@ tgevcat_name: TeV J1713-3811
 
 pos:
   simbad_id: CTB 37B
-  ra: 17.2327
-  dec: -38.20
+  ra: 258.42921
+  dec: -38.17011
 
 reference_ids:
 - 2006ApJ...636..777A

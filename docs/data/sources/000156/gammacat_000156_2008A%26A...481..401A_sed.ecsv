@@ -13,7 +13,6 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 156}
-# - {source_name: HESS J1800-240B}
 # - {reference_id: 2008A&A...481..401A}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_w28_paper.html'}
 # - {comments: 'Flux points for region B.

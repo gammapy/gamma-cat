@@ -12,7 +12,9 @@
 # - {data_type: sed}
 # - {source_id: 96}
 # - {reference_id: 2016arXiv160908671H}
-# - {comments: Data taken from appendix F in the paper p.31}
+# - {comments: 'Data taken from appendix F in the paper p.31
+# 
+#     Also available here: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/RXJ1713_2016_auxinfo'}
 e_ref e_min e_max dnde dnde_err
 0.23 0.21 0.25 5.23862e-10 9.85191e-11
 0.27 0.25 0.29 3.41613e-10 4.42642e-11

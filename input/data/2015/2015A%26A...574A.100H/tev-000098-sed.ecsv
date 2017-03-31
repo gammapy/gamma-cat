@@ -10,7 +10,6 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 98
-# - source_name: TeV J1718-374
 # - reference_id: 2015A&A...574A.100H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349
 # - comments: |

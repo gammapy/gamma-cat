@@ -808,6 +808,17 @@
             ]
         },
         {
+            "reference_id": "2014A&A...567L...8A",
+            "path": "2014/2014A%26A...567L...8A",
+            "url": "2014/2014A%2526A...567L...8A",
+            "sources": [
+                {
+                    "source_id": 9,
+                    "reference_id": "2014A&A...567L...8A"
+                }
+            ]
+        },
+        {
             "reference_id": "2014ApJ...780..168A",
             "path": "2014/2014ApJ...780..168A",
             "url": "2014/2014ApJ...780..168A",
@@ -1016,6 +1027,17 @@
                 {
                     "source_id": 106,
                     "reference_id": "2016Natur.531..476H"
+                }
+            ]
+        },
+        {
+            "reference_id": "2017arXiv170107002A",
+            "path": "2017/2017arXiv170107002A",
+            "url": "2017/2017arXiv170107002A",
+            "sources": [
+                {
+                    "source_id": 161,
+                    "reference_id": "2017arXiv170107002A"
                 }
             ]
         },

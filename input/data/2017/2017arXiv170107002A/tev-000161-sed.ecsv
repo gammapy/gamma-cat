@@ -1,0 +1,43 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: significance, datatype: float32}
+# - {name: e_ref, datatype: float32}
+# - {name: e_hi, datatype: float32}
+# - {name: e_lo, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_ul, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 161
+# - reference_id: 2017arXiv170107002A
+# - comments: |
+#     Data obtained from corresponding author Ekrem Oguzhan Anguner on Feb 14, 2017
+#     Corresponds to black spectral points from Figure 3 for HESS J1826-130:
+# - UL_CONF: 0.99
+significance e_ref e_hi e_lo dnde dnde_errp dnde_errn dnde_ul
+  4.13           5.115e-01   5.086e-02      4.733e-02    4.000e-12        1.084e-12         1.037e-12    nan
+  3.31           6.197e-01   6.161e-02      5.734e-02    1.951e-12        6.412e-13         6.170e-13    nan
+  5.49           7.508e-01   7.465e-02      6.947e-02    1.956e-12        4.004e-13         3.862e-13    nan
+  4.82           9.096e-01   9.044e-02      8.416e-02    1.036e-12        2.395e-13         2.306e-13    nan
+  4.75           1.102e+00   1.096e-01      1.020e-01    6.630e-13        1.561e-13         1.501e-13    nan
+  6.34           1.335e+00   1.327e-01      1.235e-01    5.882e-13        1.077e-13         1.034e-13    nan
+  3.24           1.617e+00   1.608e-01      1.497e-01    1.923e-13        6.563e-14         6.260e-14    nan
+  6.66           1.960e+00   1.948e-01      1.813e-01    2.888e-13        5.167e-14         4.937e-14    nan
+  5.98           2.374e+00   2.361e-01      2.197e-01    1.685e-13        3.396e-14         3.219e-14    nan
+  7.79           2.876e+00   2.860e-01      2.661e-01    1.593e-13        2.606e-14         2.466e-14    nan
+  8.78           3.485e+00   3.465e-01      3.224e-01    1.376e-13        2.047e-14         1.939e-14    nan
+  5.26           4.222e+00   4.198e-01      3.906e-01    5.299e-14        1.255e-14         1.170e-14    nan
+  6.36           5.115e+00   5.086e-01      4.733e-01    4.276e-14        9.042e-15         8.346e-15    nan
+  5.48           6.197e+00   6.161e-01      5.734e-01    2.498e-14        6.200e-15         5.641e-15    nan
+  4.99           7.508e+00   7.465e-01      6.947e-01    1.682e-14        4.576e-15         4.134e-15    nan
+  7.26           9.096e+00   9.044e-01      8.416e-01    1.798e-14        3.752e-15         3.397e-15    nan
+  5.77           1.102e+01   1.096e+00      1.020e+00    9.478e-15        2.469e-15         2.193e-15    nan
+  4.93           1.335e+01   1.327e+00      1.235e+00    5.742e-15        1.734e-15         1.519e-15    nan
+  4.89           1.617e+01   1.608e+00      1.497e+00    3.909e-15        1.240e-15         1.071e-15    nan
+  3.06           1.960e+01   1.948e+00      1.813e+00    1.375e-15        6.929e-16         5.605e-16    nan
+  4.79           2.625e+01   5.371e+00      4.708e+00    9.281e-16        3.113e-16         2.650e-16    nan
+  2.61           3.853e+01   7.883e+00      6.910e+00    2.545e-16        1.461e-16         1.169e-16    nan
+  nan            5.656e+01   1.157e+01      1.014e+01    nan              nan               nan          1.380e-16

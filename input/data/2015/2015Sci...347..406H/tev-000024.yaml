@@ -6,10 +6,12 @@ data:
   significance: 4.7
   excess: 43
 
+morph:
+  type: point
+
 spec:
   type: pl
 
   norm: {val: 0.13, err: 0.05, err_sys: 0.039}
   index: {val: 2.4, err: 0.3, err_sys: 0.3}
   ref: 1
-  

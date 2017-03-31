@@ -6,6 +6,9 @@ data:
   significance: 33
   excess: 613
 
+morph:
+  type: point
+
 spec:
   type: pl
 

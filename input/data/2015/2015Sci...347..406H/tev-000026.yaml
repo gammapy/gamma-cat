@@ -10,6 +10,9 @@ pos:
   ra: {val: 5h25m55s, err: 0h0m5s}
   dec: {val: -69d11m10s, err: 20s}
 
+morph:
+  type: point
+
 spec:
   type: pl
 

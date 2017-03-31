@@ -1722,51 +1722,51 @@
   - tevcat_name: TeV J0616+225
   - tgevcat_id: 29
   - tgevcat_name: TeV J0616+2230
-  - reference_id: ''
+  - reference_id: 2015arXiv151201911H
   - significance: .nan
-  - livetime: .nan
+  - livetime: 155.0
   - ra: 94.5112533569336
   - dec: 22.65999984741211
   - glon: 189.0648193359375
   - glat: 3.234989643096924
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
+  - pos_ra: 94.22000122070312
+  - pos_dec: 23.549999237060547
+  - pos_glon: 188.1521759033203
+  - pos_glat: 3.4186837673187256
   - pos_err: .nan
-  - morph_type: ''
-  - morph_sigma: .nan
+  - morph_type: shell
+  - morph_sigma: 0.30000001192092896
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: ''
-  - spec_erange_min: .nan
+  - spec_type: pl
+  - spec_erange_min: 0.1899999976158142
   - spec_erange_max: .nan
-  - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
+  - spec_theta: 0.30000001192092896
+  - spec_ref: 0.550000011920929
+  - spec_norm: 9.919999934340784e-13
+  - spec_norm_err: 9.000000180878209e-14
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
+  - spec_norm_1TeV: 1.860061041823735e-13
+  - spec_norm_1TeV_err: 1.962006132647659e-14
+  - spec_index: 2.799999952316284
+  - spec_index_err: 0.09000000357627869
   - spec_index_err_sys: .nan
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_flux_above_1TeV: 1.0333672529868124e-13
+  - spec_flux_above_1TeV_err: 1.4246502943820148e-14
+  - spec_flux_above_1TeV_crab: 0.49814191460609436
+  - spec_flux_above_1TeV_crab_err: 0.06867626309394836
+  - spec_flux_above_erange_min: 2.053516644923148e-12
+  - spec_flux_above_erange_min_err: 2.0857149557809707e-13
+  - spec_energy_flux_1TeV_10TeV: 2.325039574931076e-13
+  - spec_energy_flux_1TeV_10TeV_err: 4.404221331708556e-14
 - !!omap
   - source_id: 30
   - common_name: HESS J0632+057

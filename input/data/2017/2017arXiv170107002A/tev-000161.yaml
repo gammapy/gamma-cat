@@ -18,7 +18,7 @@ spec:
   # not corrected for containment or contamination.
   # It is mentioned that this is strongly contaminated by the nearby HESS J1825-137.
   type: ecpl
-  norm: {val: 8.62, err: 0.73, err_sys: 1.72}
+  norm: {val: 0.862, err: 0.073, err_sys: 0.172}
   index: {val: 1.61, err: 0.11, err_sys: 0.20}
   # Note: paper gives asymmetric errors on `ecut` of errp=4.0 and errn=2.4
   # Here we take the larger error to be on the safe side

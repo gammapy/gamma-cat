@@ -1031,6 +1031,17 @@
             ]
         },
         {
+            "reference_id": "2017arXiv170107002A",
+            "path": "2017/2017arXiv170107002A",
+            "url": "2017/2017arXiv170107002A",
+            "sources": [
+                {
+                    "source_id": 161,
+                    "reference_id": "2017arXiv170107002A"
+                }
+            ]
+        },
+        {
             "reference_id": "lightcurves",
             "path": "no_paper/lightcurves",
             "url": "no_paper/lightcurves",

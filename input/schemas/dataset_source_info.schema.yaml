@@ -77,6 +77,7 @@ properties:
         properties:
           val: {type: string}
           err: {type: string, description: Statistical error}
+          err_sys: {type: string, description: Systematic error}
       sigma2:
         type: object
         additionalProperties: false
@@ -86,6 +87,7 @@ properties:
         properties:
           val: {type: string}
           err: {type: string, description: Statistical error}
+          err_sys: {type: string, description: Systematic error}
       pa:
         type: object
         additionalProperties: false
@@ -97,6 +99,7 @@ properties:
           frame: {enum: [radec, galactic]}
           val: {type: string}
           err: {type: string, description: Statistical error}
+          err_sys: {type: string, description: Systematic error}
 
   orbit:
     type: object

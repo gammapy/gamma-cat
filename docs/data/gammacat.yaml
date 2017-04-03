@@ -7285,7 +7285,7 @@
   - pos_glon: 15.40913200378418
   - pos_glat: 0.16068251430988312
   - pos_err: 0.012421047315001488
-  - morph_type: gauss
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan

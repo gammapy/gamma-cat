@@ -15,7 +15,7 @@ morph:
   sigma: {val: 0.12d, err: 0.02d, err_sys: 0.02d}
 
 spec:
-  type: ecpl
+  type: pl
   norm: {val: 0.97, err: 0.10} # TODO: add `err_sys_frac=0.15` once that's implemented
   index: {val: 2.58, err: 0.07, err_sys: 0.22}
   ref: 1

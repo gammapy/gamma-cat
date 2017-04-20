@@ -1,16 +1,16 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
+# - {name: e_ref, datatype: float32, unit: eV}
+# - {name: e2dnde, datatype: float32, unit: eV cm-2 s-1}
+# - {name: e2dnde_errn, datatype: float32, unit: eV cm-2 s-1}
+# - {name: e2dnde_errp, datatype: float32, unit: eV cm-2 s-1}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 103
 # - reference_id: 2011A&A...531A..81H
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA531_A81.html
-e_ref dnde dnde_errn dnde_errp
+e_ref e2dnde e2dnde_errn e2dnde_errp
 2.81317e+11 3.53954   0.545995 0.553633
 3.41012e+11 2.37593   0.46169  0.469881
 4.15124e+11 2.76849   0.429636 0.438292

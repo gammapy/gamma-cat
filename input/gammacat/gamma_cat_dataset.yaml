@@ -11,7 +11,7 @@
   reference_id:
 - source_id: 3
   status: source
-  reference_id:
+  reference_id: 2017arXiv170106740V
 - source_id: 4
   status: source
   reference_id:
@@ -77,7 +77,7 @@
   reference_id: 2015Sci...347..406H
 - source_id: 25
   status: source
-  reference_id: 2006A&A...457..899A, 2008ICRC....2..803K
+  reference_id: 2008ICRC....2..803K, 2006A&A...457..899A
 - source_id: 26
   status: source
   reference_id: 2015Sci...347..406H
@@ -89,7 +89,7 @@
   reference_id:
 - source_id: 29
   status: source
-  reference_id:
+  reference_id: 2015arXiv151201911H
 - source_id: 30
   status: source
   reference_id: 2007A&A...469L...1A
@@ -404,7 +404,7 @@
   reference_id: 2008A&A...484..435A, gammacat-hess-internal
 - source_id: 135
   status: source
-  reference_id: gammacat-hess-internal
+  reference_id: gammacat-hess-internal, 2012A&A...541A..13A
 - source_id: 136
   status: source
   reference_id: 2010ApJ...719L..69A

@@ -240,43 +240,43 @@
 - name: spec_norm
   fmt:
   dtype: float32
-  unit:
+  unit: cm-2 s-1 TeV-1
   description: Spectral model norm
   latex:
 - name: spec_norm_err
   fmt:
   dtype: float32
-  unit:
+  unit: cm-2 s-1 TeV-1
   description: Spectral model norm statistical error
   latex:
 - name: spec_norm_err_sys
   fmt:
   dtype: float32
-  unit:
+  unit: cm-2 s-1 TeV-1
   description: Spectral model norm systematic error
   latex:
 - name: spec_norm_err_tot
   fmt:
   dtype: float32
-  unit:
+  unit: cm-2 s-1 TeV-1
   description: Spectral model norm total error
   latex:
 - name: spec_norm_1TeV
   fmt:
   dtype: float32
-  unit:
+  unit: cm-2 s-1 TeV-1
   description: Spectral model norm at 1 TeV
   latex:
 - name: spec_norm_1TeV_err
   fmt:
   dtype: float32
-  unit:
+  unit: cm-2 s-1 TeV-1
   description: Spectral model norm statistical error at 1 TeV
   latex:
 - name: spec_index
   fmt:
   dtype: float32
-  unit: ''
+  unit:
   description: Spectral model index
   latex:
 - name: spec_index_err
@@ -306,7 +306,7 @@
 - name: spec_ecut_err
   fmt:
   dtype: float32
-  unit:
+  unit: TeV
   description: Spectral model cut off (ecpl) error
   latex:
 - name: spec_flux_above_1TeV

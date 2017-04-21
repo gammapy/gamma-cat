@@ -11,8 +11,8 @@ pos:
   dec: {val: -15d28m1s, err: 43s, err_sys: 20s}
 
 morph:
-  type: gauss
-  # TODO : add upper limit 'sigma = 0.072d' at CL=0.99
+  type: point
+  # TODO : add Gaussian extension upper limit 'sigma = 0.072d' at CL=0.99
 
 spec:
   type: pl

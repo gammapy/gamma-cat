@@ -9,9 +9,9 @@ pos:
   dec: {val: -9d22m36s, err: 32s, err_sys: 20s}
 
 morph:
-  type: gauss
-  # TODO: add upper limit 'sigma < 0.074 deg' at CL=0.99
-  sigma: {val: 0d}
+  type: point
+# TODO: add upper limit 'sigma < 0.074 deg' at CL=0.99
+# sigma: {val: 0d}
 
 spec:
   type: pl

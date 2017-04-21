@@ -11,10 +11,15 @@ pos:
   dec: {val: −30d22m14.00s}
 
 morph:
-  # The text states that an elongated Gaussian was fitted
-  # to get the source centroid.
-  # But as far as I can see, no fitted extension is given.
+  # The text states that an elongated Gaussian was fitted to get the
+  # source centroid. But no extension is given in the paper!
+  # No, really, they do a big fuss about the morphology, but then
+  # don't actually publish their measurement.
+  # To have a spatial model at all, we here put as Gaussian
+  # width half of the spectral extraction radius.
+  # This is a made-up extension, not a number given in the paper.
   type: gauss
+  sigma: {val: 0.2d}
 
 spec:
   type: pl

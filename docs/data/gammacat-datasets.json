@@ -731,6 +731,17 @@
             ]
         },
         {
+            "reference_id": "2012A&A...541A..13A",
+            "path": "2012/2012A%26A...541A..13A",
+            "url": "2012/2012A%2526A...541A..13A",
+            "sources": [
+                {
+                    "source_id": 135,
+                    "reference_id": "2012A&A...541A..13A"
+                }
+            ]
+        },
+        {
             "reference_id": "2012A&A...545L...2H",
             "path": "2012/2012A%26A...545L...2H",
             "url": "2012/2012A%2526A...545L...2H",
@@ -916,6 +927,17 @@
             ]
         },
         {
+            "reference_id": "2015arXiv151201911H",
+            "path": "2015/2015arXiv151201911H",
+            "url": "2015/2015arXiv151201911H",
+            "sources": [
+                {
+                    "source_id": 29,
+                    "reference_id": "2015arXiv151201911H"
+                }
+            ]
+        },
+        {
             "reference_id": "2015MNRAS.446.1163H",
             "path": "2015/2015MNRAS.446.1163H",
             "url": "2015/2015MNRAS.446.1163H",
@@ -1027,6 +1049,17 @@
                 {
                     "source_id": 106,
                     "reference_id": "2016Natur.531..476H"
+                }
+            ]
+        },
+        {
+            "reference_id": "2017arXiv170106740V",
+            "path": "2017/2017arXiv170106740V",
+            "url": "2017/2017arXiv170106740V",
+            "sources": [
+                {
+                    "source_id": 3,
+                    "reference_id": "2017arXiv170106740V"
                 }
             ]
         },

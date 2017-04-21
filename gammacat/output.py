@@ -4,11 +4,12 @@ Classes to read, validate and work with the input data files.
 """
 import logging
 from collections import OrderedDict
-
+from pathlib import Path
 from astropy.utils import lazyproperty
 from astropy.table import Table
 from .info import gammacat_info, gammacat_tag
 from .input import InputData
+from .sed import SEDList
 from .utils import write_json, load_json
 
 __all__ = [
@@ -18,6 +19,16 @@ __all__ = [
 ]
 
 log = logging.getLogger(__name__)
+
+
+def log_list_difference(actual, expected):
+    missing = sorted(set(expected) - set(actual))
+    if missing:
+        log.error('Missing: {}'.format(missing))
+
+    extra = sorted(set(actual) - set(expected))
+    if extra:
+        log.error('Extra: {}'.format(extra))
 
 
 class OutputDataConfig:
@@ -35,9 +46,15 @@ class OutputDataConfig:
     index_sources_json = path / 'gammacat-sources.json'
 
     @staticmethod
-    def make_filename(meta, datatype):
+    def make_filename(meta, datatype, relative=False):
         tag = gammacat_tag.source_dataset_filename(meta)
-        source_path = OutputDataConfig.path / 'sources' / gammacat_tag.source_str(meta)
+
+        if relative:
+            base_path = Path('')
+        else:
+            base_path = OutputDataConfig.path
+
+        source_path = base_path / 'sources' / gammacat_tag.source_str(meta)
 
         if datatype == 'sed':
             path = source_path / '{}_sed.ecsv'.format(tag)
@@ -83,17 +100,47 @@ class OutputData:
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of sources: {}\n'.format(len(self.gammacat))
         ss += 'Number of datasets: {}\n'.format(len(self.index_dataset['data']))
+        ss += 'Number of files: {}\n'.format(len(self.index_dataset['files']))
         return ss
 
     def validate(self):
         log.info('Validating output data ...')
 
+        self.validate_list_of_files()
         # TODO:
         # self.gammacat.validate()
         # self.datasets.validate()
         # self.seds.validate()
         # # self.lightcurves.validate()
         # self.gammacat_dataset_config.validate(self)
+
+    def validate_list_of_files(self):
+        actual = self.list_of_files()
+        expected = self.index_dataset['files']
+        log_list_difference(actual, expected)
+
+        expected_files_sed = [
+            str(OutputDataConfig.make_filename(sed.table.meta, 'sed', relative=True))
+            for sed in SEDList.read().data
+        ]
+
+        expected_files_extra = [
+            'README.md',
+            'gammacat-datasets.json',
+            'gammacat-sources.json',
+            'gammacat.fits.gz',
+            'gammacat.yaml',
+        ]
+
+        expected_files = expected_files_extra + expected_files_sed
+        log_list_difference(actual, expected_files)
+
+    def list_of_files(self, pattern='*'):
+        return list([
+            str(_.relative_to(self.path))
+            for _ in self.path.rglob(pattern)
+            if _.is_file()
+        ])
 
 
 class OutputDataMaker:
@@ -123,7 +170,9 @@ class OutputDataMaker:
     def make_index_files_datasets(self):
         data = OrderedDict()
         data['info'] = gammacat_info.info_dict
+        # TODO: the following line should be changed to OUTPUT
         data['data'] = self.input_data.datasets.to_dict()['data']
+        data['files'] = OutputData().list_of_files()
         path = OutputDataConfig.index_datasets_json
         write_json(data, path)
 

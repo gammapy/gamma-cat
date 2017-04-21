@@ -11,7 +11,7 @@ from .utils import write_json
 
 __all__ = [
     'OutputDataConfig',
-    'OutputDataReader',
+    'OutputData',
     'OutputDataMaker',
 ]
 
@@ -47,41 +47,60 @@ class OutputDataConfig:
         return path
 
 
-class OutputDataReader:
-    """
-    Read all data from the output folder.
+class OutputData:
+    """Access data from the output folder.
 
     Expose it as Python objects that can be validated and used.
-
-    TODO: rename this class to `GammaCat` ?
     """
 
-    def __init__(self, path=None):
-        if path:
-            self.path = Path(path)
-        else:
-            self.path = OutputDataConfig.path
+    def __init__(self, gammacat=None, datasets=None):
+        self.path = OutputDataConfig.path
+        self.gammacat = gammacat
+        self.datasets = datasets
 
-        self.gammacat = None
-        self.datasets = None
-
-    def read_all(self):
+    @classmethod
+    def read(cls):
         """Read all data from disk.
         """
         path = OutputDataConfig.gammacat_fits
-        self.gammacat = Table.read(str(path), format='fits')
+        gammacat = Table.read(str(path), format='fits')
 
         path = OutputDataConfig.datasets_ecsv
-        self.datasets = Table.read(str(path), format='ascii.ecsv')
+        datasets = Table.read(str(path), format='ascii.ecsv')
 
-        return self
+        return cls(
+            gammacat=gammacat,
+            datasets=datasets,
+        )
 
     def __str__(self):
-        ss = 'output data summary:\n'
+        ss = 'Output data summary:\n'
         ss += 'Path: {}\n'.format(self.path)
         ss += 'Number of sources: {}\n'.format(len(self.gammacat))
         ss += 'Number of datasets: {}\n'.format(len(self.datasets))
         return ss
+
+        # ss += 'Number of YAML files in `input/sources`: {}\n'.format(len(self.sources.data))
+        # ss += 'Number of entries in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
+        #     len(self.gammacat_dataset_config.data))
+        # ss += '\n'
+        # ss += 'Number of folders in `input/data`: {}\n'.format(len(self.datasets.data))
+        # ss += 'Number of total datasets in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
+        #     len(self.gammacat_dataset_config.reference_ids))
+        # ss += '\n'
+        # ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
+        # ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))
+        # return ss
+
+    def validate(self):
+        log.info('Validating output data ...')
+
+        # TODO:
+        # self.gammacat.validate()
+        # self.datasets.validate()
+        # self.seds.validate()
+        # # self.lightcurves.validate()
+        # self.gammacat_dataset_config.validate(self)
 
 
 class OutputDataMaker:
@@ -96,10 +115,13 @@ class OutputDataMaker:
         self.input_data = InputData.read()
 
     def make_all(self):
+        self.make_sed_files()
+        self.make_index_files()
+
+    def make_index_files(self):
         self.make_source_table_json()
         self.make_dataset_table_json()
         self.make_dataset_table_ecsv()
-        self.make_sed_files()
 
     def make_source_table_json(self):
         data = self.input_data.sources.to_json()
@@ -127,3 +149,6 @@ class OutputDataMaker:
             path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))
             sed.table.write(str(path), format='ascii.ecsv')
+
+    def make_all_checks(self):
+        print('asdf')

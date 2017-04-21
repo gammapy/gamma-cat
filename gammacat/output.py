@@ -149,6 +149,3 @@ class OutputDataMaker:
             path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))
             sed.table.write(str(path), format='ascii.ecsv')
-
-    def make_all_checks(self):
-        print('asdf')

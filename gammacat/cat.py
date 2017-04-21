@@ -1,7 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
-from pprint import pprint
 import numpy as np
 from astropy import units as u
 from astropy.units import Quantity

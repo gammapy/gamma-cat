@@ -345,8 +345,8 @@ class GammaCatSource:
             errs['index'] = Quantity(data['spec_index_err'], '')
             pars['reference'] = Quantity(data['spec_ref'], 'TeV')
             lambda_ = 1. / ufloat(data['spec_ecut'], data['spec_ecut_err'])
-            pars['lambda_'] = Quantity(lambda_.n, 'TeV-1')
-            errs['lambda_'] = Quantity(lambda_.s, 'TeV-1')
+            pars['lambda_'] = Quantity(lambda_.nominal_value, 'TeV-1')
+            errs['lambda_'] = Quantity(lambda_.std_dev, 'TeV-1')
             model = ExponentialCutoffPowerLaw(**pars)
         else:
             # return generic model, as all parameters are NaN it will evaluate to NaN

@@ -157,7 +157,7 @@ class GammaCatSource:
         try:
             data['spec_type'] = dsi['spec']['type']
         except KeyError:
-            data['spec_type'] = NA.fill_value['string']
+            data['spec_type'] = 'none'
         try:
             data['spec_erange_min'] = dsi['spec']['erange']['min']
         except KeyError:
@@ -357,7 +357,7 @@ class GammaCatSource:
         try:
             data['morph_type'] = dsi['morph']['type']
         except KeyError:
-            data['morph_type'] = NA.fill_value['string']
+            data['morph_type'] = 'none'
 
         try:
             val = Angle(dsi['morph']['sigma']['val']).degree

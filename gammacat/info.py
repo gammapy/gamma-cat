@@ -25,7 +25,7 @@ class GammaCatInfo:
         # Git repository base directory
         self.base_dir = Path(__file__).parent.parent
 
-        # Internal gammcat vesion path
+        # Internal gammacat version path
         hgps_analysis_dir = os.environ.get('HGPS_ANALYSIS')
         if hgps_analysis_dir:
             self.internal_dir = Path(hgps_analysis_dir) / 'data/catalogs/gammacat-hess-internal/'

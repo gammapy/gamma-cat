@@ -3,6 +3,6 @@ from gammacat.output import OutputData
 
 
 def test_output_data():
-    output_data = OutputData().read_all()
-    assert len(output_data.gammacat) > 0
-    assert len(output_data.datasets) > 0
+    output_data = OutputData().read()
+    assert len(output_data.gammacat) >= 162
+    assert len(output_data.index_dataset['data']) >= 90

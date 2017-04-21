@@ -1,8 +1,10 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import subprocess
 import os
+from collections import OrderedDict
 from pathlib import Path
 import urllib.parse
+from astropy.time import Time
 
 __all__ = [
     'gammacat_info',
@@ -30,12 +32,27 @@ class GammaCatInfo:
         if hgps_analysis_dir:
             self.internal_dir = Path(hgps_analysis_dir) / 'data/catalogs/gammacat-hess-internal/'
 
+        self.description = "An open data collection and source catalog for gamma-ray astronomy"
+
+        self.datetime = str(Time.now())
+
     def __str__(self):
         ss = 'GammaCatInfo:\n'
         ss += 'version: {}\n'.format(self.version)
         ss += 'git_version: {}\n'.format(self.git_version)
         ss += 'base_dir: {}\n'.format(self.base_dir)
         return ss
+
+    @property
+    def info_dict(self):
+        """Dict with some info that can be written to file headers."""
+        info = OrderedDict()
+        info['name'] = 'gammacat'
+        info['version'] = self.version
+        info['git_version'] = self.git_version
+        info['description'] = self.description
+        info['datetime'] = self.datetime
+        return info
 
 
 class GammaCatTag:

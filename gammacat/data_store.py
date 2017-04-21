@@ -18,7 +18,7 @@ class GammaCatDataStore(object):
         self.registry = registry
 
     @classmethod
-    def from_file(cls, filename='$GAMMA_CAT/docs/data/gammacat-datastore.json'):
+    def from_file(cls, filename='$GAMMA_CAT/docs/data/gammacat-datasets.json'):
         registry = GammaCatDataStoreRegistry.from_file(filename)
         return cls(registry=registry)
 

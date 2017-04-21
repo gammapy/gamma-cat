@@ -3,6 +3,8 @@
 Classes to read, validate and work with the input data files.
 """
 import logging
+from collections import OrderedDict
+
 from astropy.utils import lazyproperty
 from astropy.table import Table
 from .info import gammacat_info, gammacat_tag
@@ -119,7 +121,9 @@ class OutputDataMaker:
         self.make_index_files_sources()
 
     def make_index_files_datasets(self):
-        data = self.input_data.datasets.to_json()
+        data = OrderedDict()
+        data['info'] = gammacat_info.info_dict
+        data['data'] = self.input_data.datasets.to_json()['data']
         path = OutputDataConfig.index_datasets_json
         write_json(data, path)
 

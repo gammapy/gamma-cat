@@ -424,7 +424,7 @@ class GammaCatSchema:
                 data=in_table[name],
                 name=colspec['name'],
                 dtype=colspec['dtype'],
-                # fmt=colspec['fmt'],
+                format=colspec['format'],
                 unit=colspec['unit'],
                 description=colspec['description'],
             )
@@ -458,6 +458,7 @@ class GammaCatMaker:
         log.info('Making gamma-cat ....')
         self.make_table()
         self.write_table(internal=internal)
+        self.write_table_ecsv(internal=internal)
         self.write_yaml_text_dump(internal=internal)
 
     @staticmethod
@@ -543,8 +544,6 @@ class GammaCatMaker:
     def write_table(self, internal=False):
         table = self.table
 
-        # table.info('stats')
-        # table.pprint()
         if internal:
             path = gammacat_info.internal_dir / 'gammacat-hess-internal.fits.gz'
         else:
@@ -552,9 +551,22 @@ class GammaCatMaker:
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
-        # path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
-        # log.info('Writing {}'.format(path))
-        # table.write(str(path), format='ascii.ecsv')
+    def write_table_ecsv(self, internal=False):
+
+        # ECSV format does not support multidimensional columns
+        # So we replace with the mean here to have a useful stat in text diffs
+        table = self.table.copy()
+        for colname in table.colnames:
+            if table[colname].ndim > 1:
+                table[colname] = np.nanmean(table[colname].data, axis=1)
+
+        if internal:
+            path = gammacat_info.internal_dir / 'gammacat-hess-internal.ecsv'
+        else:
+            path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
+
+        log.info('Writing {}'.format(path))
+        table.write(str(path), format='ascii.ecsv')
 
     def write_yaml_text_dump(self, internal=False):
         column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]

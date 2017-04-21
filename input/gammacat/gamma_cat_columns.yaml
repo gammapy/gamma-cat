@@ -1,124 +1,124 @@
 # Basic source info
 - name: source_id
   dtype: int32
-  fmt:
+  format:
   unit:
   description: Source ID (integer)
 - name: common_name
   dtype: str
-  fmt:
+  format:
   unit:
   description: Common source name (unique in gamma-cat, like source_id)
 - name: gamma_names
   dtype: str
-  fmt:
+  format:
   unit:
   description: Alternative gamma-ray source names (comma-separated list)
 - name: fermi_names
   dtype: str
-  fmt:
+  format:
   unit:
   description: Names of nearby sources in Fermi-LAT catalogs (comma-separated list)
 - name: other_names
   dtype: str
-  fmt:
+  format:
   unit:
   description: Other source names (comma-separated list)
 
 - name: where
   dtype: str
-  fmt:
+  format:
   unit:
   description: Source location (one of "gal", "egal" or "unid")
 - name: classes
   dtype: str
-  fmt:
+  format:
   unit:
   description: Source classes (comma-separated list)
 
 - name: discoverer
   dtype: str
-  fmt:
+  format:
   unit:
   description: Discoverer of the source
 - name: seen_by
   dtype: str
-  fmt:
+  format:
   unit:
   description: Seen by which instruments? (comma-separated list)
 - name: discovery_date
   dtype: str
-  fmt:
+  format:
   unit:
   description: Discovery date
 
 - name: tevcat_id
   dtype: int
-  fmt:
+  format:
   unit:
   description: TeVCat ID (integer number)
 - name: tevcat2_id
   dtype: str
-  fmt:
+  format:
   unit:
   description: TeVCat 2 ID (a random string)
 - name: tevcat_name
   dtype: str
-  fmt:
+  format:
   unit:
   description: TeVCat name (source identifier string)
 
 - name: tgevcat_id
   dtype: int
-  fmt:
+  format:
   unit:
   description: TGeVCat ID (integer number)
 - name: tgevcat_name
   dtype: str
-  fmt:
+  format:
   unit:
   description: TGeVCat name (source identifier string)
 
 
 - name: reference_id
   dtype: str
-  fmt:
+  format:
   unit:
   description: Paper ID where source parameters are taken from.
 
 # Dataset info
 - name: significance
   dtype: float32
-  fmt:
+  format:
   unit:
   description: Source significance
 - name: livetime
   dtype: float32
-  fmt:
+  format:
   unit: hour
   description: Source livetime
 
 # Position info SIMBAD
 - name: ra
   dtype: float32
-  fmt:
+  format: .5f
   unit: deg
   description: Right Ascension (ICRS) from simbad
   latex:
 - name: dec
   dtype: float32
-  fmt:
+  format:
   unit: deg
   description: Declination (ICRS) from simbad
   latex:
 - name: glon
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Galactic longitude from simbad
   latex:
 - name: glat
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Galactic latitude from simbad
@@ -127,30 +127,30 @@
 # Position info measurement
 - name: pos_ra
   dtype: float32
-  fmt:
+  format:
   unit: deg
   description: Right Ascension (ICRS) from reference
   latex:
 - name: pos_dec
   dtype: float32
-  fmt:
+  format:
   unit: deg
   description: Declination (ICRS) from reference
   latex:
 - name: pos_glon
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Galactic longitude from reference
   latex:
 - name: pos_glat
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Galactic latitude from reference
   latex:
 - name: pos_err
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Symmetric error on the position from reference
@@ -158,49 +158,49 @@
 
 # Morphology info
 - name: morph_type
-  fmt:
+  format:
   dtype: str
   unit:
   description: Morphology model type
   latex:
 - name: morph_sigma
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Morphology model extension major axis (gauss)
   latex:
 - name: morph_sigma_err
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Morphology model extension major axis (gauss) error.
   latex:
 - name: morph_sigma2
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Morphology model extension minor axis (gauss)
   latex:
 - name: morph_sigma2_err
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Morphology model extension minor axis (gauss) error.
   latex:
 - name: morph_pa
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Morphology model position angle
   latex:
 - name: morph_pa_err
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Morphology model position angle error.
   latex:
 - name: morph_pa_frame
-  fmt:
+  format:
   dtype: str
   unit:
   description: Morphology model position angle frame.
@@ -208,151 +208,151 @@
 
 # Spectrum info
 - name: spec_type
-  fmt:
+  format:
   dtype: str
   unit:
   description: Spectral model type
   latex:
 - name: spec_erange_min
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Spectrum energy range minimum
   latex:
 - name: spec_erange_max
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Spectrum energy range maximum
   latex:
 - name: spec_theta
-  fmt:
+  format:
   dtype: float32
   unit: deg
   description: Spectral extraction region radius
   latex:
 - name: spec_ref
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Spectral model reference energy
   latex:
 - name: spec_norm
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm
   latex:
 - name: spec_norm_err
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm statistical error
   latex:
 - name: spec_norm_err_sys
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm systematic error
   latex:
 - name: spec_norm_err_tot
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm total error
   latex:
 - name: spec_norm_1TeV
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm at 1 TeV
   latex:
 - name: spec_norm_1TeV_err
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm statistical error at 1 TeV
   latex:
 - name: spec_index
-  fmt:
+  format:
   dtype: float32
   unit:
   description: Spectral model index
   latex:
 - name: spec_index_err
-  fmt:
+  format:
   dtype: float32
   unit:
   description: Spectral model index statistical error
   latex:
 - name: spec_index_err_sys
-  fmt:
+  format:
   dtype: float32
   unit:
   description: Spectral model index systematic error
   latex:
 - name: spec_index_err_tot
-  fmt:
+  format:
   dtype: float32
   unit:
   description: Spectral model index total error
   latex:
 - name: spec_ecut
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Spectral model cut off (ecpl)
   latex:
 - name: spec_ecut_err
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Spectral model cut off (ecpl) error
   latex:
 - name: spec_flux_above_1TeV
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1
   description: Integrated flux above 1 TeV
   latex:
 - name: spec_flux_above_1TeV_err
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1
   description: Integrated flux above 1 TeV error
   latex:
 - name: spec_flux_above_1TeV_crab
-  fmt:
+  format:
   dtype: float32
   unit:
   description: Integrated flux above 1 TeV, measured in crab units (Meyer 2012)
   latex:
 - name: spec_flux_above_1TeV_crab_err
-  fmt:
+  format:
   dtype: float32
   unit:
   description: Integrated flux above 1 TeV error, measured in crab units (Meyer 2012)
   latex:
 - name: spec_flux_above_erange_min
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1
   description: Integrated flux above spec_erange_min
   latex:
 - name: spec_flux_above_erange_min_err
-  fmt:
+  format:
   dtype: float32
   unit: cm-2 s-1
   description: Error on integrated flux above spec_erange_min
   latex:
 - name: spec_energy_flux_1TeV_10TeV
-  fmt:
+  format:
   dtype: float32
   unit: TeV cm-2 s-1
   description: Integrated energy flux between 1 TeV and 10 TeV
   latex:
 - name: spec_energy_flux_1TeV_10TeV_err
-  fmt:
+  format:
   dtype: float32
   unit: TeV cm-2 s-1
   description: Integrated energy flux between 1 TeV and 10 TeV error
@@ -361,53 +361,53 @@
 # SED info
 - name: sed_reference_id
   dtype: str
-  fmt:
+  format:
   unit:
   description: Paper ID where sed is taken from.
 - name: sed_e_ref
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Reference energy
   latex:
 - name: sed_e_min
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Lower edge of energy bin.
   latex:
 - name: sed_e_max
-  fmt:
+  format:
   dtype: float32
   unit: TeV
   description: Upper edge of energy bin.
   latex:
 - name: sed_dnde
-  fmt:
+  format:
   dtype: float32
   unit: TeV-1 cm-2 s-1
   description: Flux at reference energy
   latex:
 - name: sed_dnde_err
-  fmt:
+  format:
   dtype: float32
   unit: TeV-1 cm-2 s-1
   description: Flux error at reference energy
   latex:
 - name: sed_dnde_errp
-  fmt:
+  format:
   dtype: float32
   unit: TeV-1 cm-2 s-1
   description: Upper error on flux at reference energy
   latex:
 - name: sed_dnde_errn
-  fmt:
+  format:
   dtype: float32
   unit: TeV-1 cm-2 s-1
   description: Lower error on flux at reference energy
   latex:
 - name: sed_dnde_ul
-  fmt:
+  format:
   dtype: float32
   unit: TeV-1 cm-2 s-1
   description: Upper limit on flux at reference energy

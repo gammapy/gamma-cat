@@ -129,6 +129,7 @@ class OutputData:
             'gammacat-datasets.json',
             'gammacat-sources.json',
             'gammacat.fits.gz',
+            'gammacat.ecsv',
             'gammacat.yaml',
         ]
 

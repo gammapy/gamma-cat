@@ -123,12 +123,14 @@ class OutputDataMaker:
     def make_index_files_datasets(self):
         data = OrderedDict()
         data['info'] = gammacat_info.info_dict
-        data['data'] = self.input_data.datasets.to_json()['data']
+        data['data'] = self.input_data.datasets.to_dict()['data']
         path = OutputDataConfig.index_datasets_json
         write_json(data, path)
 
     def make_index_files_sources(self):
-        data = self.input_data.sources.to_json()
+        data = OrderedDict()
+        data['info'] = gammacat_info.info_dict
+        data['data'] = self.input_data.sources.to_dict()['data']
         path = OutputDataConfig.index_sources_json
         write_json(data, path)
 

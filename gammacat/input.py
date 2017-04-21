@@ -130,7 +130,7 @@ class InputDataset:
         path = '/'.join(path.parts[-2:])
         return cls(reference_id=reference_id, path=path, sources=sources)
 
-    def to_json(self):
+    def to_dict(self):
         sources = []
         for source in self.sources:
             data = OrderedDict()
@@ -198,7 +198,7 @@ class BasicSourceList:
 
         return cls(data=data)
 
-    def to_json(self):
+    def to_dict(self):
         """Return data in format that can be written to JSON.
 
         A dict with `data` key.
@@ -258,14 +258,14 @@ class InputDatasetCollection:
         rows = [OrderedDict(spam=99)]
         return Table(rows=rows, meta=meta, masked=True)
 
-    def to_json(self):
+    def to_dict(self):
         """Return data in format that can be written to JSON.
 
         A dict with `data` key.
         """
         data = []
         for dataset in self.data:
-            data.append(dataset.to_json())
+            data.append(dataset.to_dict())
         return OrderedDict(data=data)
 
     def validate(self):

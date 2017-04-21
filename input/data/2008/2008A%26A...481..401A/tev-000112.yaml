@@ -15,8 +15,8 @@ morph:
 
 spec:
   type: pl
-  norm: {val: 7.5, err: 1.11, err_sys: 0.3}
-  index: {val: 2.66, err: 0.27, err_sys: 0.2}
+  norm: {val: 0.750, err: 0.111, err_sys: 0.030}
+  index: {val: 2.66, err: 0.27, err_sys: 0.20}
   ref: 1
   theta: 0.2d
   erange: {min: 0.3 , max: 5}

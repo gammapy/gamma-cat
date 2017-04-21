@@ -6810,26 +6810,26 @@
   - spec_erange_max: 5.0
   - spec_theta: 0.20000000298023224
   - spec_ref: 1.0
-  - spec_norm: 7.579999995732667e-12
-  - spec_norm_err: 9.000000180878209e-13
-  - spec_norm_err_sys: 1.4999999397961872e-13
-  - spec_norm_err_tot: 9.124143498032145e-13
-  - spec_norm_1TeV: 7.579999995732667e-12
-  - spec_norm_1TeV_err: 9.000000180878209e-13
+  - spec_norm: 7.579999995732667e-13
+  - spec_norm_err: 9.000000180878209e-14
+  - spec_norm_err_sys: 1.499999973677505e-14
+  - spec_norm_err_tot: 9.124144040133231e-14
+  - spec_norm_1TeV: 7.579999995732667e-13
+  - spec_norm_1TeV_err: 9.000000180878209e-14
   - spec_index: 2.5
   - spec_index_err: 0.17000000178813934
   - spec_index_err_sys: 0.20000000298023224
   - spec_index_err_tot: 0.26248809695243835
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 5.053333185928155e-12
-  - spec_flux_above_1TeV_err: 8.294564579451602e-13
-  - spec_flux_above_1TeV_crab: 24.359947204589844
-  - spec_flux_above_1TeV_crab_err: 3.99845290184021
-  - spec_flux_above_erange_min: 3.075360799353888e-11
-  - spec_flux_above_erange_min_err: 4.6069905702827985e-12
-  - spec_energy_flux_1TeV_10TeV: 1.5144840243008773e-11
-  - spec_energy_flux_1TeV_10TeV_err: 5.420594095112419e-12
+  - spec_flux_above_1TeV: 5.053333511188807e-13
+  - spec_flux_above_1TeV_err: 8.294564714976874e-14
+  - spec_flux_above_1TeV_crab: 2.4359946250915527
+  - spec_flux_above_1TeV_crab_err: 0.39984527230262756
+  - spec_flux_above_erange_min: 3.075360712617714e-12
+  - spec_flux_above_erange_min_err: 4.606990245022147e-13
+  - spec_energy_flux_1TeV_10TeV: 1.514483959248747e-12
+  - spec_energy_flux_1TeV_10TeV_err: 5.420593986692201e-13
 - !!omap
   - source_id: 112
   - common_name: W28
@@ -6871,26 +6871,26 @@
   - spec_erange_max: 5.0
   - spec_theta: 0.20000000298023224
   - spec_ref: 1.0
-  - spec_norm: 7.499999753191045e-12
-  - spec_norm_err: 1.1100000042382763e-12
-  - spec_norm_err_sys: 2.9999998795923744e-13
-  - spec_norm_err_tot: 1.1498261110604036e-12
-  - spec_norm_1TeV: 7.499999753191045e-12
-  - spec_norm_1TeV_err: 1.1100000042382763e-12
+  - spec_norm: 7.499999970031479e-13
+  - spec_norm_err: 1.1100000177908034e-13
+  - spec_norm_err_sys: 2.99999994735501e-14
+  - spec_norm_err_tot: 1.1498260839553492e-13
+  - spec_norm_1TeV: 7.499999970031479e-13
+  - spec_norm_1TeV_err: 1.1100000177908034e-13
   - spec_index: 2.6600000858306885
   - spec_index_err: 0.27000001072883606
   - spec_index_err_sys: 0.20000000298023224
   - spec_index_err_tot: 0.33600595593452454
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 4.518072114351179e-12
-  - spec_flux_above_1TeV_err: 9.935570161739848e-13
-  - spec_flux_above_1TeV_crab: 21.77968406677246
-  - spec_flux_above_1TeV_crab_err: 4.789511203765869
-  - spec_flux_above_erange_min: 3.3337412691514245e-11
-  - spec_flux_above_erange_min_err: 7.325506520827751e-12
-  - spec_energy_flux_1TeV_10TeV: 1.1362390195390759e-11
-  - spec_energy_flux_1TeV_10TeV_err: 4.938718271146891e-12
+  - spec_flux_above_1TeV: 4.5180723854017224e-13
+  - spec_flux_above_1TeV_err: 9.935570432790392e-14
+  - spec_flux_above_1TeV_crab: 2.1779682636260986
+  - spec_flux_above_1TeV_crab_err: 0.4789511263370514
+  - spec_flux_above_erange_min: 3.3337412691514245e-12
+  - spec_flux_above_erange_min_err: 7.325506846088403e-13
+  - spec_energy_flux_1TeV_10TeV: 1.1362389978550325e-12
+  - spec_energy_flux_1TeV_10TeV_err: 4.938718162726674e-13
 - !!omap
   - source_id: 111
   - common_name: HESS J1800-240A

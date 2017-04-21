@@ -6684,7 +6684,7 @@
   - morph_pa_err: .nan
   - morph_pa_frame: ''
   - spec_type: pl2
-  - spec_erange_min: 0.17000000178813934
+  - spec_erange_min: 0.20000000298023224
   - spec_erange_max: .nan
   - spec_theta: 0.10000000149011612
   - spec_ref: 0.20000000298023224
@@ -6692,22 +6692,22 @@
   - spec_norm_err: 7.000000080449598e-13
   - spec_norm_err_sys: 1.1999999518369497e-12
   - spec_norm_err_tot: 1.3892444052782116e-12
-  - spec_norm_1TeV: 6.677768689573871e-13
-  - spec_norm_1TeV_err: 1.1296576873801381e-13
+  - spec_norm_1TeV: 8.383876817612268e-13
+  - spec_norm_1TeV_err: 1.3196889869955541e-13
   - spec_index: 2.4000000953674316
   - spec_index_err: 0.10999999940395355
   - spec_index_err_sys: 0.20000000298023224
   - spec_index_err_tot: 0.22825424373149872
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 4.769834700824038e-13
-  - spec_flux_above_1TeV_err: 1.0988598404685149e-13
-  - spec_flux_above_1TeV_crab: 2.2993323802948
-  - spec_flux_above_1TeV_crab_err: 0.5297130942344666
+  - spec_flux_above_1TeV: 5.988483363708608e-13
+  - spec_flux_above_1TeV_err: 1.290293555594041e-13
+  - spec_flux_above_1TeV_crab: 2.8867902755737305
+  - spec_flux_above_1TeV_crab_err: 0.6219950318336487
   - spec_flux_above_erange_min: 5.699999933855837e-12
   - spec_flux_above_erange_min_err: 7.000000080449598e-13
-  - spec_energy_flux_1TeV_10TeV: 1.6627960943912945e-12
-  - spec_energy_flux_1TeV_10TeV_err: 6.723830476770831e-13
+  - spec_energy_flux_1TeV_10TeV: 2.0876249947482384e-12
+  - spec_energy_flux_1TeV_10TeV_err: 8.086921974084782e-13
 - !!omap
   - source_id: 109
   - common_name: Terzan 5

@@ -19,4 +19,4 @@ spec:
   index: {val: 2.40, err: 0.11, err_sys: 0.20}
   ref: 0.2
   theta: 0.1d
-  erange: {min: 0.17}
+  erange: {min: 0.2}

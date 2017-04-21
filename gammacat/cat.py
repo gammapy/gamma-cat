@@ -219,6 +219,14 @@ class GammaCatSource:
             data['sed_reference_id'] = sed_info.table.meta['reference_id']
         except KeyError:
             data['sed_reference_id'] = NA.fill_value['string']
+
+        try:
+            dnde = sed_info.table['dnde'].data
+            dnde_ul = sed_info.table['dnde_ul'].data
+            data['sed_n_points'] = np.isfinite(dnde).sum() + np.isfinite(dnde_ul).sum()
+        except KeyError:
+            data['sed_n_points'] = 0
+
         try:
             e_ref = sed_info.table['e_ref'].data
             data['sed_e_ref'] = NA.resize_sed_array(e_ref, shape)
@@ -444,6 +452,7 @@ class GammaCatMaker:
     def __init__(self):
         self.sources = None
         self.table = None
+        self.table2 = None
 
     def setup(self, source_ids='all', internal=False):
         log.info('Setup ...')
@@ -456,10 +465,13 @@ class GammaCatMaker:
 
     def run(self, internal):
         log.info('Making gamma-cat ....')
-        self.make_table()
-        self.write_table(internal=internal)
-        self.write_table_ecsv(internal=internal)
-        self.write_yaml_text_dump(internal=internal)
+
+        self.table = self.make_table(self.sources)
+        self.write_table_fits(self.table, internal=internal)
+
+        self.table2 = self.make_table2(self.table)
+        self.write_table_ecsv(self.table2, internal=internal)
+        self.write_table_yaml(self.table2, internal=internal)
 
     @staticmethod
     def read_source_data(source_ids, internal=False):
@@ -491,9 +503,10 @@ class GammaCatMaker:
 
         return sources
 
-    def make_table(self):
+    @staticmethod
+    def make_table(sources):
         """Convert Python data structures to a flat table."""
-        rows = [source.row_dict() for source in self.sources]
+        rows = [source.row_dict() for source in sources]
 
         # Passing Quantity objects to `Table(rows=rows)` doesn't work.
         # So for now, we drop units here
@@ -539,11 +552,24 @@ class GammaCatMaker:
         # And where `ra` is identical, use `dec` and `source_id` to order.
         table.sort(['ra', 'dec', 'source_id'])
 
-        self.table = table
+        return table
 
-    def write_table(self, internal=False):
-        table = self.table
+    @staticmethod
+    def make_table2(table):
+        # ECSV format does not support multidimensional columns
+        # So we replace with the mean here to have a useful stat in text diffs
+        table = table.copy()
+        for colname in table.colnames:
+            if table[colname].ndim > 1:
+                table[colname] = np.nanmean(table[colname].data, axis=1)
 
+        # column_selection = [_ for _ in table.colnames if not 'sed_' in _]
+        # table = table[column_selection]
+
+        return table
+
+    @staticmethod
+    def write_table_fits(table, internal=False):
         if internal:
             path = gammacat_info.internal_dir / 'gammacat-hess-internal.fits.gz'
         else:
@@ -551,15 +577,8 @@ class GammaCatMaker:
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
-    def write_table_ecsv(self, internal=False):
-
-        # ECSV format does not support multidimensional columns
-        # So we replace with the mean here to have a useful stat in text diffs
-        table = self.table.copy()
-        for colname in table.colnames:
-            if table[colname].ndim > 1:
-                table[colname] = np.nanmean(table[colname].data, axis=1)
-
+    @staticmethod
+    def write_table_ecsv(table, internal=False):
         if internal:
             path = gammacat_info.internal_dir / 'gammacat-hess-internal.ecsv'
         else:
@@ -568,9 +587,8 @@ class GammaCatMaker:
         log.info('Writing {}'.format(path))
         table.write(str(path), format='ascii.ecsv')
 
-    def write_yaml_text_dump(self, internal=False):
-        column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
-        table = self.table[column_selection]
+    @staticmethod
+    def write_table_yaml(table, internal=False):
         data = table_to_list_of_dict(table)
 
         if internal:

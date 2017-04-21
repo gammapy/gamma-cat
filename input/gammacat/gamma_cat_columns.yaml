@@ -364,6 +364,12 @@
   format:
   unit:
   description: Paper ID where sed is taken from.
+- name: sed_n_points
+  format:
+  dtype: int32
+  unit:
+  description: Number of spectral points (including upper limits)
+  latex:
 - name: sed_e_ref
   format:
   dtype: float32

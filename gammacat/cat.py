@@ -32,6 +32,7 @@ def _to_crab_flux():
     flux_crab = crab.integral(1 * u.TeV, 1e6 * u.TeV)
     return 100 / flux_crab.to('cm-2 s-1').value
 
+
 FLUX_TO_CRAB = _to_crab_flux()
 
 
@@ -441,22 +442,30 @@ class GammaCatMaker:
     """
 
     def __init__(self):
-        self.sources = []
+        self.sources = None
         self.table = None
+
+    def setup(self, source_ids='all', internal=False):
+        log.info('Setup ...')
+        if source_ids == 'all':
+            source_ids = GammaCatDataSetConfig.read().source_ids
+        else:
+            source_ids = [int(_) for _ in source_ids.split(',')]
+
+        self.sources = self.read_source_data(source_ids=source_ids, internal=internal)
 
     def run(self, internal):
         log.info('Making gamma-cat ....')
-
-        self.gather_data(internal=internal)
         self.make_table()
         self.write_table(internal=internal)
         self.write_yaml_text_dump(internal=internal)
 
-    def gather_data(self, internal=False):
+    @staticmethod
+    def read_source_data(source_ids, internal=False):
         """Gather data into Python data structures."""
         input_data = InputData.read(internal=internal)
-        source_ids = [_.data['source_id'] for _ in input_data.sources.data]
 
+        sources = []
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             log.info('Processing : {}'.format(basic_source_info))
@@ -477,7 +486,9 @@ class GammaCatMaker:
                 dataset_source_info=dataset_source_info,
                 sed_info=sed_info
             )
-            self.sources.append(source)
+            sources.append(source)
+
+        return sources
 
     def make_table(self):
         """Convert Python data structures to a flat table."""

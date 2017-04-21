@@ -52,8 +52,9 @@ def make_output(step):
 
 
 @cli.command(name='cat')
+@click.option('--sources', default='all', help='Either "all" or comma-separated string of source IDs')
 @click.option('--internal', default=False, is_flag=True)
-def make_cat(internal):
+def make_cat(sources, internal):
     """Make catalog in HGPS format
     """
     from gammacat.cat import GammaCatMaker
@@ -62,7 +63,9 @@ def make_cat(internal):
             raise ValueError("Environment variable 'HGPS_ANALYSIS' "
                              " must be set.")
     log.info('Making catalog ...')
-    GammaCatMaker().run(internal=internal)
+    maker = GammaCatMaker()
+    maker.setup(source_ids=sources, internal=internal)
+    maker.run(internal=internal)
 
 
 # @cli.command(name='webpage')

@@ -1,0 +1,25 @@
+source_id: 25
+reference_id: 2015A&A...574A.100H
+
+data:
+  livetime: 69
+
+pos:
+  ra: {val: 05h34m31.94s, err: 0h0m0s, err_sys: 0h0m0s}
+  dec: {val: +22d00m52.2s, err: 0.0s, err_sys: 0.0s}
+
+morph:
+  type: point
+
+spec:
+  type: lp
+  norm: {val: 3.23, err: 0.03, err_sys: 0.35}
+  index: {val: 2.47, err: 0.01, err_sys: 0.03}
+  curvature: {val: -0.24, err: 0.01, err_sys: 0.05}
+  ref: 1
+  erange: {min: 0.05}
+
+#TODO add spectral values
+
+
+

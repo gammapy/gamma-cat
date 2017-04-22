@@ -11304,19 +11304,19 @@
   - tevcat_name: TeV J2323+588
   - tgevcat_id: 153
   - tgevcat_name: TeV J2323+5848
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2015arXiv151100309G
+  - significance: 11.0
+  - livetime: 60.0
   - ra: 350.8500061035156
   - dec: 58.814998626708984
   - glon: 111.73474884033203
   - glat: -2.1295676231384277
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: none
+  - pos_ra: 350.8349914550781
+  - pos_dec: 58.81700134277344
+  - pos_glon: 111.72809600830078
+  - pos_glat: -2.125089168548584
+  - pos_err: 0.006000000052154064
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -11324,31 +11324,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: none
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_type: pl
+  - spec_erange_min: 0.30000001192092896
+  - spec_erange_max: 7.0
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
+  - spec_ref: 1.0
+  - spec_norm: 1.449999950837999e-12
+  - spec_norm_err: 1.100000014578155e-13
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_norm_1TeV: 1.449999950837999e-12
+  - spec_norm_1TeV_err: 1.100000014578155e-13
+  - spec_index: 2.75
+  - spec_index_err: 0.10000000149011612
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.22360679507255554
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_flux_above_1TeV: 8.285714237117603e-13
+  - spec_flux_above_1TeV_err: 7.86940499743205e-14
+  - spec_flux_above_1TeV_crab: 3.9941866397857666
+  - spec_flux_above_1TeV_crab_err: 0.3793501555919647
+  - spec_flux_above_erange_min: 6.813460819848904e-12
+  - spec_flux_above_erange_min_err: 6.729883577499818e-13
+  - spec_energy_flux_1TeV_10TeV: 1.9332721187814705e-12
+  - spec_energy_flux_1TeV_10TeV_err: 2.964985570431955e-13
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan

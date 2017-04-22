@@ -105,12 +105,12 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      mjd0: {type: number, unit=days, description="Zero phase for orbital period in MJD"}
+      mjd0: {type: number, unit: day, description: Zero phase for orbital period in MJD}
       period:
         type: object
         additionalProperties: false
         description: |
-          Orbital period in days
+          Orbital period
         properties:
           val: {type: [number, string]}
           err: {type: [number, string], description: Statistical error}
@@ -135,8 +135,8 @@ properties:
         type: object
         additionalProperties: false
         properties:
-          min: {type: [number,  "null"], unit=TeV}
-          max: {type: [number,  "null"], unit=TeV}
+          min: {type: [number,  "null"], unit: TeV}
+          max: {type: [number,  "null"], unit: TeV}
       norm:
         type: object
         additionalProperties: false
@@ -146,7 +146,7 @@ properties:
           val: {type: number}
           err: {type: number, description: Statistical error}
           err_sys: {type: number, description: Systematic error}
-      ref: {type: number, unit=TeV, description="Reference energy for norm"}
+      ref: {type: number, unit: TeV, description: Reference energy for norm}
       index:
         type: object
         additionalProperties: false
@@ -171,20 +171,20 @@ properties:
           Covariance matrix
           TODO: decide on format.
           An example of a published covariance matrix is here: 2016arXiv161101863H
-      observatory: {type: string, description="Observatory name"}
+      observatory: {type: string, description: Observatory name}
       mjd:
         type: object
         additionalProperties: false
         properties:
-          min: {type: [number,  "null"], unit=days}
-          max: {type: [number,  "null"], unit=days}
+          min: {type: [number,  "null"], unit: day}
+          max: {type: [number,  "null"], unit: day}
       phase:
         type: object
         additionalProperties: false
         properties:
           min: {type: [number,  "null"]}
           max: {type: [number,  "null"]}
-      filecounter: {type: number, description="Counter to connect spectral fit with SED file"}
+      filecounter: {type: number, description: Counter to connect spectral fit with SED file}
 
   notes: {type: string}
 

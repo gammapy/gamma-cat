@@ -1,0 +1,22 @@
+source_id: 132
+reference_id: 2014ApJ...787..166A
+
+data:
+  livetime: 62
+  significance: 14
+
+pos:
+  ra: {val: 19h07m21.6s, err: 0h1m12s}
+  dec: {val: +06d13m12s, err: 1m12s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.44d, err: 0.02d}
+
+spec:
+  type: pl
+  norm: {val: 4.23, err: 0.41, err_sys: 0.85}
+  index: {val: 2.2, err: 0.1, err_sys: 0.2}
+  ref: 1.0
+
+#TODO add -sed.ecvs

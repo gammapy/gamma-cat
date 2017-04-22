@@ -1,0 +1,22 @@
+source_id: 130
+reference_id: 2014A&A...571A..96M
+
+data:
+  livetime: 29
+  significance: 12.0
+
+pos:
+  ra: {val: 18h57m15.7s, err: 0h0m5.8s, err_sys: 7.2s}
+  dec: {val: 02d47m17s, err: 1m26s, err_sys: 1m48s}
+
+morph:
+  type: gaus
+  sigma: {val: 0.2d, err: 0.03d, err_sys: 0.02d} #extension
+
+spec:
+  type: pl
+  norm: {val: 5.37, err: 0.44, err_sys: 1.5}
+  index: {val: 2.16, err: 0.07, err_sys: 0.15}
+  ref: 1.0
+
+#TODO write -sed.ecvs

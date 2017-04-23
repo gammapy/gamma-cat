@@ -11,9 +11,9 @@
 # - data_type: lc
 # - source_id: 30
 # - reference_id: 2014ApJ...780..168A
+# - telescope: hess
 # - {SED_TYPE: flux}
 # - UL_CONF: 0.99
-# - comments: [HESS light curve]
 e_min time_min time_max flux flux_err flux_ul
 1. 53087.8  53088.8 1.34305e-13  1.368e-13 4.2e-13
 1. 53353.0  53356.9 4.05532e-13  8.110e-14 nan

@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 30
 # - reference_id: 2014ApJ...780..168A
+# - telescope: hess
 # - UL_CONF: 0.95
 # - comments: |
 #     Spectral points measured by HESS for orbital phases 0.6-0.9

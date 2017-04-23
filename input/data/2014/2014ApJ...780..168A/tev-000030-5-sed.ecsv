@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 30
 # - reference_id: 2014ApJ...780..168A
+# - telescope: hess
 # - comments: |
 #     Spectral points measured by HESS for orbital phases 0.2-0.4
 #     2004-2012, mjd 53087.0, 55951.

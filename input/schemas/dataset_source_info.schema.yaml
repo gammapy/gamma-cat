@@ -193,7 +193,7 @@ properties:
 required:
   - source_id
   - reference_id
-#  - telescope
+  - telescope
 #  - morphology
 #  - spectrum
 

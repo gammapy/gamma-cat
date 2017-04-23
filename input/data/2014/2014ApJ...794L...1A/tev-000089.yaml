@@ -1,5 +1,6 @@
 source_id: 89
 reference_id: 2014ApJ...794L...1A
+telescope: hess
 
 data:
   livetime: 72

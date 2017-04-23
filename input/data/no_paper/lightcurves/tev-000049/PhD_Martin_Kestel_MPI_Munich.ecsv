@@ -8,8 +8,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: HEGRA_CT1}
 # - {reference_id: PhD_Martin_Kestel_MPI_Munich}
+# - {telescope: hegra}
 # - {timesys: UTC}
 time flux flux_err flux_ul
 51927.25 6.52 1.09 nan

@@ -10,8 +10,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 138}
-# - {telescope: HEGRA_CT1}
 # - {reference_id: N.Tonello.PrivateCommunication}
+# - {telescope: hegra}
 # - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 51723.13 51723.1094 51723.1641 0.09 0.13 nan

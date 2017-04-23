@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 60
 # - reference_id: 2005A&A...442....1A
+# - telescope: hess
 e_min e_max e_ref dnde dnde_err
 0.375   0.5         0.456451        1.25048e-11  4.57791e-12
 0.5     0.667       0.572835        6.01352e-12  1.04343e-12

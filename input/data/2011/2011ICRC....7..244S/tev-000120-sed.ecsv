@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 120
 # - reference_id: 2011ICRC....7..244S
+# - telescope: hess
 # - comments: |
 #     Spectral points for HESS J1831-098 from Figure 2.
 #     Data obtained via email by Arache Djannati-Atai on Nov 25, 2016.

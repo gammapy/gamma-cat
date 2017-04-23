@@ -1,5 +1,6 @@
 source_id: 30
 reference_id: 2009ApJ...698L..94A
+telescope: veritas
 
 data:
   livetime: 31.0

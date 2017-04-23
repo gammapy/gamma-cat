@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 108
 # - reference_id: 2008A&A...483..509A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/hessj1745-303-aux.html
 # - comments: |
 #     This is the full spectrum from Figure 2.

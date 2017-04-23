@@ -1,5 +1,6 @@
 source_id: 88
 reference_id: 2014MNRAS.439.2828A
+telescope: hess
 
 data:
   livetime: 63.4

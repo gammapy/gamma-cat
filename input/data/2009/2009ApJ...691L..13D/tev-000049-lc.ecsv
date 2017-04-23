@@ -9,8 +9,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: 'MAGIC,VERITAS'}
 # - {reference_id: 2009ApJ...691L..13D}
+# - {telescope: "magic,veritas"}
 # - {timesys: UTC}
 time time_min time_max flux flux_err
 54618.2029 54618.1989 54618.2069 0.903634 0.24

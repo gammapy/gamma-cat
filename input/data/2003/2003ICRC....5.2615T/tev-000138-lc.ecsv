@@ -10,8 +10,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 138}
-# - {telescope: HEGRA_CT1}
 # - {reference_id: 2003ICRC....5.2615T}
+# - {telescope: hegra}
 # - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 52412.2 52412.125 52412.2773 0.76 0.25 nan

@@ -4,6 +4,8 @@ properties:
 
   source_id: {type: integer}
   reference_id: {type: string}
+  telescope:
+    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
 
   data:
     type: object
@@ -191,6 +193,7 @@ properties:
 required:
   - source_id
   - reference_id
+#  - telescope
 #  - morphology
 #  - spectrum
 

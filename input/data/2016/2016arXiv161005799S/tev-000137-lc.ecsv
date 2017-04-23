@@ -8,6 +8,7 @@
 # - data_type: lc
 # - source_id: 137
 # - reference_id: 2016arXiv161005799S
+# - telescope: veritas
 # - timesys: UTC
 # - energy_min: 200 GeV
 time flux flux_err

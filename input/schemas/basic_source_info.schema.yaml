@@ -32,11 +32,11 @@ properties:
       # fsrq - Flat spectrum radio quasar
 
   discoverer:
-    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo]
+    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
   seen_by:
     type: array
     items:
-      enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo]
+      enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
   discovery_date: {type: [string, "null"]}
 
   tevcat_id: {type: integer}

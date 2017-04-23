@@ -1,5 +1,6 @@
 source_id: 37
 reference_id: 2006A&A...448L..43A
+telescope: hess
 
 data:
   excess: 2152
@@ -13,7 +14,7 @@ morph:
   type: gauss
   sigma: {val: 0.48d, err: 0.03d}
   sigma2: {val: 0.36d, err: 0.03d}
-  #TODO: check position angle (RADEC or GALACTIC orientation?)
+  # TODO: check position angle (RADEC or GALACTIC orientation?)
   pa: {val: 41d, err: 7d}
 
 spec:

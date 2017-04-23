@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 70
 # - reference_id: 2016arXiv160104461H
+# - telescope: hess
 # - comments: |
 #     Data obtained from Ira Jung on Oct 18, 2016 via private communication
 e_ref dnde dnde_min dnde_max

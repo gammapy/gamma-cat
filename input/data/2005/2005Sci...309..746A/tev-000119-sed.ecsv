@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 119
 # - reference_id: 2005Sci...309..746A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/science309.html
 # - UL_CONF: 1 sigma
 e_ref dnde dnde_errn dnde_errp dnde_ul

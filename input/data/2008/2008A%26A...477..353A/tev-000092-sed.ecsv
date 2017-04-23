@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 92
 # - reference_id: 2008A&A...477..353A
+# - telescope: hess
 # - comments: |
 #     Data obtained from Karl Kosack on November 23, 2016
 #     See https://github.com/gammapy/gamma-cat/issues/30

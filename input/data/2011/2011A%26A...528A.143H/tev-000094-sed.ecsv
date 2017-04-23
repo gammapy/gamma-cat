@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 94
 # - reference_id: 2011A&A...528A.143H
+# - telescope: hess
 # # TODO: where are these points from?
 # - url: TODO
 e_ref dnde dnde_errp dnde_errn

@@ -7,8 +7,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: HEGRA_CT_System}
 # - {reference_id: 1999A&A...350..757A}
+# - {telescope: hegra}
 # - {timesys: UTC}
 time flux flux_err
 50545.8764 0.34 0.11

@@ -10,6 +10,7 @@
 # - data_type: lc
 # - source_id: 30
 # - reference_id: 2009ApJ...698L..94A
+# - telescope: veritas
 # - UL_CONF: 0.99
 e_min time time_min time_max flux_ul
 1.0 54105. 54085. 54125. 4.2e-13

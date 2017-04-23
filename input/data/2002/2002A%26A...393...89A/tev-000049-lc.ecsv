@@ -8,8 +8,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: HEGRA_CT_System}
 # - {reference_id: 2002A&A...393...89A}
+# - {telescope: hegra}
 # - {timesys: UTC}
 time flux flux_err flux_ul
 51523.74024 nan nan 0.56

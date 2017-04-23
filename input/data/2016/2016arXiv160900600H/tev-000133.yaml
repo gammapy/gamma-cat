@@ -1,5 +1,6 @@
 source_id: 133
 reference_id: 2016arXiv160900600H
+telescope: hess
 
 data:
   livetime: 75

@@ -1,5 +1,6 @@
 source_id: 128
 reference_id: 2008AIPC.1085..372C
+telescope: hess
 
 data:
   livetime: 50

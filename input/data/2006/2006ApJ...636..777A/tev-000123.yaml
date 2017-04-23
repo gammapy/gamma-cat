@@ -1,5 +1,6 @@
 source_id: 123
 reference_id: 2006ApJ...636..777A
+telescope: hess
 
 data:
   livetime: 7.3

@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 27
 # - reference_id: 2012A&A...545L...2H
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA545_L2.html
 e_ref dnde dnde_errn dnde_errp
 0.6952   1.39e-08   4.56e-09   5.04e-09

@@ -10,6 +10,7 @@
 # - data_type: lc
 # - source_id: 30
 # - reference_id: 2007A&A...469L...1A
+# - telescope: hess
 # - {SED_TYPE: flux}
 # - comments: [HESS light curve; time periods approximate (Dec 2004 and Nov/Dec 2005)]
 e_min time_min time_max flux flux_err

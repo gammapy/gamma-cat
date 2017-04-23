@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 39
 # - reference_id: 2005A&A...437L...7A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/RXJ0852.html
 # - comments: |
 #     Spectral points from Figure 3.

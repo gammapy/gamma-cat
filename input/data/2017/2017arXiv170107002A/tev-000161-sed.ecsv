@@ -13,6 +13,7 @@
 # - data_type: sed
 # - source_id: 161
 # - reference_id: 2017arXiv170107002A
+# - telescope: hess
 # - comments: |
 #     Data obtained from corresponding author Ekrem Oguzhan Anguner on Feb 14, 2017
 #     Corresponds to black spectral points from Figure 3 for HESS J1826-130:

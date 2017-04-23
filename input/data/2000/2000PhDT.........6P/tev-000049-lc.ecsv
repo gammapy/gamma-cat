@@ -8,8 +8,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: CAT}
 # - {reference_id: 2000PhDT.........6P}
+# - {telescope: cat}
 # - {timesys: UTC}
 time flux flux_err flux_ul
 50432.0 nan nan 0.662426

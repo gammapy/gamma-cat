@@ -7,8 +7,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: H.E.S.S.}
 # - {reference_id: 2005A&A...437...95A}
+# - {telescope: hess}
 # - {timesys: UTC}
 time flux flux_err
 53108.0 3.38 0.2

@@ -10,8 +10,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: VERITAS}
 # - {reference_id: 'http://veritas.sao.arizona.edu'}
+# - {telescope: veritas}
 # - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 53676.45705 53676.418 53676.4961 0.28 0.1 nan

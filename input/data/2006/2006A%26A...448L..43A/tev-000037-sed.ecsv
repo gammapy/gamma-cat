@@ -8,6 +8,7 @@
 # - data_type: sed
 # - source_id: 37
 # - reference_id: 2006A&A...448L..43A
+# - telescope: hess
 # - url: http://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/VelaX_auxinfo.html
 e_ref dnde dnde_err
 0.727   1.86e-11  3.93e-12

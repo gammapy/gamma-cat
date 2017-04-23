@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 25
 # - reference_id: 2008ICRC....2..803K
+# - telescope: hess
 # - comments: |
 #     Data taken from table 4
 e_ref significance dnde dnde_err

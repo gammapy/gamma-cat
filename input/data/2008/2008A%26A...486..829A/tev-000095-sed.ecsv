@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 95
 # - reference_id: 2008A&A...486..829A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA486_829.html
 # - UL_CONF: 0.90
 # - comments: |

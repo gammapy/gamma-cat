@@ -7,8 +7,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 138}
-# - {telescope: MAGIC}
 # - {reference_id: 'http://magic.mppmu.mpg.de/publications/theses/NTonello.pdf'}
+# - {telescope: magic}
 # - {timesys: UTC}
 time flux flux_err
 53254.0 0.15 0.04

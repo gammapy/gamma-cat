@@ -1,5 +1,6 @@
 source_id: 64
 reference_id: 2008AIPC.1085..285R
+telescope: hess
 
 data:
   livetime: 10

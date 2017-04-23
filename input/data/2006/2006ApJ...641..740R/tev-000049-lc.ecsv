@@ -8,8 +8,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: Whipple}
 # - {reference_id: 2006ApJ...641..740R}
+# - {telescope: whipple}
 # - {timesys: UTC}
 time flux flux_err flux_ul
 52612.0 nan nan 0.65

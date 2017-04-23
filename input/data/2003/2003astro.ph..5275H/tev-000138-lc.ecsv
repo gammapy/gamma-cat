@@ -10,8 +10,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 138}
-# - {telescope: HEGRA_CT_System}
 # - {reference_id: 2003astro.ph..5275H}
+# - {telescope: hegra}
 # - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 52412.15 52412.1161 52412.2028 0.59 0.21 nan

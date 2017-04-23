@@ -11,6 +11,7 @@
 # - data_type: sed
 # - source_id: 98
 # - reference_id: 2015A&A...574A.100H
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349
 # - comments: |
 #     That page also contains a Fermi-LAT spectrum.

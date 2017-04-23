@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 102}
 # - {reference_id: 2011A&A...531A..81H}
+# - {telescope: hess}
 # - {comments: 'Spectral points for HESS J1729-345 from Figure 4.
 # 
 #     Data obtained via email by Fabio Acero on Dec 15, 2016.

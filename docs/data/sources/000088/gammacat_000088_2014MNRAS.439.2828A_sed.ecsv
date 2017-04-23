@@ -16,6 +16,7 @@
 # - {data_type: sed}
 # - {source_id: 88}
 # - {reference_id: 2014MNRAS.439.2828A}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1640'}
 # - {comments: Flux points from Figure 2.}
 # - {UL_CONF: 0.95}

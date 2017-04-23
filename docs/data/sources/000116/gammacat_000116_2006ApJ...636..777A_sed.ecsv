@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 116}
 # - {reference_id: 2006ApJ...636..777A}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html'}
 e_ref dnde dnde_errn dnde_errp
 0.322517 2.73577e-11 5.69046e-12 5.97149e-12

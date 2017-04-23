@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 94}
 # - {reference_id: 2011A&A...528A.143H}
+# - {telescope: hess}
 # - {url: TODO}
 e_ref dnde dnde_errn dnde_errp
 0.908 4.13e-12 1.58e-12 1.58e-12

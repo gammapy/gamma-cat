@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 77}
 # - {reference_id: 2011A&A...525A..45H}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA525_A45.html'}
 # - {comments: 'These are the spectral points for standard cuts (80 p.e.) from Figure
 #     2.

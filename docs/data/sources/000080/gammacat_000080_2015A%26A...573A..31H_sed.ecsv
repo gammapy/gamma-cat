@@ -10,6 +10,7 @@
 # - {data_type: sed}
 # - {source_id: 80}
 # - {reference_id: 2015A&A...573A..31H}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib'}
 # - {comments: 'Spectral points from Fermi-LAT are also given on that page.
 # 

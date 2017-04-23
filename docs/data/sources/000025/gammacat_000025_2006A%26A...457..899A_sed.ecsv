@@ -14,6 +14,7 @@
 # - {data_type: sed}
 # - {source_id: 25}
 # - {reference_id: 2006A&A...457..899A}
+# - {telescope: hess}
 # - {comments: Data taken from table 5 in the paper.}
 e_ref dnde dnde_errn dnde_errp excess significance
 0.519 1.81e-10 6e-12 6e-12 975.0 42.9

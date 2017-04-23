@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 65}
 # - {reference_id: 2006A&A...456..245A}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/kookaburra_auxinfo.html'}
 # - {comments: H.E.S.S. data points for Figure 2 (open points - HESS J1418-609)}
 e_ref dnde dnde_errn dnde_errp

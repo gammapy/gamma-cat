@@ -59,6 +59,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 4.779399966070574e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.920826774888141e-12
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 2
   - common_name: SHBL J001355.9-185406
@@ -120,6 +130,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 3
   - common_name: Tycho SNR
@@ -181,6 +201,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 2.391297067045467e-13
   - spec_energy_flux_1TeV_10TeV_err: 1.219441892299014e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 4
   - common_name: KUV 00311-1938
@@ -242,6 +272,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 5
   - common_name: 1ES 0033+595
@@ -303,6 +343,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 6
   - common_name: NGC 253
@@ -364,6 +414,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 7
   - common_name: RGB J0136+391
@@ -425,6 +485,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 8
   - common_name: RGB J0152+017
@@ -486,6 +556,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 9
   - common_name: 3C 58
@@ -547,6 +627,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 4.980094570235238e-13
   - spec_energy_flux_1TeV_10TeV_err: 2.630875660554477e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 10
   - common_name: S3 0218+35
@@ -608,6 +698,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 11
   - common_name: 3C 66A
@@ -669,6 +769,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 12
   - common_name: MAGIC J0223+403
@@ -730,6 +840,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 13
   - common_name: 1ES 0229+200
@@ -791,6 +911,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 14
   - common_name: LS I +61 303
@@ -852,6 +982,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 15
   - common_name: PKS 0301-243
@@ -913,6 +1053,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 16
   - common_name: IC 310
@@ -974,6 +1124,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 18
   - common_name: NGC 1275
@@ -1035,6 +1195,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 17
   - common_name: RBS 0413
@@ -1096,6 +1266,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 19
   - common_name: 1ES 0347-121
@@ -1157,6 +1337,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 20
   - common_name: 1ES 0414+009
@@ -1218,6 +1408,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 21
   - common_name: PKS 0447-439
@@ -1279,6 +1479,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 22
   - common_name: 1ES 0502+675
@@ -1340,6 +1550,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 23
   - common_name: RGB J0521+212
@@ -1401,6 +1621,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 24
   - common_name: LMC N132D
@@ -1462,6 +1692,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 3.2370614977579593e-13
   - spec_energy_flux_1TeV_10TeV_err: 2.680815096821332e-13
+  - sed_reference_id: 2015Sci...347..406H
+  - sed_n_points: 4
+  - sed_e_ref: 11.357999801635742
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.2461300539351721e-14
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 8.419299972635668e-15
+  - sed_dnde_errn: 1.688826656916654e-14
+  - sed_dnde_ul: 2.7360000641349315e-16
 - !!omap
   - source_id: 25
   - common_name: Crab nebula
@@ -1523,6 +1763,16 @@
   - spec_flux_above_erange_min_err: 1.7398712678917683e-12
   - spec_energy_flux_1TeV_10TeV: 5.055880714088801e-11
   - spec_energy_flux_1TeV_10TeV_err: 2.927039687017352e-12
+  - sed_reference_id: 2006A&A...457..899A
+  - sed_n_points: 0
+  - sed_e_ref: 8.173999786376953
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.5348551382919915e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 8.025216775842114e-13
+  - sed_dnde_errn: 7.93927044332593e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 26
   - common_name: 30 Dor C
@@ -1584,6 +1834,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 2.665996763628886e-13
   - spec_energy_flux_1TeV_10TeV_err: 1.1093519359422002e-13
+  - sed_reference_id: 2015Sci...347..406H
+  - sed_n_points: 10
+  - sed_e_ref: 8.883699417114258
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 4.2950255710935e-14
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 2.838981016961041e-14
+  - sed_dnde_errn: 5.958383471945522e-14
+  - sed_dnde_ul: 4.498000118595695e-16
 - !!omap
   - source_id: 27
   - common_name: N 157B
@@ -1645,6 +1905,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 1.624974243705224e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.384711894100333e-13
+  - sed_reference_id: 2015Sci...347..406H
+  - sed_n_points: 18
+  - sed_e_ref: 6.968944549560547
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.2130818770442484e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.7569256325396937e-13
+  - sed_dnde_errn: 2.740985606888846e-13
+  - sed_dnde_ul: 6.300000112850461e-17
 - !!omap
   - source_id: 28
   - common_name: PKS 0548-322
@@ -1706,6 +1976,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 29
   - common_name: IC 443
@@ -1767,6 +2047,16 @@
   - spec_flux_above_erange_min_err: 2.0857149557809707e-13
   - spec_energy_flux_1TeV_10TeV: 2.325039574931076e-13
   - spec_energy_flux_1TeV_10TeV_err: 4.404221331708556e-14
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 30
   - common_name: HESS J0632+057
@@ -1828,6 +2118,16 @@
   - spec_flux_above_erange_min_err: 4.806725221843944e-13
   - spec_energy_flux_1TeV_10TeV: 1.7158467572123137e-12
   - spec_energy_flux_1TeV_10TeV_err: 8.968969772600588e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 31
   - common_name: Geminga
@@ -1889,6 +2189,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 32
   - common_name: RX J0648.7+1516
@@ -1950,6 +2260,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 33
   - common_name: 1ES 0647+250
@@ -2011,6 +2331,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 34
   - common_name: RGB J0710+591
@@ -2072,6 +2402,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 35
   - common_name: S5 0716+714
@@ -2133,6 +2473,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 36
   - common_name: 1ES 0806+524
@@ -2194,6 +2544,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 37
   - common_name: Vela X
@@ -2255,6 +2615,16 @@
   - spec_flux_above_erange_min_err: 2.100704592916669e-12
   - spec_energy_flux_1TeV_10TeV: 9.604526896023202e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.5473006556576685e-11
+  - sed_reference_id: 2012A&A...548A..38A
+  - sed_n_points: 0
+  - sed_e_ref: 13.268287658691406
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.6365955859558587e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 38
   - common_name: RBS 0723
@@ -2316,6 +2686,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 39
   - common_name: Vela Junior
@@ -2377,6 +2757,16 @@
   - spec_flux_above_erange_min_err: 4.7338391886975195e-12
   - spec_energy_flux_1TeV_10TeV: 5.810725164923092e-11
   - spec_energy_flux_1TeV_10TeV_err: 9.410248621999351e-12
+  - sed_reference_id: 2016arXiv161101863H
+  - sed_n_points: 0
+  - sed_e_ref: 6.580524921417236
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.320899201990745e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 3.412945056777139e-12
+  - sed_dnde_errn: 3.410957280514104e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 40
   - common_name: M 82
@@ -2438,6 +2828,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 41
   - common_name: S4 0954+65
@@ -2499,6 +2899,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 42
   - common_name: 1RXS J101015.9-311909
@@ -2560,6 +2970,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 43
   - common_name: 1ES 1011+496
@@ -2621,6 +3041,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 44
   - common_name: HESS J1018-589 B
@@ -2682,6 +3112,16 @@
   - spec_flux_above_erange_min_err: 1.5285273318333542e-13
   - spec_energy_flux_1TeV_10TeV: 4.666647927462075e-13
   - spec_energy_flux_1TeV_10TeV_err: 2.4073093778803623e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 45
   - common_name: HESS J1018-589 A
@@ -2743,6 +3183,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 1.3585111768160685e-12
   - spec_energy_flux_1TeV_10TeV_err: 7.963616745210178e-13
+  - sed_reference_id: 2015A&A...577A.131H
+  - sed_n_points: 0
+  - sed_e_ref: 5.162280559539795
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 46
   - common_name: Westerlund 2
@@ -2804,6 +3254,16 @@
   - spec_flux_above_erange_min_err: 5.045949010192008e-13
   - spec_energy_flux_1TeV_10TeV: 5.601592974191494e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.0228844641034804e-12
+  - sed_reference_id: 2011A&A...525A..46H
+  - sed_n_points: 0
+  - sed_e_ref: 4.128171443939209
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.1885597757735344e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 3.047078377376583e-13
+  - sed_dnde_errn: 3.04603781434154e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 47
   - common_name: HESS J1026-582
@@ -2865,6 +3325,16 @@
   - spec_flux_above_erange_min_err: 4.967051618100238e-13
   - spec_energy_flux_1TeV_10TeV: 2.1299316477207952e-11
   - spec_energy_flux_1TeV_10TeV_err: 3.423623190501601e-11
+  - sed_reference_id: 2011A&A...525A..46H
+  - sed_n_points: 0
+  - sed_e_ref: 8.359099388122559
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.390666824318404e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 7.072193172882532e-14
+  - sed_dnde_errn: 6.910941139021479e-14
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 48
   - common_name: 1ES 1101-232
@@ -2926,6 +3396,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 49
   - common_name: Markarian 421
@@ -2987,6 +3467,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 50
   - common_name: HESS J1119-614
@@ -3048,6 +3538,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 52
   - common_name: Markarian 180
@@ -3109,6 +3609,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 51
   - common_name: RX J1136.5+6737
@@ -3170,6 +3680,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 53
   - common_name: 1ES 1215+303
@@ -3231,6 +3751,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 55
   - common_name: 1ES 1218+304
@@ -3292,6 +3822,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 54
   - common_name: W Comae
@@ -3353,6 +3893,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 57
   - common_name: MS1221.8+2452
@@ -3414,6 +3964,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 56
   - common_name: PKS 1222+216
@@ -3475,6 +4035,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 58
   - common_name: M 87
@@ -3536,6 +4106,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 59
   - common_name: 3C 279
@@ -3597,6 +4177,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 60
   - common_name: PSR B1259-63
@@ -3658,6 +4248,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 61
   - common_name: HESS J1303-631
@@ -3719,6 +4319,16 @@
   - spec_flux_above_erange_min_err: 1.2596813783044558e-12
   - spec_energy_flux_1TeV_10TeV: 1.6808752306696206e-11
   - spec_energy_flux_1TeV_10TeV_err: 6.341251308772389e-12
+  - sed_reference_id: 2012A&A...548A..46H
+  - sed_n_points: 0
+  - sed_e_ref: 11.269089698791504
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 9.876972286923524e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.7164464023288611e-13
+  - sed_dnde_errn: 1.7139036771838395e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 62
   - common_name: 1ES 1312-423
@@ -3780,6 +4390,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 63
   - common_name: Centaurus A
@@ -3841,6 +4461,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 64
   - common_name: HESS J1356-645
@@ -3902,6 +4532,16 @@
   - spec_flux_above_erange_min_err: 8.385252670169152e-13
   - spec_energy_flux_1TeV_10TeV: 1.2648208001786454e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.1124495422065728e-11
+  - sed_reference_id: 2011A&A...533A.103H
+  - sed_n_points: 0
+  - sed_e_ref: 6.681666851043701
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.990950044058638e-13
+  - sed_dnde_err: 1.0666500235151366e-13
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 65
   - common_name: HESS J1418-609
@@ -3963,6 +4603,16 @@
   - spec_flux_above_erange_min_err: 1.7000002750997e-13
   - spec_energy_flux_1TeV_10TeV: 2.637450587789081e-12
   - spec_energy_flux_1TeV_10TeV_err: 9.17200235033e-13
+  - sed_reference_id: 2006A&A...456..245A
+  - sed_n_points: 0
+  - sed_e_ref: 4.57111120223999
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 4.790774547902554e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.2025256007977547e-12
+  - sed_dnde_errn: 1.2151799748741365e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 66
   - common_name: HESS J1420-607
@@ -4024,6 +4674,16 @@
   - spec_flux_above_erange_min_err: 1.800000578276728e-13
   - spec_energy_flux_1TeV_10TeV: 4.519957325088697e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.3230825940055424e-12
+  - sed_reference_id: 2006A&A...456..245A
+  - sed_n_points: 0
+  - sed_e_ref: 6.558999538421631
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 4.116216048566379e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 9.394642182247726e-13
+  - sed_dnde_errn: 9.408235909086349e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 67
   - common_name: PKS 1424+240
@@ -4085,6 +4745,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 68
   - common_name: HESS J1427-608
@@ -4146,6 +4816,16 @@
   - spec_flux_above_erange_min_err: 3.8194661734596014e-13
   - spec_energy_flux_1TeV_10TeV: 7.234111313453306e-12
   - spec_energy_flux_1TeV_10TeV_err: 5.116285867190484e-12
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 0
+  - sed_e_ref: 11.15638256072998
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.3238590996014765e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 6.558166146643576e-14
+  - sed_dnde_errn: 6.264282305769656e-14
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 69
   - common_name: H 1426+428
@@ -4207,6 +4887,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 70
   - common_name: RCW 86
@@ -4268,6 +4958,16 @@
   - spec_flux_above_erange_min_err: 6.941235780599797e-13
   - spec_energy_flux_1TeV_10TeV: 4.053939042097943e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.660237052003577e-12
+  - sed_reference_id: 2016arXiv160104461H
+  - sed_n_points: 0
+  - sed_e_ref: 6.299542427062988
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.8893274531667226e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 71
   - common_name: 1ES 1440+122
@@ -4329,6 +5029,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 72
   - common_name: HESS J1457-593
@@ -4390,6 +5100,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 73
   - common_name: HESS J1458-608
@@ -4451,6 +5171,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 74
   - common_name: SN 1006
@@ -4512,6 +5242,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: 2010A&A...516A..62A
+  - sed_n_points: 18
+  - sed_e_ref: 23.553937911987305
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 9.641425028142359e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.5480104177678644e-12
+  - sed_dnde_errn: 5.446451124303808e-13
+  - sed_dnde_ul: 4.437833250769854e-17
 - !!omap
   - source_id: 75
   - common_name: HESS J1503-582
@@ -4573,6 +5313,16 @@
   - spec_flux_above_erange_min_err: 6.61240647740341e-13
   - spec_energy_flux_1TeV_10TeV: 3.984075656188191e-12
   - spec_energy_flux_1TeV_10TeV_err: 4.172711221689385e-12
+  - sed_reference_id: 2008AIPC.1085..281R
+  - sed_n_points: 0
+  - sed_e_ref: 8.328333854675293
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.9281000136327914e-13
+  - sed_dnde_err: 7.227166998538537e-14
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 77
   - common_name: HESS J1507-622
@@ -4634,6 +5384,16 @@
   - spec_flux_above_erange_min_err: 1.508306392110359e-12
   - spec_energy_flux_1TeV_10TeV: 6.319266724480466e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.8221671961176087e-12
+  - sed_reference_id: 2011A&A...525A..45H
+  - sed_n_points: 0
+  - sed_e_ref: 7.851116180419922
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 5.411309963489208e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 2.0503923266277507e-13
+  - sed_dnde_errn: 1.9802203225696008e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 78
   - common_name: PKS 1510-089
@@ -4695,6 +5455,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 79
   - common_name: MSH 15-5-02
@@ -4756,6 +5526,16 @@
   - spec_flux_above_erange_min_err: 8.587470469965941e-13
   - spec_energy_flux_1TeV_10TeV: 2.0604691564063415e-11
   - spec_energy_flux_1TeV_10TeV_err: 2.201607819662943e-12
+  - sed_reference_id: 2005A&A...435L..17A
+  - sed_n_points: 0
+  - sed_e_ref: 9.13071346282959
+  - sed_e_min: 7.638571739196777
+  - sed_e_max: 10.918571472167969
+  - sed_dnde: 1.4138097810534322e-11
+  - sed_dnde_err: 3.2027395058947805e-12
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 80
   - common_name: AP Librae
@@ -4817,6 +5597,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: 2015A&A...573A..31H
+  - sed_n_points: 0
+  - sed_e_ref: 974400061440.0
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 158
   - common_name: SNR G323.7-01.0
@@ -4878,6 +5668,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 81
   - common_name: SNR G327.1-1.1
@@ -4939,6 +5739,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 2.5418647221775448e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.5993083553610408e-12
+  - sed_reference_id: 2011ICRC....7..185A
+  - sed_n_points: 0
+  - sed_e_ref: 6.4978346824646
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 3.09184860873557e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 9.798075979033927e-14
+  - sed_dnde_errn: 9.220784400777726e-14
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 82
   - common_name: PG 1553+113
@@ -5000,6 +5810,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 83
   - common_name: HESS J1614-518
@@ -5061,6 +5881,16 @@
   - spec_flux_above_erange_min_err: 7.7000003595451e-12
   - spec_energy_flux_1TeV_10TeV: 1.746913030897801e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.0990524462739515e-11
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 0.8863320350646973
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 4.635709524580811e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.596751203480906e-11
+  - sed_dnde_errn: 1.5537187855740875e-11
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 84
   - common_name: HESS J1616-508
@@ -5122,6 +5952,16 @@
   - spec_flux_above_erange_min_err: 1.9999999920083944e-12
   - spec_energy_flux_1TeV_10TeV: 1.8866033735243093e-11
   - spec_energy_flux_1TeV_10TeV_err: 4.184043302796203e-12
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 4.726176738739014
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.2102678234593434e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.2479427213829553e-12
+  - sed_dnde_errn: 1.2231319472880142e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 85
   - common_name: HESS J1626-490
@@ -5183,6 +6023,16 @@
   - spec_flux_above_erange_min_err: 1.4269191297294759e-12
   - spec_energy_flux_1TeV_10TeV: 2.495797665758026e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.367601518142969e-11
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 0
+  - sed_e_ref: 9.987066268920898
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.8319425837409753e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 5.221645598546543e-13
+  - sed_dnde_errn: 5.144278557821236e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 86
   - common_name: HESS J1632-478
@@ -5244,6 +6094,16 @@
   - spec_flux_above_erange_min_err: 5.300002190594677e-12
   - spec_energy_flux_1TeV_10TeV: 3.574905649283977e-11
   - spec_energy_flux_1TeV_10TeV_err: 4.197513517323337e-11
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 1.703940510749817
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 9.957078217492921e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 4.368702621881937e-11
+  - sed_dnde_errn: 4.12606476762889e-11
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 87
   - common_name: HESS J1634-472
@@ -5305,6 +6165,16 @@
   - spec_flux_above_erange_min_err: 2.6000000763470865e-12
   - spec_energy_flux_1TeV_10TeV: 5.252142037254215e-12
   - spec_energy_flux_1TeV_10TeV_err: 4.988344372985898e-12
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 0.9516022801399231
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 8.39853967621318e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 3.5054810616774734e-12
+  - sed_dnde_errn: 3.3204504683997937e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 88
   - common_name: HESS J1640-465
@@ -5366,6 +6236,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 4.0684608459962135e-12
   - spec_energy_flux_1TeV_10TeV_err: 8.663315832942164e-13
+  - sed_reference_id: 2014MNRAS.439.2828A
+  - sed_n_points: 20
+  - sed_e_ref: 3.3595402240753174
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 7.107136493905708e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.590319998086287e-12
+  - sed_dnde_errn: 1.5114060177012778e-12
+  - sed_dnde_ul: 2.300999941325381e-15
 - !!omap
   - source_id: 89
   - common_name: HESS J1641-463
@@ -5427,6 +6307,16 @@
   - spec_flux_above_erange_min_err: 1.0866533503095868e-13
   - spec_energy_flux_1TeV_10TeV: 3.462085002362003e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.295908688859649e-12
+  - sed_reference_id: 2014ApJ...794L...1A
+  - sed_n_points: 9
+  - sed_e_ref: 18.11688995361328
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.148550249048877e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 4.425362935258845e-14
+  - sed_dnde_errn: 4.098234406457908e-14
+  - sed_dnde_ul: 3.492500012404324e-16
 - !!omap
   - source_id: 90
   - common_name: Westerlund 1
@@ -5488,6 +6378,16 @@
   - spec_flux_above_erange_min_err: 3.0433971315302344e-12
   - spec_energy_flux_1TeV_10TeV: 4.393688191051126e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.6217577628041546e-11
+  - sed_reference_id: 2012A&A...537A.114A
+  - sed_n_points: 11
+  - sed_e_ref: 13.987567901611328
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 3.25901306809373e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.6080330426590517e-12
+  - sed_dnde_errn: 1.6081634721804017e-12
+  - sed_dnde_ul: 3.4727829912163753e-15
 - !!omap
   - source_id: 91
   - common_name: Markarian 501
@@ -5549,6 +6449,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 92
   - common_name: HESS J1702-420
@@ -5610,6 +6520,16 @@
   - spec_flux_above_erange_min_err: 2.185673083493489e-12
   - spec_energy_flux_1TeV_10TeV: 8.057537970174167e-11
   - spec_energy_flux_1TeV_10TeV_err: 3.8705549182393995e-11
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 0
+  - sed_e_ref: 8.257220268249512
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 3.7267905775295596e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.1086374873681137e-12
+  - sed_dnde_errn: 1.0959052675757475e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 94
   - common_name: HESS J1708-443
@@ -5671,6 +6591,16 @@
   - spec_flux_above_erange_min_err: 1.4629151839570809e-12
   - spec_energy_flux_1TeV_10TeV: 5.8025143717665983e-11
   - spec_energy_flux_1TeV_10TeV_err: 4.151374036198696e-11
+  - sed_reference_id: 2011A&A...528A.143H
+  - sed_n_points: 0
+  - sed_e_ref: 6.995599269866943
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.1396619325337864e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 3.7828000822894003e-13
+  - sed_dnde_errn: 3.779880054788354e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 93
   - common_name: HESS J1708-410
@@ -5732,6 +6662,16 @@
   - spec_flux_above_erange_min_err: 5.653010611700315e-13
   - spec_energy_flux_1TeV_10TeV: 5.8593650764660055e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.199752753741623e-12
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 0
+  - sed_e_ref: 8.808232307434082
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.4710258835690104e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 2.4155658484743825e-13
+  - sed_dnde_errn: 2.357793322561863e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 96
   - common_name: RX J1713.7-3946
@@ -5793,6 +6733,16 @@
   - spec_flux_above_erange_min_err: 5.330823456273226e-12
   - spec_energy_flux_1TeV_10TeV: 2.8327756806945104e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.5194670608537075e-12
+  - sed_reference_id: 2016arXiv160908671H
+  - sed_n_points: 0
+  - sed_e_ref: 6.995666980743408
+  - sed_e_min: 6.373667240142822
+  - sed_e_max: 7.618333339691162
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 95
   - common_name: CTB 37B
@@ -5854,6 +6804,16 @@
   - spec_flux_above_erange_min_err: 8.729110641779447e-13
   - spec_energy_flux_1TeV_10TeV: 9.998741201319716e-13
   - spec_energy_flux_1TeV_10TeV_err: 3.374330437462547e-13
+  - sed_reference_id: 2008A&A...486..829A
+  - sed_n_points: 5
+  - sed_e_ref: 4.677069664001465
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.4173195996984864e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 8.765312694419825e-13
+  - sed_dnde_errn: 8.650019177498802e-13
+  - sed_dnde_ul: 1.4299999850702835e-15
 - !!omap
   - source_id: 97
   - common_name: CTB 37A
@@ -5915,6 +6875,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: 2008A&A...490..685A
+  - sed_n_points: 0
+  - sed_e_ref: 4.950124740600586
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.1742464639530326e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 2.4145323327534607e-13
+  - sed_dnde_errn: 2.4457874419313297e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 98
   - common_name: SNR G349.7+0.2
@@ -5976,6 +6946,16 @@
   - spec_flux_above_erange_min_err: 1.100000014578155e-13
   - spec_energy_flux_1TeV_10TeV: 9.581859638412363e-14
   - spec_energy_flux_1TeV_10TeV_err: 5.938894260268737e-14
+  - sed_reference_id: 2015A&A...574A.100H
+  - sed_n_points: 0
+  - sed_e_ref: 848117497856.0
+  - sed_e_min: 635950006272.0
+  - sed_e_max: 1130999971840.0
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 99
   - common_name: HESS J1718-385
@@ -6037,6 +7017,16 @@
   - spec_flux_above_erange_min_err: 6.434801151124214e-13
   - spec_energy_flux_1TeV_10TeV: 2.554874714566502e-12
   - spec_energy_flux_1TeV_10TeV_err: 3.6897659407009176e-12
+  - sed_reference_id: 2007A&A...472..489A
+  - sed_n_points: 0
+  - sed_e_ref: 11.521388053894043
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.4299657649392145e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 6.546395776808531e-14
+  - sed_dnde_errn: 6.579476140343779e-14
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 100
   - common_name: H 1722+119
@@ -6098,6 +7088,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 101
   - common_name: 1ES 1727+502
@@ -6159,6 +7159,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 102
   - common_name: HESS J1729-345
@@ -6220,6 +7230,16 @@
   - spec_flux_above_erange_min_err: 2.5924336462257447e-13
   - spec_energy_flux_1TeV_10TeV: 1.2635337654637313e-12
   - spec_energy_flux_1TeV_10TeV_err: 7.469773497664756e-13
+  - sed_reference_id: 2011A&A...531A..81H
+  - sed_n_points: 0
+  - sed_e_ref: 9.675772666931152
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 5.310156611301742e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.8646911272013345e-13
+  - sed_dnde_errn: 1.8125274501776256e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 103
   - common_name: HESS J1731-347
@@ -6281,6 +7301,16 @@
   - spec_flux_above_erange_min_err: 6.335106050858741e-13
   - spec_energy_flux_1TeV_10TeV: 8.17412283693475e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.6050012881241305e-12
+  - sed_reference_id: 2011A&A...531A..81H
+  - sed_n_points: 0
+  - sed_e_ref: 4652864634880.0
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 104
   - common_name: HESS J1741-302
@@ -6342,6 +7372,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 105
   - common_name: 1ES 1741+196
@@ -6403,6 +7443,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 108
   - common_name: HESS J1745-303
@@ -6464,6 +7514,16 @@
   - spec_flux_above_erange_min_err: 7.047903927137611e-12
   - spec_energy_flux_1TeV_10TeV: 3.999780107816209e-12
   - spec_energy_flux_1TeV_10TeV_err: 6.989439409188503e-13
+  - sed_reference_id: 2008A&A...483..509A
+  - sed_n_points: 0
+  - sed_e_ref: 5.555163860321045
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 106
   - common_name: Galactic Centre
@@ -6525,6 +7585,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 4.066858828866149e-12
   - spec_energy_flux_1TeV_10TeV_err: 3.465457901110497e-13
+  - sed_reference_id: 2016Natur.531..476H
+  - sed_n_points: 28
+  - sed_e_ref: 8.043176651000977
+  - sed_e_min: 6.814975261688232
+  - sed_e_max: 9.609137535095215
+  - sed_dnde: 1.4316563559657602e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 9.494678264096446e-13
+  - sed_dnde_errn: 9.219090334883218e-13
+  - sed_dnde_ul: 4.0083666353860385e-16
 - !!omap
   - source_id: 107
   - common_name: Galactic Centre ridge
@@ -6586,6 +7656,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 159
   - common_name: Arc source
@@ -6647,6 +7727,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 110
   - common_name: SNR G0.9+0.1
@@ -6684,7 +7774,7 @@
   - morph_pa_err: .nan
   - morph_pa_frame: ''
   - spec_type: pl2
-  - spec_erange_min: 0.17000000178813934
+  - spec_erange_min: 0.20000000298023224
   - spec_erange_max: .nan
   - spec_theta: 0.10000000149011612
   - spec_ref: 0.20000000298023224
@@ -6692,22 +7782,32 @@
   - spec_norm_err: 7.000000080449598e-13
   - spec_norm_err_sys: 1.1999999518369497e-12
   - spec_norm_err_tot: 1.3892444052782116e-12
-  - spec_norm_1TeV: 6.677768689573871e-13
-  - spec_norm_1TeV_err: 1.1296576873801381e-13
+  - spec_norm_1TeV: 8.383876817612268e-13
+  - spec_norm_1TeV_err: 1.3196889869955541e-13
   - spec_index: 2.4000000953674316
   - spec_index_err: 0.10999999940395355
   - spec_index_err_sys: 0.20000000298023224
   - spec_index_err_tot: 0.22825424373149872
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 4.769834700824038e-13
-  - spec_flux_above_1TeV_err: 1.0988598404685149e-13
-  - spec_flux_above_1TeV_crab: 2.2993323802948
-  - spec_flux_above_1TeV_crab_err: 0.5297130942344666
+  - spec_flux_above_1TeV: 5.988483363708608e-13
+  - spec_flux_above_1TeV_err: 1.290293555594041e-13
+  - spec_flux_above_1TeV_crab: 2.8867902755737305
+  - spec_flux_above_1TeV_crab_err: 0.6219950318336487
   - spec_flux_above_erange_min: 5.699999933855837e-12
   - spec_flux_above_erange_min_err: 7.000000080449598e-13
-  - spec_energy_flux_1TeV_10TeV: 1.6627960943912945e-12
-  - spec_energy_flux_1TeV_10TeV_err: 6.723830476770831e-13
+  - spec_energy_flux_1TeV_10TeV: 2.0876249947482384e-12
+  - spec_energy_flux_1TeV_10TeV_err: 8.086921974084782e-13
+  - sed_reference_id: 2005A&A...432L..25A
+  - sed_n_points: 0
+  - sed_e_ref: 2.094285726547241
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 5.084312745123887e-12
+  - sed_dnde_err: 1.521484327415834e-12
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 109
   - common_name: Terzan 5
@@ -6769,6 +7869,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 1.038960042130943e-12
   - spec_energy_flux_1TeV_10TeV_err: 6.569211862851587e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 156
   - common_name: HESS J1800-240B
@@ -6810,26 +7920,36 @@
   - spec_erange_max: 5.0
   - spec_theta: 0.20000000298023224
   - spec_ref: 1.0
-  - spec_norm: 7.579999995732667e-12
-  - spec_norm_err: 9.000000180878209e-13
-  - spec_norm_err_sys: 1.4999999397961872e-13
-  - spec_norm_err_tot: 9.124143498032145e-13
-  - spec_norm_1TeV: 7.579999995732667e-12
-  - spec_norm_1TeV_err: 9.000000180878209e-13
+  - spec_norm: 7.579999995732667e-13
+  - spec_norm_err: 9.000000180878209e-14
+  - spec_norm_err_sys: 1.499999973677505e-14
+  - spec_norm_err_tot: 9.124144040133231e-14
+  - spec_norm_1TeV: 7.579999995732667e-13
+  - spec_norm_1TeV_err: 9.000000180878209e-14
   - spec_index: 2.5
   - spec_index_err: 0.17000000178813934
   - spec_index_err_sys: 0.20000000298023224
   - spec_index_err_tot: 0.26248809695243835
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 5.053333185928155e-12
-  - spec_flux_above_1TeV_err: 8.294564579451602e-13
-  - spec_flux_above_1TeV_crab: 24.359947204589844
-  - spec_flux_above_1TeV_crab_err: 3.99845290184021
-  - spec_flux_above_erange_min: 3.075360799353888e-11
-  - spec_flux_above_erange_min_err: 4.6069905702827985e-12
-  - spec_energy_flux_1TeV_10TeV: 1.5144840243008773e-11
-  - spec_energy_flux_1TeV_10TeV_err: 5.420594095112419e-12
+  - spec_flux_above_1TeV: 5.053333511188807e-13
+  - spec_flux_above_1TeV_err: 8.294564714976874e-14
+  - spec_flux_above_1TeV_crab: 2.4359946250915527
+  - spec_flux_above_1TeV_crab_err: 0.39984527230262756
+  - spec_flux_above_erange_min: 3.075360712617714e-12
+  - spec_flux_above_erange_min_err: 4.606990245022147e-13
+  - spec_energy_flux_1TeV_10TeV: 1.514483959248747e-12
+  - spec_energy_flux_1TeV_10TeV_err: 5.420593986692201e-13
+  - sed_reference_id: 2008A&A...481..401A
+  - sed_n_points: 10
+  - sed_e_ref: 1.5499999523162842
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 30.49110984802246
+  - sed_dnde_err: 8.891111373901367
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: 2.25
 - !!omap
   - source_id: 112
   - common_name: W28
@@ -6871,26 +7991,36 @@
   - spec_erange_max: 5.0
   - spec_theta: 0.20000000298023224
   - spec_ref: 1.0
-  - spec_norm: 7.499999753191045e-12
-  - spec_norm_err: 1.1100000042382763e-12
-  - spec_norm_err_sys: 2.9999998795923744e-13
-  - spec_norm_err_tot: 1.1498261110604036e-12
-  - spec_norm_1TeV: 7.499999753191045e-12
-  - spec_norm_1TeV_err: 1.1100000042382763e-12
+  - spec_norm: 7.499999970031479e-13
+  - spec_norm_err: 1.1100000177908034e-13
+  - spec_norm_err_sys: 2.99999994735501e-14
+  - spec_norm_err_tot: 1.1498260839553492e-13
+  - spec_norm_1TeV: 7.499999970031479e-13
+  - spec_norm_1TeV_err: 1.1100000177908034e-13
   - spec_index: 2.6600000858306885
   - spec_index_err: 0.27000001072883606
   - spec_index_err_sys: 0.20000000298023224
   - spec_index_err_tot: 0.33600595593452454
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 4.518072114351179e-12
-  - spec_flux_above_1TeV_err: 9.935570161739848e-13
-  - spec_flux_above_1TeV_crab: 21.77968406677246
-  - spec_flux_above_1TeV_crab_err: 4.789511203765869
-  - spec_flux_above_erange_min: 3.3337412691514245e-11
-  - spec_flux_above_erange_min_err: 7.325506520827751e-12
-  - spec_energy_flux_1TeV_10TeV: 1.1362390195390759e-11
-  - spec_energy_flux_1TeV_10TeV_err: 4.938718271146891e-12
+  - spec_flux_above_1TeV: 4.5180723854017224e-13
+  - spec_flux_above_1TeV_err: 9.935570432790392e-14
+  - spec_flux_above_1TeV_crab: 2.1779682636260986
+  - spec_flux_above_1TeV_crab_err: 0.4789511263370514
+  - spec_flux_above_erange_min: 3.3337412691514245e-12
+  - spec_flux_above_erange_min_err: 7.325506846088403e-13
+  - spec_energy_flux_1TeV_10TeV: 1.1362389978550325e-12
+  - spec_energy_flux_1TeV_10TeV_err: 4.938718162726674e-13
+  - sed_reference_id: 2008A&A...481..401A
+  - sed_n_points: 9
+  - sed_e_ref: 1.6877778768539429
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 22.208572387695312
+  - sed_dnde_err: 5.9057135581970215
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: 2.490000009536743
 - !!omap
   - source_id: 111
   - common_name: HESS J1800-240A
@@ -6952,6 +8082,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 113
   - common_name: HESS J1804-216
@@ -7013,6 +8153,16 @@
   - spec_flux_above_erange_min_err: 1.9999999920083944e-12
   - spec_energy_flux_1TeV_10TeV: 7.977345346799058e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.194776482610349e-12
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 2.3212673664093018
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 6.159142640349557e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.8140274005151724e-11
+  - sed_dnde_errn: 1.7960299913966082e-11
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 114
   - common_name: HESS J1808-204
@@ -7074,6 +8224,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 115
   - common_name: HESS J1809-193
@@ -7135,6 +8295,16 @@
   - spec_flux_above_erange_min_err: 2.8663679502854977e-12
   - spec_energy_flux_1TeV_10TeV: 2.1548797468629033e-11
   - spec_energy_flux_1TeV_10TeV_err: 9.208911411207055e-12
+  - sed_reference_id: 2007A&A...472..489A
+  - sed_n_points: 0
+  - sed_e_ref: 8.765545845031738
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.4168106791945245e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 4.289724825357055e-12
+  - sed_dnde_errn: 4.316654672598119e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 160
   - common_name: HESS J1813-126
@@ -7196,6 +8366,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 116
   - common_name: HESS J1813-178
@@ -7257,6 +8437,16 @@
   - spec_flux_above_erange_min_err: 1.100000624441877e-12
   - spec_energy_flux_1TeV_10TeV: 2.1175287218122563e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.0636685109088884e-11
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 4.212536334991455
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 4.7341345253693046e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.0638994026035409e-12
+  - sed_dnde_errn: 9.98925985332133e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 117
   - common_name: SNR G15.4+0.1
@@ -7318,6 +8508,16 @@
   - spec_flux_above_erange_min_err: 2.939882495431312e-13
   - spec_energy_flux_1TeV_10TeV: 1.2921600638440833e-12
   - spec_energy_flux_1TeV_10TeV_err: 9.992464754943198e-13
+  - sed_reference_id: 2014A&A...562A..40H
+  - sed_n_points: 0
+  - sed_e_ref: 2.993499994277954
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.3767497843961427e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 9.788225324670538e-14
+  - sed_dnde_errn: 9.249725144893153e-14
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 161
   - common_name: HESS J1826-130
@@ -7379,6 +8579,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 3.0932127519089914e-12
   - spec_energy_flux_1TeV_10TeV_err: 8.877382336180961e-13
+  - sed_reference_id: 2017arXiv170107002A
+  - sed_n_points: 23
+  - sed_e_ref: 10.050374031066895
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 5.144507866580716e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.3042740715576984e-13
+  - sed_dnde_errn: 1.2506606807041049e-13
+  - sed_dnde_ul: 1.379999974300997e-16
 - !!omap
   - source_id: 118
   - common_name: HESS J1825-137
@@ -7440,6 +8650,16 @@
   - spec_flux_above_erange_min_err: 2.574052733114729e-12
   - spec_energy_flux_1TeV_10TeV: 3.8477949992898886e-11
   - spec_energy_flux_1TeV_10TeV_err: 3.4472984362932113e-12
+  - sed_reference_id: 2006A&A...460..365A
+  - sed_n_points: 0
+  - sed_e_ref: 7.480553150177002
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 4.96902831381707e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 2.780634012974903e-12
+  - sed_dnde_errn: 2.7792850486318965e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 119
   - common_name: LS 5039
@@ -7501,6 +8721,16 @@
   - spec_flux_above_erange_min_err: 5.850811371846398e-13
   - spec_energy_flux_1TeV_10TeV: 4.639726970678826e-12
   - spec_energy_flux_1TeV_10TeV_err: 7.466205388315106e-13
+  - sed_reference_id: 2006A&A...460..743A
+  - sed_n_points: 26
+  - sed_e_ref: 6.771245956420898
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 7.417143288446226e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 8.672926092578859e-12
+  - sed_dnde_errn: 6.222147796997035e-12
+  - sed_dnde_ul: 1.595999993295744e-16
 - !!omap
   - source_id: 162
   - common_name: HESS J1828-099
@@ -7562,6 +8792,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 120
   - common_name: HESS J1831-098
@@ -7623,6 +8863,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 8.236925030935538e-12
   - spec_energy_flux_1TeV_10TeV_err: 4.482582274117908e-12
+  - sed_reference_id: 2011ICRC....7..244S
+  - sed_n_points: 0
+  - sed_e_ref: 7.10966682434082
+  - sed_e_min: 5.634088516235352
+  - sed_e_max: 9.913777351379395
+  - sed_dnde: 1.5528267690786968e-12
+  - sed_dnde_err: 5.860394092747911e-13
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 163
   - common_name: HESS J1832-085
@@ -7684,6 +8934,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 121
   - common_name: HESS J1832-093
@@ -7745,6 +9005,16 @@
   - spec_flux_above_erange_min_err: 2.4457644026351644e-13
   - spec_energy_flux_1TeV_10TeV: 7.997990290886658e-13
   - spec_energy_flux_1TeV_10TeV_err: 4.2074105159085884e-13
+  - sed_reference_id: 2015MNRAS.446.1163H
+  - sed_n_points: 0
+  - sed_e_ref: 1.7400165796279907
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 7.84566639086548e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 2.830800101705916e-13
+  - sed_dnde_errn: 2.8294499989506283e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 122
   - common_name: HESS J1833-105
@@ -7806,6 +9076,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 123
   - common_name: HESS J1834-087
@@ -7867,6 +9147,16 @@
   - spec_flux_above_erange_min_err: 9.999999960041972e-13
   - spec_energy_flux_1TeV_10TeV: 5.829391223205471e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.9214733930638115e-12
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 1.2123490571975708
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.577030346588959e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 3.578618521307697e-12
+  - sed_dnde_errn: 3.477119417047425e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 124
   - common_name: HESS J1837-069
@@ -7928,6 +9218,16 @@
   - spec_flux_above_erange_min_err: 1.6000000803428893e-12
   - spec_energy_flux_1TeV_10TeV: 1.8074932175982106e-11
   - spec_energy_flux_1TeV_10TeV_err: 4.63850052118131e-12
+  - sed_reference_id: 2006ApJ...636..777A
+  - sed_n_points: 0
+  - sed_e_ref: 3.6281144618988037
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 3.216873295519562e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.563817304817139e-11
+  - sed_dnde_errn: 1.4693092229012272e-11
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 125
   - common_name: HESS J1841-055
@@ -7989,6 +9289,16 @@
   - spec_flux_above_erange_min_err: 2.2040023885810944e-12
   - spec_energy_flux_1TeV_10TeV: 3.111126287147492e-11
   - spec_energy_flux_1TeV_10TeV_err: 6.73769547099301e-12
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 0
+  - sed_e_ref: 11.308459281921387
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 3.648097882807955e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 7.947253423921941e-13
+  - sed_dnde_errn: 7.920603192421161e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 126
   - common_name: HESS J1843-033
@@ -8050,6 +9360,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 164
   - common_name: HESS J1844-030
@@ -8111,6 +9431,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 127
   - common_name: HESS J1846-029
@@ -8172,6 +9502,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 128
   - common_name: HESS J1848-018
@@ -8233,6 +9573,16 @@
   - spec_flux_above_erange_min_err: 3.495938076785582e-13
   - spec_energy_flux_1TeV_10TeV: 4.624926743662661e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.2595218921648832e-12
+  - sed_reference_id: 2008AIPC.1085..372C
+  - sed_n_points: 0
+  - sed_e_ref: 7.671421527862549
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.7641415672037253e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 4.5202077215804326e-13
+  - sed_dnde_errn: 4.5775606612522e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 129
   - common_name: HESS J1849-000
@@ -8294,6 +9644,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 157
   - common_name: HESS J1852-000
@@ -8355,6 +9715,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 130
   - common_name: HESS J1857+026
@@ -8416,6 +9786,16 @@
   - spec_flux_above_erange_min_err: 1.035135735807935e-12
   - spec_energy_flux_1TeV_10TeV: 1.5569531774950462e-11
   - spec_energy_flux_1TeV_10TeV_err: 3.5907858717681984e-12
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 0
+  - sed_e_ref: 12.448443412780762
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.5145767669547117e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 3.3622681461925596e-13
+  - sed_dnde_errn: 3.2625332014972475e-13
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 131
   - common_name: HESS J1858+020
@@ -8477,6 +9857,16 @@
   - spec_flux_above_erange_min_err: 1.9361433029746467e-13
   - spec_energy_flux_1TeV_10TeV: 3.1923554511675833e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.7761967027393744e-12
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 0
+  - sed_e_ref: 12.462624549865723
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.99731670005171e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 7.462251845093137e-14
+  - sed_dnde_errn: 6.929858434052277e-14
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 132
   - common_name: MGRO J1908+06
@@ -8539,6 +9929,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 3.1000788741630814e-11
   - spec_energy_flux_1TeV_10TeV_err: 1.1887631504170493e-11
+  - sed_reference_id: 2009A&A...499..723A
+  - sed_n_points: 0
+  - sed_e_ref: 4.387966632843018
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 5.780610799061003e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 1.8728213424523688e-12
+  - sed_dnde_errn: 1.8728939839979253e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 133
   - common_name: W 49B
@@ -8600,6 +10000,16 @@
   - spec_flux_above_erange_min_err: 4.904805945074586e-13
   - spec_energy_flux_1TeV_10TeV: 2.7631575413161746e-13
   - spec_energy_flux_1TeV_10TeV_err: 7.079638931302076e-14
+  - sed_reference_id: 2016arXiv160900600H
+  - sed_n_points: 5
+  - sed_e_ref: 1.493399977684021
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.7178649995563955e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 4.401349890017364e-13
+  - sed_dnde_errn: 4.177200035523909e-13
+  - sed_dnde_ul: 9.538999601874706e-15
 - !!omap
   - source_id: 134
   - common_name: HESS J1912+101
@@ -8661,6 +10071,16 @@
   - spec_flux_above_erange_min_err: 5.605992016086137e-13
   - spec_energy_flux_1TeV_10TeV: 4.999684694029227e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.6651337426953905e-12
+  - sed_reference_id: 2008A&A...484..435A
+  - sed_n_points: 5
+  - sed_e_ref: 7.8024001121521
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 1.2349250311585735e-12
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 3.561174792554578e-13
+  - sed_dnde_errn: 3.472475128621366e-13
+  - sed_dnde_ul: 8.269999827770257e-16
 - !!omap
   - source_id: 135
   - common_name: W 51C
@@ -8722,6 +10142,16 @@
   - spec_flux_above_erange_min_err: 6.3052224032189574e-12
   - spec_energy_flux_1TeV_10TeV: 1.6718600245532733e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.6496155530048027e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 136
   - common_name: SNR G054.1+00.3
@@ -8783,6 +10213,16 @@
   - spec_flux_above_erange_min_err: 8.214159062137905e-13
   - spec_energy_flux_1TeV_10TeV: 1.9142868713795114e-12
   - spec_energy_flux_1TeV_10TeV_err: 1.1428156598131123e-12
+  - sed_reference_id: 2010ApJ...719L..69A
+  - sed_n_points: 7
+  - sed_e_ref: 1.8303757905960083
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 3.3980544072997887e-12
+  - sed_dnde_err: 1.5469957129546352e-12
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: 1.6370804993733057e-13
 - !!omap
   - source_id: 137
   - common_name: HESS J1943+213
@@ -8844,6 +10284,16 @@
   - spec_flux_above_erange_min_err: 2.1551697601020214e-13
   - spec_energy_flux_1TeV_10TeV: 5.090907621678464e-13
   - spec_energy_flux_1TeV_10TeV_err: 1.5673694167637336e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 138
   - common_name: 1ES 1959+650
@@ -8905,6 +10355,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 139
   - common_name: MAGIC J2001+435
@@ -8966,6 +10426,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 140
   - common_name: PKS 2005-489
@@ -9027,6 +10497,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 141
   - common_name: VER J2016+371
@@ -9088,6 +10568,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 143
   - common_name: VER J2019+368
@@ -9149,6 +10639,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 142
   - common_name: Dragonfly
@@ -9210,6 +10710,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 144
   - common_name: Gamma Cygni
@@ -9271,6 +10781,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 145
   - common_name: MGRO J2031+41
@@ -9332,6 +10852,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 146
   - common_name: TeV J2032+4130
@@ -9393,6 +10923,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 147
   - common_name: PKS 2155-304
@@ -9454,6 +10994,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 148
   - common_name: BL Lacertae
@@ -9515,6 +11065,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 150
   - common_name: Boomerang PWN
@@ -9576,6 +11136,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 151
   - common_name: RGB J2243+203
@@ -9637,6 +11207,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 152
   - common_name: B3 2247+381
@@ -9698,6 +11278,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 153
   - common_name: Cassiopeia A
@@ -9714,19 +11304,19 @@
   - tevcat_name: TeV J2323+588
   - tgevcat_id: 153
   - tgevcat_name: TeV J2323+5848
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2015arXiv151100309G
+  - significance: 11.0
+  - livetime: 60.0
   - ra: 350.8500061035156
   - dec: 58.814998626708984
   - glon: 111.73474884033203
   - glat: -2.1295676231384277
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: none
+  - pos_ra: 350.8349914550781
+  - pos_dec: 58.81700134277344
+  - pos_glon: 111.72809600830078
+  - pos_glat: -2.125089168548584
+  - pos_err: 0.006000000052154064
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -9734,31 +11324,41 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: none
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_type: pl
+  - spec_erange_min: 0.30000001192092896
+  - spec_erange_max: 7.0
   - spec_theta: .nan
-  - spec_ref: .nan
-  - spec_norm: .nan
-  - spec_norm_err: .nan
+  - spec_ref: 1.0
+  - spec_norm: 1.449999950837999e-12
+  - spec_norm_err: 1.100000014578155e-13
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: .nan
-  - spec_norm_1TeV_err: .nan
-  - spec_index: .nan
-  - spec_index_err: .nan
-  - spec_index_err_sys: .nan
-  - spec_index_err_tot: .nan
+  - spec_norm_1TeV: 1.449999950837999e-12
+  - spec_norm_1TeV_err: 1.100000014578155e-13
+  - spec_index: 2.75
+  - spec_index_err: 0.10000000149011612
+  - spec_index_err_sys: 0.20000000298023224
+  - spec_index_err_tot: 0.22360679507255554
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
-  - spec_flux_above_erange_min: .nan
-  - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_flux_above_1TeV: 8.285714237117603e-13
+  - spec_flux_above_1TeV_err: 7.86940499743205e-14
+  - spec_flux_above_1TeV_crab: 3.9941866397857666
+  - spec_flux_above_1TeV_crab_err: 0.3793501555919647
+  - spec_flux_above_erange_min: 6.813460819848904e-12
+  - spec_flux_above_erange_min_err: 6.729883577499818e-13
+  - spec_energy_flux_1TeV_10TeV: 1.9332721187814705e-12
+  - spec_energy_flux_1TeV_10TeV_err: 2.964985570431955e-13
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 154
   - common_name: 1ES 2344+514
@@ -9820,6 +11420,16 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 155
   - common_name: H 2356-309
@@ -9881,3 +11491,13 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 0.0
   - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan

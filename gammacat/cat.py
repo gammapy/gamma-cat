@@ -1,7 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from collections import OrderedDict
-from pprint import pprint
 import numpy as np
 from astropy import units as u
 from astropy.units import Quantity
@@ -32,6 +31,7 @@ def _to_crab_flux():
     crab = CrabSpectrum('meyer').model
     flux_crab = crab.integral(1 * u.TeV, 1e6 * u.TeV)
     return 100 / flux_crab.to('cm-2 s-1').value
+
 
 FLUX_TO_CRAB = _to_crab_flux()
 
@@ -157,7 +157,7 @@ class GammaCatSource:
         try:
             data['spec_type'] = dsi['spec']['type']
         except KeyError:
-            data['spec_type'] = NA.fill_value['string']
+            data['spec_type'] = 'none'
         try:
             data['spec_erange_min'] = dsi['spec']['erange']['min']
         except KeyError:
@@ -219,6 +219,14 @@ class GammaCatSource:
             data['sed_reference_id'] = sed_info.table.meta['reference_id']
         except KeyError:
             data['sed_reference_id'] = NA.fill_value['string']
+
+        try:
+            dnde = sed_info.table['dnde'].data
+            dnde_ul = sed_info.table['dnde_ul'].data
+            data['sed_n_points'] = np.isfinite(dnde).sum() + np.isfinite(dnde_ul).sum()
+        except KeyError:
+            data['sed_n_points'] = 0
+
         try:
             e_ref = sed_info.table['e_ref'].data
             data['sed_e_ref'] = NA.resize_sed_array(e_ref, shape)
@@ -337,8 +345,8 @@ class GammaCatSource:
             errs['index'] = Quantity(data['spec_index_err'], '')
             pars['reference'] = Quantity(data['spec_ref'], 'TeV')
             lambda_ = 1. / ufloat(data['spec_ecut'], data['spec_ecut_err'])
-            pars['lambda_'] = Quantity(lambda_.n, 'TeV-1')
-            errs['lambda_'] = Quantity(lambda_.s, 'TeV-1')
+            pars['lambda_'] = Quantity(lambda_.nominal_value, 'TeV-1')
+            errs['lambda_'] = Quantity(lambda_.std_dev, 'TeV-1')
             model = ExponentialCutoffPowerLaw(**pars)
         else:
             # return generic model, as all parameters are NaN it will evaluate to NaN
@@ -357,7 +365,7 @@ class GammaCatSource:
         try:
             data['morph_type'] = dsi['morph']['type']
         except KeyError:
-            data['morph_type'] = NA.fill_value['string']
+            data['morph_type'] = 'none'
 
         try:
             val = Angle(dsi['morph']['sigma']['val']).degree
@@ -424,7 +432,7 @@ class GammaCatSchema:
                 data=in_table[name],
                 name=colspec['name'],
                 dtype=colspec['dtype'],
-                # fmt=colspec['fmt'],
+                format=colspec['format'],
                 unit=colspec['unit'],
                 description=colspec['description'],
             )
@@ -442,22 +450,35 @@ class GammaCatMaker:
     """
 
     def __init__(self):
-        self.sources = []
+        self.sources = None
         self.table = None
+        self.table2 = None
+
+    def setup(self, source_ids='all', internal=False):
+        log.info('Setup ...')
+        if source_ids == 'all':
+            source_ids = GammaCatDataSetConfig.read().source_ids
+        else:
+            source_ids = [int(_) for _ in source_ids.split(',')]
+
+        self.sources = self.read_source_data(source_ids=source_ids, internal=internal)
 
     def run(self, internal):
         log.info('Making gamma-cat ....')
 
-        self.gather_data(internal=internal)
-        self.make_table()
-        self.write_table(internal=internal)
-        self.write_yaml_text_dump(internal=internal)
+        self.table = self.make_table(self.sources)
+        self.write_table_fits(self.table, internal=internal)
 
-    def gather_data(self, internal=False):
+        self.table2 = self.make_table2(self.table)
+        self.write_table_ecsv(self.table2, internal=internal)
+        self.write_table_yaml(self.table2, internal=internal)
+
+    @staticmethod
+    def read_source_data(source_ids, internal=False):
         """Gather data into Python data structures."""
         input_data = InputData.read(internal=internal)
-        source_ids = [_.data['source_id'] for _ in input_data.sources.data]
 
+        sources = []
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             log.info('Processing : {}'.format(basic_source_info))
@@ -478,11 +499,14 @@ class GammaCatMaker:
                 dataset_source_info=dataset_source_info,
                 sed_info=sed_info
             )
-            self.sources.append(source)
+            sources.append(source)
 
-    def make_table(self):
+        return sources
+
+    @staticmethod
+    def make_table(sources):
         """Convert Python data structures to a flat table."""
-        rows = [source.row_dict() for source in self.sources]
+        rows = [source.row_dict() for source in sources]
 
         # Passing Quantity objects to `Table(rows=rows)` doesn't work.
         # So for now, we drop units here
@@ -528,13 +552,24 @@ class GammaCatMaker:
         # And where `ra` is identical, use `dec` and `source_id` to order.
         table.sort(['ra', 'dec', 'source_id'])
 
-        self.table = table
+        return table
 
-    def write_table(self, internal=False):
-        table = self.table
+    @staticmethod
+    def make_table2(table):
+        # ECSV format does not support multidimensional columns
+        # So we replace with the mean here to have a useful stat in text diffs
+        table = table.copy()
+        for colname in table.colnames:
+            if table[colname].ndim > 1:
+                table[colname] = np.nanmean(table[colname].data, axis=1)
 
-        # table.info('stats')
-        # table.pprint()
+        # column_selection = [_ for _ in table.colnames if not 'sed_' in _]
+        # table = table[column_selection]
+
+        return table
+
+    @staticmethod
+    def write_table_fits(table, internal=False):
         if internal:
             path = gammacat_info.internal_dir / 'gammacat-hess-internal.fits.gz'
         else:
@@ -542,13 +577,18 @@ class GammaCatMaker:
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
-        # path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
-        # log.info('Writing {}'.format(path))
-        # table.write(str(path), format='ascii.ecsv')
+    @staticmethod
+    def write_table_ecsv(table, internal=False):
+        if internal:
+            path = gammacat_info.internal_dir / 'gammacat-hess-internal.ecsv'
+        else:
+            path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
 
-    def write_yaml_text_dump(self, internal=False):
-        column_selection = [_ for _ in self.table.colnames if not 'sed_' in _]
-        table = self.table[column_selection]
+        log.info('Writing {}'.format(path))
+        table.write(str(path), format='ascii.ecsv')
+
+    @staticmethod
+    def write_table_yaml(table, internal=False):
         data = table_to_list_of_dict(table)
 
         if internal:

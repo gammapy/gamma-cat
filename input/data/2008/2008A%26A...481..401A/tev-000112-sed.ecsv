@@ -2,23 +2,26 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_ul, datatype: float32}
+# - {name: dnde, datatype: float32, unit: 1e-13 cm-2 s-1 TeV-1}
+# - {name: dnde_err, datatype: float32, unit: 1e-13 cm-2 s-1 TeV-1}
+# - {name: dnde_ul, datatype: float32, unit: 1e-13 cm-2 s-1 TeV-1}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 112
 # - reference_id: 2008A&A...481..401A
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_w28_paper.html
+# - comments: |
+#     Flux points for HESS J1801-233.
+#
+#     Upper limit (99% c.l.) given in case excess significance < 2 sigma
 # - UL_CONF: 0.99
-e_ref dnde dnde_errp dnde_errn dnde_ul
-0.41 7.423e-12  5.366e-12  9.480e-12 nan
-0.55 5.740e-12  4.644e-12  6.836e-12 nan
-0.73 1.181e-12  7.000e-13  1.662e-12 nan
-0.97 6.510e-13  3.860e-13  9.160e-13 nan
-1.30 3.110e-13  1.700e-13  4.520e-13 nan
-1.73 2.130e-13  1.330e-13  2.930e-13 nan
-2.31 nan        nan        nan       3.100e-13
-3.08 nan        nan        nan       1.880e-13
-4.11 2.700e-14  1.300e-14  4.100e-14 nan
+e_ref dnde dnde_err dnde_ul
+0.41   74.23    20.57   nan
+0.55   57.40    10.96   nan
+0.73   11.81     4.81   nan
+0.97    6.51     2.65   nan
+1.30    3.11     1.41   nan
+1.73    2.13     0.80   nan
+2.31     nan      nan  3.10
+3.08     nan      nan  1.88
+4.11    0.27     0.14   nan

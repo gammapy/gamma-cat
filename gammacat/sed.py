@@ -1,6 +1,5 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
-from pathlib import Path
 from itertools import chain
 from astropy.table import Table
 from .info import gammacat_info
@@ -273,7 +272,6 @@ class SEDList:
         for path in paths:
             sed = SED.read(path)
             data.append(sed)
-        # from IPython import embed; embed(); 1/0
         return cls(data=data)
 
     def validate(self):

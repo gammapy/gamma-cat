@@ -36,7 +36,7 @@ def cli(loglevel, show_warnings):
 
 @cli.command(name='output')
 @click.option('--step', default='all',
-              type=click.Choice(['all', 'sed']))
+              type=click.Choice(['all', 'sed', 'index']))
 def make_output(step):
     """Re-generate files in `output`.
     """
@@ -47,11 +47,14 @@ def make_output(step):
         maker.make_all()
     elif step == 'sed':
         maker.make_sed_files()
+    elif step == 'index':
+        maker.make_index_files()
 
 
 @cli.command(name='cat')
+@click.option('--sources', default='all', help='Either "all" or comma-separated string of source IDs')
 @click.option('--internal', default=False, is_flag=True)
-def make_cat(internal):
+def make_cat(sources, internal):
     """Make catalog in HGPS format
     """
     from gammacat.cat import GammaCatMaker
@@ -60,7 +63,9 @@ def make_cat(internal):
             raise ValueError("Environment variable 'HGPS_ANALYSIS' "
                              " must be set.")
     log.info('Making catalog ...')
-    GammaCatMaker().run(internal=internal)
+    maker = GammaCatMaker()
+    maker.setup(source_ids=sources, internal=internal)
+    maker.run(internal=internal)
 
 
 # @cli.command(name='webpage')
@@ -72,12 +77,22 @@ def make_cat(internal):
 
 
 @cli.command(name='check')
-def make_check():
-    """Run automated tests
+@click.option('--step', default='all',
+              type=click.Choice(['all', 'input', 'output', 'global']))
+def make_check(step):
+    """Run automated checks.
     """
-    from gammacat.checks import check_input_files
     log.info('Run automated checks ...')
-    check_input_files()
+    from gammacat.checks import GammaCatChecker
+    maker = GammaCatChecker()
+    if step == 'all':
+        maker.check_all()
+    elif step == 'input':
+        maker.check_input()
+    elif step == 'output':
+        maker.check_output()
+    elif step == 'global':
+        maker.check_global()
 
 
 @cli.command(name='web')

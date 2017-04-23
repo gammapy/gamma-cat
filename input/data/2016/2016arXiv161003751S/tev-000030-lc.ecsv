@@ -10,7 +10,6 @@
 # meta: !!omap
 # - data_type: lc
 # - source_id: 30
-# - source_name: HESS J0632+057
 # - reference_id: 2016arXiv161003751S
 # - {SED_TYPE: flux}
 e_min time_min time_max time flux flux_err

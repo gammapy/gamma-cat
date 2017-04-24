@@ -52,7 +52,11 @@ properties:
 
       significance:
         type: number
-        description: Significance of the excess
+        description: Significance of the excess (pre-trial)
+
+      significance_post_trial:
+        type: number
+        description: Significance of the excess (post-trial)
 
   pos:
     type: object

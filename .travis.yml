@@ -15,6 +15,11 @@ install:
 - source activate gamma-cat
 
 script:
+
+# Workaround for the following issue:
+# https://travis-ci.org/gammapy/gamma-cat/builds/225367662#L755
+- export BOKEH_DOCS_MISSING_API_KEY_OK=yes
+
 - export PYTHONPATH=.:$PYTHONPATH
 - python -m pytest -v --cov=gammacat
 - python make.py --help

@@ -2,18 +2,121 @@ type: object
 additionalProperties: false
 
 properties:
-  source_id: {type: integer}
-  # ToDo: add short explanation to difference between common, gamma and other names
-  common_name: {type: string}
-  gamma_names: {type: array, items: {type: string}}
-  fermi_names: {type: array, items: {type: string}}
-  other_names: {type: array, items: {type: string}}
+  source_id:
+    type: integer
+    description: Unique source identifier integer in gamma-cat
 
-  where: {type: string, enum: [gal, egal, unid]}
+  common_name:
+    type: string
+    description: The main unique name used in gamma-cat
+
+  gamma_names:
+    type: array
+    items: {type: string}
+    description: Other gamma-ray names used for the object
+
+  fermi_names:
+    type: array
+    items: {type: string}
+    description: Names of associatiated Fermi-LAT sources
+
+  other_names:
+    type: array
+    items: {type: string}
+    description: Other names for this astrophysical object
+
+  where:
+    enum: [gal, egal, unid]
+    description: "Object location: Galactic or extragalactic?"
+
   classes:
     type: array
     items:
-      enum: [unid, other, psr, pwn, snr, mc, gc, bin, galaxy, fri, blazar, hbl, ibl, lbl, fsrq]
+      "$ref": "#/definitions/source_class"
+    description: Source classes (multiple allowed if origin of emission unclear)
+
+  discoverer:
+    "$ref": "#/definitions/telescope"
+    description: Who discovered the source at TeV energies?
+
+  seen_by:
+    type: array
+    items:
+      "$ref": "#/definitions/telescope"
+    description: List of telescopes that have detected the object.
+
+  discovery_date:
+    type: [string, "null"]
+    desription: Date of first discovery at TeV energies.
+
+  tevcat_id:
+    type: integer
+    description: Source identifier in TeVCat
+
+  tevcat2_id:
+    type: string
+    description: Source identifier in TeVCat2
+
+  tevcat_name:
+    type: string
+    description: Source name in TeVCat
+
+  tgevcat_id:
+    type: [integer, "null"]
+    description: Source identifier in TGeVCat
+
+  tgevcat_name:
+    type: [string, "null"]
+    description: Source name in TGeVCat
+
+  pos:
+    type: object
+    additionalProperties: false
+    properties:
+      simbad_id:
+        type: string
+        description: TODO
+      ra:
+        type: [string, number]
+        unit: deg
+        description: TODO
+      dec:
+        type: [string, number]
+        unit: deg
+        description: TODO
+
+  reference_ids:
+    type: array
+    items: {type: [string, "null"]}
+    description: TODO
+
+  notes:
+    type: string
+    description: Hand-written, free-format notes
+
+required:
+  - source_id
+  - common_name
+  - gamma_names
+  - other_names
+  - where
+  - classes
+  - discoverer
+#  - discovery_date
+#  - tevcat_id
+#  - tevcat2_id
+#  - tevcat_name
+#  - tgevcat_id
+#  - tgevcat_name
+  - reference_ids
+
+definitions:
+
+  telescope:
+    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
+
+  source_class:
+    enum: [unid, other, psr, pwn, snr, mc, gc, bin, galaxy, fri, blazar, hbl, ibl, lbl, fsrq]
       # Source classes (TODO: refine and document system we use -> adopt HGPS)
       # unid - Unidentified
       # other - Something not specifically listed here (remove class?)
@@ -30,46 +133,3 @@ properties:
       # ibl - Intermediate-frequency peaked BL Lac
       # lbl - Low-frequency peaked BL Lac
       # fsrq - Flat spectrum radio quasar
-
-  discoverer:
-    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
-  seen_by:
-    type: array
-    items:
-      enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
-  discovery_date: {type: [string, "null"]}
-
-  tevcat_id: {type: integer}
-  tevcat2_id: {type: string}
-  tevcat_name: {type: string}
-
-  tgevcat_id: {type: [integer, "null"]}
-  tgevcat_name: {type: [string, "null"]}
-
-  pos: # Todo: add unit to documentation
-    type: object
-    additionalProperties: false
-    properties:
-      simbad_id: {type: string}
-      ra: {type: [string, number], unit=deg}
-      dec: {type: [string, number], unit=deg}
-
-  reference_ids: {type: array, items: {type: [string, "null"]}}
-
-  notes: {type: string}
-
-required:
-  - source_id
-#  - common_name
-#  - gamma_names
-#  - other_names
-#  - where
-#  - classes
-#  - discoverer
-#  - discovery_date
-#  - tevcat_id
-#  - tevcat2_id
-#  - tevcat_name
-#  - tgevcat_id
-#  - tgevcat_name
-  - reference_ids

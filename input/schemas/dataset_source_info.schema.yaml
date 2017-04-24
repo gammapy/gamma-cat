@@ -2,23 +2,57 @@ type: object
 additionalProperties: false
 properties:
 
-  source_id: {type: integer}
-  reference_id: {type: string}
+  source_id:
+    type: integer
+    description: Unique source identifier integer in gamma-cat
+
+  reference_id:
+    type: string
+    description: Dataset reference identifier
+
   telescope:
-    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
+    "$ref": "#/definitions/telescope"
 
   data:
     type: object
     additionalProperties: false
     properties:
-      livetime: {type: number, unit: hour}
-      zenith: {type: number, unit: deg, description: Mean zenith angle}
-      offset: {type: number, unit: deg, description: Mean offset angle}
-      n_on: {type: number, unit: counts}
-      n_off: {type: number, unit: counts}
-      alpha: {type: number, unit: none}
-      excess: {type: number, unit: counts}
-      significance: {type: number, unit: none}
+      livetime:
+        type: number
+        unit: hour
+        description: TODO
+
+      zenith:
+        type: number
+        unit: deg
+        description: Mean zenith angle
+
+      offset:
+        type: number
+        unit: deg
+        description: Mean offset angle
+
+      n_on:
+        type: number
+        unit: counts
+        description: Number of events in the on region
+
+      n_off:
+        type: number
+        unit: counts
+        description: Number of events in the off region
+
+      alpha:
+        type: number
+        description: TODO
+
+      excess:
+        type: number
+        description: Excess (number of photons)
+
+      significance:
+        type: number
+        description: Significance of the excess
 
   pos:
     type: object
@@ -31,9 +65,10 @@ properties:
           Right Ascension (ICRC or FK5 J2000, it's almost the same)
           Number in deg or string that can be parsed by Angle
         properties:
-          val: {type: [number, string]}
+          val: {type: [number, string], description: Measured value}
           err: {type: [number, string], description: Statistical error}
           err_sys: {type: [number, string], description: Systematic error}
+
       dec:
         type: object
         additionalProperties: false
@@ -41,9 +76,10 @@ properties:
           Declination (ICRC or FK5 J2000, it's almost the same)
           Number in deg or string that can be parsed by Angle
         properties:
-          val: {type: [number, string]}
+          val: {type: [number, string], description: Measured value}
           err: {type: [number, string], description: Statistical error}
           err_sys: {type: [number, string], description: Systematic error}
+
       glon:
         type: object
         additionalProperties: false
@@ -51,9 +87,10 @@ properties:
           Galactic longitude
           Number in deg or string that can be parsed by Angle
         properties:
-          val: {type: [number, string]}
+          val: {type: [number, string], description: Measured value}
           err: {type: [number, string], description: Statistical error}
           err_sys: {type: [number, string], description: Systematic error}
+
       glat:
         type: object
         additionalProperties: false
@@ -61,7 +98,7 @@ properties:
           Galactic latitude
           Number in deg or string that can be parsed by Angle
         properties:
-          val: {type: [number, string]}
+          val: {type: [number, string], description: Measured value}
           err: {type: [number, string], description: Statistical error}
           err_sys: {type: [number, string], description: Systematic error}
 
@@ -69,7 +106,10 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      type: {enum: [point, gauss, shell]}
+      type:
+        enum: [point, gauss, shell]
+        description: Source morphology type
+
       sigma:
         type: object
         additionalProperties: false
@@ -77,9 +117,10 @@ properties:
           Width parameter (semantics type-dependent)
           String that can be parsed by Angle
         properties:
-          val: {type: string}
+          val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
           err_sys: {type: string, description: Systematic error}
+
       sigma2:
         type: object
         additionalProperties: false
@@ -87,9 +128,10 @@ properties:
           Width parameter (semantics type-dependent)
           String that can be parsed by Angle
         properties:
-          val: {type: string}
+          val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
           err_sys: {type: string, description: Systematic error}
+
       pa:
         type: object
         additionalProperties: false
@@ -99,7 +141,7 @@ properties:
           String that can be parsed by Angle
         properties:
           frame: {enum: [radec, galactic]}
-          val: {type: string}
+          val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
           err_sys: {type: string, description: Systematic error}
 
@@ -107,14 +149,17 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      mjd0: {type: number, unit: day, description: Zero phase for orbital period in MJD}
+      mjd0:
+        type: number
+        unit: day
+        description: Zero phase for orbital period in MJD
+
       period:
         type: object
         additionalProperties: false
-        description: |
-          Orbital period
+        description: Orbital period
         properties:
-          val: {type: [number, string]}
+          val: {type: [number, string], description: Measured value}
           err: {type: [number, string], description: Statistical error}
           errp: {type: [number, string], description: Lower statistical error}
           errn: {type: [number, string], description: Upper statistical error}
@@ -132,32 +177,41 @@ properties:
           - pl2 = `PowerLaw2` in Gammapy
           - ecpl = `ExponentialCutoffPowerLaw` in Gammapy
           - other = some other shape
-      theta: {type: string, description="Circular aperture photometry radius (parsed by Angle)"}
+
+      theta:
+        type: string
+        description: Circular aperture photometry radius (parsed by Angle)
+
       erange:
         type: object
         additionalProperties: false
+        description: TODO
         properties:
           min: {type: [number,  "null"], unit: TeV}
           max: {type: [number,  "null"], unit: TeV}
+
       norm:
         type: object
         additionalProperties: false
         unit: 1e-12 cm-2 s-1 TeV-1
         description: Flux norm parameter
         properties:
-          val: {type: number}
+          val: {type: number, description: Measured value}
           err: {type: number, description: Statistical error}
           err_sys: {type: number, description: Systematic error}
+
       ref: {type: number, unit: TeV, description: Reference energy for norm}
+
       index:
         type: object
         additionalProperties: false
         unit: dimensionless
         description: Spectral index parameter
         properties:
-          val: {type: number}
+          val: {type: number, description: Measured value}
           err: {type: number, description: Statistical error}
           err_sys: {type: number, description: Systematic error}
+
       ecut:
         type: object
         additionalProperties: false
@@ -167,28 +221,42 @@ properties:
           val: {type: number}
           err: {type: number, description: Statistical error}
           err_sys: {type: number, description: Systematic error}
+
       covar:
         type: array
         description: |
           Covariance matrix
           TODO: decide on format.
           An example of a published covariance matrix is here: 2016arXiv161101863H
-      observatory: {type: string, description: Observatory name}
+
+      # TODO: this duplicates the "telescope" key above.
+      observatory:
+        type: string
+        description: Observatory name
+
       mjd:
         type: object
         additionalProperties: false
+        description: TODO
         properties:
           min: {type: [number,  "null"], unit: day}
           max: {type: [number,  "null"], unit: day}
+
       phase:
         type: object
         additionalProperties: false
+        description: TODO
         properties:
           min: {type: [number,  "null"]}
           max: {type: [number,  "null"]}
-      filecounter: {type: number, description: Counter to connect spectral fit with SED file}
 
-  notes: {type: string}
+      filecounter:
+        type: number
+        description: Counter to connect spectral fit with SED file
+
+  notes:
+    type: string
+    description: Hand-written, free-format notes
 
 required:
   - source_id
@@ -197,3 +265,7 @@ required:
 #  - morphology
 #  - spectrum
 
+definitions:
+
+  telescope:
+    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]

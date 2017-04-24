@@ -9,6 +9,7 @@ classes: [pwn, unid]
 
 discoverer: milagro
 seen_by: [milagro, veritas]
+discovery_date: 2007-03
 
 tevcat_id: 145
 tevcat2_id: RZ7qzv

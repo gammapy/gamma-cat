@@ -14,6 +14,7 @@ classes: [pwn, snr]
 
 discoverer: milagro
 seen_by: [milagro]
+discovery_date: 2009-04
 
 tevcat_id: 182
 tevcat2_id: qsRoN6

@@ -11,6 +11,7 @@
 # - data_type: sed
 # - source_id: 30
 # - reference_id: 2016arXiv161003751S
+# - telescope: veritas
 # - comments: |
 #     Spectral points measured by VERITAS for orbital phases 0.2-0.4
 e_ref e_min e_max dnde dnde_errp dnde_errn

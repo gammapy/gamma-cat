@@ -9,6 +9,7 @@ classes: [unid]
 
 discoverer: hess
 seen_by: [hess, magic, hawc]
+discovery_date: 2007-07
 
 tevcat_id: 143
 tevcat2_id: BDIaeo

@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 136}
 # - {reference_id: 2010ApJ...719L..69A}
+# - {telescope: veritas}
 # - {url: 'https://github.com/gammapy/gamma-cat/issues/51#issuecomment-267764427'}
 # - {UL_CONF: 0.99}
 # - {comments: 'SED from Figure 2 in the paper.

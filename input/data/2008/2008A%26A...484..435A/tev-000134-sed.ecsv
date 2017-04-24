@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 134
 # - reference_id: 2008A&A...484..435A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/HESSJ1912_auxinfo.html
 # - UL_CONF: 0.95
 # - comments: |

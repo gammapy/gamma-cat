@@ -1,5 +1,6 @@
 source_id: 61
 reference_id: 2005A&A...439.1013A
+telescope: hess
 
 data:
   livetime: 58.6
@@ -13,7 +14,6 @@ pos:
 morph:
   type: gauss
   sigma: {val: 0.16d, err: 0.02d}
-  # TODO: no pa given in the paper
 
 spec:
   type: pl

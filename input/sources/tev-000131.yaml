@@ -9,6 +9,7 @@ classes: [unid]
 
 discoverer: hess
 seen_by: [hess, hawc]
+discovery_date: 2007-07
 
 tevcat_id: 144
 tevcat2_id: KxJfNI

@@ -9,6 +9,7 @@ classes: [pwn, snr]
 
 discoverer: veritas
 seen_by: [veritas, milagro]
+discovery_date: 2011-08
 
 tevcat_id: 228
 tevcat2_id: wbkK3X

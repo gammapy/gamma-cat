@@ -10,8 +10,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 138}
-# - {telescope: Whipple}
 # - {reference_id: 'http://veritas.sao.arizona.edu/'}
+# - {telescope: whipple}
 # - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul
 53639.16 53639.1187 53639.2067 nan nan 0.38

@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 39
 # - reference_id: 2007ApJ...661..236A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/VelaJr2auxinfo.htm
 # - comments: |
 #     Flux points shown in Figure 6.

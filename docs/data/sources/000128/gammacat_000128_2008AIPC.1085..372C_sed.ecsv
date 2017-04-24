@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 128}
 # - {reference_id: 2008AIPC.1085..372C}
+# - {telescope: hess}
 # - {url: TODO (origin of points unknown)}
 e_ref dnde dnde_errn dnde_errp
 0.623875 9.94175e-12 3.30083e-12 3.26451e-12

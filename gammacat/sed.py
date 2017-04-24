@@ -29,7 +29,7 @@ class SED:
     ]
 
     required_meta_keys = [
-        'data_type', 'reference_id', 'source_id',
+        'data_type', 'reference_id', 'source_id', 'telescope',
     ]
 
     allowed_meta_keys = required_meta_keys + [

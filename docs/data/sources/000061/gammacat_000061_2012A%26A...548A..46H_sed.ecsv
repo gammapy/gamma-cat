@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 61}
 # - {reference_id: 2012A&A...548A..46H}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A46.html'}
 # - {comments: The page contains other data that's not copied here yet.}
 e_ref dnde dnde_errn dnde_errp

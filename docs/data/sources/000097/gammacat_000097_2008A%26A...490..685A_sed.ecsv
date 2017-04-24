@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 97}
 # - {reference_id: 2008A&A...490..685A}
+# - {telescope: hess}
 # - {comments: 'TODO: origin of flux points?'}
 e_ref dnde dnde_errn dnde_errp
 0.4645 4.136e-12 8.89e-13 8.78e-13

@@ -9,8 +9,8 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}
-# - {telescope: MAGIC}
 # - {reference_id: reference_empty}
+# - {telescope: magic}
 # - {timesys: UTC}
 time time_min time_max flux flux_err
 53324.2656 53324.2617 53324.2695 0.7 0.13

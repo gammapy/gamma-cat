@@ -10,6 +10,7 @@ classes: [hbl]
 
 discoverer: veritas
 seen_by: [veritas]
+discovery_date: 2010-03
 
 tevcat_id: 207
 tevcat2_id: 0WgN2s

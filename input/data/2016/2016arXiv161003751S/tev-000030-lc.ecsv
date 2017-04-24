@@ -10,8 +10,8 @@
 # meta: !!omap
 # - data_type: lc
 # - source_id: 30
-# - source_name: HESS J0632+057
 # - reference_id: 2016arXiv161003751S
+# - telescope: veritas
 # - {SED_TYPE: flux}
 e_min time_min time_max time flux flux_err
 0.350 54830 54834 54832.0 1.3093 0.4514

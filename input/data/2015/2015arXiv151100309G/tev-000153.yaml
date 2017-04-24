@@ -1,5 +1,6 @@
 source_id: 153
 reference_id: 2015arXiv151100309G
+telescope: veritas
 
 data:
   # Note on livetime: only 18 hours used for position measurement

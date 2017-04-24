@@ -9,6 +9,7 @@ classes: [snr, mc]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2010-12
 
 tevcat_id: 218
 tevcat2_id: tHQw4n

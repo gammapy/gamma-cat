@@ -12,6 +12,7 @@
 # - data_type: sed
 # - source_id: 106
 # - reference_id: 2016Natur.531..476H
+# - telescope: hess
 # - comments: |
 #     Data obtained from Aion Viana on Oct 19, 2016 via private communication
 #     Corresponds to blue spectral points from Figure 3 for HESS J1745−290:

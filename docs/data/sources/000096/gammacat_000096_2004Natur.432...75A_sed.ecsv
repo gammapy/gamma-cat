@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 96}
 # - {reference_id: 2004Natur.432...75A}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/Nature432.html'}
 # - {comments: Spectral points from Figure 3.}
 e_ref e_min e_max dnde dnde_err

@@ -14,6 +14,7 @@
 # - {data_type: sed}
 # - {source_id: 106}
 # - {reference_id: 2006PhRvL..97v1102A}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/GC2004_AuxInfo.txt'}
 # - {UL_CONF: 0.95}
 # - {comments: I think this is the spectrum 2004 data spectrum (solid points) in Figure

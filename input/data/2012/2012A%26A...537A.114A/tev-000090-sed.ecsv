@@ -11,6 +11,7 @@
 # - data_type: sed
 # - source_id: 90
 # - reference_id: 2012A&A...537A.114A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA537_A114.html
 # - UL_CONF: 0.99
 # - comments: |

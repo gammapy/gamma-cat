@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 103}
 # - {reference_id: 2011A&A...531A..81H}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA531_A81.html'}
 e_ref dnde dnde_errn dnde_errp
 0.281317 4.47255e-11 6.89917e-12 6.99568e-12

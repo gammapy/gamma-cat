@@ -9,6 +9,7 @@
 # - data_type: sed
 # - source_id: 118
 # - reference_id: 2005A&A...442L..25A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA442_HESSJ1825.html
 e_ref e2dnde e2dnde_errn e2dnde_errp
 281800 8.837e-06 2.559e-06 2.5e-06

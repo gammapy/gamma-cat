@@ -9,6 +9,7 @@ classes: [psr, pwn]
 
 discoverer: milagro
 seen_by: [milagro, hawc]
+discovery_date: 2009-04
 
 tevcat_id: 177
 tevcat2_id: 66DvGb

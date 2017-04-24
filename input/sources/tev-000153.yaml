@@ -9,6 +9,7 @@ classes: [snr]
 
 discoverer: hegra
 seen_by: [hegra, magic, veritas]
+discovery_date: 2001-04
 
 tevcat_id: 82
 tevcat2_id: 3dz45u

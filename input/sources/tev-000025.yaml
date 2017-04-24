@@ -9,6 +9,7 @@ classes: [pwn]
 
 discoverer: hess
 seen_by: [hess, hegra, magic, veritas, hawc]
+discovery_date: 1989-07
 
 tevcat_id: 74
 tevcat2_id: BlJI6q

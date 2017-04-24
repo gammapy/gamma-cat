@@ -12,6 +12,7 @@
 # - data_type: sed
 # - source_id: 133
 # - reference_id: 2016arXiv160900600H
+# - telescope: hess
 # - UL_CONF: 0.95
 # - comments: |
 #     Data from Francois Brun via email Nov 4, 2016

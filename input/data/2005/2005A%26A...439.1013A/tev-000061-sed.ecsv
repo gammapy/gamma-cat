@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 61
 # - reference_id: 2005A&A...439.1013A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA439_1013.html
 # - comments: |
 #     Spectral points from Figure 4.

@@ -10,6 +10,7 @@
 # - {data_type: sed}
 # - {source_id: 64}
 # - {reference_id: 2011A&A...533A.103H}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA533_A103.html'}
 e_ref dnde dnde_err
 1.5 1.3e-12 4.23e-13

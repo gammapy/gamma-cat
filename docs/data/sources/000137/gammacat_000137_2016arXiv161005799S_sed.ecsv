@@ -10,6 +10,7 @@
 # - {data_type: sed}
 # - {source_id: 137}
 # - {reference_id: 2016arXiv161005799S}
+# - {telescope: veritas}
 # - {url: 'https://github.com/gammapy/gamma-cat/issues/58#issuecomment-268059071'}
 # - {comments: 'Data from Karlen Shahinyan via Github Dec 19, 2016
 # 

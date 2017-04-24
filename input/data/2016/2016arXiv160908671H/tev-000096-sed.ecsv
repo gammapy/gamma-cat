@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 96
 # - reference_id: 2016arXiv160908671H
+# - telescope: hess
 # - comments: |
 #     Data taken from appendix F in the paper p.31
 #     Also available here: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/RXJ1713_2016_auxinfo

@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 119
 # - reference_id: 2006A&A...460..743A
+# - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LS5039_II_auxinfo.html
 # - UL_CONF: 1 sigma
 # - comments: |

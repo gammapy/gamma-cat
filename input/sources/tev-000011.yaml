@@ -9,6 +9,7 @@ classes: [ibl]
 
 discoverer: crimea
 seen_by: [magic, veritas, crimea]
+discovery_date: 1998-03
 
 tevcat_id: 119
 tevcat2_id: J01xzR

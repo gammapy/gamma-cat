@@ -1,18 +1,11 @@
 source_id: 30
 reference_id: 2014ApJ...780..168A
+telescope: veritas
 # Note that this is a joint HESS/VERITAS paper
-
-pos:
-    # from fit to VERITAS data
-    ra: {val: 06h33m0.8s, err: 0h0m0.5s, err_sys: 50s }
-    dec: {val: +5d47m39s, err: 10s, err_sys: 50s }
-
-morph:
-    type: point
 
 orbit:
     # zero phase for orbital period
-    mjd0: 54857     # arbitarily set to the date of the first Swift observations
+    mjd0: 54857     # arbitrarily set to the date of the first Swift observations
     period: {val: 315, errp: 4, errn: 6 }
 
 #############################################################
@@ -25,7 +18,6 @@ spec:
     type: pl
     mjd: {min: 55890.0, max: 55928.}
     phase: {min: 0.2, max: 0.4 }
-    observatory: veritas
     norm: {val: 6.4e-13, err: 0.8e-13, err_sys: 1.2e-13}
     index: {val: 2.3, err: 0.2, err_sys: 0.1}
     ref: 1

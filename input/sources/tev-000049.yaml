@@ -16,7 +16,7 @@ classes: [hbl]
 
 discoverer: whipple
 seen_by: [whipple, veritas, hess, magic, hawc]
-discovery_date:
+discovery_date: 1992-08
 
 tevcat_id: 75
 tevcat2_id: cIB7Uf

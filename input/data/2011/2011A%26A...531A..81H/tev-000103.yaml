@@ -1,9 +1,10 @@
 source_id: 103
 reference_id: 2011A&A...531A..81H
+telescope: hess
 
 data:
   livetime: 59
-#  significance:
+#  significance: TODO
 
 pos:
   ra: {val: 17h32m03s}

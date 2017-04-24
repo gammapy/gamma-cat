@@ -12,6 +12,7 @@
 # - {data_type: sed}
 # - {source_id: 118}
 # - {reference_id: 2006A&A...460..365A}
+# - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA_5546.html'}
 # - {comments: Flux points from Figure 3.}
 e_ref dnde dnde_errn dnde_errp

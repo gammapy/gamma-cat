@@ -11,6 +11,7 @@
 # - {data_type: sed}
 # - {source_id: 25}
 # - {reference_id: 2008ICRC....2..803K}
+# - {telescope: hess}
 # - {comments: Data taken from table 4}
 e_ref dnde dnde_err significance
 0.39 3.87e-10 3.8e-11 16.7

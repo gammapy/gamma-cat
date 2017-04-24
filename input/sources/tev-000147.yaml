@@ -7,8 +7,9 @@ other_names: []
 where: egal
 classes: [hbl]
 
-discoverer: hess
-seen_by: [hess, magic]
+discoverer: durham
+seen_by: [durham, hess, magic]
+discovery_date: 1999-06
 
 tevcat_id: 90
 tevcat2_id: nm0IZL

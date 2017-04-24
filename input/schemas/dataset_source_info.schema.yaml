@@ -107,8 +107,7 @@ properties:
     additionalProperties: false
     properties:
       type:
-        enum: [point, gauss, shell]
-        description: Source morphology type
+        "$ref": "#/definitions/morph_type"
 
       sigma:
         type: object
@@ -165,18 +164,12 @@ properties:
           errn: {type: [number, string], description: Upper statistical error}
           err_sys: {type: [number, string], description: Systematic error}
 
-  spec: # in general: what to do with several values? A: use total dataset and best-fit, might be expanded later
+  spec:
     type: object
     additionalProperties: false
     properties:
       type:
-        enum: [pl, pl2, ecpl]
-        description: |
-          The following spec types are defined.
-          - pl = `PowerLaw` in Gammapy
-          - pl2 = `PowerLaw2` in Gammapy
-          - ecpl = `ExponentialCutoffPowerLaw` in Gammapy
-          - other = some other shape
+        "$ref": "#/definitions/spec_type"
 
       theta:
         type: string
@@ -268,4 +261,47 @@ required:
 definitions:
 
   telescope:
-    enum: [hess, veritas, magic, whipple, hegra, cangaroo, hawc, milagro, crimea, argo, cat]
+    enum:
+      - hess
+      - veritas
+      - magic
+      - whipple
+      - hegra
+      - cangaroo
+      - hawc
+      - milagro
+      - crimea
+      - argo
+      - cat
+    description: Telescope or instrument or observatory
+
+  morph_type:
+    enum:
+      - point
+      - gauss
+      - shell
+    description: Morphology type
+    # The following description is just descriptive, not used in schema validation
+    enum_values:
+      - name: point
+        description: See Delta2D in Gammapy
+      - name: gauss
+        description: See Gaussian2D in Gammapy
+      - name: shell
+        description: See Shell2D in Gammapy
+
+  spec_type:
+    enum:
+      - pl
+      - pl2
+      - ecpl
+    description: Spectrum type
+    # The following description is just descriptive, not used in schema validation
+    enum_values:
+      - name: pl
+        description: See PowerLaw in Gammapy
+      - name: pl2
+        description: See PowerLaw2 in Gammapy
+      - name: ecpl
+        description: See ExponentialCutoffPowerLaw in Gammapy
+

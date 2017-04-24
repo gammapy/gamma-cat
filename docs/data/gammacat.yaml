@@ -8,7 +8,7 @@
   - classes: pwn,snr
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2011-10
   - tevcat_id: 227
   - tevcat2_id: rC5JCj
   - tevcat_name: TeV J0006+729
@@ -79,7 +79,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2010-11
   - tevcat_id: 213
   - tevcat2_id: 70hRXZ
   - tevcat_name: TeV J0013-188
@@ -150,7 +150,7 @@
   - classes: snr
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2010-05
   - tevcat_id: 209
   - tevcat2_id: xCyAjF
   - tevcat_name: TeV J0025+641
@@ -221,7 +221,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2012-07
   - tevcat_id: 239
   - tevcat2_id: PKJZqs
   - tevcat_name: TeV J0033-193
@@ -292,7 +292,7 @@
   - classes: hbl
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2011-10
   - tevcat_id: 229
   - tevcat2_id: eNYfrm
   - tevcat_name: TeV J0035+598
@@ -363,7 +363,7 @@
   - classes: galaxy
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2009-07
   - tevcat_id: 195
   - tevcat2_id: sK2rQU
   - tevcat_name: TeV J0047-253
@@ -434,7 +434,7 @@
   - classes: hbl
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2012-07
   - tevcat_id: 244
   - tevcat2_id: 7WhQrw
   - tevcat_name: TeV J0136+391
@@ -505,7 +505,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2008-02
   - tevcat_id: 156
   - tevcat2_id: tKGVcC
   - tevcat_name: TeV J0152+017
@@ -576,7 +576,7 @@
   - classes: pwn
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2014-05
   - tevcat_id: 252
   - tevcat2_id: 2I2TuY
   - tevcat_name: TeV J0209+648
@@ -647,7 +647,7 @@
   - classes: blazar
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2014-07
   - tevcat_id: 254
   - tevcat2_id: hJnA37
   - tevcat_name: TeV J0218+359
@@ -718,7 +718,7 @@
   - classes: ibl
   - discoverer: crimea
   - seen_by: magic,veritas,crimea
-  - discovery_date: ''
+  - discovery_date: 1998-03
   - tevcat_id: 119
   - tevcat2_id: J01xzR
   - tevcat_name: TeV J0222+430
@@ -789,7 +789,7 @@
   - classes: unid
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2009-02
   - tevcat_id: 138
   - tevcat2_id: y6gVxa
   - tevcat_name: TeV J0223+430
@@ -860,7 +860,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess,veritas
-  - discovery_date: ''
+  - discovery_date: 2006-12
   - tevcat_id: 130
   - tevcat2_id: pVNsSZ
   - tevcat_name: TeV J0232+202
@@ -931,7 +931,7 @@
   - classes: bin
   - discoverer: magic
   - seen_by: veritas,magic
-  - discovery_date: ''
+  - discovery_date: 2006-06
   - tevcat_id: 89
   - tevcat2_id: fW749W
   - tevcat_name: TeV J0240+612
@@ -1002,7 +1002,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2012-07
   - tevcat_id: 240
   - tevcat2_id: 5puKGr
   - tevcat_name: TeV J0303-241
@@ -1073,7 +1073,7 @@
   - classes: hbl
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2010-03
   - tevcat_id: 208
   - tevcat2_id: hooot9
   - tevcat_name: TeV J0316+413
@@ -1144,7 +1144,7 @@
   - classes: fri
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2010-10
   - tevcat_id: 212
   - tevcat2_id: 9dfnMH
   - tevcat_name: TeV J0319+415
@@ -1215,7 +1215,7 @@
   - classes: hbl
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2009-10
   - tevcat_id: 198
   - tevcat2_id: p26X9Z
   - tevcat_name: TeV J0319+187
@@ -1286,7 +1286,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2007-08
   - tevcat_id: 147
   - tevcat2_id: rWyLLM
   - tevcat_name: TeV J0349-119
@@ -1357,7 +1357,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess,veritas
-  - discovery_date: ''
+  - discovery_date: 2009-11
   - tevcat_id: 199
   - tevcat2_id: hKCHxG
   - tevcat_name: TeV J0416+010
@@ -1428,7 +1428,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2009-12
   - tevcat_id: 203
   - tevcat2_id: ewJQZd
   - tevcat_name: TeV J0449-438
@@ -1499,7 +1499,7 @@
   - classes: hbl
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2009-11
   - tevcat_id: 200
   - tevcat2_id: 1G0nr7
   - tevcat_name: TeV J0507+676
@@ -1570,7 +1570,7 @@
   - classes: ibl
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2009-10
   - tevcat_id: 196
   - tevcat2_id: ILT7om
   - tevcat_name: TeV J0521+211
@@ -1641,7 +1641,7 @@
   - classes: snr,mc
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2014-10
   - tevcat_id: 256
   - tevcat2_id: z30txh
   - tevcat_name: TeV J0525-696
@@ -1712,7 +1712,7 @@
   - classes: pwn
   - discoverer: hess
   - seen_by: hess,hegra,magic,veritas,hawc
-  - discovery_date: ''
+  - discovery_date: 1989-07
   - tevcat_id: 74
   - tevcat2_id: BlJI6q
   - tevcat_name: TeV J0534+220
@@ -1783,7 +1783,7 @@
   - classes: other
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2014-10
   - tevcat_id: 255
   - tevcat2_id: C6fp9j
   - tevcat_name: TeV J0535-692
@@ -1854,7 +1854,7 @@
   - classes: pwn
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2012-01
   - tevcat_id: 236
   - tevcat2_id: 8hS5e7
   - tevcat_name: TeV J0537-691
@@ -1925,7 +1925,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2007-07
   - tevcat_id: 133
   - tevcat2_id: U09cDa
   - tevcat_name: TeV J0550-322
@@ -1996,7 +1996,7 @@
   - classes: snr
   - discoverer: magic
   - seen_by: magic,veritas,milagro
-  - discovery_date: ''
+  - discovery_date: 2007-05
   - tevcat_id: 120
   - tevcat2_id: 9xMcgD
   - tevcat_name: TeV J0616+225
@@ -2067,7 +2067,7 @@
   - classes: bin
   - discoverer: hess
   - seen_by: hess,veritas,magic
-  - discovery_date: ''
+  - discovery_date: 2007-07
   - tevcat_id: 134
   - tevcat2_id: jPeNQq
   - tevcat_name: TeV J0632+058
@@ -2138,7 +2138,7 @@
   - classes: psr,pwn
   - discoverer: milagro
   - seen_by: milagro,hawc
-  - discovery_date: ''
+  - discovery_date: 2009-04
   - tevcat_id: 177
   - tevcat2_id: 66DvGb
   - tevcat_name: TeV J0632+173
@@ -2209,7 +2209,7 @@
   - classes: hbl
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2010-03
   - tevcat_id: 207
   - tevcat2_id: 0WgN2s
   - tevcat_name: TeV J0648+152
@@ -2280,7 +2280,7 @@
   - classes: hbl
   - discoverer: magic
   - seen_by: magic,veritas
-  - discovery_date: ''
+  - discovery_date: 2011-09
   - tevcat_id: 238
   - tevcat2_id: zp72d7
   - tevcat_name: TeV J0650+250
@@ -2351,7 +2351,7 @@
   - classes: hbl
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2009-02
   - tevcat_id: 173
   - tevcat2_id: vejQq8
   - tevcat_name: TeV J0710+591
@@ -2422,7 +2422,7 @@
   - classes: ibl
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2008-04
   - tevcat_id: 172
   - tevcat2_id: vDwoU3
   - tevcat_name: TeV J0721+713
@@ -2493,7 +2493,7 @@
   - classes: hbl
   - discoverer: veritas
   - seen_by: veritas,magic
-  - discovery_date: ''
+  - discovery_date: 2008-12
   - tevcat_id: 160
   - tevcat2_id: kIwUzI
   - tevcat_name: TeV J0809+523
@@ -2564,7 +2564,7 @@
   - classes: pwn
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: todo
+  - discovery_date: 2006-03
   - tevcat_id: 86
   - tevcat2_id: yVoFOS
   - tevcat_name: TeV J0835-456
@@ -3416,7 +3416,7 @@
   - classes: hbl
   - discoverer: whipple
   - seen_by: whipple,veritas,hess,magic,hawc
-  - discovery_date: None
+  - discovery_date: 1992-08
   - tevcat_id: 75
   - tevcat2_id: cIB7Uf
   - tevcat_name: TeV J1104+382
@@ -7889,7 +7889,7 @@
   - classes: snr,mc
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2008-04
   - tevcat_id: 164
   - tevcat2_id: mxBSx6
   - tevcat_name: TeV J1800-240
@@ -8315,7 +8315,7 @@
   - classes: unid
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2015-08
   - tevcat_id: 270
   - tevcat2_id: 6hCJvz
   - tevcat_name: TeV J1813-126
@@ -8528,7 +8528,7 @@
   - classes: unid
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2015-07
   - tevcat_id: 271
   - tevcat2_id: BpWYND
   - tevcat_name: TeV J1826-130
@@ -9664,7 +9664,7 @@
   - classes: unid
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2011-08
   - tevcat_id: 280
   - tevcat2_id: xI7npJ
   - tevcat_name: TeV J1852-000
@@ -9735,7 +9735,7 @@
   - classes: unid
   - discoverer: hess
   - seen_by: hess,magic,hawc
-  - discovery_date: ''
+  - discovery_date: 2007-07
   - tevcat_id: 143
   - tevcat2_id: BDIaeo
   - tevcat_name: TeV J1857+026
@@ -9806,7 +9806,7 @@
   - classes: unid
   - discoverer: hess
   - seen_by: hess,hawc
-  - discovery_date: ''
+  - discovery_date: 2007-07
   - tevcat_id: 144
   - tevcat2_id: KxJfNI
   - tevcat_name: TeV J1858+020
@@ -9878,7 +9878,7 @@
   - classes: unid
   - discoverer: milagro
   - seen_by: hess,milagro,veritas,hawc,argo
-  - discovery_date: ''
+  - discovery_date: 2007-08
   - tevcat_id: 148
   - tevcat2_id: eaYOuH
   - tevcat_name: TeV J1907+062
@@ -9949,7 +9949,7 @@
   - classes: snr,mc
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2010-12
   - tevcat_id: 218
   - tevcat2_id: tHQw4n
   - tevcat_name: TeV J1911+090
@@ -10020,7 +10020,7 @@
   - classes: unid
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2008-02
   - tevcat_id: 157
   - tevcat2_id: J26r5R
   - tevcat_name: TeV J1912+101
@@ -10091,7 +10091,7 @@
   - classes: snr,mc
   - discoverer: hess
   - seen_by: hess,magic,milagro
-  - discovery_date: ''
+  - discovery_date: 2008-10
   - tevcat_id: 178
   - tevcat2_id: ParXkE
   - tevcat_name: TeV J1923+141
@@ -10162,7 +10162,7 @@
   - classes: pwn,snr
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2009-07
   - tevcat_id: 193
   - tevcat2_id: F0Luol
   - tevcat_name: TeV J1930+188
@@ -10233,7 +10233,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess,veritas
-  - discovery_date: ''
+  - discovery_date: 2010-11
   - tevcat_id: 214
   - tevcat2_id: RdzX69
   - tevcat_name: TeV J1943+213
@@ -10304,7 +10304,7 @@
   - classes: hbl
   - discoverer: magic
   - seen_by: magic,veritas,hegra
-  - discovery_date: ''
+  - discovery_date: 1999-08
   - tevcat_id: 79
   - tevcat2_id: cUkkpO
   - tevcat_name: TeV J1959+651
@@ -10375,7 +10375,7 @@
   - classes: ibl
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2010-07
   - tevcat_id: 165
   - tevcat2_id: ljNqkw
   - tevcat_name: TeV J2001+438
@@ -10446,7 +10446,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2005-06
   - tevcat_id: 100
   - tevcat2_id: ObIXbg
   - tevcat_name: TeV J2009-488
@@ -10517,7 +10517,7 @@
   - classes: pwn,snr
   - discoverer: veritas
   - seen_by: veritas,milagro
-  - discovery_date: ''
+  - discovery_date: 2011-08
   - tevcat_id: 228
   - tevcat2_id: wbkK3X
   - tevcat_name: TeV J2016+372
@@ -10588,7 +10588,7 @@
   - classes: unid
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2014-04
   - tevcat_id: 259
   - tevcat2_id: ''
   - tevcat_name: TeV J2019+368
@@ -10659,7 +10659,7 @@
   - classes: pwn,unid
   - discoverer: milagro
   - seen_by: milagro,veritas
-  - discovery_date: ''
+  - discovery_date: 2007-03
   - tevcat_id: 145
   - tevcat2_id: RZ7qzv
   - tevcat_name: TeV J2019+368
@@ -10730,7 +10730,7 @@
   - classes: unid
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2009-11
   - tevcat_id: 201
   - tevcat2_id: IWrXQp
   - tevcat_name: TeV J2019+407
@@ -10801,7 +10801,7 @@
   - classes: unid
   - discoverer: milagro
   - seen_by: milagro
-  - discovery_date: ''
+  - discovery_date: 2007-08
   - tevcat_id: 149
   - tevcat2_id: 1FCN0q
   - tevcat_name: TeV J2031+406
@@ -10872,7 +10872,7 @@
   - classes: unid
   - discoverer: hegra
   - seen_by: hegra,veritas,magic,milagro
-  - discovery_date: ''
+  - discovery_date: 2002-10
   - tevcat_id: 87
   - tevcat2_id: 3IY6Gd
   - tevcat_name: TeV J2032+415
@@ -10941,9 +10941,9 @@
   - other_names: ''
   - where: egal
   - classes: hbl
-  - discoverer: hess
-  - seen_by: hess,magic
-  - discovery_date: ''
+  - discoverer: durham
+  - seen_by: durham,hess,magic
+  - discovery_date: 1999-06
   - tevcat_id: 90
   - tevcat2_id: nm0IZL
   - tevcat_name: TeV J2158-302
@@ -11014,7 +11014,7 @@
   - classes: lbl
   - discoverer: crimea
   - seen_by: crimea,veritas,magic
-  - discovery_date: ''
+  - discovery_date: 2001-04
   - tevcat_id: 118
   - tevcat2_id: iIWshp
   - tevcat_name: TeV J2202+422
@@ -11085,7 +11085,7 @@
   - classes: pwn,snr
   - discoverer: milagro
   - seen_by: milagro
-  - discovery_date: ''
+  - discovery_date: 2009-04
   - tevcat_id: 182
   - tevcat2_id: qsRoN6
   - tevcat_name: TeV J2228+611
@@ -11156,7 +11156,7 @@
   - classes: ibl
   - discoverer: veritas
   - seen_by: veritas
-  - discovery_date: ''
+  - discovery_date: 2014-12
   - tevcat_id: 257
   - tevcat2_id: 7IL8zC
   - tevcat_name: TeV J2243+203
@@ -11227,7 +11227,7 @@
   - classes: hbl
   - discoverer: magic
   - seen_by: magic
-  - discovery_date: ''
+  - discovery_date: 2010-10
   - tevcat_id: 211
   - tevcat2_id: WCU2Cw
   - tevcat_name: TeV J2250+384
@@ -11298,7 +11298,7 @@
   - classes: snr
   - discoverer: hegra
   - seen_by: hegra,magic,veritas
-  - discovery_date: ''
+  - discovery_date: 2001-04
   - tevcat_id: 82
   - tevcat2_id: 3dz45u
   - tevcat_name: TeV J2323+588
@@ -11369,7 +11369,7 @@
   - classes: hbl
   - discoverer: whipple
   - seen_by: whipple,hegra,magic,veritas
-  - discovery_date: ''
+  - discovery_date: 1998-07
   - tevcat_id: 77
   - tevcat2_id: FcTRDg
   - tevcat_name: TeV J2347+517
@@ -11440,7 +11440,7 @@
   - classes: hbl
   - discoverer: hess
   - seen_by: hess
-  - discovery_date: ''
+  - discovery_date: 2006-04
   - tevcat_id: 101
   - tevcat2_id: VIbvxm
   - tevcat_name: TeV J2359-306

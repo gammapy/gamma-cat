@@ -1,10 +1,10 @@
 {
     "info": {
         "name": "gammacat",
-        "version": "84fc9e4",
-        "git_version": "84fc9e4",
+        "version": "05d2fd1",
+        "git_version": "05d2fd1",
         "description": "An open data collection and source catalog for gamma-ray astronomy",
-        "datetime": "2017-04-23 21:55:19.720312"
+        "datetime": "2017-04-24 09:40:09.453585"
     },
     "data": [
         {

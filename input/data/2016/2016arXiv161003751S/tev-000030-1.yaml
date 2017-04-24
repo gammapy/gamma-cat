@@ -21,7 +21,6 @@ spec:
     type: pl
     mjd: {min: 55236.0, max: 57456.}
     phase: {min: 0.2, max: 0.4 }
-    observatory: veritas
     norm: {val: 6.8e-13, err: 4.0e-14}
     index: {val: 2.55, err: 0.05}
     ref: 1

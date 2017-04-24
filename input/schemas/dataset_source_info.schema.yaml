@@ -226,11 +226,6 @@ properties:
           TODO: decide on format.
           An example of a published covariance matrix is here: 2016arXiv161101863H
 
-      # TODO: this duplicates the "telescope" key above.
-      observatory:
-        type: string
-        description: Observatory name
-
       mjd:
         type: object
         additionalProperties: false

@@ -1,0 +1,65 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: significance, datatype: float32}
+# - {name: flux, unit: ph / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: ph / (cm2 s), datatype: float64}
+# - {name: flux_ul, unit: ph / (cm2 s), datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 14
+# - source_name: LS I +61 303
+# - reference_id: 2008ApJ...679.1427A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - UL_CONF: 0.99
+# - comments: |
+#     Data taken from tables 1,2,3 in the paper.
+e_min time significance flux flux_err flux_ul
+0.3 54760.3 2.2    nan  nan  10.1e-12
+0.3 54761.4 1.7   nan  nan  9.9e-12
+0.3 54762.3 0.6   nan  nan  6.8e-12
+0.3 54763.4 -0.4   nan  nan  10.3e-12
+0.3 54764.2 0.5   nan  nan  4.4e-12
+0.3 54765.2 -1.4   nan  nan  2.6e-12
+0.3 54766.2 0.2   nan  nan  5.9e-12
+0.3 54767.3 0.2   nan  nan  6.9e-12
+0.3 54768.3 0.4   nan  nan  6.0e-12
+0.3 54769.3 -0.3   nan  nan  2.9e-12
+0.3 54770.3 -0.9   nan  nan  4.4e-12
+0.3 54771.3 1.0   nan  nan  6.5e-12
+0.3 54772.3 1.7   nan  nan  10.2e-12
+0.3 54774.3 2.7   nan  nan  9.2e-12
+0.3 54775.3 -0.7   nan  nan  4.4e-12
+0.3 54776.3 1.5   nan  nan  4.4e-12
+0.3 54777.4 0.5   nan  nan  7.2e-12
+0.3 54778.4 -0.8   nan  nan  5.8e-12
+0.3 54779.4 -0.3   nan  nan  7.8e-12
+0.3 54856.1 0.4   nan  nan  6.1e-12
+0.3 54857.1 -1.8   nan  nan  2.7e-12
+0.3 54861.1 1.1   nan  nan   7.4e-12
+0.3 54862.1 0.9   nan  nan  6.8e-12
+0.3 54863.1 1.4   nan  nan  8.8e-12
+0.3 55119.3 1.6   nan  nan 7.7e-12
+0.3 55120.3 -0.4   nan  nan 5.5e-12
+0.3 55121.3 -2.5   nan  nan 1.6e-12
+0.3 55122.3 0.9   nan  nan 6.0e-12
+0.3 55123.3 -0.7   nan  nan 9.4e-12
+0.3 55124.3 1.9   nan  nan 7.9e-12
+0.3 55146.2 3.4  5.8e-12 1.9e-12  nan
+0.3 55151.2 2.1   nan  nan 10.0e-12
+0.3 55175.2 -0.7   nan  nan 6.5e-12
+0.3 55176.2 -0.3   nan  nan 7.3e-12
+0.3 55177.2 -0.8 nan  nan   10.3e-12
+0.3 55455.4 1.7  nan  nan 10.08e-12
+0.3 55457.4 1.4  nan  nan 18.00e-12
+0.3 55476.4 1.3  nan  nan  11.4e-12
+0.3 55477.3 5.7  9.23e-12  1.9e-12 nan
+0.3 55480.3 2.3  nan  nan 19.7e-12
+0.3 55481.3 2.0  nan  nan 9.3e-12
+0.3 55482.3 -0.3  nan  nan 4.2e-12
+0.3 55483.3 -0.04  nan  nan 5.84e-12
+0.3 55505.3 2.7  nan  nan 23.7e-12
+0.3 55506.2 0.9   nan  nan 11.09e-12

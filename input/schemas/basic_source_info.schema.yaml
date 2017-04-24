@@ -61,11 +61,11 @@ properties:
     description: Source name in TeVCat
 
   tgevcat_id:
-    type: [integer, "null"]
+    type: integer
     description: Source identifier in TGeVCat
 
   tgevcat_name:
-    type: [string, "null"]
+    type: string
     description: Source name in TGeVCat
 
   pos:
@@ -86,7 +86,7 @@ properties:
 
   reference_ids:
     type: array
-    items: {type: [string, "null"]}
+    items: {type: string}
     description: TODO
 
   notes:
@@ -102,11 +102,6 @@ required:
   - classes
   - discoverer
   - discovery_date
-#  - tevcat_id
-#  - tevcat2_id
-#  - tevcat_name
-#  - tgevcat_id
-#  - tgevcat_name
   - reference_ids
 
 definitions:

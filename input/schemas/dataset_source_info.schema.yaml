@@ -184,8 +184,8 @@ properties:
         additionalProperties: false
         description: TODO
         properties:
-          min: {type: [number,  "null"], unit: TeV}
-          max: {type: [number,  "null"], unit: TeV}
+          min: {type: number, unit: TeV}
+          max: {type: number, unit: TeV}
 
       norm:
         type: object
@@ -236,16 +236,16 @@ properties:
         additionalProperties: false
         description: TODO
         properties:
-          min: {type: [number,  "null"], unit: day}
-          max: {type: [number,  "null"], unit: day}
+          min: {type: number, unit: day}
+          max: {type: number, unit: day}
 
       phase:
         type: object
         additionalProperties: false
         description: TODO
         properties:
-          min: {type: [number,  "null"]}
-          max: {type: [number,  "null"]}
+          min: {type: number}
+          max: {type: number}
 
       filecounter:
         type: number

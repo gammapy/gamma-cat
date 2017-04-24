@@ -9,6 +9,7 @@ classes: [hbl]
 
 discoverer: magic
 seen_by: [magic, veritas, hegra]
+discovery_date: 1999-08
 
 tevcat_id: 79
 tevcat2_id: cUkkpO

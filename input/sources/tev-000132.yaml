@@ -9,6 +9,7 @@ classes: [unid]
 
 discoverer: milagro
 seen_by: [hess, milagro, veritas, hawc, argo]
+discovery_date: 2007-08
 
 tevcat_id: 148
 tevcat2_id: eaYOuH

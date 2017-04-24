@@ -6,7 +6,6 @@ other_names: []
 
 where: gal
 classes: [snr]
-discovery_date: 2015-07
 
 discoverer: hess
 seen_by: [hess]
@@ -16,9 +15,7 @@ tevcat_id: 268
 tevcat2_id: dwdrDT
 tevcat_name: TeV J1534-571
 
-# Source not listed in tgevcat yet
-# tgevcat_id:
-# tgevcat_name:
+# Note: this source is not listed in tgevcat yet
 
 # The SNR or HESS source is not listed in SIMBAD yet.
 # But the SNR is listed in SNRCat here:

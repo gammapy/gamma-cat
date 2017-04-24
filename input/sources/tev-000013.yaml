@@ -9,6 +9,7 @@ classes: [hbl]
 
 discoverer: hess
 seen_by: [hess, veritas]
+discovery_date: 2006-12
 
 tevcat_id: 130
 tevcat2_id: pVNsSZ

@@ -9,6 +9,7 @@ classes: [hbl]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2005-06
 
 tevcat_id: 100
 tevcat2_id: ObIXbg

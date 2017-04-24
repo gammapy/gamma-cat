@@ -9,6 +9,7 @@ classes: [ibl]
 
 discoverer: veritas
 seen_by: [veritas]
+discovery_date: 2009-10
 
 tevcat_id: 196
 tevcat2_id: ILT7om

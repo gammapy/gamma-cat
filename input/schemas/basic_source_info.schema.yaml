@@ -45,8 +45,8 @@ properties:
     description: List of telescopes that have detected the object.
 
   discovery_date:
-    type: [string, "null"]
-    desription: Date of first discovery at TeV energies.
+    type: string
+    description: Date of first discovery at TeV energies.
 
   tevcat_id:
     type: integer
@@ -101,7 +101,7 @@ required:
   - where
   - classes
   - discoverer
-#  - discovery_date
+  - discovery_date
 #  - tevcat_id
 #  - tevcat2_id
 #  - tevcat_name
@@ -124,6 +124,7 @@ definitions:
       - crimea
       - argo
       - cat
+      - durham
     description: Telescope or instrument or observatory
 
   where:
@@ -183,12 +184,12 @@ definitions:
       - name: fri
         description: Far-infrared radio galaxy # TODO: keep this source type or unify as "galaxy"?
       - name: blazar
-        desription: Blazar
+        description: Blazar
       - name: hbl
         description: High-frequency peaked BL Lac
       - name: ibl
         description: Intermediate-frequency peaked BL Lac
       - name: lbl
-        desription: Low-frequency peaked BL Lac
+        description: Low-frequency peaked BL Lac
       - name: fsrq
-        desription: Flat spectrum radio quasar
+        description: Flat spectrum radio quasar

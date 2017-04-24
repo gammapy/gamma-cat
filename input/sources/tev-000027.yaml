@@ -9,6 +9,7 @@ classes: [pwn]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2012-01
 
 tevcat_id: 236
 tevcat2_id: 8hS5e7

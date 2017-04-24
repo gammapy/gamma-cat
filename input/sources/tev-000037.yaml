@@ -9,8 +9,8 @@ where: gal
 classes: [pwn]
 
 discoverer: hess
-discovery_date: todo
 seen_by: [hess]
+discovery_date: 2006-03
 
 tevcat_id: 86
 tevcat2_id: yVoFOS

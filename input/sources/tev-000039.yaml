@@ -16,8 +16,8 @@ where: gal
 classes: [snr]
 
 discoverer: cangaroo
-discovery_date: 2005-02
 seen_by: [cangaroo, hess]
+discovery_date: 2005-02
 
 tevcat_id: 98
 tevcat2_id: FfpuKQ

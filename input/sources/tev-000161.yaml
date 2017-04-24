@@ -9,14 +9,13 @@ classes: [unid]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2015-07
 
 tevcat_id: 271
 tevcat2_id: BpWYND
 tevcat_name: TeV J1826-130
 
-# Source not listed in tgevcat yet
-# tgevcat_id:
-# tgevcat_name:
+# Note: this source is not listed in tgevcat yet
 
 pos:
   simbad_id: PSR J1826-1256

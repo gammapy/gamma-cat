@@ -11,6 +11,7 @@ classes: [pwn, snr]
 
 discoverer: veritas
 seen_by: [veritas]
+discovery_date: 2011-10
 
 tevcat_id: 227
 tevcat2_id: rC5JCj

@@ -10,6 +10,7 @@ classes: [snr, mc]
 
 discoverer: hess
 seen_by: [hess]
+discovery_date: 2008-04
 
 tevcat_id: 164
 tevcat2_id: mxBSx6

@@ -9,6 +9,7 @@ classes: [lbl]
 
 discoverer: crimea
 seen_by: [crimea, veritas, magic]
+discovery_date: 2001-04
 
 tevcat_id: 118
 tevcat2_id: iIWshp

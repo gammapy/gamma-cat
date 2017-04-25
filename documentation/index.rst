@@ -30,7 +30,7 @@ This site is organised in the following sections:
 .. _data-docs:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Gamma-Cat Data
 
    data/index

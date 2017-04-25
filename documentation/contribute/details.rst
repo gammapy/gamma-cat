@@ -172,11 +172,11 @@ We use several Sphinx extensions, and also have our own in `gammacat/sphinx/exts
 
 More info soon ... for now this is just a link collection:
 
-* `sphinxcontrib.rawfiles`
-  * Useful example. Not very useful directly, because can't control destination of the copy!?
-  * Code: https://bitbucket.org/birkenfeld/sphinx-contrib/src/master/rawfiles/sphinxcontrib/rawfiles.py
-  * PyPI: https://pypi.python.org/pypi/sphinxcontrib-rawfiles/
-  * Although for now, this is working for what I need: http://www.sphinx-doc.org/en/1.5.1/config.html#confval-html_extra_path
+* ``sphinxcontrib.rawfiles``
+    * Useful example. Not very useful directly, because can't control destination of the copy!?
+    * Code: https://bitbucket.org/birkenfeld/sphinx-contrib/src/master/rawfiles/sphinxcontrib/rawfiles.py
+    * PyPI: https://pypi.python.org/pypi/sphinxcontrib-rawfiles/
+    * Although for now, this is working for what I need: http://www.sphinx-doc.org/en/1.5.1/config.html#confval-html_extra_path
 * Looks very useful! http://sphinxcontribdatatemplates.readthedocs.io/en/latest/
 * A good Sphinx table extension would be useful: https://github.com/sphinx-doc/sphinx/issues/786
 * Not sure if this is useful! https://pythonhosted.org/sphinxcontrib-restbuilder/

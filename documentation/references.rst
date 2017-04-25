@@ -1,5 +1,4 @@
 .. |gamma-cat-docs| replace:: https://gamma-cat.readthedocs.io
-.. |gamma-cat-data| replace:: https://gammapy.github.io/gamma-cat
 .. |gamma-cat-repo| replace:: https://github.com/gammapy/gamma-cat
 
 .. |gamma-cat-hess-data| replace:: https://github.com/gammapy/gamma-cat/blob/master/todo/todo_hess_aux.md

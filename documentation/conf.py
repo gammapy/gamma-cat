@@ -32,7 +32,11 @@ sys.path.insert(0, os.path.abspath('..'))
 # ones.
 extensions = [
     'matplotlib.sphinxext.plot_directive',
-    'bokeh.sphinxext.bokeh_plot',
+
+    # Bokeh Sphinx extension is broken at the moment. See here:
+    # https://github.com/bokeh/bokeh/issues/5951#issuecomment-296948826
+    # 'bokeh.sphinxext.bokeh_plot',
+    'sphinxcontrib.datatemplates',
     'gammacat.sphinx.exts.rstjinja',
 ]
 
@@ -72,7 +76,15 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [
+    '_build', 'Thumbs.db', '.DS_Store',
+]
+
+
+html_extra_path = [
+    # 'rawfiles',
+    # 'test2.txt',
+]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -103,7 +115,7 @@ if not on_rtd:
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 
 # -- Options for HTMLHelp output ------------------------------------------

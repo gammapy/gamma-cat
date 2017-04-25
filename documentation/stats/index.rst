@@ -16,8 +16,9 @@ TODO:
 - AIT plot of sky locations
 - Add Bokeh or Aladin Lite interactive Figure?
 
-.. bokeh-plot:: stats/plot_sky_locations.py
-    :source-position: none
+.. Bokeh Sphinx directive is broken at the moment:
+.. .. bokeh-plot:: stats/plot_sky_locations.py
+..     :source-position: none
 
 
 Kifune plot

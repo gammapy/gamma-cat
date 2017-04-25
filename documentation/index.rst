@@ -3,26 +3,52 @@
 gamma-cat
 =========
 
-An open data collection and source catalog for gamma-ray astronomy.
+**gamma-cat** is an open data collection and source catalog for gamma-ray astronomy.
 
-* Docs: |gamma-cat-docs|
-* Data: |gamma-cat-data|
-* Repo: |gamma-cat-repo|
+* Data and Docs (this site): |gamma-cat-docs|
+* Repository: |gamma-cat-repo|
+* Explore `gamma-cat` and other gamma-ray data at `gamma-sky.net`_
+* Access and analyse `gamma-cat` and other gamma-ray data from Python: `gammapy.catalog`_
 
-See also:
+* For now, see also here: https://gammapy.github.io/gamma-cat (will be moved to Sphinx docs soon)
 
-* Interactive sky map: `gamma-sky.net`_
-* Browse catalog info: `gamma-sky.net/cat/tev`_
-* Access and analyse data from Python: `gammapy.catalog`_
+This site is organised in the following sections:
 
-Documentation
--------------
+* :ref:`about-docs` - Quick introduction to `gamma-cat`
+* :ref:`data-docs` - Get `gamma-cat` data
+* :ref:`user-docs` - Detailed info about `gamma-cat`
+* :ref:`contributor-docs` - How to give feedback and contribute
+
+.. _about-docs:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :caption: About
 
    about
-   use
-   details
+
+.. _data-docs:
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Gamma-Cat Data
+
+   data/index
+
+.. _user-docs:
+
+.. toctree::
+   :maxdepth: 1
+   :caption: User Documentation
+
+   use/index
    stats/index
    changes
+
+.. _contributor-docs:
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contributor Documentation
+
+   contribute/details

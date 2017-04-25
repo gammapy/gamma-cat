@@ -10,7 +10,6 @@
 # meta: !!omap
 # - data_type: lc
 # - source_id: 14
-# - source_name: LS I +61 303
 # - reference_id: 2008ApJ...679.1427A
 # - telescope: veritas
 # - {SED_TYPE: flux}

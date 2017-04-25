@@ -8,41 +8,6 @@ This page contains some notes with details about `gamma-cat`.
 Data
 ----
 
-Overview
-++++++++
-
-This catalog contains data collected from the literature
-(usually one or several papers per source).
-
-In this repository, there's four major folders:
-
-* `input` is where we collect data about sources given in papers.
-  This is very heterogeneous and is the place for data entry only.
-* `output` is produced with the `make_output.py` script in an
-  automatic way from `input`. It's as-homogeneous and complete data
-  as possible and what you should access for information lookup.
-* `docs` is a webpage that displays part of the information in the
-  repo (see link above). Specifically, there's a search field to find
-  a given source and then from the source detail view there's links
-  to the corresponding files in the `input` folder so that
-  submitting corrections and additions is easy.
-  This is intentionally very minimal, for a better experience to
-  view the catalog online, go to `gamma-sky.net/cat/tev`_
-  (not yet, coming soon).
-* `seed` contains seed catalogs of TeV source info other people have
-  collected previously. It was used to originally populate `input`
-  using the `import_seed.py` script (see details below).
-
-Seed
-++++
-
-As a starting point, data was ingested from these sources
-(see the README files there for further information):
-
-* https://github.com/gammapy/gamma-cat/tree/master/input/hess-galactic
-* https://github.com/gammapy/gamma-cat/tree/master/input/tevcat
-* https://github.com/gammapy/gamma-cat/tree/master/input/tgevcat
-
 Procedure
 +++++++++
 
@@ -59,8 +24,8 @@ script generates an as-homogeneous as possible version of the catalog.
 * In the input folder ``input/data``, data is organised by ``reference_id`` first, then ``source_id``.
 * In the output folder ``docs/data``, data is organised by ``source_id`` first, then ``reference_id``.
 
-Paper identifiers
-^^^^^^^^^^^^^^^^^
+Reference identifiers
+^^^^^^^^^^^^^^^^^^^^^
 
 For paper identifiers, we use the ADS identifiers.
 
@@ -102,7 +67,11 @@ Source identifiers
 Source classes
 ^^^^^^^^^^^^^^
 
-* TBD: Define source classes and their semantics
+TODO: document properly.
+
+For now, see the list of source classes we're using at the end of this schema file:
+
+https://github.com/gammapy/gamma-cat/blob/master/input/schemas/basic_source_info.schema.yaml
 
 
 Positions
@@ -139,7 +108,7 @@ Feedback and contributions welcome!
   and YAML files (because I find them easier to read and edit than JSON),
   as well as ECSV files.
   Maybe we'll switch to use the https://astrocats.space/ machinery later.
-* We use Python scripts. Only Python 3.4+ and the latest versions of
+* We use Python scripts. Only Python 3.5+ and the latest versions of
   Astropy, Gammapy, ... are supported (very few people will run the scripts,
   no point in supporting old versions here, even if it would be easy to do).
 

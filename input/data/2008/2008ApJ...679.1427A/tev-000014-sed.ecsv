@@ -13,6 +13,7 @@
 # - reference_id: 2008ApJ...679.1427A
 # - telescope: veritas
 # - UL_CONF: 0.99
+# - comments: [spectral points (Fig 2) obtained from corresponding author] 
 e_ref e_min  e_max  dnde  dnde_err  dnde_ul
 0.385  0.316   0.446  2.82e-11   1.14e-11 nan
 0.548  0.446   0.630  1.25e-11   0.37e-11 nan

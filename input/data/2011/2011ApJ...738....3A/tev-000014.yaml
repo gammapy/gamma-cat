@@ -1,0 +1,15 @@
+# Source ID from TeGeV-cat: http://www.asdc.asi.it/tgevcat/)
+# LS I +61 303
+# VER J0240+612
+source_id: 14
+# Reference ID from ADS
+reference_id: 2011ApJ...738....3A
+telescope: veritas
+
+##################
+# Orbital period
+# (for binaries only)
+orbit:
+    # zero phase for orbital period from Gregory (2002)
+    mjd0: 43366.3     #
+    period: {val: 26.4960 }

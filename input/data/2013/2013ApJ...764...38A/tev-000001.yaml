@@ -5,6 +5,7 @@ telescope: veritas
 data:
   livetime: 41.25
   significance: 7.5
+  significance_post_trial: 6.5
 
 pos:
   ra: {val: 0h6m26s, err: 0.09d, err_sys: 50s}

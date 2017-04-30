@@ -8,6 +8,8 @@ Each file has some of these columns:
 - `flux` - observed integral flux in Crab
 - `flux_err` - statistical error on the observed integral flux in Crab
 - `flux_ul` - indicates if a flux is an upper limit
+- `index` - spectral index
+- `index_err` - statistical error on the spectral index
 
 If `time_min` or `time_max` are identically with `time`, these columns may be omitted.
 If a flux is an upper limit, `flux` and `flux_err` get `np.nan` and `flux_ul` gets the respectively flux value. Otherwise, `flux_ul` gets `np.nan`.

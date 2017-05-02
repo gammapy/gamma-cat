@@ -391,30 +391,30 @@
 - name: sed_dnde
   format:
   dtype: float32
-  unit: TeV-1 cm-2 s-1
+  unit: cm-2 s-1 TeV-1
   description: Flux at reference energy
   latex:
 - name: sed_dnde_err
   format:
   dtype: float32
-  unit: TeV-1 cm-2 s-1
+  unit: cm-2 s-1 TeV-1
   description: Flux error at reference energy
   latex:
 - name: sed_dnde_errp
   format:
   dtype: float32
-  unit: TeV-1 cm-2 s-1
+  unit: cm-2 s-1 TeV-1
   description: Upper error on flux at reference energy
   latex:
 - name: sed_dnde_errn
   format:
   dtype: float32
-  unit: TeV-1 cm-2 s-1
+  unit: cm-2 s-1 TeV-1
   description: Lower error on flux at reference energy
   latex:
 - name: sed_dnde_ul
   format:
   dtype: float32
-  unit: TeV-1 cm-2 s-1
+  unit: cm-2 s-1 TeV-1
   description: Upper limit on flux at reference energy
   latex:

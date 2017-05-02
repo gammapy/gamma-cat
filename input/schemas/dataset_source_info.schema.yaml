@@ -20,7 +20,7 @@ properties:
       livetime:
         type: number
         unit: hour
-        description: TODO
+        description: Livetime (observation time minus deadtime)
 
       zenith:
         type: number
@@ -44,7 +44,7 @@ properties:
 
       alpha:
         type: number
-        description: TODO
+        description: On / off exposure ration (used for excess computation)
 
       excess:
         type: number
@@ -162,11 +162,11 @@ properties:
         additionalProperties: false
         description: Orbital period
         properties:
-          val: {type: [number, string], description: Measured value}
-          err: {type: [number, string], description: Statistical error}
-          errn: {type: [number, string], description: Lower statistical error}
-          errp: {type: [number, string], description: Upper statistical error}
-          err_sys: {type: [number, string], description: Systematic error}
+          val: {type: number, unit: day, description: Measured value}
+          err: {type: number, unit: day, description: Statistical error}
+          errn: {type: number, unit: day, description: Lower statistical error}
+          errp: {type: number, unit: day, description: Upper statistical error}
+          err_sys: {type: number, unit: day, description: Systematic error}
 
   spec:
     type: object

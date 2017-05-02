@@ -67,44 +67,44 @@ properties:
         additionalProperties: false
         description: |
           Right Ascension (ICRC or FK5 J2000, it's almost the same)
-          Number in deg or string that can be parsed by Angle
+          A string that can be parsed by Astropy Angle.
         properties:
-          val: {type: [number, string], description: Measured value}
-          err: {type: [number, string], description: Statistical error}
-          err_sys: {type: [number, string], description: Systematic error}
+          val: {type: string, description: Measured value}
+          err: {type: string, description: Statistical error}
+          err_sys: {type: string, description: Systematic error}
 
       dec:
         type: object
         additionalProperties: false
         description: |
           Declination (ICRC or FK5 J2000, it's almost the same)
-          Number in deg or string that can be parsed by Angle
+          A string that can be parsed by Astropy Angle.
         properties:
-          val: {type: [number, string], description: Measured value}
-          err: {type: [number, string], description: Statistical error}
-          err_sys: {type: [number, string], description: Systematic error}
+          val: {type: string, description: Measured value}
+          err: {type: string, description: Statistical error}
+          err_sys: {type: string, description: Systematic error}
 
       glon:
         type: object
         additionalProperties: false
         description: |
           Galactic longitude
-          Number in deg or string that can be parsed by Angle
+          A string that can be parsed by Astropy Angle.
         properties:
-          val: {type: [number, string], description: Measured value}
-          err: {type: [number, string], description: Statistical error}
-          err_sys: {type: [number, string], description: Systematic error}
+          val: {type: string, description: Measured value}
+          err: {type: string, description: Statistical error}
+          err_sys: {type: string, description: Systematic error}
 
       glat:
         type: object
         additionalProperties: false
         description: |
           Galactic latitude
-          Number in deg or string that can be parsed by Angle
+          A string that can be parsed by Astropy Angle.
         properties:
-          val: {type: [number, string], description: Measured value}
-          err: {type: [number, string], description: Statistical error}
-          err_sys: {type: [number, string], description: Systematic error}
+          val: {type: string, description: Measured value}
+          err: {type: string, description: Statistical error}
+          err_sys: {type: string, description: Systematic error}
 
   morph:
     type: object

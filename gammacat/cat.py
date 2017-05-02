@@ -374,33 +374,35 @@ class GammaCatSource:
         data['morph_sigma'] = val
 
         try:
-            err = dsi['morph']['sigma']['err']
+            err = Angle(dsi['morph']['sigma']['err']).degree
         except KeyError:
             err = NA.fill_value['number']
-        data['morph_sigma_err'] = Angle(err, 'deg').degree
+        data['morph_sigma_err'] = err
 
         try:
-            val = dsi['morph']['sigma2']['val']
+            val = Angle(dsi['morph']['sigma2']['val']).degree
         except KeyError:
             val = NA.fill_value['number']
-        data['morph_sigma2'] = Angle(val, 'deg').degree
+        data['morph_sigma2'] = val
 
         try:
-            err = dsi['morph']['sigma2']['err']
+            err = Angle(dsi['morph']['sigma2']['err']).degree
         except KeyError:
             err = NA.fill_value['number']
-        data['morph_sigma2_err'] = Angle(err, 'deg').degree
+        data['morph_sigma2_err'] = err
 
         try:
-            val = dsi['morph']['pa']['val']
+            val = Angle(dsi['morph']['pa']['val']).degree
         except KeyError:
             val = NA.fill_value['number']
-        data['morph_pa'] = Angle(val, 'deg').degree
+        data['morph_pa'] = val
+
         try:
-            err = dsi['morph']['pa']['err']
+            err = Angle(dsi['morph']['pa']['err']).degree
         except KeyError:
             err = NA.fill_value['number']
-        data['morph_pa_err'] = Angle(err, 'deg').degree
+        data['morph_pa_err'] = err
+
         try:
             data['morph_pa_frame'] = dsi['morph']['pa']['frame']
         except KeyError:

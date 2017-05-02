@@ -8,7 +8,7 @@ Each file has some of these columns:
 - `flux` - observed integral flux in Crab
 - `flux_err` - statistical error on the observed integral flux in Crab
 - `flux_ul` - indicates if a flux is an upper limit
-- `index` - spectral index
+- `index` - spectral index (used as `energy ** (-index)`, i.e. index is a positive number)
 - `index_err` - statistical error on the spectral index
 
 If `time_min` or `time_max` are identically with `time`, these columns may be omitted.

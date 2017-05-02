@@ -9,7 +9,8 @@
 # - source_id: 49
 # - reference_id: 2017ApJ...834....2A
 # - telescope: veritas
-# - comments: [spectrum for 2014-05-03]
+# - comments: |
+#       Spectrum for 2014-05-03.
 e_ref dnde dnde_err
 0.223  2.03e-05 1.15e-06
 0.3533 6.83e-06 3.58e-07

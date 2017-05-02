@@ -4,15 +4,15 @@
 # - {name: e_min, unit: TeV, datatype: float64}
 # - {name: e_max, unit: TeV, datatype: float64}
 # - {name: time, unit: MJD, datatype: float64}
-# - {name: flux, unit: ph / (m2 s), datatype: float64}
-# - {name: flux_err, unit: ph / (m2 s), datatype: float64}
+# - {name: flux, unit: m-2 s-1, datatype: float64}
+# - {name: flux_err, unit: m-2 s-1, datatype: float64}
 # meta: !!omap
 # - data_type: lc
 # - source_id: 49
 # - reference_id: 2017ApJ...834....2A
 # - telescope: veritas
 # - {SED_TYPE: flux}
-# - comments: [10min]
+# - comments: 10 min
 e_min e_max time flux flux_err
 0.315 30 56776.14200646 1.697438475351e-06 2.348949220135e-07
 0.315 30 56776.1489509 1.750769703125e-06 2.434303545903e-07

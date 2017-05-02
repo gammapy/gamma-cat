@@ -13,7 +13,6 @@
 # - telescope: veritas
 # - {SED_TYPE: flux}
 # - UL_CONF: 0.95
-# - comments:
 e_min time flux flux_err flux_ul
 0.3  53999.4   nan  nan   1.30e-11
 0.3  54001.3   nan  nan   1.28e-11

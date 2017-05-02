@@ -59,13 +59,13 @@
   - spec_flux_above_erange_min_err: .nan
   - spec_energy_flux_1TeV_10TeV: 4.779399966070574e-12
   - spec_energy_flux_1TeV_10TeV_err: 2.920826774888141e-12
-  - sed_reference_id: ''
+  - sed_reference_id: 2013ApJ...764...38A
   - sed_n_points: 0
   - sed_e_ref: .nan
-  - sed_e_min: .nan
-  - sed_e_max: .nan
-  - sed_dnde: .nan
-  - sed_dnde_err: .nan
+  - sed_e_min: 3.686666488647461
+  - sed_e_max: 6.556666851043701
+  - sed_dnde: 4.671833124351987e-13
+  - sed_dnde_err: 1.8824998255107667e-13
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
@@ -122,14 +122,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -264,14 +264,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -335,14 +335,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -406,14 +406,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -477,14 +477,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -548,14 +548,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -690,14 +690,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -761,14 +761,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -832,14 +832,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -903,14 +903,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -974,14 +974,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1045,14 +1045,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1116,14 +1116,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1187,14 +1187,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1258,14 +1258,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1329,14 +1329,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1400,14 +1400,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1471,14 +1471,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1542,14 +1542,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1613,14 +1613,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -1968,14 +1968,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2181,14 +2181,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2252,14 +2252,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2323,14 +2323,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2394,14 +2394,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2465,14 +2465,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2536,14 +2536,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2678,14 +2678,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2820,14 +2820,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2891,14 +2891,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -2962,14 +2962,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3033,14 +3033,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3388,14 +3388,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3459,14 +3459,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3530,14 +3530,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3601,14 +3601,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3672,14 +3672,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3743,14 +3743,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3814,14 +3814,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3885,14 +3885,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -3956,14 +3956,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4027,14 +4027,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4098,14 +4098,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4169,14 +4169,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4240,14 +4240,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4382,14 +4382,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4453,14 +4453,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4737,14 +4737,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -4879,14 +4879,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -5021,14 +5021,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -5092,14 +5092,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -5163,14 +5163,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -5234,14 +5234,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: 2010A&A...516A..62A
   - sed_n_points: 18
   - sed_e_ref: 23.553937911987305
@@ -5447,14 +5447,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -5589,14 +5589,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: 2015A&A...573A..31H
   - sed_n_points: 0
   - sed_e_ref: 974400061440.0
@@ -5660,14 +5660,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -5802,14 +5802,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -6441,14 +6441,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -6590,7 +6590,7 @@
   - spec_flux_above_erange_min: 7.499995416382355e-12
   - spec_flux_above_erange_min_err: 1.4629151839570809e-12
   - spec_energy_flux_1TeV_10TeV: 5.8025143717665983e-11
-  - spec_energy_flux_1TeV_10TeV_err: 4.151374036198696e-11
+  - spec_energy_flux_1TeV_10TeV_err: 1.1052408120659774e-11
   - sed_reference_id: 2011A&A...528A.143H
   - sed_n_points: 0
   - sed_e_ref: 6.995599269866943
@@ -6867,14 +6867,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: 2008A&A...490..685A
   - sed_n_points: 0
   - sed_e_ref: 4.950124740600586
@@ -7080,14 +7080,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -7151,14 +7151,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -7364,14 +7364,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -7435,14 +7435,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -7648,14 +7648,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -7719,14 +7719,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -8074,14 +8074,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -8216,14 +8216,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -8358,14 +8358,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -8784,14 +8784,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -8926,14 +8926,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -9068,14 +9068,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -9352,14 +9352,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -9423,14 +9423,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -9494,14 +9494,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -9636,14 +9636,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -9707,14 +9707,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10347,14 +10347,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10418,14 +10418,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10489,14 +10489,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10560,14 +10560,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10631,14 +10631,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10702,14 +10702,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10773,14 +10773,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10844,14 +10844,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10915,14 +10915,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -10986,14 +10986,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -11057,14 +11057,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -11128,14 +11128,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -11199,14 +11199,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -11270,14 +11270,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -11412,14 +11412,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan
@@ -11483,14 +11483,14 @@
   - spec_index_err_tot: .nan
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 0.0
-  - spec_flux_above_1TeV_err: 0.0
-  - spec_flux_above_1TeV_crab: 0.0
-  - spec_flux_above_1TeV_crab_err: 0.0
+  - spec_flux_above_1TeV: .nan
+  - spec_flux_above_1TeV_err: .nan
+  - spec_flux_above_1TeV_crab: .nan
+  - spec_flux_above_1TeV_crab_err: .nan
   - spec_flux_above_erange_min: .nan
   - spec_flux_above_erange_min_err: .nan
-  - spec_energy_flux_1TeV_10TeV: 0.0
-  - spec_energy_flux_1TeV_10TeV_err: 0.0
+  - spec_energy_flux_1TeV_10TeV: .nan
+  - spec_energy_flux_1TeV_10TeV_err: .nan
   - sed_reference_id: ''
   - sed_n_points: 0
   - sed_e_ref: .nan

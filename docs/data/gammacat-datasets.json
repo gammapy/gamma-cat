@@ -1,10 +1,10 @@
 {
     "info": {
         "name": "gammacat",
-        "version": "05d2fd1",
-        "git_version": "05d2fd1",
+        "version": "eea9276",
+        "git_version": "eea9276",
         "description": "An open data collection and source catalog for gamma-ray astronomy",
-        "datetime": "2017-04-24 09:40:09.453585"
+        "datetime": "2017-05-02 18:24:34.689087"
     },
     "data": [
         {
@@ -533,6 +533,17 @@
             ]
         },
         {
+            "reference_id": "2008ApJ...679.1427A",
+            "path": "2008/2008ApJ...679.1427A",
+            "url": "2008/2008ApJ...679.1427A",
+            "sources": [
+                {
+                    "source_id": 14,
+                    "reference_id": "2008ApJ...679.1427A"
+                }
+            ]
+        },
+        {
             "reference_id": "2008ICRC....2..803K",
             "path": "2008/2008ICRC....2..803K",
             "url": "2008/2008ICRC....2..803K",
@@ -686,6 +697,17 @@
                 {
                     "source_id": 64,
                     "reference_id": "2011A&A...533A.103H"
+                }
+            ]
+        },
+        {
+            "reference_id": "2011ApJ...738....3A",
+            "path": "2011/2011ApJ...738....3A",
+            "url": "2011/2011ApJ...738....3A",
+            "sources": [
+                {
+                    "source_id": 14,
+                    "reference_id": "2011ApJ...738....3A"
                 }
             ]
         },
@@ -1086,6 +1108,17 @@
             ]
         },
         {
+            "reference_id": "2017ApJ...834....2A",
+            "path": "2017/2017ApJ...834....2A",
+            "url": "2017/2017ApJ...834....2A",
+            "sources": [
+                {
+                    "source_id": 49,
+                    "reference_id": "2017ApJ...834....2A"
+                }
+            ]
+        },
+        {
             "reference_id": "2017arXiv170106740V",
             "path": "2017/2017arXiv170106740V",
             "url": "2017/2017arXiv170106740V",
@@ -1121,6 +1154,8 @@
         "gammacat.fits.gz",
         "gammacat.yaml",
         "README.md",
+        "sources/000001/gammacat_000001_2013ApJ...764...38A_sed.ecsv",
+        "sources/000014/gammacat_000014_2008ApJ...679.1427A_sed.ecsv",
         "sources/000024/gammacat_000024_2015Sci...347..406H_sed.ecsv",
         "sources/000025/gammacat_000025_2006A%26A...457..899A_sed.ecsv",
         "sources/000025/gammacat_000025_2008ICRC....2..803K_sed.ecsv",

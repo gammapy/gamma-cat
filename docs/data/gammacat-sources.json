@@ -1,10 +1,10 @@
 {
     "info": {
         "name": "gammacat",
-        "version": "05d2fd1",
-        "git_version": "05d2fd1",
+        "version": "eea9276",
+        "git_version": "eea9276",
         "description": "An open data collection and source catalog for gamma-ray astronomy",
-        "datetime": "2017-04-24 09:40:09.453585"
+        "datetime": "2017-05-02 18:24:34.689087"
     },
     "data": [
         {
@@ -352,7 +352,7 @@
             "tevcat_name": "TeV J0240+612",
             "tgevcat_id": 14,
             "tgevcat_name": "TeV J0240+6115",
-            "reference_ids": "2006Sci...312.1771A,2008ApJ...679.1427A",
+            "reference_ids": "2006Sci...312.1771A,2008ApJ...679.1427A,2011ApJ...738....3A",
             "notes": ""
         },
         {
@@ -1278,7 +1278,7 @@
             "tevcat_name": "TeV J1104+382",
             "tgevcat_id": 49,
             "tgevcat_name": "TeV J1104+3811",
-            "reference_ids": "2007ApJ...663..125A",
+            "reference_ids": "2007ApJ...663..125A,2017ApJ...834....2A",
             "notes": ""
         },
         {

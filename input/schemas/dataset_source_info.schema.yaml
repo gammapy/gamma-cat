@@ -164,8 +164,8 @@ properties:
         properties:
           val: {type: [number, string], description: Measured value}
           err: {type: [number, string], description: Statistical error}
-          errp: {type: [number, string], description: Lower statistical error}
-          errn: {type: [number, string], description: Upper statistical error}
+          errn: {type: [number, string], description: Lower statistical error}
+          errp: {type: [number, string], description: Upper statistical error}
           err_sys: {type: [number, string], description: Systematic error}
 
   spec:

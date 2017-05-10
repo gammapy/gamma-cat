@@ -16,9 +16,12 @@ morph:
   sigma2: {val: 2.7m, err: 0.7m}
   pa: {frame: radec, val: 46.2d, err: 20.4d}
 
+# Here we put the PL fit parameters given in the caption of Figure 2
+# In the paper also PL2 parameters are given in the main text
+# (not entered here)
 spec:
-  type: pl2
-  norm: {val: 2.17, err: 0.17, err_sys: 0.43}
+  type: pl
+  norm: {val: 2.64, err: 0.20, err_sys: 0.53}
   index: {val: 2.22, err: 0.08, err_sys: 0.1}
   ref: 1
   theta: 0.16d

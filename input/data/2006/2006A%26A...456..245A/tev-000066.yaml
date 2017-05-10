@@ -14,9 +14,12 @@ morph:
   type: gauss
   sigma: {val: 3.3m, err: 0.5m}
 
+# Here we put the PL fit parameters given in the caption of Figure 2
+# In the paper also PL2 parameters are given in the main text
+# (not entered here)
 spec:
-  type: pl2
-  norm: {val: 2.97, err: 0.18, err_sys: 0.6}
+  type: pl
+  norm: {val: 3.48, err: 0.20, err_sys: 0.70}
   index: {val: 2.17, err: 0.06, err_sys: 0.1}
   ref: 1
   theta: 0.16d

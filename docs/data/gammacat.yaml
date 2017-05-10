@@ -4578,31 +4578,31 @@
   - morph_pa: 46.20000076293945
   - morph_pa_err: 20.399999618530273
   - morph_pa_frame: radec
-  - spec_type: pl2
+  - spec_type: pl
   - spec_erange_min: 0.30000001192092896
   - spec_erange_max: .nan
   - spec_theta: 0.1599999964237213
   - spec_ref: 1.0
-  - spec_norm: 2.170000073728473e-12
-  - spec_norm_err: 1.700000004049157e-13
-  - spec_norm_err_sys: 4.300000026186135e-13
-  - spec_norm_err_tot: 4.623851215107555e-13
-  - spec_norm_1TeV: 6.094071644882626e-13
-  - spec_norm_1TeV_err: 5.1286323685074617e-14
+  - spec_norm: 2.6399999807774632e-12
+  - spec_norm_err: 1.99999996490334e-13
+  - spec_norm_err_sys: 5.299999805349898e-13
+  - spec_norm_err_tot: 5.66480347873044e-13
+  - spec_norm_1TeV: 2.6399999807774632e-12
+  - spec_norm_1TeV_err: 1.99999996490334e-13
   - spec_index: 2.2200000286102295
   - spec_index_err: 0.07999999821186066
   - spec_index_err_sys: 0.10000000149011612
   - spec_index_err_tot: 0.12806248664855957
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 4.995140585883906e-13
-  - spec_flux_above_1TeV_err: 6.201717064153664e-14
-  - spec_flux_above_1TeV_crab: 2.407942533493042
-  - spec_flux_above_1TeV_crab_err: 0.29895809292793274
-  - spec_flux_above_erange_min: 2.1700002905689075e-12
-  - spec_flux_above_erange_min_err: 1.7000002750997e-13
-  - spec_energy_flux_1TeV_10TeV: 2.637450587789081e-12
-  - spec_energy_flux_1TeV_10TeV_err: 9.17200235033e-13
+  - spec_flux_above_1TeV: 2.1639343962542856e-12
+  - spec_flux_above_1TeV_err: 2.1681631099876308e-13
+  - spec_flux_above_1TeV_crab: 10.431396484375
+  - spec_flux_above_1TeV_crab_err: 1.0451781749725342
+  - spec_flux_above_erange_min: 9.400613100452038e-12
+  - spec_flux_above_erange_min_err: 7.685774217579266e-13
+  - spec_energy_flux_1TeV_10TeV: 1.142564428485704e-11
+  - spec_energy_flux_1TeV_10TeV_err: 3.624840662005968e-12
   - sed_reference_id: 2006A&A...456..245A
   - sed_n_points: 0
   - sed_e_ref: 4.57111120223999
@@ -4649,31 +4649,31 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: pl2
+  - spec_type: pl
   - spec_erange_min: 0.30000001192092896
   - spec_erange_max: .nan
   - spec_theta: 0.1599999964237213
   - spec_ref: 1.0
-  - spec_norm: 2.969999897059483e-12
-  - spec_norm_err: 1.8000000361756419e-13
-  - spec_norm_err_sys: 5.999999759184749e-13
-  - spec_norm_err_tot: 6.264184049947774e-13
-  - spec_norm_1TeV: 8.495214080805891e-13
-  - spec_norm_1TeV_err: 5.447726281583923e-14
+  - spec_norm: 3.4799999253792846e-12
+  - spec_norm_err: 1.99999996490334e-13
+  - spec_norm_err_sys: 7.000000080449598e-13
+  - spec_norm_err_tot: 7.280109674823176e-13
+  - spec_norm_1TeV: 3.4799999253792846e-12
+  - spec_norm_1TeV_err: 1.99999996490334e-13
   - spec_index: 2.1700000762939453
   - spec_index_err: 0.05999999865889549
   - spec_index_err_sys: 0.10000000149011612
   - spec_index_err_tot: 0.1166190356016159
   - spec_ecut: .nan
   - spec_ecut_err: .nan
-  - spec_flux_above_1TeV: 7.260866170463731e-13
-  - spec_flux_above_1TeV_err: 6.846616779380629e-14
-  - spec_flux_above_1TeV_crab: 3.5001513957977295
-  - spec_flux_above_1TeV_crab_err: 0.3300459384918213
-  - spec_flux_above_erange_min: 2.9700009812616557e-12
-  - spec_flux_above_erange_min_err: 1.800000578276728e-13
-  - spec_energy_flux_1TeV_10TeV: 4.519957325088697e-12
-  - spec_energy_flux_1TeV_10TeV_err: 1.3230825940055424e-12
+  - spec_flux_above_1TeV: 2.9743586066333094e-12
+  - spec_flux_above_1TeV_err: 2.2909874951987375e-13
+  - spec_flux_above_1TeV_crab: 14.338104248046875
+  - spec_flux_above_1TeV_crab_err: 1.104386568069458
+  - spec_flux_above_erange_min: 1.2166383352163468e-11
+  - spec_flux_above_erange_min_err: 7.442520449756074e-13
+  - spec_energy_flux_1TeV_10TeV: 1.8515662961182677e-11
+  - spec_energy_flux_1TeV_10TeV_err: 5.028328014383687e-12
   - sed_reference_id: 2006A&A...456..245A
   - sed_n_points: 0
   - sed_e_ref: 6.558999538421631

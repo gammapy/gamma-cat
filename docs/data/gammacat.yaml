@@ -6713,26 +6713,26 @@
   - spec_erange_max: 40.0
   - spec_theta: 0.6000000238418579
   - spec_ref: 1.0
-  - spec_norm: 2.0199999659076262e-11
-  - spec_norm_err: 7.99999985961336e-13
+  - spec_norm: 2.2999999474415667e-11
+  - spec_norm_err: 9.999999960041972e-13
   - spec_norm_err_sys: .nan
   - spec_norm_err_tot: .nan
-  - spec_norm_1TeV: 1.8693263950653183e-11
-  - spec_norm_1TeV_err: 7.50568444202182e-13
-  - spec_index: 2.319999933242798
+  - spec_norm_1TeV: 2.1284408263655408e-11
+  - spec_norm_1TeV_err: 9.360431266897118e-13
+  - spec_index: 2.059999942779541
   - spec_index_err: 0.019999999552965164
   - spec_index_err_sys: 0.10000000149011612
   - spec_index_err_tot: 0.10198038816452026
   - spec_ecut: 12.899999618530273
   - spec_ecut_err: 1.100000023841858
-  - spec_flux_above_1TeV: 1.2497842170888784e-11
-  - spec_flux_above_1TeV_err: 5.50972407888789e-13
-  - spec_flux_above_1TeV_crab: 60.24672317504883
-  - spec_flux_above_1TeV_crab_err: 2.656001091003418
-  - spec_flux_above_erange_min: 1.2201790966503978e-10
-  - spec_flux_above_erange_min_err: 5.330823456273226e-12
-  - spec_energy_flux_1TeV_10TeV: 2.8327756806945104e-11
-  - spec_energy_flux_1TeV_10TeV_err: 1.5194670608537075e-12
+  - spec_flux_above_1TeV: 1.687919248816172e-11
+  - spec_flux_above_1TeV_err: 8.237373999055164e-13
+  - spec_flux_above_1TeV_crab: 81.3673324584961
+  - spec_flux_above_1TeV_crab_err: 3.97088360786438
+  - spec_flux_above_erange_min: 1.1171436692380965e-10
+  - spec_flux_above_erange_min_err: 5.178995253485308e-12
+  - spec_energy_flux_1TeV_10TeV: 4.375991236038601e-11
+  - spec_energy_flux_1TeV_10TeV_err: 2.717513497216273e-12
   - sed_reference_id: 2016arXiv160908671H
   - sed_n_points: 0
   - sed_e_ref: 6.995666980743408

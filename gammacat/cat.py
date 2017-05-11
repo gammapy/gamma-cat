@@ -16,7 +16,7 @@ __all__ = [
     'GammaCatMaker',
     'GammaCatSchema',
     'GammaCatSource',
-    'GammaCatDataSetConfig',
+    'GammaCatDatasetConfig',
     'GammaCatDatasetConfigSource',
 ]
 
@@ -459,7 +459,7 @@ class GammaCatMaker:
     def setup(self, source_ids='all', internal=False):
         log.info('Setup ...')
         if source_ids == 'all':
-            source_ids = GammaCatDataSetConfig.read().source_ids
+            source_ids = GammaCatDatasetConfig.read().source_ids
         else:
             source_ids = [int(_) for _ in source_ids.split(',')]
 
@@ -632,7 +632,7 @@ class GammaCatDatasetConfigSource:
         return reference_id
 
 
-class GammaCatDataSetConfig:
+class GammaCatDatasetConfig:
     """
     Configuration how to assemble `gamma-cat` for all sources.
     """

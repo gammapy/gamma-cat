@@ -17,7 +17,8 @@ spec:
   model:
     type: pl2
     parameters:
-      norm: {val: 5.35, err: 0.44, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      flux: {val: 5.35, err: 0.44, scale: 1e-12, unit: cm-2 s-1}
       index: {val: 2.8, err: 0.1}
-      e_ref: {val: 0.2, unit: TeV}
+      e_min: {val: 0.2, unit: TeV}
+
   erange: {min: 0.2, max: 2.0}

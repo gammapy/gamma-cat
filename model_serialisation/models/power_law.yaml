@@ -1,0 +1,6 @@
+spectrum:
+  spec_type: PowerLaw
+  parameters:
+  - {name: Prefactor, val: 3.48, err: 0.20, err_sys: 0.70, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+  - {name: Index, val: 2.17, err: 0.06, err_sys: 0.1}
+  - {name: PivotEnergy, val: 1, unit: TeV}

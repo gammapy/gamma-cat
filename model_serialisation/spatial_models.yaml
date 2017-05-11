@@ -1,0 +1,66 @@
+# List of spatial models used by Fermi ST and Gammalib / ctools
+#
+# TODO: decide if we want to keep the elliptical models as separate models.
+# It might be useful for speed to have a faster model evaluation / PSF convolution
+
+- classname: RadialDisk
+  typenames: [RadialDisk]
+  parameters:
+  - {name: RA, unit: deg}
+  - {name: DEC, unit: deg}
+  - {name: Radius, unit: deg}
+
+- classname: EllipticalDisk
+  typenames: [EllipticalDisk]
+  parameters:
+  - {name: RA, unit: deg}
+  - {name: DEC, unit: deg}
+  - {name: Radius, unit: deg}
+  - {name: PA, unit: deg}
+  - {name: MinorRadius, unit: deg}
+  - {name: MajorRadius, unit: deg}
+
+- classname: RadialGaussian
+  typenames: [RadialGaussian]
+  parameters:
+  - {name: RA, unit: deg}
+  - {name: DEC, unit: deg}
+  - {name: Sigma, unit: deg}
+
+- classname: EllipticalGaussian
+  typenames: [EllipticalGaussian]
+  parameters:
+  - {name: RA, unit: deg}
+  - {name: DEC, unit: deg}
+  - {name: Sigma, unit: deg}
+  - {name: PA, unit: deg}
+  - {name: MinorRadius, unit: deg}
+  - {name: MajorRadius, unit: deg}
+
+- classname: RadialShell
+  typenames: [RadialShell]
+  parameters:
+  - {name: RA, unit: deg}
+  - {name: DEC, unit: deg}
+  - {name: Radius, unit: deg}
+  - {name: Width, unit: deg}
+
+- classname: DiffuseIsotropic
+  typenames: [DiffuseIsotropic]
+  parameters:
+  - {name: Value, unit: ???}
+
+- classname: DiffuseMapCube
+  typenames: [DiffuseMapCube]
+  file: string
+  parameters:
+  - {name: Normalization, unit: ???}
+
+- classname: DiffuseMap
+  typenames: [DiffuseMap]
+  file: string
+  parameters:
+  - {name: Normalization, unit: ???}
+
+
+# TODO: support this? <spatialModel type="Composite">

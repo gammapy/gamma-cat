@@ -15,9 +15,11 @@ morph:
   sigma: {val: 0.14d, err: 0.03d}
 
 spec:
-  type: pl
-  norm: {val: 0.99, err: 0.34, err_sys: 0.2}
-  index: {val: 1.94, err: 0.2, err_sys: 0.2}
-  ref: 1
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.99, err: 0.34, err_sys: 0.2, scale: 1e-12, unit: cm-2 s-1 TeV}
+      index: {val: 1.94, err: 0.2, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
   theta: 0.33d
   erange: {min: 0.8}

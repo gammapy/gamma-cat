@@ -209,7 +209,7 @@ properties:
           err: {type: number, description: Statistical error}
           err_sys: {type: number, description: Systematic error}
 
-      ecut:
+      e_cut:
         type: object
         additionalProperties: false
         unit: TeV

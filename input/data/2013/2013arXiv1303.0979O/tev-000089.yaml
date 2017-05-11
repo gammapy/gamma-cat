@@ -11,11 +11,12 @@ pos:
   dec: {val: -46d18m11s, err: 35s, err_sys: 20s}
 
 morph:
-  # parameters missing in the paper
+  # Note: parameters missing in the paper
   type: gauss
 
-spec:
-  # only energy flux is given in the paper.
-  type: pl
+# TODO: add spectral model parameters. only energy flux is given in the paper.
+#spec:
+#  model:
+#    type: pl
 
   erange: {min: 0.64, max: 30}

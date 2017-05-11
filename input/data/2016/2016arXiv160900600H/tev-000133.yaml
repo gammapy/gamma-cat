@@ -21,9 +21,11 @@ morph:
   type: point
 
 spec:
-  type: pl
-  norm: {val: 0.315, err: 0.046, err_sys: 0.063}
-  index: {val: 3.14, err: 0.24, err_sys: 0.29}
-  ref: 1
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.315, err: 0.046, err_sys: 0.063, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.14, err: 0.24, err_sys: 0.29}
+      e_ref: {val: 1, unit: TeV}
   theta: 0.1d
   erange: {min: 0.29}

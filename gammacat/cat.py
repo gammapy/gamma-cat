@@ -196,7 +196,7 @@ class GammaCatSource:
 
         elif spec_type == 'pl2':
 
-            print(spec_pars)
+            # log.debug(spec_pars)
 
             # TODO: change catalog format to give the PL2 parameters their own columns!
             data['spec_norm'] = spec_pars['flux'].get_or_default('val').to('cm-2 s-1').value
@@ -252,6 +252,7 @@ class GammaCatSource:
         data['spec_index_err_tot'] = np.hypot(data['spec_index_err'], data['spec_index_err_sys'])
 
         spec_model = make_spec_model(data)
+        log.info(spec_model)
 
         # Integral flux above 1 TeV
         emin, emax = 1 * u.TeV, 1E6 * u.TeV

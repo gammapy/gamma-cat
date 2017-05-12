@@ -131,7 +131,11 @@ def make_spec_model(data):
         errs['amplitude'] = u.Quantity(data['spec_norm_err'], 'cm-2 s-1')
         pars['index'] = u.Quantity(data['spec_index'], '')
         errs['index'] = u.Quantity(data['spec_index_err'], '')
-        pars['emin'] = u.Quantity(data['spec_erange_min'], 'TeV')
+
+        # TODO: give PL2 separate field names!!!
+        # TODO: I'm not sure using `spec_erange_max` is consistent with our data entry.
+        # This needs review!!!
+        pars['emin'] = u.Quantity(data['spec_ref'], 'TeV')
         e_max = u.Quantity(data['spec_erange_max'], 'TeV')
         if np.isnan(e_max.value):
             e_max = DEFAULT_E_MAX

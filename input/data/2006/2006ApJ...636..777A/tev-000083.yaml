@@ -17,9 +17,10 @@ morph:
   pa: {frame: galactic, val: 49d, err: 10d}
 
 spec:
-  type: pl2
-  norm: {val: 57.8, err: 7.7, err_sys: 0.3}
-  index: {val: 2.46, err: 0.2, err_sys: 0.2}
-  ref: 0.2
+  model:
+    type: pl2
+    parameters:
+      flux: {val: 57.8, err: 7.7, err_sys: 0.3, scale: 1e-12, unit: cm-2 s-1}
+      index: {val: 2.46, err: 0.2, err_sys: 0.2}
+      e_min: {val: 0.2, unit: TeV}
   theta: 0.4d
-  erange: {min: 0.2}

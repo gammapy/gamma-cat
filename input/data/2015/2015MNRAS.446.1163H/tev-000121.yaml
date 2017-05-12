@@ -14,8 +14,10 @@ morph:
 # TODO: add upper limit 'sigma < 0.074 deg' at CL=0.99
 
 spec:
-  type: pl
-  norm: {val: 0.48, err: 0.08, err_sys: 0.1}
-  index: {val: 2.6, err: 0.3, err_sys: 0.1}
-  ref: 1
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.48, err: 0.08, err_sys: 0.1, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.6, err: 0.3, err_sys: 0.1}
+      e_ref: {val: 1, unit: TeV}
   erange: {min: 0.4, max: 5}

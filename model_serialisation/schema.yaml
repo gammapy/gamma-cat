@@ -1,0 +1,29 @@
+power_law:
+  type: object
+  properties:
+    spec_type:
+      type: string
+    parameters:
+      type: array
+      items:
+        type: object
+        additionalProperties: false
+#        # This doesn't work. Don't know why.
+#        properties:
+#          "$ref": "#/definitions/parameter"
+        properties:
+          name: {type: string, description: Name}
+          val: {type: number, description: Value}
+          err: {type: number, description: Statistical error}
+          err_sys: {type: number, description: Systematic error}
+          scale: {type: number, description: Scale (multiplicative factor)}
+          unit: {type: string, description: Physical unit}
+
+definitions:
+
+  parameter:
+    name: {type: string, description: Parameter name}
+    val: {type: number, description: Measured value}
+    err: {type: number, description: Statistical error}
+    err_sys: {type: number, description: Systematic error}
+    unit: {type: string, description: Physical unit}

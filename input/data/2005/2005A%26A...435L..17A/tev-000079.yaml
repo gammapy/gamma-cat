@@ -18,9 +18,11 @@ morph:
   pa: {frame: radec, val: 41d, err: 13d}
 
 spec:
-  type: pl
-  norm: {val: 5.7, err: 0.2, err_sys: 1.4}
-  index: {val: 2.27, err: 0.03, err_sys: 0.20}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 5.7, err: 0.2, err_sys: 1.4, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.27, err: 0.03, err_sys: 0.20}
+      e_ref: {val: 1, unit: TeV}
   erange: {min: 0.280, max: 40}
   theta: 0.3d
-  ref: 1

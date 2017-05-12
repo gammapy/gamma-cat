@@ -17,14 +17,16 @@ morph:
   type: gauss
   sigma: {val: 0.24d, err: 0.02d}
 
+# Results taken from Table 1 ecpl model
+# The norm has been checked and should be correct.
+# See https://github.com/gammapy/gamma-cat/issues/97
 spec:
-  type: ecpl
-  # Results taken from Table 1 ecpl model
-  # The norm has been checked and should be correct.
-  # See https://github.com/gammapy/gamma-cat/issues/97
-  norm: {val: 21.0, err: 0.5}
-  index: {val: 2.26, err: 0.03}
-  ecut: {val: 24.8, err: 7.2}
-  ref: 1
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 21.0, err: 0.5, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.26, err: 0.03}
+      e_cut: {val: 24.8, err: 7.2, unit: TeV}
+      e_ref: {val: 1, unit: TeV}
   theta: 0.8d
   erange: {min: 0.27}

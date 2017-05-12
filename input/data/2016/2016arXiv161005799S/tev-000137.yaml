@@ -14,8 +14,11 @@ morph:
   type: point
 
 spec:
-  type: pl2
-  norm: {val: 5.35, err: 0.44}
-  index: {val: 2.8, err: 0.1}
-  ref: 0.2
+  model:
+    type: pl2
+    parameters:
+      flux: {val: 5.35, err: 0.44, scale: 1e-12, unit: cm-2 s-1}
+      index: {val: 2.8, err: 0.1}
+      e_min: {val: 0.2, unit: TeV}
+
   erange: {min: 0.2, max: 2.0}

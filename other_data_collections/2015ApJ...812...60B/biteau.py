@@ -117,6 +117,8 @@ def create_escv1(table, filecounter, note, experiment, reference_id, source, sou
         new_table.meta['telescope'] = 'argo'
     elif(experiment == 'VERITAS'):
         new_table.meta['telescope'] = 'veritas'
+    elif(experiment == 'Whipple'):
+        new_table.meta['telescope'] = 'whipple'
     new_table.meta.pop('author')
     new_table.meta.pop('dataset_reference')
     new_table.meta.pop('creation_date')
@@ -163,6 +165,8 @@ def create_escv2(table, experiment, reference_id, source, source_id):
         new_table.meta['telescope'] = 'argo'
     elif(experiment == 'VERITAS'):
         new_table.meta['telescope'] = 'veritas'
+    elif(experiment == 'Whipple'):
+        new_table.meta['telescope'] = 'whipple'
     new_table.meta.pop('author')
     new_table.meta.pop('dataset_reference')
     new_table.meta.pop('creation_date')

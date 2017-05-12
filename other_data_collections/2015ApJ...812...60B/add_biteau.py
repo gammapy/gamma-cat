@@ -20,11 +20,11 @@ biteau.adapt_source_names(table)
 # new_table.write('Relevant_Biteau_Data.ecsv', format='ascii.ecsv', delimiter=' ')
 
 # filecounter = 3
-# note = '2009'
-experiment = 'HESS'
-reference_id = '2015ApJ...802...65A'
-source = 'PG 1553+113'
-source_id = '000082'
+# note = '2011'
+experiment = 'VERITAS'
+reference_id = '2014ApJ...785L..16A'
+source = 'PKS 1424+240'
+source_id = '000067'
 
 # biteau.create_escv1(table, filecounter, note, experiment, reference_id, source, source_id)
 biteau.create_escv2(table, experiment, reference_id, source, source_id)

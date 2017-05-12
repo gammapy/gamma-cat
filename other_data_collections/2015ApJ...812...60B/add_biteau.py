@@ -17,10 +17,13 @@ biteau.adapt_source_names(table)
 # biteau.adapt_source_names(new_table)
 
 # new_table.write('Relevant_Biteau_Data.ecsv', format='ascii.ecsv', delimiter=' ')
-filecounter = 2
-note = 'Low'
-experiment = 'MAGIC'
-reference_id = '2014A&A...563A..91A'
-source = 'IC 310'
-source_id = '000016'
-biteau.create_escv(table, filecounter, note, experiment, reference_id, source, source_id)
+
+# filecounter = 7
+# note = 'VeryLow'
+experiment = 'ARGO-YBJ'
+reference_id = '2012ApJ...758....2B'
+source = 'Markarian 501'
+source_id = '000091'
+
+# biteau.create_escv1(table, filecounter, note, experiment, reference_id, source, source_id)
+biteau.create_escv2(table, experiment, reference_id, source, source_id)

@@ -1,0 +1,16 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: tibet}
+# - {source_id: 49}
+# - {reference_id: 2003ApJ...598..242A}
+# - {data_type: sed}
+e_ref dnde dnde_errn dnde_errp
+1.71 1.08483e-10 4.41533e-11 4.41533e-11
+2.691 4.9531e-11 2.19414e-11 2.19414e-11
+4.49799 3.2573e-11 1.38992e-11 1.38992e-11

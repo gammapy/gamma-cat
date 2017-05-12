@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: cat}
+# - {source_id: 49}
+# - {reference_id: 2000AIPC..515..113P}
+# - {data_type: sed}
+e_ref dnde dnde_errn dnde_errp
+0.25 8.87486e-11 2.56246e-11 2.56246e-11
+0.4 4.20794e-11 8.4799e-12 8.4799e-12
+0.619999 3.40189e-11 5.76592e-12 5.76592e-12
+1.0 2.02997e-11 3.39995e-12 3.39995e-12
+1.59 9.02522e-12 2.98312e-12 2.98312e-12
+2.51 7.81201e-12 2.64601e-12 2.64601e-12
+4.0 4.47993e-12 2.30396e-12 2.30396e-12
+6.29999 2.6195e-12 1.78603e-12 1.78603e-12
+10.0 2.19997e-12 1.99997e-12 1.99997e-12

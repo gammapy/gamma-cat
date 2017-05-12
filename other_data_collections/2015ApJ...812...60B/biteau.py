@@ -4,11 +4,11 @@ def adapt_source_names(table):
     for i in range(0, len(table)):
         if(table['source'][i] == 'IC310'):
             table['source'][i] = 'IC 310'
-        elif(table['source'][i] == b'Mkn421'):
+        elif(table['source'][i] == 'Mkn421'):
             table['source'][i] = 'Markarian 421'
-        elif(table['source'][i] == b'Mkn501'):
+        elif(table['source'][i] == 'Mkn501'):
             table['source'][i] = 'Markarian 501'
-        elif(table['source'][i] == b'1ES2344+514'):
+        elif(table['source'][i] == '1ES2344+514'):
             table['source'][i] = '1ES 2344+514'
         elif(table['source'][i] == b'Mkn180'):
             table['source'][i] = 'Markarian 180'
@@ -79,12 +79,22 @@ def adapt_source_names(table):
         elif(table['source'][i] == b'PKS1424+240'):
             table['source'][i] = 'PKS 1424+240'
 
-def create_escv(table, filecounter, note, experiment, reference_id, source, source_id):
+def create_escv1(table, filecounter, note, experiment, reference_id, source, source_id):
     new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
 
     new_table.meta = table.meta
+
+    print('arguments of function:')
+    print(source)
+    print(reference_id)
+    print('{} \n'.format(experiment))
+    print('Biteau Catalog (For debug):')
+    print(table['source'][13])
+    print(table['reference_id'][13])
+    print('{} \n'.format(table['experiment'][13]))
+
     
-    for i in range(0, 736):
+    for i in range(0, len(table)):
         if((table['source'][i]==source) and (table['note'][i]==note) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
             new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
     if(filecounter!=0):
@@ -93,6 +103,20 @@ def create_escv(table, filecounter, note, experiment, reference_id, source, sour
         filename='tev-' + str(source_id) + '-sed.ecsv'
     if(experiment == 'MAGIC'):
         new_table.meta['telescope'] = 'magic'
+    elif(experiment == 'CAT'):
+        new_table.meta['telescope'] = 'cat'
+    elif(experiment == 'HEGRA'):
+        new_table.meta['telescope'] = 'hegra'
+    elif(experiment == 'TIBET'):
+        new_table.meta['telescope'] = 'tibet'
+    elif(experiment == 'HESS'):
+        new_table.meta['telescope'] = 'hess'
+    elif(experiment == 'TACTIC'):
+        new_table.meta['telescope'] = 'tactic'
+    elif(experiment == 'ARGO-YBJ'):
+        new_table.meta['telescope'] = 'argo'
+    elif(experiment == 'VERITAS'):
+        new_table.meta['telescope'] = 'veritas'
     new_table.meta.pop('author')
     new_table.meta.pop('dataset_reference')
     new_table.meta.pop('creation_date')
@@ -101,4 +125,49 @@ def create_escv(table, filecounter, note, experiment, reference_id, source, sour
     new_table.meta['reference_id'] = reference_id
     new_table.meta['note'] = note
     new_table.meta['data_type'] = 'sed'
+    print('Length of table: {}'.format(len(new_table)))
+    new_table.write(filename, format='ascii.ecsv', delimiter=' ')
+
+def create_escv2(table, experiment, reference_id, source, source_id):
+    new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
+
+    new_table.meta = table.meta
+
+    print('arguments of function:')
+    print(source)
+    print(reference_id)
+    print(experiment)
+    print('\n')
+    print('Biteau Catalog (For debug):')
+    print(table['source'][13])
+    print(table['reference_id'][13])
+    print(table['experiment'][13])
+
+    for i in range(0, len(table)):
+        if((table['source'][i]==source) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
+            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
+        filename='tev-' + str(source_id) + '-sed.ecsv'
+    if(experiment == 'MAGIC'):
+        new_table.meta['telescope'] = 'magic'
+    elif(experiment == 'CAT'):
+        new_table.meta['telescope'] = 'cat'
+    elif(experiment == 'HEGRA'):
+        new_table.meta['telescope'] = 'hegra'
+    elif(experiment == 'TIBET'):
+        new_table.meta['telescope'] = 'tibet'
+    elif(experiment == 'HESS'):
+        new_table.meta['telescope'] = 'hess'
+    elif(experiment == 'TACTIC'):
+        new_table.meta['telescope'] = 'tactic'
+    elif(experiment == 'ARGO-YBJ'):
+        new_table.meta['telescope'] = 'argo'
+    elif(experiment == 'VERITAS'):
+        new_table.meta['telescope'] = 'veritas'
+    new_table.meta.pop('author')
+    new_table.meta.pop('dataset_reference')
+    new_table.meta.pop('creation_date')
+    new_table.meta['source_id'] = int(source_id)
+    new_table.meta['reference_id'] = reference_id
+    new_table.meta['data_type'] = 'sed'
+    print('Length of table: {}'.format(len(new_table)))
     new_table.write(filename, format='ascii.ecsv', delimiter=' ')

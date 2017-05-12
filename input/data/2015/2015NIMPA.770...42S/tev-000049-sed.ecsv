@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: tactic}
+# - {source_id: 49}
+# - {reference_id: 2015NIMPA.770...42S}
+# - {data_type: sed}
+e_ref dnde dnde_errn dnde_errp
+1.0 2.79496e-11 3.19996e-12 3.19996e-12
+1.4 2.08149e-11 1.11718e-12 1.11718e-12
+2.2 1.40406e-11 7.25989e-13 7.25989e-13
+3.3 8.92748e-12 5.98941e-13 5.98941e-13
+4.89998 5.80073e-12 5.28212e-13 5.28212e-13
+7.39999 2.52769e-12 4.54501e-13 4.54501e-13
+11.0 1.22087e-12 4.07764e-13 4.07764e-13

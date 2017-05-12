@@ -32,6 +32,7 @@ def _to_crab_flux():
 
 
 FLUX_TO_CRAB = _to_crab_flux()
+E_INF = 1e6 * u.Unit('TeV')
 
 
 class GammaCatSource:
@@ -280,18 +281,18 @@ class GammaCatSource:
         data['spec_dnde_1TeV_err'] = dnde[1]
 
         # Integral flux above 1 TeV
-        emin, emax = 1 * u.TeV, 1E6 * u.TeV
-        flux_above_1TeV = spec_model.integral_error(emin, emax)
-        data['spec_flux_1TeV'] = flux_above_1TeV[0]
-        data['spec_flux_1TeV_err'] = flux_above_1TeV[1]
+        emin, emax = 1 * u.TeV, E_INF
+        flux_1TeV = spec_model.integral_error(emin, emax)
+        data['spec_flux_1TeV'] = flux_1TeV[0]
+        data['spec_flux_1TeV_err'] = flux_1TeV[1]
         data['spec_flux_1TeV_crab'] = data['spec_flux_1TeV'] * FLUX_TO_CRAB
         data['spec_flux_1TeV_crab_err'] = data['spec_flux_1TeV_err'] * FLUX_TO_CRAB
 
         # Energy flux between 1 TeV and 10 TeV
         emin, emax = 1 * u.TeV, 10 * u.TeV
-        energy_flux = spec_model.energy_flux_error(emin, emax)
-        data['spec_eflux_1TeV_10TeV'] = energy_flux[0].to('erg cm-2 s-1')
-        data['spec_eflux_1TeV_10TeV_err'] = energy_flux[1].to('erg cm-2 s-1')
+        eflux = spec_model.energy_flux_error(emin, emax)
+        data['spec_eflux_1TeV_10TeV'] = eflux[0].to('erg cm-2 s-1')
+        data['spec_eflux_1TeV_10TeV_err'] = eflux[1].to('erg cm-2 s-1')
 
     @staticmethod
     def fill_sed_info(data, sed_info, shape=(SED_ARRAY_LEN,)):

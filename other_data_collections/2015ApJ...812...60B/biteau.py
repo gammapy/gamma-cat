@@ -143,7 +143,7 @@ def create_escv2(table, experiment, reference_id, source, source_id):
     print('Biteau Catalog (For debug):')
     print(table['source'][304])
     print(table['reference_id'][304])
-    print(table['experiment'][304])
+    print('{} \n'.format(table['experiment'][304]))
 
     for i in range(0, len(table)):
         if((table['source'][i]==source) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):

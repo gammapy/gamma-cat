@@ -15,7 +15,7 @@ where: egal
 classes: [hbl]
 
 discoverer: whipple
-seen_by: [whipple, veritas, hess, magic, hawc]
+seen_by: [whipple, veritas, hess, magic, hawc, cat, hegra, tactic, tibet, argo]
 discovery_date: 1992-08
 
 tevcat_id: 75
@@ -31,5 +31,15 @@ pos:
   dec: 38.208833083
 
 reference_ids:
+- 2000AIPC..515..113P
+- 2002A%26A...393...89A
+- 2003ApJ...598..242A
+- 2005A%26A...437...95A
 - 2007ApJ...663..125A
+- 2010A%26A...519A..32A
+- 2010JPhG...37l5201C
+- 2011ApJ...734..110B
+- 2011ApJ...738...25A
+- 2012JPhG...39d5201C
+- 2015NIMPA.770...42S
 - 2017ApJ...834....2A

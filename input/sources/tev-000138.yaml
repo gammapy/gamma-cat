@@ -8,7 +8,7 @@ where: egal
 classes: [hbl]
 
 discoverer: magic
-seen_by: [magic, veritas, hegra]
+seen_by: [magic, veritas, hegra, whipple]
 discovery_date: 1999-08
 
 tevcat_id: 79
@@ -24,4 +24,8 @@ pos:
   dec: 65.14851472
 
 reference_ids:
-  - 2006ApJ...639..761A
+- 2003A%26A...406L...9A
+- 2005ApJ...621..181D
+- 2006ApJ...639..761A
+- 2008ApJ...679.1029T
+- 2013ApJ...775....3A

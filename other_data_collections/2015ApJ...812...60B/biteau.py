@@ -132,7 +132,7 @@ def create_escv1(table, filecounter, note, experiment, reference_id, source, sou
 
 def create_escv2(table, experiment, reference_id, source, source_id):
     new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
-
+    print(source)
     new_table.meta = table.meta
 
     print('arguments of function:')
@@ -141,9 +141,9 @@ def create_escv2(table, experiment, reference_id, source, source_id):
     print(experiment)
     print('\n')
     print('Biteau Catalog (For debug):')
-    print(table['source'][535])
-    print(table['reference_id'][535])
-    print('{} \n'.format(table['experiment'][535]))
+    print(table['source'][550])
+    print(table['reference_id'][550])
+    print('{} \n'.format(table['experiment'][550]))
 
     for i in range(0, len(table)):
         if((table['source'][i]==source) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):

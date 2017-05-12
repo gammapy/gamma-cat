@@ -6,7 +6,7 @@ path = '/home/hpc/caph/mppi019h/github/gamma-cat/other_data_collections/2015ApJ.
 filename = 'BiteauWilliams2015_AllData_ASDC_v2016_12_20.ecsv'
 
 table = Table.read(filename, format='ascii.ecsv', delimiter='|')
-# print(table)
+# print(table['source'][550])
 biteau.adapt_source_names(table)
 
 # new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp', 'note', 'experiment', 'reference_id', 'source'), dtype=('float32', 'float32', 'float32', 'float32', 'S10', 'S8', 'S19', 'S20'))
@@ -21,10 +21,10 @@ biteau.adapt_source_names(table)
 
 # filecounter = 2
 # note = 'High'
-experiment = 'VERITAS'
-reference_id = '2014ApJ...782...13A'
-source = '1ES 0229+200'
-source_id = '000013'
+experiment = 'HESS'
+reference_id = '2012A&A...542A..94H'
+source = '1RXS J101015.9-31190'
+source_id = '000042'
 
 # biteau.create_escv1(table, filecounter, note, experiment, reference_id, source, source_id)
 biteau.create_escv2(table, experiment, reference_id, source, source_id)

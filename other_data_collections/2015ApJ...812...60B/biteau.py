@@ -132,7 +132,7 @@ def create_escv1(table, filecounter, note, experiment, reference_id, source, sou
 
 def create_escv2(table, experiment, reference_id, source, source_id):
     new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
-    print(source)
+
     new_table.meta = table.meta
 
     print('arguments of function:')

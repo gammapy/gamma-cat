@@ -5,15 +5,11 @@ TODO: merge this functionality into `gammapy.utils.modeling`.
 """
 import numpy as np
 import astropy.units as u
-from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
 
 __all__ = [
     'Parameter',
     'Parameters',
-    'make_spec_model',
 ]
-
-DEFAULT_E_MAX = u.Quantity(1e5, 'TeV')
 
 
 class Parameter:
@@ -40,8 +36,6 @@ class Parameter:
     def from_dict(cls, data):
         # TODO: validate keys and types!!!
         return cls(**data)
-        #     name=data.get('name', None)
-        # )
 
     @property
     def real_val(self):
@@ -98,61 +92,3 @@ class Parameters:
             return self.parlist[idx]
         else:
             raise TypeError('Invalid item: {!r}. Must be a number of string.'.format(item))
-
-
-def make_spec_model(data):
-    """Make a Gammapy spectrum model.
-
-    TODO: how do we want to handle systematic errors?
-    (at the moment not taking into account)
-
-    Parameters
-    ----------
-    data : dict
-        Parameter dictionary
-    
-    Returns
-    -------
-    model : `~gammapy.spectrum.models.SpectrumModel`
-        Spectral model
-    """
-
-    spec_type = data['spec_type']
-    pars, errs = {}, {}
-
-    if spec_type == 'pl':
-        model_class = PowerLaw
-        pars['amplitude'] = data['spec_pl_norm']
-        errs['amplitude'] = data['spec_pl_norm_err']
-        pars['index'] = data['spec_pl_index']
-        errs['index'] = data['spec_pl_index_err']
-        pars['reference'] = data['spec_pl_e_ref']
-    elif spec_type == 'pl2':
-        model_class = PowerLaw2
-        pars['amplitude'] = data['spec_pl2_flux']
-        errs['amplitude'] = data['spec_pl2_flux_err']
-        pars['index'] = data['spec_pl2_index']
-        errs['index'] = data['spec_pl2_index_err']
-        pars['emin'] = data['spec_pl2_e_min']
-        e_max = data['spec_pl2_e_max']
-        if np.isnan(e_max.value):
-            e_max = DEFAULT_E_MAX
-        pars['emax'] = e_max
-    elif spec_type == 'ecpl':
-        model_class = ExponentialCutoffPowerLaw
-        from uncertainties import ufloat
-        pars['amplitude'] = data['spec_ecpl_norm']
-        errs['amplitude'] = data['spec_ecpl_norm_err']
-        pars['index'] = data['spec_ecpl_index']
-        errs['index'] = data['spec_ecpl_index_err']
-        lambda_ = 1. / ufloat(data['spec_ecpl_e_cut'].to('TeV').value, data['spec_ecpl_e_cut_err'].to('TeV').value)
-        pars['lambda_'] = u.Quantity(lambda_.nominal_value, 'TeV-1')
-        errs['lambda_'] = u.Quantity(lambda_.std_dev, 'TeV-1')
-        pars['reference'] = data['spec_ecpl_e_ref']
-    else:
-        raise ValueError('Invalid spec_type: {}'.format(spec_type))
-
-    model = model_class(**pars)
-    model.parameters.set_parameter_errors(errs)
-
-    return model

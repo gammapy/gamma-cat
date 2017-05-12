@@ -7,10 +7,11 @@ from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.spectrum import CrabSpectrum
+from gammapy.catalog import SourceCatalogObjectGammaCat
 from .info import gammacat_info
 from .input import InputData
 from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
-from .modeling import make_spec_model, Parameters
+from .modeling import Parameters
 
 __all__ = [
     'GammaCatMaker',
@@ -267,7 +268,7 @@ class GammaCatSource:
             data['spec_eflux_1TeV_10TeV_err'] = na * u.Unit('erg cm-2 s-1')
             return
 
-        spec_model = make_spec_model(data)
+        spec_model = SourceCatalogObjectGammaCat(data=data).spectral_model
 
         # total errors
         # data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])

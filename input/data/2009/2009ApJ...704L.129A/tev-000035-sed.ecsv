@@ -1,0 +1,16 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: magic}
+# - {source_id: 35}
+# - {reference_id: 2009ApJ...704L.129A}
+# - {data_type: sed}
+e_ref dnde dnde_errn dnde_errp
+0.181698 2.13269e-11 1.07294e-11 1.07294e-11
+0.350805 1.31676e-11 4.87327e-12 4.87327e-12
+0.677298 3.00007e-12 2.44042e-12 2.44042e-12

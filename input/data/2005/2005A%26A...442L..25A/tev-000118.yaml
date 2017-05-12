@@ -2,4 +2,27 @@ source_id: 118
 reference_id: 2005A&A...442L..25A
 telescope: hess
 
-# TODO: add data
+data:
+  livetime: 8.4
+  # For the larger radius region of 0.4 deg:
+  excess: 370
+  significance: 13.4
+
+pos:
+  ra: {val: 18h26m3s, err: 0h0m7s}
+  dec: {val: -13d45.7m, err: 1.7m}
+
+morph:
+  type: gauss
+  sigma: {val: 9.6m, err: 2.0m}
+
+spec:
+  model:
+    type: pl2
+    parameters:
+      flux: {val: 3.4, err: 0.2, err_sys: 1.0, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 2.40, err: 0.09, err_sys: 0.2}
+      e_min: {val: 230, unit: GeV}
+  erange: {min: 0.23}
+  # stats: {chi2: 9.8, ndof: 8} # TODO: add this to the spec schema
+  # livetime: 5.4 # TODO: add spectrum livetime to the schema

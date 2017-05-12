@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: veritas}
+# - {source_id: 13}
+# - {reference_id: 2014ApJ...782...13A}
+# - {data_type: sed}
+e_ref dnde dnde_errn dnde_errp
+0.291 1.01616e-12 2.37103e-13 2.37103e-13
+0.426999 1.11219e-12 1.82326e-13 1.82326e-13
+0.628001 8.67632e-13 1.73526e-13 1.73526e-13
+0.922002 3.65531e-13 1.44512e-13 1.44512e-13
+1.36 4.06906e-13 1.49815e-13 1.49815e-13
+1.99 3.96004e-13 1.66322e-13 1.66322e-13
+2.92 2.9842e-13 1.79052e-13 1.79052e-13
+4.29001 4.41692e-13 2.20846e-13 2.20846e-13
+7.63998 1.63433e-13 1.45922e-13 1.45922e-13

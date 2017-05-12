@@ -119,7 +119,9 @@ definitions:
       - crimea
       - argo
       - cat
+      - tibet
       - durham
+      - tactic
     description: Telescope or instrument or observatory
 
   where:

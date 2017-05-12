@@ -155,15 +155,19 @@ class GammaCatSource:
 
         # Fill defaults
         data['spec_type'] = 'none'
+
         data['spec_norm'] = NA.fill_value['number']
         data['spec_norm_err'] = NA.fill_value['number']
         data['spec_norm_err_sys'] = NA.fill_value['number']
-        data['spec_ref'] = NA.fill_value['number']
+
         data['spec_index'] = NA.fill_value['number']
         data['spec_index_err'] = NA.fill_value['number']
         data['spec_index_err_sys'] = NA.fill_value['number']
+
         data['spec_ecut'] = NA.fill_value['number']
         data['spec_ecut_err'] = NA.fill_value['number']
+
+        data['spec_ref'] = NA.fill_value['number']
 
         try:
             m = dsi['spec']['model']
@@ -175,26 +179,51 @@ class GammaCatSource:
 
         data['spec_type'] = spec_type
 
-        data['spec_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV')
-
         # from pprint import pprint; pprint(data)
         # import IPython; IPython.embed()
 
         if spec_type == 'pl':
+
             data['spec_norm'] = spec_pars['norm'].get_or_default('val').to('cm-2 s-1 TeV-1').value
             data['spec_norm_err'] = spec_pars['norm'].get_or_default('err').to('cm-2 s-1 TeV-1').value
             data['spec_norm_err_sys'] = spec_pars['norm'].get_or_default('err_sys').to('cm-2 s-1 TeV-1').value
 
-            data['spec_index'] = spec_pars['index'].get_or_default('val')
-            data['spec_index_err'] = spec_pars['index'].get_or_default('err')
-            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys')
+            data['spec_index'] = spec_pars['index'].get_or_default('val').value
+            data['spec_index_err'] = spec_pars['index'].get_or_default('err').value
+            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys').value
+
+            data['spec_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV').value
 
         elif spec_type == 'pl2':
-            raise NotImplementedError
+
+            print(spec_pars)
+
+            # TODO: change catalog format to give the PL2 parameters their own columns!
+            data['spec_norm'] = spec_pars['flux'].get_or_default('val').to('cm-2 s-1').value
+            data['spec_norm_err'] = spec_pars['flux'].get_or_default('err').to('cm-2 s-1').value
+            data['spec_norm_err_sys'] = spec_pars['flux'].get_or_default('err_sys').to('cm-2 s-1').value
+
+            data['spec_index'] = spec_pars['index'].get_or_default('val').value
+            data['spec_index_err'] = spec_pars['index'].get_or_default('err').value
+            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys').value
+
+            data['spec_ref'] = spec_pars['e_min'].get_or_default('val').to('TeV').value
+
         elif spec_type == 'ecpl':
+
+            data['spec_norm'] = spec_pars['norm'].get_or_default('val').to('cm-2 s-1 TeV-1').value
+            data['spec_norm_err'] = spec_pars['norm'].get_or_default('err').to('cm-2 s-1 TeV-1').value
+            data['spec_norm_err_sys'] = spec_pars['norm'].get_or_default('err_sys').to('cm-2 s-1 TeV-1').value
+
+            data['spec_index'] = spec_pars['index'].get_or_default('val').value
+            data['spec_index_err'] = spec_pars['index'].get_or_default('err').value
+            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys').value
+
+            data['spec_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV').value
+
             data['spec_ecut'] = spec_pars['e_cut'].get_or_default('val').to('TeV').value
             data['spec_ecut_err'] = spec_pars['e_cut'].get_or_default('err').to('TeV').value
-            raise NotImplementedError
+
         else:
             raise ValueError('Unknown spectral model type: {}'.format(spec_type))
 
@@ -469,15 +498,18 @@ class GammaCatMaker:
         # (we could also make Table column by column ourselves
         for colname in rows[0].keys():
             if isinstance(rows[0][colname], Quantity):
-                print('Found Quantity:', colname)
+                log.debug('Found Quantity:', colname)
                 unit = rows[0][colname].unit
                 for idx, row in enumerate(rows):
                     d = row[colname]
+                    if not hasattr(d, 'unit'):
+                        d = d * u.Unit('')
+
                     if d.unit != unit:
                         # This should never happen.
                         # But it did due to a coding error in the past.
-                        print('colname:', colname)
-                        print('row:', row)
+                        log.error('colname:', colname)
+                        log.error('row:', row)
                         raise RuntimeError('Inconsistent units!')
                     else:
                         rows[idx][colname] = d.value

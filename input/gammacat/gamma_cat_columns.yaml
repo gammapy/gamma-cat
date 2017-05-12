@@ -206,13 +206,171 @@
   description: Morphology model position angle frame.
   latex:
 
-# Spectrum info
+# Spectral model parameters
 - name: spec_type
   format:
   dtype: str
   unit:
   description: Spectral model type
   latex:
+
+# Spectral model parameters for power law (pl)
+- name: spec_pl_norm
+  format:
+  dtype: float32
+  unit: cm-2 s-1 TeV-1
+  description: Spectral model (pl) parameter "norm"
+  latex:
+- name: spec_pl_norm_err
+  format:
+  dtype: float32
+  unit: cm-2 s-1 TeV-1
+  description: Statistical error on spec_pl_norm
+  latex:
+- name: spec_pl_norm_err_sys
+  format:
+  dtype: float32
+  unit: cm-2 s-1 TeV-1
+  description: Systematic error on spec_pl_norm
+  latex:
+- name: spec_pl_index
+  format:
+  dtype: float32
+  unit:
+  description: Spectral model (pl) parameter "index"
+  latex:
+- name: spec_pl_index_err
+  format:
+  dtype: float32
+  unit:
+  description: Statistical error on spec_pl_index
+  latex:
+- name: spec_pl_index_err_sys
+  format:
+  dtype: float32
+  unit:
+  description: Systematic error on spec_pl_index
+  latex:
+- name: spec_pl_e_ref
+  format:
+  dtype: float32
+  unit: TeV
+  description: Spectral model (pl) parameter "e_ref"
+  latex:
+
+# Spectral model parameters for integral power law (pl2)
+- name: spec_pl2_flux
+  format:
+  dtype: float32
+  unit: cm-2 s-1
+  description: Spectral model (pl2) parameter "flux"
+  latex:
+- name: spec_pl2_flux_err
+  format:
+  dtype: float32
+  unit: cm-2 s-1
+  description: Statistical error on spec_pl2_flux
+  latex:
+- name: spec_pl2_flux_err_sys
+  format:
+  dtype: float32
+  unit: cm-2 s-1
+  description: Systematic error on spec_pl2_flux
+  latex:
+- name: spec_pl2_index
+  format:
+  dtype: float32
+  unit:
+  description: Spectral model (pl2) parameter "index"
+  latex:
+- name: spec_pl2_index_err
+  format:
+  dtype: float32
+  unit:
+  description: Statistical error on spec_pl_index
+  latex:
+- name: spec_pl2_index_err_sys
+  format:
+  dtype: float32
+  unit:
+  description: Systematic error on spec_pl_index
+  latex:
+- name: spec_pl2_e_min
+  format:
+  dtype: float32
+  unit: TeV
+  description: Spectral model (pl2) parameter "e_min"
+  latex:
+- name: spec_pl2_e_max
+  format:
+  dtype: float32
+  unit: TeV
+  description: Spectral model (pl2) parameter "e_max"
+  latex:
+
+# Spectral model parameters for exponential cutoff power law (ecpl)
+- name: spec_ecpl_norm
+  format:
+  dtype: float32
+  unit: cm-2 s-1 TeV-1
+  description: Spectral model (ecpl) parameter "norm"
+  latex:
+- name: spec_ecpl_norm_err
+  format:
+  dtype: float32
+  unit: cm-2 s-1 TeV-1
+  description: Statistical error on spec_ecpl_norm
+  latex:
+- name: spec_ecpl_norm_err_sys
+  format:
+  dtype: float32
+  unit: cm-2 s-1 TeV-1
+  description: Systematic error on spec_ecpl_norm
+  latex:
+- name: spec_ecpl_index
+  format:
+  dtype: float32
+  unit:
+  description: Spectral model (ecpl) parameter "index"
+  latex:
+- name: spec_ecpl_index_err
+  format:
+  dtype: float32
+  unit:
+  description: Statistical error on spec_ecpl_index
+  latex:
+- name: spec_ecpl_index_err_sys
+  format:
+  dtype: float32
+  unit:
+  description: Systematic error on spec_ecpl_index
+  latex:
+- name: spec_ecpl_e_cut
+  format:
+  dtype: float32
+  unit: TeV
+  description: Spectral model (ecpl) parameter "e_cut"
+  latex:
+- name: spec_ecpl_e_cut_err
+  format:
+  dtype: float32
+  unit: TeV
+  description: Statistical error on spec_ecpl_e_cut
+  latex:
+- name: spec_ecpl_e_cut_err_sys
+  format:
+  dtype: float32
+  unit: TeV
+  description: Systematic error on spec_ecpl_e_cut
+  latex:
+- name: spec_ecpl_e_ref
+  format:
+  dtype: float32
+  unit: TeV
+  description: Spectral model (ecpl) parameter "e_ref"
+  latex:
+
+# Extra info about spectral measurement
 - name: spec_erange_min
   format:
   dtype: float32
@@ -231,130 +389,54 @@
   unit: deg
   description: Spectral extraction region radius
   latex:
-- name: spec_ref
-  format:
-  dtype: float32
-  unit: TeV
-  description: Spectral model reference energy
-  latex:
-- name: spec_norm
-  format:
-  dtype: float32
-  unit: cm-2 s-1 TeV-1
-  description: Spectral model norm
-  latex:
-- name: spec_norm_err
-  format:
-  dtype: float32
-  unit: cm-2 s-1 TeV-1
-  description: Spectral model norm statistical error
-  latex:
-- name: spec_norm_err_sys
-  format:
-  dtype: float32
-  unit: cm-2 s-1 TeV-1
-  description: Spectral model norm systematic error
-  latex:
-- name: spec_norm_err_tot
-  format:
-  dtype: float32
-  unit: cm-2 s-1 TeV-1
-  description: Spectral model norm total error
-  latex:
-- name: spec_norm_1TeV
+
+# Derived fluxes
+- name: spec_dnde_1TeV
   format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm at 1 TeV
   latex:
-- name: spec_norm_1TeV_err
+- name: spec_dnde_1TeV_err
   format:
   dtype: float32
   unit: cm-2 s-1 TeV-1
   description: Spectral model norm statistical error at 1 TeV
   latex:
-- name: spec_index
-  format:
-  dtype: float32
-  unit:
-  description: Spectral model index
-  latex:
-- name: spec_index_err
-  format:
-  dtype: float32
-  unit:
-  description: Spectral model index statistical error
-  latex:
-- name: spec_index_err_sys
-  format:
-  dtype: float32
-  unit:
-  description: Spectral model index systematic error
-  latex:
-- name: spec_index_err_tot
-  format:
-  dtype: float32
-  unit:
-  description: Spectral model index total error
-  latex:
-- name: spec_ecut
-  format:
-  dtype: float32
-  unit: TeV
-  description: Spectral model cut off (ecpl)
-  latex:
-- name: spec_ecut_err
-  format:
-  dtype: float32
-  unit: TeV
-  description: Spectral model cut off (ecpl) error
-  latex:
-- name: spec_flux_above_1TeV
+- name: spec_flux_1TeV
   format:
   dtype: float32
   unit: cm-2 s-1
   description: Integrated flux above 1 TeV
   latex:
-- name: spec_flux_above_1TeV_err
+- name: spec_flux_1TeV_err
   format:
   dtype: float32
   unit: cm-2 s-1
   description: Integrated flux above 1 TeV error
   latex:
-- name: spec_flux_above_1TeV_crab
+- name: spec_flux_1TeV_crab
   format:
   dtype: float32
   unit:
-  description: Integrated flux above 1 TeV, measured in crab units (Meyer 2012)
+  description: Integrated flux above 1 TeV, measured in Crab units (Meyer 2012)
   latex:
-- name: spec_flux_above_1TeV_crab_err
+- name: spec_flux_1TeV_crab_err
   format:
   dtype: float32
   unit:
-  description: Integrated flux above 1 TeV error, measured in crab units (Meyer 2012)
+  description: Integrated flux above 1 TeV error, measured in Crab units (Meyer 2012)
   latex:
-- name: spec_flux_above_erange_min
+- name: spec_eflux_1TeV_10TeV
   format:
   dtype: float32
-  unit: cm-2 s-1
-  description: Integrated flux above spec_erange_min
-  latex:
-- name: spec_flux_above_erange_min_err
-  format:
-  dtype: float32
-  unit: cm-2 s-1
-  description: Error on integrated flux above spec_erange_min
-  latex:
-- name: spec_energy_flux_1TeV_10TeV
-  format:
-  dtype: float32
-  unit: TeV cm-2 s-1
+  unit: erg cm-2 s-1
   description: Integrated energy flux between 1 TeV and 10 TeV
   latex:
-- name: spec_energy_flux_1TeV_10TeV_err
+- name: spec_eflux_1TeV_10TeV_err
   format:
   dtype: float32
-  unit: TeV cm-2 s-1
+  unit: erg cm-2 s-1
   description: Integrated energy flux between 1 TeV and 10 TeV error
   latex:
 

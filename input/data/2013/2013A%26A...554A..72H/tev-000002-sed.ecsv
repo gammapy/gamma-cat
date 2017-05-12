@@ -1,0 +1,13 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: hess}
+# - {source_id: 2}
+# - {reference_id: 2013A&A...554A..72H}
+# - {data_type: sed}
+e_ref dnde dnde_errn dnde_errp

@@ -103,64 +103,56 @@ class Parameters:
 def make_spec_model(data):
     """Make a Gammapy spectrum model.
 
-    TODO: document
+    TODO: how do we want to handle systematic errors?
+    (at the moment not taking into account)
 
     Parameters
     ----------
-    data : ???
-        ???
+    data : dict
+        Parameter dictionary
     
     Returns
     -------
     model : `~gammapy.spectrum.models.SpectrumModel`
+        Spectral model
     """
-    # TODO: what about systematic errors?
 
     spec_type = data['spec_type']
     pars, errs = {}, {}
 
     if spec_type == 'pl':
-        pars['amplitude'] = u.Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
-        errs['amplitude'] = u.Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
-        pars['index'] = u.Quantity(data['spec_index'], '')
-        errs['index'] = u.Quantity(data['spec_index_err'], '')
-        pars['reference'] = u.Quantity(data['spec_ref'], 'TeV')
-        model = PowerLaw(**pars)
+        model_class = PowerLaw
+        pars['amplitude'] = data['spec_pl_norm']
+        errs['amplitude'] = data['spec_pl_norm_err']
+        pars['index'] = data['spec_pl_index']
+        errs['index'] = data['spec_pl_index_err']
+        pars['reference'] = data['spec_pl_e_ref']
     elif spec_type == 'pl2':
-        pars['amplitude'] = u.Quantity(data['spec_norm'], 'cm-2 s-1')
-        errs['amplitude'] = u.Quantity(data['spec_norm_err'], 'cm-2 s-1')
-        pars['index'] = u.Quantity(data['spec_index'], '')
-        errs['index'] = u.Quantity(data['spec_index_err'], '')
-
-        # TODO: give PL2 separate field names!!!
-        # TODO: I'm not sure using `spec_erange_max` is consistent with our data entry.
-        # This needs review!!!
-        pars['emin'] = u.Quantity(data['spec_ref'], 'TeV')
-        e_max = u.Quantity(data['spec_erange_max'], 'TeV')
+        model_class = PowerLaw2
+        pars['amplitude'] = data['spec_pl2_flux']
+        errs['amplitude'] = data['spec_pl2_flux_err']
+        pars['index'] = data['spec_pl2_index']
+        errs['index'] = data['spec_pl2_index_err']
+        pars['emin'] = data['spec_pl2_e_min']
+        e_max = data['spec_pl2_e_max']
         if np.isnan(e_max.value):
             e_max = DEFAULT_E_MAX
         pars['emax'] = e_max
-        model = PowerLaw2(**pars)
     elif spec_type == 'ecpl':
+        model_class = ExponentialCutoffPowerLaw
         from uncertainties import ufloat
-        pars['amplitude'] = u.Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
-        errs['amplitude'] = u.Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
-        pars['index'] = u.Quantity(data['spec_index'], '')
-        errs['index'] = u.Quantity(data['spec_index_err'], '')
-        pars['reference'] = u.Quantity(data['spec_ref'], 'TeV')
-        lambda_ = 1. / ufloat(data['spec_ecut'], data['spec_ecut_err'])
+        pars['amplitude'] = data['spec_ecpl_norm']
+        errs['amplitude'] = data['spec_ecpl_norm_err']
+        pars['index'] = data['spec_ecpl_index']
+        errs['index'] = data['spec_ecpl_index_err']
+        lambda_ = 1. / ufloat(data['spec_ecpl_e_cut'].to('TeV').value, data['spec_ecpl_e_cut_err'].to('TeV').value)
         pars['lambda_'] = u.Quantity(lambda_.nominal_value, 'TeV-1')
         errs['lambda_'] = u.Quantity(lambda_.std_dev, 'TeV-1')
-        model = ExponentialCutoffPowerLaw(**pars)
+        pars['reference'] = data['spec_ecpl_e_ref']
     else:
-        # TODO: is this a good idea, to have this default instead of raising an error???
-        # return generic model, as all parameters are NaN it will evaluate to NaN
-        pars['amplitude'] = u.Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
-        errs['amplitude'] = u.Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
-        pars['index'] = u.Quantity(data['spec_index'], '')
-        errs['index'] = u.Quantity(data['spec_index_err'], '')
-        pars['reference'] = u.Quantity(data['spec_ref'], 'TeV')
-        model = PowerLaw(**pars)
+        raise ValueError('Invalid spec_type: {}'.format(spec_type))
 
+    model = model_class(**pars)
     model.parameters.set_parameter_errors(errs)
+
     return model

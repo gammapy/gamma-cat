@@ -151,23 +151,40 @@ class GammaCatSource:
 
     @staticmethod
     def fill_spectral_model_info(data, dsi):
+
         data['reference_id'] = dsi.get('reference_id', NA.fill_value['string'])
 
         # Fill defaults
         data['spec_type'] = 'none'
+        na = NA.fill_value['number']
 
-        data['spec_norm'] = NA.fill_value['number']
-        data['spec_norm_err'] = NA.fill_value['number']
-        data['spec_norm_err_sys'] = NA.fill_value['number']
+        data['spec_pl_norm'] = na * u.Unit('cm-2 s-1 TeV-1')
+        data['spec_pl_norm_err'] = na * u.Unit('cm-2 s-1 TeV-1')
+        data['spec_pl_norm_err_sys'] = na * u.Unit('cm-2 s-1 TeV-1')
+        data['spec_pl_index'] = na
+        data['spec_pl_index_err'] = na
+        data['spec_pl_index_err_sys'] = na
+        data['spec_pl_e_ref'] = na * u.Unit('TeV')
 
-        data['spec_index'] = NA.fill_value['number']
-        data['spec_index_err'] = NA.fill_value['number']
-        data['spec_index_err_sys'] = NA.fill_value['number']
+        data['spec_pl2_flux'] = na * u.Unit('cm-2 s-1')
+        data['spec_pl2_flux_err'] = na * u.Unit('cm-2 s-1')
+        data['spec_pl2_flux_err_sys'] = na * u.Unit('cm-2 s-1')
+        data['spec_pl2_index'] = na
+        data['spec_pl2_index_err'] = na
+        data['spec_pl2_index_err_sys'] = na
+        data['spec_pl2_e_min'] = na * u.Unit('TeV')
+        data['spec_pl2_e_max'] = na * u.Unit('TeV')
 
-        data['spec_ecut'] = NA.fill_value['number']
-        data['spec_ecut_err'] = NA.fill_value['number']
-
-        data['spec_ref'] = NA.fill_value['number']
+        data['spec_ecpl_norm'] = na * u.Unit('cm-2 s-1 TeV-1')
+        data['spec_ecpl_norm_err'] = na * u.Unit('cm-2 s-1 TeV-1')
+        data['spec_ecpl_norm_err_sys'] = na * u.Unit('cm-2 s-1 TeV-1')
+        data['spec_ecpl_index'] = na
+        data['spec_ecpl_index_err'] = na
+        data['spec_ecpl_index_err_sys'] = na
+        data['spec_ecpl_e_cut'] = na * u.Unit('TeV')
+        data['spec_ecpl_e_cut_err'] = na * u.Unit('TeV')
+        data['spec_ecpl_e_cut_err_sys'] = na * u.Unit('TeV')
+        data['spec_ecpl_e_ref'] = na * u.Unit('TeV')
 
         try:
             m = dsi['spec']['model']
@@ -179,51 +196,37 @@ class GammaCatSource:
 
         data['spec_type'] = spec_type
 
-        # from pprint import pprint; pprint(data)
-        # import IPython; IPython.embed()
-
         if spec_type == 'pl':
-
-            data['spec_norm'] = spec_pars['norm'].get_or_default('val').to('cm-2 s-1 TeV-1').value
-            data['spec_norm_err'] = spec_pars['norm'].get_or_default('err').to('cm-2 s-1 TeV-1').value
-            data['spec_norm_err_sys'] = spec_pars['norm'].get_or_default('err_sys').to('cm-2 s-1 TeV-1').value
-
-            data['spec_index'] = spec_pars['index'].get_or_default('val').value
-            data['spec_index_err'] = spec_pars['index'].get_or_default('err').value
-            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys').value
-
-            data['spec_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV').value
-
+            data['spec_pl_norm'] = spec_pars['norm'].get_or_default('val').to('cm-2 s-1 TeV-1')
+            data['spec_pl_norm_err'] = spec_pars['norm'].get_or_default('err').to('cm-2 s-1 TeV-1')
+            data['spec_pl_norm_err_sys'] = spec_pars['norm'].get_or_default('err_sys').to('cm-2 s-1 TeV-1')
+            data['spec_pl_index'] = spec_pars['index'].get_or_default('val')
+            data['spec_pl_index_err'] = spec_pars['index'].get_or_default('err')
+            data['spec_pl_index_err_sys'] = spec_pars['index'].get_or_default('err_sys')
+            data['spec_pl_e_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV')
         elif spec_type == 'pl2':
-
-            # log.debug(spec_pars)
-
-            # TODO: change catalog format to give the PL2 parameters their own columns!
-            data['spec_norm'] = spec_pars['flux'].get_or_default('val').to('cm-2 s-1').value
-            data['spec_norm_err'] = spec_pars['flux'].get_or_default('err').to('cm-2 s-1').value
-            data['spec_norm_err_sys'] = spec_pars['flux'].get_or_default('err_sys').to('cm-2 s-1').value
-
-            data['spec_index'] = spec_pars['index'].get_or_default('val').value
-            data['spec_index_err'] = spec_pars['index'].get_or_default('err').value
-            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys').value
-
-            data['spec_ref'] = spec_pars['e_min'].get_or_default('val').to('TeV').value
-
+            data['spec_pl2_flux'] = spec_pars['flux'].get_or_default('val').to('cm-2 s-1')
+            data['spec_pl2_flux_err'] = spec_pars['flux'].get_or_default('err').to('cm-2 s-1')
+            data['spec_pl2_flux_err_sys'] = spec_pars['flux'].get_or_default('err_sys').to('cm-2 s-1')
+            data['spec_pl2_index'] = spec_pars['index'].get_or_default('val')
+            data['spec_pl2_index_err'] = spec_pars['index'].get_or_default('err')
+            data['spec_pl2_index_err_sys'] = spec_pars['index'].get_or_default('err_sys')
+            data['spec_pl2_e_min'] = spec_pars['e_min'].get_or_default('val').to('TeV')
+            try:
+                data['spec_pl2_e_max'] = spec_pars['e_max'].get_or_default('val').to('TeV')
+            except KeyError:
+                pass
         elif spec_type == 'ecpl':
-
-            data['spec_norm'] = spec_pars['norm'].get_or_default('val').to('cm-2 s-1 TeV-1').value
-            data['spec_norm_err'] = spec_pars['norm'].get_or_default('err').to('cm-2 s-1 TeV-1').value
-            data['spec_norm_err_sys'] = spec_pars['norm'].get_or_default('err_sys').to('cm-2 s-1 TeV-1').value
-
-            data['spec_index'] = spec_pars['index'].get_or_default('val').value
-            data['spec_index_err'] = spec_pars['index'].get_or_default('err').value
-            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys').value
-
-            data['spec_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV').value
-
-            data['spec_ecut'] = spec_pars['e_cut'].get_or_default('val').to('TeV').value
-            data['spec_ecut_err'] = spec_pars['e_cut'].get_or_default('err').to('TeV').value
-
+            data['spec_ecpl_norm'] = spec_pars['norm'].get_or_default('val').to('cm-2 s-1 TeV-1')
+            data['spec_ecpl_norm_err'] = spec_pars['norm'].get_or_default('err').to('cm-2 s-1 TeV-1')
+            data['spec_ecpl_norm_err_sys'] = spec_pars['norm'].get_or_default('err_sys').to('cm-2 s-1 TeV-1')
+            data['spec_ecpl_index'] = spec_pars['index'].get_or_default('val')
+            data['spec_ecpl_index_err'] = spec_pars['index'].get_or_default('err')
+            data['spec_ecpl_index_err_sys'] = spec_pars['index'].get_or_default('err_sys')
+            data['spec_ecpl_e_cut'] = spec_pars['e_cut'].get_or_default('val').to('TeV')
+            data['spec_ecpl_e_cut_err'] = spec_pars['e_cut'].get_or_default('err').to('TeV')
+            data['spec_ecpl_e_cut_err_sys'] = spec_pars['e_cut'].get_or_default('err_sys').to('TeV')
+            data['spec_ecpl_e_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV')
         else:
             raise ValueError('Unknown spectral model type: {}'.format(spec_type))
 
@@ -245,44 +248,49 @@ class GammaCatSource:
     def fill_derived_spectral_info(self):
         """
         Fill derived spectral info computed from basic parameters
+
+        TODO: decide if we want to bring "total errors" back and on which quantities.
+        (at the moment commented out in this method)
         """
         data = self.data
-        # total errors
-        data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
-        data['spec_index_err_tot'] = np.hypot(data['spec_index_err'], data['spec_index_err_sys'])
+
+        if data['spec_type'] == 'none':
+            # Fill defaults for missing values
+            na = NA.fill_value['number']
+            data['spec_dnde_1TeV'] = na * u.Unit('cm-2 s-1 TeV-1')
+            data['spec_dnde_1TeV_err'] = na * u.Unit('cm-2 s-1 TeV-1')
+            data['spec_flux_1TeV'] = na * u.Unit('cm-2 s-1')
+            data['spec_flux_1TeV_err'] = na * u.Unit('cm-2 s-1')
+            data['spec_flux_1TeV_crab'] = na * u.Unit('cm-2 s-1')
+            data['spec_flux_1TeV_crab_err'] = na * u.Unit('cm-2 s-1')
+            data['spec_eflux_1TeV_10TeV'] = na * u.Unit('erg cm-2 s-1')
+            data['spec_eflux_1TeV_10TeV_err'] = na * u.Unit('erg cm-2 s-1')
+            return
 
         spec_model = make_spec_model(data)
-        log.info(spec_model)
+
+        # total errors
+        # data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
+        # data['spec_index_err_tot'] = np.hypot(data['spec_index_err'], data['spec_index_err_sys'])
+
+        # Differential flux at 1 TeV
+        dnde = spec_model.evaluate_error(1 * u.TeV)
+        data['spec_dnde_1TeV'] = dnde[0]
+        data['spec_dnde_1TeV_err'] = dnde[1]
 
         # Integral flux above 1 TeV
         emin, emax = 1 * u.TeV, 1E6 * u.TeV
         flux_above_1TeV = spec_model.integral_error(emin, emax)
-        data['spec_flux_above_1TeV'] = flux_above_1TeV[0].value
-        data['spec_flux_above_1TeV_err'] = flux_above_1TeV[1].value
-
-        data['spec_flux_above_1TeV_crab'] = data['spec_flux_above_1TeV'] * FLUX_TO_CRAB
-        data['spec_flux_above_1TeV_crab_err'] = data['spec_flux_above_1TeV_err'] * FLUX_TO_CRAB
-
-        # Integral flux above erange_min
-        emin, emax = data['spec_erange_min'] * u.TeV, 1e6 * u.TeV
-        try:
-            flux_above_erange_min = spec_model.integral_error(emin, emax)
-            data['spec_flux_above_erange_min'] = flux_above_erange_min[0].value
-            data['spec_flux_above_erange_min_err'] = flux_above_erange_min[1].value
-        except ValueError:
-            data['spec_flux_above_erange_min'] = NA.fill_value['number']
-            data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
+        data['spec_flux_1TeV'] = flux_above_1TeV[0]
+        data['spec_flux_1TeV_err'] = flux_above_1TeV[1]
+        data['spec_flux_1TeV_crab'] = data['spec_flux_1TeV'] * FLUX_TO_CRAB
+        data['spec_flux_1TeV_crab_err'] = data['spec_flux_1TeV_err'] * FLUX_TO_CRAB
 
         # Energy flux between 1 TeV and 10 TeV
-        emin, emax = 1 * u.TeV, 1E6 * u.TeV
+        emin, emax = 1 * u.TeV, 10 * u.TeV
         energy_flux = spec_model.energy_flux_error(emin, emax)
-        data['spec_energy_flux_1TeV_10TeV'] = energy_flux[0].value
-        data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux[1].value
-
-        # Differential flux at 1 TeV
-        dnde = spec_model.evaluate_error(1 * u.TeV)
-        data['spec_norm_1TeV'] = dnde[0].value
-        data['spec_norm_1TeV_err'] = dnde[1].value
+        data['spec_eflux_1TeV_10TeV'] = energy_flux[0].to('erg cm-2 s-1')
+        data['spec_eflux_1TeV_10TeV_err'] = energy_flux[1].to('erg cm-2 s-1')
 
     @staticmethod
     def fill_sed_info(data, sed_info, shape=(SED_ARRAY_LEN,)):

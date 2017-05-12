@@ -6,11 +6,11 @@ from astropy import units as u
 from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
-from gammapy.spectrum.models import PowerLaw, PowerLaw2, ExponentialCutoffPowerLaw
 from gammapy.spectrum import CrabSpectrum
 from .info import gammacat_info
 from .input import InputData
 from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
+from .modeling import make_spec_model, Parameters
 
 __all__ = [
     'GammaCatMaker',
@@ -21,9 +21,6 @@ __all__ = [
 ]
 
 log = logging.getLogger(__name__)
-
-# TODO: replace flux factor by reading the correct units from the schema
-FLUX_FACTOR = 1E-12
 
 
 def _to_crab_flux():
@@ -56,7 +53,8 @@ class GammaCatSource:
         dsi = dataset_source_info.data
         cls.fill_position_info(data, dsi)
         cls.fill_data_info(data, dsi)
-        cls.fill_spectral_info(data, dsi)
+        cls.fill_spectral_model_info(data, dsi)
+        cls.fill_spectral_other_info(data, dsi)
         cls.fill_morphology_info(data, dsi)
 
         cls.fill_sed_info(data, sed_info)
@@ -152,12 +150,56 @@ class GammaCatSource:
             data['livetime'] = NA.fill_value['number']
 
     @staticmethod
-    def fill_spectral_info(data, dsi):
+    def fill_spectral_model_info(data, dsi):
         data['reference_id'] = dsi.get('reference_id', NA.fill_value['string'])
+
+        # Fill defaults
+        data['spec_type'] = 'none'
+        data['spec_norm'] = NA.fill_value['number']
+        data['spec_norm_err'] = NA.fill_value['number']
+        data['spec_norm_err_sys'] = NA.fill_value['number']
+        data['spec_ref'] = NA.fill_value['number']
+        data['spec_index'] = NA.fill_value['number']
+        data['spec_index_err'] = NA.fill_value['number']
+        data['spec_index_err_sys'] = NA.fill_value['number']
+        data['spec_ecut'] = NA.fill_value['number']
+        data['spec_ecut_err'] = NA.fill_value['number']
+
         try:
-            data['spec_type'] = dsi['spec']['type']
+            m = dsi['spec']['model']
         except KeyError:
-            data['spec_type'] = 'none'
+            return data
+
+        spec_type = m['type']
+        spec_pars = Parameters.from_dict(m['parameters'])
+
+        data['spec_type'] = spec_type
+
+        data['spec_ref'] = spec_pars['e_ref'].get_or_default('val').to('TeV')
+
+        # from pprint import pprint; pprint(data)
+        # import IPython; IPython.embed()
+
+        if spec_type == 'pl':
+            data['spec_norm'] = spec_pars['norm'].get_or_default('val').to('cm-2 s-1 TeV-1').value
+            data['spec_norm_err'] = spec_pars['norm'].get_or_default('err').to('cm-2 s-1 TeV-1').value
+            data['spec_norm_err_sys'] = spec_pars['norm'].get_or_default('err_sys').to('cm-2 s-1 TeV-1').value
+
+            data['spec_index'] = spec_pars['index'].get_or_default('val')
+            data['spec_index_err'] = spec_pars['index'].get_or_default('err')
+            data['spec_index_err_sys'] = spec_pars['index'].get_or_default('err_sys')
+
+        elif spec_type == 'pl2':
+            raise NotImplementedError
+        elif spec_type == 'ecpl':
+            data['spec_ecut'] = spec_pars['e_cut'].get_or_default('val').to('TeV').value
+            data['spec_ecut_err'] = spec_pars['e_cut'].get_or_default('err').to('TeV').value
+            raise NotImplementedError
+        else:
+            raise ValueError('Unknown spectral model type: {}'.format(spec_type))
+
+    @staticmethod
+    def fill_spectral_other_info(data, dsi):
         try:
             data['spec_erange_min'] = dsi['spec']['erange']['min']
         except KeyError:
@@ -171,44 +213,46 @@ class GammaCatSource:
         except KeyError:
             data['spec_theta'] = NA.fill_value['number']
 
-        try:
-            data['spec_norm'] = dsi['spec']['norm']['val'] * FLUX_FACTOR
-        except KeyError:
-            data['spec_norm'] = NA.fill_value['number']
-        try:
-            data['spec_norm_err'] = dsi['spec']['norm']['err'] * FLUX_FACTOR
-        except KeyError:
-            data['spec_norm_err'] = NA.fill_value['number']
-        try:
-            data['spec_norm_err_sys'] = dsi['spec']['norm']['err_sys'] * FLUX_FACTOR
-        except KeyError:
-            data['spec_norm_err_sys'] = NA.fill_value['number']
-        try:
-            data['spec_ref'] = dsi['spec']['ref']
-        except KeyError:
-            data['spec_ref'] = NA.fill_value['number']
+    def fill_derived_spectral_info(self):
+        """
+        Fill derived spectral info computed from basic parameters
+        """
+        data = self.data
+        # total errors
+        data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
+        data['spec_index_err_tot'] = np.hypot(data['spec_index_err'], data['spec_index_err_sys'])
 
-        try:
-            data['spec_index'] = dsi['spec']['index']['val']
-        except KeyError:
-            data['spec_index'] = NA.fill_value['number']
-        try:
-            data['spec_index_err'] = dsi['spec']['index']['err']
-        except KeyError:
-            data['spec_index_err'] = NA.fill_value['number']
-        try:
-            data['spec_index_err_sys'] = dsi['spec']['index']['err_sys']
-        except KeyError:
-            data['spec_index_err_sys'] = NA.fill_value['number']
+        spec_model = make_spec_model(data)
 
+        # Integral flux above 1 TeV
+        emin, emax = 1 * u.TeV, 1E6 * u.TeV
+        flux_above_1TeV = spec_model.integral_error(emin, emax)
+        data['spec_flux_above_1TeV'] = flux_above_1TeV[0].value
+        data['spec_flux_above_1TeV_err'] = flux_above_1TeV[1].value
+
+        data['spec_flux_above_1TeV_crab'] = data['spec_flux_above_1TeV'] * FLUX_TO_CRAB
+        data['spec_flux_above_1TeV_crab_err'] = data['spec_flux_above_1TeV_err'] * FLUX_TO_CRAB
+
+        # Integral flux above erange_min
+        emin, emax = data['spec_erange_min'] * u.TeV, 1e6 * u.TeV
         try:
-            data['spec_ecut'] = dsi['spec']['ecut']['val']
-        except KeyError:
-            data['spec_ecut'] = NA.fill_value['number']
-        try:
-            data['spec_ecut_err'] = dsi['spec']['ecut']['err']
-        except KeyError:
-            data['spec_ecut_err'] = NA.fill_value['number']
+            flux_above_erange_min = spec_model.integral_error(emin, emax)
+            data['spec_flux_above_erange_min'] = flux_above_erange_min[0].value
+            data['spec_flux_above_erange_min_err'] = flux_above_erange_min[1].value
+        except ValueError:
+            data['spec_flux_above_erange_min'] = NA.fill_value['number']
+            data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
+
+        # Energy flux between 1 TeV and 10 TeV
+        emin, emax = 1 * u.TeV, 1E6 * u.TeV
+        energy_flux = spec_model.energy_flux_error(emin, emax)
+        data['spec_energy_flux_1TeV_10TeV'] = energy_flux[0].value
+        data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux[1].value
+
+        # Differential flux at 1 TeV
+        dnde = spec_model.evaluate_error(1 * u.TeV)
+        data['spec_norm_1TeV'] = dnde[0].value
+        data['spec_norm_1TeV_err'] = dnde[1].value
 
     @staticmethod
     def fill_sed_info(data, sed_info, shape=(SED_ARRAY_LEN,)):
@@ -269,96 +313,6 @@ class GammaCatSource:
             data['sed_dnde_ul'] = NA.resize_sed_array(dnde_ul, shape)
         except KeyError:
             data['sed_dnde_ul'] = NA.fill_value_array(shape)
-
-    def fill_derived_spectral_info(self):
-        """
-        Fill derived spectral info computed from basic parameters
-        """
-        data = self.data
-        # total errors
-        data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
-        data['spec_index_err_tot'] = np.hypot(data['spec_index_err'], data['spec_index_err_sys'])
-
-        spec_model = self._get_spec_model(data)
-
-        # Integral flux above 1 TeV
-        emin, emax = 1 * u.TeV, 1E6 * u.TeV
-        flux_above_1TeV = spec_model.integral_error(emin, emax)
-        data['spec_flux_above_1TeV'] = flux_above_1TeV[0].value
-        data['spec_flux_above_1TeV_err'] = flux_above_1TeV[1].value
-
-        data['spec_flux_above_1TeV_crab'] = data['spec_flux_above_1TeV'] * FLUX_TO_CRAB
-        data['spec_flux_above_1TeV_crab_err'] = data['spec_flux_above_1TeV_err'] * FLUX_TO_CRAB
-
-        # Integral flux above erange_min
-        emin, emax = data['spec_erange_min'] * u.TeV, 1e6 * u.TeV
-        try:
-            flux_above_erange_min = spec_model.integral_error(emin, emax)
-            data['spec_flux_above_erange_min'] = flux_above_erange_min[0].value
-            data['spec_flux_above_erange_min_err'] = flux_above_erange_min[1].value
-        except ValueError:
-            data['spec_flux_above_erange_min'] = NA.fill_value['number']
-            data['spec_flux_above_erange_min_err'] = NA.fill_value['number']
-
-        # Energy flux between 1 TeV and 10 TeV
-        emin, emax = 1 * u.TeV, 1E6 * u.TeV
-        energy_flux = spec_model.energy_flux_error(emin, emax)
-        data['spec_energy_flux_1TeV_10TeV'] = energy_flux[0].value
-        data['spec_energy_flux_1TeV_10TeV_err'] = energy_flux[1].value
-
-        # Differential flux at 1 TeV
-        dnde = spec_model.evaluate_error(1 * u.TeV)
-        data['spec_norm_1TeV'] = dnde[0].value
-        data['spec_norm_1TeV_err'] = dnde[1].value
-
-    def _get_spec_model(self, data):
-        # TODO: what about systematic errors?
-
-        spec_type = data['spec_type']
-        pars, errs = {}, {}
-
-        if spec_type == 'pl':
-            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
-            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
-            pars['index'] = Quantity(data['spec_index'], '')
-            errs['index'] = Quantity(data['spec_index_err'], '')
-            pars['reference'] = Quantity(data['spec_ref'], 'TeV')
-            model = PowerLaw(**pars)
-        elif spec_type == 'pl2':
-            # TODO: what parameter to use to pass emin here correctly??
-            # TODO: put default max of 1e10 TeV
-            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1')
-            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1')
-            pars['index'] = Quantity(data['spec_index'], '')
-            errs['index'] = Quantity(data['spec_index_err'], '')
-            pars['emin'] = Quantity(data['spec_erange_min'], 'TeV')
-            emax = data['spec_erange_max']
-            if np.isnan(emax):
-                emax = 1e5
-            pars['emax'] = Quantity(emax, 'TeV')
-            model = PowerLaw2(**pars)
-        elif spec_type == 'ecpl':
-            from uncertainties import ufloat
-            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
-            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
-            pars['index'] = Quantity(data['spec_index'], '')
-            errs['index'] = Quantity(data['spec_index_err'], '')
-            pars['reference'] = Quantity(data['spec_ref'], 'TeV')
-            lambda_ = 1. / ufloat(data['spec_ecut'], data['spec_ecut_err'])
-            pars['lambda_'] = Quantity(lambda_.nominal_value, 'TeV-1')
-            errs['lambda_'] = Quantity(lambda_.std_dev, 'TeV-1')
-            model = ExponentialCutoffPowerLaw(**pars)
-        else:
-            # return generic model, as all parameters are NaN it will evaluate to NaN
-            pars['amplitude'] = Quantity(data['spec_norm'], 'cm-2 s-1 TeV-1')
-            errs['amplitude'] = Quantity(data['spec_norm_err'], 'cm-2 s-1 TeV-1')
-            pars['index'] = Quantity(data['spec_index'], '')
-            errs['index'] = Quantity(data['spec_index_err'], '')
-            pars['reference'] = Quantity(data['spec_ref'], 'TeV')
-            model = PowerLaw(**pars)
-
-        model.parameters.set_parameter_errors(errs)
-        return model
 
     @staticmethod
     def fill_morphology_info(data, dsi):

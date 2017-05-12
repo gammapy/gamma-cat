@@ -83,12 +83,6 @@ def create_escv(table, filecounter, note, experiment, reference_id, source, sour
     new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
 
     new_table.meta = table.meta
-    print(table['source'][0])
-    print(source)
-    print(table['note'][0])
-    print(note)
-    print(table['reference_id'][0])
-    print(reference_id)
     
     for i in range(0, 736):
         if((table['source'][i]==source) and (table['note'][i]==note) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
@@ -102,8 +96,9 @@ def create_escv(table, filecounter, note, experiment, reference_id, source, sour
     new_table.meta.pop('author')
     new_table.meta.pop('dataset_reference')
     new_table.meta.pop('creation_date')
-    new_table.meta['note'] = note
-    new_table.meta['source_id'] = source_id
+    new_table.meta['filecounter'] = filecounter
+    new_table.meta['source_id'] = int(source_id)
     new_table.meta['reference_id'] = reference_id
     new_table.meta['note'] = note
+    new_table.meta['data_type'] = 'sed'
     new_table.write(filename, format='ascii.ecsv', delimiter=' ')

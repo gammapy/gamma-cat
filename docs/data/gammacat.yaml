@@ -6074,7 +6074,7 @@
   - tgevcat_id: 74
   - tgevcat_name: TeV J1502-4107
   - reference_id: 2010A&A...516A..62A
-  - significance: 9.300000190734863
+  - significance: 8.699999809265137
   - livetime: 130.0
   - ra: 225.5920867919922
   - dec: -42.09693908691406
@@ -6085,9 +6085,9 @@
   - pos_glon: .nan
   - pos_glat: .nan
   - pos_err: .nan
-  - morph_type: shell
-  - morph_sigma: 0.23999999463558197
-  - morph_sigma_err: 0.009999999776482582
+  - morph_type: none
+  - morph_sigma: .nan
+  - morph_sigma_err: .nan
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
@@ -6101,11 +6101,11 @@
   - spec_pl_index_err: .nan
   - spec_pl_index_err_sys: .nan
   - spec_pl_e_ref: .nan
-  - spec_pl2_flux: 2.33000007092074e-13
-  - spec_pl2_flux_err: 4.300000026186135e-14
-  - spec_pl2_flux_err_sys: 4.7000001546920744e-14
-  - spec_pl2_index: 2.3499999046325684
-  - spec_pl2_index_err: 0.14000000059604645
+  - spec_pl2_flux: 1.5499999558594296e-13
+  - spec_pl2_flux_err: 3.6999998334272255e-14
+  - spec_pl2_flux_err_sys: 3.099999979481495e-14
+  - spec_pl2_index: 2.2899999618530273
+  - spec_pl2_index_err: 0.18000000715255737
   - spec_pl2_index_err_sys: 0.20000000298023224
   - spec_pl2_e_min: 1.0
   - spec_pl2_e_max: .nan
@@ -6122,24 +6122,24 @@
   - spec_erange_min: 0.25999999046325684
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_dnde_1TeV: 3.1455006242915584e-13
-  - spec_dnde_1TeV_err: 6.658725220515249e-14
-  - spec_flux_1TeV: 2.3300003419712834e-13
-  - spec_flux_1TeV_err: 4.3000007038124927e-14
-  - spec_flux_1TeV_crab: 1.1231930255889893
-  - spec_flux_1TeV_crab_err: 0.20728453993797302
-  - spec_eflux_1TeV_10TeV: 7.967198407086984e-13
-  - spec_eflux_1TeV_10TeV_err: 1.498145005404336e-13
+  - spec_dnde_1TeV: 1.9995006898029105e-13
+  - spec_dnde_1TeV_err: 5.528613523475383e-14
+  - spec_flux_1TeV: 1.5500004979605159e-13
+  - spec_flux_1TeV_err: 3.700001188679941e-14
+  - spec_flux_1TeV_crab: 0.7471885681152344
+  - spec_flux_1TeV_crab_err: 0.17836114764213562
+  - spec_eflux_1TeV_10TeV: 5.381291115838516e-13
+  - spec_eflux_1TeV_10TeV_err: 1.3069979939907966e-13
   - sed_reference_id: 2010A&A...516A..62A
-  - sed_n_points: 18
-  - sed_e_ref: 23.553937911987305
+  - sed_n_points: 7
+  - sed_e_ref: 10.700858116149902
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 9.641425028142359e-13
+  - sed_dnde: 4.1321118618778407e-13
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 1.5480104177678644e-12
-  - sed_dnde_errn: 5.446451124303808e-13
-  - sed_dnde_ul: 4.437833250769854e-17
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: 2.3706999002747733e-16
 - !!omap
   - source_id: 75
   - common_name: HESS J1503-582

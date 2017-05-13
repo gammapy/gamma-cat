@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_min, datatype: float32}
+# - {name: dnde_max, datatype: float32}
+# - {name: dnde_ul, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 74
+# - reference_id: 2010A&A...516A..62A
+# - telescope: hess
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA516_A62.html
+# - UL_CONF: 0.6827
+# - comments: |
+#     These are the spectral points for the SW region
+#     The paper doesn't state UL_CONF.
+#     The webpage states that unusually low value UL_CONF: 0.6827
+e_ref dnde dnde_min dnde_max dnde_ul
+0.2943   8.844e-13      1.49e-13        2.07e-12    nan
+0.5617   1.001e-12      7.957e-13       1.21e-12    nan
+1.189    1.363e-13      9.358e-14       1.802e-13   nan
+2.524    4.217e-14      2.972e-14       5.511e-14   nan
+5.547    2.186e-15      3.477e-16       5.425e-15   nan
+15.16    nan            nan             nan         4.345e-16
+49.63    nan            nan             nan         3.964e-17

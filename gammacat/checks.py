@@ -6,6 +6,7 @@ import logging
 from astropy.utils import lazyproperty
 from .input import InputData
 from .output import OutputData
+from .cat import GammaCatCatalogChecker
 
 __all__ = [
     'GammaCatChecker',
@@ -15,8 +16,8 @@ log = logging.getLogger(__name__)
 
 
 class GammaCatChecker:
-    def __init__(self):
-        pass
+    def __init__(self, out_path=None):
+        self.out_path = out_path
 
     @lazyproperty
     def input_data(self):
@@ -26,12 +27,13 @@ class GammaCatChecker:
     @lazyproperty
     def output_data(self):
         log.info('Reading output data ...')
-        return OutputData.read()
+        return OutputData.read(path=self.out_path)
 
     def check_all(self):
         log.info('Run checks: all')
         self.check_input()
         self.check_output()
+        self.check_catalog()
         self.check_global()
 
     def check_input(self):
@@ -45,6 +47,11 @@ class GammaCatChecker:
         self.output_data.validate()
         print()
         print(self.output_data)
+
+    def check_catalog(self):
+        log.info('Run checks: catalog')
+        checker = GammaCatCatalogChecker()
+        checker.run()
 
     def check_global(self):
         """Global consistency checks.

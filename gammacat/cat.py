@@ -6,22 +6,133 @@ from astropy import units as u
 from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
-from gammapy.catalog import SourceCatalogObjectGammaCat
+from gammapy.catalog import SourceCatalogObjectGammaCat, SourceCatalogGammaCat
+from gammapy.catalog.gammacat import NoDataAvailableError
 from .info import gammacat_info
 from .input import InputData
+from .output import OutputDataConfig
 from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
 from .utils import E_INF, FLUX_TO_CRAB
 from .modeling import Parameters
 
 __all__ = [
+    'GammaCatDatasetConfig',
+    'GammaCatDatasetConfigSource',
     'GammaCatMaker',
     'GammaCatSchema',
     'GammaCatSource',
-    'GammaCatDatasetConfig',
-    'GammaCatDatasetConfigSource',
+    'GammaCatCatalogChecker',
 ]
 
 log = logging.getLogger(__name__)
+
+
+class GammaCatDatasetConfigSource:
+    """
+    Configuration how to assemble `gamma-cat` for one source.
+    """
+
+    def __init__(self, data):
+        self.data = data
+
+    @property
+    def reference_ids(self):
+        pid = self.data['reference_id']
+
+        if isinstance(pid, str):
+            return [_.strip() for _ in pid.split(',')]
+        elif pid is None:
+            return []
+        else:
+            raise ValueError('Invalid reference_id list: {}'.format(pid))
+
+    def get_reference_id(self, internal=False):
+        """Choose reference_id to use for given source.
+
+        For now, we always use the last one listed.
+        """
+        reference_id = self.reference_ids[-1]
+        if not internal and reference_id == 'gammacat-hess-internal':
+            reference_id = self.reference_ids[-2]
+        return reference_id
+
+
+class GammaCatDatasetConfig:
+    """
+    Configuration how to assemble `gamma-cat` for all sources.
+    """
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/gamma_cat_dataset.schema.yaml')
+
+    def __init__(self, data, path):
+        self.data = data
+        self.path = path
+
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
+        data = load_yaml(path)
+        return cls(data=data, path=path)
+
+    @property
+    def source_ids(self):
+        return [_['source_id'] for _ in self.data]
+
+    @property
+    def source_configs(self):
+        for source_id in self.source_ids:
+            yield self.get_source_by_id(source_id)
+
+    @property
+    def reference_ids(self):
+        pids = set()
+        for source_config in self.source_configs:
+            pids.update(source_config.reference_ids)
+
+        return sorted(pids)
+
+    def get_source_by_id(self, source_id):
+        idx = self.source_ids.index(source_id)
+        return GammaCatDatasetConfigSource(data=self.data[idx])
+
+    def validate(self, input_data):
+        log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
+        validate_schema(path=self.path, data=self.data, schema=self.schema)
+        self.validate_source_ids(input_data)
+        self.validate_reference_ids(input_data)
+
+    def validate_source_ids(self, input_data):
+        """Check that all sources are listed.
+        """
+        source_id_basic = input_data.sources.source_ids
+        source_id_gammacat = self.source_ids
+
+        gammacat_missing = sorted(set(source_id_basic) - set(source_id_gammacat))
+        if gammacat_missing:
+            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
+                      ''.format(gammacat_missing))
+
+        basic_missing = sorted(set(source_id_gammacat) - set(source_id_basic))
+        if basic_missing:
+            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'
+                      ''.format(basic_missing))
+
+    def validate_reference_ids(self, input_data):
+        """Check that all reference_ids are listed.
+
+        TODO: this is not a good check. One dataset could have multiple sources, i.e. should be listed multiple times.
+        """
+        reference_ids_folders = input_data.datasets.reference_ids
+        reference_ids_gammacat = self.reference_ids
+
+        gammacat_missing = sorted(set(reference_ids_gammacat) - set(reference_ids_folders))
+        if gammacat_missing:
+            log.error('Datasets in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/data`: {}'
+                      ''.format(gammacat_missing))
+
+        folders_missing = sorted(set(reference_ids_folders) - set(reference_ids_gammacat))
+        if folders_missing:
+            log.error('Sources in `input/data`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
+                      ''.format(folders_missing))
 
 
 class GammaCatSource:
@@ -588,109 +699,45 @@ class GammaCatMaker:
         write_yaml(data, path)
 
 
-class GammaCatDatasetConfigSource:
+class GammaCatCatalogChecker:
     """
-    Configuration how to assemble `gamma-cat` for one source.
+    Check format and content of output catalog.
     """
 
-    def __init__(self, data):
-        self.data = data
+    def __init__(self):
+        filename = OutputDataConfig().gammacat_fits
+        self.cat = SourceCatalogGammaCat(filename=filename)
 
-    @property
-    def reference_ids(self):
-        pid = self.data['reference_id']
+    def run(self):
+        self.check_table(self.cat.table)
+        self.check_sources()
 
-        if isinstance(pid, str):
-            return [_.strip() for _ in pid.split(',')]
-        elif pid is None:
-            return []
-        else:
-            raise ValueError('Invalid reference_id list: {}'.format(pid))
+    @staticmethod
+    def check_table(table):
+        # TODO: remove of put something else?
+        # These aren't useful, and if we keep them should be done via pytest
+        # to give good errors (showing the actual values).
+        # assert len(table) == 162
+        # assert len(table.columns) == 82
+        pass
 
-    def get_reference_id(self, internal=False):
-        """Choose reference_id to use for given source.
+    def check_sources(self):
+        log.info('Checking catalog sources ...')
+        for source in self.cat:
+            self.check_source(source)
 
-        For now, we always use the last one listed.
-        """
-        reference_id = self.reference_ids[-1]
-        if not internal and reference_id == 'gammacat-hess-internal':
-            reference_id = self.reference_ids[-2]
-        return reference_id
+    @staticmethod
+    def check_source(source):
+        log.debug('Checking source: {}'.format(source.name))
 
-
-class GammaCatDatasetConfig:
-    """
-    Configuration how to assemble `gamma-cat` for all sources.
-    """
-    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/gamma_cat_dataset.schema.yaml')
-
-    def __init__(self, data, path):
-        self.data = data
-        self.path = path
-
-    @classmethod
-    def read(cls):
-        path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
-        data = load_yaml(path)
-        return cls(data=data, path=path)
-
-    @property
-    def source_ids(self):
-        return [_['source_id'] for _ in self.data]
-
-    @property
-    def source_configs(self):
-        for source_id in self.source_ids:
-            yield self.get_source_by_id(source_id)
-
-    @property
-    def reference_ids(self):
-        pids = set()
-        for source_config in self.source_configs:
-            pids.update(source_config.reference_ids)
-
-        return sorted(pids)
-
-    def get_source_by_id(self, source_id):
-        idx = self.source_ids.index(source_id)
-        return GammaCatDatasetConfigSource(data=self.data[idx])
-
-    def validate(self, input_data):
-        log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
-        validate_schema(path=self.path, data=self.data, schema=self.schema)
-        self.validate_source_ids(input_data)
-        self.validate_reference_ids(input_data)
-
-    def validate_source_ids(self, input_data):
-        """Check that all sources are listed.
-        """
-        source_id_basic = input_data.sources.source_ids
-        source_id_gammacat = self.source_ids
-
-        gammacat_missing = sorted(set(source_id_basic) - set(source_id_gammacat))
-        if gammacat_missing:
-            log.error('Sources in `input/sources`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
-                      ''.format(gammacat_missing))
-
-        basic_missing = sorted(set(source_id_gammacat) - set(source_id_basic))
-        if basic_missing:
-            log.error('Sources in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/sources`: {}'
-                      ''.format(basic_missing))
-
-    def validate_reference_ids(self, input_data):
-        """Check that all reference_ids are listed.
-
-        TODO: this is not a good check. One dataset could have multiple sources, i.e. should be listed multiple times.
-        """
-        reference_ids_folders = input_data.datasets.reference_ids
-        reference_ids_gammacat = self.reference_ids
-
-        gammacat_missing = sorted(set(reference_ids_gammacat) - set(reference_ids_folders))
-        if gammacat_missing:
-            log.error('Datasets in `input/gammacat/gamma_cat_dataset.yaml`, but not in `input/data`: {}'
-                      ''.format(gammacat_missing))
-
-        folders_missing = sorted(set(reference_ids_folders) - set(reference_ids_gammacat))
-        if folders_missing:
-            log.error('Sources in `input/data`, but not in `input/gammacat/gamma_cat_dataset.yaml`: {}'
-                      ''.format(folders_missing))
+        # TODO: fix the following check!
+        # This is failing at the moment because spectral points are taken from input folder
+        # for this source: input/data/2015/2015A%26A...577A.131H/tev-000045-sed.ecsv
+        # try:
+        #     source.flux_points
+        # except NoDataAvailableError:
+        #     pass
+        # source.spectral_model()
+        # source.spatial_model()
+        # TODO: move over checks from gamma-cat-status to here
+        # on spectral model, flux points, spatial model

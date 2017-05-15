@@ -191,8 +191,6 @@ class BasicSourceList:
 
         data = []
         for path in paths:
-            if path.name in {'example.yaml'}:
-                continue
             info = BasicSourceInfo.read(path)
             data.append(info)
 

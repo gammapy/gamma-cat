@@ -78,7 +78,7 @@ def make_cat(sources, internal):
 
 @cli.command(name='check')
 @click.option('--step', default='all',
-              type=click.Choice(['all', 'input', 'output', 'global']))
+              type=click.Choice(['all', 'input', 'output', 'catalog', 'global']))
 def make_check(step):
     """Run automated checks.
     """
@@ -91,6 +91,8 @@ def make_check(step):
         maker.check_input()
     elif step == 'output':
         maker.check_output()
+    elif step == 'catalog':
+        maker.check_catalog()
     elif step == 'global':
         maker.check_global()
 
@@ -124,9 +126,18 @@ def make_all(ctx):
     """Run all steps.
     """
     log.info('Run all steps ...')
-    ctx.invoke(make_check)
+    from gammacat.checks import GammaCatChecker
+    checker = GammaCatChecker()
+    checker.check_input()
+
     ctx.invoke(make_output)
+    checker.check_output()
+
     ctx.invoke(make_cat)
+    checker.check_catalog()
+
+    checker.check_global()
+
     # ctx.invoke(make_webpage)
 
 

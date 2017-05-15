@@ -10,5 +10,5 @@ def test_sed_input():
 
 
 def test_sed_output():
-    sed = SED.read('docs/data/sources/000112/gammacat_000112_2008A%26A...481..401A_sed.ecsv')
+    sed = SED.read('docs/data/data/2008A%26A...481..401A/gammacat_2008A%26A...481..401A_000112_sed.ecsv')
     assert_allclose(sed.table['dnde'][0], 74.23e-13)

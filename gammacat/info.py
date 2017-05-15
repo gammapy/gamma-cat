@@ -8,7 +8,7 @@ from astropy.time import Time
 
 __all__ = [
     'gammacat_info',
-    'gammacat_tag',
+    'GammaCatStr',
     'rawgit_url',
 ]
 
@@ -56,26 +56,31 @@ class GammaCatInfo:
         return info
 
 
-class GammaCatTag:
-    """Make and parse string tags.
+class GammaCatStr:
+    """Make and parse strings (e.g. filenames).
     """
 
-    def source_dataset_filename(self, meta):
-        return 'gammacat_' + self.source_dataset_str(meta)
+    @staticmethod
+    def dataset_filename(meta):
+        return 'gammacat_' + GammaCatStr.dataset_str(meta)
 
-    def source_dataset_str(self, meta):
-        return self.source_str(meta) + '_' + self.dataset_str(meta)
+    @staticmethod
+    def dataset_str(meta):
+        ss = GammaCatStr.reference_id_str(meta['reference_id'])
+        ss += '_'
+        ss += GammaCatStr.source_id_str(meta['source_id'])
+        return ss
 
-    def source_str(self, meta):
-        return '{source_id:06d}'.format_map(meta)
+    @staticmethod
+    def source_id_str(source_id):
+        return '{:06d}'.format(source_id)
 
-    def dataset_str(self, meta):
-        return urllib.parse.quote(meta['reference_id'])
-        # return '{reference_id}'.format_map(meta)
+    @staticmethod
+    def reference_id_str(reference_id):
+        return urllib.parse.quote(reference_id)
 
 
 gammacat_info = GammaCatInfo()
-gammacat_tag = GammaCatTag()
 
 
 def rawgit_url(filename, location='master', mode='production'):

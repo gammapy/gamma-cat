@@ -65,7 +65,6 @@ import pytest
 from gammacat.data_store import GammaCatDataStore
 
 
-@pytest.mark.xfail
 def test_load():
     """
     Use case: create a data store.
@@ -73,18 +72,18 @@ def test_load():
     TODO: more fancy ways to create a datastore,
     e.g. for an older version, or by fetching a zip file from the web, ...
     """
-    ds = GammaCatDataStore()
+    ds = GammaCatDataStore.from_index_file()
 
     assert 'version' in ds.info()
 
 
-@pytest.mark.xfail
+@pytest.mark.skip
 def test_get_source():
     ds = GammaCatDataStore()
     source = ds.get('/sources/{source_id}')
 
 
-@pytest.mark.xfail
+@pytest.mark.skip
 def test_get_source():
     ds = GammaCatDataStore()
     source = ds.get('/sources/{source_id}')

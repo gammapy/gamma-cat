@@ -62,6 +62,7 @@ We should generate the following files:
 TODO: implement this functionality!
 """
 import pytest
+from gammacat.output import OutputDataConfig
 from gammacat.data_store import GammaCatDataStore
 
 
@@ -72,7 +73,8 @@ def test_load():
     TODO: more fancy ways to create a datastore,
     e.g. for an older version, or by fetching a zip file from the web, ...
     """
-    ds = GammaCatDataStore.from_index_file()
+    filename = OutputDataConfig().index_datasets_json
+    ds = GammaCatDataStore.from_index_file(filename)
 
     assert 'version' in ds.info()
 

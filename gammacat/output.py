@@ -1,6 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 """
-Classes to read, validate and work with the input data files.
+Classes to read, validate and work with the output data files.
 """
 import logging
 from collections import OrderedDict
@@ -10,7 +10,7 @@ from astropy.table import Table
 from .info import gammacat_info, gammacat_tag
 from .input import InputData
 from .sed import SEDList
-from .utils import write_json, load_json
+from .utils import write_json, load_json, log_list_difference
 
 __all__ = [
     'OutputDataConfig',
@@ -19,16 +19,6 @@ __all__ = [
 ]
 
 log = logging.getLogger(__name__)
-
-
-def log_list_difference(actual, expected):
-    missing = sorted(set(expected) - set(actual))
-    if missing:
-        log.error('Missing: {}'.format(missing))
-
-    extra = sorted(set(actual) - set(expected))
-    if extra:
-        log.error('Extra: {}'.format(extra))
 
 
 class OutputDataConfig:

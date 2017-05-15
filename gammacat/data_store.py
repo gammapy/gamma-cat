@@ -2,6 +2,11 @@
 from gammapy.utils.scripts import make_path
 from .utils import load_json
 
+__all__ = [
+    'GammaCatDataStore',
+    'GammaCatDataStoreRegistry',
+]
+
 
 class GammaCatDataStore(object):
     """

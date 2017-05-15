@@ -6,11 +6,11 @@ from astropy import units as u
 from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
-from gammapy.spectrum import CrabSpectrum
 from gammapy.catalog import SourceCatalogObjectGammaCat
 from .info import gammacat_info
 from .input import InputData
 from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
+from .utils import E_INF, FLUX_TO_CRAB
 from .modeling import Parameters
 
 __all__ = [
@@ -22,17 +22,6 @@ __all__ = [
 ]
 
 log = logging.getLogger(__name__)
-
-
-def _to_crab_flux():
-    # Integral flux above 1 TeV in crab units
-    crab = CrabSpectrum('meyer').model
-    flux_crab = crab.integral(1 * u.TeV, 1e6 * u.TeV)
-    return 100 / flux_crab.to('cm-2 s-1').value
-
-
-FLUX_TO_CRAB = _to_crab_flux()
-E_INF = 1e6 * u.Unit('TeV')
 
 
 class GammaCatSource:

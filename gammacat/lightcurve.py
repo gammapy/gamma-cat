@@ -3,12 +3,15 @@ import logging
 from astropy.table import Table
 from .info import gammacat_info
 
-__all__ = ['Lightcurve', 'LightcurveList']
+__all__ = [
+    'LightCurve',
+    'LightCurveList',
+]
 
 log = logging.getLogger(__name__)
 
 
-class Lightcurve:
+class LightCurve:
     """
     A single lightcurve.
     """
@@ -23,11 +26,11 @@ class Lightcurve:
         return cls(table=table)
 
 
-class LightcurveList:
+class LightCurveList:
     """
-    Collection of all `Lightcurve` objects.
+    Collection of all `LightCurve` objects.
 
-    Stored in the `data` attribute -- a Python list of `Lightcurve` objects.
+    Stored in the `data` attribute -- a Python list of `LightCurve` objects.
     """
 
     def __init__(self, data):
@@ -40,7 +43,7 @@ class LightcurveList:
 
         data = []
         for path in paths:
-            lc = Lightcurve.read(path)
+            lc = LightCurve.read(path)
             lc.table.meta['path'] = str(path)
             data.append(lc)
 

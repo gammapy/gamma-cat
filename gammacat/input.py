@@ -11,7 +11,7 @@ from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
 from .sed import SEDList
-from .lightcurve import LightcurveList
+from .lightcurve import LightCurveList
 
 __all__ = [
     'BasicSourceInfo',
@@ -336,7 +336,7 @@ class InputData:
         sources = BasicSourceList.read()
         datasets = InputDatasetCollection.read(internal=internal)
         seds = SEDList.read(internal=internal)
-        lightcurves = LightcurveList.read()
+        lightcurves = LightCurveList.read()
         gammacat_dataset_config = GammaCatDatasetConfig.read()
         return cls(
             schemas=schemas,

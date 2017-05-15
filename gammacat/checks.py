@@ -7,7 +7,9 @@ from astropy.utils import lazyproperty
 from .input import InputData
 from .output import OutputData
 
-__all__ = ['GammaCatChecker']
+__all__ = [
+    'GammaCatChecker',
+]
 
 log = logging.getLogger(__name__)
 

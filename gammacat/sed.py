@@ -5,7 +5,10 @@ from astropy.table import Table
 from .info import gammacat_info
 from .utils import check_ecsv_column_header
 
-__all__ = ['SED', 'SEDList']
+__all__ = [
+    'SED',
+    'SEDList',
+]
 
 log = logging.getLogger(__name__)
 

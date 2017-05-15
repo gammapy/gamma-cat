@@ -51,4 +51,5 @@ This site is organised in the following sections:
    :maxdepth: 1
    :caption: Contributor Documentation
 
+   contribute/code
    contribute/details

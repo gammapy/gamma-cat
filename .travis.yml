@@ -22,10 +22,10 @@ script:
 - export BOKEH_DOCS_MISSING_API_KEY_OK=yes
 
 - export PYTHONPATH=.:$PYTHONPATH
-- python -m pytest -v --cov=gammacat
 - python make.py --help
 #- ./make.py check
 #- ./make.py output
 #- ./make.py webpage
 - python make.py all
+- python -m pytest -v --cov=gammacat
 - cd documentation && make html

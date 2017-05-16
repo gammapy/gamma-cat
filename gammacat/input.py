@@ -332,11 +332,11 @@ class SEDList:
     @classmethod
     def read(cls, internal=False):
         path = gammacat_info.base_dir / 'input/data'
-        paths = sorted(path.glob('*/*/tev*sed.ecsv'))
+        paths = sorted(path.glob('*/*/tev*sed*.ecsv'))
 
         if internal:
             path = gammacat_info.base_dir / 'docs/data/sources'
-            paths = path.glob('*/gammacat*sed.ecsv')
+            paths = path.glob('*/gammacat*sed*.ecsv')
 
             path_internal = gammacat_info.internal_dir
             paths_internal = path_internal.glob('tev*.ecsv')

@@ -1,5 +1,6 @@
 source_id: 30
 reference_id: 2014ApJ...780..168A
+file_id: 1
 telescope: veritas
 # Note that this is a joint HESS/VERITAS paper
 
@@ -31,4 +32,3 @@ spec:
   mjd: {min: 55235.0, max: 55280.}
   phase: {min: 0.2, max: 0.4 }
   erange: {min: 0.53, max: 2.07}
-  filecounter: 1

@@ -8,6 +8,7 @@
 # - data_type: sed
 # - source_id: 49
 # - reference_id: 2017ApJ...834....2A
+# - file_id: 1
 # - telescope: veritas
 # - comments: |
 #       Spectrum for 2014-04-29

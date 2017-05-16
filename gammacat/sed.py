@@ -33,7 +33,7 @@ class SED:
     ]
 
     allowed_meta_keys = required_meta_keys + [
-        'source_name', 'comments', 'url', 'UL_CONF',
+        'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
     ]
 
     def __init__(self, table, path):

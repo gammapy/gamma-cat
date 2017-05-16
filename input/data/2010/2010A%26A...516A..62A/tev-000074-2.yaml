@@ -1,6 +1,7 @@
 # This file contains the data for the south-west (SW) region
 source_id: 74
 reference_id: 2010A&A...516A..62A
+file_id: 2
 telescope: hess
 
 data:

@@ -14,6 +14,7 @@
 # - {data_type: sed}
 # - {source_id: 74}
 # - {reference_id: 2010A&A...516A..62A}
+# - {file_id: 2}
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA516_A62.html'}
 # - {UL_CONF: 0.6827}

@@ -11,6 +11,7 @@
 # - data_type: lc
 # - source_id: 30
 # - reference_id: 2014ApJ...780..168A
+# - file_id: 2
 # - telescope: veritas
 # - {SED_TYPE: flux}
 # - UL_CONF: 0.99

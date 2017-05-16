@@ -11,6 +11,7 @@
 # - data_type: sed
 # - source_id: 30
 # - reference_id: 2014ApJ...780..168A
+# - file_id: 4
 # - telescope: veritas
 # - comments: |
 #     Spectral points measured by VERITAS for orbital phases 0.2-0.4

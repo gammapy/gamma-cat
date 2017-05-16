@@ -10,6 +10,7 @@
 # - data_type: lc
 # - source_id: 49
 # - reference_id: 2017ApJ...834....2A
+# - file_id: 1
 # - telescope: veritas
 # - {SED_TYPE: flux}
 # - comments: 10 min

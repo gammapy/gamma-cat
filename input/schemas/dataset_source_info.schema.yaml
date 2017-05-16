@@ -10,6 +10,10 @@ properties:
     type: string
     description: Dataset reference identifier
 
+  file_id:
+    type: integer
+    description: Counter for cases where multiple measurements are given in a paper for a given source (e.g. for sub-regions).
+
   telescope:
     "$ref": "#/definitions/telescope"
 
@@ -249,10 +253,6 @@ properties:
         properties:
           min: {type: number}
           max: {type: number}
-
-      filecounter:
-        type: number
-        description: Counter to connect spectral fit with SED file
 
   notes:
     type: string

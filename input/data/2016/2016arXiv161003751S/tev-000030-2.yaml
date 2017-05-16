@@ -1,5 +1,6 @@
 source_id: 30
 reference_id: 2016arXiv161003751S
+file_id: 2
 telescope: veritas
 # Contribution to the 6th International Symposium on High-Energy Gamma-Ray
 # Astronomy (Gamma2016), Heidelberg, Germany
@@ -27,4 +28,3 @@ spec:
   mjd: {min: 56330.0, max: 56988.416}
   phase: {min: 0.6, max: 0.8 }
   erange: {min: 0.24, max: 4.47}
-  filecounter: 2

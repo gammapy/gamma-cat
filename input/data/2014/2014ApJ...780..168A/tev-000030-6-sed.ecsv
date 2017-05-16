@@ -10,6 +10,7 @@
 # - data_type: sed
 # - source_id: 30
 # - reference_id: 2014ApJ...780..168A
+# - file_id: 6
 # - telescope: hess
 # - UL_CONF: 0.95
 # - comments: |

@@ -1,13 +1,10 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
-from itertools import chain
 from astropy.table import Table
-from .info import gammacat_info
 from .utils import check_ecsv_column_header
 
 __all__ = [
     'SED',
-    'SEDList',
 ]
 
 log = logging.getLogger(__name__)
@@ -235,56 +232,3 @@ class SED:
         meta = table.meta
         if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
             log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
-
-
-class SEDList:
-    """
-    List of `SED` objects.
-
-    Used to represent the SED data in the input folder.
-    """
-
-    def __init__(self, data):
-        self.data = data
-
-        sed_lookup = {}
-        for sed in data:
-            source_id = sed.table.meta['source_id']
-            reference_id = sed.table.meta['reference_id']
-            try:
-                sed_lookup[reference_id][source_id] = sed
-            except KeyError:
-                sed_lookup[reference_id] = {}
-                sed_lookup[reference_id][source_id] = sed
-        self._sed_lookup = sed_lookup
-
-    @classmethod
-    def read(cls, internal=False):
-        path = gammacat_info.base_dir / 'input/data'
-        paths = sorted(path.glob('*/*/tev*sed.ecsv'))
-
-        if internal:
-            path = gammacat_info.base_dir / 'docs/data/sources'
-            paths = path.glob('*/gammacat*sed.ecsv')
-
-            path_internal = gammacat_info.internal_dir
-            paths_internal = path_internal.glob('tev*.ecsv')
-            paths = chain(paths, paths_internal)
-
-        data = []
-        for path in paths:
-            sed = SED.read(path)
-            data.append(sed)
-        return cls(data=data)
-
-    def validate(self):
-        for sed in self.data:
-            sed.process()
-
-    def get_sed_by_source_and_reference_id(self, source_id, reference_id):
-        # return self._sed_lookup[reference_id][source_id]
-        try:
-            return self._sed_lookup[reference_id][source_id]
-        except KeyError:
-            missing = SED(table=Table(), path='')
-            return missing

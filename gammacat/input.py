@@ -10,13 +10,14 @@ import urllib.parse
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
-from .sed import SEDList
+from .sed import SED
 from .lightcurve import LightCurveList
 
 __all__ = [
     'BasicSourceInfo',
     'BasicSourceList',
     'DatasetSourceInfo',
+    'SEDList',
     'InputData',
     'InputDataset',
     'InputDatasetCollection',
@@ -305,6 +306,59 @@ class Schemas:
         # This just shows that the schema files can be parsed OK.
         # for schema in self.data:
         #     log.debug(schema)
+
+
+class SEDList:
+    """
+    List of `SED` objects.
+
+    Used to represent the SED data in the input folder.
+    """
+
+    def __init__(self, data):
+        self.data = data
+
+        sed_lookup = {}
+        for sed in data:
+            source_id = sed.table.meta['source_id']
+            reference_id = sed.table.meta['reference_id']
+            try:
+                sed_lookup[reference_id][source_id] = sed
+            except KeyError:
+                sed_lookup[reference_id] = {}
+                sed_lookup[reference_id][source_id] = sed
+        self._sed_lookup = sed_lookup
+
+    @classmethod
+    def read(cls, internal=False):
+        path = gammacat_info.base_dir / 'input/data'
+        paths = sorted(path.glob('*/*/tev*sed.ecsv'))
+
+        if internal:
+            path = gammacat_info.base_dir / 'docs/data/sources'
+            paths = path.glob('*/gammacat*sed.ecsv')
+
+            path_internal = gammacat_info.internal_dir
+            paths_internal = path_internal.glob('tev*.ecsv')
+            paths = chain(paths, paths_internal)
+
+        data = []
+        for path in paths:
+            sed = SED.read(path)
+            data.append(sed)
+        return cls(data=data)
+
+    def validate(self):
+        for sed in self.data:
+            sed.process()
+
+    def get_sed_by_source_and_reference_id(self, source_id, reference_id):
+        # return self._sed_lookup[reference_id][source_id]
+        try:
+            return self._sed_lookup[reference_id][source_id]
+        except KeyError:
+            missing = SED(table=Table(), path='')
+            return missing
 
 
 class InputData:

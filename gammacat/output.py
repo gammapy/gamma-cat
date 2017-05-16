@@ -7,8 +7,7 @@ from collections import OrderedDict
 from pathlib import Path
 from astropy.utils import lazyproperty
 from .info import gammacat_info, GammaCatStr
-from .input import InputData
-from .sed import SEDList
+from .input import InputData, SEDList
 from .utils import write_json, load_json, log_list_difference
 
 __all__ = [

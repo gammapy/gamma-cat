@@ -9,6 +9,19 @@ __all__ = [
 log = logging.getLogger(__name__)
 
 
+def make_table_columns_uniform(table, cols):
+    """
+    Make column units and description uniform
+    """
+    for col in cols:
+        name = col['name']
+        if name in table.colnames:
+            if 'unit' in col:
+                table[name] = table[name].quantity.to(col['unit'])
+
+            table[name].description = col['description']
+
+
 class SED:
     """Process and validate an SED file."""
 
@@ -67,7 +80,7 @@ class SED:
 
         self._add_missing_defaults(table)
         self._process_e2dnde_inputs(table)
-        self._make_it_uniform(table, self.output_cols)
+        make_table_columns_uniform(table, self.output_cols)
         self._process_column_order(table)
 
         self.validate_output()
@@ -124,19 +137,6 @@ class SED:
 
             if colname.startswith('dnde') and not table[colname].unit:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
-
-    @staticmethod
-    def _make_it_uniform(table, cols):
-        """
-        Make column units and description uniform
-        """
-        for col in cols:
-            name = col['name']
-            if name in table.colnames:
-                if 'unit' in col:
-                    table[name] = table[name].quantity.to(col['unit'])
-
-                table[name].description = col['description']
 
     @staticmethod
     def _process_e2dnde_inputs(table):

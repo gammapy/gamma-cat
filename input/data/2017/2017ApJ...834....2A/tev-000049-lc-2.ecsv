@@ -2,7 +2,6 @@
 # ---
 # datatype:
 # - {name: e_min, unit: TeV, datatype: float64}
-# - {name: e_max, unit: TeV, datatype: float64}
 # - {name: time, unit: MJD, datatype: float64}
 # - {name: flux, unit: m-2 s-1, datatype: float64}
 # - {name: flux_err, unit: m-2 s-1, datatype: float64}
@@ -16,7 +15,7 @@
 # - telescope: veritas
 # - {SED_TYPE: flux}
 # - comments: 10 min
-e_min e_max time flux flux_err index index_error
+e_min time flux flux_err index index_err
 0.560  56776.14200646 6.729860768905e-07 1.245413603883e-07 2.43033e+00 1.72793e-01
 0.560  56776.1489509 5.315961915063e-07 1.108072697819e-07 2.68795e+00 2.24772e-01
 0.560  56776.15589535 5.069332803087e-07 1.083817021002e-07 2.35540e+00 2.19267e-01

@@ -1,8 +1,16 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 """
-Make a simple HTML webpage.
-
-For now we don't need a static website generator.
-
-All code is in `output.py`.
+Make gamma-cat webpage (in combination with Sphinx).
 """
+import logging
+
+__all__ = [
+    'WebpageMaker',
+]
+
+log = logging.getLogger(__name__)
+
+
+class WebpageMaker:
+    def run(self):
+        log.error('Come one. Implement me already, you lazy hog!!!')

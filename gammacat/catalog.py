@@ -7,27 +7,26 @@ from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.catalog import SourceCatalogObjectGammaCat, SourceCatalogGammaCat
-from gammapy.catalog.gammacat import NoDataAvailableError
 from .info import gammacat_info
 from .input import InputData
-from .output import OutputDataConfig
+from .collection import CollectionConfig
 from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
 from .utils import E_INF, FLUX_TO_CRAB
 from .modeling import Parameters
 
 __all__ = [
-    'GammaCatDatasetConfig',
-    'GammaCatDatasetConfigSource',
-    'GammaCatMaker',
-    'GammaCatSchema',
-    'GammaCatSource',
-    'GammaCatCatalogChecker',
+    'DatasetConfig',
+    'DatasetConfigSource',
+    'CatalogMaker',
+    'CatalogSchema',
+    'CatalogSource',
+    'CatalogChecker',
 ]
 
 log = logging.getLogger(__name__)
 
 
-class GammaCatDatasetConfigSource:
+class DatasetConfigSource:
     """
     Configuration how to assemble `gamma-cat` for one source.
     """
@@ -57,7 +56,7 @@ class GammaCatDatasetConfigSource:
         return reference_id
 
 
-class GammaCatDatasetConfig:
+class DatasetConfig:
     """
     Configuration how to assemble `gamma-cat` for all sources.
     """
@@ -92,7 +91,7 @@ class GammaCatDatasetConfig:
 
     def get_source_by_id(self, source_id):
         idx = self.source_ids.index(source_id)
-        return GammaCatDatasetConfigSource(data=self.data[idx])
+        return DatasetConfigSource(data=self.data[idx])
 
     def validate(self, input_data):
         log.info('Validating `input/gammacat/gamma_cat_dataset.yaml`')
@@ -135,7 +134,7 @@ class GammaCatDatasetConfig:
                       ''.format(folders_missing))
 
 
-class GammaCatSource:
+class CatalogSource:
     """Gather data for one source in gamma-cat.
     """
 
@@ -508,7 +507,7 @@ class GammaCatSource:
         return self.data
 
 
-class GammaCatSchema:
+class CatalogSchema:
     """Helper class to apply the schema."""
 
     def __init__(self):
@@ -537,13 +536,8 @@ class GammaCatSchema:
         return table
 
 
-class GammaCatMaker:
-    """
-    Make gamma-cat, combining all available data.
-
-    TODO: for now, we gather info from `InputData`.
-    This should be changed to gather info from `OutputData` when available.
-    """
+class CatalogMaker:
+    """Make gamma-cat source catalog (from the data collection)."""
 
     def __init__(self):
         self.sources = None
@@ -553,7 +547,7 @@ class GammaCatMaker:
     def setup(self, source_ids='all', internal=False):
         log.info('Setup ...')
         if source_ids == 'all':
-            source_ids = GammaCatDatasetConfig.read().source_ids
+            source_ids = DatasetConfig.read().source_ids
         else:
             source_ids = [int(_) for _ in source_ids.split(',')]
 
@@ -590,7 +584,7 @@ class GammaCatMaker:
             dataset_source_info = dataset.get_source_by_id(source_id)
             sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
 
-            source = GammaCatSource.from_inputs(
+            source = CatalogSource.from_inputs(
                 basic_source_info=basic_source_info,
                 dataset_source_info=dataset_source_info,
                 sed_info=sed_info
@@ -631,7 +625,7 @@ class GammaCatMaker:
         meta['version'] = gammacat_info.version
         meta['url'] = 'https://github.com/gammapy/gamma-cat/'
 
-        schema = GammaCatSchema()
+        schema = CatalogSchema()
         # schema.filter_row_keys(rows)
         # table = Table(rows=rows, meta=meta, names=schema.names, dtype=schema.dtype)
         # import IPython; IPython.embed(); 1/0
@@ -699,13 +693,11 @@ class GammaCatMaker:
         write_yaml(data, path)
 
 
-class GammaCatCatalogChecker:
-    """
-    Check format and content of output catalog.
-    """
+class CatalogChecker:
+    """Check format and content of the catalog."""
 
     def __init__(self):
-        filename = OutputDataConfig().gammacat_fits
+        filename = CollectionConfig().gammacat_fits
         self.cat = SourceCatalogGammaCat(filename=filename)
 
     def run(self):
@@ -735,7 +727,7 @@ class GammaCatCatalogChecker:
         # for this source: input/data/2015/2015A%26A...577A.131H/tev-000045-sed.ecsv
         # try:
         #     source.flux_points
-        # except NoDataAvailableError:
+        # except LookupError:
         #     pass
         # source.spectral_model()
         # source.spatial_model()

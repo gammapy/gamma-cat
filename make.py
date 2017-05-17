@@ -34,90 +34,72 @@ def cli(loglevel, show_warnings):
         warnings.simplefilter('ignore')
 
 
-@cli.command(name='output')
+@cli.command(name='collection')
 @click.option('--step', default='all',
-              type=click.Choice(['all', 'sed', 'index']))
-def make_output(step):
-    """Re-generate files in `output`.
-    """
+              type=click.Choice(['all', 'sed', 'lightcurve', 'input-index', 'output-index']))
+def make_collection(step):
+    """Make gamma-cat data collection."""
     log.info('Re-generate data files in output folder ...')
-    from gammacat.output import OutputDataMaker
-    maker = OutputDataMaker()
+    from gammacat.collection import CollectionMaker
+    maker = CollectionMaker()
     if step == 'all':
-        maker.make_all()
+        maker.process_all()
+    elif step == 'input-index':
+        maker.make_index_file_for_input()
     elif step == 'sed':
-        maker.make_sed_files()
-    elif step == 'index':
-        maker.make_index_files()
+        maker.process_seds()
+    elif step == 'lightcurve':
+        maker.process_lightcurves()
+    # TODO: implement this!
+    # elif step == 'output-index':
+    #     maker.make_index_file_for_output()
 
 
-@cli.command(name='cat')
+@cli.command(name='catalog')
 @click.option('--sources', default='all', help='Either "all" or comma-separated string of source IDs')
 @click.option('--internal', default=False, is_flag=True)
-def make_cat(sources, internal):
-    """Make catalog in HGPS format
-    """
-    from gammacat.cat import GammaCatMaker
+def make_catalog(sources, internal):
+    """Make gamma-cat catalog."""
+    from gammacat.catalog import CatalogMaker
     if internal:
         if not 'HGPS_ANALYSIS' in os.environ:
             raise ValueError("Environment variable 'HGPS_ANALYSIS' "
                              " must be set.")
     log.info('Making catalog ...')
-    maker = GammaCatMaker()
+    maker = CatalogMaker()
     maker.setup(source_ids=sources, internal=internal)
     maker.run(internal=internal)
 
 
-# @cli.command(name='webpage')
-# def make_webpage():
-#     """Re-generate webpage in `docs`.
-#     """
-#     log.info('Re-generate webpage in `docs` ...')
-#     gammacat.webpage.make()
+@cli.command(name='webpage')
+def make_webpage():
+    """Make gamma-cat webpage.
+    """
+    log.info('Making webpage in `docs` ...')
+    from gammacat.webpage import WebpageMaker
+    maker = WebpageMaker()
+    maker.run()
 
 
 @cli.command(name='check')
 @click.option('--step', default='all',
-              type=click.Choice(['all', 'input', 'output', 'catalog', 'global']))
+              type=click.Choice(['all', 'input', 'collection', 'catalog', 'global']))
 def make_check(step):
     """Run automated checks.
     """
     log.info('Run automated checks ...')
-    from gammacat.checks import GammaCatChecker
-    maker = GammaCatChecker()
+    from gammacat.checks import Checker
+    maker = Checker()
     if step == 'all':
         maker.check_all()
     elif step == 'input':
         maker.check_input()
-    elif step == 'output':
-        maker.check_output()
+    elif step == 'collection':
+        maker.check_collection()
     elif step == 'catalog':
         maker.check_catalog()
     elif step == 'global':
         maker.check_global()
-
-
-@cli.command(name='web')
-def serve_webpage():
-    """Serve gamma-cat webpage locally.
-
-    This is equivalent to:
-
-        cd docs && python -m http.server
-    """
-    # import subprocess
-    # import webbrowser
-    # from http.server import HTTPServer, SimpleHTTPRequestHandler
-    # server_address = ('localhost', 8000)
-    # httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
-    # httpd.serve_forever()
-    # subprocess.Popen('cd docs && python -m http.server', shell=True)
-    # webbrowser.open('http://localhost:8000/docs')
-    # click.pause('asdf')
-
-    print('\nTo serve the gamma-cat webpage locally use these commands:\n')
-    print('  cd docs && python -m http.server && cd ..')
-    print('  open http://localhost:8000\n')
 
 
 @cli.command(name='all')
@@ -126,19 +108,19 @@ def make_all(ctx):
     """Run all steps.
     """
     log.info('Run all steps ...')
-    from gammacat.checks import GammaCatChecker
-    checker = GammaCatChecker()
+    from gammacat.checks import Checker
+    checker = Checker()
     checker.check_input()
 
-    ctx.invoke(make_output)
-    checker.check_output()
+    ctx.invoke(make_collection)
+    checker.check_collection()
 
-    ctx.invoke(make_cat)
+    ctx.invoke(make_catalog)
     checker.check_catalog()
 
-    checker.check_global()
+    ctx.invoke(make_webpage)
 
-    # ctx.invoke(make_webpage)
+    checker.check_global()
 
 
 if __name__ == '__main__':

@@ -5,17 +5,17 @@ Automated tests for gamma-cat
 import logging
 from astropy.utils import lazyproperty
 from .input import InputData
-from .output import OutputData
-from .cat import GammaCatCatalogChecker
+from .collection import CollectionData
+from .catalog import CatalogChecker
 
 __all__ = [
-    'GammaCatChecker',
+    'Checker',
 ]
 
 log = logging.getLogger(__name__)
 
 
-class GammaCatChecker:
+class Checker:
     def __init__(self, out_path=None):
         self.out_path = out_path
 
@@ -27,7 +27,7 @@ class GammaCatChecker:
     @lazyproperty
     def output_data(self):
         log.info('Reading output data ...')
-        return OutputData.read(path=self.out_path)
+        return CollectionData.read(path=self.out_path)
 
     def check_all(self):
         log.info('Run checks: all')
@@ -42,23 +42,25 @@ class GammaCatChecker:
         print()
         print(self.input_data)
 
-    def check_output(self):
-        log.info('Run checks: output')
+    def check_collection(self):
+        log.info('Run checks: collection')
         self.output_data.validate()
         print()
         print(self.output_data)
 
     def check_catalog(self):
         log.info('Run checks: catalog')
-        checker = GammaCatCatalogChecker()
+        checker = CatalogChecker()
         checker.run()
 
     def check_global(self):
-        """Global consistency checks.
+        """Global checks.
+        
+        Consistency between input, collection, catalog, webpage.
         
         E.g. are the files in input and output consistent.
         This helps to identify e.g. if there are stale files
         (e.g. after file renames) still lying around in the output folder.
         """
-        log.info('Run checks: global')
+        log.error('Implement me!!!')
         # TODO: implement

@@ -383,13 +383,13 @@ class InputData:
         """Read all data from disk.
         """
         # Delayed import to avoid circular dependency
-        from .cat import GammaCatDatasetConfig
+        from .catalog import DatasetConfig
         schemas = Schemas.read()
         sources = BasicSourceList.read()
         datasets = InputDatasetCollection.read(internal=internal)
         seds = SEDList.read(internal=internal)
         lightcurves = LightCurveList.read()
-        gammacat_dataset_config = GammaCatDatasetConfig.read()
+        gammacat_dataset_config = DatasetConfig.read()
         return cls(
             schemas=schemas,
             sources=sources,

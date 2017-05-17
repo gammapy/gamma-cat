@@ -11,15 +11,15 @@ from .input import InputData, SEDList
 from .utils import write_json, load_json, log_list_difference
 
 __all__ = [
-    'OutputDataConfig',
-    'OutputData',
-    'OutputDataMaker',
+    'CollectionConfig',
+    'CollectionData',
+    'CollectionMaker',
 ]
 
 log = logging.getLogger(__name__)
 
 
-class OutputDataConfig:
+class CollectionConfig:
     """
     Configuration options (mainly directory and filenames).
     """
@@ -80,7 +80,7 @@ class OutputDataConfig:
         ])
 
 
-class OutputData:
+class CollectionData:
     """Access data from the output folder.
 
     Expose it as Python objects that can be validated and used.
@@ -95,7 +95,7 @@ class OutputData:
     def read(cls, path=None):
         """Read all data from disk.
         """
-        config = OutputDataConfig(path)
+        config = CollectionConfig(path)
         index_dataset = load_json(config.index_datasets_json)
         index_sources = load_json(config.index_sources_json)
 
@@ -147,40 +147,43 @@ class OutputData:
         log_list_difference(actual, expected_files)
 
 
-class OutputDataMaker:
-    """
-    Generate output data files from input data files.
-    """
+class CollectionMaker:
+    """Make gamma-cat data collection (from the input files)."""
 
     def __init__(self, path=None):
-        self.config = OutputDataConfig(path=path)
+        self.config = CollectionConfig(path=path)
 
     @lazyproperty
     def input_data(self):
         log.info('Reading input data ...')
         return InputData.read()
 
-    def make_all(self):
-        self.make_sed_files()
-        self.make_index_files()
+    @lazyproperty
+    def output_data(self):
+        log.info('Reading output data ...')
+        return CollectionData.read()
 
-    def make_sed_files(self):
+    def process_all(self):
+        self.make_index_file_for_input()
+
+        self.process_seds()
+        # self.process_lightcurves()  # TODO
+        # self.process_all_basic_source_infos()  # TODO
+        # self.process_all_dataset_source_infos()  # TODO
+
+        # self.make_index_file_for_output()  # TODO
+
+    def process_seds(self):
         for sed in self.input_data.seds.data:
-            self.make_sed_file(sed)
+            log.debug('Processing SED: {}'.format(sed.path))
+            sed.process()
 
-    def make_sed_file(self, sed):
-        log.debug('Processing SED: {}'.format(sed.path))
-        sed.process()
-        path = self.config.make_sed_path(sed, relative_to_index=False)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        log.info('Writing {}'.format(path))
-        sed.table.write(str(path), format='ascii.ecsv')
+            path = self.config.make_sed_path(sed, relative_to_index=False)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            log.info('Writing {}'.format(path))
+            sed.table.write(str(path), format='ascii.ecsv')
 
-    def make_index_files(self):
-        self.make_index_files_datasets()
-        self.make_index_files_sources()
-
-    def make_index_files_datasets(self):
+    def make_index_file_for_input(self):
         data = OrderedDict()
         data['info'] = gammacat_info.info_dict
         # TODO: the following line should be changed to OUTPUT
@@ -189,9 +192,11 @@ class OutputDataMaker:
         path = self.config.index_datasets_json
         write_json(data, path)
 
-    def make_index_files_sources(self):
-        data = OrderedDict()
-        data['info'] = gammacat_info.info_dict
-        data['data'] = self.input_data.sources.to_dict()['data']
-        path = self.config.index_sources_json
-        write_json(data, path)
+    # TODO: change this to be a bundled results file.
+    # This is *not* an index file -> rename!
+    # def make_index_files_sources(self):
+    #     data = OrderedDict()
+    #     data['info'] = gammacat_info.info_dict
+    #     data['data'] = self.input_data.sources.to_dict()['data']
+    #     path = self.config.index_sources_json
+    #     write_json(data, path)

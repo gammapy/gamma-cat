@@ -43,11 +43,14 @@ The following are more basic modules:
 * ``lightcurve.py`` has a class to process and validate the lightcurves in the input folder.
   The lightcurves in the output folder can be read directly with ``gammapy.time.LightCurve``.
 
+In additions there are classes in ``gammapy.catalog.gammacat`` that are used in the ``gammacat``
+scripts to process the data: ``GammaCatResource``, ``GammaCatResourceIndex``, ``GammaCatDatasetCollection``.
+
 Then there is a hierarchy of higher-level modules (that import from the basic modules
 and modules representing lower-level steps in the processing pipeline):
 
 * ``input.py`` has classes to read / clean up / process the data in the ``input`` folder.
-* ``output.py`` has classes to create the files in the ``output`` folder
+* ``collection.py`` has classes to create the files in the ``output`` folder
   (only the dataset files and index files, not the catalog files).
 * ``cat.py`` is the code to create the catalog files
 * ``checks.py`` is the code to run checks.
@@ -55,9 +58,6 @@ and modules representing lower-level steps in the processing pipeline):
   in lower-level modules (such as ``gammacat.input``), and the actual checks are thus
   scattered throughout the ``gammacat`` modules. There's also checks on data content in
   ``gammacat/tests`` (which is probably a bad idea, but pytest is convenient to have asserts)
-* The relation between these higher-level modules isn't 100% clear yet.
-  E.g. what exactly belongs in ``input.py`` and ``output.py``?
-  Suggestions / pull requests to structure the pipeline code in a better way welcome!
 
 Tests
 -----

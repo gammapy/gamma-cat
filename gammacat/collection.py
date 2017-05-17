@@ -6,6 +6,7 @@ import logging
 from collections import OrderedDict
 from pathlib import Path
 from astropy.utils import lazyproperty
+from .lightcurve import LightCurve
 from .info import gammacat_info, GammaCatStr
 from .input import InputData, SEDList
 from .utils import write_json, load_json, log_list_difference
@@ -167,7 +168,7 @@ class CollectionMaker:
         self.make_index_file_for_input()
 
         self.process_seds()
-        # self.process_lightcurves()  # TODO
+        self.process_lightcurves()
         # self.process_all_basic_source_infos()  # TODO
         # self.process_all_dataset_source_infos()  # TODO
 
@@ -182,6 +183,18 @@ class CollectionMaker:
             path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))
             sed.table.write(str(path), format='ascii.ecsv')
+
+    def process_lightcurves(self):
+        for filename in self.input_data.lightcurve_file_list:
+            log.debug('Processing lightcurve: {}'.format(filename))
+            lightcurve = LightCurve.read(filename)
+            lightcurve.process()
+
+            # TODO: put this in a good location! (same relative path as in input?)
+            path = self.config.path / 'lightcurve.ecsv'
+            path.parent.mkdir(parents=True, exist_ok=True)
+            log.info('Writing {}'.format(path))
+            lightcurve.table.write(str(path), format='ascii.ecsv')
 
     def make_index_file_for_input(self):
         data = OrderedDict()

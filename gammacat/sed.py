@@ -1,7 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from astropy.table import Table
-from .utils import check_ecsv_column_header
 
 __all__ = [
     'SED',
@@ -11,18 +10,15 @@ log = logging.getLogger(__name__)
 
 
 class SED:
-    """
-    Spectral energy distribution (SED)
+    """Process and validate an SED file."""
 
-    Represents on SED.
-    """
-    expected_colnames = [
+    expected_colnames_output = [
         'e_ref', 'e_min', 'e_max',
         'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul', 'is_ul',
         'excess', 'significance',
     ]
 
-    expected_colnames_input = expected_colnames + [
+    expected_colnames_input = expected_colnames_output + [
         'e_lo', 'e_hi', 'e_ref_err',
         'dnde_min', 'dnde_max',
         'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp', 'e2dnde_ul',
@@ -79,7 +75,6 @@ class SED:
 
         if 'e_ref_err' in table.colnames:
             del table['e_ref_err']
-
 
     @staticmethod
     def _process_flux_errrors(table):
@@ -164,7 +159,7 @@ class SED:
         """
         # See "Select or reorder columns" section at
         # http://astropy.readthedocs.io/en/latest/table/modify_table.html
-        colnames = [_ for _ in self.expected_colnames if _ in table.colnames]
+        colnames = [_ for _ in self.expected_colnames_output if _ in table.colnames]
 
         # Don't silently drop columns!
         dropped_colnames = sorted(set(table.colnames) - set(colnames))
@@ -178,7 +173,6 @@ class SED:
 
     def validate_input(self):
         log.debug('Validating {}'.format(self.path))
-        check_ecsv_column_header(self.path)
         self._validate_input_colnames()
         self._validate_input_meta()
         self._validate_input_consistency()
@@ -222,7 +216,7 @@ class SED:
 
     def validate_output(self):
         table = self.table
-        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames))
+        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames_output))
         if unexpected_colnames:
             log.error(
                 'SED file {} contains invalid columns: {}'

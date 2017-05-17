@@ -25,14 +25,14 @@ class Checker:
         return InputData.read()
 
     @lazyproperty
-    def output_data(self):
-        log.info('Reading output data ...')
+    def collection_data(self):
+        log.info('Reading collection data ...')
         return CollectionData.read(path=self.out_path)
 
     def check_all(self):
         log.info('Run checks: all')
         self.check_input()
-        self.check_output()
+        self.check_collection()
         self.check_catalog()
         self.check_global()
 
@@ -44,9 +44,9 @@ class Checker:
 
     def check_collection(self):
         log.info('Run checks: collection')
-        self.output_data.validate()
+        self.collection_data.validate()
         print()
-        print(self.output_data)
+        print(self.collection_data)
 
     def check_catalog(self):
         log.info('Run checks: catalog')

@@ -11,16 +11,17 @@ from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
 from .sed import SED
-from .lightcurve import LightCurveList
+from .lightcurve import LightCurve
 
 __all__ = [
     'BasicSourceInfo',
     'BasicSourceList',
     'DatasetSourceInfo',
-    'SEDList',
     'InputData',
     'InputDataset',
     'InputDatasetCollection',
+    'SEDList',
+    'LightCurveList',
 ]
 
 log = logging.getLogger(__name__)
@@ -209,7 +210,7 @@ class BasicSourceList:
         return [
             source.to_dict(filled=filled)
             for source in self.data
-            ]
+        ]
 
     def validate(self):
         # TODO: validate `column_spec` schema?
@@ -368,14 +369,18 @@ class InputData:
     Expose it as Python objects that can be validated and used.
     """
 
+    @property
+    def lightcurve_file_list(self):
+        path = gammacat_info.base_dir / 'input/data'
+        return sorted(path.glob('*/*/tev*lc*.ecsv'))
+
     def __init__(self, schemas=None, sources=None, datasets=None,
-                 seds=None, lightcurves=None, gammacat_dataset_config=None):
+                 seds=None, gammacat_dataset_config=None):
         self.path = gammacat_info.base_dir / 'input'
         self.schemas = schemas
         self.sources = sources
         self.datasets = datasets
         self.seds = seds
-        self.lightcurves = lightcurves
         self.gammacat_dataset_config = gammacat_dataset_config
 
     @classmethod
@@ -388,14 +393,12 @@ class InputData:
         sources = BasicSourceList.read()
         datasets = InputDatasetCollection.read(internal=internal)
         seds = SEDList.read(internal=internal)
-        lightcurves = LightCurveList.read()
         gammacat_dataset_config = DatasetConfig.read()
         return cls(
             schemas=schemas,
             sources=sources,
             datasets=datasets,
             seds=seds,
-            lightcurves=lightcurves,
             gammacat_dataset_config=gammacat_dataset_config,
         )
 
@@ -413,7 +416,7 @@ class InputData:
             len(self.gammacat_dataset_config.reference_ids))
         ss += '\n'
         ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
-        ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))
+        ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurve_file_list))
         return ss
 
     def validate(self):

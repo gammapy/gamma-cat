@@ -9,7 +9,6 @@ import jsonschema
 import numpy as np
 from astropy.coordinates import SkyCoord
 import astropy.units as u
-from astropy.table import Table
 from gammapy.spectrum.crab import CrabSpectrum
 
 __all__ = [
@@ -20,7 +19,6 @@ __all__ = [
     'load_json', 'write_json',
     'print_simbad_pos',
     'table_to_list_of_dict',
-    'check_ecsv_column_header',
     'validate_schema',
     'log_list_difference',
 ]
@@ -160,28 +158,6 @@ def table_to_list_of_dict(table):
         rows.append(data)
 
     return rows
-
-
-def check_ecsv_column_header(path):
-    """
-    Check ECSV file for column header formatting.
-
-    See https://github.com/astropy/astropy/issues/5451
-    """
-    table = Table.read(str(path), format='ascii.ecsv')
-    table2 = Table.read(str(path), format='ascii.basic')
-
-    if table.colnames != table2.colnames:
-        log.error('Problem in ECSV file: {}'.format(path))
-        log.error('ECSV colnames: {}'.format(table.colnames))
-        log.error(' CSV colnames: {}'.format(table2.colnames))
-        raise ECSVFormatError
-
-    if len(table) != len(table2):
-        log.error('Problem in ECSV file: {}'.format(path))
-        log.error('ECSV rows: {}'.format(len(table)))
-        log.error(' CSV rows: {}'.format(len(table2)))
-        raise ECSVFormatError
 
 
 def validate_schema(path, data, schema):

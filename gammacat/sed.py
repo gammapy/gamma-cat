@@ -32,6 +32,20 @@ class SED:
         'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
     ]
 
+    output_cols = [
+        dict(name='e_ref', unit='TeV', description='Energy'),
+        dict(name='e_min', unit='TeV', description='Energy bin minimum'),
+        dict(name='e_max', unit='TeV', description='Energy bin maximum'),
+        dict(name='dnde', unit='cm-2 s-1 TeV-1', description='Differential photon flux at `e_ref`'),
+        dict(name='dnde_err', unit='cm-2 s-1 TeV-1', description='Statistical error (1 sigma) on `dnde`'),
+        dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
+        dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
+        dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
+        dict(name='is_ul', description='Is this a flux upper limit?'),
+        dict(name='excess', description='Excess counts'),
+        dict(name='significance', description='Excess significance'),
+    ]
+
     def __init__(self, table, path):
         self.table = table
         self.path = path
@@ -53,7 +67,7 @@ class SED:
 
         self._add_missing_defaults(table)
         self._process_e2dnde_inputs(table)
-        self._make_it_uniform(table)
+        self._make_it_uniform(table, self.output_cols)
         self._process_column_order(table)
 
         self.validate_output()
@@ -111,32 +125,17 @@ class SED:
             if colname.startswith('dnde') and not table[colname].unit:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
 
-            if colname == 'excess':
-                table[colname].unit = 'count'
-
     @staticmethod
-    def _make_it_uniform(table):
+    def _make_it_uniform(table, cols):
         """
         Make column units and description uniform
         """
-        cols = [
-            dict(name='e_ref', unit='TeV', description='Energy'),
-            dict(name='e_min', unit='TeV', description='Energy bin minimum'),
-            dict(name='e_max', unit='TeV', description='Energy bin maximum'),
-            dict(name='dnde', unit='cm-2 s-1 TeV-1', description='Differential photon flux at `e_ref`'),
-            dict(name='dnde_err', unit='cm-2 s-1 TeV-1', description='Statistical error (1 sigma) on `dnde`'),
-            dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
-            dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
-            dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
-            dict(name='is_ul', description='Is this a flux upper limit?'),
-            dict(name='excess', unit='count', description='Excess counts'),
-            dict(name='significance', description='Excess significance'),
-        ]
         for col in cols:
             name = col['name']
             if name in table.colnames:
-                if name not in ['is_ul', 'significance']:
+                if 'unit' in col:
                     table[name] = table[name].quantity.to(col['unit'])
+
                 table[name].description = col['description']
 
     @staticmethod

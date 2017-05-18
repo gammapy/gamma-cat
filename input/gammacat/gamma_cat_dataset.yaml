@@ -44,7 +44,7 @@
   reference_id:
 - source_id: 14
   status: source
-  reference_id:
+  reference_id: 2008ApJ...679.1427A, 2011ApJ...738....3A
 - source_id: 15
   status: source
   reference_id:
@@ -92,7 +92,7 @@
   reference_id: 2015arXiv151201911H
 - source_id: 30
   status: source
-  reference_id: 2007A&A...469L...1A
+  reference_id: 2007A&A...469L...1A, 2009ApJ...698L..94A, 2012ApJ...754L..10A, 2014ApJ...780..168A, 2016arXiv161003751S
 - source_id: 31
   status: source
   reference_id:
@@ -149,7 +149,7 @@
   reference_id:
 - source_id: 49
   status: source
-  reference_id: 2005A&A...437...95A
+  reference_id: 2005A&A...437...95A, 2006ApJ...641..740R, 2009ApJ...691L..13D, 2017ApJ...834....2A
 - source_id: 50
   status: source
   reference_id:
@@ -221,7 +221,7 @@
   reference_id:
 - source_id: 73
   status: source
-  reference_id:
+  reference_id: 2012arXiv1205.0719D
 - source_id: 74
   status: source
   reference_id: 2010A&A...516A..62A
@@ -287,7 +287,7 @@
   reference_id: 2006ApJ...636..777A, 2008A&A...486..829A
 - source_id: 96
   status: source
-  reference_id: 2004Natur.432...75A, 2016arXiv160908671H
+  reference_id: 2004Natur.432...75A, 2006A&A...449..223A, 2016arXiv160908671H
 - source_id: 97
   status: source
   reference_id: 2008A&A...490..685A
@@ -428,7 +428,7 @@
   reference_id:
 - source_id: 143
   status: source
-  reference_id:
+  reference_id: 2012ApJ...753..159A
 - source_id: 144
   status: source
   reference_id:
@@ -437,7 +437,7 @@
   reference_id:
 - source_id: 146
   status: source
-  reference_id:
+  reference_id: 2012ApJ...753..159A
 - source_id: 147
   status: source
   reference_id:

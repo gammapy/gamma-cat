@@ -10,7 +10,7 @@ import urllib.parse
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
-from .sed import SED
+from .sed import SED, SEDList
 from .lightcurve import LightCurve
 
 __all__ = [
@@ -20,8 +20,6 @@ __all__ = [
     'InputData',
     'InputDataset',
     'InputDatasetCollection',
-    'SEDList',
-    'LightCurveList',
 ]
 
 log = logging.getLogger(__name__)
@@ -307,38 +305,6 @@ class Schemas:
         # This just shows that the schema files can be parsed OK.
         # for schema in self.data:
         #     log.debug(schema)
-
-
-class SEDList:
-    """
-    List of `SED` objects.
-
-    Used to represent the SED data in the input folder.
-    """
-
-    def __init__(self, data):
-        self.data = data
-
-        sed_lookup = {}
-        for sed in data:
-            source_id = sed.table.meta['source_id']
-            reference_id = sed.table.meta['reference_id']
-            try:
-                sed_lookup[reference_id][source_id] = sed
-            except KeyError:
-                sed_lookup[reference_id] = {}
-                sed_lookup[reference_id][source_id] = sed
-        self._sed_lookup = sed_lookup
-
-    @classmethod
-    def read(cls, *, filenames):
-        return cls([SED.read(filename) for filename in filenames])
-
-    def get_sed_by_source_and_reference_id(self, source_id, reference_id):
-        try:
-            return self._sed_lookup[reference_id][source_id]
-        except KeyError:
-            return SED(table=Table(), resource=None)
 
 
 class InputData:

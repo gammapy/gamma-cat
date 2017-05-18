@@ -1,10 +1,10 @@
 {
     "info": {
         "name": "gammacat",
-        "version": "786e5d1",
-        "git_version": "786e5d1",
+        "version": "1f392fa",
+        "git_version": "1f392fa",
         "description": "An open data collection and source catalog for gamma-ray astronomy",
-        "datetime": "2017-05-16 09:12:25.073459"
+        "datetime": "2017-05-18 07:49:04.495108"
     },
     "data": [
         {
@@ -1168,6 +1168,7 @@
         "gammacat.ecsv",
         "gammacat.fits.gz",
         "gammacat.yaml",
+        "lightcurve.ecsv",
         "README.md",
         "data/2004A%26A...425L..13A/gammacat_2004A%26A...425L..13A_000106_sed.ecsv",
         "data/2004Natur.432...75A/gammacat_2004Natur.432...75A_000096_sed.ecsv",

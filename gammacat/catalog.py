@@ -7,12 +7,13 @@ from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
 from gammapy.catalog import SourceCatalogObjectGammaCat, SourceCatalogGammaCat
+from .modeling import Parameters
 from .info import gammacat_info
 from .input import InputData
+from .sed import SEDList
 from .collection import CollectionConfig
 from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
 from .utils import E_INF, FLUX_TO_CRAB
-from .modeling import Parameters
 
 __all__ = [
     'DatasetConfig',
@@ -567,6 +568,7 @@ class CatalogMaker:
     def read_source_data(source_ids, internal=False):
         """Gather data into Python data structures."""
         input_data = InputData.read(internal=internal)
+        seds = SEDList.read(filenames=CollectionConfig().sed_files(relative_to_repo=True))
 
         sources = []
         for source_id in source_ids:
@@ -582,7 +584,7 @@ class CatalogMaker:
             # handle the information from one dataset, maybe this should be changed
             dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
             dataset_source_info = dataset.get_source_by_id(source_id)
-            sed_info = input_data.seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
+            sed_info = seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
 
             source = CatalogSource.from_inputs(
                 basic_source_info=basic_source_info,

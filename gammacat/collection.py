@@ -39,6 +39,12 @@ class CollectionConfig:
         self.index_datasets_json = self.path / 'gammacat-datasets.json'
         self.index_sources_json = self.path / 'gammacat-sources.json'
 
+    def sed_files(self, relative_to_repo=False):
+        filenames = self.list_of_files('data/*/*sed*.ecsv')
+        if relative_to_repo:
+            filenames = [str(self.path / filename) for filename in filenames]
+        return filenames
+
     def make_filename(self, meta, *, relative_to_index):
         """
         relative -- is relative to index file?
@@ -132,7 +138,7 @@ class CollectionData:
 
         # TODO: this is a hack, not a real check
         # Change this filelist validation to work with index files !!!
-        expected_files_sed = self.config.list_of_files('data/*/*sed*.ecsv')
+        expected_files_sed = self.config.sed_files()
 
         expected_files_extra = [
             'README.md',
@@ -204,11 +210,11 @@ class CollectionMaker:
         path = self.config.index_datasets_json
         write_json(data, path)
 
-    # TODO: change this to be a bundled results file.
-    # This is *not* an index file -> rename!
-    # def make_index_files_sources(self):
-    #     data = OrderedDict()
-    #     data['info'] = gammacat_info.info_dict
-    #     data['data'] = self.input_data.sources.to_dict()['data']
-    #     path = self.config.index_sources_json
-    #     write_json(data, path)
+        # TODO: change this to be a bundled results file.
+        # This is *not* an index file -> rename!
+        # def make_index_files_sources(self):
+        #     data = OrderedDict()
+        #     data['info'] = gammacat_info.info_dict
+        #     data['data'] = self.input_data.sources.to_dict()['data']
+        #     path = self.config.index_sources_json
+        #     write_json(data, path)

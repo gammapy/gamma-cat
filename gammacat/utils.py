@@ -218,3 +218,28 @@ class TableProcessor:
                 'Resource {} contains invalid columns: {}'
                 ''.format(self.resource, unexpected_colnames)
             )
+
+    def make_table_columns_uniform(self, col_specs):
+        """Make column units and description uniform."""
+        for col_spec in col_specs:
+            name = col_spec['name']
+            if name in self.table.colnames:
+                if 'unit' in col_spec:
+                    self.table[name] = self.table[name].quantity.to(col_spec['unit'])
+
+                self.table[name].description = col_spec['description']
+
+    def validate_input_meta(self):
+        meta = self.table.meta
+
+        missing = sorted(set(self.required_meta_keys) - set(meta.keys()))
+        if missing:
+            log.error('Resource {} contains missing meta keys: {}'.format(self.resource, missing))
+
+        extra = sorted(set(meta.keys()) - set(self.allowed_meta_keys))
+        if extra:
+            log.error('Resource {} contains extra meta keys: {}'.format(self.resource, extra))
+
+        if ('comments' in meta) and not isinstance(meta['comments'], str):
+            log.error('Resource {} contains invalid meta key comments (should be str): {}'
+                      ''.format(self.resource, meta['comments']))

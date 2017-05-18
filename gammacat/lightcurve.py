@@ -44,7 +44,7 @@ class LightCurve(TableProcessor):
     ]
 
     allowed_meta_keys = required_meta_keys + [
-        'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
+        'file_id', 'source_name', 'comments', 'url', 'UL_CONF', 'timesys', 'SED_TYPE', 'e_min',
     ]
 
     def process(self):
@@ -67,5 +67,5 @@ class LightCurve(TableProcessor):
     def validate_input(self):
         log.debug('Validating {}'.format(self.resource))
         self.validate_table_colnames(self.expected_colnames_input)
-        # self._validate_input_meta()
+        self.validate_input_meta()
         # self._validate_input_consistency()

@@ -9,19 +9,6 @@ __all__ = [
 log = logging.getLogger(__name__)
 
 
-def make_table_columns_uniform(table, cols):
-    """
-    Make column units and description uniform
-    """
-    for col in cols:
-        name = col['name']
-        if name in table.colnames:
-            if 'unit' in col:
-                table[name] = table[name].quantity.to(col['unit'])
-
-            table[name].description = col['description']
-
-
 class SED(TableProcessor):
     """Process and validate an SED file."""
     resource_type = 'sed'
@@ -71,7 +58,7 @@ class SED(TableProcessor):
 
         self._add_missing_defaults(table)
         self._process_e2dnde_inputs(table)
-        make_table_columns_uniform(table, self.output_cols)
+        self.make_table_columns_uniform(self.output_cols)
         self._process_column_order(table)
 
         self.validate_output()
@@ -164,23 +151,8 @@ class SED(TableProcessor):
     def validate_input(self):
         log.debug('Validating {}'.format(self.resource.location))
         self.validate_table_colnames(self.expected_colnames_input)
-        self._validate_input_meta()
+        self.validate_input_meta()
         self._validate_input_consistency()
-
-    def _validate_input_meta(self):
-        meta = self.table.meta
-
-        missing = sorted(set(self.required_meta_keys) - set(meta.keys()))
-        if missing:
-            log.error('SED file {} contains missing meta keys: {}'.format(self.resource.location, missing))
-
-        extra = sorted(set(meta.keys()) - set(self.allowed_meta_keys))
-        if extra:
-            log.error('SED file {} contains extra meta keys: {}'.format(self.resource.location, extra))
-
-        if ('comments' in meta) and not isinstance(meta['comments'], str):
-            log.error('SED file {} contains invalid meta key comments (should be str): {}'
-                      ''.format(self.resource.location, meta['comments']))
 
     def _validate_input_consistency(self):
         table = self.table

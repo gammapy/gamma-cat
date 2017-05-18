@@ -1,1263 +1,625 @@
-{
-    "info": {
-        "name": "gammacat",
-        "version": "1f392fa",
-        "git_version": "1f392fa",
-        "description": "An open data collection and source catalog for gamma-ray astronomy",
-        "datetime": "2017-05-18 07:49:04.495108"
+[
+    {
+        "source_id": 106,
+        "reference_id": "2004A&A...425L..13A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2004A%26A...425L..13A/gammacat_2004A%26A...425L..13A_000106_sed.ecsv"
     },
-    "data": [
-        {
-            "reference_id": "1996ApJ...460..644S",
-            "path": "1996/1996ApJ...460..644S",
-            "url": "1996/1996ApJ...460..644S",
-            "sources": []
-        },
-        {
-            "reference_id": "1996ApJ...472L...9B",
-            "path": "1996/1996ApJ...472L...9B",
-            "url": "1996/1996ApJ...472L...9B",
-            "sources": []
-        },
-        {
-            "reference_id": "1999A&A...342...69A",
-            "path": "1999/1999A%26A...342...69A",
-            "url": "1999/1999A%2526A...342...69A",
-            "sources": [
-                {
-                    "source_id": 91,
-                    "reference_id": "1999A&A...342...69A"
-                }
-            ]
-        },
-        {
-            "reference_id": "1999A&A...350..757A",
-            "path": "1999/1999A%26A...350..757A",
-            "url": "1999/1999A%2526A...350..757A",
-            "sources": [
-                {
-                    "source_id": 49,
-                    "reference_id": "1999A&A...350..757A"
-                }
-            ]
-        },
-        {
-            "reference_id": "1999ApJ...526L..81M",
-            "path": "1999/1999ApJ...526L..81M",
-            "url": "1999/1999ApJ...526L..81M",
-            "sources": []
-        },
-        {
-            "reference_id": "2000PhDT.........6P",
-            "path": "2000/2000PhDT.........6P",
-            "url": "2000/2000PhDT.........6P",
-            "sources": []
-        },
-        {
-            "reference_id": "2001ApJ...546..898A",
-            "path": "2001/2001ApJ...546..898A",
-            "url": "2001/2001ApJ...546..898A",
-            "sources": []
-        },
-        {
-            "reference_id": "2002A&A...393...89A",
-            "path": "2002/2002A%26A...393...89A",
-            "url": "2002/2002A%2526A...393...89A",
-            "sources": [
-                {
-                    "source_id": 49,
-                    "reference_id": "2002A&A...393...89A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2003ApJ...583L...9H",
-            "path": "2003/2003ApJ...583L...9H",
-            "url": "2003/2003ApJ...583L...9H",
-            "sources": []
-        },
-        {
-            "reference_id": "2003astro.ph..5275H",
-            "path": "2003/2003astro.ph..5275H",
-            "url": "2003/2003astro.ph..5275H",
-            "sources": []
-        },
-        {
-            "reference_id": "2003ICRC....5.2615T",
-            "path": "2003/2003ICRC....5.2615T",
-            "url": "2003/2003ICRC....5.2615T",
-            "sources": []
-        },
-        {
-            "reference_id": "2004A&A...425L..13A",
-            "path": "2004/2004A%26A...425L..13A",
-            "url": "2004/2004A%2526A...425L..13A",
-            "sources": [
-                {
-                    "source_id": 106,
-                    "reference_id": "2004A&A...425L..13A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2004Natur.432...75A",
-            "path": "2004/2004Natur.432...75A",
-            "url": "2004/2004Natur.432...75A",
-            "sources": [
-                {
-                    "source_id": 96,
-                    "reference_id": "2004Natur.432...75A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005A&A...432L..25A",
-            "path": "2005/2005A%26A...432L..25A",
-            "url": "2005/2005A%2526A...432L..25A",
-            "sources": [
-                {
-                    "source_id": 110,
-                    "reference_id": "2005A&A...432L..25A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005A&A...435L..17A",
-            "path": "2005/2005A%26A...435L..17A",
-            "url": "2005/2005A%2526A...435L..17A",
-            "sources": [
-                {
-                    "source_id": 79,
-                    "reference_id": "2005A&A...435L..17A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005A&A...437...95A",
-            "path": "2005/2005A%26A...437...95A",
-            "url": "2005/2005A%2526A...437...95A",
-            "sources": [
-                {
-                    "source_id": 49,
-                    "reference_id": "2005A&A...437...95A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005A&A...437L...7A",
-            "path": "2005/2005A%26A...437L...7A",
-            "url": "2005/2005A%2526A...437L...7A",
-            "sources": [
-                {
-                    "source_id": 39,
-                    "reference_id": "2005A&A...437L...7A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005A&A...439.1013A",
-            "path": "2005/2005A%26A...439.1013A",
-            "url": "2005/2005A%2526A...439.1013A",
-            "sources": [
-                {
-                    "source_id": 61,
-                    "reference_id": "2005A&A...439.1013A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005A&A...442....1A",
-            "path": "2005/2005A%26A...442....1A",
-            "url": "2005/2005A%2526A...442....1A",
-            "sources": [
-                {
-                    "source_id": 60,
-                    "reference_id": "2005A&A...442....1A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005A&A...442L..25A",
-            "path": "2005/2005A%26A...442L..25A",
-            "url": "2005/2005A%2526A...442L..25A",
-            "sources": [
-                {
-                    "source_id": 118,
-                    "reference_id": "2005A&A...442L..25A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2005Sci...309..746A",
-            "path": "2005/2005Sci...309..746A",
-            "url": "2005/2005Sci...309..746A",
-            "sources": [
-                {
-                    "source_id": 119,
-                    "reference_id": "2005Sci...309..746A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006A&A...448L..43A",
-            "path": "2006/2006A%26A...448L..43A",
-            "url": "2006/2006A%2526A...448L..43A",
-            "sources": [
-                {
-                    "source_id": 37,
-                    "reference_id": "2006A&A...448L..43A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006A&A...449..223A",
-            "path": "2006/2006A%26A...449..223A",
-            "url": "2006/2006A%2526A...449..223A",
-            "sources": [
-                {
-                    "source_id": 96,
-                    "reference_id": "2006A&A...449..223A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006A&A...456..245A",
-            "path": "2006/2006A%26A...456..245A",
-            "url": "2006/2006A%2526A...456..245A",
-            "sources": [
-                {
-                    "source_id": 65,
-                    "reference_id": "2006A&A...456..245A"
-                },
-                {
-                    "source_id": 66,
-                    "reference_id": "2006A&A...456..245A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006A&A...457..899A",
-            "path": "2006/2006A%26A...457..899A",
-            "url": "2006/2006A%2526A...457..899A",
-            "sources": [
-                {
-                    "source_id": 25,
-                    "reference_id": "2006A&A...457..899A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006A&A...460..365A",
-            "path": "2006/2006A%26A...460..365A",
-            "url": "2006/2006A%2526A...460..365A",
-            "sources": [
-                {
-                    "source_id": 118,
-                    "reference_id": "2006A&A...460..365A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006A&A...460..743A",
-            "path": "2006/2006A%26A...460..743A",
-            "url": "2006/2006A%2526A...460..743A",
-            "sources": [
-                {
-                    "source_id": 119,
-                    "reference_id": "2006A&A...460..743A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006ApJ...636..777A",
-            "path": "2006/2006ApJ...636..777A",
-            "url": "2006/2006ApJ...636..777A",
-            "sources": [
-                {
-                    "source_id": 83,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 84,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 86,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 87,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 88,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 92,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 93,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 95,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 108,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 113,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 116,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 118,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 123,
-                    "reference_id": "2006ApJ...636..777A"
-                },
-                {
-                    "source_id": 124,
-                    "reference_id": "2006ApJ...636..777A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006ApJ...641..740R",
-            "path": "2006/2006ApJ...641..740R",
-            "url": "2006/2006ApJ...641..740R",
-            "sources": [
-                {
-                    "source_id": 49,
-                    "reference_id": "2006ApJ...641..740R"
-                }
-            ]
-        },
-        {
-            "reference_id": "2006PhRvL..97v1102A",
-            "path": "2006/2006PhRvL..97v1102A",
-            "url": "2006/2006PhRvL..97v1102A",
-            "sources": [
-                {
-                    "source_id": 106,
-                    "reference_id": "2006PhRvL..97v1102A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2007A&A...469L...1A",
-            "path": "2007/2007A%26A...469L...1A",
-            "url": "2007/2007A%2526A...469L...1A",
-            "sources": [
-                {
-                    "source_id": 30,
-                    "reference_id": "2007A&A...469L...1A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2007A&A...472..489A",
-            "path": "2007/2007A%26A...472..489A",
-            "url": "2007/2007A%2526A...472..489A",
-            "sources": [
-                {
-                    "source_id": 99,
-                    "reference_id": "2007A&A...472..489A"
-                },
-                {
-                    "source_id": 115,
-                    "reference_id": "2007A&A...472..489A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2007ApJ...661..236A",
-            "path": "2007/2007ApJ...661..236A",
-            "url": "2007/2007ApJ...661..236A",
-            "sources": [
-                {
-                    "source_id": 39,
-                    "reference_id": "2007ApJ...661..236A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008A&A...477..353A",
-            "path": "2008/2008A%26A...477..353A",
-            "url": "2008/2008A%2526A...477..353A",
-            "sources": [
-                {
-                    "source_id": 68,
-                    "reference_id": "2008A&A...477..353A"
-                },
-                {
-                    "source_id": 85,
-                    "reference_id": "2008A&A...477..353A"
-                },
-                {
-                    "source_id": 92,
-                    "reference_id": "2008A&A...477..353A"
-                },
-                {
-                    "source_id": 93,
-                    "reference_id": "2008A&A...477..353A"
-                },
-                {
-                    "source_id": 103,
-                    "reference_id": "2008A&A...477..353A"
-                },
-                {
-                    "source_id": 125,
-                    "reference_id": "2008A&A...477..353A"
-                },
-                {
-                    "source_id": 130,
-                    "reference_id": "2008A&A...477..353A"
-                },
-                {
-                    "source_id": 131,
-                    "reference_id": "2008A&A...477..353A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008A&A...481..401A",
-            "path": "2008/2008A%26A...481..401A",
-            "url": "2008/2008A%2526A...481..401A",
-            "sources": [
-                {
-                    "source_id": 112,
-                    "reference_id": "2008A&A...481..401A"
-                },
-                {
-                    "source_id": 156,
-                    "reference_id": "2008A&A...481..401A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008A&A...483..509A",
-            "path": "2008/2008A%26A...483..509A",
-            "url": "2008/2008A%2526A...483..509A",
-            "sources": [
-                {
-                    "source_id": 108,
-                    "reference_id": "2008A&A...483..509A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008A&A...484..435A",
-            "path": "2008/2008A%26A...484..435A",
-            "url": "2008/2008A%2526A...484..435A",
-            "sources": [
-                {
-                    "source_id": 134,
-                    "reference_id": "2008A&A...484..435A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008A&A...486..829A",
-            "path": "2008/2008A%26A...486..829A",
-            "url": "2008/2008A%2526A...486..829A",
-            "sources": [
-                {
-                    "source_id": 95,
-                    "reference_id": "2008A&A...486..829A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008A&A...490..685A",
-            "path": "2008/2008A%26A...490..685A",
-            "url": "2008/2008A%2526A...490..685A",
-            "sources": [
-                {
-                    "source_id": 97,
-                    "reference_id": "2008A&A...490..685A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008AIPC.1085..249T",
-            "path": "2008/2008AIPC.1085..249T",
-            "url": "2008/2008AIPC.1085..249T",
-            "sources": [
-                {
-                    "source_id": 104,
-                    "reference_id": "2008AIPC.1085..249T"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008AIPC.1085..281R",
-            "path": "2008/2008AIPC.1085..281R",
-            "url": "2008/2008AIPC.1085..281R",
-            "sources": [
-                {
-                    "source_id": 75,
-                    "reference_id": "2008AIPC.1085..281R"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008AIPC.1085..285R",
-            "path": "2008/2008AIPC.1085..285R",
-            "url": "2008/2008AIPC.1085..285R",
-            "sources": [
-                {
-                    "source_id": 64,
-                    "reference_id": "2008AIPC.1085..285R"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008AIPC.1085..372C",
-            "path": "2008/2008AIPC.1085..372C",
-            "url": "2008/2008AIPC.1085..372C",
-            "sources": [
-                {
-                    "source_id": 128,
-                    "reference_id": "2008AIPC.1085..372C"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008ApJ...679.1427A",
-            "path": "2008/2008ApJ...679.1427A",
-            "url": "2008/2008ApJ...679.1427A",
-            "sources": [
-                {
-                    "source_id": 14,
-                    "reference_id": "2008ApJ...679.1427A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2008ICRC....2..803K",
-            "path": "2008/2008ICRC....2..803K",
-            "url": "2008/2008ICRC....2..803K",
-            "sources": [
-                {
-                    "source_id": 25,
-                    "reference_id": "2008ICRC....2..803K"
-                }
-            ]
-        },
-        {
-            "reference_id": "2009A&A...499..723A",
-            "path": "2009/2009A%26A...499..723A",
-            "url": "2009/2009A%2526A...499..723A",
-            "sources": [
-                {
-                    "source_id": 132,
-                    "reference_id": "2009A&A...499..723A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2009A&A...503..817A",
-            "path": "2009/2009A%26A...503..817A",
-            "url": "2009/2009A%2526A...503..817A",
-            "sources": [
-                {
-                    "source_id": 106,
-                    "reference_id": "2009A&A...503..817A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2009ApJ...691L..13D",
-            "path": "2009/2009ApJ...691L..13D",
-            "url": "2009/2009ApJ...691L..13D",
-            "sources": []
-        },
-        {
-            "reference_id": "2009ApJ...698L..94A",
-            "path": "2009/2009ApJ...698L..94A",
-            "url": "2009/2009ApJ...698L..94A",
-            "sources": [
-                {
-                    "source_id": 30,
-                    "reference_id": "2009ApJ...698L..94A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2010A&A...516A..62A",
-            "path": "2010/2010A%26A...516A..62A",
-            "url": "2010/2010A%2526A...516A..62A",
-            "sources": [
-                {
-                    "source_id": 74,
-                    "reference_id": "2010A&A...516A..62A"
-                },
-                {
-                    "source_id": 74,
-                    "reference_id": "2010A&A...516A..62A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2010ApJ...719L..69A",
-            "path": "2010/2010ApJ...719L..69A",
-            "url": "2010/2010ApJ...719L..69A",
-            "sources": [
-                {
-                    "source_id": 136,
-                    "reference_id": "2010ApJ...719L..69A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011A&A...525A..45H",
-            "path": "2011/2011A%26A...525A..45H",
-            "url": "2011/2011A%2526A...525A..45H",
-            "sources": [
-                {
-                    "source_id": 77,
-                    "reference_id": "2011A&A...525A..45H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011A&A...525A..46H",
-            "path": "2011/2011A%26A...525A..46H",
-            "url": "2011/2011A%2526A...525A..46H",
-            "sources": [
-                {
-                    "source_id": 46,
-                    "reference_id": "2011A&A...525A..46H"
-                },
-                {
-                    "source_id": 47,
-                    "reference_id": "2011A&A...525A..46H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011A&A...528A.143H",
-            "path": "2011/2011A%26A...528A.143H",
-            "url": "2011/2011A%2526A...528A.143H",
-            "sources": [
-                {
-                    "source_id": 94,
-                    "reference_id": "2011A&A...528A.143H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011A&A...529A..49H",
-            "path": "2011/2011A%26A...529A..49H",
-            "url": "2011/2011A%2526A...529A..49H",
-            "sources": [
-                {
-                    "source_id": 137,
-                    "reference_id": "2011A&A...529A..49H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011A&A...531A..81H",
-            "path": "2011/2011A%26A...531A..81H",
-            "url": "2011/2011A%2526A...531A..81H",
-            "sources": [
-                {
-                    "source_id": 102,
-                    "reference_id": "2011A&A...531A..81H"
-                },
-                {
-                    "source_id": 103,
-                    "reference_id": "2011A&A...531A..81H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011A&A...531L..18H",
-            "path": "2011/2011A%26A...531L..18H",
-            "url": "2011/2011A%2526A...531L..18H",
-            "sources": [
-                {
-                    "source_id": 109,
-                    "reference_id": "2011A&A...531L..18H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011A&A...533A.103H",
-            "path": "2011/2011A%26A...533A.103H",
-            "url": "2011/2011A%2526A...533A.103H",
-            "sources": [
-                {
-                    "source_id": 64,
-                    "reference_id": "2011A&A...533A.103H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011ApJ...738....3A",
-            "path": "2011/2011ApJ...738....3A",
-            "url": "2011/2011ApJ...738....3A",
-            "sources": [
-                {
-                    "source_id": 14,
-                    "reference_id": "2011ApJ...738....3A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011ICRC....7..185A",
-            "path": "2011/2011ICRC....7..185A",
-            "url": "2011/2011ICRC....7..185A",
-            "sources": [
-                {
-                    "source_id": 81,
-                    "reference_id": "2011ICRC....7..185A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2011ICRC....7..244S",
-            "path": "2011/2011ICRC....7..244S",
-            "url": "2011/2011ICRC....7..244S",
-            "sources": [
-                {
-                    "source_id": 120,
-                    "reference_id": "2011ICRC....7..244S"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012A&A...537A.114A",
-            "path": "2012/2012A%26A...537A.114A",
-            "url": "2012/2012A%2526A...537A.114A",
-            "sources": [
-                {
-                    "source_id": 90,
-                    "reference_id": "2012A&A...537A.114A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012A&A...541A...5H",
-            "path": "2012/2012A%26A...541A...5H",
-            "url": "2012/2012A%2526A...541A...5H",
-            "sources": [
-                {
-                    "source_id": 44,
-                    "reference_id": "2012A&A...541A...5H"
-                },
-                {
-                    "source_id": 45,
-                    "reference_id": "2012A&A...541A...5H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012A&A...541A..13A",
-            "path": "2012/2012A%26A...541A..13A",
-            "url": "2012/2012A%2526A...541A..13A",
-            "sources": [
-                {
-                    "source_id": 135,
-                    "reference_id": "2012A&A...541A..13A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012A&A...545L...2H",
-            "path": "2012/2012A%26A...545L...2H",
-            "url": "2012/2012A%2526A...545L...2H",
-            "sources": [
-                {
-                    "source_id": 27,
-                    "reference_id": "2012A&A...545L...2H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012A&A...548A..38A",
-            "path": "2012/2012A%26A...548A..38A",
-            "url": "2012/2012A%2526A...548A..38A",
-            "sources": [
-                {
-                    "source_id": 37,
-                    "reference_id": "2012A&A...548A..38A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012A&A...548A..46H",
-            "path": "2012/2012A%26A...548A..46H",
-            "url": "2012/2012A%2526A...548A..46H",
-            "sources": [
-                {
-                    "source_id": 61,
-                    "reference_id": "2012A&A...548A..46H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012ApJ...753..159A",
-            "path": "2012/2012ApJ...753..159A",
-            "url": "2012/2012ApJ...753..159A",
-            "sources": [
-                {
-                    "source_id": 143,
-                    "reference_id": "2012ApJ...753..159A"
-                },
-                {
-                    "source_id": 146,
-                    "reference_id": "2012ApJ...753..159A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012ApJ...754L..10A",
-            "path": "2012/2012ApJ...754L..10A",
-            "url": "2012/2012ApJ...754L..10A",
-            "sources": [
-                {
-                    "source_id": 30,
-                    "reference_id": "2012ApJ...754L..10A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2012arXiv1205.0719D",
-            "path": "2012/2012arXiv1205.0719D",
-            "url": "2012/2012arXiv1205.0719D",
-            "sources": [
-                {
-                    "source_id": 73,
-                    "reference_id": "2012arXiv1205.0719D"
-                }
-            ]
-        },
-        {
-            "reference_id": "2013ApJ...764...38A",
-            "path": "2013/2013ApJ...764...38A",
-            "url": "2013/2013ApJ...764...38A",
-            "sources": [
-                {
-                    "source_id": 1,
-                    "reference_id": "2013ApJ...764...38A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2013arXiv1303.0979O",
-            "path": "2013/2013arXiv1303.0979O",
-            "url": "2013/2013arXiv1303.0979O",
-            "sources": [
-                {
-                    "source_id": 89,
-                    "reference_id": "2013arXiv1303.0979O"
-                }
-            ]
-        },
-        {
-            "reference_id": "2014A&A...562A..40H",
-            "path": "2014/2014A%26A...562A..40H",
-            "url": "2014/2014A%2526A...562A..40H",
-            "sources": [
-                {
-                    "source_id": 117,
-                    "reference_id": "2014A&A...562A..40H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2014A&A...567L...8A",
-            "path": "2014/2014A%26A...567L...8A",
-            "url": "2014/2014A%2526A...567L...8A",
-            "sources": [
-                {
-                    "source_id": 9,
-                    "reference_id": "2014A&A...567L...8A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2014ApJ...780..168A",
-            "path": "2014/2014ApJ...780..168A",
-            "url": "2014/2014ApJ...780..168A",
-            "sources": [
-                {
-                    "source_id": 30,
-                    "reference_id": "2014ApJ...780..168A"
-                },
-                {
-                    "source_id": 30,
-                    "reference_id": "2014ApJ...780..168A"
-                },
-                {
-                    "source_id": 30,
-                    "reference_id": "2014ApJ...780..168A"
-                },
-                {
-                    "source_id": 30,
-                    "reference_id": "2014ApJ...780..168A"
-                },
-                {
-                    "source_id": 30,
-                    "reference_id": "2014ApJ...780..168A"
-                },
-                {
-                    "source_id": 30,
-                    "reference_id": "2014ApJ...780..168A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2014ApJ...794L...1A",
-            "path": "2014/2014ApJ...794L...1A",
-            "url": "2014/2014ApJ...794L...1A",
-            "sources": [
-                {
-                    "source_id": 89,
-                    "reference_id": "2014ApJ...794L...1A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2014MNRAS.439.2828A",
-            "path": "2014/2014MNRAS.439.2828A",
-            "url": "2014/2014MNRAS.439.2828A",
-            "sources": [
-                {
-                    "source_id": 88,
-                    "reference_id": "2014MNRAS.439.2828A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015A&A...573A..31H",
-            "path": "2015/2015A%26A...573A..31H",
-            "url": "2015/2015A%2526A...573A..31H",
-            "sources": [
-                {
-                    "source_id": 80,
-                    "reference_id": "2015A&A...573A..31H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015A&A...574A.100H",
-            "path": "2015/2015A%26A...574A.100H",
-            "url": "2015/2015A%2526A...574A.100H",
-            "sources": [
-                {
-                    "source_id": 98,
-                    "reference_id": "2015A&A...574A.100H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015A&A...577A.131H",
-            "path": "2015/2015A%26A...577A.131H",
-            "url": "2015/2015A%2526A...577A.131H",
-            "sources": [
-                {
-                    "source_id": 45,
-                    "reference_id": "2015A&A...577A.131H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015ApJ...802...65A",
-            "path": "2015/2015ApJ...802...65A",
-            "url": "2015/2015ApJ...802...65A",
-            "sources": [
-                {
-                    "source_id": 82,
-                    "reference_id": "2015ApJ...802...65A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015arXiv151100309G",
-            "path": "2015/2015arXiv151100309G",
-            "url": "2015/2015arXiv151100309G",
-            "sources": [
-                {
-                    "source_id": 153,
-                    "reference_id": "2015arXiv151100309G"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015arXiv151201911H",
-            "path": "2015/2015arXiv151201911H",
-            "url": "2015/2015arXiv151201911H",
-            "sources": [
-                {
-                    "source_id": 29,
-                    "reference_id": "2015arXiv151201911H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015MNRAS.446.1163H",
-            "path": "2015/2015MNRAS.446.1163H",
-            "url": "2015/2015MNRAS.446.1163H",
-            "sources": [
-                {
-                    "source_id": 121,
-                    "reference_id": "2015MNRAS.446.1163H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2015Sci...347..406H",
-            "path": "2015/2015Sci...347..406H",
-            "url": "2015/2015Sci...347..406H",
-            "sources": [
-                {
-                    "source_id": 24,
-                    "reference_id": "2015Sci...347..406H"
-                },
-                {
-                    "source_id": 26,
-                    "reference_id": "2015Sci...347..406H"
-                },
-                {
-                    "source_id": 27,
-                    "reference_id": "2015Sci...347..406H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2016arXiv160104461H",
-            "path": "2016/2016arXiv160104461H",
-            "url": "2016/2016arXiv160104461H",
-            "sources": [
-                {
-                    "source_id": 70,
-                    "reference_id": "2016arXiv160104461H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2016arXiv160900600H",
-            "path": "2016/2016arXiv160900600H",
-            "url": "2016/2016arXiv160900600H",
-            "sources": [
-                {
-                    "source_id": 133,
-                    "reference_id": "2016arXiv160900600H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2016arXiv160908671H",
-            "path": "2016/2016arXiv160908671H",
-            "url": "2016/2016arXiv160908671H",
-            "sources": [
-                {
-                    "source_id": 96,
-                    "reference_id": "2016arXiv160908671H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2016arXiv161003751S",
-            "path": "2016/2016arXiv161003751S",
-            "url": "2016/2016arXiv161003751S",
-            "sources": [
-                {
-                    "source_id": 30,
-                    "reference_id": "2016arXiv161003751S"
-                },
-                {
-                    "source_id": 30,
-                    "reference_id": "2016arXiv161003751S"
-                },
-                {
-                    "source_id": 30,
-                    "reference_id": "2016arXiv161003751S"
-                }
-            ]
-        },
-        {
-            "reference_id": "2016arXiv161005799S",
-            "path": "2016/2016arXiv161005799S",
-            "url": "2016/2016arXiv161005799S",
-            "sources": [
-                {
-                    "source_id": 137,
-                    "reference_id": "2016arXiv161005799S"
-                }
-            ]
-        },
-        {
-            "reference_id": "2016arXiv161101863H",
-            "path": "2016/2016arXiv161101863H",
-            "url": "2016/2016arXiv161101863H",
-            "sources": [
-                {
-                    "source_id": 39,
-                    "reference_id": "2016arXiv161101863H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2016Natur.531..476H",
-            "path": "2016/2016Natur.531..476H",
-            "url": "2016/2016Natur.531..476H",
-            "sources": [
-                {
-                    "source_id": 106,
-                    "reference_id": "2016Natur.531..476H"
-                }
-            ]
-        },
-        {
-            "reference_id": "2017ApJ...834....2A",
-            "path": "2017/2017ApJ...834....2A",
-            "url": "2017/2017ApJ...834....2A",
-            "sources": [
-                {
-                    "source_id": 49,
-                    "reference_id": "2017ApJ...834....2A"
-                }
-            ]
-        },
-        {
-            "reference_id": "2017arXiv170106740V",
-            "path": "2017/2017arXiv170106740V",
-            "url": "2017/2017arXiv170106740V",
-            "sources": [
-                {
-                    "source_id": 3,
-                    "reference_id": "2017arXiv170106740V"
-                }
-            ]
-        },
-        {
-            "reference_id": "2017arXiv170107002A",
-            "path": "2017/2017arXiv170107002A",
-            "url": "2017/2017arXiv170107002A",
-            "sources": [
-                {
-                    "source_id": 161,
-                    "reference_id": "2017arXiv170107002A"
-                }
-            ]
-        },
-        {
-            "reference_id": "lightcurves",
-            "path": "no_paper/lightcurves",
-            "url": "no_paper/lightcurves",
-            "sources": []
-        }
-    ],
-    "files": [
-        "gammacat-datasets.json",
-        "gammacat-sources.json",
-        "gammacat.ecsv",
-        "gammacat.fits.gz",
-        "gammacat.yaml",
-        "lightcurve.ecsv",
-        "README.md",
-        "data/2004A%26A...425L..13A/gammacat_2004A%26A...425L..13A_000106_sed.ecsv",
-        "data/2004Natur.432...75A/gammacat_2004Natur.432...75A_000096_sed.ecsv",
-        "data/2005A%26A...432L..25A/gammacat_2005A%26A...432L..25A_000110_sed.ecsv",
-        "data/2005A%26A...435L..17A/gammacat_2005A%26A...435L..17A_000079_sed.ecsv",
-        "data/2005A%26A...437L...7A/gammacat_2005A%26A...437L...7A_000039_sed.ecsv",
-        "data/2005A%26A...439.1013A/gammacat_2005A%26A...439.1013A_000061_sed.ecsv",
-        "data/2005A%26A...442....1A/gammacat_2005A%26A...442....1A_000060_sed.ecsv",
-        "data/2005A%26A...442L..25A/gammacat_2005A%26A...442L..25A_000118_sed.ecsv",
-        "data/2005Sci...309..746A/gammacat_2005Sci...309..746A_000119_sed.ecsv",
-        "data/2006A%26A...448L..43A/gammacat_2006A%26A...448L..43A_000037_sed.ecsv",
-        "data/2006A%26A...456..245A/gammacat_2006A%26A...456..245A_000065_sed.ecsv",
-        "data/2006A%26A...456..245A/gammacat_2006A%26A...456..245A_000066_sed.ecsv",
-        "data/2006A%26A...457..899A/gammacat_2006A%26A...457..899A_000025_sed.ecsv",
-        "data/2006A%26A...460..365A/gammacat_2006A%26A...460..365A_000118_sed.ecsv",
-        "data/2006A%26A...460..743A/gammacat_2006A%26A...460..743A_000119_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000083_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000084_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000086_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000087_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000088_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000092_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000093_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000095_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000108_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000113_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000116_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000118_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000123_sed.ecsv",
-        "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000124_sed.ecsv",
-        "data/2006PhRvL..97v1102A/gammacat_2006PhRvL..97v1102A_000106_sed.ecsv",
-        "data/2007A%26A...472..489A/gammacat_2007A%26A...472..489A_000099_sed.ecsv",
-        "data/2007A%26A...472..489A/gammacat_2007A%26A...472..489A_000115_sed.ecsv",
-        "data/2007ApJ...661..236A/gammacat_2007ApJ...661..236A_000039_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000068_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000085_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000092_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000093_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000103_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000125_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000130_sed.ecsv",
-        "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000131_sed.ecsv",
-        "data/2008A%26A...481..401A/gammacat_2008A%26A...481..401A_000112_sed.ecsv",
-        "data/2008A%26A...481..401A/gammacat_2008A%26A...481..401A_000156_sed.ecsv",
-        "data/2008A%26A...483..509A/gammacat_2008A%26A...483..509A_000108_sed.ecsv",
-        "data/2008A%26A...484..435A/gammacat_2008A%26A...484..435A_000134_sed.ecsv",
-        "data/2008A%26A...486..829A/gammacat_2008A%26A...486..829A_000095_sed.ecsv",
-        "data/2008A%26A...490..685A/gammacat_2008A%26A...490..685A_000097_sed.ecsv",
-        "data/2008AIPC.1085..281R/gammacat_2008AIPC.1085..281R_000075_sed.ecsv",
-        "data/2008AIPC.1085..372C/gammacat_2008AIPC.1085..372C_000128_sed.ecsv",
-        "data/2008ApJ...679.1427A/gammacat_2008ApJ...679.1427A_000014_sed.ecsv",
-        "data/2008ICRC....2..803K/gammacat_2008ICRC....2..803K_000025_sed.ecsv",
-        "data/2009A%26A...499..723A/gammacat_2009A%26A...499..723A_000132_sed.ecsv",
-        "data/2009A%26A...503..817A/gammacat_2009A%26A...503..817A_000106_sed.ecsv",
-        "data/2010A%26A...516A..62A/gammacat_2010A%26A...516A..62A_000074_sed.ecsv",
-        "data/2010ApJ...719L..69A/gammacat_2010ApJ...719L..69A_000136_sed.ecsv",
-        "data/2011A%26A...525A..45H/gammacat_2011A%26A...525A..45H_000077_sed.ecsv",
-        "data/2011A%26A...525A..46H/gammacat_2011A%26A...525A..46H_000046_sed.ecsv",
-        "data/2011A%26A...525A..46H/gammacat_2011A%26A...525A..46H_000047_sed.ecsv",
-        "data/2011A%26A...528A.143H/gammacat_2011A%26A...528A.143H_000094_sed.ecsv",
-        "data/2011A%26A...531A..81H/gammacat_2011A%26A...531A..81H_000102_sed.ecsv",
-        "data/2011A%26A...531A..81H/gammacat_2011A%26A...531A..81H_000103_sed.ecsv",
-        "data/2011A%26A...533A.103H/gammacat_2011A%26A...533A.103H_000064_sed.ecsv",
-        "data/2011ICRC....7..185A/gammacat_2011ICRC....7..185A_000081_sed.ecsv",
-        "data/2011ICRC....7..244S/gammacat_2011ICRC....7..244S_000120_sed.ecsv",
-        "data/2012A%26A...537A.114A/gammacat_2012A%26A...537A.114A_000090_sed.ecsv",
-        "data/2012A%26A...545L...2H/gammacat_2012A%26A...545L...2H_000027_sed.ecsv",
-        "data/2012A%26A...548A..38A/gammacat_2012A%26A...548A..38A_000037_sed.ecsv",
-        "data/2012A%26A...548A..46H/gammacat_2012A%26A...548A..46H_000061_sed.ecsv",
-        "data/2013ApJ...764...38A/gammacat_2013ApJ...764...38A_000001_sed.ecsv",
-        "data/2014A%26A...562A..40H/gammacat_2014A%26A...562A..40H_000117_sed.ecsv",
-        "data/2014ApJ...780..168A/gammacat_2014ApJ...780..168A_000030_sed.ecsv",
-        "data/2014ApJ...794L...1A/gammacat_2014ApJ...794L...1A_000089_sed.ecsv",
-        "data/2014MNRAS.439.2828A/gammacat_2014MNRAS.439.2828A_000088_sed.ecsv",
-        "data/2015A%26A...573A..31H/gammacat_2015A%26A...573A..31H_000080_sed.ecsv",
-        "data/2015A%26A...574A.100H/gammacat_2015A%26A...574A.100H_000098_sed.ecsv",
-        "data/2015A%26A...577A.131H/gammacat_2015A%26A...577A.131H_000045_sed.ecsv",
-        "data/2015MNRAS.446.1163H/gammacat_2015MNRAS.446.1163H_000121_sed.ecsv",
-        "data/2015Sci...347..406H/gammacat_2015Sci...347..406H_000024_sed.ecsv",
-        "data/2015Sci...347..406H/gammacat_2015Sci...347..406H_000026_sed.ecsv",
-        "data/2015Sci...347..406H/gammacat_2015Sci...347..406H_000027_sed.ecsv",
-        "data/2016arXiv160104461H/gammacat_2016arXiv160104461H_000070_sed.ecsv",
-        "data/2016arXiv160900600H/gammacat_2016arXiv160900600H_000133_sed.ecsv",
-        "data/2016arXiv160908671H/gammacat_2016arXiv160908671H_000096_sed.ecsv",
-        "data/2016arXiv161003751S/gammacat_2016arXiv161003751S_000030_sed.ecsv",
-        "data/2016arXiv161005799S/gammacat_2016arXiv161005799S_000137_sed.ecsv",
-        "data/2016arXiv161101863H/gammacat_2016arXiv161101863H_000039_sed.ecsv",
-        "data/2016Natur.531..476H/gammacat_2016Natur.531..476H_000106_sed.ecsv",
-        "data/2017ApJ...834....2A/gammacat_2017ApJ...834....2A_000049_sed.ecsv",
-        "data/2017arXiv170107002A/gammacat_2017arXiv170107002A_000161_sed.ecsv"
-    ]
-}
+    {
+        "source_id": 96,
+        "reference_id": "2004Natur.432...75A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2004Natur.432...75A/gammacat_2004Natur.432...75A_000096_sed.ecsv"
+    },
+    {
+        "source_id": 110,
+        "reference_id": "2005A&A...432L..25A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2005A%26A...432L..25A/gammacat_2005A%26A...432L..25A_000110_sed.ecsv"
+    },
+    {
+        "source_id": 79,
+        "reference_id": "2005A&A...435L..17A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2005A%26A...435L..17A/gammacat_2005A%26A...435L..17A_000079_sed.ecsv"
+    },
+    {
+        "source_id": 39,
+        "reference_id": "2005A&A...437L...7A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2005A%26A...437L...7A/gammacat_2005A%26A...437L...7A_000039_sed.ecsv"
+    },
+    {
+        "source_id": 61,
+        "reference_id": "2005A&A...439.1013A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2005A%26A...439.1013A/gammacat_2005A%26A...439.1013A_000061_sed.ecsv"
+    },
+    {
+        "source_id": 60,
+        "reference_id": "2005A&A...442....1A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2005A%26A...442....1A/gammacat_2005A%26A...442....1A_000060_sed.ecsv"
+    },
+    {
+        "source_id": 118,
+        "reference_id": "2005A&A...442L..25A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2005A%26A...442L..25A/gammacat_2005A%26A...442L..25A_000118_sed.ecsv"
+    },
+    {
+        "source_id": 119,
+        "reference_id": "2005Sci...309..746A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2005Sci...309..746A/gammacat_2005Sci...309..746A_000119_sed.ecsv"
+    },
+    {
+        "source_id": 37,
+        "reference_id": "2006A&A...448L..43A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006A%26A...448L..43A/gammacat_2006A%26A...448L..43A_000037_sed.ecsv"
+    },
+    {
+        "source_id": 65,
+        "reference_id": "2006A&A...456..245A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006A%26A...456..245A/gammacat_2006A%26A...456..245A_000065_sed.ecsv"
+    },
+    {
+        "source_id": 66,
+        "reference_id": "2006A&A...456..245A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006A%26A...456..245A/gammacat_2006A%26A...456..245A_000066_sed.ecsv"
+    },
+    {
+        "source_id": 25,
+        "reference_id": "2006A&A...457..899A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006A%26A...457..899A/gammacat_2006A%26A...457..899A_000025_sed.ecsv"
+    },
+    {
+        "source_id": 118,
+        "reference_id": "2006A&A...460..365A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006A%26A...460..365A/gammacat_2006A%26A...460..365A_000118_sed.ecsv"
+    },
+    {
+        "source_id": 119,
+        "reference_id": "2006A&A...460..743A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006A%26A...460..743A/gammacat_2006A%26A...460..743A_000119_sed.ecsv"
+    },
+    {
+        "source_id": 83,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000083_sed.ecsv"
+    },
+    {
+        "source_id": 84,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000084_sed.ecsv"
+    },
+    {
+        "source_id": 86,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000086_sed.ecsv"
+    },
+    {
+        "source_id": 87,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000087_sed.ecsv"
+    },
+    {
+        "source_id": 88,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000088_sed.ecsv"
+    },
+    {
+        "source_id": 92,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000092_sed.ecsv"
+    },
+    {
+        "source_id": 93,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000093_sed.ecsv"
+    },
+    {
+        "source_id": 95,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000095_sed.ecsv"
+    },
+    {
+        "source_id": 108,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000108_sed.ecsv"
+    },
+    {
+        "source_id": 113,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000113_sed.ecsv"
+    },
+    {
+        "source_id": 116,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000116_sed.ecsv"
+    },
+    {
+        "source_id": 118,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000118_sed.ecsv"
+    },
+    {
+        "source_id": 123,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000123_sed.ecsv"
+    },
+    {
+        "source_id": 124,
+        "reference_id": "2006ApJ...636..777A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006ApJ...636..777A/gammacat_2006ApJ...636..777A_000124_sed.ecsv"
+    },
+    {
+        "source_id": 106,
+        "reference_id": "2006PhRvL..97v1102A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2006PhRvL..97v1102A/gammacat_2006PhRvL..97v1102A_000106_sed.ecsv"
+    },
+    {
+        "source_id": 99,
+        "reference_id": "2007A&A...472..489A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2007A%26A...472..489A/gammacat_2007A%26A...472..489A_000099_sed.ecsv"
+    },
+    {
+        "source_id": 115,
+        "reference_id": "2007A&A...472..489A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2007A%26A...472..489A/gammacat_2007A%26A...472..489A_000115_sed.ecsv"
+    },
+    {
+        "source_id": 39,
+        "reference_id": "2007ApJ...661..236A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2007ApJ...661..236A/gammacat_2007ApJ...661..236A_000039_sed.ecsv"
+    },
+    {
+        "source_id": 68,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000068_sed.ecsv"
+    },
+    {
+        "source_id": 85,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000085_sed.ecsv"
+    },
+    {
+        "source_id": 92,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000092_sed.ecsv"
+    },
+    {
+        "source_id": 93,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000093_sed.ecsv"
+    },
+    {
+        "source_id": 103,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000103_sed.ecsv"
+    },
+    {
+        "source_id": 125,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000125_sed.ecsv"
+    },
+    {
+        "source_id": 130,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000130_sed.ecsv"
+    },
+    {
+        "source_id": 131,
+        "reference_id": "2008A&A...477..353A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...477..353A/gammacat_2008A%26A...477..353A_000131_sed.ecsv"
+    },
+    {
+        "source_id": 112,
+        "reference_id": "2008A&A...481..401A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...481..401A/gammacat_2008A%26A...481..401A_000112_sed.ecsv"
+    },
+    {
+        "source_id": 156,
+        "reference_id": "2008A&A...481..401A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...481..401A/gammacat_2008A%26A...481..401A_000156_sed.ecsv"
+    },
+    {
+        "source_id": 108,
+        "reference_id": "2008A&A...483..509A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...483..509A/gammacat_2008A%26A...483..509A_000108_sed.ecsv"
+    },
+    {
+        "source_id": 134,
+        "reference_id": "2008A&A...484..435A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...484..435A/gammacat_2008A%26A...484..435A_000134_sed.ecsv"
+    },
+    {
+        "source_id": 95,
+        "reference_id": "2008A&A...486..829A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...486..829A/gammacat_2008A%26A...486..829A_000095_sed.ecsv"
+    },
+    {
+        "source_id": 97,
+        "reference_id": "2008A&A...490..685A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008A%26A...490..685A/gammacat_2008A%26A...490..685A_000097_sed.ecsv"
+    },
+    {
+        "source_id": 75,
+        "reference_id": "2008AIPC.1085..281R",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008AIPC.1085..281R/gammacat_2008AIPC.1085..281R_000075_sed.ecsv"
+    },
+    {
+        "source_id": 128,
+        "reference_id": "2008AIPC.1085..372C",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008AIPC.1085..372C/gammacat_2008AIPC.1085..372C_000128_sed.ecsv"
+    },
+    {
+        "source_id": 14,
+        "reference_id": "2008ApJ...679.1427A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008ApJ...679.1427A/gammacat_2008ApJ...679.1427A_000014_sed.ecsv"
+    },
+    {
+        "source_id": 25,
+        "reference_id": "2008ICRC....2..803K",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008ICRC....2..803K/gammacat_2008ICRC....2..803K_000025_sed.ecsv"
+    },
+    {
+        "source_id": 132,
+        "reference_id": "2009A&A...499..723A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2009A%26A...499..723A/gammacat_2009A%26A...499..723A_000132_sed.ecsv"
+    },
+    {
+        "source_id": 106,
+        "reference_id": "2009A&A...503..817A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2009A%26A...503..817A/gammacat_2009A%26A...503..817A_000106_sed.ecsv"
+    },
+    {
+        "source_id": 74,
+        "reference_id": "2010A&A...516A..62A",
+        "file_id": 2,
+        "type": "sed",
+        "location": "data/2010A%26A...516A..62A/gammacat_2010A%26A...516A..62A_000074_sed.ecsv"
+    },
+    {
+        "source_id": 136,
+        "reference_id": "2010ApJ...719L..69A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2010ApJ...719L..69A/gammacat_2010ApJ...719L..69A_000136_sed.ecsv"
+    },
+    {
+        "source_id": 77,
+        "reference_id": "2011A&A...525A..45H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011A%26A...525A..45H/gammacat_2011A%26A...525A..45H_000077_sed.ecsv"
+    },
+    {
+        "source_id": 46,
+        "reference_id": "2011A&A...525A..46H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011A%26A...525A..46H/gammacat_2011A%26A...525A..46H_000046_sed.ecsv"
+    },
+    {
+        "source_id": 47,
+        "reference_id": "2011A&A...525A..46H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011A%26A...525A..46H/gammacat_2011A%26A...525A..46H_000047_sed.ecsv"
+    },
+    {
+        "source_id": 94,
+        "reference_id": "2011A&A...528A.143H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011A%26A...528A.143H/gammacat_2011A%26A...528A.143H_000094_sed.ecsv"
+    },
+    {
+        "source_id": 102,
+        "reference_id": "2011A&A...531A..81H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011A%26A...531A..81H/gammacat_2011A%26A...531A..81H_000102_sed.ecsv"
+    },
+    {
+        "source_id": 103,
+        "reference_id": "2011A&A...531A..81H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011A%26A...531A..81H/gammacat_2011A%26A...531A..81H_000103_sed.ecsv"
+    },
+    {
+        "source_id": 64,
+        "reference_id": "2011A&A...533A.103H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011A%26A...533A.103H/gammacat_2011A%26A...533A.103H_000064_sed.ecsv"
+    },
+    {
+        "source_id": 81,
+        "reference_id": "2011ICRC....7..185A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011ICRC....7..185A/gammacat_2011ICRC....7..185A_000081_sed.ecsv"
+    },
+    {
+        "source_id": 120,
+        "reference_id": "2011ICRC....7..244S",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011ICRC....7..244S/gammacat_2011ICRC....7..244S_000120_sed.ecsv"
+    },
+    {
+        "source_id": 90,
+        "reference_id": "2012A&A...537A.114A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2012A%26A...537A.114A/gammacat_2012A%26A...537A.114A_000090_sed.ecsv"
+    },
+    {
+        "source_id": 27,
+        "reference_id": "2012A&A...545L...2H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2012A%26A...545L...2H/gammacat_2012A%26A...545L...2H_000027_sed.ecsv"
+    },
+    {
+        "source_id": 37,
+        "reference_id": "2012A&A...548A..38A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2012A%26A...548A..38A/gammacat_2012A%26A...548A..38A_000037_sed.ecsv"
+    },
+    {
+        "source_id": 61,
+        "reference_id": "2012A&A...548A..46H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2012A%26A...548A..46H/gammacat_2012A%26A...548A..46H_000061_sed.ecsv"
+    },
+    {
+        "source_id": 1,
+        "reference_id": "2013ApJ...764...38A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2013ApJ...764...38A/gammacat_2013ApJ...764...38A_000001_sed.ecsv"
+    },
+    {
+        "source_id": 117,
+        "reference_id": "2014A&A...562A..40H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2014A%26A...562A..40H/gammacat_2014A%26A...562A..40H_000117_sed.ecsv"
+    },
+    {
+        "source_id": 30,
+        "reference_id": "2014ApJ...780..168A",
+        "file_id": 6,
+        "type": "sed",
+        "location": "data/2014ApJ...780..168A/gammacat_2014ApJ...780..168A_000030_sed.ecsv"
+    },
+    {
+        "source_id": 89,
+        "reference_id": "2014ApJ...794L...1A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2014ApJ...794L...1A/gammacat_2014ApJ...794L...1A_000089_sed.ecsv"
+    },
+    {
+        "source_id": 88,
+        "reference_id": "2014MNRAS.439.2828A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2014MNRAS.439.2828A/gammacat_2014MNRAS.439.2828A_000088_sed.ecsv"
+    },
+    {
+        "source_id": 80,
+        "reference_id": "2015A&A...573A..31H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2015A%26A...573A..31H/gammacat_2015A%26A...573A..31H_000080_sed.ecsv"
+    },
+    {
+        "source_id": 98,
+        "reference_id": "2015A&A...574A.100H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2015A%26A...574A.100H/gammacat_2015A%26A...574A.100H_000098_sed.ecsv"
+    },
+    {
+        "source_id": 45,
+        "reference_id": "2015A&A...577A.131H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2015A%26A...577A.131H/gammacat_2015A%26A...577A.131H_000045_sed.ecsv"
+    },
+    {
+        "source_id": 121,
+        "reference_id": "2015MNRAS.446.1163H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2015MNRAS.446.1163H/gammacat_2015MNRAS.446.1163H_000121_sed.ecsv"
+    },
+    {
+        "source_id": 24,
+        "reference_id": "2015Sci...347..406H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2015Sci...347..406H/gammacat_2015Sci...347..406H_000024_sed.ecsv"
+    },
+    {
+        "source_id": 26,
+        "reference_id": "2015Sci...347..406H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2015Sci...347..406H/gammacat_2015Sci...347..406H_000026_sed.ecsv"
+    },
+    {
+        "source_id": 27,
+        "reference_id": "2015Sci...347..406H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2015Sci...347..406H/gammacat_2015Sci...347..406H_000027_sed.ecsv"
+    },
+    {
+        "source_id": 70,
+        "reference_id": "2016arXiv160104461H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2016arXiv160104461H/gammacat_2016arXiv160104461H_000070_sed.ecsv"
+    },
+    {
+        "source_id": 133,
+        "reference_id": "2016arXiv160900600H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2016arXiv160900600H/gammacat_2016arXiv160900600H_000133_sed.ecsv"
+    },
+    {
+        "source_id": 96,
+        "reference_id": "2016arXiv160908671H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2016arXiv160908671H/gammacat_2016arXiv160908671H_000096_sed.ecsv"
+    },
+    {
+        "source_id": 30,
+        "reference_id": "2016arXiv161003751S",
+        "file_id": 3,
+        "type": "sed",
+        "location": "data/2016arXiv161003751S/gammacat_2016arXiv161003751S_000030_sed.ecsv"
+    },
+    {
+        "source_id": 137,
+        "reference_id": "2016arXiv161005799S",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2016arXiv161005799S/gammacat_2016arXiv161005799S_000137_sed.ecsv"
+    },
+    {
+        "source_id": 39,
+        "reference_id": "2016arXiv161101863H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2016arXiv161101863H/gammacat_2016arXiv161101863H_000039_sed.ecsv"
+    },
+    {
+        "source_id": 106,
+        "reference_id": "2016Natur.531..476H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2016Natur.531..476H/gammacat_2016Natur.531..476H_000106_sed.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2017ApJ...834....2A",
+        "file_id": 2,
+        "type": "sed",
+        "location": "data/2017ApJ...834....2A/gammacat_2017ApJ...834....2A_000049_sed.ecsv"
+    },
+    {
+        "source_id": 161,
+        "reference_id": "2017arXiv170107002A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017arXiv170107002A/gammacat_2017arXiv170107002A_000161_sed.ecsv"
+    }
+]

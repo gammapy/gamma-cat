@@ -7,101 +7,120 @@ import logging
 import warnings
 import click
 import os
-from gammacat.collection import CollectionMaker
-from gammacat.catalog import CatalogMaker
-from gammacat.webpage import WebpageMaker
-from gammacat.checks import Checker
+from gammacat.info import gammacat_info
+from gammacat.collection import CollectionConfig, CollectionMaker
+from gammacat.catalog import CatalogConfig, CatalogMaker
+from gammacat.webpage import WebpageConfig, WebpageMaker
+from gammacat.checks import CheckerConfig, Checker
 
 log = logging.getLogger(__name__)
 
 
-@click.group()
-@click.option('--loglevel', default='info',
+class GlobalConfig:
+    """Global config options."""
+
+    def __init__(self, *, log_level, show_warnings, hgps):
+        self.log_level = log_level
+        self.show_warnings = show_warnings
+        self.hgps = hgps
+
+        levels = dict(
+            debug=logging.DEBUG,
+            info=logging.INFO,
+            warning=logging.WARNING,
+            error=logging.ERROR,
+            critical=logging.CRITICAL,
+        )
+        logging.basicConfig(level=levels[log_level])
+        log.setLevel(level=levels[log_level])
+
+        if not show_warnings:
+            warnings.simplefilter('ignore')
+
+        if hgps:
+            if 'HGPS_ANALYSIS' not in os.environ:
+                raise ValueError("You must set the environment variable HGPS_ANALYSIS.")
+            # self.out_path = Path('TODO')
+            raise
+        else:
+            self.out_path = gammacat_info.base_dir / 'docs/data'
+
+    def __repr__(self):
+        return 'GlobalConfig({!r})'.format(self.__dict__)
+
+
+# TODO: decide where to keep the config and how to pass it around
+# Best description how it works is here: http://click.pocoo.org/dev/complex/
+
+@click.group(invoke_without_command=True)
+@click.option('--log-level', default='info',
               type=click.Choice(['debug', 'info', 'warning', 'error', 'critical']))
 @click.option('--show-warnings', is_flag=True,
               help='Show warnings?')
 @click.option('--hgps', default=False, is_flag=True,
               help='Produce gamma-cat version for HGPS')
-def cli(loglevel, show_warnings, hgps):
+@click.pass_context
+def cli(ctx, log_level, show_warnings, hgps):
     """
     Make catalog (multiple steps available)
     """
-    levels = dict(
-        debug=logging.DEBUG,
-        info=logging.INFO,
-        warning=logging.WARNING,
-        error=logging.ERROR,
-        critical=logging.CRITICAL,
+    ctx.obj = GlobalConfig(
+        log_level=log_level,
+        show_warnings=show_warnings,
+        hgps=hgps,
     )
-    logging.basicConfig(level=levels[loglevel])
-    log.setLevel(level=levels[loglevel])
-
-    if not show_warnings:
-        warnings.simplefilter('ignore')
-
-    if hgps:
-        if 'HGPS_ANALYSIS' not in os.environ:
-            raise ValueError("Environment variable 'HGPS_ANALYSIS' "
-                             " must be set.")
+    log.debug('global config: {}'.format(ctx.obj))
 
 
 @cli.command(name='collection')
 @click.option('--step', default='all',
               type=click.Choice(['all', 'sed', 'lightcurve', 'input-index', 'output-index']))
-def make_collection(step):
+@click.pass_obj
+def make_collection(global_config, step):
     """Make gamma-cat data collection."""
-    log.info('Make collection ...')
-    maker = CollectionMaker()
-    if step == 'all':
-        maker.process_all()
-    elif step == 'input-index':
-        maker.make_index_file_for_input()
-    elif step == 'sed':
-        maker.process_seds()
-    elif step == 'lightcurve':
-        maker.process_lightcurves()
-    # TODO: implement this!
-    # elif step == 'output-index':
-    #     maker.make_index_file_for_output()
+    config = CollectionConfig(
+        path=global_config.out_path,
+        hgps=global_config.hgps,
+        step=step,
+    )
+    CollectionMaker(config).run()
 
 
 @cli.command(name='catalog')
 @click.option('--sources', default='all', help='Either "all" or comma-separated string of source IDs')
-def make_catalog(sources):
+@click.pass_obj
+def make_catalog(global_config, sources):
     """Make gamma-cat catalog."""
-    log.info('Make catalog ...')
-    maker = CatalogMaker()
-    maker.setup(source_ids=sources, internal=internal)
-    maker.run(internal=internal)
+    config = CatalogConfig(
+        out_path=global_config.out_path,
+        hgps=global_config.hgps,
+        source_ids=sources,
+    )
+    CatalogMaker(config).run()
 
 
 @cli.command(name='webpage')
 def make_webpage():
     """Make gamma-cat webpage.
     """
-    log.info('Make webpage ...')
-    maker = WebpageMaker()
-    maker.run()
+    config = WebpageConfig(
+        out_path='todo',
+    )
+    WebpageMaker(config).run()
 
 
-@cli.command(name='check')
+@cli.command(name='checks')
 @click.option('--step', default='all',
               type=click.Choice(['all', 'input', 'collection', 'catalog', 'global']))
-def make_check(step):
+@click.pass_obj
+def make_checks(global_config, step):
     """Run automated checks.
     """
-    log.info('Run checks ...')
-    maker = Checker()
-    if step == 'all':
-        maker.check_all()
-    elif step == 'input':
-        maker.check_input()
-    elif step == 'collection':
-        maker.check_collection()
-    elif step == 'catalog':
-        maker.check_catalog()
-    elif step == 'global':
-        maker.check_global()
+    config = CheckerConfig(
+        out_path=global_config.out_path,
+        step=step,
+    )
+    Checker(config).run()
 
 
 @cli.command(name='all')
@@ -110,18 +129,10 @@ def make_all(ctx):
     """Run all steps.
     """
     log.info('Run all steps ...')
-    checker = Checker()
-    checker.check_input()
-
     ctx.invoke(make_collection)
-    checker.check_collection()
-
     ctx.invoke(make_catalog)
-    checker.check_catalog()
-
     ctx.invoke(make_webpage)
-
-    checker.check_global()
+    ctx.invoke(make_checks)
 
 
 if __name__ == '__main__':

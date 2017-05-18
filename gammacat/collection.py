@@ -6,9 +6,11 @@ import logging
 from collections import OrderedDict
 from pathlib import Path
 from astropy.utils import lazyproperty
+from gammapy.catalog.gammacat import GammaCatResourceIndex
+from .sed import SED
 from .lightcurve import LightCurve
 from .info import gammacat_info, GammaCatStr
-from .input import InputData, SEDList
+from .input import InputData
 from .utils import write_json, load_json, log_list_difference
 
 __all__ = [
@@ -25,11 +27,10 @@ class CollectionConfig:
     Configuration options (mainly directory and filenames).
     """
 
-    def __init__(self, path=None):
-        if path:
-            self.path = Path(path)
-        else:
-            self.path = gammacat_info.base_dir / 'docs/data'
+    def __init__(self, *, path, hgps=None, step=None):
+        self.path = path
+        self.hgps = hgps
+        self.step = step
 
         self.gammacat_yaml = self.path / 'gammacat.yaml'
         self.gammacat_ecsv = self.path / 'gammacat.ecsv'
@@ -86,6 +87,15 @@ class CollectionConfig:
             if _.is_file()
         ])
 
+    @lazyproperty
+    def resource_index(self):
+        data = load_json(self.index_datasets_json)
+        return GammaCatResourceIndex.from_list(data)
+
+    @lazyproperty
+    def index_sources(self):
+        return load_json(self.index_sources_json)
+
 
 class CollectionData:
     """Access data from the output folder.
@@ -93,32 +103,16 @@ class CollectionData:
     Expose it as Python objects that can be validated and used.
     """
 
-    def __init__(self, config=None, index_dataset=None, index_sources=None):
-        self.config = config
-        self.index_dataset = index_dataset
-        self.index_sources = index_sources
+    def __init__(self, path):
+        # TODO: it's weird that we create a config object here!?
+        self.config = CollectionConfig(path=path, step=None, hgps=None)
 
-    @classmethod
-    def read(cls, path=None):
-        """Read all data from disk.
-        """
-        config = CollectionConfig(path)
-        index_dataset = load_json(config.index_datasets_json)
-        index_sources = load_json(config.index_sources_json)
-
-        return cls(
-            config=config,
-            index_dataset=index_dataset,
-            index_sources=index_sources,
-        )
-
+    # TODO: put more info here! Write a summary YAML or JSON file in the repo instead!
     def __str__(self):
-        ss = 'Output data summary:\n'
+        ss = 'Collection data summary:\n'
         ss += 'Path: {}\n'.format(self.config.path)
-        # TODO: put more info here! Write a summary YAML or JSON file in the repo instead!
         ss += 'Number of sources: {}\n'.format('TODO')
-        ss += 'Number of datasets: {}\n'.format(len(self.index_dataset['data']))
-        ss += 'Number of files: {}\n'.format(len(self.index_dataset['files']))
+        ss += 'Number of resources: {}\n'.format(len(self.config.resource_index.resources))
         return ss
 
     def validate(self):
@@ -133,7 +127,7 @@ class CollectionData:
 
     def validate_list_of_files(self):
         actual = self.config.list_of_files()
-        expected = self.index_dataset['files']
+        expected = [str(_.location) for _ in self.config.resource_index.resources]
         log_list_difference(actual, expected)
 
         # TODO: this is a hack, not a real check
@@ -156,18 +150,29 @@ class CollectionData:
 class CollectionMaker:
     """Make gamma-cat data collection (from the input files)."""
 
-    def __init__(self, path=None):
-        self.config = CollectionConfig(path=path)
+    def __init__(self, config):
+        self.config = config
+
+    def run(self):
+        log.info('Make collection ...')
+        step = self.config.step
+        if step == 'all':
+            self.process_all()
+        elif step == 'input-index':
+            self.make_index_file_for_input()
+        elif step == 'sed':
+            self.process_seds()
+        elif step == 'lightcurve':
+            self.process_lightcurves()
+        elif step == 'output-index':
+            self.make_index_file_for_output()
+        else:
+            raise ValueError('Invalid step: {}'.format(step))
 
     @lazyproperty
     def input_data(self):
         log.info('Reading input data ...')
         return InputData.read()
-
-    @lazyproperty
-    def output_data(self):
-        log.info('Reading output data ...')
-        return CollectionData.read()
 
     def process_all(self):
         self.make_index_file_for_input()
@@ -177,7 +182,7 @@ class CollectionMaker:
         # self.process_all_basic_source_infos()  # TODO
         # self.process_all_dataset_source_infos()  # TODO
 
-        # self.make_index_file_for_output()  # TODO
+        self.make_index_file_for_output()
 
     def process_seds(self):
         for sed in self.input_data.seds.data:
@@ -202,19 +207,20 @@ class CollectionMaker:
             lightcurve.table.write(str(path), format='ascii.ecsv')
 
     def make_index_file_for_input(self):
+        # TODO: this is a temp hack. Fill correctly using GammaCatResourceIndex
         data = OrderedDict()
         data['info'] = gammacat_info.info_dict
-        # TODO: the following line should be changed to OUTPUT
         data['data'] = self.input_data.datasets.to_dict()['data']
         data['files'] = self.config.list_of_files()
         path = self.config.index_datasets_json
         write_json(data, path)
 
-        # TODO: change this to be a bundled results file.
-        # This is *not* an index file -> rename!
-        # def make_index_files_sources(self):
-        #     data = OrderedDict()
-        #     data['info'] = gammacat_info.info_dict
-        #     data['data'] = self.input_data.sources.to_dict()['data']
-        #     path = self.config.index_sources_json
-        #     write_json(data, path)
+    def make_index_file_for_output(self):
+        # TODO: add all the files, not just SED!
+        resources = []
+        for filename in self.config.sed_files():
+            resource = SED.read(self.config.path / filename).resource
+            resource.location = filename
+            resources.append(resource)
+        path = self.config.index_datasets_json
+        write_json(GammaCatResourceIndex(resources).to_list(), path)

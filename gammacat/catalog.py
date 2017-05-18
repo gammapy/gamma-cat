@@ -6,18 +6,19 @@ from astropy import units as u
 from astropy.units import Quantity
 from astropy.table import Table, Column
 from astropy.coordinates import SkyCoord, Angle
-from gammapy.catalog import SourceCatalogObjectGammaCat, SourceCatalogGammaCat
+from gammapy.catalog import SourceCatalogObjectGammaCat
+from gammapy.catalog.gammacat import GammaCatResourceIndex
+from .utils import NA, load_json, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
+from .utils import E_INF, FLUX_TO_CRAB
 from .modeling import Parameters
 from .info import gammacat_info
 from .input import InputData
 from .sed import SEDList
-from .collection import CollectionConfig
-from .utils import NA, load_yaml, write_yaml, table_to_list_of_dict, validate_schema
-from .utils import E_INF, FLUX_TO_CRAB
 
 __all__ = [
     'DatasetConfig',
     'DatasetConfigSource',
+    'CatalogConfig',
     'CatalogMaker',
     'CatalogSchema',
     'CatalogSource',
@@ -375,12 +376,10 @@ class CatalogSource:
         # data['spec_norm_err_tot'] = np.hypot(data['spec_norm_err'], data['spec_norm_err_sys'])
         # data['spec_index_err_tot'] = np.hypot(data['spec_index_err'], data['spec_index_err_sys'])
 
-        # Differential flux at 1 TeV
-        dnde = spec_model.evaluate_error(1 * u.TeV)
+        dnde = spec_model.evaluate_error(energy=1 * u.TeV)
         data['spec_dnde_1TeV'] = dnde[0]
         data['spec_dnde_1TeV_err'] = dnde[1]
 
-        # Integral flux above 1 TeV
         emin, emax = 1 * u.TeV, E_INF
         flux_1TeV = spec_model.integral_error(emin, emax)
         data['spec_flux_1TeV'] = flux_1TeV[0]
@@ -388,9 +387,7 @@ class CatalogSource:
         data['spec_flux_1TeV_crab'] = data['spec_flux_1TeV'] * FLUX_TO_CRAB
         data['spec_flux_1TeV_crab_err'] = data['spec_flux_1TeV_err'] * FLUX_TO_CRAB
 
-        # Energy flux between 1 TeV and 10 TeV
-        emin, emax = 1 * u.TeV, 10 * u.TeV
-        eflux = spec_model.energy_flux_error(emin, emax)
+        eflux = spec_model.energy_flux_error(emin=1 * u.TeV, emax=10 * u.TeV)
         data['spec_eflux_1TeV_10TeV'] = eflux[0].to('erg cm-2 s-1')
         data['spec_eflux_1TeV_10TeV_err'] = eflux[1].to('erg cm-2 s-1')
 
@@ -537,38 +534,52 @@ class CatalogSchema:
         return table
 
 
+class CatalogConfig:
+    """Config options for catalog maker."""
+
+    def __init__(self, *, out_path, hgps, source_ids):
+        self.out_path = out_path
+        self.hgps = hgps
+        self.source_ids = source_ids
+
+
 class CatalogMaker:
     """Make gamma-cat source catalog (from the data collection)."""
 
-    def __init__(self):
+    def __init__(self, config):
+        self.config = config
         self.sources = None
         self.table = None
         self.table2 = None
 
-    def setup(self, source_ids='all', internal=False):
-        log.info('Setup ...')
-        if source_ids == 'all':
+        if config.source_ids == 'all':
             source_ids = DatasetConfig.read().source_ids
         else:
-            source_ids = [int(_) for _ in source_ids.split(',')]
+            source_ids = [int(_) for _ in config.source_ids.split(',')]
 
-        self.sources = self.read_source_data(source_ids=source_ids, internal=internal)
+        self.sources = self.read_source_data(source_ids=source_ids)
 
-    def run(self, internal):
-        log.info('Making gamma-cat ....')
+    def run(self):
+        log.info('Make catalog ...')
 
         self.table = self.make_table(self.sources)
-        self.write_table_fits(self.table, internal=internal)
+        self.write_table_fits(self.table, internal=self.config.hgps)
 
         self.table2 = self.make_table2(self.table)
-        self.write_table_ecsv(self.table2, internal=internal)
-        self.write_table_yaml(self.table2, internal=internal)
+        self.write_table_ecsv(self.table2, internal=self.config.hgps)
+        self.write_table_yaml(self.table2, internal=self.config.hgps)
 
-    @staticmethod
-    def read_source_data(source_ids, internal=False):
+    def read_source_data(self, source_ids):
         """Gather data into Python data structures."""
-        input_data = InputData.read(internal=internal)
-        seds = SEDList.read(filenames=CollectionConfig().sed_files(relative_to_repo=True))
+        input_data = InputData.read(internal=self.config.hgps)
+
+        # TODO: find a better way to load this
+        resource_index = GammaCatResourceIndex.from_list(
+            load_json(self.config.out_path / 'gammacat-datasets.json')
+        )
+        seds = SEDList.read(
+            filenames=[str(self.config.out_path / _.location) for _ in resource_index.resources]
+        )
 
         sources = []
         for source_id in source_ids:
@@ -576,7 +587,7 @@ class CatalogMaker:
             log.info('Processing : {}'.format(basic_source_info))
             try:
                 config = input_data.gammacat_dataset_config.get_source_by_id(source_id)
-                reference_id = config.get_reference_id(internal=internal)
+                reference_id = config.get_reference_id(internal=self.config.hgps)
             except IndexError:
                 reference_id = None
 
@@ -693,45 +704,3 @@ class CatalogMaker:
 
         log.info('Writing {}'.format(path))
         write_yaml(data, path)
-
-
-class CatalogChecker:
-    """Check format and content of the catalog."""
-
-    def __init__(self):
-        filename = CollectionConfig().gammacat_fits
-        self.cat = SourceCatalogGammaCat(filename=filename)
-
-    def run(self):
-        self.check_table(self.cat.table)
-        self.check_sources()
-
-    @staticmethod
-    def check_table(table):
-        # TODO: remove of put something else?
-        # These aren't useful, and if we keep them should be done via pytest
-        # to give good errors (showing the actual values).
-        # assert len(table) == 162
-        # assert len(table.columns) == 82
-        pass
-
-    def check_sources(self):
-        log.info('Checking catalog sources ...')
-        for source in self.cat:
-            self.check_source(source)
-
-    @staticmethod
-    def check_source(source):
-        log.debug('Checking source: {}'.format(source.name))
-
-        # TODO: fix the following check!
-        # This is failing at the moment because spectral points are taken from input folder
-        # for this source: input/data/2015/2015A%26A...577A.131H/tev-000045-sed.ecsv
-        # try:
-        #     source.flux_points
-        # except LookupError:
-        #     pass
-        # source.spectral_model()
-        # source.spatial_model()
-        # TODO: move over checks from gamma-cat-status to here
-        # on spectral model, flux points, spatial model

@@ -149,7 +149,7 @@
   reference_id:
 - source_id: 49
   status: source
-  reference_id: 2005A&A...437...95A, 2006ApJ...641..740R, 2009ApJ...691L..13D, 2017ApJ...834....2A
+  reference_id: 1996ApJ...460..644S, 1996ApJ...472L...9B, 1999A&A...350..757A, 1999ApJ...526L..81M, 2000PhDT.........6P, 2002A&A...393...89A, 2005A&A...437...95A, 2006ApJ...641..740R, 2009ApJ...691L..13D, 2017ApJ...834....2A
 - source_id: 50
   status: source
   reference_id:
@@ -272,7 +272,7 @@
   reference_id: 2012A&A...537A.114A
 - source_id: 91
   status: source
-  reference_id:
+  reference_id: 1999A&A...342...69A, 2001ApJ...546..898A
 - source_id: 92
   status: source
   reference_id: 2006ApJ...636..777A, 2008A&A...477..353A
@@ -413,7 +413,7 @@
   reference_id: 2016arXiv161005799S, 2011A&A...529A..49H
 - source_id: 138
   status: source
-  reference_id: 2003A&A...406L...9A
+  reference_id: 2003ApJ...583L...9H, 2003ICRC....5.2615T, 2003A&A...406L...9A
 - source_id: 139
   status: source
   reference_id:

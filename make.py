@@ -7,6 +7,10 @@ import logging
 import warnings
 import click
 import os
+from gammacat.collection import CollectionMaker
+from gammacat.catalog import CatalogMaker
+from gammacat.webpage import WebpageMaker
+from gammacat.checks import Checker
 
 log = logging.getLogger(__name__)
 
@@ -16,7 +20,9 @@ log = logging.getLogger(__name__)
               type=click.Choice(['debug', 'info', 'warning', 'error', 'critical']))
 @click.option('--show-warnings', is_flag=True,
               help='Show warnings?')
-def cli(loglevel, show_warnings):
+@click.option('--hgps', default=False, is_flag=True,
+              help='Produce gamma-cat version for HGPS')
+def cli(loglevel, show_warnings, hgps):
     """
     Make catalog (multiple steps available)
     """
@@ -33,14 +39,18 @@ def cli(loglevel, show_warnings):
     if not show_warnings:
         warnings.simplefilter('ignore')
 
+    if hgps:
+        if 'HGPS_ANALYSIS' not in os.environ:
+            raise ValueError("Environment variable 'HGPS_ANALYSIS' "
+                             " must be set.")
+
 
 @cli.command(name='collection')
 @click.option('--step', default='all',
               type=click.Choice(['all', 'sed', 'lightcurve', 'input-index', 'output-index']))
 def make_collection(step):
     """Make gamma-cat data collection."""
-    log.info('Re-generate data files in output folder ...')
-    from gammacat.collection import CollectionMaker
+    log.info('Make collection ...')
     maker = CollectionMaker()
     if step == 'all':
         maker.process_all()
@@ -57,15 +67,9 @@ def make_collection(step):
 
 @cli.command(name='catalog')
 @click.option('--sources', default='all', help='Either "all" or comma-separated string of source IDs')
-@click.option('--internal', default=False, is_flag=True)
-def make_catalog(sources, internal):
+def make_catalog(sources):
     """Make gamma-cat catalog."""
-    from gammacat.catalog import CatalogMaker
-    if internal:
-        if not 'HGPS_ANALYSIS' in os.environ:
-            raise ValueError("Environment variable 'HGPS_ANALYSIS' "
-                             " must be set.")
-    log.info('Making catalog ...')
+    log.info('Make catalog ...')
     maker = CatalogMaker()
     maker.setup(source_ids=sources, internal=internal)
     maker.run(internal=internal)
@@ -75,8 +79,7 @@ def make_catalog(sources, internal):
 def make_webpage():
     """Make gamma-cat webpage.
     """
-    log.info('Making webpage in `docs` ...')
-    from gammacat.webpage import WebpageMaker
+    log.info('Make webpage ...')
     maker = WebpageMaker()
     maker.run()
 
@@ -87,8 +90,7 @@ def make_webpage():
 def make_check(step):
     """Run automated checks.
     """
-    log.info('Run automated checks ...')
-    from gammacat.checks import Checker
+    log.info('Run checks ...')
     maker = Checker()
     if step == 'all':
         maker.check_all()
@@ -108,7 +110,6 @@ def make_all(ctx):
     """Run all steps.
     """
     log.info('Run all steps ...')
-    from gammacat.checks import Checker
     checker = Checker()
     checker.check_input()
 

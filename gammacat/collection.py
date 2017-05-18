@@ -69,7 +69,7 @@ class CollectionConfig:
         # import IPython; IPython.embed(); 1/0
         meta = sed.table.meta.copy()
         meta['datatype'] = 'sed'
-        meta['reference_folder'] = sed.path.parts[-2]
+        meta['reference_folder'] = Path(sed.resource.location).parts[-2]
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
     def list_of_files(self, pattern='*'):
@@ -176,7 +176,7 @@ class CollectionMaker:
 
     def process_seds(self):
         for sed in self.input_data.seds.data:
-            log.debug('Processing SED: {}'.format(sed.path))
+            log.debug('Processing SED: {}'.format(sed.resource.location))
             sed.process()
 
             path = self.config.make_sed_path(sed, relative_to_index=False)

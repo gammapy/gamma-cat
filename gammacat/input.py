@@ -8,10 +8,10 @@ from itertools import chain
 from pathlib import Path
 import urllib.parse
 from astropy.table import Table
+from gammapy.catalog.gammacat import GammaCatResource
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
 from .sed import SED
-from .lightcurve import LightCurve
 
 __all__ = [
     'BasicSourceInfo',
@@ -354,12 +354,10 @@ class SEDList:
             sed.process()
 
     def get_sed_by_source_and_reference_id(self, source_id, reference_id):
-        # return self._sed_lookup[reference_id][source_id]
         try:
             return self._sed_lookup[reference_id][source_id]
         except KeyError:
-            missing = SED(table=Table(), path='')
-            return missing
+            return SED(table=Table(), resource=None)
 
 
 class InputData:

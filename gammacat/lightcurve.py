@@ -1,7 +1,5 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
-import astropy.units as u
-from astropy.units.cds import MJD
 from astropy.table import Table
 from gammapy.catalog.gammacat import GammaCatResource
 from .sed import make_table_columns_uniform
@@ -49,6 +47,14 @@ class LightCurve:
         dict(name='index', description='Spectral index'),
         dict(name='index_err', description='Statistical error (1 sigma) on `index`'),
         dict(name='significance', description='Excess significance'),
+    ]
+
+    required_meta_keys = [
+        'data_type', 'reference_id', 'source_id', 'telescope',
+    ]
+
+    allowed_meta_keys = required_meta_keys + [
+        'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
     ]
 
     def __init__(self, table, resource):

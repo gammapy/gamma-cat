@@ -1,6 +1,7 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
 from astropy.table import Table
+from gammapy.catalog.gammacat import GammaCatResource
 
 __all__ = [
     'SED',
@@ -37,14 +38,6 @@ class SED:
         'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp', 'e2dnde_ul',
     ]
 
-    required_meta_keys = [
-        'data_type', 'reference_id', 'source_id', 'telescope',
-    ]
-
-    allowed_meta_keys = required_meta_keys + [
-        'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
-    ]
-
     output_cols = [
         dict(name='e_ref', unit='TeV', description='Energy'),
         dict(name='e_min', unit='TeV', description='Energy bin minimum'),
@@ -59,15 +52,35 @@ class SED:
         dict(name='significance', description='Excess significance'),
     ]
 
-    def __init__(self, table, path):
+    required_meta_keys = [
+        'data_type', 'reference_id', 'source_id', 'telescope',
+    ]
+
+    allowed_meta_keys = required_meta_keys + [
+        'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
+    ]
+
+    def __init__(self, table, resource):
         self.table = table
-        self.path = path
+        self.resource = resource
 
     @classmethod
-    def read(cls, path, format='ascii.ecsv'):
-        log.debug('Reading {}'.format(path))
-        table = Table.read(str(path), format=format)
-        return cls(table=table, path=path)
+    def read(cls, filename, format='ascii.ecsv'):
+        log.debug('Reading {}'.format(filename))
+        table = Table.read(str(filename), format=format)
+        resource = cls._read_resource_info(table, filename)
+        return cls(table=table, resource=resource)
+
+    @classmethod
+    def _read_resource_info(cls, table, location):
+        m = table.meta
+        return GammaCatResource(
+            source_id=m['source_id'],
+            reference_id=m['reference_id'],
+            file_id=m.get('file_id', -1),
+            type='sed',
+            location=location,
+        )
 
     def process(self):
         """Apply fixes."""
@@ -165,13 +178,13 @@ class SED:
         if dropped_colnames:
             log.error(
                 'SED file {} - dropping columns: {}'
-                ''.format(self.path, dropped_colnames)
+                ''.format(self.resource.location, dropped_colnames)
             )
 
         self.table = table[colnames]
 
     def validate_input(self):
-        log.debug('Validating {}'.format(self.path))
+        log.debug('Validating {}'.format(self.resource.location))
         self._validate_input_colnames()
         self._validate_input_meta()
         self._validate_input_consistency()
@@ -182,7 +195,7 @@ class SED:
         if unexpected_colnames:
             log.error(
                 'SED file {} contains invalid columns: {}'
-                ''.format(self.path, unexpected_colnames)
+                ''.format(self.resource.location, unexpected_colnames)
             )
 
     def _validate_input_meta(self):
@@ -190,15 +203,15 @@ class SED:
 
         missing = sorted(set(self.required_meta_keys) - set(meta.keys()))
         if missing:
-            log.error('SED file {} contains missing meta keys: {}'.format(self.path, missing))
+            log.error('SED file {} contains missing meta keys: {}'.format(self.resource.location, missing))
 
         extra = sorted(set(meta.keys()) - set(self.allowed_meta_keys))
         if extra:
-            log.error('SED file {} contains extra meta keys: {}'.format(self.path, extra))
+            log.error('SED file {} contains extra meta keys: {}'.format(self.resource.location, extra))
 
         if ('comments' in meta) and not isinstance(meta['comments'], str):
             log.error('SED file {} contains invalid meta key comments (should be str): {}'
-                      ''.format(self.path, meta['comments']))
+                      ''.format(self.resource.location, meta['comments']))
 
     def _validate_input_consistency(self):
         table = self.table
@@ -208,10 +221,10 @@ class SED:
         has_ul_col = len({'dnde_ul', 'e2dnde_ul'} & set(colnames)) > 0
 
         if ('UL_CONF' in meta) and not has_ul_col:
-            log.error('SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.path))
+            log.error('SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.resource.location))
 
         if has_ul_col and ('UL_CONF' not in meta):
-            log.error('SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.path))
+            log.error('SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.resource.location))
 
     def validate_output(self):
         table = self.table
@@ -219,9 +232,9 @@ class SED:
         if unexpected_colnames:
             log.error(
                 'SED file {} contains invalid columns: {}'
-                ''.format(self.path, unexpected_colnames)
+                ''.format(self.resource.location, unexpected_colnames)
             )
 
         meta = table.meta
         if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
-            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
+            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.resource.location, meta['UL_CONF']))

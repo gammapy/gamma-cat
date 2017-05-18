@@ -8,10 +8,10 @@ from itertools import chain
 from pathlib import Path
 import urllib.parse
 from astropy.table import Table
-from gammapy.catalog.gammacat import GammaCatResource
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
 from .sed import SED
+from .lightcurve import LightCurve
 
 __all__ = [
     'BasicSourceInfo',
@@ -331,27 +331,8 @@ class SEDList:
         self._sed_lookup = sed_lookup
 
     @classmethod
-    def read(cls, internal=False):
-        path = gammacat_info.base_dir / 'input/data'
-        paths = sorted(path.glob('*/*/tev*sed*.ecsv'))
-
-        if internal:
-            path = gammacat_info.base_dir / 'docs/data/sources'
-            paths = path.glob('*/gammacat*sed*.ecsv')
-
-            path_internal = gammacat_info.internal_dir
-            paths_internal = path_internal.glob('tev*.ecsv')
-            paths = chain(paths, paths_internal)
-
-        data = []
-        for path in paths:
-            sed = SED.read(path)
-            data.append(sed)
-        return cls(data=data)
-
-    def validate(self):
-        for sed in self.data:
-            sed.process()
+    def read(cls, *, filenames):
+        return cls([SED.read(filename) for filename in filenames])
 
     def get_sed_by_source_and_reference_id(self, source_id, reference_id):
         try:
@@ -369,8 +350,25 @@ class InputData:
 
     @property
     def lightcurve_file_list(self):
+        """List of all lightcurve files in the input folder."""
         path = gammacat_info.base_dir / 'input/data'
         return sorted(path.glob('*/*/tev*lc*.ecsv'))
+
+    @classmethod
+    def sed_file_list(cls, internal):
+        """List of all SED files in the input folder."""
+        path = gammacat_info.base_dir / 'input/data'
+        paths = path.glob('*/*/tev*sed*.ecsv')
+
+        if internal:
+            path = gammacat_info.base_dir / 'docs/data/sources'
+            paths = path.glob('*/gammacat*sed*.ecsv')
+
+            path_internal = gammacat_info.internal_dir
+            paths_internal = path_internal.glob('tev*.ecsv')
+            paths = chain(paths, paths_internal)
+
+        return sorted(paths)
 
     def __init__(self, schemas=None, sources=None, datasets=None,
                  seds=None, gammacat_dataset_config=None):
@@ -390,7 +388,7 @@ class InputData:
         schemas = Schemas.read()
         sources = BasicSourceList.read()
         datasets = InputDatasetCollection.read(internal=internal)
-        seds = SEDList.read(internal=internal)
+        seds = SEDList.read(filenames=cls.sed_file_list(internal=internal))
         gammacat_dataset_config = DatasetConfig.read()
         return cls(
             schemas=schemas,
@@ -422,6 +420,11 @@ class InputData:
         self.schemas.validate()
         self.sources.validate()
         self.datasets.validate()
-        self.seds.validate()
-        # self.lightcurves.validate()
+
+        for sed in self.seds.data:
+            sed.process()
+
+        for filename in self.lightcurve_file_list:
+            LightCurve.read(filename=filename).process()
+
         self.gammacat_dataset_config.validate(self)

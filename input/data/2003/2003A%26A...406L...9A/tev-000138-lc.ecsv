@@ -10,7 +10,7 @@
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 138}
-# - {reference_id: 2003astro.ph..5275H}
+# - {reference_id: 2003A&A...406L...9A}
 # - {telescope: hegra}
 # - {timesys: UTC}
 time time_min time_max flux flux_err flux_ul

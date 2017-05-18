@@ -9,7 +9,9 @@ import jsonschema
 import numpy as np
 from astropy.coordinates import SkyCoord
 import astropy.units as u
+from astropy.table import Table
 from gammapy.spectrum.crab import CrabSpectrum
+from gammapy.catalog.gammacat import GammaCatResource
 
 __all__ = [
     'FLUX_TO_CRAB', 'E_INF',
@@ -21,6 +23,7 @@ __all__ = [
     'table_to_list_of_dict',
     'validate_schema',
     'log_list_difference',
+    'TableProcessor',
 ]
 
 log = logging.getLogger(__name__)
@@ -180,3 +183,38 @@ def log_list_difference(actual, expected):
     extra = sorted(set(actual) - set(expected))
     if extra:
         log.error('Extra: {}'.format(extra))
+
+
+class TableProcessor:
+    """Shared code between SED and Lightcurve processing classes."""
+    resource_type = None
+
+    def __init__(self, table, resource):
+        self.table = table
+        self.resource = resource
+
+    @classmethod
+    def read(cls, filename, format='ascii.ecsv'):
+        log.debug('Reading {}'.format(filename))
+        table = Table.read(str(filename), format=format)
+        resource = cls._read_resource_info(table, filename)
+        return cls(table=table, resource=resource)
+
+    @classmethod
+    def _read_resource_info(cls, table, location):
+        m = table.meta
+        return GammaCatResource(
+            source_id=m['source_id'],
+            reference_id=m['reference_id'],
+            file_id=m.get('file_id', -1),
+            type=cls.resource_type,
+            location=location,
+        )
+
+    def validate_table_colnames(self, expected_colnames):
+        unexpected_colnames = sorted(set(self.table.colnames) - set(expected_colnames))
+        if unexpected_colnames:
+            log.error(
+                'Resource {} contains invalid columns: {}'
+                ''.format(self.resource, unexpected_colnames)
+            )

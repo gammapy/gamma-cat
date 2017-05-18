@@ -1,7 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
-from astropy.table import Table
-from gammapy.catalog.gammacat import GammaCatResource
+from .utils import TableProcessor
 
 __all__ = [
     'SED',
@@ -23,8 +22,9 @@ def make_table_columns_uniform(table, cols):
             table[name].description = col['description']
 
 
-class SED:
+class SED(TableProcessor):
     """Process and validate an SED file."""
+    resource_type = 'sed'
 
     expected_colnames_output = [
         'e_ref', 'e_min', 'e_max',
@@ -59,28 +59,6 @@ class SED:
     allowed_meta_keys = required_meta_keys + [
         'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
     ]
-
-    def __init__(self, table, resource):
-        self.table = table
-        self.resource = resource
-
-    @classmethod
-    def read(cls, filename, format='ascii.ecsv'):
-        log.debug('Reading {}'.format(filename))
-        table = Table.read(str(filename), format=format)
-        resource = cls._read_resource_info(table, filename)
-        return cls(table=table, resource=resource)
-
-    @classmethod
-    def _read_resource_info(cls, table, location):
-        m = table.meta
-        return GammaCatResource(
-            source_id=m['source_id'],
-            reference_id=m['reference_id'],
-            file_id=m.get('file_id', -1),
-            type='sed',
-            location=location,
-        )
 
     def process(self):
         """Apply fixes."""
@@ -185,18 +163,9 @@ class SED:
 
     def validate_input(self):
         log.debug('Validating {}'.format(self.resource.location))
-        self._validate_input_colnames()
+        self.validate_table_colnames(self.expected_colnames_input)
         self._validate_input_meta()
         self._validate_input_consistency()
-
-    def _validate_input_colnames(self):
-        table = self.table
-        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames_input))
-        if unexpected_colnames:
-            log.error(
-                'SED file {} contains invalid columns: {}'
-                ''.format(self.resource.location, unexpected_colnames)
-            )
 
     def _validate_input_meta(self):
         meta = self.table.meta
@@ -221,10 +190,12 @@ class SED:
         has_ul_col = len({'dnde_ul', 'e2dnde_ul'} & set(colnames)) > 0
 
         if ('UL_CONF' in meta) and not has_ul_col:
-            log.error('SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.resource.location))
+            log.error(
+                'SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.resource.location))
 
         if has_ul_col and ('UL_CONF' not in meta):
-            log.error('SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.resource.location))
+            log.error(
+                'SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.resource.location))
 
     def validate_output(self):
         table = self.table
@@ -237,4 +208,5 @@ class SED:
 
         meta = table.meta
         if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
-            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.resource.location, meta['UL_CONF']))
+            log.error(
+                'SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.resource.location, meta['UL_CONF']))

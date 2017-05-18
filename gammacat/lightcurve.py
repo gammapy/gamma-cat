@@ -1,8 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
-from astropy.table import Table
-from gammapy.catalog.gammacat import GammaCatResource
-from .sed import make_table_columns_uniform
+from .utils import TableProcessor
 
 __all__ = [
     'LightCurve',
@@ -11,17 +9,9 @@ __all__ = [
 log = logging.getLogger(__name__)
 
 
-def validate_table_colnames(table, expected_colnames, resource):
-    unexpected_colnames = sorted(set(table.colnames) - set(expected_colnames))
-    if unexpected_colnames:
-        log.error(
-            'Resource {} contains invalid columns: {}'
-            ''.format(resource, unexpected_colnames)
-        )
-
-
-class LightCurve:
+class LightCurve(TableProcessor):
     """Process and validate a lightcurve file."""
+    resource_type = 'lightcurve'
 
     expected_colnames_output = [
         'time', 'time_min', 'time_max',
@@ -57,28 +47,6 @@ class LightCurve:
         'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
     ]
 
-    def __init__(self, table, resource):
-        self.table = table
-        self.resource = resource
-
-    @classmethod
-    def read(cls, filename, format='ascii.ecsv'):
-        log.debug('Reading {}'.format(filename))
-        table = Table.read(str(filename), format=format)
-        resource = cls._read_resource_info(table, filename)
-        return cls(table=table, resource=resource)
-
-    @classmethod
-    def _read_resource_info(cls, table, location):
-        m = table.meta
-        return GammaCatResource(
-            source_id=m['source_id'],
-            reference_id=m['reference_id'],
-            file_id=m.get('file_id', -1),
-            type='lightcurve',
-            location=location,
-        )
-
     def process(self):
         """Apply fixes."""
         table = self.table
@@ -98,6 +66,6 @@ class LightCurve:
 
     def validate_input(self):
         log.debug('Validating {}'.format(self.resource))
-        validate_table_colnames(self.table, self.expected_colnames_input, self.resource)
+        self.validate_table_colnames(self.expected_colnames_input)
         # self._validate_input_meta()
         # self._validate_input_consistency()

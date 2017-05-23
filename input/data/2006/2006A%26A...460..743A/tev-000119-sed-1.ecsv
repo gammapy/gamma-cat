@@ -3,8 +3,8 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_min, datatype: float32}
+# - {name: dnde_max, datatype: float32}
 # - {name: dnde_ul, datatype: float32}
 # meta: !!omap
 # - data_type: sed
@@ -14,9 +14,8 @@
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LS5039_II_auxinfo.html
 # - UL_CONF: 1 sigma
 # - comments: |
-#     H.E.S.S. data points for high (INFC) State (Figure 6)
-#     TODO: add SED for low (SUPC) State
-e_ref dnde dnde_errn dnde_errp dnde_ul
+#     H.E.S.S. data points for the high (INFC) State (Figure 6)
+e_ref dnde dnde_min dnde_max dnde_ul
   0.1997      6.023e-11       4.72e-11    7.395e-11 nan
   0.2435      4.168e-11      3.512e-11    4.856e-11 nan
   0.2982      2.764e-11        2.4e-11    3.144e-11 nan

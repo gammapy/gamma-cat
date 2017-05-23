@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_min, datatype: float32}
+# - {name: dnde_max, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 119
+# - reference_id: 2006A&A...460..743A
+# - telescope: hess
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LS5039_II_auxinfo.html
+# - UL_CONF: 1 sigma
+# - comments: |
+#     H.E.S.S. data points for the low (SUPC) State (Figure 6)
+e_ref dnde dnde_min dnde_max
+0.196      6.336e-11      4.919e-11    7.831e-11
+0.332      1.481e-11      1.342e-11    1.624e-11
+0.7265     1.918e-12      1.699e-12    2.145e-12
+1.636      2.551e-13      2.126e-13    3.001e-13
+3.698      3.971e-14      2.966e-14    5.067e-14
+8.409      6.354e-15      3.905e-15    9.112e-15
+19.77      4.293e-16       1.21e-16    9.111e-16
+38         2.421e-16      3.974e-17    8.469e-16

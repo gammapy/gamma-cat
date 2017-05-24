@@ -450,7 +450,13 @@
   format:
   dtype: int32
   unit:
-  description: Number of spectral points (including upper limits)
+  description: Number of spectral points (not including upper limits)
+  latex:
+- name: sed_n_ul
+  format:
+  dtype: int32
+  unit:
+  description: Number of spectral point upper limits
   latex:
 - name: sed_e_ref
   format:

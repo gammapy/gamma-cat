@@ -183,36 +183,3 @@ class SED(TableProcessor):
         if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
             log.error(
                 'SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.resource.location, meta['UL_CONF']))
-
-
-# TODO: get rid of this class and use index files and GammaCatResourceIndex instead!
-class SEDList:
-    """
-    List of `SED` objects.
-
-    Used to represent the SED data in the input folder.
-    """
-
-    def __init__(self, data):
-        self.data = data
-
-        sed_lookup = {}
-        for sed in data:
-            source_id = sed.table.meta['source_id']
-            reference_id = sed.table.meta['reference_id']
-            try:
-                sed_lookup[reference_id][source_id] = sed
-            except KeyError:
-                sed_lookup[reference_id] = {}
-                sed_lookup[reference_id][source_id] = sed
-        self._sed_lookup = sed_lookup
-
-    @classmethod
-    def read(cls, *, filenames):
-        return cls([SED.read(filename) for filename in filenames])
-
-    def get_sed_by_source_and_reference_id(self, source_id, reference_id):
-        try:
-            return self._sed_lookup[reference_id][source_id]
-        except KeyError:
-            return SED(table=Table(), resource=None)

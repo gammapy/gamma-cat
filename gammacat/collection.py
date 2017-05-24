@@ -184,8 +184,9 @@ class CollectionMaker:
         self.make_index_file_for_output()
 
     def process_seds(self):
-        for sed in self.input_data.seds.data:
-            log.debug('Processing SED: {}'.format(sed.resource.location))
+        for filename in self.input_data.sed_file_list:
+            log.debug('Processing SED: {}'.format(filename))
+            sed = SED.read(filename)
             sed.process()
 
             path = self.config.make_sed_path(sed, relative_to_index=False)

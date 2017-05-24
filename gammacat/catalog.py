@@ -12,8 +12,8 @@ from .utils import NA, load_json, load_yaml, write_yaml, table_to_list_of_dict, 
 from .utils import E_INF, FLUX_TO_CRAB
 from .modeling import Parameters
 from .info import gammacat_info
+from .sed import SED
 from .input import InputData
-from .sed import SEDList
 
 __all__ = [
     'DatasetConfig',
@@ -144,7 +144,7 @@ class CatalogSource:
         self.fill_derived_spectral_info()
 
     @classmethod
-    def from_inputs(cls, basic_source_info, dataset_source_info, sed_info):
+    def from_inputs(cls, basic_source_info, dataset_source_info, sed):
         data = OrderedDict()
 
         bsi = basic_source_info.data
@@ -157,7 +157,7 @@ class CatalogSource:
         cls.fill_spectral_other_info(data, dsi)
         cls.fill_morphology_info(data, dsi)
 
-        cls.fill_sed_info(data, sed_info)
+        cls.fill_sed_info(data, sed)
         return cls(data=data)
 
     @staticmethod
@@ -389,61 +389,64 @@ class CatalogSource:
         data['spec_eflux_1TeV_10TeV_err'] = eflux[1].to('erg cm-2 s-1')
 
     @staticmethod
-    def fill_sed_info(data, sed_info, shape=(SED_ARRAY_LEN,)):
+    def fill_sed_info(data, sed, shape=(SED_ARRAY_LEN,)):
         """
         Fill flux point info data.
         """
         try:
-            data['sed_reference_id'] = sed_info.table.meta['reference_id']
+            data['sed_reference_id'] = sed.table.meta['reference_id']
         except KeyError:
             data['sed_reference_id'] = NA.fill_value['string']
 
         try:
-            dnde = sed_info.table['dnde'].data
-            dnde_ul = sed_info.table['dnde_ul'].data
-            data['sed_n_points'] = np.isfinite(dnde).sum() + np.isfinite(dnde_ul).sum()
+            data['sed_n_points'] = np.isfinite(sed.table['dnde'].data).sum()
         except KeyError:
             data['sed_n_points'] = 0
 
         try:
-            e_ref = sed_info.table['e_ref'].data
+            data['sed_n_ul'] = np.isfinite(sed.table['dnde_ul'].data).sum()
+        except KeyError:
+            data['sed_n_ul'] = 0
+
+        try:
+            e_ref = sed.table['e_ref'].data
             data['sed_e_ref'] = NA.resize_sed_array(e_ref, shape)
         except KeyError:
             data['sed_e_ref'] = NA.fill_value_array(shape)
         try:
-            e_min = sed_info.table['e_min'].data
+            e_min = sed.table['e_min'].data
             data['sed_e_min'] = NA.resize_sed_array(e_min, shape)
         except KeyError:
             data['sed_e_min'] = NA.fill_value_array(shape)
 
         try:
-            e_max = sed_info.table['e_max'].data
+            e_max = sed.table['e_max'].data
             data['sed_e_max'] = NA.resize_sed_array(e_max, shape)
         except KeyError:
             data['sed_e_max'] = NA.fill_value_array(shape)
 
         try:
-            dnde = sed_info.table['dnde'].data
+            dnde = sed.table['dnde'].data
             data['sed_dnde'] = NA.resize_sed_array(dnde, shape)
         except KeyError:
             data['sed_dnde'] = NA.fill_value_array(shape)
         try:
-            dnde_err = sed_info.table['dnde_err'].data
+            dnde_err = sed.table['dnde_err'].data
             data['sed_dnde_err'] = NA.resize_sed_array(dnde_err, shape)
         except KeyError:
             data['sed_dnde_err'] = NA.fill_value_array(shape)
         try:
-            dnde_errp = sed_info.table['dnde_errp'].data
+            dnde_errp = sed.table['dnde_errp'].data
             data['sed_dnde_errp'] = NA.resize_sed_array(dnde_errp, shape)
         except KeyError:
             data['sed_dnde_errp'] = NA.fill_value_array(shape)
         try:
-            dnde_errn = sed_info.table['dnde_errn'].data
+            dnde_errn = sed.table['dnde_errn'].data
             data['sed_dnde_errn'] = NA.resize_sed_array(dnde_errn, shape)
         except KeyError:
             data['sed_dnde_errn'] = NA.fill_value_array(shape)
         try:
-            dnde_ul = sed_info.table['dnde_ul'].data
+            dnde_ul = sed.table['dnde_ul'].data
             data['sed_dnde_ul'] = NA.resize_sed_array(dnde_ul, shape)
         except KeyError:
             data['sed_dnde_ul'] = NA.fill_value_array(shape)
@@ -573,9 +576,6 @@ class CatalogMaker:
         resource_index = GammaCatResourceIndex.from_list(
             load_json(self.config.out_path / 'gammacat-datasets.json')
         )
-        seds = SEDList.read(
-            filenames=[str(self.config.out_path / _.location) for _ in resource_index.resources]
-        )
 
         sources = []
         for source_id in source_ids:
@@ -591,12 +591,25 @@ class CatalogMaker:
             # handle the information from one dataset, maybe this should be changed
             dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
             dataset_source_info = dataset.get_source_by_id(source_id)
-            sed_info = seds.get_sed_by_source_and_reference_id(source_id, dataset.reference_id)
+
+            query = 'type == "sed" and source_id == {} and reference_id == {!r}'.format(source_id, reference_id)
+            log.debug(query)
+            ri = resource_index.query(query)
+            if len(ri.resources) == 1:
+                filename = self.config.out_path / ri.resources[0].location
+                log.debug('SED filename: {}'.format(filename))
+                sed = SED.read(filename=filename)
+            elif len(ri.resources) > 1:
+                log.error(ri)
+                raise RuntimeError('SED not specified uniquely!')
+            else:
+                log.debug('Missing SED for source_id: {}'.format(source_id))
+                sed = SED(table=Table(), resource=None)
 
             source = CatalogSource.from_inputs(
                 basic_source_info=basic_source_info,
                 dataset_source_info=dataset_source_info,
-                sed_info=sed_info
+                sed=sed,
             )
             sources.append(source)
 

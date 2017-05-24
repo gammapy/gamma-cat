@@ -9,7 +9,7 @@ import urllib.parse
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
-from .sed import SEDList
+from .sed import SED
 from .lightcurve import LightCurve
 
 __all__ = [
@@ -311,7 +311,7 @@ class InputData:
         path = gammacat_info.base_dir / 'input/data'
         return sorted(path.glob('*/*/tev*lc*.ecsv'))
 
-    @classmethod
+    @property
     def sed_file_list(cls):
         """List of all SED files in the input folder."""
         path = gammacat_info.base_dir / 'input/data'
@@ -319,12 +319,11 @@ class InputData:
         return sorted(paths)
 
     def __init__(self, schemas=None, sources=None, datasets=None,
-                 seds=None, gammacat_dataset_config=None):
+                 gammacat_dataset_config=None):
         self.path = gammacat_info.base_dir / 'input'
         self.schemas = schemas
         self.sources = sources
         self.datasets = datasets
-        self.seds = seds
         self.gammacat_dataset_config = gammacat_dataset_config
 
     @classmethod
@@ -335,13 +334,11 @@ class InputData:
         schemas = Schemas.read()
         sources = BasicSourceList.read()
         datasets = InputDatasetCollection.read()
-        seds = SEDList.read(filenames=cls.sed_file_list())
         gammacat_dataset_config = DatasetConfig.read()
         return cls(
             schemas=schemas,
             sources=sources,
             datasets=datasets,
-            seds=seds,
             gammacat_dataset_config=gammacat_dataset_config,
         )
 
@@ -358,7 +355,7 @@ class InputData:
         ss += 'Number of total datasets in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
             len(self.gammacat_dataset_config.reference_ids))
         ss += '\n'
-        ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
+        ss += 'Number of SEDs: {}\n'.format(len(self.sed_file_list))
         ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurve_file_list))
         return ss
 
@@ -368,8 +365,8 @@ class InputData:
         self.sources.validate()
         self.datasets.validate()
 
-        for sed in self.seds.data:
-            sed.process()
+        for filename in self.sed_file_list:
+            SED.read(filename=filename).process()
 
         for filename in self.lightcurve_file_list:
             LightCurve.read(filename=filename).process()

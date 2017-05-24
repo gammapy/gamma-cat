@@ -625,7 +625,7 @@ class CatalogMaker:
         # (we could also make Table column by column ourselves
         for colname in rows[0].keys():
             if isinstance(rows[0][colname], Quantity):
-                log.debug('Found Quantity:', colname)
+                # log.debug('Found Quantity: {}'.format(colname))
                 unit = rows[0][colname].unit
                 for idx, row in enumerate(rows):
                     d = row[colname]

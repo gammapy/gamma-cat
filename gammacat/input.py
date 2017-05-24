@@ -312,7 +312,7 @@ class InputData:
         return sorted(path.glob('*/*/tev*lc*.ecsv'))
 
     @property
-    def sed_file_list(cls):
+    def sed_file_list(self):
         """List of all SED files in the input folder."""
         path = gammacat_info.base_dir / 'input/data'
         paths = path.glob('*/*/tev*sed*.ecsv')

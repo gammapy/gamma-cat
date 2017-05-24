@@ -7754,11 +7754,11 @@
   - morph_pa_err: 23.0
   - morph_pa_frame: radec
   - spec_type: pl
-  - spec_pl_norm: 2.6999999458432455e-12
-  - spec_pl_norm_err: 2.9999998795923744e-13
-  - spec_pl_norm_err_sys: 1.99999996490334e-13
-  - spec_pl_index: 2.4600000381469727
-  - spec_pl_index_err: 0.07999999821186066
+  - spec_pl_norm: 5.595999792024076e-12
+  - spec_pl_norm_err: 6.404000051606074e-13
+  - spec_pl_norm_err_sys: .nan
+  - spec_pl_index: 2.5799999237060547
+  - spec_pl_index_err: 0.10249999910593033
   - spec_pl_index_err_sys: 0.20000000298023224
   - spec_pl_e_ref: 1.0
   - spec_pl2_flux: .nan
@@ -7782,14 +7782,14 @@
   - spec_erange_min: 0.5
   - spec_erange_max: 60.0
   - spec_theta: 0.30000001192092896
-  - spec_dnde_1TeV: 2.6999999458432455e-12
-  - spec_dnde_1TeV_err: 2.9999998795923744e-13
-  - spec_flux_1TeV: 1.849314971991145e-12
-  - spec_flux_1TeV_err: 2.2910707077154757e-13
-  - spec_flux_1TeV_crab: 8.914752960205078
-  - spec_flux_1TeV_crab_err: 1.104426622390747
-  - spec_eflux_1TeV_10TeV: 6.14333887580254e-12
-  - spec_eflux_1TeV_10TeV_err: 8.274836436721056e-13
+  - spec_dnde_1TeV: 5.595999792024076e-12
+  - spec_dnde_1TeV_err: 6.404000051606074e-13
+  - spec_flux_1TeV: 3.5417721273162117e-12
+  - spec_flux_1TeV_err: 4.659122480182853e-13
+  - spec_flux_1TeV_crab: 17.073360443115234
+  - spec_flux_1TeV_crab_err: 2.245962619781494
+  - spec_eflux_1TeV_10TeV: 1.1392309838542669e-11
+  - spec_eflux_1TeV_10TeV_err: 1.6762833525765797e-12
   - sed_reference_id: 2008A&A...477..353A
   - sed_n_points: 0
   - sed_e_ref: 8.808232307434082
@@ -10198,15 +10198,15 @@
   - spec_eflux_1TeV_10TeV: 6.490082776755557e-12
   - spec_eflux_1TeV_10TeV_err: 7.759737405584055e-13
   - sed_reference_id: 2006A&A...460..743A
-  - sed_n_points: 26
-  - sed_e_ref: 6.771245956420898
+  - sed_n_points: 0
+  - sed_e_ref: 9.095937728881836
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 7.417143288446226e-12
+  - sed_dnde: 1.0048729209843899e-11
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 8.672926092578859e-12
-  - sed_dnde_errn: 6.222147796997035e-12
-  - sed_dnde_ul: 1.595999993295744e-16
+  - sed_dnde_errp: 2.083350419262997e-12
+  - sed_dnde_errn: 1.9793136313978055e-12
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 162
   - common_name: HESS J1828-099

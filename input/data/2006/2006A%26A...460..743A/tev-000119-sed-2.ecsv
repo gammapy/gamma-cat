@@ -11,7 +11,6 @@
 # - reference_id: 2006A&A...460..743A
 # - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LS5039_II_auxinfo.html
-# - UL_CONF: 1 sigma
 # - comments: |
 #     H.E.S.S. data points for the low (SUPC) State (Figure 6)
 e_ref dnde dnde_min dnde_max

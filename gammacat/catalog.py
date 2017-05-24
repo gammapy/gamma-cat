@@ -47,15 +47,12 @@ class DatasetConfigSource:
         else:
             raise ValueError('Invalid reference_id list: {}'.format(pid))
 
-    def get_reference_id(self, internal=False):
+    def get_reference_id(self):
         """Choose reference_id to use for given source.
 
         For now, we always use the last one listed.
         """
-        reference_id = self.reference_ids[-1]
-        if not internal and reference_id == 'gammacat-hess-internal':
-            reference_id = self.reference_ids[-2]
-        return reference_id
+        return self.reference_ids[-1]
 
 
 class DatasetConfig:
@@ -537,9 +534,8 @@ class CatalogSchema:
 class CatalogConfig:
     """Config options for catalog maker."""
 
-    def __init__(self, *, out_path, hgps, source_ids):
+    def __init__(self, *, out_path, source_ids):
         self.out_path = out_path
-        self.hgps = hgps
         self.source_ids = source_ids
 
 
@@ -563,15 +559,15 @@ class CatalogMaker:
         log.info('Make catalog ...')
 
         self.table = self.make_table(self.sources)
-        self.write_table_fits(self.table, internal=self.config.hgps)
+        self.write_table_fits(self.table)
 
         self.table2 = self.make_table2(self.table)
-        self.write_table_ecsv(self.table2, internal=self.config.hgps)
-        self.write_table_yaml(self.table2, internal=self.config.hgps)
+        self.write_table_ecsv(self.table2)
+        self.write_table_yaml(self.table2)
 
     def read_source_data(self, source_ids):
         """Gather data into Python data structures."""
-        input_data = InputData.read(internal=self.config.hgps)
+        input_data = InputData.read()
 
         # TODO: find a better way to load this
         resource_index = GammaCatResourceIndex.from_list(
@@ -587,7 +583,7 @@ class CatalogMaker:
             log.info('Processing : {}'.format(basic_source_info))
             try:
                 config = input_data.gammacat_dataset_config.get_source_by_id(source_id)
-                reference_id = config.get_reference_id(internal=self.config.hgps)
+                reference_id = config.get_reference_id()
             except IndexError:
                 reference_id = None
 
@@ -675,32 +671,20 @@ class CatalogMaker:
         return table
 
     @staticmethod
-    def write_table_fits(table, internal=False):
-        if internal:
-            path = gammacat_info.internal_dir / 'gammacat-hess-internal.fits.gz'
-        else:
-            path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
+    def write_table_fits(table):
+        path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
     @staticmethod
-    def write_table_ecsv(table, internal=False):
-        if internal:
-            path = gammacat_info.internal_dir / 'gammacat-hess-internal.ecsv'
-        else:
-            path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
-
+    def write_table_ecsv(table):
+        path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='ascii.ecsv')
 
     @staticmethod
-    def write_table_yaml(table, internal=False):
+    def write_table_yaml(table):
         data = table_to_list_of_dict(table)
-
-        if internal:
-            path = gammacat_info.internal_dir / 'gammacat-hess-internal.yaml'
-        else:
-            path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
-
+        path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
         log.info('Writing {}'.format(path))
         write_yaml(data, path)

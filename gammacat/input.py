@@ -4,13 +4,12 @@ Classes to read, validate and work with the input data files.
 """
 import logging
 from collections import OrderedDict
-from itertools import chain
 from pathlib import Path
 import urllib.parse
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
-from .sed import SED, SEDList
+from .sed import SEDList
 from .lightcurve import LightCurve
 
 __all__ = [
@@ -226,18 +225,10 @@ class InputDatasetCollection:
         self.data = data
 
     @classmethod
-    def read(cls, internal=False):
+    def read(cls):
         path = gammacat_info.base_dir / 'input/data'
         paths = list(path.glob('*/*'))
-
-        if internal:
-            path_internal = gammacat_info.internal_dir
-            paths = chain(paths, [path_internal])
-
-        data = []
-        for path in paths:
-            info = InputDataset.read(path)
-            data.append(info)
+        data = [InputDataset.read(path) for path in paths]
         return cls(data=data)
 
     @property
@@ -321,19 +312,10 @@ class InputData:
         return sorted(path.glob('*/*/tev*lc*.ecsv'))
 
     @classmethod
-    def sed_file_list(cls, internal):
+    def sed_file_list(cls):
         """List of all SED files in the input folder."""
         path = gammacat_info.base_dir / 'input/data'
         paths = path.glob('*/*/tev*sed*.ecsv')
-
-        if internal:
-            path = gammacat_info.base_dir / 'docs/data/sources'
-            paths = path.glob('*/gammacat*sed*.ecsv')
-
-            path_internal = gammacat_info.internal_dir
-            paths_internal = path_internal.glob('tev*.ecsv')
-            paths = chain(paths, paths_internal)
-
         return sorted(paths)
 
     def __init__(self, schemas=None, sources=None, datasets=None,
@@ -346,15 +328,14 @@ class InputData:
         self.gammacat_dataset_config = gammacat_dataset_config
 
     @classmethod
-    def read(cls, internal=False):
-        """Read all data from disk.
-        """
+    def read(cls):
+        """Read all data from disk."""
         # Delayed import to avoid circular dependency
         from .catalog import DatasetConfig
         schemas = Schemas.read()
         sources = BasicSourceList.read()
-        datasets = InputDatasetCollection.read(internal=internal)
-        seds = SEDList.read(filenames=cls.sed_file_list(internal=internal))
+        datasets = InputDatasetCollection.read()
+        seds = SEDList.read(filenames=cls.sed_file_list())
         gammacat_dataset_config = DatasetConfig.read()
         return cls(
             schemas=schemas,

@@ -248,7 +248,7 @@
   reference_id: 2015ApJ...802...65A
 - source_id: 83
   status: source
-  reference_id: 2006ApJ...636..777A, gammacat-hess-internal
+  reference_id: 2006ApJ...636..777A
 - source_id: 84
   status: source
   reference_id: 2006ApJ...636..777A
@@ -311,7 +311,7 @@
   reference_id: 2008A&A...477..353A, 2011A&A...531A..81H
 - source_id: 104
   status: source
-  reference_id: 2008AIPC.1085..249T, gammacat-hess-internal
+  reference_id: 2008AIPC.1085..249T
 - source_id: 105
   status: source
   reference_id:
@@ -401,10 +401,10 @@
   reference_id: 2016arXiv160900600H
 - source_id: 134
   status: source
-  reference_id: 2008A&A...484..435A, gammacat-hess-internal
+  reference_id: 2008A&A...484..435A
 - source_id: 135
   status: source
-  reference_id: gammacat-hess-internal, 2012A&A...541A..13A
+  reference_id: 2012A&A...541A..13A
 - source_id: 136
   status: source
   reference_id: 2010ApJ...719L..69A
@@ -470,10 +470,10 @@
   reference_id:
 - source_id: 158
   status: source
-  reference_id: gammacat-hess-internal
+  reference_id:
 - source_id: 159
   status: source
-  reference_id: gammacat-hess-internal
+  reference_id:
 - source_id: 160
   status: source
   reference_id:

@@ -27,9 +27,8 @@ class CollectionConfig:
     Configuration options (mainly directory and filenames).
     """
 
-    def __init__(self, *, path, hgps=None, step=None):
+    def __init__(self, *, path, step=None):
         self.path = path
-        self.hgps = hgps
         self.step = step
 
         self.gammacat_yaml = self.path / 'gammacat.yaml'
@@ -105,7 +104,7 @@ class CollectionData:
 
     def __init__(self, path):
         # TODO: it's weird that we create a config object here!?
-        self.config = CollectionConfig(path=path, step=None, hgps=None)
+        self.config = CollectionConfig(path=path, step=None)
 
     # TODO: put more info here! Write a summary YAML or JSON file in the repo instead!
     def __str__(self):

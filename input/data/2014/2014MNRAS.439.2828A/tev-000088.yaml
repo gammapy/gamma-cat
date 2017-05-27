@@ -13,11 +13,19 @@ morph:
   type: gauss
   sigma: {val: 4.3m, err: 0.2m}
 
+# The spectral norm is not exactly what is given in the paper.
+# In communication with corresponding author Stefan Ohm we figured
+# out that the value 3.3e-12 given in the paper is not the norm
+# parameter, but the differential flux at 1 TeV.
+# This differs from the norm parameter by the following factor:
+#    exp(e_ref / e_cut) = exp(1.0 / 6.0) = 1.18
+# To fix this issue, we add the `1.18` to the ecpl norm "scale" below.
+# See https://github.com/gammapy/gamma-cat/issues/117
 spec:
   model:
     type: ecpl
     parameters:
-      norm: {val: 3.3, err: 0.1, err_sys: 0.6, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      norm: {val: 3.3, err: 0.1, err_sys: 0.6, scale: 1.18e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.11, err: 0.09, err_sys: 0.10}
       # TODO: Error on the cut-off energy is assymmetric: -1.2, +2.0
       e_cut: {val: 6.0, err: 2.0, unit: TeV}

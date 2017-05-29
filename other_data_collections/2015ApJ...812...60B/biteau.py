@@ -83,20 +83,12 @@ def create_escv1(table, filecounter, note, experiment, reference_id, source, sou
     new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
 
     new_table.meta = table.meta
-
-    print('arguments of function:')
-    print(source)
-    print(reference_id)
-    print('{} \n'.format(experiment))
-    print('Biteau Catalog (For debug):')
-    print(table['source'][13])
-    print(table['reference_id'][13])
-    print('{} \n'.format(table['experiment'][13]))
-
     
     for i in range(0, len(table)):
-        if((table['source'][i]==source) and (table['note'][i]==note) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
-            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
+        if((table['source'][i]==source) and (table['note'][i]==note) and \
+            (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
+            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, \
+            table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
     if(filecounter!=0):
         filename='tev-' + str(source_id) + '-sed-' + str(filecounter) + '.ecsv'
     else:
@@ -127,7 +119,6 @@ def create_escv1(table, filecounter, note, experiment, reference_id, source, sou
     new_table.meta['reference_id'] = reference_id
     new_table.meta['note'] = note
     new_table.meta['data_type'] = 'sed'
-    print('Length of table: {}'.format(len(new_table)))
     new_table.write(filename, format='ascii.ecsv', delimiter=' ')
 
 def create_escv2(table, experiment, reference_id, source, source_id, start):
@@ -135,23 +126,13 @@ def create_escv2(table, experiment, reference_id, source, source_id, start):
 
     new_table.meta = table.meta
 
-    print('arguments of function:')
-    print(source)
-    print(reference_id)
-    print(experiment)
-    print(start)
-    print('\n')
-    print('Biteau Catalog (For debug):')
-    print(table['source'][440])
-    print(table['reference_id'][440])
-    print('{} \n'.format(table['experiment'][440]))
-    print(table['mjd_start'][440])
-
     for i in range(0, len(table)):
-        if((table['source'][i]==source) and (table['mjd_start'][i] == start) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
+        if((table['source'][i]==source) and (table['mjd_start'][i] == start) and \
+            (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
             # The constant 4.135667662E-27 is the Planck constant in eV*s
             # The constant 1.6022 arises when erg is transformed into TeV
-            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
+            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, \
+            table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
         filename='tev-' + str(source_id) + '-sed.ecsv'
     if(experiment == 'MAGIC'):
         new_table.meta['telescope'] = 'magic'
@@ -177,7 +158,6 @@ def create_escv2(table, experiment, reference_id, source, source_id, start):
     new_table.meta['source_id'] = int(source_id)
     new_table.meta['reference_id'] = reference_id
     new_table.meta['data_type'] = 'sed'
-    print('Length of table: {}'.format(len(new_table)))
     new_table.write(filename, format='ascii.ecsv', delimiter=' ')
 
 def create_escv3(table, experiment, reference_id, source, source_id, start, filecounter):
@@ -185,23 +165,13 @@ def create_escv3(table, experiment, reference_id, source, source_id, start, file
 
     new_table.meta = table.meta
 
-    print('arguments of function:')
-    print(source)
-    print(reference_id)
-    print(experiment)
-    print(start)
-    print('\n')
-    print('Biteau Catalog (For debug):')
-    print(table['source'][440])
-    print(table['reference_id'][440])
-    print('{} \n'.format(table['experiment'][440]))
-    print(table['mjd_start'][440])
-
     for i in range(0, len(table)):
-        if((table['source'][i]==source) and (table['mjd_start'][i] == start) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
+        if((table['source'][i]==source) and (table['mjd_start'][i] == start) and \
+            (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
             # The constant 4.135667662E-27 is the Planck constant in eV*s
             # The constant 1.6022 arises when erg is transformed into TeV
-            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
+            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, \
+            table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
     if(filecounter!=0):
         filename='tev-' + str(source_id) + '-sed-' + str(filecounter) + '.ecsv'
     else:
@@ -231,5 +201,24 @@ def create_escv3(table, experiment, reference_id, source, source_id, start, file
     new_table.meta['reference_id'] = reference_id
     new_table.meta['data_type'] = 'sed'
     new_table.meta['filecounter'] = filecounter
-    print('Length of table: {}'.format(len(new_table)))
     new_table.write(filename, format='ascii.ecsv', delimiter=' ')
+
+if __name__ == '__main__': 
+    path = '/home/hpc/caph/mppi019h/github/gamma-cat/other_data_collections/2015ApJ...812...60B/'
+    filename = 'BiteauWilliams2015_AllData_ASDC_v2016_12_20.ecsv'
+
+    table = Table.read(filename, format='ascii.ecsv', delimiter='|')
+
+    adapt_source_names(table)
+
+    filecounter = 2
+    # note = '2011'
+    experiment = 'VERITAS'
+    reference_id = '2014ApJ...785L..16A'
+    source = 'PKS 1424+240'
+    source_id = '000067'
+    mjdstart = 55595.
+
+    # create_escv1(table, filecounter, experiment, reference_id, source, source_id, mjdstart)
+    # create_escv2(table, experiment, reference_id, source, source_id, mjdstart)
+    create_escv3(table, experiment, reference_id, source, source_id, mjdstart, filecounter)

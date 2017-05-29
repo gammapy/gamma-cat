@@ -147,6 +147,8 @@ def create_escv2(table, experiment, reference_id, source, source_id):
 
     for i in range(0, len(table)):
         if((table['source'][i]==source) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
+            # The constant 4.135667662E-27 is the Planck constant in eV*s
+            # The constant 1.6022 arises when erg is transformed into TeV
             new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
         filename='tev-' + str(source_id) + '-sed.ecsv'
     if(experiment == 'MAGIC'):

@@ -21,10 +21,10 @@ biteau.adapt_source_names(table)
 
 # filecounter = 3
 # note = '2011'
-experiment = 'VERITAS'
-reference_id = '2014ApJ...785L..16A'
-source = 'PKS 1424+240'
-source_id = '000067'
+experiment = 'MAGIC'
+reference_id = '2011ApJ...730L...8A'
+source = 'PKS 1222+216'
+source_id = '000056'
 
 # biteau.create_escv1(table, filecounter, note, experiment, reference_id, source, source_id)
 biteau.create_escv2(table, experiment, reference_id, source, source_id)

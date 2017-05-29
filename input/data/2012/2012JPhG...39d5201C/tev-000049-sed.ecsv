@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: tactic}
+# - {source_id: 49}
+# - {reference_id: 2012JPhG...39d5201C}
+# - {data_type: sed}
+e_ref dnde dnde_errn dnde_errp
+1.0 1.74997e-11 6.77993e-12 6.77993e-12
+1.5 1.22623e-11 2.49747e-12 2.49747e-12
+2.22 1.05959e-11 1.55242e-12 1.55242e-12
+3.32 8.22257e-12 1.69742e-12 1.69742e-12
+4.94998 9.53133e-12 1.95527e-12 1.95527e-12
+7.38002 1.00758e-11 2.34738e-12 2.34738e-12
+11.0 6.18301e-12 3.13385e-12 3.13385e-12
+16.44 2.72972e-12 3.35134e-12 3.35134e-12

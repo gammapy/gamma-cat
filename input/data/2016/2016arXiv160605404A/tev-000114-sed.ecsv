@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_min, datatype: float32}
+# - {name: dnde_max, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 114
+# - reference_id: 2016arXiv160605404A
+# - telescope: hess
+# - comments: |
+#     Data from Table A.2 in the paper
+e_ref dnde dnde_min dnde_max
+0.34 3.38e-12 2.39e-12 4.39e-12
+0.78 5.17e-13 3.95e-13 6.42e-13
+2.04 5.10e-14 3.26e-14 7.00e-14
+5.35 6.36e-15 2.80e-15 1.02e-14
+

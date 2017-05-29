@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 114}
+# - {reference_id: 2016arXiv160605404A}
+# - {telescope: hess}
+# - {comments: Data from Table A.2 in the paper}
+e_ref dnde dnde_errn dnde_errp
+0.34 3.38e-12 9.9e-13 1.01e-12
+0.78 5.17e-13 1.22e-13 1.25e-13
+2.04 5.1e-14 1.84e-14 1.9e-14
+5.35 6.36e-15 3.56e-15 3.84e-15

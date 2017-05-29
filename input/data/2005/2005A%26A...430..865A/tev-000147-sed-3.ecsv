@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: hess}
+# - {source_id: 147}
+# - {reference_id: 2005A&A...430..865A}
+# - {data_type: sed}
+# - {filecounter: 3}
+e_ref dnde dnde_errn dnde_errp
+0.405082 8.8743e-12 1.04931e-12 1.04931e-12
+0.539998 7.06547e-12 8.31719e-13 8.31719e-13
+0.720681 3.50682e-12 6.88516e-13 6.88516e-13
+0.96079 3.10288e-12 5.76371e-13 5.76371e-13
+1.28083 1.36922e-12 5.15565e-13 5.15565e-13
+1.70777 7.24547e-13 4.78021e-13 4.78021e-13
+2.27714 4.56201e-13 4.6922e-13 4.6922e-13

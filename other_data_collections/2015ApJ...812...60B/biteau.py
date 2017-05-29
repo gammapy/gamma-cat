@@ -130,7 +130,7 @@ def create_escv1(table, filecounter, note, experiment, reference_id, source, sou
     print('Length of table: {}'.format(len(new_table)))
     new_table.write(filename, format='ascii.ecsv', delimiter=' ')
 
-def create_escv2(table, experiment, reference_id, source, source_id):
+def create_escv2(table, experiment, reference_id, source, source_id, start):
     new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
 
     new_table.meta = table.meta
@@ -139,14 +139,16 @@ def create_escv2(table, experiment, reference_id, source, source_id):
     print(source)
     print(reference_id)
     print(experiment)
+    print(start)
     print('\n')
     print('Biteau Catalog (For debug):')
-    print(table['source'][550])
-    print(table['reference_id'][550])
-    print('{} \n'.format(table['experiment'][550]))
+    print(table['source'][440])
+    print(table['reference_id'][440])
+    print('{} \n'.format(table['experiment'][440]))
+    print(table['mjd_start'][440])
 
     for i in range(0, len(table)):
-        if((table['source'][i]==source) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
+        if((table['source'][i]==source) and (table['mjd_start'][i] == start) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
             # The constant 4.135667662E-27 is the Planck constant in eV*s
             # The constant 1.6022 arises when erg is transformed into TeV
             new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
@@ -175,5 +177,59 @@ def create_escv2(table, experiment, reference_id, source, source_id):
     new_table.meta['source_id'] = int(source_id)
     new_table.meta['reference_id'] = reference_id
     new_table.meta['data_type'] = 'sed'
+    print('Length of table: {}'.format(len(new_table)))
+    new_table.write(filename, format='ascii.ecsv', delimiter=' ')
+
+def create_escv3(table, experiment, reference_id, source, source_id, start, filecounter):
+    new_table = Table(names=('e_ref', 'dnde', 'dnde_errn', 'dnde_errp'), dtype=('float32', 'float32', 'float32', 'float32'))
+
+    new_table.meta = table.meta
+
+    print('arguments of function:')
+    print(source)
+    print(reference_id)
+    print(experiment)
+    print(start)
+    print('\n')
+    print('Biteau Catalog (For debug):')
+    print(table['source'][440])
+    print(table['reference_id'][440])
+    print('{} \n'.format(table['experiment'][440]))
+    print(table['mjd_start'][440])
+
+    for i in range(0, len(table)):
+        if((table['source'][i]==source) and (table['mjd_start'][i] == start) and (table['reference_id'][i] == reference_id) and (table['experiment'][i] == experiment)):
+            # The constant 4.135667662E-27 is the Planck constant in eV*s
+            # The constant 1.6022 arises when erg is transformed into TeV
+            new_table.add_row((4.135667662E-27*table[i]['freq'], table[i]['e2dnde']/1.6022, table[i]['e2dnde_errn']/1.6022, table[i]['e2dnde_errp']/1.6022))
+    if(filecounter!=0):
+        filename='tev-' + str(source_id) + '-sed-' + str(filecounter) + '.ecsv'
+    else:
+        filename='tev-' + str(source_id) + '-sed.ecsv'
+    if(experiment == 'MAGIC'):
+        new_table.meta['telescope'] = 'magic'
+    elif(experiment == 'CAT'):
+        new_table.meta['telescope'] = 'cat'
+    elif(experiment == 'HEGRA'):
+        new_table.meta['telescope'] = 'hegra'
+    elif(experiment == 'TIBET'):
+        new_table.meta['telescope'] = 'tibet'
+    elif(experiment == 'HESS'):
+        new_table.meta['telescope'] = 'hess'
+    elif(experiment == 'TACTIC'):
+        new_table.meta['telescope'] = 'tactic'
+    elif(experiment == 'ARGO-YBJ'):
+        new_table.meta['telescope'] = 'argo'
+    elif(experiment == 'VERITAS'):
+        new_table.meta['telescope'] = 'veritas'
+    elif(experiment == 'Whipple'):
+        new_table.meta['telescope'] = 'whipple'
+    new_table.meta.pop('author')
+    new_table.meta.pop('dataset_reference')
+    new_table.meta.pop('creation_date')
+    new_table.meta['source_id'] = int(source_id)
+    new_table.meta['reference_id'] = reference_id
+    new_table.meta['data_type'] = 'sed'
+    new_table.meta['filecounter'] = filecounter
     print('Length of table: {}'.format(len(new_table)))
     new_table.write(filename, format='ascii.ecsv', delimiter=' ')

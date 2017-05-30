@@ -10,7 +10,7 @@
 # - {source_id: 147}
 # - {reference_id: 2012A&A...539A.149H}
 # - {data_type: sed}
-# - {filecounter: 2}
+# - {file_id: 2}
 # - {mjd: {min: 53949.5, max: 53950.5}}
 # - comments: |
 #    This data was collected for 2012A&A...539A.149H and contributed to gamma-cat by Janathan Biteau.

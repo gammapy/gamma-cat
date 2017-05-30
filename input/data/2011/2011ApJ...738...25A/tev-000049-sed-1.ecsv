@@ -7,7 +7,7 @@
 # - {name: dnde_errp, datatype: float32}
 # meta: !!omap
 # - {telescope: veritas}
-# - {filecounter: 1}
+# - {file_id: 1}
 # - {source_id: 49}
 # - {reference_id: 2011ApJ...738...25A}
 # - {note: HighA}

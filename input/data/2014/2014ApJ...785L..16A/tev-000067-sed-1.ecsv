@@ -10,7 +10,7 @@
 # - {source_id: 67}
 # - {reference_id: 2014ApJ...785L..16A}
 # - {data_type: sed}
-# - {filecounter: 1}
+# - {file_id: 1}
 # - {mjd: {min: 55595, max: 55711}}
 # - comments: |
 #    This data was collected for 2014ApJ...785L..16A and contributed to gamma-cat by Janathan Biteau.

@@ -10,7 +10,7 @@
 # - {source_id: 49}
 # - {reference_id: 2002A&A...393...89A}
 # - {data_type: sed}
-# - {filecounter: 1}
+# - {file_id: 1}
 # - {mjd: {min: 51515, max: 51669}}
 # - comments: |
 #    This data was collected for 2002A&A...393...89A and contributed to gamma-cat by Janathan Biteau.

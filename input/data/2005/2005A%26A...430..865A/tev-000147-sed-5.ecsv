@@ -10,7 +10,7 @@
 # - {source_id: 147}
 # - {reference_id: 2005A&A...430..865A}
 # - {data_type: sed}
-# - {filecounter: 5}
+# - {file_id: 5}
 # - {mjd: {min: 52852, max: 52882}}
 # - comments: |
 #    This data was collected for 2005A&A...430..865A and contributed to gamma-cat by Janathan Biteau.

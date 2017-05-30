@@ -10,6 +10,9 @@
 # - {source_id: 62}
 # - {reference_id: 2013MNRAS.434.1889H}
 # - {data_type: sed}
+# - {mjd: {min: 53291.4, max: 5516.4}}
+# - comments: |
+#    This data was collected for 2013MNRAS.434.1889H and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.366 3.61421e-13 2.84009e-13 3.08362e-13
 0.671 3.47063e-13 1.21095e-13 1.27961e-13

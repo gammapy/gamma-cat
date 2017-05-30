@@ -12,6 +12,9 @@
 # - {reference_id: 2011ApJ...738...25A}
 # - {note: Mid}
 # - {data_type: sed}
+# - {mjd: {min: 54466, max: 54647}}
+# - comments: |
+#    This data was collected for 2011ApJ...738...25A and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.275 1.32947e-10 4.32645e-12 4.32645e-12
 0.34 1.26696e-10 3.63903e-12 3.63903e-12

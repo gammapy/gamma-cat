@@ -10,6 +10,9 @@
 # - {source_id: 138}
 # - {reference_id: 2003A&A...406L...9A}
 # - {data_type: sed}
+# - {mjd: {min: 52412, max: 52415}}
+# - comments: |
+#    This data was collected for 2003A&A...406L...9A and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 1.52 5.77591e-11 1.15518e-11 1.15518e-11
 2.02 3.46829e-11 6.52852e-12 6.52852e-12

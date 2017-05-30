@@ -12,6 +12,9 @@
 # - {reference_id: 2012ApJ...748...46A}
 # - {note: '2008'}
 # - {data_type: sed}
+# - {mjd: {min: 54542, max: 54593}}
+# - comments: |
+#    This data was collected for 2012ApJ...748...46A and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.155 1.83548e-11 3.57967e-12 3.57967e-12
 0.246 7.38285e-12 1.76704e-12 1.76704e-12

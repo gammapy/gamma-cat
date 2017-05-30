@@ -11,6 +11,9 @@
 # - {reference_id: 2005A&A...430..865A}
 # - {data_type: sed}
 # - {filecounter: 5}
+# - {mjd: {min: 52852, max: 52882}}
+# - comments: |
+#    This data was collected for 2005A&A...430..865A and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.228123 1.316e-11 1.24224e-12 1.24224e-12
 0.304388 8.5249e-12 7.71202e-13 7.71202e-13

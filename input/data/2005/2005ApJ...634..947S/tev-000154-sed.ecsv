@@ -10,6 +10,9 @@
 # - {source_id: 154}
 # - {reference_id: 2005ApJ...634..947S}
 # - {data_type: sed}
+# - {mjd: {min: 50070.5, max: 50071.5}}
+# - comments: |
+#    This data was collected for 2005ApJ...634..947S and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 1.12003 4.56618e-11 1.68096e-11 1.68096e-11
 2.24006 3.63287e-11 1.21932e-11 1.21932e-11

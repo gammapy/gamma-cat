@@ -10,6 +10,9 @@
 # - {source_id: 147}
 # - {reference_id: 2013PhRvD..88j2003A}
 # - {data_type: sed}
+# - {mjd: {min: 53943, max: 53946}}
+# - comments: |
+#    This data was collected for 2013PhRvD..88j2003A and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.281147 2.47363e-10 3.35203e-12 3.35203e-12
 0.326702 2.13112e-10 3.19727e-12 3.19727e-12

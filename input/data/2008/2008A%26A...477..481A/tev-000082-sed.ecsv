@@ -10,6 +10,9 @@
 # - {source_id: 82}
 # - {reference_id: 2008A&A...477..481A}
 # - {data_type: sed}
+# - {mjd: {min: 53942, max: 53943}}
+# - comments: |
+#    This data was collected for 2008A&A...477..481A and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.245575 5.31261e-12 1.17549e-12 1.17549e-12
 0.29751 5.11203e-12 8.55492e-13 8.55492e-13

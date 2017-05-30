@@ -10,6 +10,9 @@
 # - {source_id: 49}
 # - {reference_id: 2015NIMPA.770...42S}
 # - {data_type: sed}
+# - {mjd: {min: 53711, max: 53855}}
+# - comments: |
+#    This data was collected for 2015NIMPA.770...42S and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 1.0 2.79496e-11 3.19996e-12 3.19996e-12
 1.4 2.08149e-11 1.11718e-12 1.11718e-12

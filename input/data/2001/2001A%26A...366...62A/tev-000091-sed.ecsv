@@ -10,6 +10,9 @@
 # - {source_id: 91}
 # - {reference_id: 2001A&A...366...62A}
 # - {data_type: sed}
+# - {mjd: {min: 50508, max: 50752}}
+# - comments: |
+#    This data was collected for 2001A&A...366...62A and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 3.28 7.15959e-11 2.87138e-12 2.87138e-12
 3.68 6.45419e-11 2.68407e-12 2.68407e-12

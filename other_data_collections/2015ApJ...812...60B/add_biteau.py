@@ -217,8 +217,8 @@ if __name__ == '__main__':
     reference_id = '2014ApJ...785L..16A'
     source = 'PKS 1424+240'
     source_id = '000067'
-    mjdstart = 55595.
+    mjdstart = 56334.
 
-    # create_escv1(table, filecounter, experiment, reference_id, source, source_id, mjdstart)
+    # create_escv1(table, filecounter, note, experiment, reference_id, source, source_id)
     # create_escv2(table, experiment, reference_id, source, source_id, mjdstart)
     create_escv3(table, experiment, reference_id, source, source_id, mjdstart, filecounter)

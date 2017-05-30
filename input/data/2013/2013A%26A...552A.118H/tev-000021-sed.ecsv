@@ -10,6 +10,9 @@
 # - {source_id: 21}
 # - {reference_id: 2013A&A...552A.118H}
 # - {data_type: sed}
+# - {mjd: {min: 55144.9, max: 55211.8}}
+# - comments: |
+#    This data was collected for 2013A&A...552A.118H and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.24098 7.13931e-12 4.03395e-12 5.95949e-12
 0.267937 3.44032e-12 1.67511e-12 2.09748e-12

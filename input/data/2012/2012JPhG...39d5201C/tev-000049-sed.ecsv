@@ -10,6 +10,9 @@
 # - {source_id: 49}
 # - {reference_id: 2012JPhG...39d5201C}
 # - {data_type: sed}
+# - {mjd: {min: 55157, max: 55332}}
+# - comments: |
+#    This data was collected for 2012JPhG...39d5201C and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 1.0 1.74997e-11 6.77993e-12 6.77993e-12
 1.5 1.22623e-11 2.49747e-12 2.49747e-12

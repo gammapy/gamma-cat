@@ -10,8 +10,8 @@
 # - {source_id: 155}
 # - {reference_id: 2010A&A...516A..56H}
 # - {data_type: sed}
-# - {filecounter: 2}
-# - {mjd: {min: 53530, max: 53615}}
+# - {filecounter: 3}
+# - {mjd: {min: 53937, max: 54005}}
 # - comments: |
 #    This data was collected for 2010A&A...516A..56H and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp

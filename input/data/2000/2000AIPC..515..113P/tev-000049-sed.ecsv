@@ -10,6 +10,9 @@
 # - {source_id: 49}
 # - {reference_id: 2000AIPC..515..113P}
 # - {data_type: sed}
+# - {mjd: {min: 50814, max: 51178}}
+# - comments: |
+#    This data was collected for 2000AIPC..515..113P and contributed to gamma-cat by Janathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.25 8.87486e-11 2.56246e-11 2.56246e-11
 0.4 4.20794e-11 8.4799e-12 8.4799e-12

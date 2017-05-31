@@ -10,7 +10,6 @@
 # - {file_id: 2}
 # - {source_id: 67}
 # - {reference_id: 2014A&A...567A.135A}
-# - {note: '2010'}
 # - {data_type: sed}
 # - {mjd: {min: 55269, max: 55305}}
 # - comments: |

@@ -10,7 +10,6 @@
 # - {file_id: 3}
 # - {source_id: 82}
 # - {reference_id: 2012ApJ...748...46A}
-# - {note: '2009'}
 # - {data_type: sed}
 # - {mjd: {min: 54937, max: 54997}}
 # - comments: |

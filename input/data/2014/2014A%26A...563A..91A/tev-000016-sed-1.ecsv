@@ -10,7 +10,6 @@
 # - {file_id: 1}
 # - {source_id: 16}
 # - {reference_id: 2014A&A...563A..91A}
-# - {note: High}
 # - {mjd: {min: 55120, max: 55242}}
 # - comments: |
 #    This data was collected for 2014A&A...563A..91A and contributed to gamma-cat by Janathan Biteau.

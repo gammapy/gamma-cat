@@ -10,7 +10,6 @@
 # - {file_id: 2}
 # - {source_id: 49}
 # - {reference_id: 2011ApJ...734..110B}
-# - {note: Flux2}
 # - {data_type: sed}
 # - {mjd: {min: 54405, max: 55255}}
 # - comments: |

@@ -9216,7 +9216,7 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: .nan
+  - spec_erange_min: 0.3499999940395355
   - spec_erange_max: .nan
   - spec_theta: 0.10000000149011612
   - spec_dnde_1TeV: 8.383876817612268e-13

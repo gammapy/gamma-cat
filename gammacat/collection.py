@@ -222,5 +222,8 @@ class CollectionMaker:
             resource = SED.read(self.config.path / filename).resource
             resource.location = filename
             resources.append(resource)
+
+        ri = GammaCatResourceIndex(resources).sort()
+
         path = self.config.index_datasets_json
-        write_json(GammaCatResourceIndex(resources).to_list(), path)
+        write_json(ri.to_list(), path)

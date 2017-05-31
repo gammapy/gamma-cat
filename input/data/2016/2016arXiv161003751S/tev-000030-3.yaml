@@ -25,4 +25,4 @@ spec:
     index: {val: 2.72, err: 0.2}
     ref: 1
     erange: {min: 0.28, max: 6.31}
-    file_id: 3
+    filecounter: 3

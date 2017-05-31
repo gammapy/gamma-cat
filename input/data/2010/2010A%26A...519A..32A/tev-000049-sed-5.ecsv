@@ -13,7 +13,7 @@
 # - {data_type: sed}
 # - {mjd: {min: 53851, max: 53852}}
 # - comments: |
-#    This data was collected for 2010A&A...519A..32A and contributed to gamma-cat by Janathan Biteau.
+#    This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.
 e_ref dnde dnde_errn dnde_errp
 0.449502 7.98071e-11 5.96633e-12 5.96633e-12
 0.704499 8.98458e-11 7.55517e-12 7.55517e-12

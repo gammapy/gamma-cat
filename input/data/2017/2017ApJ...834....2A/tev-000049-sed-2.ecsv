@@ -2,16 +2,17 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32, unit: TeV}
-# - {name: dnde, datatype: float32, unit: TeV m-2 s-1}
-# - {name: dnde_err, datatype: float32, unit: TeV m-2 s-1}
+# - {name: e2dnde, datatype: float32, unit: TeV m-2 s-1}
+# - {name: e2dnde_err, datatype: float32, unit: TeV m-2 s-1}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 49
 # - reference_id: 2017ApJ...834....2A
+# - file_id: 2
 # - telescope: veritas
 # - comments: |
 #       Spectrum for 2014-05-03.
-e_ref dnde dnde_err
+e_ref e2dnde e2dnde_err
 0.223  2.03e-05 1.15e-06
 0.3533 6.83e-06 3.58e-07
 0.5596 2.35e-06 1.35e-07

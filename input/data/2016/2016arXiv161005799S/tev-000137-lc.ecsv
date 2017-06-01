@@ -10,7 +10,7 @@
 # - reference_id: 2016arXiv161005799S
 # - telescope: veritas
 # - timesys: UTC
-# - energy_min: 200 GeV
+# - e_min: 200 GeV
 time flux flux_err
 56807.411655 3.623e-12 1.164e-12
 56814.411655 4.172e-12 1.372e-12

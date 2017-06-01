@@ -1,0 +1,15 @@
+# List of temporal models used by Fermi ST and Gammalib / ctools
+#
+
+#    <temporal type="LightCurve" file="model_temporal_lightcurve.fits">
+#      <parameter name="Normalization" scale="1" value="1.0" min="0.0" max="1000.0" free="0"/>
+#    </temporal>
+
+#    <temporal type="PhaseCurve" file="model_temporal_phasecurve.fits">
+#      <parameter name="Normalization" scale="1" value="1.0"     min="0.0" max="1000.0"   free="0"/>
+#      <parameter name="MJD"           scale="1" value="51544.5" min="0.0" max="100000.0" free="0"/>
+#      <parameter name="Phase"         scale="1" value="0.0"     min="0.0" max="1.0"      free="0"/>
+#      <parameter name="F0"            scale="1" value="1.0"     min="0.0" max="1000.0"   free="0"/>
+#      <parameter name="F1"            scale="1" value="0.1"     min="0.0" max="1000.0"   free="0"/>
+#      <parameter name="F2"            scale="1" value="0.01"    min="0.0" max="1000.0"   free="0"/>
+#    </temporal>

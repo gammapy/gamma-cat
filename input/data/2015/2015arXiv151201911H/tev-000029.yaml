@@ -15,13 +15,16 @@ morph:
 
 # The spectrum listed here is for the entire remnant measurement from Table 1
 # The paper also gives results for 3 sub-regions, not listed here.
+#
+# TODO: the spectral norm is quoted in a weird way as
+# 9.92 ± 0.90 (/550 GeV) * 10−13 TeV
+# We should check against the spectral points or ask the corresponding author if this is correct:
 spec:
-  type: pl
-  # TODO: the spectral norm is quoted in a weird way as
-  # 9.92 ± 0.90 (/550 GeV) * 10−13 TeV
-  # We should check against the spectral points or ask the corresponding author if this is correct:
-  norm: {val: 0.992, err: 0.090}
-  index: {val: 2.80, err: 0.09}
-  ref: 0.55
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.992, err: 0.090, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.80, err: 0.09}
+      e_ref: {val: 0.55, unit: TeV}
   erange: {min: 0.19}
   theta: 0.30d

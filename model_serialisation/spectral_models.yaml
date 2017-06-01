@@ -1,0 +1,89 @@
+# List of spectral models used by Fermi ST and Gammalib / ctools
+#
+# It seems that Gammalib now uses the same "type" string
+# for different parametrisations (and probably looks at parameter names).
+# To handle this, we introduce a `classname` and list of `typenames` here
+# that are supported.
+- classname: Constant
+  typenames: [Constant]
+  parameters:
+  - {name: Normalization, unit: cm-2 s-1 MeV-1}
+
+- classname: PowerLaw
+  typenames: [PowerLaw]
+  parameters:
+  - {name: Prefactor, unit: cm-2 s-1 MeV-1}
+  - {name: Index, unit: ''}
+  - {name: PivotEnergy, unit: MeV}
+
+- classname: PowerLaw2
+  typenames: [PowerLaw, PowerLaw2]
+  parameters:
+  - {name: PhotonFlux, unit: cm-2 s-1}
+  - {name: Index, unit: ''}
+  - {name: LowerLimit, unit: MeV}
+  - {name: UpperLimit, unit: MeV}
+
+- classname: ExponentialCutoffPowerLaw
+  typenames: [ExponentialCutoffPowerLaw]
+  parameters:
+  - {name: Prefactor, unit: cm-2 s-1 MeV-1}
+  - {name: Index, unit: ''}
+  - {name: InverseCutoffEnergy, unit: MeV-1}
+  - {name: PivotEnergy, unit: MeV}
+
+- classname: ExponentialCutoffPowerLaw2
+  typenames: [ExponentialCutoffPowerLaw, ExponentialCutoffPowerLaw2]
+  parameters:
+  - {name: Prefactor, unit: cm-2 s-1 MeV-1}
+  - {name: Index, unit: ''}
+  - {name: CutoffEnergy, unit: MeV}
+  - {name: PivotEnergy, unit: MeV}
+
+- classname: SuperExponentialCutoffPowerLaw
+  typenames: [SuperExponentialCutoffPowerLaw]
+  parameters:
+  - {name: Prefactor, unit: cm-2 s-1 MeV-1}
+  - {name: Index1, unit: ''}
+  - {name: CutoffEnergy, unit: MeV}
+  - {name: PivotEnergy, unit: MeV}
+  - {name: Index2, unit: ''}
+
+- classname: BrokenPowerLaw
+  typenames: [BrokenPowerLaw]
+  parameters:
+  - {name: Prefactor, unit: cm-2 s-1 MeV-1}
+  - {name: Index1, unit: ''}
+  - {name: BreakEnergy, unit: MeV}
+  - {name: Index2, unit: MeV}
+
+- classname: FileFunction
+  typenames: [FileFunction]
+  file: string
+  parameters:
+  - {name: Normalization, unit: cm-2 s-1 MeV-1}
+
+- classname: Gaussian
+  typenames: [Gaussian]
+  parameters:
+  - {name: Normalization, unit: cm-2 s-1 MeV-1}
+  - {name: Mean, unit: MeV}
+  - {name: Sigma, unit: MeV-1}
+
+- classname: LogParabola
+  typenames: [LogParabola]
+  parameters:
+  - {name: Prefactor, unit: cm-2 s-1 MeV-1}
+  - {name: Index, unit: ''}
+  - {name: Curvature, unit: ???}
+  - {name: PivotEnergy, unit: MeV}
+
+- classname: NodeFunction
+  typenames: [NodeFunction]
+  # TODO: here an array is needed!
+  parameters:
+  - {name: Energy, unit: MeV}
+  - {name: Intensity, unit: cm-2 s-1 MeV-1}
+
+# TODO: support this? <spectrum type="Multiplicative">
+# TODO: support this? <spectrum type="Composite">

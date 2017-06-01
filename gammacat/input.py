@@ -4,14 +4,13 @@ Classes to read, validate and work with the input data files.
 """
 import logging
 from collections import OrderedDict
-from itertools import chain
 from pathlib import Path
 import urllib.parse
 from astropy.table import Table
 from .info import gammacat_info
 from .utils import load_yaml, NA, validate_schema
-from .sed import SEDList
-from .lightcurve import LightcurveList
+from .sed import SED
+from .lightcurve import LightCurve
 
 __all__ = [
     'BasicSourceInfo',
@@ -191,8 +190,6 @@ class BasicSourceList:
 
         data = []
         for path in paths:
-            if path.name in {'example.yaml'}:
-                continue
             info = BasicSourceInfo.read(path)
             data.append(info)
 
@@ -210,7 +207,7 @@ class BasicSourceList:
         return [
             source.to_dict(filled=filled)
             for source in self.data
-            ]
+        ]
 
     def validate(self):
         # TODO: validate `column_spec` schema?
@@ -228,18 +225,10 @@ class InputDatasetCollection:
         self.data = data
 
     @classmethod
-    def read(cls, internal=False):
+    def read(cls):
         path = gammacat_info.base_dir / 'input/data'
         paths = list(path.glob('*/*'))
-
-        if internal:
-            path_internal = gammacat_info.internal_dir
-            paths = chain(paths, [path_internal])
-
-        data = []
-        for path in paths:
-            info = InputDataset.read(path)
-            data.append(info)
+        data = [InputDataset.read(path) for path in paths]
         return cls(data=data)
 
     @property
@@ -316,34 +305,40 @@ class InputData:
     Expose it as Python objects that can be validated and used.
     """
 
+    @property
+    def lightcurve_file_list(self):
+        """List of all lightcurve files in the input folder."""
+        path = gammacat_info.base_dir / 'input/data'
+        return sorted(path.glob('*/*/tev*lc*.ecsv'))
+
+    @property
+    def sed_file_list(self):
+        """List of all SED files in the input folder."""
+        path = gammacat_info.base_dir / 'input/data'
+        paths = path.glob('*/*/tev*sed*.ecsv')
+        return sorted(paths)
+
     def __init__(self, schemas=None, sources=None, datasets=None,
-                 seds=None, lightcurves=None, gammacat_dataset_config=None):
+                 gammacat_dataset_config=None):
         self.path = gammacat_info.base_dir / 'input'
         self.schemas = schemas
         self.sources = sources
         self.datasets = datasets
-        self.seds = seds
-        self.lightcurves = lightcurves
         self.gammacat_dataset_config = gammacat_dataset_config
 
     @classmethod
-    def read(cls, internal=False):
-        """Read all data from disk.
-        """
+    def read(cls):
+        """Read all data from disk."""
         # Delayed import to avoid circular dependency
-        from .cat import GammaCatDataSetConfig
+        from .catalog import DatasetConfig
         schemas = Schemas.read()
         sources = BasicSourceList.read()
-        datasets = InputDatasetCollection.read(internal=internal)
-        seds = SEDList.read(internal=internal)
-        lightcurves = LightcurveList.read()
-        gammacat_dataset_config = GammaCatDataSetConfig.read()
+        datasets = InputDatasetCollection.read()
+        gammacat_dataset_config = DatasetConfig.read()
         return cls(
             schemas=schemas,
             sources=sources,
             datasets=datasets,
-            seds=seds,
-            lightcurves=lightcurves,
             gammacat_dataset_config=gammacat_dataset_config,
         )
 
@@ -360,8 +355,8 @@ class InputData:
         ss += 'Number of total datasets in `input/gammacat/gamma_cat_dataset.yaml`: {}\n'.format(
             len(self.gammacat_dataset_config.reference_ids))
         ss += '\n'
-        ss += 'Number of SEDs: {}\n'.format(len(self.seds.data))
-        ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurves.data))
+        ss += 'Number of SEDs: {}\n'.format(len(self.sed_file_list))
+        ss += 'Number of lightcurves: {}\n'.format(len(self.lightcurve_file_list))
         return ss
 
     def validate(self):
@@ -369,6 +364,11 @@ class InputData:
         self.schemas.validate()
         self.sources.validate()
         self.datasets.validate()
-        self.seds.validate()
-        # self.lightcurves.validate()
+
+        for filename in self.sed_file_list:
+            SED.read(filename=filename).process()
+
+        for filename in self.lightcurve_file_list:
+            LightCurve.read(filename=filename).process()
+
         self.gammacat_dataset_config.validate(self)

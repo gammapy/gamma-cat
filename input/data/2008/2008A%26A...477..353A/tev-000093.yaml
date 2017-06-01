@@ -16,10 +16,15 @@ morph:
   sigma2: {val: 0.08d, err: 0.02d}
   pa: {frame: radec, val: -20d, err: 23d}
 
+# Note: spectral model parameters in the paper are probably incorrect.
+# Discussion and values here obtained from corresponding author Karl Kosack
+# via https://github.com/gammapy/gamma-cat/issues/115
 spec:
-  type: pl
-  norm: {val: 2.7, err: 0.3, err_sys: 0.2}
-  index: {val: 2.46, err: 0.08, err_sys: 0.2}
-  ref: 1
+  model:
+    type: pl
+    parameters:
+      norm: {val: 5.596e-12, err: 6.404e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.58, err: 0.1025, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
   theta: 0.3d
   erange: {min: 0.50 , max: 60}

@@ -8,27 +8,28 @@ telescope: veritas
 ##################
 # Source position fit
 pos:
-    # from fit to VERITAS data
-    ra: {val: 2h40m41s, err: 73s, err_sys: 90s }
-    dec: {val: +61d13m12s, err: 30s, err_sys: 90s }
+  # from fit to VERITAS data
+  ra: {val: 2h40m41s, err: 73s, err_sys: 90s }
+  dec: {val: +61d13m12s, err: 30s, err_sys: 90s }
 
 ##################
 # Orbital period
 # (for binaries only)
 orbit:
-    # zero phase for orbital period from Gregory (2002)
-    mjd0: 43366.3
-    period: {val: 26.4960 }
+  # zero phase for orbital period from Gregory (2002)
+  mjd0: 43366.3
+  period: {val: 26.4960 }
 
 #############################################################
 # spectral fit results
 # (spectral fit for phases 0.5-0.8)
-
 spec:
-  type: pl
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.89, err: 0.32, err_sys: 0.6, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.40, err: 0.19, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
   mjd: {min: 53999.4, max: 54147.1}
   phase: {min: 0.5, max: 0.8 }
-  norm: {val: 2.89, err: 0.32, err_sys: 0.6}
-  index: {val: 2.40, err: 0.19, err_sys: 0.2}
-  ref: 1
   erange: {min: 0.3, max: 7.07}

@@ -44,7 +44,7 @@
   reference_id:
 - source_id: 14
   status: source
-  reference_id:
+  reference_id: 2008ApJ...679.1427A, 2011ApJ...738....3A
 - source_id: 15
   status: source
   reference_id:
@@ -92,7 +92,7 @@
   reference_id: 2015arXiv151201911H
 - source_id: 30
   status: source
-  reference_id: 2007A&A...469L...1A
+  reference_id: 2007A&A...469L...1A, 2009ApJ...698L..94A, 2012ApJ...754L..10A, 2014ApJ...780..168A, 2016arXiv161003751S
 - source_id: 31
   status: source
   reference_id:
@@ -149,7 +149,7 @@
   reference_id:
 - source_id: 49
   status: source
-  reference_id: 2005A&A...437...95A
+  reference_id: 1996ApJ...460..644S, 1996ApJ...472L...9B, 1999A&A...350..757A, 1999ApJ...526L..81M, 2000PhDT.........6P, 2002A&A...393...89A, 2005A&A...437...95A, 2006ApJ...641..740R, 2009ApJ...691L..13D, 2017ApJ...834....2A
 - source_id: 50
   status: source
   reference_id:
@@ -221,7 +221,7 @@
   reference_id:
 - source_id: 73
   status: source
-  reference_id:
+  reference_id: 2012arXiv1205.0719D
 - source_id: 74
   status: source
   reference_id: 2010A&A...516A..62A
@@ -248,7 +248,7 @@
   reference_id: 2015ApJ...802...65A
 - source_id: 83
   status: source
-  reference_id: 2006ApJ...636..777A, gammacat-hess-internal
+  reference_id: 2006ApJ...636..777A
 - source_id: 84
   status: source
   reference_id: 2006ApJ...636..777A
@@ -272,7 +272,7 @@
   reference_id: 2012A&A...537A.114A
 - source_id: 91
   status: source
-  reference_id:
+  reference_id: 1999A&A...342...69A, 2001ApJ...546..898A
 - source_id: 92
   status: source
   reference_id: 2006ApJ...636..777A, 2008A&A...477..353A
@@ -287,7 +287,7 @@
   reference_id: 2006ApJ...636..777A, 2008A&A...486..829A
 - source_id: 96
   status: source
-  reference_id: 2004Natur.432...75A, 2016arXiv160908671H
+  reference_id: 2004Natur.432...75A, 2006A&A...449..223A, 2016arXiv160908671H
 - source_id: 97
   status: source
   reference_id: 2008A&A...490..685A
@@ -311,7 +311,7 @@
   reference_id: 2008A&A...477..353A, 2011A&A...531A..81H
 - source_id: 104
   status: source
-  reference_id: 2008AIPC.1085..249T, gammacat-hess-internal
+  reference_id: 2008AIPC.1085..249T
 - source_id: 105
   status: source
   reference_id:
@@ -341,7 +341,7 @@
   reference_id: 2006ApJ...636..777A
 - source_id: 114
   status: source
-  reference_id:
+  reference_id: 2016arXiv160605404A
 - source_id: 115
   status: source
   reference_id: 2007A&A...472..489A
@@ -401,10 +401,10 @@
   reference_id: 2016arXiv160900600H
 - source_id: 134
   status: source
-  reference_id: 2008A&A...484..435A, gammacat-hess-internal
+  reference_id: 2008A&A...484..435A
 - source_id: 135
   status: source
-  reference_id: gammacat-hess-internal, 2012A&A...541A..13A
+  reference_id: 2012A&A...541A..13A
 - source_id: 136
   status: source
   reference_id: 2010ApJ...719L..69A
@@ -413,7 +413,7 @@
   reference_id: 2016arXiv161005799S, 2011A&A...529A..49H
 - source_id: 138
   status: source
-  reference_id:
+  reference_id: 2003ApJ...583L...9H, 2003ICRC....5.2615T, 2003A&A...406L...9A
 - source_id: 139
   status: source
   reference_id:
@@ -428,7 +428,7 @@
   reference_id:
 - source_id: 143
   status: source
-  reference_id:
+  reference_id: 2012ApJ...753..159A
 - source_id: 144
   status: source
   reference_id:
@@ -437,7 +437,7 @@
   reference_id:
 - source_id: 146
   status: source
-  reference_id:
+  reference_id: 2012ApJ...753..159A
 - source_id: 147
   status: source
   reference_id:
@@ -470,10 +470,10 @@
   reference_id:
 - source_id: 158
   status: source
-  reference_id: gammacat-hess-internal
+  reference_id:
 - source_id: 159
   status: source
-  reference_id: gammacat-hess-internal
+  reference_id:
 - source_id: 160
   status: source
   reference_id:

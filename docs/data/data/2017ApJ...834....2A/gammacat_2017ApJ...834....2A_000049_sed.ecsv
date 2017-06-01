@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 49}
+# - {reference_id: 2017ApJ...834....2A}
+# - {file_id: 2}
+# - {telescope: veritas}
+# - {comments: Spectrum for 2014-05-03.}
+e_ref dnde dnde_err
+0.223 4.08212e-08 2.31253e-09
+0.3533 5.47184e-09 2.86811e-10
+0.5596 7.50434e-10 4.311e-11
+0.886 6.50959e-11 5.41404e-12
+1.402 6.10499e-12 7.63124e-13
+2.214 7.65026e-13 1.29136e-13
+3.491 6.3756e-14 1.86263e-14

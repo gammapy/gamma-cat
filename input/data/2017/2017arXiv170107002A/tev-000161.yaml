@@ -18,11 +18,12 @@ spec:
   # The spectrum listed here is the one given in the paper,
   # not corrected for containment or contamination.
   # It is mentioned that this is strongly contaminated by the nearby HESS J1825-137.
-  type: ecpl
-  norm: {val: 0.862, err: 0.073, err_sys: 0.172}
-  index: {val: 1.61, err: 0.11, err_sys: 0.20}
-  # Note: paper gives asymmetric errors on `ecut` of errp=4.0 and errn=2.4
-  # Here we take the larger error to be on the safe side
-  ecut: {val: 12.5, err: 4.0}
-  ref: 1
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 0.862, err: 0.073, err_sys: 0.172, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 1.61, err: 0.11, err_sys: 0.20}
+      # TODO: paper gives asymmetric errors on `e_cut` of errp=4.0 and errn=2.4
+      e_cut: {val: 12.5, err: 4.0, unit: TeV}
+      e_ref: {val: 1, unit: TeV}
   theta: 0.22d

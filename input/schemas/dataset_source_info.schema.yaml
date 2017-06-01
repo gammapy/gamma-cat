@@ -10,6 +10,10 @@ properties:
     type: string
     description: Dataset reference identifier
 
+  file_id:
+    type: integer
+    description: Counter for cases where multiple measurements are given in a paper for a given source (e.g. for sub-regions).
+
   telescope:
     "$ref": "#/definitions/telescope"
 
@@ -172,12 +176,55 @@ properties:
     type: object
     additionalProperties: false
     properties:
-      type:
-        "$ref": "#/definitions/spec_type"
 
-      theta:
-        type: string
-        description: Circular aperture photometry radius (parsed by Angle)
+      model:
+        type: object
+        additionalProperties: true
+
+        # TODO: bring back spectral model validation at some point (possibly in Gammapy)
+#        properties:
+#
+#        type:
+#          "$ref": "#/definitions/spec_type"
+#
+#        norm:
+#          type: object
+#          additionalProperties: false
+#          unit: 1e-12 cm-2 s-1 TeV-1
+#          description: Flux norm parameter
+#          properties:
+#            val: {type: number, description: Measured value}
+#            err: {type: number, description: Statistical error}
+#            err_sys: {type: number, description: Systematic error}
+#
+#        e_ref: {type: number, unit: TeV, description: Reference energy for norm}
+#
+#        index:
+#          type: object
+#          additionalProperties: false
+#          unit: dimensionless
+#          description: Spectral index parameter
+#          properties:
+#            val: {type: number, description: Measured value}
+#            err: {type: number, description: Statistical error}
+#            err_sys: {type: number, description: Systematic error}
+#
+#        e_cut:
+#          type: object
+#          additionalProperties: false
+#          unit: TeV
+#          description: Cutoff energy parameter
+#          properties:
+#            val: {type: number}
+#            err: {type: number, description: Statistical error}
+#            err_sys: {type: number, description: Systematic error}
+#
+#        covar:
+#          type: array
+#          description: |
+#            Covariance matrix
+#            TODO: decide on format.
+#            An example of a published covariance matrix is here: 2016arXiv161101863H
 
       erange:
         type: object
@@ -187,44 +234,9 @@ properties:
           min: {type: number, unit: TeV}
           max: {type: number, unit: TeV}
 
-      norm:
-        type: object
-        additionalProperties: false
-        unit: 1e-12 cm-2 s-1 TeV-1
-        description: Flux norm parameter
-        properties:
-          val: {type: number, description: Measured value}
-          err: {type: number, description: Statistical error}
-          err_sys: {type: number, description: Systematic error}
-
-      ref: {type: number, unit: TeV, description: Reference energy for norm}
-
-      index:
-        type: object
-        additionalProperties: false
-        unit: dimensionless
-        description: Spectral index parameter
-        properties:
-          val: {type: number, description: Measured value}
-          err: {type: number, description: Statistical error}
-          err_sys: {type: number, description: Systematic error}
-
-      ecut:
-        type: object
-        additionalProperties: false
-        unit: TeV
-        description: Cutoff energy parameter
-        properties:
-          val: {type: number}
-          err: {type: number, description: Statistical error}
-          err_sys: {type: number, description: Systematic error}
-
-      covar:
-        type: array
-        description: |
-          Covariance matrix
-          TODO: decide on format.
-          An example of a published covariance matrix is here: 2016arXiv161101863H
+      theta:
+        type: string
+        description: Circular aperture photometry radius (parsed by Angle)
 
       mjd:
         type: object
@@ -241,10 +253,6 @@ properties:
         properties:
           min: {type: number}
           max: {type: number}
-
-      filecounter:
-        type: number
-        description: Counter to connect spectral fit with SED file
 
   notes:
     type: string

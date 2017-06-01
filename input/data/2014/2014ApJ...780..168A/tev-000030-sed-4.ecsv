@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: e_min, datatype: float32}
+# - {name: e_max, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 30
+# - reference_id: 2014ApJ...780..168A
+# - file_id: 4
+# - telescope: veritas
+# - comments: |
+#     Spectral points measured by VERITAS for orbital phases 0.2-0.4
+#     2010-2012 (3 orbits), mjd 55235.0, 55928.
+e_ref e_min e_max dnde dnde_errp dnde_errn
+0.531 0.447 0.631 4.556e-12 7.183e-13 7.559e-13
+0.750 0.631 0.891 1.697e-12 2.684e-13 2.851e-13
+1.059 0.891 1.259 7.844e-13 1.205e-13 1.295e-13
+1.496 1.259 1.778 3.742e-13 5.879e-14 6.412e-14
+2.113 1.778 2.512 1.088e-13 2.414e-14 2.739e-14
+2.985 2.512 3.548 3.016e-14 9.724e-15 1.175e-14
+4.217 3.548 5.012 1.072e-14 4.567e-15 5.848e-15
+5.957 5.012 7.079 6.552e-15 2.670e-15 3.494e-15

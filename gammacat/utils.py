@@ -8,9 +8,36 @@ import ruamel.yaml
 import jsonschema
 import numpy as np
 from astropy.coordinates import SkyCoord
+import astropy.units as u
 from astropy.table import Table
+from gammapy.spectrum.crab import CrabSpectrum
+from gammapy.catalog.gammacat import GammaCatResource
+
+__all__ = [
+    'FLUX_TO_CRAB', 'E_INF',
+    'ECSVFormatError',
+    'NA',
+    'load_yaml', 'write_yaml',
+    'load_json', 'write_json',
+    'print_simbad_pos',
+    'table_to_list_of_dict',
+    'validate_schema',
+    'log_list_difference',
+    'TableProcessor',
+]
 
 log = logging.getLogger(__name__)
+
+
+def _to_crab_flux():
+    # Integral flux above 1 TeV in crab units
+    crab = CrabSpectrum('meyer').model
+    flux_crab = crab.integral(1 * u.TeV, 1e6 * u.TeV)
+    return 100 / flux_crab.to('cm-2 s-1').value
+
+
+FLUX_TO_CRAB = _to_crab_flux()
+E_INF = 1e6 * u.Unit('TeV')
 
 
 class ECSVFormatError(Exception):
@@ -105,43 +132,6 @@ def print_simbad_pos(name):
     print(s)
 
 
-def rawgit_url(filename, location='master', mode='production'):
-    """
-    Construct the rawgit URL to download directly files from the repo.
-
-    More info:
-    * https://rawgit.com/
-    * https://github.com/rgrove/rawgit/wiki/Frequently-Asked-Questions
-
-    URL is
-
-    Parameters
-    ----------
-    filename : str
-        Filename in the repo.
-    location : str
-        Name of a branch, tag or commit.
-    mode : {'development', 'production'}
-        Where to fetch the files from
-
-    Examples
-    --------
-    >>> filename = 'input/data/2006/2006A%2526A...456..245A/tev-000065.ecsv'
-    >>> rawgit_url(filename, mode='production')
-    TODO
-    >>> rawgit_url(filename, mode='development')
-    TODO
-    """
-    if mode == 'development':
-        base_url = 'https://rawgit.com/gammapy/gamma-cat'
-    elif mode == 'production':
-        base_url = 'https://cdn.rawgit.com/gammapy/gamma-cat'
-
-    url = '/'.join([base_url, location, filename])
-
-    return url
-
-
 def table_to_list_of_dict(table):
     """Convert table to list of dict."""
     rows = []
@@ -173,28 +163,6 @@ def table_to_list_of_dict(table):
     return rows
 
 
-def check_ecsv_column_header(path):
-    """
-    Check ECSV file for column header formatting.
-
-    See https://github.com/astropy/astropy/issues/5451
-    """
-    table = Table.read(str(path), format='ascii.ecsv')
-    table2 = Table.read(str(path), format='ascii.basic')
-
-    if table.colnames != table2.colnames:
-        log.error('Problem in ECSV file: {}'.format(path))
-        log.error('ECSV colnames: {}'.format(table.colnames))
-        log.error(' CSV colnames: {}'.format(table2.colnames))
-        raise ECSVFormatError
-
-    if len(table) != len(table2):
-        log.error('Problem in ECSV file: {}'.format(path))
-        log.error('ECSV rows: {}'.format(len(table)))
-        log.error(' CSV rows: {}'.format(len(table2)))
-        raise ECSVFormatError
-
-
 def validate_schema(path, data, schema):
     """Validate data against schema and log errors.
     """
@@ -205,3 +173,73 @@ def validate_schema(path, data, schema):
         log.error('Invalid input file: {}'.format(path))
         pprint(data)
         raise ex
+
+
+def log_list_difference(actual, expected):
+    missing = sorted(set(expected) - set(actual))
+    if missing:
+        log.error('Missing: {}'.format(missing))
+
+    extra = sorted(set(actual) - set(expected))
+    if extra:
+        log.error('Extra: {}'.format(extra))
+
+
+class TableProcessor:
+    """Shared code between SED and Lightcurve processing classes."""
+    resource_type = None
+
+    def __init__(self, table, resource):
+        self.table = table
+        self.resource = resource
+
+    @classmethod
+    def read(cls, filename, format='ascii.ecsv'):
+        log.debug('Reading {}'.format(filename))
+        table = Table.read(str(filename), format=format)
+        resource = cls._read_resource_info(table, filename)
+        return cls(table=table, resource=resource)
+
+    @classmethod
+    def _read_resource_info(cls, table, location):
+        m = table.meta
+        return GammaCatResource(
+            source_id=m['source_id'],
+            reference_id=m['reference_id'],
+            file_id=m.get('file_id', -1),
+            type=cls.resource_type,
+            location=location,
+        )
+
+    def validate_table_colnames(self, expected_colnames):
+        unexpected_colnames = sorted(set(self.table.colnames) - set(expected_colnames))
+        if unexpected_colnames:
+            log.error(
+                'Resource {} contains invalid columns: {}'
+                ''.format(self.resource, unexpected_colnames)
+            )
+
+    def make_table_columns_uniform(self, col_specs):
+        """Make column units and description uniform."""
+        for col_spec in col_specs:
+            name = col_spec['name']
+            if name in self.table.colnames:
+                if 'unit' in col_spec:
+                    self.table[name] = self.table[name].quantity.to(col_spec['unit'])
+
+                self.table[name].description = col_spec['description']
+
+    def validate_input_meta(self):
+        meta = self.table.meta
+
+        missing = sorted(set(self.required_meta_keys) - set(meta.keys()))
+        if missing:
+            log.error('Resource {} contains missing meta keys: {}'.format(self.resource, missing))
+
+        extra = sorted(set(meta.keys()) - set(self.allowed_meta_keys))
+        if extra:
+            log.error('Resource {} contains extra meta keys: {}'.format(self.resource, extra))
+
+        if ('comments' in meta) and not isinstance(meta['comments'], str):
+            log.error('Resource {} contains invalid meta key comments (should be str): {}'
+                      ''.format(self.resource, meta['comments']))

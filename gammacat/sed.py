@@ -1,31 +1,43 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import logging
-from itertools import chain
 from astropy.table import Table
-from .info import gammacat_info
-from .utils import check_ecsv_column_header
+from .utils import TableProcessor
 
-__all__ = ['SED', 'SEDList']
+__all__ = [
+    'SED',
+]
 
 log = logging.getLogger(__name__)
 
 
-class SED:
-    """
-    Spectral energy distribution (SED)
+class SED(TableProcessor):
+    """Process and validate an SED file."""
+    resource_type = 'sed'
 
-    Represents on SED.
-    """
-    expected_colnames = [
+    expected_colnames_output = [
         'e_ref', 'e_min', 'e_max',
         'dnde', 'dnde_err', 'dnde_errn', 'dnde_errp', 'dnde_ul', 'is_ul',
         'excess', 'significance',
     ]
 
-    expected_colnames_input = expected_colnames + [
+    expected_colnames_input = expected_colnames_output + [
         'e_lo', 'e_hi', 'e_ref_err',
         'dnde_min', 'dnde_max',
         'e2dnde', 'e2dnde_err', 'e2dnde_errn', 'e2dnde_errp', 'e2dnde_ul',
+    ]
+
+    output_cols = [
+        dict(name='e_ref', unit='TeV', description='Energy'),
+        dict(name='e_min', unit='TeV', description='Energy bin minimum'),
+        dict(name='e_max', unit='TeV', description='Energy bin maximum'),
+        dict(name='dnde', unit='cm-2 s-1 TeV-1', description='Differential photon flux at `e_ref`'),
+        dict(name='dnde_err', unit='cm-2 s-1 TeV-1', description='Statistical error (1 sigma) on `dnde`'),
+        dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
+        dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
+        dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
+        dict(name='is_ul', description='Is this a flux upper limit?'),
+        dict(name='excess', description='Excess counts'),
+        dict(name='significance', description='Excess significance'),
     ]
 
     required_meta_keys = [
@@ -35,16 +47,6 @@ class SED:
     allowed_meta_keys = required_meta_keys + [
         'source_name', 'comments', 'url', 'UL_CONF', 'mjd',
     ]
-
-    def __init__(self, table, path):
-        self.table = table
-        self.path = path
-
-    @classmethod
-    def read(cls, path, format='ascii.ecsv'):
-        log.debug('Reading {}'.format(path))
-        table = Table.read(str(path), format=format)
-        return cls(table=table, path=path)
 
     def process(self):
         """Apply fixes."""
@@ -57,7 +59,7 @@ class SED:
 
         self._add_missing_defaults(table)
         self._process_e2dnde_inputs(table)
-        self._make_it_uniform(table)
+        self.make_table_columns_uniform(self.output_cols)
         self._process_column_order(table)
 
         self.validate_output()
@@ -79,7 +81,6 @@ class SED:
 
         if 'e_ref_err' in table.colnames:
             del table['e_ref_err']
-
 
     @staticmethod
     def _process_flux_errrors(table):
@@ -116,34 +117,6 @@ class SED:
             if colname.startswith('dnde') and not table[colname].unit:
                 table[colname].unit = 'cm^-2 s^-1 TeV^-1'
 
-            if colname == 'excess':
-                table[colname].unit = 'count'
-
-    @staticmethod
-    def _make_it_uniform(table):
-        """
-        Make column units and description uniform
-        """
-        cols = [
-            dict(name='e_ref', unit='TeV', description='Energy'),
-            dict(name='e_min', unit='TeV', description='Energy bin minimum'),
-            dict(name='e_max', unit='TeV', description='Energy bin maximum'),
-            dict(name='dnde', unit='cm-2 s-1 TeV-1', description='Differential photon flux at `e_ref`'),
-            dict(name='dnde_err', unit='cm-2 s-1 TeV-1', description='Statistical error (1 sigma) on `dnde`'),
-            dict(name='dnde_errn', unit='cm-2 s-1 TeV-1', description='Statistical negative error (1 sigma) on `dnde`'),
-            dict(name='dnde_errp', unit='cm-2 s-1 TeV-1', description='Statistical positive error (1 sigma) on `dnde`'),
-            dict(name='dnde_ul', unit='cm-2 s-1 TeV-1', description='Upper limit (at `UL_CONF` level) on `dnde`'),
-            dict(name='is_ul', description='Is this a flux upper limit?'),
-            dict(name='excess', unit='count', description='Excess counts'),
-            dict(name='significance', description='Excess significance'),
-        ]
-        for col in cols:
-            name = col['name']
-            if name in table.colnames:
-                if name not in ['is_ul', 'significance']:
-                    table[name] = table[name].quantity.to(col['unit'])
-                table[name].description = col['description']
-
     @staticmethod
     def _process_e2dnde_inputs(table):
         """
@@ -164,48 +137,23 @@ class SED:
         """
         # See "Select or reorder columns" section at
         # http://astropy.readthedocs.io/en/latest/table/modify_table.html
-        colnames = [_ for _ in self.expected_colnames if _ in table.colnames]
+        colnames = [_ for _ in self.expected_colnames_output if _ in table.colnames]
 
         # Don't silently drop columns!
         dropped_colnames = sorted(set(table.colnames) - set(colnames))
         if dropped_colnames:
             log.error(
                 'SED file {} - dropping columns: {}'
-                ''.format(self.path, dropped_colnames)
+                ''.format(self.resource.location, dropped_colnames)
             )
 
         self.table = table[colnames]
 
     def validate_input(self):
-        log.debug('Validating {}'.format(self.path))
-        check_ecsv_column_header(self.path)
-        self._validate_input_colnames()
-        self._validate_input_meta()
+        log.debug('Validating {}'.format(self.resource.location))
+        self.validate_table_colnames(self.expected_colnames_input)
+        self.validate_input_meta()
         self._validate_input_consistency()
-
-    def _validate_input_colnames(self):
-        table = self.table
-        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames_input))
-        if unexpected_colnames:
-            log.error(
-                'SED file {} contains invalid columns: {}'
-                ''.format(self.path, unexpected_colnames)
-            )
-
-    def _validate_input_meta(self):
-        meta = self.table.meta
-
-        missing = sorted(set(self.required_meta_keys) - set(meta.keys()))
-        if missing:
-            log.error('SED file {} contains missing meta keys: {}'.format(self.path, missing))
-
-        extra = sorted(set(meta.keys()) - set(self.allowed_meta_keys))
-        if extra:
-            log.error('SED file {} contains extra meta keys: {}'.format(self.path, extra))
-
-        if ('comments' in meta) and not isinstance(meta['comments'], str):
-            log.error('SED file {} contains invalid meta key comments (should be str): {}'
-                      ''.format(self.path, meta['comments']))
 
     def _validate_input_consistency(self):
         table = self.table
@@ -215,73 +163,23 @@ class SED:
         has_ul_col = len({'dnde_ul', 'e2dnde_ul'} & set(colnames)) > 0
 
         if ('UL_CONF' in meta) and not has_ul_col:
-            log.error('SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.path))
+            log.error(
+                'SED file {} contains "UL_CONF" in meta, but no upper limit column.'.format(self.resource.location))
 
         if has_ul_col and ('UL_CONF' not in meta):
-            log.error('SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.path))
+            log.error(
+                'SED file {} contains an upper limit column, but not "UL_CONF" in meta.'.format(self.resource.location))
 
     def validate_output(self):
         table = self.table
-        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames))
+        unexpected_colnames = sorted(set(table.colnames) - set(self.expected_colnames_output))
         if unexpected_colnames:
             log.error(
                 'SED file {} contains invalid columns: {}'
-                ''.format(self.path, unexpected_colnames)
+                ''.format(self.resource.location, unexpected_colnames)
             )
 
         meta = table.meta
         if 'UL_CONF' in meta and not (0 < meta['UL_CONF'] < 1):
-            log.error('SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.path, meta['UL_CONF']))
-
-
-class SEDList:
-    """
-    List of `SED` objects.
-
-    Used to represent the SED data in the input folder.
-    """
-
-    def __init__(self, data):
-        self.data = data
-
-        sed_lookup = {}
-        for sed in data:
-            source_id = sed.table.meta['source_id']
-            reference_id = sed.table.meta['reference_id']
-            try:
-                sed_lookup[reference_id][source_id] = sed
-            except KeyError:
-                sed_lookup[reference_id] = {}
-                sed_lookup[reference_id][source_id] = sed
-        self._sed_lookup = sed_lookup
-
-    @classmethod
-    def read(cls, internal=False):
-        path = gammacat_info.base_dir / 'input/data'
-        paths = sorted(path.glob('*/*/tev*sed.ecsv'))
-
-        if internal:
-            path = gammacat_info.base_dir / 'docs/data/sources'
-            paths = path.glob('*/gammacat*sed.ecsv')
-            path_internal = gammacat_info.internal_dir
-
-            paths_internal = path_internal.glob('tev*.ecsv')
-            paths = chain(paths, paths_internal)
-
-        data = []
-        for path in paths:
-            sed = SED.read(path)
-            data.append(sed)
-        return cls(data=data)
-
-    def validate(self):
-        for sed in self.data:
-            sed.process()
-
-    def get_sed_by_source_and_reference_id(self, source_id, reference_id):
-        # return self._sed_lookup[reference_id][source_id]
-        try:
-            return self._sed_lookup[reference_id][source_id]
-        except KeyError:
-            missing = SED(table=Table(), path='')
-            return missing
+            log.error(
+                'SED file {} contains invalid meta "UL_CONF" value: {}'.format(self.resource.location, meta['UL_CONF']))

@@ -10,8 +10,8 @@ import numpy as np
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 from astropy.table import Table
-from gammapy.spectrum.crab import CrabSpectrum
-from gammapy.catalog.gammacat import GammaCatResource
+#from gammapy.spectrum.crab import CrabSpectrum
+#from gammapy.catalog.gammacat import GammaCatResource
 
 __all__ = [
     'FLUX_TO_CRAB', 'E_INF',
@@ -36,8 +36,8 @@ def _to_crab_flux():
     return 100 / flux_crab.to('cm-2 s-1').value
 
 
-FLUX_TO_CRAB = _to_crab_flux()
-E_INF = 1e6 * u.Unit('TeV')
+#FLUX_TO_CRAB = _to_crab_flux()
+#E_INF = 1e6 * u.Unit('TeV')
 
 
 class ECSVFormatError(Exception):

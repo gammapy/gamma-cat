@@ -5,85 +5,51 @@ from gammacat.utils import load_yaml
 rootdir = './input/data'
 sourcedir = './input/sources'
 source_def_refs = dict()
-gammacat_refs = dict()
-
+gammacat_yaml_refs = dict()
+gammacat_ecsv_refs = dict()
 filenames = ['empty']
+source_def_files = ['empty']
+
+# Filling list filenames with all fil pathes in ./input/data
 for root, dirs, files in os.walk(rootdir, topdown=False):
     for name in files:
         filepath = os.path.join(root,name)
-        replaced_filepath = filepath.replace('%26A', '&')
-        filenames.append(os.path.join(root,name))
+        filenames.append(filepath)
 filenames.pop(0)
 
-source_def_files = ['empty']
+# Filling list source_def_files with all file pathes in ./input/sources
 for root, dirs, files in os.walk(sourcedir, topdown=False):
     for name in files:
         source_def_files.append(os.path.join(root,name))
 source_def_files.pop(0)
-#print(source_def_files)
 
+# Filling dictionaries
 for source_def_file in source_def_files:
     if(source_def_file[len(source_def_file)-4:len(source_def_file)] == 'yaml'):
         data = load_yaml(source_def_file)
+        # Filling dictionary source_def_refs with info from files in ./input/sources; [source_id, reference_ids]
         source_def_refs[data['source_id']] = data['reference_ids']
-# print(source_def_refs)
+        # Filling dictionaries gammacat_*_refs with source_id as keys
+        gammacat_yaml_refs[data['source_id']] = []
+        gammacat_ecsv_refs[data['source_id']] = []
 
 for file in filenames:
+    # Filling dictionary gammacat_yaml_refs with reference_id from yaml-files in ./input/data
     if(file[len(file)-4:len(file)] == 'yaml'):
-        gammacat_refs[load_yaml(file)['source_id']] = []
-    if(file[len(file)-4:len(file)] == 'ecsv'):
-        table = t.read(file, format='ascii.ecsv', delimiter=' ')
-        gammacat_refs[table.meta['source_id']] = []
+        yaml_data = load_yaml(file)
+        print(yaml_data['source_id'])
+        gammacat_yaml_refs[yaml_data['source_id']].append(yaml_data['reference_id'])
+    # Filling dictionary gammacat_ecsv_refs with reference_id from ecsv-files in ./input/data
+    elif(file[len(file)-4:len(file)] == 'ecsv'):
+        ecsv_data = t.read(file, format='ascii.ecsv', delimiter=' ')
+        gammacat_ecsv_refs[ecsv_data.meta['source_id']].append(ecsv_data.meta['reference_id'])
 
-for file in filenames:
-    if(file[len(file)-4:len(file)] == 'yaml'):
-        if(load_yaml(file)['reference_id'] in gammacat_refs[load_yaml(file)['source_id']]):
-            continue
+# Check for consistency between reference_ids in ./input/sources/*.yaml and the files in ./input/data
+for key in source_def_refs:
+    for reference in source_def_refs[key]:
+        if(reference not in gammacat_yaml_refs[key]):
+            print('WARNING: Missing yaml file for source {}, reference {}'.format(key, reference))
+        if(reference not in gammacat_ecsv_refs[key]):
+            print('WARNING: Missing ecsv file for source {}, reference {}'.format(key, reference))
         else:
-            gammacat_refs[load_yaml(file)['source_id']].append(load_yaml(file)['reference_id'])
-    if(file[len(file)-4:len(file)] == 'ecsv'):
-        table=t.read(file, format='ascii.ecsv', delimiter=' ')
-        if(table.meta['reference_id'] in gammacat_refs[table.meta['source_id']]):
             continue
-        else:
-            gammacat_refs[table.meta['source_id']].append(table.meta['reference_id'])
-
-print('References in gammacat')
-print(gammacat_refs)
-print('References in /input/sources')
-print(source_def_refs)
-
-# print(len(gammacat_refs))
-# print(len(source_def_refs))
-
-# print('Hallo')
-# print(gammacat_refs)
-# print('Hallohallo')
-# print(source_def_refs)
-
-# references['key1'] = 'Hallo1'
-# references['key1'].append('Hallo2')
-# print(references)
-# for file in filenames:
-#     if(file[len(file)-4:len(file)] == 'yaml'):
-#         references[load_yaml(file)['source_id']] = []
-#     if(file[len(file)-4:len(file)] == 'ecsv'):
-#         print(file)
-#         table = t.read(file, format='ascii.ecsv', delimiter=' ')
-#         references[table.meta['source_id']] = []
-# print(references)
-# for file in filenames:
-#     print(file[len(file)-10:len(file)]
-
-# filenameyaml = './input/data/2014/2014ApJ...780..168A/tev-000030-2.yaml'
-# data = load_yaml(filenameyaml)
-# print(data)
-# print(data['source_id'])
-
-# table = t.read(filename, format='ascii.ecsv', delimiter= ' ')
-# print(table)
-# print(table.meta)
-# reference = table.meta['reference_id']
-# source_id = table.meta['source_id']
-# print(reference)
-# print(source_id)

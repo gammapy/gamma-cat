@@ -10,7 +10,7 @@
 # meta: !!omap
 # - data_type: lc
 # - source_id: 14
-# - reference_id: 2008ApJ...679.1427A
+# - reference_id: 2011ApJ...738....3A
 # - telescope: veritas
 # - {SED_TYPE: flux}
 # - UL_CONF: 0.99

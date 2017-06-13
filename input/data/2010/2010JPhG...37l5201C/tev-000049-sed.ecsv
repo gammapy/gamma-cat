@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: tactic}
+# - {source_id: 49}
+# - {reference_id: 2010JPhG...37l5201C}
+# - {data_type: sed}
+# - {mjd: {min: 54476, max: 54593}}
+# - comments: |
+#    This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.
+e_ref dnde dnde_errn dnde_errp
+1.0 9.40987e-11 3.27995e-11 3.27995e-11
+1.46 4.81735e-11 7.48184e-12 7.48184e-12
+2.13 2.09148e-11 3.203e-12 3.203e-12
+3.12 1.46014e-11 2.68666e-12 2.68666e-12
+4.57 9.87842e-12 2.54792e-12 2.54792e-12
+6.68001 7.00562e-12 2.50774e-12 2.50774e-12

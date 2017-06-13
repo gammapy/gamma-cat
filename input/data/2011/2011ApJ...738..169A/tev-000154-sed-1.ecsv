@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: veritas}
+# - {file_id: 1}
+# - {source_id: 154}
+# - {reference_id: 2011ApJ...738..169A}
+# - {data_type: sed}
+# - {mjd: {min: 54377, max: 54476}}
+# - comments: |
+#    This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.
+e_ref dnde dnde_errn dnde_errp
+0.5069 4.75346e-12 7.78542e-13 7.78542e-13
+0.820301 4.19878e-12 4.23243e-13 4.23243e-13
+1.376 3.59736e-12 4.44937e-13 4.44937e-13
+2.208 1.53081e-12 3.31513e-13 3.31513e-13
+3.789 8.82911e-13 3.24453e-13 3.24453e-13
+5.981 7.69093e-13 3.51995e-13 3.51995e-13

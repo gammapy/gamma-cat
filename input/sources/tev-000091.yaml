@@ -10,7 +10,7 @@ where: egal
 classes: [hbl]
 
 discoverer: whipple
-seen_by: [whipple, hegra, magic, veritas, hawc]
+seen_by: [whipple, hegra, magic, veritas, hawc, tactic, argo]
 discovery_date: 1996-01
 
 tevcat_id: 76
@@ -27,3 +27,7 @@ pos:
 
 reference_ids:
 - 1996ApJ...456L..83Q
+- 2001A%26A...366...62A
+- 2008JPhG...35f5202G
+- 2009ApJ...705.1624A
+- 2012ApJ...758....2B

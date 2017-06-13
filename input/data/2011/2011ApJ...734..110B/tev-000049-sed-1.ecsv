@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {telescope: argo}
+# - {file_id: 1}
+# - {source_id: 49}
+# - {reference_id: 2011ApJ...734..110B}
+# - {data_type: sed}
+# - {mjd: {min: 54405, max: 55255}}
+# - comments: |
+#    This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.
+e_ref dnde dnde_errn dnde_errp
+0.447 2.33773e-11 1.52052e-11 1.52052e-11
+0.708001 4.80204e-11 1.1178e-11 1.1178e-11
+1.12 3.60007e-11 8.00293e-12 8.00293e-12
+2.24 1.41996e-11 7.4761e-12 7.4761e-12
+4.47 1.05098e-11 1.15088e-11 1.15088e-11
+7.08002 1.35841e-11 1.86969e-11 1.86969e-11

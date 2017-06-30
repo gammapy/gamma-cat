@@ -32,21 +32,15 @@ class Biteau:
 # Load_SourceIDs read Biteau_Sources.txt in which all sources which are mentioned in
 # Biteau's catalog and the corresponding source_id are stored
     def Load_SourceIDs(self, filename):
-        biteau_sources = dict()
-        print('Reading {}'.format(filename))
-        data = ascii.read(filename)
-        for i in range(0, len(data)):
-            biteau_sources[data[i][0]] = data[i][1]
+        data = Table.read(filename, format='ascii')
+        biteau_sources = dict(zip(data['common_name'], data['source_id']))
         return biteau_sources
 
 # Load_Experiments read Biteau_Experiments.txt in which all sources which are mentioned in
 # Biteau's catalog and the corresponding telescope from /input/schemas are stored
     def Load_Experiments(self, filename):
-        biteau_experiments = dict()
-        print('Reading {}'.format(filename))
-        data = ascii.read(filename)
-        for i in range(0, len(data)):
-            biteau_experiments[data[i][0]] = data[i][1]
+        data = Table.read(filename, format='ascii')
+        biteau_experiments = dict(zip(data['experiment(Biteau)'], data['telescope']))
         return biteau_experiments
 
 # Rename_Experiment renames all source names in Biteau's catalog into the corresponding name
@@ -56,13 +50,13 @@ class Biteau:
 
 # Calculate_Energy transforms the 'freq'-column in Biteau's catalog into an energy-column 
     def Calculate_Energy(self, frequency):
-        energy = (h*frequency*1/u.second)/e.si * 1E-9* u.teraelectronvolt/u.joule*u.coulomb
+        energy = frequency.to('TeV', equivalencies=u.spectral())
         return energy
 
 # Calculate_dnde transforms the 'e2dnde'-column in Biteau's catalog into an dnde-column
     def Calculate_dnde(self, energy, e2dnde):
-        dnde = 1/((energy*u.teraelectronvolt)**2)*e2dnde*1/e.si*1E-16*u.erg*1/((u.centimeter)**2)/u.second*u.teraelectronvolt/u.erg
-        return dnde
+        dnde = e2dnde/(energy**2)
+        return dnde.to('cm-2 s-1 TeV-1')
 
 # Create_Subtables splits up Biteau's catalog into the single data sets and stores these sets 
 # in a list which contains astropy tables
@@ -77,19 +71,22 @@ class Biteau:
             
             # The i-th row of Biteau's catalog is extracted as a list
             row_to_add = [nump.int64(self.fBiteauSources[self.fBiteauCatalog['source'][i]]), \
-            self.Calculate_Energy(self.fBiteauCatalog['freq'][i]), \
-            self.Calculate_dnde(self.Calculate_Energy(self.fBiteauCatalog['freq'][i]), self.fBiteauCatalog['e2dnde'][i]), \
-            self.Calculate_dnde(self.Calculate_Energy(self.fBiteauCatalog['freq'][i]), self.fBiteauCatalog['e2dnde_errn'][i]), \
-            self.Calculate_dnde(self.Calculate_Energy(self.fBiteauCatalog['freq'][i]), self.fBiteauCatalog['e2dnde_errp'][i]), \
-            self.fBiteauCatalog['mjd_start'][i], self.fBiteauCatalog['mjd_stop'][i], \
-            self.Rename_Experiment(self.fBiteauCatalog['experiment'][i]), \
-            self.fBiteauCatalog['reference_id'][i]]
+            self.Calculate_Energy(self.fBiteauCatalog['freq'].quantity[i]), \
+            self.Calculate_dnde(self.Calculate_Energy(self.fBiteauCatalog['freq'].quantity[i]), \
+            self.fBiteauCatalog['e2dnde'].quantity[i]), self.Calculate_dnde(self.Calculate_Energy \
+            (self.fBiteauCatalog['freq'].quantity[i]), self.fBiteauCatalog \
+            ['e2dnde_errn'].quantity[i]), self.Calculate_dnde(self.Calculate_Energy \
+            (self.fBiteauCatalog['freq'].quantity[i]), self.fBiteauCatalog \
+            ['e2dnde_errp'].quantity[i]), self.fBiteauCatalog['mjd_start'][i], \
+            self.fBiteauCatalog['mjd_stop'][i], self.Rename_Experiment(self. \
+            fBiteauCatalog['experiment'][i]), self.fBiteauCatalog['reference_id'][i]]
 
             if i==0:
                 subtable.add_row(row_to_add)
             else: 
                 # Checking whether the source, mjd_start, mjd_stop, experiment or reference_id changes in Biteau's catalog
-                if((self.fBiteauSources[self.fBiteauCatalog['source'][i]] == subtable[len(subtable)-1]['source_id']) and
+                if((self.fBiteauSources[self.fBiteauCatalog['source'][i]] \
+                    == subtable[len(subtable)-1]['source_id']) and
                     (self.fBiteauCatalog['mjd_start'][i] == subtable[len(subtable)-1]['mjd_start']) and \
                     (self.fBiteauCatalog['mjd_stop'][i] == subtable[len(subtable)-1]['mjd_stop']) and \
                     (self.Rename_Experiment(self.fBiteauCatalog['experiment'][i]) == (subtable[len(subtable)-1]['telescope']).decode()) and \
@@ -152,6 +149,8 @@ class Biteau:
             table.meta['telescope'] = table['telescope'][0].decode()
             table.meta['mjd'] = dict(min = float(table['mjd_start'][0]), max = float(table['mjd_stop'][0]))
             table.meta['comments'] = 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.'
+            # Delete columns 'source_id', 'mjd_start', 'mjd_stop', 'reference_id' and 'telescope'
+            table.remove_columns('source_id', 'mjd_start', 'mjd_stop', 'reference_id', 'telescope')
             # Saving the ecsv-tables
             print('Saving file {}'.format(file_path))
             table.write(file_path, format='ascii.ecsv', delimiter=' ')

@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 16}
+# - {reference_id: 2014A&A...563A..91A}
+# - {telescope: magic}
+# - mjd: {max: 55242.0, min: 55120.0}
+# - {comments: 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat
+#     by Jonathan Biteau, magic data marked by "High " in the paper.'}
+# - {file_id: 1}
+e_ref dnde dnde_errn dnde_errp
+0.199 9.26999e-11 2.57999e-11 2.57999e-11
+0.459001 1.95999e-11 3.47999e-12 3.47999e-12
+1.06 3.45e-12 7.03997e-13 7.03997e-13
+2.45 7.86001e-13 1.85001e-13 1.85001e-13
+5.659 1.42e-13 4.79e-14 4.79e-14

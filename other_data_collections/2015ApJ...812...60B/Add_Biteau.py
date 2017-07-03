@@ -45,6 +45,7 @@ class Biteau:
 # Load_SourceIDs read Biteau_Sources.txt in which all sources which are mentioned in
 # Biteau's catalog and the corresponding source_id are stored
     def Load_SourceIDs(self, filename):
+        print('Reading {}'.format(filename))
         data = Table.read(filename, format='ascii')
         biteau_sources = dict(zip(data['common_name'], data['source_id']))
         return biteau_sources
@@ -52,6 +53,7 @@ class Biteau:
 # Load_Experiments read Biteau_Experiments.txt in which all sources which are mentioned in
 # Biteau's catalog and the corresponding telescope from /input/schemas are stored
     def Load_Experiments(self, filename):
+        print('Reading {}'.format(filename))
         data = Table.read(filename, format='ascii')
         biteau_experiments = dict(zip(data['experiment(Biteau)'], data['telescope']))
         return biteau_experiments
@@ -85,22 +87,41 @@ class Biteau:
             if i==0:
                 subtable.add_row(row_to_add)
             else: 
-                # Checking whether the source, mjd_start, mjd_stop, experiment or reference_id changes in Biteau's catalog
-                if((self.fBiteauSources[self.fBiteauCatalog['source'][i]] \
-                    == subtable[len(subtable)-1]['source_id']) and \
-                    (self.fBiteauCatalog['note'][i] == (subtable[len(subtable)-1]['note']).decode()) and \
-                    (self.fBiteauCatalog['mjd_start'][i] == subtable[len(subtable)-1]['mjd_start']) and \
-                    (self.fBiteauCatalog['mjd_stop'][i] == subtable[len(subtable)-1]['mjd_stop']) and \
-                    (self.Rename_Experiment(self.fBiteauCatalog['experiment'][i]) == (subtable[len(subtable)-1]['telescope']).decode()) and \
-                    (self.fBiteauCatalog['reference_id'][i] == (subtable[len(subtable)-1]['reference_id']).decode())):
-                    subtable.add_row(row_to_add)
+                # Checking whether the source, mjd_start, mjd_stop, experiment, note or reference_id changes in Biteau's catalog
+                # print('Reference {}, source {}'.format(self.fBiteauCatalog['reference_id'][i], self.fBiteauCatalog['source'][i]))
+                # print(type((self.fBiteauCatalog['note'][i])))
+                # print(type((subtable[len(subtable)-1]['note'])))
+                if(type(self.fBiteauCatalog['note'][i]) == nump.ma.core.MaskedConstant):
+                    if((self.fBiteauSources[self.fBiteauCatalog['source'][i]] \
+                        == subtable[len(subtable)-1]['source_id']) and \
+                        (self.fBiteauCatalog['mjd_start'][i] == subtable[len(subtable)-1]['mjd_start']) and \
+                        (self.fBiteauCatalog['mjd_stop'][i] == subtable[len(subtable)-1]['mjd_stop']) and \
+                        (self.Rename_Experiment(self.fBiteauCatalog['experiment'][i]) == (subtable[len(subtable)-1]['telescope']).decode()) and \
+                        (self.fBiteauCatalog['reference_id'][i] == (subtable[len(subtable)-1]['reference_id']).decode())):
+                        subtable.add_row(row_to_add)
+                    else:
+                        subtables.append(subtable)
+                        subtable=Table(names=('source_id', 'e_ref', 'dnde', 'dnde_errn', \
+                        'dnde_errp', 'mjd_start', 'mjd_stop', 'note', 'telescope', 'reference_id'),\
+                        dtype=('int32', 'float32', 'float32', 'float32', 'float32', \
+                        'float32', 'float32', 'S10', 'S8', 'S19'))
+                        subtable.add_row(row_to_add)
                 else:
-                    subtables.append(subtable)
-                    subtable=Table(names=('source_id', 'e_ref', 'dnde', 'dnde_errn', \
-                    'dnde_errp', 'mjd_start', 'mjd_stop', 'note', 'telescope', 'reference_id'),\
-                    dtype=('int32', 'float32', 'float32', 'float32', 'float32', \
-                    'float32', 'float32', 'S10', 'S8', 'S19'))
-                    subtable.add_row(row_to_add)
+                    if((self.fBiteauSources[self.fBiteauCatalog['source'][i]] \
+                        == subtable[len(subtable)-1]['source_id']) and \
+                        (self.fBiteauCatalog['note'][i] == (subtable[len(subtable)-1]['note']).decode()) and \
+                        (self.fBiteauCatalog['mjd_start'][i] == subtable[len(subtable)-1]['mjd_start']) and \
+                        (self.fBiteauCatalog['mjd_stop'][i] == subtable[len(subtable)-1]['mjd_stop']) and \
+                        (self.Rename_Experiment(self.fBiteauCatalog['experiment'][i]) == (subtable[len(subtable)-1]['telescope']).decode()) and \
+                        (self.fBiteauCatalog['reference_id'][i] == (subtable[len(subtable)-1]['reference_id']).decode())):
+                        subtable.add_row(row_to_add)
+                    else:
+                        subtables.append(subtable)
+                        subtable=Table(names=('source_id', 'e_ref', 'dnde', 'dnde_errn', \
+                        'dnde_errp', 'mjd_start', 'mjd_stop', 'note', 'telescope', 'reference_id'),\
+                        dtype=('int32', 'float32', 'float32', 'float32', 'float32', \
+                        'float32', 'float32', 'S10', 'S8', 'S19'))
+                        subtable.add_row(row_to_add)
         return subtables
 
 # Create_Folders creates the non-existing folders in /input/data which are mentioned in Biteau's catalog
@@ -150,14 +171,14 @@ class Biteau:
             table.meta['reference_id'] = table['reference_id'][0].decode()
             table.meta['telescope'] = table['telescope'][0].decode()
             table.meta['mjd'] = dict(min = float(table['mjd_start'][0]), max = float(table['mjd_stop'][0]))
-            if (type(table['note']) ==  nump.ma.core.MaskedConstant):
+            if (table['note'][0].decode() ==  '0.0'):
                 table.meta['comments'] = 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.'
             else:
                 table.meta['comments'] = 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau, ' \
-                + str(table['telescope']) + ' data marked by "' + str(table['note']) + ' " in the paper.'
+                + str(table.meta['telescope']) + ' data marked by "' + str(table['note'][0].decode()) + ' " in the paper.'
             # Delete columns 'source_id', 'mjd_start', 'mjd_stop', 'reference_id' and 'telescope'
             table_to_store = table[:]
-            table_to_store.remove_columns(['source_id', 'mjd_start', 'mjd_stop', 'reference_id', 'telescope'])
+            table_to_store.remove_columns(['source_id', 'mjd_start', 'mjd_stop', 'reference_id', 'telescope', 'note'])
             # Saving the ecsv-tables
             print('Saving file {}'.format(file_path))
             table_to_store.write(file_path, format='ascii.ecsv', delimiter=' ')

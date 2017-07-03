@@ -9,8 +9,21 @@ from astropy.constants import h,e
 from pathlib import Path
 import astropy.units as u
 import numpy as nump
+import copy
 import os
 import glob
+
+# Some global functions
+
+# Calculate_dnde transforms the 'e2dnde'-column in Biteau's catalog into an dnde-column
+def Calculate_dnde(energy, e2dnde):
+    dnde = e2dnde/(energy**2)
+    return dnde.to('cm-2 s-1 TeV-1')
+
+# Calculate_Energy transforms the 'freq'-column in Biteau's catalog into an energy-column 
+def Calculate_Energy(frequency):
+    energy = frequency.to('TeV', equivalencies=u.spectral())
+    return energy
 
 class Biteau:
     fBiteauFile = './BiteauWilliams2015_AllData_ASDC_v2016_12_20.ecsv'
@@ -48,45 +61,34 @@ class Biteau:
     def Rename_Experiment(self, experiment):
         return self.fBiteauExperiments[experiment]
 
-# Calculate_Energy transforms the 'freq'-column in Biteau's catalog into an energy-column 
-    def Calculate_Energy(self, frequency):
-        energy = frequency.to('TeV', equivalencies=u.spectral())
-        return energy
-
-# Calculate_dnde transforms the 'e2dnde'-column in Biteau's catalog into an dnde-column
-    def Calculate_dnde(self, energy, e2dnde):
-        dnde = e2dnde/(energy**2)
-        return dnde.to('cm-2 s-1 TeV-1')
-
 # Create_Subtables splits up Biteau's catalog into the single data sets and stores these sets 
 # in a list which contains astropy tables
     def Create_Subtables(self):
         subtables = []
         subtable = Table(names=('source_id', 'e_ref', 'dnde', 'dnde_errn', \
-        'dnde_errp', 'mjd_start', 'mjd_stop', 'telescope', 'reference_id'),\
+        'dnde_errp', 'mjd_start', 'mjd_stop', 'note', 'telescope', 'reference_id'),\
         dtype=('int32', 'float32', 'float32', 'float32', 'float32', \
-        'float32', 'float32', 'S8', 'S19'))
+        'float32', 'float32', 'S10', 'S8', 'S19'))
 
         for i in range(0, len(self.fBiteauCatalog)):
-            
             # The i-th row of Biteau's catalog is extracted as a list
             row_to_add = [nump.int64(self.fBiteauSources[self.fBiteauCatalog['source'][i]]), \
-            self.Calculate_Energy(self.fBiteauCatalog['freq'].quantity[i]), \
-            self.Calculate_dnde(self.Calculate_Energy(self.fBiteauCatalog['freq'].quantity[i]), \
-            self.fBiteauCatalog['e2dnde'].quantity[i]), self.Calculate_dnde(self.Calculate_Energy \
+            Calculate_Energy(self.fBiteauCatalog['freq'].quantity[i]), \
+            Calculate_dnde(Calculate_Energy(self.fBiteauCatalog['freq'].quantity[i]), \
+            self.fBiteauCatalog['e2dnde'].quantity[i]), Calculate_dnde(Calculate_Energy \
             (self.fBiteauCatalog['freq'].quantity[i]), self.fBiteauCatalog \
-            ['e2dnde_errn'].quantity[i]), self.Calculate_dnde(self.Calculate_Energy \
+            ['e2dnde_errn'].quantity[i]), Calculate_dnde(Calculate_Energy \
             (self.fBiteauCatalog['freq'].quantity[i]), self.fBiteauCatalog \
             ['e2dnde_errp'].quantity[i]), self.fBiteauCatalog['mjd_start'][i], \
-            self.fBiteauCatalog['mjd_stop'][i], self.Rename_Experiment(self. \
+            self.fBiteauCatalog['mjd_stop'][i], self.fBiteauCatalog['note'][i], self.Rename_Experiment(self. \
             fBiteauCatalog['experiment'][i]), self.fBiteauCatalog['reference_id'][i]]
-
             if i==0:
                 subtable.add_row(row_to_add)
             else: 
                 # Checking whether the source, mjd_start, mjd_stop, experiment or reference_id changes in Biteau's catalog
                 if((self.fBiteauSources[self.fBiteauCatalog['source'][i]] \
-                    == subtable[len(subtable)-1]['source_id']) and
+                    == subtable[len(subtable)-1]['source_id']) and \
+                    (self.fBiteauCatalog['note'][i] == (subtable[len(subtable)-1]['note']).decode()) and \
                     (self.fBiteauCatalog['mjd_start'][i] == subtable[len(subtable)-1]['mjd_start']) and \
                     (self.fBiteauCatalog['mjd_stop'][i] == subtable[len(subtable)-1]['mjd_stop']) and \
                     (self.Rename_Experiment(self.fBiteauCatalog['experiment'][i]) == (subtable[len(subtable)-1]['telescope']).decode()) and \
@@ -95,9 +97,9 @@ class Biteau:
                 else:
                     subtables.append(subtable)
                     subtable=Table(names=('source_id', 'e_ref', 'dnde', 'dnde_errn', \
-                    'dnde_errp', 'mjd_start', 'mjd_stop', 'telescope', 'reference_id'),\
+                    'dnde_errp', 'mjd_start', 'mjd_stop', 'note', 'telescope', 'reference_id'),\
                     dtype=('int32', 'float32', 'float32', 'float32', 'float32', \
-                    'float32', 'float32', 'S8', 'S19'))
+                    'float32', 'float32', 'S10', 'S8', 'S19'))
                     subtable.add_row(row_to_add)
         return subtables
 
@@ -148,12 +150,17 @@ class Biteau:
             table.meta['reference_id'] = table['reference_id'][0].decode()
             table.meta['telescope'] = table['telescope'][0].decode()
             table.meta['mjd'] = dict(min = float(table['mjd_start'][0]), max = float(table['mjd_stop'][0]))
-            table.meta['comments'] = 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.'
+            if (type(table['note']) ==  nump.ma.core.MaskedConstant):
+                table.meta['comments'] = 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.'
+            else:
+                table.meta['comments'] = 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau, ' \
+                + str(table['telescope']) + ' data marked by "' + str(table['note']) + ' " in the paper.'
             # Delete columns 'source_id', 'mjd_start', 'mjd_stop', 'reference_id' and 'telescope'
-            table.remove_columns('source_id', 'mjd_start', 'mjd_stop', 'reference_id', 'telescope')
+            table_to_store = table[:]
+            table_to_store.remove_columns(['source_id', 'mjd_start', 'mjd_stop', 'reference_id', 'telescope'])
             # Saving the ecsv-tables
             print('Saving file {}'.format(file_path))
-            table.write(file_path, format='ascii.ecsv', delimiter=' ')
+            table_to_store.write(file_path, format='ascii.ecsv', delimiter=' ')
     # Checking all folders of references which have more than 1 dataset and rename 'tev-<source_id>-sed.ecsv'
     # in 'tev-<source_id>-sed-<file_id>.ecsv'
         for table in subtables:

@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: Hz}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_err, datatype: float32, unit: erg cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 54
+# - reference_id: 2009ApJ...707..612A
+# - comments: |
+#     June 7/8 2008
+#     (equal distance binning on log10 scale of 0.1)
+e_ref   e2dnde   e2dnde_err
+4.555e+25        4.246e-11      2.055e-11
+6.434e+25        4.068e-11      1.068e-11
+9.088e+25        1.710e-11      4.967e-12
+1.284e+26        1.388e-11      3.419e-12
+1.813e+26        5.319e-12      2.116e-12
+2.561e+26        3.802e-12      1.880e-12

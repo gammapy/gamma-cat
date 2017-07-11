@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_ul, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 148
+# - reference_id: 2013ApJ...762...92A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - UL_CONF: 0.99
+# - comments: |
+#     4min binning for the first 5 flux points, and 20-min binning for the last flux point
+e_min time flux flux_err flux_ul
+0.2 55740.433627 3.389e-10 6.30e-11 nan
+0.2 55740.436405 1.657e-10 4.30e-11 nan
+0.2 55740.439183 2.012e-10 4.59e-11 nan
+0.2 55740.441961 1.774e-10 4.49e-11 nan
+0.2 55740.444738 6.167e-11 2.93e-11 nan
+0.2 55740.453070 2.355e-11 8.49e-12 nan

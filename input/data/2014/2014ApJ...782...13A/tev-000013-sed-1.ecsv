@@ -1,0 +1,29 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: e_min, datatype: float32}
+# - {name: e_max, datatype: float32}
+# - {name: e2dnde, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: e2dnde_err, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: e2dnde_ul, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: significance, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 13
+# - file_id: 1
+# - reference_id: 2014ApJ...782...13A
+# - telescope: veritas
+# - comments: |
+#     Table 2
+e_ref e_min e_max e2dnde e2dnde_err dnde_ul significance
+0.291   0.24   0.353   1.16782e-07   2.79144e-08 nan 4.5
+0.427   0.353   0.518   6.14596e-08   1.04796e-08 nan 6.7
+0.628   0.518   0.761   2.193e-08   4.35684e-09 nan 5.6
+0.922   0.761   1.118   4.30105e-09   1.74756e-09 nan 2.6
+1.355   1.118   1.642   2.21155e-09   8.09789e-10 nan 3.0
+1.99   1.642   2.412   1.015e-09   4.15514e-10  nan 2.7
+2.923   2.412   3.542   3.54062e-10   2.12654e-10 nan 1.8
+4.293   3.542   5.204   2.43044e-10   1.15699e-10 nan 2.6
+7.64   5.201   11.221   2.84301e-11   2.46698e-11 nan 1.2
+16.483   11.221   24.21  nan nan 1.4e-11 -0.6

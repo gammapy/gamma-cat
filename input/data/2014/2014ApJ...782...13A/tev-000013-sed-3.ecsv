@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: e_min, datatype: float32}
+# - {name: e_max, datatype: float32}
+# - {name: e2dnde, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: e2dnde_err, unit: TeV-1 m-2 s-1, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 13
+# - file_id: 3
+# - reference_id: 2014ApJ...782...13A
+# - telescope: veritas
+# - comments: |
+#     Figure 1 (red curve)
+#     spectrum during non-flaring period
+e_ref e_min e_max e2dnde e2dnde_err 
+0.291   0.24   0.353   8.56762e-08   3.13035e-08
+0.427   0.353   0.518   5.61751e-08   1.1877e-08
+0.628   0.518   0.761   1.51202e-08   4.6709e-09
+0.922   0.761   1.118   3.22001e-09   1.90006e-09
+1.355   1.118   1.642   1.31965e-09   8.55043e-10
+1.99   1.642   2.412   7.38639e-10   4.4968e-10
+2.923   2.412   3.542   2.43333e-10   2.26939e-10
+4.293   3.542   5.204   2.66968e-10   1.29948e-10
+6.307   5.204   7.644   7.55549e-12   5.06416e-11
+9.264   7.644   11.228   2.71877e-11   2.80788e-11

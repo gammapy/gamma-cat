@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: significance, datatype: float32}
+# - {name: flux, unit: 1e-9 m-2 s-1, datatype: float64}
+# - {name: flux_err, unit: 1e-9 m-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 13
+# - file_id: 1
+# - reference_id: 2014ApJ...782...13A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - comments: |
+#     yearly fluxes
+e_min time_min time_max significance flux flux_err
+0.3   55118 55951 11.7 23.3 2.81
+0.3   55118 55212 12.2 30.3 3.93
+0.3   55476 55587 3.27 18.7 5.11
+0.3   55828 55951 2.92 9.92 6.41

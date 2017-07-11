@@ -1,0 +1,32 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, datatype: float32}
+# - {name: e_max, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 25
+# - reference_id: 2014ApJ...781L..11A
+# - file_id: 2
+# - telescope: veritas
+# - comments: |
+#     spectrum during MeV flare
+#     obtained per email by G.Richards (2017-04-17)
+#     all energies in TeV
+e_min e_max  dnde  dnde_err
+0.99841     1.25693     3.193643e-11    1.736395e-12
+1.25693     1.58238     2.711002e-11    1.722508e-12
+1.58238     1.9921      2.1807e-11      1.671719e-12
+1.9921      2.5079      2.097828e-11    1.790507e-12
+2.5079      3.15726     1.873431e-11    1.855076e-12
+3.15726     3.97475     1.528545e-11    1.819178e-12
+3.97475     5.00392     1.506565e-11    2.01296e-12
+5.00392     6.29956     1.235628e-11    2.027829e-12
+6.29956     7.93067     1.157846e-11    2.264944e-12
+7.93067     9.98413     5.418787e-12    1.787664e-12
+9.98413     12.5693     3.32833e-12     1.4751e-12
+12.5693     15.8238     3.692294e-12    1.558081e-12
+15.8238     19.921      2.543087e-12    1.462032e-12
+19.921      25.079      6.39445e-12     2.716232e-12

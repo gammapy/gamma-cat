@@ -1,0 +1,19 @@
+source_id: 25
+reference_id: 2014ApJ...781L..11A
+file_id: 2
+telescope: veritas
+
+#############################################################
+# spectral fit results
+# (flare spectral fit)
+# obtained per email by G.Richards (2017-04-17)
+
+spec:
+  model:
+    type: pl
+    parameters:
+      mjd: {min: 56353.0, max: 56366.0}
+      norm: {val: 35.3, err: 1.5, err_sys: 11.2, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.72, err: 0.05, err_sys: 0.3}
+      e_ref: {val: 1, unit: TeV}
+  erange: {min: 1.0, max: 20.}

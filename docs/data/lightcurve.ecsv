@@ -15,6 +15,7 @@
 # - {telescope: veritas}
 # - {SED_TYPE: flux}
 # - {comments: 10 min}
+# schema: astropy-2.0
 e_min time flux flux_err index index_err
 0.56 56776.1420065 6.7298607689e-07 1.24541360388e-07 2.43033 0.172793
 0.56 56776.1489509 5.31596191506e-07 1.10807269782e-07 2.68795 0.224772

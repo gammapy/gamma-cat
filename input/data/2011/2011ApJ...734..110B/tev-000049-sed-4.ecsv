@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_errp, datatype: float32}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 49}
+# - {reference_id: 2011ApJ...734..110B}
+# - {telescope: argo}
+# - mjd: {max: 55255.0, min: 54405.0}
+# - {comments: 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat
+#     by Jonathan Biteau, argo data marked by "Flux4 " in the paper.'}
+# - {file_id: 4}
+e_ref dnde dnde_errn dnde_errp
+0.708001 1.26999e-11 1.56e-10 1.56e-10
+1.12 1.51e-10 4.73999e-11 4.73999e-11
+1.41 9.35998e-11 2.17999e-11 2.17999e-11
+2.82 1.7e-11 5.06e-12 5.06e-12
+5.62 6.59e-12 2.02001e-12 2.02001e-12
+7.08001 2.43e-12 2.04999e-12 2.04999e-12

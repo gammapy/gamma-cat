@@ -1,0 +1,10 @@
+# experiment(Biteau) | telescope
+MAGIC | magic
+CAT | cat
+HEGRA | hegra
+TIBET | tibet
+HESS | hess
+TACTIC | tactic
+ARGO-YBJ | argo
+VERITAS | veritas
+Whipple | whipple

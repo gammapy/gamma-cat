@@ -15,6 +15,7 @@
 # - {comments: 'Spectral points from Fermi-LAT are also given on that page.
 # 
 #     This is only the H.E.S.S. points!'}
+# schema: astropy-2.0
 e_ref dnde dnde_err
 0.16 3.97409e-11 3.09637e-11
 0.212 3.56904e-11 1.07071e-11

@@ -16,6 +16,7 @@
 # - {comments: 'Flux points shown in Figure 1 (one upper limit not included here).
 # 
 #     TODO: Origin of data points unknown'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 1.40045 6.23048e-13 2.94463e-13 2.93545e-13
 2.47561 1.28768e-13 7.15713e-14 7.13985e-14

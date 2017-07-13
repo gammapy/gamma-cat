@@ -17,6 +17,7 @@
 # - {comments: 'These are the points labeled "HESS J1018-589 A"
 # 
 #     shown in Figure 1 (and again in Figure 4)'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.402203 2.25569e-12 7.04284e-13 7.52432e-13
 0.797953 3.47791e-13 1.3394e-13 1.441e-13

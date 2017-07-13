@@ -18,6 +18,7 @@
 # - {comments: 'SED from Figure 2 in the paper.
 # 
 #     Data from Gernot Maier on Dec 16, 2016'}
+# schema: astropy-2.0
 e_ref dnde dnde_err dnde_ul
 0.31071 1.098e-11 5.66021e-12 nan
 0.49244 4.23584e-12 1.43402e-12 nan

@@ -17,6 +17,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/science309.html'}
 # - {UL_CONF: 0.84}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp dnde_ul
 0.256 1.835e-11 6.71e-12 3.084e-11 nan
 0.4037 1.188e-11 9.384e-12 1.438e-11 nan

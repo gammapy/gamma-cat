@@ -18,6 +18,7 @@
 #     See here for meaning of columns:
 # 
 #     https://github.com/zblz/naima/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_function_demo.py#L15'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.7185 1.055e-11 3.284e-12 3.28e-12
 0.8684 1.304e-11 2.13e-12 2.13e-12

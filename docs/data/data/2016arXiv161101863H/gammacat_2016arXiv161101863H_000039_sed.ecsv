@@ -14,6 +14,7 @@
 # - {reference_id: 2016arXiv161101863H}
 # - {telescope: hess}
 # - {comments: 'Data from Manuel Paz Arribas via email on Oct 21, 2016'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.4074 1.228e-10 2.769e-11 2.77e-11
 0.5705 8.321e-11 7.614e-12 7.618e-12

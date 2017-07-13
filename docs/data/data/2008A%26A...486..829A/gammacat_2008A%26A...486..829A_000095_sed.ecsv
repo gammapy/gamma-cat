@@ -18,6 +18,7 @@
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA486_829.html'}
 # - {UL_CONF: 0.9}
 # - {comments: Spectrum shown in Figure 2.}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp dnde_ul
 0.369172 6.97602e-12 2.86219e-12 2.89857e-12 nan
 0.701728 2.42214e-12 4.79872e-13 4.87388e-13 nan

@@ -15,6 +15,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/kookaburra_auxinfo.html'}
 # - {comments: H.E.S.S. data points for Figure 2 (open points - HESS J1418-609)}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.39 3.14e-11 9.16e-12 9e-12
 0.61 7.62e-12 1.08e-12 1.12e-12

@@ -16,6 +16,7 @@
 # - {reference_id: 2006A&A...457..899A}
 # - {telescope: hess}
 # - {comments: Data taken from table 5 in the paper.}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp excess significance
 0.519 1.81e-10 6e-12 6e-12 975.0 42.9
 0.729 7.27e-11 1.9e-12 2e-12 1580.0 56.0

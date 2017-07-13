@@ -15,6 +15,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/VelaJr2auxinfo.htm'}
 # - {comments: Flux points shown in Figure 6.}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.3676 1.673e-10 1.408e-10 1.938e-10
 0.4971 9.566e-11 8.498e-11 1.063e-10

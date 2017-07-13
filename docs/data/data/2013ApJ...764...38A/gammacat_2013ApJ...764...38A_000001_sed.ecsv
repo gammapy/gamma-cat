@@ -13,6 +13,7 @@
 # - {source_id: 1}
 # - {reference_id: 2013ApJ...764...38A}
 # - {telescope: veritas}
+# schema: astropy-2.0
 e_min e_max dnde dnde_err significance
 0.56 1.0 1.9e-12 9e-13 2.3
 1.0 1.78 7.3e-13 1.7e-13 4.5

@@ -14,6 +14,7 @@
 # - {reference_id: 2016arXiv160605404A}
 # - {telescope: hess}
 # - {comments: Data from Table A.2 in the paper}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.34 3.38e-12 9.9e-13 1.01e-12
 0.78 5.17e-13 1.22e-13 1.25e-13

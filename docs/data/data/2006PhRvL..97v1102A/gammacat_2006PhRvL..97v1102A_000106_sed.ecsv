@@ -19,6 +19,7 @@
 # - {UL_CONF: 0.95}
 # - {comments: I think this is the spectrum 2004 data spectrum (solid points) in Figure
 #     2.}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp dnde_ul
 0.19 1.022e-10 1.227e-11 1.26e-11 nan
 0.2523 6.217e-11 5.58001e-12 5.73e-12 nan

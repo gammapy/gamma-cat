@@ -21,6 +21,7 @@
 #     Corresponds to blue spectral points from Figure 3 for HESS J1745\u2212290:\nhttp://www.nature.com/nature/journal/v531/n7595/fig_tab/nature17147_F3.html\n\
 #     Data added to gamma-cat in https://github.com/gammapy/gamma-cat/issues/25\n"}
 # - {UL_CONF: 0.95}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul
 0.165368 0.151863 0.183999 1.42756e-10 1.26572e-11 1.31137e-11 nan
 0.204729 0.183999 0.226832 7.84682e-11 4.22794e-12 4.32291e-12 nan

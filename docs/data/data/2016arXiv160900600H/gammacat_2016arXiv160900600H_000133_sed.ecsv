@@ -23,6 +23,7 @@
 #     In the figures of the paper, systematic error of 20% of the
 # 
 #     flux value has been added in quadrature to the statistical error of each point.'}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul
 0.406 0.2922 0.4801 4.791e-12 1.303e-12 1.377e-12 nan
 0.5982 0.4801 0.7889 1.675e-12 2.57e-13 2.66e-13 nan

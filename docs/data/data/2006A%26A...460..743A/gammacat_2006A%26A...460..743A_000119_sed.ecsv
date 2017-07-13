@@ -15,6 +15,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LS5039_II_auxinfo.html'}
 # - {comments: H.E.S.S. data points for the low (SUPC) State (Figure 6)}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.196 6.336e-11 1.417e-11 1.495e-11
 0.332 1.481e-11 1.39e-12 1.43e-12

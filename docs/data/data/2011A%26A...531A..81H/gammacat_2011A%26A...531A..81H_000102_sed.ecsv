@@ -20,6 +20,7 @@
 #     Data not available at the paper auxiliary data webpage:
 # 
 #     https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA531_A81.html'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.344872 2.5207e-12 9.30246e-13 9.53875e-13
 0.792055 5.79489e-13 1.31196e-13 1.35993e-13

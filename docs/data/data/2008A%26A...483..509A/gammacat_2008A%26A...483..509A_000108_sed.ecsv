@@ -17,6 +17,7 @@
 # - {comments: 'This is the full spectrum from Figure 2.
 # 
 #     TODO: also add spectrum for region A from that webpage.'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.34603 5.27582e-11 7.07607e-12 7.11861e-12
 0.604812 1.08499e-11 1.43477e-12 1.44554e-12

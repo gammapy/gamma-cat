@@ -14,6 +14,7 @@
 # - {reference_id: 2005A&A...442L..25A}
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA442_HESSJ1825.html'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.2818 1.11281e-10 3.22247e-11 3.14817e-11
 0.4215 4.95378e-11 8.29664e-12 8.13904e-12

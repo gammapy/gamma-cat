@@ -14,6 +14,7 @@
 # - {reference_id: 2011A&A...531A..81H}
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA531_A81.html'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.281317 4.47255e-11 6.89917e-12 6.99568e-12
 0.341012 2.04312e-11 3.97019e-12 4.04063e-12

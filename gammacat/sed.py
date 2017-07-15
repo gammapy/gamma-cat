@@ -45,7 +45,7 @@ class SED(TableProcessor):
     ]
 
     allowed_meta_keys = required_meta_keys + [
-        'file_id', 'source_name', 'comments', 'url', 'UL_CONF',
+        'file_id', 'source_name', 'comments', 'url', 'UL_CONF', 'mjd'
     ]
 
     def process(self):

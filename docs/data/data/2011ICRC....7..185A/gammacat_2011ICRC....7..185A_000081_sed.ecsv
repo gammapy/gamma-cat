@@ -16,6 +16,7 @@
 # - {comments: 'Spectral points for HESS J1554-550 from Figure 3.
 # 
 #     Data obtained via email by Fabio Acero on Dec 15, 2016.'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.515629 1.44485e-12 4.42499e-13 4.67212e-13
 1.00594 3.24681e-13 8.22291e-14 8.80326e-14

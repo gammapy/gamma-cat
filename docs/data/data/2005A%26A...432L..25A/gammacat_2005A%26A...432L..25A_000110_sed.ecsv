@@ -16,6 +16,7 @@
 #     3.
 # 
 #     There''s another SED for 200 photoelectron cut (open circles), not listed here.'}
+# schema: astropy-2.0
 e_ref dnde dnde_err
 0.23 2.42e-11 8.6e-12
 0.38 8.2e-12 1.49e-12

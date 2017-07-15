@@ -25,6 +25,7 @@
 # 
 #     '}
 # - {UL_CONF: 0.99}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul significance
 0.5115 0.46417 0.56236 4e-12 1.037e-12 1.084e-12 nan 4.13
 0.6197 0.56236 0.68131 1.951e-12 6.17e-13 6.412e-13 nan 3.31

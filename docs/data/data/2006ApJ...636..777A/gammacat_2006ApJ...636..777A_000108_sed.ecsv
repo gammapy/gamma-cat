@@ -14,6 +14,7 @@
 # - {reference_id: 2006ApJ...636..777A}
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.328741 2.44241e-11 4.32338e-12 4.40347e-12
 0.434689 8.38276e-12 2.06948e-12 2.11464e-12

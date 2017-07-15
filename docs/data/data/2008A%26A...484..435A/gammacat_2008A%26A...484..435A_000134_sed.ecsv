@@ -18,6 +18,7 @@
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/HESSJ1912_auxinfo.html'}
 # - {UL_CONF: 0.95}
 # - {comments: SED from Figure 2}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp dnde_ul
 0.872 3.82e-12 1.18e-12 1.21e-12 nan
 1.76 1.02e-12 1.69e-13 1.73e-13 nan

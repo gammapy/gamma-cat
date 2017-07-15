@@ -17,6 +17,7 @@
 # - {file_id: 3}
 # - {telescope: veritas}
 # - {comments: Spectral points measured by VERITAS for orbital phases 0.8-0.2}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_errn dnde_errp
 0.282 0.2 0.398 4.981e-12 3.227e-12 3.056e-12
 0.562 0.398 0.794 1.194e-12 3.072e-13 2.953e-13

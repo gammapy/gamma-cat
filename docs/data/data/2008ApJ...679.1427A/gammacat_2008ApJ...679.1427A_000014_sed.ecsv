@@ -17,6 +17,7 @@
 # - {telescope: veritas}
 # - {UL_CONF: 0.99}
 # - {comments: Spectral points (Fig 2) obtained from corresponding author.}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_err dnde_ul
 0.385 0.316 0.446 2.82e-11 1.14e-11 nan
 0.548 0.446 0.63 1.25e-11 3.7e-12 nan

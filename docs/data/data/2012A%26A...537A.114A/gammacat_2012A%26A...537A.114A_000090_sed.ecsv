@@ -27,6 +27,7 @@
 #     It''s unclear from that file what the upper limit values are.
 # 
 #     I asked Stefan Ohm and he said that "flux + 2 x up error"'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp dnde_ul is_ul
 0.562341 1.63165e-11 1.06665e-11 1.06677e-11 nan False
 1.0 8.65394e-12 2.69447e-12 2.694e-12 nan False

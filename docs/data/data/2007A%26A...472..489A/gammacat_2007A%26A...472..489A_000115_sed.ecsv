@@ -18,6 +18,7 @@
 #     See http://www.aanda.org/articles/aa/full/2007/35/aa7280-07/aa7280-07.html
 # 
 #     TODO: where are these values from? Is there a URL?'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.354987 8.48195e-11 2.65445e-11 2.63877e-11
 0.73622 1.01737e-11 2.91417e-12 2.89366e-12

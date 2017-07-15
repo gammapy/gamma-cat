@@ -15,6 +15,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/RXJ0852.html'}
 # - {comments: Spectral points from Figure 3.}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_err
 0.53 0.4 0.7 3.8e-11 2.3e-11
 0.79 0.7 1.0 2.96e-11 7.8e-12

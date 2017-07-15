@@ -16,6 +16,7 @@
 # - {comments: 'Data obtained from Karl Kosack on November 23, 2016
 # 
 #     See https://github.com/gammapy/gamma-cat/issues/30'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.822273 8.3688e-12 1.99903e-12 2.05708e-12
 1.42746 2.78001e-12 4.346e-13 4.47903e-13

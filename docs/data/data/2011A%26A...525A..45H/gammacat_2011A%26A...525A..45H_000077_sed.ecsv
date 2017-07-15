@@ -19,6 +19,7 @@
 # 
 #     The webpage also contains spectral points for hard cuts, not added to gamma-cat
 #     now.'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.8609 2.29119e-12 8.70543e-13 8.95502e-13
 1.56151 6.98172e-13 2.20354e-13 2.30407e-13

@@ -14,6 +14,7 @@
 # - {reference_id: 2011A&A...528A.143H}
 # - {telescope: hess}
 # - {url: TODO}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.908 4.13e-12 1.58e-12 1.58e-12
 1.93 1.25e-12 2.34e-13 2.35e-13

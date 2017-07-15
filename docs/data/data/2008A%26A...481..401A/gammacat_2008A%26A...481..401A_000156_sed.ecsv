@@ -20,6 +20,7 @@
 # 
 #     '}
 # - {UL_CONF: 0.99}
+# schema: astropy-2.0
 e_ref dnde dnde_err dnde_ul
 0.31 1.1792e-11 4.009e-12 nan
 0.41 8.783e-12 1.982e-12 nan

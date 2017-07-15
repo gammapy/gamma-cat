@@ -18,6 +18,7 @@
 #     See https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262522318
 # 
 #     and https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262539054'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.878584 8.11092e-12 1.27366e-12 1.30268e-12
 1.56 1.61977e-12 2.69112e-13 2.76791e-13

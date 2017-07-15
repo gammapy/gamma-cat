@@ -14,6 +14,7 @@
 # - {reference_id: 2016arXiv160104461H}
 # - {telescope: hess}
 # - {comments: 'Data obtained from Ira Jung on Oct 18, 2016 via private communication'}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.4818 8.908e-12 4.804e-12 4.952e-12
 0.5662 6.78e-12 1.983e-12 2.017e-12

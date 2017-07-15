@@ -15,6 +15,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA525_A46.html'}
 # - {comments: This is the data for HESS J1026-582.}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 1.2687 4.97531e-13 2.93908e-13 3.03601e-13
 2.2363 2.35513e-13 7.52542e-14 7.5244e-14

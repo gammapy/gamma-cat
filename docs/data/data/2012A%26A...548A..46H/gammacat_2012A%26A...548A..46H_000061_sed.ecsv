@@ -15,6 +15,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA548_A46.html'}
 # - {comments: The page contains other data that's not copied here yet.}
+# schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.88 4.25e-12 1.09e-12 1.09e-12
 1.29 3.03e-12 4.31e-13 4.32e-13

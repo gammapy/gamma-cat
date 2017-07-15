@@ -16,6 +16,7 @@
 # - {comments: 'Spectral points for HESS J1831-098 from Figure 2.
 # 
 #     Data obtained via email by Arache Djannati-Atai on Nov 25, 2016.'}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_err
 0.3025 0.2397 0.4217 6.94212e-12 3.89341e-12
 0.5322 0.4217 0.7421 5.22225e-12 9.6278e-13

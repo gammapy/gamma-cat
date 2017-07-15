@@ -12,6 +12,7 @@
 # - {reference_id: 2011A&A...533A.103H}
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA533_A103.html'}
+# schema: astropy-2.0
 e_ref dnde dnde_err
 1.5 1.3e-12 4.23e-13
 2.41 2.51e-13 1.36e-13

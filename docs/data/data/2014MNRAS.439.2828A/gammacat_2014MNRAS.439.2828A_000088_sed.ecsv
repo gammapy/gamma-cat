@@ -20,6 +20,7 @@
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1640'}
 # - {comments: Flux points from Figure 2.}
 # - {UL_CONF: 0.95}
+# schema: astropy-2.0
 e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul
 0.2903 0.261 0.31622 3.956e-11 1.678e-11 1.79e-11 nan
 0.351 0.31618 0.38307 2.997e-11 5.104e-12 5.278e-12 nan

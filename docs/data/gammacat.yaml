@@ -2011,8 +2011,8 @@
   - sed_e_max: .nan
   - sed_dnde: 1.2461300539351721e-14
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 8.419299972635668e-15
-  - sed_dnde_errn: 1.688826656916654e-14
+  - sed_dnde_errp: 4.426966453331292e-15
+  - sed_dnde_errn: 4.041999719683106e-15
   - sed_dnde_ul: 2.7360000641349315e-16
 - !!omap
   - source_id: 25
@@ -2179,8 +2179,8 @@
   - sed_e_max: .nan
   - sed_dnde: 4.2950255710935e-14
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 2.838981016961041e-14
-  - sed_dnde_errn: 5.958383471945522e-14
+  - sed_dnde_errp: 1.6633577314454327e-14
+  - sed_dnde_errn: 1.4560447235390482e-14
   - sed_dnde_ul: 4.498000118595695e-16
 - !!omap
   - source_id: 27
@@ -2263,8 +2263,8 @@
   - sed_e_max: .nan
   - sed_dnde: 2.2130818770442484e-13
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 1.7569256325396937e-13
-  - sed_dnde_errn: 2.740985606888846e-13
+  - sed_dnde_errp: 5.279038653698692e-14
+  - sed_dnde_errn: 4.561560073353295e-14
   - sed_dnde_ul: 6.300000112850461e-17
 - !!omap
   - source_id: 28

@@ -3,8 +3,8 @@
 # datatype:
 # - {name: e_ref, datatype: float32}
 # - {name: dnde, datatype: float32}
-# - {name: dnde_errp, datatype: float32}
-# - {name: dnde_errn, datatype: float32}
+# - {name: dnde_min, datatype: float32}
+# - {name: dnde_max, datatype: float32}
 # - {name: dnde_ul, datatype: float32}
 # meta: !!omap
 # - data_type: sed
@@ -13,7 +13,7 @@
 # - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/LMC_Science_2015/Spectrum_N157B.txt
 # - UL_CONF: 0.99
-e_ref dnde dnde_errp dnde_errn dnde_ul
+e_ref dnde dnde_min dnde_max dnde_ul
 0.873  8.268e-13  4.432e-13  1.302e-12 nan
 1.041  1.075e-12  9.114e-13  1.251e-12 nan
 1.252  8.868e-13  7.961e-13  9.825e-13 nan

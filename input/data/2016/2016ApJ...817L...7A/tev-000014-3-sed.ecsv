@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: TeV cm-2 s-1}
+# - {name: dnde_err, datatype: float32, unit: TeV cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 14
+# - reference_id: 2016ApJ...817L...7A
+# - telescope: veritas
+# - comments: |
+#     Flare F2 (Nov 13–15 2014)
+#     all energies in TeV
+e_ref  dnde  dnde_err
+3.54e-01	5.89e-11		9.40e-12
+7.10e-01	9.88e-12		1.66e-12
+1.41e+00	1.98e-12		3.95e-13
+2.80e+00	5.37e-13		1.26e-13
+5.60e+00	7.39e-14		3.22e-14

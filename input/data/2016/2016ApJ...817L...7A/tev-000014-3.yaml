@@ -1,0 +1,27 @@
+source_id: 14
+reference_id: 2016ApJ...817L...7A
+telescope: veritas
+
+
+##################
+# Orbital period
+# (for binaries only)
+orbit:
+  # zero phase for orbital period from Gregory (2002)
+  mjd0: 43366.3     #
+  period: {val: 26.4960 }
+
+#############################################################
+# spectral fit results
+# Flare F2 (Nov 13–15 2014)
+
+spec:
+  mjd: {min: 56974.0, max: 56976.0}
+  erange: {min: 0.3, max: 20., unit: TeV}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 4.8, err: 0.4, err_sys: 1.0,scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.36, err: 0.12, err_sys: 0.3}
+      e_ref: {val: 1, unit: TeV}
+  filecounter: 3

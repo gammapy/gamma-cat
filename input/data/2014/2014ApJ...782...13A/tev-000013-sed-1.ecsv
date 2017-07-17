@@ -4,9 +4,9 @@
 # - {name: e_ref, datatype: float32}
 # - {name: e_min, datatype: float32}
 # - {name: e_max, datatype: float32}
-# - {name: e2dnde, unit: TeV-1 m-2 s-1, datatype: float32}
-# - {name: e2dnde_err, unit: TeV-1 m-2 s-1, datatype: float32}
-# - {name: e2dnde_ul, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: dnde, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: dnde_err, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: dnde_ul, unit: TeV-1 m-2 s-1, datatype: float32}
 # - {name: significance, datatype: float32}
 # meta: !!omap
 # - data_type: sed
@@ -16,7 +16,7 @@
 # - telescope: veritas
 # - comments: |
 #     Table 2
-e_ref e_min e_max e2dnde e2dnde_err dnde_ul significance
+e_ref e_min e_max dnde dnde_err dnde_ul significance
 0.291   0.24   0.353   1.16782e-07   2.79144e-08 nan 4.5
 0.427   0.353   0.518   6.14596e-08   1.04796e-08 nan 6.7
 0.628   0.518   0.761   2.193e-08   4.35684e-09 nan 5.6

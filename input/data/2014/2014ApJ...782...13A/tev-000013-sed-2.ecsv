@@ -4,8 +4,8 @@
 # - {name: e_ref, datatype: float32}
 # - {name: e_min, datatype: float32}
 # - {name: e_max, datatype: float32}
-# - {name: e2dnde, unit: TeV-1 m-2 s-1, datatype: float32}
-# - {name: e2dnde_err, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: dnde, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: dnde_err, unit: TeV-1 m-2 s-1, datatype: float32}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 13
@@ -15,7 +15,7 @@
 # - comments: |
 #     Figure 1 (green curve)
 #     spectrum during the flaring episode
-e_ref e_min e_max e2dnde e2dnde_err 
+e_ref e_min e_max dnde dnde_err 
 0.291   0.24   0.353   2.27473e-07   6.15096e-08
 0.427   0.353   0.518   8.02643e-08   2.22674e-08
 0.628   0.518   0.761   4.61629e-08   1.08708e-08

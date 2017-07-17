@@ -3,8 +3,8 @@
 # datatype:
 # - {name: e_min, datatype: float32}
 # - {name: e_max, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_err, datatype: float32}
+# - {name: e2dnde, datatype: float32, unit: cm-2 s-1 TeV}
+# - {name: e2dnde_err, datatype: float32, unit: cm-2 s-1 TeV}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 25

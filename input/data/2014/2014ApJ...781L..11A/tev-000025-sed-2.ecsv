@@ -1,8 +1,8 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_min, datatype: float32}
-# - {name: e_max, datatype: float32}
+# - {name: e_min, datatype: float32, unit: TeV}
+# - {name: e_max, datatype: float32, unit: TeV}
 # - {name: e2dnde, datatype: float32, unit: cm-2 s-1 TeV}
 # - {name: e2dnde_err, datatype: float32, unit: cm-2 s-1 TeV}
 # meta: !!omap
@@ -14,7 +14,6 @@
 # - comments: |
 #     spectrum during MeV flare
 #     obtained per email by G.Richards (2017-04-17)
-#     all energies in TeV
 e_min e_max  e2dnde  e2dnde_err
 0.99841     1.25693     3.193643e-11    1.736395e-12
 1.25693     1.58238     2.711002e-11    1.722508e-12

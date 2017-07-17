@@ -8,6 +8,7 @@
 # - data_type: sed
 # - source_id: 54
 # - reference_id: 2009ApJ...707..612A
+# - telescope: veritas
 # - comments: |
 #     June 7/8 2008
 #     (equal distance binning on log10 scale of 0.1)

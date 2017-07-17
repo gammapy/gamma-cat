@@ -15,7 +15,7 @@
 #     baseline spectrum
 #     obtained per email by G.Richards (2017-04-17)
 #     all energies in TeV
-e_min e_max  dnde  dnde_err
+e_min e_max  e2dnde  e2dnde_err
 0.99856   1.25711    3.323796e-11    1.734459e-12
 1.25711   1.58261    2.562091e-11    1.665821e-12
 1.58261   1.99239    2.4691e-11      1.67983e-12

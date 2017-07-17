@@ -15,7 +15,7 @@
 #     spectrum during MeV flare
 #     obtained per email by G.Richards (2017-04-17)
 #     all energies in TeV
-e_min e_max  dnde  dnde_err
+e_min e_max  e2dnde  e2dnde_err
 0.99841     1.25693     3.193643e-11    1.736395e-12
 1.25693     1.58238     2.711002e-11    1.722508e-12
 1.58238     1.9921      2.1807e-11      1.671719e-12

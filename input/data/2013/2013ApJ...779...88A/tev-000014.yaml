@@ -5,16 +5,16 @@ telescope: veritas
 # Orbital period
 orbit:
     # zero phase for orbital period from Gregory (2002)
-    mjd0: 43366.3     #
+    mjd0: 43366.3
     period: {val: 26.4960 }
 
 # (spectral fit for phases 0.5-0.8)
 spec:
+  mjd: {min: 55911.0, max: 55497}
+  phase: {min: 0.5, max: 0.8 }
   model:
     type: pl
     parameters:
-      mjd: {min: 55911.0, max: 55497}
-      phase: {min: 0.5, max: 0.8 }
       norm: {val: 1.37, err: 0.14, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.59, err: 0.15}
       e_ref: {val: 1, unit: TeV}

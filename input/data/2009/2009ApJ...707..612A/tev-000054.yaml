@@ -3,8 +3,8 @@ reference_id: 2009ApJ...707..612A
 telescope: veritas
 
 pos:
-    ra: {val: 12h21h59s, err: 0h0m31s, err_sys: 50s }
-    dec: {val: +28h13m13.5s, err: 0h0m41s, err_sys: 50s }
+    ra: {val: 12h21m59s, err: 0h0m31s, err_sys: 50s }
+    dec: {val: +28d13m13.5s, err: 0h0m41s, err_sys: 50s }
 
 
 # spectral results for June 7/8 2008

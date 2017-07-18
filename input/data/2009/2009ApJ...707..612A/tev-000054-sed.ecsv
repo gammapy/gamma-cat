@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_err, datatype: float32, unit: erg cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 54
+# - reference_id: 2009ApJ...707..612A
+# - telescope: veritas
+# - comments: |
+#     June 7/8 2008
+#     (equal distance binning on log10 scale of 0.1)
+e_ref   e2dnde   e2dnde_err
+0.18838        4.246e-11      2.055e-11
+0.266089       4.068e-11      1.068e-11
+0.375849       1.710e-11      4.967e-12
+0.53102        1.388e-11      3.419e-12
+0.749796       5.319e-12      2.116e-12
+1.05914        3.802e-12      1.880e-12

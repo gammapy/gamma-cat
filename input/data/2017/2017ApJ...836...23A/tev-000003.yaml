@@ -1,0 +1,23 @@
+source_id: 3
+reference_id: 2017ApJ...836...23A
+telescope: veritas
+
+data:
+  livetime: 147
+  significance: 6.9
+
+
+pos:
+  ra: {val: 0h25m21.60s, err: 0h0m7.20s, err_sys:  0.006 deg}
+  dec: {val: 64d7m48s, err: 0d1m12s, err_sys:  0.006 deg}
+
+morph:
+  type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.22, err: 0.05, err_sys: 0.06,scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.92, err: 0.42, err_sys: 0.20}
+      e_ref: {val: 1.0, unit: TeV}

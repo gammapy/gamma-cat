@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_err, datatype: float32, unit: cm-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 14
+# - reference_id: 2016ApJ...817L...7A
+# - telescope: veritas
+# - comments: |
+#     Flare F1 (Oct 17–18 2014)
+e_ref  dnde  dnde_err
+3.540e-01 7.950e-11  1.790e-11
+7.100e-01 2.110e-11  3.950e-12
+1.410e+00 3.900e-12  9.600e-13
+2.800e+00 1.070e-12  2.970e-13
+5.600e+00 1.040e-13  6.370e-14
+1.119e+01 9.080e-14  4.140e-14

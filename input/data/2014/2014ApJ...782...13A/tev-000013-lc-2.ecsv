@@ -1,0 +1,35 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: significance, datatype: float32}
+# - {name: flux, unit: 1e-9 m-2 s-1, datatype: float64}
+# - {name: flux_err, unit: 1e-9 m-2 s-1, datatype: float64}
+# - {name: flux_ul, unit: 1e-9 m-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 13
+# - file_id: 2
+# - reference_id: 2014ApJ...782...13A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - UL_CONF: 0.99
+# - comments: |
+#     fluxes binned by dark runs
+e_min time_min time_max significance flux flux_err flux_ul
+0.3   55118 55131 9.74 41.8 6.38 nan
+0.3   55144 55159 8.09 24.2 5.37 nan
+0.3   55183 55183 -0.268 1.05 26.2 103
+0.3   55200 55212 0.0728 3.43 10.3 50.5
+0.3   55476 55482 0.991 14.7 9.21 40.8
+0.3   55501 55513 3.84 38.9 14.1 nan
+0.3   55526 55538 0.723 1.32 13.8 60.3
+0.3   55555 55570 0.958 14.9 9.77 39.7
+0.3   55583 55587 1.06  26.3 13.0 53.8
+0.3   55828 55840 0.970 12.8 13.8 65.6
+0.3   55855 55861 1.85 15.4 13.9 77.9
+0.3   55886 55895 1.58 13.0 14.4 76.8
+0.3   55916 55922 0.220  -6.30 12.7 51.4
+0.3   55940 55951 1.94 15.5 17.5 103

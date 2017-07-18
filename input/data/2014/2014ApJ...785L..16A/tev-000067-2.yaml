@@ -1,0 +1,18 @@
+source_id: 67
+reference_id: 2014ApJ...785L..16A
+file_id: 2
+telescope: veritas
+
+data:
+  livetime: 14.6
+  significance: 8.1
+
+spec:
+  mjd: {min: 55598.0, max: 55711.0}
+  erange: {min: 0.115, max: 0.375, unit: TeV}
+  model:
+    type: pl2
+    parameters:
+      e_min: {val: 0.12, unit: TeV}
+      flux: {val: 2.1, err: 0.3, err_sys: 0.8, scale: 1e-7, unit: m-2 s-1}
+      index: {val: 4.3, err: 0.6, err_sys: 0.3}

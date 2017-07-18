@@ -1,0 +1,18 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: dnde, unit: TeV-1 cm-2 s-1, datatype: float32}
+# - {name: dnde_err, unit: TeV-1 cm-2 s-1, datatype: float32}
+# - {name: dnde_ul, unit: TeV-1 cm-2 s-1, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 105
+# - reference_id: 2016MNRAS.459.2550A
+# - telescope: veritas
+# - UL_CONF: 0.95
+e_ref  dnde  dnde_err dnde_ul
+0.21 2.5e-11 1.0e-11 nan
+0.30 9.0e-12 2.8e-12 nan
+0.42 3.8e-12 1.2e-12 nan
+0.60 nan   nan 4.46e-12

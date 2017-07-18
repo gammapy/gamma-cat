@@ -1,0 +1,20 @@
+source_id: 54
+reference_id: 2009ApJ...707..612A
+telescope: veritas
+
+pos:
+    ra: {val: 12h21h59s, err: 0h0m31s, err_sys: 50s }
+    dec: {val: +28h13m13.5s, err: 0h0m41s, err_sys: 50s }
+
+
+# spectral results for June 7/8 2008
+
+spec:
+  mjd: {min: 54624.16, max: 54625.24}
+  erange: {min: 0.18, max: 3.0, unit: TeV}
+  model:
+    type: pl
+    parameters:
+     norm: {val: 65., err: 9., err_sys: 13., scale: 1e-12, unit: cm-2 s-1 TeV-1}
+     index: {val: 3.68, err: 0.22, err_sys: 0.3}
+     e_ref: {val: 0.4, unit: TeV}

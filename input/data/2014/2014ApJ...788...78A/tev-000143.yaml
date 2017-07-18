@@ -1,0 +1,29 @@
+source_id: 143
+reference_id: 2014ApJ...788...78A
+telescope: veritas
+
+data:
+  livetime: 70.
+  significance: 8.2
+  excess: 228
+
+pos:
+  ra: {val: 20h19m25s, err: 0h0m72s, err_sys: 50s }
+  dec: {val: +36d48m14s, err: 58s, err_sys: 50s }
+
+morph:
+  type: gauss
+  sigma: {val: 0.34d, err: 0.03d}
+  sigma2: {val: 0.13d, err: 0.02d}
+  # orientation angle of the major axis of 71 deg east of north
+  pa: {frame: radec, val: 71d}
+
+spec:
+  erange: {min: 1., max: 30., unit: TeV}
+  theta: 0.5d
+  model:
+    type: pl
+    parameters:
+      norm: {val: 8.1, err: 0.7, err_sys: 1.6, scale: 1e-14, unit: cm-2 s-1 TeV-1}
+      index: {val: 1.75, err: 0.08, err_sys: 0.2}
+      e_ref: {val: 5, unit: TeV}

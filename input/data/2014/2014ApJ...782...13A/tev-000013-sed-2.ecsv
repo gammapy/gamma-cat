@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: e_min, datatype: float32}
+# - {name: e_max, datatype: float32}
+# - {name: dnde, unit: TeV-1 m-2 s-1, datatype: float32}
+# - {name: dnde_err, unit: TeV-1 m-2 s-1, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 13
+# - file_id: 2
+# - reference_id: 2014ApJ...782...13A
+# - telescope: veritas
+# - comments: |
+#     Figure 1 (green curve)
+#     spectrum during the flaring episode
+e_ref e_min e_max dnde dnde_err 
+0.291   0.24   0.353   2.27473e-07   6.15096e-08
+0.427   0.353   0.518   8.02643e-08   2.22674e-08
+0.628   0.518   0.761   4.61629e-08   1.08708e-08
+0.922   0.761   1.118   8.14792e-09   4.2125e-09
+1.355   1.118   1.642   5.38541e-09   2.09016e-09
+1.99   1.642   2.412   1.99842e-09   1.01346e-09
+2.923   2.412   3.542   7.48091e-10   5.36234e-10
+4.293   3.542   5.204   1.57912e-10   2.53638e-10
+6.307   5.204   7.644   1.10252e-10   1.25031e-10
+9.264   7.644   11.228   2.75716e-11   5.83044e-11

@@ -1,0 +1,42 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_ul, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 14
+# - reference_id: 2016ApJ...817L...7A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - UL_CONF: 0.99
+e_min time flux flux_err flux_ul
+0.3 56946.3  nan   nan   0.15e-11
+0.3 56947.3  2.32e-11   0.54e-11     nan
+0.3 56948.3  3.20e-11   0.34e-11     nan
+0.3 56950.3  nan   nan       0.47e-11
+0.3 56951.3  nan   nan       0.64e-11
+0.3 56952.3  nan   nan       0.55e-11
+0.3 56954.3  nan   nan       0.28e-11
+0.3 56956.3  nan   nan       0.86e-11
+0.3 56958.3  nan   nan       0.38e-11
+0.3 56960.3  nan   nan       0.46e-11
+0.3 56962.3  nan   nan       0.96e-11
+0.3 56973.2  nan   nan  0.53e-11
+0.3 56974.2  1.30e-11  0.34e-11  nan
+0.3 56975.2  2.02e-11  0.22e-11  nan
+0.3 56976.3  1.55e-11  0.25e-11      nan
+0.3 56977.2  nan   nan       0.94e-11
+0.3 56979.2  nan   nan       0.85e-11
+0.3 56981.3  nan   nan       0.53e-11
+0.3 56982.3  nan   nan       1.02e-11
+0.3 56983.3  nan   nan       0.58e-11
+0.3 56985.2  nan   nan       0.82e-11
+0.3 56987.2  nan   nan       0.69e-11
+0.3 56989.2  nan   nan       1.13e-11
+0.3 57001.1  nan   nan  0.66e-11
+0.3 57002.1  0.72e-11 0.12e-11       nan
+0.3 57003.1  1.06e-11 0.20e-11       nan

@@ -1,0 +1,75 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: significance, datatype: float32}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_ul, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 14
+# - reference_id: 2009ApJ...700.1034A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - UL_CONF: 0.95
+# - comments: |
+#     Data taken from table 1 in the paper.
+e_min time significance flux flux_err flux_ul
+0.5  53999.4  -0.5  nan  nan   0.33e-11
+0.5  54001.3  0.2 nan  nan   0.59e-11
+0.5  54002.4  0.0 nan  nan   0.68e-11
+0.5  54003.4  1.04 nan  nan   0.56e-11
+0.5  54004.3  0.74 nan  nan   0.85e-11
+0.5  54005.3  -1.49 nan  nan   0.13e-11
+0.5  54006.4  1.14 nan  nan   0.63e-11
+0.5  54008.4  4.39 1.08e-11  0.32e-11  nan
+0.5  54009.4  3.81 1.00e-11  0.35e-11  nan
+0.5  54031.3  2.04 0.32e-11  0.22e-11  nan
+0.5  54035.3  5.4 1.15e-11  0.29e-11  nan
+0.5  54036.4  3.62 0.64e-11  0.24e-11  nan
+0.5  54038.4  1.57 nan  nan   0.81e-11
+0.5  54050.2  -0.32 nan  nan   0.41e-11
+0.5  54054.3  0.44 nan  nan   0.36e-11
+0.5  54055.3  1.14 nan  nan   0.63e-11
+0.5  54056.3  1.17 nan  nan   0.81e-11
+0.5  54059.3  1.86 nan  nan   1.09e-11
+0.5  54060.3  2.86 0.95e-11  0.46e-11  nan
+0.5  54061.3  1.21 nan  nan   0.92e-11
+0.5  54062.3  0.84 nan  nan   0.99e-11
+0.5  54064.3  0.31 nan  nan   0.35e-11
+0.5  54066.3  1.99 nan  nan   0.59e-11
+0.5  54067.3  1.36 nan  nan   0.73e-11
+0.5  54108.2  -0.06 nan  nan   0.22e-11
+0.5  54109.2  2.15 0.32e-11 0.29e-11   nan
+0.5  54110.2  0.34 nan  nan  0.29e-11
+0.5  54115.1  3.37 0.71e-11 0.28e-11   nan
+0.5  54116.1  2.97 0.39e-11  0.16e-11  nan
+0.5  54117.2  2.24 0.53e-11  0.3e-11   nan
+0.5  54137.1  -0.84 nan  nan   0.38e-11
+0.5  54138.1  0.59 nan  nan   0.52e-11
+0.5  54139.1  0.46 nan  nan   0.62e-11
+0.5  54140.1  0.46 nan  nan   0.47e-11
+0.5  54144.1  2.24 0.71e-11 0.4e-11  nan
+0.5  54147.1  0.27 nan  nan   0.48e-11
+0.5 54381.9  2.9 0.33e-11 0.11e-11   nan
+0.5 54382.9  0.02 nan  nan   0.25e-11
+0.5 54383.9  2.7 0.33e-11 0.12e-11   nan
+0.5 54384.9  1.9 nan  nan   0.77e-11
+0.5 54389.9  0.32 nan  nan   0.42e-11
+0.5 54390.9  1.1 nan  nan   0.56e-11
+0.5 54393.8  1.1 nan  nan   0.58e-11
+0.5 54404.2  0.76 nan  nan   0.64e-11
+0.5 54406.7  1.6 nan  nan   0.32e-11
+0.5 54407.8  4.4 0.49e-11 0.11e-11   nan
+0.5 54408.8  0.63 nan  nan   0.27e-11
+0.5 54409.7  2.0 0.27e-11 0.11e-11   nan
+0.5 54411.9  -0.06 nan  nan   0.33e-11
+0.5 54413.8  0.0 nan  nan   0.57e-11
+0.5 54423.8  0.11 nan  nan   0.45e-11
+0.5 54448.6  2.5 0.19e-11 0.08e-11  nan
+0.5 54449.7  2.9 0.26e-11 0.09e-11  nan
+0.5 54450.7  1.9 nan  nan   0.18e-11
+0.5 54477.6  2.1 0.28e-11 1.38e-11  nan
+0.5 54479.6  0.52 nan  nan   0.55e-11

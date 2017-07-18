@@ -10,9 +10,9 @@ morph:
     type: point
 
 spec:
+  mjd: {min: 55740.43222, max: 55740.446134}
   model:
     type: pl
-    mjd: {min: 55740.43222, max: 55740.446134}
     parameters:
         norm: {val: 580., err: 70., scale: 1e-12, unit: cm-2 s-1 TeV-1}
         index: {val: 3.6, err: 0.4}

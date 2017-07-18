@@ -18,10 +18,10 @@ orbit:
 spec:
   mjd: {min: 54381.9, max: 54479.6}
   phase: {min: 0.5, max: 0.8 }
+  erange: {min: 0.3, max: 7.07, unit: TeV}
   model:
     type: pl
     parameters:
       norm: {val: 2.43, err: 0.78, err_sys: 0.6, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.60, err: 0.6, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
-  erange: {min: 0.3, max: 7.07, unit: TeV}

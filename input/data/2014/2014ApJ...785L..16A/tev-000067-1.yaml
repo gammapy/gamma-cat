@@ -9,8 +9,8 @@ data:
 
 spec:
   mjd: {min: 54881.0, max: 55003.0}
+  erange: {min: 0.12, max: 0.75, unit: TeV}
   model:
     type: pl
     parameters:
       index: {val: 3.8, err: 0.3, err_sys: 0.3}
-      erange: {min: 0.12, max: 0.75, unit: TeV}

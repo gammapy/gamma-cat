@@ -15,6 +15,7 @@ morph:
   type: gauss
   sigma: {val: 0.34d, err: 0.03d}
   sigma2: {val: 0.13d, err: 0.02d}
+  # orientation angle of the major axis of 71 deg east of north
   pa: {frame: radec, val: 71d}
 
 spec:

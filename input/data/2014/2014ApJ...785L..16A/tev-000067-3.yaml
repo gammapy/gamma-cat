@@ -9,8 +9,10 @@ data:
 
 spec:
   mjd: {min: 56334.0, max: 56447.0}
+  erange: {min: 0.1, max: 0.75, unit: TeV}
   model:
-    type: pl
+    type: pl2
     parameters:
+      e_min: {val: 0.12, unit: TeV}         
+      flux: {val: 1.3, err: 0.08, err_sys: 0.5, scale: 1e-7, unit: m-2 s-1}
       index: {val: 4.5, err: 0.3, err_sys: 0.3}
-      erange: {min: 0.1, max: 0.75, unit: TeV}

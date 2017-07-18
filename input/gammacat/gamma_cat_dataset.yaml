@@ -11,7 +11,7 @@
   reference_id: 2013A&A...554A..72H
 - source_id: 3
   status: source
-  reference_id: 2017arXiv170106740V
+  reference_id: 2017ApJ...836...23A
 - source_id: 4
   status: source
   reference_id:
@@ -44,7 +44,7 @@
   reference_id: 2014ApJ...782...13A, 2007A&A...475L...9A
 - source_id: 14
   status: source
-  reference_id: 2008ApJ...679.1427A, 2011ApJ...738....3A
+  reference_id: 2008ApJ...679.1427A, 2009ApJ...700.1034A, 2011ApJ...738....3A, 2013ApJ...779...88A, 2016ApJ...817L...7A
 - source_id: 15
   status: source
   reference_id: 2013A&A...559A.136H
@@ -77,7 +77,7 @@
   reference_id: 2015Sci...347..406H
 - source_id: 25
   status: source
-  reference_id: 2008ICRC....2..803K, 2006A&A...457..899A
+  reference_id: 2008ICRC....2..803K, 2006A&A...457..899A, 2014ApJ...781L..11A
 - source_id: 26
   status: source
   reference_id: 2015Sci...347..406H
@@ -164,7 +164,7 @@
   reference_id: 2012A&A...544A.142A, 2013ApJ...779...92A
 - source_id: 54
   status: source
-  reference_id: 2008ApJ...684L..73A, 2008ApJ...684L..73A
+  reference_id: 2008ApJ...684L..73A, 2008ApJ...684L..73A, 2009ApJ...707..612A
 - source_id: 55
   status: source
   reference_id: 2009ApJ...695.1370A, 2010ApJ...709L.163A
@@ -215,7 +215,7 @@
   reference_id: 2016arXiv160104461H
 - source_id: 71
   status: source
-  reference_id:
+  reference_id: 2016MNRAS.461..202A
 - source_id: 72
   status: source
   reference_id:
@@ -314,7 +314,7 @@
   reference_id: 2008AIPC.1085..249T
 - source_id: 105
   status: source
-  reference_id:
+  reference_id: 2016MNRAS.459.2550A
 - source_id: 106
   status: source
   reference_id: 2004A&A...425L..13A, 2006PhRvL..97v1102A, 2009A&A...503..817A, 2016Natur.531..476H
@@ -395,7 +395,7 @@
   reference_id: 2008A&A...477..353A
 - source_id: 132
   status: source
-  reference_id: 2009A&A...499..723A
+  reference_id: 2009A&A...499..723A, 2014ApJ...787..166A
 - source_id: 133
   status: source
   reference_id: 2016arXiv160900600H
@@ -428,7 +428,7 @@
   reference_id:
 - source_id: 143
   status: source
-  reference_id: 2012ApJ...753..159A
+  reference_id: 2012ApJ...753..159A, 2014ApJ...788...78A
 - source_id: 144
   status: source
   reference_id:
@@ -437,7 +437,7 @@
   reference_id:
 - source_id: 146
   status: source
-  reference_id: 2012ApJ...753..159A
+  reference_id: 2012ApJ...753..159A, 2014ApJ...783...16A
 - source_id: 147
   status: source
   reference_id: 2013PhRvD..88j2003A, 2005A&A...430..865A, 2012A&A...544A..75A, 2009ApJ...696L.150A, 2005A&A...442..895A, 2012A&A...539A.149H,2010A&A...520A..83H

@@ -8,17 +8,12 @@
 #     error (1 sigma) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
-# - {source_id: 49}
-# - {reference_id: 2017ApJ...834....2A}
-# - {file_id: 2}
+# - {source_id: 141}
+# - {reference_id: 2014ApJ...788...78A}
 # - {telescope: veritas}
-# - {comments: Spectrum for 2014-05-03.}
 # schema: astropy-2.0
 e_ref dnde dnde_err
-0.223 2.03e-09 1.15e-10
-0.3533 6.83e-10 3.58e-11
-0.5596 2.35e-10 1.35e-11
-0.886 5.11e-11 4.25e-12
-1.402 1.2e-11 1.5e-12
-2.214 3.75e-12 6.33e-13
-3.491 7.77e-13 2.27e-13
+0.75 9.5052e-13 3.2838e-13
+1.58 8.9146e-14 2.7901e-14
+3.35 1.4862e-14 9.7584e-15
+10.59 1.47e-15 7.1632e-16

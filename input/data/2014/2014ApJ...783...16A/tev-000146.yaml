@@ -7,7 +7,7 @@ data:
   significance: 8.7
 
 pos:
-    ra: {val: 20h31m40s, err: 0h0m65s, err_sys: 50s }
+    ra: {val: 20h31m40s, err: 0h1m5s, err_sys: 50s }
     dec: {val: +41d33m53s, err: 37s, err_sys: 50s }
 
 

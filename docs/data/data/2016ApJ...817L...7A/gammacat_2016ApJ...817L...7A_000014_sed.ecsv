@@ -8,17 +8,14 @@
 #     error (1 sigma) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
-# - {source_id: 49}
-# - {reference_id: 2017ApJ...834....2A}
-# - {file_id: 2}
+# - {source_id: 14}
+# - {reference_id: 2016ApJ...817L...7A}
 # - {telescope: veritas}
-# - {comments: Spectrum for 2014-05-03.}
+# - {comments: "Flare F2 (Nov 13\u201315 2014)"}
 # schema: astropy-2.0
 e_ref dnde dnde_err
-0.223 2.03e-09 1.15e-10
-0.3533 6.83e-10 3.58e-11
-0.5596 2.35e-10 1.35e-11
-0.886 5.11e-11 4.25e-12
-1.402 1.2e-11 1.5e-12
-2.214 3.75e-12 6.33e-13
-3.491 7.77e-13 2.27e-13
+0.354 5.89e-11 9.4e-12
+0.71 9.88e-12 1.66e-12
+1.41 1.98e-12 3.95e-13
+2.8 5.37e-13 1.26e-13
+5.6 7.39e-14 3.22e-14

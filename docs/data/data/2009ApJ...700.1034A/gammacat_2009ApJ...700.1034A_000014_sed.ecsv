@@ -8,22 +8,19 @@
 #     negative error (1 sigma) on `dnde`}
 # - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
 #     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
-# - {source_id: 67}
-# - {reference_id: 2014ApJ...785L..16A}
+# - {source_id: 14}
+# - {reference_id: 2009ApJ...700.1034A}
 # - {telescope: veritas}
-# - mjd: {max: 56334.0, min: 56447.0}
-# - {file_id: 3}
+# - {UL_CONF: 0.95}
 # schema: astropy-2.0
-e_ref dnde dnde_errn dnde_errp
-0.1067 3.96e-10 9.86e-11 9.86e-11
-0.1163 2.23e-10 5.81e-11 5.81e-11
-0.1269 2.68e-10 4.05e-11 4.05e-11
-0.1384 1.55e-10 2.95e-11 2.95e-11
-0.1509 9.04e-11 2.16e-11 2.16e-11
-0.1714 6.58e-11 1.07e-11 1.07e-11
-0.2039 1.89e-11 6.37e-12 6.37e-12
-0.243 1.43e-11 4e-12 4e-12
-0.3144 3.16e-12 1.3e-12 1.3e-12
-0.524 4.57e-13 2.45e-13 2.45e-13
+e_ref dnde dnde_errn dnde_errp dnde_ul
+0.779 4.858e-16 2.256e-16 2.193e-16 nan
+1.232 1.346e-16 6.654e-17 7.1e-17 nan
+1.957 3.873e-17 2.178e-17 2.218e-17 nan
+3.095 1.364e-17 8.505e-18 8.7e-18 nan
+4.977 nan nan nan 1.094e-13
+7.895 nan nan nan 3.248e-14

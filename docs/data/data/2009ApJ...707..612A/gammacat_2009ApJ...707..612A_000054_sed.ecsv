@@ -8,17 +8,17 @@
 #     error (1 sigma) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
-# - {source_id: 49}
-# - {reference_id: 2017ApJ...834....2A}
-# - {file_id: 2}
+# - {source_id: 54}
+# - {reference_id: 2009ApJ...707..612A}
 # - {telescope: veritas}
-# - {comments: Spectrum for 2014-05-03.}
+# - {comments: 'June 7/8 2008
+# 
+#     (equal distance binning on log10 scale of 0.1)'}
 # schema: astropy-2.0
 e_ref dnde dnde_err
-0.223 2.03e-09 1.15e-10
-0.3533 6.83e-10 3.58e-11
-0.5596 2.35e-10 1.35e-11
-0.886 5.11e-11 4.25e-12
-1.402 1.2e-11 1.5e-12
-2.214 3.75e-12 6.33e-13
-3.491 7.77e-13 2.27e-13
+0.18838 7.46793e-10 3.61436e-10
+0.266089 3.58605e-10 9.41471e-11
+0.375849 7.55543e-11 2.19461e-11
+0.53102 3.07226e-11 7.56775e-12
+0.749796 5.90518e-12 2.3492e-12
+1.05914 2.11541e-12 1.04602e-12

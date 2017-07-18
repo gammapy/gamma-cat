@@ -4,8 +4,8 @@
 # - {name: e_ref, datatype: float32, unit: TeV}
 # - {name: e_min, datatype: float32, unit: TeV}
 # - {name: e_max, datatype: float32, unit: TeV}
-# - {name: e2dnde, datatype: float32, unit: cm-2 s-1 TeV}
-# - {name: e2dnde_err, datatype: float32, unit: cm-2 s-1 TeV}
+# - {name: e2dnde, datatype: float32, unit: TeV cm-2 s-1}
+# - {name: e2dnde_err, datatype: float32, unit: TeV cm-2 s-1}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 25

@@ -9,7 +9,7 @@
 # - source_id: 143
 # - reference_id: 2014ApJ...788...78A
 # - telescope: veritas
-e_ref e_min e_max dnde dnde_err
+e_ref dnde dnde_err
 1.12  8.6212e-13  2.8714e-13
 1.78  4.7155e-13  1.0631e-13
 2.82  2.2732e-13  4.4227e-14

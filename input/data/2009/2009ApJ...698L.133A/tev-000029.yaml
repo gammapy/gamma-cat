@@ -1,0 +1,27 @@
+source_id: 29
+reference_id: 2009ApJ...698L.133A
+telescope: veritas
+
+data:
+  livetime: 37.9
+  significance: 8.3
+  significance_post_trial: 7.5
+  excess: 247
+
+pos:
+  ra: {val: 06h16m51s, err: 0.03d, err_sys: 0.08d }
+  dec: {val: +22d30m11s, err: 0.03d, err_sys: 0.08d }
+
+morph:
+  type: gauss
+  sigma: {val: 0.16d, err: 0.03d, err_sys: 0.04d}
+
+spec:
+  erange: {min: 0.317, max: 2., unit: TeV}
+  theta: 0.235d
+  model:
+    type: pl
+    parameters:
+      norm: {val: 8.38, err: 2.1, err_sys: 2.5, scale: 1e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.99, err: 0.38, err_sys: 0.3}
+      e_ref: {val: 1, unit: TeV}

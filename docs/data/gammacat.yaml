@@ -242,14 +242,14 @@
   - sed_reference_id: 2017ApJ...836...23A
   - sed_n_points: 5
   - sed_n_ul: 1
-  - sed_e_ref: 3.1340835094451904
+  - sed_e_ref: 3.4507501125335693
   - sed_e_min: .nan
   - sed_e_max: .nan
   - sed_dnde: 4.234539693719064e-13
   - sed_dnde_err: 1.535280014014137e-13
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
-  - sed_dnde_ul: 2.5000001145342624e-19
+  - sed_dnde_ul: 2.499999956129175e-15
 - !!omap
   - source_id: 4
   - common_name: KUV 00311-1938
@@ -9071,6 +9071,90 @@
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
 - !!omap
+  - source_id: 165
+  - common_name: VER J1746-289
+  - gamma_names: VER J1746-289,HESS J1746-285,MAGIC J1746.4-2853
+  - fermi_names: ''
+  - other_names: Arc source,GC Radio Arc
+  - where: gal
+  - classes: unid
+  - discoverer: veritas
+  - seen_by: veritas,hess,magic
+  - discovery_date: 2014-06
+  - tevcat_id: 269
+  - tevcat2_id: LsZtAg
+  - tevcat_name: TeV J1746-289
+  - tgevcat_id: -9223372036854775808
+  - tgevcat_name: ''
+  - reference_id: 2016ApJ...821..129A
+  - significance: 6.699999809265137
+  - livetime: 85.0
+  - ra: 266.58209228515625
+  - dec: -28.96622657775879
+  - glon: 0.05499047413468361
+  - glat: -0.14797726273536682
+  - pos_ra: 266.5821228027344
+  - pos_dec: -28.966230392456055
+  - pos_glon: 0.054999999701976776
+  - pos_glat: -0.14800000190734863
+  - pos_err: 0.009999999776482582
+  - morph_type: gauss
+  - morph_sigma: 0.07999999821186066
+  - morph_sigma_err: .nan
+  - morph_sigma2: 0.029999999329447746
+  - morph_sigma2_err: .nan
+  - morph_pa: 15.399999618530273
+  - morph_pa_err: .nan
+  - morph_pa_frame: galactic
+  - spec_type: none
+  - spec_pl_norm: .nan
+  - spec_pl_norm_err: .nan
+  - spec_pl_norm_err_sys: .nan
+  - spec_pl_index: .nan
+  - spec_pl_index_err: .nan
+  - spec_pl_index_err_sys: .nan
+  - spec_pl_e_ref: .nan
+  - spec_pl2_flux: .nan
+  - spec_pl2_flux_err: .nan
+  - spec_pl2_flux_err_sys: .nan
+  - spec_pl2_index: .nan
+  - spec_pl2_index_err: .nan
+  - spec_pl2_index_err_sys: .nan
+  - spec_pl2_e_min: .nan
+  - spec_pl2_e_max: .nan
+  - spec_ecpl_norm: .nan
+  - spec_ecpl_norm_err: .nan
+  - spec_ecpl_norm_err_sys: .nan
+  - spec_ecpl_index: .nan
+  - spec_ecpl_index_err: .nan
+  - spec_ecpl_index_err_sys: .nan
+  - spec_ecpl_e_cut: .nan
+  - spec_ecpl_e_cut_err: .nan
+  - spec_ecpl_e_cut_err_sys: .nan
+  - spec_ecpl_e_ref: .nan
+  - spec_erange_min: .nan
+  - spec_erange_max: .nan
+  - spec_theta: .nan
+  - spec_dnde_1TeV: .nan
+  - spec_dnde_1TeV_err: .nan
+  - spec_flux_1TeV: .nan
+  - spec_flux_1TeV_err: .nan
+  - spec_flux_1TeV_crab: .nan
+  - spec_flux_1TeV_crab_err: .nan
+  - spec_eflux_1TeV_10TeV: .nan
+  - spec_eflux_1TeV_10TeV_err: .nan
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_n_ul: 0
+  - sed_e_ref: .nan
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: .nan
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
+- !!omap
   - source_id: 159
   - common_name: Arc source
   - gamma_names: HESS J1746-285,VER J1746-289
@@ -12699,34 +12783,34 @@
   - tevcat_name: TeV J2019+407
   - tgevcat_id: 144
   - tgevcat_name: TeV J2020+4045
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2013ApJ...770...93A
+  - significance: 7.5
+  - livetime: 21.399999618530273
   - ra: 305.5570983886719
   - dec: 40.25667953491211
   - glon: 78.14859008789062
   - glat: 1.8670884370803833
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: none
-  - morph_sigma: .nan
-  - morph_sigma_err: .nan
+  - pos_ra: 305.01666259765625
+  - pos_dec: 40.7599983215332
+  - pos_glon: 78.32984924316406
+  - pos_glat: 2.4910693168640137
+  - pos_err: 0.029999999329447746
+  - morph_type: gauss
+  - morph_sigma: 0.23000000417232513
+  - morph_sigma_err: 0.029999999329447746
   - morph_sigma2: .nan
   - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: none
-  - spec_pl_norm: .nan
-  - spec_pl_norm_err: .nan
-  - spec_pl_norm_err_sys: .nan
-  - spec_pl_index: .nan
-  - spec_pl_index_err: .nan
-  - spec_pl_index_err_sys: .nan
-  - spec_pl_e_ref: .nan
+  - spec_type: pl
+  - spec_pl_norm: 1.4999999940062958e-12
+  - spec_pl_norm_err: 1.99999996490334e-13
+  - spec_pl_norm_err_sys: 3.99999992980668e-13
+  - spec_pl_index: 2.369999885559082
+  - spec_pl_index_err: 0.14000000059604645
+  - spec_pl_index_err_sys: 0.20000000298023224
+  - spec_pl_e_ref: 1.0
   - spec_pl2_flux: .nan
   - spec_pl2_flux_err: .nan
   - spec_pl2_flux_err_sys: .nan
@@ -12745,25 +12829,25 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
-  - spec_theta: .nan
-  - spec_dnde_1TeV: .nan
-  - spec_dnde_1TeV_err: .nan
-  - spec_flux_1TeV: .nan
-  - spec_flux_1TeV_err: .nan
-  - spec_flux_1TeV_crab: .nan
-  - spec_flux_1TeV_crab_err: .nan
-  - spec_eflux_1TeV_10TeV: .nan
-  - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: ''
-  - sed_n_points: 0
+  - spec_erange_min: 0.3199999928474426
+  - spec_erange_max: 10.0
+  - spec_theta: 0.23999999463558197
+  - spec_dnde_1TeV: 1.4999999940062958e-12
+  - spec_dnde_1TeV_err: 1.99999996490334e-13
+  - spec_flux_1TeV: 1.094890454342301e-12
+  - spec_flux_1TeV_err: 1.8393029070293276e-13
+  - spec_flux_1TeV_crab: 5.27799654006958
+  - spec_flux_1TeV_crab_err: 0.8866488337516785
+  - spec_eflux_1TeV_10TeV: 3.7245441106281696e-12
+  - spec_eflux_1TeV_10TeV_err: 7.162220035800138e-13
+  - sed_reference_id: 2013ApJ...770...93A
+  - sed_n_points: 10
   - sed_n_ul: 0
-  - sed_e_ref: .nan
-  - sed_e_min: .nan
-  - sed_e_max: .nan
-  - sed_dnde: .nan
-  - sed_dnde_err: .nan
+  - sed_e_ref: 4.770400047302246
+  - sed_e_min: 3.789299726486206
+  - sed_e_max: 6.0055999755859375
+  - sed_dnde: 4.831871448091052e-12
+  - sed_dnde_err: 1.6833406413577223e-12
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan

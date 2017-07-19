@@ -12,17 +12,17 @@ seen_by: [magic, veritas]
 discovery_date: 1989-07
 
 tevcat_id: 129
-tevcat2_id: abcdef #todo
+tevcat2_id: 06r8mb
 tevcat_name: TeV J0534+220p
 
 # Note: this source is not listed in tgevcat yet
 
 pos:
   simbad_id: V* CM Tau
-  ra: 83.633083  # todo
-  dec: 22.0145   # todo
+  ra: 83.63
+  dec: 22.01
 
 reference_ids:
--   # todo
+- 2008Sci...322.1221A
 - 2011Sci...334...69V
--   # todo
+- 2011ApJ...742...43A

@@ -1,0 +1,28 @@
+source_id: 25
+
+common_name: Crab pulsar 
+gamma_names: []
+other_names: [PSR 0531+21, V* CM Tau]
+
+where: gal
+classes: [pulsar]
+
+discoverer: magic 
+seen_by: [magic, veritas]
+discovery_date: 1989-07
+
+tevcat_id: 129
+tevcat2_id: abcdef #todo
+tevcat_name: TeV J0534+220p
+
+# Note: this source is not listed in tgevcat yet
+
+pos:
+  simbad_id: V* CM Tau
+  ra: 83.633083  # todo
+  dec: 22.0145   # todo
+
+reference_ids:
+-   # todo
+- 2011Sci...334...69V
+-   # todo

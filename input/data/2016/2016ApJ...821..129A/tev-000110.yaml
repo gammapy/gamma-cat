@@ -1,0 +1,23 @@
+source_id: 110
+reference_id: 2016ApJ...821..129A
+telescope: veritas
+
+data:
+  livetime: 85.
+  significance: 7.
+  excess: 134.
+
+pos:
+    glon: {val: 0.86d, err: 0.015d, err_sys: 0.013d}
+    glat: {val: 0.067d, err: 0.02d, err_sys: 0.013d}
+
+spec:
+  erange: {min: 0.3, max: 30., unit: TeV}
+  theta: 0.13d
+  # joint VERITAS and HESS fit
+  model:
+    type: pl
+    parameters:
+      norm: {val: 7.07, err: 0.66, err_sys: 1.4, scale: 1e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.51, err: 0.07}
+      e_ref: {val: 1, unit: TeV}

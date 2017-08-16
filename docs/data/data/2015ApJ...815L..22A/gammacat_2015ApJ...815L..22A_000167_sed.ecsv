@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 167}
+# - {reference_id: 2015ApJ...815L..22A}
+# - {telescope: veritas}
+# - {UL_CONF: 0.95}
+# - mjd: {max: 57140.0, min: 57133.0}
+# schema: astropy-2.0
+e_ref dnde dnde_err dnde_ul
+0.089 1.24786e-09 3.27264e-10 nan
+0.112 5.01345e-10 8.90202e-11 nan
+0.141 8.77403e-11 3.74559e-11 nan
+0.178 5.31241e-11 1.8318e-11 nan
+0.224 nan nan 1.89679e-11

@@ -1,5 +1,35 @@
 source_id: 106
 reference_id: 2004A&A...425L..13A
-telescope: hegra
+telescope: hess
 
-# TODO: add data
+# The following data is for the measurements mentioned in the abstract of the paper,
+# called "model1" from July / August
+
+data: 
+  livetime: 11.8
+  significance: 9.2
+
+pos:
+  ra: {val: 17h45m41.3s, err: 0h0m2.0s, err_sys: 20s}
+  dec: {val: -29d0m22s, err: 32s, err_sys: 20s}
+
+morph:
+  type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.50, err: 0.21, err_sys: 0.625, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.21, err: 0.09, err_sys: 0.15}
+      e_ref: {val: 1, unit: TeV}
+
+# A second spectrum is given in the paper, called "model2" using June / July data:
+# data:
+#   livetime: 4.7
+#   significance: 6.1
+# type: pl
+#   parameters:
+#     norm: {val: 2.76, err: 0.33, err_sys: 0.69, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+#     index: {val: 2.11, err: 0.19, err_sys: 0.15}
+#     e_ref: {val: 1, unit: TeV}

@@ -2022,8 +2022,8 @@
   - other_names: G184.6-5.8,3C 144,SN 1054
   - where: gal
   - classes: pwn
-  - discoverer: hess
-  - seen_by: hess,hegra,magic,veritas,hawc
+  - discoverer: whipple
+  - seen_by: whipple,hess,hegra,magic,veritas,hawc
   - discovery_date: 1989-07
   - tevcat_id: 74
   - tevcat2_id: BlJI6q

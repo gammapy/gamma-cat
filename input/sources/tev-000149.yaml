@@ -1,0 +1,29 @@
+source_id: 149
+
+common_name: SNR G106.3+02.7
+gamma_names:
+  - VER J2227+608
+other_names:
+  - PSR J2229+6114
+
+where: gal
+classes: [pwn, snr]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2009-07
+
+tevcat_id: 174
+tevcat2_id: gFx3Z7
+tevcat_name: TeV J2227+608
+
+tgevcat_id: 149
+tgevcat_name: TeV J2227+6052
+
+pos:
+  simbad_id: SNR G106.3+02.7
+  ra: 336.88
+  dec: 60.83
+
+reference_ids:
+  - 2009ApJ...703L...6A

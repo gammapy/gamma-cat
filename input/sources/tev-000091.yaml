@@ -1,7 +1,7 @@
 source_id: 91
 
 common_name: Markarian 501
-gamma_names: []
+gamma_names: [VER J1653+397]
 fermi_names: []
 other_names:
 - Mrk 501
@@ -33,3 +33,4 @@ reference_ids:
 - 2008JPhG...35f5202G
 - 2009ApJ...705.1624A
 - 2012ApJ...758....2B
+- 2015A&A...573A..50A

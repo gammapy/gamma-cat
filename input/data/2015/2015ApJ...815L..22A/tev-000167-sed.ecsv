@@ -1,0 +1,20 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: MeV}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_err, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_ul, datatype: float32, unit: erg cm-2 s-1}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 167}
+# - {reference_id: 2015ApJ...815L..22A}
+# - {telescope: veritas}
+# - UL_CONF: 0.95
+# - mjd: {min: 57133., max: 57140.}
+e_ref e2dnde e2dnde_err e2dnde_ul 
+89000    1.5836423616E-011  4.1532543666E-012   nan
+112000   1.00758776832E-011 1.78910129664E-012  nan
+141000   2.7947815155E-012  1.19307710052E-012  nan
+178000   2.69676021384E-012 9.2988230976E-013   nan
+224000   nan     nan 1.52484562944E-012

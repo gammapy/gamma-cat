@@ -169,7 +169,7 @@
 - !!omap
   - source_id: 3
   - common_name: Tycho SNR
-  - gamma_names: ''
+  - gamma_names: VER J0025+641
   - fermi_names: ''
   - other_names: SNR G120.1+1.4,3C10,SN1572
   - where: gal
@@ -1009,7 +1009,7 @@
 - !!omap
   - source_id: 13
   - common_name: 1ES 0229+200
-  - gamma_names: ''
+  - gamma_names: VER J0232+202
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -1093,7 +1093,7 @@
 - !!omap
   - source_id: 14
   - common_name: LS I +61 303
-  - gamma_names: ''
+  - gamma_names: VER J0240+612
   - fermi_names: ''
   - other_names: ''
   - where: gal
@@ -1429,7 +1429,7 @@
 - !!omap
   - source_id: 17
   - common_name: RBS 0413
-  - gamma_names: ''
+  - gamma_names: VER J0319+187
   - fermi_names: ''
   - other_names: RBS 0413,EXO 0317.0+1834,1E 0317.0+1835
   - where: egal
@@ -1597,7 +1597,7 @@
 - !!omap
   - source_id: 20
   - common_name: 1ES 0414+009
-  - gamma_names: ''
+  - gamma_names: VER J0416+011
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -2353,7 +2353,7 @@
 - !!omap
   - source_id: 29
   - common_name: IC 443
-  - gamma_names: MAGIC 0616+223
+  - gamma_names: MAGIC 0616+223,VER J0616+223
   - fermi_names: ''
   - other_names: 3C 157,SNR 189.1+03.0
   - where: gal
@@ -4789,7 +4789,7 @@
 - !!omap
   - source_id: 58
   - common_name: M 87
-  - gamma_names: ''
+  - gamma_names: VER J1230+123
   - fermi_names: ''
   - other_names: 1ES 1228+126,1H 1226+128
   - where: egal
@@ -5545,7 +5545,7 @@
 - !!omap
   - source_id: 67
   - common_name: PKS 1424+240
-  - gamma_names: ''
+  - gamma_names: VER J1427+237
   - fermi_names: ''
   - other_names: 7C 1424+2401
   - where: egal
@@ -6805,7 +6805,7 @@
 - !!omap
   - source_id: 82
   - common_name: PG 1553+113
-  - gamma_names: HESS J1555+111
+  - gamma_names: HESS J1555+111,VER J1555+111
   - fermi_names: ''
   - other_names: 1ES 1553+113
   - where: egal
@@ -7561,7 +7561,7 @@
 - !!omap
   - source_id: 91
   - common_name: Markarian 501
-  - gamma_names: ''
+  - gamma_names: VER J1653+397
   - fermi_names: ''
   - other_names: Mrk 501
   - where: egal
@@ -8401,7 +8401,7 @@
 - !!omap
   - source_id: 101
   - common_name: 1ES 1727+502
-  - gamma_names: ''
+  - gamma_names: VER J1728+502
   - fermi_names: ''
   - other_names: OT546
   - where: egal
@@ -8737,7 +8737,7 @@
 - !!omap
   - source_id: 105
   - common_name: 1ES 1741+196
-  - gamma_names: ''
+  - gamma_names: VER J1744+195
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -9241,7 +9241,7 @@
 - !!omap
   - source_id: 110
   - common_name: SNR G0.9+0.1
-  - gamma_names: HESS J1747-281
+  - gamma_names: HESS J1747-281,VER J1747-281
   - fermi_names: ''
   - other_names: SNR G000.9+00.1
   - where: gal
@@ -12266,7 +12266,7 @@
 - !!omap
   - source_id: 138
   - common_name: 1ES 1959+650
-  - gamma_names: ''
+  - gamma_names: VER J1959+651
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -12938,7 +12938,7 @@
 - !!omap
   - source_id: 146
   - common_name: TeV J2032+4130
-  - gamma_names: MGRO J2031+41
+  - gamma_names: MGRO J2031+41,VER J2031+415
   - fermi_names: ''
   - other_names: 0FGL J2032.2+4122
   - where: gal

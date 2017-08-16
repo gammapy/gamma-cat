@@ -5,7 +5,7 @@ gamma_names: []
 other_names: [PSR 0531+21, V* CM Tau]
 
 where: gal
-classes: [pulsar]
+classes: [psr]
 
 discoverer: magic 
 seen_by: [magic, veritas]

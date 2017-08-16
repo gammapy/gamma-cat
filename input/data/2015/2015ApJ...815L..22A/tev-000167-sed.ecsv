@@ -8,7 +8,7 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 167}
-# - {reference_id: 2015ApJ...815L..22A
+# - {reference_id: 2015ApJ...815L..22A}
 # - {telescope: veritas}
 # - UL_CONF: 0.95
 # - mjd: {min: 57133., max: 57140.}

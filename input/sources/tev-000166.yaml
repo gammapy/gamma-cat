@@ -5,11 +5,11 @@ gamma_names: []
 other_names: [PSR 0531+21, V* CM Tau]
 
 where: gal
-classes: [pulsar]
+classes: [psr]
 
 discoverer: magic 
 seen_by: [magic, veritas]
-discovery_date: 1989-07
+discovery_date: 2008-11
 
 tevcat_id: 129
 tevcat2_id: 06r8mb
@@ -19,8 +19,8 @@ tevcat_name: TeV J0534+220p
 
 pos:
   simbad_id: V* CM Tau
-  ra: 83.63
-  dec: 22.01
+  ra: 83.63307625
+  dec: 22.014493278
 
 reference_ids:
 - 2008Sci...322.1221A

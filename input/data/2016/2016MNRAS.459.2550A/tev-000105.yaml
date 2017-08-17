@@ -3,7 +3,7 @@ reference_id: 2016MNRAS.459.2550A
 telescope: veritas
 
 data:
-  livetime: 30
+  livetime: 30h
   significance: 5.9
 
 pos:

@@ -3,7 +3,7 @@ reference_id: 2007ApJ...661..236A
 telescope: hess
 
 data:
-  livetime: 33
+  livetime: 33h
 
 morph:
   type: shell

@@ -3,7 +3,7 @@ reference_id: 2011ICRC....7..185A
 telescope: hess
 
 data:
-  livetime: 45
+  livetime: 45h
   excess: 109
   significance: 8
 

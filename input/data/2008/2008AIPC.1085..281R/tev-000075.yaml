@@ -3,7 +3,7 @@ reference_id: 2008AIPC.1085..281R
 telescope: hess
 
 data:
-  livetime: 24
+  livetime: 24h
   significance: 6
 
 pos:

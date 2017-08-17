@@ -3,7 +3,7 @@ reference_id: 2013ApJ...764...38A
 telescope: veritas
 
 data:
-  livetime: 41.25
+  livetime: 41.25h
   significance: 7.5
   significance_post_trial: 6.5
 

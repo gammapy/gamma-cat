@@ -3,7 +3,7 @@ reference_id: 2005Sci...309..746A
 telescope: hess
 
 data:
-  livetime: 10.5
+  livetime: 10.5h
   significance: 7
 
 pos:

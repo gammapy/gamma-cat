@@ -3,7 +3,7 @@ reference_id: 2005A&A...437L...7A
 telescope: hess
 
 data:
-  livetime: 3.16
+  livetime: 3.16h
   significance: 12
   excess: 700
 

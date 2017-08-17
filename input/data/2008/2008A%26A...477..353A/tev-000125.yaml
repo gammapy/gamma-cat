@@ -3,7 +3,7 @@ reference_id: 2008A&A...477..353A
 telescope: hess
 
 data:
-  livetime: 26
+  livetime: 26h
   significance: 10.6
 
 pos:

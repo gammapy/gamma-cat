@@ -3,7 +3,7 @@ reference_id: 2011A&A...528A.143H
 telescope: hess
 
 data:
-  livetime: 15
+  livetime: 15h
   significance: 7
 
 pos:

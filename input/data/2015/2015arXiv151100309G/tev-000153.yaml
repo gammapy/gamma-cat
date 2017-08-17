@@ -4,7 +4,7 @@ telescope: veritas
 
 data:
   # Note on livetime: only 18 hours used for position measurement
-  livetime: 60
+  livetime: 60h
   significance: 11
 
 pos:

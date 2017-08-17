@@ -3,7 +3,7 @@ reference_id: 2011ICRC....7..244S
 telescope: hess
 
 data:
-  livetime: 40
+  livetime: 40h
   excess: 484
   significance: 7.9
 

@@ -3,7 +3,7 @@ reference_id: 2017ApJ...836...23A
 telescope: veritas
 
 data:
-  livetime: 147
+  livetime: 147h
   significance: 6.9
 
 

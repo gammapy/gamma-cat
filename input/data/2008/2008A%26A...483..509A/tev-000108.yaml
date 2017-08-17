@@ -3,7 +3,7 @@ reference_id: 2008A&A...483..509A
 telescope: hess
 
 data:
-  livetime: 79
+  livetime: 79h
   excess: 2030
   significance: 10.2
 

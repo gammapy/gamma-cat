@@ -3,7 +3,7 @@ reference_id: 2015arXiv151201911H
 telescope: veritas
 
 data:
-  livetime: 155
+  livetime: 155h
 
 pos:
   ra: {val: 06h16m52.8s}

@@ -3,7 +3,7 @@ reference_id: 2007A&A...469L...1A
 telescope: hess
 
 data:
-  livetime: 13.5
+  livetime: 13.5h
 
 pos:
   ra: {val: 6h32m58s, err: 1.8m}

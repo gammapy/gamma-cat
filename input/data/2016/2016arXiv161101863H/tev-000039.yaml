@@ -3,7 +3,7 @@ reference_id: 2016arXiv161101863H
 telescope: hess
 
 data:
-  livetime: 93.6
+  livetime: 93.6h
   significance: 39.1
 
 # No position measurement is published in this paper

@@ -3,7 +3,7 @@ reference_id: 2015A&A...574A.100H
 telescope: hess
 
 data:
-  livetime: 113
+  livetime: 113h
   significance: 6.6
 
 pos:

@@ -3,7 +3,7 @@ reference_id: 2012A&A...541A..13A
 telescope: magic
 
 data:
-  livetime: 50
+  livetime: 50h
   significance: 11.4
   excess: 1371.7
 

@@ -3,7 +3,7 @@ reference_id: 2006PhRvL..97v1102A
 telescope: hess
 
 data:
-  livetime: 48.7
+  livetime: 48.7h
   significance: 37.9
   excess: 1863
 

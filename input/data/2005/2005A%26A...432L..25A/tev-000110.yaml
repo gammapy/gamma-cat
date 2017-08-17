@@ -3,7 +3,7 @@ reference_id: 2005A&A...432L..25A
 telescope: hess
 
 data:
-  livetime: 50
+  livetime: 50h
   significance: 13
 
 pos:

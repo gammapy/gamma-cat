@@ -10,7 +10,7 @@ file_id: 1
 orbit:
   # zero phase for orbital period from Gregory (2002)
   mjd0: 43366.3
-  period: {val: 26.4960 }
+  period: {val: 26.4960d}
 
 #############################################################
 # spectral fit results

@@ -164,13 +164,14 @@ properties:
       period:
         type: object
         additionalProperties: false
+        unit: day
         description: Orbital period
         properties:
-          val: {type: number, unit: day, description: Measured value}
-          err: {type: number, unit: day, description: Statistical error}
-          errn: {type: number, unit: day, description: Lower statistical error}
-          errp: {type: number, unit: day, description: Upper statistical error}
-          err_sys: {type: number, unit: day, description: Systematic error}
+          val: {type: string, description: Measured value}
+          err: {type: string, description: Statistical error}
+          errn: {type: string, description: Lower statistical error}
+          errp: {type: string, description: Upper statistical error}
+          err_sys: {type: string, description: Systematic error}
 
   spec:
     type: object

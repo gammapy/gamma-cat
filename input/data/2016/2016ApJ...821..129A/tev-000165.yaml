@@ -3,7 +3,7 @@ reference_id: 2016ApJ...821..129A
 telescope: veritas
 
 data:
-  livetime: 85.
+  livetime: 85.h
   significance: 6.7
   excess: 134.
 

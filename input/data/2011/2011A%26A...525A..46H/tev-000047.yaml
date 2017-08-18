@@ -3,7 +3,7 @@ reference_id: 2011A&A...525A..46H
 telescope: hess
 
 data:
-  livetime: 45.9
+  livetime: 45.9h
   significance: 7
 
 pos:

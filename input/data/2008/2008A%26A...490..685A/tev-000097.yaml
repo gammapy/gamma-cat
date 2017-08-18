@@ -5,7 +5,7 @@ telescope: hess
 # CTB 37A = HESS J1714-385
 
 data:
-  livetime: 67.6
+  livetime: 67.6h
 
 pos:
   ra: {val: 17h14m19s, err: 0h1m20s, err_sys: 20s}

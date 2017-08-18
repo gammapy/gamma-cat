@@ -22,9 +22,10 @@ properties:
     additionalProperties: false
     properties:
       livetime:
-        type: number
-        unit: hour
-        description: Livetime (observation time minus deadtime)
+        type: string
+        description: |
+          Livetime (observation time minus dead)
+          String that can be parsed by Astropy Units.
 
       zenith:
         type: number

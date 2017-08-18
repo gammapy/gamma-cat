@@ -3,7 +3,7 @@ reference_id: 2016arXiv160900600H
 telescope: hess
 
 data:
-  livetime: 75
+  livetime: 75h
   zenith: 37
   offset: 1.1
   n_on: 1141

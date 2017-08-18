@@ -3,7 +3,7 @@ reference_id: 2005A&A...435L..17A
 telescope: hess
 
 data:
-  livetime: 22.1
+  livetime: 22.1h
   significance: 25
 
 pos:

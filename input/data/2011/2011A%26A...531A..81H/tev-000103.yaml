@@ -3,7 +3,7 @@ reference_id: 2011A&A...531A..81H
 telescope: hess
 
 data:
-  livetime: 59
+  livetime: 59h
 #  significance: TODO
 
 pos:

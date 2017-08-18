@@ -3,7 +3,7 @@ reference_id: 2016arXiv160104461H
 telescope: hess
 
 data:
-  livetime: 57
+  livetime: 57h
 
 pos:
   # from shell fit

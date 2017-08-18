@@ -3,7 +3,7 @@ reference_id: 2012arXiv1205.0719D
 telescope: hess
 
 data:
-  livetime: 58
+  livetime: 58h
   significance: 8.1
 
 pos:

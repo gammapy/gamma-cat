@@ -3,7 +3,7 @@ reference_id: 2013ApJ...770...93A
 telescope: veritas
 
 data:
-  livetime: 21.4
+  livetime: 21.4h
   significance: 7.5
   excess: 319
 

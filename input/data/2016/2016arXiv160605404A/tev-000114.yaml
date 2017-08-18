@@ -3,7 +3,7 @@ reference_id: 2016arXiv160605404A
 telescope: hess
 
 data:
-  livetime: 94
+  livetime: 94h
   significance: 6
   excess: 413
 

@@ -3,7 +3,7 @@ reference_id: 2010ApJ...719L..69A
 telescope: veritas
 
 data:
-  livetime: 36.6
+  livetime: 36.6h
   excess: 101
   significance: 7.0
 

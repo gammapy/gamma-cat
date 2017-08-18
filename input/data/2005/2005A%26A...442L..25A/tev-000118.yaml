@@ -3,7 +3,7 @@ reference_id: 2005A&A...442L..25A
 telescope: hess
 
 data:
-  livetime: 8.4
+  livetime: 8.4h
   # For the larger radius region of 0.4 deg:
   excess: 370
   significance: 13.4

@@ -3,7 +3,7 @@ reference_id: 2014A&A...567L...8A
 telescope: magic
 
 data:
-  livetime: 99.0
+  livetime: 99.0h
   excess: 139.8
   significance: 5.7
 

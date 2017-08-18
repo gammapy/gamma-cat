@@ -3,7 +3,7 @@ reference_id: 2012A&A...548A..38A
 telescope: hess
 
 data:
-  livetime: 53.1
+  livetime: 53.1h
   significance: 27.9
 
 pos:

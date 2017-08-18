@@ -3,7 +3,7 @@ reference_id: 2011A&A...531L..18H
 telescope: hess
 
 data:
-  livetime: 62
+  livetime: 62h
   significance: 7.5
 
 pos:

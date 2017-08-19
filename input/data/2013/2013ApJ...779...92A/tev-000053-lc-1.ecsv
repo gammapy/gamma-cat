@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 53
+# - reference_id: 2013ApJ...779...92A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - {comments: 2011 monthly binned light curve}
+time e_min flux flux_err
+55570.5  0.2  8.9e-12  2.5e-12
+55597.9  0.2  8.0e-12  2.5e-12
+55625.4  0.2  1.0e-11  3.8e-12
+55654.3  0.2  1.0e-11  1.8e-12
+55680.8  0.2  5.7e-12  1.4e-12
+55710.2  0.2  6.6e-12  3.2e-12 

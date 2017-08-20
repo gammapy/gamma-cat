@@ -15,6 +15,7 @@ class LightCurve(TableProcessor):
 
     expected_colnames_output = [
         'time', 'time_min', 'time_max',
+        'livetime',
         'e_min', 'e_max',
         'flux', 'flux_err', 'flux_ul',
         'index', 'index_err',
@@ -28,6 +29,7 @@ class LightCurve(TableProcessor):
         dict(name='time', unit='MJD', description='Observation time'),
         dict(name='time_min', unit='MJD', description='Observation start time'),
         dict(name='time_max', unit='MJD', description='Observation stop time'),
+        dict(name='livetime', unit='days', description='Observation live time'),
         dict(name='e_min', unit='TeV', description='Energy bin minimum'),
         dict(name='e_max', unit='TeV', description='Energy bin maximum'),
         dict(name='flux', unit='cm-2 s-1', description='Integral photon flux'),

@@ -5,7 +5,7 @@ telescope: hess
 data:
   livetime: 75h
   zenith: 37d
-  offset: 1.1
+  offset: 1.1d
   n_on: 1141
   n_off: 16017
   alpha: 0.047

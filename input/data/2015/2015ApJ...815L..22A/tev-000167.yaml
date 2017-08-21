@@ -3,7 +3,7 @@ reference_id: 2015ApJ...815L..22A
 telescope: veritas
 
 data:
-  livetime: 15.
+  livetime: 15.h
   significance: 7.0
 
 spec:

@@ -31,4 +31,4 @@ spec:
     # TODO: add support for covar for spectral models?
     covar: [[2.1443e-24, -3.7242e-14, 2.4071e-14], [-3.7242e-14, 0.0066546, -0.0019996], [2.4071e-14, -0.0019996, 0.00076532]]
   theta: 1.0d
-  erange: {min: 0.316, max: 30}
+  erange: {min: 0.316, max: 30, unit: TeV}

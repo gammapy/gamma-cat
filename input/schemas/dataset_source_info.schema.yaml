@@ -234,8 +234,8 @@ properties:
         additionalProperties: false
         description: TODO
         properties:
-          min: {type: number, unit: TeV}
-          max: {type: number, unit: TeV}
+          min: {type: number}
+          max: {type: number}
           # TODO: at the moment we have a mix of data entries how unit spec is made for `erange`. Unify!
           unit: {type: string}
 

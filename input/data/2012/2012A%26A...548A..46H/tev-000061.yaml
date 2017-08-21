@@ -24,4 +24,4 @@ spec:
       e_cut: {val: 7.7, err: 2.2, unit: TeV}
       e_ref: {val: 1, unit: TeV}
   theta: 0.6d
-  erange: {min: 0.84}
+  erange: {min: 0.84, unit: TeV}

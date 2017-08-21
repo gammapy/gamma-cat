@@ -245,7 +245,6 @@ class CatalogSource:
             data['significance'] = NA.fill_value['number']
 
         try:
-            # data['livetime'] = dsi['data']['livetime']
             data['livetime'] = Quantity(dsi['data']['livetime']).to('hour').value
         except KeyError:
             data['livetime'] = NA.fill_value['number']
@@ -331,20 +330,29 @@ class CatalogSource:
         else:
             raise ValueError('Unknown spectral model type: {}'.format(spec_type))
 
+        print(type(data['spec_ecpl_norm'])) #peter.deiml@fau.de
+
     @staticmethod
     def fill_spectral_other_info(data, dsi):
         try:
-            data['spec_erange_min'] = dsi['spec']['erange']['min']
+            erange_min_val = dsi['spec']['erange']['min']
+            erange_min_unit = dsi['spec']['erange']['unit']
+            data['spec_erange_min'] = (erange_min_val * u.Unit(erange_min_unit)).to('TeV')
         except KeyError:
             data['spec_erange_min'] = NA.fill_value['number']
         try:
-            data['spec_erange_max'] = dsi['spec']['erange']['max']
+            erange_max_val = dsi['spec']['erange']['max']
+            erange_max_unit = dsi['spec']['erange']['unit']
+            data['spec_erange_max'] = (erange_min_val * u.Unit(erange_max_unit)).to('TeV')
         except KeyError:
             data['spec_erange_max'] = NA.fill_value['number']
         try:
             data['spec_theta'] = Angle(dsi['spec']['theta']).degree
         except KeyError:
             data['spec_theta'] = NA.fill_value['number']
+
+        print(type(data['spec_erange_min'])) #peter.deiml@fau.de
+        print(type(data['spec_erange_max'])) #peter.deiml@fau.de
 
     def fill_derived_spectral_info(self):
         """
@@ -620,7 +628,6 @@ class CatalogMaker:
     def make_table(sources):
         """Convert Python data structures to a flat table."""
         rows = [source.row_dict() for source in sources]
-
         # Passing Quantity objects to `Table(rows=rows)` doesn't work.
         # So for now, we drop units here
         # (we could also make Table column by column ourselves
@@ -630,24 +637,24 @@ class CatalogMaker:
                 unit = rows[0][colname].unit
                 for idx, row in enumerate(rows):
                     d = row[colname]
+                    print('Step6') #peter.deiml@fau.de
                     if not hasattr(d, 'unit'):
                         d = d * u.Unit('')
-
+                        print('Step7') #peter.deiml@fau.de
                     if d.unit != unit:
+                        print('Step8') #peter.deiml@fau.de
                         # This should never happen.
                         # But it did due to a coding error in the past.
                         log.error('colname:', colname)
                         log.error('row:', row)
                         raise RuntimeError('Inconsistent units!')
                     else:
+                        print('Step9') #peter.deiml@fau.de
                         rows[idx][colname] = d.value
-
         meta = OrderedDict()
         meta['name'] = 'gamma-cat'
         meta['description'] = 'A catalog of TeV gamma-ray sources'
         meta['version'] = gammacat_info.version
-        meta['url'] = 'https://github.com/gammapy/gamma-cat/'
-
         schema = CatalogSchema()
         # schema.filter_row_keys(rows)
         # table = Table(rows=rows, meta=meta, names=schema.names, dtype=schema.dtype)
@@ -660,7 +667,6 @@ class CatalogMaker:
         #     print(colname)
         #     print(d)
         #     Table(data={colname: d})
-
         table = Table(rows=rows)
         table = schema.format_table(table)
 

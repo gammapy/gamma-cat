@@ -145,10 +145,9 @@ properties:
       pa:
         type: object
         additionalProperties: false
-        unit: deg
         description: |
           Position angle
-          String that can be parsed by Angle
+          String that can be parsed by Angle.
         properties:
           frame: {enum: [radec, galactic]}
           val: {type: string, description: Measured value}

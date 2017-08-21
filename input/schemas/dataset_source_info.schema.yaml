@@ -34,9 +34,10 @@ properties:
           String that can be parsed by Astropy Units.
 
       offset:
-        type: number
-        unit: deg
-        description: Mean offset angle
+        type: string
+        description: |
+          Mean offset angle
+          String that can be parsed by Astropy Units.
 
       n_on:
         type: number

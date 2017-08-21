@@ -28,9 +28,10 @@ properties:
           String that can be parsed by Astropy Units.
 
       zenith:
-        type: number
-        unit: deg
-        description: Mean zenith angle
+        type: string
+        description: |
+          Mean zenith angle
+          String that can be parsed by Astropy Units.
 
       offset:
         type: number

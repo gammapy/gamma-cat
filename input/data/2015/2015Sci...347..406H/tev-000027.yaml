@@ -3,7 +3,7 @@ reference_id: 2015Sci...347..406H
 telescope: hess
 
 data:
-  livetime: 181
+  livetime: 181h
   significance: 33
   excess: 613
 

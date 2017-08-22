@@ -3,7 +3,7 @@ reference_id: 2009ApJ...698L.133A
 telescope: veritas
 
 data:
-  livetime: 37.9
+  livetime: 37.9h
   significance: 8.3
   significance_post_trial: 7.5
   excess: 247

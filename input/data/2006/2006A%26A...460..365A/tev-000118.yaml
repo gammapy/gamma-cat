@@ -5,7 +5,7 @@ telescope: hess
 # Note: spectral results for the spectrum in Figure 3.
 
 data:
-  livetime: 52.1
+  livetime: 52.1h
   excess: 19510
   significance: 33.8
 

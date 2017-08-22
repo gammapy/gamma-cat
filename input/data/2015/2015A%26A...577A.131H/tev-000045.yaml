@@ -3,7 +3,7 @@ reference_id: 2015A&A...577A.131H
 telescope: hess
 
 data:
-  livetime: 63.3
+  livetime: 63.3h
   significance: 9.3
 
 pos:

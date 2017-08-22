@@ -3,7 +3,7 @@ reference_id: 2014MNRAS.439.2828A
 telescope: hess
 
 data:
-  livetime: 63.4
+  livetime: 63.4h
 
 pos:
   ra: {val: 16h40m41.0s, err: 0h0m1.0s, err_sys: 0h0m1.3s}

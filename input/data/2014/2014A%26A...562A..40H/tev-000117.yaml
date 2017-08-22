@@ -3,7 +3,7 @@ reference_id: 2014A&A...562A..40H
 telescope: hess
 
 data:
-  livetime: 120
+  livetime: 120h
   significance: 8.2
   excess: 117
 

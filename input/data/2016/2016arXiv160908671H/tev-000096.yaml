@@ -3,7 +3,7 @@ reference_id: 2016arXiv160908671H
 telescope: hess
 
 data:
-  livetime: 164
+  livetime: 164h
 
 pos:
   ra: {val: 17h13m25.2s}

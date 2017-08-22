@@ -245,7 +245,8 @@ class CatalogSource:
             data['significance'] = NA.fill_value['number']
 
         try:
-            data['livetime'] = dsi['data']['livetime']
+            # data['livetime'] = dsi['data']['livetime']
+            data['livetime'] = Quantity(dsi['data']['livetime']).to('hour').value
         except KeyError:
             data['livetime'] = NA.fill_value['number']
 

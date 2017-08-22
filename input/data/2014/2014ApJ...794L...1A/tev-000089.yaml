@@ -3,7 +3,7 @@ reference_id: 2014ApJ...794L...1A
 telescope: hess
 
 data:
-  livetime: 72
+  livetime: 72h
   significance: 8.5
 
 pos:

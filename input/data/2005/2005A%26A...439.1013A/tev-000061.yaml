@@ -3,7 +3,7 @@ reference_id: 2005A&A...439.1013A
 telescope: hess
 
 data:
-  livetime: 58.6
+  livetime: 58.6h
   excess: 2469
   significance: 21
 

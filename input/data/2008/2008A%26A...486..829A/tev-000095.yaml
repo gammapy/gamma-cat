@@ -7,7 +7,7 @@ telescope: hess
 # CTB 37A = HESS J1714-385
 
 data:
-  livetime: 55.4
+  livetime: 55.4h
   excess: 292
   significance: 8.6
 

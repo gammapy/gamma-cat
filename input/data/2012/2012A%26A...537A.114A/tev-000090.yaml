@@ -3,7 +3,7 @@ reference_id: 2012A&A...537A.114A
 telescope: hess
 
 data:
-  livetime: 33.8
+  livetime: 33.8h
   significance: 20
   excess: 2771
 

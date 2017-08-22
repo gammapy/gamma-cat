@@ -3,7 +3,7 @@ reference_id: 2006A&A...460..743A
 telescope: hess
 
 data:
-  livetime: 69.2
+  livetime: 69.2h
   significance: 40
   excess: 1960
 

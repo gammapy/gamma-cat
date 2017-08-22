@@ -3,7 +3,7 @@ reference_id: 2016arXiv161005799S
 telescope: veritas
 
 data:
-  livetime: 30.9
+  livetime: 30.9h
   significance: 19.3
 
 pos:

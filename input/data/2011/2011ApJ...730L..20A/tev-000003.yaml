@@ -3,7 +3,7 @@ reference_id: 2011ApJ...730L..20A
 telescope: veritas
 
 data:
-  livetime: 66.6
+  livetime: 66.6h
   significance: 5.8
 
 pos:

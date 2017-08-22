@@ -5,7 +5,7 @@ file_id: 2
 telescope: hess
 
 data:
-  livetime: 130
+  livetime: 130h
   # Numbers from table 1 for hard cuts
   excess: 191
   significance: 8.7

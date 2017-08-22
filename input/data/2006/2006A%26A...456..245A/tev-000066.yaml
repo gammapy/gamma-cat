@@ -3,7 +3,7 @@ reference_id: 2006A&A...456..245A
 telescope: hess
 
 data:
-  livetime: 18.1
+  livetime: 18.1h
   significance: 15.2
 
 pos:

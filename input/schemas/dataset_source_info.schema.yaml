@@ -22,19 +22,22 @@ properties:
     additionalProperties: false
     properties:
       livetime:
-        type: number
-        unit: hour
-        description: Livetime (observation time minus deadtime)
+        type: string
+        description: |
+          Livetime (observation time minus dead)
+          String that can be parsed by Astropy Units.
 
       zenith:
-        type: number
-        unit: deg
-        description: Mean zenith angle
+        type: string
+        description: |
+          Mean zenith angle
+          String that can be parsed by Astropy Units.
 
       offset:
-        type: number
-        unit: deg
-        description: Mean offset angle
+        type: string
+        description: |
+          Mean offset angle
+          String that can be parsed by Astropy Units.
 
       n_on:
         type: number
@@ -142,10 +145,9 @@ properties:
       pa:
         type: object
         additionalProperties: false
-        unit: deg
         description: |
           Position angle
-          String that can be parsed by Angle
+          String that can be parsed by Angle.
         properties:
           frame: {enum: [radec, galactic]}
           val: {type: string, description: Measured value}
@@ -164,13 +166,14 @@ properties:
       period:
         type: object
         additionalProperties: false
+        unit: day
         description: Orbital period
         properties:
-          val: {type: number, unit: day, description: Measured value}
-          err: {type: number, unit: day, description: Statistical error}
-          errn: {type: number, unit: day, description: Lower statistical error}
-          errp: {type: number, unit: day, description: Upper statistical error}
-          err_sys: {type: number, unit: day, description: Systematic error}
+          val: {type: string, description: Measured value}
+          err: {type: string, description: Statistical error}
+          errn: {type: string, description: Lower statistical error}
+          errp: {type: string, description: Upper statistical error}
+          err_sys: {type: string, description: Systematic error}
 
   spec:
     type: object

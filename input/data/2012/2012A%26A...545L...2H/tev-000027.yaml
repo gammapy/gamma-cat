@@ -3,7 +3,7 @@ reference_id: 2012A&A...545L...2H
 telescope: hess
 
 data:
-  livetime: 46
+  livetime: 46h
   significance: 14
   excess: 395
 

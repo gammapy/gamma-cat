@@ -3,7 +3,7 @@ reference_id: 2007A&A...472..489A
 telescope: hess
 
 data:
-  livetime: 82
+  livetime: 82h
   significance: 6.2
 
 pos:

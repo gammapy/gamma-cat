@@ -3,7 +3,7 @@ reference_id: 2008AIPC.1085..372C
 telescope: hess
 
 data:
-  livetime: 50
+  livetime: 50h
   significance: 9
 
 pos:

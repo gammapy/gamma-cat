@@ -11,6 +11,9 @@ pos:
   ra: {val: 20h16m2s, err: 0h0m3s, err_sys: 50s }
   dec: {val: +37d11m51s, err: 40s, err_sys: 50s }
 
+morph:
+  type: point
+
 spec:
   erange: {min: 0.65, max: 10., unit: TeV}
   theta: 0.09d

@@ -3,6 +3,8 @@ reference_id: 2014ApJ...781L..11A
 file_id: 1
 telescope: veritas
 
+morph:
+  type: point
 
 #############################################################
 # spectral fit results

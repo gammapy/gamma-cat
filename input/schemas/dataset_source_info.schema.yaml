@@ -159,9 +159,10 @@ properties:
     additionalProperties: false
     properties:
       mjd0:
-        type: number
-        unit: day
-        description: Zero phase for orbital period in MJD
+        type: string
+        description: |
+          Zero phase for orbital period in MJD
+          String that can be parsed by Astropy Units.
 
       period:
         type: object

@@ -10,5 +10,5 @@ telescope: veritas
 # (for binaries only)
 orbit:
   # zero phase for orbital period from Gregory (2002)
-  mjd0: 43366.3
+  mjd0: 43366.3d
   period: {val: 26.4960d}

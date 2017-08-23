@@ -13,14 +13,15 @@ dependencies:
   - uncertainties
   - click
   - sphinx
+  - sphinx_rtd_theme
   - matplotlib
   - bokeh
   - pyyaml
   - ruamel.yaml
   - jsonschema
   - astropy
+  - regions
 
   - pip:
-    - sphinx-rtd-theme
     - sphinxcontrib.datatemplates
     - git+https://github.com/gammapy/gammapy.git#egg=gammapy

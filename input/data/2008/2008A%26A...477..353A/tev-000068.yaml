@@ -24,4 +24,4 @@ spec:
       index: {val: 2.16, err: 0.14, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
   theta: 0.2d
-  erange: {min: 0.97 , max: 50}
+  erange: {min: 0.97 , max: 50, unit: TeV}

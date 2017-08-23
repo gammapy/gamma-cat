@@ -233,11 +233,12 @@ properties:
       erange:
         type: object
         additionalProperties: false
-        description: TODO
+        description: |
+          Energy range of the measurement.
+          Note that this is usually different from the energy range of integral fluxes quoted.
         properties:
-          min: {type: number, unit: TeV}
-          max: {type: number, unit: TeV}
-          # TODO: at the moment we have a mix of data entries how unit spec is made for `erange`. Unify!
+          min: {type: number}
+          max: {type: number}
           unit: {type: string}
 
       theta:

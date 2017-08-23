@@ -23,4 +23,4 @@ spec:
       e_ref: {val: 1, unit: TeV}
   mjd: {min: 55890.0, max: 55928.}
   phase: {min: 0.2, max: 0.4 }
-  erange: {min: 0.53, max: 7.08}
+  erange: {min: 0.53, max: 7.08, unit: TeV}

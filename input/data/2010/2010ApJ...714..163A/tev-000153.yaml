@@ -14,7 +14,7 @@ morph:
   type: point
 
 spec:
-  erange: {min: 0.3, max: 5., unit: MeV}
+  erange: {min: 0.3, max: 5., unit: TeV}
   model:
     type: pl
     parameters:

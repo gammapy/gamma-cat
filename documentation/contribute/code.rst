@@ -9,6 +9,21 @@ It's a bunch of Python modules in the ``gammacat`` folder.
 This is only useful if you want to contribute to the gamma-cat.
 Users can use ``gammacat.catalog`` to access the catalog information.
 
+Installation
+------------
+
+If you want to run the ``gamma-cat`` Python scripts locally, you need to install
+Python 3.6 and some Python packages. We recommend you download `Anaconda <https://www.continuum.io/downloads>`__
+and then install the packages via::
+
+    conda env create -f environment.yml
+    source activate gamma-cat
+
+We have continuous integration tests set up on travis-ci that check that everything is working OK.
+The `.travis.yml <https://github.com/gammapy/gamma-cat/blob/master/.travis.yml>` file could be helpful
+to you to have an example how to do the installation just from the command line
+(i.e. commands you can copy & paste if you prefer the command line over the Anaconda GUI installer and navigator app).
+
 make.py
 -------
 

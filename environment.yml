@@ -2,8 +2,6 @@ name: gamma-cat
 
 channels:
   - conda-forge
-  - openastronomy
-  - astropy
 
 dependencies:
   - python=3.6

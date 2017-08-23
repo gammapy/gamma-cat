@@ -8,7 +8,7 @@ morph:
 orbit:
   # zero phase for orbital period
   mjd0: 54857d     # arbitrarily set to the date of the first Swift observations
-  period: {val: 321d}
+  period: {val: 321, unit: day}
 
 #############################################################
 # spectral results are given for February 2011

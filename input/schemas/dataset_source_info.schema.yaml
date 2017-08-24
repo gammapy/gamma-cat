@@ -74,7 +74,7 @@ properties:
         additionalProperties: false
         description: |
           Right Ascension (ICRC or FK5 J2000, it's almost the same)
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -85,7 +85,7 @@ properties:
         additionalProperties: false
         description: |
           Declination (ICRC or FK5 J2000, it's almost the same)
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -96,7 +96,7 @@ properties:
         additionalProperties: false
         description: |
           Galactic longitude
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -107,7 +107,7 @@ properties:
         additionalProperties: false
         description: |
           Galactic latitude
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -125,7 +125,7 @@ properties:
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          String that can be parsed by Angle
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -136,7 +136,7 @@ properties:
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          String that can be parsed by Angle
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -147,7 +147,7 @@ properties:
         additionalProperties: false
         description: |
           Position angle
-          String that can be parsed by Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           frame: {enum: [radec, galactic]}
           val: {type: string, description: Measured value}
@@ -167,14 +167,15 @@ properties:
       period:
         type: object
         additionalProperties: false
-        unit: day
-        description: Orbital period
+        description: |
+          Orbital period
         properties:
-          val: {type: string, description: Measured value}
-          err: {type: string, description: Statistical error}
-          errn: {type: string, description: Lower statistical error}
-          errp: {type: string, description: Upper statistical error}
-          err_sys: {type: string, description: Systematic error}
+          val: {type: number, description: Measured value}
+          err: {type: number, description: Statistical error}
+          errn: {type: number, description: Lower statistical error}
+          errp: {type: number, description: Upper statistical error}
+          err_sys: {type: number, description: Systematic error}
+          unit: {type: string, description: Astropy Unit equivalent with "day".}
 
   spec:
     type: object
@@ -243,12 +244,16 @@ properties:
 
       theta:
         type: string
-        description: Circular aperture photometry radius (parsed by Angle)
+        description: |
+          Circular aperture photometry radius
+          String that can be parsed by Astropy Units.
 
       mjd:
         type: object
         additionalProperties: false
-        description: TODO
+        description: |
+          TODO
+          Properties are strings that can be parsed by Astropy Units.
         properties:
           min: {type: number, unit: day}
           max: {type: number, unit: day}

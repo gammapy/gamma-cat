@@ -6735,18 +6735,18 @@
   - tgevcat_id: 80
   - tgevcat_name: TeV J1517-2422
   - reference_id: 2015A&A...573A..31H
-  - significance: .nan
-  - livetime: .nan
+  - significance: 6.599999904632568
+  - livetime: 14.0
   - ra: 229.42422485351562
   - dec: -24.3720760345459
   - glon: 340.6806335449219
   - glat: 27.57802963256836
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: none
+  - pos_ra: 229.41917419433594
+  - pos_dec: -24.37708282470703
+  - pos_glon: 340.673095703125
+  - pos_glat: 27.576770782470703
+  - pos_err: 0.007993052713572979
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -6754,14 +6754,14 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: none
-  - spec_pl_norm: .nan
-  - spec_pl_norm_err: .nan
-  - spec_pl_norm_err_sys: .nan
-  - spec_pl_index: .nan
-  - spec_pl_index_err: .nan
-  - spec_pl_index_err_sys: .nan
-  - spec_pl_e_ref: .nan
+  - spec_type: pl
+  - spec_pl_norm: 4.300000026186135e-12
+  - spec_pl_norm_err: 5.699999933855837e-13
+  - spec_pl_norm_err_sys: 8.60000005237227e-13
+  - spec_pl_index: 2.6500000953674316
+  - spec_pl_index_err: 0.1899999976158142
+  - spec_pl_index_err_sys: 0.20000000298023224
+  - spec_pl_e_ref: 0.44999998807907104
   - spec_pl2_flux: .nan
   - spec_pl2_flux_err: .nan
   - spec_pl2_flux_err_sys: .nan
@@ -6780,17 +6780,17 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_erange_min: 0.12999999523162842
+  - spec_erange_max: 6.300000190734863
   - spec_theta: .nan
-  - spec_dnde_1TeV: .nan
-  - spec_dnde_1TeV_err: .nan
-  - spec_flux_1TeV: .nan
-  - spec_flux_1TeV_err: .nan
-  - spec_flux_1TeV_crab: .nan
-  - spec_flux_1TeV_crab_err: .nan
-  - spec_eflux_1TeV_10TeV: .nan
-  - spec_eflux_1TeV_10TeV_err: .nan
+  - spec_dnde_1TeV: 5.181811468628339e-13
+  - spec_dnde_1TeV_err: 1.0439716311479857e-13
+  - spec_flux_1TeV: 3.1404918813052185e-13
+  - spec_flux_1TeV_err: 9.357937330849858e-14
+  - spec_flux_1TeV_crab: 1.513896107673645
+  - spec_flux_1TeV_crab_err: 0.45110592246055603
+  - spec_eflux_1TeV_10TeV: 9.913156450228056e-13
+  - spec_eflux_1TeV_10TeV_err: 3.4137571784144394e-13
   - sed_reference_id: 2015A&A...573A..31H
   - sed_n_points: 10
   - sed_n_ul: 0

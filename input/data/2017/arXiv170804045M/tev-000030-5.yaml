@@ -1,0 +1,26 @@
+source_id: 30
+reference_id: 2017arXiv170804045M
+telescope: veritas
+
+data:
+  livetime: 60.
+  significance: 6.2
+
+orbit:
+  # zero phase for orbital period
+  mjd0: 54857     # arbitrarily set to the date of the first Swift observations
+  period: {val: 315, errp: 6, errn: 4}
+
+#############################################################
+# spectral results are given for different orbital phases
+# (values from Table 2)
+# phases 0.8-0.2
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.21, err: 0.4, err_sys: 0.04, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.67, err: 0.2}
+      e_ref: {val: 1, unit: TeV}
+  phase: {min: 0.8, max: 0.2 }
+  erange: {min: 0.235, max: 10.5}

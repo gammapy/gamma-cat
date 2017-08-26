@@ -108,6 +108,7 @@ class InputDataset:
     """
 
     def __init__(self, reference_id, path, sources):
+        log.debug(f'Creating InputDataset for path={path}')
         self.reference_id = reference_id
         self.path = path
         self.sources = sources

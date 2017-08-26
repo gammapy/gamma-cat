@@ -22,19 +22,22 @@ properties:
     additionalProperties: false
     properties:
       livetime:
-        type: number
-        unit: hour
-        description: Livetime (observation time minus deadtime)
+        type: string
+        description: |
+          Livetime (observation time minus dead)
+          String that can be parsed by Astropy Units.
 
       zenith:
-        type: number
-        unit: deg
-        description: Mean zenith angle
+        type: string
+        description: |
+          Mean zenith angle
+          String that can be parsed by Astropy Units.
 
       offset:
-        type: number
-        unit: deg
-        description: Mean offset angle
+        type: string
+        description: |
+          Mean offset angle
+          String that can be parsed by Astropy Units.
 
       n_on:
         type: number
@@ -71,7 +74,7 @@ properties:
         additionalProperties: false
         description: |
           Right Ascension (ICRC or FK5 J2000, it's almost the same)
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -82,7 +85,7 @@ properties:
         additionalProperties: false
         description: |
           Declination (ICRC or FK5 J2000, it's almost the same)
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -93,7 +96,7 @@ properties:
         additionalProperties: false
         description: |
           Galactic longitude
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -104,7 +107,7 @@ properties:
         additionalProperties: false
         description: |
           Galactic latitude
-          A string that can be parsed by Astropy Angle.
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -122,7 +125,7 @@ properties:
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          String that can be parsed by Angle
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -133,7 +136,7 @@ properties:
         additionalProperties: false
         description: |
           Width parameter (semantics type-dependent)
-          String that can be parsed by Angle
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           val: {type: string, description: Measured value}
           err: {type: string, description: Statistical error}
@@ -142,10 +145,9 @@ properties:
       pa:
         type: object
         additionalProperties: false
-        unit: deg
         description: |
           Position angle
-          String that can be parsed by Angle
+          Properties are strings that can be parsed by Astropy Angle.
         properties:
           frame: {enum: [radec, galactic]}
           val: {type: string, description: Measured value}
@@ -157,20 +159,23 @@ properties:
     additionalProperties: false
     properties:
       mjd0:
-        type: number
-        unit: day
-        description: Zero phase for orbital period in MJD
+        type: string
+        description: |
+          Zero phase for orbital period in MJD
+          String that can be parsed by Astropy Units.
 
       period:
         type: object
         additionalProperties: false
-        description: Orbital period
+        description: |
+          Orbital period
         properties:
-          val: {type: number, unit: day, description: Measured value}
-          err: {type: number, unit: day, description: Statistical error}
-          errn: {type: number, unit: day, description: Lower statistical error}
-          errp: {type: number, unit: day, description: Upper statistical error}
-          err_sys: {type: number, unit: day, description: Systematic error}
+          val: {type: number, description: Measured value}
+          err: {type: number, description: Statistical error}
+          errn: {type: number, description: Lower statistical error}
+          errp: {type: number, description: Upper statistical error}
+          err_sys: {type: number, description: Systematic error}
+          unit: {type: string, description: Astropy Unit equivalent with "day".}
 
   spec:
     type: object
@@ -229,21 +234,26 @@ properties:
       erange:
         type: object
         additionalProperties: false
-        description: TODO
+        description: |
+          Energy range of the measurement.
+          Note that this is usually different from the energy range of integral fluxes quoted.
         properties:
-          min: {type: number, unit: TeV}
-          max: {type: number, unit: TeV}
-          # TODO: at the moment we have a mix of data entries how unit spec is made for `erange`. Unify!
+          min: {type: number}
+          max: {type: number}
           unit: {type: string}
 
       theta:
         type: string
-        description: Circular aperture photometry radius (parsed by Angle)
+        description: |
+          Circular aperture photometry radius
+          String that can be parsed by Astropy Units.
 
       mjd:
         type: object
         additionalProperties: false
-        description: TODO
+        description: |
+          TODO
+          Properties are strings that can be parsed by Astropy Units.
         properties:
           min: {type: number, unit: day}
           max: {type: number, unit: day}

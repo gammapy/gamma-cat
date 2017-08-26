@@ -3,7 +3,7 @@ reference_id: 2017arXiv170107002A
 telescope: hess
 
 data:
-  livetime: 206
+  livetime: 206h
   significance: 21.0
 
 pos:

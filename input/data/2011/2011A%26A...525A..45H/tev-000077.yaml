@@ -3,7 +3,7 @@ reference_id: 2011A&A...525A..45H
 telescope: hess
 
 data:
-  livetime: 9.7
+  livetime: 9.7h
   significance: 9.3
 
 pos:
@@ -22,4 +22,4 @@ spec:
       index: {val: 2.49, err: 0.18, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
   theta: 0.22d
-  erange: {min: 0.5}
+  erange: {min: 0.5, unit: TeV}

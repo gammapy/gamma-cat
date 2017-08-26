@@ -3,7 +3,7 @@ reference_id: 2016arXiv160605404A
 telescope: hess
 
 data:
-  livetime: 94
+  livetime: 94h
   significance: 6
   excess: 413
 
@@ -23,4 +23,4 @@ spec:
       index: {val: 2.3, err: 0.2, err_sys: 0.3}
       e_ref: {val: 1, unit: TeV}
   theta: 0.2d
-  erange: {min: 0.4}
+  erange: {min: 0.4, unit: TeV}

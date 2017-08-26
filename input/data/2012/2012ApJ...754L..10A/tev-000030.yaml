@@ -7,8 +7,8 @@ morph:
 
 orbit:
   # zero phase for orbital period
-  mjd0: 54857     # arbitrarily set to the date of the first Swift observations
-  period: {val: 321}
+  mjd0: 54857d     # arbitrarily set to the date of the first Swift observations
+  period: {val: 321, unit: day}
 
 #############################################################
 # spectral results are given for February 2011
@@ -22,4 +22,4 @@ spec:
       e_ref: {val: 1, unit: TeV}
   mjd: {min: 55598., max: 55559.}
   phase: {min: 0.31, max: 0.36 }
-  erange: {min: 0.136, max: 4.}
+  erange: {min: 0.136, max: 4., unit: TeV}

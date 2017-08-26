@@ -2114,9 +2114,9 @@
   - tevcat_name: TeV J0534+220
   - tgevcat_id: 25
   - tgevcat_name: TeV J0534+2200
-  - reference_id: 2014ApJ...781L..11A
+  - reference_id: 2006A&A...457..899A
   - significance: .nan
-  - livetime: .nan
+  - livetime: 22.899999618530273
   - ra: 83.6330795288086
   - dec: 22.01449966430664
   - glon: 184.55746459960938
@@ -2126,7 +2126,7 @@
   - pos_glon: .nan
   - pos_glat: .nan
   - pos_err: .nan
-  - morph_type: none
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -2134,14 +2134,14 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: pl
-  - spec_pl_norm: 3.529999903495451e-11
-  - spec_pl_norm_err: 1.4999999940062958e-12
-  - spec_pl_norm_err_sys: 1.1200000128719356e-11
-  - spec_pl_index: 2.7200000286102295
-  - spec_pl_index_err: 0.05000000074505806
-  - spec_pl_index_err_sys: 0.30000001192092896
-  - spec_pl_e_ref: 1.0
+  - spec_type: ecpl
+  - spec_pl_norm: .nan
+  - spec_pl_norm_err: .nan
+  - spec_pl_norm_err_sys: .nan
+  - spec_pl_index: .nan
+  - spec_pl_index_err: .nan
+  - spec_pl_index_err_sys: .nan
+  - spec_pl_e_ref: .nan
   - spec_pl2_flux: .nan
   - spec_pl2_flux_err: .nan
   - spec_pl2_flux_err_sys: .nan
@@ -2150,37 +2150,37 @@
   - spec_pl2_index_err_sys: .nan
   - spec_pl2_e_min: .nan
   - spec_pl2_e_max: .nan
-  - spec_ecpl_norm: .nan
-  - spec_ecpl_norm_err: .nan
+  - spec_ecpl_norm: 3.759999950281312e-11
+  - spec_ecpl_norm_err: 7.000000080449598e-13
   - spec_ecpl_norm_err_sys: .nan
-  - spec_ecpl_index: .nan
-  - spec_ecpl_index_err: .nan
-  - spec_ecpl_index_err_sys: .nan
-  - spec_ecpl_e_cut: .nan
-  - spec_ecpl_e_cut_err: .nan
+  - spec_ecpl_index: 2.390000104904175
+  - spec_ecpl_index_err: 0.029999999329447746
+  - spec_ecpl_index_err_sys: 0.09000000357627869
+  - spec_ecpl_e_cut: 14.300000190734863
+  - spec_ecpl_e_cut_err: 2.0999999046325684
   - spec_ecpl_e_cut_err_sys: .nan
-  - spec_ecpl_e_ref: .nan
-  - spec_erange_min: 1.0
-  - spec_erange_max: 20.0
-  - spec_theta: .nan
-  - spec_dnde_1TeV: 3.529999903495451e-11
-  - spec_dnde_1TeV_err: 1.4999999940062958e-12
-  - spec_flux_1TeV: 2.0523254970483684e-11
-  - spec_flux_1TeV_err: 1.05663871749484e-12
-  - spec_flux_1TeV_crab: 98.93379211425781
-  - spec_flux_1TeV_crab_err: 5.093600749969482
-  - spec_eflux_1TeV_10TeV: 6.358354120994392e-11
-  - spec_eflux_1TeV_10TeV_err: 3.814255768869179e-12
-  - sed_reference_id: 2014ApJ...781L..11A
-  - sed_n_points: 14
+  - spec_ecpl_e_ref: 1.0
+  - spec_erange_min: 0.4399999976158142
+  - spec_erange_max: 40.0
+  - spec_theta: 0.10999999940395355
+  - spec_dnde_1TeV: 3.5060458009050777e-11
+  - spec_dnde_1TeV_err: 7.454410352880636e-13
+  - spec_flux_1TeV: 2.2679576966444515e-11
+  - spec_flux_1TeV_err: 7.839466380742122e-13
+  - spec_flux_1TeV_crab: 109.3284912109375
+  - spec_flux_1TeV_crab_err: 3.779069662094116
+  - spec_eflux_1TeV_10TeV: 7.347305402971571e-11
+  - spec_eflux_1TeV_10TeV_err: 3.2814187565094466e-12
+  - sed_reference_id: 2006A&A...457..899A
+  - sed_n_points: 12
   - sed_n_ul: 0
-  - sed_e_ref: 7.453578472137451
-  - sed_e_min: 6.643007755279541
-  - sed_e_max: 8.36305046081543
-  - sed_dnde: 3.949676957021309e-12
-  - sed_dnde_err: 2.700547847411111e-13
-  - sed_dnde_errp: .nan
-  - sed_dnde_errn: .nan
+  - sed_e_ref: 8.173999786376953
+  - sed_e_min: .nan
+  - sed_e_max: .nan
+  - sed_dnde: 2.5348551382919915e-11
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 8.025216775842114e-13
+  - sed_dnde_errn: 7.93927044332593e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 26
@@ -12699,19 +12699,19 @@
   - tevcat_name: TeV J2016+372
   - tgevcat_id: 141
   - tgevcat_name: TeV J2016+3711
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2014ApJ...788...78A
+  - significance: 7.0
+  - livetime: 70.0
   - ra: 304.0075988769531
   - dec: 37.214759826660156
   - glon: 74.95384979248047
   - glat: 1.1501808166503906
-  - pos_ra: .nan
-  - pos_dec: .nan
-  - pos_glon: .nan
-  - pos_glat: .nan
-  - pos_err: .nan
-  - morph_type: none
+  - pos_ra: 304.0083312988281
+  - pos_dec: 37.1974983215332
+  - pos_glon: 74.9398422241211
+  - pos_glat: 1.140074372291565
+  - pos_err: 0.011785113252699375
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -12719,14 +12719,14 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: none
-  - spec_pl_norm: .nan
-  - spec_pl_norm_err: .nan
-  - spec_pl_norm_err_sys: .nan
-  - spec_pl_index: .nan
-  - spec_pl_index_err: .nan
-  - spec_pl_index_err_sys: .nan
-  - spec_pl_e_ref: .nan
+  - spec_type: pl
+  - spec_pl_norm: 3.099999911718859e-13
+  - spec_pl_norm_err: 9.000000180878209e-14
+  - spec_pl_norm_err_sys: 5.99999989471002e-14
+  - spec_pl_index: 2.299999952316284
+  - spec_pl_index_err: 0.30000001192092896
+  - spec_pl_index_err_sys: 0.20000000298023224
+  - spec_pl_e_ref: 1.0
   - spec_pl2_flux: .nan
   - spec_pl2_flux_err: .nan
   - spec_pl2_flux_err_sys: .nan
@@ -12745,25 +12745,25 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
-  - spec_theta: .nan
-  - spec_dnde_1TeV: .nan
-  - spec_dnde_1TeV_err: .nan
-  - spec_flux_1TeV: .nan
-  - spec_flux_1TeV_err: .nan
-  - spec_flux_1TeV_crab: .nan
-  - spec_flux_1TeV_crab_err: .nan
-  - spec_eflux_1TeV_10TeV: .nan
-  - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: ''
-  - sed_n_points: 0
+  - spec_erange_min: 0.6499999761581421
+  - spec_erange_max: 10.0
+  - spec_theta: 0.09000000357627869
+  - spec_dnde_1TeV: 3.099999911718859e-13
+  - spec_dnde_1TeV_err: 9.000000180878209e-14
+  - spec_flux_1TeV: 2.384615400106982e-13
+  - spec_flux_1TeV_err: 8.843728023120653e-14
+  - spec_flux_1TeV_crab: 1.1495205163955688
+  - spec_flux_1TeV_crab_err: 0.42631810903549194
+  - spec_eflux_1TeV_10TeV: 8.258256817099408e-13
+  - spec_eflux_1TeV_10TeV_err: 3.483028481517797e-13
+  - sed_reference_id: 2014ApJ...788...78A
+  - sed_n_points: 4
   - sed_n_ul: 0
-  - sed_e_ref: .nan
+  - sed_e_ref: 4.067500114440918
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: .nan
-  - sed_dnde_err: .nan
+  - sed_dnde: 2.6399951560777957e-13
+  - sed_dnde_err: 9.168893129549854e-14
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan

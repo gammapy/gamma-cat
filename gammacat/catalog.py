@@ -245,7 +245,7 @@ class CatalogSource:
             data['significance'] = NA.fill_value['number']
 
         try:
-            data['livetime'] = dsi['data']['livetime']
+            data['livetime'] = Quantity(dsi['data']['livetime']).to('hour').value
         except KeyError:
             data['livetime'] = NA.fill_value['number']
 
@@ -333,11 +333,13 @@ class CatalogSource:
     @staticmethod
     def fill_spectral_other_info(data, dsi):
         try:
-            data['spec_erange_min'] = dsi['spec']['erange']['min']
+            q = Quantity(dsi['spec']['erange']['min'],  dsi['spec']['erange']['unit'])
+            data['spec_erange_min'] = q.to('TeV').value
         except KeyError:
             data['spec_erange_min'] = NA.fill_value['number']
         try:
-            data['spec_erange_max'] = dsi['spec']['erange']['max']
+            q = Quantity(dsi['spec']['erange']['max'],  dsi['spec']['erange']['unit'])
+            data['spec_erange_max'] = q.to('TeV').value
         except KeyError:
             data['spec_erange_max'] = NA.fill_value['number']
         try:
@@ -619,7 +621,6 @@ class CatalogMaker:
     def make_table(sources):
         """Convert Python data structures to a flat table."""
         rows = [source.row_dict() for source in sources]
-
         # Passing Quantity objects to `Table(rows=rows)` doesn't work.
         # So for now, we drop units here
         # (we could also make Table column by column ourselves
@@ -631,7 +632,6 @@ class CatalogMaker:
                     d = row[colname]
                     if not hasattr(d, 'unit'):
                         d = d * u.Unit('')
-
                     if d.unit != unit:
                         # This should never happen.
                         # But it did due to a coding error in the past.
@@ -645,8 +645,6 @@ class CatalogMaker:
         meta['name'] = 'gamma-cat'
         meta['description'] = 'A catalog of TeV gamma-ray sources'
         meta['version'] = gammacat_info.version
-        meta['url'] = 'https://github.com/gammapy/gamma-cat/'
-
         schema = CatalogSchema()
         # schema.filter_row_keys(rows)
         # table = Table(rows=rows, meta=meta, names=schema.names, dtype=schema.dtype)
@@ -659,7 +657,6 @@ class CatalogMaker:
         #     print(colname)
         #     print(d)
         #     Table(data={colname: d})
-
         table = Table(rows=rows)
         table = schema.format_table(table)
 

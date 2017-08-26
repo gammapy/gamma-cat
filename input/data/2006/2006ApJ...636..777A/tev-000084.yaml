@@ -3,7 +3,7 @@ reference_id: 2006ApJ...636..777A
 telescope: hess
 
 data:
-  livetime: 10.2
+  livetime: 10.2h
   significance: 16.3
 
 pos:

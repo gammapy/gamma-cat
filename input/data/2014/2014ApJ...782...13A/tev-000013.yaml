@@ -3,7 +3,7 @@ reference_id: 2014ApJ...782...13A
 telescope: veritas
 
 data:
-  livetime: 54.3
+  livetime: 54.3h
   significance: 11.7
 
 pos:

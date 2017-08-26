@@ -2,4 +2,26 @@ source_id: 80
 reference_id: 2015A&A...573A..31H
 telescope: hess
 
-# TODO: add data
+data:
+  livetime: 14h
+  significance: 6.6
+  excess: 218
+  alpha: 0.1
+  n_on: 1133
+  n_off: 9042
+
+pos:
+  ra: {val: 15h17m40.6s, err: 0h0m3.0s, err_sys: 0h0m1.3s}
+  dec: {val: -24d22m37.5s, err: 18.4s, err_sys: 20s}
+
+morph:
+  type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 4.30, err: 0.57, err_sys: 0.86, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.65, err: 0.19, err_sys: 0.20}
+      e_ref: {val: 0.45, unit: TeV}
+  erange: {min: 0.13, max: 6.3, unit: TeV}

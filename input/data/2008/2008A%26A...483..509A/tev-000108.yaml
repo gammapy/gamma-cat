@@ -3,7 +3,7 @@ reference_id: 2008A&A...483..509A
 telescope: hess
 
 data:
-  livetime: 79
+  livetime: 79h
   excess: 2030
   significance: 10.2
 
@@ -30,4 +30,4 @@ spec:
       index: {val: 2.71, err: 0.11, err_sys: 0.20}
       e_ref: {val: 1, unit: TeV}
   theta: 0.4d
-  erange: {min: 0.15}
+  erange: {min: 0.15, unit: TeV}

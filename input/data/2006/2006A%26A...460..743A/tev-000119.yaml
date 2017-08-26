@@ -3,7 +3,7 @@ reference_id: 2006A&A...460..743A
 telescope: hess
 
 data:
-  livetime: 69.2
+  livetime: 69.2h
   significance: 40
   excess: 1960
 
@@ -24,4 +24,4 @@ spec:
       index: {val: 1.85, err: 0.06, err_sys: 0.1}
       e_cut: {val: 8.7, err: 2.0, unit: TeV}
       e_ref: {val: 1, unit: TeV}
-  erange: {min: 0.2, max: 10}
+  erange: {min: 0.2, max: 10, unit: TeV}

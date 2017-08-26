@@ -3,7 +3,7 @@ reference_id: 2012A&A...545L...2H
 telescope: hess
 
 data:
-  livetime: 46
+  livetime: 46h
   significance: 14
   excess: 395
 
@@ -22,4 +22,4 @@ spec:
       index: {val: 2.8, err: 0.2, err_sys: 0.3}
       e_ref: {val: 1, unit: TeV}
   theta: 0.1d
-  erange: {min: 0.6, max: 12.0}
+  erange: {min: 0.6, max: 12.0, unit: TeV}

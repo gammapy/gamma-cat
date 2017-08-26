@@ -3,7 +3,7 @@ reference_id: 2014ApJ...794L...1A
 telescope: hess
 
 data:
-  livetime: 72
+  livetime: 72h
   significance: 8.5
 
 pos:
@@ -21,4 +21,4 @@ spec:
       norm: {val: 0.391, err: 0.069, err_sys: 0.078, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.07, err: 0.11, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
-  erange: {min: 0.64, max: 100}
+  erange: {min: 0.64, max: 100, unit: TeV}

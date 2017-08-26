@@ -17,8 +17,8 @@ pos:
 # (for binaries only)
 orbit:
   # zero phase for orbital period from Gregory (2002)
-  mjd0: 43366.3
-  period: {val: 26.4960 }
+  mjd0: 43366.3d
+  period: {val: 26.4960, unit: day}
 
 #############################################################
 # spectral fit results
@@ -32,4 +32,4 @@ spec:
       e_ref: {val: 1, unit: TeV}
   mjd: {min: 53999.4, max: 54147.1}
   phase: {min: 0.5, max: 0.8 }
-  erange: {min: 0.3, max: 7.07}
+  erange: {min: 0.3, max: 7.07, unit: TeV}

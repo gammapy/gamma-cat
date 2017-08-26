@@ -3,7 +3,7 @@ reference_id: 2011A&A...531A..81H
 telescope: hess
 
 data:
-  livetime: 59
+  livetime: 59h
 #  significance: TODO
 
 pos:
@@ -24,4 +24,4 @@ spec:
       index: {val: 2.32, err: 0.06, err_sys: 0.2}
       e_ref: {val: 0.783, unit: TeV}
   theta: 0.3d
-  erange: {min: 0.24}
+  erange: {min: 0.24, unit: TeV}

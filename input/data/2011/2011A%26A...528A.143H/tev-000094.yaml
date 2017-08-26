@@ -3,7 +3,7 @@ reference_id: 2011A&A...528A.143H
 telescope: hess
 
 data:
-  livetime: 15
+  livetime: 15h
   significance: 7
 
 pos:
@@ -22,4 +22,4 @@ spec:
       index: {val: 2.0, err: 0.1, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
   theta: 0.71d
-  erange: {min: 0.56}
+  erange: {min: 0.56, unit: TeV}

@@ -5,8 +5,8 @@ telescope: veritas
 # Orbital period
 orbit:
     # zero phase for orbital period from Gregory (2002)
-    mjd0: 43366.3
-    period: {val: 26.4960 }
+    mjd0: 43366.3d
+    period: {val: 26.4960, unit: day}
 
 # (spectral fit for phases 0.5-0.8)
 spec:

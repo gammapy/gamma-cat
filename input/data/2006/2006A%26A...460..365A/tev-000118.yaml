@@ -5,7 +5,7 @@ telescope: hess
 # Note: spectral results for the spectrum in Figure 3.
 
 data:
-  livetime: 52.1
+  livetime: 52.1h
   excess: 19510
   significance: 33.8
 
@@ -29,4 +29,4 @@ spec:
       e_cut: {val: 24.8, err: 7.2, unit: TeV}
       e_ref: {val: 1, unit: TeV}
   theta: 0.8d
-  erange: {min: 0.27}
+  erange: {min: 0.27, unit: TeV}

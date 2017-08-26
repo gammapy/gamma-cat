@@ -3,7 +3,7 @@ reference_id: 2010ApJ...719L..69A
 telescope: veritas
 
 data:
-  livetime: 36.6
+  livetime: 36.6h
   excess: 101
   significance: 7.0
 
@@ -23,4 +23,4 @@ spec:
       index: {val: 2.39, err: 0.23, err_sys: 0.30}
       e_ref: {val: 1, unit: TeV}
   theta: 0.15d
-  erange: {min: 0.25, max: 4}
+  erange: {min: 0.25, max: 4, unit: TeV}

@@ -3,7 +3,7 @@ reference_id: 2007A&A...469L...1A
 telescope: hess
 
 data:
-  livetime: 13.5
+  livetime: 13.5h
 
 pos:
   ra: {val: 6h32m58s, err: 1.8m}
@@ -20,4 +20,4 @@ spec:
       index: {val: 2.53, err: 0.26, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
   theta: 0.11d
-  erange: {min: 0.4}
+  erange: {min: 0.4, unit: TeV}

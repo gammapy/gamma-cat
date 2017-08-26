@@ -3,7 +3,7 @@ reference_id: 2011A&A...529A..49H
 telescope: hess
 
 data:
-  livetime: 38.4
+  livetime: 38.4h
   significance: 8.9
   n_on: 281
   n_off: 4086
@@ -26,4 +26,4 @@ spec:
       index: {val: 3.1, err: 0.3, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
   theta: 0.1d
-  erange: {min: 0.47}
+  erange: {min: 0.47, unit: TeV}

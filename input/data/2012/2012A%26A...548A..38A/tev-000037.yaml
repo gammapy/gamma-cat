@@ -3,7 +3,7 @@ reference_id: 2012A&A...548A..38A
 telescope: hess
 
 data:
-  livetime: 53.1
+  livetime: 53.1h
   significance: 27.9
 
 pos:
@@ -25,7 +25,7 @@ spec:
       e_cut: {val: 14.0, err: 1.6, err_sys: 2.6, unit: TeV}
       e_ref: {val: 1, unit: TeV}
   theta: 1.2d
-  erange: {min: 0.75}
+  erange: {min: 0.75, unit: TeV}
 
 #  flux: {e_min: 1.0, val: 21.0, err: 1.9, err_sys: 4.4}
 

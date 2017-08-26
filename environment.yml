@@ -2,11 +2,9 @@ name: gamma-cat
 
 channels:
   - conda-forge
-  - openastronomy
-  - astropy
 
 dependencies:
-  - python=3.5
+  - python=3.6
   - pytest
   - pytest-cov
   - cython
@@ -15,14 +13,15 @@ dependencies:
   - uncertainties
   - click
   - sphinx
+  - sphinx_rtd_theme
   - matplotlib
   - bokeh
   - pyyaml
   - ruamel.yaml
   - jsonschema
   - astropy
+  - regions
 
   - pip:
-    - sphinx-rtd-theme
     - sphinxcontrib.datatemplates
     - git+https://github.com/gammapy/gammapy.git#egg=gammapy

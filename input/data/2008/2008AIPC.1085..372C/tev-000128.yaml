@@ -3,7 +3,7 @@ reference_id: 2008AIPC.1085..372C
 telescope: hess
 
 data:
-  livetime: 50
+  livetime: 50h
   significance: 9
 
 pos:
@@ -22,4 +22,4 @@ spec:
       index: {val: 2.8, err: 0.2, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
   theta: 0.2d
-  erange: {min: 0.9, max: 12}
+  erange: {min: 0.9, max: 12, unit: TeV}

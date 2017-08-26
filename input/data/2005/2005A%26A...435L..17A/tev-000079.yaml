@@ -3,7 +3,7 @@ reference_id: 2005A&A...435L..17A
 telescope: hess
 
 data:
-  livetime: 22.1
+  livetime: 22.1h
   significance: 25
 
 pos:
@@ -24,5 +24,5 @@ spec:
       norm: {val: 5.7, err: 0.2, err_sys: 1.4, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.27, err: 0.03, err_sys: 0.20}
       e_ref: {val: 1, unit: TeV}
-  erange: {min: 0.280, max: 40}
+  erange: {min: 0.280, max: 40, unit: TeV}
   theta: 0.3d

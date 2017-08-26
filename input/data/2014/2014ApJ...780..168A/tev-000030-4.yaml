@@ -6,8 +6,8 @@ telescope: veritas
 
 orbit:
   # zero phase for orbital period
-  mjd0: 54857     # arbitarily set to the date of the first Swift observations
-  period: {val: 315, errp: 6, errn: 4}
+  mjd0: 54857d     # arbitarily set to the date of the first Swift observations
+  period: {val: 315, errp: 6, errn: 4, unit: day}
 
 #############################################################
 # spectral results are given for different orbital phases
@@ -23,4 +23,4 @@ spec:
       e_ref: {val: 1, unit: TeV}
   mjd: {min: 55235.0, max: 55928.}
   phase: {min: 0.2, max: 0.4 }
-  erange: {min: 0.53, max: 7.08}
+  erange: {min: 0.53, max: 7.08, unit: TeV}

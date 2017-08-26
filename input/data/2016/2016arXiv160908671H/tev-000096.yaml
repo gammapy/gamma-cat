@@ -3,7 +3,7 @@ reference_id: 2016arXiv160908671H
 telescope: hess
 
 data:
-  livetime: 164
+  livetime: 164h
 
 pos:
   ra: {val: 17h13m25.2s}
@@ -23,4 +23,4 @@ spec:
       e_cut: {val: 12.9, err: 1.1, unit: TeV}
       e_ref: {val: 1, unit: TeV}
   theta: 0.6d
-  erange: {min: 0.2, max: 40.0}
+  erange: {min: 0.2, max: 40.0, unit: TeV}

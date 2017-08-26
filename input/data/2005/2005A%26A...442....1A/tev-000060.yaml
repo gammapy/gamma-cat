@@ -3,7 +3,7 @@ reference_id: 2005A&A...442....1A
 telescope: hess
 
 data:
-  livetime: 48.6
+  livetime: 48.6h
   significance: 13.8
 
 pos:

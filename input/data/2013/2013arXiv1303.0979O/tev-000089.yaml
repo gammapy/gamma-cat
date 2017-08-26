@@ -3,7 +3,7 @@ reference_id: 2013arXiv1303.0979O
 telescope: hess
 
 data:
-  livetime: 72
+  livetime: 72h
   significance: 8.6
 
 pos:
@@ -19,4 +19,4 @@ morph:
 #  model:
 #    type: pl
 #
-#  erange: {min: 0.64, max: 30}
+#  erange: {min: 0.64, max: 30, unit: TeV}

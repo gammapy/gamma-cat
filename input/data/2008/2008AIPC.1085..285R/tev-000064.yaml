@@ -3,7 +3,7 @@ reference_id: 2008AIPC.1085..285R
 telescope: hess
 
 data:
-  livetime: 10
+  livetime: 10h
   significance: 8.5
 
 pos:
@@ -22,4 +22,4 @@ spec:
       index: {val: 2.2, err: 0.2, err_sys: 0.2}
       e_ref: {val: 1, unit: TeV}
   theta: 0.22d
-  erange: {min: 0.3, max: 30}
+  erange: {min: 0.3, max: 30, unit: TeV}

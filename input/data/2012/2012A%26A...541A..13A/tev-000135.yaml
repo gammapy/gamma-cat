@@ -3,7 +3,7 @@ reference_id: 2012A&A...541A..13A
 telescope: magic
 
 data:
-  livetime: 50
+  livetime: 50h
   significance: 11.4
   excess: 1371.7
 
@@ -25,4 +25,4 @@ spec:
       e_ref: {val: 1, unit: TeV}
   # I think MAGIC has an energy-dependent ON-region size,
   # that's why I can't find an on region radius in the paper.
-  erange: {min: 0.075}
+  erange: {min: 0.075, unit: TeV}

@@ -3,7 +3,7 @@ reference_id: 2011ApJ...742..127A
 telescope: veritas
 
 data:
-  livetime: 19.3
+  livetime: 19.3h
   significance: 5.2
   excess: 283
 

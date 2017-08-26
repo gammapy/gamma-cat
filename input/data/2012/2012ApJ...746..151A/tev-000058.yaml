@@ -3,6 +3,6 @@ reference_id: 2012ApJ...746..151A
 telescope: veritas
 
 data:
-  livetime: 48.2
+  livetime: 48.2h
   significance: 26.
 

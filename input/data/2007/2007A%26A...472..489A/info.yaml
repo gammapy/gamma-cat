@@ -1,0 +1,14 @@
+reference_id: 2007A&A...472..489A
+source_id: [99, 115]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: All datasets haven't been reviewed.
+
+datasets:
+  tev-000099-sed.ecsv
+  tev-000099.yaml
+  tev-000115-sed.ecsv
+  tev-000115.yaml

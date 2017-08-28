@@ -1,0 +1,10 @@
+reference_id: 2008JPhG...35f5202G
+source_id: [91]
+telescope: [tactic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000091-sed.ecsv

@@ -1,0 +1,10 @@
+reference_id: 2007A&A...473L..25A
+source_id: [19]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000019-sed.ecsv

@@ -1,0 +1,10 @@
+reference_id: 2012A&A...544A.142A
+source_id: [53]
+telescope: [magic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000053-sed.ecsv

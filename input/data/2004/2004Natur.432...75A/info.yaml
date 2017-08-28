@@ -1,0 +1,15 @@
+reference_id: 2004Natur.432...75A
+source_id: [96]
+telescope: [hess]
+
+data_entry:
+  status: missing
+  reviewed: no
+  notes: |
+    ecsv dataset is complete but not reviewed
+    the yaml file is empty
+
+datasets:
+  tev-000096-sed.ecsv
+  tev-000096.yaml
+

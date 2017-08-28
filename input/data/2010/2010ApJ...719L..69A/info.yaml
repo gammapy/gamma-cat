@@ -1,0 +1,12 @@
+reference_id: 2010ApJ...719L..69A
+source_id: [136]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000136-sed.ecsv
+  tev-000136.yaml

@@ -1,0 +1,14 @@
+reference_id: 2016Natur.531..476H
+source_id: [106]
+telescope: [hess]
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: |
+    The yaml dataset is incomplete
+    the ecsv dataset is complete but not reviewed
+
+datasets:
+  tev-000106-sed.ecsv
+  tev-000106.yaml

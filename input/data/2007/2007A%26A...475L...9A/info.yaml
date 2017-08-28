@@ -1,0 +1,11 @@
+reference_id: 2007A&A...475L...9A
+source_id: [13]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000013-sed.ecsv
+

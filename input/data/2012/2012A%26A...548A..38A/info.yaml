@@ -1,0 +1,14 @@
+reference_id: 2012A&A...548A..38A
+source_id: [37]
+telescope: [hess]
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: |
+    The ecsv dataset is complete
+    The yaml dataset isn't
+
+datasets:
+  tev-000037-sed.ecsv
+  tev-000037.yaml

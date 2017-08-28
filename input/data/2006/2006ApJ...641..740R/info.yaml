@@ -1,0 +1,15 @@
+reference_id: 2006ApJ...641..740R
+source_id: []
+telescope: [whipple]
+
+data_entry:
+  status: missing
+  reviewed: no
+  notes: |
+    ecsv dataset is complete but not reviewed
+    the yaml dataset is empty
+
+datasets:
+  tev-000049-lc.ecsv
+  tec-000049.yaml
+

@@ -1,0 +1,10 @@
+reference_id: 2007ApJ...662..892A
+source_id: [154]
+telescope: [magic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000154-sed.ecsv

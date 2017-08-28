@@ -1,0 +1,12 @@
+reference_id: 2016MNRAS.461..202A
+source_id: [71]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000071-sed.ecsv
+  tev-000071.yaml

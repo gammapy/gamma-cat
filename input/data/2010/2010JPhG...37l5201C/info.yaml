@@ -1,0 +1,10 @@
+reference_id: 2010JPhG...37l5201C
+source_id: [49]
+telescope: [tactic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000049-sed.ecsv

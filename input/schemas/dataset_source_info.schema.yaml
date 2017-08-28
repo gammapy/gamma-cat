@@ -17,6 +17,17 @@ properties:
   telescope:
     "$ref": "#/definitions/telescope"
 
+  data_entry_status:
+    type: string
+    description: |
+      Status of the data entry, can be one of the following words:
+      'missing', 'incomplete', 'complete'
+
+  review_required:
+    type: string
+    description: |
+      'yes' or 'no'
+
   data:
     type: object
     additionalProperties: false
@@ -274,6 +285,7 @@ required:
   - source_id
   - reference_id
   - telescope
+  - data_entry_status
 #  - morphology
 #  - spectrum
 

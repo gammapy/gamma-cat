@@ -1,0 +1,17 @@
+reference_id: 2016ApJ...821..129A
+source_id: [106, 110, 165]
+telescope: [veritas]
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: |
+    The 106 yaml dataset is incomplete
+    all other datasets are complete but not reviewed
+
+datasets:
+  tev-000106-sed.ecsv
+  tev-000106.yaml
+  tev-000110-sed.ecsv
+  tev-000110.yaml
+  tev-000165.yaml

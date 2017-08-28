@@ -1,0 +1,12 @@
+reference_id: 2004A&A...425L..13A
+source_id: [106]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets are complete but not reviewed
+
+datasets:
+    tev-000106-sed.ecsv
+    tev-000106.yaml

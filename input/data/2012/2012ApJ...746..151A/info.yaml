@@ -1,0 +1,12 @@
+reference_id: 2012ApJ...746..151A
+source_id: [58]
+telescope: [magic, veritas, hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: |
+    The yaml dataset has no TODO remarks but only very little data
+
+datasets:
+

@@ -1,0 +1,10 @@
+reference_id: 2012arXiv1205.0719D
+source_id: [73]
+telescope: [hess]
+
+data_entry:
+  status: incomplete
+  reviewed: no
+
+datasets:
+  tev-000073.yaml

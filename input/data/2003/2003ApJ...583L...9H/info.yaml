@@ -1,0 +1,10 @@
+reference_id: 2003ApJ...583L...9H
+source_id: [138]
+telescope: [whipple]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000138-lc.ecsv

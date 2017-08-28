@@ -1,0 +1,11 @@
+reference_id: 2005A&A...442..895A
+source_id: [147]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000147-sed.ecsv
+

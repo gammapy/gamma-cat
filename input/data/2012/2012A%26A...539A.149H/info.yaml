@@ -1,0 +1,12 @@
+reference_id: 2012A&A...539A.149H
+source_id: [147]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000147-sed-1.ecsv
+  tev-000147-sed-2.ecsv

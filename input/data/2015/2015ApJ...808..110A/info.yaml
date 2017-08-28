@@ -1,0 +1,13 @@
+reference_id: 2015ApJ...808..110A
+source_id: [101]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: All datasets haven't been reviewed
+
+datasets:
+  tev-000101-lc.ecsv
+  tev-000101-sed.ecsv
+  tev-000101.yaml

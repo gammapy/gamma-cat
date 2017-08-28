@@ -1,0 +1,12 @@
+reference_id: 2008A&A...486..829A
+source_id: [95]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000095-sed.ecsv
+  tev-000095.yaml

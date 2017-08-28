@@ -1,0 +1,10 @@
+reference_id: 2000PhDT.........6P
+source_id: [49]
+telescope: [cat]
+
+data_entry:
+  status: missing
+  reviewed: no
+
+datasets:
+  tev-000049-lc.ecsv

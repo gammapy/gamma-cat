@@ -1,0 +1,12 @@
+reference_id: 2016arXiv160104461H
+source_id: [70]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-00070-sed.ecsv
+  tev-00080.yaml

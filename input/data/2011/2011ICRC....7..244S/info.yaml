@@ -1,0 +1,12 @@
+reference_id: 2011ICRC....7..244S
+source_id: [120]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000120-sed.ecsv
+  tev-000120.yaml

@@ -1,0 +1,12 @@
+reference_id: 2008AIPC.1085..281R
+source_id: [75]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000075-sed.ecsv
+  tev-000075.yaml

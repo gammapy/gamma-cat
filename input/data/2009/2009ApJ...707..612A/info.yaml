@@ -1,0 +1,13 @@
+reference_id: 2009ApJ...707..612A
+source_id: [54]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: All datasets haven't been reviewed
+
+datasets:
+  tev-000054-lc.ecsv
+  tev-000054-sed.ecsv
+  tev-000054.yaml

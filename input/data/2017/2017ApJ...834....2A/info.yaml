@@ -1,0 +1,17 @@
+reference_id: 2017ApJ...834....2A
+source_id: [49]
+telescope: [veritas]
+
+data_entry:
+  status: missing
+  reviewed: no
+  notes: |
+    All ecsv datasets are complete but not reviewed
+    the yaml dataset is empty
+
+datasets:
+  tev-000049-lc-1.ecsv
+  tev-000049-lc-2.ecsv
+  tev-000049-sed-1.ecsv
+  tev-000049-sed-2.ecsv
+  tev-000049.yaml

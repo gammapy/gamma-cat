@@ -1,0 +1,16 @@
+reference_id: 2011A&A...531A..81H
+source_id: [102, 103]
+telescope: []
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: |
+    Both yaml-datasets are incomplete
+    Both ecsv-datasets are complete
+
+datasets:
+  tev-000102-sed.ecsv
+  tev-000102.yaml
+  tev-000103-sed.ecsv
+  tev-000103.yaml

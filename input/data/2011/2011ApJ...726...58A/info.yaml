@@ -1,0 +1,10 @@
+reference_id: 2011ApJ...726...58A
+source_id: [11]
+telescope: [magic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000011-sed.ecsv

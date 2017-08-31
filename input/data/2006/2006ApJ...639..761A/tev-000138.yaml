@@ -1,0 +1,19 @@
+source_id: 138
+reference_id: 2006ApJ...639..761A
+telescope: magic
+data_entry_status: incomplete
+
+data:
+  livetime: 6h # The paper says '~6hours'
+  significance: 8.2
+  excess: 246
+
+spec:
+  model:
+    type: pl
+    # The parameters are given in figure 5
+    parameters:
+      norm: {val: 0.34, err: 0.05, scale: 1e-11, unit: s-1 cm-2 TeV-1}
+      index: {val: 2.72, err: 0.14}
+      e_ref: {val: 1, unit: TeV}
+

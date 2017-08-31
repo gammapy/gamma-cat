@@ -4550,9 +4550,9 @@
   - tevcat_name: TeV J1221+301
   - tgevcat_id: 55
   - tgevcat_name: TeV J1221+3011
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2006ApJ...642L.119A
+  - significance: 6.400000095367432
+  - livetime: 8.199999809265137
   - ra: 185.3414306640625
   - dec: 30.17698860168457
   - glon: 186.3585662841797
@@ -4562,7 +4562,7 @@
   - pos_glon: .nan
   - pos_glat: .nan
   - pos_err: .nan
-  - morph_type: none
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -4570,14 +4570,14 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: none
-  - spec_pl_norm: .nan
-  - spec_pl_norm_err: .nan
+  - spec_type: pl
+  - spec_pl_norm: 8.099999837529737e-11
+  - spec_pl_norm_err: 2.100000034976901e-11
   - spec_pl_norm_err_sys: .nan
-  - spec_pl_index: .nan
-  - spec_pl_index_err: .nan
+  - spec_pl_index: 3.0
+  - spec_pl_index_err: 0.4000000059604645
   - spec_pl_index_err_sys: .nan
-  - spec_pl_e_ref: .nan
+  - spec_pl_e_ref: 0.25
   - spec_pl2_flux: .nan
   - spec_pl2_flux_err: .nan
   - spec_pl2_flux_err_sys: .nan
@@ -4599,24 +4599,24 @@
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_dnde_1TeV: .nan
-  - spec_dnde_1TeV_err: .nan
-  - spec_flux_1TeV: .nan
-  - spec_flux_1TeV_err: .nan
-  - spec_flux_1TeV_crab: .nan
-  - spec_flux_1TeV_crab_err: .nan
-  - spec_eflux_1TeV_10TeV: .nan
-  - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: 2010ApJ...709L.163A
-  - sed_n_points: 9
+  - spec_dnde_1TeV: 1.2656249746140213e-12
+  - spec_dnde_1TeV_err: 7.74729239094718e-13
+  - spec_flux_1TeV: 6.328124873070107e-13
+  - spec_flux_1TeV_err: 5.04868716277862e-13
+  - spec_flux_1TeV_crab: 3.0505170822143555
+  - spec_flux_1TeV_crab_err: 2.4337551593780518
+  - spec_eflux_1TeV_10TeV: 1.8249794037084044e-12
+  - spec_eflux_1TeV_10TeV_err: 1.6255916968424544e-12
+  - sed_reference_id: ''
+  - sed_n_points: 0
   - sed_n_ul: 0
-  - sed_e_ref: 0.7678303122520447
+  - sed_e_ref: .nan
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 3.639675366651218e-11
+  - sed_dnde: .nan
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 4.208381473164158e-12
-  - sed_dnde_errn: 4.208381473164158e-12
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 54
@@ -12447,9 +12447,9 @@
   - tevcat_name: TeV J1959+651
   - tgevcat_id: 138
   - tgevcat_name: TeV J1959+6508
-  - reference_id: ''
-  - significance: .nan
-  - livetime: .nan
+  - reference_id: 2006ApJ...639..761A
+  - significance: 8.199999809265137
+  - livetime: 6.0
   - ra: 299.9993896484375
   - dec: 65.14851379394531
   - glon: 98.00337982177734
@@ -12467,14 +12467,14 @@
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
-  - spec_type: none
-  - spec_pl_norm: .nan
-  - spec_pl_norm_err: .nan
+  - spec_type: pl
+  - spec_pl_norm: 4.300000026186135e-12
+  - spec_pl_norm_err: 4.999999980020986e-13
   - spec_pl_norm_err_sys: .nan
-  - spec_pl_index: .nan
-  - spec_pl_index_err: .nan
+  - spec_pl_index: 2.7200000286102295
+  - spec_pl_index_err: 0.14000000059604645
   - spec_pl_index_err_sys: .nan
-  - spec_pl_e_ref: .nan
+  - spec_pl_e_ref: 1.0
   - spec_pl2_flux: .nan
   - spec_pl2_flux_err: .nan
   - spec_pl2_flux_err_sys: .nan
@@ -12496,24 +12496,24 @@
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_dnde_1TeV: .nan
-  - spec_dnde_1TeV_err: .nan
-  - spec_flux_1TeV: .nan
-  - spec_flux_1TeV_err: .nan
-  - spec_flux_1TeV_crab: .nan
-  - spec_flux_1TeV_crab_err: .nan
-  - spec_eflux_1TeV_10TeV: .nan
-  - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: 2005ApJ...621..181D
-  - sed_n_points: 21
+  - spec_dnde_1TeV: 4.300000026186135e-12
+  - spec_dnde_1TeV_err: 4.999999980020986e-13
+  - spec_flux_1TeV: 2.499999990010493e-12
+  - spec_flux_1TeV_err: 3.548417256641484e-13
+  - spec_flux_1TeV_crab: 12.051424980163574
+  - spec_flux_1TeV_crab_err: 1.71053946018219
+  - spec_eflux_1TeV_10TeV: 7.745304397843711e-12
+  - spec_eflux_1TeV_10TeV_err: 1.286218310678211e-12
+  - sed_reference_id: ''
+  - sed_n_points: 0
   - sed_n_ul: 0
-  - sed_e_ref: 5.606191158294678
+  - sed_e_ref: .nan
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 1.7888704406665568e-10
+  - sed_dnde: .nan
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 6.995700546630346e-11
-  - sed_dnde_errn: 6.995700546630346e-11
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 139

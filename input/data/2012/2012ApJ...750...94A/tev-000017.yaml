@@ -1,0 +1,20 @@
+source_id: 17
+reference_id: 2012ApJ...750...94A
+telescope: veritas
+
+data:
+  livetime: 48.h
+  significance: 5.5
+
+pos:
+      ra: {val: 03h19m47s, err: 4s, err_sys:  7s}
+      dec: {val: 18d45.7m, err: 1m, err_sys:  1.8m}
+
+spec:
+  erange: {min: 0.25, max: 1., unit: TeV}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.38, err: 0.52, err_sys: 0.60, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.18, err: 0.68, err_sys: 0.30}
+      e_ref: {val: 0.3, unit: TeV}

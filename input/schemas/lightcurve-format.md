@@ -5,6 +5,7 @@ Each file has some of these columns:
 - `time` - center of observation exposure in MJD
 - `time_min` - start of observation in MJD
 - `time_max` - end of observation in MJD
+- 'livetime' - live time of observations
 - `flux` - observed integral flux in Crab
 - `flux_err` - statistical error on the observed integral flux in Crab
 - `flux_ul` - indicates if a flux is an upper limit

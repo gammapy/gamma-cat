@@ -1,0 +1,10 @@
+source_id: 30
+reference_id: 2017arXiv170804045M
+telescope: veritas
+
+data:
+  livetime: 45.1h
+  significance: 2.7
+
+#############################################################
+# no detection with VERITAS in this phase bin

@@ -1,0 +1,22 @@
+source_id: 53
+reference_id: 2013ApJ...779...92A
+telescope: veritas
+
+data:
+  livetime: 82h
+  significance: 8.9
+  excess: 259
+
+pos:
+    ra: {val: 12h17m48.5s, err: 1.7s, err_sys: 50s }
+    dec: {val: +30d6m6s, err: 25s, err_sys: 50s }
+
+spec:
+  mjd: {min: 55570.5, max: 55710.2}
+  erange: {min: 0.3, max: 1., unit: TeV}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.3, err: 0.5, err_sys: 0.9, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.6, err: 0.4, err_sys: 0.3}
+      e_ref: {val: 0.3, unit: TeV}

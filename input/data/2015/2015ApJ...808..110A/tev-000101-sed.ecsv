@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e_min, datatype: float32, unit: TeV}
+# - {name: e_max, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_err, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_ul, datatype: float32, unit: cm-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 101
+# - reference_id: 2015ApJ...808..110A
+# - telescope: veritas
+# - UL_CONF: 0.95
+# - mjd: {min: 56413., max: 56419.}
+e_ref e_min e_max dnde dnde_err dnde_ul 
+0.32 0.25  0.4  3.3e-11 9.6e-12  nan
+0.50 0.4   0.63 1.1e-11 3.1e-12  nan
+0.79 0.63  1.00 5.9e-12 1.4e-12  nan
+1.26 1.00  1.59 1.4e-12 5.0e-13  nan
+2.00 1.59  2.51 nan     nan      4.1e-13 
+3.16 2.51  3.98 nan     nan      3.4e-13
+5.01 3.98  6.31 nan     nan      1.6e-13

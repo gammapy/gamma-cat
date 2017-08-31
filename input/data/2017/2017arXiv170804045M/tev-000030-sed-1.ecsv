@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errp, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errn, datatype: float32, unit: cm-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 30
+# - reference_id: 2017arXiv170804045M
+# - file_id: 1
+# - telescope: veritas
+# - comments: |
+#     Spectral points averaged over all orbital phases
+e_ref dnde dnde_errp dnde_errn
+0.236551  1.28795e-11 3.6122e-12 3.72077e-12
+0.33413   6.37668e-12 8.50403e-13 8.68336e-13
+0.47198   3.01157e-12 3.27449e-13 3.35525e-13
+0.66669   1.51426e-12 1.51639e-13 1.55919e-13
+0.94172   5.77587e-13 6.68551e-14 6.93816e-14
+1.33022   1.95622e-13 2.89022e-14 3.04653e-14
+1.87899   7.12915e-14 1.27797e-14 1.3768e-14
+2.65414   3.21966e-14 6.81547e-15 7.44192e-15
+3.74907   1.08074e-14 2.94916e-15 3.35535e-15
+7.48039   6.3151e-16 4.83076e-16 6.48305e-16
+10.5662   4.43992e-16 2.58607e-16 3.72343e-16

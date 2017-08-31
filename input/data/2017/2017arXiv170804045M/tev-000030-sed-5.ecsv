@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errp, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errn, datatype: float32, unit: cm-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 30
+# - reference_id: 2017arXiv170804045M
+# - file_id: 5
+# - telescope: veritas
+# - comments: |
+#     Spectral points for orbital phases 0.8-0.2
+e_ref dnde dnde_errp dnde_errn
+0.279085  5.36899e-12 2.70609e-12 2.84304e-12
+0.556848  1.02002e-12 2.74892e-13 2.85798e-13
+1.11106   1.98311e-13 5.33767e-14 5.70538e-14
+2.21685   2.15715e-14 9.69571e-15 1.1123e-14
+4.4232    3.3622e-15 2.15629e-15 2.74454e-15

@@ -8,10 +8,10 @@
 # - {name: dnde_err, datatype: float32, unit: cm-2 s-1 TeV-1}
 # - {name: dnde_ul, datatype: float32, unit: cm-2 s-1 TeV-1}
 # meta: !!omap
-# - {data_type: sed}
-# - {source_id: 101}
-# - {reference_id: 2015ApJ...808..110A
-# - {telescope: veritas}
+# - data_type: sed
+# - source_id: 101
+# - reference_id: 2015ApJ...808..110A
+# - telescope: veritas
 # - UL_CONF: 0.95
 # - mjd: {min: 56413., max: 56419.}
 e_ref e_min e_max dnde dnde_err dnde_ul 

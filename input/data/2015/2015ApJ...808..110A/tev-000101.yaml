@@ -3,7 +3,7 @@ reference_id: 2015ApJ...808..110A
 telescope: veritas
 
 data:
-  livetime: 6.h
+  livetime: 6h
   significance: 9.3
 
 spec:

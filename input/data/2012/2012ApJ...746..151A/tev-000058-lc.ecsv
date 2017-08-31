@@ -2,7 +2,7 @@
 # ---
 # datatype:
 # - {name: time, unit: MJD, datatype: float64}
-# - {name: livetime, unit: days, datatype: float64}
+# - {name: livetime, unit: day, datatype: float64}
 # - {name: e_min, unit: TeV, datatype: float64}
 # - {name: flux, unit: cm-2 s-1, datatype: float64}
 # - {name: flux_err, unit: cm-2 s-1, datatype: float64}

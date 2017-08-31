@@ -22,4 +22,4 @@ spec:
       norm: {val: 0.41, err: 0.2, err_sys: 0.082, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.67, err: 0.05}
       e_ref: {val: 1, unit: TeV}
-  erange: {min: 0.235, max: 10.5}
+  erange: {min: 0.235, max: 10.5, unit: TeV}

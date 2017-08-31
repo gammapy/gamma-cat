@@ -92,7 +92,7 @@
   reference_id: 2015arXiv151201911H, 2009ApJ...698L.133A
 - source_id: 30
   status: source
-  reference_id: 2007A&A...469L...1A, 2009ApJ...698L..94A, 2012ApJ...754L..10A, 2014ApJ...780..168A, 2016arXiv161003751S
+  reference_id: 2007A&A...469L...1A, 2009ApJ...698L..94A, 2012ApJ...754L..10A, 2014ApJ...780..168A, 2016arXiv161003751S, 2017arXiv170804045M
 - source_id: 31
   status: source
   reference_id:
@@ -176,7 +176,7 @@
   reference_id:
 - source_id: 58
   status: source
-  reference_id:
+  reference_id: 2012ApJ...746..151A
 - source_id: 59
   status: source
   reference_id: 2008Sci...320.1752M
@@ -302,7 +302,7 @@
   reference_id:
 - source_id: 101
   status: source
-  reference_id:
+  reference_id: 2015ApJ...808..110A
 - source_id: 102
   status: source
   reference_id: 2011A&A...531A..81H

@@ -23,4 +23,4 @@ spec:
       index: {val: 2.55, err: 0.13}
       e_ref: {val: 1, unit: TeV}
   phase: {min: 0.6, max: 0.8 }
-  erange: {min: 0.235, max: 10.5}
+  erange: {min: 0.235, max: 10.5, unit: TeV}

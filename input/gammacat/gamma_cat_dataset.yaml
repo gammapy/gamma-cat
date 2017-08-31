@@ -167,7 +167,7 @@
   reference_id: 2008ApJ...684L..73A, 2008ApJ...684L..73A, 2009ApJ...707..612A
 - source_id: 55
   status: source
-  reference_id: 2009ApJ...695.1370A, 2010ApJ...709L.163A
+  reference_id: 2009ApJ...695.1370A, 2010ApJ...709L.163A, 2006ApJ...642L.119A
 - source_id: 56
   status: source
   reference_id: 2011ApJ...730L...8A
@@ -413,7 +413,7 @@
   reference_id: 2016arXiv161005799S, 2011A&A...529A..49H
 - source_id: 138
   status: source
-  reference_id: 2003ApJ...583L...9H, 2003ICRC....5.2615T, 2003A&A...406L...9A, 2008ApJ...679.1029T, 2013ApJ...775....3A, 2005ApJ...621..181D
+  reference_id: 2003ApJ...583L...9H, 2003ICRC....5.2615T, 2003A&A...406L...9A, 2008ApJ...679.1029T, 2013ApJ...775....3A, 2005ApJ...621..181D, 2006ApJ...639..761A
 - source_id: 139
   status: source
   reference_id:

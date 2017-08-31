@@ -1,20 +1,14 @@
 source_id: 55
 reference_id: 2006ApJ...642L.119A
 telescope: magic
-data_entry_status: incomplete
 
 data:
   livetime: 8.2h
   significance: 6.4
   excess: 560
 
-pos:
-  ra: {val: 12h21m22s}
-  dec: {val: 30d10m38s}
-
 morph:
-  type: gauss
-  sigma: {val: 0.06}
+  type: point
 
 
 spec:

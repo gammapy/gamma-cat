@@ -1,0 +1,10 @@
+reference_id: 2008ApJ...684L..73A
+source_id: [54]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000054-sed.ecsv

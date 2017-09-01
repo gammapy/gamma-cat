@@ -1,0 +1,12 @@
+reference_id: 2011A&A...525A..45H
+source_id: [77]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000077-sed.ecsv
+  tev-000077.yaml

@@ -1,0 +1,10 @@
+reference_id: 2013arXiv1303.0979O
+source_id: [89]
+telescope: [hess]
+
+data_entry:
+  status: incomplete
+  reviewed: no
+
+datasets:
+  tev-000089.yaml

@@ -1,0 +1,10 @@
+reference_id: 2006ApJ...642L.119A
+source_id: [55]
+telescope: [magic]
+
+data_entry:
+  status: copmplete
+  reviewed: no
+
+datasets:
+  tev-000055.yaml

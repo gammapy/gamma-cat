@@ -1,0 +1,11 @@
+reference_id: 2003ICRC....5.2615T
+source_id: [138]
+telescope: [hegra]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000138-lc.ecsv
+

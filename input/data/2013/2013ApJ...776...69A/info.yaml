@@ -1,0 +1,10 @@
+reference_id: 2013ApJ...776...69A
+source_id: [23]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000023-sed.ecsv

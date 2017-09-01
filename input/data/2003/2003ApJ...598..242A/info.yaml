@@ -1,0 +1,10 @@
+reference_id: 2003ApJ...598..242A
+source_id: [49]
+telescope: [tibet]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000049-sed.ecsv

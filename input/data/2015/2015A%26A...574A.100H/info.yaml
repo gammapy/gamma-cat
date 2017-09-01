@@ -1,0 +1,12 @@
+reference_id: 2015A&A...574A.100H
+source_id: [98]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000098-sed.ecsv
+  tev-000098.yaml

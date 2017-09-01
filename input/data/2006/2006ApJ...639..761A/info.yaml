@@ -1,0 +1,11 @@
+reference_id: 2006ApJ...639..761A
+source_id: [138]
+telescope: [magic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000138.yaml
+

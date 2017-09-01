@@ -1,0 +1,12 @@
+reference_id: 2005A&A...442....1A
+source_id: [60]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000060-sed.ecsv
+  tev-000060.yaml

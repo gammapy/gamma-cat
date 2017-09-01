@@ -1,0 +1,10 @@
+reference_id: 2015NIMPA.770...42S
+source_id: [49]
+telescope: [tactic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000049-sed.ecsv

@@ -1,0 +1,10 @@
+reference_id: 2009ApJ...704L.129A
+source_id: [35]
+telescope: [magic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000035-sed.ecsv

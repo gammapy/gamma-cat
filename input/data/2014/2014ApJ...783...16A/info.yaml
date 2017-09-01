@@ -1,0 +1,12 @@
+reference_id: 2014ApJ...783...16A
+source_id: [146]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000146-sed.ecsv
+  tev-000146.yaml

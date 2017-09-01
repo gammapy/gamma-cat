@@ -1,0 +1,12 @@
+reference_id: 2011A&A...533A.103H
+source_id: [64]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000064-sed.ecsv
+  tev-000064.yaml

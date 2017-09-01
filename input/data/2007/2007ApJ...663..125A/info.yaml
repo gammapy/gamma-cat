@@ -1,0 +1,10 @@
+reference_id: 2007ApJ...663..125A
+source_id: [49]
+telescope: [magic]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  tev-000049-sed.ecsv

@@ -1,0 +1,12 @@
+reference_id: 2017ApJ...836...23A
+source_id: [3]
+telescope: [veritas]
+
+data_entry:
+  status: complete
+  reviewed: no
+  notes: Both datasets haven't been reviewed
+
+datasets:
+  tev-000003-sed.ecsv
+  tev-000003.yaml

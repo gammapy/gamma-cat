@@ -111,15 +111,20 @@ def make_checks(global_config, step):
     )
     Checker(config).run()
 
+
 # TODO: integrate this properly with 'make_checks' above
-# (add schema, do validation, ...)
 @cli.command(name='check-info-yaml')
 def check_into_yaml():
     """Check the info.yaml files in input/data"""
-    from gammacat.utils import load_yaml
+    from gammacat.utils import load_yaml, validate_schema
+
+    schema = load_yaml('input/schemas/dataset_info.schema.yaml')
+
     for path in Path('input/data').glob('*/*/info.yaml'):
         print(f'Checking: {path}')
-        load_yaml(path)
+        data = load_yaml(path)
+        validate_schema(path=path, data=data, schema=schema)
+
 
 @cli.command(name='all')
 @click.pass_context

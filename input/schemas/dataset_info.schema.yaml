@@ -3,8 +3,7 @@ additionalProperties: false
 properties:
 
   reference_id:
-    type: array
-    items: {type: string}
+    type: string
     description: Dataset reference identifier
 
   source_id:
@@ -18,10 +17,15 @@ properties:
     items: {type: string}
     description: Telescope or instrument or observatory
 
+  datasets:
+    type: array
+    items: {type: string}
+    description: Complete list of filenames with data for this dataset.
+
   data_entry:
     type: object
     additionalProperties: false
-    propoerties:
+    properties:
 
       status:
         enum: [missing, incomplete, complete]
@@ -36,8 +40,3 @@ properties:
         type: string
         description: |
           Hand-written notes concerning status or action items for data entry for this dataset.
-
-  datasets:
-    type: array
-    items: {type: string}
-    description: Complete list of filenames with data for this dataset.

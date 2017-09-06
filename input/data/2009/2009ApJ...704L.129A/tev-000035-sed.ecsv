@@ -8,7 +8,7 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 35}
-# - {reference_id: c}
+# - {reference_id: 2009ApJ...704L.129A}
 # - {telescope: magic}
 # - mjd: {max: 54581.0, min: 54408.0}
 # - {comments: This data was collected for 2015ApJ...812...60B and contributed to gamma-cat

@@ -1,8 +1,6 @@
 source_id: 39
 reference_id: 2016arXiv161101863H
 telescope: hess
-data_entry_status: complete
-review_required: yes
 
 data:
   livetime: 93.6h

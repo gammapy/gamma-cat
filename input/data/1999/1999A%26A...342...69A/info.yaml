@@ -1,0 +1,11 @@
+reference_id: 1999A&A...342...69A
+source_id: [91]
+telescope: [hegra]
+
+datasets:
+  - tev-000091.yaml
+  - tev-000091-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

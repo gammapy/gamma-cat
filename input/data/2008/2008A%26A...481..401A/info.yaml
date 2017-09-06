@@ -1,0 +1,14 @@
+reference_id: 2008A&A...481..401A
+source_id: [112, 156]
+telescope: [hess]
+
+datasets:
+  - tev-000112.yaml
+  - tev-000112-sed.ecsv
+
+  - tev-000156.yaml
+  - tev-000156-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

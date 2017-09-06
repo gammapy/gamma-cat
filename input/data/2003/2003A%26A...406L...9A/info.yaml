@@ -1,0 +1,11 @@
+reference_id: 2003A&A...406L...9A
+source_id: [138]
+telescope: [hegra]
+
+datasets:
+  - tev-000138-lc.ecsv
+  - tev-000138-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

@@ -1,0 +1,10 @@
+reference_id: 2005ApJ...621..181D
+source_id: [138]
+telescope: [whipple]
+
+datasets:
+  - tev-000138-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

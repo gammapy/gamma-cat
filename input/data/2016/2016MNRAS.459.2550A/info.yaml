@@ -1,0 +1,12 @@
+reference_id: 2016MNRAS.459.2550A
+source_id: [105]
+telescope: [veritas]
+
+datasets:
+  - tev-000105.yaml
+  - tev-000105-lc.ecsv
+  - tev-000105-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

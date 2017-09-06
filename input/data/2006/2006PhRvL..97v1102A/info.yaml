@@ -1,0 +1,10 @@
+reference_id: 2006PhRvL..97v1102A
+source_id: [106]
+telescope: [hess]
+
+datasets:
+  - tev-000106-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

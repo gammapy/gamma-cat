@@ -14,9 +14,6 @@ morph:
   type: gauss
   sigma: {val: 0.17d, err: 0.07d}
 
-# TODO: spectral points shown in Figure 2.
-# Email Raquel asking if they are available
-
 spec:
   model:
     type: pl

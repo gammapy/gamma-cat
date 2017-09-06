@@ -1,0 +1,10 @@
+reference_id: 2009ApJ...690L.126A
+source_id: [36]
+telescope: [veritas]
+
+datasets:
+  - tev-000036-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

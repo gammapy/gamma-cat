@@ -1,0 +1,13 @@
+reference_id: 2012arXiv1205.0719D
+source_id: [73]
+telescope: [hess]
+
+datasets:
+  - tev-000073.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: |
+   TODO: spectral points shown in Figure 2.
+   Email Raquel asking if they are available

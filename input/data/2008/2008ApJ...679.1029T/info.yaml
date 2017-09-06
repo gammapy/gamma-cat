@@ -1,0 +1,10 @@
+reference_id: 2008ApJ...679.1029T
+source_id: [138]
+telescope: [magic]
+
+datasets:
+  - tev-000138-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

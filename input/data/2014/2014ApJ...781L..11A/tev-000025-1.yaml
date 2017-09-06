@@ -6,11 +6,8 @@ telescope: veritas
 morph:
   type: point
 
-#############################################################
-# spectral fit results
-# (baseline spectral fit)
+# spectral fit results (baseline spectral fit)
 # obtained per email by G.Richards (2017-04-17)
-
 spec:
   model:
     type: pl

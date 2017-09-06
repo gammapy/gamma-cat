@@ -1,0 +1,12 @@
+reference_id: 2016arXiv161005799S
+source_id: [137]
+telescope: [veritas]
+
+datasets:
+  - tev-000137.yaml
+  - tev-000137-lc.ecsv
+  - tev-000137-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

@@ -1,0 +1,11 @@
+reference_id: 2005Sci...309..746A
+source_id: [119]
+telescope: [hess]
+
+datasets:
+  - tev-000119-sed.ecsv
+  - tev-000119.yaml
+
+data_entry:
+  status: complete
+  reviewed: no

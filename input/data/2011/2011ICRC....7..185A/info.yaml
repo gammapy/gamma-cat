@@ -1,0 +1,11 @@
+reference_id: 2011ICRC....7..185A
+source_id: [81]
+telescope: [hess]
+
+datasets:
+  - tev-000081.yaml
+  - tev-000081-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

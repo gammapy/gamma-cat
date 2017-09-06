@@ -1,0 +1,10 @@
+reference_id: 2014A&A...567L...8A
+source_id: [9]
+telescope: [magic]
+
+datasets:
+  - tev-000009.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no

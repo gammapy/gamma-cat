@@ -1,0 +1,10 @@
+reference_id: 2012JPhG...39d5201C
+source_id: [49]
+telescope: [tactic]
+
+datasets:
+  - tev-000049-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

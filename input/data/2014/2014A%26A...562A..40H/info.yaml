@@ -1,0 +1,11 @@
+reference_id: 2014A&A...562A..40H
+source_id: [117]
+telescope: [hess]
+
+datasets:
+  - tev-000117.yaml
+  - tev-000117-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

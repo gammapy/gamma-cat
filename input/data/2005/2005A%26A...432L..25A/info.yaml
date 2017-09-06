@@ -1,0 +1,11 @@
+reference_id: 2005A&A...432L..25A
+source_id: [110]
+telescope: [hess]
+
+datasets:
+  - tev-000110.yaml
+  - tev-000110-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

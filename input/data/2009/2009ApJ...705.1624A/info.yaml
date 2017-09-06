@@ -1,0 +1,10 @@
+reference_id: 2009ApJ...705.1624A
+source_id: [91]
+telescope: [magic]
+
+datasets:
+  - tev-000091-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

@@ -1,0 +1,10 @@
+reference_id: 2007ApJ...666L..17A
+source_id: [148]
+telescope: [magic]
+
+datasets:
+  - tev-000148-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

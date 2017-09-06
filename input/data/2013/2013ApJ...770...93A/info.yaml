@@ -1,0 +1,11 @@
+reference_id: 2013ApJ...770...93A
+source_id: [144]
+telescope: [veritas]
+
+datasets:
+  - tev-000144.yaml
+  - tev-000144-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

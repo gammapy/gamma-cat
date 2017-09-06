@@ -1,0 +1,10 @@
+reference_id: 2008A&A...477..481A
+source_id: [82]
+telescope: [hess]
+
+datasets:
+  - tev-000082-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

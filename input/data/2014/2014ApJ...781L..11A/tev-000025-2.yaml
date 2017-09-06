@@ -6,11 +6,8 @@ telescope: veritas
 morph:
   type: point
 
-#############################################################
-# spectral fit results
-# (flare spectral fit)
+# Spectral fit results (flare spectral fit)
 # obtained per email by G.Richards (2017-04-17)
-
 spec:
   mjd: {min: 56353.0, max: 56366.0}
   model:

@@ -1,0 +1,10 @@
+reference_id: 2013A&A...554A.107H
+source_id: [78]
+telescope: [hess]
+
+datasets:
+  - tev-000078-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

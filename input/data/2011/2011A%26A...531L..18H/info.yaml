@@ -1,0 +1,10 @@
+reference_id: 2011A&A...531L..18H
+source_id: [109]
+telescope: [hess]
+
+datasets:
+  - tev-000109.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no

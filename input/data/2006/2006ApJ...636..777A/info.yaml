@@ -1,0 +1,50 @@
+reference_id: 2006ApJ...636..777A
+source_id: [83, 84, 86, 87, 88, 92, 93, 95, 108, 113, 116, 118, 123, 124]
+telescope: [hess]
+
+data_entry:
+  status: complete
+  reviewed: no
+
+datasets:
+  - tev-000083.yaml
+  - tev-000083-sed.ecsv
+
+  - tev-000084.yaml
+  - tev-000084-sed.ecsv
+
+  - tev-000086.yaml
+  - tev-000086-sed.ecsv
+
+  - tev-000087.yaml
+  - tev-000087-sed.ecsv
+
+  - tev-000088.yaml
+  - tev-000088-sed.ecsv
+
+  - tev-000092.yaml
+  - tev-000092-sed.ecsv
+
+  - tev-000093.yaml
+  - tev-000093-sed.ecsv
+
+  - tev-000095.yaml
+  - tev-000095-sed.ecsv
+
+  - tev-000108.yaml
+  - tev-000108-sed.ecsv
+
+  - tev-000113.yaml
+  - tev-000113-sed.ecsv
+
+  - tev-000116.yaml
+  - tev-000116-sed.ecsv
+
+  - tev-000118.yaml
+  - tev-000118-sed.ecsv
+
+  - tev-000123.yaml
+  - tev-000123-sed.ecsv
+
+  - tev-000124.yaml
+  - tev-000124-sed.ecsv

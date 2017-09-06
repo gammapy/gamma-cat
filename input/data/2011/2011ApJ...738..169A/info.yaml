@@ -1,0 +1,11 @@
+reference_id: 2011ApJ...738..169A
+source_id: [154]
+telescope: [veritas]
+
+datasets:
+  - tev-000154-sed-1.ecsv
+  - tev-000154-sed-2.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

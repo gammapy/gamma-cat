@@ -1,0 +1,16 @@
+reference_id: 2010A&A...519A..32A
+source_id: [49]
+telescope: [magic]
+
+datasets:
+  - tev-000049-sed-1.ecsv
+  - tev-000049-sed-2.ecsv
+  - tev-000049-sed-3.ecsv
+  - tev-000049-sed-4.ecsv
+  - tev-000049-sed-5.ecsv
+  - tev-000049-sed-6.ecsv
+  - tev-000049-sed-7.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

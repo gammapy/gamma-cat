@@ -1,0 +1,10 @@
+reference_id: 2010A&A...520A..83H
+source_id: [147]
+telescope: [hess]
+
+datasets:
+  - tev-000147-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

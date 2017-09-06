@@ -1,0 +1,10 @@
+reference_id: 2012A&A...544A..75A
+source_id: [147]
+telescope: [magic]
+
+datasets:
+  - tev-000147-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

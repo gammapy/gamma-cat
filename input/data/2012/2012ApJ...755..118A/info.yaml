@@ -1,0 +1,10 @@
+reference_id: 2012ApJ...755..118A
+source_id: [20]
+telescope: [veritas]
+
+datasets:
+  - tev-000020-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

@@ -1,0 +1,12 @@
+reference_id: 2014A&A...567A.135A
+source_id: [67]
+telescope: [magic]
+
+datasets:
+  - tev-000067-sed-1.ecsv
+  - tev-000067-sed-2.ecsv
+  - tev-000067-sed-3.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

@@ -1,0 +1,15 @@
+reference_id: 2007A&A...472..489A
+source_id: [99, 115]
+telescope: [hess]
+
+datasets:
+  - tev-000099.yaml
+  - tev-000099-sed.ecsv
+
+  - tev-000115.yaml
+  - tev-000115-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: clarify origin and check values of spectral points

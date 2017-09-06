@@ -1,0 +1,16 @@
+reference_id: 2016ApJ...817L...7A
+source_id: [14]
+telescope: [veritas]
+
+datasets:
+  - tev-000014-1.yaml
+  - tev-000014-2.yaml
+  - tev-000014-3.yaml
+  - tev-000014-lc-1.ecsv
+  - tev-000014-sed-1.ecsv
+  - tev-000014-sed-2.ecsv
+  - tev-000014-sed-3.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

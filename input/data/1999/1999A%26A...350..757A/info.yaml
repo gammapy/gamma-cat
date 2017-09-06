@@ -1,0 +1,11 @@
+reference_id: 1999A&A...350..757A
+source_id: [49]
+telescope: [hegra]
+
+datasets:
+  - tev-000049.yaml
+  - tev-000049-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

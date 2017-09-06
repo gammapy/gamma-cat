@@ -1,0 +1,12 @@
+reference_id: 2010A&A...516A..56H
+source_id: [155]
+telescope: [hess]
+
+datasets:
+  - tev-000155-sed-1.ecsv
+  - tev-000155-sed-2.ecsv
+  - tev-000155-sed-3.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

@@ -1,0 +1,11 @@
+reference_id: 2006ApJ...639..761A
+source_id: [138]
+telescope: [magic]
+
+datasets:
+  - tev-000138.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: spectral points missing

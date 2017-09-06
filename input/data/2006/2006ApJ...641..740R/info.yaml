@@ -1,0 +1,11 @@
+reference_id: 2006ApJ...641..740R
+source_id: [49]
+telescope: [whipple]
+
+datasets:
+  - tev-000049.yaml
+  - tev-000049-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

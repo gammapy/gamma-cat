@@ -1,0 +1,19 @@
+reference_id: 2017arXiv170804045M
+source_id: [30]
+telescope: [veritas]
+
+datasets:
+  - tev-000030-1.yaml
+  - tev-000030-2.yaml
+  - tev-000030-3.yaml
+  - tev-000030-4.yaml
+  - tev-000030-5.yaml
+  - tev-000030-lc.ecsv
+  - tev-000030-sed-1.ecsv
+  - tev-000030-sed-2.ecsv
+  - tev-000030-sed-4.ecsv
+  - tev-000030-sed-5.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

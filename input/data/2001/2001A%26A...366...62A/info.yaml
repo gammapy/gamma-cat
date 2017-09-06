@@ -1,0 +1,10 @@
+reference_id: 2001A&A...366...62A
+source_id: [91]
+telescope: [hegra]
+
+datasets:
+  - tev-000091-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

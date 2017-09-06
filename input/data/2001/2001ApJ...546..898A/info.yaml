@@ -1,0 +1,10 @@
+reference_id: 2001ApJ...546..898A
+source_id: [91]
+telescope: [hegra]
+
+datasets:
+  - tev-000091-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

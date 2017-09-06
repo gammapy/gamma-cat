@@ -1,0 +1,11 @@
+reference_id: 2016arXiv160605404A
+source_id: [114]
+telescope: [hess]
+
+datasets:
+  - tev-000114.yaml
+  - tev-000114-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

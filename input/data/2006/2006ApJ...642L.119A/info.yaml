@@ -1,0 +1,11 @@
+reference_id: 2006ApJ...642L.119A
+source_id: [55]
+telescope: [magic]
+
+datasets:
+  - tev-000055.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: spectral points missing

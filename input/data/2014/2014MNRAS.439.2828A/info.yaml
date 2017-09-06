@@ -1,0 +1,11 @@
+reference_id: 2014MNRAS.439.2828A
+source_id: [88]
+telescope: [hess]
+
+datasets:
+  - tev-000088.yaml
+  - tev-000088-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

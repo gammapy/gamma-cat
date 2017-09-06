@@ -1,0 +1,11 @@
+reference_id: 2014ApJ...794L...1A
+source_id: [89]
+telescope: [hess]
+
+datasets:
+  - tev-000089.yaml
+  - tev-000089-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

@@ -1,0 +1,10 @@
+reference_id: 2015arXiv151100309G
+source_id: [153]
+telescope: [veritas]
+
+datasets:
+  - tev-000153.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no

@@ -1,0 +1,10 @@
+reference_id: 2008A&A...481L.103A
+source_id: [8]
+telescope: [hess]
+
+datasets:
+  - tev-000008-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

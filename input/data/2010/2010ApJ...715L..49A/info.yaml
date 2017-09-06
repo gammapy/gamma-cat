@@ -1,0 +1,10 @@
+reference_id: 2010ApJ...715L..49A
+source_id: [34]
+telescope: [veritas]
+
+datasets:
+  - tev-000034-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

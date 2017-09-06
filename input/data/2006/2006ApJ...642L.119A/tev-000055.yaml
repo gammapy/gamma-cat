@@ -10,7 +10,6 @@ data:
 morph:
   type: point
 
-
 spec:
   model:
     type: pl

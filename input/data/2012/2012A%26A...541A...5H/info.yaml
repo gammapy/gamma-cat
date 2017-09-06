@@ -1,0 +1,12 @@
+reference_id: 2012A&A...541A...5H
+source_id: [44, 45]
+telescope: [hess]
+
+datasets:
+  - tev-000044.yaml
+  - tev-000045.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: spectral points missing?

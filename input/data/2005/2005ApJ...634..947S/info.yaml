@@ -1,0 +1,10 @@
+reference_id: 2005ApJ...634..947S
+source_id: [154]
+telescope: [whipple]
+
+datasets:
+  - tev-000154-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

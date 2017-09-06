@@ -1,0 +1,10 @@
+reference_id: 1996ApJ...460..644S
+source_id: [49]
+telescope: [whipple]
+
+datasets:
+  - tev-000049-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

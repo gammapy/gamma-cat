@@ -1,0 +1,12 @@
+reference_id: 2008A&A...490..685A
+source_id: [97]
+telescope: [hess]
+
+datasets:
+  - tev-000097.yaml
+  - tev-000097-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: SED file mentions that origin of points needs to be clarified

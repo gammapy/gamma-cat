@@ -1,0 +1,14 @@
+reference_id: 2011A&A...525A..46H
+source_id: [46, 47]
+telescope: [hess]
+
+datasets:
+  - tev-000046.yaml
+  - tev-000046-sed.ecsv
+
+  - tev-000047.yaml
+  - tev-000047-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

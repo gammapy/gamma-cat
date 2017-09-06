@@ -1,0 +1,13 @@
+reference_id: 2013ApJ...779...92A
+source_id: [53]
+telescope: [veritas]
+
+datasets:
+  - tev-000053.yaml
+  - tev-000053-lc-1.ecsv
+  - tev-000053-lc-2.ecsv
+  - tev-000053-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

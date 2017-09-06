@@ -11,8 +11,8 @@ pos:
   ra: {val: 2h05m31s, err: 0h0m9s, err_sys: 0h0m11s}
   dec: {val: +64d51m, err: 1m, err_sys: 1m}
 
+# The extension of the VHE source is compatible with the instrument PSF.
 morph:
-  # The extension of the VHE source is compatible with the instrument PSF.
   type: point
 
 spec:

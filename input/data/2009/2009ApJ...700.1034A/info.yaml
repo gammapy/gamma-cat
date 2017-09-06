@@ -1,0 +1,13 @@
+reference_id: 2009ApJ...700.1034A
+source_id: [14]
+telescope: [veritas]
+
+datasets:
+  - tev-000014-1.yaml
+  - tev-000014-2.yaml
+  - tev-000014-lc.ecsv
+  - tev-000014-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

@@ -1,0 +1,13 @@
+reference_id: 2002A&A...393...89A
+source_id: [49]
+telescope: [hegra]
+
+datasets:
+  - tev-000049.yaml
+  - tev-000049-lc.ecsv
+  - tev-000049-sed-1.ecsv
+  - tev-000049-sed-2.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

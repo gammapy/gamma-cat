@@ -1,0 +1,11 @@
+reference_id: 2005A&A...437L...7A
+source_id: [39]
+telescope: [hess]
+
+datasets:
+  - tev-000039.yaml
+  - tev-000039-sed.ecsv
+
+data_entry:
+  status: complete
+  reviewed: no

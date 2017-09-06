@@ -1,0 +1,43 @@
+type: object
+additionalProperties: false
+properties:
+
+  reference_id:
+    type: array
+    items: {type: string}
+    description: Dataset reference identifier
+
+  source_id:
+    type: array
+    items: {type: integer}
+    description: Unique source identifier integer in gamma-cat
+
+  # TODO: use enum for validation
+  telescope:
+    type: array
+    items: {type: string}
+    description: Telescope or instrument or observatory
+
+  data_entry:
+    type: object
+    additionalProperties: false
+    propoerties:
+
+      status:
+        enum: [missing, incomplete, complete]
+        description: Status of data entry
+
+      reviewed:
+        enum: [yes, no]
+        description: |
+          Has this data entry been reviewed, i.e. checked for completeness and accuracy?
+
+      notes:
+        type: string
+        description: |
+          Hand-written notes concerning status or action items for data entry for this dataset.
+
+  datasets:
+    type: array
+    items: {type: string}
+    description: Complete list of filenames with data for this dataset.

@@ -1,0 +1,23 @@
+# List of MAGIC publications from https://magic.mpp.mpg.de/backend/publications/articles
+# Last updated September 6, 2017 by Christoph Deil
+# Reverse chronological order
+
+# https://magic.mpp.mpg.de/backend/publications/articles/2017
+
+- url: https://magic.mpp.mpg.de/backend/publication/show/368
+  ads: http://adsabs.harvard.edu/abs/2017MNRAS.470.4608A
+  source: PSR B1957+20
+  source_id: doesn't exist so far
+
+- url: https://magic.mpp.mpg.de/backend/publication/show/364
+  ads: http://adsabs.harvard.edu/abs/2017A%26A...601A..33A
+  source: Galactic center
+  source_id: 106
+
+- url: https://magic.mpp.mpg.de/backend/publication/show/386
+  ads: http://adsabs.harvard.edu/abs/2017arXiv170803689M
+  source: microquasar Cygnus X-1
+  source_id: doesn't exist so far
+
+# TODO: add `info.yaml` and entries here for older papers, starting with 2016, then 2015, ...
+# either as one pull request, or one per year.

@@ -2,12 +2,11 @@ reference_id: 2012ApJ...748...46A
 source_id: [82]
 telescope: [magic]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: All datasets haven't been reviewed
-
 datasets:
-  tev-000082-sed-1.ecsv
-  tev-000082-sed-2.ecsv
-  tev-000082-sed-3.ecsv
+  - tev-000082-sed-1.ecsv
+  - tev-000082-sed-2.ecsv
+  - tev-000082-sed-3.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

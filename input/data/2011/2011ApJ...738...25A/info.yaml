@@ -2,16 +2,15 @@ reference_id: 2011ApJ...738...25A
 source_id: [49]
 telescope: [veritas]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: All datasets haven't been reviewed
-
 datasets:
-  tev-000049-sed-1.ecsv
-  tev-000049-sed-2.ecsv
-  tev-000049-sed-3.ecsv
-  tev-000049-sed-4.ecsv
-  tev-000049-sed-5.ecsv
-  tev-000049-sed-6.ecsv
-  tev-000049-sed-7.ecsv
+  - tev-000049-sed-1.ecsv
+  - tev-000049-sed-2.ecsv
+  - tev-000049-sed-3.ecsv
+  - tev-000049-sed-4.ecsv
+  - tev-000049-sed-5.ecsv
+  - tev-000049-sed-6.ecsv
+  - tev-000049-sed-7.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

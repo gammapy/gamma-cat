@@ -2,11 +2,12 @@ reference_id: 2012ApJ...746..151A
 source_id: [58]
 telescope: [magic, veritas, hess]
 
+datasets:
+  - tev-000058.yaml
+  - tev-000058-lc.ecsv
+
 data_entry:
-  status: complete
+  status: incomplete
   reviewed: no
   notes: |
     The yaml dataset has no TODO remarks but only very little data
-
-datasets:
-

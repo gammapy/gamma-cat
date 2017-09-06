@@ -2,23 +2,22 @@ reference_id: 2014ApJ...780..168A
 source_id: [30]
 telescope: [hess, veritas]
 
+datasets:
+  - tev-000030-1.yaml
+  - tev-000030-2.yaml
+  - tev-000030-3.yaml
+  - tev-000030-4.yaml
+  - tev-000030-5.yaml
+  - tev-000030-6.yaml
+  - tev-000030-lc-1.ecsv
+  - tev-000030-lc-2.ecsv
+  - tev-000030-sed-1.ecsv
+  - tev-000030-sed-2.ecsv
+  - tev-000030-sed-3.ecsv
+  - tev-000030-sed-4.ecsv
+  - tev-000030-sed-5.ecsv
+  - tev-000030-sed-6.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: All datasets haven't been reviewed
-
-datasets:
-  tev-000030-1.yaml
-  tev-000030-2.yaml
-  tev-000030-3.yaml
-  tev-000030-4.yaml
-  tev-000030-5.yaml
-  tev-000030-6.yaml
-  tev-000030-lc-1.ecsv
-  tev-000030-lc-2.ecsv
-  tev-000030-sed-1.ecsv
-  tev-000030-sed-2.ecsv
-  tev-000030-sed-3.ecsv
-  tev-000030-sed-4.ecsv
-  tev-000030-sed-5.ecsv
-  tev-000030-sed-6.ecsv

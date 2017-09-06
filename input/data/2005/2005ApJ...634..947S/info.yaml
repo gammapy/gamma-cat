@@ -2,9 +2,9 @@ reference_id: 2005ApJ...634..947S
 source_id: [154]
 telescope: [whipple]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000154-sed.ecsv
+  - tev-000154-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

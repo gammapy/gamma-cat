@@ -1,10 +1,13 @@
 reference_id: 2008AIPC.1085..285R
-source_id: [64]
+source_id: [64, 115, 134]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000064.yaml
+  - tev-000064.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: |
+    TODO: The proceeding contains measurements for three sources.
+    TODO: The proceeding shows SED points that we still need to get.

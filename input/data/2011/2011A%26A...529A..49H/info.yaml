@@ -2,9 +2,10 @@ reference_id: 2011A&A...529A..49H
 source_id: [137]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000137.yaml
+  - tev-000137.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: SED missing

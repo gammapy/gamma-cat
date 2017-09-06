@@ -2,12 +2,11 @@ reference_id: 2015ApJ...815L..22A
 source_id: [167]
 telescope: [veritas]
 
+datasets:
+  - tev-000167.yaml
+  - tev-000167-lc.ecsv
+  - tev-000167-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: All datasets haven't been reviewed
-
-datasets:
-  tev-000167-lc.ecsv
-  tev-000167-sed.ecsv
-  tev-000167.yaml

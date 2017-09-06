@@ -6,7 +6,6 @@ data:
   livetime: 147h
   significance: 6.9
 
-
 pos:
   ra: {val: 0h25m21.60s, err: 0h0m7.20s, err_sys:  0.006 deg}
   dec: {val: 64d7m48s, err: 0d1m12s, err_sys:  0.006 deg}

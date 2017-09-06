@@ -8,8 +8,8 @@ data:
   excess: 134.
 
 pos:
-    glon: {val: 0.86d, err: 0.015d, err_sys: 0.013d}
-    glat: {val: 0.067d, err: 0.02d, err_sys: 0.013d}
+  glon: {val: 0.86d, err: 0.015d, err_sys: 0.013d}
+  glat: {val: 0.067d, err: 0.02d, err_sys: 0.013d}
 
 spec:
   erange: {min: 0.3, max: 30., unit: TeV}

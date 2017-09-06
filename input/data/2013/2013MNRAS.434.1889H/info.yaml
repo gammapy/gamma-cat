@@ -2,9 +2,9 @@ reference_id: 2013MNRAS.434.1889H
 source_id: [62]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000062-sed.ecsv
+  - tev-000062-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

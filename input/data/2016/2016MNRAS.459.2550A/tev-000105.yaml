@@ -7,10 +7,9 @@ data:
   significance: 5.9
 
 pos:
-    # from fit to VERITAS data
-    ra: {val: 17h44m1.2s, err: 2.4s, err_sys: 25s }
-    dec: {val: +19d32m47s, err: 47s, err_sys: 25s }
-
+  # from fit to VERITAS data
+  ra: {val: 17h44m1.2s, err: 2.4s, err_sys: 25s }
+  dec: {val: +19d32m47s, err: 47s, err_sys: 25s }
 
 spec:
   mjd: {min: 54940., max: 56834.}

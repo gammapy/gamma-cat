@@ -2,9 +2,9 @@ reference_id: 2009ApJ...696L.150A
 source_id: [147]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000147-sed.ecsv
+  - tev-000147-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

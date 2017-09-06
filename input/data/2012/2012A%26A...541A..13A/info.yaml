@@ -2,9 +2,9 @@ reference_id: 2012A&A...541A..13A
 source_id: [135]
 telescope: [magic]
 
+datasets:
+  - tev-000135.yaml
+
 data_entry:
   status: incomplete
   reviewed: no
-
-datasets:
-  tev-000135.yaml

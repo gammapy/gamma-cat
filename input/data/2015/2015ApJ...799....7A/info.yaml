@@ -2,9 +2,9 @@ reference_id: 2015ApJ...799....7A
 source_id: [82]
 telescope: [veritas]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000082-sed.ecsv
+  - tev-000082-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

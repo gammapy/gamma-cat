@@ -2,9 +2,9 @@ reference_id: 2012A&A...542A..94H
 source_id: [42]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000042-sed.ecsv
+  - tev-000042-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

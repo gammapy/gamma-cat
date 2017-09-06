@@ -2,9 +2,9 @@ reference_id: 2008Sci...320.1752M
 source_id: [59]
 telescope: [magic]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000059-sed.ecsv
+  - tev-000059-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

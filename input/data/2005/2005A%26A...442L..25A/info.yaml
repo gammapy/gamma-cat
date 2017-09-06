@@ -2,14 +2,10 @@ reference_id: 2005A&A...442L..25A
 source_id: [118]
 telescope: [hess]
 
+datasets:
+  - tev-000118.yaml
+  - tev-000118-sed.ecsv
+
 data_entry:
   status: incomplete
   reviewed: no
-  notes: |
-    ecsv dataset is complete but not reviewed
-    the yaml dataset is incomplete
-
-datasets:
-  tev-000118-sed.ecsv
-  tev-000118.yaml
-

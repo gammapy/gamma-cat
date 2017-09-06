@@ -2,14 +2,12 @@ reference_id: 2006A&A...460..743A
 source_id: [119]
 telescope: [hess]
 
+datasets:
+  - tev-000119.yaml
+  - tev-000119-lc.ecsv
+  - tev-000119-sed-1.ecsv
+  - tev-000119-sed-2.ecsv
+
 data_entry:
   status: incomplete
-  notes: |
-    ecsv-files are complete but not reviewed
-    yaml-file is incomplete
-
-datasets:
-  tev-000119.yaml
-  tev-000119-sed-1.ecsv
-  tev-000119-sed-2.ecsv
-  tev-000119-lc.ecsv
+  reviewed: no

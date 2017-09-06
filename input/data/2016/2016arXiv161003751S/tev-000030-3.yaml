@@ -6,12 +6,12 @@ telescope: veritas
 # Astronomy (Gamma2016), Heidelberg, Germany
 
 morph:
-    type: point
+  type: point
 
 orbit:
-    # zero phase for orbital period
-    mjd0: 54857d     # arbitarily set to the date of the first Swift observations
-    period: {val: 315, errp: 6, errn: 4, unit: day}
+  # zero phase for orbital period
+  mjd0: 54857d     # arbitarily set to the date of the first Swift observations
+  period: {val: 315, errp: 6, errn: 4, unit: day}
 
 #############################################################
 # spectral results are given for different orbital phases

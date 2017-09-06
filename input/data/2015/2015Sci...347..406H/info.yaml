@@ -2,15 +2,16 @@ reference_id: 2015Sci...347..406H
 source_id: [24, 26, 27]
 telescope: [hess]
 
+datasets:
+  - tev-000024.yaml
+  - tev-000024-sed.ecsv
+
+  - tev-000026.yaml
+  - tev-000026-sed.ecsv
+
+  - tev-000027.yaml
+  - tev-000027-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: All datasets haven't been reviewed
-
-datasets:
-  tev-000024-sed.ecsv
-  tev-000024.yaml
-  tev-000026-sed.ecsv
-  tev-000026.yaml
-  tev-000027-sed.ecsv
-  tev-000027.yaml

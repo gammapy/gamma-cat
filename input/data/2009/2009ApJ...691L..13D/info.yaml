@@ -2,9 +2,9 @@ reference_id: 2009ApJ...691L..13D
 source_id: [49]
 telescope: [magic, veritas]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000049-lc.ecsv
+  - tev-000049-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

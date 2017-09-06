@@ -2,9 +2,9 @@ reference_id: 1996ApJ...472L...9B
 source_id: [49]
 telescope: [whipple]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000049-lc.ecsv
+  - tev-000049-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

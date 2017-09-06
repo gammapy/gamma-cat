@@ -2,11 +2,11 @@ reference_id: 2008A&A...483..509A
 source_id: [108]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: Both datasets haven't been reviewed.
-
 datasets:
-  tev-000108-sed.ecsv
-  tev-000108.yaml
+  - tev-000108.yaml
+  - tev-000108-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: SED file mentions a second SED that should be added

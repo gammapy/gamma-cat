@@ -2,12 +2,11 @@ reference_id: 2013ApJ...779...88A
 source_id: [14]
 telescope: [veritas]
 
+datasets:
+  - tev-000014.yaml
+  - tev-000014-lc.ecsv
+  - tev-000014-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: All datasets haven't been reviewed
-
-datasets:
-  tev-000014-lc.ecsv
-  tev-000014-sed.ecsv
-  tev-000014.yaml

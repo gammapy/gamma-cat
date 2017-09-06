@@ -2,25 +2,31 @@ reference_id: 2008A&A...477..353A
 source_id: [68, 85, 92, 93, 103, 125, 130, 131]
 telescope: [hess]
 
+datasets:
+  - tev-000068.yaml
+  - tev-000068-sed.ecsv
+
+  - tev-000085.yaml
+  - tev-000085-sed.ecsv
+
+  - tev-000092.yaml
+  - tev-000092-sed.ecsv
+
+  - tev-000093.yaml
+  - tev-000093-sed.ecsv
+
+  - tev-000103.yaml
+  - tev-000103-sed.ecsv
+
+  - tev-000125.yaml
+  - tev-000125-sed.ecsv
+
+  - tev-000130.yaml
+  - tev-000130-sed.ecsv
+
+  - tev-000131.yaml
+  - tev-000131-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: All datasets haven't been reviewed.
-
-datasets:
-  tev-000068-sed.ecsv
-  tev-000068.yaml
-  tev-000085-sed.ecsv
-  tev-000085.yaml
-  tev-000092-sed.ecsv
-  tev-000092.yaml
-  tev-000093-sed.ecsv
-  tev-000093.yaml
-  tev-000103-sed.ecsv
-  tev-000103.yaml
-  tev-000125-sed.ecsv
-  tev-000125.yaml
-  tev-000130-sed.ecsv
-  tev-000130.yaml
-  tev-000131-sed.ecsv
-  tev-000131.yaml

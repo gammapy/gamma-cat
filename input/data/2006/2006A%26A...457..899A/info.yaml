@@ -2,11 +2,10 @@ reference_id: 2006A&A...457..899A
 source_id: [25]
 telescope: [hess]
 
+datasets:
+  - tev-000025.yaml
+  - tev-000025-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: Both datasets haven't been reviewed
-
-datasets:
-  tev-000025-sed.ecsv
-  tev-000025.yaml

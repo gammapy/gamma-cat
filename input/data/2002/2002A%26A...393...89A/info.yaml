@@ -2,13 +2,12 @@ reference_id: 2002A&A...393...89A
 source_id: [49]
 telescope: [hegra]
 
-data_entry:
-  status: missing
-  reviewed: no
-  notes: The ecsv datasets contain data, the yaml dataset not
-
 datasets:
-  tev-000049-lc.ecsv
-  tev-000049-sed-1.ecsv
-  tev-000049-sed-2.ecsv
-  tev-000049.yaml
+  - tev-000049.yaml
+  - tev-000049-lc.ecsv
+  - tev-000049-sed-1.ecsv
+  - tev-000049-sed-2.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

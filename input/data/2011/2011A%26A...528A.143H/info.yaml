@@ -2,11 +2,11 @@ reference_id: 2011A&A...528A.143H
 source_id: [94]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: Both datasets haven't been reviewed
-
 datasets:
-  tev-000094-sed.ecsv
-  tev-000094.yaml
+  - tev-000094.yaml
+  - tev-000094-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: SED contains TODO that origin of points is unclear

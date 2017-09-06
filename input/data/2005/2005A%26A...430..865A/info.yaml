@@ -2,16 +2,14 @@ reference_id: 2005A&A...430..865A
 source_id: [147]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: All datasets have not been reviewed
-
 datasets:
-  tev-000147-sed-1.ecsv
-  tev-000147-sed-2.ecsv
-  tev-000147-sed-3.ecsv
-  tev-000147-sed-4.ecsv
-  tev-000147-sed-5.ecsv
-  tev-000147-sed-6.ecsv
+  - tev-000147-sed-1.ecsv
+  - tev-000147-sed-2.ecsv
+  - tev-000147-sed-3.ecsv
+  - tev-000147-sed-4.ecsv
+  - tev-000147-sed-5.ecsv
+  - tev-000147-sed-6.ecsv
 
+data_entry:
+  status: incomplete
+  reviewed: no

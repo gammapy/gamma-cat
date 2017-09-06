@@ -2,13 +2,10 @@ reference_id: 2017arXiv170107002A
 source_id: [161]
 telescope: [hess]
 
+datasets:
+  - tev-000161.yaml
+  - tev-000161-sed.ecsv
+
 data_entry:
   status: incomplete
   reviewed: no
-  notes: |
-    The ecsv dataset is complete but not reviewed
-    the yaml dataset is incomplete
-
-datasets:
-  tev-000161-sed.ecsv
-  tev-000161.yaml

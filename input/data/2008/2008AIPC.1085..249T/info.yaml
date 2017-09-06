@@ -2,8 +2,9 @@ reference_id: 2008AIPC.1085..249T
 source_id: [104]
 telescope: [hess]
 
+datasets:
+  - tev-000104.yaml
+
 data_entry:
   status: incomplete
-
-datasets:
-  tev-000104.yaml
+  reviewed: no

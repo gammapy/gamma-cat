@@ -2,13 +2,10 @@ reference_id: 2009A&A...499..723A
 source_id: [132]
 telescope: [hess]
 
+datasets:
+  - tev-000132.yaml
+  - tev-000132-sed.ecsv
+
 data_entry:
   status: incomplete
   reviewed: no
-  notes: |
-    ecsv-dataset is complete but not reviewed
-    yaml-dataset is incomplete
-
-datasets:
-  tev-000132-sed.ecsv
-  tev-000132.yaml

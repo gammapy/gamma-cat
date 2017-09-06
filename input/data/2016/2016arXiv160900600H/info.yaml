@@ -2,11 +2,10 @@ reference_id: 2016arXiv160900600H
 source_id: [133]
 telescope: [hess]
 
+datasets:
+  - tev-000133.yaml
+  - tev-000133-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: Both datasets haven't been reviewed
-
-datasets:
-  tev-000133-sed.ecsv
-  tev-000133.yaml

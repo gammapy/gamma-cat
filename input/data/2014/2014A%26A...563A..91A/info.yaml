@@ -2,11 +2,10 @@ reference_id: 2014A&A...563A..91A
 source_id: [16]
 telescope: [magic]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: Both datasets haven't been reviewed
-
 datasets:
-  tev-000016-sed-1.ecsv
-  tev-000016-sed-2.ecsv
+  - tev-000016-sed-1.ecsv
+  - tev-000016-sed-2.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

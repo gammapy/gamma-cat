@@ -3,8 +3,8 @@ source_id: [49]
 telescope: [whipple]
 
 datasets:
-  tev-000049-lc.ecsv
+  - tev-000049-lc.ecsv
 
 data_entry:
-  status: complete
+  status: incomplete
   reviewed: no

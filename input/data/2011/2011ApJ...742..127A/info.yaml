@@ -2,11 +2,10 @@ reference_id: 2011ApJ...742..127A
 source_id: [32]
 telescope: [veritas]
 
+datasets:
+  - tev-000032.yaml
+  - tev-000032-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: Both datasets haven't been reviewed
-
-datasets:
-  tev-000032-sed.ecsv
-  tev-000032.yaml

@@ -2,9 +2,9 @@ reference_id: 2007ApJ...667L..21A
 source_id: [43]
 telescope: [magic]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000043-sed.ecsv
+  - tev-000043-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

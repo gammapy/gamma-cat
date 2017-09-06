@@ -2,9 +2,9 @@ reference_id: 2015arXiv151201911H
 source_id: [29]
 telescope: [veritas]
 
+datasets:
+  - tev-000029.yaml
+
 data_entry:
   status: incomplete
   reviewed: no
-
-datasets:
-  tev-000029.yaml

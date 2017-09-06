@@ -8,13 +8,13 @@ data:
   excess: 134.
 
 pos:
-    glon: {val: 0.055d, err: 0.01d, err_sys: 0.013d}
-    glat: {val: -0.148d, err: 0.01d, err_sys: 0.013d}
+  glon: {val: 0.055d, err: 0.01d, err_sys: 0.013d}
+  glat: {val: -0.148d, err: 0.01d, err_sys: 0.013d}
 
 morph:
-    type: gauss
-    # sigma_l and sigma_b (no errors are given)
-    sigma: {val: 0.08d}
-    sigma2: {val: 0.03d}
-    # rotation angle with respect to galactic latitude
-    pa: {frame: galactic, val: 15.4d}
+  type: gauss
+  # sigma_l and sigma_b (no errors are given)
+  sigma: {val: 0.08d}
+  sigma2: {val: 0.03d}
+  # rotation angle with respect to galactic latitude
+  pa: {frame: galactic, val: 15.4d}

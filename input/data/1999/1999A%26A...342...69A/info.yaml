@@ -2,11 +2,10 @@ reference_id: 1999A&A...342...69A
 source_id: [91]
 telescope: [hegra]
 
-data_entry:
-  status: missing
-  reviewed: no
-  notes: The yaml dataset has no data, the lightcurve dataset has
-
 datasets:
-  tev-000091.yaml
-  tev-000091-lc.ecsv
+  - tev-000091.yaml
+  - tev-000091-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

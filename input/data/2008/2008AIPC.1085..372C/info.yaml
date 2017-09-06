@@ -2,11 +2,11 @@ reference_id: 2008AIPC.1085..372C
 source_id: [128]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: Both datasets haven't been reviewed.
-
 datasets:
-  tev-000128-sed.ecsv
-  tev-000128.yaml
+  - tev-000128.yaml
+  - tev-000128-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: SED file mentions that origin of points needs to be clarified.

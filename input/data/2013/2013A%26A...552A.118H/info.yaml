@@ -2,9 +2,9 @@ reference_id: 2013A&A...552A.118H
 source_id: [21]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000021-sed.ecsv
+  - tev-000021-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

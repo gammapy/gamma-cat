@@ -2,7 +2,6 @@ source_id: 117
 reference_id: 2014A&A...562A..40H
 telescope: hess
 
-
 data:
   livetime: 120h
   significance: 8.2

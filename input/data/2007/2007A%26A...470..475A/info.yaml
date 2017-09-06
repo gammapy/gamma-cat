@@ -2,9 +2,9 @@ reference_id: 2007A&A...470..475A
 source_id: [48]
 telescope: [hess]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000048-sed.ecsv
+  - tev-000048-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

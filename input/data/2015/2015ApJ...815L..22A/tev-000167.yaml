@@ -6,6 +6,9 @@ data:
   livetime: 15.h
   significance: 7.0
 
+morph:
+  type: point
+
 spec:
   mjd: {min: 57133., max: 57140.}
   erange: {min: 0.08, max: 0.25, unit: TeV}

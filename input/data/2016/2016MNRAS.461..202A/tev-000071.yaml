@@ -3,10 +3,8 @@ reference_id: 2016MNRAS.461..202A
 telescope: veritas
 
 pos:
-    ra: {val: 14h43m15s, err: 0h0m1s, err_sys: 25s }
-    dec: {val: +12d00m11s, err: 1s, err_sys: 25s }
-
-
+  ra: {val: 14h43m15s, err: 0h0m1s, err_sys: 25s }
+  dec: {val: +12d00m11s, err: 1s, err_sys: 25s }
 
 spec:
   model:

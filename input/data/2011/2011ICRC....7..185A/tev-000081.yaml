@@ -2,7 +2,6 @@ source_id: 81
 reference_id: 2011ICRC....7..185A
 telescope: hess
 
-
 data:
   livetime: 45h
   excess: 109

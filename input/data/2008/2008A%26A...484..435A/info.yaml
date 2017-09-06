@@ -2,11 +2,10 @@ reference_id: 2008A&A...484..435A
 source_id: [134]
 telescope: [hess]
 
+datasets:
+  - tev-000134.yaml
+  - tev-000134-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: Both datasets haven't been reviewed.
-
-datasets:
-  tev-000134-sed.ecsv
-  tev-000134.yaml

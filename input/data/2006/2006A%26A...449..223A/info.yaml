@@ -2,9 +2,9 @@ reference_id: 2006A&A...449..223A
 source_id: [96]
 telescope: [hess]
 
+datasets:
+  - tev-000096.yaml
+
 data_entry:
   status: missing
-
-datasets:
-  tev-000096.yaml
-
+  reviewed: no

@@ -1,12 +1,11 @@
 reference_id: 2016arXiv161005799S
 source_id: [39]
-telescope: [veritas]
+telescope: [hess]
+
+datasets:
+  - tev-000039.yaml
+  - tev-000039-sed.ecsv
 
 data_entry:
   status: complete
   reviewed: no
-  notes: Both datasets haven't been reviewed
-
-datasets:
-  tev-000039-sed.ecsv
-  tev-000039.yaml

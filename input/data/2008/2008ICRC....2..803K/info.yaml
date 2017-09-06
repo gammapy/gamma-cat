@@ -2,13 +2,10 @@ reference_id: 2008ICRC....2..803K
 source_id: [25]
 telescope: [hess]
 
-data_entry:
-  status: missing
-  reviewed: no
-  notes: |
-    ecsv-dataset is complete but not reviewed
-    yaml-dataset is empty
-
 datasets:
-  tev-000025-sed.ecsv
-  tev-000025.yaml
+  - tev-000025.yaml
+  - tev-000025-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

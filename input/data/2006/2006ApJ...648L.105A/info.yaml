@@ -2,10 +2,9 @@ reference_id: 2006ApJ...648L.105A
 source_id: [52]
 telescope: [magic]
 
-data_entry:
-  status: complete
-  reviewed: no
-
 datasets:
-  tev-000052-sed.ecsv
+  - tev-000052-sed.ecsv
 
+data_entry:
+  status: incomplete
+  reviewed: no

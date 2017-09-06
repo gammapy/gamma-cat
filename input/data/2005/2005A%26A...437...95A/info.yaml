@@ -2,15 +2,11 @@ reference_id: 2005A&A...437...95A
 source_id: [49]
 telescope: [hess]
 
-data_entry:
-  status: missing
-  reviewed: no
-  notes: |
-    ecsv dataset is complete but not reviewed
-    the yaml dataset is empty
-
 datasets:
-  tev-000049-lc.ecsv
-  tev-000049-sed.ecsv
-  tev-000049.yaml
+  - tev-000049.yaml
+  - tev-000049-lc.ecsv
+  - tev-000049-sed.ecsv
 
+data_entry:
+  status: incomplete
+  reviewed: no

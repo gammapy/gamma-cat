@@ -8,8 +8,8 @@ data:
   excess: 1154
 
 pos:
-    ra: {val: 286.84d, err: 0.02d }
-    dec: {val: +6.22d, err: 0.02d }
+  ra: {val: 286.84d, err: 0.02d }
+  dec: {val: +6.22d, err: 0.02d }
 
 morph:
   type: gauss

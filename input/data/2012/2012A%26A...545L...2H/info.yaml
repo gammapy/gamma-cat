@@ -2,11 +2,10 @@ reference_id: 2012A&A...545L...2H
 source_id: [27]
 telescope: [hess]
 
+datasets:
+  - tev-000027.yaml
+  - tev-000027-sed.ecsv
+
 data_entry:
   status: complete
   reviewed: no
-  notes: Both datasets haven't been reviewed
-
-datasets:
-  tev-000027-sed.ecsv
-  tev-000027.yaml

@@ -2,11 +2,11 @@ reference_id: 2012ApJ...754L..10A
 source_id: [30]
 telescope: [magic]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: Both datasets haven't been reviewed
-
 datasets:
-  tev-000030-lc.ecsv
-  tev-000030.yaml
+  - tev-000030.yaml
+  - tev-000030-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: SED points available?

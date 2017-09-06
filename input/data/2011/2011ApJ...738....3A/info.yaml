@@ -2,11 +2,11 @@ reference_id: 2011ApJ...738....3A
 source_id: [14]
 telescope: [veritas]
 
-data_entry:
-  status: complete
-  reviewed: no
-  notes: Both datasets haven't been reviewed
-
 datasets:
-  tev-000014-lc.ecsv
-  tev-000014.yaml
+  - tev-000014.yaml
+  - tev-000014-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: is there an SED given?

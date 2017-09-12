@@ -2,7 +2,6 @@ reference_id: 2008ApJ...679..397A
 source_id: [58]
 telescope: [veritas]
 
-datasets:
 
 data_entry:
   status: missing

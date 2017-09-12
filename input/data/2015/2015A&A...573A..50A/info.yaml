@@ -2,7 +2,6 @@ reference_id: 2015A&A...573A..50A
 source_id: [91]
 telescope: [magic,veritas]
 
-datasets:
 
 data_entry:
   status: missing

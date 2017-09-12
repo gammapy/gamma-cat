@@ -2,7 +2,6 @@ reference_id: 2011ApJ...727..129A
 source_id: [91]
 telescope: [veritas]
 
-datasets:
 
 data_entry:
   status: missing

@@ -2,7 +2,6 @@ reference_id: 2009ApJ...693L.104A
 source_id: [11]
 telescope: [veritas]
 
-datasets:
 
 data_entry:
   status: missing

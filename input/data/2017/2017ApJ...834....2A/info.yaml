@@ -10,5 +10,5 @@ datasets:
   - tev-000049-sed-2.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no

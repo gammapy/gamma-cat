@@ -12,5 +12,5 @@ datasets:
   - tev-000165.yaml
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no

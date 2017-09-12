@@ -1,0 +1,9 @@
+reference_id: 2017A%26A...603A..31A
+source_id: [91]
+telescope: [magic, whipple, veritas]
+
+datasets:
+
+data_entry:
+  status: missing
+  reviewed: no

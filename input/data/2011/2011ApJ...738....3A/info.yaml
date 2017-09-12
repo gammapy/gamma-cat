@@ -7,6 +7,5 @@ datasets:
   - tev-000014-lc.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: is there an SED given?

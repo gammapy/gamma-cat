@@ -3,6 +3,7 @@ source_id: [35]
 telescope: [magic]
 
 datasets:
+  - tev-000035.yaml
   - tev-000035-sed.ecsv
 
 data_entry:

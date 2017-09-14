@@ -1,9 +1,9 @@
-reference_id: 2009ApJ...703..169A
-source_id: [49]
+reference_id: 2009ApJ...692L..29A
+source_id: [11]
 telescope: [magic]
 
 datasets:
-  - tev-000049.yaml
+  - tev-000011.yaml
 
 data_entry:
   status: missing

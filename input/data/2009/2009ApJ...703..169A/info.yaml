@@ -1,6 +1,6 @@
 reference_id: 2009ApJ...703..169A
 source_id: [49]
-telescope: [magic]
+telescope: [whipple, veritas, magic]
 
 datasets:
   - tev-000049.yaml

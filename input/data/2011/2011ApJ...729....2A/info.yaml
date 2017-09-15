@@ -2,7 +2,7 @@ reference_id: 2011ApJ...729....2A
 source_id: [91]
 telescope: [magic, veritas]
 
-data_sets:
+datasets:
   - tev-000091-1.yaml
   - tev-000091-2.yaml
 

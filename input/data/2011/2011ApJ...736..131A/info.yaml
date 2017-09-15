@@ -1,0 +1,10 @@
+reference_id: 2011ApJ...736..131A
+source_id: [49]
+telescope: [magic]
+
+datasets:
+  - tev-000049.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

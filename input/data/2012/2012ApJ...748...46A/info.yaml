@@ -3,6 +3,7 @@ source_id: [82]
 telescope: [magic]
 
 datasets:
+  - tev-000082.yaml
   - tev-000082-sed-1.ecsv
   - tev-000082-sed-2.ecsv
   - tev-000082-sed-3.ecsv
@@ -10,3 +11,5 @@ datasets:
 data_entry:
   status: incomplete
   reviewed: no
+  notes: ecsv datasets need review, yaml dataset is empty
+

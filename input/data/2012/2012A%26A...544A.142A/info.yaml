@@ -3,8 +3,10 @@ source_id: [53]
 telescope: [magic]
 
 datasets:
+  - tev-000053.yaml
   - tev-000053-sed.ecsv
 
 data_entry:
   status: incomplete
   reviewed: no
+  notes: ecsv dataset needs review, yaml file is empty

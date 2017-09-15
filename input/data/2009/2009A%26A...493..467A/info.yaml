@@ -1,0 +1,11 @@
+reference_id: 2009A&A...493..467A
+source_id: [82]
+telescope: [veritas, magic]
+
+datasets:
+  - tev-000082-1.yaml
+  - tev-000082-2.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

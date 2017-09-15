@@ -1,11 +1,10 @@
-reference_id: 2011ApJ...726...58A
+reference_id: 2009ApJ...692L..29A
 source_id: [11]
 telescope: [magic]
 
 datasets:
   - tev-000011.yaml
-  - tev-000011-sed.ecsv
 
 data_entry:
-  status: incomplete
+  status: missing
   reviewed: no

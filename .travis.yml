@@ -26,6 +26,7 @@ script:
 #- ./make.py check
 #- ./make.py output
 #- ./make.py webpage
+- python make.py check-info-yaml
 - python make.py all
 - python -m pytest -v --cov=gammacat
 - cd documentation && make html

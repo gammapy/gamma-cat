@@ -1,0 +1,10 @@
+reference_id: 2014A&A...571A..96M
+source_id: [130]
+telescope: [magic]
+
+datasets:
+  - tev-0000130.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

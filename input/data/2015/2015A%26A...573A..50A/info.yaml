@@ -1,0 +1,10 @@
+reference_id: 2015A&A...573A..50A
+source_id: [91]
+telescope: [magic]
+
+datasets:
+  - tev-000091.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

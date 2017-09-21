@@ -1,0 +1,10 @@
+reference_id: 2015JHEAp...5...30A
+source_id: [25]
+telescope: [magic]
+
+datasets:
+  - tev-000025.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

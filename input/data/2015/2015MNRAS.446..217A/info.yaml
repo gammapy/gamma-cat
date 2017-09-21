@@ -1,0 +1,10 @@
+reference_id: 2015MNRAS.446..217A
+source_id: [5]
+telescope: [magic]
+
+datasets:
+  - tev-000005.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

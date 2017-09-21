@@ -1,0 +1,10 @@
+reference_id: 2014Sci...346.1080A
+source_id: [61]
+telescope: [magic]
+
+datasets:
+  - tev-000061.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

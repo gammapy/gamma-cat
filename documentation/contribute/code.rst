@@ -3,26 +3,53 @@
 Code
 ====
 
-This page contains some information about the code that's used to create gamma-cat.
-It's a bunch of Python modules in the ``gammacat`` folder.
+This page contains information about the whole code stored in the gamma-cat repository.
 
-This is only useful if you want to contribute to the gamma-cat.
-Users can use ``gammacat.catalog`` to access the catalog information.
+Everyone who wants to contribute to gamma-cat should read the following sections, people
+who want to use gamma-cat should read `Use <https://www.gamma-cat.readthedocs.io/use/index.html>`__.
 
-Installation
-------------
+Folder structure
+----------------
 
-If you want to run the ``gamma-cat`` Python scripts locally, you need to install
-Python 3.6 and some Python packages. We recommend you download `Anaconda <https://www.continuum.io/downloads>`__
-and then install the packages via::
+The repository consists of 7 folders:
 
-    conda env create -f environment.yml
-    source activate gamma-cat
+* ``todo``: Some todo lists stored as .md files
+* ``other_data_collections``: Data collections from different catalogs which will be/ are implemented to gamma-cat
+* ``model_serialisation``: #TODO: Add description
+* ``input``:  Data from which gamma-cat is built from (see section `input` below for more details)
+* ``docs``: Final gamma-cat catalog and additional files produced from `input` (see chapter `Use <https://www.gamma-cat.readthedocs.io/use/index.html>`__)
+* ``documentation``: Input files used to build this website. 
+* ``gammacat``: #TODO: Add data
 
-We have continuous integration tests set up on travis-ci that check that everything is working OK.
-The `.travis.yml <https://github.com/gammapy/gamma-cat/blob/master/.travis.yml>` file could be helpful
-to you to have an example how to do the installation just from the command line
-(i.e. commands you can copy & paste if you prefer the command line over the Anaconda GUI installer and navigator app).
+Moreover, there are some other files, but only `make.py` is of interest (see section `make.py` for more details).
+
+Input
+-----
+
+This folder contains all data gamma-cat is built from. For contributors the three folders ``data``, ``sources`` and ``schemas`` are important.
+
+* ``sources`` contains yaml-files with basic information about the gamma-ray sources.
+* ``data`` contains the data from publications stored in yaml- and ecsv-files. The folder contains subfolders named by years and there subsubfolders named by reference_ids. E.g. the data from the publication with reference 2015ApJ...802...65A is stored in the folder input/data/2015/2015ApJ...802...65A. All these files are named corresponding to the source_id of the gamma-ray source defined in its definition file.
+* ``schemas`` contains files which define the structure of the upper yaml-files.
+
+Now, these input files will be discussed in more detail, firstly the source definition files in `sources`:
+
+The information (and a short description) which can be stored in such a file are defined by some keywords in `basic_source_info.schema.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/basic_source_info.schema.yaml>`__.
+It starts with properties, like the `common_name`, the `source_id` used in gamma-cat or the `tevcat_name` and goes on with information about `experiments which investigated this source. Two important information are the `reference_ids`, which are all ADS reference to publication which deal with this source, and the `source_id` from which the names in the data folder are built.
+At the end of `basic_source_info.schema.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/basic_source_info.schema.yaml>`__ after the keyword `required`, there are all of the upper information written down which have to be defined in a source definition file.
+
+A good example to get familiar with this is e.g. `tev_000049.yaml <https://www.github.com/gammapy/gamma-cat/input/sources/tev_000029.yaml>`__ and compare it with `basic_source_info.schema.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/basic_source_info.schema.yaml>`__
+
+The folders in /input/data/<year> contain ecsv files with measured fluxes in it, e.g. `tev-000034-sed.ecsv <https://github.com/gammapy/gamma-cat/blob/master/input/data/2010/2010ApJ...715L..49A/tev-000034-sed.ecsv>`__. Additional information like `source_id` or `telescope` are stored as meta data in the file. 
+
+Moreover, there is always a info.yaml file, e.g. `info.yaml <https://github.com/gammapy/gamma-cat/blob/master/input/data/2010/2010ApJ...715L..49A/info.yaml>`__, and the information which can be stored in is defined in `dataset_info.schema.yaml <https://github.com/gammapy/gamma-cat/blob/master/input/schemas/dataset_info.schema.yaml>`__. 
+
+Thirdly, there are yaml files named by the `source_id` in which the model parameters given in the publication are stored.
+Analogeously, the information which can/ must be stored in such a yaml file are defined in `dataset_source_info.schemas.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/dataset_source_info.schemas.yaml>`__.
+
+To get familiar with the data files, compare e.g. `tev_000159.yaml <https://www.github.com/gammapy/gamma-cat/input/data/2015/2015arXiv151100309G/tev_000159.yaml>`__ with `dataset_source_info.schemas.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/dataset_source_info.schemas.yaml>`__. 
+
+When you add input data you have to do two things. Firstly, you must update the data status in the corresponding info.yaml file. Secondly, you have to tell gamma-cat about the new data. This is done in `gammacat_database.yaml <https://www.github.com/gammapy/gamma-cat/input/gammacat/gammacat_database.yaml>`__ where you must add the reference_id of the publication of the added data. Gamma-cat will only contain data whose reference_id is listet in `gammacat_database.yaml <https://www.github.com/gammapy/gamma-cat/input/gammacat/gammacat_database.yaml>`__.
 
 make.py
 -------
@@ -37,6 +64,12 @@ To see the available sub-commands and options::
 To run the full pipeline, i.e. generate all output files and run all checks::
 
     $ ./make.py all
+
+After adding/ changing data in the input folder, one should always execute::
+
+	$ ./make.py checks
+
+which checks the format/ structure of the input files.
 
 gammacat package
 ----------------

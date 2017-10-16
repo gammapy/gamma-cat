@@ -8,22 +8,6 @@ This page contains some notes with details about `gamma-cat`.
 Data
 ----
 
-Procedure
-+++++++++
-
-Information given in papers is very heterogeneous. Sometimes position
-is given in Galactic coordinates, sometimes in RA/DEC coordinates.
-There's different morphology and spectral models, sometimes certain
-parameters haven't been measured or at least aren't given in the publication.
-
-The idea is that we only collect the information from the papers here
-(so that checking against the paper is easy and the manually
-edited files are as small as possible), and then the `make_output.py`
-script generates an as-homogeneous as possible version of the catalog.
-
-* In the input folder ``input/data``, data is organised by ``reference_id`` first, then ``source_id``.
-* In the output folder ``docs/data``, data is organised by ``source_id`` first, then ``reference_id``.
-
 Reference identifiers
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -97,23 +81,3 @@ and store it like this:
       dec: 22.0145000
 
 The presence of the `simbad_id` key means that it's a position from `SIMBAD`_.
-
-How it works
-------------
-
-This is very much work in progress.
-Feedback and contributions welcome!
-
-* At the moment we're just using our own Python scripts,
-  and YAML files (because I find them easier to read and edit than JSON),
-  as well as ECSV files.
-  Maybe we'll switch to use the https://astrocats.space/ machinery later.
-* We use Python scripts. Only Python 3.5+ and the latest versions of
-  Astropy, Gammapy, ... are supported (very few people will run the scripts,
-  no point in supporting old versions here, even if it would be easy to do).
-
-There is a nice Python package `gammacat` that's used to process and
-validate the catalog. But you can also use it for analysis if you know
-some Python. Start by looking at the examples in `gammacat/tests`,
-then look at the source code, then ask questions if you don't know
-how to do something.

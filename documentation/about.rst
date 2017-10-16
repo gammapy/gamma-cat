@@ -9,6 +9,9 @@ Brief
 This project was started in August 2015 and first presented as a poster
 (see `gamma-cat poster at ADASS 2016`_) at the `ADASS 2016`_ conference.
 
+There is a second `gamma-cat poster from 2017`_ with more recent information
+on gamma-cat (and gamma-sky.net).
+
 This repo contains a `gammacat` Python package to work with the data.
 It is BSD licensed (like Astropy, Gammapy).
 This license only applies to the code, it has nothing to do with the data.

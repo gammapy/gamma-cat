@@ -1,0 +1,30 @@
+source_id: 60
+reference_id: 2009A&A...507..389A
+telescope: hess
+
+data:
+  livetime: 52.5h
+  significance: 9.5
+  excess: 450
+  n_on: 2353
+  n_off: 25633
+  alpha: 0.074
+
+pos:
+  ra: {val: 13h2m41s, err: 0h0m6s}
+  dec: {val: -63d49m1s, err: 0h0m41s}
+
+morph:
+  type: point
+
+##################################################################################
+# The spectrum result takes into account three periods of measurement which
+# were carried out in May, June and July 2007
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.1, err: 0.1, err_sys: 0.2, scale: 1e-12, unit: cm-2 TeV-1 s-1}
+      index: {val: 2.8, err: 0.2, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}

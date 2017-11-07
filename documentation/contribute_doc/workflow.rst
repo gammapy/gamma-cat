@@ -1,7 +1,7 @@
 .. include:: ../references.rst
 
-Workflow
-========
+.. Workflow
+.. ========
 
 This page describes the git workflow you are recommended to use if you want to contribute to gamma-cat.
 In short words, we use the fork-branch-pullrequest way.

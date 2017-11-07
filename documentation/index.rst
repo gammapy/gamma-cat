@@ -25,7 +25,7 @@ This site is organised in the following sections:
    :maxdepth: 1
    :caption: About
 
-   about
+   about/index
 
 .. _data-docs:
 
@@ -41,9 +41,7 @@ This site is organised in the following sections:
    :maxdepth: 1
    :caption: User Documentation
 
-   use/index
-   stats/index
-   changes
+   user_doc/index
 
 .. _contributor-docs:
 
@@ -51,8 +49,4 @@ This site is organised in the following sections:
    :maxdepth: 1
    :caption: Contributor Documentation
 
-   contribute/introduction
-   contribute/input
-   contribute/workflow
-   contribute/code
-   contribute/details
+   contribute_doc/index

@@ -1,7 +1,7 @@
 .. include:: ../references.rst
 
-Input
-=====
+.. Input
+.. =====
 
 We've already mentioned it in the introduction: all data entry for gamma-cat happens by editing or adding
 text files in the ``input`` folder. We use file formats that are both human- and machine-readable:

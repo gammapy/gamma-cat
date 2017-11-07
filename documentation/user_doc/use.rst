@@ -1,14 +1,14 @@
 .. include:: ../references.rst
 
-Use
-===
+.. Use
+.. ===
 
 This page contains some info how to use `gamma-cat`.
-
 
 Browse
 ------
 
+TODO: Add information
 
 Download
 --------

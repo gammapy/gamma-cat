@@ -1,7 +1,7 @@
 .. include:: ../references.rst
 
-Details
-=======
+.. Details
+.. =======
 
 This page contains some notes with details about `gamma-cat`. 
 

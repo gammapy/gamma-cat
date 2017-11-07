@@ -1,7 +1,7 @@
-.. include:: references.rst
+.. include:: ../references.rst
 
-Changes
-=======
+.. Changes
+.. =======
 
 This is the changelog for gamma-cat.
 

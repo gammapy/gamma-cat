@@ -1,7 +1,7 @@
 .. include:: ../references.rst
 
-Stats
-=====
+.. Stats
+.. =====
 
 Basics
 ------
@@ -17,7 +17,7 @@ TODO:
 - Add Bokeh or Aladin Lite interactive Figure?
 
 .. Bokeh Sphinx directive is broken at the moment:
-.. .. bokeh-plot:: stats/plot_sky_locations.py
+.. .. bokeh-plot:: user_doc/plot_sky_locations.py
 ..     :source-position: none
 
 
@@ -26,7 +26,7 @@ Kifune plot
 
 The so-called Kifune plot shows the cumulative number of detected TeV sources versus time.
 
-.. plot:: stats/plot_kifune.py
+.. plot:: user_doc/plot_kifune.py
 
 Source classes
 --------------

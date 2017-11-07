@@ -1,7 +1,7 @@
 .. include:: ../references.rst
 
-Introduction
-============
+.. Introduction
+.. ============
 
 So you want to contribute to gamma-cat?
 

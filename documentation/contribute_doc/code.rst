@@ -1,7 +1,7 @@
 .. include:: ../references.rst
 
-Code
-====
+.. Code
+.. ====
 
 This page contains information about the whole code stored in the gamma-cat repository.
 

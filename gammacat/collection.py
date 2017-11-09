@@ -78,6 +78,12 @@ class CollectionConfig:
         meta['reference_folder'] = Path(sed.resource.location).parts[-2]
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
+    def make_lc_path(self, lc, *, relative_to_index):
+    	meta = lc.table.meta.copy()
+    	meta['datatype'] = 'lc'
+    	meta['reference_folder'] = Path(lc.resource.location).parts[-2]
+    	return self.make_filename(meta, relative_to_index=relative_to_index)
+
     def list_of_files(self, pattern='*'):
         """Make list of all files in the output folder"""
         return list([
@@ -200,8 +206,7 @@ class CollectionMaker:
             lightcurve = LightCurve.read(filename)
             lightcurve.process()
 
-            # TODO: put this in a good location! (same relative path as in input?)
-            path = self.config.path / 'lightcurve.ecsv'
+            path = self.config.make_lc_path(lightcurve, relative_to_index=False)
             path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))
             lightcurve.table.write(str(path), format='ascii.ecsv')

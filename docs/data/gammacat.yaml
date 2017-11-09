@@ -854,7 +854,7 @@
   - tevcat_name: TeV J0222+430
   - tgevcat_id: 11
   - tgevcat_name: TeV J0222+4302
-  - reference_id: ''
+  - reference_id: 2011ApJ...726...58A
   - significance: .nan
   - livetime: .nan
   - ra: 35.6650505065918
@@ -1274,7 +1274,7 @@
   - tevcat_name: TeV J0316+413
   - tgevcat_id: 16
   - tgevcat_name: TeV J0316+4119
-  - reference_id: ''
+  - reference_id: 2014A&A...563A..91A
   - significance: .nan
   - livetime: .nan
   - ra: 49.17927169799805
@@ -2954,7 +2954,7 @@
   - tevcat_name: TeV J0721+713
   - tgevcat_id: 35
   - tgevcat_name: TeV J0721+7120
-  - reference_id: ''
+  - reference_id: 2009ApJ...704L.129A
   - significance: .nan
   - livetime: .nan
   - ra: 110.47270202636719
@@ -4298,7 +4298,7 @@
   - tevcat_name: TeV J1136+701
   - tgevcat_id: 52
   - tgevcat_name: TeV J1136+7009
-  - reference_id: ''
+  - reference_id: 2006ApJ...648L.105A
   - significance: .nan
   - livetime: .nan
   - ra: 174.1100311279297
@@ -4802,7 +4802,7 @@
   - tevcat_name: TeV J1224+213
   - tgevcat_id: 56
   - tgevcat_name: TeV J1224+2122
-  - reference_id: ''
+  - reference_id: 2011ApJ...730L...8A
   - significance: .nan
   - livetime: .nan
   - ra: 186.22691345214844
@@ -5642,7 +5642,7 @@
   - tevcat_name: TeV J1427+238
   - tgevcat_id: 67
   - tgevcat_name: TeV J1427+2347
-  - reference_id: ''
+  - reference_id: 2014A&A...567A.135A
   - significance: .nan
   - livetime: .nan
   - ra: 216.7516326904297
@@ -13623,7 +13623,7 @@
   - tevcat_name: TeV J2250+384
   - tgevcat_id: 152
   - tgevcat_name: TeV J2250+3824
-  - reference_id: ''
+  - reference_id: 2012A&A...539A.118A
   - significance: .nan
   - livetime: .nan
   - ra: 342.5239562988281

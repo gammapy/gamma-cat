@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1 / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: 1 / (cm2 s), datatype: float64}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 30}
+# - {reference_id: 2012ApJ...754L..10A}
+# - {telescope: magic}
+# - {SED_TYPE: flux}
+# - {UL_CONF: 0.99}
+# schema: astropy-2.0
+e_min time flux flux_err
+0.2 55500.141 4.2e-12 5e-13
+0.2 55557.102 4.2e-12 4e-13
+0.2 55558.134 3.8e-12 3.3e-12
+0.2 55598.88 9.4e-12 3.5e-12
+0.2 55599.903 6.6e-12 2.6e-12
+0.2 55600.873 9.3e-12 3.6e-12
+0.2 55612.92 9.8e-12 7.5e-12
+0.2 55613.982 1.39e-11 5e-12
+0.2 55647.899 2.7e-12 3.6e-12
+0.2 55648.9 -1.5e-12 4.3e-12

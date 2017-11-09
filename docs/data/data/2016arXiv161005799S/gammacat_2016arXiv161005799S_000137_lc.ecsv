@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1 / (cm2 s), datatype: float32}
+# - {name: flux_err, unit: 1 / (cm2 s), datatype: float32}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 137}
+# - {reference_id: 2016arXiv161005799S}
+# - {telescope: veritas}
+# - {timesys: UTC}
+# - {e_min: 200 GeV}
+# schema: astropy-2.0
+time flux flux_err
+56807.411655 3.623e-12 1.164e-12
+56814.411655 4.172e-12 1.372e-12
+56828.411655 6.895e-12 1.555e-12
+56835.411655 6.421e-12 8.308e-13
+56842.411655 7.156e-12 1.119e-12
+57129.411655 1.999e-12 5.462e-12
+57143.411655 9.788e-14 3.135e-12
+57164.411655 8.547e-12 7.043e-12
+57192.411655 3.166e-13 2.013e-12
+57283.411655 5.269e-12 1.681e-12
+57297.411655 5.111e-12 2.134e-12
+57325.411655 1.366e-11 4.86e-12
+57332.411655 4.478e-12 2.195e-12

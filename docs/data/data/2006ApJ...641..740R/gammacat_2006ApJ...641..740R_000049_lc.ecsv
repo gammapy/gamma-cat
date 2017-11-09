@@ -1,0 +1,42 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: Crab, datatype: float32}
+# - {name: flux_err, unit: Crab, datatype: float32}
+# - {name: flux_ul, datatype: float32}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 49}
+# - {reference_id: 2006ApJ...641..740R}
+# - {telescope: whipple}
+# - {timesys: UTC}
+# schema: astropy-2.0
+time flux flux_err flux_ul
+52612.0 nan nan 0.65
+52613.0 1.55 0.17 nan
+52614.0 0.69 0.17 nan
+52615.0 0.52 0.17 nan
+52616.0 0.52 0.17 nan
+52617.0 1.03 0.17 nan
+52618.0 0.52 0.17 nan
+52619.0 0.34 0.17 nan
+52620.0 0.52 0.17 nan
+52621.0 0.28 0.28 nan
+52622.0 1.03 0.17 nan
+52623.0 0.1 0.1 nan
+52624.0 nan nan 0.11
+52636.0 0.86 0.69 nan
+52639.0 1.4 0.34 nan
+52640.0 1.5 0.17 nan
+52641.0 0.17 0.17 nan
+52642.0 0.3 0.17 nan
+52643.0 nan nan -0.17
+52645.0 2.0 0.17 nan
+52646.0 1.2 0.17 nan
+52649.0 1.55 0.17 nan
+52650.0 1.03 0.17 nan
+52651.0 1.8 0.17 nan
+52652.0 1.8 0.34 nan
+52653.0 1.9 0.17 nan
+52654.0 1.55 0.17 nan

@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: Crab, datatype: float32}
+# - {name: flux_err, unit: Crab, datatype: float32}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 49}
+# - {reference_id: 2005A&A...437...95A}
+# - {telescope: hess}
+# - {timesys: UTC}
+# schema: astropy-2.0
+time flux flux_err
+53108.0 3.38 0.2
+53109.0 1.13 0.13
+53110.0 2.5 0.18
+53111.0 2.12 0.11
+53112.0 1.15 0.09
+53113.0 2.83 0.13
+53114.0 4.85 0.16
+53115.0 3.95 0.15
+53135.0 0.33 0.06

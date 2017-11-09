@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1 / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: 1 / (cm2 s), datatype: float64}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 25}
+# - {reference_id: 2014ApJ...781L..11A}
+# - {telescope: veritas}
+# - {SED_TYPE: flux}
+# - {comments: 'lightcurve during MeV flare
+# 
+#     obtained per email by G.Richards (2017-04-17)'}
+# schema: astropy-2.0
+e_min time flux flux_err
+1.0 56353.194 1.733414e-07 1.550968e-08
+1.0 56354.228 2.17637e-07 1.824433e-08
+1.0 56356.122 2.024821e-07 3.108039e-08
+1.0 56358.178 1.92406e-07 1.084061e-08
+1.0 56359.225 1.696472e-07 2.408143e-08
+1.0 56362.156 2.014332e-07 1.449398e-08
+1.0 56363.137 2.601051e-07 2.380207e-08
+1.0 56364.143 2.600165e-07 2.349626e-08
+1.0 56365.128 1.844742e-07 2.857566e-08
+1.0 56366.175 1.803683e-07 2.60787e-08

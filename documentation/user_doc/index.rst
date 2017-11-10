@@ -1,16 +1,21 @@
 .. include:: ../references.rst
 
+Status
+======
+
+.. include:: status.rst
+
 Use
 ===
 
-.. include:: use/use.rst
+.. include:: use.rst
 
 Stats
 =====
 
-.. include:: stats/stats.rst
+.. include:: stats.rst
 
 Changes
 =======
 
-.. include:: changes/changes.rst
+.. include:: changes.rst

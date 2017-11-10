@@ -1,0 +1,2 @@
+File only for adding the path to git
+#TODO: Add a try -> escape sequence to gammacat/webpage.py that creates the folder

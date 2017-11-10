@@ -6,6 +6,7 @@ import logging
 import jinja2
 from .info import gammacat_info
 from .input import BasicSourceList
+from .utils import load_json
 
 __all__ = [
     'WebpageConfig',
@@ -13,7 +14,6 @@ __all__ = [
 ]
 
 log = logging.getLogger(__name__)
-
 
 class WebpageConfig:
     """Config options for webpage maker."""
@@ -46,15 +46,9 @@ class WebpageMaker:
         TEMPLATE_FILE = str(gammacat_info.base_dir / 'gammacat/templates/status.rst')
         template = templateEnv.get_template( TEMPLATE_FILE )
 
-        #TODO: Make a list simple with numbers from 0 to 166
-        source_ids = []
-        for source in self.sources_data:
-            source_ids.append(source['source_id'])
-
-        templateVars = {'source_ids' : sorted(source_ids)}
-
-        #TODO: More compact saving of file?
+        templateVars = {'data' : self.sources_data}
         output = template.render(templateVars)
+
         status_rst_file = open(status_rst, 'w')
         status_rst_file.write(output)
 
@@ -67,27 +61,52 @@ class WebpageMaker:
         TEMPLATE_FILE = str(gammacat_info.base_dir / 'gammacat/templates/source.rst')
         template = templateEnv.get_template( TEMPLATE_FILE )
 
+        #TODO: Move this to another place? Maybe collection.py?
+        path = gammacat_info.base_dir / 'docs/data/gammacat-datasets.json'
+        gammacat_dataset = load_json(path)
+
         for source in self.sources_data:
-            source_id = source['source_id']
-            source_rst = sources_folder + '/source' + str(source_id) + '.rst'
-            common_name = source['common_name']
-            gamma_names = source['gamma_names']
-            for gam in gamma_names:
-                gam = '{}\t'.format(gam)
-            other_names = source['other_names']
-            for oth in other_names:
-                oth = '{:<20}'.format(oth)
-            where = source['where']
-            classes = source['classes']
-            discoverer = source['discoverer']
-            date_discovery = source['discovery_date']
-            references = source['reference_ids']
-            templateVars = { 'common_name' : common_name, 'gam_names' : gamma_names, 'oth_names' : other_names}
+            source_rst = sources_folder + '/source' + str(source['source_id']) + '.rst'
+            available_seds = []
+
+            #TODO: Convert source_id differently
+            if(source['source_id'] < 10):
+                src_id = '00000' + str(source['source_id'])
+            elif(source['source_id'] >9 and source['source_id'] < 100):
+                src_id = '0000' + str(source['source_id'])
+            else:
+                src_id = '000' + str(source['source_id'])
+
+            for ref in source['reference_ids']:
+                if ref in gammacat_dataset[source['source_id']]['reference_id']:
+                    available_seds.append(ref)
+            templateVars = {'src_id' : src_id, 'src_info' : source, 'av_seds' : available_seds}
             output = template.render(templateVars)
             source_rst_file = open(source_rst, 'w')
             source_rst_file.write(output)
-            print('rstFile:\n')
             print(output)
+
+        # for source in self.sources_data:
+        #     source_id = source['source_id']
+        #     
+        #     common_name = source['common_name']
+        #     gamma_names = source['gamma_names']
+        #     for gam in gamma_names:
+        #         gam = '{}\t'.format(gam)
+        #     other_names = source['other_names']
+        #     for oth in other_names:
+        #         oth = '{:<20}'.format(oth)
+        #     where = source['where']
+        #     classes = source['classes']
+        #     discoverer = source['discoverer']
+        #     date_discovery = source['discovery_date']
+        #     references = source['reference_ids']
+        #     templateVars = { 'common_name' : common_name, 'gam_names' : gamma_names, 'oth_names' : other_names}
+        #     output = template.render(templateVars)
+        #     source_rst_file = open(source_rst, 'w')
+        #     source_rst_file.write(output)
+            # print('rstFile:\n')
+            # print(output)
 
         # print(type(references))
         # print(type(gamma_names))

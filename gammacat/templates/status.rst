@@ -10,6 +10,6 @@ Gamma-cat sources
 
 The following sources are known to gamma-cat:
 
-{% for source in source_ids %}
-`source{{ source }} <sources/source{{ source }}.html>`__
+{% for src in data %}
+* `{{src.common_name}} <sources/source{{ src.source_id}}.html>`__
 {% endfor %}

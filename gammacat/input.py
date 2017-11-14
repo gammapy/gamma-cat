@@ -67,7 +67,7 @@ class BasicSourceInfo:
         if data['reference_ids'] is None or data['reference_ids'][0] is None:
             data['reference_ids'] = ''
         else:
-            data['reference_ids'] = ','.join(data['reference_ids'])
+            data['reference_ids'] = data['reference_ids']
 
         # TODO: write code to handle position
         data.pop('pos', None)

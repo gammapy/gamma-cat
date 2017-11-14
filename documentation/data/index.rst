@@ -5,6 +5,11 @@
 Data
 ====
 
+Gamma-cat sources
+-----------------
+
+.. include:: src_list.rst
+
 .. _data-overview:
 
 Overview

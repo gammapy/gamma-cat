@@ -16,7 +16,7 @@ from gammapy.catalog.gammacat import GammaCatResource
 __all__ = [
     'FLUX_TO_CRAB', 'E_INF',
     'ECSVFormatError',
-    'NA',
+    'NA', 'render_template',
     'load_yaml', 'write_yaml',
     'load_json', 'write_json',
     'print_simbad_pos',
@@ -83,6 +83,18 @@ class NA:
         except KeyError:
             return cls.fill_value['string']
 
+def render_template(infile, outfile, ctx=None):
+    """Helper function to render Jinja templates."""
+    # For examples how to use Jinja, see https://gits.github.com/wrunk/1317933
+    # from flask import render_template
+    from jinja2 import Environment, FileSystemLoader
+    env = Environment(loader=FileSystemLoader('/'))
+    template = env.get_template(infile)
+    if ctx is None:
+        ctx = dict()
+    text = template.render(**ctx)
+    with open(outfile, 'w') as fh:
+        fh.write(text)
 
 def load_yaml(path):
     """Helper function to load data from a YAML file."""

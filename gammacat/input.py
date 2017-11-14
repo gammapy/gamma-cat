@@ -319,6 +319,20 @@ class InputData:
         paths = path.glob('*/*/tev*sed*.ecsv')
         return sorted(paths)
 
+    @property
+    def info_yaml_list(self):
+        """List of all info files in the input folder."""
+        path = gammacat_info.base_dir / 'input/data'
+        paths = path.glob('*/*/info.yaml')
+        return sorted(paths)
+
+    @property
+    def dataset_file_list(self):
+        """List of all dataset files in the input folder."""
+        path = gammacat_info.base_dir / 'input/data'
+        paths = path.glob('*/*/tev*.yaml')
+        return sorted(paths)
+
     def __init__(self, schemas=None, sources=None, datasets=None,
                  gammacat_dataset_config=None):
         self.path = gammacat_info.base_dir / 'input'

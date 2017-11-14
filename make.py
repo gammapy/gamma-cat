@@ -56,7 +56,7 @@ def cli(ctx, log_level, show_warnings):
 
 @cli.command(name='collection')
 @click.option('--step', default='all',
-              type=click.Choice(['all', 'sed', 'lightcurve', 'input-index', 'output-index']))
+              type=click.Choice(['all', 'sed', 'lightcurve', 'dataset', 'input-index', 'output-index']))
 @click.pass_obj
 def cli_collection(global_config, step):
     """Make gamma-cat data collection."""

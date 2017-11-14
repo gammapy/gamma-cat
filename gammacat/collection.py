@@ -9,9 +9,10 @@ from astropy.utils import lazyproperty
 from gammapy.catalog.gammacat import GammaCatResourceIndex
 from .sed import SED
 from .lightcurve import LightCurve
+from .dataset import DataSet
 from .info import gammacat_info, GammaCatStr
 from .input import InputData
-from .utils import write_json, load_json, log_list_difference
+from .utils import write_json, load_json, log_list_difference, load_yaml
 
 __all__ = [
     'CollectionConfig',
@@ -63,6 +64,8 @@ class CollectionConfig:
             path = path / '{}_sed.ecsv'.format(tag)
         elif meta['datatype'] == 'lc':
             path = path / '{}_lc.ecsv'.format(tag)
+        elif meta['datatype'] == 'ds':
+            path = path / '{}_ds.yaml'.format(tag)
         else:
             raise ValueError('Invalid datatype: {}'.format(meta['datatype']))
 
@@ -79,10 +82,18 @@ class CollectionConfig:
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
     def make_lc_path(self, lc, *, relative_to_index):
-    	meta = lc.table.meta.copy()
-    	meta['datatype'] = 'lc'
-    	meta['reference_folder'] = Path(lc.resource.location).parts[-2]
-    	return self.make_filename(meta, relative_to_index=relative_to_index)
+        meta = lc.table.meta.copy()
+        meta['datatype'] = 'lc'
+        meta['reference_folder'] = Path(lc.resource.location).parts[-2]
+        return self.make_filename(meta, relative_to_index=relative_to_index)
+
+    def make_dataset_path(self, dataset, *, relative_to_index):
+        meta = dict()
+        meta['datatype'] = 'ds'
+        meta['reference_id'] = dataset.reference_id()
+        meta['reference_folder'] = dataset.folder()
+        meta['source_id'] = dataset.source_id()
+        return self.make_filename(meta, relative_to_index=relative_to_index)
 
     def list_of_files(self, pattern='*'):
         """Make list of all files in the output folder"""
@@ -157,6 +168,7 @@ class CollectionMaker:
 
     def __init__(self, config):
         self.config = config
+        self.info_file_list = self.input_data.info_yaml_list
 
     def run(self):
         log.info('Make collection ...')
@@ -169,6 +181,8 @@ class CollectionMaker:
             self.process_seds()
         elif step == 'lightcurve':
             self.process_lightcurves()
+        elif step == 'dataset':
+            self.process_datasets()
         elif step == 'output-index':
             self.make_index_file_for_output()
         else:
@@ -185,7 +199,7 @@ class CollectionMaker:
         self.process_seds()
         self.process_lightcurves()
         # self.process_all_basic_source_infos()  # TODO
-        # self.process_all_dataset_source_infos()  # TODO
+        self.process_datasets()
 
         self.make_index_file_for_output()
 
@@ -211,6 +225,23 @@ class CollectionMaker:
             log.info('Writing {}'.format(path))
             lightcurve.table.write(str(path), format='ascii.ecsv')
 
+    def process_datasets(self):
+        for filename in self.input_data.info_yaml_list:
+            folder = filename.parents[0]
+            info_data = load_yaml(filename)
+            status = info_data['data_entry']['status']
+            review = info_data['data_entry']['reviewed']
+            log.debug('Processing reference: {}'.format(info_data['reference_id']))
+            # TODO: This is if you want to make sure that all data are reviewed
+            # if status == 'complete' and review == 'yes':
+            if status == 'complete':
+                for file in info_data['datasets']:
+                    if file[-4:] == 'yaml':
+                        dataset = DataSet(folder / file)
+                        path = self.config.make_dataset_path(dataset, relative_to_index=False)
+                        path.parent.mkdir(parents=True, exist_ok=True)
+                        dataset.write(path)
+
     def make_index_file_for_input(self):
         # TODO: this is a temp hack. Fill correctly using GammaCatResourceIndex
         data = OrderedDict()
@@ -225,6 +256,15 @@ class CollectionMaker:
         resources = []
         for filename in self.config.sed_files():
             resource = SED.read(self.config.path / filename).resource
+            resource.location = filename
+            resources.append(resource)
+
+        for filename in self.config.lc_files():
+            resource = LightCurve.read(self.config.path / filename).resource
+            resource.location = filename
+            resources.append(resource)
+        for filename in self.config.ds_files():
+            resource = DataSet(self.config.path / filename).resource()
             resource.location = filename
             resources.append(resource)
 

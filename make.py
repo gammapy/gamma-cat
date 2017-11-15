@@ -24,15 +24,7 @@ class GlobalConfig:
         self.log_level = log_level
         self.show_warnings = show_warnings
 
-        levels = dict(
-            debug=logging.DEBUG,
-            info=logging.INFO,
-            warning=logging.WARNING,
-            error=logging.ERROR,
-            critical=logging.CRITICAL,
-        )
-        logging.basicConfig(level=levels[log_level])
-        log.setLevel(level=levels[log_level])
+        logging.basicConfig(level=log_level)
 
         if not show_warnings:
             warnings.simplefilter('ignore')
@@ -47,10 +39,9 @@ class GlobalConfig:
 # Best description how it works is here: http://click.pocoo.org/dev/complex/
 
 @click.group(invoke_without_command=True)
-@click.option('--log-level', default='info',
-              type=click.Choice(['debug', 'info', 'warning', 'error', 'critical']))
-@click.option('--show-warnings', is_flag=True,
-              help='Show warnings?')
+@click.option('--log-level', default='INFO',
+              type=click.Choice(['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']))
+@click.option('--show-warnings', is_flag=True, help='Show warnings?')
 @click.pass_context
 def cli(ctx, log_level, show_warnings):
     """
@@ -67,7 +58,7 @@ def cli(ctx, log_level, show_warnings):
 @click.option('--step', default='all',
               type=click.Choice(['all', 'sed', 'lightcurve', 'input-index', 'output-index']))
 @click.pass_obj
-def make_collection(global_config, step):
+def cli_collection(global_config, step):
     """Make gamma-cat data collection."""
     config = CollectionConfig(
         path=global_config.out_path,
@@ -79,7 +70,7 @@ def make_collection(global_config, step):
 @cli.command(name='catalog')
 @click.option('--sources', default='all', help='Either "all" or comma-separated string of source IDs')
 @click.pass_obj
-def make_catalog(global_config, sources):
+def cli_catalog(global_config, sources):
     """Make gamma-cat catalog."""
     config = CatalogConfig(
         out_path=global_config.out_path,
@@ -89,7 +80,7 @@ def make_catalog(global_config, sources):
 
 
 @cli.command(name='webpage')
-def make_webpage():
+def cli_webpage():
     """Make gamma-cat webpage.
     """
     config = WebpageConfig(
@@ -102,7 +93,7 @@ def make_webpage():
 @click.option('--step', default='all',
               type=click.Choice(['all', 'input', 'collection', 'catalog', 'global']))
 @click.pass_obj
-def make_checks(global_config, step):
+def cli_checks(global_config, step):
     """Run automated checks.
     """
     config = CheckerConfig(
@@ -113,7 +104,7 @@ def make_checks(global_config, step):
 
 
 @cli.command(name='clean')
-def make_clean():
+def cli_clean():
     """Remove all auto-generated files"""
     # TODO: this list of files & folders is incomplete
     cmd = 'rm -r documentation/_build documentation/data/sources documentation/data/source_list.rst'
@@ -123,7 +114,7 @@ def make_clean():
 
 # TODO: integrate this properly with 'make_checks' above
 @cli.command(name='check-info-yaml')
-def check_into_yaml():
+def cli_check_info_yaml():
     """Check the info.yaml files in input/data"""
     from gammacat.utils import load_yaml, validate_schema
 
@@ -136,15 +127,30 @@ def check_into_yaml():
 
 
 @cli.command(name='all')
+@click.option('--clean', is_flag=True, help='Run clean step?')
+@click.option('--no-collection', is_flag=True, help='Skip collection step?')
+@click.option('--no-catalog', is_flag=True, help='Skip catalog step?')
+@click.option('--no-checks', is_flag=True, help='Skip checks step?')
+@click.option('--webpage', is_flag=True, help='Run webpage step?')
 @click.pass_context
-def make_all(ctx):
-    """Run all steps.
-    """
+def cli_all(ctx, clean, no_collection, no_catalog, no_checks, webpage):
+    """Run all steps."""
     log.info('Run all steps ...')
-    ctx.invoke(make_collection)
-    ctx.invoke(make_catalog)
-    ctx.invoke(make_webpage)
-    ctx.invoke(make_checks)
+
+    if clean:
+        ctx.invoke(cli_clean)
+
+    if not no_collection:
+        ctx.invoke(cli_collection)
+
+    if not no_catalog:
+        ctx.invoke(cli_catalog)
+
+    if not no_checks:
+        ctx.invoke(cli_checks)
+
+    if webpage:
+        ctx.invoke(cli_webpage)
 
 
 if __name__ == '__main__':

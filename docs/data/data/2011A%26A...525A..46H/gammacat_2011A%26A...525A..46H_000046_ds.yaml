@@ -1,0 +1,25 @@
+source_id: 46
+reference_id: 2011A&A...525A..46H
+telescope: hess
+
+data:
+  livetime: 45.9h
+  significance: 16
+
+pos:
+  ra: {val: 10h23m24s, err: 0h0m7.2s}
+  dec: {val: -57d47m24s, err: 0d1m12s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.18d, err: 0.02d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 3.25, err: 0.5, err_sys: 0.65, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.58, err: 0.19, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
+  theta: 0.33d
+  erange: {min: 0.8, unit: TeV}

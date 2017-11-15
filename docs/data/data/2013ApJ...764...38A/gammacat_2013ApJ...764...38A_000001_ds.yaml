@@ -1,0 +1,28 @@
+source_id: 1
+reference_id: 2013ApJ...764...38A
+telescope: veritas
+
+data:
+  livetime: 41.25h
+  significance: 7.5
+  significance_post_trial: 6.5
+
+pos:
+  ra: {val: 0h6m26s, err: 0.09d, err_sys: 50s}
+  dec: {val: 72d59m01.0s, err: 0.04d, err_sys: 50s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.30d, err: 0.03d}
+  sigma2: {val: 0.24d, err: 0.03d}
+  # TODO: pa is 'west of north' according to the paper
+  pa: {frame: radec, val: 17.4d, err: 15.8d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.091, err: 0.013, err_sys: 0.017, scale: 1e-12, unit: cm-2 s-1
+          TeV-1}
+      index: {val: 2.2, err: 0.2, err_sys: 0.3}
+      e_ref: {val: 3, unit: TeV}

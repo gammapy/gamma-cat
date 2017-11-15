@@ -1,0 +1,20 @@
+source_id: 167
+reference_id: 2015ApJ...815L..22A
+telescope: veritas
+
+data:
+  livetime: 15.h
+  significance: 7.0
+
+morph:
+  type: point
+
+spec:
+  mjd: {min: 57133., max: 57140.}
+  erange: {min: 0.08, max: 0.25, unit: TeV}
+  model:
+    type: pl2
+    parameters:
+      e_min: {val: 0.08, unit: TeV}
+      flux: {val: 5.0, err: 0.7, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 5.3, err: 0.5}

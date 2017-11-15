@@ -112,20 +112,6 @@ def cli_clean():
     subprocess.call(cmd, shell=True)
 
 
-# TODO: integrate this properly with 'make_checks' above
-@cli.command(name='check-info-yaml')
-def cli_check_info_yaml():
-    """Check the info.yaml files in input/data"""
-    from gammacat.utils import load_yaml, validate_schema
-
-    schema = load_yaml('input/schemas/dataset_info.schema.yaml')
-
-    for path in Path('input/data').glob('*/*/info.yaml'):
-        print(f'Checking: {path}')
-        data = load_yaml(path)
-        validate_schema(path=path, data=data, schema=schema)
-
-
 @cli.command(name='all')
 @click.option('--clean', is_flag=True, help='Run clean step?')
 @click.option('--no-collection', is_flag=True, help='Skip collection step?')

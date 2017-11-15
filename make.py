@@ -4,9 +4,9 @@
 Make catalog (multiple steps available)
 """
 from pathlib import Path
-import os
 import logging
 import warnings
+import subprocess
 import click
 from gammacat.info import gammacat_info
 from gammacat.collection import CollectionConfig, CollectionMaker
@@ -110,6 +110,15 @@ def make_checks(global_config, step):
         step=step,
     )
     Checker(config).run()
+
+
+@cli.command(name='clean')
+def make_clean():
+    """Remove all auto-generated files"""
+    # TODO: this list of files & folders is incomplete
+    cmd = 'rm -r documentation/_build documentation/data/sources documentation/data/source_list.rst'
+    log.info(f'Executing command: {cmd}')
+    subprocess.call(cmd, shell=True)
 
 
 # TODO: integrate this properly with 'make_checks' above

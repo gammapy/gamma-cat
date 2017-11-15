@@ -6,19 +6,22 @@ import json
 from pathlib import Path
 import ruamel.yaml
 import jsonschema
+import jinja2
 import numpy as np
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 from astropy.table import Table
 from gammapy.spectrum.crab import CrabSpectrum
 from gammapy.catalog.gammacat import GammaCatResource
+from .info import gammacat_info
 
 __all__ = [
     'FLUX_TO_CRAB', 'E_INF',
     'ECSVFormatError',
-    'NA', 'render_template',
+    'NA',
     'load_yaml', 'write_yaml',
     'load_json', 'write_json',
+    'jinja2_env',
     'print_simbad_pos',
     'table_to_list_of_dict',
     'validate_schema',
@@ -83,18 +86,11 @@ class NA:
         except KeyError:
             return cls.fill_value['string']
 
-def render_template(infile, outfile, ctx=None):
-    """Helper function to render Jinja templates."""
-    # For examples how to use Jinja, see https://gits.github.com/wrunk/1317933
-    # from flask import render_template
-    from jinja2 import Environment, FileSystemLoader
-    env = Environment(loader=FileSystemLoader('/'))
-    template = env.get_template(infile)
-    if ctx is None:
-        ctx = dict()
-    text = template.render(**ctx)
-    with open(outfile, 'w') as fh:
-        fh.write(text)
+
+jinja_env = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(str(gammacat_info.base_dir / 'documentation/templates/'))
+)
+
 
 def load_yaml(path):
     """Helper function to load data from a YAML file."""

@@ -3,10 +3,10 @@
 Make gamma-cat webpage (in combination with Sphinx).
 """
 import logging
-import jinja2
-from .info import gammacat_info
+from gammapy.catalog import GammaCatResourceIndex
 from .input import BasicSourceList
-from .utils import load_json, render_template
+from .info import gammacat_info
+from .utils import load_json, jinja_env
 
 __all__ = [
     'WebpageConfig',
@@ -14,6 +14,12 @@ __all__ = [
 ]
 
 log = logging.getLogger(__name__)
+
+
+def get_resource_index():
+    path = gammacat_info.base_dir / 'docs/data/gammacat-datasets.json'
+    return GammaCatResourceIndex.from_list(load_json(path))
+
 
 class WebpageConfig:
     """Config options for webpage maker."""
@@ -27,59 +33,42 @@ class WebpageMaker:
 
     def __init__(self, config):
         self.config = config
+        self.resources = get_resource_index()
+        # TODO: we shouldn't be accessing stuff from the input folder
+        # in the webpage generation! Change to use output folder.
         self.sources_data = BasicSourceList.read().to_dict()['data']
 
     def run(self):
         log.info('Make webpage ...')
+        self.make_source_list_page()
+        self.make_source_detail_pages()
 
-        self.make_source_list()
-        self.make_sources()
+    def make_source_list_page(self):
+        # Prepare context
+        ctx = {'sources': self.sources_data}
 
-    def make_source_list(self):
+        # Render context and save to file
+        template = jinja_env.get_template('source_list.txt')
+        txt = template.render(ctx)
+        path = gammacat_info.base_dir / 'documentation/data/source_list.rst'
+        log.info(f'Writing {path}')
+        path.write_text(txt)
 
-        status_rst = str(gammacat_info.base_dir / 'documentation/data/src_list.rst')
-
-        #TODO: How to convert a PosixPath to normal string?
-        TEMPLATE_FILE = str(gammacat_info.base_dir / 'documentation/templates/src_list.txt')
-
-        ctx = {'data' : self.sources_data}
-        render_template(TEMPLATE_FILE, status_rst, ctx)
-
-    def make_sources(self):
-        sources_folder = str(gammacat_info.base_dir / 'documentation/data/sources/')
-
-        #TODO: How to convert a PosixPath to normal string?
-        TEMPLATE_FILE = str(gammacat_info.base_dir / 'documentation/templates/source.txt')
-
-        #TODO: Move this to another place? Maybe collection.py?
-        path = gammacat_info.base_dir / 'docs/data/gammacat-datasets.json'
-        gammacat_dataset = load_json(path)
-
+    def make_source_detail_pages(self):
+        path = gammacat_info.base_dir / 'documentation/data/sources/'
+        path.mkdir(exist_ok=True)
         for source in self.sources_data:
-            self._make_single_source(gammacat_dataset, TEMPLATE_FILE, source, sources_folder)
+            self.make_source_detail_page(source)
 
-        # for source in self.sources_data:
-        #     source_rst = sources_folder + '/source' + str(source['source_id']) + '.rst'
-        #     available_seds = []
+    def make_source_detail_page(self, source):
+        # Prepare context
+        resources = self.resources.query(f'source_id == {source["source_id"]}')
+        ctx = {'source': source, 'resources': resources}
 
-        #     src_id = '{:4d}'.format(source['source_id'])
+        # Render context and save to file
+        template = jinja_env.get_template('source_detail.txt')
+        txt = template.render(ctx)
+        path = gammacat_info.base_dir / f'documentation/data/sources/source_{source["source_id"]}.rst'
+        log.info(f'Writing {path}')
+        path.write_text(txt)
 
-        #     for ref in source['reference_ids']:
-        #         if ref in gammacat_dataset[source['source_id']]['reference_id']:
-        #             available_seds.append(ref)
-        #     ctx = {'src_id' : src_id, 'src_info' : source, 'av_seds' : available_seds}
-        #     render_template(TEMPLATE_FILE, source_rst, ctx)
-            # output = template.render(ctx)
-            # source_rst_file = open(source_rst, 'w')
-            # source_rst_file.write(output)
-
-    def _make_single_source(self, gamcat_dataset, template_file, source, src_folder):
-        source_rst = src_folder + '/source' + str(source['source_id']) + '.rst'
-        print(source_rst)
-        available_seds = []
-        src_id = '{:4d}'.format(source['source_id'])
-        for ref in source['reference_ids']:
-            if ref in gamcat_dataset[source['source_id']]['reference_id']:
-                available_seds.append(ref)
-            ctx = {'src_id' : src_id, 'src_info' : source, 'av_seds' : available_seds}
-            render_template(template_file, source_rst, ctx)

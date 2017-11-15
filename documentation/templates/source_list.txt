@@ -1,0 +1,12 @@
+.. include:: ../references.rst
+
+.. _data-sources:
+
+Sources
+=======
+
+The following TeV sources are in the current version of gamma-cat:
+
+{% for source in sources %}
+* `{{ source.common_name }} <sources/source_{{ source.source_id }}.html>`__
+{% endfor %}

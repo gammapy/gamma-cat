@@ -1,0 +1,25 @@
+source_id: 60
+reference_id: 2013A&A...551A..94H
+telescope: hess
+
+data:
+  livetime: 6h
+  n_on: 112
+  n_off: 365
+  alpha: 0.077
+
+# No position given in the paper
+
+morph:
+  type: point
+
+#############################################################
+# HESS January - March 2011
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.95, err: 0.32, err_sys: 0.39, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.92, err: 0.30, err_sys: 0.20}
+      e_ref: {val: 1, unit: TeV}

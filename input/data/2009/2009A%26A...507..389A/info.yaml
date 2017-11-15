@@ -1,0 +1,10 @@
+reference_id: 2009A&A...507..389A
+source_id: [60]
+telescope: [hess]
+
+datasets:
+  - tev-000060.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no

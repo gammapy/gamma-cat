@@ -3,6 +3,7 @@
 Automated tests for gamma-cat
 """
 import logging
+from pathlib import Path
 from astropy.utils import lazyproperty
 from .input import InputData
 from .collection import CollectionConfig, CollectionData
@@ -15,6 +16,19 @@ __all__ = [
 ]
 
 log = logging.getLogger(__name__)
+
+
+# TODO: put this in a better place?
+def check_info_yaml():
+    """Check the info.yaml files in input/data"""
+    from gammacat.utils import load_yaml, validate_schema
+
+    schema = load_yaml('input/schemas/dataset_info.schema.yaml')
+
+    for path in Path('input/data').glob('*/*/info.yaml'):
+        print(f'Checking: {path}')
+        data = load_yaml(path)
+        validate_schema(path=path, data=data, schema=schema)
 
 
 class CheckerConfig:
@@ -71,6 +85,7 @@ class Checker:
     def check_input(self):
         log.info('Run checks: input')
         self.input_data.validate()
+        check_info_yaml()
         print()
         print(self.input_data)
 

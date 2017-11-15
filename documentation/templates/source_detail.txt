@@ -1,0 +1,24 @@
+:orphan:
+
+Source: {{ source.common_name }}
+--------------------------------
+
+Basic source info
+-----------------
+
+TODO
+
+SEDs
+----
+
+{% for resource in resources.resources if resource.type == 'sed' %}
+* `{{ resource.__str__() }} <../../../../../docs/data/{{ resource.location }}>`__
+{% else %}
+* None
+{% endfor %}
+
+
+Lightcurves
+-----------
+
+TODO

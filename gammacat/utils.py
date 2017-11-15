@@ -6,12 +6,14 @@ import json
 from pathlib import Path
 import ruamel.yaml
 import jsonschema
+import jinja2
 import numpy as np
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 from astropy.table import Table
 from gammapy.spectrum.crab import CrabSpectrum
 from gammapy.catalog.gammacat import GammaCatResource
+from .info import gammacat_info
 
 __all__ = [
     'FLUX_TO_CRAB', 'E_INF',
@@ -19,6 +21,7 @@ __all__ = [
     'NA',
     'load_yaml', 'write_yaml',
     'load_json', 'write_json',
+    'jinja2_env',
     'print_simbad_pos',
     'table_to_list_of_dict',
     'validate_schema',
@@ -82,6 +85,11 @@ class NA:
             return ','.join(data[key])
         except KeyError:
             return cls.fill_value['string']
+
+
+jinja_env = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(str(gammacat_info.base_dir / 'documentation/templates/'))
+)
 
 
 def load_yaml(path):

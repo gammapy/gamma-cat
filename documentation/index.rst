@@ -34,6 +34,7 @@ This site is organised in the following sections:
    :caption: Gamma-Cat Data
 
    data/index
+   data/source_list
 
 .. _user-docs:
 

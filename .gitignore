@@ -97,3 +97,4 @@ desy_lc.py
 .idea
 
 documentation/_build
+documentation/data

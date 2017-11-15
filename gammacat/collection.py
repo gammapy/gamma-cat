@@ -46,6 +46,18 @@ class CollectionConfig:
             filenames = [str(self.path / filename) for filename in filenames]
         return filenames
 
+    def lc_files(self, relative_to_repo=False):
+        filenames = self.list_of_files('data/*/*lc*.ecsv')
+        if relative_to_repo:
+            filenames = [str(self.path / filename) for filename in filenames]
+        return filenames
+
+    def ds_files(self, relative_to_repo=False):
+        filenames = self.list_of_files('data/*/*ds*.yaml')
+        if relative_to_repo:
+            filenames = [str(self.path / filename) for filename in filenames]
+        return filenames
+
     def make_filename(self, meta, *, relative_to_index):
         """
         relative -- is relative to index file?
@@ -88,11 +100,11 @@ class CollectionConfig:
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
     def make_dataset_path(self, dataset, *, relative_to_index):
-        meta = dict()
+        meta = OrderedDict()
         meta['datatype'] = 'ds'
-        meta['reference_id'] = dataset.reference_id()
-        meta['reference_folder'] = dataset.folder()
-        meta['source_id'] = dataset.source_id()
+        meta['reference_folder'] = Path(dataset.resource.location).parts[-2]
+        meta['reference_id'] = dataset.resource.reference_id
+        meta['source_id'] = dataset.resource.source_id
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
     def list_of_files(self, pattern='*'):
@@ -237,7 +249,7 @@ class CollectionMaker:
             if status == 'complete':
                 for file in info_data['datasets']:
                     if file[-4:] == 'yaml':
-                        dataset = DataSet(folder / file)
+                        dataset = DataSet.read(folder / file)
                         path = self.config.make_dataset_path(dataset, relative_to_index=False)
                         path.parent.mkdir(parents=True, exist_ok=True)
                         dataset.write(path)
@@ -258,13 +270,12 @@ class CollectionMaker:
             resource = SED.read(self.config.path / filename).resource
             resource.location = filename
             resources.append(resource)
-
         for filename in self.config.lc_files():
             resource = LightCurve.read(self.config.path / filename).resource
             resource.location = filename
             resources.append(resource)
         for filename in self.config.ds_files():
-            resource = DataSet(self.config.path / filename).resource()
+            resource = DataSet.read(self.config.path / filename).resource
             resource.location = filename
             resources.append(resource)
 
@@ -272,3 +283,4 @@ class CollectionMaker:
 
         path = self.config.index_datasets_json
         write_json(ri.to_list(), path)
+

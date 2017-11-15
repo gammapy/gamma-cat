@@ -115,7 +115,7 @@ if not on_rtd:
 # http://docs.readthedocs.io/en/latest/builds.html#understanding-what-s-going-on
 if on_rtd:
     import subprocess
-    cmd = 'cd .. && time ./make.py all --clean --webpage'
+    cmd = f'cd .. && {sys.executable} make.py all --clean --webpage'
     print(f'Executing: {cmd}')
     subprocess.call(cmd, shell=True)
 

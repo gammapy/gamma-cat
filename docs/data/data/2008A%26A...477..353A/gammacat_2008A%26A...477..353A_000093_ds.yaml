@@ -1,0 +1,30 @@
+source_id: 93
+reference_id: 2008A&A...477..353A
+telescope: hess
+
+data:
+  livetime: 39h
+  significance: 10.7
+
+pos:
+  glon: {val: 345.683d, err: 0.05d}
+  glat: {val: -0.469d, err: 0.05d}
+
+morph:
+  type: gauss
+  sigma: {val: 0.06d, err: 0.02d}
+  sigma2: {val: 0.08d, err: 0.02d}
+  pa: {frame: radec, val: -20d, err: 23d}
+
+# Note: spectral model parameters in the paper are probably incorrect.
+# Discussion and values here obtained from corresponding author Karl Kosack
+# via https://github.com/gammapy/gamma-cat/issues/115
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 5.596e-12, err: 6.404e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.58, err: 0.1025, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
+  theta: 0.3d
+  erange: {min: 0.50, max: 60, unit: TeV}

@@ -1,0 +1,25 @@
+source_id: 89
+reference_id: 2014ApJ...794L...1A
+telescope: hess
+
+data:
+  livetime: 72h
+  significance: 8.5
+
+pos:
+  ra: {val: 16h41m2.1s, err: 0h0m3.0s}
+  dec: {val: -46d18m13s, err: 35s}
+
+morph:
+  type: point
+
+# Note: only energy flux is given in the paper.
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.391, err: 0.069, err_sys: 0.078, scale: 1e-12, unit: cm-2 s-1
+          TeV-1}
+      index: {val: 2.07, err: 0.11, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
+  erange: {min: 0.64, max: 100, unit: TeV}

@@ -1,0 +1,25 @@
+source_id: 141
+reference_id: 2014ApJ...788...78A
+telescope: veritas
+
+data:
+  livetime: 70.h
+  significance: 7.
+  excess: 69.
+
+pos:
+  ra: {val: 20h16m2s, err: 0h0m3s, err_sys: 50s}
+  dec: {val: +37d11m51s, err: 40s, err_sys: 50s}
+
+morph:
+  type: point
+
+spec:
+  erange: {min: 0.65, max: 10., unit: TeV}
+  theta: 0.09d
+  model:
+    type: pl
+    parameters:
+      norm: {val: 3.1, err: 0.9, err_sys: 0.6, scale: 1e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.3, err: 0.3, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}

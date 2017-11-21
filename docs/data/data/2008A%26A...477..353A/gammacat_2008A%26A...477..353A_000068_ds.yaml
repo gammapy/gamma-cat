@@ -1,0 +1,27 @@
+source_id: 68
+reference_id: 2008A&A...477..353A
+telescope: hess
+
+data:
+  livetime: 21h
+  significance: 7.3
+
+pos:
+  glon: {val: 314.409d, err: 0.05d}
+  glat: {val: -0.145d, err: 0.05d}
+
+morph:
+  type: gauss
+  sigma: {val: 0.04d, err: 0.02d}
+  sigma2: {val: 0.08d, err: 0.02d}
+  pa: {frame: radec, val: 80d, err: 17d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.3, err: 0.4, err_sys: 0.2, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.16, err: 0.14, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
+  theta: 0.2d
+  erange: {min: 0.97, max: 50, unit: TeV}

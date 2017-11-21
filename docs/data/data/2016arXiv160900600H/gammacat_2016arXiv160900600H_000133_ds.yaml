@@ -1,0 +1,32 @@
+source_id: 133
+reference_id: 2016arXiv160900600H
+telescope: hess
+
+data:
+  livetime: 75h
+  zenith: 37d
+  offset: 1.1d
+  n_on: 1141
+  n_off: 16017
+  alpha: 0.047
+  excess: 392
+  significance: 12.9
+
+pos:
+  # from two-source fit (point for W49B)
+  glon: {val: 43.260d, err: 0.005d, err_sys: 0.006d}
+  glat: {val: -0.190d, err: 0.005d, err_sys: 0.006d}
+
+morph:
+  type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.315, err: 0.046, err_sys: 0.063, scale: 1e-12, unit: cm-2 s-1
+          TeV-1}
+      index: {val: 3.14, err: 0.24, err_sys: 0.29}
+      e_ref: {val: 1, unit: TeV}
+  theta: 0.1d
+  erange: {min: 0.29, unit: TeV}

@@ -1,0 +1,20 @@
+# This file contains the data for the south-west (SW) region
+source_id: 74
+reference_id: 2010A&A...516A..62A
+file_id: 2
+telescope: hess
+
+data:
+  livetime: 130h
+  # Numbers from table 1 for hard cuts
+  excess: 191
+  significance: 8.7
+
+spec:
+  model:
+    type: pl2
+    parameters:
+      flux: {val: 0.155, err: 0.037, err_sys: 0.031, scale: 1e-12, unit: cm-2 s-1}
+      index: {val: 2.29, err: 0.18, err_sys: 0.2}
+      e_min: {val: 1, unit: TeV}
+  erange: {min: 0.26, unit: TeV}

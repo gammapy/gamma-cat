@@ -1,0 +1,23 @@
+source_id: 32
+reference_id: 2011ApJ...742..127A
+telescope: veritas
+
+data:
+  livetime: 19.3h
+  significance: 5.2
+  excess: 283
+
+# From fit to VERITAS data
+pos:
+  ra: {val: 102.19d, err: 0.11d, err_sys: 25s}
+  dec: {val: +15.27d, err: 0.12d, err_sys: 25s}
+
+spec:
+  mjd: {min: 55259., max: 55301.}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.3, err: 0.5, err_sys: 1.2, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 4.4, err: 0.8, err_sys: 0.3}
+      e_ref: {val: 0.3, unit: TeV}
+  erange: {min: 0.200, max: 0.650, unit: TeV}

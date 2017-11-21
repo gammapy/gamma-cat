@@ -1,0 +1,20 @@
+source_id: 148
+reference_id: 2013ApJ...762...92A
+telescope: veritas
+
+pos:
+  ra: {val: 22h02m37s, err: 36s}
+  dec: {val: +42d15m25s, err: 36s}
+
+morph:
+  type: point
+
+spec:
+  mjd: {min: 55740.43222, max: 55740.446134}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 580., err: 70., scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.6, err: 0.4}
+      e_ref: {val: 0.3, unit: TeV}
+  erange: {min: 0.2, max: 0.6, unit: TeV}

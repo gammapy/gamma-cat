@@ -1,0 +1,23 @@
+source_id: 26
+reference_id: 2015Sci...347..406H
+telescope: hess
+
+data:
+  livetime: 183h
+  significance: 8.8
+  excess: 74
+
+pos:
+  ra: {val: 5h25m55s, err: 0h0m5s}
+  dec: {val: -69d11m10s, err: 20s}
+
+morph:
+  type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.16, err: 0.04, err_sys: 0.048, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.6, err: 0.2, err_sys: 0.3}
+      e_ref: {val: 1, unit: TeV}

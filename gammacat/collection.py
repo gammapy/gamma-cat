@@ -238,18 +238,19 @@ class CollectionMaker:
             lightcurve.table.write(str(path), format='ascii.ecsv')
 
     def process_datasets(self):
-        for filename in self.input_data.info_yaml_list:
-            folder = filename.parents[0]
-            info_data = load_yaml(filename)
+        for info_filename in self.input_data.info_yaml_list:
+            info_data = load_yaml(info_filename)
             status = info_data['data_entry']['status']
-            review = info_data['data_entry']['reviewed']
+            # review = info_data['data_entry']['reviewed']
             log.debug('Processing reference: {}'.format(info_data['reference_id']))
             # TODO: This is if you want to make sure that all data are reviewed
             # if status == 'complete' and review == 'yes':
             if status == 'complete':
-                for file in info_data['datasets']:
-                    if file[-4:] == 'yaml':
-                        dataset = DataSet.read(folder / file)
+                for dataset_filename in info_data['datasets']:
+                    if dataset_filename.endswith('yaml'):
+                        filename = info_filename.parent / dataset_filename
+                        dataset = DataSet.read(filename)
+
                         path = self.config.make_dataset_path(dataset, relative_to_index=False)
                         path.parent.mkdir(parents=True, exist_ok=True)
                         dataset.write(path)

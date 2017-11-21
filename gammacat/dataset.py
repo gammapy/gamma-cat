@@ -9,6 +9,7 @@ __all__ = [
 
 log = logging.getLogger(__name__)
 
+
 class DataSet:
     """Process a dataset file."""
     resource_type = 'ds'
@@ -22,24 +23,18 @@ class DataSet:
     def read(cls, filename):
         data = load_yaml(filename)
         resource = cls._read_resource_info(data, filename)
-        return cls(data = data, resource = resource)
-
-    def write(self, filename):
-        write_yaml(self.data, filename)
-
-    def folder(self):
-        return self.data['reference_id'].replace('&', '%26')
+        return cls(data=data, resource=resource)
 
     @classmethod
     def _read_resource_info(cls, data, location):
-        try:
-            file_id = data['file_id']
-        except:
-            file_id = -1
+        file_id = data.get('file_id', GammaCatResource._NA_FILL['file_id'])
         return GammaCatResource(
-            source_id = data['source_id'],
-            reference_id = data['reference_id'],
-            file_id = file_id,
+            source_id=data['source_id'],
+            reference_id=data['reference_id'],
+            file_id=file_id,
             type=cls.resource_type,
             location=location
         )
+
+    def write(self, filename):
+        write_yaml(self.data, filename)

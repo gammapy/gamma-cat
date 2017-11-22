@@ -28,34 +28,36 @@ class CollectionConfig:
     Configuration options (mainly directory and filenames).
     """
 
-    def __init__(self, *, path, step=None):
-        self.path = path
+    def __init__(self, *, in_path, out_path, step=None):
+        self.in_path = in_path
+        self.out_path = out_path
         self.step = step
 
-        self.gammacat_yaml = self.path / 'gammacat.yaml'
-        self.gammacat_ecsv = self.path / 'gammacat.ecsv'
-        self.gammacat_fits = self.path / 'gammacat.fits.gz'
+        self.gammacat_yaml = self.out_path / 'gammacat.yaml'
+        self.gammacat_ecsv = self.out_path / 'gammacat.ecsv'
+        self.gammacat_fits = self.out_path / 'gammacat.fits.gz'
 
         # Index files
-        self.index_datasets_json = self.path / 'gammacat-datasets.json'
-        self.index_sources_json = self.path / 'gammacat-sources.json'
+        self.index_datasets_json = self.out_path / 'gammacat-datasets.json'
+        self.index_sources_json = self.out_path / 'gammacat-sources.json'
+        self.index_input_json = self.in_path / 'input-datasets.json'
 
     def sed_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*sed*.ecsv')
         if relative_to_repo:
-            filenames = [str(self.path / filename) for filename in filenames]
+            filenames = [str(self.out_path / filename) for filename in filenames]
         return filenames
 
     def lc_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*lc*.ecsv')
         if relative_to_repo:
-            filenames = [str(self.path / filename) for filename in filenames]
+            filenames = [str(self.out_path / filename) for filename in filenames]
         return filenames
 
     def ds_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*ds*.yaml')
         if relative_to_repo:
-            filenames = [str(self.path / filename) for filename in filenames]
+            filenames = [str(self.out_path / filename) for filename in filenames]
         return filenames
 
     def make_filename(self, meta, *, relative_to_index):
@@ -66,7 +68,7 @@ class CollectionConfig:
         if relative_to_index:
             path = Path('')
         else:
-            path = self.path
+            path = self.out_path
 
         path = path / 'data' / meta['reference_folder']
 
@@ -110,8 +112,8 @@ class CollectionConfig:
     def list_of_files(self, pattern='*'):
         """Make list of all files in the output folder"""
         return list([
-            str(_.relative_to(self.path))
-            for _ in self.path.rglob(pattern)
+            str(_.relative_to(self.out_path))
+            for _ in self.out_path.rglob(pattern)
             if _.is_file()
         ])
 
@@ -131,14 +133,14 @@ class CollectionData:
     Expose it as Python objects that can be validated and used.
     """
 
-    def __init__(self, path):
+    def __init__(self, in_path, out_path):
         # TODO: it's weird that we create a config object here!?
-        self.config = CollectionConfig(path=path, step=None)
+        self.config = CollectionConfig(in_path=in_path, out_path=out_path, step=None)
 
     # TODO: put more info here! Write a summary YAML or JSON file in the repo instead!
     def __str__(self):
         ss = 'Collection data summary:\n'
-        ss += 'Path: {}\n'.format(self.config.path)
+        ss += 'Path: {}\n'.format(self.config.out_path)
         ss += 'Number of sources: {}\n'.format('TODO')
         ss += 'Number of resources: {}\n'.format(len(self.config.resource_index.resources))
         return ss
@@ -268,15 +270,15 @@ class CollectionMaker:
         # TODO: add all the files, not just SED!
         resources = []
         for filename in self.config.sed_files():
-            resource = SED.read(self.config.path / filename).resource
+            resource = SED.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
         for filename in self.config.lc_files():
-            resource = LightCurve.read(self.config.path / filename).resource
+            resource = LightCurve.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
         for filename in self.config.ds_files():
-            resource = DataSet.read(self.config.path / filename).resource
+            resource = DataSet.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
 

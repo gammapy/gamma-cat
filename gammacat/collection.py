@@ -6,7 +6,7 @@ import logging
 from collections import OrderedDict
 from pathlib import Path
 from astropy.utils import lazyproperty
-from gammapy.catalog.gammacat import GammaCatResourceIndex
+from gammapy.catalog.gammacat import GammaCatResourceIndex, GammaCatResource
 from .sed import SED
 from .lightcurve import LightCurve
 from .dataset import DataSet
@@ -22,6 +22,10 @@ __all__ = [
 
 log = logging.getLogger(__name__)
 
+# TODO: Rewrite this complete file:
+# E.g. three main classes 'CollectionConfig', InputCollection', 'OutputCollection'
+# because many things are used by input collection and output collection
+# hence we should find a way to not write code doubled
 
 class CollectionConfig:
     """
@@ -258,16 +262,32 @@ class CollectionMaker:
                         dataset.write(path)
 
     def make_index_file_for_input(self):
-        # TODO: this is a temp hack. Fill correctly using GammaCatResourceIndex
-        data = OrderedDict()
-        data['info'] = gammacat_info.info_dict
-        data['data'] = self.input_data.datasets.to_dict()['data']
-        data['files'] = self.config.list_of_files()
-        path = self.config.index_datasets_json
-        write_json(data, path)
+        resources = []
+        for info_filename in self.input_data.info_yaml_list:
+            info_data = load_yaml(info_filename)
+            if info_data['data_entry']['status'] == 'missing':
+                continue
+            # TODO: Decide which datasets are copied to output collection by the keywords in 
+            # 'status' and 'reviewed' in info.yaml
+            # e.g if info_data['data_entry']['status'] == 'complete':
+            for dataset in info_data['datasets']:
+                resource = GammaCatResource(0, 'empty');
+                if dataset.endswith('yaml'):
+                    resource = DataSet.read(info_filename.parent / dataset).resource
+                elif dataset.endswith('ecsv'):
+                    if 'lc' in dataset:
+                        resource = LightCurve.read(info_filename.parent / dataset).resource
+                    elif 'sed' in dataset:
+                        resource = SED.read(info_filename.parent / dataset).resource
+                resource.location = str(info_filename.parent.relative_to(self.config.in_path) / dataset)
+                resources.append(resource)
+
+        ri = GammaCatResourceIndex(resources).sort()
+
+        path = self.config.index_input_json
+        write_json(ri.to_list(), path)
 
     def make_index_file_for_output(self):
-        # TODO: add all the files, not just SED!
         resources = []
         for filename in self.config.sed_files():
             resource = SED.read(self.config.out_path / filename).resource

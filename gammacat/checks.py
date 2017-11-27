@@ -34,8 +34,9 @@ def check_info_yaml():
 class CheckerConfig:
     """Config for Checker"""
 
-    def __init__(self, *, step, out_path):
+    def __init__(self, *, step, in_path, out_path):
         self.step = step
+        self.in_path = in_path
         self.out_path = out_path
 
 
@@ -67,12 +68,12 @@ class Checker:
     @lazyproperty
     def collection_data(self):
         log.info('Reading collection data ...')
-        return CollectionData(path=self.config.out_path)
+        return CollectionData(in_path=self.config.in_path, out_path=self.config.out_path)
 
     @lazyproperty
     def catalog(self):
         log.info('Reading catalog ...')
-        filename = CollectionConfig(path=self.config.out_path).gammacat_fits
+        filename = CollectionConfig(in_path=self.config.in_path, out_path=self.config.out_path).gammacat_fits
         return SourceCatalogGammaCat(filename=filename)
 
     def check_all(self):

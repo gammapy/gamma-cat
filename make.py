@@ -30,6 +30,7 @@ class GlobalConfig:
             warnings.simplefilter('ignore')
 
         self.out_path = gammacat_info.base_dir / 'docs/data'
+        self.in_path = gammacat_info.base_dir / 'input'
 
     def __repr__(self):
         return 'GlobalConfig({!r})'.format(self.__dict__)
@@ -61,7 +62,8 @@ def cli(ctx, log_level, show_warnings):
 def cli_collection(global_config, step):
     """Make gamma-cat data collection."""
     config = CollectionConfig(
-        path=global_config.out_path,
+        in_path=global_config.in_path,
+        out_path=global_config.out_path,
         step=step,
     )
     CollectionMaker(config).run()
@@ -97,6 +99,7 @@ def cli_checks(global_config, step):
     """Run automated checks.
     """
     config = CheckerConfig(
+        in_path=global_config.in_path,
         out_path=global_config.out_path,
         step=step,
     )

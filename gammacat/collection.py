@@ -6,7 +6,7 @@ import logging
 from collections import OrderedDict
 from pathlib import Path
 from astropy.utils import lazyproperty
-from gammapy.catalog.gammacat import GammaCatResourceIndex
+from gammapy.catalog.gammacat import GammaCatResourceIndex, GammaCatResource
 from .sed import SED
 from .lightcurve import LightCurve
 from .dataset import DataSet
@@ -22,40 +22,46 @@ __all__ = [
 
 log = logging.getLogger(__name__)
 
+# TODO: Rewrite this complete file:
+# E.g. three main classes 'CollectionConfig', InputCollection', 'OutputCollection'
+# because many things are used by input collection and output collection
+# hence we should find a way to not write code doubled
 
 class CollectionConfig:
     """
     Configuration options (mainly directory and filenames).
     """
 
-    def __init__(self, *, path, step=None):
-        self.path = path
+    def __init__(self, *, in_path, out_path, step=None):
+        self.in_path = in_path
+        self.out_path = out_path
         self.step = step
 
-        self.gammacat_yaml = self.path / 'gammacat.yaml'
-        self.gammacat_ecsv = self.path / 'gammacat.ecsv'
-        self.gammacat_fits = self.path / 'gammacat.fits.gz'
+        self.gammacat_yaml = self.out_path / 'gammacat.yaml'
+        self.gammacat_ecsv = self.out_path / 'gammacat.ecsv'
+        self.gammacat_fits = self.out_path / 'gammacat.fits.gz'
 
         # Index files
-        self.index_datasets_json = self.path / 'gammacat-datasets.json'
-        self.index_sources_json = self.path / 'gammacat-sources.json'
+        self.index_datasets_json = self.out_path / 'gammacat-datasets.json'
+        self.index_sources_json = self.out_path / 'gammacat-sources.json'
+        self.index_input_json = self.in_path / 'input-datasets.json'
 
     def sed_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*sed*.ecsv')
         if relative_to_repo:
-            filenames = [str(self.path / filename) for filename in filenames]
+            filenames = [str(self.out_path / filename) for filename in filenames]
         return filenames
 
     def lc_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*lc*.ecsv')
         if relative_to_repo:
-            filenames = [str(self.path / filename) for filename in filenames]
+            filenames = [str(self.out_path / filename) for filename in filenames]
         return filenames
 
     def ds_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*ds*.yaml')
         if relative_to_repo:
-            filenames = [str(self.path / filename) for filename in filenames]
+            filenames = [str(self.out_path / filename) for filename in filenames]
         return filenames
 
     def make_filename(self, meta, *, relative_to_index):
@@ -66,7 +72,7 @@ class CollectionConfig:
         if relative_to_index:
             path = Path('')
         else:
-            path = self.path
+            path = self.out_path
 
         path = path / 'data' / meta['reference_folder']
 
@@ -110,8 +116,8 @@ class CollectionConfig:
     def list_of_files(self, pattern='*'):
         """Make list of all files in the output folder"""
         return list([
-            str(_.relative_to(self.path))
-            for _ in self.path.rglob(pattern)
+            str(_.relative_to(self.out_path))
+            for _ in self.out_path.rglob(pattern)
             if _.is_file()
         ])
 
@@ -131,14 +137,14 @@ class CollectionData:
     Expose it as Python objects that can be validated and used.
     """
 
-    def __init__(self, path):
+    def __init__(self, in_path, out_path):
         # TODO: it's weird that we create a config object here!?
-        self.config = CollectionConfig(path=path, step=None)
+        self.config = CollectionConfig(in_path=in_path, out_path=out_path, step=None)
 
     # TODO: put more info here! Write a summary YAML or JSON file in the repo instead!
     def __str__(self):
         ss = 'Collection data summary:\n'
-        ss += 'Path: {}\n'.format(self.config.path)
+        ss += 'Path: {}\n'.format(self.config.out_path)
         ss += 'Number of sources: {}\n'.format('TODO')
         ss += 'Number of resources: {}\n'.format(len(self.config.resource_index.resources))
         return ss
@@ -256,27 +262,43 @@ class CollectionMaker:
                         dataset.write(path)
 
     def make_index_file_for_input(self):
-        # TODO: this is a temp hack. Fill correctly using GammaCatResourceIndex
-        data = OrderedDict()
-        data['info'] = gammacat_info.info_dict
-        data['data'] = self.input_data.datasets.to_dict()['data']
-        data['files'] = self.config.list_of_files()
-        path = self.config.index_datasets_json
-        write_json(data, path)
+        resources = []
+        for info_filename in self.input_data.info_yaml_list:
+            info_data = load_yaml(info_filename)
+            if info_data['data_entry']['status'] == 'missing':
+                continue
+            # TODO: Decide which datasets are copied to output collection by the keywords in 
+            # 'status' and 'reviewed' in info.yaml
+            # e.g if info_data['data_entry']['status'] == 'complete':
+            for dataset in info_data['datasets']:
+                resource = GammaCatResource(0, 'empty');
+                if dataset.endswith('yaml'):
+                    resource = DataSet.read(info_filename.parent / dataset).resource
+                elif dataset.endswith('ecsv'):
+                    if 'lc' in dataset:
+                        resource = LightCurve.read(info_filename.parent / dataset).resource
+                    elif 'sed' in dataset:
+                        resource = SED.read(info_filename.parent / dataset).resource
+                resource.location = str(info_filename.parent.relative_to(self.config.in_path) / dataset)
+                resources.append(resource)
+
+        ri = GammaCatResourceIndex(resources).sort()
+
+        path = self.config.index_input_json
+        write_json(ri.to_list(), path)
 
     def make_index_file_for_output(self):
-        # TODO: add all the files, not just SED!
         resources = []
         for filename in self.config.sed_files():
-            resource = SED.read(self.config.path / filename).resource
+            resource = SED.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
         for filename in self.config.lc_files():
-            resource = LightCurve.read(self.config.path / filename).resource
+            resource = LightCurve.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
         for filename in self.config.ds_files():
-            resource = DataSet.read(self.config.path / filename).resource
+            resource = DataSet.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
 

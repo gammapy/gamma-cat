@@ -115,9 +115,12 @@ if not on_rtd:
 # http://docs.readthedocs.io/en/latest/builds.html#understanding-what-s-going-on
 if on_rtd:
     import subprocess
-    cmd = f'cd .. && {sys.executable} make.py all --clean --webpage'
-    print(f'Executing: {cmd}')
-    subprocess.call(cmd, shell=True)
+    cmd1 = f'cd .. && {sys.executable} make.py clean'
+    cmd2 = f'{sys.executable} make.py webpage'
+    print(f'Executing: {cmd1}')
+    print(f'Executing: {cmd2}')
+    subprocess.call(cmd1, shell=True)
+    subprocess.call(cmd2, shell=True)
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

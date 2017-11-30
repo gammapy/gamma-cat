@@ -47,6 +47,12 @@ class CollectionConfig:
         self.index_sources_json = self.out_path / 'gammacat-sources.json'
         self.index_input_json = self.in_path / 'input-datasets.json'
 
+    def bsi_files(self, relative_to_repo=False):
+        filenames = self.list_of_files('sources/*.yaml')
+        if relative_to_repo:
+            filenames = [str(self.out_path / filename) for filename in filenames]
+        return filenames
+
     def sed_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*sed*.ecsv')
         if relative_to_repo:
@@ -309,6 +315,10 @@ class CollectionMaker:
             resources.append(resource)
         for filename in self.config.ds_files():
             resource = DataSet.read(self.config.out_path / filename).resource
+            resource.location = filename
+            resources.append(resource)
+        for filename in self.config.bsi_files():
+            resource = SrcInfo.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
 

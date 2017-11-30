@@ -1,0 +1,36 @@
+source_id: 90
+
+common_name: Westerlund 1
+gamma_names: [HESS J1646-458]
+fermi_names: []
+other_names:
+- Wd 1
+- CXOU J164710.2 - 455216
+- 4U 1642-45
+- PSR J1648-4611
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2009-06
+
+tevcat_id: 186
+tevcat2_id: Lv6nKy
+tevcat_name: TeV J1647-458
+
+tgevcat_id: 90
+tgevcat_name: TeV J1646-4549
+
+pos:
+  simbad_id: HESS J1646–458
+  ra: 251.5
+  dec: -45.8
+
+reference_ids:
+- 2010ASPC..422..265O
+- 2010ApJ...713L..45L
+- 2012A&A...537A.114A
+- 2013MNRAS.434.2289O
+- 2013PASJ...65...64S

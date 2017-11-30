@@ -1,0 +1,34 @@
+source_id: 94
+
+common_name: HESS J1708-443
+gamma_names: [HESS J1708-443]
+fermi_names: []
+other_names:
+- PSR B1706-44
+- G343.1-2.3
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess, cangaroo]
+discovery_date: 2009-07
+
+tevcat_id: 191
+tevcat2_id: jrf7QE
+tevcat_name: TeV J1708-443
+
+tgevcat_id: 94
+tgevcat_name: TeV J1708-4420
+
+pos:
+  simbad_id: HESS J1708-443
+  ra: 257.0
+  dec: -44.3
+
+reference_ids:
+- 2009ApJ...703.1725E
+- 2009ApJ...702..631Y
+- 2009arXiv0906.5574H
+- 2011A&A...528A.143H
+- 2013ApJ...773...77A

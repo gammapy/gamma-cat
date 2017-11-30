@@ -7,6 +7,7 @@ from collections import OrderedDict
 from pathlib import Path
 from astropy.utils import lazyproperty
 from gammapy.catalog.gammacat import GammaCatResourceIndex, GammaCatResource
+from .src_info import SrcInfo
 from .sed import SED
 from .lightcurve import LightCurve
 from .dataset import DataSet
@@ -193,6 +194,8 @@ class CollectionMaker:
         step = self.config.step
         if step == 'all':
             self.process_all()
+        elif step == 'source-info':
+            self.process_src_info()
         elif step == 'input-index':
             self.make_index_file_for_input()
         elif step == 'sed':
@@ -242,6 +245,13 @@ class CollectionMaker:
             path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))
             lightcurve.table.write(str(path), format='ascii.ecsv')
+
+    def process_src_info(self):
+        for filename in self.input_data.src_info_list:
+            log.debug(' Processing basic source info file: {}'.format(filename))
+            src_info = SrcInfo.read(filename)
+            path = self.config.path / 'sources' / filename.parts[-1]
+            src_info.write(path)
 
     def process_datasets(self):
         for info_filename in self.input_data.info_yaml_list:

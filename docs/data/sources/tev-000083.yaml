@@ -1,0 +1,34 @@
+source_id: 83
+
+common_name: HESS J1614-518
+gamma_names: [HESS J1614-518]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2005-03
+
+tevcat_id: 234
+tevcat2_id: ChXqoJ
+tevcat_name: TeV J1614-518
+
+tgevcat_id: 83
+tgevcat_name: TeV J1614-5149
+
+pos:
+  simbad_id: HESS J1614-518
+  ra: 243.5625
+  dec: -51.819083
+
+reference_ids:
+- 2005Sci...307.1938A
+- 2006ApJ...636..777A
+- 2008PASJ...60S.163M
+- 2008AIPC.1085..241R
+- 2010ASPC..422..265O
+- 2011PASJ...63S.879S
+- 2013ApJ...773...77A

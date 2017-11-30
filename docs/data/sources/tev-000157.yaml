@@ -1,0 +1,27 @@
+source_id: 157
+
+common_name: HESS J1852-000
+gamma_names: [HESS J1852-000]
+other_names: [Kes 78]
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2011-08
+
+tevcat_id: 280
+tevcat2_id: xI7npJ
+tevcat_name: TeV J1852-000
+
+# Note: this source is not listed in tgevcat yet
+
+pos:
+  simbad_id: HESS J1852-000
+  ra: 283.0
+  dec: 0.0
+
+reference_ids:
+- 2011ICRC....7...76K
+- 2016ApJ...818...63B

@@ -1,0 +1,40 @@
+source_id: 91
+
+common_name: Markarian 501
+gamma_names: [VER J1653+397]
+fermi_names: []
+other_names:
+- Mrk 501
+
+where: egal
+classes: [hbl]
+
+discoverer: whipple
+seen_by: [whipple, hegra, magic, veritas, hawc]
+discovery_date: 1996-01
+
+tevcat_id: 76
+tevcat2_id: FItw4l
+tevcat_name: TeV J1653+397
+
+tgevcat_id: 91
+tgevcat_name: TeV J1653+3945
+
+pos:
+  simbad_id: Markarian 501
+  ra: 253.4675695
+  dec: 39.760169139
+
+reference_ids:
+- 1996ApJ...456L..83Q
+- 1999A&A...342...69A
+- 2001ApJ...546..898A
+- 2001A&A...366...62A
+- 2008JPhG...35f5202G
+- 2009ApJ...705.1624A
+- 2011ApJ...727..129A
+- 2011ApJ...729....2A
+- 2012ApJ...758....2B
+- 2015A&A...573A..50A
+- 2015ApJ...812...65F
+- 2017A%26A...603A..31A

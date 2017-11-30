@@ -1,0 +1,34 @@
+source_id: 107
+
+common_name: Galactic Centre ridge
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-02
+
+tevcat_id: 121
+tevcat2_id: PehQOM
+tevcat_name: TeV J1745-290d
+
+tgevcat_id: 107
+tgevcat_name: TeV J1745-2900
+
+reference_ids:
+- 2006Natur.439..695A
+- 2010MNRAS.402.1877A
+- 2016ApJ...821..129A
+
+pos:
+  simbad_id: Galactic Centre
+  ra: 266.416833
+  dec: -29.007806
+
+notes: |
+  TODO: should we put this as a source?
+  Or have it be part of the Galactic diffuse emission?

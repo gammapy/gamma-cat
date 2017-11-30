@@ -1,0 +1,29 @@
+source_id: 87
+
+common_name: HESS J1634-472
+gamma_names: [HESS J1634-472]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-01
+
+tevcat_id: 106
+tevcat2_id: qne6F2
+tevcat_name: TeV J1634-472
+
+tgevcat_id: 87
+tgevcat_name: TeV J1634-4716
+
+pos:
+  simbad_id: HESS J1634-472
+  ra: 248.5
+  dec: -47.2
+
+reference_ids:
+- 2006ApJ...636..777A
+- 2013ApJ...773...77A

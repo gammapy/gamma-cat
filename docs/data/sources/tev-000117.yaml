@@ -1,0 +1,30 @@
+source_id: 117
+
+common_name: SNR G15.4+0.1
+gamma_names: [HESS J1818-154]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [pwn, snr]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2011-12
+
+tevcat_id: 233
+tevcat2_id: SxYdrN
+tevcat_name: TeV J1818-154
+
+tgevcat_id: 117
+tgevcat_name: TeV J1818-1528
+
+pos:
+  simbad_id: SNR G15.4+0.1
+  ra: 274.5
+  dec: -15.45
+
+reference_ids:
+- 2011ICRC....7..248H
+- 2013A&A...557L..15C
+- 2014A&A...562A..40H

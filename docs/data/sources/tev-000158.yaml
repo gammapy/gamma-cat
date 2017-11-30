@@ -1,0 +1,31 @@
+source_id: 158
+
+common_name: SNR G323.7-01.0
+gamma_names: [HESS J1534-571]
+other_names: []
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2015-07
+
+tevcat_id: 268
+tevcat2_id: dwdrDT
+tevcat_name: TeV J1534-571
+
+# Note: this source is not listed in tgevcat yet
+
+# The SNR or HESS source is not listed in SIMBAD yet.
+# But the SNR is listed in SNRCat here:
+# http://www.physics.umanitoba.ca/snr/SNRcat/SNRrecord.php?id=G323.7m01.0
+# SkyCoord('15h34m30s -57d12m03s', frame='icrs')
+# TODO: this source is listed as `simbad_id`, but it's not SIMBAD!?
+pos:
+  simbad_id: SNR G323.7-01.0
+  ra: 233.62499
+  dec: -57.20083
+
+reference_ids:
+- 2015arXiv150903872P

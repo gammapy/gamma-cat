@@ -1,0 +1,28 @@
+source_id: 144
+
+common_name: Gamma Cygni
+gamma_names: [VER J2019+407]
+other_names: [1FGL J2020.0+4049, SNR G78.2+2.1]
+
+where: gal
+classes: [unid]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2009-11
+
+tevcat_id: 201
+tevcat2_id: IWrXQp
+tevcat_name: TeV J2019+407
+
+tgevcat_id: 144
+tgevcat_name: TeV J2020+4045
+
+pos:
+  simbad_id: gamma cygni
+  ra: 305.557090982
+  dec: 40.256679158
+
+reference_ids:
+- 2013ApJ...770...93A
+- 2011arXiv1111.1034A

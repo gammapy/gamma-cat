@@ -1,0 +1,29 @@
+source_id: 35
+
+common_name: S5 0716+714
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: egal
+classes: [ibl]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2008-04
+
+tevcat_id: 172
+tevcat2_id: vDwoU3
+tevcat_name: TeV J0721+713
+
+tgevcat_id: 35
+tgevcat_name: TeV J0721+7120
+
+pos:
+  simbad_id: S5 0716+714
+  ra: 110.472701917
+  dec: 71.343434278
+
+reference_ids:
+- 2009ApJ...704L.129A
+- 2009arXiv0907.0366M

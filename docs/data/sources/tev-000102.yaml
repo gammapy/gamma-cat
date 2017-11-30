@@ -1,0 +1,29 @@
+source_id: 102
+
+common_name: HESS J1729-345
+gamma_names: [HESS J1729-345]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2011-05
+
+tevcat_id: 224
+tevcat2_id: UnsKSi
+tevcat_name: TeV J1729-345
+
+tgevcat_id: 102
+tgevcat_name: TeV J1729-3432
+
+pos:
+  simbad_id: HESS J1729-345
+  ra: 262.25
+  dec: -34.5
+
+reference_ids:
+- 2011A&A...531A..81H
+- 2015arXiv150306717M

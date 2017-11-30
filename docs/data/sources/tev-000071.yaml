@@ -1,0 +1,32 @@
+source_id: 71
+
+common_name: 1ES 1440+122
+gamma_names: [VER J1443+120]
+fermi_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2010-08
+
+tevcat_id: 85
+tevcat2_id: 57tu8J
+tevcat_name: TeV J1443+120
+
+tgevcat_id: 71
+tgevcat_name: TeV J1442+1200
+
+pos:
+  simbad_id: 1ES 1440+122
+  ra: 220.701152425
+  dec: 12.0112152417
+
+reference_ids:
+- http://www.astronomerstelegram.org/?read=2786
+- 2011arXiv1110.0040W
+- 2011ICRC....8...43M
+- 2015arXiv150103554C
+- 2016MNRAS.461..202A

@@ -1,0 +1,29 @@
+source_id: 1
+
+common_name: CTA 1
+gamma_names:
+- VER J0006+729
+other_names:
+- SNR G119.5+10.2
+
+where: gal
+classes: [pwn, snr]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2011-10
+
+tevcat_id: 227
+tevcat2_id: rC5JCj
+tevcat_name: TeV J0006+729
+
+tgevcat_id: 1
+tgevcat_name: TeV J0006+7259
+
+reference_ids:
+- 2013ApJ...764...38A
+
+pos:
+  simbad_id: CTA 1
+  ra: 1.6500000
+  dec: 72.7830000

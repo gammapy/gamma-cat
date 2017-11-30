@@ -1,0 +1,35 @@
+source_id: 124
+
+common_name: HESS J1837-069
+gamma_names: [HESS J1837-069, 1HWC J1838-060, 1HWC J1836-074c]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess, hawc]
+discovery_date: 2005-03
+
+tevcat_id: 117
+tevcat2_id: giVWlK
+tevcat_name: TeV J1837-069
+
+tgevcat_id: 124
+tgevcat_name: TeV J1837-0656
+
+pos:
+  simbad_id: HESS J1837-069
+  ra: 279.42792
+  dec: -6.9275
+
+reference_ids:
+- 2005Sci...307.1938A
+- 2006ApJ...636..777A
+- 2008ApJ...681..515G
+- 2009PASJ...61S.183A
+- 2012arXiv1202.1455M
+- 2013ApJ...773...77A
+- 2014PASJ...66...19F
+- 2016ApJ...817....3A

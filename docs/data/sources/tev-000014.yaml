@@ -1,0 +1,32 @@
+source_id: 14
+
+common_name: LS I +61 303
+gamma_names: [VER J0240+612]
+other_names: []
+
+where: gal
+classes: [bin]
+
+discoverer: magic
+seen_by: [veritas, magic]
+discovery_date: 2006-06
+
+tevcat_id: 89
+tevcat2_id: fW749W
+tevcat_name: TeV J0240+612
+
+tgevcat_id: 14
+tgevcat_name: TeV J0240+6115
+
+pos:
+  simbad_id: LS I +61 303
+  ra: 40.131938163
+  dec: 61.229336515
+
+reference_ids:
+- 2006Sci...312.1771A
+- 2008ApJ...679.1427A
+- 2009ApJ...700.1034A
+- 2011ApJ...738....3A
+- 2013ApJ...779...88A
+- 2016ApJ...817L...7A

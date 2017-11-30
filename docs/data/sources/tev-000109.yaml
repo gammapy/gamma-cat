@@ -1,0 +1,35 @@
+source_id: 109
+
+common_name: Terzan 5
+gamma_names: [HESS J1747-248]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid, gc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2011-07
+
+tevcat_id: 234
+tevcat2_id: xhmRbS
+tevcat_name: TeV J1747-248
+
+tgevcat_id: 109
+tgevcat_name: TeV J1747-2448
+
+pos:
+  simbad_id: Terzan 5
+  ra: 267.020833
+  dec: -24.78
+
+reference_ids:
+- 2006ApJ...636..777A
+- 2011A&A...531L..18H
+- 2011ICRC....7..119D
+- 2011A&A...533L...5D
+- 2013A&A...551A..26H
+- 2013MmSAI..84..236M
+- 2013MNRAS.432.3462Z
+- 2014MNRAS.445.2842B

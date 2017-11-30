@@ -1,0 +1,29 @@
+source_id: 13
+
+common_name: 1ES 0229+200
+gamma_names: [VER J0232+202]
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess, veritas]
+discovery_date: 2006-12
+
+tevcat_id: 130
+tevcat2_id: pVNsSZ
+tevcat_name: TeV J0232+202
+
+tgevcat_id: 13
+tgevcat_name: TeV J0232+2016
+
+pos:
+  simbad_id: 1ES 0229+200
+  ra: 38.2025640
+  dec: 20.2881899
+
+reference_ids:
+- 2007A&A...475L...9A
+- 2011arXiv1110.0038
+- 2014ApJ...782...13A

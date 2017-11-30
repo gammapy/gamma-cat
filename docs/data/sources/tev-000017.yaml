@@ -1,0 +1,27 @@
+source_id: 17
+
+common_name: RBS 0413
+gamma_names: [VER J0319+187]
+other_names: [RBS 0413, EXO 0317.0+1834, 1E 0317.0+1835]
+
+where: egal
+classes: [hbl]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2009-10
+
+tevcat_id: 198
+tevcat2_id: p26X9Z
+tevcat_name: TeV J0319+187
+
+tgevcat_id: 17
+tgevcat_name: TeV J0319+1845
+
+pos:
+  simbad_id: RBS 0413
+  ra: 49.96585
+  dec: 18.7595556
+
+reference_ids:
+- 2012ApJ...750...94A

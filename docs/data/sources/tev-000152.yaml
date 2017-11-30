@@ -1,0 +1,27 @@
+source_id: 152
+
+common_name: B3 2247+381
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2010-10
+
+tevcat_id: 211
+tevcat2_id: WCU2Cw
+tevcat_name: TeV J2250+384
+
+tgevcat_id: 152
+tgevcat_name: TeV J2250+3824
+
+pos:
+  simbad_id: B3 2247+381
+  ra: 342.52395075
+  dec: 38.410332111
+
+reference_ids:
+- 2012A&A...539A.118A

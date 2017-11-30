@@ -1,0 +1,31 @@
+source_id: 85
+
+common_name: HESS J1626-490
+gamma_names: [HESS J1626-490]
+fermi_names: []
+other_names:
+- SNR G335.2+00.1
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-07
+
+tevcat_id: 137
+tevcat2_id: ctBOIp
+tevcat_name: TeV J1626-490
+
+tgevcat_id: 85
+tgevcat_name: TeV J1626-4905
+
+pos:
+  simbad_id: HESS J1626-490
+  ra: 246.51667
+  dec: -49.08694
+
+reference_ids:
+- 2008A&A...477..353A
+- 2011arXiv1110.1252E
+- 2013ApJ...773...77A

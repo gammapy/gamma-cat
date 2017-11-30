@@ -1,0 +1,29 @@
+source_id: 99
+
+common_name: HESS J1718-385
+gamma_names: [HESS J1718-385]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-09
+
+tevcat_id: 154
+tevcat2_id: iq0QXk
+tevcat_name: TeV J1718-385
+
+tgevcat_id: 99
+tgevcat_name: TeV J1718-3833
+
+pos:
+  simbad_id: HESS J1718-385
+  ra: 259.5292
+  dec: -38.55
+
+reference_ids:
+- 2007A&A...476L..25H
+- 2007A&A...472..489A

@@ -1,0 +1,28 @@
+source_id: 32
+
+common_name: RX J0648.7+1516
+gamma_names: [VER J0648+152]
+fermi_names: [1FGL J0648.8+1516]
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2010-03
+
+tevcat_id: 207
+tevcat2_id: 0WgN2s
+tevcat_name: TeV J0648+152
+
+tgevcat_id: 32
+tgevcat_name: TeV J0648+1516 #TeV J06481516
+
+pos:
+  simbad_id: RX J0648.7+1516
+  ra: 102.1984875
+  dec: 15.2735722
+
+reference_ids:
+- 2011ApJ...742..127A

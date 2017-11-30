@@ -1,0 +1,31 @@
+source_id: 3
+
+common_name: Tycho SNR
+gamma_names: [VER J0025+641]
+other_names:
+- SNR G120.1+1.4
+- 3C10
+- SN1572
+
+where: gal
+classes: [snr]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2010-05
+
+tevcat_id: 209
+tevcat2_id: xCyAjF
+tevcat_name: TeV J0025+641
+
+tgevcat_id: 3
+tgevcat_name: TeV J0025+6410
+
+reference_ids:
+- 2017ApJ...836...23A
+- 2011ApJ...730L..20A
+
+pos:
+  simbad_id: Tycho SNR
+  ra: 6.3397000
+  dec: 64.1408000

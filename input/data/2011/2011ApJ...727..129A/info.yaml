@@ -5,7 +5,9 @@ telescope: [veritas, magic]
 datasets:
   - tev-000091-1.yaml
   - tev-000091-2.yaml
+  - tev-000091-3.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: spectral points (Fig 8) missing, MAGIC info missing, otherwise complete

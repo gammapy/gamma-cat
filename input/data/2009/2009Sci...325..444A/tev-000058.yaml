@@ -1,0 +1,6 @@
+source_id: 58
+reference_id: 2009Sci...325..444A
+telescope: hess, magic,veritas
+
+data:
+  livetime: 95.0h

@@ -4,5 +4,6 @@ telescope: [veritas, hess, magic]
 
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: light curve points missing, otherwise complete

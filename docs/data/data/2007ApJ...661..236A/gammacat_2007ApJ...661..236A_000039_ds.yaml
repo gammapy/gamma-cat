@@ -1,0 +1,20 @@
+source_id: 39
+reference_id: 2007ApJ...661..236A
+telescope: hess
+
+data:
+  livetime: 33h
+
+morph:
+  type: shell
+  sigma: {val: 60m}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.90, err: 0.08, err_sys: 0.40, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.24, err: 0.04, err_sys: 0.15}
+      e_ref: {val: 1, unit: TeV}
+  theta: 1.0d
+  erange: {min: 0.3, max: 20.0, unit: TeV}

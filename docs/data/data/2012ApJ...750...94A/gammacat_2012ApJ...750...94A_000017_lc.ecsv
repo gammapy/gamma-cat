@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: flux, unit: 1 / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: 1 / (cm2 s), datatype: float64}
+# - {name: flux_ul, unit: 1 / (cm2 s), datatype: float64}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 17}
+# - {reference_id: 2012ApJ...750...94A}
+# - {UL_CONF: 0.99}
+# - {telescope: veritas}
+# - {SED_TYPE: flux}
+# - {comments: not entirely certain on confidence level of upper limit (not given in
+#     paper)}
+# schema: astropy-2.0
+time e_min flux flux_err flux_ul
+54747.0 0.25 3.4822e-12 2.72343e-12 nan
+54805.0 0.25 2.56273e-12 2.47643e-12 nan
+54835.0 0.25 2.65163e-12 2.53179e-12 nan
+54865.0 0.25 1.1951e-11 5.3976e-12 nan
+54895.0 0.25 nan nan 1.25883e-11
+55107.0 0.25 2.28004e-12 1.15067e-12 nan
+55137.0 0.25 1.89253e-12 2.25862e-12 nan
+55191.0 0.25 1.85327e-12 1.19483e-12 nan
+55220.0 0.25 1.16873e-12 1.24519e-12 nan

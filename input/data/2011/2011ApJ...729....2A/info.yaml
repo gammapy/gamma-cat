@@ -1,7 +1,10 @@
 reference_id: 2011ApJ...729....2A
 source_id: [91]
-telescope: [veritas]
+telescope: [magic, veritas]
 
+datasets:
+  - tev-000091-1.yaml
+  - tev-000091-2.yaml
 
 data_entry:
   status: missing

@@ -1,0 +1,22 @@
+source_id: 105
+reference_id: 2016MNRAS.459.2550A
+telescope: veritas
+
+data:
+  livetime: 30h
+  significance: 5.9
+
+pos:
+  # from fit to VERITAS data
+  ra: {val: 17h44m1.2s, err: 2.4s, err_sys: 25s}
+  dec: {val: +19d32m47s, err: 47s, err_sys: 25s}
+
+spec:
+  mjd: {min: 54940., max: 56834.}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 9.2, err: 1.8, err_sys: 2.3, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.7, err: 0.7, err_sys: 0.2}
+      e_ref: {val: 0.3, unit: TeV}
+  erange: {min: 0.21, max: 0.42, unit: TeV}

@@ -101,10 +101,23 @@ todo_include_todos = False
 
 # See https://github.com/snide/sphinx_rtd_theme#using-this-theme-locally-then-building-on-read-the-docs
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
 if not on_rtd:
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+
+# On RTD, run `make.py all --webpage` to generate data files and run the first part
+# of the webpage build (auto-generate RST pages)
+# This was added and dicussed in https://github.com/gammapy/gamma-cat/pull/172
+# Some info what RTD executes is here:
+# http://docs.readthedocs.io/en/latest/builds.html#understanding-what-s-going-on
+if on_rtd:
+    import subprocess
+    cmd = f'cd .. && {sys.executable} make.py all --clean --webpage'
+    print(f'Executing: {cmd}')
+    subprocess.call(cmd, shell=True)
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

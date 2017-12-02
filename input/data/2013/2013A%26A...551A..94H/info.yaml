@@ -1,0 +1,10 @@
+reference_id: 2013A&A...551A..94H
+source_id: [60]
+telescope: [hess]
+
+datasets:
+  - tev-000060.yaml
+
+data_entry:
+  status: complete
+  reviewed: no

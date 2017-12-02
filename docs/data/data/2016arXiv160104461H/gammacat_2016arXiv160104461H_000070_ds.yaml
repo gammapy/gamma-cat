@@ -1,0 +1,31 @@
+source_id: 70
+reference_id: 2016arXiv160104461H
+telescope: hess
+
+data:
+  livetime: 57h
+
+pos:
+  # from shell fit
+  ra: {val: 14h42m53s, err: 0h0m7s}
+  dec: {val: -62d25m48s, err: 0d1m48s}
+
+morph:
+  type: shell
+  sigma: {val: 0.19d, err: 0.03d} # inner radius
+  sigma2: {val: 0.30d, err: 0.02d} # outer radius
+
+# The paper only quotes dnde = 3.0e-12 at 1 TeV
+# Our model `norm` parameter differs by a factor
+# exp(1 / e_cut) = exp(1 / 3.47) = 1.334
+# To put a correct norm, here we put the factor 1.334 to the `scale` of `norm`.
+spec:
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 3.0, err: 0.2, err_sys: 0.6, scale: 1.334e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 1.59, err: 0.22, err_sys: 0.2}
+      e_cut: {val: 3.47, err: 1.23, unit: TeV}
+      e_ref: {val: 1, unit: TeV}
+  theta: 0.41d
+  erange: {min: 0.4, max: 50, unit: TeV}

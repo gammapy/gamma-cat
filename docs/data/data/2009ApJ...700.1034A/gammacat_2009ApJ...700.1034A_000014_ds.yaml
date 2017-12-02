@@ -1,0 +1,27 @@
+source_id: 14
+reference_id: 2009ApJ...700.1034A
+file_id: 2
+telescope: veritas
+
+##################
+# Orbital period
+# (for binaries only)
+orbit:
+   # zero phase for orbital period from Gregory (2002)
+  mjd0: 43366.3d      #
+  period: {val: 26.4960, unit: day}
+
+#############################################################
+# spectral fit results
+# (spectral fit for phases 0.5-0.8)
+
+spec:
+  mjd: {min: 54381.9, max: 54479.6}
+  phase: {min: 0.5, max: 0.8}
+  erange: {min: 0.3, max: 7.07, unit: TeV}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.43, err: 0.78, err_sys: 0.6, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.60, err: 0.6, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}

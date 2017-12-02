@@ -1,0 +1,24 @@
+source_id: 61
+reference_id: 2005A&A...439.1013A
+telescope: hess
+
+data:
+  livetime: 58.6h
+  excess: 2469
+  significance: 21
+
+pos:
+  ra: {val: 13h3m0.4s, err: 0h0m4.4s, err_sys: 20s}
+  dec: {val: -63d11m55s, err: 31s, err_sys: 20s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.16d, err: 0.02d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 4.3, err: 0.3, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.44, err: 0.05, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}

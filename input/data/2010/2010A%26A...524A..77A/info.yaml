@@ -1,0 +1,11 @@
+reference_id: 2010A&A...524A..77A
+source_id: [49, 91]
+telescope: [magic]
+
+datasets:
+  - tev-000049.yaml
+  - tev-000091.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

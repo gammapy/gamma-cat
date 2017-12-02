@@ -1,0 +1,24 @@
+source_id: 95
+reference_id: 2006ApJ...636..777A
+telescope: hess
+
+data:
+  livetime: 37.3h
+  significance: 4.0
+
+pos:
+  glon: {val: 348.65d, err: 0.03d}
+  glat: {val: 0.38d, err: 0.03d}
+
+morph:
+  type: gauss
+  sigma: {val: 0.06d, err: 0.04d}
+
+spec:
+  model:
+    type: pl2
+    parameters:
+      flux: {val: 4.2, err: 1.5, err_sys: 0.3, scale: 1e-12, unit: cm-2 s-1}
+      index: {val: 2.27, err: 0.48, err_sys: 0.2}
+      e_min: {val: 0.2, unit: TeV}
+  theta: 0.17d

@@ -1,0 +1,10 @@
+reference_id: 2009ApJ...692L..29A
+source_id: [11]
+telescope: [magic]
+
+datasets:
+  - tev-000011.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

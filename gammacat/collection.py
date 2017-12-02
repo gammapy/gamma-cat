@@ -6,12 +6,13 @@ import logging
 from collections import OrderedDict
 from pathlib import Path
 from astropy.utils import lazyproperty
-from gammapy.catalog.gammacat import GammaCatResourceIndex
+from gammapy.catalog.gammacat import GammaCatResourceIndex, GammaCatResource
 from .sed import SED
 from .lightcurve import LightCurve
+from .dataset import DataSet
 from .info import gammacat_info, GammaCatStr
 from .input import InputData
-from .utils import write_json, load_json, log_list_difference
+from .utils import write_json, load_json, log_list_difference, load_yaml
 
 __all__ = [
     'CollectionConfig',
@@ -21,28 +22,46 @@ __all__ = [
 
 log = logging.getLogger(__name__)
 
+# TODO: Rewrite this complete file:
+# E.g. three main classes 'CollectionConfig', InputCollection', 'OutputCollection'
+# because many things are used by input collection and output collection
+# hence we should find a way to not write code doubled
 
 class CollectionConfig:
     """
     Configuration options (mainly directory and filenames).
     """
 
-    def __init__(self, *, path, step=None):
-        self.path = path
+    def __init__(self, *, in_path, out_path, step=None):
+        self.in_path = in_path
+        self.out_path = out_path
         self.step = step
 
-        self.gammacat_yaml = self.path / 'gammacat.yaml'
-        self.gammacat_ecsv = self.path / 'gammacat.ecsv'
-        self.gammacat_fits = self.path / 'gammacat.fits.gz'
+        self.gammacat_yaml = self.out_path / 'gammacat.yaml'
+        self.gammacat_ecsv = self.out_path / 'gammacat.ecsv'
+        self.gammacat_fits = self.out_path / 'gammacat.fits.gz'
 
         # Index files
-        self.index_datasets_json = self.path / 'gammacat-datasets.json'
-        self.index_sources_json = self.path / 'gammacat-sources.json'
+        self.index_datasets_json = self.out_path / 'gammacat-datasets.json'
+        self.index_sources_json = self.out_path / 'gammacat-sources.json'
+        self.index_input_json = self.in_path / 'input-datasets.json'
 
     def sed_files(self, relative_to_repo=False):
         filenames = self.list_of_files('data/*/*sed*.ecsv')
         if relative_to_repo:
-            filenames = [str(self.path / filename) for filename in filenames]
+            filenames = [str(self.out_path / filename) for filename in filenames]
+        return filenames
+
+    def lc_files(self, relative_to_repo=False):
+        filenames = self.list_of_files('data/*/*lc*.ecsv')
+        if relative_to_repo:
+            filenames = [str(self.out_path / filename) for filename in filenames]
+        return filenames
+
+    def ds_files(self, relative_to_repo=False):
+        filenames = self.list_of_files('data/*/*ds*.yaml')
+        if relative_to_repo:
+            filenames = [str(self.out_path / filename) for filename in filenames]
         return filenames
 
     def make_filename(self, meta, *, relative_to_index):
@@ -53,7 +72,7 @@ class CollectionConfig:
         if relative_to_index:
             path = Path('')
         else:
-            path = self.path
+            path = self.out_path
 
         path = path / 'data' / meta['reference_folder']
 
@@ -63,6 +82,8 @@ class CollectionConfig:
             path = path / '{}_sed.ecsv'.format(tag)
         elif meta['datatype'] == 'lc':
             path = path / '{}_lc.ecsv'.format(tag)
+        elif meta['datatype'] == 'ds':
+            path = path / '{}_ds.yaml'.format(tag)
         else:
             raise ValueError('Invalid datatype: {}'.format(meta['datatype']))
 
@@ -78,11 +99,25 @@ class CollectionConfig:
         meta['reference_folder'] = Path(sed.resource.location).parts[-2]
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
+    def make_lc_path(self, lc, *, relative_to_index):
+        meta = lc.table.meta.copy()
+        meta['datatype'] = 'lc'
+        meta['reference_folder'] = Path(lc.resource.location).parts[-2]
+        return self.make_filename(meta, relative_to_index=relative_to_index)
+
+    def make_dataset_path(self, dataset, *, relative_to_index):
+        meta = OrderedDict()
+        meta['datatype'] = 'ds'
+        meta['reference_folder'] = Path(dataset.resource.location).parts[-2]
+        meta['reference_id'] = dataset.resource.reference_id
+        meta['source_id'] = dataset.resource.source_id
+        return self.make_filename(meta, relative_to_index=relative_to_index)
+
     def list_of_files(self, pattern='*'):
         """Make list of all files in the output folder"""
         return list([
-            str(_.relative_to(self.path))
-            for _ in self.path.rglob(pattern)
+            str(_.relative_to(self.out_path))
+            for _ in self.out_path.rglob(pattern)
             if _.is_file()
         ])
 
@@ -102,14 +137,14 @@ class CollectionData:
     Expose it as Python objects that can be validated and used.
     """
 
-    def __init__(self, path):
+    def __init__(self, in_path, out_path):
         # TODO: it's weird that we create a config object here!?
-        self.config = CollectionConfig(path=path, step=None)
+        self.config = CollectionConfig(in_path=in_path, out_path=out_path, step=None)
 
     # TODO: put more info here! Write a summary YAML or JSON file in the repo instead!
     def __str__(self):
         ss = 'Collection data summary:\n'
-        ss += 'Path: {}\n'.format(self.config.path)
+        ss += 'Path: {}\n'.format(self.config.out_path)
         ss += 'Number of sources: {}\n'.format('TODO')
         ss += 'Number of resources: {}\n'.format(len(self.config.resource_index.resources))
         return ss
@@ -151,6 +186,7 @@ class CollectionMaker:
 
     def __init__(self, config):
         self.config = config
+        self.info_file_list = self.input_data.info_yaml_list
 
     def run(self):
         log.info('Make collection ...')
@@ -163,6 +199,8 @@ class CollectionMaker:
             self.process_seds()
         elif step == 'lightcurve':
             self.process_lightcurves()
+        elif step == 'dataset':
+            self.process_datasets()
         elif step == 'output-index':
             self.make_index_file_for_output()
         else:
@@ -179,7 +217,7 @@ class CollectionMaker:
         self.process_seds()
         self.process_lightcurves()
         # self.process_all_basic_source_infos()  # TODO
-        # self.process_all_dataset_source_infos()  # TODO
+        self.process_datasets()
 
         self.make_index_file_for_output()
 
@@ -200,26 +238,67 @@ class CollectionMaker:
             lightcurve = LightCurve.read(filename)
             lightcurve.process()
 
-            # TODO: put this in a good location! (same relative path as in input?)
-            path = self.config.path / 'lightcurve.ecsv'
+            path = self.config.make_lc_path(lightcurve, relative_to_index=False)
             path.parent.mkdir(parents=True, exist_ok=True)
             log.info('Writing {}'.format(path))
             lightcurve.table.write(str(path), format='ascii.ecsv')
 
+    def process_datasets(self):
+        for info_filename in self.input_data.info_yaml_list:
+            info_data = load_yaml(info_filename)
+            status = info_data['data_entry']['status']
+            # review = info_data['data_entry']['reviewed']
+            log.debug('Processing reference: {}'.format(info_data['reference_id']))
+            # TODO: This is if you want to make sure that all data are reviewed
+            # if status == 'complete' and review == 'yes':
+            if status == 'complete':
+                for dataset_filename in info_data['datasets']:
+                    if dataset_filename.endswith('yaml'):
+                        filename = info_filename.parent / dataset_filename
+                        dataset = DataSet.read(filename)
+
+                        path = self.config.make_dataset_path(dataset, relative_to_index=False)
+                        path.parent.mkdir(parents=True, exist_ok=True)
+                        dataset.write(path)
+
     def make_index_file_for_input(self):
-        # TODO: this is a temp hack. Fill correctly using GammaCatResourceIndex
-        data = OrderedDict()
-        data['info'] = gammacat_info.info_dict
-        data['data'] = self.input_data.datasets.to_dict()['data']
-        data['files'] = self.config.list_of_files()
-        path = self.config.index_datasets_json
-        write_json(data, path)
+        resources = []
+        for info_filename in self.input_data.info_yaml_list:
+            info_data = load_yaml(info_filename)
+            if info_data['data_entry']['status'] == 'missing':
+                continue
+            # TODO: Decide which datasets are copied to output collection by the keywords in 
+            # 'status' and 'reviewed' in info.yaml
+            # e.g if info_data['data_entry']['status'] == 'complete':
+            for dataset in info_data['datasets']:
+                resource = GammaCatResource(0, 'empty');
+                if dataset.endswith('yaml'):
+                    resource = DataSet.read(info_filename.parent / dataset).resource
+                elif dataset.endswith('ecsv'):
+                    if 'lc' in dataset:
+                        resource = LightCurve.read(info_filename.parent / dataset).resource
+                    elif 'sed' in dataset:
+                        resource = SED.read(info_filename.parent / dataset).resource
+                resource.location = str(info_filename.parent.relative_to(self.config.in_path) / dataset)
+                resources.append(resource)
+
+        ri = GammaCatResourceIndex(resources).sort()
+
+        path = self.config.index_input_json
+        write_json(ri.to_list(), path)
 
     def make_index_file_for_output(self):
-        # TODO: add all the files, not just SED!
         resources = []
         for filename in self.config.sed_files():
-            resource = SED.read(self.config.path / filename).resource
+            resource = SED.read(self.config.out_path / filename).resource
+            resource.location = filename
+            resources.append(resource)
+        for filename in self.config.lc_files():
+            resource = LightCurve.read(self.config.out_path / filename).resource
+            resource.location = filename
+            resources.append(resource)
+        for filename in self.config.ds_files():
+            resource = DataSet.read(self.config.out_path / filename).resource
             resource.location = filename
             resources.append(resource)
 
@@ -227,3 +306,4 @@ class CollectionMaker:
 
         path = self.config.index_datasets_json
         write_json(ri.to_list(), path)
+

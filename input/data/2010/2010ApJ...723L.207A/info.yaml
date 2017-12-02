@@ -1,0 +1,10 @@
+reference_id: 2010ApJ...723L.207A
+source_id: [16]
+telescope: [magic]
+
+datasets:
+  - tev-000016.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

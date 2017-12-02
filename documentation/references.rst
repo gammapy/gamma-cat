@@ -18,6 +18,7 @@
 
 .. _ADASS 2016: http://www.adass2016.inaf.it
 .. _gamma-cat poster at ADASS 2016: https://github.com/gammapy/adass2016-gamma-cat-poster/blob/master/adass2016-gamma-cat-poster.pdf
+.. _gamma-cat poster from 2017: https://github.com/gammapy/gamma-cat/blob/master/documentation/2017-09-18-cta-phys-gammacat-poster.pdf
 
 .. _gamma-astro-data-formats: http://gamma-astro-data-formats.readthedocs.io
 .. _Astrophysics data system (ADS): https://ui.adsabs.harvard.edu

@@ -4,6 +4,7 @@ telescope: [magic]
 
 datasets:
   - tev-000052-sed.ecsv
+  - tev-000052.yaml
 
 data_entry:
   status: incomplete

@@ -1,0 +1,38 @@
+source_id: 146
+reference_id: 2014ApJ...783...16A
+telescope: veritas
+
+data:
+  livetime: 48.2h
+  significance: 8.7
+
+pos:
+  ra: {val: 20h31m40s, err: 0h1m5s, err_sys: 50s}
+  dec: {val: +41d33m53s, err: 37s, err_sys: 50s}
+
+
+# Source position
+# Results given for energy range [1.46, 2.76] TeV
+# 1.46–2.76 0.33+-0.1
+morph:
+  type: gauss
+  sigma: {val: 0.3d, err: 0.1d}
+# other energy ranges:
+# < 1.46 TeV 0.18 ± 0.03 deg
+#morph:
+#    type: gauss
+#    sigma: {val: 0.18d, err: 0.03d}
+# > 2.76 TeV 0.24 ± 0.09 deg
+#morph:
+#    type: gauss
+#    sigma: {val: 0.24d, err: 0.09d}
+
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.95, err: 0.16, err_sys: 0.22, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.1, err: 0.14, err_sys: 0.21}
+      e_ref: {val: 1, unit: TeV}
+  erange: {min: 0.6, max: 23.41, unit: TeV}

@@ -1,0 +1,25 @@
+source_id: 75
+reference_id: 2008AIPC.1085..281R
+telescope: hess
+
+data:
+  livetime: 24h
+  significance: 6
+
+pos:
+  ra: {val: 15h03m38s}
+  dec: {val: -58d13m45s}
+
+morph:
+  type: gauss
+  sigma: {val: 0.26d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.6, err: 0.6, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.4, err: 0.4, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}
+  erange: {min: 0.8, unit: TeV}
+  theta: 0.4d

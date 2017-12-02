@@ -1,0 +1,10 @@
+reference_id: 2006ApJ...643L..53A
+source_id: [123]
+telescope: [magic]
+
+datasets:
+  - tev-000123.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

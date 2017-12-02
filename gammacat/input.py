@@ -67,7 +67,7 @@ class BasicSourceInfo:
         if data['reference_ids'] is None or data['reference_ids'][0] is None:
             data['reference_ids'] = ''
         else:
-            data['reference_ids'] = ','.join(data['reference_ids'])
+            data['reference_ids'] = data['reference_ids']
 
         # TODO: write code to handle position
         data.pop('pos', None)
@@ -317,6 +317,20 @@ class InputData:
         """List of all SED files in the input folder."""
         path = gammacat_info.base_dir / 'input/data'
         paths = path.glob('*/*/tev*sed*.ecsv')
+        return sorted(paths)
+
+    @property
+    def info_yaml_list(self):
+        """List of all info files in the input folder."""
+        path = gammacat_info.base_dir / 'input/data'
+        paths = path.glob('*/*/info.yaml')
+        return sorted(paths)
+
+    @property
+    def dataset_file_list(self):
+        """List of all dataset files in the input folder."""
+        path = gammacat_info.base_dir / 'input/data'
+        paths = path.glob('*/*/tev*.yaml')
         return sorted(paths)
 
     def __init__(self, schemas=None, sources=None, datasets=None,

@@ -1,0 +1,35 @@
+source_id: 39
+reference_id: 2016arXiv161101863H
+telescope: hess
+
+data:
+  livetime: 93.6h
+  significance: 39.1
+
+# No position measurement is published in this paper
+# We're using center of spectral measurement region
+pos:
+  ra: {val: 8h52m}
+  dec: {val: -46d22m12s}
+
+# No source morphology fit published in this paper.
+# The shell outer radius of 1.0 is mentioned in the text.
+morph:
+  type: shell
+  sigma: {val: 1.0d}
+
+# This is the total spectrum.
+# The paper also contains several sub-region spectral measurements.
+spec:
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 32.163, err: 1.4643, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 1.8118, err: 0.0816}
+      e_cut: {val: 6.68003, err: 1.23605, unit: TeV}
+      e_ref: {val: 1, unit: TeV}
+    # TODO: add support for covar for spectral models?
+    covar: [[2.1443e-24, -3.7242e-14, 2.4071e-14], [-3.7242e-14, 0.0066546, -0.0019996],
+      [2.4071e-14, -0.0019996, 0.00076532]]
+  theta: 1.0d
+  erange: {min: 0.316, max: 30, unit: TeV}

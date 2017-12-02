@@ -23,9 +23,6 @@ script:
 
 - export PYTHONPATH=.:$PYTHONPATH
 - python make.py --help
-#- ./make.py check
-#- ./make.py output
-#- ./make.py webpage
-- python make.py all
+- python make.py all --clean --webpage
 - python -m pytest -v --cov=gammacat
 - cd documentation && make html

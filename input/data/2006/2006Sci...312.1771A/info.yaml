@@ -1,0 +1,10 @@
+reference_id: 2006sci...312.1771A
+source_id: [14]
+telescope: [magic]
+
+datasets:
+  - tev-000014.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

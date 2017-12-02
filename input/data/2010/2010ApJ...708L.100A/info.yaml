@@ -4,5 +4,6 @@ telescope: [veritas]
 
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: light curve (Fig 2 top) and spectral points (Fig 3) missing, otherwise complete

@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32, unit: TeV m-2 s-1}
+# - {name: dnde_errn, datatype: float32, unit: TeV m-2 s-1}
+# - {name: dnde_errp, datatype: float32, unit: TeV m-2 s-1}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 11}
+# - {reference_id: 2011ApJ...726...43A}
+# - {file_id: 2}
+# - {telescope: veritas}
+# - mjd: {max: 54734.0, max: 54749.0}
+# - {comments: data labeled darkrun in the 
+#    paper.}
+e_ref dnde dnde_errn dnde_errp
+0.2051 1.8522e-6 3.18e-7 4.09e-7
+0.2518 9.6249e-7 1.65e-7 1.49e-7
+0.3066 2.985e-7 9.38e-8 9.11e-8
+0.380 1.7626e-7 8.26e-8 5.13e-8

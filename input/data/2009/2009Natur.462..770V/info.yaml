@@ -2,7 +2,10 @@ reference_id: 2009Natur.462..770V
 source_id: [40]
 telescope: [veritas]
 
+datasets:
+  - tev-000040.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: spectral (Fig 2) and light curve (Suppl Fig 2) missing, otherwise complete

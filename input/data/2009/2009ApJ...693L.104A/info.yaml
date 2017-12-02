@@ -2,7 +2,11 @@ reference_id: 2009ApJ...693L.104A
 source_id: [11]
 telescope: [veritas]
 
+datasets:
+ - tev-000011.yaml
+ - tev-000011-sed.ecsv
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: light-curve points missing (Fig 3), otherwise complete

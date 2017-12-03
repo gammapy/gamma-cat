@@ -3,8 +3,10 @@ source_id: [138]
 telescope: [veritas]
 
 datasets:
+  - tev-000138.yaml
   - tev-000138-sed.ecsv
 
 data_entry:
   status: incomplete
   reviewed: no
+  notes: light curve (Fig 1 top panel) missing, otherwise complete

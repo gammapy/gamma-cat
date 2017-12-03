@@ -3,8 +3,10 @@ source_id: [20]
 telescope: [veritas]
 
 datasets:
+  - tev-000020.yaml
   - tev-000020-sed.ecsv
 
 data_entry:
   status: incomplete
   reviewed: no
+  notes: light curve missing (Fig 3)

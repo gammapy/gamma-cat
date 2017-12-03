@@ -2,4 +2,20 @@ source_id: 91
 reference_id: 2011ApJ...729....2A
 telescope: veritas
 
-#TODO: Add data
+data:
+      livetime: 2.6h
+      significance: 12.7
+      excess: 204.7
+
+morph:
+  type: point
+
+spec:
+  erange: {min: 0.2, max: 5.0, unit: TeV}
+  mjd: {min: 54914., max: 54914.}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 5.78, err: 0.15, err_sys: 0.1 scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.72, err: 0.15, err_sys: 0.1 }
+      e_ref: {val: 1., unit: TeV}

@@ -2,7 +2,14 @@ reference_id: 2012ApJ...746..141A
 source_id: [58]
 telescope: [veritas]
 
+datasets:
+  - tev-000058-1.yaml
+  - tev-000058-2.yaml
+  - tev-000058-3.yaml
+  - tev-000058-lc.ecsv
+
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: spectral points missing (Fig 4, three spectra), otherwise complete

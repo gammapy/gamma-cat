@@ -1,0 +1,23 @@
+source_id: 49
+reference_id: 2011ApJ...738...25A
+file_id: 1
+telescope: veritas
+
+data:
+      livetime: 1.38h
+      significance: 73.0
+
+morph:
+  type: point
+
+# labeled in Table 2 as 'High-A'
+spec:
+  erange: {min: 0.2, max: 7.0, unit: TeV}
+  mjd: {max: 54647.0, min: 54466.0}
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 19.08, err: 2.63, err_sys: 3.8 scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.01, err: 0.12, err_sys: 0.16 }
+      e_cut: {val: 1.91, err: 0.41, unit: TeV}
+      e_ref: {val: 1., unit: TeV}

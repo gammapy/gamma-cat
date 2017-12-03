@@ -2,7 +2,10 @@ reference_id: 2014ApJ...790..149A
 source_id: [106]
 telescope: [veritas]
 
+datasets:
+  - tev-000106.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: spectral points (Fig 5) and light curve missing (Fig 6), otherwise complete

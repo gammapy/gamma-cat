@@ -9,3 +9,4 @@ datasets:
 data_entry:
   status: incomplete
   reviewed: no
+  notes: light curve (Fig 4) missing, otherwise complete

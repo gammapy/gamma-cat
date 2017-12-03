@@ -4,5 +4,6 @@ telescope: [veritas]
 
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: spectral points missing, otherwise complete

@@ -3,8 +3,11 @@ source_id: [91]
 telescope: [magic]
 
 datasets:
-  - tev-000091.yaml
+  - tev-000091-1.yaml
+  - tev-000091-2.yaml
+  - tev-000091-lc-2.ecsv
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: spectral points missing for VERITAS (otherwise VERITAS data is complete)

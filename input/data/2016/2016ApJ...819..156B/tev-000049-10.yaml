@@ -1,0 +1,17 @@
+source_id: 49
+reference_id: 2016ApJ...819..156B
+telescope: veritas
+
+data:
+  livetime: 0.48h
+  significance: 20.1
+
+spec:
+  erange: {min: 0.2, max: 10., unit: TeV}
+  mjd: {min: 56362.0826, max: 56362.0826}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 6.0, err: 0.4, scale: 1e-10, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.36, err: 0.04 }
+      e_ref: {val: 0.3, unit: TeV}

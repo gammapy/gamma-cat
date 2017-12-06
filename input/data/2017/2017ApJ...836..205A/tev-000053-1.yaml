@@ -1,0 +1,18 @@
+source_id: 53
+reference_id: 2017ApJ...836..205A
+telescope: veritas
+
+data:
+      livetime: 0.42h
+      significance: 10.5
+
+# TeV flare 2013, Feb 7
+spec:
+  erange: {min: 0.2, max: 2, unit: TeV}
+  mjd: {max: 56330., min: 56330.0}
+  model:
+    type: pl2
+    parameters:
+      e_min: {val: 0.2, unit: TeV}
+      flux: {val: 5.1, err: 1.0, err_sys: 1.0, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 3.7, err: 0.7, err_sys: 0.4}

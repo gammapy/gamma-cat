@@ -1,0 +1,15 @@
+source_id: 91
+file_id: 2
+reference_id: 2017A%26A...603A..31A
+telescope: veritas
+
+# VERITAS low state
+spec:
+  erange: {min: 0.2, max: 5., unit: TeV}
+  mjd: {max: 55004., min: 54907.}
+  model:
+    type: pl
+    parameters:
+      e_ref: {val: 1., unit: TeV}
+      norm: {val: 0.88, err: 0.06, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 2.48, err: 0.07}

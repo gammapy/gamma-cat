@@ -4,7 +4,10 @@ telescope: [magic, whipple, veritas]
 
 datasets:
   - tev-000091.yaml
+  - tev-000091-1.yaml
+  - tev-000091-2.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: light curve (Fig 1)J and spectral points for high and low state (Fig 4) missing, otherwise complete (VERITAS); all MAGIC, Whipple values missing

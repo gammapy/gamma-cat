@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: m-2 s-1 TeV-1}
+# - {name: dnde_err, datatype: float32, unit: m-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 91
+# - reference_id: 2016A&A...594A..76A
+# - telescope: veritas
+# - comments: |
+#      VERITAS low state
+e_ref dnde dnde_err
+ 0.2501  2.62e-06 2.85e-07
+ 0.3964  9.24e-07 8.93e-08 
+ 0.6283  2.79e-07 3.23e-08 
+ 0.9958  7.97e-08  1.2e-08  
+  1.578  3.37e-08  5.8e-09  
+  2.501  1.08e-08 2.19e-09 
+  3.964  1.99e-09 8.21e-10

@@ -9,7 +9,7 @@ data:
 
 pos:
       ra: {val: 4h16m54s, err: 5s, err_sys:  6s}
-      dec: {val: 1d06m35s, err: 1m47s, err_sys:  1m30s}
+      dec: {val: 1d06m35s, err: 0d1m47s, err_sys:  1m30s}
 
 spec:
   erange: {min: 0.23, max: 0.85, unit: TeV}

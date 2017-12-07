@@ -5,7 +5,6 @@
 # - {name: dnde, unit: m-2 s-1 TeV-1, datatype: float32}
 # - {name: dnde_errn, unit: m-2 s-1 TeV-1, datatype: float32}
 # - {name: dnde_errp, unit: m-2 s-1 TeV-1, datatype: float32}
-# - {name: significance, datatype: float32}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 11

@@ -22,6 +22,6 @@ spec:
   model:
     type: pl
     parameters:
-      norm: {val: 2.65, err: 0.14, err_sys: 0.5 scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      norm: {val: 2.65, err: 0.14, err_sys: 0.5, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.46, err: 0.06, err_sys: 0.2}
       e_ref: {val: 0.91, unit: TeV}

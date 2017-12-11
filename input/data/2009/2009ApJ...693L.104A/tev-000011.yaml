@@ -1,0 +1,22 @@
+source_id: 11
+reference_id: 2009ApJ...693L.104A
+telescope: veritas
+
+data:
+  livetime: 32.8h
+  significance: 21.1
+  excess: 1791
+
+pos:
+  ra: {val: 2h22m41.6s, err: 0h0m1.7s, err_sys: 90s}
+  dec: {val: 43d02m35.5s, err: 21s, err_sys: 90s}
+
+spec:
+  erange: {min: 0.20, max: 0.50, unit: TeV}
+  mjd: {min: 54350, max: 55800.}
+  model:
+    type: pl2
+    parameters:
+      flux: {val: 1.3, err: 0.1, err_sys: 0.3, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 4.1, err: 0.49, err_sys: 0.6} 
+      e_min: {val: 0.2, unit: TeV}

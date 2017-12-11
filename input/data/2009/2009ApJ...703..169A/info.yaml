@@ -6,5 +6,6 @@ datasets:
   - tev-000049.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: VERITAS - light curve (Fig 3) and spectral points (Fig 1) missing

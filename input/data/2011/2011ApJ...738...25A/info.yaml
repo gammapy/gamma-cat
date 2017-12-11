@@ -3,6 +3,13 @@ source_id: [49]
 telescope: [veritas]
 
 datasets:
+  - tev-000049-1.yaml
+  - tev-000049-2.yaml
+  - tev-000049-3.yaml
+  - tev-000049-4.yaml
+  - tev-000049-5.yaml
+  - tev-000049-6.yaml
+  - tev-000049-7.yaml
   - tev-000049-sed-1.ecsv
   - tev-000049-sed-2.ecsv
   - tev-000049-sed-3.ecsv
@@ -14,3 +21,4 @@ datasets:
 data_entry:
   status: incomplete
   reviewed: no
+  notes: light curve points missing (Fig 1 and 4), otherwise complete

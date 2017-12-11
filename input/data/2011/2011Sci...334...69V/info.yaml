@@ -2,7 +2,10 @@ reference_id: 2011Sci...334...69V
 source_id: [166]
 telescope: [veritas]
 
+datasets:
+  - tev-000166.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: spectral points missing, otherwise complete

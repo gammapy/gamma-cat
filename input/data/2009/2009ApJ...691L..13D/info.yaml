@@ -9,4 +9,4 @@ datasets:
 data_entry:
   status: incomplete
   reviewed: no
-  notes: The yaml dataset is empty, the ecsv dataset needs review
+  notes: light curve set incomplete (Fig 1); missing spectral points (Fig 2)

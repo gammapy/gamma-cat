@@ -1,0 +1,17 @@
+source_id: 91
+reference_id: 2015ApJ...812...65F
+telescope: veritas
+
+data:
+  livetime: 2.5h
+  significance: 8.3
+
+spec:
+  mjd: {min: 56395.336, max: 56395.493}
+  erange: {min: 0.2, max: 4.0, unit: TeV}
+  model:
+    type: pl2
+    parameters:
+      e_min: {val: 0.2, unit: TeV}
+      flux: {val: 1.85, err: 0.38, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 3.1, err: 0.40}

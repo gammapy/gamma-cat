@@ -1,8 +1,12 @@
 reference_id: 2015ApJ...812...65F
 source_id: [91]
-telescope: [veritas]
+telescope: [veritas, magic]
 
+datasets:
+  - tev-000091-1.yaml
+  - tev-000091-2.yaml 
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: VERITAS light curve (Fig 5) and spectral points (Fig 4) missing, otherwise complete (VERITAS)

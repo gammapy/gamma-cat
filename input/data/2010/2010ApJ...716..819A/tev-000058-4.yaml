@@ -1,0 +1,11 @@
+source_id: 58
+reference_id: 2010ApJ...716..819A
+file_id: 4
+telescope: veritas
+
+data:
+  livetime: 25.0h
+  significance: 4.2
+  excess: 134
+
+# 2009 data set - no spectrum given

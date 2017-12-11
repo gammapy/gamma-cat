@@ -1,0 +1,22 @@
+source_id: 36
+reference_id: 2009ApJ...690L.126A
+telescope: veritas
+
+data:
+  livetime: 65.0h
+  significance: 6.3
+  excess: 245
+
+pos:
+  ra: {val: 8h09m59s, err: 0h0m9s, err_sys: 100s}
+  dec: {val: +52d19m02s, err: 2m, err_sys: 100s}
+
+spec:
+  erange: {min: 0.3, max: 0.7, unit: TeV}
+  mjd: {min: 54040, max: 54586}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 6.8, err: 1.7, err_sys: 1.3, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.6, err: 1.0, err_sys: 0.3 }
+      e_ref: {val: 0.4, unit: TeV}

@@ -2,7 +2,11 @@ reference_id: 2014ApJ...788..158A
 source_id: [55]
 telescope: [veritas]
 
+datasets:
+  - tev-000055.yaml
+  - tev-000055-sed.ecsv
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: light curve missing (Fig 3 top) missing, otherwise complete

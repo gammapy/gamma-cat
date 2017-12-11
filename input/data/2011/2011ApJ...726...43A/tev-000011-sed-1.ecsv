@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: m-2 s-1 TeV-1}
+# - {name: dnde_errn, datatype: float32, unit: m-2 s-1 TeV-1}
+# - {name: dnde_errp, datatype: float32, unit: m-2 s-1 TeV-1}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 11}
+# - {reference_id: 2011ApJ...726...43A}
+# - {file_id: 1}
+# - {telescope: veritas}
+# - mjd: {max: 54747.0, min: 54749.0}
+# - {comments: data labeled flare in the
+#    paper.}
+e_ref dnde dnde_errn dnde_errp
+0.2051 3.23e-6 7.81e-7 7.57e-7
+0.2518 1.77e-6 3.68e-7 3.92e-7
+0.3092 6.38e-7 1.96e-7 2.04e-7
+0.380 2.38e-7 1.44e-7 1.13e-7

@@ -4,7 +4,13 @@ telescope: [magic, whipple, veritas]
 
 datasets:
   - tev-000091.yaml
+  - tev-000091-1.yaml
+  - tev-000091-2.yaml
+  - tev-000091-lc.ecsv
+  - tev-000091-sed-1.ecsv
+  - tev-000091-sed-2.ecsv
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: VERITAS data complete; all MAGIC, Whipple values missing

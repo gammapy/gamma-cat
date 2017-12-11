@@ -1,5 +1,21 @@
 source_id: 91
 reference_id: 2011ApJ...727..129A
-telescope: magic
+file_id: 2
+telescope: veritas
 
-#TODO: Add data
+data:
+  livetime: 2.4h
+
+morph:
+  type: point
+
+# spectrum for 'flare period'
+spec:
+  erange: {min: 0.2, max: 5.0, unit: TeV}
+  mjd: {min: 54953.0, max: 54956.0}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 4.17, err: 0.24, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.26, err: 0.06}
+      e_ref: {val: 1, unit: TeV}

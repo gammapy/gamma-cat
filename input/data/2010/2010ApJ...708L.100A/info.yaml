@@ -2,7 +2,10 @@ reference_id: 2010ApJ...708L.100A
 source_id: [67]
 telescope: [veritas]
 
+datasets:
+  - tev-000067.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: light curve (Fig 2 top) and spectral points (Fig 3) missing, otherwise complete

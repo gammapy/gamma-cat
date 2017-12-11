@@ -1,0 +1,24 @@
+source_id: 34 
+reference_id: 2010ApJ...715L..49A
+telescope: veritas
+
+data:
+  livetime: 22.1h
+  significance: 5.5
+
+pos:
+  ra: {val: 07h10m26s, err: 0h0m2.4s}
+  dec: {val: +59d9m00s, err: 36s}
+
+morph:
+  type: point
+
+spec:
+  erange: {min: 0.31, max: 4.6, unit: TeV}
+  mjd: {max: 54921.0, min: 54801.0}
+  model:
+    type: pl2
+    parameters:
+      flux: {val: 3.9, err: 0.8, scale: 1e-12, unit: cm-2 s-1}
+      index: {val: 2.69, err: 0.26, err_sys: 0.2}
+      e_min: {val: 0.3, unit: TeV}

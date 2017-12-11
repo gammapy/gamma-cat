@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32}
+# - {name: dnde, datatype: float32}
+# - {name: dnde_err, datatype: float32}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 58}
+# - {reference_id: 2010ApJ...716..819A}
+# - {telescope: veritas}
+# - mjd: {max: 54448.0, min: 54588.0}
+# - comments: |
+#     average spectrum between 2007 Dec and 2007 May, Table 1
+e_ref dnde dnde_err
+0.24 1.99e-11 0.54e-11
+0.42 3.56e-12 1.16e-12
+0.75 1.51e-12 0.34e-12
+1.33 1.70e-13 0.95e-13
+2.37 6.02e-14 3.40e-14
+4.22 1.72e-14 1.13e-14

@@ -2,7 +2,11 @@ reference_id: 2017ApJ...836..205A
 source_id: [53]
 telescope: [veritas]
 
+datasets:
+  - tev-000053-1.yaml
+  - tev-000053-2.yaml
 
 data_entry:
-  status: missing
+  status: incomplete
   reviewed: no
+  notes: light curves missing (Fig 1 top panels, Fig 3 flare), spectral points missing (Fig 2), otherwise complete

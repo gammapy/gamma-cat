@@ -2,7 +2,14 @@ reference_id: 2017MNRAS.471.2117A
 source_id: [154]
 telescope: [veritas]
 
+datasets:
+  - tev-000154-1.yaml
+  - tev-000154-2.yaml
+  - tev-000154-3.yaml
+  - tev-000154-lc-1.ecsv
+  - tev-000154-lc-2.ecsv
+  - tev-000154-sed.ecsv
 
 data_entry:
-  status: missing
+  status: complete 
   reviewed: no

@@ -1,0 +1,20 @@
+source_id: 82
+reference_id: 2015ApJ...799....7A
+telescope: veritas
+file_id: 1
+
+data:
+  livetime: 80.h
+  significance: 53.
+  excess: 5460
+
+# combined spectrum from May 2010 to June 2012 
+spec:
+  mjd: {min: 55317., max: 56108.}
+  erange: {min: 0.16, max: 0.56, unit: TeV}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 4.8, err: 0.17, err_sys: 2.64, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 4.33, err: 0.09, err_sys: 0.2}
+      e_ref: {val: 0.3, unit: TeV}

@@ -1,0 +1,20 @@
+source_id: 82
+reference_id: 2015ApJ...799....7A
+telescope: veritas
+file_id: 4
+
+data:
+  livetime: 16.h
+  significance: 36.
+  excess: 1663
+
+# 2012 results
+spec:
+  mjd: {min: 56000., max: 56108.}
+  erange: {min: 0.16, max: 0.56, unit: TeV}
+  model:
+    type: pl2
+    parameters:
+      e_min: {val: 0.2, unit: TeV}
+      flux: {val: 2.50, err: 0.14, err_sys: 1.2, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 4.28, err: 0.09, err_sys: 0.2}

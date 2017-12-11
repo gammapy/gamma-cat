@@ -1,0 +1,30 @@
+source_id: 72
+
+common_name: HESS J1457-593
+gamma_names: [HESS J1457-593]
+fermi_names: []
+other_names:
+- G318.2+00.1
+- G318.2+0.1
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2010-12
+
+tevcat_id: 222
+tevcat2_id: MN9aoz
+tevcat_name: TeV J1457-594
+
+tgevcat_id: 72
+tgevcat_name: TeV J1457-5928
+
+pos:
+  simbad_id: SNR G318.2+00.1
+  ra: 223.7
+  dec: -59.067
+
+reference_ids:
+- 2010tsra.confE.196H

@@ -1,0 +1,36 @@
+source_id: 70
+
+common_name: RCW 86
+gamma_names:
+- HESS J1442-624
+other_names:
+- G315.4-2.3
+- MSH 14-63
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-10
+
+tevcat_id: 168
+tevcat2_id: gc4bRT
+tevcat_name: TeV J1442-624
+
+tgevcat_id: 70
+tgevcat_name: TeV J1442-6226
+
+pos:
+  simbad_id: RCW 86
+  ra: 220.1208
+  dec: -62.645
+
+reference_ids:
+- 2009Sci...325..719H
+- 2009ApJ...692.1500A
+- 2011ApJ...741...96W
+- 2014A&A...562A.141M
+- 2015APh....65...80M
+- 2016arXiv160104461H
+- 2016arXiv160106534T

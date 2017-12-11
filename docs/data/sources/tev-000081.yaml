@@ -1,0 +1,30 @@
+source_id: 81
+
+common_name: SNR G327.1-1.1
+gamma_names: [HESS J1554-550]
+fermi_names: []
+other_names:
+- SNR G327.1-01.1
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2012-01
+
+tevcat_id: 235
+tevcat2_id: Xq3nlo
+tevcat_name: TeV J1554-550
+
+tgevcat_id: 81
+tgevcat_name: TeV J1554-5505
+
+pos:
+  simbad_id: SNR G327.1-1.1
+  ra: 238.63462
+  dec: -55.06226
+
+reference_ids:
+- 2011ICRC....7..185A
+- 2016ApJ...820..100M

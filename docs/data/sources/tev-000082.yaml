@@ -1,0 +1,32 @@
+source_id: 82
+
+common_name: PG 1553+113
+gamma_names: [HESS J1555+111, VER J1555+111]
+fermi_names: []
+other_names:
+- 1ES 1553+113
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess, magic, veritas]
+discovery_date: 2006-03
+
+tevcat_id: 102
+tevcat2_id: ffHtfX
+tevcat_name: TeV J1555+111
+
+tgevcat_id: 82
+tgevcat_name: TeV J1555+1111
+
+pos:
+  simbad_id: PG 1553+113
+  ra: 238.92935
+  dec: 11.19010167
+
+reference_ids:
+- 2008A&A...477..481A
+- 2012ApJ...748...46A
+- 2015ApJ...802...65A
+- 2015ApJ...799....7A

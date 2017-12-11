@@ -1,0 +1,30 @@
+source_id: 44
+
+common_name: HESS J1018-589 B
+gamma_names: [HESS J1018-589 B]
+fermi_names: []
+other_names: [PSR J1016-5857]
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2010-08
+
+tevcat_id: 260
+tevcat2_id: QhYho8
+tevcat_name: TeV J1016-589
+
+tgevcat_id: 44
+tgevcat_name: TeV J1016-5858
+
+pos:
+  simbad_id: PSR J1016-5857
+  ra: 154.088167
+  dec: -58.953361
+
+reference_ids:
+- 2010cosp...38.2803D
+- 2012A&A...541A...5H
+- 2015A&A...577A.131H

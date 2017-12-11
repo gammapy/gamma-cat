@@ -1,0 +1,31 @@
+source_id: 25
+
+common_name: Crab nebula
+gamma_names: []
+other_names: [G184.6-5.8, 3C 144, SN 1054]
+
+where: gal
+classes: [pwn]
+
+discoverer: whipple
+seen_by: [whipple, hess, hegra, magic, veritas, hawc]
+discovery_date: 1989-07
+
+tevcat_id: 74
+tevcat2_id: BlJI6q
+tevcat_name: TeV J0534+220
+
+tgevcat_id: 25
+tgevcat_name: TeV J0534+2200
+
+pos:
+  simbad_id: crab nebula
+  ra: 83.633083
+  dec: 22.0145
+
+reference_ids:
+- 1998ApJ...503..744H
+- 2004ApJ...614..897A
+- 2006A&A...457..899A
+- 2008ICRC....2..803K
+- 2014ApJ...781L..11A

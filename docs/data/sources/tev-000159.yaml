@@ -1,0 +1,32 @@
+source_id: 159
+
+common_name: Arc source
+gamma_names: [HESS J1746-285, VER J1746-289]
+other_names:
+- SNR G0.13-0.13
+- G0.13-0.11
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2015-07
+
+tevcat_id: 277
+tevcat2_id: LsZtAg
+tevcat_name: TeV J1746-289
+
+# Note: this source is not listed in tgevcat yet
+
+# TeV source position taken from 2015arXiv151004518L
+# SkyCoord(0.14, -0.114, unit='deg', frame='galactic').icrs
+# TODO: this should not be `simbad_id` ... move to `inputs/papers`
+pos:
+  simbad_id: Arc source
+  ra: 266.599
+  dec: -28.875
+
+reference_ids:
+- 2015arXiv151004518L
+- 2015arXiv150806311S

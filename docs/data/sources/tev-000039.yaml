@@ -1,0 +1,37 @@
+source_id: 39
+
+common_name: Vela Junior
+gamma_names:
+- HESS J0852-463
+fermi_names:
+- 1FGL J0854.0-4632
+- 2FGL J0851.7-4635
+- 3FGL J0852.7-4631e
+- 1FHL J0852.7-4631
+other_names:
+- RX J0852.0-4622
+- SNR G266.2-01.2
+
+where: gal
+classes: [snr]
+
+discoverer: cangaroo
+seen_by: [cangaroo, hess]
+discovery_date: 2005-02
+
+tevcat_id: 98
+tevcat2_id: FfpuKQ
+tevcat_name: TeV J0852-463
+
+tgevcat_id: 39
+tgevcat_name: TeV J0852-4622
+
+pos:
+  simbad_id: Vela Junior
+  ra: 133.0
+  dec: -46.333
+
+reference_ids:
+- 2016arXiv161101863H
+- 2005A&A...437L...7A
+- 2007ApJ...661..236A

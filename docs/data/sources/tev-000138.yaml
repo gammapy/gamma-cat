@@ -1,0 +1,33 @@
+source_id: 138
+
+common_name: 1ES 1959+650
+gamma_names: [VER J1959+651]
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic, veritas, hegra]
+discovery_date: 1999-08
+
+tevcat_id: 79
+tevcat2_id: cUkkpO
+tevcat_name: TeV J1959+651
+
+tgevcat_id: 138
+tgevcat_name: TeV J1959+6508
+
+pos:
+  simbad_id: 1ES 1959+650
+  ra: 299.99938375
+  dec: 65.14851472
+
+reference_ids:
+- 2003ApJ...583L...9H
+- 2003ICRC....5.2615T
+- 2003A&A...406L...9A
+- 2005ApJ...621..181D
+- 2006ApJ...639..761A
+- 2008ApJ...679.1029T
+- 2013ApJ...775....3A

@@ -1,0 +1,27 @@
+source_id: 136
+
+common_name: SNR G054.1+00.3
+gamma_names: [VER J1930+188]
+other_names: [PSR J1930+1852]
+
+where: gal
+classes: [pwn, snr]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2009-07
+
+tevcat_id: 193
+tevcat2_id: F0Luol
+tevcat_name: TeV J1930+188
+
+tgevcat_id: 136
+tgevcat_name: TeV J1930+1852
+
+pos:
+  simbad_id: SNR G054.1+00.3
+  ra: 292.6292
+  dec: 18.867
+
+reference_ids:
+- 2010ApJ...719L..69A

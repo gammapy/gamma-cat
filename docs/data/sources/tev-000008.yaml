@@ -1,0 +1,29 @@
+source_id: 8
+
+common_name: RGB J0152+017
+gamma_names: []
+other_names:
+- RXJ0152.6+0147
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-02
+
+tevcat_id: 156
+tevcat2_id: tKGVcC
+tevcat_name: TeV J0152+017
+
+tgevcat_id: 8
+tgevcat_name: TeV J0152+0146
+
+pos:
+  simbad_id: RGB J0152+017
+  ra: 28.1650455
+  dec: 1.7881618
+
+reference_ids:
+- 2008A&A...481L.103A
+- 2008bves.confE..46L

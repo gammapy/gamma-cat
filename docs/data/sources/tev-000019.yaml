@@ -1,0 +1,27 @@
+source_id: 19
+
+common_name: 1ES 0347-121
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-08
+
+tevcat_id: 147
+tevcat2_id: rWyLLM
+tevcat_name: TeV J0349-119
+
+tgevcat_id: 19
+tgevcat_name: TeV J0349-1158
+
+pos:
+  simbad_id: 1ES 0347-121
+  ra: 57.3466083
+  dec: -11.9908583
+
+reference_ids:
+- 2007A&A...473L..25A

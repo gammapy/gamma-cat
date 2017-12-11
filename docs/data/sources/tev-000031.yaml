@@ -1,0 +1,30 @@
+source_id: 31
+
+common_name: Geminga
+gamma_names: [MGRO J0632+17]
+other_names: []
+
+where: gal
+classes: [psr, pwn]
+
+discoverer: milagro
+seen_by: [milagro, hawc]
+discovery_date: 2009-04
+
+tevcat_id: 177
+tevcat2_id: 66DvGb
+tevcat_name: TeV J0632+173
+
+tgevcat_id: 31
+tgevcat_name: TeV J0632+1722
+
+pos:
+  simbad_id: Geminga
+  ra: 98.4756375
+  dec: 17.7702528
+
+reference_ids:
+- 2009ApJ...700L.127A
+- 2015arXiv150803497B
+- 2016A&A...591A.138A
+

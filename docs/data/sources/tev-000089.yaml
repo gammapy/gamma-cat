@@ -1,0 +1,34 @@
+source_id: 89
+
+common_name: HESS J1641-463
+gamma_names: [HESS J1641-463]
+fermi_names: []
+other_names:
+- SNR G338.5+0.1
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2012-10
+
+tevcat_id: 243
+tevcat2_id: oeIIrE
+tevcat_name: TeV J1641-463
+
+tgevcat_id: 89
+tgevcat_name: TeV J1641-4618
+
+pos:
+  simbad_id: HESS J1641-463
+  ra: 250.25708
+  dec: -46.30306
+
+reference_ids:
+- 2013arXiv1303.0979O
+- 2014ApJ...794L..16L
+- 2014ApJ...794L...1A
+- 2015ApJ...812...32T
+- 2015arXiv150908310O
+- 2016arXiv161005444L

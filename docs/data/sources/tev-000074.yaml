@@ -1,0 +1,37 @@
+source_id: 74
+
+common_name: SN 1006
+gamma_names: [HESS J1502-421, HESS J1504-418]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-12
+
+tevcat_id: 171
+tevcat2_id: lys1PH
+tevcat_name: TeV J1502-421
+
+tgevcat_id: 74
+tgevcat_name: TeV J1502-4107
+
+pos:
+  simbad_id: SN 1006
+  ra: 225.59208
+  dec: -42.09694
+
+reference_ids:
+- 2010A&A...516A..62A
+
+notes: |
+  In TeVCat, there's two sources listed for SN 1006:
+  - SN 1006 NE = HESS J1504-418
+  - SN 1006 SW = HESS J1502-421
+  I (Christoph Deil) prefer to have it as one source,
+  because it's one cosmic accelerator.
+  This is consistent with other SNRs that are also not
+  split into multiple sources.

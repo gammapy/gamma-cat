@@ -1,0 +1,33 @@
+source_id: 121
+
+common_name: HESS J1832-093
+gamma_names: [HESS J1832-093]
+fermi_names: []
+other_names:
+- SNR G22.7-0.2
+
+where: gal
+classes: [bin, unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2011-10
+
+tevcat_id: 230
+tevcat2_id: 1aPLDl
+tevcat_name: TeV J1832-093
+
+tgevcat_id: 121
+tgevcat_name: TeV J1832-0922
+
+pos:
+  simbad_id: HESS J1832-093
+  ra: 278.188175
+  dec: -9.3651528
+
+reference_ids:
+- 2011arXiv1110.6890L
+- 2013arXiv1308.0475L
+- 2015MNRAS.446.1163H
+- 2016arXiv161003264B
+- 2016MNRAS.457.1753E

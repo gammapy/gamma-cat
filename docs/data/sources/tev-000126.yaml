@@ -1,0 +1,30 @@
+source_id: 126
+
+common_name: HESS J1843-033
+gamma_names: [HESS J1843-033, ARGO J1841-0332 1HWC J1844-031c]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess, argo, hawc]
+discovery_date: 2008-07
+
+tevcat_id: 190
+tevcat2_id: DTC72E
+tevcat_name: TeV J1843-030
+
+tgevcat_id: 126
+tgevcat_name: TeV J1843-0318
+
+pos:
+  simbad_id: HESS J1843-033
+  ra: 280.75
+  dec: -3.3
+
+reference_ids:
+- 2008ICRC....2..579H
+- 2013ApJ...779...27B
+- 2016ApJ...817....3A

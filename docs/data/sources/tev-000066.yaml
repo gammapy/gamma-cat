@@ -1,0 +1,32 @@
+source_id: 66
+
+common_name: HESS J1420-607
+gamma_names: [HESS J1420-607]
+fermi_names: []
+other_names:
+- PSR J1420-6048
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-09
+
+tevcat_id: 124
+tevcat2_id: zUDsnw
+tevcat_name: TeV J1420-607
+
+tgevcat_id: 66
+tgevcat_name: TeV J1420-6045
+
+pos:
+  simbad_id: HESS J1420-607
+  ra: 214.6917
+  dec: -60.9783
+
+reference_ids:
+- 2006A&A...456..245A
+- 2012A&A...543L...9N
+- 2012ApJ...750..162K
+- 2013ApJ...773...77A

@@ -1,0 +1,30 @@
+source_id: 79
+
+common_name: MSH 15-5-02
+gamma_names: [HESS J1514-591]
+other_names:
+- G320.3-01.1
+- MSH 15-52
+
+where: gal
+classes: [pwn]
+
+discoverer: cangaroo
+seen_by: [cangaroo, hess]
+discovery_date: 2005-05
+
+tevcat_id: 95
+tevcat2_id: OhJ7Hr
+tevcat_name: TeV J1514-591
+
+tgevcat_id: 79
+tgevcat_name: TeV J1513-5914
+
+pos:
+  simbad_id: MSH 15-5-02
+  ra: 228.3208
+  dec: -59.0817
+
+reference_ids:
+- 2005A&A...435L..17A
+- 2013ApJ...773...77A

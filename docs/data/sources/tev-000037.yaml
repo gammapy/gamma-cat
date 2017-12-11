@@ -1,0 +1,29 @@
+source_id: 37
+
+common_name: Vela X
+gamma_names:
+- HESS J0835-455
+other_names: []
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-03
+
+tevcat_id: 86
+tevcat2_id: yVoFOS
+tevcat_name: TeV J0835-456
+
+tgevcat_id: 37
+tgevcat_name: TeV J0835-4536
+
+pos:
+  simbad_id: Vela X
+  ra: 128.287
+  dec: -45.19
+
+reference_ids:
+- 2012A&A...548A..38A
+- 2006A&A...448L..43A

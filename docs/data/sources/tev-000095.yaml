@@ -1,0 +1,38 @@
+source_id: 95
+
+common_name: CTB 37B
+gamma_names: [HESS J1713-381]
+fermi_names: []
+other_names:
+- SNR G348.7+0.3
+- CXOU J171405.7-381031
+
+where: gal
+classes: [snr]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-01
+
+tevcat_id: 110
+tevcat2_id: QYavG5
+tevcat_name: TeV J1713-382
+
+tgevcat_id: 95
+tgevcat_name: TeV J1713-3811
+
+pos:
+  simbad_id: CTB 37B
+  ra: 258.42921
+  dec: -38.17011
+
+reference_ids:
+- 2006ApJ...636..777A
+- 2008A&A...486..829A
+- 2010ApJ...710..941H
+- 2010ApJ...725.1384H
+- 2011RAA....11..625H
+- 2012MNRAS.421.2593T
+- 2013MNRAS.434.2748C
+- 2015APh....65...80M
+- 2016ApJ...817...64X

@@ -1,0 +1,27 @@
+source_id: 2
+
+common_name: SHBL J001355.9-185406
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2010-11
+
+tevcat_id: 213
+tevcat2_id: 70hRXZ
+tevcat_name: TeV J0013-188
+
+tgevcat_id: 2
+tgevcat_name: TeV J0013-1853
+
+reference_ids:
+- 2013A&A...554A..72H
+
+pos:
+  simbad_id: SHBL J001355.9-185406
+  ra: 3.4835583
+  dec: -18.9018472

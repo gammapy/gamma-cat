@@ -1,0 +1,29 @@
+source_id: 120
+
+common_name: HESS J1831-098
+gamma_names: [HESS J1831-098]
+fermi_names: []
+other_names:
+- PSR J1831-952
+
+where: gal
+classes: [unid, pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2011-10
+
+tevcat_id: 231
+tevcat2_id: buLRDe
+tevcat_name: TeV J1831-099
+
+tgevcat_id: 120
+tgevcat_name: TeV J1831-0954
+
+pos:
+  simbad_id: HESS J1831-098
+  ra: 277.85
+  dec: -9.9
+
+reference_ids:
+- 2011ICRC....7..244S

@@ -1,0 +1,27 @@
+source_id: 15
+
+common_name: PKS 0301-243
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2012-07
+
+tevcat_id: 240
+tevcat2_id: 5puKGr
+tevcat_name: TeV J0303-241
+
+tgevcat_id: 15
+tgevcat_name: TeV J0303-2407
+
+pos:
+  simbad_id: PKS 0301-243
+  ra: 45.860417
+  dec: -24.119861
+
+reference_ids:
+- 2013A&A...559A.136H

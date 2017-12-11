@@ -9,6 +9,7 @@ __all__ = [
 
 log = logging.getLogger(__name__)
 
+
 class SrcInfo:
     """Process a basic source info file"""
     resource_type = 'bsi'
@@ -25,11 +26,13 @@ class SrcInfo:
 
     @classmethod
     def _read_resource_info(cls, data, location):
-        file_id = -1
         return GammaCatResource(
             source_id=data['source_id'],
-            reference_id=data['reference_ids'],
-            file_id=file_id,
+            # There isn't a unique reference_id for a given source
+            # So we could fill nothing here or a comma-separated list of reference_id
+            # For now, we will nothing, probably that is OK as long-term solution.
+            reference_id='',
+            file_id=-1,
             type=cls.resource_type,
             location=location
         )

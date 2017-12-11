@@ -1,7 +1,8 @@
 source_id: 15
 
 common_name: PKS 0301-243
-gamma_names: []
+gamma_names:
+  - HESS J0303-241
 other_names: []
 
 where: egal

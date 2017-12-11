@@ -1,0 +1,27 @@
+source_id: 154
+reference_id: 2017MNRAS.471.2117A
+file_id: 3
+telescope: veritas
+
+data:
+  livetime: 47.2h
+  significance: 20.8
+  excess: 628
+
+morph:
+  type: point
+
+pos:
+  ra: {val: 23h47m4s, err: 0h0m2s, err_sys: 0h0m3s}
+  dec: {val: 51d42m49s, err: 16s, err_sys: 25s}
+
+# spectral fit - 2007-2015
+spec:
+  erange: {min: 0.2, max: 12.5, unit: TeV}
+  mjd: {max: 54377.17, min: 56932.21}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.65, err: 0.14, err_sys: 0.5, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.46, err: 0.06, err_sys: 0.2}
+      e_ref: {val: 0.91, unit: TeV}

@@ -134,6 +134,20 @@
     },
     {
         "source_id": 11,
+        "reference_id": "2009ApJ...693L.104A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2009ApJ...693L.104A/gammacat_2009ApJ...693L.104A_000011_sed.ecsv"
+    },
+    {
+        "source_id": 11,
+        "reference_id": "2011ApJ...726...43A",
+        "file_id": 2,
+        "type": "sed",
+        "location": "data/2011ApJ...726...43A/gammacat_2011ApJ...726...43A_000011_sed.ecsv"
+    },
+    {
+        "source_id": 11,
         "reference_id": "2011ApJ...726...58A",
         "file_id": -1,
         "type": "sed",
@@ -654,15 +668,15 @@
         "source_id": 30,
         "reference_id": "2017arXiv170804045M",
         "file_id": -1,
-        "type": "ds",
-        "location": "data/2017arXiv170804045M/gammacat_2017arXiv170804045M_000030_ds.yaml"
+        "type": "lightcurve",
+        "location": "data/2017arXiv170804045M/gammacat_2017arXiv170804045M_000030_lc.ecsv"
     },
     {
         "source_id": 30,
         "reference_id": "2017arXiv170804045M",
-        "file_id": -1,
-        "type": "lightcurve",
-        "location": "data/2017arXiv170804045M/gammacat_2017arXiv170804045M_000030_lc.ecsv"
+        "file_id": 5,
+        "type": "ds",
+        "location": "data/2017arXiv170804045M/gammacat_2017arXiv170804045M_000030_ds.yaml"
     },
     {
         "source_id": 30,
@@ -712,6 +726,13 @@
         "file_id": -1,
         "type": "bsi",
         "location": "sources/tev-000034.yaml"
+    },
+    {
+        "source_id": 34,
+        "reference_id": "2010ApJ...715L..49A",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2010ApJ...715L..49A/gammacat_2010ApJ...715L..49A_000034_ds.yaml"
     },
     {
         "source_id": 34,
@@ -1239,6 +1260,13 @@
         "location": "data/2010ApJ...709L.163A/gammacat_2010ApJ...709L.163A_000055_sed.ecsv"
     },
     {
+        "source_id": 55,
+        "reference_id": "2014ApJ...788..158A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2014ApJ...788..158A/gammacat_2014ApJ...788..158A_000055_sed.ecsv"
+    },
+    {
         "source_id": 56,
         "reference_id": "",
         "file_id": -1,
@@ -1265,6 +1293,27 @@
         "file_id": -1,
         "type": "bsi",
         "location": "sources/tev-000058.yaml"
+    },
+    {
+        "source_id": 58,
+        "reference_id": "2008ApJ...679..397A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2008ApJ...679..397A/gammacat_2008ApJ...679..397A_000058_sed.ecsv"
+    },
+    {
+        "source_id": 58,
+        "reference_id": "2010ApJ...716..819A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2010ApJ...716..819A/gammacat_2010ApJ...716..819A_000058_sed.ecsv"
+    },
+    {
+        "source_id": 58,
+        "reference_id": "2012ApJ...746..141A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2012ApJ...746..141A/gammacat_2012ApJ...746..141A_000058_lc.ecsv"
     },
     {
         "source_id": 58,
@@ -1947,10 +1996,59 @@
     },
     {
         "source_id": 91,
+        "reference_id": "2011ApJ...729....2A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2011ApJ...729....2A/gammacat_2011ApJ...729....2A_000091_lc.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2011ApJ...729....2A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011ApJ...729....2A/gammacat_2011ApJ...729....2A_000091_sed.ecsv"
+    },
+    {
+        "source_id": 91,
         "reference_id": "2012ApJ...758....2B",
         "file_id": 2,
         "type": "sed",
         "location": "data/2012ApJ...758....2B/gammacat_2012ApJ...758....2B_000091_sed.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2015A&A...573A..50A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2015A%26A...573A..50A/gammacat_2015A%26A...573A..50A_000091_lc.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2016A&A...594A..76A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2016A%26A...594A..76A/gammacat_2016A%26A...594A..76A_000091_lc.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2016A&A...594A..76A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2016A%26A...594A..76A/gammacat_2016A%26A...594A..76A_000091_sed.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2017A%26A...603A..31A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2017A%26A...603A..31A/gammacat_2017A%2526A...603A..31A_000091_lc.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2017A%26A...603A..31A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017A%26A...603A..31A/gammacat_2017A%2526A...603A..31A_000091_sed.ecsv"
     },
     {
         "source_id": 92,
@@ -3253,6 +3351,27 @@
         "file_id": -1,
         "type": "sed",
         "location": "data/2013A%26A...556A..67A/gammacat_2013A%26A...556A..67A_000154_sed.ecsv"
+    },
+    {
+        "source_id": 154,
+        "reference_id": "2017MNRAS.471.2117A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2017MNRAS.471.2117A/gammacat_2017MNRAS.471.2117A_000154_lc.ecsv"
+    },
+    {
+        "source_id": 154,
+        "reference_id": "2017MNRAS.471.2117A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017MNRAS.471.2117A/gammacat_2017MNRAS.471.2117A_000154_sed.ecsv"
+    },
+    {
+        "source_id": 154,
+        "reference_id": "2017MNRAS.471.2117A",
+        "file_id": 3,
+        "type": "ds",
+        "location": "data/2017MNRAS.471.2117A/gammacat_2017MNRAS.471.2117A_000154_ds.yaml"
     },
     {
         "source_id": 155,

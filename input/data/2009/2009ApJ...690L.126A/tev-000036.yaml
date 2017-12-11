@@ -8,8 +8,8 @@ data:
   excess: 245
 
 pos:
-  ra: {val: 08h09m59s, err: 9s, err_sys: 100s}
-  dec: {val: +52d19m02s, err: 02m, err_sys: 100s}
+  ra: {val: 8h09m59s, err: 0h0m9s, err_sys: 100s}
+  dec: {val: +52d19m02s, err: 2m, err_sys: 100s}
 
 spec:
   erange: {min: 0.3, max: 0.7, unit: TeV}

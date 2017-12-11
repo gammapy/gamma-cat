@@ -14,5 +14,5 @@ spec:
     type: pl2
     parameters:
      e_min: {val: 0.7, unit: TeV}
-     flux : {val: 3.7, err: 0.8, err_sys: 0.7, scale: 1e-13, unit: cm-2 s-1 TeV-1}
+     flux : {val: 3.7, err: 0.8, err_sys: 0.7, scale: 1e-13, unit: cm-2 s-1}
      index: {val: 2.5, err: 0.6, err_sys: 0.2}

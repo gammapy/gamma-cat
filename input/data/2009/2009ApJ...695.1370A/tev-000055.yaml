@@ -8,12 +8,12 @@ data:
   excess: 249
 
 pos:
-  ra: {val: 12h21m26.3s, err: 2.8s, err_sys: 7.0s}
+  ra: {val: 12h21m26.3s, err: 0h0m2.8s, err_sys: 0h0m7.0s}
   dec: {val: 30d011m29s, err: 33s, err_sys: 90s}
 
 spec:
   erange: {min: 0.16, max: 1.8, unit: TeV}
-  mjd: {min: 54115., max: 54179.}
+  mjd: {min: 54115, max: 54179}
   model:
     type: pl
     parameters:

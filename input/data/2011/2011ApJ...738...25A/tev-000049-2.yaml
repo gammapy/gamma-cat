@@ -4,8 +4,8 @@ file_id: 2
 telescope: veritas
 
 data:
-      livetime: 0.63h
-      significance: 47.3
+  livetime: 0.63h
+  significance: 47.3
 
 morph:
   type: point
@@ -20,4 +20,4 @@ spec:
       norm: {val: 22.23, err: 2.42, err_sys: 4.4, scale: 1e-11, unit: cm-2 s-1 TeV-1}
       index: {val: 1.88, err: 0.24, err_sys: 0.15 }
       e_cut: {val: 3.06, err: 1.07, unit: TeV}
-      e_ref: {val: 1., unit: TeV}
+      e_ref: {val: 1, unit: TeV}

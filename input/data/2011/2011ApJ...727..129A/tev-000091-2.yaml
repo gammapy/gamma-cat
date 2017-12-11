@@ -4,7 +4,7 @@ file_id: 2
 telescope: veritas
 
 data:
-      livetime: 2.4h
+  livetime: 2.4h
 
 morph:
   type: point
@@ -18,4 +18,4 @@ spec:
     parameters:
       norm: {val: 4.17, err: 0.24, scale: 1e-11, unit: cm-2 s-1 TeV-1}
       index: {val: 2.26, err: 0.06}
-      e_ref: {val: 1., unit: TeV}
+      e_ref: {val: 1, unit: TeV}

@@ -3,8 +3,8 @@ reference_id: 2017ApJ...836..205A
 telescope: veritas
 
 data:
-      livetime: 0.75h
-      significance: 46.5
+  livetime: 0.75h
+  significance: 46.5
 
 # TeV flare 2014, Feb 8
 spec:
@@ -13,7 +13,7 @@ spec:
   model:
     type: pl2
     parameters:
-      e_min: {val: 0.2, unit: TeV}
-      # note: systematic error is given as +4/-1 (give her the rounded average)
+      # note: systematic error is given as +4/-1 (give here the rounded average)
       flux: {val: 5.0, err: 1.0, err_sys: 3., scale: 1e-10, unit: cm-2 s-1}
       index: {val: 3.1, err: 0.1, err_sys: 0.6}
+      e_min: {val: 0.2, unit: TeV}

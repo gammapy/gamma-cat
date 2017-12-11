@@ -4,8 +4,8 @@ file_id: 1
 telescope: veritas
 
 data:
-      livetime: 17.1h
-      significance: 16.2
+  livetime: 17.1h
+  significance: 16.2
 
 # spectral fit - 2007-2008
 spec:

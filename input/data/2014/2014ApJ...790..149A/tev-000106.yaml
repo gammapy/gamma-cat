@@ -8,15 +8,15 @@ data:
   excess: 401.
 
 pos:
-    glon: {val: -0.077d, err: 0.006d, err_sys: 0.013d}
-    glat: {val: -0.49d, err: 0.003d, err_sys: 0.013d}
+  glon: {val: -0.077d, err: 0.006d, err_sys: 0.013d}
+  glat: {val: -0.49d, err: 0.003d, err_sys: 0.013d}
 
 morph:
   type: gauss
   sigma: {val: 0.44d, err: 0.02d}
 
 spec:
-  erange: {min: 3., max: 30., unit: TeV}
+  erange: {min: 3, max: 30, unit: TeV}
   model:
     type: pl
     parameters:

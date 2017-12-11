@@ -5,11 +5,11 @@ telescope: veritas
 
 # VERITAS high (TeV flare  2009 May 1)
 spec:
-  erange: {min: 0.2, max: 6., unit: TeV}
+  erange: {min: 0.2, max: 6, unit: TeV}
   mjd: {max: 54955., min: 54952.41}
   model:
     type: pl
     parameters:
-      e_ref: {val: 1., unit: TeV}
-      norm: {val: 4.17, err: 0.24, scale: 1e-11, unit: cm-2 s-1}
+      norm: {val: 4.17, err: 0.24, scale: 1e-11, unit: cm-2 s-1 TeV-1}
       index: {val: 2.26, err: 0.06}
+      e_ref: {val: 1, unit: TeV}

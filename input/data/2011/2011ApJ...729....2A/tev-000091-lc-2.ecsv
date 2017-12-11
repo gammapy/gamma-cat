@@ -1,11 +1,11 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: e_min, unit: TeV, datatype: float32}
 # - {name: time, unit: MJD, datatype: float64}
-# - {name: livetime, unit: s, datatype: float64}#
-# - {name: flux, unit: cm-2 s-1, datatype: float64}
-# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# - {name: livetime, unit: s, datatype: float32}
+# - {name: flux, unit: cm-2 s-1, datatype: float32}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float32}
 # meta: !!omap
 # - data_type: lc
 # - source_id: 91

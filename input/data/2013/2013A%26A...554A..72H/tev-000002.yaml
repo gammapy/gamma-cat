@@ -2,4 +2,27 @@ source_id: 2
 reference_id: 2013A&A...554A..72H
 telescope: hess
 
-#TODO: Add data
+data:
+  livetime: 41.5h
+  significance: 5.5
+  zenith: 12.9d
+  n_on: 830
+  n_off: 8190
+  alpha: 0.083
+  excess: 153
+
+pos:
+  ra: {val: 0h13m52s, err: 1.5s, err_sys: 1.3s}
+  dec: {val: -18d53m29s, err: 22s, err_sys: 20s}
+
+morph:
+  type: point
+
+spec:
+  mjd: {min: 54653, max: 55912}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.16, err: 0.23, err_sys: 0.23, scale: 1e-12, unit: TeV-1 cm-2 s-1}
+      index: {val: -3.4, err: 0.5, err_sys: 0.2}
+      e_ref: {val: 510, unit: GeV}

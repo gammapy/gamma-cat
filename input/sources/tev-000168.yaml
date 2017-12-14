@@ -1,0 +1,26 @@
+source_id: 168
+
+common_name: V404 Cygni
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [bin]
+
+discoverer: 
+seen_by: [magic,veritas]
+discovery_date: 
+
+tevcat_id: 
+tevcat2_id: 
+tevcat_name: 
+
+pos:
+  simbad_id:  
+  ra: 306.015958
+  dec: 33.867278	
+
+reference_ids:
+- 2017MNRAS.471.1688A
+

@@ -3,7 +3,8 @@ source_id: 61
 common_name: HESS J1303-631
 gamma_names: []
 fermi_names: []
-other_names: []
+other_names:
+  - PSR J1301-6305
 
 where: gal
 classes: [pwn]

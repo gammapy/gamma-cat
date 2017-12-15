@@ -6,6 +6,7 @@ fermi_names: []
 other_names:
 - SNR G284.3-01.8
 - MSH 10-53
+- 1FGL J1018.6-5856
 
 where: gal
 classes: [bin]
@@ -27,6 +28,6 @@ pos:
   dec: -59.0
 
 reference_ids:
-- 2015A&A...577A.131H
-- 2012A&A...541A...5H
-- 2015ApJ...813L..26S
+  - 2012A&A...541A...5H
+  - 2015A&A...577A.131H
+  - 2015ApJ...813L..26S

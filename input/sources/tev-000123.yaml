@@ -6,7 +6,8 @@ gamma_names:
 - 1HWC J1836-090c
 fermi_names: []
 other_names:
-- W41
+  - G23.3-0.3
+  - W41
 
 where: gal
 classes: [unid]

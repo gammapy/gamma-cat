@@ -1,0 +1,10 @@
+reference_id: 2010A&A...521A..69A
+source_id: [28]
+telescope: [hess]
+
+datasets:
+  - tev-000028.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

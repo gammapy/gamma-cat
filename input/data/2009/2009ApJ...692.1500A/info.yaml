@@ -1,0 +1,10 @@
+reference_id: 2009ApJ...692.1500A
+source_id: [70]
+telescope: [hess]
+
+datasets:
+  - tev-000070.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

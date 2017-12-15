@@ -1,7 +1,8 @@
 source_id: 80
 
 common_name: AP Librae
-gamma_names: []
+gamma_names:
+  - HESS J1517-243
 fermi_names: []
 other_names:
 - PKS B1514-241

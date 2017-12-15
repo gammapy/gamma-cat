@@ -3,6 +3,7 @@ source_id: [147]
 telescope: [hess]
 
 datasets:
+  - tev-000147.yaml
   - tev-000147-sed-1.ecsv
   - tev-000147-sed-2.ecsv
   - tev-000147-sed-3.ecsv

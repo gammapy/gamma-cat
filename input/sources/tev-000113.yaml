@@ -6,6 +6,7 @@ fermi_names: []
 other_names:
 - G8.7-0.1
 - W30
+- PSR J1803-2137
 
 where: gal
 classes: [unid]

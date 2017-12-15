@@ -3,7 +3,8 @@ source_id: 156
 common_name: HESS J1800-240B
 gamma_names:
 - HESS J1800-240B
-other_names: []
+other_names:
+  - W 28-A2
 
 where: gal
 classes: [snr, mc]

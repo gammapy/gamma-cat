@@ -8,19 +8,19 @@ other_names: []
 where: gal
 classes: [bin]
 
-discoverer: 
-seen_by: [magic,veritas]
-discovery_date: 
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2099-12 
 
-tevcat_id: 
-tevcat2_id: 
-tevcat_name: 
+tevcat_id: 999
+tevcat2_id: 999-
+tevcat_name: 999-
 
 pos:
-  simbad_id:  
+  simbad_id: V* V404 Cyg
   ra: 306.015958
-  dec: 33.867278	
-
+  dec: 33.867278
+  
 reference_ids:
 - 2017MNRAS.471.1688A
 

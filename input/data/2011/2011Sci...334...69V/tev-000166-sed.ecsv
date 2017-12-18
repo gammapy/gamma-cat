@@ -1,0 +1,15 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: MeV}
+# - {name: dnde, datatype: float32, unit: m-2 s-1 MeV-1}
+# - {name: dnde_err, datatype: float32, unit: m-2 s-1 MeV-1}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 166}
+# - {reference_id: 2011Sci...334...69V}
+# - {telescope: veritas}
+e_ref dnde dnde_err
+133023.   9.16514e-07   3.85101e-07
+170847.   8.8924e-07    1.9842e-07
+264376.   3.07813e-07   7.72197e-08

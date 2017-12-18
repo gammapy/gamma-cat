@@ -6,6 +6,5 @@ datasets:
   - tev-000166.yaml
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: spectral points missing, otherwise complete

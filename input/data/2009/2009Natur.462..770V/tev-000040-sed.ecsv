@@ -10,7 +10,7 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 40}
-# - {reference_id: 2009Natur.462..770V
+# - {reference_id: 2009Natur.462..770V}
 # - {telescope: veritas}
 # - UL_CONF: 0.99
 # - mjd: {min: 54495, max: 54948}

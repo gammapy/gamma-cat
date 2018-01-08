@@ -1,0 +1,34 @@
+source_id: 147
+
+common_name: PKS 2155-304
+gamma_names: [HESS J2158-302]
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: durham
+seen_by: [durham, hess, magic]
+discovery_date: 1999-06
+
+tevcat_id: 90
+tevcat2_id: nm0IZL
+tevcat_name: TeV J2158-302
+
+tgevcat_id: 147
+tgevcat_name: TeV J2158-3013
+
+pos:
+  simbad_id: PKS 2155-304
+  ra: 329.716937958
+  dec: -30.225588389
+
+reference_ids:
+- 2005A&A...442..895A
+- 2005A&A...430..865A
+- 2009ApJ...696L.150A
+- 2010A&A...520A..83H
+- 2012A&A...539A.149H
+- 2012A&A...544A..75A
+- 2013PhRvD..88j2003A
+

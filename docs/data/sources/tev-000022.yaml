@@ -1,0 +1,28 @@
+source_id: 22
+
+common_name: 1ES 0502+675
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2009-11
+
+tevcat_id: 200
+tevcat2_id: 1G0nr7
+tevcat_name: TeV J0507+676
+
+tgevcat_id: 22
+tgevcat_name: TeV J0507+6737
+
+pos:
+  simbad_id: 1ES 0502+675
+  ra: 76.9840583
+  dec: 67.6234056
+
+reference_ids:
+- 2011arXiv1110.0040W
+- atel-2301

@@ -1,0 +1,31 @@
+source_id: 111
+
+common_name: HESS J1800-240A
+gamma_names: [HESS J1800-240A]
+other_names: []
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2008-04
+
+tevcat_id: 163
+tevcat2_id: sPYizN
+tevcat_name: TeV J1801-239
+
+tgevcat_id: 111
+tgevcat_name: TeV J1800-2359
+
+pos:
+  simbad_id: HESS J1800-240A
+  ra: 270.4917
+  dec: -23.9617
+
+reference_ids:
+- 2008A&A...481..401A
+- 2010ApJ...718..348A
+
+notes: |
+  tgevcat_name: TeV J1800-2359 represents both HESS J1800-240A and HESS J1800-240B.

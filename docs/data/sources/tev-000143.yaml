@@ -1,0 +1,27 @@
+source_id: 143
+
+common_name: VER J2019+368
+gamma_names: [MGRO J2019+37]
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2014-04
+
+tevcat_id: 259
+tevcat_name: TeV J2019+368
+
+tgevcat_id: 143
+tgevcat_name: TeV J2019+3648
+
+pos:
+  simbad_id: VER J2019+368
+  ra: 304.0083
+  dec: 37.19778
+
+reference_ids:
+- 2012ApJ...753..159A
+- 2014ApJ...788...78A

@@ -1,0 +1,29 @@
+source_id: 47
+
+common_name: HESS J1026-582
+gamma_names: [HESS J1026-582]
+fermi_names: []
+other_names:
+- PSR J1028-5819
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2011-01
+
+tevcat_id: 220
+tevcat2_id: UwjiUu
+tevcat_name: TeV J1026-582
+
+tgevcat_id: 47
+tgevcat_name: TeV J1026-5812
+
+pos:
+  simbad_id: HESS J1026-582
+  ra: 157.16583
+  dec: -58.29194
+
+reference_ids:
+- 2011A&A...525A..46H

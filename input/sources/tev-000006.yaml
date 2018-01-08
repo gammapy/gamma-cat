@@ -1,7 +1,8 @@
 source_id: 6
 
 common_name: NGC 253
-gamma_names: []
+gamma_names:
+  - HESS J0047-253
 other_names: []
 
 where: egal

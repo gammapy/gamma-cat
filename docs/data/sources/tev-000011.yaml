@@ -1,0 +1,29 @@
+source_id: 11
+
+common_name: 3C 66A
+gamma_names: []
+other_names: [B2 0218+35]
+
+where: egal
+classes: [ibl]
+
+discoverer: crimea
+seen_by: [magic, veritas, crimea]
+discovery_date: 1998-03
+
+tevcat_id: 119
+tevcat2_id: J01xzR
+tevcat_name: TeV J0222+430
+
+tgevcat_id: 11
+tgevcat_name: TeV J0222+4302
+
+pos:
+  simbad_id: 3C 66A
+  ra: 35.6650500
+  dec: 43.0355222
+
+reference_ids:
+- 2009ApJ...693L.104A
+- 2011ApJ...726...43A
+- 2011ApJ...726...58A

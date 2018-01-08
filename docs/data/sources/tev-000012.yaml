@@ -1,0 +1,27 @@
+source_id: 12
+
+common_name: MAGIC J0223+403
+gamma_names: [MAGIC J0223+403]
+other_names: [3C 66A/B Region]
+
+where: unid
+classes: [unid]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2009-02
+
+tevcat_id: 138
+tevcat2_id: y6gVxa
+tevcat_name: TeV J0223+430
+
+tgevcat_id: 12
+tgevcat_name: TeV J0223+4259
+
+pos:
+  simbad_id: 3C 66A
+  ra: 35.6650500
+  dec: 43.0355222
+
+reference_ids:
+- 2009ApJ...692L..29A

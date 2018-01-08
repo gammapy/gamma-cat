@@ -1,0 +1,31 @@
+source_id: 33
+
+common_name: 1ES 0647+250
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic, veritas]
+discovery_date: 2011-09
+
+tevcat_id: 238
+tevcat2_id: zp72d7
+tevcat_name: TeV J0650+250
+
+tgevcat_id: 33
+tgevcat_name: TeV J0650+2503
+
+pos:
+  simbad_id: 1ES 0647+250
+  ra: 102.6937092458
+  dec: 25.0498953861
+
+reference_ids:
+- 2013arXiv1308.0287D
+
+notes: |
+  TODO: No publication by MAGIC or VERITAS?

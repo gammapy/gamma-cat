@@ -1,0 +1,36 @@
+source_id: 55
+
+common_name: 1ES 1218+304
+gamma_names:
+- VER J1221+301
+fermi_names: []
+other_names:
+- 1H 1219+301
+- H 1219+305
+- QSO B1218+304
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic, veritas]
+discovery_date: 2006-05
+
+tevcat_id: 91
+tevcat2_id: urWmHx
+tevcat_name: TeV J1221+301
+
+tgevcat_id: 55
+tgevcat_name: TeV J1221+3011
+
+pos:
+  simbad_id: 1ES 1218+304
+  ra: 185.3414278125
+  dec: 30.1769891083
+
+reference_ids:
+- 2009ApJ...695.1370A
+- 2010ApJ...709L.163A
+- 2011arXiv1110.6786L
+- 2011ICRC....8..151C
+- 2014ApJ...788..158A

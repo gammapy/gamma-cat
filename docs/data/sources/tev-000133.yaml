@@ -1,0 +1,29 @@
+source_id: 133
+
+common_name: W 49B
+gamma_names: [HESS J1911+090]
+other_names: [SNR G043.3-00.2, 0FGL J1911.0+0905, 1FGL J1910.9+0906c]
+
+where: gal
+classes: [snr, mc]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2010-12
+
+tevcat_id: 218
+tevcat2_id: tHQw4n
+tevcat_name: TeV J1911+090
+
+tgevcat_id: 133
+tgevcat_name: TeV J1911+0905
+
+pos:
+  simbad_id: W 49B
+  ra: 287.7458
+  dec: 9.1017
+
+reference_ids:
+- 2011arXiv1104.5003B
+- 2011ICRC....7..111B
+- 2016arXiv160900600H

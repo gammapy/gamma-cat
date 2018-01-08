@@ -1,0 +1,30 @@
+source_id: 146
+
+common_name: TeV J2032+4130
+gamma_names: [MGRO J2031+41, VER J2031+415]
+other_names: [0FGL J2032.2+4122]
+
+where: gal
+classes: [unid]
+
+discoverer: hegra
+seen_by: [hegra, veritas, magic, milagro]
+discovery_date: 2002-10
+
+tevcat_id: 87
+tevcat2_id: 3IY6Gd
+tevcat_name: TeV J2032+415
+
+tgevcat_id: 146
+tgevcat_name: TeV J2031+4133
+
+pos:
+  simbad_id: TeV J2032+4130
+  ra: 308.025
+  dec: 41.567
+
+reference_ids:
+- 2014ApJ...783...16A
+- 2008ApJ...675L..25A
+- 2003ICRC....4.2345R
+- 2012ApJ...753..159A

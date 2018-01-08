@@ -1,0 +1,27 @@
+source_id: 5
+
+common_name: 1ES 0033+595
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic]
+discovery_date: 2011-10
+
+tevcat_id: 229
+tevcat2_id: eNYfrm
+tevcat_name: TeV J0035+598
+
+tgevcat_id: 5
+tgevcat_name: TeV J0035+5947
+
+reference_ids:
+- 2015MNRAS.446..217A
+
+pos:
+  simbad_id: 1ES 0033+595
+  ra: 8.9689750
+  dec: 59.8344972

@@ -1,0 +1,26 @@
+source_id: 167
+
+common_name: PKS 1441+25
+gamma_names: [VER J1443+250]
+fermi_names: [3FGL J1443.9+2502]
+other_names: []
+
+where: egal
+classes: [fsrq]
+
+discoverer: magic
+seen_by: [magic, veritas]
+discovery_date: 2015-03
+
+tevcat_id: 263
+tevcat2_id: IqGXlk
+tevcat_name: TeV J1443+250
+
+pos:
+  simbad_id: 7C 1441+2514
+  ra: 220.987051
+  dec: 25.029025
+
+reference_ids:
+- 2015ApJ...815L..23A
+- 2015ApJ...815L..22A

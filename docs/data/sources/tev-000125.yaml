@@ -1,0 +1,36 @@
+source_id: 125
+
+common_name: HESS J1841-055
+gamma_names: [HESS J1841-055, ARGO J1839-0627, 1HWC J1838-060]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess, argo, hawc]
+discovery_date: 2007-07
+
+tevcat_id: 142
+tevcat2_id: amNIwH
+tevcat_name: TeV J1840-055
+
+tgevcat_id: 125
+tgevcat_name: TeV J1840-0533
+
+pos:
+  simbad_id: HESS J1841-055
+  ra: 280.22917
+  dec: -5.55
+
+reference_ids:
+- 2008A&A...477..353A
+- 2009ApJ...697.1194S
+- 2011arXiv1111.1634T
+- 2011ICRC....6..202T
+- 2013ApJ...779...27B
+- 2013ApJ...773...77A
+- 2013arXiv1303.1258T
+- 2015AdSpR..55.2493N
+- 2016ApJ...817....3A

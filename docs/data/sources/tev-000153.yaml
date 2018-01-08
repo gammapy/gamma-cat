@@ -1,0 +1,29 @@
+source_id: 153
+
+common_name: Cassiopeia A
+gamma_names: []
+other_names: [Cas A, 3C461, G111.7-2.1]
+
+where: gal
+classes: [snr]
+
+discoverer: hegra
+seen_by: [hegra, magic, veritas]
+discovery_date: 2001-04
+
+tevcat_id: 82
+tevcat2_id: 3dz45u
+tevcat_name: TeV J2323+588
+
+tgevcat_id: 153
+tgevcat_name: TeV J2323+5848
+
+pos:
+  simbad_id: Cassiopeia A
+  ra: 350.85
+  dec: 58.815
+
+reference_ids:
+- 2010ApJ...714..163A
+- 2001A&A...370..112A
+- 2015arXiv151100309G

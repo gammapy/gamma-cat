@@ -1,0 +1,34 @@
+source_id: 53
+
+common_name: 1ES 1215+303
+gamma_names: [VER J1217+301]
+fermi_names: []
+other_names:
+- B2 1215+30
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic, hess]
+discovery_date: 2011-01
+
+tevcat_id: 219
+tevcat2_id: 891TG0
+tevcat_name: TeV J1217+301
+
+tgevcat_id: 53
+tgevcat_name: TeV J1217+3006
+
+pos:
+  simbad_id: 1ES 1215+303
+  ra: 184.46700833
+  dec: 30.11684333
+
+reference_ids:
+- 2011arXiv1110.0038W
+- 2012AIPC.1505..538P
+- http://www.astronomerstelegram.org/?read=3100
+- 2012A&A...544A.142A
+- 2013ApJ...779...92A
+- 2017ApJ...836..205A

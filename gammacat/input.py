@@ -307,6 +307,12 @@ class InputData:
     """
 
     @property
+    def src_info_list(self):
+        """List of all basic source info files in input/sources"""
+        path = gammacat_info.base_dir / 'input/sources'
+        return sorted(path.glob('tev*.yaml'))
+
+    @property
     def lightcurve_file_list(self):
         """List of all lightcurve files in the input folder."""
         path = gammacat_info.base_dir / 'input/data'

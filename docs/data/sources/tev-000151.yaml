@@ -1,0 +1,28 @@
+source_id: 151
+
+common_name: RGB J2243+203
+gamma_names: []
+other_names: []
+
+where: egal
+classes: [ibl]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2014-12
+
+tevcat_id: 257
+tevcat2_id: 7IL8zC
+tevcat_name: TeV J2243+203
+
+tgevcat_id: 151
+tgevcat_name: TeV J2243+2021
+
+pos:
+  simbad_id: RGB J2243+203
+  ra: 340.978097917
+  dec: 20.351049306
+
+reference_ids:
+- 2015arXiv150806334A
+- 2014ATel.6849....1H

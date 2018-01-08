@@ -1,0 +1,34 @@
+source_id: 110
+
+common_name: SNR G0.9+0.1
+gamma_names: [HESS J1747-281, VER J1747-281]
+fermi_names: []
+other_names:
+- SNR G000.9+00.1
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess, veritas]
+discovery_date: 2005-03
+
+tevcat_id: 112
+tevcat2_id: jvz6ag
+tevcat_name: TeV J1747-281
+
+tgevcat_id: 110
+tgevcat_name: TeV J1747-2809
+
+pos:
+  simbad_id: SNR G0.9+0.1
+  ra: 266.825
+  dec: -28.15
+
+reference_ids:
+- 1987ApJ...314..203H
+- 2005A&A...432L..25A
+- 2008A&A...487.1033D
+- 2010A&A...515A..20F
+- 2015arXiv150806311S
+- 2016ApJ...821..129A

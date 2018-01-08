@@ -1,0 +1,33 @@
+source_id: 67
+
+common_name: PKS 1424+240
+gamma_names: [VER J1427+237]
+fermi_names: []
+other_names:
+- 7C 1424+2401
+
+where: egal
+classes: [hbl]
+
+discoverer: veritas
+seen_by: [veritas, magic]
+discovery_date: 2009-06
+
+tevcat_id: 184
+tevcat2_id: lGHxlE
+tevcat_name: TeV J1427+238
+
+tgevcat_id: 67
+tgevcat_name: TeV J1427+2347 #TeV J14272347
+
+pos:
+  simbad_id: PKS 1424+240
+  ra: 216.751632458
+  dec: 23.800010444
+
+reference_ids:
+- 2010ApJ...708L.100A
+- 2014ApJ...785L..16A
+- 2014A&A...567A.135A
+- 2015arXiv150807251B
+- 2016A&A...589A..92R

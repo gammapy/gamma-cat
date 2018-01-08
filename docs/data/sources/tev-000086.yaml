@@ -1,0 +1,28 @@
+source_id: 86
+
+common_name: HESS J1632-478
+gamma_names: [HESS J1632-478]
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2006-01
+
+tevcat_id: 105
+tevcat2_id: p9DNQ0
+tevcat_name: TeV J1632-478
+
+tgevcat_id: 86
+tgevcat_name: TeV J1632-4749
+
+pos:
+  simbad_id: HESS J1632-478
+  ra: 248.00778
+  dec: -47.87452
+
+reference_ids:
+- 2006ApJ...636..777A

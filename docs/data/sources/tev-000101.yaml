@@ -1,0 +1,36 @@
+source_id: 101
+
+common_name: 1ES 1727+502
+gamma_names: [VER J1728+502]
+fermi_names: []
+other_names:
+- OT546
+
+where: egal
+classes: [hbl]
+
+discoverer: magic
+seen_by: [magic, veritas]
+discovery_date: 2011-11
+
+tevcat_id: 232
+tevcat2_id: 9xaXCk
+tevcat_name: TeV J1728+502
+
+tgevcat_id: 101
+tgevcat_name: TeV J1728+5013
+
+pos:
+  simbad_id: 1ES 1727+502
+  ra: 262.07759958
+  dec: 50.219575
+
+reference_ids:
+- http://www.astronomerstelegram.org/?read=3774
+- 2013arXiv1308.0287D
+- 2014A&A...563A..90A
+- 2015arXiv150805551C
+- 2015arXiv150807251B
+- 2015ApJ...808..110A
+- 2015arXiv150103554C
+- 2015ApJ...808..110A

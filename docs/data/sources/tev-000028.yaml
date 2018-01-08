@@ -1,0 +1,27 @@
+source_id: 28
+
+common_name: PKS 0548-322
+gamma_names: []
+other_names: [H 0548-322, 1ES 0548-322]
+
+where: egal
+classes: [hbl]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-07
+
+tevcat_id: 133
+tevcat2_id: U09cDa
+tevcat_name: TeV J0550-322
+
+tgevcat_id: 28
+tgevcat_name: TeV J0550-3216
+
+pos:
+  simbad_id: PKS 0548-322
+  ra: 87.6689875
+  dec: -32.2712472
+
+reference_ids:
+- 2010A&A...521A..69A

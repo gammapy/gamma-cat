@@ -1,0 +1,35 @@
+source_id: 84
+
+common_name: HESS J1616-508
+gamma_names: [HESS J1616-508]
+fermi_names: []
+other_names:
+- PSR J1617-5055
+
+where: gal
+classes: [pwn]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2005-03
+
+tevcat_id: 104
+tevcat2_id: 2m5UkC
+tevcat_name: TeV J1616-508
+
+tgevcat_id: 84
+tgevcat_name: TeV J1616-5054
+
+pos:
+  simbad_id: HESS J1616-508
+  ra: 244.06
+  dec: -50.91
+
+reference_ids:
+- 2005Sci...307.1938A
+- 2006ApJ...636..777A
+- 2007MNRAS.380..926L
+- 2009ApJ...690..891K
+- 2011ICRC....6..202T
+- 2011arXiv1111.1634T
+- 2013ApJ...773...77A

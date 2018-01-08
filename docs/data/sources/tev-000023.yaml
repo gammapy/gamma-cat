@@ -1,0 +1,28 @@
+source_id: 23
+
+common_name: RGB J0521+212
+gamma_names: [VER J0521+211]
+other_names: []
+
+where: egal
+classes: [ibl]
+
+discoverer: veritas
+seen_by: [veritas]
+discovery_date: 2009-10
+
+tevcat_id: 196
+tevcat2_id: ILT7om
+tevcat_name: TeV J0521+211
+
+tgevcat_id: 23
+tgevcat_name: TeV J0521+2112
+
+pos:
+  simbad_id: RGB J0521+212
+  ra: 80.4415375
+  dec: 21.2142722
+
+reference_ids:
+- 2013ApJ...776...69A
+- atel-2309

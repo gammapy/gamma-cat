@@ -4,6 +4,7 @@ telescope: [hess]
 
 datasets:
   - tev-000019-sed.ecsv
+  - tev-000019.yaml
 
 data_entry:
   status: incomplete

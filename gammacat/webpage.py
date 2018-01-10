@@ -7,6 +7,8 @@ from gammapy.catalog import GammaCatResourceIndex
 from .input import BasicSourceList
 from .info import gammacat_info
 from .utils import load_json, jinja_env
+from pathlib import Path
+import shutil
 
 __all__ = [
     'WebpageConfig',
@@ -38,10 +40,19 @@ class WebpageMaker:
         # in the webpage generation! Change to use output folder.
         self.sources_data = BasicSourceList.read().to_dict()['data']
 
+    def _copy_data(self):
+        # path = Path(gammacat_info.base_dir / 'documentation/_build/html')
+        # Path.mkdir(path, parents=True)
+        shutil.copytree('docs/data', 'documentation/_build/html/output')
+        # subprocess.call(cmd1, shell=True)
+        # cmd2 = "mv documentation/_build/html/data documentation/_build/html/output"
+        # subprocess.call(cmd2, shell=True)
+
     def run(self):
         log.info('Make webpage ...')
         self.make_source_list_page()
         self.make_source_detail_pages()
+        self._copy_data()
 
     def make_source_list_page(self):
         # Prepare context

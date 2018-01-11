@@ -12,7 +12,7 @@ SEDs
 ----
 
 {% for resource in resources.resources if resource.type == 'sed' %}
-* `{{ resource.__str__() }} <../../../../../docs/data/{{ resource.location }}>`__
+* `{{ resource.reference_id }} <../data/{{ resource.url }}>`__
 {% else %}
 * None
 {% endfor %}

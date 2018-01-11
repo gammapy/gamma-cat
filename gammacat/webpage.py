@@ -3,6 +3,8 @@
 Make gamma-cat webpage (in combination with Sphinx).
 """
 import logging
+import shutil
+import urllib.parse
 from gammapy.catalog import GammaCatResourceIndex
 from .input import BasicSourceList
 from .info import gammacat_info
@@ -42,14 +44,32 @@ class WebpageMaker:
         log.info('Make webpage ...')
         self.make_source_list_page()
         self.make_source_detail_pages()
+        self.copy_data()
+
+    def copy_data(self):
+        """Copy output data folder to docs HTML output folder,
+        so that the data files are available from the website
+        """
+        src = gammacat_info.base_dir / 'docs/data'
+        dst = gammacat_info.base_dir / 'documentation/_build/html/data/data'
+
+        # log.info(f'mkdir {dst}')
+        # dst.mkdir(parents=True, exists_ok=True)
+        if dst.is_dir():
+            log.info(f'rm {dst}')
+            shutil.rmtree(str(dst))
+
+        log.info(f'cp {src} {dst}')
+        shutil.copytree(str(src), str(dst))
 
     def make_source_list_page(self):
-        # Prepare context
-        ctx = {'sources': self.sources_data}
+        ctx = {
+            'sources': self.sources_data,
+        }
 
-        # Render context and save to file
         template = jinja_env.get_template('source_list.txt')
         txt = template.render(ctx)
+
         path = gammacat_info.base_dir / 'documentation/data/source_list.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
@@ -61,13 +81,28 @@ class WebpageMaker:
             self.make_source_detail_page(source)
 
     def make_source_detail_page(self, source):
-        # Prepare context
         resources = self.resources.query(f'source_id == {source["source_id"]}')
-        ctx = {'source': source, 'resources': resources}
 
-        # Render context and save to file
+        # This is a bit of a hack: we need to URL encode the resource "location",
+        # because for reference identifiers with a "&" character, the filename
+        # contains "%26", and the "%" in that filename has to be URL encoded again
+        # to get the right URL linking to that file, resulting in "%2526"
+        # See https://en.wikipedia.org/wiki/Percent-encoding
+        # or https://gamma-cat.readthedocs.io/contribute/details.html#reference-identifiers
+
+        # We store the correct URL string on the resource objects and pass those
+        # to the template render
+        for resource in resources.resources:
+            resource.url = urllib.parse.quote(resource.location)
+
+        ctx = {
+            'source': source,
+            'resources': resources,
+        }
+
         template = jinja_env.get_template('source_detail.txt')
         txt = template.render(ctx)
+
         path = gammacat_info.base_dir / f'documentation/data/sources/source_{source["source_id"]}.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)

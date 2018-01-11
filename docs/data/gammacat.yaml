@@ -1177,7 +1177,7 @@
 - !!omap
   - source_id: 15
   - common_name: PKS 0301-243
-  - gamma_names: ''
+  - gamma_names: HESS J0303-241
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -1190,7 +1190,7 @@
   - tevcat_name: TeV J0303-241
   - tgevcat_id: 15
   - tgevcat_name: TeV J0303-2407
-  - reference_id: ''
+  - reference_id: 2013A&A...559A.136H
   - significance: .nan
   - livetime: .nan
   - ra: 45.860416412353516
@@ -1513,9 +1513,9 @@
 - !!omap
   - source_id: 19
   - common_name: 1ES 0347-121
-  - gamma_names: ''
+  - gamma_names: HESS J0349-119
   - fermi_names: ''
-  - other_names: ''
+  - other_names: QSO B0347-121
   - where: egal
   - classes: hbl
   - discoverer: hess
@@ -1526,7 +1526,7 @@
   - tevcat_name: TeV J0349-119
   - tgevcat_id: 19
   - tgevcat_name: TeV J0349-1158
-  - reference_id: ''
+  - reference_id: 2007A&A...473L..25A
   - significance: .nan
   - livetime: .nan
   - ra: 57.34660720825195
@@ -1597,7 +1597,7 @@
 - !!omap
   - source_id: 20
   - common_name: 1ES 0414+009
-  - gamma_names: VER J0416+011
+  - gamma_names: VER J0416+011,HESS J0416+010
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -1933,7 +1933,7 @@
 - !!omap
   - source_id: 24
   - common_name: LMC N132D
-  - gamma_names: ''
+  - gamma_names: HESS J0525-696
   - fermi_names: ''
   - other_names: SNR J052501-693842
   - where: egal

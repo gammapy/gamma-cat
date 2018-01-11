@@ -3,9 +3,9 @@ source_id: [8]
 telescope: [hess]
 
 datasets:
-  - tev-000008-sed.ecsv
   - tev-000008.yaml
+  - tev-000008-sed.ecsv
 
 data_entry:
   status: incomplete
-  reviewed: no
+  reviewed: yes

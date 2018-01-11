@@ -311,6 +311,13 @@
         "source_id": 15,
         "reference_id": "2013A&A...559A.136H",
         "file_id": -1,
+        "type": "ds",
+        "location": "data/2013/2013A%26A...559A.136H/tev-000015.yaml"
+    },
+    {
+        "source_id": 15,
+        "reference_id": "2013A&A...559A.136H",
+        "file_id": -1,
         "type": "sed",
         "location": "data/2013/2013A%26A...559A.136H/tev-000015-sed.ecsv"
     },
@@ -339,8 +346,22 @@
         "source_id": 19,
         "reference_id": "2007A&A...473L..25A",
         "file_id": -1,
+        "type": "ds",
+        "location": "data/2007/2007A%26A...473L..25A/tev-000019.yaml"
+    },
+    {
+        "source_id": 19,
+        "reference_id": "2007A&A...473L..25A",
+        "file_id": -1,
         "type": "sed",
         "location": "data/2007/2007A%26A...473L..25A/tev-000019-sed.ecsv"
+    },
+    {
+        "source_id": 20,
+        "reference_id": "2012A&A...538A.103H",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2012/2012A%26A...538A.103H/tev-000020.yaml"
     },
     {
         "source_id": 20,

@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 """
-Make catalog (multiple steps available)
+Command line tool to make gamma-cat.
 """
-from pathlib import Path
 import logging
 import warnings
 import subprocess
@@ -40,16 +39,22 @@ class GlobalConfig:
 # Best description how it works is here: http://click.pocoo.org/dev/complex/
 
 @click.group(invoke_without_command=True)
-@click.option('--log-level', default='INFO',
-              type=click.Choice(['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']))
+@click.option('--log-level', default='info',
+              type=click.Choice(['debug', 'info', 'warning', 'error', 'critical']))
 @click.option('--show-warnings', is_flag=True, help='Show warnings?')
 @click.pass_context
 def cli(ctx, log_level, show_warnings):
     """
-    Make catalog (multiple steps available)
+    Command line tool to make gamma-cat.
+
+    Example usage:
+
+        ./make.py --help
+        ./make.py all --clean --webpage
+
     """
     ctx.obj = GlobalConfig(
-        log_level=log_level,
+        log_level=log_level.upper(),
         show_warnings=show_warnings,
     )
     log.debug('global config: {}'.format(ctx.obj))
@@ -110,7 +115,11 @@ def cli_checks(global_config, step):
 def cli_clean():
     """Remove all auto-generated files"""
     # TODO: this list of files & folders is incomplete
-    cmd = 'rm -r documentation/_build documentation/data/sources documentation/data/source_list.rst'
+    cmd = ' '.join([
+        'rm', '-r',
+        'documentation/_build documentation/data/sources',
+        'documentation/data/source_list.rst',
+    ])
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
 

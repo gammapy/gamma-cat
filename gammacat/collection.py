@@ -267,15 +267,15 @@ class CollectionMaker:
             log.debug('Processing reference: {}'.format(info_data['reference_id']))
             # TODO: This is if you want to make sure that all data are reviewed
             # if status == 'complete' and review == 'yes':
-            if status == 'complete':
-                for dataset_filename in info_data['datasets']:
-                    if dataset_filename.endswith('yaml'):
-                        filename = info_filename.parent / dataset_filename
-                        dataset = DataSet.read(filename)
+            # if status == 'complete':
+            for dataset_filename in info_data['datasets']:
+                if dataset_filename.endswith('yaml'):
+                    filename = info_filename.parent / dataset_filename
+                    dataset = DataSet.read(filename)
 
-                        path = self.config.make_dataset_path(dataset, relative_to_index=False)
-                        path.parent.mkdir(parents=True, exist_ok=True)
-                        dataset.write(path)
+                    path = self.config.make_dataset_path(dataset, relative_to_index=False)
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    dataset.write(path)
 
     def make_index_file_for_input(self):
         resources = []

@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 from ruamel.yaml import safe_load
 from gammacat.info import gammacat_info
-from gammacat.modeling import Parameter, Parameters
+from gammacat.modeling import Parameters
 
 
 # pl spectrum example
@@ -15,7 +15,7 @@ from gammacat.modeling import Parameter, Parameters
 
 
 def test_parameter_list():
-    path = gammacat_info.base_dir / 'input/data/2011/2011A%26A...529A..49H/tev-000137.yaml'
+    path = gammacat_info.in_path / 'data/2011/2011A%26A...529A..49H/tev-000137.yaml'
     data = safe_load(path.open())['spec']['model']['parameters']
     pars = Parameters.from_dict(data)
     # print(pars)

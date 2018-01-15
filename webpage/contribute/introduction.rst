@@ -22,7 +22,7 @@ Everything happens on **Github** here: https://www.github.com/gammapy/gamma-cat
 
 This is a git repository that contains everything related to gamma-cat: the data entry in the
 ``input`` folder, the script ``make.py`` and ``gammacat`` folder with the Python scripts to
-generate the output files, which at the moment are in the ``docs/data`` folder. The documentation
+generate the output files, which are in the ``output`` folder. The documentation
 at https://gamma-cat.readthedocs.io is generated from the RST files in that repo. But not just
 all the files and version control is there, Github is also the place to file "issues" for question,
 discussion, feature or data entry requests, bug reports (see https://github.com/gammapy/gamma-cat/issues).

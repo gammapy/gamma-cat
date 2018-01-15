@@ -28,6 +28,7 @@ class GammaCatInfo:
         self.base_dir = Path(__file__).parent.parent
         self.in_path = self.base_dir / 'input'
         self.out_path = self.base_dir / 'output'
+        self.webpage_path = self.base_dir / 'webpage'
 
         self.description = "An open data collection and source catalog for gamma-ray astronomy"
 

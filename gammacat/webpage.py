@@ -50,8 +50,8 @@ class WebpageMaker:
         """Copy output data folder to docs HTML output folder,
         so that the data files are available from the website
         """
-        src = gammacat_info.base_dir / 'docs/data'
-        dst = gammacat_info.base_dir / 'documentation/_build/html/data/data'
+        src = gammacat_info.in_path
+        dst = gammacat_info.out_path / 'data'
 
         # log.info(f'mkdir {dst}')
         # dst.mkdir(parents=True, exists_ok=True)
@@ -70,12 +70,12 @@ class WebpageMaker:
         template = jinja_env.get_template('source_list.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.base_dir / 'documentation/data/source_list.rst'
+        path = gammacat_info.webpage_path / 'source_list.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
 
     def make_source_detail_pages(self):
-        path = gammacat_info.base_dir / 'documentation/data/sources/'
+        path = gammacat_info.webpage_path / 'data/sources/'
         path.mkdir(exist_ok=True)
         for source in self.sources_data:
             self.make_source_detail_page(source)
@@ -103,7 +103,7 @@ class WebpageMaker:
         template = jinja_env.get_template('source_detail.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.base_dir / f'documentation/data/sources/source_{source["source_id"]}.rst'
+        path = gammacat_info.webpage_path / f'data/sources/source_{source["source_id"]}.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
 

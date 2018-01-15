@@ -10,8 +10,6 @@ gamma-cat
 * Explore `gamma-cat` and other gamma-ray data at `gamma-sky.net`_
 * Access and analyse `gamma-cat` and other gamma-ray data from Python: `gammapy.catalog`_
 
-* For now, see also here: https://gammapy.github.io/gamma-cat (will be moved to Sphinx docs soon)
-
 This site is organised in the following sections:
 
 * :ref:`about-docs` - Quick introduction to `gamma-cat`

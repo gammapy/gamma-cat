@@ -1,0 +1,23 @@
+source_id: 11
+reference_id: 2011ApJ...726...43A
+file_id: 2
+telescope: veritas
+
+data:
+  livetime: 21.2h
+  significance: 22.2
+  excess: 1331.5
+
+morph:
+  type: point
+
+# spectrum for 'darkrun' (see table 1)
+spec:
+  mjd: {min: 54734.0, max: 54749.0}
+  erange: {min: 0.2, max: 0.4, unit: TeV}
+  model:
+    type: pl2
+    parameters:
+      e_min: {val: 0.2, unit: TeV}
+      flux: {val: 1.4, err: 0.2, scale: 1e-11, unit: cm-2 s-1}
+      index: {val: 4.1, err: 0.6, err_sys: 0.6}

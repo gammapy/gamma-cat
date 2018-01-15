@@ -1,0 +1,22 @@
+source_id: 89
+reference_id: 2013arXiv1303.0979O
+telescope: hess
+
+data:
+  livetime: 72h
+  significance: 8.6
+
+pos:
+  ra: {val: 16h41m1.7s, err: 0h0m3.1s, err_sys: 0h0m1.9s}
+  dec: {val: -46d18m11s, err: 35s, err_sys: 20s}
+
+morph:
+  # Note: parameters missing in the paper
+  type: gauss
+
+# TODO: add spectral model parameters. only energy flux is given in the paper.
+#spec:
+#  model:
+#    type: pl
+#
+#  erange: {min: 0.64, max: 30, unit: TeV}

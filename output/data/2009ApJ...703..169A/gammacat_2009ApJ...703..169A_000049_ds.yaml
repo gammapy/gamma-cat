@@ -1,0 +1,17 @@
+source_id: 49
+reference_id: 2009ApJ...703..169A
+telescope: veritas
+
+data:
+  livetime: 2.16h
+  significance: 39.6
+
+spec:
+  erange: {min: 0.25, max: 3., unit: TeV}
+  mjd: {min: 54593, max: 54593.}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.01, err: 0.15, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.91, err: 0.13}
+      e_ref: {val: 1.0, unit: TeV}

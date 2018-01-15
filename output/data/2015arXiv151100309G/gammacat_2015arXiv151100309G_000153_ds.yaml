@@ -1,0 +1,24 @@
+source_id: 153
+reference_id: 2015arXiv151100309G
+telescope: veritas
+
+data:
+  # Note on livetime: only 18 hours used for position measurement
+  livetime: 60h
+  significance: 11
+
+pos:
+  ra: {val: 23h23m20.4s, err: 0.006d, err_sys: 0.014d}
+  dec: {val: 58.817d, err: 0.006d, err_sys: 0.014d}
+
+morph:
+  type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.45, err: 0.11, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.75, err: 0.10, err_sys: 0.20}
+      e_ref: {val: 1, unit: TeV}
+  erange: {min: 0.3, max: 7, unit: TeV}

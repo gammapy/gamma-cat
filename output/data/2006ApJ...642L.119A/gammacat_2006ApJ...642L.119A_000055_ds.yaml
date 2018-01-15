@@ -1,0 +1,20 @@
+source_id: 55
+reference_id: 2006ApJ...642L.119A
+telescope: magic
+
+data:
+  livetime: 8.2h
+  significance: 6.4
+  excess: 560
+
+morph:
+  type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 8.1, err: 2.1, scale: 1e-7, unit: m-2 s-1 TeV-1}
+      index: {val: 3.0, err: 0.4}
+      e_ref: {val: 250, unit: GeV}
+

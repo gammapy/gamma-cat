@@ -1,0 +1,25 @@
+source_id: 117
+reference_id: 2014A&A...562A..40H
+telescope: hess
+
+data:
+  livetime: 120h
+  significance: 8.2
+  excess: 117
+
+pos:
+  ra: {val: 18h18m4.8s, err: 0h0m3.1s, err_sys: 20s}
+  dec: {val: -15d28m1s, err: 43s, err_sys: 20s}
+
+morph:
+  type: point
+  # TODO : add Gaussian extension upper limit 'sigma = 0.072d' at CL=0.99
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.09, err: 0.02, err_sys: 0.02, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.3, err: 0.3, err_sys: 0.2}
+      e_ref: {val: 1.9, unit: TeV}
+  erange: {min: 0.42, max: 12.0, unit: TeV}

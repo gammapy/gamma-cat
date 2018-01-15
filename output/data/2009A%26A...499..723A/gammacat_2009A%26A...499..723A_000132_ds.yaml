@@ -1,0 +1,25 @@
+source_id: 132
+reference_id: 2009A&A...499..723A
+telescope: hess
+
+data:
+  livetime: 27h
+  significance: 12.1
+  excess: 689
+
+pos:
+  glon: {val: 40d23m9.2s, err: 2.4m, err_sys: 20s}
+  glat: {val: -0d47m10.1s, err: 2.4m, err_sys: 20s}
+
+morph:
+  type: gauss
+  # TODO: in the paper, an asymmetric error for `sigma` is given: -0.03, +0.04
+  sigma: {val: 0.34d, err: 0.04d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 4.14, err: 0.32, err_sys: 0.83, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.1, err: 0.07, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}

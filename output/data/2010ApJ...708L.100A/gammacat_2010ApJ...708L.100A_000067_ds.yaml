@@ -1,0 +1,24 @@
+source_id: 67
+reference_id: 2010ApJ...708L.100A
+telescope: veritas
+
+data:
+  livetime: 28.5h
+  significance: 8.5
+  excess: 370
+
+pos:
+  ra: {val: 14h27m0s, err: 0h0m7s}
+  dec: {val: +23d47m40s, err: 2m}
+
+morph:
+  type: point
+
+spec:
+  erange: {min: 0.14, max: 0.6, unit: TeV}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 5.1, err: 0.9, err_sys: 0.5, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.8, err: 0.5, err_sys: 0.3}
+      e_ref: {val: 0.2, unit: TeV}

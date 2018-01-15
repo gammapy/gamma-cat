@@ -1,0 +1,14 @@
+source_id: 58
+reference_id: 2012ApJ...746..141A
+file_id: 3
+telescope: veritas
+
+spec:
+  erange: {min: 0.3, max: 6., unit: TeV}
+  mjd: {min: 55297., max: 55301.}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.10, err: 0.16, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.62, err: 0.18}
+      e_ref: {val: 1.0, unit: TeV}

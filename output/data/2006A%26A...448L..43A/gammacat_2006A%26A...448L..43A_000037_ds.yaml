@@ -1,0 +1,33 @@
+source_id: 37
+reference_id: 2006A&A...448L..43A
+telescope: hess
+
+data:
+  excess: 2152
+  significance: 16.7
+
+pos:
+  ra: {val: 8h35m1s, err: 2m}
+  dec: {val: -45d34m40s, err: 2m}
+
+morph:
+  type: gauss
+  sigma: {val: 0.48d, err: 0.03d}
+  sigma2: {val: 0.36d, err: 0.03d}
+  # TODO: check position angle (RADEC or GALACTIC orientation?)
+  pa: {val: 41d, err: 7d}
+
+# Spectrum not given in the paper
+# Computed from the given integral flux above 1Tev of int_flux: {val: 1.28, err: 0.17, err_sys: 0.38} e-11 cm-2s-1
+# The errors are approximated with 'norm_err/norm = int_flux_err / int_flux'
+# TODO: introduce an ECPL model with integral photon flux parameter?
+spec:
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 10.2, err: 1.35, err_sys: 3.03, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 1.45, err: 0.09, err_sys: 0.2}
+      e_cut: {val: 13.8, err: 2.3, err_sys: 4.1, unit: TeV}
+      e_ref: {val: 1, unit: TeV}
+  theta: 0.8d
+  erange: {min: 0.550, max: 65, unit: TeV}

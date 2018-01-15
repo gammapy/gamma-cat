@@ -430,6 +430,20 @@
         "source_id": 23,
         "reference_id": "2013ApJ...776...69A",
         "file_id": -1,
+        "type": "ds",
+        "location": "data/2013ApJ...776...69A/gammacat_2013ApJ...776...69A_000023_ds.yaml"
+    },
+    {
+        "source_id": 23,
+        "reference_id": "2013ApJ...776...69A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2013ApJ...776...69A/gammacat_2013ApJ...776...69A_000023_lc.ecsv"
+    },
+    {
+        "source_id": 23,
+        "reference_id": "2013ApJ...776...69A",
+        "file_id": -1,
         "type": "sed",
         "location": "data/2013ApJ...776...69A/gammacat_2013ApJ...776...69A_000023_sed.ecsv"
     },
@@ -852,6 +866,27 @@
         "file_id": -1,
         "type": "bsi",
         "location": "sources/tev-000040.yaml"
+    },
+    {
+        "source_id": 40,
+        "reference_id": "2009Natur.462..770V",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2009Natur.462..770V/gammacat_2009Natur.462..770V_000040_ds.yaml"
+    },
+    {
+        "source_id": 40,
+        "reference_id": "2009Natur.462..770V",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2009Natur.462..770V/gammacat_2009Natur.462..770V_000040_lc.ecsv"
+    },
+    {
+        "source_id": 40,
+        "reference_id": "2009Natur.462..770V",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2009Natur.462..770V/gammacat_2009Natur.462..770V_000040_sed.ecsv"
     },
     {
         "source_id": 41,
@@ -3491,6 +3526,20 @@
         "file_id": -1,
         "type": "bsi",
         "location": "sources/tev-000166.yaml"
+    },
+    {
+        "source_id": 166,
+        "reference_id": "2011Sci...334...69V",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2011Sci...334...69V/gammacat_2011Sci...334...69V_000166_ds.yaml"
+    },
+    {
+        "source_id": 166,
+        "reference_id": "2011Sci...334...69V",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011Sci...334...69V/gammacat_2011Sci...334...69V_000166_sed.ecsv"
     },
     {
         "source_id": 167,

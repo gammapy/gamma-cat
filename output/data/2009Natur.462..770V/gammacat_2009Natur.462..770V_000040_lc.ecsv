@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1e-13 / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: 1e-13 / (cm2 s), datatype: float64}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 40}
+# - {reference_id: 2009Natur.462..770V}
+# - {telescope: veritas}
+# - {SED_TYPE: flux}
+# schema: astropy-2.0
+e_min time_min time_max flux flux_err
+0.7 54495.0 54509.0 3.01 2.19
+0.7 54524.0 54535.0 5.09 2.43
+0.7 54552.0 54566.0 1.96 1.91
+0.7 54580.0 54584.0 9.14 5.07
+0.7 54801.0 54803.0 6.1 7.04
+0.7 54822.0 54838.0 8.63 2.6
+0.7 54851.0 54865.0 1.17 2.22
+0.7 54881.0 54893.0 -3.62 3.83
+0.7 54906.0 54920.0 4.97 2.18
+0.7 54934.0 54949.0 4.53 3.0

@@ -2,6 +2,8 @@ reference_id: 2017MNRAS.470.4608A
 source_id: [-1]
 telescope: [magic]
 
+datasets: []
+
 data_entry:
   status: missing
   reviewed: no

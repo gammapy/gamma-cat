@@ -2,6 +2,8 @@ reference_id: 2017arXiv170803689M
 source_id: [-1]
 telescope: [magic]
 
+datasets: []
+
 data_entry:
   status: missing
   reviewed: no

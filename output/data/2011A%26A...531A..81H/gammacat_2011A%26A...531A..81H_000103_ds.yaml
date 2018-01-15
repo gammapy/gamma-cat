@@ -1,0 +1,27 @@
+source_id: 103
+reference_id: 2011A&A...531A..81H
+telescope: hess
+
+data:
+  livetime: 59h
+#  significance: TODO
+
+pos:
+  ra: {val: 17h32m03s}
+  dec: {val: -34d45m18s}
+
+morph:
+  type: shell
+  sigma: {val: 0.27d, err: 0.02d}
+
+# Values taken from Table 1
+spec:
+  model:
+    type: pl
+    parameters:
+      # TODO: add `err_sys_frac=0.2` once that's implemented
+      norm: {val: 4.67, err: 0.19, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.32, err: 0.06, err_sys: 0.2}
+      e_ref: {val: 0.783, unit: TeV}
+  theta: 0.3d
+  erange: {min: 0.24, unit: TeV}

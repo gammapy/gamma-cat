@@ -1,0 +1,33 @@
+source_id: 108
+reference_id: 2008A&A...483..509A
+telescope: hess
+
+data:
+  livetime: 79h
+  excess: 2030
+  significance: 10.2
+
+pos:
+  ra: {val: 17h45m2.10s}
+  dec: {val: −30d22m14.00s}
+
+morph:
+  # The text states that an elongated Gaussian was fitted to get the
+  # source centroid. But no extension is given in the paper!
+  # No, really, they do a big fuss about the morphology, but then
+  # don't actually publish their measurement.
+  # To have a spatial model at all, we here put as Gaussian
+  # width half of the spectral extraction radius.
+  # This is a made-up extension, not a number given in the paper.
+  type: gauss
+  sigma: {val: 0.2d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.84, err: 0.23, err_sys: 0.28, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.71, err: 0.11, err_sys: 0.20}
+      e_ref: {val: 1, unit: TeV}
+  theta: 0.4d
+  erange: {min: 0.15, unit: TeV}

@@ -1,0 +1,42 @@
+source_id: 37
+reference_id: 2012A&A...548A..38A
+telescope: hess
+
+data:
+  livetime: 53.1h
+  significance: 27.9
+
+pos:
+  ra: {val: 8h35m00s}
+  dec: {val: -45d36m00s}
+
+morph:
+  type: gauss
+  sigma: {val: 28.8m, err: 1.8m}
+  sigma2: {val: 21.6m, err: 1.8m}
+  pa: {frame: radec, val: 41d, err: 7d}
+
+spec:
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 14.6, err: 0.8, err_sys: 3.0, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 1.32, err: 0.06, err_sys: 0.12}
+      e_cut: {val: 14.0, err: 1.6, err_sys: 2.6, unit: TeV}
+      e_ref: {val: 1, unit: TeV}
+  theta: 1.2d
+  erange: {min: 0.75, unit: TeV}
+
+#  flux: {e_min: 1.0, val: 21.0, err: 1.9, err_sys: 4.4}
+
+# TODO: add this info back!
+#data:
+#  - type: image
+#    url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/HESSVelaX_fluxmap.fits
+#    filename: HESSVelaX_fluxmap.fits
+#    filesize: 1895040
+#    comments: |
+#      Smoothed flux map.
+
+notes: |
+  TODO: Morphology parameters are from the 2006 paper, only the spectrum is from this from 2012 paper.

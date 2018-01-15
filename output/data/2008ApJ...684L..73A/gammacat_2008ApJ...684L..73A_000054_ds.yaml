@@ -1,0 +1,18 @@
+source_id: 54
+reference_id: 2008ApJ...684L..73A
+telescope: veritas
+
+data:
+  livetime: 39.5h
+  significance: 4.9
+  excess: 111
+
+spec:
+  erange: {min: 0.250, max: 2., unit: TeV}
+  mjd: {min: 54538, max: 54539.}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.0, err: 0.31, err_sys: 0.5, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.81, err: 0.35, err_sys: 0.34}
+      e_ref: {val: 0.4, unit: TeV}

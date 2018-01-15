@@ -2,6 +2,9 @@ reference_id: 2017A&A...601A..33A
 source_id: [106]
 telescope: [magic]
 
+datasets:
+- tev-000106.yaml
+
 data_entry:
   status: missing
   reviewed: no

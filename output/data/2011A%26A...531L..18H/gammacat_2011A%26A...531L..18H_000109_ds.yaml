@@ -1,0 +1,26 @@
+source_id: 109
+reference_id: 2011A&A...531L..18H
+telescope: hess
+
+data:
+  livetime: 62h
+  significance: 7.5
+
+pos:
+  ra: {val: 17h47m49s, err: 0h1.8m, err_sys: 0h0m1.3s}
+  dec: {val: -24d48m30s, err: 36s, err_sys: 20s}
+
+morph:
+  type: gauss
+  sigma: {val: 9.6m, err: 2.4m}
+  sigma2: {val: 1.8m, err: 1.2m}
+  # TODO: in the paper it is mentioned "westwards from north", we need to decide which entry to use in gamma-cat
+  pa: {frame: radec, val: 92d, err: 6d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.52, err: 0.11, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.5, err: 0.3, err_sys: 0.2}
+      e_ref: {val: 1, unit: TeV}

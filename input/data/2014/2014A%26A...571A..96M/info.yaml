@@ -3,7 +3,7 @@ source_id: [130]
 telescope: [magic]
 
 datasets:
-  - tev-0000130.yaml
+  - tev-000130.yaml
 
 data_entry:
   status: missing

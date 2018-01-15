@@ -2,8 +2,8 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32, unit: MeV}
-# - {name: dnde, datatype: float32, unit: m-2 s-1 MeV-1}
-# - {name: dnde_err, datatype: float32, unit: m-2 s-1 MeV-1}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 MeV-1}
+# - {name: dnde_err, datatype: float32, unit: cm-2 s-1 MeV-1}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 166}

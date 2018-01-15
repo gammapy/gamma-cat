@@ -4,6 +4,7 @@ common_name: HESS J1813-178
 gamma_names: [HESS J1813-178]
 fermi_names: []
 other_names:
+- AX J1813-178
 - G12.82-0.02
 - PSR J1813-1749
 - CXOU J181335.1-174957

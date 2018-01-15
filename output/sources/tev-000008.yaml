@@ -1,7 +1,9 @@
 source_id: 8
 
 common_name: RGB J0152+017
-gamma_names: []
+gamma_names:
+- HESS J0152+017
+
 other_names:
 - RXJ0152.6+0147
 
@@ -27,3 +29,4 @@ pos:
 reference_ids:
 - 2008A&A...481L.103A
 - 2008bves.confE..46L
+- 2008A&A...481L.103A

@@ -4,7 +4,9 @@ common_name: HESS J1418-609
 gamma_names: [HESS J1418-609]
 fermi_names: []
 other_names:
+- G313.3+0.1
 - Kookaburra
+- Rabbit
 
 where: gal
 classes: [pwn]

@@ -3,7 +3,9 @@ source_id: 124
 common_name: HESS J1837-069
 gamma_names: [HESS J1837-069, 1HWC J1838-060, 1HWC J1836-074c]
 fermi_names: []
-other_names: []
+other_names:
+- G25.5+0.0
+- AX J1838.0-0655
 
 where: gal
 classes: [pwn]

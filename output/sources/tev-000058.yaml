@@ -1,7 +1,9 @@
 source_id: 58
 
 common_name: M 87
-gamma_names: [VER J1230+123]
+gamma_names:
+- VER J1230+123
+- HESS J1230+123
 fermi_names: []
 other_names:
 - 1ES 1228+126

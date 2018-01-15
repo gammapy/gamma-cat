@@ -1,7 +1,8 @@
 source_id: 24
 
 common_name: LMC N132D
-gamma_names: []
+gamma_names:
+- HESS J0525-696
 other_names: [SNR J052501-693842]
 
 where: egal

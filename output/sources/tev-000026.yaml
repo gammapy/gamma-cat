@@ -1,7 +1,8 @@
 source_id: 26
 
 common_name: 30 Dor C
-gamma_names: []
+gamma_names:
+- HESS J0535-691
 other_names: []
 
 where: egal

@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e_min, datatype: float32, unit: TeV}
+# - {name: e_max, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: TeV-1 cm-2 s-1}
+# - {name: dnde_err, datatype: float32, unit: TeV-1 cm-2 s-1}
+# - {name: dnde_ul, datatype: float32, unit: TeV-1 cm-2 s-1}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 40}
+# - {reference_id: 2009Natur.462..770V}
+# - {telescope: veritas}
+# - UL_CONF: 0.99
+# - mjd: {min: 54495, max: 54948}
+e_ref e_min e_max dnde dnde_err dnde_ul
+1.167 nan   nan  1.68e-13 9.88e-14 nan
+2.074 nan   nan  4.92e-14 2.08e-14 nan
+3.689 nan   nan  9.16e-15 5.74e-15 nan
+6.56  4.9204 8.7498  nan   nan 3.1453e-15
+11.67 8.7498 15.5597 nan   nan 1.73e-15

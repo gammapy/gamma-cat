@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1e-13 cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: 1e-13 cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 40
+# - reference_id: 2009Natur.462..770V
+# - telescope: veritas
+# - {SED_TYPE: flux}
+e_min time_min time_max flux flux_err
+0.7   54495 54509 3.01 2.19
+0.7   54524 54535 5.09 2.43
+0.7   54552 54566 1.96 1.91
+0.7   54580 54584 9.14 5.07
+0.7   54801 54803 6.10 7.04
+0.7   54822 54838 8.63 2.60
+0.7   54851 54865 1.17 2.22
+0.7   54881 54893 -3.62 3.83
+0.7   54906 54920 4.97 2.18
+0.7   54934 54949 4.53 3.00

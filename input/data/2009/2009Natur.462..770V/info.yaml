@@ -4,8 +4,9 @@ telescope: [veritas]
 
 datasets:
   - tev-000040.yaml
+  - tev-000040-sed.ecsv
+  - tev-000040-lc.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: spectral (Fig 2) and light curve (Suppl Fig 2) missing, otherwise complete

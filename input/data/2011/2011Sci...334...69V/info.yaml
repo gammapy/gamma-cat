@@ -4,8 +4,8 @@ telescope: [veritas]
 
 datasets:
   - tev-000166.yaml
+  - tev-000166-sed.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: spectral points missing, otherwise complete

@@ -2,7 +2,7 @@ source_id: 63
 
 common_name: Centaurus A
 gamma_names:
-  - HESS J1325-430
+- HESS J1325-430
 fermi_names: []
 other_names:
 - Cen A

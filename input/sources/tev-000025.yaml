@@ -2,7 +2,7 @@ source_id: 25
 
 common_name: Crab nebula
 gamma_names:
-  - HESS J0534+220
+- HESS J0534+220
 other_names: [G184.6-5.8, 3C 144, SN 1054]
 
 where: gal

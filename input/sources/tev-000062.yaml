@@ -2,7 +2,7 @@ source_id: 62
 
 common_name: 1ES 1312-423
 gamma_names:
-  - HESS J1315-426
+- HESS J1315-426
 fermi_names: []
 other_names: []
 

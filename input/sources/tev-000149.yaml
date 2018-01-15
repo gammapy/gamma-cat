@@ -2,9 +2,9 @@ source_id: 149
 
 common_name: SNR G106.3+02.7
 gamma_names:
-  - VER J2227+608
+- VER J2227+608
 other_names:
-  - PSR J2229+6114
+- PSR J2229+6114
 
 where: gal
 classes: [pwn, snr]
@@ -26,4 +26,4 @@ pos:
   dec: 60.83
 
 reference_ids:
-  - 2009ApJ...703L...6A
+- 2009ApJ...703L...6A

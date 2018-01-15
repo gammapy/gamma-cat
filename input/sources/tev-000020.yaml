@@ -2,8 +2,8 @@ source_id: 20
 
 common_name: 1ES 0414+009
 gamma_names:
-  - VER J0416+011
-  - HESS J0416+010
+- VER J0416+011
+- HESS J0416+010
 other_names: []
 
 where: egal

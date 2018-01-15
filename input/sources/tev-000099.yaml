@@ -4,7 +4,7 @@ common_name: HESS J1718-385
 gamma_names: [HESS J1718-385]
 fermi_names: []
 other_names:
-  - PSR J1718-3825
+- PSR J1718-3825
 
 where: gal
 classes: [pwn]

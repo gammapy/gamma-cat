@@ -4,7 +4,7 @@ common_name: HESS J1809-193
 gamma_names: [HESS J1809-193]
 fermi_names: []
 other_names:
-  - PSR J1809-1917
+- PSR J1809-1917
 
 where: gal
 classes: [unid]

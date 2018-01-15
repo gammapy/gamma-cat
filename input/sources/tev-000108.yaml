@@ -4,8 +4,8 @@ common_name: HESS J1745-303
 gamma_names: []
 fermi_names: []
 other_names:
-  - G359.1-0.5
-  - 3EG J1744-3011
+- G359.1-0.5
+- 3EG J1744-3011
 
 where: gal
 classes: [unid, snr, mc]

@@ -9,7 +9,7 @@ where: egal
 classes: [fsrq]
 
 discoverer: magic
-seen_by: [magic,veritas]
+seen_by: [magic, veritas]
 discovery_date: 2015-03
 
 tevcat_id: 263
@@ -17,7 +17,7 @@ tevcat2_id: IqGXlk
 tevcat_name: TeV J1443+250
 
 pos:
-  simbad_id: 7C 1441+2514 
+  simbad_id: 7C 1441+2514
   ra: 220.987051
   dec: 25.029025
 

@@ -2,7 +2,7 @@ source_id: 42
 
 common_name: 1RXS J101015.9-311909
 gamma_names:
-  - HESS J1010-313
+- HESS J1010-313
 fermi_names: []
 other_names: []
 

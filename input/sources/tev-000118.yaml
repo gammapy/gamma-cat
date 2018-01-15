@@ -4,9 +4,9 @@ common_name: HESS J1825-137
 gamma_names: [HESS J1825-137, 1HWC J1825-133]
 fermi_names: []
 other_names:
-  - 3EG J1826-1302
-  - PSR J1826-1334
-  - PSR B1823-13
+- 3EG J1826-1302
+- PSR J1826-1334
+- PSR B1823-13
 
 where: gal
 classes: [pwn]

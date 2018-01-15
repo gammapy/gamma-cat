@@ -2,7 +2,7 @@ source_id: 78
 
 common_name: PKS 1510-089
 gamma_names:
-  - HESS J1512-090
+- HESS J1512-090
 fermi_names: []
 other_names: []
 

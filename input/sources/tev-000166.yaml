@@ -1,13 +1,13 @@
 source_id: 166
 
-common_name: Crab pulsar 
+common_name: Crab pulsar
 gamma_names: []
 other_names: [PSR 0531+21, V* CM Tau]
 
 where: gal
 classes: [psr]
 
-discoverer: magic 
+discoverer: magic
 seen_by: [magic, veritas]
 discovery_date: 2008-11
 

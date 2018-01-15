@@ -4,8 +4,8 @@ common_name: HESS J1634-472
 gamma_names: [HESS J1634-472]
 fermi_names: []
 other_names:
-  - IGR J16358-4726
-  - G337.2+0.1
+- IGR J16358-4726
+- G337.2+0.1
 
 where: gal
 classes: [unid]

@@ -1,0 +1,10 @@
+reference_id: 2007ApJ...664L..71A
+source_id: [147]
+telescope: [hess]
+
+datasets:
+  - tev-000147.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

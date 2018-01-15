@@ -4,7 +4,8 @@ common_name: HESS J1420-607
 gamma_names: [HESS J1420-607]
 fermi_names: []
 other_names:
-- PSR J1420-6048
+  - PSR J1420-6048
+  - Kookaburra
 
 where: gal
 classes: [pwn]

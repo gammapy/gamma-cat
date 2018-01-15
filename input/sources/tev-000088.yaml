@@ -4,7 +4,8 @@ common_name: HESS J1640-465
 gamma_names: [HESS J1640-465]
 fermi_names: []
 other_names:
-- SNR G338.3-0.0
+  - SNR G338.3-0.0
+  - 3EG J1639-4702
 
 where: gal
 classes: [pwn]
@@ -26,5 +27,6 @@ pos:
   dec: -46.55
 
 reference_ids:
-- 2006ApJ...636..777A
-- 2014MNRAS.439.2828A
+  - 2005Sci...307.1938A
+  - 2006ApJ...636..777A
+  - 2014MNRAS.439.2828A

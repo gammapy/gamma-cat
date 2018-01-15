@@ -1,0 +1,10 @@
+reference_id: 2007A&A...464..235A
+source_id: [96]
+telescope: [hess]
+
+datasets:
+  - tev-000096.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

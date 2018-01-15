@@ -1,0 +1,10 @@
+reference_id: 2006A&A...448L..19A
+source_id: [82]
+telescope: [hess]
+
+datasets:
+  - tev-000082.yaml
+
+data_entry:
+  status: missing
+  reviewed: no

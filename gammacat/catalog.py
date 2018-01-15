@@ -22,7 +22,6 @@ __all__ = [
     'CatalogMaker',
     'CatalogSchema',
     'CatalogSource',
-    'CatalogChecker',
 ]
 
 log = logging.getLogger(__name__)
@@ -682,19 +681,19 @@ class CatalogMaker:
 
     @staticmethod
     def write_table_fits(table):
-        path = gammacat_info.base_dir / 'docs/data/gammacat.fits.gz'
+        path = gammacat_info.out_path / 'gammacat.fits.gz'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='fits', overwrite=True)
 
     @staticmethod
     def write_table_ecsv(table):
-        path = gammacat_info.base_dir / 'docs/data/gammacat.ecsv'
+        path = gammacat_info.out_path / 'gammacat.ecsv'
         log.info('Writing {}'.format(path))
         table.write(str(path), format='ascii.ecsv')
 
     @staticmethod
     def write_table_yaml(table):
         data = table_to_list_of_dict(table)
-        path = gammacat_info.base_dir / 'docs/data/gammacat.yaml'
+        path = gammacat_info.out_path / 'gammacat.yaml'
         log.info('Writing {}'.format(path))
         write_yaml(data, path)

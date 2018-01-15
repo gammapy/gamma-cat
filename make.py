@@ -16,34 +16,11 @@ from gammacat.checks import CheckerConfig, Checker
 log = logging.getLogger(__name__)
 
 
-class GlobalConfig:
-    """Global config options."""
-
-    def __init__(self, *, log_level, show_warnings):
-        self.log_level = log_level
-        self.show_warnings = show_warnings
-
-        logging.basicConfig(level=log_level)
-
-        if not show_warnings:
-            warnings.simplefilter('ignore')
-
-        self.out_path = gammacat_info.base_dir / 'docs/data'
-        self.in_path = gammacat_info.base_dir / 'input'
-
-    def __repr__(self):
-        return 'GlobalConfig({!r})'.format(self.__dict__)
-
-
-# TODO: decide where to keep the config and how to pass it around
-# Best description how it works is here: http://click.pocoo.org/dev/complex/
-
 @click.group(invoke_without_command=True)
 @click.option('--log-level', default='info',
               type=click.Choice(['debug', 'info', 'warning', 'error', 'critical']))
 @click.option('--show-warnings', is_flag=True, help='Show warnings?')
-@click.pass_context
-def cli(ctx, log_level, show_warnings):
+def cli(log_level, show_warnings):
     """
     Command line tool to make gamma-cat.
 
@@ -53,22 +30,19 @@ def cli(ctx, log_level, show_warnings):
         ./make.py all --clean --webpage
 
     """
-    ctx.obj = GlobalConfig(
-        log_level=log_level.upper(),
-        show_warnings=show_warnings,
-    )
-    log.debug('global config: {}'.format(ctx.obj))
+    logging.basicConfig(level=log_level.upper())
+    if not show_warnings:
+        warnings.simplefilter('ignore')
 
 
 @cli.command(name='collection')
 @click.option('--step', default='all',
               type=click.Choice(['all', 'source-info', 'sed', 'lightcurve', 'dataset', 'input-index', 'output-index']))
-@click.pass_obj
-def cli_collection(global_config, step):
+def cli_collection(step):
     """Make gamma-cat data collection."""
     config = CollectionConfig(
-        in_path=global_config.in_path,
-        out_path=global_config.out_path,
+        in_path=gammacat_info.in_path,
+        out_path=gammacat_info.out_path,
         step=step,
     )
     CollectionMaker(config).run()
@@ -76,11 +50,10 @@ def cli_collection(global_config, step):
 
 @cli.command(name='catalog')
 @click.option('--sources', default='all', help='Either "all" or comma-separated string of source IDs')
-@click.pass_obj
-def cli_catalog(global_config, sources):
+def cli_catalog(sources):
     """Make gamma-cat catalog."""
     config = CatalogConfig(
-        out_path=global_config.out_path,
+        out_path=gammacat_info.out_path,
         source_ids=sources,
     )
     CatalogMaker(config).run()
@@ -99,13 +72,12 @@ def cli_webpage():
 @cli.command(name='checks')
 @click.option('--step', default='all',
               type=click.Choice(['all', 'input', 'collection', 'catalog', 'global']))
-@click.pass_obj
-def cli_checks(global_config, step):
+def cli_checks(step):
     """Run automated checks.
     """
     config = CheckerConfig(
-        in_path=global_config.in_path,
-        out_path=global_config.out_path,
+        in_path=gammacat_info.in_path,
+        out_path=gammacat_info.out_path,
         step=step,
     )
     Checker(config).run()
@@ -117,8 +89,9 @@ def cli_clean():
     # TODO: this list of files & folders is incomplete
     cmd = ' '.join([
         'rm', '-r',
-        'documentation/_build documentation/data/sources',
-        'documentation/data/source_list.rst',
+        'webpage/_build',
+        'webpage/sources',
+        'webpage/data/source_list.rst',
     ])
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)

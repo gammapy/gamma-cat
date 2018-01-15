@@ -70,12 +70,13 @@ class WebpageMaker:
         template = jinja_env.get_template('source_list.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.webpage_path / 'data/source_list.rst'
+        path = gammacat_info.webpage_path / 'use/source_list.rst'
+
         log.info(f'Writing {path}')
         path.write_text(txt)
 
     def make_source_detail_pages(self):
-        path = gammacat_info.webpage_path / 'data/sources/'
+        path = gammacat_info.webpage_path / 'use/sources/'
         path.mkdir(exist_ok=True)
         for source in self.sources_data:
             self.make_source_detail_page(source)
@@ -103,7 +104,7 @@ class WebpageMaker:
         template = jinja_env.get_template('source_detail.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.webpage_path / f'data/sources/source_{source["source_id"]}.rst'
+        path = gammacat_info.webpage_path / f'use/sources/source_{source["source_id"]}.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
 

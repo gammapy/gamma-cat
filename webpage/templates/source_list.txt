@@ -2,8 +2,8 @@
 
 .. _data-sources:
 
-Sources
-=======
+Data collection by source
+=========================
 
 The following TeV sources are in the current version of gamma-cat:
 

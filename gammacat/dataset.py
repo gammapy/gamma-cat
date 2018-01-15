@@ -15,7 +15,6 @@ class DataSet:
     resource_type = 'ds'
 
     def __init__(self, data, resource):
-        log.debug('DataSet.__init__()')
         self.resource = resource
         self.data = data
 

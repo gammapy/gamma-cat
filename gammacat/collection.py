@@ -200,16 +200,16 @@ class CollectionMaker:
         step = self.config.step
         if step == 'all':
             self.process_all()
-        elif step == 'source-info':
-            self.process_src_info()
         elif step == 'input-index':
             self.make_index_file_for_input()
+        elif step == 'source-info':
+            self.process_src_info()
+        elif step == 'dataset':
+            self.process_datasets()
         elif step == 'sed':
             self.process_seds()
         elif step == 'lightcurve':
             self.process_lightcurves()
-        elif step == 'dataset':
-            self.process_datasets()
         elif step == 'output-index':
             self.make_index_file_for_output()
         else:
@@ -223,10 +223,10 @@ class CollectionMaker:
     def process_all(self):
         self.make_index_file_for_input()
 
+        self.process_src_info()
+        self.process_datasets()
         self.process_seds()
         self.process_lightcurves()
-        # self.process_all_basic_source_infos()  # TODO
-        self.process_datasets()
 
         self.make_index_file_for_output()
 
@@ -256,7 +256,7 @@ class CollectionMaker:
         for filename in self.input_data.src_info_list:
             log.debug(' Processing basic source info file: {}'.format(filename))
             src_info = SrcInfo.read(filename)
-            path = self.config.path / 'sources' / filename.parts[-1]
+            path = self.config.out_path / 'sources' / filename.parts[-1]
             src_info.write(path)
 
     def process_datasets(self):
@@ -287,7 +287,7 @@ class CollectionMaker:
             # 'status' and 'reviewed' in info.yaml
             # e.g if info_data['data_entry']['status'] == 'complete':
             for dataset in info_data['datasets']:
-                resource = GammaCatResource(0, 'empty');
+                resource = GammaCatResource(0, 'empty')
                 if dataset.endswith('yaml'):
                     resource = DataSet.read(info_filename.parent / dataset).resource
                 elif dataset.endswith('ecsv'):

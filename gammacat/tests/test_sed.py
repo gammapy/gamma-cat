@@ -12,6 +12,6 @@ def test_sed_input():
 
 
 def test_sed_output():
-    filename = gammacat_info.out_path / 'data/2008/2008A%26A...481..401A/gammacat_2008A%26A...481..401A_000112_sed.ecsv'
+    filename = gammacat_info.out_path / 'data/2008A%26A...481..401A/gammacat_2008A%26A...481..401A_000112_sed.ecsv'
     sed = SED.read(filename)
     assert_allclose(sed.table['dnde'][0], 74.23e-13)

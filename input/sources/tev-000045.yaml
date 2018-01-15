@@ -2,11 +2,10 @@ source_id: 45
 
 common_name: HESS J1018-589 A
 gamma_names: [HESS J1018-589 A]
-fermi_names: []
+fermi_names: [1FGL J1018.6-5856]
 other_names:
 - SNR G284.3-01.8
 - MSH 10-53
-- 1FGL J1018.6-5856
 
 where: gal
 classes: [bin]

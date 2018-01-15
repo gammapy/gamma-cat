@@ -5,7 +5,7 @@ gamma_names: [HESS J1708-443]
 fermi_names: []
 other_names:
 - PSR B1706-44
-- G343.1-1.3
+- G343.1-2.3
 
 where: gal
 classes: [pwn]

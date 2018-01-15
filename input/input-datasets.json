@@ -409,6 +409,13 @@
         "source_id": 23,
         "reference_id": "2013ApJ...776...69A",
         "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2013/2013ApJ...776...69A/tev-000023-lc.ecsv"
+    },
+    {
+        "source_id": 23,
+        "reference_id": "2013ApJ...776...69A",
+        "file_id": -1,
         "type": "sed",
         "location": "data/2013/2013ApJ...776...69A/tev-000023-sed.ecsv"
     },
@@ -943,6 +950,20 @@
         "file_id": -1,
         "type": "ds",
         "location": "data/2009/2009Natur.462..770V/tev-000040.yaml"
+    },
+    {
+        "source_id": 40,
+        "reference_id": "2009Natur.462..770V",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2009/2009Natur.462..770V/tev-000040-lc.ecsv"
+    },
+    {
+        "source_id": 40,
+        "reference_id": "2009Natur.462..770V",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2009/2009Natur.462..770V/tev-000040-sed.ecsv"
     },
     {
         "source_id": 42,
@@ -3848,6 +3869,13 @@
         "file_id": -1,
         "type": "ds",
         "location": "data/2011/2011Sci...334...69V/tev-000166.yaml"
+    },
+    {
+        "source_id": 166,
+        "reference_id": "2011Sci...334...69V",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2011/2011Sci...334...69V/tev-000166-sed.ecsv"
     },
     {
         "source_id": 167,

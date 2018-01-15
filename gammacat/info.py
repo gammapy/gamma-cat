@@ -26,6 +26,8 @@ class GammaCatInfo:
 
         # Git repository base directory
         self.base_dir = Path(__file__).parent.parent
+        self.in_path = self.base_dir / 'input'
+        self.out_path = self.base_dir / 'output'
 
         self.description = "An open data collection and source catalog for gamma-ray astronomy"
 

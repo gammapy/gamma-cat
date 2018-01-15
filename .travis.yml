@@ -25,4 +25,4 @@ script:
 - python make.py --help
 - python make.py all --clean --webpage
 - python -m pytest -v --cov=gammacat
-- cd documentation && make html
+- cd webpage && make html

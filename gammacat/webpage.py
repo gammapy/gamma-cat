@@ -19,7 +19,7 @@ log = logging.getLogger(__name__)
 
 
 def get_resource_index():
-    path = gammacat_info.base_dir / 'docs/data/gammacat-datasets.json'
+    path = gammacat_info.out_path / 'gammacat-datasets.json'
     return GammaCatResourceIndex.from_list(load_json(path))
 
 

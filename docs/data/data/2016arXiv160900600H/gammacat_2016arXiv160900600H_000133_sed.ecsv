@@ -25,8 +25,8 @@
 #     flux value has been added in quadrature to the statistical error of each point.'}
 # schema: astropy-2.0
 e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul
-0.406 0.2922 0.4801 4.791e-12 1.303e-12 1.377e-12 nan
-0.5982 0.4801 0.7889 1.675e-12 2.57e-13 2.66e-13 nan
+0.406 0.2922 0.48009998 4.791e-12 1.303e-12 1.377e-12 nan
+0.5982 0.48010004 0.7889 1.675e-12 2.57e-13 2.66e-13 nan
 0.9658 0.7889 1.296 3.208e-13 8.07e-14 8.52e-14 nan
 1.579 1.296 2.13 8.466e-14 3.018e-14 3.234e-14 nan
 3.918 2.13 113.2 nan nan nan 9.539e-15

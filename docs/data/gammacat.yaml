@@ -109,7 +109,7 @@
   - pos_dec: -18.891387939453125
   - pos_glon: 74.61251068115234
   - pos_glat: -78.06826782226562
-  - pos_err: 0.0015957118012011051
+  - pos_err: 0.006180165335536003
   - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
@@ -122,7 +122,7 @@
   - spec_pl_norm: 1.160000047406573e-12
   - spec_pl_norm_err: 2.299999925757523e-13
   - spec_pl_norm_err_sys: 2.299999925757523e-13
-  - spec_pl_index: -3.4000000953674316
+  - spec_pl_index: 3.4000000953674316
   - spec_pl_index_err: 0.5
   - spec_pl_index_err_sys: 0.20000000298023224
   - spec_pl_e_ref: 0.5099999904632568
@@ -147,14 +147,14 @@
   - spec_erange_min: .nan
   - spec_erange_max: .nan
   - spec_theta: .nan
-  - spec_dnde_1TeV: 1.1447729916791438e-11
-  - spec_dnde_1TeV_err: 4.472848740694202e-12
-  - spec_flux_1TeV: 653531753218048.0
-  - spec_flux_1TeV_err: 4661999631859712.0
-  - spec_flux_1TeV_crab: 3.150395753376584e+27
-  - spec_flux_1TeV_crab_err: 2.2473496528919532e+28
-  - spec_eflux_1TeV_10TeV: 8.531674779987952e-07
-  - spec_eflux_1TeV_10TeV_err: 1.2024486295558745e-06
+  - spec_dnde_1TeV: 1.1754295182585944e-13
+  - spec_dnde_1TeV_err: 4.5926295806717615e-14
+  - spec_flux_1TeV: 4.89762310568187e-14
+  - spec_flux_1TeV_err: 2.8403867528403043e-14
+  - spec_flux_1TeV_crab: 0.23609334230422974
+  - spec_flux_1TeV_crab_err: 0.13692283630371094
+  - spec_eflux_1TeV_10TeV: 1.2916230585080513e-13
+  - spec_eflux_1TeV_10TeV_err: 8.729060090853155e-14
   - sed_reference_id: 2013A&A...554A..72H
   - sed_n_points: 3
   - sed_n_ul: 0
@@ -613,8 +613,8 @@
   - pos_dec: 1.7778611183166504
   - pos_glon: 152.34323120117188
   - pos_glat: -57.56133270263672
-  - pos_err: 0.006614961661398411
-  - morph_type: gauss
+  - pos_err: 0.025619635358452797
+  - morph_type: point
   - morph_sigma: .nan
   - morph_sigma_err: .nan
   - morph_sigma2: .nan
@@ -2012,7 +2012,7 @@
   - sed_dnde: 1.2461300539351721e-14
   - sed_dnde_err: .nan
   - sed_dnde_errp: 4.426966453331292e-15
-  - sed_dnde_errn: 4.041999719683106e-15
+  - sed_dnde_errn: 4.042000143199579e-15
   - sed_dnde_ul: 2.7360000641349315e-16
 - !!omap
   - source_id: 166
@@ -2185,7 +2185,7 @@
 - !!omap
   - source_id: 26
   - common_name: 30 Dor C
-  - gamma_names: ''
+  - gamma_names: HESS J0535-691
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -2263,7 +2263,7 @@
   - sed_e_max: .nan
   - sed_dnde: 4.2950255710935e-14
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 1.6633577314454327e-14
+  - sed_dnde_errp: 1.6633579008520222e-14
   - sed_dnde_errn: 1.4560447235390482e-14
   - sed_dnde_ul: 4.498000118595695e-16
 - !!omap
@@ -2347,15 +2347,15 @@
   - sed_e_max: .nan
   - sed_dnde: 2.2130818770442484e-13
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 5.279038653698692e-14
-  - sed_dnde_errn: 4.561560073353295e-14
+  - sed_dnde_errp: 5.2790376372591555e-14
+  - sed_dnde_errn: 4.561560750979653e-14
   - sed_dnde_ul: 6.300000112850461e-17
 - !!omap
   - source_id: 28
   - common_name: PKS 0548-322
-  - gamma_names: ''
+  - gamma_names: HESS J0550-322
   - fermi_names: ''
-  - other_names: H 0548-322,1ES 0548-322
+  - other_names: H 0548-322,1ES 0548-322,QSO B0549-322
   - where: egal
   - classes: hbl
   - discoverer: hess
@@ -3187,8 +3187,8 @@
   - sed_e_max: .nan
   - sed_dnde: 2.6365955859558587e-12
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 4.270763430402891e-13
-  - sed_dnde_errn: 4.259252455937612e-13
+  - sed_dnde_errp: 4.2707626172512614e-13
+  - sed_dnde_errn: 4.2592527269881553e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 38
@@ -3529,7 +3529,7 @@
 - !!omap
   - source_id: 42
   - common_name: 1RXS J101015.9-311909
-  - gamma_names: ''
+  - gamma_names: HESS J1010-313
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -3782,7 +3782,7 @@
   - source_id: 45
   - common_name: HESS J1018-589 A
   - gamma_names: HESS J1018-589 A
-  - fermi_names: ''
+  - fermi_names: 1FGL J1018.6-5856
   - other_names: SNR G284.3-01.8,MSH 10-53
   - where: gal
   - classes: bin
@@ -3857,17 +3857,17 @@
   - sed_e_ref: 5.162280559539795
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 3.2837461591030126e-13
+  - sed_dnde: 3.283742364395409e-13
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 1.1182881335357331e-13
-  - sed_dnde_errn: 1.0433372373518102e-13
+  - sed_dnde_errp: 1.1182875914346468e-13
+  - sed_dnde_errn: 1.0433366952507239e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 46
   - common_name: Westerlund 2
   - gamma_names: HESS J1023-575
   - fermi_names: ''
-  - other_names: RCW 49,WR20a,PSR J1022-5746
+  - other_names: RCW 49,WR 20a,PSR J1022-5746
   - where: gal
   - classes: unid
   - discoverer: hess
@@ -4697,8 +4697,8 @@
   - sed_e_ref: 0.528378963470459
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 2.0328257133161998e-10
-  - sed_dnde_err: 8.141536750327916e-11
+  - sed_dnde: 2.0328255745383217e-10
+  - sed_dnde_err: 8.141542301443039e-11
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
@@ -4873,7 +4873,7 @@
 - !!omap
   - source_id: 58
   - common_name: M 87
-  - gamma_names: VER J1230+123
+  - gamma_names: VER J1230+123,HESS J1230+123
   - fermi_names: ''
   - other_names: 1ES 1228+126,1H 1226+128
   - where: egal
@@ -5127,7 +5127,7 @@
   - common_name: HESS J1303-631
   - gamma_names: ''
   - fermi_names: ''
-  - other_names: ''
+  - other_names: PSR J1301-6305
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -5209,7 +5209,7 @@
 - !!omap
   - source_id: 62
   - common_name: 1ES 1312-423
-  - gamma_names: ''
+  - gamma_names: HESS J1315-426
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -5222,7 +5222,7 @@
   - tevcat_name: TeV J1315-426
   - tgevcat_id: 62
   - tgevcat_name: TeV J1314-4235
-  - reference_id: ''
+  - reference_id: 2013MNRAS.434.1889H
   - significance: .nan
   - livetime: .nan
   - ra: 198.76414489746094
@@ -5293,7 +5293,7 @@
 - !!omap
   - source_id: 63
   - common_name: Centaurus A
-  - gamma_names: ''
+  - gamma_names: HESS J1325-430
   - fermi_names: ''
   - other_names: Cen A
   - where: egal
@@ -5463,7 +5463,7 @@
   - common_name: HESS J1418-609
   - gamma_names: HESS J1418-609
   - fermi_names: ''
-  - other_names: Kookaburra
+  - other_names: G313.3+0.1,Kookaburra,Rabbit
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -5547,7 +5547,7 @@
   - common_name: HESS J1420-607
   - gamma_names: HESS J1420-607
   - fermi_names: ''
-  - other_names: PSR J1420-6048
+  - other_names: PSR J1420-6048,Kookaburra
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -6125,11 +6125,11 @@
   - sed_e_ref: 0.14879998564720154
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 4.725173585740094e-10
-  - sed_dnde_err: 1.1801452870496831e-10
+  - sed_dnde: 4.725179136855218e-10
+  - sed_dnde_err: 1.180144870716049e-10
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
-  - sed_dnde_ul: 1.8967900167199403e-11
+  - sed_dnde_ul: 1.8967908840816783e-11
 - !!omap
   - source_id: 72
   - common_name: HESS J1457-593
@@ -6542,18 +6542,18 @@
   - sed_reference_id: 2011A&A...525A..45H
   - sed_n_points: 6
   - sed_n_ul: 0
-  - sed_e_ref: 7.851107120513916
+  - sed_e_ref: 7.851116180419922
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 5.411311589792467e-13
+  - sed_dnde: 5.411309963489208e-13
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 2.050392868728837e-13
-  - sed_dnde_errn: 1.980220864670687e-13
+  - sed_dnde_errp: 2.0503923266277507e-13
+  - sed_dnde_errn: 1.9802203225696008e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 78
   - common_name: PKS 1510-089
-  - gamma_names: ''
+  - gamma_names: HESS J1512-090
   - fermi_names: ''
   - other_names: ''
   - where: egal
@@ -6721,7 +6721,7 @@
 - !!omap
   - source_id: 80
   - common_name: AP Librae
-  - gamma_names: ''
+  - gamma_names: HESS J1517-243
   - fermi_names: ''
   - other_names: PKS B1514-241
   - where: egal
@@ -6797,8 +6797,8 @@
   - sed_e_ref: 0.9743999242782593
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 1.0379024029116835e-11
-  - sed_dnde_err: 5.038376833799152e-12
+  - sed_dnde: 1.0379017957584669e-11
+  - sed_dnde_err: 5.038381604288711e-12
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
@@ -7311,7 +7311,7 @@
   - common_name: HESS J1632-478
   - gamma_names: HESS J1632-478
   - fermi_names: ''
-  - other_names: ''
+  - other_names: IGR J16320-4751
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -7395,7 +7395,7 @@
   - common_name: HESS J1634-472
   - gamma_names: HESS J1634-472
   - fermi_names: ''
-  - other_names: ''
+  - other_names: IGR J16358-4726,G337.2+0.1
   - where: gal
   - classes: unid
   - discoverer: hess
@@ -7479,7 +7479,7 @@
   - common_name: HESS J1640-465
   - gamma_names: HESS J1640-465
   - fermi_names: ''
-  - other_names: SNR G338.3-0.0
+  - other_names: SNR G338.3-0.0,3EG J1639-4702
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -7725,7 +7725,7 @@
   - sed_dnde_err: .nan
   - sed_dnde_errp: 1.6080330426590517e-12
   - sed_dnde_errn: 1.6081634721804017e-12
-  - sed_dnde_ul: 3.4727851087987434e-15
+  - sed_dnde_ul: 3.4727829912163753e-15
 - !!omap
   - source_id: 91
   - common_name: Markarian 501
@@ -8141,7 +8141,7 @@
   - sed_e_ref: 6.995666980743408
   - sed_e_min: 6.373667240142822
   - sed_e_max: 7.618333339691162
-  - sed_dnde: 5.556587134858404e-11
+  - sed_dnde: 5.556588522637185e-11
   - sed_dnde_err: 6.3881660378184435e-12
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
@@ -8393,17 +8393,17 @@
   - sed_e_ref: 0.848117470741272
   - sed_e_min: 0.6359500288963318
   - sed_e_max: 1.13100004196167
-  - sed_dnde: 1.9749436461213854e-12
+  - sed_dnde: 1.974943429280951e-12
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 7.231655595532627e-13
-  - sed_dnde_errn: 7.231655595532627e-13
+  - sed_dnde_errp: 7.231663184947834e-13
+  - sed_dnde_errn: 7.231663184947834e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 99
   - common_name: HESS J1718-385
   - gamma_names: HESS J1718-385
   - fermi_names: ''
-  - other_names: ''
+  - other_names: PSR J1718-3825
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -8813,10 +8813,10 @@
   - sed_e_ref: 4.652864933013916
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 5.415052520968411e-12
+  - sed_dnde: 5.415052087287542e-12
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 8.952054592406555e-13
-  - sed_dnde_errn: 8.777353843747449e-13
+  - sed_dnde_errp: 8.952052966103297e-13
+  - sed_dnde_errn: 8.777354927949621e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 104
@@ -8991,7 +8991,7 @@
   - common_name: HESS J1745-303
   - gamma_names: ''
   - fermi_names: ''
-  - other_names: G359.1-0.5
+  - other_names: G359.1-0.5,3EG J1744-3011
   - where: gal
   - classes: unid,snr,mc
   - discoverer: hess
@@ -9065,10 +9065,10 @@
   - sed_e_ref: 5.555163860321045
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 9.512945119138916e-12
+  - sed_dnde: 9.512948588585868e-12
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 1.301184637467201e-12
-  - sed_dnde_errn: 1.2927169100798719e-12
+  - sed_dnde_errp: 1.301184203786332e-12
+  - sed_dnde_errn: 1.2927176690213926e-12
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 106
@@ -9579,7 +9579,7 @@
   - common_name: HESS J1800-240B
   - gamma_names: HESS J1800-240B
   - fermi_names: ''
-  - other_names: ''
+  - other_names: W 28-A2
   - where: gal
   - classes: snr,mc
   - discoverer: hess
@@ -9654,10 +9654,10 @@
   - sed_e_min: .nan
   - sed_e_max: .nan
   - sed_dnde: 3.0491110938196675e-12
-  - sed_dnde_err: 8.891111046190059e-13
+  - sed_dnde_err: 8.891110504088973e-13
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
-  - sed_dnde_ul: 2.2500000452195523e-13
+  - sed_dnde_ul: 2.2499999096942808e-13
 - !!omap
   - source_id: 112
   - common_name: W28
@@ -9737,7 +9737,7 @@
   - sed_e_ref: 1.6877778768539429
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 2.220856961873685e-12
+  - sed_dnde: 2.2208571787141196e-12
   - sed_dnde_err: 5.905714285658892e-13
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
@@ -9747,7 +9747,7 @@
   - common_name: HESS J1800-240A
   - gamma_names: HESS J1800-240A
   - fermi_names: ''
-  - other_names: ''
+  - other_names: G006.1-006,W 28
   - where: gal
   - classes: snr,mc
   - discoverer: hess
@@ -9831,7 +9831,7 @@
   - common_name: HESS J1804-216
   - gamma_names: HESS J1804-216
   - fermi_names: ''
-  - other_names: G8.7-0.1,W30
+  - other_names: G8.7-0.1,W30,PSR J1803-2137
   - where: gal
   - classes: unid
   - discoverer: hess
@@ -9992,14 +9992,14 @@
   - sed_dnde: 9.88589960761177e-13
   - sed_dnde_err: .nan
   - sed_dnde_errp: 2.8946002495963685e-13
-  - sed_dnde_errn: 2.8348997411706267e-13
+  - sed_dnde_errn: 2.83490001222117e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 115
   - common_name: HESS J1809-193
   - gamma_names: HESS J1809-193
   - fermi_names: ''
-  - other_names: ''
+  - other_names: PSR J1809-1917
   - where: gal
   - classes: unid
   - discoverer: hess
@@ -10167,7 +10167,8 @@
   - common_name: HESS J1813-178
   - gamma_names: HESS J1813-178
   - fermi_names: ''
-  - other_names: G12.82-0.02,PSR J1813-1749,CXOU J181335.1-174957,IGR J18135-1751,W33
+  - other_names: AX J1813-178,G12.82-0.02,PSR J1813-1749,CXOU J181335.1-174957,IGR
+      J18135-1751,W33
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -10419,7 +10420,7 @@
   - common_name: HESS J1825-137
   - gamma_names: HESS J1825-137,1HWC J1825-133
   - fermi_names: ''
-  - other_names: PSR J1826-1334,PSR B1823-13
+  - other_names: 3EG J1826-1302,PSR J1826-1334,PSR B1823-13
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -10745,8 +10746,8 @@
   - sed_e_ref: 7.10966682434082
   - sed_e_min: 5.634088516235352
   - sed_e_max: 9.913777351379395
-  - sed_dnde: 1.552826877498914e-12
-  - sed_dnde_err: 5.860389213838135e-13
+  - sed_dnde: 1.5528267690786968e-12
+  - sed_dnde_err: 5.860394092747911e-13
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
@@ -10912,7 +10913,7 @@
   - sed_n_ul: 0
   - sed_e_ref: 1.7400165796279907
   - sed_e_min: 1.4647334814071655
-  - sed_e_max: 2.2314000129699707
+  - sed_e_max: 2.2313997745513916
   - sed_dnde: 7.84566639086548e-13
   - sed_dnde_err: .nan
   - sed_dnde_errp: 2.830800101705916e-13
@@ -11007,7 +11008,7 @@
   - common_name: HESS J1834-087
   - gamma_names: HESS J1834-087,1HWC J1836-090c
   - fermi_names: ''
-  - other_names: W41
+  - other_names: G23.3-0.3,W41
   - where: gal
   - classes: unid
   - discoverer: hess
@@ -11091,7 +11092,7 @@
   - common_name: HESS J1837-069
   - gamma_names: HESS J1837-069,1HWC J1838-060,1HWC J1836-074c
   - fermi_names: ''
-  - other_names: ''
+  - other_names: G25.5+0.0,AX J1838.0-0655
   - where: gal
   - classes: pwn
   - discoverer: hess
@@ -12007,7 +12008,7 @@
   - sed_e_min: 4.298454761505127
   - sed_e_max: 6.071717739105225
   - sed_dnde: 2.7552101225514214e-12
-  - sed_dnde_err: 7.418009349141608e-13
+  - sed_dnde_err: 7.418008807040521e-13
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
@@ -12615,7 +12616,7 @@
   - tevcat_name: TeV J2009-488
   - tgevcat_id: 140
   - tgevcat_name: TeV J2009-4849
-  - reference_id: ''
+  - reference_id: 2010A&A...511A..52A
   - significance: .nan
   - livetime: .nan
   - ra: 302.3558044433594
@@ -13203,7 +13204,7 @@
   - tevcat_name: TeV J2158-302
   - tgevcat_id: 147
   - tgevcat_name: TeV J2158-3013
-  - reference_id: ''
+  - reference_id: 2010A&A...520A..83H
   - significance: .nan
   - livetime: .nan
   - ra: 329.7169494628906
@@ -13875,7 +13876,7 @@
   - tevcat_name: TeV J2359-306
   - tgevcat_id: 155
   - tgevcat_name: TeV J2359-3037
-  - reference_id: ''
+  - reference_id: 2010A&A...516A..56H
   - significance: .nan
   - livetime: .nan
   - ra: 359.782958984375

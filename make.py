@@ -92,6 +92,7 @@ def cli_clean():
         'webpage/_build',
         'webpage/use/sources',
         'webpage/use/source_list.rst',
+        'webpage/use/publication_list.rst',
     ])
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)

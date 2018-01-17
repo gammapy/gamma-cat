@@ -13,7 +13,6 @@ gamma-cat
 This site is organised in the following sections:
 
 * :ref:`about-docs` - Quick introduction to `gamma-cat`
-* :ref:`data-docs` - Get `gamma-cat` data
 * :ref:`user-docs` - Detailed info about `gamma-cat`
 * :ref:`contributor-docs` - How to give feedback and contribute
 
@@ -24,15 +23,6 @@ This site is organised in the following sections:
    :caption: About
 
    about
-
-.. _data-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Gamma-Cat Data
-
-   data/index
-   data/source_list
 
 .. _user-docs:
 

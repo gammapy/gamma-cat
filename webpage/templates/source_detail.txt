@@ -21,4 +21,17 @@ SEDs
 Lightcurves
 -----------
 
-TODO
+{% for resource in resources.resources if resource.type == 'lightcurve' %}
+* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
+{% else %}
+* None
+{% endfor %}
+
+Datasets
+--------
+
+{% for resource in resources.resources if resource.type == 'ds' %}
+* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
+{% else %}
+* None
+{% endfor %}

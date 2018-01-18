@@ -2,139 +2,81 @@
 # ---
 # datatype:
 # - {name: source_id, datatype: int32, description: Source ID (integer)}
-# - {name: common_name, datatype: string, description: 'Common source name (unique in
-#     gamma-cat, like source_id)'}
-# - {name: gamma_names, datatype: string, description: Alternative gamma-ray source
-#     names (comma-separated list)}
-# - {name: fermi_names, datatype: string, description: Names of nearby sources in Fermi-LAT
-#     catalogs (comma-separated list)}
-# - {name: other_names, datatype: string, description: Other source names (comma-separated
-#     list)}
-# - {name: where, datatype: string, description: 'Source location (one of "gal", "egal"
-#     or "unid")'}
+# - {name: common_name, datatype: string, description: 'Common source name (unique in gamma-cat, like source_id)'}
+# - {name: gamma_names, datatype: string, description: Alternative gamma-ray source names (comma-separated list)}
+# - {name: fermi_names, datatype: string, description: Names of nearby sources in Fermi-LAT catalogs (comma-separated list)}
+# - {name: other_names, datatype: string, description: Other source names (comma-separated list)}
+# - {name: where, datatype: string, description: 'Source location (one of "gal", "egal" or "unid")'}
 # - {name: classes, datatype: string, description: Source classes (comma-separated list)}
 # - {name: discoverer, datatype: string, description: Discoverer of the source}
-# - {name: seen_by, datatype: string, description: 'Seen by which instruments? (comma-separated
-#     list)'}
+# - {name: seen_by, datatype: string, description: 'Seen by which instruments? (comma-separated list)'}
 # - {name: discovery_date, datatype: string, description: Discovery date}
 # - {name: tevcat_id, datatype: int64, description: TeVCat ID (integer number)}
 # - {name: tevcat2_id, datatype: string, description: TeVCat 2 ID (a random string)}
-# - {name: tevcat_name, datatype: string, description: TeVCat name (source identifier
-#     string)}
+# - {name: tevcat_name, datatype: string, description: TeVCat name (source identifier string)}
 # - {name: tgevcat_id, datatype: int64, description: TGeVCat ID (integer number)}
-# - {name: tgevcat_name, datatype: string, description: TGeVCat name (source identifier
-#     string)}
-# - {name: reference_id, datatype: string, description: Paper ID where source parameters
-#     are taken from.}
+# - {name: tgevcat_name, datatype: string, description: TGeVCat name (source identifier string)}
+# - {name: reference_id, datatype: string, description: Paper ID where source parameters are taken from.}
 # - {name: significance, datatype: float32, description: Source significance}
 # - {name: livetime, unit: h, datatype: float32, description: Source livetime}
-# - {name: ra, unit: deg, datatype: float32, format: .5f, description: Right Ascension
-#     (ICRS) from simbad}
+# - {name: ra, unit: deg, datatype: float32, format: .5f, description: Right Ascension (ICRS) from simbad}
 # - {name: dec, unit: deg, datatype: float32, description: Declination (ICRS) from simbad}
-# - {name: glon, unit: deg, datatype: float32, description: Galactic longitude from
-#     simbad}
+# - {name: glon, unit: deg, datatype: float32, description: Galactic longitude from simbad}
 # - {name: glat, unit: deg, datatype: float32, description: Galactic latitude from simbad}
-# - {name: pos_ra, unit: deg, datatype: float32, description: Right Ascension (ICRS)
-#     from reference}
-# - {name: pos_dec, unit: deg, datatype: float32, description: Declination (ICRS) from
-#     reference}
-# - {name: pos_glon, unit: deg, datatype: float32, description: Galactic longitude from
-#     reference}
-# - {name: pos_glat, unit: deg, datatype: float32, description: Galactic latitude from
-#     reference}
-# - {name: pos_err, unit: deg, datatype: float32, description: Symmetric error on the
-#     position from reference}
+# - {name: pos_ra, unit: deg, datatype: float32, description: Right Ascension (ICRS) from reference}
+# - {name: pos_dec, unit: deg, datatype: float32, description: Declination (ICRS) from reference}
+# - {name: pos_glon, unit: deg, datatype: float32, description: Galactic longitude from reference}
+# - {name: pos_glat, unit: deg, datatype: float32, description: Galactic latitude from reference}
+# - {name: pos_err, unit: deg, datatype: float32, description: Symmetric error on the position from reference}
 # - {name: morph_type, datatype: string, description: Morphology model type}
-# - {name: morph_sigma, unit: deg, datatype: float32, description: Morphology model
-#     extension major axis (gauss)}
-# - {name: morph_sigma_err, unit: deg, datatype: float32, description: Morphology model
-#     extension major axis (gauss) error.}
-# - {name: morph_sigma2, unit: deg, datatype: float32, description: Morphology model
-#     extension minor axis (gauss)}
-# - {name: morph_sigma2_err, unit: deg, datatype: float32, description: Morphology model
-#     extension minor axis (gauss) error.}
-# - {name: morph_pa, unit: deg, datatype: float32, description: Morphology model position
-#     angle}
-# - {name: morph_pa_err, unit: deg, datatype: float32, description: Morphology model
-#     position angle error.}
-# - {name: morph_pa_frame, datatype: string, description: Morphology model position
-#     angle frame.}
+# - {name: morph_sigma, unit: deg, datatype: float32, description: Morphology model extension major axis (gauss)}
+# - {name: morph_sigma_err, unit: deg, datatype: float32, description: Morphology model extension major axis (gauss) error.}
+# - {name: morph_sigma2, unit: deg, datatype: float32, description: Morphology model extension minor axis (gauss)}
+# - {name: morph_sigma2_err, unit: deg, datatype: float32, description: Morphology model extension minor axis (gauss) error.}
+# - {name: morph_pa, unit: deg, datatype: float32, description: Morphology model position angle}
+# - {name: morph_pa_err, unit: deg, datatype: float32, description: Morphology model position angle error.}
+# - {name: morph_pa_frame, datatype: string, description: Morphology model position angle frame.}
 # - {name: spec_type, datatype: string, description: Spectral model type}
-# - {name: spec_pl_norm, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral
-#     model (pl) parameter "norm"}
-# - {name: spec_pl_norm_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     error on spec_pl_norm}
-# - {name: spec_pl_norm_err_sys, unit: 1 / (cm2 s TeV), datatype: float32, description: Systematic
-#     error on spec_pl_norm}
-# - {name: spec_pl_index, datatype: float32, description: Spectral model (pl) parameter
-#     "index"}
+# - {name: spec_pl_norm, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral model (pl) parameter "norm"}
+# - {name: spec_pl_norm_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error on spec_pl_norm}
+# - {name: spec_pl_norm_err_sys, unit: 1 / (cm2 s TeV), datatype: float32, description: Systematic error on spec_pl_norm}
+# - {name: spec_pl_index, datatype: float32, description: Spectral model (pl) parameter "index"}
 # - {name: spec_pl_index_err, datatype: float32, description: Statistical error on spec_pl_index}
-# - {name: spec_pl_index_err_sys, datatype: float32, description: Systematic error on
-#     spec_pl_index}
-# - {name: spec_pl_e_ref, unit: TeV, datatype: float32, description: Spectral model
-#     (pl) parameter "e_ref"}
-# - {name: spec_pl2_flux, unit: 1 / (cm2 s), datatype: float32, description: Spectral
-#     model (pl2) parameter "flux"}
-# - {name: spec_pl2_flux_err, unit: 1 / (cm2 s), datatype: float32, description: Statistical
-#     error on spec_pl2_flux}
-# - {name: spec_pl2_flux_err_sys, unit: 1 / (cm2 s), datatype: float32, description: Systematic
-#     error on spec_pl2_flux}
-# - {name: spec_pl2_index, datatype: float32, description: Spectral model (pl2) parameter
-#     "index"}
-# - {name: spec_pl2_index_err, datatype: float32, description: Statistical error on
-#     spec_pl_index}
-# - {name: spec_pl2_index_err_sys, datatype: float32, description: Systematic error
-#     on spec_pl_index}
-# - {name: spec_pl2_e_min, unit: TeV, datatype: float32, description: Spectral model
-#     (pl2) parameter "e_min"}
-# - {name: spec_pl2_e_max, unit: TeV, datatype: float32, description: Spectral model
-#     (pl2) parameter "e_max"}
-# - {name: spec_ecpl_norm, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral
-#     model (ecpl) parameter "norm"}
-# - {name: spec_ecpl_norm_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     error on spec_ecpl_norm}
-# - {name: spec_ecpl_norm_err_sys, unit: 1 / (cm2 s TeV), datatype: float32, description: Systematic
-#     error on spec_ecpl_norm}
-# - {name: spec_ecpl_index, datatype: float32, description: Spectral model (ecpl) parameter
-#     "index"}
-# - {name: spec_ecpl_index_err, datatype: float32, description: Statistical error on
-#     spec_ecpl_index}
-# - {name: spec_ecpl_index_err_sys, datatype: float32, description: Systematic error
-#     on spec_ecpl_index}
-# - {name: spec_ecpl_e_cut, unit: TeV, datatype: float32, description: Spectral model
-#     (ecpl) parameter "e_cut"}
-# - {name: spec_ecpl_e_cut_err, unit: TeV, datatype: float32, description: Statistical
-#     error on spec_ecpl_e_cut}
-# - {name: spec_ecpl_e_cut_err_sys, unit: TeV, datatype: float32, description: Systematic
-#     error on spec_ecpl_e_cut}
-# - {name: spec_ecpl_e_ref, unit: TeV, datatype: float32, description: Spectral model
-#     (ecpl) parameter "e_ref"}
-# - {name: spec_erange_min, unit: TeV, datatype: float32, description: Spectrum energy
-#     range minimum}
-# - {name: spec_erange_max, unit: TeV, datatype: float32, description: Spectrum energy
-#     range maximum}
-# - {name: spec_theta, unit: deg, datatype: float32, description: Spectral extraction
-#     region radius}
-# - {name: spec_dnde_1TeV, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral
-#     model norm at 1 TeV}
-# - {name: spec_dnde_1TeV_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral
-#     model norm statistical error at 1 TeV}
-# - {name: spec_flux_1TeV, unit: 1 / (cm2 s), datatype: float32, description: Integrated
-#     flux above 1 TeV}
-# - {name: spec_flux_1TeV_err, unit: 1 / (cm2 s), datatype: float32, description: Integrated
-#     flux above 1 TeV error}
-# - {name: spec_flux_1TeV_crab, datatype: float32, description: 'Integrated flux above
-#     1 TeV, measured in Crab units (Meyer 2012)'}
-# - {name: spec_flux_1TeV_crab_err, datatype: float32, description: 'Integrated flux
-#     above 1 TeV error, measured in Crab units (Meyer 2012)'}
-# - {name: spec_eflux_1TeV_10TeV, unit: erg / (cm2 s), datatype: float32, description: Integrated
-#     energy flux between 1 TeV and 10 TeV}
-# - {name: spec_eflux_1TeV_10TeV_err, unit: erg / (cm2 s), datatype: float32, description: Integrated
-#     energy flux between 1 TeV and 10 TeV error}
-# - {name: sed_reference_id, datatype: string, description: Paper ID where sed is taken
-#     from.}
-# - {name: sed_n_points, datatype: int32, description: Number of spectral points (not
-#     including upper limits)}
+# - {name: spec_pl_index_err_sys, datatype: float32, description: Systematic error on spec_pl_index}
+# - {name: spec_pl_e_ref, unit: TeV, datatype: float32, description: Spectral model (pl) parameter "e_ref"}
+# - {name: spec_pl2_flux, unit: 1 / (cm2 s), datatype: float32, description: Spectral model (pl2) parameter "flux"}
+# - {name: spec_pl2_flux_err, unit: 1 / (cm2 s), datatype: float32, description: Statistical error on spec_pl2_flux}
+# - {name: spec_pl2_flux_err_sys, unit: 1 / (cm2 s), datatype: float32, description: Systematic error on spec_pl2_flux}
+# - {name: spec_pl2_index, datatype: float32, description: Spectral model (pl2) parameter "index"}
+# - {name: spec_pl2_index_err, datatype: float32, description: Statistical error on spec_pl_index}
+# - {name: spec_pl2_index_err_sys, datatype: float32, description: Systematic error on spec_pl_index}
+# - {name: spec_pl2_e_min, unit: TeV, datatype: float32, description: Spectral model (pl2) parameter "e_min"}
+# - {name: spec_pl2_e_max, unit: TeV, datatype: float32, description: Spectral model (pl2) parameter "e_max"}
+# - {name: spec_ecpl_norm, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral model (ecpl) parameter "norm"}
+# - {name: spec_ecpl_norm_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error on spec_ecpl_norm}
+# - {name: spec_ecpl_norm_err_sys, unit: 1 / (cm2 s TeV), datatype: float32, description: Systematic error on spec_ecpl_norm}
+# - {name: spec_ecpl_index, datatype: float32, description: Spectral model (ecpl) parameter "index"}
+# - {name: spec_ecpl_index_err, datatype: float32, description: Statistical error on spec_ecpl_index}
+# - {name: spec_ecpl_index_err_sys, datatype: float32, description: Systematic error on spec_ecpl_index}
+# - {name: spec_ecpl_e_cut, unit: TeV, datatype: float32, description: Spectral model (ecpl) parameter "e_cut"}
+# - {name: spec_ecpl_e_cut_err, unit: TeV, datatype: float32, description: Statistical error on spec_ecpl_e_cut}
+# - {name: spec_ecpl_e_cut_err_sys, unit: TeV, datatype: float32, description: Systematic error on spec_ecpl_e_cut}
+# - {name: spec_ecpl_e_ref, unit: TeV, datatype: float32, description: Spectral model (ecpl) parameter "e_ref"}
+# - {name: spec_erange_min, unit: TeV, datatype: float32, description: Spectrum energy range minimum}
+# - {name: spec_erange_max, unit: TeV, datatype: float32, description: Spectrum energy range maximum}
+# - {name: spec_theta, unit: deg, datatype: float32, description: Spectral extraction region radius}
+# - {name: spec_dnde_1TeV, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral model norm at 1 TeV}
+# - {name: spec_dnde_1TeV_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Spectral model norm statistical error at 1 TeV}
+# - {name: spec_flux_1TeV, unit: 1 / (cm2 s), datatype: float32, description: Integrated flux above 1 TeV}
+# - {name: spec_flux_1TeV_err, unit: 1 / (cm2 s), datatype: float32, description: Integrated flux above 1 TeV error}
+# - {name: spec_flux_1TeV_crab, datatype: float32, description: 'Integrated flux above 1 TeV, measured in Crab units (Meyer 2012)'}
+# - {name: spec_flux_1TeV_crab_err, datatype: float32, description: 'Integrated flux above 1 TeV error, measured in Crab units (Meyer
+#     2012)'}
+# - {name: spec_eflux_1TeV_10TeV, unit: erg / (cm2 s), datatype: float32, description: Integrated energy flux between 1 TeV and 10 TeV}
+# - {name: spec_eflux_1TeV_10TeV_err, unit: erg / (cm2 s), datatype: float32, description: Integrated energy flux between 1 TeV and 10
+#     TeV error}
+# - {name: sed_reference_id, datatype: string, description: Paper ID where sed is taken from.}
+# - {name: sed_n_points, datatype: int32, description: Number of spectral points (not including upper limits)}
 # - {name: sed_n_ul, datatype: int32, description: Number of spectral point upper limits}
 # - {name: sed_e_ref, datatype: float32}
 # - {name: sed_e_min, datatype: float32}
@@ -242,7 +184,7 @@ source_id common_name gamma_names fermi_names other_names where classes discover
 92 "HESS J1702-420" "HESS J1702-420" "" "" gal unid hess hess 2006-01 108 B41Y7y "TeV J1702-420" 92 "TeV J1702-4200" 2008A&A...477..353A 12.8 9.0 255.68333 -42.01583 344.30396 -0.1837134 255.68369 -42.01596 344.304 -0.184 0.05 gauss 0.3 0.02 0.15 0.02 68.0 7.0 radec pl 9.1e-12 1.1e-12 2e-13 2.07 0.08 0.2 1.0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0.5 50.0 0.6 9.1e-12 1.1e-12 8.50467e-12 1.2087917e-12 40.997356 5.8270655 3.100541e-11 4.665809e-12 2008A&A...477..353A 9 0 8.25722 nan nan 3.7267906e-12 nan 1.1086375e-12 1.0959053e-12 nan
 94 "HESS J1708-443" "HESS J1708-443" "" "PSR B1706-44,G343.1-2.3" gal pwn hess hess,cangaroo 2009-07 191 jrf7QE "TeV J1708-443" 94 "TeV J1708-4420" 2011A&A...528A.143H 7.0 15.0 257.00000 -44.3 343.06467 -2.3295422 257.04584 -44.333332 343.05753 -2.3757567 0.068718426 gauss 0.29 0.04 nan nan nan nan "" pl 4.2e-12 8e-13 1e-12 2.0 0.1 0.2 1.0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0.56 nan 0.71 4.2e-12 8e-13 4.199996e-12 9.03545e-13 20.246374 4.355602 1.5494422e-11 2.9513184e-12 2011A&A...528A.143H 5 0 6.9955993 nan nan 1.1396619e-12 nan 3.7828e-13 3.77988e-13 nan
 93 "HESS J1708-410" "HESS J1708-410" "" "" gal unid hess hess 2006-01 109 xGSgEi "TeV J1708-410" 93 "TeV J1708-4105" 2008A&A...477..353A 10.7 39.0 257.10001 -41.09 345.68225 -0.4688045 257.1008 -41.089527 345.683 -0.469 0.05 gauss 0.06 0.02 0.08 0.02 -20.0 23.0 radec pl 5.596e-12 6.404e-13 nan 2.58 0.1025 0.2 1.0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0.5 60.0 0.3 5.596e-12 6.404e-13 3.5417721e-12 4.6591225e-13 17.07336 2.2459629 1.139231e-11 1.6762835e-12 2008A&A...477..353A 7 0 8.808232 nan nan 1.4710259e-12 nan 2.4155658e-13 2.3577933e-13 nan
-96 "RX J1713.7-3946" "HESS J1713-397" "" "SNR G347.3-00.5" gal snr cangaroo cangaroo,hess 2000-02 84 Q6SXwo "TeV J1713-397" 96 "TeV J1713-3945" 2016arXiv160908671H nan 164.0 258.11249 -39.6867 347.26944 -0.2569129 258.355 -39.771 347.31085 -0.4573488 nan shell 0.5 nan nan nan nan nan "" ecpl nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 2.3e-11 1e-12 nan 2.06 0.02 0.1 12.9 1.1 nan 1.0 0.2 40.0 0.6 2.1284408e-11 9.360431e-13 1.6879192e-11 8.237374e-13 81.36733 3.9708838 5.999628e-11 3.1732366e-12 2016arXiv160908671H 30 0 6.995667 6.3736672 7.6183333 5.5565885e-11 6.388166e-12 nan nan nan
+96 "RX J1713.7-3946" "HESS J1713-397" "" "SNR G347.3-00.5" gal snr cangaroo cangaroo,hess 2000-02 84 Q6SXwo "TeV J1713-397" 96 "TeV J1713-3945" 2016arXiv160908671H nan 164.0 258.35501 -39.771 347.31085 -0.4573556 258.355 -39.771 347.31085 -0.4573488 nan shell 0.5 nan nan nan nan nan "" ecpl nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 2.3e-11 1e-12 nan 2.06 0.02 0.1 12.9 1.1 nan 1.0 0.2 40.0 0.6 2.1284408e-11 9.360431e-13 1.6879192e-11 8.237374e-13 81.36733 3.9708838 5.999628e-11 3.1732366e-12 2016arXiv160908671H 30 0 6.995667 6.3736672 7.6183333 5.5565885e-11 6.388166e-12 nan nan nan
 95 "CTB 37B" "HESS J1713-381" "" "SNR G348.7+0.3,CXOU J171405.7-381031" gal snr hess hess 2006-01 110 QYavG5 "TeV J1713-382" 95 "TeV J1713-3811" 2008A&A...486..829A 8.6 55.4 258.42920 -38.17011 348.6415 0.43456325 258.475 -38.199444 348.63882 0.38820934 0.0144337565 gauss 0.043333333 0.013333334 nan nan nan nan "" pl 6.5e-13 1.1e-13 1.3e-13 2.65 0.19 0.2 1.0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0.25 nan 0.187 6.5e-13 1.1e-13 3.9393938e-13 8.063635e-14 1.8990124 0.38871318 1.2434939e-12 2.948761e-13 2008A&A...486..829A 4 1 4.6770697 nan nan 2.4173196e-12 nan 8.7653127e-13 8.650019e-13 1.43e-15
 97 "CTB 37A" "HESS J1714-385" "" "SNR G348.5+0.1,CXOU J171419.8-383023" gal snr,mc hess hess 2008-11 158 Mk4fht "TeV J1714-385" 97 "TeV J1714-3834" 2008A&A...490..685A nan 67.6 258.64301 -38.549 348.4323 0.07693905 258.57916 -38.566666 348.3888 0.107120275 0.33333334 gauss 0.06666667 0.016666668 nan nan nan nan "" pl 8.7e-13 1e-13 1.8e-13 2.3 0.13 0.2 1.0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0.2 40.0 0.2 8.7e-13 1e-13 6.692308e-13 1.01960066e-13 3.2260737 0.49150565 2.3176398e-12 4.066597e-13 2008A&A...490..685A 4 0 4.9501247 nan nan 1.1742465e-12 nan 2.4145323e-13 2.4457874e-13 nan
 98 "SNR G349.7+0.2" "HESS J1718-374" "" "SNR G349.7+00.2" gal snr,mc hess hess 2013-07 250 D5Wki5 "TeV J1718-374" 98 "TeV J1717-3726" 2015A&A...574A.100H 6.6 113.0 259.49600 -37.427 349.73618 0.18061827 259.49084 -37.444332 349.71967 0.1739751 0.00745356 point nan nan nan nan nan nan "" pl2 nan nan nan nan nan nan nan 6.5e-13 1.1e-13 1.3e-13 2.8 0.27 0.2 0.4 nan nan nan nan nan nan nan nan nan nan nan 0.22 nan 0.1 2.2485049e-13 4.390376e-14 1.2491694e-13 3.7442814e-14 0.6021709 0.18049571 3.78943e-13 1.364412e-13 2015A&A...574A.100H 4 0 0.8481175 0.63595 1.131 1.9749434e-12 nan 7.231663e-13 7.231663e-13 nan

@@ -4,22 +4,17 @@
 # - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
 # - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
 # - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
-# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
-#     photon flux at `e_ref`}
-# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     negative error (1 sigma) on `dnde`}
-# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     positive error (1 sigma) on `dnde`}
-# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
-#     (at `UL_CONF` level) on `dnde`}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit (at `UL_CONF` level) on `dnde`}
 # - {name: significance, datatype: float32, description: Excess significance}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 161}
 # - {reference_id: 2017arXiv170107002A}
 # - {telescope: hess}
-# - {comments: 'Data obtained from corresponding author Ekrem Oguzhan Anguner on Feb
-#     14, 2017
+# - {comments: 'Data obtained from corresponding author Ekrem Oguzhan Anguner on Feb 14, 2017
 # 
 #     Corresponds to black spectral points from Figure 3 for HESS J1826-130:
 # 

@@ -4,10 +4,8 @@
 # - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
 # - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
 # - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
-# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
-#     photon flux at `e_ref`}
-# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     error (1 sigma) on `dnde`}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error (1 sigma) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 39}

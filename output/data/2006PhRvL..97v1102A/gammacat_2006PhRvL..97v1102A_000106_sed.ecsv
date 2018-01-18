@@ -2,14 +2,10 @@
 # ---
 # datatype:
 # - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
-# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
-#     photon flux at `e_ref`}
-# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     negative error (1 sigma) on `dnde`}
-# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     positive error (1 sigma) on `dnde`}
-# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
-#     (at `UL_CONF` level) on `dnde`}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit (at `UL_CONF` level) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 106}
@@ -17,8 +13,7 @@
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/GC2004_AuxInfo.txt'}
 # - {UL_CONF: 0.95}
-# - {comments: I think this is the spectrum 2004 data spectrum (solid points) in Figure
-#     2.}
+# - {comments: I think this is the spectrum 2004 data spectrum (solid points) in Figure 2.}
 # schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp dnde_ul
 0.19 1.022e-10 1.227e-11 1.26e-11 nan

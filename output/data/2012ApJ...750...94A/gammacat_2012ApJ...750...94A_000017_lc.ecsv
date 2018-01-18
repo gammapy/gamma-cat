@@ -13,8 +13,7 @@
 # - {UL_CONF: 0.99}
 # - {telescope: veritas}
 # - {SED_TYPE: flux}
-# - {comments: not entirely certain on confidence level of upper limit (not given in
-#     paper)}
+# - {comments: not entirely certain on confidence level of upper limit (not given in paper)}
 # schema: astropy-2.0
 time e_min flux flux_err flux_ul
 54747.0 0.25 3.4822e-12 2.72343e-12 nan

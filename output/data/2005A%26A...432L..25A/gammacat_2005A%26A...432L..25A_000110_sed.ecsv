@@ -2,18 +2,15 @@
 # ---
 # datatype:
 # - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
-# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
-#     photon flux at `e_ref`}
-# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     error (1 sigma) on `dnde`}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error (1 sigma) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 110}
 # - {reference_id: 2005A&A...432L..25A}
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA432_L25.html'}
-# - {comments: 'The SED here is for 80 photoelectron cut (filled circles) in Figure
-#     3.
+# - {comments: 'The SED here is for 80 photoelectron cut (filled circles) in Figure 3.
 # 
 #     There''s another SED for 200 photoelectron cut (open circles), not listed here.'}
 # schema: astropy-2.0

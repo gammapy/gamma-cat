@@ -2,20 +2,17 @@
 # ---
 # datatype:
 # - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
-# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
-#     photon flux at `e_ref`}
-# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     negative error (1 sigma) on `dnde`}
-# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     positive error (1 sigma) on `dnde`}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical positive error (1 sigma) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 49}
 # - {reference_id: 2011ApJ...734..110B}
 # - {telescope: argo}
 # - mjd: {max: 55255.0, min: 54405.0}
-# - {comments: 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat
-#     by Jonathan Biteau, argo data marked by "Flux4 " in the paper.'}
+# - {comments: 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau, argo data marked by "Flux4
+#     " in the paper.'}
 # - {file_id: 4}
 # schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp

@@ -4,22 +4,18 @@
 # - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
 # - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
 # - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
-# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
-#     photon flux at `e_ref`}
-# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     negative error (1 sigma) on `dnde`}
-# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
-#     positive error (1 sigma) on `dnde`}
-# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
-#     (at `UL_CONF` level) on `dnde`}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit (at `UL_CONF` level) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 106}
 # - {reference_id: 2016Natur.531..476H}
 # - {telescope: hess}
-# - {comments: "Data obtained from Aion Viana on Oct 19, 2016 via private communication\n\
-#     Corresponds to blue spectral points from Figure 3 for HESS J1745\u2212290:\nhttp://www.nature.com/nature/journal/v531/n7595/fig_tab/nature17147_F3.html\n\
-#     Data added to gamma-cat in https://github.com/gammapy/gamma-cat/issues/25\n"}
+# - {comments: "Data obtained from Aion Viana on Oct 19, 2016 via private communication\nCorresponds to blue spectral points from Figure\
+#     \ 3 for HESS J1745\u2212290:\nhttp://www.nature.com/nature/journal/v531/n7595/fig_tab/nature17147_F3.html\nData added to gamma-cat\
+#     \ in https://github.com/gammapy/gamma-cat/issues/25\n"}
 # - {UL_CONF: 0.95}
 # schema: astropy-2.0
 e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul

@@ -29,5 +29,3 @@ Why multiple formats?
 * The ECSV and YAML variant are more for us working on gamma-cat,
   to have a text-based, version control friendly format where it's
   easy to see which changes occurred from one version to the next.
-
-.. include:: source_list.rst

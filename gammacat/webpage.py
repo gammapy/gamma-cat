@@ -9,6 +9,7 @@ from gammapy.catalog import GammaCatResourceIndex
 from .input import BasicSourceList
 from .info import gammacat_info
 from .utils import load_json, jinja_env
+from pathlib import Path
 
 __all__ = [
     'WebpageConfig',
@@ -44,7 +45,25 @@ class WebpageMaker:
         log.info('Make webpage ...')
         self.make_source_list_page()
         self.make_source_detail_pages()
+        self.make_publication_list()
         self.copy_data()
+
+    def make_publication_list(self):
+        publications = self.resources.unique_reference_ids
+        # The first entry of publications is empty, hence, delete first entry
+        del publications[0]
+
+        ctx = {
+            'publications' : sorted(publications)
+            }
+
+        template = jinja_env.get_template('publication_list.txt')
+        txt = template.render(ctx)
+
+        path = gammacat_info.webpage_path / 'use/publication_list.rst'
+
+        log.info(f'Writing {path}')
+        path.write_text(txt)
 
     def copy_data(self):
         """Copy output data folder to docs HTML output folder,

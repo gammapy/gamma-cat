@@ -31,6 +31,8 @@ This site is organised in the following sections:
    :caption: User Documentation
 
    use/index
+   use/source_list
+   use/publication_list
    stats/index
    changes
 

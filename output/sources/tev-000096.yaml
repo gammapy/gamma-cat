@@ -21,10 +21,14 @@ tevcat_name: TeV J1713-397
 tgevcat_id: 96
 tgevcat_name: TeV J1713-3945
 
+# The position for this TeV source in SIMBAD is no good.
+# See https://github.com/gammapy/gamma-cat/issues/96
+# We chose to put the best-fit position from 2016arXiv160908671H here instead,
+# to avoid this source appearing at an offset of ~ 0.2 deg from the actual position.
 pos:
   simbad_id: RX J1713.7-3946
-  ra: 258.1125
-  dec: -39.6867
+  ra: 258.3550109863281
+  dec: -39.770999908447266
 
 reference_ids:
 - 2004Natur.432...75A

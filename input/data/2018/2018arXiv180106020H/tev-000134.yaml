@@ -1,0 +1,27 @@
+source_id: 134
+reference_id: 2018arXiv180106020H
+telescope: hess
+
+data:
+  livetime: 121.1h
+  significance: 17.3
+
+pos:
+  glon: {val: 44.46d, err: 0.02d}
+  glat: {val: -0.13d, err: 0.02d}
+
+morph:
+  type: shell
+  sigma: {val: 0.32d, err: 0.02d}
+  sigma2: {val: 0.49d, err: 0.04d}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 4.82, err: 0.43, err_sys: 1.45, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.56, err: 0.09, err_sys: 0.2}
+      e_ref: {val: 2.25, unit: TeV}
+
+  theta: 0.56d
+  erange: {min: 0.68, max: 61.9, unit: TeV}

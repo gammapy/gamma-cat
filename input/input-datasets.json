@@ -3899,6 +3899,20 @@
         "location": "data/2018/2018arXiv180106020H/tev-000158-sed.ecsv"
     },
     {
+        "source_id": 159,
+        "reference_id": "2017arXiv170604535H",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2017/2017arXiv170604535H/tev-000159.yaml"
+    },
+    {
+        "source_id": 159,
+        "reference_id": "2017arXiv170604535H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017/2017arXiv170604535H/tev-000159-sed.ecsv"
+    },
+    {
         "source_id": 161,
         "reference_id": "2017arXiv170107002A",
         "file_id": -1,

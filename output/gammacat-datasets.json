@@ -4634,6 +4634,20 @@
         "location": "sources/tev-000159.yaml"
     },
     {
+        "source_id": 159,
+        "reference_id": "2017arXiv170604535H",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2017arXiv170604535H/gammacat_2017arXiv170604535H_000159_ds.yaml"
+    },
+    {
+        "source_id": 159,
+        "reference_id": "2017arXiv170604535H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017arXiv170604535H/gammacat_2017arXiv170604535H_000159_sed.ecsv"
+    },
+    {
         "source_id": 160,
         "reference_id": "",
         "file_id": -1,

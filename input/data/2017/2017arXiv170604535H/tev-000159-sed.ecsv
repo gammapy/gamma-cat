@@ -1,0 +1,39 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e_lo, datatype: float32, unit: TeV}
+# - {name: e_hi, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errp, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errn, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_ul, datatype: float32, unit: cm-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 159
+# - reference_id: 2017arXiv170604535H
+# - telescope: hess
+# - comments: |
+#     Spectral points obtained via email by Regis Terrier on Oct 23, 2016
+#     The flux points are a bit different from those shown in the paper
+#     since the contamination from GC ridge emission is subtracted here.
+#     In the paper, we show the data points for the ON region and show
+#     the underlying diffuse emission spectrum.
+#     In the values given here the contribution from diffuse emission is subtracted.
+#     The upper limit confidence level is not stated in the paper, but Regis
+#     commented that it's 3 sigma, which I think is roughly 99%.
+# - UL_CONF: 0.99
+    e_ref       e_lo       e_hi       dnde  dnde_errp  dnde_errn     dnde_ul
+3.979e-01  6.315e-02  7.507e-02  3.233e-12  1.512e-12  1.385e-12         nan
+5.622e-01  8.923e-02  1.061e-01  4.407e-13  3.000e-13  2.840e-13         nan
+7.943e-01  1.261e-01  1.499e-01  2.950e-13  1.370e-13  1.297e-13         nan
+1.122e+00  1.781e-01  2.117e-01  4.420e-14  5.890e-14  5.520e-14         nan
+1.585e+00  2.516e-01  2.990e-01  6.190e-14  3.120e-14  2.910e-14         nan
+2.240e+00  3.555e-01  4.226e-01  6.505e-14  1.790e-14  1.665e-14         nan
+3.165e+00  5.023e-01  5.971e-01  2.377e-14  9.090e-15  8.350e-15         nan
+4.471e+00  7.096e-01  8.435e-01  4.501e-15  4.470e-15  3.994e-15         nan
+6.317e+00  1.003e+00  1.192e+00  3.879e-15  2.679e-15  2.361e-15         nan
+8.924e+00  1.416e+00  1.684e+00        nan        nan        nan   4.851e-15
+1.261e+01  2.001e+00  2.379e+00        nan        nan        nan   2.573e-15
+1.781e+01  2.827e+00  3.360e+00  7.352e-16  5.060e-16  4.010e-16         nan
+2.517e+01  3.995e+00  4.749e+00        nan        nan        nan   1.048e-15

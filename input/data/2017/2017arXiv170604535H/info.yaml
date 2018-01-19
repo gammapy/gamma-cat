@@ -1,0 +1,11 @@
+reference_id: 2017arXiv170604535H
+source_id: [159]
+telescope: [hess]
+
+datasets:
+- tev-000159.yaml
+- tev-000159-sed.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no

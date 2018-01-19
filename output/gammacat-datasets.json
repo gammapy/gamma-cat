@@ -3171,6 +3171,20 @@
         "location": "data/2008AIPC.1085..249T/gammacat_2008AIPC.1085..249T_000104_ds.yaml"
     },
     {
+        "source_id": 104,
+        "reference_id": "2017arXiv171101350H",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2017arXiv171101350H/gammacat_2017arXiv171101350H_000104_ds.yaml"
+    },
+    {
+        "source_id": 104,
+        "reference_id": "2017arXiv171101350H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017arXiv171101350H/gammacat_2017arXiv171101350H_000104_sed.ecsv"
+    },
+    {
         "source_id": 105,
         "reference_id": "",
         "file_id": -1,

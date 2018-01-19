@@ -2842,6 +2842,20 @@
         "location": "data/2008/2008AIPC.1085..249T/tev-000104.yaml"
     },
     {
+        "source_id": 104,
+        "reference_id": "2017arXiv171101350H",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2017/2017arXiv171101350H/tev-000104.yaml"
+    },
+    {
+        "source_id": 104,
+        "reference_id": "2017arXiv171101350H",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017/2017arXiv171101350H/tev-000104-sed.ecsv"
+    },
+    {
         "source_id": 105,
         "reference_id": "2016MNRAS.459.2550A",
         "file_id": -1,

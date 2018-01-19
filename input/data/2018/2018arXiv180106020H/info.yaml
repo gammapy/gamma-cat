@@ -1,0 +1,15 @@
+reference_id: 2018arXiv180106020H
+source_id: [83, 134, 158]
+telescope: [hess]
+
+datasets:
+- tev-000083.yaml
+- tev-000083-sed.ecsv
+- tev-000134.yaml
+- tev-000134-sed.ecsv
+- tev-000158.yaml
+- tev-000158-sed.ecsv
+
+data_entry:
+  status: complete 
+  reviewed: no

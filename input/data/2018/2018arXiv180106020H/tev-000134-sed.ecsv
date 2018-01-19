@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errp, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errn, datatype: float32, unit: cm-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 134
+# - reference_id: 2018arXiv180106020H
+# - telescope: hess
+# - comments: |
+#     Spectral points obtained via email by Daniel Gottschall on Nov 3, 2016
+#     TODO POSSIBLY NOT FINAL!
+e_ref dnde dnde_errp dnde_errn
+ 0.88 3.52e-012 1.39e-012 1.37e-012
+ 1.22 2.03e-012 4.21e-013 4.17e-013
+ 1.77 9.90e-013 1.82e-013 1.80e-013
+ 2.60 4.30e-013 7.99e-014 7.87e-014
+ 3.80 1.83e-013 3.79e-014 3.72e-014
+ 5.56 5.26e-014 1.67e-014 1.63e-014
+ 8.17 2.28e-014 7.97e-015 7.69e-015
+19.64 8.80e-016 6.02e-016 5.81e-016

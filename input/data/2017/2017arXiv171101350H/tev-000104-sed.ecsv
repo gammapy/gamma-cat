@@ -1,0 +1,29 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e_hi, datatype: float32, unit: TeV}
+# - {name: e_lo, datatype: float32, unit: TeV}
+# - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errp, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_errn, datatype: float32, unit: cm-2 s-1 TeV-1}
+# - {name: dnde_ul, datatype: float32, unit: cm-2 s-1 TeV-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 104
+# - reference_id: 2017arXiv171101350H
+# - telescope: hess
+# - comments: |
+#     Spectral points obtained via email by Oguzhan Anguner on Oct 19, 2016
+#     TODO POSSIBLY NOT FINAL!
+# - UL_CONF: 0.99
+    e_ref       e_hi       e_lo        dnde   dnde_errp   dnde_errn     dnde_ul
+4.897e-01  7.266e-02  1.735e-01   1.537e-12   7.419e-13   6.845e-13         nan
+7.662e-01  2.338e-01  2.039e-01   4.551e-13   1.358e-13   1.292e-13         nan
+1.327e+00  4.509e-01  3.274e-01   7.933e-14   3.674e-14   3.449e-14         nan
+2.340e+00  8.227e-01  5.613e-01   2.303e-14   1.234e-14   1.135e-14         nan
+4.146e+00  1.478e+00  9.835e-01   1.160e-14   4.943e-15   4.450e-15         nan
+7.375e+00  2.625e+00  1.751e+00   3.803e-15   1.824e-15   1.567e-15         nan
+1.312e+01  4.664e+00  3.119e+00         nan         nan         nan 2.20915e-15
+2.331e+01  8.312e+00  5.528e+00         nan         nan         nan 2.98703e-16
+4.136e+01  1.488e+01  9.733e+00         nan         nan         nan 2.12946e-16

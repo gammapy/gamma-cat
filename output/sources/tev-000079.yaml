@@ -1,10 +1,10 @@
 source_id: 79
 
-common_name: MSH 15-5-02
+common_name: MSH 15-52
 gamma_names: [HESS J1514-591]
 other_names:
+- MSH 15-5-02
 - G320.3-01.1
-- MSH 15-52
 
 where: gal
 classes: [pwn]
@@ -20,11 +20,16 @@ tevcat_name: TeV J1514-591
 tgevcat_id: 79
 tgevcat_name: TeV J1513-5914
 
+# The position for this TeV source in SIMBAD is no good.
+# See https://github.com/gammapy/gamma-cat/issues/203
+# We chose to put the best-fit position from 2005A&A...435L..17A here instead,
+# to avoid this source appearing at an offset of ~ 0.1 deg from the actual position.
 pos:
-  simbad_id: MSH 15-5-02
-  ra: 228.3208
-  dec: -59.0817
+  simbad_id: HESS J1514-591
+  ra: 228.52916667
+  dec: -59.1575
 
 reference_ids:
 - 2005A&A...435L..17A
 - 2013ApJ...773...77A
+- 2017arXiv170901422T

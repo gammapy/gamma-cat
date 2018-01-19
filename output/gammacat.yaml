@@ -6636,10 +6636,10 @@
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 79
-  - common_name: MSH 15-5-02
+  - common_name: MSH 15-52
   - gamma_names: HESS J1514-591
   - fermi_names: ''
-  - other_names: G320.3-01.1,MSH 15-52
+  - other_names: MSH 15-5-02,G320.3-01.1
   - where: gal
   - classes: pwn
   - discoverer: cangaroo
@@ -6653,10 +6653,10 @@
   - reference_id: 2005A&A...435L..17A
   - significance: 25.0
   - livetime: 22.100000381469727
-  - ra: 228.32080078125
-  - dec: -59.08169937133789
-  - glon: 320.278076171875
-  - glat: -1.072826623916626
+  - ra: 228.52915954589844
+  - dec: -59.157501220703125
+  - glon: 320.3303527832031
+  - glat: -1.193045735359192
   - pos_ra: 228.52915954589844
   - pos_dec: -59.157501220703125
   - pos_glon: 320.3303527832031

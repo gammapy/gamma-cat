@@ -12133,9 +12133,9 @@
   - morph_pa_err: .nan
   - morph_pa_frame: ''
   - spec_type: pl
-  - spec_pl_norm: 4.8199998679832046e-12
-  - spec_pl_norm_err: 4.300000026186135e-13
-  - spec_pl_norm_err_sys: 1.449999950837999e-12
+  - spec_pl_norm: 4.820000193243856e-13
+  - spec_pl_norm_err: 4.300000026186135e-14
+  - spec_pl_norm_err_sys: 1.4500000592582163e-13
   - spec_pl_index: 2.559999942779541
   - spec_pl_index_err: 0.09000000357627869
   - spec_pl_index_err_sys: 0.20000000298023224
@@ -12161,14 +12161,14 @@
   - spec_erange_min: 0.6800000071525574
   - spec_erange_max: 61.900001525878906
   - spec_theta: 0.5600000023841858
-  - spec_dnde_1TeV: 3.842680687538014e-11
-  - spec_dnde_1TeV_err: 4.429151923696084e-12
-  - spec_flux_1TeV: 2.463256855433915e-11
-  - spec_flux_1TeV_err: 2.2295589853504882e-12
-  - spec_flux_1TeV_crab: 118.7430191040039
-  - spec_flux_1TeV_crab_err: 10.747745513916016
-  - spec_eflux_1TeV_10TeV: 7.966017429028582e-11
-  - spec_eflux_1TeV_10TeV_err: 7.142352681510644e-12
+  - spec_dnde_1TeV: 3.842680514065666e-12
+  - spec_dnde_1TeV_err: 4.429151815275867e-13
+  - spec_flux_1TeV: 2.4632568120658282e-12
+  - spec_flux_1TeV_err: 2.2295590395605969e-13
+  - spec_flux_1TeV_crab: 11.87430191040039
+  - spec_flux_1TeV_crab_err: 1.0747745037078857
+  - spec_eflux_1TeV_10TeV: 7.96601760250093e-12
+  - spec_eflux_1TeV_10TeV_err: 7.142352573090427e-13
   - sed_reference_id: 2018arXiv180106020H
   - sed_n_points: 8
   - sed_n_ul: 0

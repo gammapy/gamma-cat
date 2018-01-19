@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 134}
+# - {reference_id: 2018arXiv180106020H}
+# - {telescope: hess}
+# - {comments: 'Spectral points obtained via email by Daniel Gottschall on Nov 3, 2016
+# 
+#     TODO POSSIBLY NOT FINAL!'}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.88 3.52e-12 1.37e-12 1.39e-12
+1.22 2.03e-12 4.17e-13 4.21e-13
+1.77 9.9e-13 1.8e-13 1.82e-13
+2.6 4.3e-13 7.87e-14 7.99e-14
+3.8 1.83e-13 3.72e-14 3.79e-14
+5.56 5.26e-14 1.63e-14 1.67e-14
+8.17 2.28e-14 7.69e-15 7.97e-15
+19.64 8.8e-16 5.81e-16 6.02e-16

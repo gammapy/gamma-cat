@@ -16,6 +16,8 @@ Basic source info
 `Information <https://github.com/gammapy/gamma-cat/blob/master/input/sources/tev-000{{ source.source_id }}.yaml>`__
 {% endif %}
 
+Gamma-Sky Link: `Gamma-Sky <https://gamma-sky.net/#/cat/tev/{{ source.source_id }}>`__ 
+
 SEDs
 ----
 

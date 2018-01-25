@@ -20,7 +20,7 @@ SEDs
 ----
 
 {% for resource in resources.resources if resource.type == 'sed' %}
-* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
+* {{ resource.reference_id }} (`Github output <https://github.com/gammapy/gamma-cat/tree/master/output/{{ resource.url }}>`__, `Download <../../output/{{ resource.url }}>`__, `Github input <https://github.com/gammapy/gamma-cat/tree/master/input/data/{{ resource.year }}/{{ resource.parsedref }}/tev-{{ resource.source_str }}-sed.ecsv>`__)
 {% else %}
 * None
 {% endfor %}
@@ -30,7 +30,7 @@ Lightcurves
 -----------
 
 {% for resource in resources.resources if resource.type == 'lightcurve' %}
-* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
+* {{ resource.reference_id }} (`Github output <https://github.com/gammapy/gamma-cat/tree/master/output/{{ resource.url }}>`__, `Download <../../output/{{ resource.url }}>`__, `Github input <https://github.com/gammapy/gamma-cat/tree/master/input/data/{{ resource.year }}/{{ resource.parsedref }}/tev-{{ resource.source_str }}-lc.ecsv>`__)
 {% else %}
 * None
 {% endfor %}
@@ -39,7 +39,7 @@ Datasets
 --------
 
 {% for resource in resources.resources if resource.type == 'ds' %}
-* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
+* {{ resource.reference_id }} (`Github output <https://github.com/gammapy/gamma-cat/tree/master/output/{{ resource.url }}>`__, `Download <../../output/{{ resource.url }}>`__, `Github input <https://github.com/gammapy/gamma-cat/tree/master/input/data/{{ resource.year }}/{{ resource.parsedref }}/tev-{{ resource.source_str }}.yaml>`__)
 {% else %}
 * None
 {% endfor %}

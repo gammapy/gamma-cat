@@ -114,6 +114,9 @@ class WebpageMaker:
         # to the template render
         for resource in resources.resources:
             resource.url = urllib.parse.quote(resource.location)
+            resource.source_str = str('{:06d}'.format(resource.source_id))
+            resource.parsedref = urllib.parse.quote(resource.reference_id)
+            resource.year = resource.reference_id[:4]
 
         ctx = {
             'source': source,

@@ -6,7 +6,15 @@ Source: {{ source.common_name }}
 Basic source info
 -----------------
 
-TODO
+{% if source.source_id < 10 %} 
+`Information <https://github.com/gammapy/gamma-cat/blob/master/input/sources/tev-00000{{ source.source_id }}.yaml>`__
+{% endif %}
+{% if source.source_id > 9 and source.source_id < 100 %}
+`Information <https://github.com/gammapy/gamma-cat/blob/master/input/sources/tev-0000{{ source.source_id }}.yaml>`__
+{% endif %}
+{% if source.source_id > 100 %}
+`Information <https://github.com/gammapy/gamma-cat/blob/master/input/sources/tev-000{{ source.source_id }}.yaml>`__
+{% endif %}
 
 SEDs
 ----

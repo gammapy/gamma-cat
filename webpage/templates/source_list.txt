@@ -8,5 +8,5 @@ Data collection by source
 The following TeV sources are in the current version of gamma-cat:
 
 {% for source in sources %}
-* `{{ source.common_name }} <sources/source_{{ source.source_id }}.html>`__
+* `{{ source.common_name }} <sources/source_{{ source.source_id }}.html>`__ (Gamma-Cat ID: {{ source.source_id }})
 {% endfor %}

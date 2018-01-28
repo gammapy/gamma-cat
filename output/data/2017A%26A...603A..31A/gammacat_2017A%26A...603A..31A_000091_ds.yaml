@@ -1,5 +1,15 @@
 source_id: 91
 reference_id: 2017A&A...603A..31A
-telescope: magic
+file_id: 2
+telescope: veritas
 
-#TODO: Add data
+# VERITAS low state
+spec:
+  erange: {min: 0.2, max: 5., unit: TeV}
+  mjd: {max: 55004., min: 54907.}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 0.88, err: 0.06, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.48, err: 0.07}
+      e_ref: {val: 1, unit: TeV}

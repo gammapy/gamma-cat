@@ -2794,27 +2794,6 @@
     },
     {
         "source_id": 91,
-        "reference_id": "2017A%26A...603A..31A",
-        "file_id": -1,
-        "type": "lightcurve",
-        "location": "data/2017A%26A...603A..31A/gammacat_2017A%2526A...603A..31A_000091_lc.ecsv"
-    },
-    {
-        "source_id": 91,
-        "reference_id": "2017A%26A...603A..31A",
-        "file_id": -1,
-        "type": "sed",
-        "location": "data/2017A%26A...603A..31A/gammacat_2017A%2526A...603A..31A_000091_sed.ecsv"
-    },
-    {
-        "source_id": 91,
-        "reference_id": "2017A%26A...603A..31A",
-        "file_id": 2,
-        "type": "ds",
-        "location": "data/2017A%26A...603A..31A/gammacat_2017A%2526A...603A..31A_000091_ds.yaml"
-    },
-    {
-        "source_id": 91,
         "reference_id": "2017A&A...603A..31A",
         "file_id": -1,
         "type": "lightcurve",

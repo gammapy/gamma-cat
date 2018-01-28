@@ -1,0 +1,18 @@
+:orphan:
+
+Reference: {{ reference.reference_id }}
+-----------{{ reference.reference_title_underline }}
+
+Basic info
+----------
+
+* Reference: {{ reference.reference_id }}
+* TODO: link to input folder
+* TODO: link to output folder
+* ADS: `{{ reference.ads_url }} <{{ reference.ads_url}}>`__
+* TODO: summarise available data and data entry status
+
+Resources
+---------
+
+* TODO

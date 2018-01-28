@@ -2,11 +2,13 @@
 
 .. _data-sources:
 
-Data collection by source
-=========================
+Data by source
+==============
 
-The following TeV sources are in the current version of gamma-cat:
+List of sources in gamma-cat:
 
 {% for source in sources %}
-* `{{ source.common_name }} <sources/source_{{ source.source_id }}.html>`__
+
+* `{{ source.name_and_id }} <sources/{{ source.source_id }}.html>`__
+
 {% endfor %}

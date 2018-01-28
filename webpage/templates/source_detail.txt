@@ -1,37 +1,46 @@
 :orphan:
 
-Source: {{ source.common_name }}
---------------------------------
+Source: {{ source.name_and_id }}
+--------{{ source.source_title_underline }}
 
 Basic source info
 -----------------
 
-TODO
+* Edit on Github: `input/sources/tev-{{ source.source_id_str }}.yaml <https://github.com/gammapy/gamma-cat/blob/master/input/sources/tev-{{ source.source_id_str }}.yaml>`__
+* Source on gamma-sky.net: `{{source.gamma_sky_url}} <{{ source.gamma_sky_url }}>`__
+* Source on TeVCat: `{{source.tevcat_url}} <{{ source.tevcat_url }}>`__
 
-SEDs
-----
+Part of the available information rendered on this HTML page:
 
-{% for resource in resources.resources if resource.type == 'sed' %}
-* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
+* common_name: **{{ source.common_name }}**
+* source_id: **{{ source.source_id }}**
+* classes: **{{ source.classes }}**
+
+..
+    TODO: render some more info, but in a good way.
+    E.g. we should have a page defining all available classes,
+    and then from here we should link to that page defining classes.
+
+Resources
+---------
+
+{% for resource in resources %}
+* reference_id: **{{ resource.reference_id }}** , type: **{{ resource.type }}** , file_id: **{{ resource.file_id }}**
+    * `input/{{ resource.url_input }} <https://github.com/gammapy/gamma-cat/tree/master/input/{{ resource.url_input }}>`__
+    * `output/{{ resource.url_output }} <https://github.com/gammapy/gamma-cat/tree/master/output/{{ resource.url_output }}>`__
+    * `Download file <{{ resource.url_webpage }}>`__
 {% else %}
 * None
 {% endfor %}
 
 
-Lightcurves
------------
+Literature
+----------
 
-{% for resource in resources.resources if resource.type == 'lightcurve' %}
-* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
-{% else %}
-* None
-{% endfor %}
+A list of papers of interest related to this source on ADS.
 
-Datasets
---------
-
-{% for resource in resources.resources if resource.type == 'ds' %}
-* `{{ resource.reference_id }} <../../output/{{ resource.url }}>`__
+{% for record in source.ads_records %}
+* `{{ record.reference_id }} <{{ record.url }}>`__
 {% else %}
 * None
 {% endfor %}

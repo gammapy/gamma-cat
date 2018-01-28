@@ -32,7 +32,7 @@ This site is organised in the following sections:
 
    use/index
    use/source_list
-   use/publication_list
+   use/reference_list
    stats/index
    changes
 

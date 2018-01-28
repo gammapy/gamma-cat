@@ -108,14 +108,14 @@ if not on_rtd:
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 
-# On RTD, run `make.py all --webpage` to generate data files and run the first part
+# On RTD, we run `make.py webpage` to run the first part
 # of the webpage build (auto-generate RST pages)
-# This was added and dicussed in https://github.com/gammapy/gamma-cat/pull/172
+# This was added and discussed in https://github.com/gammapy/gamma-cat/pull/172
 # Some info what RTD executes is here:
 # http://docs.readthedocs.io/en/latest/builds.html#understanding-what-s-going-on
 if on_rtd:
     import subprocess
-    cmd = f'cd .. && {sys.executable} make.py all --clean --webpage'
+    cmd = f'cd .. && {sys.executable} make.py clean && {sys.executable} webpage'
     print(f'Executing: {cmd}')
     subprocess.call(cmd, shell=True)
 

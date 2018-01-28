@@ -8,7 +8,7 @@
 # meta: !!omap
 # - data_type: lc
 # - source_id: 91
-# - reference_id: 2017A%26A...603A..31A
+# - reference_id: 2017A&A...603A..31A
 # - telescope: veritas
 # - {SED_TYPE: flux}
 # - comments: |

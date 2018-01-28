@@ -7,7 +7,8 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 91
-# - reference_id: 2017A%26A...603A..31A
+# - reference_id: 2017A&A...603A..31A
+# - file_id: 2
 # - telescope: veritas
 # - comments: |
 #      VERITAS low state

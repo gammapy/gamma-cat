@@ -1,0 +1,12 @@
+.. include:: ../references.rst
+
+Data by reference
+=================
+
+List of references in gamma-cat:
+
+{% for reference in references %}
+
+* `{{ reference.reference_id }} <references/{{ reference.reference_id }}.html>`__
+
+{% endfor %}

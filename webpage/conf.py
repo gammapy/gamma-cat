@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'gamma-cat'
-copyright = '2016, gamma-cat contributors'
+copyright = '2018, gamma-cat contributors'
 author = 'gamma-cat contributors'
 
 # The version info for the project you're documenting, acts as replacement for

@@ -88,7 +88,8 @@ class NA:
 
 
 jinja_env = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(str(gammacat_info.webpage_path / 'templates'))
+    loader=jinja2.FileSystemLoader(str(gammacat_info.webpage_path / 'templates')),
+    undefined=jinja2.StrictUndefined,
 )
 
 

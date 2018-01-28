@@ -90,9 +90,10 @@ def cli_clean():
     cmd = ' '.join([
         'rm', '-r',
         'webpage/_build',
-        'webpage/use/sources',
         'webpage/use/source_list.rst',
-        'webpage/use/publication_list.rst',
+        'webpage/use/sources',
+        'webpage/use/reference_list.rst',
+        'webpage/use/references',
     ])
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)

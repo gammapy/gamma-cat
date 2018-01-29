@@ -86,14 +86,16 @@ def cli_checks(step):
 @cli.command(name='clean')
 def cli_clean():
     """Remove all auto-generated files"""
+    base_dir = gammacat_info.base_dir
+
     # TODO: this list of files & folders is incomplete
     cmd = ' '.join([
         'rm', '-r',
-        'webpage/_build',
-        'webpage/use/source_list.rst',
-        'webpage/use/sources',
-        'webpage/use/reference_list.rst',
-        'webpage/use/references',
+        str(base_dir / 'webpage/_build'),
+        str(base_dir / 'webpage/use/source_list.rst'),
+        str(base_dir / 'webpage/use/sources'),
+        str(base_dir / 'webpage/use/reference_list.rst'),
+        str(base_dir / 'webpage/use/references'),
     ])
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)

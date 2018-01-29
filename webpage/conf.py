@@ -19,6 +19,8 @@
 #
 import os
 import sys
+from pathlib import Path
+
 sys.path.insert(0, os.path.abspath('..'))
 
 # -- General configuration ------------------------------------------------
@@ -115,9 +117,17 @@ if not on_rtd:
 # http://docs.readthedocs.io/en/latest/builds.html#understanding-what-s-going-on
 if on_rtd:
     import subprocess
-    cmd = f'cd .. && {sys.executable} make.py clean && {sys.executable} webpage'
+
+    cwd = Path('..').resolve()
+    print('cwd:', cwd)
+
+    cmd = f'{sys.executable} make.py clean'
     print(f'Executing: {cmd}')
-    subprocess.call(cmd, shell=True)
+    subprocess.call(cmd, cwd=cwd, shell=True)
+
+    cmd = f'{sys.executable} make.py webpage'
+    print(f'Executing: {cmd}')
+    subprocess.call(cmd, cwd=cwd, shell=True)
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

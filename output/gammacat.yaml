@@ -6879,8 +6879,8 @@
   - sed_n_points: 8
   - sed_n_ul: 0
   - sed_e_ref: 3.6062498092651367
-  - sed_e_min: .nan
-  - sed_e_max: .nan
+  - sed_e_min: 2.315000057220459
+  - sed_e_max: 10.0
   - sed_dnde: 2.455676287316244e-12
   - sed_dnde_err: .nan
   - sed_dnde_errp: 7.217299674566746e-13
@@ -7131,8 +7131,8 @@
   - sed_n_points: 17
   - sed_n_ul: 0
   - sed_e_ref: 2.7964706420898438
-  - sed_e_min: .nan
-  - sed_e_max: .nan
+  - sed_e_min: 2.2064707279205322
+  - sed_e_max: 4.441176414489746
   - sed_dnde: 1.6919294090755876e-11
   - sed_dnde_err: .nan
   - sed_dnde_errp: 4.6973362699542776e-12
@@ -12173,8 +12173,8 @@
   - sed_n_points: 8
   - sed_n_ul: 0
   - sed_e_ref: 5.454999923706055
-  - sed_e_min: .nan
-  - sed_e_max: .nan
+  - sed_e_min: 3.7387499809265137
+  - sed_e_max: 11.391249656677246
   - sed_dnde: 9.036600135715889e-13
   - sed_dnde_err: .nan
   - sed_dnde_errp: 2.670089897880562e-13

@@ -2,6 +2,8 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e_min, datatype: float32, unit: TeV}
+# - {name: e_max, datatype: float32, unit: TeV}
 # - {name: dnde, datatype: float32, unit: cm-2 s-1 TeV-1}
 # - {name: dnde_errp, datatype: float32, unit: cm-2 s-1 TeV-1}
 # - {name: dnde_errn, datatype: float32, unit: cm-2 s-1 TeV-1}
@@ -10,15 +12,13 @@
 # - source_id: 158
 # - reference_id: 2018arXiv180106020H
 # - telescope: hess
-# - comments: |
-#     Spectral points obtained via email by Daniel Gottschall on Nov 3, 2016
-#     TODO POSSIBLY NOT FINAL!
-e_ref dnde dnde_errp dnde_errn
- 0.54 8.29e-012 3.58e-012 3.54e-012
- 0.75 7.63e-012 1.24e-012 1.22e-012
- 1.09 2.06e-012 5.26e-013 5.19e-013
- 1.61 9.94e-013 2.42e-013 2.38e-013
- 2.36 4.36e-013 1.10e-013 1.07e-013
- 3.45 1.76e-013 5.11e-014 4.96e-014
- 5.05 5.69e-014 2.34e-014 2.25e-014
-14.00 2.51e-015 1.34e-015 1.29e-015
+# - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_shellsearch_paper.html
+e_ref e_min e_max dnde dnde_errp dnde_errn
+ 0.54 0.42 0.62 8.29E-12 3.58E-12 3.54E-12
+ 0.75 0.62 0.91 7.63E-12 1.24E-12 1.22E-12
+ 1.09 0.91 1.33 2.06E-12 5.26E-13 5.19E-13
+ 1.61 1.33 1.96 9.94E-13 2.42E-13 2.38E-13
+ 2.36 1.96 2.87 4.36E-13 1.10E-13 1.07E-13
+ 3.45 2.87 4.22 1.76E-13 5.11E-14 4.96E-14
+ 5.05 4.22 6.19 5.69E-14 2.34E-14 2.25E-14
+14    6.19 61.9 2.51E-15 1.34E-15 1.29E-15

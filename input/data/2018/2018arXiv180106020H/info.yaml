@@ -11,5 +11,9 @@ datasets:
 - tev-000158-sed.ecsv
 
 data_entry:
-  status: complete 
+  status: complete
   reviewed: no
+  notes: |
+    Data is from https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_shellsearch_paper.html
+    They also give radial and azimuthal profiles as well as images for the SNRs.
+    So far we haven't collected those in Gammapy, not sure if we should add them.

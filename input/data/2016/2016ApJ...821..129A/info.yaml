@@ -14,3 +14,4 @@ datasets:
 data_entry:
   status: complete
   reviewed: no
+  notes: multiple spectral models for GC (ID 106) given in paper; added them in comments in yaml file

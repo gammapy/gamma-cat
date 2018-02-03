@@ -11,11 +11,12 @@
 # - reference_id: 2012ApJ...754L..10A
 # - telescope: magic
 # - {SED_TYPE: flux}
-# - UL_CONF: 0.99
+# - {comments: Table 1 in paper incorrect, figure is correct
+#    values below obtained directly from authors}
 e_min time flux flux_err
-0.2 55500.141 4.2e-12 0.5e-12
-0.2 55557.102 4.2e-12 0.4e-12
-0.2 55558.134 3.8e-12 3.3e-12
+0.2 55500.141 2.1e-12 4.2e-12
+0.2 55557.102 1.4e-12 4.2e-12
+0.2 55558.134 -3.8e-12 3.3e-12
 0.2 55598.880 9.4e-12 3.5e-12
 0.2 55599.903 6.6e-12 2.6e-12
 0.2 55600.873 9.3e-12 3.6e-12

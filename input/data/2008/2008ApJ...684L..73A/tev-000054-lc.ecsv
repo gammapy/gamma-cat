@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 54
+# - reference_id: 2008ApJ...684L..73A
+# - telescope: veritas
+# - comments: |
+#       light curve points extracted from Fig.2
+#       using WebPlotDigitizer
+e_min time_min time_max flux flux_err
+0.2     54475.574     54484.693     1.596e-12     1.347e-12
+0.2     54502.610     54510.512     -0.549e-12     1.247e-12
+0.2     54528.611     54533.626     1.197e-12     2.843e-12
+0.2     54536.496     54536.556     -1.197e-12     3.591e-12
+0.2     54537.625     54537.705      7.581e-12     3.242e-12
+0.2     54538.766     54538.766     17.456e-12     2.893e-12
+0.2     54539.629     54539.739     11.421e-12     2.843e-12
+0.2     54540.645     54540.795      4.988e-12     4.239e-12
+0.2     54553.590     54553.689     8.180e-12     7.980e-12
+0.2     54556.421     54568.427     1.097e-12     1.646e-12

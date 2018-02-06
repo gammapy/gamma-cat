@@ -8,6 +8,6 @@ datasets:
   - tev-000036-lc.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: light curve missing (Fig 3), otherwise complete
+  notes: light curve points (Fig 3) extracted from figure

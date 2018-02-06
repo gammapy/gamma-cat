@@ -5,6 +5,7 @@ telescope: [veritas]
 datasets:
   - tev-000036.yaml
   - tev-000036-sed.ecsv
+  - tev-000036-lc.ecsv
 
 data_entry:
   status: incomplete

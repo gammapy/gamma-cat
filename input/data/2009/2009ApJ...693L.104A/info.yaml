@@ -3,10 +3,11 @@ source_id: [11]
 telescope: [veritas]
 
 datasets:
- - tev-000011.yaml
- - tev-000011-sed.ecsv
+    - tev-000011.yaml
+    - tev-000011-sed.ecsv
+    - tev-000011-lc-1.ecsv
+    - tev-000011-lc-2.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: light-curve points missing (Fig 3), otherwise complete

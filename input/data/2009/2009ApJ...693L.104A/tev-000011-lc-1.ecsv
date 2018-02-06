@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time_min, unit: MJD, datatype: float64}
+# - {name: time_max, unit: MJD, datatype: float64}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 11
+# - reference_id: 2009ApJ...693L.104A
+# - file_id: 1
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - comments: |
+#         fluxes per darkrun
+e_min time_min time_max flux flux_err
+0.2 54356 54384 3.8953e-12 2.4194e-12
+0.2 54734 54749 1.759e-11  1.2604e-12
+0.2 54759 54777 6.9861e-12 2.5567e-12
+0.2 54789 54805 1.564e-11  4.4609e-12

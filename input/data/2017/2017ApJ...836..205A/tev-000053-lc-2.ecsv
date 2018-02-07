@@ -1,0 +1,30 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: m-2 s-1, datatype: float64}
+# - {name: livetime, unit: day, datatype: float64}
+# - {name: flux_err, unit: m-2 s-1, datatype: float64}
+# - {name: e_min, unit: TeV, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 53
+# - reference_id: 2017ApJ...836..205A
+# - file_id: 2
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - comments: |
+#      Fig 1 (top right): 2014 light curve
+time flux livetime flux_err e_min
+56686.4455    4.6679e-08    0.0293    3.61099e-08    0.199526
+56696.5228    4.95266e-06    0.0154    1.66837e-07    0.199526
+56697.4618    6.44063e-08    0.0088    4.80279e-08    0.199526
+56698.4933    8.54857e-08    0.0182    3.84546e-08    0.199526
+56699.5086    5.29527e-08    0.0044    7.22363e-08    0.199526
+56714.4493    -1.37426e-08    0.0088    4.7576e-08    0.199526
+56722.2844    -4.42257e-08    0.0202    3.65e-08    0.199526
+56723.2866    -4.55508e-08    0.0069    3.09212e-08    0.199526
+56738.2348    8.45848e-08    0.0071    6.3151e-08    0.199526
+56745.2948    9.40638e-08    0.0269    3.81564e-08    0.199526
+56799.2524    -8.83077e-09    0.0060    4.55925e-08    0.251189
+56802.1899    -2.96931e-08    0.0091    2.85983e-08    0.199526

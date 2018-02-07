@@ -5,8 +5,11 @@ telescope: [veritas]
 datasets:
   - tev-000053-1.yaml
   - tev-000053-2.yaml
+  - tev-000053-lc-1.ecsv
+  - tev-000053-lc-2.ecsv
+  - tev-000053-lc-3.ecsv
+  - tev-000053-sed.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: light curves missing (Fig 1 top panels, Fig 3 flare), spectral points missing (Fig 2), otherwise complete

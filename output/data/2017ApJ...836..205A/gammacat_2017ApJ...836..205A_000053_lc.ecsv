@@ -1,0 +1,29 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1 / (m2 s), datatype: float64}
+# - {name: livetime, unit: d, datatype: float64}
+# - {name: flux_err, unit: 1 / (m2 s), datatype: float64}
+# - {name: e_min, unit: TeV, datatype: float64}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 53}
+# - {reference_id: 2017ApJ...836..205A}
+# - {file_id: 3}
+# - {telescope: veritas}
+# - {SED_TYPE: flux}
+# - {comments: 'Fig 3: flare light curve'}
+# schema: astropy-2.0
+time flux livetime flux_err e_min
+56696.509 4.205e-06 0.00347 4.51e-07 0.2
+56696.512 5.526e-06 0.00347 5.15e-07 0.2
+56696.516 4.823e-06 0.00347 4.91e-07 0.2
+56696.519 5.642e-06 0.00347 5.16e-07 0.2
+56696.523 4.933e-06 0.00347 4.96e-07 0.2
+56696.526 5.002e-06 0.00347 5.03e-07 0.2
+56696.53 3.001e-06 0.00347 5.87e-07 0.2
+56696.533 4.519e-06 0.00347 5.69e-07 0.2
+56696.537 6.906e-06 0.00347 7.02e-07 0.2
+56696.54 4.512e-06 0.00347 5.73e-07 0.2
+56696.543 5.253e-06 0.00347 7.34e-07 0.2

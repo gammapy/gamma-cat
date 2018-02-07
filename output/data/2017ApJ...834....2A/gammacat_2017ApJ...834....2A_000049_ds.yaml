@@ -1,5 +1,12 @@
 source_id: 49
 reference_id: 2017ApJ...834....2A
+file_id: 2
 telescope: veritas
 
-# TODO: Add data
+data:
+  livetime: 2.18h
+  significance: 74.3
+  n_on: 1443
+  n_off: 315
+  alpha: 0.1
+

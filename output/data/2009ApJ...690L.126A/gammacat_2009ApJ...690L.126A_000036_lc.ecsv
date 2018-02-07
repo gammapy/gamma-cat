@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1 / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: 1 / (cm2 s), datatype: float64}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 36}
+# - {reference_id: 2009ApJ...690L.126A}
+# - {telescope: veritas}
+# - {SED_TYPE: flux}
+# - {comments: 'light curve points extracted from Fig.2
+# 
+#     using WebPlotDigitizer'}
+# schema: astropy-2.0
+e_min time flux flux_err
+0.3 54409.6 2.71e-12 4.21e-12
+0.3 54439.5 -7.84e-13 3.02e-12
+0.3 54466.4 9.19e-13 5.07e-12
+0.3 54504.0 1.07e-11 3.89e-12
+0.3 54532.4 1.45e-12 5.4e-13
+0.3 54560.0 4.26e-13 1.47e-12

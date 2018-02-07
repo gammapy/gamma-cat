@@ -12,8 +12,7 @@ pos:
   dec: {val: +18d52m12s, err: 20s, err_sys: 0.02d}
 
 morph:
-  type: gauss
-  sigma: {val: 3.3m, err: 0.5m}
+  type: point
 
 spec:
   model:

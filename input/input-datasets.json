@@ -92,6 +92,20 @@
     },
     {
         "source_id": 11,
+        "reference_id": "2009ApJ...693L.104A",
+        "file_id": 1,
+        "type": "lightcurve",
+        "location": "data/2009/2009ApJ...693L.104A/tev-000011-lc-1.ecsv"
+    },
+    {
+        "source_id": 11,
+        "reference_id": "2009ApJ...693L.104A",
+        "file_id": 2,
+        "type": "lightcurve",
+        "location": "data/2009/2009ApJ...693L.104A/tev-000011-lc-2.ecsv"
+    },
+    {
+        "source_id": 11,
         "reference_id": "2011ApJ...726...43A",
         "file_id": 1,
         "type": "ds",
@@ -871,6 +885,13 @@
         "source_id": 36,
         "reference_id": "2009ApJ...690L.126A",
         "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2009/2009ApJ...690L.126A/tev-000036-lc.ecsv"
+    },
+    {
+        "source_id": 36,
+        "reference_id": "2009ApJ...690L.126A",
+        "file_id": -1,
         "type": "sed",
         "location": "data/2009/2009ApJ...690L.126A/tev-000036-sed.ecsv"
     },
@@ -1471,10 +1492,45 @@
     },
     {
         "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 1,
+        "type": "lightcurve",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-lc-1.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 1,
+        "type": "sed",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-sed-1.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 2,
+        "type": "sed",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-sed-2.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 3,
+        "type": "sed",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-sed-3.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 4,
+        "type": "sed",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-sed-4.ecsv"
+    },
+    {
+        "source_id": 49,
         "reference_id": "2017ApJ...834....2A",
-        "file_id": -1,
+        "file_id": 1,
         "type": "ds",
-        "location": "data/2017/2017ApJ...834....2A/tev-000049.yaml"
+        "location": "data/2017/2017ApJ...834....2A/tev-000049-1.yaml"
     },
     {
         "source_id": 49,
@@ -1489,6 +1545,13 @@
         "file_id": 1,
         "type": "sed",
         "location": "data/2017/2017ApJ...834....2A/tev-000049-sed-1.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2017ApJ...834....2A",
+        "file_id": 2,
+        "type": "ds",
+        "location": "data/2017/2017ApJ...834....2A/tev-000049-2.yaml"
     },
     {
         "source_id": 49,
@@ -1575,11 +1638,46 @@
         "location": "data/2017/2017ApJ...836..205A/tev-000053-2.yaml"
     },
     {
+        "source_id": 53,
+        "reference_id": "2017ApJ...836..205A",
+        "file_id": -1,
+        "type": "sed",
+        "location": "data/2017/2017ApJ...836..205A/tev-000053-sed.ecsv"
+    },
+    {
+        "source_id": 53,
+        "reference_id": "2017ApJ...836..205A",
+        "file_id": 1,
+        "type": "lightcurve",
+        "location": "data/2017/2017ApJ...836..205A/tev-000053-lc-1.ecsv"
+    },
+    {
+        "source_id": 53,
+        "reference_id": "2017ApJ...836..205A",
+        "file_id": 2,
+        "type": "lightcurve",
+        "location": "data/2017/2017ApJ...836..205A/tev-000053-lc-2.ecsv"
+    },
+    {
+        "source_id": 53,
+        "reference_id": "2017ApJ...836..205A",
+        "file_id": 3,
+        "type": "lightcurve",
+        "location": "data/2017/2017ApJ...836..205A/tev-000053-lc-3.ecsv"
+    },
+    {
         "source_id": 54,
         "reference_id": "2008ApJ...684L..73A",
         "file_id": -1,
         "type": "ds",
         "location": "data/2008/2008ApJ...684L..73A/tev-000054.yaml"
+    },
+    {
+        "source_id": 54,
+        "reference_id": "2008ApJ...684L..73A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2008/2008ApJ...684L..73A/tev-000054-lc.ecsv"
     },
     {
         "source_id": 54,
@@ -1678,6 +1776,13 @@
         "file_id": -1,
         "type": "ds",
         "location": "data/2008/2008ApJ...679..397A/tev-000058.yaml"
+    },
+    {
+        "source_id": 58,
+        "reference_id": "2008ApJ...679..397A",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2008/2008ApJ...679..397A/tev-000058-lc.ecsv"
     },
     {
         "source_id": 58,
@@ -2525,6 +2630,27 @@
         "file_id": -1,
         "type": "ds",
         "location": "data/2015/2015ApJ...812...65F/tev-000091-2.yaml"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2015ApJ...812...65F",
+        "file_id": -1,
+        "type": "lightcurve",
+        "location": "data/2015/2015ApJ...812...65F/tev-000091-lc.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2015ApJ...812...65F",
+        "file_id": 1,
+        "type": "sed",
+        "location": "data/2015/2015ApJ...812...65F/tev-000091-sed-1.ecsv"
+    },
+    {
+        "source_id": 91,
+        "reference_id": "2015ApJ...812...65F",
+        "file_id": 2,
+        "type": "sed",
+        "location": "data/2015/2015ApJ...812...65F/tev-000091-sed-2.ecsv"
     },
     {
         "source_id": 91,

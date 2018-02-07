@@ -5,8 +5,11 @@ telescope: [veritas, magic]
 datasets:
   - tev-000091-1.yaml
   - tev-000091-2.yaml 
+  - tev-000091-sed-1.ecsv
+  - tev-000091-sed-2.ecsv
+  - tev-000091-lc.ecsv
 
 data_entry:
   status: incomplete
   reviewed: no
-  notes: VERITAS light curve (Fig 5) and spectral points (Fig 4) missing, otherwise complete (VERITAS)
+  notes: VERITAS data complete

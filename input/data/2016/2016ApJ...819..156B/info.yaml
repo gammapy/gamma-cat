@@ -15,8 +15,13 @@ datasets:
   - tev-000049-9.yaml
   - tev-000049-10.yaml
   - tev-000049-11.yaml
+  - tev-000049-sed-1.ecsv
+  - tev-000049-sed-2.ecsv
+  - tev-000049-sed-3.ecsv
+  - tev-000049-sed-4.ecsv
+  - tev-000049-lc-1.ecsv
 
 data_entry:
   status: incomplete
   reviewed: no
-  notes: tev-000049-1.yaml, tev-000049-1.yaml, tev-000049-1.yaml should be log-parabolic fit, light curve (Fig 7) and SED points (Fig 13) missing for VERITAS, otherwise complete
+  notes: tev-000049-1.yaml, tev-000049-1.yaml, tev-000049-1.yaml should be log-parabolic fit, VERTIAS data complete

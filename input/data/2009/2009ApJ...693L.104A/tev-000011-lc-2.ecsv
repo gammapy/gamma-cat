@@ -1,0 +1,29 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 11
+# - reference_id: 2009ApJ...693L.104A
+# - file_id: 2
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - comments: |
+#         daily fluxes (inset of Figure 3)
+e_min time flux flux_err
+0.2 54734       5.4951e-12      5.7656e-12
+0.2 54737       1.6307e-11      7.8604e-12
+0.2 54738       1.0397e-11      6.1925e-12
+0.2 54740       1.4033e-11      3.1062e-12
+0.2 54741       1.487e-11       3.0261e-12
+0.2 54742       2.1276e-11      5.0959e-12
+0.2 54743       7.2576e-12      5.3619e-12
+0.2 54745       1.2368e-11      3.5848e-12
+0.2 54746       7.6289e-12      4.5684e-12
+0.2 54747       2.5728e-11      3.8591e-12
+0.2 54748       3.1666e-11      5.7306e-12
+0.2 54749       4.0492e-11      7.0107e-12

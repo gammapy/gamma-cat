@@ -1,42 +1,31 @@
 .. include:: references.rst
 
-gamma-cat
-=========
+******************************************************************************
+Gamma-Cat - An open data collection and source catalog for gamma-ray astronomy
+******************************************************************************
 
-**gamma-cat** is an open data collection and source catalog for gamma-ray astronomy.
+Gamma-Cat is an open data colleciton and source catalog for currently 168 TeV gamma-ray sources.
+This page (http://gamma-cat.readthedocs.io) contains the Gamma-Cat documentation.
+It provides an introduction to Gamma-Cat, see :ref:`introduction`, a description of accessing the catalog and collection themselves, see :ref:`datadocs`, a documentation for users, see :ref:`userdocs`, and for contributors, see :ref:`contributordocs`.
 
-* Data and Docs (this site): |gamma-cat-docs|
-* Repository: |gamma-cat-repo|
-* Explore `gamma-cat` and other gamma-ray data at `gamma-sky.net`_
-* Access and analyse `gamma-cat` and other gamma-ray data from Python: `gammapy.catalog`_
+.. toctree::
+   :maxdepth: 3
 
-This site is organised in the following sections:
+   intro/index
 
-* :ref:`about-docs` - Quick introduction to `gamma-cat`
-* :ref:`user-docs` - Detailed info about `gamma-cat`
-* :ref:`contributor-docs` - How to give feedback and contribute
+.. toctree::
+   :maxdepth: 3
 
-.. _about-docs:
+   data/index
 
 .. toctree::
    :maxdepth: 1
-   :caption: About
-
-   about
-
-.. _user-docs:
-
-.. toctree::
-   :maxdepth: 1
-   :caption: User Documentation
 
    use/index
-   use/source_list
-   use/reference_list
    stats/index
    changes
 
-.. _contributor-docs:
+.. _contributordocs:
 
 .. toctree::
    :maxdepth: 1
@@ -47,3 +36,10 @@ This site is organised in the following sections:
    contribute/workflow
    contribute/code
    contribute/details
+
+TODO: Put the following four items to useful places
+
+* Data and Docs (this site): |gamma-cat-docs|
+* Repository: |gamma-cat-repo|
+* Explore `gamma-cat` and other gamma-ray data at `gamma-sky.net`_
+* Access and analyse `gamma-cat` and other gamma-ray data from Python: `gammapy.catalog`_

@@ -92,10 +92,10 @@ def cli_clean():
     cmd = ' '.join([
         'rm', '-r',
         str(base_dir / 'webpage/_build'),
-        str(base_dir / 'webpage/use/source_list.rst'),
-        str(base_dir / 'webpage/use/sources'),
-        str(base_dir / 'webpage/use/reference_list.rst'),
-        str(base_dir / 'webpage/use/references'),
+        str(base_dir / 'webpage/data/source_list.rst'),
+        str(base_dir / 'webpage/data/sources'),
+        str(base_dir / 'webpage/data/reference_list.rst'),
+        str(base_dir / 'webpage/data/references'),
     ])
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)

@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float64, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# - {name: significance, datatype: float32, description: Excess significance}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 1}
+# - {reference_id: 2013ApJ...764...38A}
+# - {telescope: veritas}
+# schema: astropy-2.0
+e_min e_max dnde dnde_err significance
+0.56 1.0 1.9e-12 9e-13 2.3
+1.0 1.78 7.3e-13 1.7e-13 4.5
+1.78 3.16 1.2e-13 4e-14 3.3
+3.16 5.62 3.4e-14 1.2e-14 3.1
+5.62 10.0 1.2e-14 5e-15 2.5
+10.0 17.78 7.1e-15 2.5e-15 2.8

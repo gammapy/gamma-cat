@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 49}
+# - {reference_id: 2011ApJ...734..110B}
+# - {telescope: argo}
+# - mjd: {max: 55255.0, min: 54405.0}
+# - {comments: 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat
+#     by Jonathan Biteau, argo data marked by "Flux2 " in the paper.'}
+# - {file_id: 2}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.355 4.09e-10 2.4e-10 2.4e-10
+0.708001 1.67999e-10 3.92999e-11 3.92999e-11
+1.12 4.54999e-11 1.13e-11 1.13e-11
+2.24 4.17e-12 2.63e-12 2.63e-12
+4.46999 7.66002e-13 1.02e-12 1.02e-12

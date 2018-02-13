@@ -1,0 +1,29 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# - {name: significance, datatype: float32, description: Excess significance}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 25}
+# - {reference_id: 2008ICRC....2..803K}
+# - {telescope: hess}
+# - {comments: Data taken from table 4}
+# schema: astropy-2.0
+e_ref dnde dnde_err significance
+0.39 3.87e-10 3.8e-11 16.7
+0.62 1.14e-10 3e-12 73.4
+0.97 3.72e-11 8e-13 78.4
+1.54 1.21e-11 3e-13 67.7
+2.43 3.93e-12 1.2e-13 55.9
+3.84 1.13e-12 5e-14 41.3
+6.06 3.4e-13 1.9e-14 30.2
+9.54 1.01e-13 7e-15 22.4
+15.0 2.05e-14 2.7e-15 12.4
+23.5 4.91e-15 1e-15 7.9
+36.7 7.56e-16 2.84e-16 4.1
+57.0 7.22e-17 3.4e-17 3.8

@@ -1,0 +1,46 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 37}
+# - {reference_id: 2012A&A...548A..38A}
+# - {telescope: hess}
+# - {comments: 'From https://github.com/zblz/gammafit/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_cocoon.spec
+# 
+#     See here for meaning of columns:
+# 
+#     https://github.com/zblz/naima/blob/e8058e7ebd1080209aa6dcb2e6e183f4606896a4/examples/velax_function_demo.py#L15'}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.7185 1.055e-11 3.2840002e-12 3.2799995e-12
+0.8684 1.304e-11 2.1299993e-12 2.130001e-12
+1.051 9.211e-12 1.401e-12 1.3989998e-12
+1.274 8.515e-12 9.580002e-13 9.609995e-13
+1.546 5.378e-12 7.07e-13 7.089997e-13
+1.877 4.455e-12 5.050001e-13 5.069998e-13
+2.275 3.754e-12 3.3000013e-13 3.3399975e-13
+2.759 2.418e-12 2.6800003e-13 2.6999995e-13
+3.352 1.605e-12 1.8e-13 1.8299999e-13
+4.078 1.445e-12 1.2600001e-13 1.29e-13
+4.956 9.24e-13 9.49e-14 9.699999e-14
+6.008 7.348e-13 6.4700036e-14 6.709997e-14
+7.271 3.863e-13 4.539999e-14 4.7e-14
+8.795 3.579e-13 3.5699986e-14 3.7500005e-14
+10.65 1.696e-13 2.4900004e-14 2.5900004e-14
+12.91 1.549e-13 2.0600004e-14 2.159999e-14
+15.65 6.695e-14 1.1339999e-14 1.2300003e-14
+18.88 2.105e-14 1.3904e-14 1.32000005e-14
+22.62 3.279e-14 6.830001e-15 7.510001e-15
+26.87 3.026e-14 5.9100013e-15 6.66e-15
+31.61 1.861e-14 4.3800006e-15 5.1200008e-15
+36.97 5.653e-15 2.169e-15 2.9169998e-15
+43.08 3.479e-15 1.6409999e-15 2.41e-15
+52.37 1.002e-15 8.327e-16 1.615e-15

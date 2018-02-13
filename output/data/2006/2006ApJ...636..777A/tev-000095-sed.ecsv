@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 95}
+# - {reference_id: 2006ApJ...636..777A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/ApJ_636.html'}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.420455 6.79453e-12 1.72508e-12 1.87001e-12
+0.597421 1.98139e-12 3.64813e-13 3.92691e-13
+0.880134 8.90026e-13 2.4564e-13 2.71686e-13
+1.27084 5.01412e-13 1.48601e-13 1.66528e-13

@@ -1,0 +1,35 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 25}
+# - {reference_id: 2014ApJ...781L..11A}
+# - {file_id: 2}
+# - {telescope: veritas}
+# - {comments: 'spectrum during MeV flare
+# 
+#     obtained per email by G.Richards (2017-04-17)'}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err
+1.12024 0.99841 1.25693 2.5448596e-11 1.3836544e-12
+1.4103 1.25693 1.58238 1.3630335e-11 8.660416e-13
+1.77546 1.58238 1.9921 6.917898e-12 5.303246e-13
+2.23517 1.9921 2.5079 4.199032e-12 3.5838983e-13
+2.81391 2.5079 3.15726 2.3660128e-12 2.3428378e-13
+3.5425 3.15726 3.97475 1.2180355e-12 1.449626e-13
+4.45975 3.97475 5.00392 7.574699e-13 1.0120781e-13
+5.61449 5.00392 6.29956 3.919835e-13 6.4329604e-14
+7.06822 6.29956 7.93067 2.3175664e-13 4.5335307e-14
+8.89836 7.93067 9.98413 6.843564e-14 2.2576933e-14
+11.2024 9.98413 12.5693 2.6521876e-14 1.17543685e-14
+14.103 12.5693 15.8238 1.8564052e-14 7.833697e-15
+17.7546 15.8238 19.921 8.067518e-15 4.6380403e-15
+22.3517 19.921 25.079 1.2799179e-14 5.436826e-15

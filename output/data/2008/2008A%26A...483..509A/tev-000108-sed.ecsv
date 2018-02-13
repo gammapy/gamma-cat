@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 108}
+# - {reference_id: 2008A&A...483..509A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/hessj1745-303-aux.html'}
+# - {comments: 'This is the full spectrum from Figure 2.
+# 
+#     TODO: also add spectrum for region A from that webpage.'}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.34603 5.2758183e-11 7.0760737e-12 7.11861e-12
+0.604812 1.0849942e-11 1.4347718e-12 1.4455384e-12
+1.06183 2.3849956e-12 3.7647248e-13 3.8011394e-13
+1.87934 4.715982e-13 1.1463981e-13 1.1614456e-13
+3.32625 1.1731383e-13 4.03208e-14 4.099398e-14
+7.69408 7.9875664e-15 6.0470207e-15 6.1585165e-15
+23.9738 6.1693454e-16 6.9803556e-16 7.3020296e-16

@@ -1,0 +1,30 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 61}
+# - {reference_id: 2005A&A...439.1013A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA439_1013.html'}
+# - {comments: Spectral points from Figure 4.}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err
+0.430986 0.373 0.518 2.46436e-11 3.9872e-12
+0.598853 0.518 0.72 1.2562e-11 1.44968e-12
+0.832103 0.72 1.0 7.26468e-12 6.74924e-13
+1.1562 1.0 1.39 2.96451e-12 3.28039e-13
+1.60654 1.39 1.931 1.76452e-12 1.81729e-13
+2.23228 1.931 2.683 6.54495e-13 9.81589e-14
+3.10174 2.683 3.728 3.34518e-13 4.93971e-14
+4.30986 3.728 5.179 1.32126e-13 2.55008e-14
+5.98853 5.179 7.197 2.64358e-14 1.17119e-14
+8.32103 7.197 10.0 1.09547e-14 6.0119e-15
+11.562 10.0 13.895 6.85537e-15 3.14979e-15

@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 65}
+# - {reference_id: 2006A&A...456..245A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/kookaburra_auxinfo.html'}
+# - {comments: H.E.S.S. data points for Figure 2 (open points - HESS J1418-609)}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.39 3.14e-11 9.16e-12 9e-12
+0.61 7.62e-12 1.08e-12 1.12e-12
+0.97 2.43e-12 3.86e-13 3.97e-13
+1.54 9.85e-13 1.69e-13 1.67e-13
+2.45 4.75e-13 8.25e-14 8.03e-14
+3.88 1.26e-13 3.34e-14 3.34e-14
+6.14 4.95e-14 1.51e-14 1.45e-14
+9.73 2.51e-14 7.65e-15 7.53e-15
+15.43 6.37e-15 2.97e-15 3e-15

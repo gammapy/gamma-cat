@@ -1,0 +1,35 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 25}
+# - {reference_id: 2014ApJ...781L..11A}
+# - {file_id: 1}
+# - {telescope: veritas}
+# - {comments: 'baseline spectrum
+# 
+#     obtained per email by G.Richards (2017-04-17)'}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err
+1.1204 0.99856 1.25711 2.6478214e-11 1.3817139e-12
+1.4105 1.25711 1.58261 1.2877992e-11 8.373015e-13
+1.77572 1.58261 1.99239 7.830504e-12 5.327413e-13
+2.2355 1.99239 2.50827 4.048176e-12 3.284648e-13
+2.81433 2.50827 3.15773 2.2644788e-12 2.1342464e-13
+3.54303 3.15773 3.97534 1.4482762e-12 1.4880514e-13
+4.46041 3.97534 5.00466 6.7868936e-13 8.985307e-14
+5.61532 5.00466 6.3005 2.9860408e-13 5.388747e-14
+7.06928 6.3005 7.93186 2.6475184e-13 4.3597443e-14
+8.89969 7.93186 9.98561 9.346265e-14 2.3780853e-14
+11.204 9.98561 12.5711 4.991929e-14 1.4994707e-14
+14.105 12.5711 15.8261 2.6682144e-14 9.537473e-15
+17.7572 15.8261 19.9239 2.0842853e-14 7.963196e-15
+22.355 19.9239 25.0827 6.236128e-15 3.901122e-15

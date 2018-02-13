@@ -1,0 +1,41 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 106}
+# - {reference_id: 2006PhRvL..97v1102A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/GC2004_AuxInfo.txt'}
+# - {UL_CONF: 0.95}
+# - {comments: I think this is the spectrum 2004 data spectrum (solid points) in Figure
+#     2.}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp dnde_ul
+0.19 1.022e-10 1.227e-11 1.26e-11 nan
+0.2523 6.217001e-11 5.580008e-12 5.7300033e-12 nan
+0.3387 2.8999974e-11 2.7399962e-12 2.8200012e-12 nan
+0.4584 1.3090004e-11 1.3899976e-12 1.4300014e-12 nan
+0.6233 6.0089897e-12 7.1100114e-13 7.379996e-13 nan
+0.8488 3.4099952e-12 3.9499965e-13 4.1399997e-13 nan
+1.156 1.2629982e-12 2.0299985e-13 2.160003e-13 nan
+1.575 5.064006e-13 1.1229992e-13 1.2120009e-13 nan
+2.147 5.253005e-13 7.940001e-14 8.57999e-14 nan
+2.922 1.7759955e-13 3.9900053e-14 4.4299986e-14 nan
+3.984 1.0449996e-13 2.4410016e-14 2.780002e-14 nan
+5.431 5.313983e-14 1.456999e-14 1.6780002e-14 nan
+7.381 1.3509991e-14 6.6449997e-15 8.239995e-15 nan
+10.02 1.0519977e-14 4.869004e-15 6.0999954e-15 nan
+13.57 nan nan nan 6.463986e-15
+18.76 1.5780012e-15 1.1622998e-15 2.0969995e-15 nan
+26.4 3.1339965e-16 2.8011938e-16 1.0056001e-15 nan
+38.23 nan nan nan 5.6649976e-16

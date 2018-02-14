@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 134}
+# - {reference_id: 2008A&A...484..435A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/HESSJ1912_auxinfo.html'}
+# - {UL_CONF: 0.95}
+# - {comments: SED from Figure 2}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp dnde_ul
+0.872 3.82e-12 1.18e-12 1.21e-12 nan
+1.76 1.02e-12 1.69e-13 1.73e-13 nan
+3.75 8.12e-14 3.21e-14 3.32e-14 nan
+8.03 1.85e-14 7.89e-15 8.27e-15 nan
+24.6 nan nan nan 8.27e-16

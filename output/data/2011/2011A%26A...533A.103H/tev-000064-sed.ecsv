@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 64}
+# - {reference_id: 2011A&A...533A.103H}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA533_A103.html'}
+# schema: astropy-2.0
+e_ref dnde dnde_err
+1.5 1.3e-12 4.23e-13
+2.41 2.51e-13 1.36e-13
+3.86 1.66e-13 5.1e-14
+6.22 5.49e-14 1.9e-14
+10.0 1.81e-14 7.33e-15
+16.1 4.57e-15 3.66e-15

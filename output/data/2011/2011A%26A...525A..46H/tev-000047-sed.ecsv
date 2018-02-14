@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 47}
+# - {reference_id: 2011A&A...525A..46H}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA525_A46.html'}
+# - {comments: This is the data for HESS J1026-582.}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+1.2687 4.97531e-13 2.93908e-13 3.03601e-13
+2.2363 2.35513e-13 7.52542e-14 7.5244e-14
+3.9421 6.47886e-14 3.0949e-14 3.09387e-14
+6.9489 2.64149e-14 9.23773e-15 9.23215e-15
+12.2491 8.3014e-15 4.42673e-15 4.43673e-15
+23.5095 1.8512e-15 8.80792e-16 8.79009e-16

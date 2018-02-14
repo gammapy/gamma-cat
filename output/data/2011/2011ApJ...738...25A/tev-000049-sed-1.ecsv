@@ -1,0 +1,36 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 49}
+# - {reference_id: 2011ApJ...738...25A}
+# - {telescope: veritas}
+# - mjd: {max: 54647.0, min: 54466.0}
+# - {comments: 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat
+#     by Jonathan Biteau, veritas data marked by "HighA " in the paper.'}
+# - {file_id: 1}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.275 1.702e-09 3.295e-10 3.295e-10
+0.34 1.289e-09 1.106e-10 1.106e-10
+0.420002 8.82094e-10 6.07194e-11 6.07194e-11
+0.519001 5.77696e-10 3.69698e-11 3.69698e-11
+0.642 3.50899e-10 2.351e-11 2.351e-11
+0.793002 2.15099e-10 1.52499e-11 1.52499e-11
+0.98 1.302e-10 1.024e-11 1.024e-11
+1.212 6.27303e-11 6.11701e-12 6.11701e-12
+1.498 3.30999e-11 3.85301e-12 3.85301e-12
+1.851 1.661e-11 2.401e-12 2.401e-12
+2.288 1.124e-11 1.732e-12 1.732e-12
+2.828 6.15801e-12 1.138e-12 1.138e-12
+3.496 3.347e-12 7.42699e-13 7.42699e-13
+4.32099 1.16001e-12 4.03104e-13 4.03104e-13
+5.342 5.23e-13 2.371e-13 2.371e-13

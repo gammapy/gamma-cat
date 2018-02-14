@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 49}
+# - {reference_id: 2010A&A...519A..32A}
+# - {telescope: magic}
+# - mjd: {max: 53849.0, min: 53848.0}
+# - {comments: 'This data was collected for 2015ApJ...812...60B and contributed to gamma-cat
+#     by Jonathan Biteau, magic data marked by "2006-04-24 " in the paper.'}
+# - {file_id: 2}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.3425 5.58642e-10 5.10802e-11 5.10802e-11
+0.5965 1.86978e-10 1.84815e-11 1.84815e-11
+1.039 4.46167e-11 6.26949e-12 6.26949e-12
+1.8085 1.47115e-11 2.99085e-12 2.99085e-12
+3.1485 3.3773e-12 1.22412e-12 1.22412e-12

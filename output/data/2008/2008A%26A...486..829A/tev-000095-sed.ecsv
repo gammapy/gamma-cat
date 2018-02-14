@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 95}
+# - {reference_id: 2008A&A...486..829A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA486_829.html'}
+# - {UL_CONF: 0.9}
+# - {comments: Spectrum shown in Figure 2.}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp dnde_ul
+0.369172 6.97602e-12 2.86219e-12 2.89857e-12 nan
+0.701728 2.42214e-12 4.79872e-13 4.87388e-13 nan
+1.35682 2.46466e-13 1.06991e-13 1.09009e-13 nan
+3.65763 2.46519e-14 1.09545e-14 1.11579e-14 nan
+17.3 nan nan nan 1.43e-15

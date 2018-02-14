@@ -1,0 +1,30 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 45}
+# - {reference_id: 2015A&A...577A.131H}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1018'}
+# - {comments: 'These are the points labeled "HESS J1018-589 A"
+# 
+#     shown in Figure 1 (and again in Figure 4)'}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.402203 2.255686e-12 7.042836e-13 7.524316e-13
+0.797953 3.477912e-13 1.3393982e-13 1.4410006e-13
+1.23278 2.2703089e-13 5.7775216e-14 6.221811e-14
+1.90455 8.203604e-14 2.5155932e-14 2.7322464e-14
+2.94239 2.5168017e-14 1.0263715e-14 1.14097684e-14
+4.54577 1.036375e-14 4.3461256e-15 4.9980344e-15
+7.02288 2.8630093e-15 1.671347e-15 2.0464513e-15
+10.8498 2.9045687e-15 1.0404586e-15 1.2666718e-15
+16.7622 1.5243943e-15 5.267549e-16 6.656971e-16

@@ -1,0 +1,25 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 98}
+# - {reference_id: 2015A&A...574A.100H}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349'}
+# - {comments: That page also contains a Fermi-LAT spectrum.}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_errn dnde_errp
+0.29337 0.22 0.3912 5.9714555e-12 2.3589232e-12 2.3589232e-12
+0.5217 0.391 0.69570005 1.6436732e-12 4.124945e-13 4.124945e-13
+0.92770004 0.69570005 1.2371 2.3017393e-13 1.0404421e-13 1.0404421e-13
+1.6496999 1.2371 2.2 5.447086e-14 1.72035e-14 1.72035e-14

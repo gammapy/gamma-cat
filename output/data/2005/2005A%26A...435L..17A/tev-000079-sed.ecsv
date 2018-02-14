@@ -1,0 +1,33 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 79}
+# - {reference_id: 2005A&A...435L..17A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/AA435_L17.html'}
+# - {comments: Spectral points from Figure 3.}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err
+0.31 0.28 0.34 1.3e-10 3.2e-11
+0.41 0.34 0.49 3.6e-11 3.8e-12
+0.6 0.49 0.73 1.9e-11 1.6e-12
+0.89 0.73 1.1 7.2e-12 6.5e-12
+1.31 1.1 1.6 3.2e-12 6.5e-13
+1.9 1.6 2.3 1.6e-12 1.5e-13
+2.87 2.3 3.6 5.5e-13 7e-14
+4.15 3.6 4.8 2.2e-13 3.4e-14
+6.09 4.8 7.6 9.5e-14 1.7e-14
+8.9 7.6 10.4 4.7e-14 9.5e-15
+12.8 10.4 15.7 1.2e-14 4.1e-15
+19.1 15.7 23.2 6.2e-15 2e-15
+28.4 23.2 34.8 2.4e-15 1.2e-15
+40.1 34.8 46.2 7.8e-16 5.5e-16

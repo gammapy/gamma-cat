@@ -1,0 +1,19 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 141}
+# - {reference_id: 2014ApJ...788...78A}
+# - {telescope: veritas}
+# schema: astropy-2.0
+e_ref dnde dnde_err
+0.75 9.5052e-13 3.2838e-13
+1.58 8.9146e-14 2.7901e-14
+3.35 1.4862e-14 9.7584e-15
+10.59 1.47e-15 7.1632e-16

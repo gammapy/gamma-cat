@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 54}
+# - {reference_id: 2009ApJ...707..612A}
+# - {telescope: veritas}
+# - {comments: 'June 7/8 2008
+# 
+#     (equal distance binning on log10 scale of 0.1)'}
+# schema: astropy-2.0
+e_ref dnde dnde_err
+0.18838 7.467926e-10 3.6143635e-10
+0.266089 3.5860534e-10 9.414713e-11
+0.375849 7.555426e-11 2.194608e-11
+0.53102 3.0722556e-11 7.567754e-12
+0.749796 5.905184e-12 2.3491953e-12
+1.05914 2.1154124e-12 1.0460219e-12

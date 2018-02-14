@@ -81,16 +81,25 @@ class CollectionConfig:
         else:
             path = self.out_path
 
-        path = path / 'data' / meta['reference_folder']
+        path = path / 'data' / meta['year']
 
-        tag = GammaCatStr.dataset_filename(meta)
+        tag = GammaCatStr.data_filename(meta)
 
         if meta['datatype'] == 'sed':
-            path = path / '{}_sed.ecsv'.format(tag)
+            if meta['file_id'] != -1:
+                path = path / '{}-sed-{}.ecsv'.format(tag, meta['file_id'])
+            else:
+                path = path / '{}-sed.ecsv'.format(tag)
         elif meta['datatype'] == 'lc':
-            path = path / '{}_lc.ecsv'.format(tag)
+            if meta['file_id'] != -1:
+                path = path / '{}-lc-{}.ecsv'.format(tag, meta['file_id'])
+            else:
+                path = path / '{}-lc.ecsv'.format(tag)
         elif meta['datatype'] == 'ds':
-            path = path / '{}_ds.yaml'.format(tag)
+            if meta['file_id'] != -1:
+                path = path / '{}-{}.yaml'.format(tag, meta['file_id'])
+            else:
+                path = path / '{}.yaml'.format(tag)
         else:
             raise ValueError('Invalid datatype: {}'.format(meta['datatype']))
 
@@ -103,20 +112,23 @@ class CollectionConfig:
         # import IPython; IPython.embed(); 1/0
         meta = sed.table.meta.copy()
         meta['datatype'] = 'sed'
-        meta['reference_folder'] = Path(sed.resource.location).parts[-2]
+        meta['year'] = sed.resource.reference_id[:4]
+        meta['file_id'] = sed.resource.file_id
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
     def make_lc_path(self, lc, *, relative_to_index):
         meta = lc.table.meta.copy()
         meta['datatype'] = 'lc'
-        meta['reference_folder'] = Path(lc.resource.location).parts[-2]
+        meta['year'] = lc.resource.reference_id[:4]
+        meta['file_id'] = lc.resource.file_id
         return self.make_filename(meta, relative_to_index=relative_to_index)
 
     def make_dataset_path(self, dataset, *, relative_to_index):
         meta = OrderedDict()
         meta['datatype'] = 'ds'
-        meta['reference_folder'] = Path(dataset.resource.location).parts[-2]
         meta['reference_id'] = dataset.resource.reference_id
+        meta['file_id'] = dataset.resource.file_id
+        meta['year'] = dataset.resource.reference_id[:4]
         meta['source_id'] = dataset.resource.source_id
         return self.make_filename(meta, relative_to_index=relative_to_index)
 

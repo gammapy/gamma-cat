@@ -1,0 +1,32 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit
+#     (at `UL_CONF` level) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 89}
+# - {reference_id: 2014ApJ...794L...1A}
+# - {telescope: hess}
+# - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_HESSJ1641'}
+# - {UL_CONF: 0.95}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul
+0.815 0.56229997 1.0 4.332e-13 2.09e-13 2.253e-13 nan
+1.347 1.0004001 1.7787 3.037e-13 5.68e-14 6.099e-14 nan
+2.384 1.7786 3.1626 3.797e-14 1.259e-14 1.4e-14 nan
+4.207 3.1629996 5.6239996 1.522e-14 5.048e-15 5.605e-15 nan
+7.439 5.623 10.0 1.12e-14 2.39e-15 2.642e-15 nan
+13.19 9.997999 17.781 2.076e-15 7.588e-16 8.833e-16 nan
+23.4 17.782999 31.623 6.192e-16 2.896e-16 3.551e-16 nan
+41.55 nan nan nan nan nan 4.101e-16
+68.72 nan nan nan nan nan 2.884e-16

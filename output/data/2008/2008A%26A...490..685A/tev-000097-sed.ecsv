@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 97}
+# - {reference_id: 2008A&A...490..685A}
+# - {telescope: hess}
+# - {comments: 'TODO: origin of flux points?'}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+0.4645 4.136e-12 8.89e-13 8.78e-13
+1.388 5.404e-13 7.75e-14 7.65e-14
+4.298 1.892e-14 1.036e-14 1.013e-14
+13.65 1.666e-15 1.455e-15 1.183e-15

@@ -1,0 +1,30 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 91}
+# - {reference_id: 2015ApJ...812...65F}
+# - {file_id: 2}
+# - {telescope: veritas}
+# - {comments: Figure 4 (middle)}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err
+0.2237 0.1995 0.2512 2.7799998e-10 1.2e-10
+0.2816 0.2512 0.3162 1.79e-10 5.0699996e-11
+0.3546 0.3162 0.3981 5.86e-11 2.2199999e-11
+0.4464 0.3981 0.5012 3.7e-11 1.46e-11
+0.562 0.5012 0.631 1.99e-11 8.3999994e-12
+0.7075 0.631 0.7943 2.58e-11 7.88e-12
+0.8907 0.7943 1.0 1.2499999e-11 4.54e-12
+1.121 1.0 1.2589 5.19e-12 2.41e-12
+1.412 1.2589 1.5849 6.2799995e-12 2.3099998e-12
+1.99 1.5849 2.5119 1.27e-12 6.0299996e-13
+3.939 2.5119 6.3096 2.65e-13 1.35e-13

@@ -1,0 +1,28 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential
+#     photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical
+#     positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 68}
+# - {reference_id: 2008A&A...477..353A}
+# - {telescope: hess}
+# - {comments: 'Data obtained from Karl Kosack on November 23, 2016
+# 
+#     See https://github.com/gammapy/gamma-cat/pull/30#issuecomment-262522318'}
+# schema: astropy-2.0
+e_ref dnde dnde_errn dnde_errp
+1.24608 5.30713e-13 3.33893e-13 3.47539e-13
+1.98052 3.59824e-13 1.07417e-13 1.12584e-13
+3.19337 1.01253e-13 3.66549e-14 3.90441e-14
+5.13902 3.80364e-14 1.3627e-14 1.47479e-14
+8.27807 2.43833e-14 6.35792e-15 6.96172e-15
+13.3345 2.98488e-15 2.07024e-15 2.37684e-15
+21.4796 1.2602e-15 7.95559e-16 9.69592e-16
+34.5999 6.32524e-16 3.26976e-16 4.30177e-16

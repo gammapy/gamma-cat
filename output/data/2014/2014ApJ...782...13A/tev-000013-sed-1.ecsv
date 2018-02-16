@@ -1,0 +1,30 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit (at `UL_CONF` level) on `dnde`}
+# - {name: significance, datatype: float32, description: Excess significance}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 13}
+# - {file_id: 1}
+# - {reference_id: 2014ApJ...782...13A}
+# - {telescope: veritas}
+# - {UL_CONF: 0.99}
+# - {comments: Table 2}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err dnde_ul significance
+0.291 0.24 0.353 1.1678199e-11 2.7914398e-12 nan 4.5
+0.427 0.353 0.518 6.14596e-12 1.04796e-12 nan 6.7
+0.628 0.518 0.761 2.193e-12 4.3568401e-13 nan 5.6
+0.922 0.761 1.118 4.30105e-13 1.7475599e-13 nan 2.6
+1.355 1.118 1.642 2.21155e-13 8.09789e-14 nan 3.0
+1.99 1.642 2.412 1.0149999e-13 4.15514e-14 nan 2.7
+2.923 2.412 3.542 3.54062e-14 2.12654e-14 nan 1.8
+4.293 3.542 5.204 2.43044e-14 1.15699e-14 nan 2.6
+7.64 5.201 11.221 2.84301e-15 2.4669799e-15 nan 1.2
+16.483 11.221 24.21 nan nan 1.4e-15 -0.6

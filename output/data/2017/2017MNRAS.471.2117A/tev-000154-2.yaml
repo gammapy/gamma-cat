@@ -1,0 +1,15 @@
+source_id: 154
+reference_id: 2017MNRAS.471.2117A
+file_id: 2
+telescope: veritas
+
+# spectral fit - 2008-2015
+spec:
+  erange: {min: 0.2, max: 12.5, unit: TeV}
+  mjd: {max: 54763.22, min: 56932.21}
+  model:
+    type: pl
+    parameters:
+      norm: {val: 3.42, err: 0.29, err_sys: 0.6, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.63, err: 0.14, err_sys: 0.2}
+      e_ref: {val: 0.69, unit: TeV}

@@ -86,7 +86,7 @@ class CollectionConfig:
         tag = GammaCatStr.data_filename(meta)
 
         if meta['datatype'] == 'sed':
-            if meta['file_id'] != 1:
+            if meta['file_id'] != -1:
                 path = path / '{}-sed-{}.ecsv'.format(tag, meta['file_id'])
             else:
                 path = path / '{}-sed.ecsv'.format(tag)

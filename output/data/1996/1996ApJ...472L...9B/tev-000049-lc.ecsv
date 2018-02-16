@@ -6,7 +6,7 @@
 # - {name: time_max, unit: MJD, datatype: float64}
 # - {name: flux, unit: Crab, datatype: float32}
 # - {name: flux_err, unit: Crab, datatype: float32}
-# - {name: flux_ul, datatype: float32}
+# - {name: flux_ul, unit: Crab, datatype: float32}
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 49}

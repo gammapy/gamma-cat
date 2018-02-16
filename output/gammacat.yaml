@@ -1163,16 +1163,16 @@
   - spec_flux_1TeV_crab_err: 2.064908266067505
   - spec_eflux_1TeV_10TeV: 1.2037348548488147e-11
   - spec_eflux_1TeV_10TeV_err: 1.7515463905659612e-12
-  - sed_reference_id: 2016ApJ...817L...7A
-  - sed_n_points: 5
+  - sed_reference_id: 2007A&A...475L...9A
+  - sed_n_points: 8
   - sed_n_ul: 0
-  - sed_e_ref: 2.174800157546997
+  - sed_e_ref: 3.6916565895080566
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 1.4274180795692537e-11
-  - sed_dnde_err: 2.3226399102627138e-12
-  - sed_dnde_errp: .nan
-  - sed_dnde_errn: .nan
+  - sed_dnde: 5.812612760905389e-13
+  - sed_dnde_err: .nan
+  - sed_dnde_errp: 2.246566919040377e-13
+  - sed_dnde_errn: 2.246566919040377e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 15
@@ -1331,16 +1331,16 @@
   - spec_flux_1TeV_crab_err: .nan
   - spec_eflux_1TeV_10TeV: .nan
   - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: 2014A&A...563A..91A
-  - sed_n_points: 5
+  - sed_reference_id: ''
+  - sed_n_points: 0
   - sed_n_ul: 0
-  - sed_e_ref: 1.9654003381729126
+  - sed_e_ref: .nan
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 3.1633179149032076e-12
+  - sed_dnde: .nan
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 1.6942992148161196e-12
-  - sed_dnde_errn: 1.6942992148161196e-12
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 18
@@ -2591,16 +2591,16 @@
   - spec_flux_1TeV_crab_err: 1.156907558441162
   - spec_eflux_1TeV_10TeV: 3.948117061145645e-13
   - spec_eflux_1TeV_10TeV_err: 7.551276227577008e-13
-  - sed_reference_id: 2017arXiv170804045M
+  - sed_reference_id: 2009ApJ...698L.133A
   - sed_n_points: 5
   - sed_n_ul: 0
-  - sed_e_ref: 1.7174087762832642
+  - sed_e_ref: 0.7124000787734985
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 1.3224510462400696e-12
-  - sed_dnde_err: .nan
-  - sed_dnde_errp: 6.092421489176103e-13
-  - sed_dnde_errn: 6.399519044027191e-13
+  - sed_dnde: 5.361799546022006e-12
+  - sed_dnde_err: 2.1314000911432096e-12
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 31
@@ -5699,16 +5699,16 @@
   - spec_flux_1TeV_crab_err: .nan
   - spec_eflux_1TeV_10TeV: .nan
   - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: 2014A&A...567A.135A
-  - sed_n_points: 5
+  - sed_reference_id: 2006A&A...456..245A
+  - sed_n_points: 10
   - sed_n_ul: 0
-  - sed_e_ref: 0.186879962682724
+  - sed_e_ref: 6.558999538421631
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 6.778839711785167e-10
+  - sed_dnde: 4.116216048566379e-12
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 2.0014863377770808e-10
-  - sed_dnde_errn: 2.0014863377770808e-10
+  - sed_dnde_errp: 9.394642182247726e-13
+  - sed_dnde_errn: 9.408235909086349e-13
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 68
@@ -5867,16 +5867,16 @@
   - spec_flux_1TeV_crab_err: .nan
   - spec_eflux_1TeV_10TeV: .nan
   - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: 2003A&A...403..523A
-  - sed_n_points: 4
+  - sed_reference_id: 2008A&A...477..353A
+  - sed_n_points: 8
   - sed_n_ul: 0
-  - sed_e_ref: 2.612499713897705
+  - sed_e_ref: 11.15638256072998
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 3.7899999978663335e-13
+  - sed_dnde: 1.3238590996014765e-13
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 1.367502573852708e-13
-  - sed_dnde_errn: 1.367502573852708e-13
+  - sed_dnde_errp: 6.558166146643576e-14
+  - sed_dnde_errn: 6.264282305769656e-14
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 70
@@ -6371,17 +6371,17 @@
   - spec_flux_1TeV_crab_err: 0.17836114764213562
   - spec_eflux_1TeV_10TeV: 5.381291657939602e-13
   - spec_eflux_1TeV_10TeV_err: 1.3069979939907966e-13
-  - sed_reference_id: 2010A&A...516A..62A
-  - sed_n_points: 5
-  - sed_n_ul: 2
-  - sed_e_ref: 10.700858116149902
+  - sed_reference_id: ''
+  - sed_n_points: 0
+  - sed_n_ul: 0
+  - sed_e_ref: .nan
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 4.1321118618778407e-13
+  - sed_dnde: .nan
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 2.909358138517698e-13
-  - sed_dnde_errn: 1.995416364693886e-13
-  - sed_dnde_ul: 2.3706999002747733e-16
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
+  - sed_dnde_ul: .nan
 - !!omap
   - source_id: 75
   - common_name: HESS J1503-582
@@ -7799,17 +7799,17 @@
   - spec_flux_1TeV_crab_err: .nan
   - spec_eflux_1TeV_10TeV: .nan
   - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: 2012ApJ...758....2B
-  - sed_n_points: 5
-  - sed_n_ul: 0
-  - sed_e_ref: 5.529396057128906
+  - sed_reference_id: 2012A&A...537A.114A
+  - sed_n_points: 9
+  - sed_n_ul: 2
+  - sed_e_ref: 13.987567901611328
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 1.1159422344531045e-11
+  - sed_dnde: 3.25901306809373e-12
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 6.368316464444579e-12
-  - sed_dnde_errn: 6.368316464444579e-12
-  - sed_dnde_ul: .nan
+  - sed_dnde_errp: 1.6080330426590517e-12
+  - sed_dnde_errn: 1.6081634721804017e-12
+  - sed_dnde_ul: 3.4727829912163753e-15
 - !!omap
   - source_id: 92
   - common_name: HESS J1702-420
@@ -10572,16 +10572,16 @@
   - spec_flux_1TeV_crab_err: 0.7915855646133423
   - spec_eflux_1TeV_10TeV: 6.490083210436426e-12
   - spec_eflux_1TeV_10TeV_err: 7.759737405584055e-13
-  - sed_reference_id: 2006A&A...460..743A
-  - sed_n_points: 8
+  - sed_reference_id: 2006A&A...460..365A
+  - sed_n_points: 11
   - sed_n_ul: 0
-  - sed_e_ref: 9.095937728881836
+  - sed_e_ref: 7.480553150177002
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 1.0048729209843899e-11
+  - sed_dnde: 4.96902831381707e-11
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 2.083350419262997e-12
-  - sed_dnde_errn: 1.9793136313978055e-12
+  - sed_dnde_errp: 2.780634012974903e-12
+  - sed_dnde_errn: 2.7792850486318965e-12
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 162
@@ -13849,16 +13849,16 @@
   - spec_flux_1TeV_crab_err: 10.412476539611816
   - spec_eflux_1TeV_10TeV: 4.051062957310947e-11
   - spec_eflux_1TeV_10TeV_err: 9.014439368570937e-12
-  - sed_reference_id: 2011ApJ...738..169A
-  - sed_n_points: 5
+  - sed_reference_id: 2010ApJ...714..163A
+  - sed_n_points: 6
   - sed_n_ul: 0
-  - sed_e_ref: 1.2662599086761475
+  - sed_e_ref: 2.1083333492279053
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 3.187817718131036e-11
-  - sed_dnde_err: .nan
-  - sed_dnde_errp: 6.1776096391130686e-12
-  - sed_dnde_errn: 6.1776096391130686e-12
+  - sed_dnde: 2.034466562231274e-12
+  - sed_dnde_err: 5.349433461303288e-13
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 155
@@ -13933,14 +13933,14 @@
   - spec_flux_1TeV_crab_err: .nan
   - spec_eflux_1TeV_10TeV: .nan
   - spec_eflux_1TeV_10TeV_err: .nan
-  - sed_reference_id: 2010A&A...516A..56H
-  - sed_n_points: 4
+  - sed_reference_id: 2010ApJ...714..163A
+  - sed_n_points: 6
   - sed_n_ul: 0
-  - sed_e_ref: 0.7321122288703918
+  - sed_e_ref: 2.1083333492279053
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 5.371828416117497e-12
-  - sed_dnde_err: .nan
-  - sed_dnde_errp: 2.6003804144691944e-12
-  - sed_dnde_errn: 2.6003804144691944e-12
+  - sed_dnde: 2.034466562231274e-12
+  - sed_dnde_err: 5.349433461303288e-13
+  - sed_dnde_errp: .nan
+  - sed_dnde_errn: .nan
   - sed_dnde_ul: .nan

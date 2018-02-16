@@ -1411,84 +1411,14 @@
         "reference_id": "2016ApJ...819..156B",
         "file_id": -1,
         "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-1.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-10.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-11.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-2.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-3.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-4.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-5.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-6.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-7.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-8.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
-        "location": "data/2016/2016ApJ...819..156B/tev-000049-9.yaml"
-    },
-    {
-        "source_id": 49,
-        "reference_id": "2016ApJ...819..156B",
-        "file_id": -1,
-        "type": "ds",
         "location": "data/2016/2016ApJ...819..156B/tev-000049.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 1,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-1.yaml"
     },
     {
         "source_id": 49,
@@ -1508,8 +1438,22 @@
         "source_id": 49,
         "reference_id": "2016ApJ...819..156B",
         "file_id": 2,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-2.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 2,
         "type": "sed",
         "location": "data/2016/2016ApJ...819..156B/tev-000049-sed-2.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 3,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-3.yaml"
     },
     {
         "source_id": 49,
@@ -1522,8 +1466,64 @@
         "source_id": 49,
         "reference_id": "2016ApJ...819..156B",
         "file_id": 4,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-4.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 4,
         "type": "sed",
         "location": "data/2016/2016ApJ...819..156B/tev-000049-sed-4.ecsv"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 5,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-5.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 6,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-6.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 7,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-7.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 8,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-8.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 9,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-9.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 10,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-10.yaml"
+    },
+    {
+        "source_id": 49,
+        "reference_id": "2016ApJ...819..156B",
+        "file_id": 11,
+        "type": "ds",
+        "location": "data/2016/2016ApJ...819..156B/tev-000049-11.yaml"
     },
     {
         "source_id": 49,

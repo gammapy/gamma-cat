@@ -11,6 +11,7 @@
 # - {source_id: 14}
 # - {reference_id: 2016ApJ...817L...7A}
 # - {telescope: veritas}
+# - {file_id: 1}
 # - {SED_TYPE: flux}
 # - {UL_CONF: 0.99}
 # schema: astropy-2.0

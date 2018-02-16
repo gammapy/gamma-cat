@@ -9,6 +9,7 @@
 # - source_id: 14
 # - reference_id: 2016ApJ...817L...7A
 # - telescope: veritas
+# - file_id: 1
 # - comments: |
 #     average spectrum for whole data set
 e_ref  dnde  dnde_err

@@ -1,11 +1,11 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_min, datatype: float32}
-# - {name: e_max, datatype: float32}
-# - {name: e_ref, datatype: float32}
-# - {name: dnde, datatype: float32}
-# - {name: dnde_err, datatype: float32}
+# - {name: e_min, unit: TeV, datatype: float32}
+# - {name: e_max, unit: TeV, datatype: float32}
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: dnde, unit: cm-2 s-1 TeV-1, datatype: float32}
+# - {name: dnde_err, unit: cm-2 s-1 TeV-1, datatype: float32}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 39

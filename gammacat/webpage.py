@@ -86,7 +86,7 @@ class WebpageMaker:
         template = jinja_env.get_template('source_list.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.webpage_path / 'use/source_list.rst'
+        path = gammacat_info.webpage_path / 'data/source_list.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
 
@@ -96,18 +96,18 @@ class WebpageMaker:
         template = jinja_env.get_template('reference_list.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.webpage_path / 'use/reference_list.rst'
+        path = gammacat_info.webpage_path / 'data/reference_list.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
 
     def make_source_detail_pages(self):
-        path = gammacat_info.webpage_path / 'use/sources/'
+        path = gammacat_info.webpage_path / 'data/sources/'
         path.mkdir(exist_ok=True)
         for source in self.sources_data:
             self.make_source_detail_page(source)
 
     def make_reference_detail_pages(self):
-        path = gammacat_info.webpage_path / 'use/references/'
+        path = gammacat_info.webpage_path / 'data/references/'
         path.mkdir(exist_ok=True)
         for reference in self.references_data:
             self.make_reference_detail_page(reference)
@@ -130,7 +130,7 @@ class WebpageMaker:
         template = jinja_env.get_template('source_detail.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.webpage_path / f'use/sources/{source["source_id"]}.rst'
+        path = gammacat_info.webpage_path / f'data/sources/{source["source_id"]}.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
 
@@ -140,7 +140,7 @@ class WebpageMaker:
         template = jinja_env.get_template('reference_detail.txt')
         txt = template.render(ctx)
 
-        path = gammacat_info.webpage_path / f'use/references/{reference["reference_id"]}.rst'
+        path = gammacat_info.webpage_path / f'data/references/{reference["reference_id"]}.rst'
         log.info(f'Writing {path}')
         path.write_text(txt)
 

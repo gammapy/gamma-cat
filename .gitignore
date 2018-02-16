@@ -94,8 +94,7 @@ ENV/
 .cache
 
 webpage/_build
-webpage/data
-webpage/use/source_list.rst
-webpage/use/sources
-webpage/use/reference_list.rst
-webpage/use/references
+webpage/data/source_list.rst
+webpage/data/sources
+webpage/data/reference_list.rst
+webpage/data/references

@@ -3,7 +3,7 @@
 .. _data-sources:
 
 Data by source
-==============
+--------------
 
 List of sources in gamma-cat:
 

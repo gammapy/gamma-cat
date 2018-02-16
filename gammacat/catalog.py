@@ -601,8 +601,13 @@ class CatalogMaker:
                 log.debug('SED filename: {}'.format(filename))
                 sed = SED.read(filename=filename)
             elif len(ri.resources) > 1:
+                # TODO: fix this!
+                # This might result in random SEDs used for the catalog, no?
+                log.error('******** SED not specified uniquely!!!')
+                log.error('Using the first SED resource')
                 log.error(ri)
-                raise RuntimeError('SED not specified uniquely!')
+                log.error(ri.resources)
+                # raise RuntimeError('SED not specified uniquely!')
             else:
                 log.debug('Missing SED for source_id: {}'.format(source_id))
                 sed = SED(table=Table(), resource=None)

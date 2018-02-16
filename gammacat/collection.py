@@ -205,7 +205,7 @@ class CollectionMaker:
 
     def __init__(self, config):
         self.config = config
-        self.info_file_list = self.input_data.info_yaml_list
+        # self.info_file_list = self.input_data.info_yaml_list
 
     def run(self):
         log.info('Make collection ...')
@@ -317,26 +317,14 @@ class CollectionMaker:
         write_json(ri.to_list(), path)
 
     def make_index_file_for_output(self):
-        resources = []
-        for filename in self.config.sed_files():
-            resource = SED.read(self.config.out_path / filename).resource
-            resource.location = filename
-            resources.append(resource)
-        for filename in self.config.lc_files():
-            resource = LightCurve.read(self.config.out_path / filename).resource
-            resource.location = filename
-            resources.append(resource)
-        for filename in self.config.ds_files():
-            resource = DataSet.read(self.config.out_path / filename).resource
-            resource.location = filename
-            resources.append(resource)
-        for filename in self.config.bsi_files():
-            resource = SrcInfo.read(self.config.out_path / filename).resource
-            resource.location = filename
-            resources.append(resource)
 
-        ri = GammaCatResourceIndex(resources).sort()
+        # input and output should be consistent, modulo known differences
+        input_index = GammaCatResourceIndex.from_list(
+            load_json(self.config.index_input_json)
+        )
+        resources = input_index.resources
+
+        output_index = GammaCatResourceIndex(resources).sort()
 
         path = self.config.index_datasets_json
-        write_json(ri.to_list(), path)
-
+        write_json(output_index.to_list(), path)

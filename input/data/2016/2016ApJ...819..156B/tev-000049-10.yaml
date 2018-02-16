@@ -1,6 +1,7 @@
 source_id: 49
 reference_id: 2016ApJ...819..156B
 telescope: veritas
+file_id: 10
 
 data:
   livetime: 0.48h

@@ -14,5 +14,5 @@ spec:
     type: pl
     parameters:
       norm: {val: 4.4, err: 0.3, scale: 1e-10, unit: cm-2 s-1 TeV-1}
-      index: {val: 2.34, err: 0.09 }
+      index: {val: 2.34, err: 0.09}
       e_ref: {val: 0.3, unit: TeV}

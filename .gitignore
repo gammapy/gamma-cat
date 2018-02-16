@@ -90,6 +90,9 @@ ENV/
 
 .idea
 
+.pytest_cache
+.cache
+
 webpage/_build
 webpage/data
 webpage/use/source_list.rst

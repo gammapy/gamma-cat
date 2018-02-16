@@ -58,15 +58,13 @@ class GammaCatStr:
     """
 
     @staticmethod
-    def dataset_filename(meta):
-        return 'gammacat_' + GammaCatStr.dataset_str(meta)
+    def reference_folder(meta):
+        return GammaCatStr.reference_id_str(meta)
 
     @staticmethod
-    def dataset_str(meta):
-        ss = GammaCatStr.reference_id_str(meta['reference_id'])
-        ss += '_'
-        ss += GammaCatStr.source_id_str(meta['source_id'])
-        return ss
+    def data_filename(meta):
+        return GammaCatStr.reference_folder(meta['reference_id']) + \
+            '/tev-' + GammaCatStr.source_id_str(meta['source_id'])
 
     @staticmethod
     def source_id_str(source_id):

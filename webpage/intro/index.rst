@@ -9,7 +9,6 @@ Introduction
    :maxdepth: 3
 
    overview
-   tevcat
    terms
    contributors
    acknowledgements

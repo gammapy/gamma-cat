@@ -1,9 +1,11 @@
 .. include:: ../references.rst
 
-Full Data Collection
---------------------
+Data Collection
+---------------
 
-TODO: Write a short introduction about the data
+Here you can access the whole data collection.
+
+At the moment we provide two "views", either by source or by reference.
 
 .. toctree::
    :maxdepth: 4

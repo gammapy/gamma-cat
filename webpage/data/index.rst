@@ -2,8 +2,8 @@
 
 .. _datadocs:
 
-Data Access
-===========
+Data
+====
 
 .. toctree::
    :maxdepth: 3

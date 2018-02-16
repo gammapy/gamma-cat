@@ -15,8 +15,10 @@ Here are some related resources:
 * HESS data collection for gamma-cat: |gamma-cat-hess-data|
 * Collection of MAGIC data: |magic-fits|
 * VERITAS data can be found by following the links here: |veritas-data|
-* Another TeV source catalog is at `TeVCat`_ and with a new web interface at `TeVCat2`_.
+* `TeVCat`_ and `TeVCat2`_ is a webpage with information on all VHE sources.
+  However, the underlying data collection is private, not available for download and free use.
 * Another TeV source catalog is the `TeGeV Catalogue @ ASDC`_
+  It is freely available for download.
 * A `light curve archive @ DESY`_
 * A collection and search interface for HESS spectra and lightcurves of blazars: |hess-obspm|
 * A collection of Galactic TeV source info in FITS format by Andrea Giuliani and others from ASTRI is here: |astrisim-gsed|

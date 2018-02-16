@@ -269,6 +269,7 @@ class CollectionMaker:
             log.debug(' Processing basic source info file: {}'.format(filename))
             src_info = SrcInfo.read(filename)
             path = self.config.out_path / 'sources' / filename.parts[-1]
+            path.parent.mkdir(parents=True, exist_ok=True)
             src_info.write(path)
 
     def process_datasets(self):

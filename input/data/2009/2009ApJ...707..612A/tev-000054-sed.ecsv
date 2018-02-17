@@ -2,6 +2,8 @@
 # ---
 # datatype:
 # - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e_min, datatype: float32, unit: TeV}
+# - {name: e_max, datatype: float32, unit: TeV}
 # - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
 # - {name: e2dnde_err, datatype: float32, unit: erg cm-2 s-1}
 # meta: !!omap
@@ -11,11 +13,11 @@
 # - telescope: veritas
 # - comments: |
 #     June 7/8 2008
-#     (equal distance binning on log10 scale of 0.1)
-e_ref   e2dnde   e2dnde_err
-0.18838        4.246e-11      2.055e-11
-0.266089       4.068e-11      1.068e-11
-0.375849       1.710e-11      4.967e-12
-0.53102        1.388e-11      3.419e-12
-0.749796       5.319e-12      2.116e-12
-1.05914        3.802e-12      1.880e-12
+#     (equal distance binning on log10 scale of 0.15)
+e_ref  e_min   e_max e2dnde   e2dnde_err
+0.18838  0.158489    0.223872      4.246e-11      2.055e-11
+0.266089  0.223872   0.316228       4.068e-11      1.068e-11
+0.375849  0.316228   0.446684     1.710e-11      4.967e-12
+0.53102   0.446684   0.630957     1.388e-11      3.419e-12
+0.749796  0.630957   0.891251     5.319e-12      2.116e-12
+1.05914   0.891251   1.25893      3.802e-12      1.880e-12

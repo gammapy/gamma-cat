@@ -9,10 +9,10 @@ data:
 
 spec:
   erange: {min: 0.2, max: 10., unit: TeV}
-  mjd: {min: 56333.1147, max: 56333.1147}
+  mjd: {min: 56363.2355, max: 56363.2355}
   model:
     type: pl
     parameters:
-      norm: {val: 4.4, err: 0.3, scale: 1e-10, unit: cm-2 s-1 TeV-1}
-      index: {val: 2.34, err: 0.09 }
+      norm: {val: 3.5, err: 0.2, scale: 1e-10, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.5, err: 0.1 }
       e_ref: {val: 0.3, unit: TeV}

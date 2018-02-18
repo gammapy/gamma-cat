@@ -3,6 +3,8 @@ source_id: [154]
 telescope: [veritas]
 
 datasets:
+  - tev-000154-1.yaml
+  - tev-000154-2.yaml
   - tev-000154-sed-1.ecsv
   - tev-000154-sed-2.ecsv
 

@@ -3,23 +3,21 @@ source_id: [49]
 telescope: [veritas, magic]
 
 datasets:
-  - tev-000049.yaml
   - tev-000049-1.yaml
   - tev-000049-2.yaml
   - tev-000049-3.yaml
   - tev-000049-4.yaml
   - tev-000049-5.yaml
   - tev-000049-6.yaml
-  - tev-000049-7.yaml
   - tev-000049-8.yaml
   - tev-000049-9.yaml
   - tev-000049-10.yaml
   - tev-000049-11.yaml
+  - tev-000049-lc-1.ecsv
   - tev-000049-sed-1.ecsv
   - tev-000049-sed-2.ecsv
   - tev-000049-sed-3.ecsv
-  - tev-000049-sed-4.ecsv
-  - tev-000049-lc-1.ecsv
+  - tev-000049-sed-5.ecsv
 
 data_entry:
   status: incomplete

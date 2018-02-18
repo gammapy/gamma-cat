@@ -1,6 +1,7 @@
 # %ECSV 0.9
 # ---
 # datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
 # - {name: e_min, datatype: float32, unit: TeV}
 # - {name: e_max, datatype: float32, unit: TeV}
 # - {name: dnde, datatype: float32, unit: TeV-1 cm-2 s-1 }
@@ -12,8 +13,9 @@
 # - telescope: veritas
 # - comments: |
 #      obtained per email by J.Dum (2017-04-20)
-e_min e_max dnde dnde_err
-0.1778    0.2818  8.45e-12  4.15e-12
-0.2818    0.4467  3.75e-12  1.11e-12
-0.4467    0.7079  6.42e-13  3.35e-13
-0.7079    1.1220  1.35e-13  1.24e-13
+#      note: not consistent with Fig 3 in the publication
+e_ref e_min e_max dnde dnde_err
+0.2224   0.1778    0.2818  8.45e-12  4.15e-12
+0.3525   0.2818    0.4467  3.75e-12  1.11e-12
+0.5587   0.4467    0.7079  6.42e-13  3.35e-13
+0.8854   0.7079    1.1220  2.35e-13  1.24e-13

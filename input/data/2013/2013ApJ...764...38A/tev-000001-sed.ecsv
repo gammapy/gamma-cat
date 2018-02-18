@@ -1,6 +1,7 @@
 # %ECSV 0.9
 # ---
 # datatype:
+# - {name: e_ref, unit: TeV, datatype: float64}
 # - {name: e_min, unit: TeV, datatype: float64}
 # - {name: e_max, unit: TeV, datatype: float64}
 # - {name: dnde, unit: cm-2 s-1 TeV-1, datatype: float32}
@@ -11,10 +12,10 @@
 # - source_id: 1
 # - reference_id: 2013ApJ...764...38A
 # - telescope: veritas
-e_min  e_max  dnde  dnde_err  significance
-0.56 1.00   1.9e-12 0.9e-12 2.3
-1.00 1.78   7.3e-13 1.7e-13 4.5
-1.78 3.16   1.2e-13 0.4e-13 3.3
-3.16 5.62   3.4e-14 1.2e-14 3.1
-5.62 10.00  1.2e-14 0.5e-14 2.5
-10.00 17.78 7.1e-15 2.5e-15 2.8
+e_ref e_min  e_max  dnde  dnde_err  significance
+0.78   0.56 1.00   1.9e-12 0.9e-12 2.3
+1.39   1.00 1.78   7.3e-13 1.7e-13 4.5
+2.47   1.78 3.16   1.2e-13 0.4e-13 3.3
+4.39   3.16 5.62   3.4e-14 1.2e-14 3.1
+7.81   5.62 10.00  1.2e-14 0.5e-14 2.5
+13.89  10.00 17.78 7.1e-15 2.5e-15 2.8

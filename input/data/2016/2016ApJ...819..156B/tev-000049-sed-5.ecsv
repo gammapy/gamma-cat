@@ -12,7 +12,7 @@
 # - reference_id: 2016ApJ...819..156B
 # - file_id: 4
 # - telescope: veritas
-# - mjd: {max: 56335., min: 56335.}
+# - mjd: {max: 56340., min: 56340.}
 # - comments: |
 #      Figure 13 (bottom right)
 e_ref e_min e_max dnde dnde_err

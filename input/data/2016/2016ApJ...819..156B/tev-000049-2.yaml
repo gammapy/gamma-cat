@@ -8,11 +8,11 @@ data:
   significance: 14.9
 
 spec:
-  erange: {min: 0.2, max: 10., unit: TeV}
-  mjd: {min: 56307.2556, max: 56307.2556}
+  erange: {min: 0.15, max: 4., unit: TeV}
+  mjd: {min: 56307.3487, max: 56307.3487}
   model:
     type: pl
     parameters:
-      norm: {val: 3.0, err: 0.2, scale: 1e-10, unit: cm-2 s-1 TeV-1}
-      index: {val: 2.48, err: 0.09 }
+      norm: {val: 3.6, err: 0.2, scale: 1e-10, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.1, err: 0.1 }
       e_ref: {val: 0.3, unit: TeV}

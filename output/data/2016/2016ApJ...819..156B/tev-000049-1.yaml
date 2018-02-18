@@ -8,12 +8,12 @@ data:
   significance: 16.5
 
 spec:
-  erange: {min: 0.2, max: 10., unit: TeV}
-  mjd: {min: 56302.1365, max: 56302.1365}
+  erange: {min: 0.15, max: 1., unit: TeV}
+  mjd: {min: 56302.3411, max: 56302.3411}
   model:
 # better fit: log-parabolic model 
     type: pl
     parameters:
-      norm: {val: 1.7, err: 0.1, scale: 1e-10, unit: cm-2 s-1 TeV-1}
-      index: {val: 2.87, err: 0.07}
+      norm: {val: 1.7, err: 0.2, scale: 1e-10, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.2, err: 0.2}
       e_ref: {val: 0.3, unit: TeV}

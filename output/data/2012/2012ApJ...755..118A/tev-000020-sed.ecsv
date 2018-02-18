@@ -14,7 +14,7 @@
 # - {comments: This data was collected for 2015ApJ...812...60B and contributed to gamma-cat by Jonathan Biteau.}
 # schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
-0.2328 3.28e-12 1.09e-12 1.09e-12
-0.3214 1.57e-12 3.76e-13 3.76e-13
-0.443699 3.52002e-13 1.65001e-13 1.65001e-13
-0.612401 1.16999e-13 8.13996e-14 8.13996e-14
+0.2328 3.28e-11 1.09e-11 1.09e-11
+0.3214 1.57e-11 3.76e-12 3.76e-12
+0.443699 3.52002e-12 1.65001e-12 1.65001e-12
+0.612401 1.16999e-12 8.13996e-13 8.13996e-13

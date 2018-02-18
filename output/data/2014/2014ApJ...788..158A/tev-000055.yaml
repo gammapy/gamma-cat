@@ -13,4 +13,4 @@ spec:
     parameters:
       norm: {val: 1.68, err: 0.5, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 3.15, err: 0.23}
-      e_min: {val: 1, unit: TeV}
+      e_ref: {val: 1, unit: TeV}

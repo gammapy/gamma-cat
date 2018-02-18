@@ -9,4 +9,4 @@ datasets:
 data_entry:
   status: complete
   reviewed: no
-  comment: spectral points obtained from author - but are not consistent with Fig 3 in the publication
+  notes: spectral points obtained from author - but are not consistent with Fig 3 in the publication

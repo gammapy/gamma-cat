@@ -1,4 +1,4 @@
-# Call Jan 10, 2017
+# Call Jan 10, 2018
 
 * 10 - 11 am
 * "gamma-cat" on CTA ezuce, no password

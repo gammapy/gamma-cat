@@ -7,8 +7,9 @@ datasets:
   - tev-000011-2.yaml
   - tev-000011-sed-1.ecsv
   - tev-000011-sed-2.ecsv
+  - tev-000011-lc-1.ecsv
+  - tev-000011-lc-2.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: light curves missing (Fig 3 and 4)

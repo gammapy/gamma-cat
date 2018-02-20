@@ -7,9 +7,10 @@
 ## Agenda
 
 * TBC (?): Status webpage & scripts (Peter)
-* TBC (?): Status VERITAS data (Gernot)
-* TBC (?): Status MAGIC data (Michele)
-* HESS Galatic catlog released imminent; proposal how to add it to gamma-cat (Christoph)
+* Status VERITAS data (Gernot)
+* Status MAGIC data (Michele)
+* HESS Galactic catalog released imminent; proposal how to add it to gamma-cat (Christoph)
+* Detailed proposal & then decision in the call how to add non-detected sources (see [GH 187](https://github.com/gammapy/gamma-cat/pull/187)) (tbd)
 * A proposal how to add elongation / position angle info for elongated source shapes (Christoph)
 * Any other topics for discussion or presentations welcome!
   Email [Christoph](https://github.com/cdeil/) if you have something.

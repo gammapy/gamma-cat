@@ -6,7 +6,7 @@
 
 ## Agenda
 
-* TBC (?): Status webpage & scripts (Peter)
+* Status webpage & scripts (Peter)
 * Status VERITAS data (Gernot)
 * Status MAGIC data (Michele)
 * HESS Galactic catalog released imminent; proposal how to add it to gamma-cat (Christoph)

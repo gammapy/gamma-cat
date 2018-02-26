@@ -7,9 +7,12 @@ datasets:
   - tev-000058-2.yaml
   - tev-000058-3.yaml
   - tev-000058-4.yaml
-  - tev-000058-sed.ecsv
+  - tev-000058-sed-1.ecsv
+  - tev-000058-sed-2.ecsv
+  - tev-000058-sed-3.ecsv
+  - tev-000058-lc-1.ecsv
+  - tev-000058-lc-2.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: missing are spectral points for pre-flare and overall average (Figure 2), light curve points (Fig 4 and Fig 5)

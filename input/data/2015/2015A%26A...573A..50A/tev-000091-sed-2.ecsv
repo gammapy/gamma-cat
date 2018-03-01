@@ -1,0 +1,23 @@
+# Frequency[Hz] EnergyFlux [erg sec^-1 cm^-2] ErrorEnergyFlux[erg sec^-1 cm^-2]
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: e2dnde, unit: TeV cm-2 s-1, datatype: float32}
+# - {name: e2dnde_err, unit: TeV cm-2 s-1, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 91
+# - reference_id: 2015A%26A...573A..50A
+# - {file_id: 2}
+# - telescope: veritas
+# - mjd: {max: 54574.0, min: 54561.0}
+# - comments: |
+#     Fig 5 center (converted from nuFnu)
+e_ref e2dnde e2dnde_err
+0.389    6.491e-12      1.373e-12
+0.581    7.6770e-12     1.310e-12
+0.867    5.0930e-12     1.210e-12
+1.291    4.2379e-12     1.260e-12
+1.923    4.4689e-12     1.366e-12
+2.866    4.1630e-12     1.697e-12

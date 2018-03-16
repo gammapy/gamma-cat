@@ -10,7 +10,7 @@ where: egal
 classes: [fsrq]
 
 discoverer: hess
-seen_by: [hess]
+seen_by: [hess,magic]
 discovery_date: 2010-03
 
 tevcat_id: 206
@@ -27,3 +27,5 @@ pos:
 
 reference_ids:
 - 2013A&A...554A.107H
+- 2014A&A...569A..46A
+- 2017A&A...603A..29A

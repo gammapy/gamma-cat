@@ -78,6 +78,7 @@ class WebpageMaker:
                 input_folder=in_folder,
                 output_folder=out_folder,
             ))
+
         return references_data
 
     def run(self):
@@ -146,7 +147,10 @@ class WebpageMaker:
         path.write_text(txt)
 
     def make_reference_detail_page(self, reference):
-        ctx = {'reference': reference}
+        resources = []
+        for resource in (self.resource_index_output.query('reference_id == {!r}'.format(reference['reference_id']))).resources:
+            resources.append(dict(self.make_resource_info_for_template(resource)))
+        ctx = {'reference': reference, 'resources': resources}
         template = jinja_env.get_template('reference_detail.txt')
         txt = template.render(ctx)
 

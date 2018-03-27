@@ -7,8 +7,8 @@ Basic info
 ----------
 
 * Reference: {{ reference.reference_id }}
-* TODO: link to input folder
-* TODO: link to output folder
+* Edit on github: `input/data/{{ reference.reference_id[:4] }}/{{ reference.reference_id }} <{{ reference.input_folder }}>`__
+* Catalog data on github: `output/data/{{ reference.reference_id[:4] }}/{{ reference.reference_id }} <{{ reference.output_folder }}>`__
 * ADS: `{{ reference.ads_url }} <{{ reference.ads_url}}>`__
 * TODO: summarise available data and data entry status
 

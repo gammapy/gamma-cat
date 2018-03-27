@@ -62,10 +62,21 @@ class WebpageMaker:
         references_data = []
         for reference_id in reference_ids:
             ads_url = f'https://ui.adsabs.harvard.edu/#abs/{reference_id}'
+            year = {reference_id[:4]}
+            in_folder = f'{gammacat_info.input_url}/data/{year}/{urllib.parse.quote(reference_id)}'
+            out_folder = f'{gammacat_info.output_url}/data/{year}/{urllib.parse.quote(reference_id)}'
+            data_status = (load_yaml(gammacat_info.base_dir / 'input/data' \
+            / f'{reference_id[:4]}/{urllib.parse.quote(reference_id)}' / 'info.yaml')) \
+            ['data_entry']['status']
+            review_status = (load_yaml(gammacat_info.base_dir / 'input/data' \
+            / f'{reference_id[:4]}/{urllib.parse.quote(reference_id)}' / 'info.yaml')) \
+            ['data_entry']['reviewed']
             references_data.append(dict(
                 reference_title_underline='-' * len(reference_id),
                 reference_id=reference_id,
                 ads_url=ads_url,
+                input_folder=in_folder,
+                output_folder=out_folder,
             ))
         return references_data
 
@@ -136,7 +147,6 @@ class WebpageMaker:
 
     def make_reference_detail_page(self, reference):
         ctx = {'reference': reference}
-
         template = jinja_env.get_template('reference_detail.txt')
         txt = template.render(ctx)
 

@@ -8,7 +8,7 @@ import urllib.parse
 from gammapy.catalog import GammaCatResourceIndex
 from .input import BasicSourceList
 from .info import gammacat_info
-from .utils import load_json, jinja_env
+from .utils import load_json, jinja_env, load_yaml
 from pathlib import Path
 
 __all__ = [
@@ -77,6 +77,8 @@ class WebpageMaker:
                 ads_url=ads_url,
                 input_folder=in_folder,
                 output_folder=out_folder,
+                data_entry_status=data_status,
+                data_review_status=review_status,
             ))
 
         return references_data

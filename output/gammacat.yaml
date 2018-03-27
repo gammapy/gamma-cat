@@ -6559,7 +6559,7 @@
   - where: egal
   - classes: fsrq
   - discoverer: hess
-  - seen_by: hess
+  - seen_by: hess,magic
   - discovery_date: 2010-03
   - tevcat_id: 206
   - tevcat2_id: hptayL

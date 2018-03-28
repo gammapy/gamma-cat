@@ -30,6 +30,10 @@ class GammaCatInfo:
         self.out_path = self.base_dir / 'output'
         self.webpage_path = self.base_dir / 'webpage'
 
+        # Input and output URL on github
+        self.input_url = 'https://github.com/gammapy/gamma-cat/blob/master/input'
+        self.output_url = 'https://github.com/gammapy/gamma-cat/blob/master/output'
+
         self.description = "An open data collection and source catalog for gamma-ray astronomy"
 
         self.datetime = str(Time.now())

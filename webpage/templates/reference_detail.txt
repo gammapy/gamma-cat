@@ -7,12 +7,22 @@ Basic info
 ----------
 
 * Reference: {{ reference.reference_id }}
-* TODO: link to input folder
-* TODO: link to output folder
+* Edit on github: `input/data/{{ reference.reference_id[:4] }}/{{ reference.reference_id }} <{{ reference.input_folder }}>`__
+* Catalog data on github: `output/data/{{ reference.reference_id[:4] }}/{{ reference.reference_id }} <{{ reference.output_folder }}>`__
 * ADS: `{{ reference.ads_url }} <{{ reference.ads_url}}>`__
-* TODO: summarise available data and data entry status
+
+* Data entry:
+    * Status:   {{ reference.data_entry_status }}
+    * Reviewed: {{ reference.data_review_status }}
 
 Resources
 ---------
 
-* TODO
+{% for resource in resources %}
+* reference_id: **{{ resource.reference_id }}** , type: **{{ resource.type }}** , file_id: **{{ resource.file_id }}**
+    * `input/{{ resource.url_input }} <https://github.com/gammapy/gamma-cat/tree/master/input/{{ resource.url_input }}>`__
+    * `output/{{ resource.url_output }} <https://github.com/gammapy/gamma-cat/tree/master/output/{{ resource.url_output }}>`__
+    * `Download file <{{ resource.url_webpage }}>`__
+{% else %}
+* None
+{% endfor %}

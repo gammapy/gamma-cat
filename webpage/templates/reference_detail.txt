@@ -7,21 +7,22 @@ Basic info
 ----------
 
 * Reference: {{ reference.reference_id }}
-* Edit on github: `input/data/{{ reference.reference_id[:4] }}/{{ reference.reference_id }} <{{ reference.input_folder }}>`__
-* Catalog data on github: `output/data/{{ reference.reference_id[:4] }}/{{ reference.reference_id }} <{{ reference.output_folder }}>`__
-* ADS: `{{ reference.ads_url }} <{{ reference.ads_url}}>`__
+* Input folder on Github: `{{ reference.input_url }} <{{ reference.input_url_github }}>`__
+* Output folder on Github: `{{ reference.output_url }} <{{ reference.output_url_github }}>`__
+* ADS: `{{ reference.ads_record.reference_id }} <{{ reference.ads_record.url }}>`__
+
 
 * Data entry:
-    * Status:   {{ reference.data_entry_status }}
-    * Reviewed: {{ reference.data_review_status }}
+    * Status: {{ reference.info_data.data_entry.status }}
+    * Reviewed: {{ reference.info_data.data_entry.reviewed }}
 
 Resources
 ---------
 
 {% for resource in resources %}
 * reference_id: **{{ resource.reference_id }}** , type: **{{ resource.type }}** , file_id: **{{ resource.file_id }}**
-    * `input/{{ resource.url_input }} <https://github.com/gammapy/gamma-cat/tree/master/input/{{ resource.url_input }}>`__
-    * `output/{{ resource.url_output }} <https://github.com/gammapy/gamma-cat/tree/master/output/{{ resource.url_output }}>`__
+    * `input/{{ resource.url_input }} <{{ resource.url_input_github }}>`__
+    * `output/{{ resource.url_output }} <{{ resource.url_output_github }}>`__
     * `Download file <{{ resource.url_webpage }}>`__
 {% else %}
 * None

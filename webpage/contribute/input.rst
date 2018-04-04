@@ -15,7 +15,7 @@ All data entry is done in the folder named ``input``. It contains three sub-fold
 
 * ``sources`` contains yaml-files with basic information about the gamma-ray sources.
 * ``data`` contains the data from publications stored in ``YAML`` and ``ECSV`` files. The folder contains subfolders named by years and there subsubfolders named by reference_ids. E.g. the data from the publication with reference ``2015ApJ...802...65A`` is stored in the folder ``input/data/2015/2015ApJ...802...65A``. All these files are named corresponding to the source_id of the gamma-ray source defined in its definition file.
-* ``schemas`` contains files which define the structure of the data entry files.
+* ``schemas`` contains files which define the structure of the data entry files and descriptions of the properties in the data files.
 
 Now, these input files will be discussed in more detail, firstly the source definition files in `sources`:
 
@@ -25,14 +25,17 @@ At the end of `basic_source_info.schema.yaml <https://www.github.com/gammapy/gam
 
 A good example to get familiar with this is e.g. `tev_000049.yaml <https://www.github.com/gammapy/gamma-cat/input/sources/tev_000029.yaml>`__ and compare it with `basic_source_info.schema.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/basic_source_info.schema.yaml>`__
 
-The folders in /input/data/<year> contain ecsv files with measured fluxes in it, e.g. `tev-000034-sed.ecsv <https://github.com/gammapy/gamma-cat/blob/master/input/data/2010/2010ApJ...715L..49A/tev-000034-sed.ecsv>`__. Additional information like ``source_id`` or ``telescope`` are stored as meta data in the file.
+The folders in /input/data/<year>/<reference> contain ecsv files with measured data in it, e.g. `tev-000034-sed.ecsv <https://github.com/gammapy/gamma-cat/blob/master/input/data/2010/2010ApJ...715L..49A/tev-000034-sed.ecsv>`__, yaml files with model parameters, e.g. `tev-000034.yaml <https://github.com/gammapy/gamma-cat/tree/master/input/data/2010/2010ApJ...715L..49A/tev-000034.yaml>`__, and finally a info yaml file in which all data corresponding to the publication are summarised, e.g. `info.yaml <https://github.com/gammapy/gamma-cat/blob/master/input/data/2010/2010ApJ...715L..49A/info.yaml>`__.
 
-Moreover, there is always a info.yaml file, e.g. `info.yaml <https://github.com/gammapy/gamma-cat/blob/master/input/data/2010/2010ApJ...715L..49A/info.yaml>`__, and the information which can be stored in is defined in `dataset_info.schema.yaml <https://github.com/gammapy/gamma-cat/blob/master/input/schemas/dataset_info.schema.yaml>`__.
+The escv files can be either the measurement of spectral fluxes or of lightcurves. Information about the units of the data and additional information like ``source_id`` or ``telescope`` are stored as meta data in the header of the file.
+The naming convention is ``tev-<source_id>-sed.ecsv`` and ``tev-<source_id>-lc.ecsv``, respectively.
 
-Thirdly, there are YAML files named by the ``source_id`` in which the model parameters given in the publication are stored.
-Analogously, the information which can/ must be stored in such a yaml file are defined in `dataset_source_info.schemas.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/dataset_source_info.schemas.yaml>`__.
+The YAML files contain the model parameters given in the publication and are named within gamma-cat as ``dataset-files``.
+The information which can/ has to be stored in a yaml file are defined in `dataset_source_info.schemas.yaml <https://www.github.com/gammapy/gamma-cat/tree/master/input/schemas/dataset_source_info.schemas.yaml>`__.
 
-To get familiar with the data files, compare e.g. `tev_000159.yaml <https://www.github.com/gammapy/gamma-cat/input/data/2015/2015arXiv151100309G/tev_000159.yaml>`__ with `dataset_source_info.schemas.yaml <https://www.github.com/gammapy/gamma-cat/input/schemas/dataset_source_info.schemas.yaml>`__.
+The info.yaml files give an overview about all stored data which is related to the publication and its layout is defined in  `dataset_info.schema.yaml <https://github.com/gammapy/gamma-cat/tree/master/input/schemas/dataset_info.schema.yaml>`__. One important property in a info file is ``data-entry`` with its subinformation ``status``, ``reviewed`` and ``notes``.
 
-When you add input data you have to do two things. Firstly, you must update the data status in the corresponding ``info.yaml`` file. Secondly, you have to tell gamma-cat about the new data. This is done in `gammacat_database.yaml <https://www.github.com/gammapy/gamma-cat/input/gammacat/gammacat_database.yaml>`__ where you must add the ``reference_id`` of the publication of the added data. Gamma-cat will only contain data whose ``reference_id`` is listed in `gammacat_database.yaml <https://www.github.com/gammapy/gamma-cat/input/gammacat/gammacat_database.yaml>`__.
+Add/ Change data:
+-----------------
 
+When you add or change input data you have to do three things. Firstly, you must add or change the data, secondly, you must update the data status in the corresponding ``info.yaml`` file and finally, you have to tell gamma-cat that there is new data. This is done in `gammacat_database.yaml <https://www.github.com/gammapy/gamma-cat/input/gammacat/gammacat_database.yaml>`__ where you must add the ``reference_id`` of the publication of the added data. Gamma-cat will only contain data whose ``reference_id`` is listed in `gamma_cat_dataset.yaml <https://www.github.com/gammapy/gamma-cat/input/gammacat/gamma_cat_dataset.yaml>`__.

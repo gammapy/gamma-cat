@@ -1,22 +1,29 @@
 # %ECSV 0.9
 # ---
 # datatype:
-# - {name: e_ref, datatype: float32, unit: eV}
-# - {name: e_min, datatype: float32, unit: eV}
-# - {name: e_max, datatype: float32, unit: eV}
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e_min, datatype: float32, unit: TeV}
+# - {name: e_max, datatype: float32, unit: TeV}
 # - {name: e2dnde, datatype: float32, unit: eV cm-2 s-1}
 # - {name: e2dnde_errn, datatype: float32, unit: eV cm-2 s-1}
 # - {name: e2dnde_errp, datatype: float32, unit: eV cm-2 s-1}
+# - {name: dnde_ul, datatype: float32, unit: TeV-1 cm-2 s-1}
 # meta: !!omap
 # - data_type: sed
 # - source_id: 98
 # - reference_id: 2015A&A...574A.100H
 # - telescope: hess
 # - url: https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349
+# - UL_CONF: 0.99
 # - comments: |
 #     That page also contains a Fermi-LAT spectrum.
-e_ref e_min e_max e2dnde e2dnde_errn e2dnde_errp
-0.29337e12 0.22e12 0.3912e12 0.513939 0.203023 0.203023
-0.5217e12 0.391e12 0.6957e12 0.44736 0.112269 0.112269
-0.9277e12 0.6957e12 1.2371e12 0.198094 0.0895433 0.0895433
-1.6497e12 1.2371e12 2.20e12 0.148243 0.0468195 0.0468195
+#     The upper limits are extracted from the figure using a DataPicker.
+e_ref e_min e_max e2dnde e2dnde_errn e2dnde_errp dnde_ul
+0.29337 0.22 0.3912 0.513939 0.203023 0.203023 nan
+0.5217 0.391 0.6957 0.44736 0.112269 0.112269 nan
+0.9277 0.6957 1.2371 0.198094 0.0895433 0.0895433 nan
+1.6497 1.2371 2.20 0.148243 0.0468195 0.0468195 nan
+2.85 nan nan nan nan nan 5.02e-13
+5.29 nan nan nan nan nan 1.44e-13
+9.44 nan nan nan nan nan 1.73e-14
+10.62 nan nan nan nan nan 6.04e-14

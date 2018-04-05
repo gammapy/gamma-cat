@@ -5,6 +5,7 @@ telescope: hess
 data:
   livetime: 113h
   significance: 6.6
+  excess: 163
 
 pos:
   ra: {val: 17h17m57.8s, err: 0h0m2.0s, err_sys: 0h0m1.3s}

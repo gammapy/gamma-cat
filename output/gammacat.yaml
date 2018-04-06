@@ -8389,15 +8389,15 @@
   - spec_eflux_1TeV_10TeV_err: 1.364412055560038e-13
   - sed_reference_id: 2015A&A...574A.100H
   - sed_n_points: 4
-  - sed_n_ul: 0
-  - sed_e_ref: 0.848117470741272
+  - sed_n_ul: 4
+  - sed_e_ref: 3.9490585327148438
   - sed_e_min: 0.6359500288963318
   - sed_e_max: 1.13100004196167
-  - sed_dnde: 1.974943429280951e-12
+  - sed_dnde: 1.9749432124405164e-12
   - sed_dnde_err: .nan
   - sed_dnde_errp: 7.231663184947834e-13
   - sed_dnde_errn: 7.231663184947834e-13
-  - sed_dnde_ul: .nan
+  - sed_dnde_ul: 1.8092500425354735e-13
 - !!omap
   - source_id: 99
   - common_name: HESS J1718-385

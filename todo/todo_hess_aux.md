@@ -34,7 +34,7 @@ Complete list in the order listed on that page (roughly reverse chronological or
   - url: [auxinfo_ApLib](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_ApLib)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015A%2526A...573A..31H)
   - source: AP Librae
-  - status: **SED done, YAML empty**  (an EGAL source)
+  - status: done
 - [2015ApJ...802...65A](http://adsabs.harvard.edu/abs/2015ApJ...802...65A)
   - url: [auxinfo_PG1553](https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_PG1553)
   - [data](https://github.com/gammapy/gamma-cat/tree/master/input/data/2015/2015ApJ...802...65A)

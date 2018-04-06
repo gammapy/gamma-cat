@@ -13,23 +13,25 @@ gamma-cat is an open data collection and source catalog for very-high-energy gam
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Data
 
-   data/index
-
-..
+   data/overview
+   data/catalog
+   data/collection
    stats/index
    changes
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: User documentation
 
-   intro/index
-
-..
-   use/index
+   use/overview
+   use/terms
+   use/contributors
+   use/acknowledgements
+   use/relatedresources
+   use/example
 
 .. toctree::
    :maxdepth: 1

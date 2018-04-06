@@ -75,6 +75,7 @@ class WebpageMaker:
         self.make_reference_detail_pages()
 
         self.copy_data()
+        self.copy_catalog()
 
     def make_source_list_page(self):
         ctx = {'sources': self.sources_data}
@@ -122,7 +123,6 @@ class WebpageMaker:
             'source': source,
             'resources': resources,
         }
-
         template = jinja_env.get_template('source_detail.txt')
         txt = template.render(ctx)
 
@@ -179,10 +179,18 @@ class WebpageMaker:
         log.info(f'cp {src} {dst}')
         shutil.copytree(str(src), str(dst))
 
+    def copy_catalog(self):
+        src = gammacat_info.out_path
+        dst = gammacat_info.webpage_path / '_build/html/output/'
+        
+        shutil.copyfile(str(gammacat_info.out_path / 'gammacat.fits.gz'), str(dst / 'gammacat.fits.gz'))
+        shutil.copyfile(str(gammacat_info.out_path / 'gammacat.ecsv'), str(dst / 'gammacat.ecsv'))
+        shutil.copyfile(str(gammacat_info.out_path / 'gammacat.yaml'), str(dst / 'gammacat.yaml'))
+
 
 def add_source_info_for_templates(source):
     source['basic_info_path'] = f'input/sources/tev-{source["source_id"]:06d}.yaml'
-    source['basic_info_url'] = 'https://github.com/gammapy/gamma-cat/blob/master/{source["basic_info_path"]}'
+    source['basic_info_url'] = f'https://github.com/gammapy/gamma-cat/blob/master/{source["basic_info_path"]}'
     source['gamma_sky_url'] = f'http://gamma-sky.net/#/cat/tev/{source["source_id"]}'
     source['name_and_id'] = f'{source["common_name"]} (ID: {source["source_id"]})'
     source['source_title_underline'] = '-' * len(source['name_and_id'])

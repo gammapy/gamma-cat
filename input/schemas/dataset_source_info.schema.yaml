@@ -293,6 +293,8 @@ definitions:
       - argo
       - cat
       - durham
+      - tibet
+      - tactic
     description: Telescope or instrument or observatory
 
   morph_type:

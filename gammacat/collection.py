@@ -215,9 +215,7 @@ class InputCollection:
 
     def _make_index_file_for_input(self):
         resources = []
-        print(self.info_files)
-        print(type(self.info_files))
-        for info_filename in self.data.info_yaml_list:
+        for info_filename in self.info_files.to_list():
             info_data = load_yaml(info_filename)
             if info_data['data_entry']['status'] == 'missing':
                 continue

@@ -254,6 +254,12 @@ class InputInfoCollection:
 
         return cls(data=data)
 
+    def to_list(self):
+        data = []
+        for infodata in self.data:
+            data.append(infodata.path)
+        return data
+
     def validate(self):
         log.info('Validating info.yaml files in `input/data`')
         [_.validate() for _ in self.data]

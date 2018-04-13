@@ -8,7 +8,7 @@ import warnings
 import subprocess
 import click
 from gammacat.info import gammacat_info
-from gammacat.collection import CollectionConfig, CollectionMaker
+from gammacat.collection import CollectionConfig, CollectionMaker, InputCollection
 from gammacat.catalog import CatalogConfig, CatalogMaker
 from gammacat.webpage import WebpageConfig, WebpageMaker
 from gammacat.checks import CheckerConfig, Checker
@@ -45,7 +45,10 @@ def cli_collection(step):
         out_path=gammacat_info.out_path,
         step=step,
     )
-    CollectionMaker(config).run()
+    if (step == 'input-index'):
+        InputCollection(config).run()
+    else:
+        CollectionMaker(config).run()
 
 
 @cli.command(name='catalog')

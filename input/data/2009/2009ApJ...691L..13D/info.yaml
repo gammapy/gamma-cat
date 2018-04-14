@@ -5,8 +5,8 @@ telescope: [magic, veritas]
 datasets:
   - tev-000049.yaml
   - tev-000049-lc.ecsv
+  - tev-000049-sed.ecsv
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: light curve set incomplete (Fig 1); missing spectral points (Fig 2)

@@ -13,7 +13,7 @@ pos:
 
 spec:
   mjd: {min: 55570.5, max: 55710.2}
-  erange: {min: 0.3, max: 1, unit: TeV}
+  erange: {min: 0.25, max: 1, unit: TeV}
   model:
     type: pl
     parameters:

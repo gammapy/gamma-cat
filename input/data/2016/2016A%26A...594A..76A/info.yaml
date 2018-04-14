@@ -12,4 +12,4 @@ datasets:
 data_entry:
   status: incomplete
   reviewed: no
-  notes: VERITAS data complete (note that this is subset of 2017A&A...603A..31A); all Whipple values missing
+  notes: VERITAS data complete (note that this is subset of 2017A%26A...603A..31A); all Whipple values missing

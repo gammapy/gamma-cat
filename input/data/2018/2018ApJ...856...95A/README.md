@@ -1,0 +1,4 @@
+-review
+- missing log parabola spectrum
+- deabsorbed SED
+- copy to gamma-cat

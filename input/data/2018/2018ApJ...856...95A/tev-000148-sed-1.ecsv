@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: e_low, unit: TeV, datatype: float32}
+# - {name: e_high, unit: TeV, datatype: float32}
+# - {name: e2dnde, unit: erg cm-2 s-1, datatype: float32}
+# - {name: e2dnde_err, unit: erg cm-2 s-1, datatype: float32}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 148}
+# - {reference_id: 2018ApJ...856...95A }
+# - {telescope: veritas}
+# - mjd: {max: 57666.290787, min: 57666.1637384}
+# - comments: |
+#     Figure 3 (labeled VERITAS flare)
+e_ref   e_low   e_high   e2dnde      e2dnde_err
+0.1567  0.1259  0.1995  1.491028e-10    6.019190e-12
+0.2484  0.1995  0.3162  1.285154e-10    4.666097e-12
+0.3937  0.3162  0.5012  6.878903e-11    3.625703e-12
+0.6239  0.5012  0.7943  3.467475e-11    2.875011e-12
+0.9888  0.7943  1.2589  8.412010e-12    1.785790e-12
+1.5670  1.2589  1.9953  2.915176e-12    1.510699e-12

@@ -1,0 +1,19 @@
+source_id: 169
+
+common_name: V* V635 Cas
+gamma_names: []
+fermi_names: []
+other_names: [ 	4U 0115+634]
+
+where: gal
+classes: [bin]
+
+seen_by: [veritas]
+
+pos:
+  simbad_id: V* V635 Cas
+  ra: 19.632500
+  dec: 63.742500
+
+reference_ids:
+- 2016ApJ...831..113A

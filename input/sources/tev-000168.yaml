@@ -1,0 +1,19 @@
+source_id: 168
+
+common_name: V* V404 Cyg
+gamma_names: []
+fermi_names: []
+other_names: []
+
+where: gal
+classes: [bin]
+
+seen_by: [veritas]
+
+pos:
+  simbad_id: V* V404 Cyg
+  ra: 306.015917
+  dec: 33.867194
+
+reference_ids:
+- 2016ApJ...831..113A

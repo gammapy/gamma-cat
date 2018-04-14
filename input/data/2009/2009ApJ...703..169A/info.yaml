@@ -4,8 +4,9 @@ telescope: [whipple, veritas, magic]
 
 datasets:
   - tev-000049.yaml
+  - tev-000049-sed.ecsv
 
 data_entry:
   status: incomplete
   reviewed: no
-  notes: VERITAS - light curve (Fig 3) and spectral points (Fig 1) missing
+  notes: VERITAS - light curve (Fig 3) missing

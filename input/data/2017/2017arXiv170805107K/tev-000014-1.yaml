@@ -1,0 +1,28 @@
+source_id: 14
+reference_id: tev-000014-1.yaml
+file_id: 1
+telescope: veritas
+
+data:
+  livetime: 104.4h
+  significance: 27.9
+
+# Orbital period
+orbit:
+    # zero phase for orbital period from Gregory (2002)
+    mjd0: 43366.3d
+    period: {val: 26.4960, unit: day}
+
+#############################################################
+# spectral results are given for different orbital phases
+# (values from Fig 3)
+# phases 0.5-0.8
+spec:
+  phase: {min: 0.5, max: 0.8 }
+  model:
+    type: pl2
+    parameters:
+      e_min: {val: 0.3, unit: TeV}
+      flux: {val: 6.10, err: 0.27, scale: 1e-12, unit: cm-2 s-1}
+      index: {val: 2.63, err: 0.06}
+  erange: {min: 0.3, max: 20.0, unit: TeV}

@@ -11,7 +11,7 @@ morph:
   type: point
 
 spec:
-  erange: {min: 0.2, max: 5.0, unit: TeV}
+  erange: {min: 0.2, max: 3.0, unit: TeV}
   mjd: {min: 54914, max: 54914}
   model:
     type: pl

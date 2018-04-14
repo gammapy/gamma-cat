@@ -1,0 +1,21 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, datatype: float32, unit: TeV}
+# - {name: e2dnde, datatype: float32, unit: erg cm-2 s-1}
+# - {name: e2dnde_err, datatype: float32, unit: erg cm-2 s-1}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 106 
+# - reference_id: 2014ApJ...790..149A
+# - telescope: veritas
+# - comments: |
+#       spectral points extracted from Fig.5
+#       using WebPlotDigitizer
+e_ref e2dnde  e2dnde_err
+3.929 3.253e-12  0.47e-12
+5.821 2.623e-12  0.43e-12
+8.565 2.041e-12  0.49e-12
+12.68 2.141e-12  0.46e-12
+18.79 1.569e-12  0.47e-12
+27.84 7.050e-13  5.91e-13

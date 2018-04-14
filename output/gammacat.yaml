@@ -60,8 +60,8 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_erange_min: 0.5600000023841858
+  - spec_erange_max: 18.0
   - spec_theta: .nan
   - spec_dnde_1TeV: 1.0202536515277472e-12
   - spec_dnde_1TeV_err: 2.6738846054842613e-13
@@ -74,7 +74,7 @@
   - sed_reference_id: 2013ApJ...764...38A
   - sed_n_points: 6
   - sed_n_ul: 0
-  - sed_e_ref: .nan
+  - sed_e_ref: 5.121666431427002
   - sed_e_min: 3.686666488647461
   - sed_e_max: 6.556666851043701
   - sed_dnde: 4.671833124351987e-13
@@ -228,8 +228,8 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: .nan
-  - spec_erange_max: .nan
+  - spec_erange_min: 0.30000001192092896
+  - spec_erange_max: 10.0
   - spec_theta: .nan
   - spec_dnde_1TeV: 2.20000002915631e-13
   - spec_dnde_1TeV_err: 4.99999991225835e-14
@@ -1673,10 +1673,10 @@
   - sed_e_ref: 0.4025750160217285
   - sed_e_min: .nan
   - sed_e_max: .nan
-  - sed_dnde: 1.3297502205258938e-12
+  - sed_dnde: 1.3297501988418503e-11
   - sed_dnde_err: .nan
-  - sed_dnde_errp: 4.2810015515176714e-13
-  - sed_dnde_errn: 4.2810015515176714e-13
+  - sed_dnde_errp: 4.281001334677237e-12
+  - sed_dnde_errn: 4.281001334677237e-12
   - sed_dnde_ul: .nan
 - !!omap
   - source_id: 21
@@ -4695,8 +4695,8 @@
   - sed_n_points: 6
   - sed_n_ul: 0
   - sed_e_ref: 0.528378963470459
-  - sed_e_min: .nan
-  - sed_e_max: .nan
+  - sed_e_min: 0.44458016753196716
+  - sed_e_max: 0.6279869675636292
   - sed_dnde: 2.0328255745383217e-10
   - sed_dnde_err: 8.141542301443039e-11
   - sed_dnde_errp: .nan
@@ -6038,10 +6038,10 @@
   - sed_reference_id: 2016MNRAS.461..202A
   - sed_n_points: 4
   - sed_n_ul: 0
-  - sed_e_ref: .nan
+  - sed_e_ref: 0.5047500133514404
   - sed_e_min: 0.40354999899864197
   - sed_e_max: 0.6396000385284424
-  - sed_dnde: 3.244249920791864e-12
+  - sed_dnde: 3.2692498881659038e-12
   - sed_dnde_err: 1.4297499816018355e-12
   - sed_dnde_errp: .nan
   - sed_dnde_errn: .nan
@@ -6559,7 +6559,7 @@
   - where: egal
   - classes: fsrq
   - discoverer: hess
-  - seen_by: hess
+  - seen_by: hess,magic
   - discovery_date: 2010-03
   - tevcat_id: 206
   - tevcat2_id: hptayL
@@ -8389,15 +8389,15 @@
   - spec_eflux_1TeV_10TeV_err: 1.364412055560038e-13
   - sed_reference_id: 2015A&A...574A.100H
   - sed_n_points: 4
-  - sed_n_ul: 0
-  - sed_e_ref: 0.848117470741272
+  - sed_n_ul: 4
+  - sed_e_ref: 3.9490585327148438
   - sed_e_min: 0.6359500288963318
   - sed_e_max: 1.13100004196167
-  - sed_dnde: 1.974943429280951e-12
+  - sed_dnde: 1.9749432124405164e-12
   - sed_dnde_err: .nan
   - sed_dnde_errp: 7.231663184947834e-13
   - sed_dnde_errn: 7.231663184947834e-13
-  - sed_dnde_ul: .nan
+  - sed_dnde_ul: 1.8092500425354735e-13
 - !!omap
   - source_id: 99
   - common_name: HESS J1718-385
@@ -12616,7 +12616,7 @@
   - tevcat_name: TeV J2009-488
   - tgevcat_id: 140
   - tgevcat_name: TeV J2009-4849
-  - reference_id: 2010A&A...511A..52A
+  - reference_id: 2010A&A...511A..52H
   - significance: .nan
   - livetime: .nan
   - ra: 302.3558044433594
@@ -12746,8 +12746,8 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: 0.6499999761581421
-  - spec_erange_max: 10.0
+  - spec_erange_min: 0.5
+  - spec_erange_max: 15.0
   - spec_theta: 0.09000000357627869
   - spec_dnde_1TeV: 3.099999911718859e-13
   - spec_dnde_1TeV_err: 9.000000180878209e-14

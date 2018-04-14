@@ -12,10 +12,10 @@ properties:
     items: {type: integer}
     description: Unique source identifier integer in gamma-cat
 
-  # TODO: use enum for validation
   telescope:
     type: array
-    items: {type: string}
+    items:
+      "$ref": "#/definitions/telescope"
     description: Telescope or instrument or observatory
 
   datasets:
@@ -42,3 +42,22 @@ properties:
         type: string
         description: |
           Hand-written notes concerning status or action items for data entry for this dataset.
+
+definitions:
+
+  telescope:
+    enum:
+      - hess
+      - veritas
+      - magic
+      - whipple
+      - hegra
+      - cangaroo
+      - hawc
+      - milagro
+      - crimea
+      - argo
+      - cat
+      - durham
+      - tibet
+      - tactic

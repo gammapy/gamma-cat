@@ -7,12 +7,23 @@ Basic info
 ----------
 
 * Reference: {{ reference.reference_id }}
-* TODO: link to input folder
-* TODO: link to output folder
-* ADS: `{{ reference.ads_url }} <{{ reference.ads_url}}>`__
-* TODO: summarise available data and data entry status
+* Input folder on Github: `{{ reference.input_url }} <{{ reference.input_url_github }}>`__
+* Output folder on Github: `{{ reference.output_url }} <{{ reference.output_url_github }}>`__
+* ADS: `{{ reference.ads_record.reference_id }} <{{ reference.ads_record.url }}>`__
+
+
+* Data entry:
+    * Status: {{ reference.info_data.data_entry.status }}
+    * Reviewed: {{ reference.info_data.data_entry.reviewed }}
 
 Resources
 ---------
 
-* TODO
+{% for resource in resources %}
+* reference_id: **{{ resource.reference_id }}** , type: **{{ resource.type }}** , file_id: **{{ resource.file_id }}**
+    * `input/{{ resource.url_input }} <{{ resource.url_input_github }}>`__
+    * `output/{{ resource.url_output }} <{{ resource.url_output_github }}>`__
+    * `Download file <{{ resource.url_webpage }}>`__
+{% else %}
+* None
+{% endfor %}

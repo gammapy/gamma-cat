@@ -3,7 +3,7 @@
 Overview
 --------
 
-Gamma-Cat is organised as a `Github respository <http://github.com/gammapy/gamma-cat>`__ which mainly contains of the `catalog and collection <http://github.com/gammapy/gamma-cat/tree/master/output>`__, the raw `input data <http://github.com/gammapy/gamma-cat/tree/master/input>`__, the sphinx code of this `webpage <http://github.com/gammapy/gamma-cat/tree/master/webpage>`__ and a `Python package <http://github.com/gammapy/gamma-cat/tee/master/gammacat>`__ to work with the data.
+Gamma-Cat is organised as a `Github respository <http://github.com/gammapy/gamma-cat>`__ which mainly contains of the `catalog and collection <http://github.com/gammapy/gamma-cat/tree/master/output>`__, the raw `input data <http://github.com/gammapy/gamma-cat/tree/master/input>`__, the sphinx code of this `webpage <http://github.com/gammapy/gamma-cat/tree/master/webpage>`__ and a `Python package <http://github.com/gammapy/gamma-cat/tree/master/gammacat>`__ to work with the data.
 The project is BSD licensed (like Astropy, Gammapy).
 This license only applies to the code, it has nothing to do with the data.
 

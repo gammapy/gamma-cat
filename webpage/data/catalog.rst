@@ -6,9 +6,9 @@ Source catalog
 The source catalog is available as a single table in a single file.
 It contains only part of the data available in gamma-cat.
 
-* `gammacat.fits.gz <../data/data/gammacat.fits.gz>`__ -- Main version of the source catalog (in FITS format)
-* `gammacat.ecsv <../data/data/gammacat.ecsv>`__ -- Partial source catalog (in ECSV format)
-* `gammacat.yaml <../data/data/gammacat.yaml>`__ -- Partial source catalog (in YAML format)
+* `gammacat.fits.gz <../output/gammacat.fits.gz>`__ -- Main version of the source catalog (in FITS format)
+* `gammacat.ecsv <../output/gammacat.ecsv>`__ -- Partial source catalog (in ECSV format)
+* `gammacat.yaml <../output/gammacat.yaml>`__ -- Partial source catalog (in YAML format)
 
 Why multiple formats?
 

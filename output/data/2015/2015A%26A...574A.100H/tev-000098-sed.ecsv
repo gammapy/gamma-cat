@@ -7,16 +7,24 @@
 # - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
 # - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical negative error (1 sigma) on `dnde`}
 # - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical positive error (1 sigma) on `dnde`}
+# - {name: dnde_ul, unit: 1 / (cm2 s TeV), datatype: float32, description: Upper limit (at `UL_CONF` level) on `dnde`}
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 98}
 # - {reference_id: 2015A&A...574A.100H}
 # - {telescope: hess}
 # - {url: 'https://www.mpi-hd.mpg.de/hfm/HESS/pages/publications/auxiliary/auxinfo_SNRG349'}
-# - {comments: That page also contains a Fermi-LAT spectrum.}
+# - {UL_CONF: 0.99}
+# - {comments: 'That page also contains a Fermi-LAT spectrum.
+# 
+#     The upper limits are extracted from the figure using a DataPicker.'}
 # schema: astropy-2.0
-e_ref e_min e_max dnde dnde_errn dnde_errp
-0.29337 0.22 0.3912 5.9714555e-12 2.3589232e-12 2.3589232e-12
-0.5217 0.391 0.69570005 1.6436732e-12 4.124945e-13 4.124945e-13
-0.92770004 0.69570005 1.2371 2.3017393e-13 1.0404421e-13 1.0404421e-13
-1.6496999 1.2371 2.2 5.447086e-14 1.72035e-14 1.72035e-14
+e_ref e_min e_max dnde dnde_errn dnde_errp dnde_ul
+0.29337 0.22 0.3912 5.971455e-12 2.3589232e-12 2.3589232e-12 nan
+0.5217 0.391 0.6957 1.6436732e-12 4.124945e-13 4.124945e-13 nan
+0.9277 0.6957 1.2371 2.3017398e-13 1.0404423e-13 1.0404423e-13 nan
+1.6497 1.2371 2.2 5.447086e-14 1.72035e-14 1.72035e-14 nan
+2.85 nan nan nan nan nan 5.02e-13
+5.29 nan nan nan nan nan 1.44e-13
+9.44 nan nan nan nan nan 1.73e-14
+10.62 nan nan nan nan nan 6.04e-14

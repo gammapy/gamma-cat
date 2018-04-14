@@ -8,7 +8,7 @@ import urllib.parse
 from gammapy.catalog import GammaCatResourceIndex
 from .input import BasicSourceList
 from .info import gammacat_info
-from .utils import load_json, jinja_env
+from .utils import load_json, jinja_env, load_yaml
 from pathlib import Path
 
 __all__ = [
@@ -61,12 +61,8 @@ class WebpageMaker:
 
         references_data = []
         for reference_id in reference_ids:
-            ads_url = f'https://ui.adsabs.harvard.edu/#abs/{reference_id}'
-            references_data.append(dict(
-                reference_title_underline='-' * len(reference_id),
-                reference_id=reference_id,
-                ads_url=ads_url,
-            ))
+            references_data.append(make_reference_data(reference_id))
+
         return references_data
 
     def run(self):
@@ -79,6 +75,7 @@ class WebpageMaker:
         self.make_reference_detail_pages()
 
         self.copy_data()
+        self.copy_catalog()
 
     def make_source_list_page(self):
         ctx = {'sources': self.sources_data}
@@ -126,7 +123,6 @@ class WebpageMaker:
             'source': source,
             'resources': resources,
         }
-
         template = jinja_env.get_template('source_detail.txt')
         txt = template.render(ctx)
 
@@ -135,8 +131,11 @@ class WebpageMaker:
         path.write_text(txt)
 
     def make_reference_detail_page(self, reference):
-        ctx = {'reference': reference}
-
+        resources = []
+        for resource in (
+                self.resource_index_output.query('reference_id == {!r}'.format(reference['reference_id']))).resources:
+            resources.append(dict(self.make_resource_info_for_template(resource)))
+        ctx = {'reference': reference, 'resources': resources}
         template = jinja_env.get_template('reference_detail.txt')
         txt = template.render(ctx)
 
@@ -145,23 +144,22 @@ class WebpageMaker:
         path.write_text(txt)
 
     def make_resource_info_for_template(self, resource):
+        input_resource = find_resource(self.resource_index_input, resource)
+
         # This is a bit of a hack: we need to URL encode the resource "location",
         # because for reference identifiers with a "&" character, the filename
         # contains "%26", and the "%" in that filename has to be URL encoded again
         # to get the right URL linking to that file, resulting in "%2526"
         # See https://en.wikipedia.org/wiki/Percent-encoding
         # or https://gamma-cat.readthedocs.io/contribute/details.html#reference-identifiers
-        url_output = urllib.parse.quote(resource.location)
-        # source_id_str = format(resource.source_id, '06d')
-        # parsedref = urllib.parse.quote(resource.reference_id)
-        # year = resource.reference_id[:4]
-
-        input_resource = find_resource(self.resource_index_input, resource)
         url_input = urllib.parse.quote(input_resource.location)
+        url_output = urllib.parse.quote(resource.location)
 
         resource = resource.__dict__.copy()
         resource['url_input'] = url_input
         resource['url_output'] = url_output
+        resource['url_input_github'] = f'https://github.com/gammapy/gamma-cat/tree/master/input/{url_input}'
+        resource['url_output_github'] = f'https://github.com/gammapy/gamma-cat/tree/master/output/{url_output}'
         resource['url_webpage'] = f'../../output/{resource["url_output"]}'
         return resource
 
@@ -181,9 +179,18 @@ class WebpageMaker:
         log.info(f'cp {src} {dst}')
         shutil.copytree(str(src), str(dst))
 
+    def copy_catalog(self):
+        src = gammacat_info.out_path
+        dst = gammacat_info.webpage_path / '_build/html/output/'
+        
+        shutil.copyfile(str(gammacat_info.out_path / 'gammacat.fits.gz'), str(dst / 'gammacat.fits.gz'))
+        shutil.copyfile(str(gammacat_info.out_path / 'gammacat.ecsv'), str(dst / 'gammacat.ecsv'))
+        shutil.copyfile(str(gammacat_info.out_path / 'gammacat.yaml'), str(dst / 'gammacat.yaml'))
+
 
 def add_source_info_for_templates(source):
-    source['source_id_str'] = format(source['source_id'], '06d')
+    source['basic_info_path'] = f'input/sources/tev-{source["source_id"]:06d}.yaml'
+    source['basic_info_url'] = f'https://github.com/gammapy/gamma-cat/blob/master/{source["basic_info_path"]}'
     source['gamma_sky_url'] = f'http://gamma-sky.net/#/cat/tev/{source["source_id"]}'
     source['name_and_id'] = f'{source["common_name"]} (ID: {source["source_id"]})'
     source['source_title_underline'] = '-' * len(source['name_and_id'])
@@ -191,6 +198,30 @@ def add_source_info_for_templates(source):
     source['tevcat_url'] = f'http://tevcat.uchicago.edu/?mode=1;id={source["tevcat_id"]}'
 
     source['ads_records'] = [make_ads_record(_) for _ in source['reference_ids']]
+
+
+def make_reference_data(reference_id):
+
+    subfolder = reference_id[:4]
+    reference_id_folder = urllib.parse.quote(urllib.parse.quote(reference_id))
+    input_url = f'input/data/{subfolder}/{reference_id_folder}'
+    input_url_github = f'{gammacat_info.input_url}/data/{subfolder}/{reference_id_folder}'
+    output_url = f'output/data/{subfolder}/{reference_id_folder}'
+    output_url_github = f'{gammacat_info.output_url}/data/{subfolder}/{reference_id_folder}'
+
+    info_path = gammacat_info.in_path / 'data' / f'{reference_id[:4]}/{urllib.parse.quote(reference_id)}' / 'info.yaml'
+    info_data = load_yaml(info_path)
+
+    return dict(
+        reference_title_underline='-' * len(reference_id),
+        reference_id=reference_id,
+        ads_record=make_ads_record(reference_id),
+        input_url=input_url,
+        output_url=output_url,
+        input_url_github=input_url_github,
+        output_url_github=output_url_github,
+        info_data=info_data,
+    )
 
 
 def make_ads_record(reference_id):

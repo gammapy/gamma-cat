@@ -6,7 +6,7 @@ Source: {{ source.name_and_id }}
 Basic source info
 -----------------
 
-* Edit on Github: `input/sources/tev-{{ source.source_id_str }}.yaml <https://github.com/gammapy/gamma-cat/blob/master/input/sources/tev-{{ source.source_id_str }}.yaml>`__
+* Edit on Github: `{{ source.basic_info_path }} <{{ source.basic_info_url }}>`__
 * Source on gamma-sky.net: `{{source.gamma_sky_url}} <{{ source.gamma_sky_url }}>`__
 * Source on TeVCat: `{{source.tevcat_url}} <{{ source.tevcat_url }}>`__
 
@@ -26,8 +26,8 @@ Resources
 
 {% for resource in resources %}
 * reference_id: **{{ resource.reference_id }}** , type: **{{ resource.type }}** , file_id: **{{ resource.file_id }}**
-    * `input/{{ resource.url_input }} <https://github.com/gammapy/gamma-cat/tree/master/input/{{ resource.url_input }}>`__
-    * `output/{{ resource.url_output }} <https://github.com/gammapy/gamma-cat/tree/master/output/{{ resource.url_output }}>`__
+    * `input/{{ resource.url_input }} <{{ resource.url_input_github }}>`__
+    * `output/{{ resource.url_output }} <{{ resource.url_output_github }}>`__
     * `Download file <{{ resource.url_webpage }}>`__
 {% else %}
 * None

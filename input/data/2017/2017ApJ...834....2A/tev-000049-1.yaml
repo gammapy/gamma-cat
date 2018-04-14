@@ -10,3 +10,16 @@ data:
     n_off: 538
     alpha: 0.1
 
+# Spectrum for 2014-04-29
+# Note: not explicitely mentioned in paper 
+# (from internal notes)
+spec:
+  erange: {min: 0.2, max: 4.4, unit: TeV}
+  mjd: {max: 56776.33, min: 56776.14}
+  model:
+    type: ecpl
+    parameters:
+      norm: {val: 9.56, err: 1.44, err_sys: 1.9, scale: 1e-7, unit: m-2 s-1 TeV-1}
+      index: {val: 2.25, err: 0.097, err_sys: 0.15 }
+      e_cut: {val: 1.40, err: 0.26, unit: TeV}
+      e_ref: {val: 1, unit: TeV}

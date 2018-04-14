@@ -1,0 +1,14 @@
+reference_id: 2016ApJ...831..113A
+source_id: [168]
+telescope: [veritas]
+
+datasets:
+  - tev-000168.yaml
+  - tev-000168-lc.ecsv
+  - tev-000169.yaml
+  - tev-000169-lc.ecsv
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: total upper limits of all data

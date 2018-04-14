@@ -5,6 +5,11 @@ source_id: 14
 reference_id: 2008ApJ...679.1427A
 telescope: veritas
 
+data:
+  livetime: 45.9h
+  significance: 8.4
+  excess: 259
+
 ##################
 # Source position fit
 pos:

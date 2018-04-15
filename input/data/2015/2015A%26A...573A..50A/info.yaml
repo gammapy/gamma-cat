@@ -3,6 +3,7 @@ source_id: [91]
 telescope: [magic, veritas]
 
 datasets:
+  - tev-000091-1.yaml
   - tev-000091-2.yaml
   - tev-000091-3.yaml
   - tev-000091-4.yaml

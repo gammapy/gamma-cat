@@ -12,4 +12,4 @@ datasets:
 data_entry:
   status: incomplete
   reviewed: no
-  note: missing log parabola spectrum; deabsorbed spectrum
+  notes: missing log parabola spectrum; deabsorbed spectrum

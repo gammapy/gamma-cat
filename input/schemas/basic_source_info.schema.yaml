@@ -100,8 +100,13 @@ required:
   - other_names
   - where
   - classes
-  - discoverer
-  - discovery_date
+
+  # TODO: improve detection info schema
+  # See https://github.com/gammapy/gamma-cat/pull/187
+  # For now, we allow files without discoverer
+  # and discovery_date, to support non-detections
+#  - discoverer
+#  - discovery_date
   - reference_ids
 
 definitions:

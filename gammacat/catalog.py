@@ -69,7 +69,7 @@ class DatasetConfig:
 
     @classmethod
     def read(cls):
-        path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_dataset.yaml'
+        path = gammacat_info.base_dir / 'input/gamma_cat_config/gamma_cat_dataset.yaml'
         data = load_yaml(path)
         return cls(data=data, path=path)
 
@@ -513,7 +513,7 @@ class CatalogSchema:
     """Helper class to apply the schema."""
 
     def __init__(self):
-        self.colspecs = load_yaml(gammacat_info.base_dir / 'input/gammacat/gamma_cat_columns.yaml')
+        self.colspecs = load_yaml(gammacat_info.base_dir / 'input/gamma_cat_config/gamma_cat_columns.yaml')
 
     def format_table(self, in_table):
         """Make a new table, formatting things according to this schema.

@@ -56,6 +56,39 @@ class DatasetConfigSource:
         else:
             return self.reference_ids[-1]
 
+class SEDConfigSource:
+
+    def __init__(self, data):
+        self.data = data
+
+    def get_catalog_reference_id(self):
+        return self.data['catalog']['reference_id']
+
+    def get_catalog_file_id(self):
+        return self.data['catalog']['file_id']
+
+class SEDConfig:
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/gamma_cat_sed.schema.yaml')
+
+    def __init__(self, data, path):
+        self.data = data
+        self.path = path
+
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/gammacat/gamma_cat_sed.yaml'
+        data = load_yaml(path)
+        return cls(data=data, path=path)
+
+    @property
+    def source_ids(self):
+        return [_['source_id'] for _ in self.data]
+
+    def get_source_by_id(self, source_id):
+        idx = self.source_ids.index(source_id)
+        return SEDConfigSource(data=self.data[idx])
+
+    #TODO: Add validate function for gamma_cat_sed.yaml
 
 class DatasetConfig:
     """
@@ -584,11 +617,27 @@ class CatalogMaker:
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             log.info('Processing : {}'.format(basic_source_info))
-            reference_id = DatasetConfig.read().get_source_by_id(source_id).get_reference_id()
+            reference_id_dataset = DatasetConfig.read().get_source_by_id(source_id).get_reference_id()
+            reference_id_sed = SEDConfig.read().get_source_by_id(source_id).get_catalog_reference_id()
+            if (reference_id_sed == None):
+                sed = SED(table=Table(), resource=None)
+            else:
+                file_id_sed = SEDConfig.read().get_source_by_id(source_id).get_catalog_file_id()
+                if (file_id_sed == -1):
+                    query = 'type == "sed" and source_id == {} and reference_id == {!r}'.format(source_id, reference_id_sed)
+                    ri = resource_index.query(query)
+                    print(ri.resources[0])
+                    filename = ri.resources[0].location
+                    sed = SED.read(filename=filename)
+                else:
+                    query = 'type == "sed" and source_id == {} and reference_id == {!r} and file_id == {}'.format(source_id, reference_id_sed, file_id_sed)
+                    ri = resource_index.query(query)
+                    filename = ri.resources[0].location
+                    sed = SED.read(filename=filename)
 
             # TODO: right now this implies, that a GammaCatSource object can only
             # handle the information from one dataset, maybe this should be changed
-            dataset = input_data.datasets.get_dataset_by_reference_id(reference_id)
+            dataset = input_data.datasets.get_dataset_by_reference_id(reference_id_dataset)
             dataset_source_info = dataset.get_source_by_id(source_id)
 
             query = 'type == "sed" and source_id == {} and reference_id == {!r}'.format(source_id, reference_id)

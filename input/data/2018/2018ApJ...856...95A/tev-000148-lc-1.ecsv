@@ -5,7 +5,7 @@
 # - {name: time, unit: MJD, datatype: float64}
 # - {name: flux, unit: m-2 s-1, datatype: float64}
 # - {name: flux_err, unit: m-2 s-1, datatype: float64}
-# - {name: live_time, unit: s, datatype: float64}
+# - {name: livetime, unit: s, datatype: float64}
 # meta: !!omap
 # - data_type: lc
 # - source_id: 148
@@ -15,7 +15,7 @@
 # - {SED_TYPE: flux}
 # - comments: |
 #     4-min bins (Fig 1)
-e_min time flux flux_err live_time
+e_min time flux flux_err livetime
 0.2 57666.16512883 2.066401349209e-06 3.977646067535e-07 205.5610568
 0.2 57666.16790661 6.277083521201e-07 2.506630695002e-07 203.7551391
 0.2 57666.17068439 1.661787379172e-06 3.761323190921e-07 202.3007885

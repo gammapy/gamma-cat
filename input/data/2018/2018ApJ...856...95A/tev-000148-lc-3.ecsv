@@ -2,7 +2,6 @@
 # ---
 # datatype:
 # - {name: e_min, unit: TeV, datatype: float64}
-# - {name: time, unit: MJD, datatype: float64}
 # - {name: time_min, unit: MJD, datatype: float64}
 # - {name: time_max, unit: MJD, datatype: float64}
 # - {name: flux, unit: m-2 s-1, datatype: float64}

@@ -14,7 +14,7 @@
 # - mjd: {max: 54586.0, min: 54040.0}
 # - UL_CONF: 0.90
 # - {comments: This data was collected for 2015ApJ...812...60B and contributed to gamma-cat
-#     by Jonathan Biteau.}
+#     by Jonathan Biteau. Upper limit contributed by VERITAS authors.}
 e_ref dnde dnde_errn dnde_errp dnde_ul
 0.309764 1.60148e-11 9.29451e-12 9.29451e-12 nan
 0.393534 7.50308e-12 2.96651e-12 2.96651e-12 nan

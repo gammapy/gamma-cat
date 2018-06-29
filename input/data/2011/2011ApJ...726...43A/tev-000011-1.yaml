@@ -20,4 +20,4 @@ spec:
     parameters:
       e_min: {val: 0.2, unit: TeV}
       flux: {val: 2.5, err: 0.4, scale: 1e-11, unit: cm-2 s-1}
-      index: {val: 4.1, err: 0.6, err_sys: 0.6}
+      index: {val: 4.1000000001, err: 0.6, err_sys: 0.6}

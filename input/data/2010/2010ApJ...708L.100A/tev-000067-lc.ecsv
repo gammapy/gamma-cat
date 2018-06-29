@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: e_max, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: cm-2 s-1, datatype: float64}
+# - {name: flux_err, unit: cm-2 s-1, datatype: float64}
+# meta: !!omap
+# - data_type: lc
+# - source_id: 67
+# - reference_id: 2010ApJ...708L.100A
+# - telescope: veritas
+# - {SED_TYPE: flux}
+# - comments: |
+#     light curve (Figure 2)
+#     obtained from A.Furniss per email
+e_min e_max time flux flux_err
+0.14 0.6 54885  6.8964e-12 4.67318e-12
+0.14 0.6 54941  1.02133e-11 4.09533e-12
+0.14 0.6 54975  9.28052e-12 4.39181e-12
+0.14 0.6 54999  8.33074e-12 2.48033e-12

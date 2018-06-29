@@ -1,0 +1,12 @@
+reference_id: 2017arXiv170805107K
+source_id: [14]
+telescope: [veritas]
+
+datasets:
+  - tev-000014-1.yaml
+  - tev-000014-2.yaml
+
+data_entry:
+  status: incomplete
+  reviewed: no
+  notes: phase-binned light curve data (Fig1 missing); spectral points (Fig3) missing

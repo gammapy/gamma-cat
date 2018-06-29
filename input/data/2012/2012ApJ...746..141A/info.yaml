@@ -7,9 +7,11 @@ datasets:
   - tev-000058-2.yaml
   - tev-000058-3.yaml
   - tev-000058-lc.ecsv
+  - tev-000058-sed-1.ecsv
+  - tev-000058-sed-2.ecsv
+  - tev-000058-sed-3.ecsv
 
 
 data_entry:
-  status: incomplete
+  status: complete
   reviewed: no
-  notes: spectral points missing (Fig 4, three spectra), otherwise complete

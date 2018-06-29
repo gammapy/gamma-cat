@@ -1,0 +1,10 @@
+source_id: 168
+reference_id: 2016ApJ...831..113A
+telescope: veritas
+
+data:
+    livetime: 3.3h
+    significance: 1.0
+    n_on: 21
+    n_off: 100
+    alpha: 0.1667

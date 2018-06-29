@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float64}
+# - {name: dnde, unit: cm-2 s-1 TeV-1, datatype: float32}
+# - {name: dnde_err, unit: cm-2 s-1 TeV-1, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 49
+# - reference_id: 2009ApJ...691L..13D
+# - telescope: veritas
+# - comments: |
+#       light curve points extracted from internal note
+#       using WebPlotDigitizer
+e_ref dnde dnde_err
+0.501187   5.700e-10  0.69e-10
+0.630957   3.620e-10  0.30e-10
+0.794328   1.852e-10  0.19e-10
+1          9.477e-11  0.78e-11
+1.25893    4.954e-11  0.79e-11
+1.58489    3.357e-11  0.59e-11
+1.99526    2.179e-11  0.47e-11 
+2.51189    9.378e-12  2.44e-12
+3.16228    4.124e-12  1.39e-12
+3.98107    1.525e-12  0.76e-12 
+5.01187    8.512e-13  4.84e-13

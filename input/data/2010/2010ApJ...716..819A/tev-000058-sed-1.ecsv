@@ -7,11 +7,12 @@
 # meta: !!omap
 # - {data_type: sed}
 # - {source_id: 58}
+# - file_id: 1
 # - {reference_id: 2010ApJ...716..819A}
 # - {telescope: veritas}
-# - mjd: {max: 54448.0, min: 54588.0}
+# - mjd: {max: 54617.0, min: 54435.0}
 # - comments: |
-#     average spectrum between 2007 Dec and 2007 May, Table 1
+#     average spectrum between 2007 Dec and 2008 May, Table 1
 e_ref dnde dnde_err
 0.24 1.99e-11 0.54e-11
 0.42 3.56e-12 1.16e-12

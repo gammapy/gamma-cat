@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32}
+# - {name: e2dnde, unit: TeV cm-2 s-1, datatype: float32}
+# - {name: e2dnde_err, unit: TeV cm-2 s-1, datatype: float32}
+# meta: !!omap
+# - data_type: sed
+# - source_id: 91
+# - reference_id: 2011ApJ...727..129A
+# - file_id: 1
+# - telescope: veritas
+# - mjd: {max: 55044.0, min: 54905.0}
+# - comments: |
+#     Fig 8 average (converted from nuFnu)
+e_ref e2dnde e2dnde_err
+0.251    1.720e-11     1.871e-12
+0.398    1.635e-11     1.580e-12
+0.630    1.390e-11     1.609e-12
+0.999    1.145e-11     1.725e-12
+1.584    1.359e-11     2.339e-12
+2.511    1.176e-11     2.385e-12
+3.981    5.872e-12     2.422e-12

@@ -16,7 +16,7 @@ morph:
   sigma: {val: 0.23d, err: 0.03d, err_sys: 0.04d }
 
 spec:
-  erange: {min: 0.32, max: 10., unit: TeV}
+  erange: {min: 0.225, max: 14.125, unit: TeV}
   theta: 0.24d
   model:
     type: pl

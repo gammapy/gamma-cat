@@ -7,7 +7,7 @@ data:
   significance: 44.
 
 spec:
-  erange: {min: 0.30, max: 5, unit: TeV}
+  erange: {min: 0.45, max: 5.5, unit: TeV}
   mjd: {min: 54622, max: 54622}
   model:
     type: pl

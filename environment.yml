@@ -1,3 +1,10 @@
+# Conda environment for gamma-cat development
+#
+# Install:    conda env create -f environment.yml
+# Update:     conda env update -f environment.yml
+# Activate:   conda activate gamma-cat
+# Deactivate: conda deactivate
+
 name: gamma-cat
 
 channels:

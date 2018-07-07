@@ -12,7 +12,7 @@ from .sed import SED
 from .lightcurve import LightCurve
 from .dataset import DataSet
 from .info import gammacat_info, GammaCatStr
-from .input import InputData
+from .input import InputData, InputInfoCollection
 from .utils import write_json, load_json, log_list_difference, load_yaml
 
 __all__ = [
@@ -199,6 +199,45 @@ class CollectionData:
         expected_files = expected_files_extra + expected_files_sed
         log_list_difference(actual, expected_files)
 
+class InputCollection:
+
+    def __init__ (self, config):
+        self.config = config
+        self.data = InputData.read()
+        self.info_files = InputInfoCollection.read()
+
+    def run(self):
+        self._validate_info_files()
+        self._make_index_file_for_input()
+
+    def _validate_info_files(self):
+       self.info_files.validate()
+
+    def _make_index_file_for_input(self):
+        resources = []
+        for info_filename in self.info_files.to_list():
+            info_data = load_yaml(info_filename)
+            if info_data['data_entry']['status'] == 'missing':
+                continue
+            # TODO: Decide which datasets are copied to output collection by the keywords in 
+            # 'status' and 'reviewed' in info.yaml
+            # e.g if info_data['data_entry']['status'] == 'complete':
+            for dataset in info_data['datasets']:
+                resource = GammaCatResource(0, 'empty')
+                if dataset.endswith('yaml'):
+                    resource = DataSet.read(info_filename.parent / dataset).resource
+                elif dataset.endswith('ecsv'):
+                    if 'lc' in dataset:
+                        resource = LightCurve.read(info_filename.parent / dataset).resource
+                    elif 'sed' in dataset:
+                        resource = SED.read(info_filename.parent / dataset).resource
+                resource.location = str(info_filename.parent.relative_to(self.config.in_path) / dataset)
+                resources.append(resource)
+
+        self.index = GammaCatResourceIndex(resources).sort()
+
+        path = self.config.index_input_json
+        write_json(self.index.to_list(), path)
 
 class CollectionMaker:
     """Make gamma-cat data collection (from the input files)."""
@@ -212,8 +251,6 @@ class CollectionMaker:
         step = self.config.step
         if step == 'all':
             self.process_all()
-        elif step == 'input-index':
-            self.make_index_file_for_input()
         elif step == 'source-info':
             self.process_src_info()
         elif step == 'dataset':
@@ -233,7 +270,6 @@ class CollectionMaker:
         return InputData.read()
 
     def process_all(self):
-        self.make_index_file_for_input()
 
         self.process_src_info()
         self.process_datasets()
@@ -289,32 +325,6 @@ class CollectionMaker:
                     path = self.config.make_dataset_path(dataset, relative_to_index=False)
                     path.parent.mkdir(parents=True, exist_ok=True)
                     dataset.write(path)
-
-    def make_index_file_for_input(self):
-        resources = []
-        for info_filename in self.input_data.info_yaml_list:
-            info_data = load_yaml(info_filename)
-            if info_data['data_entry']['status'] == 'missing':
-                continue
-            # TODO: Decide which datasets are copied to output collection by the keywords in 
-            # 'status' and 'reviewed' in info.yaml
-            # e.g if info_data['data_entry']['status'] == 'complete':
-            for dataset in info_data['datasets']:
-                resource = GammaCatResource(0, 'empty')
-                if dataset.endswith('yaml'):
-                    resource = DataSet.read(info_filename.parent / dataset).resource
-                elif dataset.endswith('ecsv'):
-                    if 'lc' in dataset:
-                        resource = LightCurve.read(info_filename.parent / dataset).resource
-                    elif 'sed' in dataset:
-                        resource = SED.read(info_filename.parent / dataset).resource
-                resource.location = str(info_filename.parent.relative_to(self.config.in_path) / dataset)
-                resources.append(resource)
-
-        ri = GammaCatResourceIndex(resources).sort()
-
-        path = self.config.index_input_json
-        write_json(ri.to_list(), path)
 
     def make_index_file_for_output(self):
 

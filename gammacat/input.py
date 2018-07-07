@@ -216,6 +216,47 @@ class BasicSourceList:
         log.info('Validating YAML files in `input/sources`')
         [_.validate() for _ in self.data]
 
+class InputInfo:
+    """All basic info about the data of a single publication.
+    """
+
+    schema = load_yaml(gammacat_info.base_dir / 'input/schemas/dataset_info.schema.yaml')
+
+    def __init__(self, data, path):
+        self.data = data
+        self.path = path
+
+    @classmethod
+    def read(cls, path):
+        path = Path(path)
+        data = load_yaml(path)
+        return cls(data=data, path=path)
+
+    def validate(self):
+        validate_schema(path=self.path, data=self.data, schema=self.schema)
+
+class InputInfoCollection:
+    """List of InputInfo objects.
+    """
+
+    def __init__(self, data):
+        self.data = data
+
+    @classmethod
+    def read(cls):
+        path = gammacat_info.base_dir / 'input/data'
+        paths = path.glob('*/*/info.yaml')
+
+        data = []
+        for path in paths:
+            info = InputInfo.read(path)
+            data.append(info)
+
+        return cls(data=data)
+
+    def validate(self):
+        log.info('Validating info.yaml files in `input/data`')
+        [_.validate() for _ in self.data]
 
 class InputDatasetCollection:
     """
@@ -306,6 +347,16 @@ class InputData:
     Expose it as Python objects that can be validated and used.
     """
 
+    def __init__(self, schemas=None, sources=None, datasets=None,
+                 ref_infos=None, gammacat_dataset_config=None):
+        self.path = gammacat_info.base_dir / 'input'
+        self.schemas = schemas
+        self.sources = sources
+        self.datasets = datasets
+        self.ref_infos = ref_infos
+        # TODO: self.lightcurves, self.seds
+        self.gammacat_dataset_config = gammacat_dataset_config
+
     @property
     def src_info_list(self):
         """List of all basic source info files in input/sources"""
@@ -339,14 +390,6 @@ class InputData:
         paths = path.glob('*/*/tev*.yaml')
         return sorted(paths)
 
-    def __init__(self, schemas=None, sources=None, datasets=None,
-                 gammacat_dataset_config=None):
-        self.path = gammacat_info.base_dir / 'input'
-        self.schemas = schemas
-        self.sources = sources
-        self.datasets = datasets
-        self.gammacat_dataset_config = gammacat_dataset_config
-
     @classmethod
     def read(cls):
         """Read all data from disk."""
@@ -355,11 +398,14 @@ class InputData:
         schemas = Schemas.read()
         sources = BasicSourceList.read()
         datasets = InputDatasetCollection.read()
+        ref_infos = InputInfoCollection.read()
+        #TODO: lightcurves, seds
         gammacat_dataset_config = DatasetConfig.read()
         return cls(
             schemas=schemas,
             sources=sources,
             datasets=datasets,
+            ref_infos=ref_infos,
             gammacat_dataset_config=gammacat_dataset_config,
         )
 
@@ -385,6 +431,7 @@ class InputData:
         self.schemas.validate()
         self.sources.validate()
         self.datasets.validate()
+        self.ref_infos.validate()
 
         for filename in self.sed_file_list:
             SED.read(filename=filename).process()

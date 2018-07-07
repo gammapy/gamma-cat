@@ -51,7 +51,10 @@ class DatasetConfigSource:
 
         For now, we always use the last one listed.
         """
-        return self.reference_ids[-1]
+        if (len(self.reference_ids) == 0):
+            return None
+        else:
+            return self.reference_ids[-1]
 
 
 class DatasetConfig:
@@ -542,7 +545,6 @@ class CatalogConfig:
         self.out_path = out_path
         self.source_ids = source_ids
 
-
 class CatalogMaker:
     """Make gamma-cat source catalog (from the data collection)."""
 
@@ -572,7 +574,7 @@ class CatalogMaker:
     def read_source_data(self, source_ids):
         """Gather data into Python data structures."""
         input_data = InputData.read()
-
+        
         # TODO: find a better way to load this
         resource_index = GammaCatResourceIndex.from_list(
             load_json(self.config.out_path / 'gammacat-datasets.json')
@@ -582,11 +584,7 @@ class CatalogMaker:
         for source_id in source_ids:
             basic_source_info = input_data.sources.get_source_by_id(source_id)
             log.info('Processing : {}'.format(basic_source_info))
-            try:
-                config = input_data.gammacat_dataset_config.get_source_by_id(source_id)
-                reference_id = config.get_reference_id()
-            except IndexError:
-                reference_id = None
+            reference_id = DatasetConfig.read().get_source_by_id(source_id).get_reference_id()
 
             # TODO: right now this implies, that a GammaCatSource object can only
             # handle the information from one dataset, maybe this should be changed

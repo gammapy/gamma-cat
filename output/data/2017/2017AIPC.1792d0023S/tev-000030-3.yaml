@@ -1,0 +1,30 @@
+source_id: 30
+reference_id: 2017AIPC.1792d0023S
+file_id: 3
+telescope: veritas
+# Contribution to the 6th International Symposium on High-Energy Gamma-Ray
+# Astronomy (Gamma2016), Heidelberg, Germany
+
+morph:
+  type: point
+
+orbit:
+  # zero phase for orbital period
+  mjd0: 54857d     # arbitarily set to the date of the first Swift observations
+  period: {val: 315, errp: 6, errn: 4, unit: day}
+
+#############################################################
+# spectral results are given for different orbital phases
+# (values from Table 1 in proceedings)
+
+# VERITAS 2010-2015, phases 0.8-0.2
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.34e-13, err: 0.4e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.72, err: 0.2}
+      e_ref: {val: 1, unit: TeV}
+  mjd: {min: 54830.0, max: 57430.220}
+  phase: {min: 0.8, max: 0.2}
+  erange: {min: 0.2, max: 6.31, unit: TeV}

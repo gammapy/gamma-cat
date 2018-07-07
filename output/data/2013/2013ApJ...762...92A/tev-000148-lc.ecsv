@@ -3,9 +3,9 @@
 # datatype:
 # - {name: e_min, unit: TeV, datatype: float64}
 # - {name: time, unit: MJD, datatype: float64}
-# - {name: flux, unit: 1 / (cm2 s), datatype: float64}
-# - {name: flux_err, unit: 1 / (cm2 s), datatype: float64}
-# - {name: flux_ul, unit: 1 / (cm2 s), datatype: float64}
+# - {name: flux, unit: 1 / (m2 s), datatype: float64}
+# - {name: flux_err, unit: 1 / (m2 s), datatype: float64}
+# - {name: flux_ul, unit: 1 / (m2 s), datatype: float64}
 # meta: !!omap
 # - {data_type: lc}
 # - {source_id: 148}

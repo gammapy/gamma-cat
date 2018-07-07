@@ -8,7 +8,7 @@ data:
   excess: 111
 
 spec:
-  erange: {min: 0.250, max: 2., unit: TeV}
+  erange: {min: 0.250, max: 1.32, unit: TeV}
   mjd: {min: 54538, max: 54539.}
   model:
     type: pl

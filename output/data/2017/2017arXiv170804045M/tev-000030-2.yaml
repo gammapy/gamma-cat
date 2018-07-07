@@ -20,8 +20,8 @@ spec:
   model:
     type: pl
     parameters:
-      norm: {val: 0.64, err: 0.4, err_sys: 0.13, scale: 1e-12, unit: cm-2 s-1 TeV-1}
+      norm: {val: 0.64, err: 0.04, err_sys: 0.013, scale: 1e-12, unit: cm-2 s-1 TeV-1}
       index: {val: 2.70, err: 0.06}
       e_ref: {val: 1, unit: TeV}
   phase: {min: 0.2, max: 0.4}
-  erange: {min: 0.235, max: 10.5, unit: TeV}
+  erange: {min: 0.28, max: 6.3, unit: TeV}

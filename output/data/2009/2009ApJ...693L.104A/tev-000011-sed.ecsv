@@ -11,6 +11,7 @@
 # - {reference_id: 2009ApJ...693L.104A}
 # - {telescope: veritas}
 # - mjd: {max: 54800.0, min: 54350.0}
+# - {comments: two UL points in spectrum missing no CL give in paper}
 # schema: astropy-2.0
 e_ref dnde dnde_errn dnde_errp
 0.2263 1.0799999e-10 1.13e-11 1.9499999e-11

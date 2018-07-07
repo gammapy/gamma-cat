@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: time, unit: MJD, datatype: float64}
+# - {name: flux, unit: 1 / (cm2 s), datatype: float64}
+# - {name: flux_err, unit: 1 / (cm2 s), datatype: float64}
+# meta: !!omap
+# - {data_type: lc}
+# - {source_id: 58}
+# - {reference_id: 2010ApJ...716..819A}
+# - {file_id: 1}
+# - {telescope: veritas}
+# - {SED_TYPE: flux}
+# - {comments: 'yearly light curve (Figure 4)
+# 
+#     obtained from M.Hui'}
+# schema: astropy-2.0
+e_min time flux flux_err
+0.73 54192.0 8.53e-13 1.63e-13
+0.73 54528.0 5.56e-13 1.04e-13
+0.73 54905.0 3.2e-13 8e-14
+0.73 55257.0 2.06e-12 1.17e-13

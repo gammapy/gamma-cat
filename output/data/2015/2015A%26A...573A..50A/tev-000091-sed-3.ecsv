@@ -1,0 +1,22 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 91}
+# - {reference_id: 2015A&A...573A..50A}
+# - {file_id: 3}
+# - {telescope: veritas}
+# - mjd: {max: 54604.0, min: 54579.0}
+# - {comments: Fig 5 bottom (converted from nuFnu)}
+# schema: astropy-2.0
+e_ref dnde dnde_err
+0.389 5.8564244e-11 2.1034756e-11
+0.581 2.514509e-11 7.582334e-12
+0.867 1.1873262e-11 2.8229762e-12
+1.291 4.7183594e-12 1.3103886e-12
+1.923 1.3466998e-12 5.4841505e-13
+2.866 8.4344256e-13 3.4185718e-13

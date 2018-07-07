@@ -16,6 +16,6 @@
 # - {comments: yearly light curve; MJDs approximate}
 # schema: astropy-2.0
 time e_min flux flux_err flux_ul
-54902.5 0.2 nan nan 4.5
+54902.5 0.2 nan nan 4.5e-12
 55640.5 0.2 8e-12 9e-13 nan
 56003.5 0.2 2.8e-12 1.1e-12 nan

@@ -9,7 +9,7 @@ morph:
 # spectral fit - 2007 December 7
 # (marked as high state in the paper)
 spec:
-  erange: {min: 0.39, max: 8.3, unit: TeV}
+  erange: {min: 0.39, max: 2.8, unit: TeV}
   mjd: {max: 54441.5, min: 54440.5}
   model:
     type: pl

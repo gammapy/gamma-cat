@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 148}
+# - {reference_id: 2018ApJ...856...95A}
+# - {telescope: veritas}
+# - mjd: {max: 57666.290787, min: 57666.1637384}
+# - {comments: Figure 3 (labeled VERITAS flare)}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err
+0.1567 0.0308 0.35619998 3.7899848e-09 1.5299938e-10
+0.2484 0.04890001 0.5646 1.2999948e-09 4.7199803e-11
+0.3937 0.077500015 0.8949 2.7699887e-10 1.4599938e-11
+0.6239 0.122699976 1.4182 5.5599768e-11 4.6099812e-12
+0.9888 0.19449997 2.2477 5.369978e-12 1.1399953e-12
+1.567 0.3081 3.5623002 7.4099684e-13 3.8399852e-13

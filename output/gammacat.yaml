@@ -228,7 +228,7 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: 0.30000001192092896
+  - spec_erange_min: 0.44999998807907104
   - spec_erange_max: 10.0
   - spec_theta: .nan
   - spec_dnde_1TeV: 2.20000002915631e-13
@@ -1909,7 +1909,7 @@
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
   - spec_erange_min: 0.20000000298023224
-  - spec_erange_max: 1.0
+  - spec_erange_max: 1.25
   - spec_theta: .nan
   - spec_dnde_1TeV: 8.510193960122037e-13
   - spec_dnde_1TeV_err: 1.7391879494725593e-13
@@ -2556,7 +2556,7 @@
   - morph_pa_frame: ''
   - spec_type: pl
   - spec_pl_norm: 2.099999997029825e-13
-  - spec_pl_norm_err: 3.99999992980668e-13
+  - spec_pl_norm_err: 3.99999992980668e-14
   - spec_pl_norm_err_sys: 3.99999992980668e-14
   - spec_pl_index: 2.6700000762939453
   - spec_pl_index_err: 0.20000000298023224
@@ -2581,16 +2581,16 @@
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
   - spec_erange_min: 0.23499999940395355
-  - spec_erange_max: 10.5
+  - spec_erange_max: 5.5
   - spec_theta: .nan
   - spec_dnde_1TeV: 2.099999997029825e-13
-  - spec_dnde_1TeV_err: 3.99999992980668e-13
+  - spec_dnde_1TeV_err: 3.99999992980668e-14
   - spec_flux_1TeV: 1.2574850557535433e-13
-  - spec_flux_1TeV_err: 2.399939242562349e-13
+  - spec_flux_1TeV_err: 2.829306376044092e-14
   - spec_flux_1TeV_crab: 0.6061794757843018
-  - spec_flux_1TeV_crab_err: 1.156907558441162
+  - spec_flux_1TeV_crab_err: 0.13638870418071747
   - spec_eflux_1TeV_10TeV: 3.948117061145645e-13
-  - spec_eflux_1TeV_10TeV_err: 7.551276227577008e-13
+  - spec_eflux_1TeV_10TeV_err: 1.0166385555664473e-13
   - sed_reference_id: 2009ApJ...698L.133A
   - sed_n_points: 5
   - sed_n_ul: 0
@@ -3085,7 +3085,7 @@
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
   - spec_erange_min: 0.30000001192092896
-  - spec_erange_max: 0.699999988079071
+  - spec_erange_max: 1.0499999523162842
   - spec_theta: .nan
   - spec_dnde_1TeV: 2.511451875457371e-13
   - spec_dnde_1TeV_err: 2.3853355814000554e-13
@@ -3097,15 +3097,15 @@
   - spec_eflux_1TeV_10TeV_err: 3.684659456888728e-13
   - sed_reference_id: 2009ApJ...690L.126A
   - sed_n_points: 4
-  - sed_n_ul: 0
-  - sed_e_ref: 0.4564254879951477
+  - sed_n_ul: 2
+  - sed_e_ref: 0.6033383011817932
   - sed_e_min: .nan
   - sed_e_max: .nan
   - sed_dnde: 7.037885031702107e-12
   - sed_dnde_err: .nan
   - sed_dnde_errp: 3.6067524834815234e-12
   - sed_dnde_errn: 3.6067524834815234e-12
-  - sed_dnde_ul: .nan
+  - sed_dnde_ul: 5.735000148388014e-13
 - !!omap
   - source_id: 37
   - common_name: Vela X
@@ -4512,7 +4512,7 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: 0.30000001192092896
+  - spec_erange_min: 0.25
   - spec_erange_max: 1.0
   - spec_theta: .nan
   - spec_dnde_1TeV: 3.015534870420833e-13
@@ -4681,7 +4681,7 @@
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
   - spec_erange_min: 0.18000000715255737
-  - spec_erange_max: 3.0
+  - spec_erange_max: 2.0
   - spec_theta: .nan
   - spec_dnde_1TeV: 2.2309719176216714e-12
   - spec_dnde_1TeV_err: 5.455978550894525e-13
@@ -8964,8 +8964,8 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: 0.20999999344348907
-  - spec_erange_max: 0.41999998688697815
+  - spec_erange_min: 0.18000000715255737
+  - spec_erange_max: 0.5
   - spec_theta: .nan
   - spec_dnde_1TeV: 3.564636107990238e-13
   - spec_dnde_1TeV_err: 3.084099544758273e-13
@@ -12998,8 +12998,8 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: 0.3199999928474426
-  - spec_erange_max: 10.0
+  - spec_erange_min: 0.22499999403953552
+  - spec_erange_max: 14.125
   - spec_theta: 0.23999999463558197
   - spec_dnde_1TeV: 1.4999999940062958e-12
   - spec_dnde_1TeV_err: 1.99999996490334e-13
@@ -13419,7 +13419,7 @@
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
   - spec_erange_min: 0.8999999761581421
-  - spec_erange_max: 14.0
+  - spec_erange_max: 16.0
   - spec_theta: 0.3199999928474426
   - spec_dnde_1TeV: 1.4233296615970281e-12
   - spec_dnde_1TeV_err: 6.147723389388071e-13
@@ -13754,8 +13754,8 @@
   - spec_ecpl_e_cut_err: .nan
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
-  - spec_erange_min: 0.30000001192092896
-  - spec_erange_max: 5.0
+  - spec_erange_min: 0.4000000059604645
+  - spec_erange_max: 6.300000190734863
   - spec_theta: .nan
   - spec_dnde_1TeV: 1.2600000253229493e-12
   - spec_dnde_1TeV_err: 1.8000000361756419e-13
@@ -13839,7 +13839,7 @@
   - spec_ecpl_e_cut_err_sys: .nan
   - spec_ecpl_e_ref: .nan
   - spec_erange_min: 0.38999998569488525
-  - spec_erange_max: 8.300000190734863
+  - spec_erange_max: 2.799999952316284
   - spec_theta: .nan
   - spec_dnde_1TeV: 1.72999999742407e-11
   - spec_dnde_1TeV_err: 1.9199999663072065e-12

@@ -19,7 +19,7 @@ morph:
   pa: {frame: radec, val: 22d}
 
 spec:
-  erange: {min: 0.9, max: 14., unit: TeV}
+  erange: {min: 0.9, max: 16., unit: TeV}
   theta: 0.32d
   model:
     type: pl

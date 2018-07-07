@@ -1,0 +1,26 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float64, description: Energy}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_err, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 49}
+# - {reference_id: 2009ApJ...703..169A}
+# - {telescope: veritas}
+# - {comments: 'light curve points extracted Fig 1.
+# 
+#     using WebPlotDigitizer'}
+# schema: astropy-2.0
+e_ref dnde dnde_err
+0.371 3.9299997e-10 6.4e-11
+0.451 1.69e-10 2.7999998e-11
+0.536 1.43e-10 1.7e-11
+0.648 5.46e-11 9.099999e-12
+0.781 4.07e-11 6.3e-12
+0.949 2.63e-11 4.7e-12
+1.127 1.91e-11 3.7e-12
+1.364 6.3199996e-12 1.7299999e-12
+1.611 5.49e-12 1.39e-12
+1.959 2.44e-12 8.5999995e-13

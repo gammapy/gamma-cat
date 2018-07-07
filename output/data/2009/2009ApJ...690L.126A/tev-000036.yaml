@@ -12,7 +12,7 @@ pos:
   dec: {val: +52d19m02s, err: 2m, err_sys: 100s}
 
 spec:
-  erange: {min: 0.3, max: 0.7, unit: TeV}
+  erange: {min: 0.3, max: 1.05, unit: TeV}
   mjd: {min: 54040, max: 54586}
   model:
     type: pl

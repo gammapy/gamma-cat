@@ -1,0 +1,27 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float32, description: Energy}
+# - {name: e_min, unit: TeV, datatype: float32, description: Energy bin minimum}
+# - {name: e_max, unit: TeV, datatype: float32, description: Energy bin maximum}
+# - {name: dnde, unit: 1 / (cm2 s TeV), datatype: float32, description: Differential photon flux at `e_ref`}
+# - {name: dnde_errn, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical negative error (1 sigma) on `dnde`}
+# - {name: dnde_errp, unit: 1 / (cm2 s TeV), datatype: float32, description: Statistical positive error (1 sigma) on `dnde`}
+# meta: !!omap
+# - {data_type: sed}
+# - {source_id: 30}
+# - {reference_id: 2017AIPC.1792d0023S}
+# - {file_id: 1}
+# - {telescope: veritas}
+# - {comments: Spectral points measured by VERITAS for orbital phases 0.2-0.4}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_errn dnde_errp
+0.335 0.282 0.398 8.739e-12 1.558e-12 1.504e-12
+0.473 0.398 0.562 5.262e-12 6.213e-13 5.985e-13
+0.668 0.562 0.794 2.646e-12 2.9e-13 2.782e-13
+0.944 0.794 1.122 9.705e-13 1.299e-13 1.231e-13
+1.334 1.122 1.585 3.106e-13 5.7e-14 5.276e-14
+1.884 1.585 2.239 1.141e-13 2.691e-14 2.425e-14
+2.661 2.239 3.162 4.545e-14 1.443e-14 1.277e-14
+3.758 3.162 4.467 2.152e-14 7.23e-15 6.132e-15
+5.309 4.467 6.31 3.119e-15 2.62e-15 1.932e-15

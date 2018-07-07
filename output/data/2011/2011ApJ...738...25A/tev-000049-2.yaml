@@ -12,7 +12,7 @@ morph:
 
 # labeled in Table 2 as 'High-B'
 spec:
-  erange: {min: 0.7, max: 9.0, unit: TeV}
+  erange: {min: 0.6, max: 7.5, unit: TeV}
   mjd: {max: 54647.0, min: 54466.0}
   model:
     type: ecpl

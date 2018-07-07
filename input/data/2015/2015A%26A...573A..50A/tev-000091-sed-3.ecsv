@@ -7,7 +7,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 91
-# - reference_id: 2015A%26A...573A..50A
+# - reference_id: 2015A&A...573A..50A
 # - file_id: 3
 # - telescope: veritas
 # - mjd: {max: 54604.0, min: 54579.0}

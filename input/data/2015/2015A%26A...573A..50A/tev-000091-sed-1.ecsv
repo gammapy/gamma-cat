@@ -7,7 +7,7 @@
 # meta: !!omap
 # - data_type: sed
 # - source_id: 91
-# - reference_id: 2015A%26A...573A..50A
+# - reference_id: 2015A&A...573A..50A
 # - file_id: 1
 # - telescope: magic
 # - mjd: {max: 54560.0, min: 54545.0}

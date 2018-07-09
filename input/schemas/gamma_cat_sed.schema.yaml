@@ -1,0 +1,22 @@
+type: array
+items:
+
+  type: object
+  additionalProperties: false
+
+  properties:
+    source_id: {type: integer}
+    status:
+      enum: [source, candidate, removed]
+      # Status of this source in gamma-cat
+      # source - A normal source
+      # candidate - A source candidate
+      # removed - Not a source. Has been removed. (usually when one source splits in several new sources)
+
+    reference_id: {type: [string, "null"]}
+    catalog:
+      type: object
+      properties:
+        reference_id:
+          type: [string, "null"]
+          file_id: [integer, "null"]

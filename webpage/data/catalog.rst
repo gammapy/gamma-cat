@@ -17,3 +17,6 @@ Why multiple formats?
 * The ECSV and YAML variant are more for us working on gamma-cat,
   to have a text-based, version control friendly format where it's
   easy to see which changes occurred from one version to the next.
+
+We recommend to have a look at `gamma_cat_columns <https://github.com/gammapy/gamma-cat/blob/master/input/gamma_cat_config/gamma_cat_columns.yaml>`__ in which all columns of the catalog are defined together with additional information, e.g. description and datatype of the entry.
+Moreover, in `gamma_cat_dataset <https://github.com/gammapy/gamma-cat/blob/master/input/gammacat/gamma_cat_dataset.yaml>`__ for each source the reference_id of the data in the catalog is given (more precicely, this file tells the python scripts which references are used to create the catalog).

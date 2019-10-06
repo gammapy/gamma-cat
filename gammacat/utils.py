@@ -4,7 +4,7 @@ from pprint import pprint
 import logging
 import json
 from pathlib import Path
-import ruamel.yaml
+import ruamel_yaml
 import jsonschema
 import jinja2
 import numpy as np
@@ -98,7 +98,7 @@ def load_yaml(path):
     path = Path(path)
     log.debug('Reading {}'.format(path))
     with path.open() as fh:
-        data = ruamel.yaml.round_trip_load(fh)
+        data = ruamel_yaml.round_trip_load(fh)
     return data
 
 
@@ -107,7 +107,7 @@ def write_yaml(data, path):
     path = Path(path)
     log.info('Writing {}'.format(path))
     with path.open('w') as fh:
-        ruamel.yaml.round_trip_dump(data, fh)
+        ruamel_yaml.round_trip_dump(data, fh)
 
 
 def load_json(path):

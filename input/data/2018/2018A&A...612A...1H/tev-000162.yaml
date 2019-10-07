@@ -13,7 +13,6 @@ pos:
 morph:
     type: gauss
     sigma: {val: 3m, err: 0.66m}
-    sigma2: {val: 0.0m, err: 0.0m}
 
 spec:
   model:

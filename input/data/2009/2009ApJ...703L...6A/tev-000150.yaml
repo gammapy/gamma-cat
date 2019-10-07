@@ -1,0 +1,28 @@
+source_id: 150
+reference_id: 2009ApJ...703L...6A
+telescope: veritas
+
+data:
+  livetime: 33.4h
+  significance: 6.0
+
+pos:
+  ra: {val: 22h27m59s}
+  dec: {val: +60d52m37s}
+
+morph:
+  type: gauss
+  sigma: {val: 16.2m, err: 3m}
+  sigma2: {val: 10.8m, err: 1.8m}
+  pa: {frame: radec, val: 22deg, err: 0.0deg}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.15, err: 0.27, err_sys: 0.35, scale: 1e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.29, err: 0.33, err_sys: 0.3}
+      e_ref: {val: 3, unit: TeV}
+    erange: {min: 1.0, unit: TeV}
+
+notes:

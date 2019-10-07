@@ -1,11 +1,12 @@
 reference_id: 2009ApJ...703L...6A
-source_id: [149]
+source_id: [149,150]
 telescope: [veritas]
 
 datasets:
   - tev-000149.yaml
   - tev-000149-sed.ecsv
+  - tev-000150.yaml
 
 data_entry:
-  status: complete
+  status: uncomplete
   reviewed: no

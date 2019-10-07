@@ -1,9 +1,9 @@
-reference_id: 2015MNRAS.446..217A
-source_id: [5]
+reference_id: 2011arXiv1110.6368B
+source_id: [139]
 telescope: [magic]
 
 datasets:
-  - tev-000005.yaml
+  - tev-000139.yaml
 
 data_entry:
   status: uncomplete

@@ -17,7 +17,7 @@
   reference_id:
 - source_id: 5
   status: source
-  reference_id:
+  reference_id: 2015MNRAS.446..217A
 - source_id: 6
   status: source
   reference_id:
@@ -152,7 +152,7 @@
   reference_id: 1996ApJ...460..644S, 1996ApJ...472L...9B, 1999A&A...350..757A, 1999ApJ...526L..81M, 2000PhDT.........6P, 2002A&A...393...89A, 2005A&A...437...95A, 2006ApJ...641..740R, 2009ApJ...691L..13D, 2017ApJ...834....2A, 2000AIPC..515..113P, 2015NIMPA.770...42S, 2010A&A...519A..32A, 2011ApJ...738...25A, 2003ApJ...598..242A, 2010JPhG...37l5201C, 2011ApJ...734..110B, 2012JPhG...39d5201C, 2007ApJ...663..125A
 - source_id: 50
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 51
   status: source
   reference_id:
@@ -365,7 +365,7 @@
   reference_id: 2015MNRAS.446.1163H
 - source_id: 122
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 123
   status: source
   reference_id: 2006ApJ...636..777A
@@ -380,13 +380,13 @@
   reference_id:
 - source_id: 127
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 128
   status: source
   reference_id: 2008AIPC.1085..372C
 - source_id: 129
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 130
   status: source
   reference_id: 2008A&A...477..353A
@@ -416,7 +416,7 @@
   reference_id: 2003ApJ...583L...9H, 2003ICRC....5.2615T, 2003A&A...406L...9A, 2008ApJ...679.1029T, 2013ApJ...775....3A, 2005ApJ...621..181D, 2006ApJ...639..761A
 - source_id: 139
   status: source
-  reference_id:
+  reference_id: 2011arXiv1110.6368B
 - source_id: 140
   status: source
   reference_id: 2010A&A...511A..52H
@@ -449,7 +449,7 @@
   reference_id: 2009ApJ...703L...6A
 - source_id: 150
   status: source
-  reference_id:
+  reference_id: 2009ApJ...703L...6A
 - source_id: 151
   status: source
   reference_id:
@@ -479,19 +479,19 @@
   reference_id: 2017arXiv170604535H
 - source_id: 160
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 161
   status: source
   reference_id: 2017arXiv170107002A
 - source_id: 162
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 163
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 164
   status: source
-  reference_id:
+  reference_id: 2018A&A...612A...1H
 - source_id: 165
   status: source
   reference_id: 2016ApJ...821..129A

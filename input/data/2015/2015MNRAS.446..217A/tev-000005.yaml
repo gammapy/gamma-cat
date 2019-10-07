@@ -1,5 +1,23 @@
 source_id: 5
-reference_id:  2015MNRAS.446..217A
+reference_id: 2015MNRAS.446..217A
 telescope: magic
 
-#TODO: Add data
+data:
+  livetime: 19.7h
+  significance: 5.5
+
+pos:
+  ra: {val: 00h35m16.8s, err: 0h0m7.2s}
+  dec: {val: +59d47m24.0s, err: 0h1m12.0s}
+
+morph:
+   type: point
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 2.0, err: 0.50, err_sys: 0.50, scale: 1e-11, unit: cm-2 s-1 TeV-1}
+      index: {val: 3.8, err: 0.7, err_sys: 0.3}
+      e_ref: {val: 0.25, unit: TeV}
+    erange: {min: 0.125, max: 0.5, unit: TeV}

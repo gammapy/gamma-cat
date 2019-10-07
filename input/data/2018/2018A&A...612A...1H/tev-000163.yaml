@@ -1,0 +1,25 @@
+source_id: 163
+reference_id: 2018A&A...612A...1H
+telescope: hess
+
+data:
+  livetime: 42.2h
+  significance: 5.9
+
+pos:
+  ra: {val: 18h32m30.79s}
+  dec: {val: -08d30m41.2s}
+
+morph:
+  type: gauss
+  sigma: {val: 1.2m, err: 0.7m}
+  sigma2: {val: 0.0m, err: 0.0m}
+
+spec:
+  model:
+    type: pl
+    parameters:
+      norm: {val: 1.76, err: 0.29, err_sys: 0.0, scale: 1e-13, unit: cm-2 s-1 TeV-1}
+      index: {val: 2.38, err: 0.14, err_sys: 0.2}
+      e_ref: {val: 1.27, unit: TeV}
+    erange: {min: 0.22, max: 61.90, unit: TeV}

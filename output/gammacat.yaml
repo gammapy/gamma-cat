@@ -10614,8 +10614,8 @@
   - morph_type: gauss
   - morph_sigma: 0.05000000074505806
   - morph_sigma_err: 0.010999999940395355
-  - morph_sigma2: 0.0
-  - morph_sigma2_err: 0.0
+  - morph_sigma2: .nan
+  - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''
@@ -10782,8 +10782,8 @@
   - morph_type: gauss
   - morph_sigma: 0.019999999552965164
   - morph_sigma_err: 0.011666666716337204
-  - morph_sigma2: 0.0
-  - morph_sigma2_err: 0.0
+  - morph_sigma2: .nan
+  - morph_sigma2_err: .nan
   - morph_pa: .nan
   - morph_pa_err: .nan
   - morph_pa_frame: ''

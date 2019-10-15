@@ -1,5 +1,5 @@
 reference_id: 2018A&A...612A...1H
-source_id: [50,122,127,129,160,162,163,164]
+source_id: [50,122,127,129,160,162,163,164,170]
 telescope: [hess]
 
 datasets:
@@ -11,6 +11,7 @@ datasets:
     - tev-000162.yaml
     - tev-000163.yaml
     - tev-000164.yaml
+    - tev-000170.yaml
 
 data_entry:
   status: uncomplete

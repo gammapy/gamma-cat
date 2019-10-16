@@ -1,0 +1,37 @@
+source_id: 122
+
+common_name: HESS J1833-105
+gamma_names: [HESS J1833-105]
+fermi_names: [3FGL J1833.5-1033]
+other_names:
+- G21.5-0.9
+- PSR J1833-1034
+
+where: gal
+classes: [pwn,snr]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2007-10
+
+tevcat_id: 140
+tevcat2_id: EmvcSG
+tevcat_name: TeV J1833-105
+
+tgevcat_id: 122
+tgevcat_name: TeV J1833-1033
+
+pos:
+  simbad_id: HESS J1833-105
+  ra: 278.25
+  dec: -10.5
+
+reference_ids:
+- 2018A&A...612A...1H
+- 2008ICRC....2..823D
+- 2008MNRAS.391L..54T
+- 2009MNRAS.393..527D
+- 2011MNRAS.412.1221B
+- 2012ASPC..466..167K
+- 2016MNRAS.460.4135P
+- https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf

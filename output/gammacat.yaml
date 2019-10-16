@@ -4202,10 +4202,10 @@
   - source_id: 50
   - common_name: HESS J1119-614
   - gamma_names: HESS J1119-614
-  - fermi_names: ''
+  - fermi_names: 3FGL J1119.1-6127
   - other_names: SNR G292.2-00.5,PSR J1119-6127
   - where: gal
-  - classes: pwn
+  - classes: pwn,snr
   - discoverer: hess
   - seen_by: hess
   - discovery_date: 2009-07
@@ -9243,7 +9243,7 @@
   - common_name: HESS J1746-308
   - gamma_names: HESS J1746-308
   - fermi_names: ''
-  - other_names: ''
+  - other_names: G358.5-0.9,PSR B1742-30
   - where: gal
   - classes: unid
   - discoverer: ''
@@ -10166,7 +10166,7 @@
   - source_id: 160
   - common_name: HESS J1813-126
   - gamma_names: HESS J1813-126
-  - fermi_names: ''
+  - fermi_names: 3FGL J1833.5-1033
   - other_names: PSR J1813-1246
   - where: gal
   - classes: unid
@@ -11007,10 +11007,10 @@
   - source_id: 122
   - common_name: HESS J1833-105
   - gamma_names: HESS J1833-105
-  - fermi_names: ''
+  - fermi_names: 3FGL J1833.5-1033
   - other_names: G21.5-0.9,PSR J1833-1034
   - where: gal
-  - classes: pwn
+  - classes: pwn,snr
   - discoverer: hess
   - seen_by: hess
   - discovery_date: 2007-10
@@ -11512,9 +11512,9 @@
   - common_name: HESS J1846-029
   - gamma_names: HESS J1846-029
   - fermi_names: ''
-  - other_names: Kes 75,SNR G29.7-0.3
+  - other_names: Kes 75,SNR G29.7-0.3,PSR J1846-0258
   - where: gal
-  - classes: pwn
+  - classes: pwn,snr
   - discoverer: hess
   - seen_by: hess,hawc
   - discovery_date: 2007-10

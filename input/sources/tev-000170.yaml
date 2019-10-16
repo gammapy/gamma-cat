@@ -1,0 +1,20 @@
+source_id: 170
+
+common_name: HESS J1746-308
+gamma_names: [HESS J1746-308]
+other_names:
+- G358.5-0.9
+- PSR B1742-30
+
+where: gal
+classes: [unid]
+
+seen_by: [hess]
+
+pos:
+  simbad_id: HESS J1746-308
+  ra: 266.571375
+  dec: -30.841118
+
+reference_ids:
+- 2018A&A...612A...1H

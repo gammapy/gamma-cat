@@ -1,0 +1,29 @@
+source_id: 163
+
+common_name: HESS J1832-085
+gamma_names: [HESS J1832-085]
+other_names: [PSR J1832-0836]
+
+where: gal
+classes: [unid]
+
+discoverer: hess
+seen_by: [hess]
+discovery_date: 2015-07
+
+tevcat_id: 273
+tevcat2_id: trW4uy
+tevcat_name: TeV J1832-085
+
+# Note: this source is not listed in tgevcat yet
+
+# TeV source position taken from HESS_HGPS_ICRC2015_Deil.pdf (slide 25)
+# TODO: this should not be `simbad_id` ... move to `inputs/papers`
+pos:
+  simbad_id: HESS J1832-085
+  ra: 278.13
+  dec: -8.51
+
+reference_ids:
+- 2018A&A...612A...1H
+- https://indico.cern.ch/event/344485/contributions/1744018/attachments/1136486/1626371/HESS_HGPS_ICRC2015_Deil.pdf

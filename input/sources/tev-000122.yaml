@@ -2,13 +2,13 @@ source_id: 122
 
 common_name: HESS J1833-105
 gamma_names: [HESS J1833-105]
-fermi_names: [3FGL J1833.5−1033]
+fermi_names: []
 other_names:
 - G21.5-0.9
 - PSR J1833-1034
 
 where: gal
-classes: [pwn,snr]
+classes: [pwn]
 
 discoverer: hess
 seen_by: [hess]

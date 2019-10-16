@@ -3,7 +3,6 @@ source_id: 160
 common_name: HESS J1813-126
 gamma_names: [HESS J1813-126]
 other_names: [PSR J1813-1246]
-fermi_names: [3FGL J1833.5-1033]
 
 where: gal
 classes: [unid]

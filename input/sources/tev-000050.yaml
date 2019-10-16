@@ -3,13 +3,14 @@ source_id: 50
 common_name: HESS J1119-614
 gamma_names:
 - HESS J1119-614
-fermi_names: []
+fermi_names:
+- 3FGL J1119.1−6127
 other_names:
 - SNR G292.2-00.5
 - PSR J1119-6127
 
 where: gal
-classes: [pwn]
+classes: [pwn,snr]
 
 discoverer: hess
 seen_by: [hess]

@@ -6,5 +6,5 @@ datasets:
   - tev-000005.yaml
 
 data_entry:
-  status: missing
+  status: uncomplete
   reviewed: no

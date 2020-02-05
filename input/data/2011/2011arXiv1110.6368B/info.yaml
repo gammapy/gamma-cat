@@ -1,0 +1,10 @@
+reference_id: 2011arXiv1110.6368B
+source_id: [139]
+telescope: [magic]
+
+datasets:
+  - tev-000139.yaml
+
+data_entry:
+  status: uncomplete
+  reviewed: no

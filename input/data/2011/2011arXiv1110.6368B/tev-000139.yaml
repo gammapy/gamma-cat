@@ -1,0 +1,15 @@
+source_id: 139
+reference_id: 2011arXiv1110.6368B
+telescope: magic
+
+data:
+  livetime: 1.5h
+  significance: 7.6
+
+pos:
+  ra: {val: 20h01m13.5s}
+  dec: {val: 43d53m02.8s}
+
+morph:
+   type: point
+

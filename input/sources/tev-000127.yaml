@@ -6,9 +6,10 @@ fermi_names: []
 other_names:
 - Kes 75
 - SNR G29.7-0.3
+- PSR J1846-0258
 
 where: gal
-classes: [pwn]
+classes: [pwn,snr]
 
 discoverer: hess
 seen_by: [hess, hawc]
@@ -27,6 +28,7 @@ pos:
   dec: -2.9
 
 reference_ids:
+- 2018A&A...612A...1H
 - 2008ICRC....2..823D
 - 2008A&A...480L..25L
 - 2016ApJ...817....3A

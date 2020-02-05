@@ -4325,4 +4325,11 @@
         "type": "lightcurve",
         "location": "data/2016/2016ApJ...831..113A/tev-000169-lc.ecsv"
     }
+    {
+        "source_id": 170,
+        "reference_id": "2018A&A...612A...1H",
+        "file_id": -1,
+        "type": "ds",
+        "location": "data/2018/2018A&A...612A...1H/tev-000170.yaml"
+    }
 ]

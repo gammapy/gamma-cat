@@ -8,7 +8,7 @@ An open data collection and source catalog for gamma-ray astronomy.
 ## See also
 
 * http://gamma-sky.net/
-* http://docs.gammapy.org/en/latest/catalog/index.html
+* https://docs.gammapy.org/dev/api-reference/catalog.html
 
 ## Infos for maintainers and contributors
 
